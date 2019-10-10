@@ -1,0 +1,726 @@
+####################
+# Slot 1 - Securing the West  #
+####################
+
+X01_secure_the_west = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	deal_with_eredrim = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+	
+	deal_with_old_pukel_land = {
+		icon = mission_conquer_50_development
+		required_missions = { deal_with_eredrim }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+	
+	deal_with_lond_angren_trade = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { deal_with_old_pukel_land }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+#X01_secure_the_west_old_pukel_land = {
+
+#	slot = 1
+#	generic = no
+#	ai = yes
+	
+#	potential = {
+#		tag = X01
+#		NOT = { map_setup = map_setup_random }
+#	}
+#	has_country_shield = yes
+	
+	
+#}
+
+#X01_secure_the_west_trade = {
+
+#	slot = 1
+#	generic = no
+#	ai = yes
+	
+#	potential = {
+#		tag = X01
+#		NOT = { map_setup = map_setup_random }
+#	}
+#	has_country_shield = yes
+	
+	
+#}
+
+####################
+# Slot 2 - Securing the South  #
+####################
+
+X01_secure_the_south = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	harondor_conquest = {
+		icon = mission_arabian_fort
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_south_gulf_of_mirlond = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	gulf_of_mirlond_conquest = {
+		icon = mission_arabian_fort
+		required_missions = { harondor_conquest }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_south_umbar = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	umbar_conquest = {
+		icon = mission_arabian_fort
+		required_missions = { gulf_of_mirlond_conquest }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+####################
+# Slot 3 - Securing the North  #
+####################
+
+X01_secure_the_north = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	southern_rhovanion_conquest = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_north_secure_allies = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	secure_allies = {
+		icon = mission_have_two_subjects
+		required_missions = { southern_rhovanion_conquest }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_north_border_to_rhun = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	border_to_rhun = {
+		icon = mission_great_wall
+		required_missions = { secure_allies }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_north_dismantel_rhun = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dismantel_rhun_empire = {
+		icon = mission_empire
+		required_missions = { border_to_rhun }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_north_securing_against_rhun = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	securing_against_rhun = {
+		icon = mission_great_wall
+		required_missions = { border_to_rhun }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+####################
+# Slot 1 - Mordor  #
+####################
+
+X01_defeat_mordor_minas_ithil = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	reconquer_minas_ithil = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_defeat_mordor_mordor = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	conquer_mordor = {
+		icon = mission_unite_home_region
+		required_missions = { reconquer_minas_ithil }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_defeat_mordor_ally_nurn = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ally_nurn = {
+		icon = mission_have_two_subjects
+		required_missions = { reconquer_minas_ithil }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+####################
+# Slot 2 - Arnor  #
+####################
+
+X01_regain_arnor_start = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	gain_foothold_in_cardolan = {
+		icon = mission_invade_island
+		required_missions = { }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_regain_arnor_cardolan = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	conquer_cardolan = {
+		icon = mission_unite_home_region
+		required_missions = { gain_foothold_in_cardolan }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_regain_arnor_shire = {
+
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	deal_with_shire = {
+		icon = mission_have_two_subjects
+		required_missions = { conquer_cardolan }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_regain_arnor_arthedain = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	conquer_arthedain = {
+		icon = mission_unite_home_region
+		required_missions = { conquer_cardolan }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+X01_regain_arnor_rhudaur = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = X01
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	conquer_rhudaur = {
+		icon = mission_unite_home_region
+		required_missions = { conquer_cardolan }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_tirith_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}

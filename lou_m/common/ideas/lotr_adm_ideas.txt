@@ -1,0 +1,53 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+# Lord of Harmony (asoiaf_god_of_harmony)
+got_lord_of_harmony_ideas = {
+    category = ADM
+
+    trigger = {
+        religion = religion_mahal
+    }
+    
+    bonus = {
+        culture_conversion_cost = -0.25
+    }
+    # The Laughing Giant
+    got_lord_of_harmony_ideas_1 = {
+        tolerance_own = 3
+    }
+    # Butterfly Women
+    got_lord_of_harmony_ideas_2 = {
+        global_missionary_strength = 0.03
+    }
+    # Butterfly Fever
+    got_lord_of_harmony_ideas_3 = {
+        hostile_attrition = 4
+    }
+    # Peaceful Naathi
+    got_lord_of_harmony_ideas_4 = {
+        global_unrest = -2
+    }
+    # Sacred Butterfly Spirits
+    got_lord_of_harmony_ideas_5 = {
+        monthly_fervor_increase = 1
+    }
+    # Ritual of the Butterfly
+    got_lord_of_harmony_ideas_6 = {
+        warscore_cost_vs_other_religion = -0.2
+    }
+    # One True God
+    got_lord_of_harmony_ideas_7 = {
+        missionaries = 1
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+}
