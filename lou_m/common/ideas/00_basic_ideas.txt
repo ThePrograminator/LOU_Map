@@ -432,95 +432,95 @@ economic_ideas = {
 }
 
 
-exploration_ideas = {
-	category = DIP
-	important = yes
-
-	bonus = {
-		cb_on_primitives = yes
-	}
-
-	quest_for_the_new_world	= {
-		may_explore = yes
-	}
-
-	colonial_ventures = {
-		colonists = 1
-	}
-	
-	overseas_exploration = {
-		range = 0.5
-	}
-	land_of_opportunity = {
-		global_colonial_growth = 10
-	}
-	vice_roys  = {
-		global_tariffs = 0.10
- 		envoy_travel_time = -0.20
- 	}
-	free_colonies = {
-		expel_minorities_cost = -0.25
-	}
-	global_empire = {
-		naval_forcelimit_modifier = 0.25
-	}
-
-	ai_will_do = {
-		factor = 0.75
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
-		}		
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_ports = 3 }
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 5
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 10
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 15
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 20
-		}
-	}
-}
+#exploration_ideas = {
+#	category = DIP
+#	important = yes
+#
+#	bonus = {
+#		cb_on_primitives = yes
+#	}
+#
+#	quest_for_the_new_world	= {
+#		may_explore = yes
+#	}
+#
+#	colonial_ventures = {
+#		colonists = 1
+#	}
+#	
+#	overseas_exploration = {
+#		range = 0.5
+#	}
+#	land_of_opportunity = {
+#		global_colonial_growth = 10
+#	}
+#	vice_roys  = {
+#		global_tariffs = 0.10
+# 		envoy_travel_time = -0.20
+# 	}
+#	free_colonies = {
+#		expel_minorities_cost = -0.25
+#	}
+#	global_empire = {
+#		naval_forcelimit_modifier = 0.25
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.75
+#		modifier = {
+#			factor = 0
+#			is_colonial_nation = yes
+#		}
+#		modifier = {
+#			factor = 0
+#			is_tribal = yes
+#		}
+#		modifier = {
+#			factor = 0
+#			is_subject = yes
+#		}		
+#		modifier = {
+#			factor = 0
+#			primitives = yes
+#		}
+#		modifier = {
+#			factor = 0
+#			NOT = { num_of_ports = 1 }
+#			NOT = { 
+#				any_owned_province = { 
+#					is_in_capital_area = yes
+#					has_empty_adjacent_province = yes
+#				} 
+#			}
+#		}
+#		modifier = {
+#			factor = 0.1
+#			NOT = { num_of_ports = 3 }
+#			NOT = { 
+#				any_owned_province = { 
+#					is_in_capital_area = yes
+#					has_empty_adjacent_province = yes
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 5
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 10
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 15
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 20
+#		}
+#	}
+#}
 
 
 maritime_ideas = {
@@ -588,10 +588,6 @@ maritime_ideas = {
 
 quality_ideas = {
 	category = MIL
-	
-	trigger = {
-		full_idea_group = offensive_ideas
-	}
 
 	bonus = {
 		discipline = 0.05
@@ -659,60 +655,60 @@ quantity_ideas = {
 }
 
 
-expansion_ideas = {
-	category = ADM
-	important = yes
-
-	bonus = {
- 		cb_on_overseas = yes
- 		max_states = 5
-	}
-
-	additional_colonists = {
-		colonists = 1
-	}
-	additional_merchants = {
-		merchants = 1
-	}
-	faster_colonists = {
-		global_colonial_growth = 20
-	}
-	factories = {
-		rival_border_fort_maintenance = -0.5
-		center_of_trade_upgrade_cost = -0.2
-	}
-	additional_diplomats = {
-		diplomatic_upkeep = 1
-	}
-	general_colonization_law  = {
-		colonists = 1
-		colonist_placement_chance = 0.05
-	}
-	competetive_merchants  = {
-		global_trade_power = 0.2
-	}
-
-	ai_will_do = {
-		factor = 0.48
-		modifier = {
-			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
-			NOT = {
-				any_owned_province = {
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-	}
-}
+#expansion_ideas = {
+#	category = ADM
+#	important = yes
+#
+#	bonus = {
+# 		cb_on_overseas = yes
+# 		max_states = 5
+#	}
+#
+#	additional_colonists = {
+#		colonists = 1
+#	}
+#	additional_merchants = {
+#		merchants = 1
+#	}
+#	faster_colonists = {
+#		global_colonial_growth = 20
+#	}
+#	factories = {
+#		rival_border_fort_maintenance = -0.5
+#		center_of_trade_upgrade_cost = -0.2
+#	}
+#	additional_diplomats = {
+#		diplomatic_upkeep = 1
+#	}
+#	general_colonization_law  = {
+#		colonists = 1
+#		colonist_placement_chance = 0.05
+#	}
+#	competetive_merchants  = {
+#		global_trade_power = 0.2
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.48
+#		modifier = {
+#			factor = 10
+#			OR = {
+#				has_idea_group = exploration_ideas
+#				is_colonial_nation = yes
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			NOT = { has_idea_group = exploration_ideas }
+#			NOT = { is_colonial_nation = yes }
+#			NOT = {
+#				any_owned_province = {
+#					has_empty_adjacent_province = yes
+#				}
+#			}
+#		}
+#	}
+#}
 
 
 administrative_ideas = {
