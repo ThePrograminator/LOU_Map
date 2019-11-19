@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 3
 base_production = 4
@@ -28,9 +28,14 @@ trade_goods = livestock
 hre = no
 
 add_permanent_province_modifier = {
-	name = inland_center_of_trade_modifier
+	name = trade_post_modifier
 	duration = -1
 }
+
+city_1_building=yes
+temple_building=yes
+workshop_building=yes
+outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

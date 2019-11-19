@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 8
-base_production = 1
-base_manpower = 10
+base_tax = 3
+base_production = 3
+base_manpower = 2
 
 add_core = Y24
 owner = Y24
@@ -23,9 +23,12 @@ controller = Y24
 culture = culture_umli
 religion = religion_umli
 
-trade_goods = grain
+trade_goods = fish
 
 hre = no
+
+settlement_building=yes
+outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

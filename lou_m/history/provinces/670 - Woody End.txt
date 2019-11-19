@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 3
+base_manpower = 2
 
 add_core = V50
 owner = V50
@@ -23,9 +23,12 @@ controller = V50
 culture = culture_shirefolk
 religion = religion_perian
 
-trade_goods = grain
+trade_goods = herbs
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

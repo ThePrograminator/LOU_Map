@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 10
-base_production = 1
-base_manpower = 6
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
 add_core = Z39
 owner = Z39
@@ -23,9 +23,14 @@ controller = Z39
 culture = culture_lossoth
 religion = religion_forodwaith
 
-trade_goods = wine
+trade_goods = tropical_wood
 
 hre = no
+
+fortress_2_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+trade_outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

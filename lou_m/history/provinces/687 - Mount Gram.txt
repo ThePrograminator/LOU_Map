@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 8
+base_tax = 10
+base_production = 11
+base_manpower = 12
 
 add_core = Y43
 owner = Y43
@@ -26,6 +26,22 @@ religion = religion_orkish
 trade_goods = silver
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_3_orc_building=yes
+treasure_trove_orc_building=yes
+overseer_tower_orc_building=yes
+dark_iron_forge_orc_building=yes
+army_garrison_orc_building=yes
+troll_cage_orc_building=yes
+great_siege_works_orc_building=yes
+fort_large_orc_stronghold_orc_building=yes
+large_arena_building=yes
+tortur_chambers_orc_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

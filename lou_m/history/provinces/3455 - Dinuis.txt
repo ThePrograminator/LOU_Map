@@ -1,15 +1,22 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 4
+base_manpower = 2
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Z62
+owner = Z62
+controller = Z62
 
-trade_goods = grain
+culture = culture_hillmen_of_rhudaur
+religion = religion_daen
+
+trade_goods = tropical_wood
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

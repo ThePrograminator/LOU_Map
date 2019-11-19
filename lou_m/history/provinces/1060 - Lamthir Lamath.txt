@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 6
-base_manpower = 6
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = Y66
 owner = Y66
@@ -23,9 +23,14 @@ controller = Y66
 culture = culture_hvettir
 religion = religion_moriquendi
 
-trade_goods = naval_supplies
+trade_goods = copper
 
 hre = no
+
+town_1_elf_building=yes
+workshop_elf_building=yes
+warriors_gallery_building=yes
+moat_elf_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

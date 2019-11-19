@@ -10,22 +10,28 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
-add_core = Z36
+add_core = Z37
 owner = Z37
 controller = Z37
 
 culture = culture_angmarrim
 religion = religion_baradhrim
 
-trade_goods = grain
+trade_goods = copper
 
 hre = no
+
+encampment_1_orc_building=yes
+orc_pit_orc_building=yes
+warg_pit_orc_building=yes
+enforcer_camp_orc_building=yes
+blacksmith_orc_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

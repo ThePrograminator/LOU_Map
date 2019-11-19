@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 3
-base_manpower = 2
+base_tax = 10
+base_production = 10
+base_manpower = 9
 
 add_core = Z43
 owner = Z43
@@ -23,9 +23,24 @@ controller = Z43
 culture = culture_clansmen
 religion = religion_daen
 
-trade_goods = salt
+trade_goods = glass
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_3_building=yes
+forum_building=yes
+bank_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_castle_building=yes
+garrison_building=yes
+dockyard_building=yes			
+grand_shipyard_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

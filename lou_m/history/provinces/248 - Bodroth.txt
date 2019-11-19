@@ -23,14 +23,14 @@ controller = Z27
 culture = culture_forodrim
 religion = religion_eriadorians
 
-trade_goods = silver
+trade_goods = copper
 
 hre = no
 
-add_permanent_province_modifier = {
-	name = trade_post_modifier
-	duration = -1
-}
+city_1_building=yes
+dock_building=yes
+army_camp_building=yes
+trade_outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

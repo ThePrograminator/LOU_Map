@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 7
+base_production = 8
+base_manpower = 9
 
 add_core = Y81
 owner = Y81
@@ -23,9 +23,19 @@ controller = Y81
 culture = culture_falathrim
 religion = religion_calaquendi
 
-trade_goods = wool
+trade_goods = naval_supplies
 
 hre = no
+
+fort_2_elf_building=yes
+elven_fairground_elf_building=yes
+temple_elf_building=yes
+workshop_elf_building=yes
+heros_shrine_building=yes	
+grand_stables_elf_building=yes
+haven_elf_building=yes
+fort_low_walls_elf_building=yes
+wall_bastions_elf_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

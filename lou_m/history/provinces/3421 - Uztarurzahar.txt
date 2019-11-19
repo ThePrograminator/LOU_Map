@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 7
+base_production = 7
+base_manpower = 8
 
 add_core = V98
 owner = V98
@@ -11,9 +11,19 @@ controller = V98
 culture = culture_orkish
 religion = religion_orkish
 
-trade_goods = grain
+trade_goods = iron
 
 hre = no
+
+capital_2_orc_building=yes
+meat_depot_orc_building=yes
+overseer_station_orc_building=yes
+metal_works_orc_building=yes
+orc_fissure_orc_building=yes
+siege_works_orc_building=yes
+fort_wooden_walls_orc_building=yes
+large_arena_building=yes
+tortur_chambers_orc_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian
@@ -53,3 +63,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_womarin
 discovered_by = lotr_woses
 discovered_by = lotr_wights
+
+3000.1.1 = {
+	add_core = V17
+	owner = V17
+	controller = V17
+}

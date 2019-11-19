@@ -10,9 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 1
-base_production = 2
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 5
 
 add_core = Y69
 owner = Y69
@@ -21,9 +21,14 @@ controller = Y69
 culture = culture_uialrim
 religion = religion_umanyar
 
-trade_goods = tropical_wood
+trade_goods = herbs
 
 hre = no
+
+fort_1_elf_building=yes
+moat_elf_building=yes
+green_pastures_elf_building=yes
+warriors_gallery_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

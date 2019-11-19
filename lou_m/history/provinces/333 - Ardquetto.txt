@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
 add_core = Y83
 owner = Y83
@@ -23,9 +23,11 @@ controller = Y83
 culture = culture_falathrim
 religion = religion_calaquendi
 
-trade_goods = naval_supplies
+trade_goods = herbs
 
 hre = no
+
+noble_residence_elf_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

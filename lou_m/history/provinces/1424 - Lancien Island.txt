@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 9
-base_production = 6
+base_tax = 3
+base_production = 4
 base_manpower = 3
 
 add_core = Z11
@@ -23,9 +23,14 @@ controller = Z11
 culture = culture_gwathlo_bargemen
 religion = religion_eriadorians
 
-trade_goods = grain
+trade_goods = fish
 
 hre = no
+
+settlement_building=yes
+port_building=yes
+outpost_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

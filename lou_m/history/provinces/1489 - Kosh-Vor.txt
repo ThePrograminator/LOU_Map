@@ -12,7 +12,7 @@
 
 is_city = yes
 
-base_tax = 2
+base_tax = 3
 base_production = 3
 base_manpower = 5
 
@@ -23,9 +23,12 @@ controller = Y62
 culture = culture_orkish
 religion = religion_orkish
 
-trade_goods = grain
+trade_goods = copper
 
 hre = no
+
+camp_orc_building=yes
+orc_pit_orc_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

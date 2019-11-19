@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
+base_tax = 4
 base_production = 4
-base_manpower = 2
+base_manpower = 4
 
 add_core = Z24
 owner = Z24
@@ -23,9 +23,14 @@ controller = Z24
 culture = culture_arthedain
 religion = religion_eriadorians
 
-trade_goods = iron
+trade_goods = wool
 
 hre = no
+
+capital_1_building=yes
+tax_office_building=yes
+workshop_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

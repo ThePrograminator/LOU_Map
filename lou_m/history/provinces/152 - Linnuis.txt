@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
+base_tax = 4
+base_production = 5
 base_manpower = 3
 
 add_core = Z43
@@ -23,9 +23,14 @@ controller = Z43
 culture = culture_clansmen
 religion = religion_daen
 
-trade_goods = fish
+trade_goods = wool
 
 hre = no
+
+city_2_building=yes
+trade_outpost_building=yes
+outpost_building=yes
+dock_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

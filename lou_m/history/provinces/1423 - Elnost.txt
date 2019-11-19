@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 5
+base_tax = 4
+base_production = 4
 base_manpower = 7
 
 add_core = V37
@@ -23,9 +23,14 @@ controller = V37
 culture = culture_dunedain_of_arnor
 religion = religion_dunedain
 
-trade_goods = fur
+trade_goods = copper
 
 hre = no
+
+fortress_1_building=yes
+fort_castle_building=yes
+work_camp_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

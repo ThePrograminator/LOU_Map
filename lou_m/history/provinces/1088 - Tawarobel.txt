@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 10
+base_tax = 4
+base_production = 4
 base_manpower = 5
 
 add_core = Z13
@@ -23,9 +23,14 @@ controller = Z13
 culture = culture_rivermen_of_lhun
 religion = religion_eriadorians
 
-trade_goods = gold
+trade_goods = herbs
 
 hre = no
+
+town_1_elf_building=yes
+temple_elf_building=yes
+workshop_elf_building=yes
+warriors_gallery_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

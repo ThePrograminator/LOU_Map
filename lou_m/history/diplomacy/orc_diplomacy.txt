@@ -35,6 +35,14 @@ vassal = {
 	start_date = 2951.1.1
 	end_date = 3500.1.1
 }
+# Mordor and Uruk-Marzgûram
+vassal = {
+	first = V17
+	second = V98
+	start_date = 2951.1.1
+	end_date = 3500.1.1
+}
+
 # Dol Guldur and Shadow of Mirkwood
 march = {
 	first = V19
@@ -67,6 +75,22 @@ vassal = {
 	end_date = 3500.1.1
 }
 
+# Gundabad and Kul-Uruk
+vassal = {
+	first = Y63
+	second = Y31
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
+# Gundabad and Lor-uruk-shab
+union = {
+	first = Y63
+	second = Y30
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
 # Shapol Udun and Sled-Horde
 vassal = {
 	first = Y36
@@ -75,10 +99,34 @@ vassal = {
 	end_date = 3500.1.1
 }
 
+# Shapol Udun and Mokh-Lug Karn
+alliance = {
+	first = Y36
+	second = Y35
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
 #Carn Dum and Zarak-Dum
 vassal = {
 	first = Y52
 	second = Y42
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
+#Carn Dum and Gundabad
+alliance = {
+	first = Y52
+	second = Y63
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
+#Fornost & Annuminas
+alliance = {
+	first = Y51
+	second = Z96
 	start_date = 2758.10.10
 	end_date = 3500.1.1
 }
@@ -95,6 +143,22 @@ vassal = {
 vassal = {
 	first = Y43
 	second = Y61
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
+#Gram and Herubar Gular
+march = {
+	first = Y43
+	second = V33
+	start_date = 2758.10.10
+	end_date = 3500.1.1
+}
+
+#Skuthrugai & Kala Migulurz
+alliance = {
+	first = Y60
+	second = V36
 	start_date = 2758.10.10
 	end_date = 3500.1.1
 }

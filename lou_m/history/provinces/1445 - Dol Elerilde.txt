@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 10
+base_tax = 5
+base_production = 4
 base_manpower = 3
 
 add_core = Z62
@@ -23,9 +23,13 @@ controller = Z62
 culture = culture_hillmen_of_rhudaur
 religion = religion_daen
 
-trade_goods = wine
+trade_goods = fur
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

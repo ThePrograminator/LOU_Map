@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 10
-base_manpower = 2
+base_tax = 6
+base_production = 7
+base_manpower = 6
 
 add_core = V54
 owner = V54
@@ -23,9 +23,19 @@ controller = V54
 culture = culture_ironfist
 religion = religion_mahal
 
-trade_goods = copper
+trade_goods = iron
 
 hre = no
+
+capital_1_dwarf_building=yes
+material_exchance_dwarf_building=yes
+armoury_dwarf_building=yes
+libary_dwarf_building=yes
+mustering_hall_dwarf_building=yes
+mine_shaft_dwarf_building=yes
+rune_door_dwarf_building=yes
+moat_dwarf_building=yes
+fort_small_gatehouse_dwarf_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

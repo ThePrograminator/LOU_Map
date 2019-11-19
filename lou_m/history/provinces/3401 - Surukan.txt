@@ -1,15 +1,25 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 6
+base_manpower = 6
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V39
+owner = V39
+controller = V39
 
-trade_goods = grain
+culture = culture_igath
+religion = religion_ulgath
+
+trade_goods = iron
 
 hre = no
+
+fortress_2_building=yes
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
+temple_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

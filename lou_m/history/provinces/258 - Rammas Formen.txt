@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 3
-base_manpower = 1
+base_tax = 2
+base_production = 4
+base_manpower = 3
 
 add_core = Z98
 owner = Z98
@@ -23,9 +23,12 @@ controller = Z98
 culture = culture_ice_orkish
 religion = religion_orkish
 
-trade_goods = wool
+trade_goods = copper
 
 hre = no
+
+camp_orc_building=yes
+orc_pit_orc_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

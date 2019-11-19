@@ -1,15 +1,27 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V47
+owner = V47
+controller = V47
+
+culture = culture_orkish
+religion = religion_orkish
 
 trade_goods = grain
 
 hre = no
+
+capital_1_orc_building=yes
+meat_depot_orc_building=yes
+blacksmith_orc_building=yes
+orc_pit_orc_building=yes
+warg_pit_orc_building=yes
+fort_pallisade_orc_building=yes
+small_arena_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

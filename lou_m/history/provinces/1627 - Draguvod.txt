@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 10
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
 add_core = Y01
 owner = Y01
@@ -23,9 +23,13 @@ controller = Y01
 culture = culture_kugath
 religion = religion_ulgath
 
-trade_goods = copper
+trade_goods = herbs
 
 hre = no
+
+fortress_1_building=yes
+trade_outpost_building=yes
+outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

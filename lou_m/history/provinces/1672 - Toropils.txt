@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 3
 base_production = 3
@@ -23,9 +23,13 @@ controller = Y01
 culture = culture_kugath
 religion = religion_ulgath
 
-trade_goods = copper
+trade_goods = fish
 
 hre = no
+
+city_1_building=yes
+work_camp_building=yes
+port_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

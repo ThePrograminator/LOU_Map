@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 6
-base_manpower = 2
+base_tax = 8
+base_production = 8
+base_manpower = 9
 
 add_core = Y38
 owner = Y38
@@ -23,9 +23,25 @@ controller = Y38
 culture = culture_goblin
 religion = religion_goblin
 
-trade_goods = wine
+trade_goods = gems
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_orc_building=yes
+treasure_trove_orc_building=yes
+overseer_station_orc_building=yes
+metal_works_orc_building=yes
+orc_fissure_orc_building=yes
+warg_arena_orc_building=yes
+siege_works_orc_building=yes
+fort_orc_stronghold_orc_building=yes
+large_arena_building=yes
+tortur_chambers_orc_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

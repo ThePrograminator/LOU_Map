@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 2
+base_tax = 5
+base_production = 5
+base_manpower = 6
 
 add_core = Y85
 owner = Y85
@@ -26,6 +26,13 @@ religion = religion_drughu
 trade_goods = tropical_wood
 
 hre = no
+
+capital_2_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+port_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

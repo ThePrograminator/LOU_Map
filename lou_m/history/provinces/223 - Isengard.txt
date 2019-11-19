@@ -23,9 +23,6 @@ trade_goods = iron
 
 hre = no
 
-capital_1_orc_building=yes
-fort_wooden_walls_orc_building=yes
-
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian
 discovered_by = lotr_black_numenorean
@@ -65,12 +62,28 @@ discovered_by = lotr_womarin
 discovered_by = lotr_woses
 discovered_by = lotr_wights
 
+
+2758.1.1 = { 
+	culture = culture_dunlendings
+	religion = religion_daen
+	add_core = Z48
+	owner = Z48
+	controller = Z48
+}
+2759.5.1 = { 
+	culture = culture_istari
+	religion = religion_daen
+	add_core = V49
+	remove_core = Z48
+	owner = V49
+	controller = V49
+	create_alliance = X01
+	create_alliance = X16
+}
+
 2953.1.1 = { 
 	culture = culture_urukhai 
 	religion = religion_uruk 
-	add_core = V49
-	owner = V49
-	controller = V49
 	add_historical_rival = X01
 	add_historical_rival  = X16
 	add_truce_with = X16

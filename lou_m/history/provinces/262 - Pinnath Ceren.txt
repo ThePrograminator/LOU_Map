@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 3
+base_production = 5
+base_manpower = 3
 
 add_core = Z15
 owner = Z15
@@ -23,9 +23,13 @@ controller = Z15
 culture = culture_cerens
 religion = religion_eriadorians
 
-trade_goods = grain
+trade_goods = copper
 
 hre = no
+
+capital_1_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

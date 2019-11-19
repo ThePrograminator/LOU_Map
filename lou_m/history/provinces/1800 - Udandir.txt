@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 3
+base_tax = 6
+base_production = 6
+base_manpower = 6
 
 add_core = Z19
 owner = Z19
@@ -26,6 +26,13 @@ religion = religion_eriadorians
 trade_goods = salt
 
 hre = no
+
+city_2_building=yes
+marketplace_building=yes
+tax_office_building=yes
+warehouse_building=yes	
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

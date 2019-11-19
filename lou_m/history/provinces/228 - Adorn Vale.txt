@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 3
 base_production = 3
@@ -66,3 +66,17 @@ discovered_by = lotr_womarin
 discovered_by = lotr_woses
 discovered_by = lotr_wights
 
+2758.1.1 = {
+	add_core = V95
+	owner = V95
+	controller = V95
+	culture = culture_dunlendings
+	religion = religion_daen
+}
+2870.6.1 = {
+	add_core = X16
+	owner = X16
+	controller = X16
+	culture = culture_eorlingas
+	religion = religion_eorlingas
+}

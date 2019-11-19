@@ -1,15 +1,23 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Z21
+owner = Z21
+controller = Z21
 
-trade_goods = grain
+culture = culture_gwathlo_bargemen
+religion = religion_eriadorians
+
+trade_goods = wool
 
 hre = no
+
+fortress_1_building=yes
+outpost_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

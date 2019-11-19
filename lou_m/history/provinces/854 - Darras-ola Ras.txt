@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 3
 base_production = 3
-base_manpower = 1
+base_manpower = 4
 
 add_core = Y85
 owner = Y85
@@ -23,9 +23,12 @@ controller = Y85
 culture = culture_beffraen
 religion = religion_drughu
 
-trade_goods = grain
+trade_goods = tropical_wood
 
 hre = no
+
+settlement_building=yes
+outpost_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

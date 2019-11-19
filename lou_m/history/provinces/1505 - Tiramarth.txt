@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 10
+base_tax = 6
 base_production = 4
-base_manpower = 1
+base_manpower = 3
 
 add_core = Z17
 owner = Z17
@@ -23,9 +23,14 @@ controller = Z17
 culture = culture_cardolani
 religion = religion_eriadorians
 
-trade_goods = wool
+trade_goods = cloth
 
 hre = no
+
+city_1_building=yes
+trade_outpost_building=yes
+temple_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

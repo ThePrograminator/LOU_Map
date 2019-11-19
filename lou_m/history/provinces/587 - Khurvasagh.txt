@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 2
-base_production = 5
-base_manpower = 2
+base_tax = 7
+base_production = 7
+base_manpower = 8
 
 add_core = X90
 owner = X90
@@ -23,9 +23,17 @@ controller = X90
 culture = culture_odhriags
 religion = religion_ioriags
 
-trade_goods = copper
+trade_goods = iron
 
 hre = no
+
+capital_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes			
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

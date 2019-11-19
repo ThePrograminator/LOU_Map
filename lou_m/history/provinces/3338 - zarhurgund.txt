@@ -1,15 +1,25 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Y47
+owner = Y47
+controller = Y47
 
-trade_goods = grain
+culture = culture_ice_orkish
+religion = religion_orkish
+
+trade_goods = gems
 
 hre = no
+
+encampment_1_orc_building=yes
+enforcer_camp_orc_building=yes
+blacksmith_orc_building=yes
+orc_pit_orc_building=yes
+small_arena_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

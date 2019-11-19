@@ -1,15 +1,22 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 2
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Z19
+owner = Z19
+controller = Z19
 
-trade_goods = grain
+culture = culture_cardolani
+religion = religion_eriadorians
+
+trade_goods = paper
 
 hre = no
+
+city_1_building=yes
+workshop_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

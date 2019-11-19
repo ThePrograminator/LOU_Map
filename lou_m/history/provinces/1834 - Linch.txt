@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
 add_core = Z16
 owner = Z16
@@ -23,9 +23,13 @@ controller = Z16
 culture = culture_breelanders
 religion = religion_eriadorians
 
-trade_goods = wine
+trade_goods = tobacco
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+temple_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian

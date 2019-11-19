@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 8
-base_production = 4
-base_manpower = 10
+base_production = 9
+base_manpower = 8
 
 add_core = Y04
 owner = Y04
@@ -23,9 +23,23 @@ controller = Y04
 culture = culture_broadbeam
 religion = religion_mahal
 
-trade_goods = copper
+trade_goods = gold
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_dwarf_building=yes
+great_market_dwarf_building=yes
+arsenal_dwarf_building=yes
+acadamy_dwarf_building=yes
+hall_of_warriors_dwarf_building=yes
+fort_mountain_fortress_dwarf_building=yes
+narrow_bridge_dwarf_building=yes
+ballista_towers_dwarf_building=yes
 
 discovered_by = lotr_ahar
 discovered_by = lotr_bellakarian
