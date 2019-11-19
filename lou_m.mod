@@ -58,4 +58,4 @@ tags={
 	"Alternative History"
 }
 name="lord_of_the_universalis_map_test"
-path="C:/Users/Christian/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
+path="write full path to folder(using only _> / not -> \ )/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
