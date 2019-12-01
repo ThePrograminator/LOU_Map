@@ -40,7 +40,6 @@ replace_path="common/imperial_reforms"
 replace_path="common/religious_reforms"
 replace_path="common/parliament_issues"
 replace_path="common/trade_companies"
-
 tags={
 	"Map"
 	"Military"
@@ -58,4 +57,4 @@ tags={
 	"Alternative History"
 }
 name="lord_of_the_universalis_map_test"
-path="write full path to folder(using only _> / not -> \ )/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
+path="C:/Users/Christian/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"

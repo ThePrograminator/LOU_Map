@@ -69,16 +69,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "human_buff" }
-		OR = { 
-				technology_group = lotr_men
-				technology_group = lotr_arnor_men
-				technology_group = lotr_easterling
-				technology_group = lotr_haradrim
-				technology_group = lotr_rohirrim
-				technology_group = lotr_northron
-				technology_group = lotr_wildman
-				}
-		
+		technology_group = lotr_human
 	}
 
 	mean_time_to_happen = {
@@ -410,12 +401,9 @@ country_event = {
         every_country = {
             limit = {
                 OR = {
-                    technology_group = lotr_men
-                    technology_group = lotr_arnor_men
+                    technology_group = lotr_human
                     technology_group = lotr_dwarven
                     technology_group = lotr_elven
-                    technology_group = lotr_northron
-                    technology_group = lotr_rohirrim
                     technology_group = lotr_hobbit
                     technology_group = lotr_ent
                 }
@@ -452,12 +440,9 @@ country_event = {
         every_country = {
             limit = {
                 OR = {
-                    technology_group = lotr_men
-                    technology_group = lotr_arnor_men
+                    technology_group = lotr_human
                     technology_group = lotr_dwarven
                     technology_group = lotr_elven
-                    technology_group = lotr_northron
-                    technology_group = lotr_rohirrim
                     technology_group = lotr_hobbit
                     technology_group = lotr_ent
                 }
@@ -465,12 +450,9 @@ country_event = {
             every_country = {
                 limit = {
                     OR = {
-                        technology_group = lotr_men
-                        technology_group = lotr_arnor_men
+                        technology_group = lotr_human
                         technology_group = lotr_dwarven
                         technology_group = lotr_elven
-                        technology_group = lotr_northron
-                        technology_group = lotr_rohirrim
                         technology_group = lotr_hobbit
                         technology_group = lotr_ent
                     }

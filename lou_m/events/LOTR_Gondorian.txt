@@ -18,7 +18,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 			X27 = {
 				exists = yes
 			}
@@ -76,7 +76,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 			any_owned_province = {
 				region = gondor_region
 				is_core = owner
@@ -119,7 +119,7 @@ country_event = {
 				
 			region = gondor_region
 			owner = {
-				technology_group = lotr_dunedain
+				culture = culture_dunedain_of_gondor
 			}
 		}
 	}
@@ -190,7 +190,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 			any_owned_province = {
 				region = gondor_region
 				is_core = owner
@@ -234,7 +234,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 		}
 	}
 	
@@ -269,7 +269,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 		}
 		any_rival_country = {
 			army_size_percentage = 0.7
@@ -322,7 +322,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 		}
 		OR = {
 			413 = {
@@ -359,7 +359,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 		}
 		NOT = {
 			has_country_modifier = gondor_hope_arises
@@ -401,9 +401,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			technology_group = lotr_dunedain
+			culture = culture_dunedain_of_gondor
 			exists = X27
-			
 		}
 		any_owned_province = {
 			is_core = ROOT
