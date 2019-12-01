@@ -1,4 +1,4 @@
-# Arnorian Knights
+# Merchant Cavalry
 type = cavalry
 unit_type = lotr_eriadorian
 
@@ -9,3 +9,7 @@ offensive_fire = 0
 defensive_fire = 0
 offensive_shock = 3
 defensive_shock = 2
+
+trigger = {
+	culture_group = culture_group_eriadorians
+}

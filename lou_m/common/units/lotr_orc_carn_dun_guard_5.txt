@@ -1,4 +1,4 @@
-# Goblin Archers
+# Carn Dun Guard
 type = infantry
 unit_type = lotr_orc
 
@@ -9,3 +9,7 @@ offensive_fire = 0
 defensive_fire = 0
 offensive_shock = 5
 defensive_shock = 3
+
+trigger = {
+	always = no
+}

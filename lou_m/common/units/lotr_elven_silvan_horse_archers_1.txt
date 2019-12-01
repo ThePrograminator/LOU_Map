@@ -11,8 +11,5 @@ offensive_shock = 2
 defensive_shock = 0
 
 trigger = {
-	OR= {
-		culture_group = culture_group_nandor
-		culture_group = culture_group_avari
-	}
+	culture_group = culture_group_nandor
 }

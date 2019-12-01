@@ -9,3 +9,11 @@ offensive_fire = 1
 defensive_fire = 2
 offensive_shock = 0
 defensive_shock = 0
+
+trigger = {
+	OR = {
+		tag = V17
+		tag = V18
+		tag = V19
+	}
+}

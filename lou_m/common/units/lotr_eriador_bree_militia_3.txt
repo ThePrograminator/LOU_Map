@@ -1,4 +1,4 @@
-# Arnorian Swordsmen
+# Bree Militia
 type = infantry
 unit_type = lotr_eriadorian
 
@@ -11,5 +11,6 @@ offensive_shock = 2
 defensive_shock = 3
 
 trigger = {
+	culture_group = culture_group_eriadorians
 	tag = Z16
 }
