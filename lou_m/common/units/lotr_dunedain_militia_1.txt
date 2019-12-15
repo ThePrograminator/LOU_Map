@@ -1,6 +1,6 @@
 # Gondorian Swordsmen
 type = infantry
-unit_type = lotr_dunedain
+unit_type = lotr_human
 
 maneuver = 1
 offensive_morale = 1
@@ -9,3 +9,10 @@ offensive_fire = 0
 defensive_fire = 0
 offensive_shock = 0
 defensive_shock = 1
+
+trigger = {
+	OR = {
+		primary_culture = culture_dunedain_of_gondor
+		primary_culture = culture_numenorean
+	}
+}

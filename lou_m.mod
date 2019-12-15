@@ -1,4 +1,4 @@
-version="1.29.1.0"
+version="1.29.3.0"
 replace_path="missions"
 replace_path="events"
 replace_path="decisions"
@@ -57,4 +57,4 @@ tags={
 	"Alternative History"
 }
 name="lord_of_the_universalis_map_test"
-path="C:/Users/Christian/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
+path="(your path here)/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
