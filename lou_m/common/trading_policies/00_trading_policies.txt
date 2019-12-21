@@ -86,7 +86,8 @@ hinder_fellowships =
 		is_institution_enabled = company_of_thorin
 		OR = {
 			religion_group = religion_group_melkor
-			religion_group = religion_group_hildor
+			religion_group = religion_group_haradrim
+			religion_group = religion_group_talatherim
 		}
 		dominant_religion = ROOT
 		FROM = {
@@ -101,7 +102,8 @@ hinder_fellowships =
 	can_maintain = {
 		OR = {
 			religion_group = religion_group_melkor
-			religion_group = religion_group_hildor
+			religion_group = religion_group_haradrim
+			religion_group = religion_group_talatherim
 		}
 		dominant_religion = ROOT
 		FROM = {

@@ -24,6 +24,7 @@ religion_group_arhunerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { DAEN_HERETIC }
 		
 		fervor = yes
 	}
@@ -40,6 +41,7 @@ religion_group_arhunerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { BARADHRIM_HERETIC }
 		
 		fervor = yes
 	}
@@ -56,6 +58,7 @@ religion_group_arhunerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { URNFIELD_HERETIC }
 		
 		fervor = yes
 	}
@@ -72,6 +75,7 @@ religion_group_arhunerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { NADHRIM_HERETIC }
 		
 		fervor = yes
 	}
@@ -88,6 +92,7 @@ religion_group_arhunerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { DRUGHU_HERETIC }
 		
 		fervor = yes
 	}
@@ -104,9 +109,12 @@ religion_group_arhunerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { FORODWAITH_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_numenorean = {
@@ -128,6 +136,7 @@ religion_group_numenorean = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { DUNEDAIN_HERETIC }
 		
 		has_patriarchs = yes		# Uses patriarch authority
 	}
@@ -144,9 +153,12 @@ religion_group_numenorean = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { BLACK_NUMENOREAN_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_eriedain = {
@@ -167,6 +179,7 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { ERIADORIANS_HERETIC }
 		
 		fervor = yes
 	}
@@ -183,6 +196,7 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { NENEDAIN_HERETIC }
 		
 		fervor = yes
 	}
@@ -199,6 +213,7 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { EASTERN_NORTHMEN_HERETIC }
 		
 		fervor = yes
 	}
@@ -215,6 +230,7 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { ULLTHIUDA_HERETIC }
 		
 		fervor = yes
 	}
@@ -231,6 +247,7 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { AIVATHUIDA_HERETIC }
 		
 		fervor = yes
 	}
@@ -247,6 +264,7 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { EORLINGAS_HERETIC }
 		
 		personal_deity = yes
 	}
@@ -263,9 +281,12 @@ religion_group_eriedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+		heretic = { ERIADORIAN_NORTHMEN_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_haradrim = {
@@ -286,6 +307,8 @@ religion_group_haradrim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { HARUZANI_HERETIC }
 		
 		papacy = {
 			papal_tag = X31
@@ -454,6 +477,8 @@ religion_group_haradrim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { APYSANI_HERETIC }
 		
 		fervor = yes
 	}
@@ -470,9 +495,13 @@ religion_group_haradrim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { SEA_PEOPLES_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_mornerim = {
@@ -493,6 +522,8 @@ religion_group_mornerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { UMLI_HERETIC }
 		
 		fervor = yes
 	}
@@ -509,9 +540,13 @@ religion_group_mornerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { EASTERN_SNOWMEN_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_eastern_black_peoples = {
@@ -532,9 +567,13 @@ religion_group_eastern_black_peoples = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { EASTERN_BLACK_PEOPLES_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_mornedain = {
@@ -555,6 +594,8 @@ religion_group_mornedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { MORNEDAIN_HERETIC }
 		
 		fervor = yes
 	}
@@ -571,6 +612,8 @@ religion_group_mornedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { KIR_HERETIC }
 		
 		fervor = yes
 	}
@@ -587,6 +630,8 @@ religion_group_mornedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { AKANLI_HERETIC }
 		
 		fervor = yes
 	}
@@ -603,9 +648,13 @@ religion_group_mornedain = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { MUMAKANI_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_avarim = {
@@ -626,6 +675,8 @@ religion_group_avarim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { AVARADAN_HERETIC }
 		
 		fervor = yes
 	}
@@ -642,6 +693,8 @@ religion_group_avarim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { CUIVAC_HERETIC }
 		
 		fervor = yes
 	}
@@ -658,6 +711,8 @@ religion_group_avarim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { WOODMEN_OF_THE_FAR_EAST_HERETIC }
 		
 		fervor = yes
 	}
@@ -674,6 +729,8 @@ religion_group_avarim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { MEN_OF_THE_OROCARNI_HERETIC }
 		
 		fervor = yes
 	}
@@ -690,6 +747,8 @@ religion_group_avarim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { OTHER_EASTERN_PEOPLES_HERETIC }
 		
 		fervor = yes
 	}
@@ -706,9 +765,13 @@ religion_group_avarim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { LAKHAB_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_people_of_the_southeast = {
@@ -729,6 +792,8 @@ religion_group_people_of_the_southeast = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { NARGAATHI_HERETIC }
 		
 		fervor = yes
 	}
@@ -745,9 +810,13 @@ religion_group_people_of_the_southeast = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { IVABI_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 
 }
 
@@ -769,6 +838,8 @@ religion_group_talatherim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { TALATHERIM_HERETIC }
 		
 		fervor = yes
 	}
@@ -785,6 +856,8 @@ religion_group_talatherim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { IORIAGS_HERETIC }
 		
 		fervor = yes
 	}
@@ -801,6 +874,8 @@ religion_group_talatherim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { ULGATH_HERETIC }
 		
 		fervor = yes
 	}
@@ -817,6 +892,8 @@ religion_group_talatherim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { CHAILUZA_HERETIC }
 		
 		fervor = yes
 	}
@@ -833,6 +910,8 @@ religion_group_talatherim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { TYR_HERETIC }
 		
 		fervor = yes
 	}
@@ -849,9 +928,13 @@ religion_group_talatherim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { AHAR_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_linerim = {
@@ -872,6 +955,8 @@ religion_group_linerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { LINERIM_HERETIC }
 		
 		fervor = yes
 	}
@@ -888,6 +973,8 @@ religion_group_linerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { DHILIKHRAN_HERETIC }
 		
 		fervor = yes
 	}
@@ -904,9 +991,13 @@ religion_group_linerim = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { RALIANI_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 ###############
@@ -931,9 +1022,13 @@ religion_group_periannath = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { PERIANNATH_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_khazad = {
@@ -954,6 +1049,8 @@ religion_group_khazad = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { MAHAL_HERETIC }
 		
 		holy_sites = { 287 1051 628 740 1206 630 2004 2019 1569 786 }
 		
@@ -976,6 +1073,8 @@ religion_group_khazad = {
 		#Murthunin = 1569
 		#Kheledhkihizdin = 786
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_eldar = {
@@ -996,6 +1095,8 @@ religion_group_eldar = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { MORIQUENDI_HERETIC }
 		
 		uses_karma = yes
 	}
@@ -1012,6 +1113,8 @@ religion_group_eldar = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { UMANYAR_HERETIC }
 		
 		uses_karma = yes
 	}
@@ -1028,9 +1131,13 @@ religion_group_eldar = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { CALAQUENDI_HERETIC }
 		
 		uses_karma = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_children_of_iluvatar = {
@@ -1051,6 +1158,8 @@ religion_group_children_of_iluvatar = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { ENTS_HERETIC }
 		
 		fervor = yes
 	}
@@ -1067,6 +1176,8 @@ religion_group_children_of_iluvatar = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { GREAT_EAGLES_HERETIC }
 		
 		fervor = yes
 	}
@@ -1083,9 +1194,13 @@ religion_group_children_of_iluvatar = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { GIANTS_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_melkor = {
@@ -1106,6 +1221,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { WIGHT_HERETIC }
 		
 		fervor = yes
 	}
@@ -1122,6 +1239,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { OLOG_HERETIC }
 		
 		fervor = yes
 	}
@@ -1138,6 +1257,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { ORKISH_HERETIC }
 		
 		uses_piety = yes
 	}
@@ -1154,6 +1275,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { GOBLIN_HERETIC }
 		
 		fervor = yes
 	}
@@ -1170,6 +1293,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { URUK_HERETIC }
 		
 		fervor = yes
 	}
@@ -1186,6 +1311,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { DRAGONS_HERETIC }
 		
 		fervor = yes
 	}
@@ -1202,6 +1329,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { SPIDER_HERETIC }
 		
 		fervor = yes
 	}
@@ -1218,6 +1347,8 @@ religion_group_melkor = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { BURZ_URUK_HERETIC }
 		
 		uses_piety = yes
 		
@@ -1225,6 +1356,8 @@ religion_group_melkor = {
 		#religious_reforms = yes
 		#reform_tooltip = INTI_REFORM_TOOLTIP
 	}
+
+	crusade_name = HOLY_WAR
 }
 
 religion_group_wilderness = {
@@ -1245,7 +1378,11 @@ religion_group_wilderness = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
+
+		heretic = { WILDERNESS_HERETIC }
 		
 		fervor = yes
 	}
+
+	crusade_name = HOLY_WAR
 }

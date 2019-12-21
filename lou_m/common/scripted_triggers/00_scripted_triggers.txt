@@ -388,16 +388,6 @@ consort_has_bad_mil_personality = {
 	#}
 }
 
-province_viable_for_industrialization_events_trigger = { #Province Scope
-	is_state = yes
-	NOT = { devastation = 1 }
-	OR = {
-		is_in_capital_area = yes
-		continent = CAPITAL
-	}
-	enlightenment = 100
-}
-
 unindustrialized_province_trigger = { #Province Scope
 	#NOT = { has_province_flag = canals_and_turnpikes_flag }
 	#NOT = { has_province_flag = agricultural_revolution_province }

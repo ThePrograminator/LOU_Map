@@ -35,7 +35,8 @@ company_of_thorin = {
 			owner = {
 				NOT = {
 					religion_group = religion_group_melkor
-					religion_group = religion_group_hildor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
 				}
 			}
 		}
@@ -337,7 +338,8 @@ fellowship_of_ring = {
 			owner = {
 				NOT = {
 					religion_group = religion_group_melkor
-					religion_group = religion_group_hildor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
 				}
 			}
 		}
@@ -352,7 +354,8 @@ fellowship_of_ring = {
 			owner = {
 				NOT = {
 					religion_group = religion_group_melkor
-					religion_group = religion_group_hildor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
 				}
 			}
 		}
@@ -361,7 +364,8 @@ fellowship_of_ring = {
 			owner = {
 				NOT = {
 					religion_group = religion_group_melkor
-					religion_group = religion_group_hildor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
 				}
 			}
 		}
@@ -385,7 +389,7 @@ fellowship_of_ring = {
 				OR = {
 					regular_fellowship_path = yes
 					amon_hen_emyn_muil_fellowship_path = yes
-					east_osgiliath_curedain_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
 					curedain_morgul_vale_fellowship_path = yes
 				}
 				NOT = {

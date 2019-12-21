@@ -75,29 +75,6 @@ the_provincial_taxation_system = {
 	
 }
 
-the_mining_act = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = expansion_ideas
-		has_idea_group = quality_ideas
-	}
-	allow = {
-		full_idea_group = expansion_ideas
-		full_idea_group = quality_ideas
-	}
-	
-	leader_land_fire = 1
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
 the_liquor_act = {
 	monarch_power = MIL
 	
@@ -195,32 +172,6 @@ public_road_act = {
 		}
 	}
 }
-
-superior_supply_system = {
-	monarch_power = MIL
-	
-	potential = {
-		has_idea_group = quality_ideas
-		has_idea_group = exploration_ideas
-	}
-	
-	allow = {
-		full_idea_group = quality_ideas
-		full_idea_group = exploration_ideas
-	}
-	
-	manpower_recovery_speed = 0.1
-	land_attrition = -0.25
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
 
 modern_siege_weapons = {
 	monarch_power = MIL
@@ -413,26 +364,6 @@ pen_rely_on_sword_act = {
 	}
 }
 
-local_army_organisation = {
-	monarch_power = MIL
-	potential = {
-		has_idea_group = expansion_ideas
-		has_idea_group = defensive_ideas
-	}
-	
-	allow = {
-		full_idea_group = expansion_ideas
-		full_idea_group = defensive_ideas
-	}
-
-	global_regiment_cost = -0.1
-	recover_army_morale_speed = 0.05
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
 underhanded_diplomacy_act = {
 	monarch_power = MIL
 	potential = {
@@ -452,33 +383,6 @@ underhanded_diplomacy_act = {
 		factor = 0.6
 	}
 }
-
-
-hired_adventurers_act = {
-	monarch_power = MIL
-	potential = {
-		has_idea_group = quantity_ideas
-		has_idea_group = exploration_ideas
-	}
-	
-	allow = {
-		full_idea_group = quantity_ideas
-		full_idea_group = exploration_ideas
-	}
-
-	global_manpower_modifier = 0.1
-	leader_land_manuever = 1
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}	
-	
 		
 the_tenures_abolition_act = {
 	monarch_power = MIL
@@ -499,35 +403,6 @@ the_tenures_abolition_act = {
 	ai_will_do = {
 		factor = 0.6
 	}	
-}
-
-colonial_garrisons = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = quantity_ideas
-		has_idea_group = expansion_ideas
-	}
-	
-	allow = {
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-	}
-
-	land_forcelimit_modifier = 0.1
-	global_colonial_growth = 10
-
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_colonies = 1 }
-		}
-	}
 }
 
 the_maritime_intelligencer_unit = {
@@ -867,25 +742,6 @@ noble_loyalty_act = {
 			factor = 1.5
 			cavalry_fraction = 0.45
 		}
-	}
-}
-
-the_colonial_nobility_act = {
-	monarch_power = MIL
-	potential = {
-		has_idea_group = aristocracy_ideas
-		has_idea_group = exploration_ideas
-	}
-	
-	allow = {
-		full_idea_group = aristocracy_ideas
-		full_idea_group = exploration_ideas
-	}
-
-	global_manpower_modifier = 0.33
-
-	ai_will_do = {
-		factor = 0.8
 	}
 }
 

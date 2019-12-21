@@ -12,16 +12,6 @@ add_estate_church_loyalty_effect = {
 			loyalty = 10
 		}
 	}
-	else_if = {
-		limit = {
-			religion = hinduism
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
-			loyalty = 10
-		}
-	}
 }
 reduce_estate_church_loyalty_effect = {
 	if = {
@@ -30,16 +20,6 @@ reduce_estate_church_loyalty_effect = {
 		}
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			religion = hinduism
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
 			loyalty = -10
 		}
 	}
@@ -56,16 +36,6 @@ add_estate_dhimmi_loyalty_effect = {
 			loyalty = 10
 		}
 	}
-	else_if = {
-		limit = {
-			religion_group = muslim
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
-			loyalty = 10
-		}
-	}
 }
 reduce_estate_dhimmi_loyalty_effect = {
 	if = {
@@ -74,16 +44,6 @@ reduce_estate_dhimmi_loyalty_effect = {
 		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
-			loyalty = -10
-		}
-	}
-	else_if = {
-		limit = {
-			religion_group = muslim
-			has_estate = estate_brahmins
-		}
-		add_estate_loyalty = {
-			estate = estate_brahmins
 			loyalty = -10
 		}
 	}

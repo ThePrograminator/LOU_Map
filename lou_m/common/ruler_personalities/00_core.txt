@@ -1723,11 +1723,6 @@ expansionist_personality = {
 				num_of_explorers = 2
 			}
 		}
-		modifier = {
-			factor = 1
-			has_idea_group = exploration_ideas
-			has_idea_group = expansion_ideas
-		}
 	}
 	
 	war_priority = {
@@ -3774,4 +3769,5 @@ carries_ring_personality = {
 	random_insults = yes
 	
 	legitimacy = -1
+	nation_designer_cost = 800
 }

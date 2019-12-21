@@ -17,6 +17,7 @@ smaug_rebels = {
 	general = yes					# Does use generals
 	smart = yes						# Do assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
+	will_relocate = no	
 
 	artillery = 0.0
 	infantry = 1.0
@@ -66,6 +67,9 @@ smaug_rebels = {
 			factor = 1.5
 			unrest = 8
 		}
+	}
+
+	siege_won_trigger = {
 	}
 
 	siege_won_effect = {

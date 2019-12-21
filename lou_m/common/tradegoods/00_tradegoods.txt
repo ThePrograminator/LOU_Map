@@ -96,7 +96,6 @@ wine = {
 				has_terrain = marsh
 				has_terrain = savannah
 				has_terrain = glacier
-				religion_group = muslim
 			}
 		}
 		modifier = {
@@ -962,6 +961,7 @@ marble = {
 		development_cost = -0.1
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -971,6 +971,7 @@ stone = {
 		build_cost = -0.1
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -980,6 +981,7 @@ honey = {
 		heir_chance = 0.5
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -989,6 +991,7 @@ herbs = {
 		war_exhaustion = -0.1
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -998,6 +1001,7 @@ fruit = {
 		garrison_size = 0.25
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -1007,6 +1011,7 @@ mushrooms = {
 		trade_steering = 0.25
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -1016,6 +1021,7 @@ silver = {
 		inflation_reduction = 0.05
 	}
 	chance = {
+		factor = 5
 	}
 }
 
@@ -1025,5 +1031,6 @@ mithril = {
 		discipline = 0.10
 	}
 	chance = {
+		factor = 5
 	}
 }
