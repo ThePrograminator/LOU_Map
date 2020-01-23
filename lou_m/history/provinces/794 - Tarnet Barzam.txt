@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 9
+base_production = 9
+base_manpower = 8
 
 add_core = X70
 owner = X70
@@ -23,9 +23,16 @@ controller = X70
 culture = culture_poa
 religion = religion_chailuza
 
-trade_goods = wine
+trade_goods = silk
 
 hre = no
+
+city_3_building=yes
+trade_depot_building=yes
+provincial_office_building=yes
+warehouse_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

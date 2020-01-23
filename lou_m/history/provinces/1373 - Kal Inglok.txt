@@ -10,9 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 2
+base_tax = 4
 base_production = 5
 base_manpower = 5
 
@@ -23,9 +23,14 @@ controller = X64
 culture = culture_muranians
 religion = religion_chailuza
 
-trade_goods = copper
+trade_goods = naval_supplies
 
 hre = no
+
+fortress_1_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

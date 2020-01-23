@@ -1,15 +1,22 @@
 is_city = yes
 
-base_tax = 2
-base_production = 10
+base_tax = 3
+base_production = 4
 base_manpower = 2
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Z92
+owner = Z92
+controller = Z92
 
-trade_goods = fur
+culture = culture_dyrians
+religion = religion_tyr
+
+trade_goods = fish
 
 hre = no
+
+city_1_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

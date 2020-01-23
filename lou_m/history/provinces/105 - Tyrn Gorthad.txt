@@ -27,6 +27,11 @@ trade_goods = iron
 
 hre = no
 
+add_province_modifier = {
+	name = province_wight_debuff
+	duration = -1
+}
+
 settlement_building=yes
 work_camp_building=yes
 outpost_building=yes

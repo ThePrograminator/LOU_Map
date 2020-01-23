@@ -10,22 +10,35 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 8
-base_production = 9
-base_manpower = 7
+base_tax = 7
+base_production = 7
+base_manpower = 8
 
 add_core = X74
 owner = X74
 controller = X74
 
-culture = culture_chy
+culture = culture_moguly
 religion = religion_chailuza
 
-trade_goods = wine
+trade_goods = sugar
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+city_3_building=yes
+forum_building=yes
+bank_building=yes
+stockpile_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+dockyard_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

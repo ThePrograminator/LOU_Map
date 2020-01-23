@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 6
 base_production = 5
@@ -23,9 +23,14 @@ controller = X88
 culture = culture_magriags
 religion = religion_ioriags
 
-trade_goods = iron
+trade_goods = grain
 
 hre = no
+
+city_1_building=yes
+workshop_building=yes
+outpost_building=yes
+trade_outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

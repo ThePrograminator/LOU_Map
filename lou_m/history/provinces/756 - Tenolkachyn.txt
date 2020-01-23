@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 10
+base_production = 10
+base_manpower = 9
 
 add_core = X72
 owner = X72
@@ -26,6 +26,21 @@ religion = religion_chailuza
 trade_goods = silk
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_3_building=yes
+forum_building=yes
+bank_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_stronghold_building=yes
+garrison_building=yes
+dockyard_building=yes			
+grand_shipyard_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -78,6 +78,7 @@ ormal_sea_region = {
 		bay_of_chy_area
 		sea_of_codya_area
 		bay_of_sakalan_area
+		shay_bight_area
 	}
 }
 
@@ -561,7 +562,83 @@ northern_waste_region = {
 	mosha_area
 	sula_area
 	komi_area
-	iron_mountains_area
+	ered_muil_area
+	}
+}
+
+#---------------------------
+# Barl Syrnac & Mur Fostisyr (Northern waste)                          
+#---------------------------
+
+azjan_region = {
+	areas = {
+		azjan_area
+	}
+}
+
+barl_syrnac_region = {
+	areas = {
+		barl_syrnac_area
+		latan_uzg_area
+	}
+}
+
+ukal_sej_region = {
+	areas = {
+		ukal_sej_area
+		kyvinar_area
+	}
+}
+
+urcheldor_region = {
+	areas = {
+		urcheldor_area
+	}
+}
+
+mur_fostisyr_region = {
+	areas = {
+		mur_fostisyr_area
+	}
+}
+
+olyavud_region = {
+	areas = {
+		olyavud_area
+	}
+}
+
+mur_brya_region = {
+	areas = {
+		mur_brya_area
+	}
+}
+
+zyeth_hyd_region = {
+	areas = {
+		zyeth_hyd_area
+		buzan_area
+	}
+}
+
+yalg_kusir_region = {
+	areas = {
+		yalg_kusir_area
+	}
+}
+
+#---------------------------
+# Iron Mountains                          
+#---------------------------
+
+ered_engrin_region = {
+	areas = {
+		lugdruong_area
+		kheledkhizdin_area
+		sigal_nara_area
+		narindazdum_area
+		iron_mountains_area
+		uklalaskad_area
 	}
 }
 
@@ -708,6 +785,25 @@ ered_harmal_region = {
 }
 
 #---------------------------
+# Chey Sart                           
+#---------------------------
+
+chey_sart_region = {
+	areas = {
+		chey_sart_area
+		chey_rill_area
+	}
+}
+
+heb_aaraan_region = {
+	areas = {
+		heb_aaraan_area
+		elanthia_area
+		taarun_area
+	}
+}
+
+#---------------------------
 # Rhûn                         
 #---------------------------
 
@@ -815,6 +911,25 @@ tulwang_region = {
 		tulwang_area
 	}
 }
+
+#---------------------------
+# Sîrayn                          
+#---------------------------
+
+sirayn_region = {
+	areas = {
+		sirayn_area
+		sara_bask_area
+		isra_area
+		kirmlesra_area
+		erim_poa_area
+		chennacatt_area
+		makuria_area
+		ne_tava_area
+		tyarrest_area
+	}
+}
+
 #---------------------------
 # Thani-Hazad                          
 #---------------------------
@@ -824,6 +939,54 @@ thani_hazad_region = {
 		an_adun_area
 		an_kharadun_area
 		ciryatandor_area
+	}
+}
+
+#---------------------------
+# Tûr Betark                         
+#---------------------------
+
+tur_betark_region = {
+	areas = {
+		tur_betark_area
+		nargubraz_area
+		narad_dum_area
+		ghabaras_area
+		bar_falin_area
+		fhul_area
+		mablad_dum_area
+		naragbaruz_area
+	}
+}
+
+#---------------------------
+# Ardor                        
+#---------------------------
+
+ardor_region = {
+	areas = {
+		gan_area
+		tuktan_area
+		dushera_area
+		tanturak_area
+	}
+}
+
+#---------------------------
+# Harshandatt                 
+#---------------------------
+
+harshandatt_region = {
+	areas = {
+		ornad_area
+		muran_area
+		velzhat_harj_area
+		naishan_area
+		ilahat_haj_area
+		jelhat_kurj_area
+		mejhanir_area
+		coajanir_area
+		naerphys_area
 	}
 }
 
@@ -864,5 +1027,718 @@ bulchyades_region = {
 	bulchyades_area
 	jorash_area
 	kantilya_area
+	}
+}
+
+#---------------------------
+# Dyr & Lotan             
+#---------------------------
+
+dyr_region = {
+	areas = {
+		endyr_area
+		yardyr_area
+		hudyr_area
+	}
+}
+lotan_region = {
+	areas = {
+		lotan_area
+		ethir_talathrant_area
+	}
+}
+
+#---------------------------
+# Kykurian Kyn & Relmether              
+#---------------------------
+
+kykurian_region = {
+	areas = {
+		kykurian_kyn_area
+		tej_oda_area
+		ilpar_karam_area
+		bozorgana_area
+		langurian_kyn_area
+		karlogul_area
+	}
+}
+
+relmether_region = {
+	areas = {
+		relmether_area
+	}
+}
+
+#---------------------------
+# Chey & Nûrad              
+#---------------------------
+
+nurad_region = {
+	areas = {
+		nurad_area
+		nuriag_area
+	}
+}
+
+#---------------------------
+# Palisor              
+#---------------------------
+
+kargagis_ahar_region = {
+	areas = {
+		kargagis_ahar_area
+		dhath_area
+	}
+}
+dalpygis_region = {
+	areas = {
+		dalpygis_area
+	}
+}
+rycolis_region = {
+	areas = {
+		rycolis_area
+		felbuzad_area
+	}
+}
+idurak_region = {
+	areas = {
+		idurak_area
+		urakhan_area
+	}
+}
+orgothraath_region = {
+	areas = {
+		orgothraath_area
+		vaag_area
+	}
+}
+alduryaknar_region = {
+	areas = {
+		alduryaknar_area
+		ryakna_steppes_area
+		genan_area
+		thirganay_hills_area
+	}
+}
+gaathgykarkan_region = {
+	areas = {
+		gaathgykarkan_area
+		gaath_hills_area
+	}
+}
+ibav_region = {
+	areas = {
+		ibav_area
+		berarbilar_area
+		aldhad_area
+	}
+}
+waarwugan_region = {
+	areas = {
+		waarwugan_area
+	}
+}
+taur_engrin_region = {
+	areas = {
+		imaldawath_area
+		balizar_area
+		fenfenen_area
+	}
+}
+acaana_region = {
+	areas = {
+		acaana_area
+		niss_area
+	}
+}
+burskadekdar_region = {
+	areas = {
+		burskadekdar_area
+	}
+}
+jendiar_region = {
+	areas = {
+		jendiar_area
+	}
+}
+lygar_kraw_region = {
+	areas = {
+		lygar_kraw_area
+	}
+}
+ubain_region = {
+	areas = {
+		ubain_area
+	}
+}
+lurs_vorganis_region = {
+	areas = {
+		lurs_vorganis_area
+	}
+}
+daldunair_region = {
+	areas = {
+		daldunair_area
+	}
+}
+uster_kryl_region = {
+	areas = {
+		uster_kryl_area
+	}
+}
+y_lusturanysur_region = {
+	areas = {
+		y_lusturanysur_area
+		emyn_celeb_area
+	}
+}
+myr_region = {
+	areas = {
+		myr_area
+		khandax_area
+	}
+}
+lu_tyr_su_region = {
+	areas = {
+		lu_tyr_su_area
+	}
+}
+kubor_sed_region = {
+	areas = {
+		kubor_sed_area
+	}
+}
+rubor_region = {
+	areas = {
+		rubor_area
+	}
+}
+helcarth_region = {
+	areas = {
+		helcarth_area
+	}
+}
+desdursyton_region = {
+	areas = {
+		desdursyton_area
+		nekakhtar_area
+		vothrig_area
+		thurlomar_area
+		taraparsa_area
+	}
+}
+mitheryn_region = {
+	areas = {
+		mitheryn_area
+		oroi_morodom_area
+		taur_sasir_area
+	}
+}
+
+#---------------------------
+# Urd (Urd)              
+#---------------------------
+
+urd_region = {
+	areas = {
+		dir_area
+		kehurl_area
+		avikangsdar_area
+		urdic_vales_area
+		urdic_highlands_area
+		ukur_area
+		iskahu_area
+	}
+}
+luindor_region = {
+	areas = {
+		luindor_area
+	}
+}
+angclax_region = {
+	areas = {
+		angclax_area
+	}
+}
+sharthax_region = {
+	areas = {
+		sharthax_area
+	}
+}
+uul_region = {
+	areas = {
+		uul_area
+	}
+}
+
+#---------------------------
+# Illuin Wood             
+#---------------------------
+
+eryn_illuin_region = {
+	areas = {
+		eryn_illuin_area
+		tharsitaur_area
+	}
+}
+aigvalg_region = {
+	areas = {
+		aigvalg_area
+	}
+}
+
+
+#---------------------------
+# Yôpi-peninsula              
+#---------------------------
+
+lomeanor_region = {
+	areas = {
+		lomeanor_area
+	}
+}
+
+lomithani_region = {
+	areas = {
+		lomithani_area
+	}
+}
+
+jojojopo_region = {
+	areas = {
+		yopi_area
+	}
+}
+codya_region = {
+	areas = {
+		codya_area
+		vulture_islands_area
+		kilwa_area
+		so_fala_area
+		cilyar_area
+		stone_hills_area
+		east_codya_area
+	}
+}
+
+#---------------------------
+# Vulm Shryac             
+#---------------------------
+
+vulm_shryac_region = {
+	areas = {
+		vulm_shryac_area
+	}
+}
+
+#---------------------------
+# Anarike              
+#---------------------------
+
+anarike_region = {
+	areas = {
+		aelinfalas_area
+		lokhuzor_area
+		kythor_area
+		azra_zain_area
+	}
+}
+olyas_kriis_region = {
+	areas = {
+		olyas_kriis_area
+	}
+}
+
+#---------------------------
+# Lyneria              
+#---------------------------
+
+balkuloni_region = {
+	areas = {
+		gimil_area
+		belzayan_area
+		dorondor_area
+	}
+}
+
+lyneria_region = {
+	areas = {
+		cirlond_area
+		aykien_islands_area
+		lyneria_area
+	}
+}
+
+#---------------------------
+# Ered Pontym              
+#---------------------------
+
+ered_pontym_region = {
+	areas = {
+		ered_pontym_area
+	}
+}
+
+#---------------------------
+# Sakal an-Khar              
+#---------------------------
+
+sakal_an_khar_region = {
+	areas = {
+		taurfalas_area
+		nikkea_area
+		cirvegil_area
+		siril_area
+		sakal_an_aruwanai_area
+		alkarranda_area
+		ostanor_area
+		azrathani_area
+	}
+}
+
+#---------------------------
+# Unvirnay              
+#---------------------------
+
+unvirnay_region = {
+	areas = {
+		unvirnay_area
+		maaken_area
+		nejhen_area
+	}
+}
+shay_region = {
+	areas = {
+		hemashay_area
+		shayakau_area
+	}
+}
+
+zurghor_region = {
+	areas = {
+	dark_jungle_area
+	zurghor_area
+	}
+}
+
+#---------------------------
+# Lochas Drus (Shelf-lands)       
+#---------------------------
+
+tana_region = {
+	areas = {
+		tana_area
+	}
+}
+brod_region = {
+	areas = {
+		brod_area
+	}
+}
+wol_region = {
+	areas = {
+		wol_area
+		jamna_area
+	}
+}
+waw_region = {
+	areas = {
+		waw_area
+		cimoniemor_area
+	}
+}
+drod_region = {
+	areas = {
+		drod_area
+	}
+}
+lokhas_region = {
+	areas = {
+		diolokha_area
+		halokha_area
+		maralokha_area
+		rualokha_area
+	}
+}
+menars_region = {
+	areas = {
+		menars_area
+	}
+}
+tarsa_region = {
+	areas = {
+		tarsa_area
+	}
+}
+
+#---------------------------
+# Ka'ish (Shelf-lands)       
+#---------------------------
+
+kaish_region = {
+	areas = {
+		kaish_area
+		hent_area
+	}
+}
+
+#---------------------------
+# Arg-Sîmorîg (Shelf-lands)       
+#---------------------------
+
+arg_simorig_region = {
+	areas = {
+		arg_simorig_area
+		bas_area
+		faelan_area
+		zipatoa_area
+	}
+}
+
+#---------------------------
+# V'Shrang (Shelf-lands)       
+#---------------------------
+
+vshrang_region = {
+	areas = {
+		vshrang_area
+	}
+}
+
+#---------------------------
+# Ruuriik (Shelf-lands)       
+#---------------------------
+
+ruuriik_region = {
+	areas = {
+		ruuriik_area
+	}
+}
+
+#---------------------------
+# Orosúli (Wind mountains)       
+#---------------------------
+
+orosuli_region = {
+	areas = {
+		mindo_clytac_area
+		rakhas_dim_area
+		tumunamahal_area
+		druins_lands_area
+		radimbragaz_area
+		wind_mountains_area
+		unaya_area
+	}
+}
+
+#---------------------------
+# Rálian (Ralian)       
+#---------------------------
+
+ralian_region = {
+	areas = {
+		northern_highlands_area
+		rale_bursian_area
+		rale_cuivan_area
+		tife_cabian_area
+		tife_lenian_area
+		tife_kankankian_area
+		clolene_area
+	}
+}
+
+#---------------------------
+# Horl (Ralian)       
+#---------------------------
+
+horl_region = {
+	areas = {
+		horl_area
+	}
+}
+
+#---------------------------
+# Kendarca & Ruartar (Ralian)       
+#---------------------------
+
+kendarca_region = {
+	areas = {
+		kendarca_area
+	}
+}
+ruartar_region = {
+	areas = {
+		ruartar_area
+	}
+}
+
+#---------------------------
+# Thuriac Codya (Thuriac Codya)
+#---------------------------
+
+thuriac_codya_region = {
+	areas = {
+		sanakai_area
+		taneda_area
+		thendo_area
+		yowajima_area
+		kamikune_area
+		kochido_area
+		safakeo_area
+		uwatake_area
+		andala_area
+	}
+}
+
+#---------------------------
+# Uiven (Romeneär isles)
+#---------------------------
+
+uiven_region = {
+	areas = {
+		uiven_area
+	}
+}
+
+#---------------------------
+# Kosth Leer (Romeneär isles)
+#---------------------------
+
+kosth_leer_region = {
+	areas = {
+		kosth_leer_area
+	}
+}
+
+#---------------------------
+# Rôlfandas (Romeneär isles)
+#---------------------------
+
+rolfandas_region = {
+	areas = {
+		rolfandas_area
+	}
+}
+
+#---------------------------
+# Urtlagga (Romeneär isles)
+#---------------------------
+
+urtlagga_region = {
+	areas = {
+		urtlagga_area
+	}
+}
+
+#---------------------------
+# Baraztûm Mountains (Orocarni)
+#---------------------------
+
+baraztum_mountains_region = {
+	areas = {
+		druins_homeland_area
+	}
+}
+
+#---------------------------
+# Orocarni (Orocarni)
+#---------------------------
+
+orocarni_region = {
+	areas = {
+		naraggund_area
+		baraz_iagil_area
+		urulis_area
+		zirakdush_area
+		gabilzahar_area
+		gabilfaham_dum_area
+		orocarni_area
+	}
+}
+
+#---------------------------
+# Haen (Far East)
+#---------------------------
+
+haen_region = {
+	areas = {
+		tanara_area
+		haen_area
+		durakhan_area
+	}
+}
+
+#---------------------------
+# Kael (Far East)
+#---------------------------
+
+kael_region = {
+	areas = {
+		kael_area
+		amrillar_area
+	}
+}
+
+#---------------------------
+# Wômawas Drûs (Far East)
+#---------------------------
+
+womawas_drus_region = {
+	areas = {
+		goak_area
+		moak_area
+		cuivac_womaw_area
+		wom_shryac_area
+	}
+}
+
+#---------------------------
+# Helcar Sael (Far East)
+#---------------------------
+
+helcar_sael_region = {
+	areas = {
+		helcar_sael_area
+	}
+}
+
+#---------------------------
+# Karn Ord (Far East)
+#---------------------------
+
+karn_ord_region = {
+	areas = {
+		karn_ord_area
+	}
+}
+
+#---------------------------
+# Aegan (Far East)
+#---------------------------
+
+aegan_region = {
+	areas = {
+		aegan_area
+	}
+}
+
+#---------------------------
+# Remnants of Numenor
+#---------------------------
+
+remnants_of_numenor_region = {
+	areas = {
+		meneltarma_area
+	}
+}
+
+#---------------------------
+# Southern Isles
+#---------------------------
+
+southern_isles_region = {
+	areas = {
+		southern_isles_area
 	}
 }

@@ -10,20 +10,26 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 1
-base_production = 3
-base_manpower = 2
+base_tax = 7
+base_production = 7
+base_manpower = 8
 
 add_core = Y35
 owner = Y35
 controller = Y35
 
-culture = culture_ice_orkish
+culture = culture_orkish
 religion = religion_orkish
 
 trade_goods = iron
 
 hre = no
+
+fortress_2_orc_building=yes
+warg_pit_orc_building=yes
+orc_fissure_orc_building=yes
+fort_wooden_walls_orc_building=yes
+large_arena_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

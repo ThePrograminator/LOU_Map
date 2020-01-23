@@ -13,8 +13,8 @@
 is_city = no
 
 base_tax = 5
-base_production = 1
-base_manpower = 2
+base_production = 5
+base_manpower = 5
 
 add_core = Y88
 owner = Y88
@@ -23,9 +23,13 @@ controller = Y88
 culture = culture_yatali-gan
 religion = religion_drughu
 
-trade_goods = grain
+trade_goods = herbs
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

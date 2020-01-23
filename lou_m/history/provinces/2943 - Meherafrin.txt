@@ -4,12 +4,23 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = X74
+owner = X74
+controller = X74
 
-trade_goods = grain
+culture = culture_moguly
+religion = religion_chailuza
+
+trade_goods = fish
 
 hre = no
+
+city_1_building=yes
+dock_building=yes
+outpost_building=yes
+workshop_building=yes
+tax_office_building=yes
+trade_outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

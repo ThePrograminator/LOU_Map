@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
+base_tax = 7
 base_production = 8
-base_manpower = 6
+base_manpower = 7
 
 add_core = Y14
 owner = Y14
@@ -23,9 +23,23 @@ controller = Y14
 culture = culture_blacklock
 religion = religion_mahal
 
-trade_goods = iron
+trade_goods = gems
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+hold_2_dwarf_building=yes
+fairground_dwarf_building=yes
+arsenal_dwarf_building=yes
+acadamy_dwarf_building=yes
+hall_of_warriors_dwarf_building=yes
+materials_depot_building=yes
+fort_great_gatehouse_dwarf_building=yes
+narrow_bridge_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

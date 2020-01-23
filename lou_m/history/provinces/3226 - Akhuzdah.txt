@@ -1,15 +1,23 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Y14
+owner = Y14
+controller = Y14
 
-trade_goods = grain
+culture = culture_blacklock
+religion = religion_mahal
+
+trade_goods = iron
 
 hre = no
+
+hold_1_dwarf_building=yes
+mine_shaft_dwarf_building=yes
+training_hall_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

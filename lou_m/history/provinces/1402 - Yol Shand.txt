@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 10
-base_production = 8
-base_manpower = 1
+base_tax = 4
+base_production = 3
+base_manpower = 3
 
 add_core = X36
 owner = X36
@@ -23,9 +23,17 @@ controller = X36
 culture = culture_ayten
 religion = religion_apysani_beduins
 
-trade_goods = copper
+trade_goods = cloth
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

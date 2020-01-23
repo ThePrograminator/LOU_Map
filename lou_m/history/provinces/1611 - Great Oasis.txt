@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 5
-base_production = 7
-base_manpower = 6
+base_tax = 4
+base_production = 6
+base_manpower = 5
 
 add_core = X35
 owner = X35
@@ -23,9 +23,15 @@ controller = X35
 culture = culture_aukuag
 religion = religion_apysani_beduins
 
-trade_goods = cloth
+trade_goods = spices
 
 hre = no
+
+capital_1_building=yes
+marketplace_building=yes
+temple_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

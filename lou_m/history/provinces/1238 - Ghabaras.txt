@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 10
-base_manpower = 5
+base_tax = 9
+base_production = 9
+base_manpower = 9
 
 add_core = Y39
 owner = Y39
@@ -23,9 +23,18 @@ controller = Y39
 culture = culture_orkish
 religion = religion_orkish
 
-trade_goods = wine
+trade_goods = silver
 
 hre = no
+
+fortress_3_orc_building=yes
+army_garrison_orc_building=yes
+troll_cage_orc_building=yes
+workshop_orc_building=yes
+fort_orc_stronghold_orc_building=yes
+large_arena_building=yes
+prisoner_cage_orc_building=yes
+tortur_chambers_orc_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

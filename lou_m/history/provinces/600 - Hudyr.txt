@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = Z92
 owner = Z92
@@ -23,9 +23,13 @@ controller = Z92
 culture = culture_dyrians
 religion = religion_tyr
 
-trade_goods = cloth
+trade_goods = copper
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

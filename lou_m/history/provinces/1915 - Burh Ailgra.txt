@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 6
 base_production = 4
@@ -27,10 +27,11 @@ trade_goods = paper
 
 hre = no
 
-fortress_1_building=yes
+capital_1_building=yes
 trade_outpost_building=yes
 fort_pallisade_building=yes
 outpost_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

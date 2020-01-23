@@ -12,20 +12,27 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 2
-base_manpower = 9
+base_tax = 5
+base_production = 7
+base_manpower = 5
 
 add_core = Z72
 owner = Z72
 controller = Z72
 
 culture = culture_makurians
-religion = religion_easterlings
+religion = religion_kir
 
-trade_goods = copper
+trade_goods = slaves
 
 hre = no
+
+city_2_building=yes
+trade_outpost_building=yes
+tax_office_building=yes
+workshop_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

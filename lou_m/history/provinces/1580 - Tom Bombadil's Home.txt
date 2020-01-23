@@ -16,12 +16,18 @@ base_tax = 3
 base_production = 4
 base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Y27
+owner = Y27
+controller = Y27
+
+culture = culture_istari
+religion = religion_perian
 
 trade_goods = herbs
 
 hre = no
+
+settlement_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

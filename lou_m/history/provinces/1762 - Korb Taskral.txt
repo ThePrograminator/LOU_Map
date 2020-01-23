@@ -27,12 +27,18 @@ trade_goods = ivory
 
 hre = no
 
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
 capital_3_building=yes
 fort_stronghold_building=yes
 garrison_building=yes
 forum_building=yes
 bank_building=yes
 foundry_building=yes
+stockpile_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

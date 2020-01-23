@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 9
-base_manpower = 9
+base_tax = 6
+base_production = 5
+base_manpower = 5
 
 add_core = X65
 owner = X65
@@ -23,9 +23,12 @@ controller = X65
 culture = culture_muranians
 religion = religion_chailuza
 
-trade_goods = fur
+trade_goods = copper
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 7
-base_production = 7
-base_manpower = 7
+base_production = 8
+base_manpower = 9
 
 add_core = Y56
 owner = Y56
@@ -27,10 +27,16 @@ trade_goods = grain
 
 hre = no
 
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
+capital_2_orc_building=yes
+treasure_trove_orc_building=yes
+overseer_station_orc_building=yes
+metal_works_orc_building=yes
+orc_fissure_orc_building=yes
+warg_arena_orc_building=yes
+workshop_orc_building=yes
+fort_wooden_walls_orc_building=yes
+large_arena_building=yes
+prisoner_cage_orc_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
