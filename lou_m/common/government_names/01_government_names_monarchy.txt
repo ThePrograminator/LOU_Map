@@ -238,3 +238,44 @@ gov_lotr_haradrim_principality = {
 		religion = religion_haruzani
 	}
 }
+
+gov_lotr_harshandatt_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = NHAZADH
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			has_reform = feudalism_reform
+			has_reform = autocracy_reform
+		}
+		religion = religion_haruzani
+	}
+}
