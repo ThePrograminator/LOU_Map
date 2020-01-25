@@ -1119,3 +1119,48 @@ province_event = {
 		remove_province_modifier = province_huorn_debuff
 	}
 }
+
+country_event = {
+    id = lotr_general.27
+    title = "lotr_race_opinion.1.title"
+    desc = "lotr_race_opinion.1.desc"
+    picture = ADVISOR_eventPicture
+   
+    hidden = yes
+    is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = {
+			has_global_flag = racial_opinion_flag
+		}
+	}
+   
+    option = {
+        name = "lotr_race_opinion.1.option.a"
+	   
+		set_same_different_race_opinions_effect = { RACE = lotr_human }
+		set_same_different_race_opinions_effect = { RACE = lotr_dwarven }
+		set_same_different_race_opinions_effect = { RACE = lotr_dragon }
+		set_same_different_race_opinions_effect = { RACE = lotr_elven }
+		set_same_different_race_opinions_effect = { RACE = lotr_ent }
+		set_same_different_race_opinions_effect = { RACE = lotr_erus_children }
+		set_same_different_race_opinions_effect = { RACE = lotr_goblin }
+		set_same_different_race_opinions_effect = { RACE = lotr_giant }
+		set_same_different_race_opinions_effect = { RACE = lotr_great_spider }
+		set_same_different_race_opinions_effect = { RACE = lotr_half_dwarf }
+		set_same_different_race_opinions_effect = { RACE = lotr_hobbit }
+		set_same_different_race_opinions_effect = { RACE = lotr_half_orc }
+		set_same_different_race_opinions_effect = { RACE = lotr_orc }
+		set_same_different_race_opinions_effect = { RACE = lotr_troll }
+		set_same_different_race_opinions_effect = { RACE = lotr_uruk_hai }
+		set_same_different_race_opinions_effect = { RACE = lotr_wizard }
+		set_same_different_race_opinions_effect = { RACE = lotr_wights }
+
+		set_against_race_opinions_effect = yes
+		set_free_peoples_opinions_effect = yes
+		set_servants_of_darkness_opinions_effect = yes
+
+		set_global_flag = racial_opinion_flag
+    }
+}

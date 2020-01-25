@@ -98,25 +98,29 @@ royal_marriage = {
 	}
 	
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_MARRIAGE
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			FROM = {
-				religion_group = religion_group_melkor
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_MARRIAGE
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -124,39 +128,29 @@ royal_marriage = {
 
 guaranteeaction = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_GUARANTEE
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_GUARANTEE
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -164,78 +158,58 @@ guaranteeaction = {
 
 giftaction = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_GIFT
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_GIFT
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
 }
 support_independence_action = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_SUPPORT_INDEPENDENCE
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_SUPPORT_INDEPENDENCE
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -243,39 +217,29 @@ support_independence_action = {
 
 milaccess = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_MILACCESS
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_MILACCESS
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -283,39 +247,29 @@ milaccess = {
 
 fleet_access = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_FLEET_ACCESS
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_FLEET_ACCESS
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -323,39 +277,29 @@ fleet_access = {
 
 offer_fleet_access = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_OFFER_FLEET_ACCESS
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_OFFER_FLEET_ACCESS
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -363,39 +307,29 @@ offer_fleet_access = {
 
 offermilaccess = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_OFFER_MIL_ACCESS
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_OFFER_MIL_ACCESS
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -403,39 +337,29 @@ offermilaccess = {
 
 offerloan = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_OFFER_LOAN
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_OFFER_LOAN
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -443,25 +367,29 @@ offerloan = {
 
 warsubsidy = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_WARSUBSIDY
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			FROM = {
-				religion_group = religion_group_melkor
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_WARSUBSIDY
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -469,119 +397,63 @@ warsubsidy = {
 
 sellprov = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_SELLPROV
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_SELLPROV
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
 }
 
-enforce_peace = {
-	condition = {
-		tooltip = MELKOR_BAN
-		potential = {
-			religion_group = religion_group_melkor
-		}
-		allow = {
-			OR = {
-				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = OPP_MELKOR_BAN
-		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
-		}
-		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
-			}
-		}
-	}
-}
+#enforce_peace = {
+#	
+#}
 
 improve_relation = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_IMPROVE_RELATION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_IMPROVE_RELATION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -589,39 +461,29 @@ improve_relation = {
 
 transfer_trade_power = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_TRANSFER_TRADE_POWER
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_TRANSFER_TRADE_POWER
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -629,39 +491,29 @@ transfer_trade_power = {
 
 allianceaction = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_ALLIANCEACTION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_ALLIANCEACTION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -686,39 +538,29 @@ annexationaction = {
 		}
 	}
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_ANNEXACTION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_ANNEXACTION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -750,39 +592,29 @@ integrationaction = {
 		}
 	}
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_INTEGRATIONACTION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_INTEGRATIONACTION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -805,39 +637,29 @@ vassalaction = {
 		}
 	}
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_VASSALACTION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_VASSALACTION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -876,7 +698,7 @@ call_crusade_action = {
 			NOT = { 
 				war_with = FROM
 				FROM = {
-					religion_group = religion_group_hildor
+					religion = religion_haruzani
 				}
 				border_distance = {
 				who = FROM
@@ -901,39 +723,29 @@ call_crusade_action = {
 
 sell_ships_action = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_SELL_SHIPS_ACTION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_SELL_SHIPS_ACTION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -941,39 +753,89 @@ sell_ships_action = {
 
 condottieri_action = {
 	condition = {
-		tooltip = MELKOR_BAN
+		tooltip = SERVANTS_OF_DARKNESS_BAN_CONDOTTIERI_ACTION
 		potential = {
-			religion_group = religion_group_melkor
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			OR = {
+			NOT = {
 				FROM = {
-					religion_group = religion_group_melkor
-				}
-				FROM = {
-					religion_group = religion_group_hildor
-				}
-				FROM = {
-					religion = religion_nurning
-				}
-				FROM = {
-					religion = religion_daen
+					is_free_peoples_opinion = yes
 				}
 			}
 		}
 	}
 	
 	condition = {
-		tooltip = OPP_MELKOR_BAN
+		tooltip = FREE_PEOPLE_BAN_CONDOTTIERI_ACTION
 		potential = {
-			NOT = { religion_group = religion_group_melkor }
-			NOT = { religion_group = religion_group_hildor }
-			NOT = { religion = religion_nurning }
-			NOT = { religion = religion_daen }
+			is_free_peoples_opinion = yes
 		}
 		allow = {
-			FROM = {
-				NOT = { religion_group = religion_group_melkor }
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
+			}
+		}
+	}
+}
+
+support_heir = {
+	condition = {
+		tooltip = SERVANTS_OF_DARKNESS_BAN_SUPPORT_HEIR
+		potential = {
+			is_servants_of_evil_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = FREE_PEOPLE_BAN_SUPPORT_HEIR
+		potential = {
+			is_free_peoples_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
+			}
+		}
+	}
+}
+
+ask_for_march = {
+	condition = {
+		tooltip = SERVANTS_OF_DARKNESS_BAN_ASK_FOR_MARCH
+		potential = {
+			is_servants_of_evil_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = FREE_PEOPLE_BAN_ASK_FOR_MARCH
+		potential = {
+			is_free_peoples_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
