@@ -12,16 +12,22 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 8
-base_manpower = 9
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W36
+owner = W36
+controller = W36
 
-trade_goods = gold
+culture = culture_nelyarin
+religion = religion_moriquendi
+
+trade_goods = naval_supplies
 
 hre = no
+
+noble_residence_elf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

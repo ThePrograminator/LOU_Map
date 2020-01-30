@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 2
+base_tax = 4
 base_production = 4
-base_manpower = 9
+base_manpower = 5
 
 add_core = X98
 owner = X98
@@ -26,6 +26,11 @@ religion = religion_ulgath
 trade_goods = cloth
 
 hre = no
+
+settlement_building=yes
+temple_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

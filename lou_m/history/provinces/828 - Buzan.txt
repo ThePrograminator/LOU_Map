@@ -10,9 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 5
+base_production = 5
+base_manpower = 5
 
 add_core = Y11
 owner = Y11
@@ -21,9 +21,16 @@ controller = Y11
 culture = culture_stiffbeard
 religion = religion_mahal
 
-trade_goods = wool
+trade_goods = copper
 
 hre = no
+
+hold_1_dwarf_building=yes
+material_exchance_dwarf_building=yes
+armoury_dwarf_building=yes
+training_hall_dwarf_building=yes
+mine_shaft_dwarf_building=yes
+rune_door_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

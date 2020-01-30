@@ -12,16 +12,26 @@
 
 is_city = yes
 
-base_tax = 10
-base_production = 4
+base_tax = 6
+base_production = 5
 base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W44
+owner = W44
+controller = W44
 
-trade_goods = gold
+culture = culture_yatali-gan
+religion = religion_drughu
+
+trade_goods = copper
 
 hre = no
+
+capital_1_building=yes
+fort_castle_building=yes
+army_camp_building=yes
+workshop_building=yes
+tax_office_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

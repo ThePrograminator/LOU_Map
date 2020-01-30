@@ -1,15 +1,28 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 7
+base_production = 6
+base_manpower = 7
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W29
+owner = W29
+controller = W29
 
-trade_goods = grain
+culture = culture_stiffbeard
+religion = religion_mahal
+
+trade_goods = gems
 
 hre = no
+
+capital_2_dwarf_building=yes
+fairground_dwarf_building=yes
+arsenal_dwarf_building=yes
+research_office_dwarf_building=yes
+hall_of_warriors_dwarf_building=yes
+materials_depot_building=yes
+fort_mountain_fortress_dwarf_building=yes
+narrow_bridge_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

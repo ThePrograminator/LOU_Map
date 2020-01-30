@@ -1,19 +1,27 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 5
+base_manpower = 5
 
-add_core = V86
-owner = V86
-controller = V86
+add_core = V88
+owner = V88
+controller = V88
 
 culture = culture_fustir
 religion = religion_tyr
 
-trade_goods = grain
+trade_goods = fish
 
 hre = no
+
+capital_1_building=yes
+trade_outpost_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 8
-base_production = 2
-base_manpower = 6
+base_production = 8
+base_manpower = 8
 
 add_core = W01
 owner = W01
@@ -23,9 +23,18 @@ controller = W01
 culture = culture_stonefoot
 religion = religion_mahal
 
-trade_goods = copper
+trade_goods = iron
 
 hre = no
+
+capital_2_dwarf_building=yes
+great_market_dwarf_building=yes
+arsenal_dwarf_building=yes
+acadamy_dwarf_building=yes
+hall_of_warriors_dwarf_building=yes
+materials_depot_building=yes
+fort_great_gatehouse_dwarf_building=yes
+moat_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

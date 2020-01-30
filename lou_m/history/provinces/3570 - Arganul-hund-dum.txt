@@ -1,15 +1,26 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W01
+owner = W01
+controller = W01
 
-trade_goods = grain
+culture = culture_stiffbeard
+religion = religion_mahal
+
+trade_goods = iron
 
 hre = no
+
+hold_1_dwarf_building=yes
+material_exchance_dwarf_building=yes
+training_hall_dwarf_building=yes
+mining_network_dwarf_building=yes
+fort_small_gatehouse_dwarf_building=yes
+narrow_bridge_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -10,10 +10,10 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 2
-base_production = 1
+base_tax = 8
+base_production = 9
 base_manpower = 8
 
 add_core = Z80
@@ -23,9 +23,16 @@ controller = Z80
 culture = culture_walar
 religion = religion_lakhab
 
-trade_goods = iron
+trade_goods = fish
 
 hre = no
+
+city_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

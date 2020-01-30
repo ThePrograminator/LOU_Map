@@ -1,9 +1,9 @@
 
 is_city = yes
 
-base_tax = 8
-base_production = 1
-base_manpower = 7
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
 add_core = V45
 owner = V45
@@ -12,9 +12,13 @@ controller = V45
 culture = culture_rycoli
 religion = religion_ahar
 
-trade_goods = wool
+trade_goods = tropical_wood
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+temple_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

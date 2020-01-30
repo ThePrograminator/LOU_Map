@@ -12,16 +12,27 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 5
+base_tax = 7
+base_production = 6
+base_manpower = 6
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W38
+owner = W38
+controller = W38
 
-trade_goods = fur
+culture = culture_stonefoot
+religion = religion_mahal
+
+trade_goods = iron
 
 hre = no
+
+hold_2_dwarf_building=yes
+fairground_dwarf_building=yes
+armoury_dwarf_building=yes
+libary_dwarf_building=yes
+hall_of_warriors_dwarf_building=yes
+mining_network_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

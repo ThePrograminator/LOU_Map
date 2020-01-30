@@ -12,20 +12,27 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 10
-base_manpower = 2
+base_tax = 6
+base_production = 6
+base_manpower = 7
 
 add_core = V99
 owner = V99
 controller = V99
 
-culture = culture_dunedain_of_arnor
+culture = culture_numenorean
 religion = religion_dunedain
 
-trade_goods = fur
+trade_goods = fish
 
 hre = no
+
+city_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes	
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

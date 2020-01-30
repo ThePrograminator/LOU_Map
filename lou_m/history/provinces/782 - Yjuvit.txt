@@ -10,9 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 1
-base_production = 3
-base_manpower = 2
+base_tax = 5
+base_production = 6
+base_manpower = 5
 
 add_core = Z38
 owner = Z38
@@ -21,9 +21,23 @@ controller = Z38
 culture = culture_lossoth
 religion = religion_forodwaith
 
-trade_goods = fur
+trade_goods = fish
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_building=yes
+marketplace_building=yes
+tax_office_building=yes
+warehouse_building=yes
+fort_castle_building=yes
+barracks_building=yes
+seaport_building=yes			
+drydock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
