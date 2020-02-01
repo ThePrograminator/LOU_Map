@@ -1,4 +1,4 @@
-# Province ID : 2107
+﻿# Province ID : 2107
 # Province Name : Thûlornar
 # Province RGB : (76, 250, 36)
 # Province Area : null
@@ -16,8 +16,12 @@ base_tax = 5
 base_production = 6
 base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V90
+owner = V90
+controller = V90
+
+culture = culture_hwendi
+religion = religion_moriquendi
 
 trade_goods = grain
 
