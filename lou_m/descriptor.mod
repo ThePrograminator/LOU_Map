@@ -40,7 +40,6 @@ replace_path="common/imperial_reforms"
 replace_path="common/religious_reforms"
 replace_path="common/parliament_issues"
 replace_path="common/trade_companies"
-
 tags={
 	"Map"
 	"Military"
@@ -58,3 +57,4 @@ tags={
 	"Alternative History"
 }
 name="lou_m"
+path="C:/Users/Christian/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
