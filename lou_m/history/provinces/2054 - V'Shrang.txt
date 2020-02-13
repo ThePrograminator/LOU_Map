@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 8
+base_production = 8
+base_manpower = 10
 
 add_core = Z88
 owner = Z88
@@ -23,9 +23,19 @@ controller = Z88
 culture = culture_ts_dan
 religion = religion_eastern_black_peoples
 
-trade_goods = grain
+trade_goods = naval_supplies
 
 hre = no
+
+capital_3_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_castle_building=yes
+garrison_building=yes
+dockyard_building=yes			
+grand_shipyard_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -12,16 +12,27 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W17
+owner = W17
+controller = W17
+
+culture = culture_rale_cuvian
+religion = religion_raliani
 
 trade_goods = grain
 
 hre = no
+
+capital_1_building=yes
+trade_outpost_building=yes
+temple_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

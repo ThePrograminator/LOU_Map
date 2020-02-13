@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 9
+base_tax = 5
+base_production = 5
 base_manpower = 5
 
 add_core = Z85
@@ -23,9 +23,16 @@ controller = Z85
 culture = culture_aca-folk
 religion = religion_ivabi
 
-trade_goods = iron
+trade_goods = tea
 
 hre = no
+
+capital_1_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

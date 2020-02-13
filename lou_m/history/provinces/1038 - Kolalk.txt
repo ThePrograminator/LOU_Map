@@ -13,7 +13,7 @@
 is_city = yes
 
 base_tax = 7
-base_production = 3
+base_production = 6
 base_manpower = 7
 
 add_core = V83
@@ -23,9 +23,24 @@ controller = V83
 culture = culture_rolfandan
 religion = religion_avaradan
 
-trade_goods = iron
+trade_goods = naval_supplies
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes			
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
+seaport_building=yes			
+drydock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

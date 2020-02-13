@@ -12,16 +12,25 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W22
+owner = W22
+controller = W22
 
-trade_goods = grain
+culture = culture_ruartari
+religion = religion_raliani
+
+trade_goods = copper
 
 hre = no
+
+fortress_1_building=yes
+work_camp_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

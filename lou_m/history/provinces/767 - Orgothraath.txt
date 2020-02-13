@@ -10,10 +10,10 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 3
-base_production = 3
+base_production = 4
 base_manpower = 3
 
 add_core = V42
@@ -23,9 +23,14 @@ controller = V42
 culture = culture_kargarim
 religion = religion_ahar
 
-trade_goods = cloth
+trade_goods = wool
 
 hre = no
+
+settlement_building=yes
+temple_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

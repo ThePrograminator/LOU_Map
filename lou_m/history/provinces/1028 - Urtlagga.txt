@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 1
-base_manpower = 8
+base_tax = 3
+base_production = 4
+base_manpower = 3
 
 add_core = V66
 owner = V66
@@ -23,9 +23,12 @@ controller = V66
 culture = culture_zettan
 religion = religion_eastern_snowmen
 
-trade_goods = naval_supplies
+trade_goods = fish
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

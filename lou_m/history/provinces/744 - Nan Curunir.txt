@@ -14,7 +14,7 @@ is_city = yes
 
 base_tax = 3
 base_production = 4
-base_manpower = 3
+base_manpower = 4
 
 culture = culture_wilderness
 religion = religion_wilderness
@@ -54,6 +54,8 @@ discovered_by = lotr_wights
 	remove_core = Z48
 	owner = V49
 	controller = V49
+	create_alliance = X01
+	create_alliance = X16
 }
 
 2953.1.1 = { 
@@ -67,4 +69,6 @@ discovered_by = lotr_wights
 	add_base_tax = 3
 	add_base_production = 3
 	add_base_manpower = 3
+	encampment_1_orc_building=yes
+	warg_pit_orc_building=yes
 }

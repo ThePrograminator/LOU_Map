@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = W07
 owner = W07
@@ -11,9 +11,14 @@ controller = W07
 culture = culture_oplan_din_kaarn
 religion = religion_linerim
 
-trade_goods = grain
+trade_goods = wine
 
 hre = no
+
+city_1_building=yes
+trade_outpost_building=yes
+tax_office_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

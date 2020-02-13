@@ -1,15 +1,23 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V68
+owner = V68
+controller = V68
 
-trade_goods = grain
+culture = culture_aigar
+religion = religion_eastern_snowmen
+
+trade_goods = copper
 
 hre = no
+
+fortress_1_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

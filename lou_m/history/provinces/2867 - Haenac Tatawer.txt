@@ -1,19 +1,32 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 
-add_core = V81
-owner = V81
-controller = V81
+add_core = V78
+owner = V78
+controller = V78
 
-culture = culture_sulini
+culture = culture_rulurk
 religion = religion_avaradan
 
-trade_goods = grain
+trade_goods = paper
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_1_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

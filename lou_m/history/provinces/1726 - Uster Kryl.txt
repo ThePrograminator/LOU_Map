@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 8
-base_manpower = 7
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
 add_core = W11
 owner = W11
@@ -23,9 +23,14 @@ controller = W11
 culture = culture_usteri
 religion = religion_linerim
 
-trade_goods = naval_supplies
+trade_goods = livestock
 
 hre = no
+
+settlement_building=yes
+temple_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

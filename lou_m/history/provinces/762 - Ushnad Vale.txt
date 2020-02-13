@@ -14,7 +14,7 @@ is_city = yes
 
 base_tax = 5
 base_production = 5
-base_manpower = 5
+base_manpower = 4
 
 add_core = Z84
 owner = Z84
@@ -23,9 +23,13 @@ controller = Z84
 culture = culture_elinse
 religion = religion_ivabi
 
-trade_goods = gems
+trade_goods = grain
 
 hre = no
+
+settlement_building=yes
+port_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

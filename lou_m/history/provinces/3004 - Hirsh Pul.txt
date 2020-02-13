@@ -1,15 +1,25 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 3
+base_manpower = 3
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Z95
+owner = Z95
+controller = Z95
 
-trade_goods = grain
+culture = culture_codyan
+religion = religion_cuivac
+
+trade_goods = wool
 
 hre = no
+
+city_1_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

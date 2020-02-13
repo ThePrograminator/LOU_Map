@@ -1,7 +1,7 @@
 is_city = yes
 
 base_tax = 4
-base_production = 3
+base_production = 4
 base_manpower = 4
 
 add_core = X01
@@ -12,9 +12,12 @@ add_core = X11
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 
-trade_goods = stone
+trade_goods = copper
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

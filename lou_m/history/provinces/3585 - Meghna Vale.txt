@@ -1,15 +1,22 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 3
+base_manpower = 3
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W13
+owner = W13
+controller = W13
 
-trade_goods = grain
+culture = culture_nay
+religion = religion_talatherim
+
+trade_goods = cloth
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

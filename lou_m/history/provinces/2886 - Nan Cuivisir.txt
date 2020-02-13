@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
 add_core = V59
 owner = V59
@@ -11,9 +11,11 @@ controller = V59
 culture = culture_hisildi
 religion = religion_moriquendi
 
-trade_goods = grain
+trade_goods = wine
 
 hre = no
+
+noble_residence_elf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

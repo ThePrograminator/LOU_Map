@@ -12,20 +12,27 @@
 
 is_city = yes
 
-base_tax = 8
-base_production = 10
-base_manpower = 1
+base_tax = 5
+base_production = 4
+base_manpower = 4
 
 add_core = Z73
 owner = Z73
 controller = Z73
 
 culture = culture_nikkeans
-religion = religion_nikkeans
+religion = religion_lynerian
 
 trade_goods = cloth
 
 hre = no
+
+city_2_building=yes
+trade_depot_building=yes
+provincial_office_building=yes
+warehouse_building=yes
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

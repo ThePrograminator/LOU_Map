@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 4
 
 add_core = Z71
 owner = Z71
@@ -23,9 +23,17 @@ controller = Z71
 culture = culture_wolim
 religion = religion_lakhab
 
-trade_goods = grain
+trade_goods = naval_supplies
 
 hre = no
+
+city_1_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

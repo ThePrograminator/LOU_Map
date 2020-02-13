@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
 add_core = V64
 owner = V64
@@ -11,9 +11,16 @@ controller = V64
 culture = culture_kubor
 religion = religion_eastern_snowmen
 
-trade_goods = grain
+trade_goods = cloth
 
 hre = no
+
+capital_1_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

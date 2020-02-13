@@ -12,16 +12,27 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 6
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V76
+owner = V76
+controller = V76
 
-trade_goods = grain
+culture = culture_ivabi
+religion = religion_ivabi
+
+trade_goods = fur
 
 hre = no
+
+fortress_1_building=yes
+trade_outpost_building=yes
+temple_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

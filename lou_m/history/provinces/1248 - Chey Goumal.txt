@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 7
+base_tax = 11
+base_production = 11
+base_manpower = 11
 
 add_core = X77
 owner = X77
@@ -23,9 +23,22 @@ controller = X77
 culture = culture_cheyans
 religion = religion_chailuza
 
-trade_goods = fur
+trade_goods = silk
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_3_building=yes
+forum_building=yes
+bank_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_castle_building=yes
+garrison_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

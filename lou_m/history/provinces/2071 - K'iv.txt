@@ -12,16 +12,26 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Z87
+owner = Z87
+controller = Z87
 
-trade_goods = grain
+culture = culture_k_pur
+religion = religion_eastern_black_peoples
+
+trade_goods = naval_supplies
 
 hre = no
+
+fortress_1_building=yes
+work_camp_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

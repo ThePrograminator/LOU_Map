@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 3
-base_manpower = 10
+base_tax = 5
+base_production = 4
+base_manpower = 6
 
 add_core = Z95
 owner = Z95
@@ -23,9 +23,15 @@ controller = Z95
 culture = culture_codyan
 religion = religion_cuivac
 
-trade_goods = gold
+trade_goods = copper
 
 hre = no
+
+fortress_2_building=yes
+tax_office_building=yes
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

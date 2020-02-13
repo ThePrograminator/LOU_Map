@@ -12,20 +12,35 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 4
-base_manpower = 5
+base_tax = 10
+base_production = 11
+base_manpower = 10
 
 add_core = Z74
 owner = Z74
 controller = Z74
 
 culture = culture_lynir
-religion = religion_lynir
+religion = religion_lynerian
 
-trade_goods = wine
+trade_goods = silk
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_3_building=yes
+forum_building=yes
+bank_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_stronghold_building=yes
+garrison_building=yes
+dockyard_building=yes			
+grand_shipyard_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

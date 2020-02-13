@@ -12,16 +12,20 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 5
+base_tax = 7
+base_production = 6
 base_manpower = 14
 
-culture = culture_wilderness
+culture = culture_orkish
 religion = religion_wilderness
-
 trade_goods = iron
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -50,5 +54,9 @@ discovered_by = lotr_wights
 2953.7.1 = {
 	fortress_3_orc_building=yes
 	orc_fissure_orc_building=yes
+	siege_works_orc_building=yes
 	blacksmith_orc_building=yes
+	fort_orc_stronghold_orc_building=yes
+	large_arena_building=yes
+	tortur_chambers_orc_building=yes
 }

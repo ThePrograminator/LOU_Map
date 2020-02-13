@@ -10,22 +10,30 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 8
-base_manpower = 7
+base_tax = 5
+base_production = 6
+base_manpower = 5
 
-add_core = Z86
-owner = Z86
-controller = Z86
+add_core = Z95
+owner = Z95
+controller = Z95
 
-culture = culture_jopi
-religion = religion_eastern_black_peoples
+culture = culture_codyan
+religion = religion_cuivac
 
-trade_goods = gold
+trade_goods = dyes
 
 hre = no
+
+city_2_building=yes
+trade_depot_building=yes
+provincial_office_building=yes
+workshop_building=yes
+fort_castle_building=yes
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

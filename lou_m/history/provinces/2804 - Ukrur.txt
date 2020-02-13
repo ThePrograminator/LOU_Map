@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 5
+base_manpower = 5
 
 add_core = V63
 owner = V63
@@ -14,6 +14,18 @@ religion = religion_eastern_snowmen
 trade_goods = grain
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+city_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes	
+fort_castle_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

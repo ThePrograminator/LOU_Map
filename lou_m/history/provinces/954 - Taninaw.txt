@@ -14,14 +14,23 @@ is_city = yes
 
 base_tax = 4
 base_production = 3
-base_manpower = 8
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V76
+owner = V76
+controller = V76
 
-trade_goods = wool
+culture = culture_nargaathi
+religion = religion_ivabi
+
+trade_goods = stone
 
 hre = no
+
+fortress_1_building=yes
+work_camp_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

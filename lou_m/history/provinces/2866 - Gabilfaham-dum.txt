@@ -1,15 +1,33 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 5
+base_manpower = 7
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W34
+owner = W34
+controller = W34
 
-trade_goods = grain
+culture = culture_stonefoot
+religion = religion_mahal
+
+trade_goods = gems
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+hold_2_dwarf_building=yes
+fairground_dwarf_building=yes
+arsenal_dwarf_building=yes
+research_office_dwarf_building=yes
+hall_of_warriors_dwarf_building=yes
+materials_depot_building=yes
+fort_great_gatehouse_dwarf_building=yes
+narrow_bridge_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

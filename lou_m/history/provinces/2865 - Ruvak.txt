@@ -1,15 +1,26 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 5
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V78
+owner = V78
+controller = V78
 
-trade_goods = grain
+culture = culture_rulurk
+religion = religion_avaradan
+
+trade_goods = cloth
 
 hre = no
+
+city_1_building=yes
+trade_outpost_building=yes
+tax_office_building=yes
+workshop_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

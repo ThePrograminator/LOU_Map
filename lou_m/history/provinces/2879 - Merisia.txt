@@ -1,19 +1,26 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 5
 
-add_core = V80
-owner = V80
-controller = V80
+add_core = V81
+owner = V81
+controller = V81
 
-culture = culture_durakhani
+culture = culture_sulini
 religion = religion_avaradan
 
 trade_goods = grain
 
 hre = no
+
+city_1_building=yes
+temple_building=yes
+work_camp_building=yes
+army_camp_building=yes
+fort_pallisade_building=yes
+
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

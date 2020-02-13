@@ -55,17 +55,24 @@ discovered_by = lotr_wights
 	remove_core = Z48
 	owner = V49
 	controller = V49
+	create_alliance = X01
+	create_alliance = X16
 }
 
 2953.1.1 = { 
 	culture = culture_urukhai 
 	religion = religion_uruk 
+	add_historical_rival = X01
+	add_historical_rival  = X16
+	add_truce_with = X16
 }
 
 2957.1.1 = { 
 	capital_2_orc_building=yes
 	fort_orc_stronghold_orc_building=yes
 	orc_pit_orc_building=yes
+	warg_pit_orc_building=yes
+	prisoner_cage_orc_building=yes
 }
 
 3000.1.1 = { 
@@ -74,8 +81,12 @@ discovered_by = lotr_wights
 	add_base_manpower = 9
 	capital_3_orc_building=yes
 	dark_iron_forge_orc_building=yes
+	orc_fissure_orc_building=yes
 	army_garrison_orc_building=yes
 	warg_arena_orc_building=yes
-	siege_works_orc_building=yes
+	great_siege_works_orc_building=yes
+	fort_large_orc_stronghold_orc_building=yes
+	large_arena_building=yes
+	tortur_chambers_orc_building=yes
 }
 

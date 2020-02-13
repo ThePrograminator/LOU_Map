@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 8
-base_production = 6
-base_manpower = 5
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = Y86
 owner = Y86
@@ -23,9 +23,14 @@ controller = Y86
 culture = culture_vul
 religion = religion_drughu
 
-trade_goods = grain
+trade_goods = stone
 
 hre = no
+
+settlement_building=yes
+outpost_building=yes
+work_camp_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

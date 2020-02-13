@@ -27,7 +27,7 @@ trade_goods = silk
 
 hre = no
 
-city_1_building=yes
+city_2_building=yes
 fort_castle_building=yes
 workshop_building=yes
 marketplace_building=yes
@@ -58,15 +58,20 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
 2820.1.1 = {
-	city_2_building = yes
+	city_3_building = yes
 	fort_stronghold_building = yes
 	warehouse_building = yes
 	trade_depot_building = yes
+	tax_office_building=yes
+	army_camp_building=yes
+	seaport_building = yes
 }
 
 2900.1.1 = {
-	city_3_building = yes
-	seaport_building = yes
+	dockyard_building=yes
+	forum_building=yes
+	bank_building=yes
+	stockpile_building=yes
 }
 
 

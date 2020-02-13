@@ -1,15 +1,23 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Y45
+owner = Y45
+controller = Y45
 
-trade_goods = grain
+culture = culture_jungle_orkish
+religion = religion_orkish
+
+trade_goods = tropical_wood
 
 hre = no
+
+fortress_1_orc_building=yes
+orc_pit_orc_building=yes
+fort_pallisade_orc_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

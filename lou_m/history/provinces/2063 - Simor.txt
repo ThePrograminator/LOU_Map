@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 5
 
 add_core = Z81
 owner = Z81
@@ -23,9 +23,24 @@ controller = Z81
 culture = culture_argaw
 religion = religion_cuivac
 
-trade_goods = grain
+trade_goods = incense
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes			
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
+seaport_building=yes			
+drydock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

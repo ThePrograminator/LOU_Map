@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 5
-base_production = 7
-base_manpower = 9
+base_tax = 3
+base_production = 4
+base_manpower = 4
 
 add_core = X89
 owner = X89
@@ -23,9 +23,12 @@ controller = X89
 culture = culture_kykurians
 religion = religion_ioriags
 
-trade_goods = wine
+trade_goods = stone
 
 hre = no
+
+settlement_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 5
-base_production = 8
-base_manpower = 2
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = Z95
 owner = Z95
@@ -26,6 +26,12 @@ religion = religion_cuivac
 trade_goods = naval_supplies
 
 hre = no
+
+fortress_1_building=yes
+fort_pallisade_building=yes
+dock_building=yes
+army_camp_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
+base_tax = 3
+base_production = 4
 base_manpower = 4
 
 add_core = X01
@@ -23,9 +23,13 @@ controller = X01
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 
-trade_goods = marble
+trade_goods = silver
 
-settlement_building=yes
+fortress_1_building=yes
+outpost_building=yes
+fort_pallisade_building=yes
+workshop_building=yes
+temple_building=yes
 
 hre = no
 

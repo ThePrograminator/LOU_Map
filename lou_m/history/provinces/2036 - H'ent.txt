@@ -10,22 +10,25 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = Z79
 owner = Z79
 controller = Z79
 
 culture = culture_proric
-religion = religion_lakhab
+religion = religion_eastern_black_peoples
 
-trade_goods = grain
+trade_goods = tropical_wood
 
 hre = no
+
+fortress_1_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

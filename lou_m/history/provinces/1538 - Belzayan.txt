@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 8
-base_production = 5
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 3
 
 add_core = X40
 owner = X40
@@ -23,9 +23,14 @@ controller = X40
 culture = culture_khanim
 religion = religion_black_numenorean
 
-trade_goods = wool
+trade_goods = grain
 
 hre = no
+
+city_1_building=yes
+port_building=yes
+workshop_building=yes
+temple_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

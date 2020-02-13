@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 10
-base_production = 10
-base_manpower = 2
+base_tax = 9
+base_production = 8
+base_manpower = 6
 
 culture = culture_wilderness
 religion = religion_wilderness
@@ -47,4 +47,10 @@ discovered_by = lotr_wights
 	culture = culture_orkish
 	religion = religion_orkish
 	camp_orc_building=yes
+}
+2953.7.1 = {
+	fortress_1_orc_building=yes
+	blacksmith_orc_building=yes
+	enforcer_camp_orc_building=yes
+	orc_pit_orc_building=yes
 }

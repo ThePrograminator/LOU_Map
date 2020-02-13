@@ -1,15 +1,35 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 5
+base_manpower = 6
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Y77
+owner = Y77
+controller = Y77
 
-trade_goods = grain
+culture = culture_nelyarin
+religion = religion_moriquendi
+
+trade_goods = silk
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_elf_building=yes
+craftsmen_plaza_elf_building=yes
+theatre_elf_building=yes
+elven_forge_elf_building=yes
+heros_shrine_building=yes	
+grand_stables_elf_building=yes
+seaport_elf_building=yes
+haven_elf_building=yes
+fort_high_walls_elf_building=yes
+wall_bastions_elf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

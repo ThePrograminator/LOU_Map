@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 4
-base_production = 3
-base_manpower = 6
+base_production = 4
+base_manpower = 3
 
 add_core = Z85
 owner = Z85
@@ -23,9 +23,12 @@ controller = Z85
 culture = culture_aca-folk
 religion = religion_ivabi
 
-trade_goods = fur
+trade_goods = copper
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

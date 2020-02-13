@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 4
+base_manpower = 3
 
 add_core = V80
 owner = V80
@@ -11,9 +11,12 @@ controller = V80
 culture = culture_durakhani
 religion = religion_avaradan
 
-trade_goods = grain
+trade_goods = tropical_wood
 
 hre = no
+
+settlement_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

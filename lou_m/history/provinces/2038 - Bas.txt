@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 4
+base_manpower = 3
 
 add_core = Z77
 owner = Z77
@@ -23,9 +23,12 @@ controller = Z77
 culture = culture_argaw
 religion = religion_cuivac
 
-trade_goods = grain
+trade_goods = fish
 
 hre = no
+
+settlement_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

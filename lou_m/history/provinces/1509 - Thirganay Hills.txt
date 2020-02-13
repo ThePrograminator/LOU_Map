@@ -12,16 +12,24 @@
 
 is_city = yes
 
-base_tax = 8
+base_tax = 4
 base_production = 5
 base_manpower = 3
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V77
+owner = V77
+controller = V77
+
+culture = culture_gaathgykar
+religion = religion_ahar
 
 trade_goods = iron
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

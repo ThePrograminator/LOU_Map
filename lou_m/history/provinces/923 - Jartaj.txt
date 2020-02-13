@@ -12,20 +12,33 @@
 
 is_city = yes
 
-base_tax = 7
+base_tax = 8
 base_production = 9
-base_manpower = 5
+base_manpower = 9
 
 add_core = Z73
 owner = Z73
 controller = Z73
 
 culture = culture_nikkeans
-religion = religion_nikkeans
+religion = religion_lynerian
 
-trade_goods = cloth
+trade_goods = spices
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+city_2_building=yes
+trade_depot_building=yes
+provincial_office_building=yes
+warehouse_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

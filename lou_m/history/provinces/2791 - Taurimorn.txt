@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 add_core = V90
 owner = V90
@@ -11,9 +11,14 @@ controller = V90
 culture = culture_hwendi
 religion = religion_moriquendi
 
-trade_goods = grain
+trade_goods = wine
 
 hre = no
+
+town_1_elf_building=yes
+temple_elf_building=yes
+workshop_elf_building=yes
+warriors_gallery_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

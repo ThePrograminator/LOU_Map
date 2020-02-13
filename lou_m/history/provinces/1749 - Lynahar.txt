@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 6
+base_tax = 3
+base_production = 5
 base_manpower = 4
 
 add_core = Z74
@@ -21,11 +21,14 @@ owner = Z74
 controller = Z74
 
 culture = culture_lynir
-religion = religion_lynir
+religion = religion_lynerian
 
-trade_goods = gold
+trade_goods = wine
 
 hre = no
+
+settlement_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -1,15 +1,24 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = V79
+owner = V79
+controller = V79
 
-trade_goods = grain
+culture = culture_surk_kaelan
+religion = religion_avaradan
 
+trade_goods = copper
 hre = no
+
+city_2_building=yes
+tax_office_building=yes
+warehouse_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 5
+base_tax = 6
 base_production = 8
-base_manpower = 4
+base_manpower = 5
 
 add_core = Y23
 owner = Y23
@@ -26,6 +26,9 @@ religion = religion_mahal
 trade_goods = iron
 
 hre = no
+
+hold_1_dwarf_building=yes
+mining_network_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

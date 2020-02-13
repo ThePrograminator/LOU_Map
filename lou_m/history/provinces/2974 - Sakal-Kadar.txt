@@ -1,15 +1,26 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = X40
+owner = X40
+controller = X40
 
-trade_goods = grain
+culture = culture_khanim
+religion = religion_black_numenorean
+
+trade_goods = naval_supplies
 
 hre = no
+
+city_2_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+army_camp_building=yes
+seaport_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

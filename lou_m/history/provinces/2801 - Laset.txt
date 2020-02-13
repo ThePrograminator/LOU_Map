@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 4
+base_manpower = 4
 
 add_core = V63
 owner = V63
@@ -11,9 +11,15 @@ controller = V63
 culture = culture_urdar
 religion = religion_eastern_snowmen
 
-trade_goods = grain
+trade_goods = fur
 
 hre = no
+
+city_2_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_castle_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

@@ -10,10 +10,10 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 4
-base_production = 9
+base_tax = 8
+base_production = 8
 base_manpower = 8
 
 add_core = V22
@@ -23,9 +23,15 @@ controller = V22
 culture = culture_dalpigy
 religion = religion_ahar
 
-trade_goods = naval_supplies
+trade_goods = iron
 
 hre = no
+
+fortress_2_building=yes
+temple_building=yes
+fort_castle_building=yes
+forge_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

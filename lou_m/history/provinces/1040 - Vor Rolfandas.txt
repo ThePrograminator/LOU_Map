@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 3
-base_production = 9
-base_manpower = 6
+base_production = 4
+base_manpower = 3
 
 add_core = V83
 owner = V83
@@ -23,9 +23,13 @@ controller = V83
 culture = culture_rolfandan
 religion = religion_avaradan
 
-trade_goods = cloth
+trade_goods = fish
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

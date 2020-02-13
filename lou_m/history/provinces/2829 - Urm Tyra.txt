@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 5
+base_manpower = 6
 
 add_core = V71
 owner = V71
@@ -11,9 +11,22 @@ controller = V71
 culture = culture_lu_tyr
 religion = religion_tyr
 
-trade_goods = grain
+trade_goods = incense
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_2_building=yes
+trade_depot_building=yes
+provincial_office_building=yes
+warehouse_building=yes			
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

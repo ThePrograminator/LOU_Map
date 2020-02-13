@@ -1,15 +1,31 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = Y86
+owner = Y86
+controller = Y86
 
-trade_goods = grain
+culture = culture_vul
+religion = religion_drughu
+
+trade_goods = fish
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = trade_post_modifier
+	duration = -1
+}
+
+capital_1_building=yes
+temple_building=yes
+work_camp_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

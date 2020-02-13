@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 10
-base_manpower = 10
+base_tax = 3
+base_production = 4
+base_manpower = 3
 
 add_core = W03
 owner = W03
@@ -23,9 +23,13 @@ controller = W03
 culture = culture_burskadek
 religion = religion_talatherim
 
-trade_goods = naval_supplies
+trade_goods = wool
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

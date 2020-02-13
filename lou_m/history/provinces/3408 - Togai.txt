@@ -1,15 +1,25 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 6
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = X89
+owner = X89
+controller = X89
 
-trade_goods = grain
+culture = culture_kykurians
+religion = religion_ioriags
+
+trade_goods = paper
 
 hre = no
+
+city_1_building=yes
+marketplace_building=yes
+tax_office_building=yes
+workshop_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

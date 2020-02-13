@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
 add_core = V79
 owner = V79
@@ -11,9 +11,12 @@ controller = V79
 culture = culture_surk_kaelan
 religion = religion_avaradan
 
-trade_goods = grain
+trade_goods = wool
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

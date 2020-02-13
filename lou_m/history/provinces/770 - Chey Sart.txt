@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 5
 base_production = 5
@@ -23,9 +23,12 @@ controller = X77
 culture = culture_cheyans
 religion = religion_chailuza
 
-trade_goods = cloth
+trade_goods = livestock
 
 hre = no
+
+settlement_building=yes
+outpost_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
