@@ -1518,7 +1518,7 @@ fort_pallisade_orc_building = {
 	cost = 100
 	time = 18
 	
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {
@@ -1587,7 +1587,7 @@ fort_wooden_walls_orc_building = {
 	cost = 200
 	time = 36
 	make_obsolete = fort_pallisade_orc_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	
@@ -1657,7 +1657,7 @@ fort_orc_stronghold_orc_building = {
 	cost = 400
 	time = 54
 	make_obsolete = fort_wooden_walls_orc_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	
@@ -1727,7 +1727,7 @@ fort_large_orc_stronghold_orc_building = {
 	cost = 600
 	time = 72
 	make_obsolete = fort_orc_stronghold_orc_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {

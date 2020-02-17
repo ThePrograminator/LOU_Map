@@ -1229,7 +1229,7 @@ fort_pallisade_building = {
 	cost = 100
 	time = 18
 	
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {
@@ -1298,7 +1298,7 @@ fort_castle_building = {
 	cost = 200
 	time = 36
 	make_obsolete = fort_pallisade_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {
@@ -1367,7 +1367,7 @@ fort_stronghold_building = {
 	cost = 400
 	time = 54
 	make_obsolete = fort_castle_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	
@@ -1439,7 +1439,7 @@ fort_citidal_building = {
 	cost = 600
 	time = 72
 	make_obsolete = fort_stronghold_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {

@@ -12,21 +12,20 @@ bookmark =
 	country = Y68
     easy_country = Y68
     
-    default = no
-    
     effect = {
 		V53 = {
-		add_prestige = 10
-		add_manpower = 3
+			add_prestige = 10
+			add_manpower = 3
 		}
 		Y57 = {
-		add_stability = -1
-		add_prestige = -20
-		add_manpower = 1
+			add_stability = -1
+			add_prestige = -20
+			add_manpower = 1
 		}
 		Y22 = {
-		add_stability = -1
-		add_prestige = 10
-		add_manpower = -3
+			add_stability = -1
+			add_prestige = 10
+			add_manpower = -3
 		}
+	}
 }

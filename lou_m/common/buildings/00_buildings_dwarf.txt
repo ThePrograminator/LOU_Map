@@ -1743,7 +1743,7 @@ fort_small_gatehouse_dwarf_building = {
 	cost = 100
 	time = 18
 	
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {
@@ -1830,7 +1830,7 @@ fort_great_gatehouse_dwarf_building = {
 	cost = 200
 	time = 36
 	make_obsolete = fort_small_gatehouse_dwarf_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	
@@ -1918,7 +1918,7 @@ fort_mountain_fortress_dwarf_building = {
 	cost = 400
 	time = 54
 	make_obsolete = fort_great_gatehouse_dwarf_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	
@@ -2006,7 +2006,7 @@ fort_mountain_citidal_dwarf_building = {
 	cost = 600
 	time = 72
 	make_obsolete = fort_mountain_fortress_dwarf_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {
@@ -2097,7 +2097,7 @@ fort_pallisade_dwarf_building = {
 	cost = 100
 	time = 18
 	
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	trigger = {
@@ -2175,7 +2175,7 @@ fort_castle_dwarf_building = {
 	cost = 200
 	time = 36
 	make_obsolete = fort_pallisade_dwarf_building
-	onmap = no
+	onmap = yes
 	influencing_fort = yes
 	
 	
