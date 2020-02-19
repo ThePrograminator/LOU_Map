@@ -294,20 +294,6 @@ cb_independence_war = {
 	war_goal = defend_capital_independence
 }
 
-# Colonial Independance
-cb_colonial_independance_war = {
-	exclusive = yes
-	independence = yes
-
-	prerequisites = {
-		is_subject = yes
-		is_colonial_nation_of = FROM
-		is_revolution_target = no
-	}
-
-	war_goal = defend_capital_independence
-}
-
 # Nationalism
 cb_nationalist = {
 
@@ -319,48 +305,6 @@ cb_nationalist = {
 	}
 
 	war_goal = take_province_nationalist
-}
-
-# Napoleonic era imperialism
-cb_imperial = {
-	valid_for_subject = no
-
-	prerequisites = {
-		OR = {
-			dip_tech = 23
-			invasion_nation = yes
-		}
-		is_free_or_tributary_trigger = yes
-		is_revolution_target = no
-		NOT = { has_reform = war_against_the_world_doctrine_reform }
-	}
-
-	war_goal = take_capital_imperial
-}
-
-# War Against the World CB for pirates
-cb_war_against_the_world = {
-	valid_for_subject = no
-	
-	prerequisites = {
-		has_reform = war_against_the_world_doctrine_reform
-		dip_tech = 23
-		is_free_or_tributary_trigger = yes
-		is_revolution_target = no
-	}
-
-	war_goal = take_capital_pirates
-}
-
-# Colonialist CB
-cb_colonial = {
-
-	prerequisites = {
-		colony_claim = FROM
-		is_revolution_target = no
-	}
-
-	war_goal = take_colony
 }
 
 # Liberation CB

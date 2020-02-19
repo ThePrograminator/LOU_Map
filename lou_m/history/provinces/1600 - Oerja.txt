@@ -12,16 +12,23 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 1
-base_manpower = 9
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W46
+owner = W46
+controller = W46
 
-trade_goods = wool
+culture = culture_vothrig
+religion = religion_tyr
+
+trade_goods = fish
 
 hre = no
+
+city_1_building=yes
+port_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
