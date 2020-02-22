@@ -80,9 +80,13 @@ declarewar = {
 		potential = {
 		}
 		allow = {
-			NOT = { tag = X13
+			NOT = { 
+				OR = {
+					tag = X13	
 					tag = Z51
-					tag = Z52}
+					tag = Z52
+				}
+			}
 		}
 	}
 }

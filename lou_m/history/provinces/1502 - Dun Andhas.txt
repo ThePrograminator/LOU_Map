@@ -27,6 +27,11 @@ trade_goods = glass
 
 hre = no
 
+add_permanent_province_modifier = {
+	name = river_estuary_modifier
+	duration = -1
+}
+
 fortress_1_building=yes
 fort_pallisade_building=yes
 outpost_building=yes
