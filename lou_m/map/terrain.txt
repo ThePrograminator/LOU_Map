@@ -92,7 +92,7 @@ categories =  {
 		color = { 113 176 151 }
 
 		type = hills
-		sound_type = mountain
+		sound_type = mountains
 
 		movement_cost = 1.15
 		defence = 1
@@ -105,7 +105,9 @@ categories =  {
 			105 1846 244 1844 76 1835 262 261 271 1049 617
 			598 878 3564 850 2762 600 2787 839 1677 1566
 			1274 1669 1542 1631 129 3300 3242 3241 127
-			133 3245 3296 136 66 1213 1135
+			133 3245 3296 136 66 1213 1135 3019 427
+			3277 3299 138 3261 3308 3115 3116 1562
+			1194
 		}
 	}
 
@@ -133,7 +135,7 @@ categories =  {
 		color = { 105 24 4 }
 
 		type = mountains
-		sound_type = mountain
+		sound_type = mountains
 
 		movement_cost = 1.25
 		defence = 2
@@ -219,7 +221,7 @@ categories =  {
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = {
-			
+			1309
 		}
 	}
 	
@@ -250,7 +252,7 @@ categories =  {
 		supply_limit = 6 
 		
 		terrain_override = {
-			
+			1296
 		}
 	}	
 	
@@ -267,7 +269,24 @@ categories =  {
 		allowed_num_of_buildings = 1
 
 		terrain_override = {
-
+			1768 469 473 1200 1222 468 143
+			472 520 1189 3276 471 1766 3259
+			475 1182 3257 3343 3256 3332 3273
+			3254 3303 1219 3298 1216 3244 1215 3228
+			134 1754 3235 3274 3247 3305 3251 3306
+			451 3260 460 466 462 3328 1764 480 482
+			484 1779 500 487 477 443 1347 485 1380
+			479 1275 1293 1279 435 1292 1289 3294 1187
+			3104 3275 1186 3295 476 3267 3292 517 3100
+			518 1776 1188 868 3101 506 1777 3103 513 516
+			3123 486 514 3110 1759 474 525 493 1760
+			3126 1249 1781 515 631 3119 804 3112 803 799
+			135 867 3118 3120 766 771 1781 509 3113 807
+			511 3121 512 510 1265 1410 3111 1097 3376 1112
+			3373 1106 1267 1102 1108 3369 1103 1098 1072
+			1116 1117 1138 1122 3105 1223 1177 1484 1528
+			1172 1240 795 1399 1334 891 1612 887 1330 1351
+			1352 1350 1616 1335 1613 1614 1337 1336
 		}		
 	}
 
@@ -275,7 +294,7 @@ categories =  {
 		color = { 176 129 21 }
 
 		type = hills
-		sound_type = mountain
+		sound_type = mountains
 		
 		supply_limit = 6
 		movement_cost = 1.15
@@ -286,6 +305,7 @@ categories =  {
 
 		terrain_override = {
 			3456 2323 3122 497 494 3124 800 1105 3372 1412 3375
+			797 793 
 		}
 	}
 
@@ -356,7 +376,7 @@ categories =  {
 	
 	unique_amonhen = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		supply_limit = 10
@@ -370,10 +390,10 @@ categories =  {
 	
 	unique_amon_lhaw = {
 		color = { 220 210 0 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.85
-		attrition = 0
+		#attrition = 0
 		supply_limit = 6
 		
 		local_defensiveness = 0
@@ -400,11 +420,11 @@ categories =  {
 	
 	unique_minasmorgul = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 2
-		attrition = 2
+		#attrition = 2
 		supply_limit = 0
 		
 		local_defensiveness = 0.50
@@ -420,7 +440,7 @@ categories =  {
 		
 		movement_cost = 0.90
 		defence = 1
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -432,11 +452,11 @@ categories =  {
 	
 	unique_east_wall = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		defence = 1
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -451,7 +471,7 @@ categories =  {
 		sound_type = plains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -466,7 +486,7 @@ categories =  {
 		sound_type = plains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -481,7 +501,7 @@ categories =  {
 		sound_type = plains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -496,7 +516,7 @@ categories =  {
 		sound_type = plains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -508,10 +528,10 @@ categories =  {
 	
 	unique_nan_lothanduin = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -523,10 +543,10 @@ categories =  {
 	
 	unique_parth_galen = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -538,10 +558,10 @@ categories =  {
 	
 	unique_sarn_gebir = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.90
-		attrition = 0
+		#attrition = 0
 		supply_limit = 5
 		
 		local_defensiveness = 0
@@ -557,11 +577,11 @@ categories =  {
 	
 	unique_mountdoom = {
 		color = { 30 30 30 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 2
 		defence = 5
-		attrition = 5
+		#attrition = 5
 		supply_limit = 1
 		
 		local_defensiveness = 0.50
@@ -577,7 +597,7 @@ categories =  {
 		
 		movement_cost = 0.75
 		defence = 2
-		attrition = 1
+		#attrition = 1
 		supply_limit = 5
 		
 		local_defensiveness = 0.50
@@ -589,7 +609,7 @@ categories =  {
 	
 	unique_baraddur = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.5
 		defence = 3
@@ -608,7 +628,7 @@ categories =  {
 		
 		movement_cost = 0.80
 		defence = 0
-		attrition = 2
+		#attrition = 2
 		supply_limit = 0
 		
 		local_defensiveness = 0
@@ -620,11 +640,11 @@ categories =  {
 	
 	unique_cirithungol = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 1
-		attrition = 1
+		#attrition = 1
 		supply_limit = 0
 		
 		local_defensiveness = 0.25
@@ -636,11 +656,11 @@ categories =  {
 	
 	unique_cirith_nurn_nargil_pass = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 1
-		attrition = 1
+		#attrition = 1
 		supply_limit = 0
 		
 		local_defensiveness = 0.25
@@ -656,7 +676,7 @@ categories =  {
 	
 	unique_helmsdeep = {
 		color = { 20 20 20 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 2
@@ -739,7 +759,7 @@ categories =  {
 		
 		movement_cost = 0.75
 		defence = 1
-		attrition = 1
+		#attrition = 1
 		supply_limit = 10
 		
 		local_defensiveness = 0.25
@@ -751,7 +771,7 @@ categories =  {
 	
 	unique_erebor = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 2
@@ -766,7 +786,7 @@ categories =  {
 	
 	unique_dale = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -796,7 +816,7 @@ categories =  {
 	
 	unique_rivendell = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -826,11 +846,11 @@ categories =  {
 	
 	unique_moria = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.5
 		defence = 2
-		attrition = 1
+		#attrition = 1
 		supply_limit = 10
 		
 		local_defensiveness = 0.5
@@ -861,7 +881,7 @@ categories =  {
 		
 		movement_cost = 1.5
 		defence = 1
-		attrition = 1
+		#attrition = 1
 		supply_limit = 10
 		
 		local_defensiveness = 0
@@ -903,11 +923,11 @@ categories =  {
 	
 	unique_gundabad = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.5
 		defence = 2
-		attrition = 1
+		#attrition = 1
 		supply_limit = 10
 		
 		local_defensiveness = 0.25
@@ -919,11 +939,11 @@ categories =  {
 	
 	unique_goblintown = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.5
 		defence = 2
-		attrition = 1
+		#attrition = 1
 		supply_limit = 10
 		
 		local_defensiveness = 0.10
@@ -950,11 +970,11 @@ categories =  {
 	
 	unique_pass = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 3
 		defence = 1
-		attrition = 1
+		#attrition = 1
 		supply_limit = 1
 		
 		local_defensiveness = 0.25
@@ -966,7 +986,7 @@ categories =  {
 	
 	unique_shire = {
 		color = { 60 60 60 }
-		sound_type = farmlands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 0
@@ -996,7 +1016,7 @@ categories =  {
 	
 	unique_carndum = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -1015,7 +1035,7 @@ categories =  {
 		
 		movement_cost = 0.85
 		defence = 0
-		attrition = 0
+		#attrition = 0
 		supply_limit = 6
 		
 		local_defensiveness = 0
