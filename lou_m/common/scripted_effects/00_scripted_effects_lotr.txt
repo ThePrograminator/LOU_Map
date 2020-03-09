@@ -1008,3 +1008,224 @@ set_servants_of_darkness_opinions_effect = {
 		}
 	}
 }
+
+#Human
+set_country_modifier_human_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "human_buff" }
+			technology_group = lotr_human
+		}
+		country_event = { 
+			id = lotr_setup.4
+		}
+	}
+}
+
+#Dwarven
+set_country_modifier_dwarven_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "dwarven_buff" }
+			technology_group = lotr_dwarven
+		}
+		country_event = { 
+			id = lotr_setup.5
+		}
+	}
+}
+
+#Dragon
+set_country_modifier_dragon_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "dragon_buff" }
+			technology_group = lotr_dragon
+		}
+		country_event = { 
+			id = lotr_setup.6
+		}
+	}
+}
+
+#Elven
+set_country_modifier_elven_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "elven_buff" }
+			technology_group = lotr_elven
+		}
+		country_event = { 
+			id = lotr_setup.7
+		}
+	}
+}
+
+#Ent
+set_country_modifier_ent_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "ent_buff" }
+			technology_group = lotr_ent
+		}
+		country_event = { 
+			id = lotr_setup.8
+		}
+	}
+}
+
+#Erus Children (Great Eagles)
+set_country_modifier_erus_children_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "erus_children_buff" }
+			technology_group = lotr_erus_children
+		}
+		country_event = { 
+			id = lotr_setup.9
+		}
+	}
+}
+
+#Goblin
+set_country_modifier_goblin_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "goblin_buff" }
+			technology_group = lotr_goblin
+		}
+		country_event = { 
+			id = lotr_setup.10
+		}
+	}
+}
+
+#Giant
+set_country_modifier_giant_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "giant_buff" }
+			technology_group = lotr_giant
+		}
+		country_event = { 
+			id = lotr_setup.11
+		}
+	}
+}
+
+#Great Spider
+set_country_modifier_great_spider_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "great_spider_buff" }
+			technology_group = lotr_great_spider
+		}
+		country_event = { 
+			id = lotr_setup.12
+		}
+	}
+}
+
+#Half Dwarf
+set_country_modifier_half_dwarf_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "half_dwarf_buff" }
+			technology_group = lotr_half_dwarf
+		}
+		country_event = { 
+			id = lotr_setup.13
+		}
+	}
+}
+
+#Hobbit
+set_country_modifier_hobbit_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "hobbit_buff" }
+			technology_group = lotr_hobbit
+		}
+		country_event = { 
+			id = lotr_setup.14
+		}
+	}
+}
+
+#Half Orc
+set_country_modifier_half_orc_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "half_orc_buff" }
+			technology_group = lotr_half_orc
+		}
+		country_event = { 
+			id = lotr_setup.15
+		}
+	}
+}
+
+#Orc
+set_country_modifier_orc_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "orc_buff" }
+			technology_group = lotr_orc
+		}
+		country_event = { 
+			id = lotr_setup.16
+		}
+	}
+}
+
+#Troll
+set_country_modifier_troll_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "troll_buff" }
+			technology_group = lotr_troll
+		}
+		country_event = { 
+			id = lotr_setup.17
+		}
+	}
+}
+
+#Uruk Hai
+set_country_modifier_uruk_hai_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "uruk_hai_buff" }
+			technology_group = lotr_uruk_hai
+		}
+		country_event = { 
+			id = lotr_setup.18
+		}
+	}
+}
+
+#Wizard
+set_country_modifier_wizard_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "wizard_buff" }
+			technology_group = lotr_wizard
+		}
+		country_event = { 
+			id = lotr_setup.19
+		}
+	}
+}
+
+#Wights
+set_country_modifier_wights_effect = {
+	every_country = {
+		limit = {
+			NOT = {	has_country_modifier =  "wights_buff" }
+			technology_group = lotr_wights
+		}
+		country_event = { 
+			id = lotr_setup.20
+		}
+	}
+}

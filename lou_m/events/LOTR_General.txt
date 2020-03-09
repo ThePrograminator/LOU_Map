@@ -90,17 +90,11 @@ country_event = {
 	title = "LOTR_DWARF.1t"
 	desc = "LOTR_DWARF.1d"
 	picture = COURT_eventPicture
+	fire_only_once = yes
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "dwarf_buff" }
-		OR = { 
-				technology_group = lotr_dwarven
-				}
-		
-	}
-
-	mean_time_to_happen = {
-		days = 1
+		technology_group = lotr_dwarven
 	}
 
 	option = {
@@ -120,10 +114,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "elf_buff" }
-		OR = { 
-				technology_group = lotr_elven
-		}
-		
+		technology_group = lotr_elven
 	}
 
 	mean_time_to_happen = {
@@ -147,10 +138,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "hobbit_buff" }
-		OR = { 
-				technology_group = lotr_hobbit
-				}
-		
+		technology_group = lotr_hobbit
 	}
 
 	mean_time_to_happen = {
@@ -174,10 +162,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "ents_buff" }
-		OR = { 
-				technology_group = lotr_ent
-				}
-		
+		technology_group = lotr_ent
 	}
 
 	mean_time_to_happen = {
@@ -201,10 +186,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "beornings_buff" }
-		OR = { 
-				tag = Z39
-				}
-		
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -228,10 +210,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "orc_buff" }
-		OR = { 
-				technology_group = lotr_orc
-				}
-		
+		technology_group = lotr_orc
 	}
 
 	mean_time_to_happen = {
@@ -255,10 +234,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "goblin_buff" }
-		NOT = {	tag =  X16 }
-		OR = { 
-			technology_group = lotr_goblin
-		}
+		technology_group = lotr_goblin
 	}
 
 	mean_time_to_happen = {
@@ -282,9 +258,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "uruk_hai_buff" }
-		OR = { 
-			technology_group = lotr_uruk_hai
-		}
+		technology_group = lotr_uruk_hai
 	}
 
 	mean_time_to_happen = {
@@ -308,9 +282,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "troll_buff" }
-		OR = { 
-			technology_group = lotr_troll
-		}
+		technology_group = lotr_troll
 	}
 
 	mean_time_to_happen = {
@@ -334,9 +306,7 @@ country_event = {
 	
 	trigger = {
 		NOT = {	has_country_modifier =  "spider_buff" }
-		OR = { 
-			technology_group = lotr_great_spider
-		}
+		technology_group = lotr_great_spider
 	}
 
 	mean_time_to_happen = {
@@ -411,7 +381,6 @@ country_event = {
             every_country = {
                 limit = {
                     OR = {
-                        technology_group = lotr_nazgul
                         technology_group = lotr_dragon
                         technology_group = lotr_uruk_hai
                         technology_group = lotr_troll
@@ -473,7 +442,6 @@ country_event = {
         every_country = {
             limit = {
                 OR = {
-                    technology_group = lotr_nazgul
                     technology_group = lotr_uruk_hai
                     technology_group = lotr_troll
                     technology_group = lotr_goblin
@@ -483,7 +451,6 @@ country_event = {
             every_country = {
                 limit = {
                     OR = {
-                        technology_group = lotr_nazgul
                         technology_group = lotr_uruk_hai
                         technology_group = lotr_troll
                         technology_group = lotr_goblin
@@ -565,47 +532,37 @@ country_event = {
 			}
 }
 
-country_event = 
-{
+country_event = {
 	id = lotr_general.23
 	title = "orc_raiders.1.title"
 	desc = "orc_raiders.1.desc"
 	picture = BORDER_TENSION_eventPicture
 	
-	trigger = 
-	{ 
-		OR = 
-		{
-			AND = 
-			{
-				OR = 
-				{
-					north_ithilien_area = 
-					{
-						AND = 
-						{ 
+	trigger = { 
+		OR = {
+			AND = {
+				OR = {
+					forithilien_area = {
+						AND = { 
 							owned_by = ROOT 
 						}
 					}
 				
-					south_ithilien_area = 
-					{
+					harithilien_area = {
 						AND = 
 						{ 
 							owned_by = ROOT 
 						}
 					}
 					
-					osgiliath_area = 
-					{
+					osgiliath_area = {
 						AND = 
 						{ 
 							owned_by = ROOT 
 						}
 					}
 					
-					emyn_muil_area = 
-					{
+					emyn_muil_area = {
 						AND = 
 						{ 
 							owned_by = ROOT 
@@ -613,84 +570,61 @@ country_event =
 					}
 				}
 				
-				NOT = 
-				{
+				NOT = {
 					is_year = 2942
 					tag = X84
 					culture_group = culture_group_melkor
-					culture_group = culture_group_southron
-					culture_group = culture_group_easterling
+					culture_group = culture_group_haruzani
+					culture_group = culture_group_ulgath
 					
 					has_country_modifier = spawn_orc_raider_timer
 				}
 			}
 			
-			AND = 
-			{
+			AND = {
 				exists = X84
 				is_year = 2942
 			
-				OR = 
-				{
-					north_ithilien_area = 
-					{
-						AND = 
-						{ 
+				OR = {
+					forithilien_area = {
 							owned_by = ROOT 
-						}
 					}
 				
-					south_ithilien_area = 
-					{
-						AND = 
-						{ 
-							owned_by = ROOT 
-						}
+					harithilien_area = {
+						owned_by = ROOT 
 					}
 					
-					osgiliath_area = 
-					{
-						AND = 
-						{ 
-							owned_by = ROOT 
-						}
+					osgiliath_area = {
+						owned_by = ROOT 
 					}
 					
-					emyn_muil_area = 
-					{
-						AND = 
-						{ 
-							owned_by = ROOT 
-						}
+					emyn_muil_area = {
+						owned_by = ROOT 
 					}
 				}
 				
-				NOT = 
-				{
+				NOT = {
 					tag = X84
 					culture_group = culture_group_melkor
-					culture_group = culture_group_southron
-					culture_group = culture_group_easterling
+					culture_group = culture_group_haruzani
+					culture_group = culture_group_ulgath
 					
 					has_country_modifier = spawn_orc_raider_timer
 				}
 			}
 		}
-		
-		
 	}
 	
-	mean_time_to_happen = 
-	{
+	mean_time_to_happen = {
 		months = 48
 		
 		modifier = {
 			factor = 0.55
-			owner = { war_exhaustion = 10 }
+			ROOT = { war_exhaustion = 10 }
 		}
 		modifier = {
 			factor = 0.65
-			owner = { war_exhaustion = 15 }
+			ROOT = { war_exhaustion = 15 }
 		}
 		modifier = {
 			factor = 0.85
@@ -698,45 +632,35 @@ country_event =
 		}
 	}
 	
-	option = 
-	{
+	option = {
 		name = "orc_raiders.1.a"
-		hidden_effect = 
-		{
-			add_country_modifier = 
-			{
-			name = spawn_orc_raider_timer 
-			duration = 1095
-			hidden = yes
+		hidden_effect = {
+			add_country_modifier = {
+				name = spawn_orc_raider_timer 
+				duration = 1095
+				hidden = yes
 			}
 		}
 		
-		random_owned_province = 
-		{
-			limit = 
-			{
-				OR = 
-				{ 
-					area = north_ithilien_area 
-					area = south_ithilien_area 
+		random_owned_province = {
+			limit = {
+				OR = { 
+					area = forithilien_area 
+					area = harithilien_area 
 				}
-				NOT = 
-				{ 
+				NOT = { 
 					units_in_province = 1 
 				}
 				is_capital = no
 			}
 			
 			if ={
-				limit = 
-				{
-					NOT = 
-					{
+				limit = {
+					NOT = {
 						exists = X84
 					}
 				}
-				random_list = 
-				{
+				random_list = {
 					5 = {
 						spawn_rebels = {
 							type = orc_raider_rebels
@@ -766,14 +690,9 @@ country_event =
 			if = {
 				limit = 
 				{
-					AND = 
-					{
-						exists = X84
-					}
-				
+					exists = X84
 				}
-				random_list = 
-				{
+				random_list = {
 					20 = {
 						spawn_rebels = {
 							type = orc_raider_rebels
@@ -819,9 +738,7 @@ province_event = {
 				}
 				NOT = {
 					has_province_modifier = province_wight_debuff
-				}
-				owner = {
-					NOT = {
+					owner = {
 						primary_culture = culture_wight
 						religion = religion_wight
 					}
@@ -1030,7 +947,7 @@ province_event = {
 			AND = {
 				OR = {
 					culture = culture_huorn
-					religion = religion_enyd
+					religion = religion_ents
 				}
 				NOT = {
 					has_province_modifier = province_huorn_debuff
@@ -1038,10 +955,10 @@ province_event = {
 				owner = {
 					NOT = {
 						OR = {
-							primary_culture = culture_entish
+							primary_culture = culture_ents
 							primary_culture = culture_huorn
 						}
-						religion = religion_enyd
+						religion = religion_ents
 					}
 				}
 			}
@@ -1049,17 +966,17 @@ province_event = {
 				has_province_modifier = province_huorn_debuff
 				NOT = {
 					culture = culture_huorn
-					religion = religion_enyd
+					religion = religion_ents
 				}
 			}
 			AND = {
 				has_province_modifier = province_huorn_debuff
 				owner = {
 					OR = {
-						primary_culture = culture_entish
+						primary_culture = culture_ents
 						primary_culture = culture_huorn
 					}
-					religion = religion_enyd
+					religion = religion_ents
 				}
 			}
 		}
@@ -1071,16 +988,16 @@ province_event = {
 			owner = {
 				NOT = {
 					OR = {
-						primary_culture = culture_entish
+						primary_culture = culture_ents
 						primary_culture = culture_huorn
 					}
-					religion = religion_enyd
+					religion = religion_ents
 				}
 			}
 		
 			OR = {
 				culture = culture_huorn
-				religion = religion_enyd
+				religion = religion_ents
 			}
 			NOT = {
 				has_province_modifier = province_huorn_debuff
@@ -1102,16 +1019,16 @@ province_event = {
 					AND = {
 						owner = {
 							OR = {
-								primary_culture = culture_entish
+								primary_culture = culture_ents
 								primary_culture = culture_huorn
 							}
-							religion = religion_enyd
+							religion = religion_ents
 						}
 					}
 					
 					NOT = {
 						culture = culture_huorn
-						religion = religion_enyd
+						religion = religion_ents
 					}
 				}
 			}

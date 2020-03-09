@@ -226,7 +226,7 @@ human_buff = {
 	artillery_power = 0.15
 }
 
-dwarf_buff = {
+dwarven_buff = {
 	land_forcelimit_modifier = -0.25
 	manpower_recovery_speed = -0.1
 	inflation_reduction = 0.2
@@ -236,7 +236,11 @@ dwarf_buff = {
 	fort_maintenance_modifier = -0.2
 }
 
-elf_buff = {
+dragon_buff = {
+
+}
+
+elven_buff = {
 	land_forcelimit_modifier = -0.4
 	manpower_recovery_speed = -0.15
 	diplomatic_reputation = 3
@@ -246,17 +250,7 @@ elf_buff = {
 	prestige = 1
 }
 
-hobbit_buff = {
-	land_forcelimit_modifier = -0.75
-	manpower_recovery_speed = -0.1
-	possible_mercenaries = 1
-	merc_maintenance_modifier = -0.5
-	tolerance_own = 2
-	tolerance_heretic = 2
-	trade_efficiency = 0.15
-}
-
-ents_buff = {
+ent_buff = {
 	land_forcelimit_modifier = -0.75
 	infantry_power = 0.6
 	infantry_cost = 0.5
@@ -268,28 +262,8 @@ ents_buff = {
 	manpower_recovery_speed = -0.35
 }
 
-beornings_buff = {
-	land_forcelimit_modifier = -0.65
-	infantry_power = 0.3
-	infantry_cost = 0.3
-	tolerance_own = 5
-	defensiveness = 0.1
-	hostile_attrition = 2
-	manpower_recovery_speed = -0.25
-}
+erus_children_buff = {
 
-orc_buff = {
-	land_forcelimit_modifier = 0.5
-	infantry_power = -0.1
-	unjustified_demands = -0.25
-	tolerance_own = 1
-	tolerance_heathen = -2
-	tolerance_heretic = -2
-	global_missionary_strength = 0.05
-	culture_conversion_cost = -0.35
-	missionaries = 2
-	manpower_recovery_speed = 0.25
-	land_maintenance_modifier = -0.25
 }
 
 goblin_buff = {
@@ -307,6 +281,80 @@ goblin_buff = {
 	land_maintenance_modifier = -0.5
 }
 
+giant_buff = {
+
+}
+
+# Spider Buff/Debuff
+great_spider_buff = {
+	land_forcelimit_modifier = -0.35
+	infantry_power = 0.1
+	infantry_cost = 0.25
+	hostile_attrition = 1
+	land_morale = -0.1
+	manpower_recovery_speed = -0.1
+	discipline = -0.25
+}
+
+half_dwarf_buff = {
+	land_forcelimit_modifier = -0.25
+	manpower_recovery_speed = -0.1
+	inflation_reduction = 0.2
+	production_efficiency = 0.25
+	global_unrest = -2
+	defensiveness = 0.25
+	fort_maintenance_modifier = -0.2
+}
+
+hobbit_buff = {
+	land_forcelimit_modifier = -0.75
+	manpower_recovery_speed = -0.1
+	possible_mercenaries = 1
+	merc_maintenance_modifier = -0.5
+	tolerance_own = 2
+	tolerance_heretic = 2
+	trade_efficiency = 0.15
+}
+
+half_orc_buff = {
+	land_forcelimit_modifier = 0.5
+	infantry_power = -0.1
+	unjustified_demands = -0.25
+	tolerance_own = 1
+	tolerance_heathen = -2
+	tolerance_heretic = -2
+	global_missionary_strength = 0.05
+	culture_conversion_cost = -0.35
+	missionaries = 2
+	manpower_recovery_speed = 0.25
+	land_maintenance_modifier = -0.25
+}
+
+orc_buff = {
+	land_forcelimit_modifier = 0.5
+	infantry_power = -0.1
+	unjustified_demands = -0.25
+	tolerance_own = 1
+	tolerance_heathen = -2
+	tolerance_heretic = -2
+	global_missionary_strength = 0.05
+	culture_conversion_cost = -0.35
+	missionaries = 2
+	manpower_recovery_speed = 0.25
+	land_maintenance_modifier = -0.25
+}
+
+# Troll Buff/Debuff
+troll_buff = {
+	land_forcelimit_modifier = -0.65
+	infantry_power = 0.5
+	infantry_cost = 0.5
+	siege_ability = 0.5
+	artillery_power = 0.3
+	artillery_cost = 0.5
+	manpower_recovery_speed = -0.25
+}
+
 uruk_hai_buff = {
 	discipline = 0.1
 	land_morale = 0.15
@@ -322,26 +370,34 @@ uruk_hai_buff = {
 	land_maintenance_modifier = 0.25
 }
 
-# Troll Buff/Debuff
-troll_buff = {
-	land_forcelimit_modifier = -0.65
-	infantry_power = 0.5
-	infantry_cost = 0.5
-	siege_ability = 0.5
-	artillery_power = 0.3
-	artillery_cost = 0.5
-	manpower_recovery_speed = -0.25
-}
-
-# Spider Buff/Debuff
-spider_buff = {
-	land_forcelimit_modifier = -0.35
+wizard_buff = {
+	stability_cost_modifier = 0.25
 	infantry_power = 0.1
 	infantry_cost = 0.25
-	hostile_attrition = 1
-	land_morale = -0.1
-	manpower_recovery_speed = -0.1
-	discipline = -0.25
+	cavalry_power = 0.1
+	global_tax_modifier = 0.05
+	global_trade_power = 0.1
+	artillery_power = 0.15
+}
+
+wights_buff = {
+	stability_cost_modifier = 0.25
+	infantry_power = 0.1
+	infantry_cost = 0.25
+	cavalry_power = 0.1
+	global_tax_modifier = 0.05
+	global_trade_power = 0.1
+	artillery_power = 0.15
+}
+
+beornings_buff = {
+	land_forcelimit_modifier = -0.65
+	infantry_power = 0.3
+	infantry_cost = 0.3
+	tolerance_own = 5
+	defensiveness = 0.1
+	hostile_attrition = 2
+	manpower_recovery_speed = -0.25
 }
 
 spawn_orc_raider_timer = {
