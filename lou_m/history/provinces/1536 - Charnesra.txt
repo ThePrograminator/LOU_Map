@@ -10,11 +10,11 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
-base_tax = 10
-base_production = 6
-base_manpower = 8
+base_tax = 8
+base_production = 7
+base_manpower = 7
 
 add_core = X66
 owner = X66
@@ -23,9 +23,16 @@ controller = X66
 culture = culture_harani
 religion = religion_sirani
 
-trade_goods = grain
+trade_goods = silk
 
 hre = no
+
+city_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes	
+fort_castle_building=yes
+army_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
