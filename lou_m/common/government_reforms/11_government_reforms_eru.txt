@@ -34,3 +34,49 @@ lotr_ent_government_reform = {
 		locked_government_type = yes
 	}
 }
+
+lotr_great_eagle_government_reform = {
+	icon = "chieftain"
+	valid_for_new_country = no
+	allow_convert = no
+	allow_normal_conversion = no
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_great_eagle_government_legacy
+	lock_level_when_selected = yes
+	fixed_rank = 1
+	
+	potential = {
+		technology_group = lotr_erus_children
+	}
+	
+	modifiers = {
+		tolerance_own = 5
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+lotr_giant_government_reform = {
+	icon = "chieftain"
+	valid_for_new_country = no
+	allow_convert = no
+	allow_normal_conversion = no
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_giant_government_legacy
+	lock_level_when_selected = yes
+	fixed_rank = 1
+	
+	potential = {
+		technology_group = lotr_giant
+	}
+	
+	modifiers = {
+		tolerance_own = 5
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

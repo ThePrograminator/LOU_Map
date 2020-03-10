@@ -872,3 +872,47 @@ lotr_ent_government_legacy = {
 		factor = 1
 	}
 }
+
+lotr_great_eagle_government_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+	
+	modifiers = {
+    	max_states = 2
+		global_manpower_modifier = 0.1
+		global_unrest = -1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+lotr_giant_government_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+	
+	modifiers = {
+    	max_states = 2
+		global_manpower_modifier = 0.1
+		global_unrest = -1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
