@@ -286,7 +286,7 @@ country_event = {
     }
 
 	option = {
-		name = LOTR_ERUS_CHILDREN.1a
+		name = LOTR_GOBLIN.1a
 		tooltip = {
             add_country_modifier = {
                 name = "goblin_buff"
@@ -323,23 +323,23 @@ country_event = {
 
 country_event = {
 	id = lotr_setup.12
-	title = LOTR_GIANT.1t
-	desc = LOTR_GIANT.1d
+	title = LOTR_SPIDER.1t
+	desc = LOTR_SPIDER.1d
 	picture = COURT_eventPicture
 	is_triggered_only = yes
     
     immediate = {
         add_country_modifier = {
-			name = "giant_buff"
+			name = "great_spider_buff"
 			duration = -1
 		}
     }
 
 	option = {
-		name = LOTR_GIANT.1a
+		name = LOTR_SPIDER.1a
 		tooltip = {
             add_country_modifier = {
-                name = "giant_buff"
+                name = "great_spider_buff"
                 duration = -1
             }
         }
