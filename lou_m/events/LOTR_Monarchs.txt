@@ -9,14 +9,15 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		OR = {
-			government = lotr_kingship
-			government = lotr_stewardship
-			government = lotr_clan
-			government = lotr_hand_of_angmar
-			government = lotr_hand_of_isengard
-			government = lotr_hand_of_mordor
-		}
+		always = no
+		#OR = {
+		#	government = lotr_kingship
+		#	government = lotr_stewardship
+		#	government = lotr_clan
+		#	government = lotr_hand_of_angmar
+		#	government = lotr_hand_of_isengard
+		#	government = lotr_hand_of_mordor
+		#}
 		has_regency = no
 	}
 	

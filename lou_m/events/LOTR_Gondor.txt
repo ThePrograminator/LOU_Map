@@ -381,6 +381,10 @@ country_event = {
 				owned_by = ROOT
 			}
 		}
+		NOT = {
+			has_reform = feudalism_reform
+			has_reform = autocracy_reform
+		}
 	}
 	
 	#tax
@@ -444,9 +448,7 @@ country_event = {
 			random_owned_area = {
 			limit = {
 				owned_by = ROOT
-			}
-			if = {
-				limit = {
+				all_province_in_state = {
 					NOT = {
 						culture_group = culture_group_orcs
 						culture_group = culture_group_melkor
@@ -456,6 +458,11 @@ country_event = {
 						religion_group = religion_group_melkor
 						religion_group = religion_group_wilderness
 					}
+				}
+			}
+			if = {
+				limit = {
+					owned_by = ROOT
 				}
 			
 				add_province_modifier = {
@@ -472,9 +479,8 @@ country_event = {
 			random_owned_area = {
 			limit = {
 				owned_by = ROOT
-			}
-			if = {
-				limit = {
+
+				all_province_in_state = {
 					NOT = {
 						culture_group = culture_group_orcs
 						culture_group = culture_group_melkor
@@ -484,6 +490,11 @@ country_event = {
 						religion_group = religion_group_melkor
 						religion_group = religion_group_wilderness
 					}
+				}
+			}
+			if = {
+				limit = {
+					owned_by = ROOT
 				}
 			
 				add_province_modifier = {
@@ -642,7 +653,7 @@ country_event = {
 	option = { 
 		name = flavor_gondor.8.a
 		
-		change_government = lotr_kingship
+		add_government_reform = feudalism_reform
 		set_government_rank = 3
 		
 		define_ruler = {
@@ -714,7 +725,8 @@ country_event = {
 			tag = X01
 		}
 		NOT = {
-			government = lotr_kingship
+			has_reform = feudalism_reform
+			has_reform = autocracy_reform
 		}
 		
 		OR = {

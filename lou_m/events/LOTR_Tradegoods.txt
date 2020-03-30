@@ -56,8 +56,10 @@ country_event = {
 
 	trigger = {
 		honey = 1
-		is_month = december
-		NOT = { has_province_modifier = harsh_winter_h }
+		is_month = 11
+		any_owned_province = {
+			NOT = { has_province_modifier = harsh_winter_h }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -90,7 +92,9 @@ country_event = {
 
 	trigger = {
 		iron = 1
-		NOT = { has_province_modifier = iron_problems }
+		any_owned_province = {
+			NOT = { has_province_modifier = iron_problems }		
+		}
 	}
 
 	mean_time_to_happen = {

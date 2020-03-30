@@ -65,14 +65,14 @@ country_event = {
 		
 		every_country = {
 			limit = {
-				religion = religion_southron
+				religion = religion_haruzani
 			}
 			
 			form_coalition_against = ROOT
 			
 			if = {
 				limit = {
-					religion = religion_southron
+					religion = religion_haruzani
 					is_papal_controller = yes
 				}
 				
@@ -126,7 +126,7 @@ country_event = {
 		
 		every_country = {
 			limit = {
-				religion = religion_southron
+				religion = religion_haruzani
 			}
 			
 			add_opinion = {
@@ -153,7 +153,7 @@ country_event = {
 		
 		every_country = {
 			limit = {
-				religion = religion_southron
+				religion = religion_haruzani
 			}
 			
 			add_opinion = {
@@ -231,7 +231,7 @@ country_event = {
 			
 		every_country = {
 			limit = {
-				religion = religion_southron
+				religion = religion_haruzani
 			}
 			
 			add_opinion = {
@@ -310,7 +310,7 @@ country_event = {
 		
 		every_country = {
 			limit = {
-				religion = religion_southron
+				religion = religion_haruzani
 			}
 			
 			add_opinion = {
@@ -409,6 +409,7 @@ country_event = {
 		
 		remove_casus_belli = {
 		  type = cb_harad_invasion
+		  target = X01
 		}
 	}
 
@@ -446,7 +447,7 @@ country_event = {
 			
 			remove_casus_belli = {
 			  type = cb_harad_invasion
-			  #target = PREV
+			  target = PREV
 			}
 		}
 		

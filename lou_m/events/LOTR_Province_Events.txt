@@ -14,7 +14,7 @@ country_event = {
 	desc = lotr_province_event.1.d
 	picture = COMET_SIGHTED_eventPicture
 
-	is_triggered_only = yes
+	#is_triggered_only = yes
 	
 	trigger = {
 		any_owned_province = {
@@ -25,7 +25,6 @@ country_event = {
 				province_id = 147
 			}
 		}
-		
 		
 		any_province = {
 			NOT = { 

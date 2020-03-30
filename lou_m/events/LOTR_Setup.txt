@@ -72,11 +72,11 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        NOT = { has_country_flag = completed_dwarf_country_setup }
+        NOT = { has_country_flag = completed_race_country_setup }
     }
 
     immediate = {
-        set_country_flag = completed_dwarf_country_setup
+        set_country_flag = completed_race_country_setup
     }
 
     option = {

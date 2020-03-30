@@ -1412,16 +1412,15 @@ country_event = {
 			has_country_modifier = mordor_sent_nazgul
 			has_country_modifier = mordor_didnt_sent_nazgul
 		}
-
-		NOT = {
-			local_autonomy = 50
-			controlled_by = REB
-		}
 		
 		any_owned_province = {
 			NOT = {
 				has_province_modifier = mordor_control_province
 				has_province_modifier = mordor_dont_control_province
+			}
+			NOT = {
+				local_autonomy = 50
+				controlled_by = REB
 			}
 		}
 	}
@@ -1502,9 +1501,7 @@ country_event = {
 			has_owner_religion = yes
 			controlled_by = ROOT
 			OR ={
-				area = mordor_area
-				area = west_nurn_area
-				area = east_nurn_area
+				region = mordor_region
 				417 = {
 					has_influencing_fort = yes
 					owned_by = V17
@@ -1520,35 +1517,7 @@ country_event = {
 	option = { 
 		name = flavor_mordor.18.a
 		
-		mordor_area = {
-			limit = {
-				has_influencing_fort = yes
-				has_owner_culture = yes
-				has_owner_religion = yes
-				controlled_by = ROOT
-			}
-			
-			add_province_modifier = {
-				name = mordor_reinforce_border_fort_province 
-				duration = 3650
-			}
-		}
-		
-		west_nurn_area = {
-			limit = {
-				has_influencing_fort = yes
-				has_owner_culture = yes
-				has_owner_religion = yes
-				controlled_by = ROOT
-			}
-			
-			add_province_modifier = {
-				name = mordor_reinforce_border_fort_province 
-				duration = 3650
-			}
-		}
-		
-		east_nurn_area = {
+		mordor_region = {
 			limit = {
 				has_influencing_fort = yes
 				has_owner_culture = yes
@@ -1853,23 +1822,14 @@ country_event = {
 
 		any_neighbor_country = {
 			NOT = {
-				primary_culture = culture_group_numenorean
-				primary_culture = culture_group_middlemen
-				primary_culture = culture_group_halfling
-				primary_culture = culture_group_dwarves
-				primary_culture = culture_group_amanyar
-				primary_culture = culture_group_umanyar
-				primary_culture = culture_group_moriquendi
-				primary_culture = culture_group_onodrim
-				primary_culture = culture_group_sun
-				religion_group = religion_group_edain
-				religion_group = religion_group_periannath
-				religion_group = religion_group_eldar
-				religion_group = religion_group_khazad
-				religion_group = religion_group_sun
+				
 				has_opinion_modifier = {
 					who = ROOT
 					modifier = embraced_absolutism
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = against_servants_of_darkness
 				}
 				has_country_flag = mordor_got_men_from_us
 			}
@@ -1930,23 +1890,14 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				NOT = {
-					primary_culture = culture_group_numenorean
-					primary_culture = culture_group_middlemen
-					primary_culture = culture_group_halfling
-					primary_culture = culture_group_dwarves
-					primary_culture = culture_group_amanyar
-					primary_culture = culture_group_umanyar
-					primary_culture = culture_group_moriquendi
-					primary_culture = culture_group_onodrim
-					primary_culture = culture_group_sun
-					religion_group = religion_group_edain
-					religion_group = religion_group_periannath
-					religion_group = religion_group_eldar
-					religion_group = religion_group_khazad
-					religion_group = religion_group_sun
+					
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = mordor_improved_relations
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = against_servants_of_darkness
 					}
 					has_country_flag = mordor_got_men_from_us
 				}
@@ -1969,23 +1920,14 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				NOT = {
-					primary_culture = culture_group_numenorean
-					primary_culture = culture_group_middlemen
-					primary_culture = culture_group_halfling
-					primary_culture = culture_group_dwarves
-					primary_culture = culture_group_amanyar
-					primary_culture = culture_group_umanyar
-					primary_culture = culture_group_moriquendi
-					primary_culture = culture_group_onodrim
-					primary_culture = culture_group_sun
-					religion_group = religion_group_edain
-					religion_group = religion_group_periannath
-					religion_group = religion_group_eldar
-					religion_group = religion_group_khazad
-					religion_group = religion_group_sun
+					
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = mordor_improved_relations
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = against_servants_of_darkness
 					}
 					has_country_flag = mordor_got_men_from_us
 				}

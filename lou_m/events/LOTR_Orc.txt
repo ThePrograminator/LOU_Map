@@ -106,6 +106,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		always = no
         technology_group = lotr_orc
         OR = {
            	num_of_generals = 1
@@ -161,6 +162,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		always = no
         technology_group = lotr_orc
 		NOT = {
 			has_country_flag = orc_clan_arrives
@@ -234,7 +236,7 @@ country_event = {
 	
 	#nay, slay them
  	option = {
-      	name = "flavor_orc.4.a"
+      	name = "flavor_orc.4.b"
 
 		add_mil_power = 50
 		add_manpower = -1
@@ -290,7 +292,7 @@ country_event = {
 	
 	#Don't Send
  	option = {
-      	name = "flavor_orc.5.a"
+      	name = "flavor_orc.5.b"
 
 		add_mil_power = 50
 		set_country_flag = orc_send_scouts
@@ -544,7 +546,11 @@ country_event = {
 				}
 				AND = {
 					technology_group = lotr_orc
-					alliance_with = ROOT
+					NOT = {
+						alliance_with = ROOT
+						is_neighbor_of = ROOT
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -598,6 +604,14 @@ country_event = {
 						OR = {	
 							is_subject_of = ROOT
 							alliance_with = ROOT
+						}
+					}
+					AND = {
+						technology_group = lotr_orc
+						NOT = {
+							alliance_with = ROOT
+							is_neighbor_of = ROOT
+							is_subject_of = ROOT
 						}
 					}
 				}

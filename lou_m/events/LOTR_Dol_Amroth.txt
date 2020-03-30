@@ -25,7 +25,7 @@ country_event = {
 			has_country_modifier = dol_amroth_scholar_donated
 			has_country_modifier = dol_amroth_mason_donated
 		}
-		656 = {
+		641 = {
 			owned_by = root
 		}
 	}
@@ -151,6 +151,10 @@ country_event = {
 		X01 = {
 			set_country_flag = low_manpower
 		}
+
+		country_event = {
+			id = flavor_dol_amroth.4 
+		}
 	}  
 	
 	#Medium
@@ -162,6 +166,10 @@ country_event = {
 		
 		X01 = {
 			set_country_flag = medium_manpower
+		}
+
+		country_event = {
+			id = flavor_dol_amroth.4 
 		}
 	} 
 	
