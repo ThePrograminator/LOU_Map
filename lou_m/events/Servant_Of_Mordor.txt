@@ -1,0 +1,206 @@
+# Initiate Spawn Mordor
+country_event = {
+	id = servant_of_mordor.1
+	title = servant_of_mordor.1.t
+	desc = servant_of_mordor.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR ={
+			tag = V19
+			tag = V40
+			tag = V28
+			tag = V18
+			tag = V98
+		}
+		
+		has_country_flag = servant_of_mordor_first
+		has_country_flag = servant_of_mordor_second
+		has_country_flag = servant_of_mordor_third
+		has_country_flag = servant_of_mordor_finish_securing_strength
+		
+		NOT = {
+			is_year = 2942
+			exists = V17
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			spawn_mordor_territory_effect = yes
+			spawn_mordor_vassal_effect = {VASSAL = V18}
+			spawn_mordor_vassal_effect = {VASSAL = V19}
+			spawn_mordor_vassal_effect = {VASSAL = ROOT}
+
+			spawn_morder_transfer_tech = {SPAWNED_MORDOR = ROOT}
+		}
+	}
+	
+	#Yes
+	option = { 
+		name = servant_of_mordor.1.a
+		
+		set_country_flag = servant_of_mordor_change_tag
+		
+		country_event = {
+			id = servant_of_mordor.2
+		}
+		set_global_flag = mordor_spawned
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						is_in_capital_area = yes
+					}
+				}
+				
+				remove_core = ROOT
+				add_core = V17
+				cede_province = V17
+			}
+		}
+	}
+	
+	#No
+	option = { 
+		name = servant_of_mordor.1.b
+		trigger = {
+			ai = no
+		}
+
+		set_country_flag = servant_of_mordor_keep_tag
+		
+		country_event = {
+			id = servant_of_mordor.2
+		}
+		set_global_flag = mordor_spawned
+	}
+}
+
+# Spawn Mordor
+country_event = {
+	id = servant_of_mordor.2
+	title = servant_of_mordor.2.t
+	desc = servant_of_mordor.2.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR ={
+			tag = V19
+			tag = V40
+			tag = V28
+			tag = V18
+			tag = V98
+		}
+	}
+	
+	option = { 
+		name = servant_of_mordor.2.a
+		
+		tooltip = {
+			mordor_region = {
+				add_core = V17
+				cede_province = V17
+			}
+			V17 = {
+				set_capital = 639
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = servant_of_mordor_change_tag
+			}
+			swap_free_idea_group = yes
+			switch_tag = V17
+			
+			#custom_tooltip = dol_guldur_switch_nation_meta
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = servant_of_mordor.2
+			}
+		}
+	}
+}
+
+# Join Mordor
+country_event = {
+	id = servant_of_mordor.3
+	title = servant_of_mordor.3.t
+	desc = servant_of_mordor.3.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		exists = V17
+		OR ={
+			tag = V40
+			tag = V28
+			tag = V98
+		}
+		NOT = {
+			vassal_of = V17
+		}
+		has_global_flag = mordor_spawned
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	#Yes Player
+	option = { 
+		name = servant_of_mordor.3.a
+		trigger = {
+			ai = no
+		}
+		
+		spawn_mordor_vassal_effect = {VASSAL = ROOT}
+	}
+
+	#Yes AI
+	option = { 
+		name = servant_of_mordor.3.b
+		ai_chance = { factor = 10 }
+		trigger = {
+			ai = yes
+		}
+		
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						is_in_capital_area = yes
+					}
+				}
+				
+				remove_core = ROOT
+				add_core = V17
+				cede_province = V17
+			}
+		}
+		spawn_mordor_vassal_effect = {VASSAL = ROOT}
+	}
+
+	#No
+	option = { 
+		name = servant_of_mordor.3.c
+		ai_chance = { factor = 1 }
+		
+		spawn_mordor_refused_effect = {REFUSED_COUNTRY = ROOT}
+	}
+}

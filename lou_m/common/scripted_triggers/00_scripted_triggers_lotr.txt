@@ -396,3 +396,69 @@ is_servants_of_evil_opinion = {
 		primary_culture = culture_logath
 	}
 }
+
+servant_of_mordor_region_nurn = {
+	AND = {
+		cirith_nurn_area = {
+			type = all
+			owned_by = ROOT
+		}
+		maegoth_area = {
+			type = all
+			owned_by = ROOT
+		}
+		urlutsu_nurn_area = {
+			type = all
+			owned_by = ROOT
+		}
+		thaurband_area = {
+			type = all
+			owned_by = ROOT
+		}
+		nurnen_area = {
+			type = all
+			owned_by = ROOT
+		}
+		sturlurtsa_nurn_area = {
+			type = all
+			owned_by = ROOT
+		}
+		lithlad_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+}
+
+servant_of_mordor_region_ithilien = {
+	AND = {
+		harithilien_area = {
+			type = all
+			owned_by = ROOT
+		}
+		ithilien_area = {
+			type = all
+			owned_by = ROOT
+		}
+		forithilien_area = {
+			type = all
+			owned_by = ROOT
+		}
+		emyn_arnen_area = {
+			type = all
+			owned_by = ROOT
+		}
+		minas_ithil_area = {
+			type = all
+			owned_by = ROOT
+		}
+		nindalf_area = {
+			type = all
+			owned_by = ROOT
+		}
+		athrad_poros_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+}

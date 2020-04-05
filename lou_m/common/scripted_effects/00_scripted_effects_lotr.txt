@@ -1347,3 +1347,40 @@ spawn_mordor_vassal_effect = {
 		vassalize = $VASSAL$
 	}
 }
+
+spawn_morder_transfer_tech = {
+	export_to_variable = {
+		which = adm_tech_var
+		value = adm_tech
+		who = $SPAWNED_MORDOR$
+	}
+
+	export_to_variable = {
+		which = dip_tech_var
+		value = dip_tech
+		who = $SPAWNED_MORDOR$
+	}
+
+	export_to_variable = {
+		which = mil_tech_var
+		value = mil_tech
+		who = $SPAWNED_MORDOR$
+	}
+
+	V17 = {
+		add_adm_tech = adm_tech_var
+		add_dip_tech = dip_tech_var
+		add_mil_tech = mil_tech_var
+		add_treasury = 300
+	}
+}
+
+spawn_mordor_refused_effect = {
+	V17 = {
+		add_opinion = {
+			who = $REFUSED_COUNTRY$
+			modifier = servant_of_mordor_refused
+			years = 100
+		}
+	}
+}
