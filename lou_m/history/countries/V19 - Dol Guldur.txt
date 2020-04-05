@@ -34,3 +34,15 @@ historical_rival = V27
 historical_rival = Y95
 historical_rival = Y96
 historical_rival = V26
+
+2845.1.1 = {
+	add_country_modifier = {
+		name = dol_guldur_thrain_captured
+		duration = -1
+	}
+}
+
+2850.1.1 = {
+	set_country_flag = dol_guldur_discovred
+	remove_country_modifier = dol_guldur_shrouded_mystery
+}

@@ -56,20 +56,19 @@ country_event = {
 			304 = {
 				owned_by = ROOT
 			}
+			has_country_modifier = dol_guldur_shrouded_mystery
 		}
 		NOT = {
-			has_country_modifier = dol_guldur_gandalf_discovered
+			has_country_flag = dol_guldur_discovred
 		}
 	}
 	
 	#
 	option = { 
 		name = flavor_dol_guldur.2.a
-		
-		add_country_modifier = {
-			name = dol_guldur_gandalf_discovered
-			duration = -1
-		}
+
+		set_country_flag = dol_guldur_discovred
+		remove_country_modifier = dol_guldur_shrouded_mystery
 	}
 }
 
@@ -91,7 +90,7 @@ country_event = {
 		}
 		NOT = {
 			has_country_modifier = dol_guldur_shrouded_mystery
-			has_country_modifier = dol_guldur_gandalf_discovered
+			has_country_flag = dol_guldur_discovred
 			is_year = 2850
 		}
 	}
@@ -144,6 +143,11 @@ country_event = {
 	#Yes
 	option = { 
 		name = flavor_dol_guldur.4.a
+
+		add_country_modifier = {
+			name = dol_guldur_orcs_missing_meat
+			duration = 3650
+		}
 		
 		mirkwood_region = {
 			limit = {
@@ -169,16 +173,13 @@ country_event = {
 	option = { 
 		name = flavor_dol_guldur.4.b
 		
-		add_country_modifier = {
-			name = dol_guldur_orcs_missing_meat
-			duration = 3650
-		}
-		
 		add_prestige = -5
+		add_adm_power = -25
 	}
 }
 
 # Ask Guldurim for Troops
+# EVENT TAKEN OUT, NO GULDURIM
 country_event = {
 	id = flavor_dol_guldur.5
 	title = flavor_dol_guldur.5.t
@@ -189,6 +190,7 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			always = no
 			tag = V19
 			dol_guldur_area = {
 				OR ={
@@ -263,7 +265,6 @@ country_event = {
 	
 	trigger = {
 		tag = V19
-			
 		has_country_flag = dol_guldur_first
 		has_country_flag = dol_guldur_second
 		has_country_flag = dol_guldur_third
@@ -276,17 +277,45 @@ country_event = {
 			exists = V17
 		}
 	}
+
+	immediate = {
+		hidden_effect = {
+			spawn_mordor_territory_effect = yes
+			spawn_mordor_vassal_effect = {VASSAL = V18}
+			spawn_mordor_vassal_effect = {VASSAL = V19}
+
+			export_to_variable = {
+				which = adm_tech_var
+				value = adm_tech
+				who = V19
+			}
+
+			export_to_variable = {
+				which = dip_tech_var
+				value = dip_tech
+				who = V19
+			}
+
+			export_to_variable = {
+				which = mil_tech_var
+				value = mil_tech
+				who = V19
+			}
+
+			V17 = {
+				add_adm_tech = adm_tech_var
+				add_dip_tech = dip_tech_var
+				add_mil_tech = mil_tech_var
+				add_treasury = 300
+			}
+		}
+	}
 	
 	#Yes
 	option = { 
 		name = flavor_dol_guldur.6.a
 		
-		if = {
-			limit = {
-				ai = no
-			}
-			set_country_flag = dol_guldur_change_tag
-		}
+		set_country_flag = dol_guldur_change_tag
 		
 		country_event = {
 			id = flavor_dol_guldur.7
@@ -297,13 +326,11 @@ country_event = {
 	#No
 	option = { 
 		name = flavor_dol_guldur.6.b
-
-		if = {
-			limit = {
-				ai = no
-			}
-			set_country_flag = dol_guldur_keep_tag
+		trigger = {
+			ai = no
 		}
+
+		set_country_flag = dol_guldur_keep_tag
 		
 		country_event = {
 			id = flavor_dol_guldur.7
@@ -326,14 +353,6 @@ province_event = {
 
 	trigger = {
 		tag = V19
-	
-		NOT = {
-			exists = V17 
-		}
-		
-		mordor_region = {
-			is_empty = yes
-		}
 	}
 	
 	option = { 
@@ -343,138 +362,9 @@ province_event = {
 			mordor_region = {
 				add_core = V17
 				cede_province = V17
-				set_capital = 639
 			}
-		}
-		
-		hidden_effect = {
-			mordor_region = {
-				add_core = V17
-			}
-			
-			mordor_region = {
-				limit = {
-					is_empty = yes
-				}
-				
-				cede_province = V17
-				
-				change_culture = culture_orkish
-				change_religion = religion_orkish
-				
-				691 = {
-					change_trade_goods = stone
-					
-					add_province_modifier = {
-						name = ruins_debuff 
-						duration = 1095
-					}
-				}
-					
-				72 = {
-					change_trade_goods = livestock
-				}
-					
-				662 = {
-					change_trade_goods = iron
-				}
-					
-				147 = {
-					change_trade_goods = iron
-				}
-
-				150 = {
-					change_trade_goods = livestock
-				}
-
-				151 = {
-					change_trade_goods = stone
-				}
-				
-				148 = {
-					change_trade_goods = stone
-				}
-
-				639 = {
-					change_trade_goods = livestock
-					
-					add_province_modifier = {
-						name = ruins_debuff 
-						duration = 1095
-					}
-				}
-				
-				149 = {
-					change_trade_goods = stone
-				}
-				
-				233 = {
-					change_trade_goods = livestock
-				}
-				
-				332 = {
-					change_trade_goods = livestock
-				}
-				
-				152 = {
-					change_trade_goods = copper
-				}
-				
-				334 = {
-					change_trade_goods = livestock
-				}
-				
-				109 = {
-					change_trade_goods = copper
-				}
-				
-				333 = {
-					change_trade_goods = livestock
-				}
-			}
-			
-			gondor_region = {
-				limit = {
-					is_empty = yes
-				}
-				
-				426 = {
-					add_core = V17
-					cede_province = V17
-					change_culture = culture_orkish
-					change_religion = religion_orkish
-					change_trade_goods = iron
-				}
-			}
-			
-			
 			V17 = {
-				add_opinion = {
-					who = V19
-					modifier = dol_guldur_servant
-					years = 500
-				}
-				add_adm_tech = V19
-				add_dip_tech = V19
-				add_mil_tech = V19
-				add_treasury = 300
-			}
-			
-			V19 = {
-				add_opinion = {
-					who = V17
-					modifier = mordor_master
-					years = 500
-				}
-				add_country_modifier = {
-					name = mordor_dol_guldur_subject
-					duration = -1
-				}
-			}
-			
-			country_event = {
-				id = flavor_mordor.3
-				days = 31
+				set_capital = 639
 			}
 		}
 		
@@ -485,7 +375,7 @@ province_event = {
 			swap_free_idea_group = yes
 			switch_tag = V17
 			
-			custom_tooltip = dol_guldur_switch_nation_meta
+			#custom_tooltip = dol_guldur_switch_nation_meta
 			hidden_effect = {
 				every_province = {
 					limit = {
@@ -501,32 +391,6 @@ province_event = {
 				}
 			}
 		}
-		
-		if = {
-			limit = {
-				has_country_flag = dol_guldur_keep_tag
-			}
-			V17 = {
-				create_march = V19
-			}
-		}
-		
-		if = {
-			limit = {
-				ai = yes
-				NOT = {
-					has_country_flag = dol_guldur_change_tag
-					has_country_flag = dol_guldur_keep_tag
-				}
-			}
-			V17 = {
-				create_march = V19
-			}
-		}
-		
-		hidden_effect = {
-			set_capital = 639
-		}
 	}
 }
 
@@ -541,6 +405,7 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
+		always = no
 		tag = FROM
 		has_country_flag = dol_guldur_refused_troops
 	

@@ -1229,3 +1229,121 @@ set_country_modifier_wights_effect = {
 		}
 	}
 }
+
+spawn_mordor_territory_effect = {
+	mordor_region = {
+		limit = {
+			is_empty = yes
+		}
+		add_core = V17
+		cede_province = V17
+		change_culture = culture_orkish
+		change_religion = religion_orkish
+	}
+
+	middle_earth = {
+		discover_country = V17
+	}
+			
+	V17 = {
+		set_capital = 639
+	}
+}
+
+spawn_mordor_province_setup_effect = {
+	691 = {
+		change_trade_goods = stone
+		
+		add_province_modifier = {
+			name = ruins_debuff 
+			duration = 1095
+		}
+	}
+		
+	72 = {
+		change_trade_goods = livestock
+	}
+		
+	662 = {
+		change_trade_goods = iron
+	}
+		
+	147 = {
+		change_trade_goods = iron
+	}
+
+	150 = {
+		change_trade_goods = livestock
+	}
+
+	151 = {
+		change_trade_goods = stone
+	}
+	
+	148 = {
+		change_trade_goods = stone
+	}
+
+	639 = {
+		change_trade_goods = livestock
+		
+		add_province_modifier = {
+			name = ruins_debuff 
+			duration = 1095
+		}
+	}
+	
+	149 = {
+		change_trade_goods = stone
+	}
+	
+	233 = {
+		change_trade_goods = livestock
+	}
+	
+	332 = {
+		change_trade_goods = livestock
+	}
+	
+	152 = {
+		change_trade_goods = copper
+	}
+	
+	334 = {
+		change_trade_goods = livestock
+	}
+	
+	109 = {
+		change_trade_goods = copper
+	}
+	
+	333 = {
+		change_trade_goods = livestock
+	}
+}
+
+spawn_mordor_vassal_effect = {
+	V17 = {
+		add_opinion = {
+			who = $VASSAL$
+			modifier = dol_guldur_servant
+			years = 500
+		}
+	}
+	
+	$VASSAL$ = {
+		add_opinion = {
+			who = V17
+			modifier = mordor_master
+			years = 500
+		}
+		add_country_modifier = {
+			name = mordor_dol_guldur_subject
+			duration = -1
+		}
+	}
+
+	V17 = {
+		vassalize = $VASSAL$
+	}
+}
