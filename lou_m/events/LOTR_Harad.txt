@@ -13,6 +13,8 @@ country_event = {
 	title = "invasion_called.1.title"
 	desc = "invasion_called.1.desc"
 	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
 	
 	trigger = {
 		has_country_flag = Invasion_called
@@ -21,15 +23,18 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = "invasion_called.1.a"
-		
+	immediate = {
 		hidden_effect = {
 			country_event = {
 				id = flavor_harad.2
 				days = 365
 			}
 		}
+	}
+
+
+	option = {
+		name = "invasion_called.1.a"
 		
 		set_country_flag = Invasion_called_response
 	}			
@@ -175,32 +180,32 @@ country_event = {
 #Not Declaring invasion against Gondor
 country_event = {
 	id = flavor_harad.4
-	title = "invasion.4.title"
-	desc = "invasion.4.desc"
+	title = "flavor_harad.4.title"
+	desc = "flavor_harad.4.desc"
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
-			exists = X01
-			X01 = {
-				num_of_cities = ROOT
-			
-				NOT = {
-					has_country_flag = Invasion_called_response
-				}
-			}
-			
-			is_papal_controller = yes
-			
+		exists = X01
+		X01 = {
+			num_of_cities = ROOT
+		
 			NOT = {
-				has_country_flag = Invasion_Warlord
-				has_country_flag = Invasion_Warlord_didnt_start_invasion
-				has_country_flag = Invasion_declared_war_any_nation
-				has_country_flag = Invasion_declared_war_gondor
-				has_country_flag = Invasion_Promise
-				has_country_modifier = harad_invasion_not_declaring
-				has_country_modifier = harad_invasion_didnt_keep_promise
-				truce_with = X01
+				has_country_flag = Invasion_called_response
 			}
+		}
+		
+		is_papal_controller = yes
+		
+		NOT = {
+			has_country_flag = Invasion_Warlord
+			has_country_flag = Invasion_Warlord_didnt_start_invasion
+			has_country_flag = Invasion_declared_war_any_nation
+			has_country_flag = Invasion_declared_war_gondor
+			has_country_flag = Invasion_Promise
+			has_country_modifier = harad_invasion_not_declaring
+			has_country_modifier = harad_invasion_didnt_keep_promise
+			truce_with = X01
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -214,7 +219,7 @@ country_event = {
 				ai = yes
 			}
 		}
-		name = "invasion.4.a"
+		name = "flavor_harad.4.a"
 		custom_tooltip = invasion_started.3_text
 		ai_chance = { factor = 75 }
 		
@@ -223,7 +228,7 @@ country_event = {
 
 	#Not Declaring Invasion
 	option = {
-		name = "invasion.4.b"
+		name = "flavor_harad.4.b"
 		ai_chance = { factor = 15 }
 		add_stability = -1
 		add_prestige = -25
@@ -253,7 +258,7 @@ country_event = {
 		trigger = {
 			ai = yes
 		}
-		name = "invasion.4.c"
+		name = "flavor_harad.4.c"
 		custom_tooltip = invasion_started.3_text
 		ai_chance = { factor = 75 }
 		
@@ -458,6 +463,26 @@ country_event = {
 			}
 		#}
 	}
+}
+
+country_event = {
+	id = flavor_harad.7
+	title = "flavor_harad.7.title"
+	desc = "flavor_harad.7.desc"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_papal_controller = yes
+	}
+
+	option = {
+		name = "flavor_harad.7.a"
+		
+		tooltip = {
+			custom_tooltip = tooltip_hard_invasion_called
+		}
+	}			
 }
 
 #Invasion Over!

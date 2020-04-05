@@ -716,11 +716,12 @@ call_crusade_action = {
 		}
 	}
 	effect = {
-		#country_event = { id = flavor_harad.1 days = 32 }
-		country_event = { id = flavor_harad.1}
-		#add_adm_power = 50
 		FROM = {
 			set_country_flag = Invasion_called
+			country_event = { id = flavor_harad.1}
+		}
+		ROOT = {
+			country_event = { id = flavor_harad.7}
 		}
 	}
 }
