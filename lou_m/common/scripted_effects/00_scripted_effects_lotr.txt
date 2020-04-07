@@ -947,6 +947,14 @@ set_against_race_opinions_effect = {
 		every_country = {
 			limit = {
 				is_servants_of_evil_opinion = yes
+				PREV = {
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = against_servants_of_darkness
+						}
+					}
+				}
 			}
 		   
 			# Good
@@ -974,6 +982,14 @@ set_free_peoples_opinions_effect = {
 		every_country = {
 			limit = {
 				is_free_peoples_opinion = yes
+				PREV = {
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = free_peoples
+						}
+					}
+				}
 			}
 		   
 			# Good
@@ -996,6 +1012,14 @@ set_servants_of_darkness_opinions_effect = {
 		every_country = {
 			limit = {
 				is_servants_of_evil_opinion = yes
+				PREV = {
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = servants_of_darkness
+						}
+					}
+				}
 			}
 		   
 			# Good
@@ -1248,11 +1272,139 @@ spawn_mordor_territory_effect = {
 	V17 = {
 		set_capital = 639
 	}
+
+	country_event = {
+		id = lotr_general.45
+	}
 }
 
-spawn_mordor_province_setup_effect = {
-	691 = {
+spawn_mordor_province_setup_effect = {	
+	3030 = {
+		change_trade_goods = wool
+	}
+
+	327 = {
+		change_trade_goods = copper
+	}
+
+	151 = {
+		change_trade_goods = iron
+	}
+	
+	3034 = {
+		change_trade_goods = copper
+	}
+
+	108 = {
+		change_trade_goods = silk
+	}
+	
+	1633 = {
+		change_trade_goods = iron
+	}
+	
+	580 = {
+		change_trade_goods = gems
+	}
+	
+	1634 = {
+		change_trade_goods = gold
+	}
+	
+	3042 = {
+		change_trade_goods = fur
+	}
+	
+	326 = {
+		change_trade_goods = slaves
+	}
+	
+	1005 = {
+		change_trade_goods = iron
+	}
+	
+	3041 = {
+		change_trade_goods = wool
+	}
+
+	325 = {
+		change_trade_goods = silk
+	}
+
+	1007 = {
+		change_trade_goods = silk
+	}
+
+	1004 = {
+		change_trade_goods = copper
+	}
+
+	977 = {
 		change_trade_goods = stone
+	}
+
+	3045 = {
+		change_trade_goods = iron
+	}
+
+	3038 = {
+		change_trade_goods = stone
+	}
+
+	3037 = {
+		change_trade_goods = copper
+	}
+
+	3044 = {
+		change_trade_goods = copper
+	}
+
+	231 = {
+		change_trade_goods = stone
+	}
+
+	1020 = {
+		change_trade_goods = stone
+	}
+
+	3225 = {
+		change_trade_goods = silver
+	}
+
+	3227 = {
+		change_trade_goods = fur
+	}
+
+	148 = {
+		change_trade_goods = copper
+	}
+
+	3033 = {
+		change_trade_goods = paper
+	}
+
+	146 = {
+		change_trade_goods = salt
+	}
+
+	3048 = {
+		change_trade_goods = gold
+	}
+
+	3049 = {
+		change_trade_goods = fur
+	}
+
+	3047 = {
+		change_trade_goods = copper
+	}
+
+	647 = {
+		change_trade_goods = iron
+	}
+
+	639 = {
+		change_trade_goods = iron
 		
 		add_province_modifier = {
 			name = ruins_debuff 
@@ -1260,65 +1412,49 @@ spawn_mordor_province_setup_effect = {
 		}
 	}
 		
-	72 = {
-		change_trade_goods = livestock
+	3028 = {
+		change_trade_goods = copper
 	}
 		
-	662 = {
-		change_trade_goods = iron
+	1021 = {
+		change_trade_goods = coal
 	}
-		
+
 	147 = {
-		change_trade_goods = iron
+		change_trade_goods = stone
+	}
+
+	3040 = {
+		change_trade_goods = silk
 	}
 
 	150 = {
 		change_trade_goods = livestock
 	}
 
-	151 = {
-		change_trade_goods = stone
-	}
-	
-	148 = {
+	3029 = {
 		change_trade_goods = stone
 	}
 
-	639 = {
-		change_trade_goods = livestock
-		
+	3039 = {
+		change_trade_goods = stone
+	}
+
+	149 = {
+		change_trade_goods = iron
+	}
+
+	71 = {
+		change_trade_goods = coal
+	}
+
+	675 = {
+		change_trade_goods = iron
+
 		add_province_modifier = {
 			name = ruins_debuff 
 			duration = 1095
 		}
-	}
-	
-	149 = {
-		change_trade_goods = stone
-	}
-	
-	233 = {
-		change_trade_goods = livestock
-	}
-	
-	332 = {
-		change_trade_goods = livestock
-	}
-	
-	152 = {
-		change_trade_goods = copper
-	}
-	
-	334 = {
-		change_trade_goods = livestock
-	}
-	
-	109 = {
-		change_trade_goods = copper
-	}
-	
-	333 = {
-		change_trade_goods = livestock
 	}
 }
 

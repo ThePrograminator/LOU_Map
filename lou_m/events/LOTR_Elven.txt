@@ -115,7 +115,7 @@ country_event = {
 
 	trigger = {
 		technology_group = lotr_elven
-		
+		always = no
 		OR = {
 			#Bigger nations
 			tag = Y80
@@ -158,7 +158,7 @@ country_event = {
 
 	trigger = {
 		technology_group = lotr_elven
-		
+		always = on
 		OR = {
 			#Bigger nations
 			tag = Y80
@@ -477,7 +477,7 @@ country_event = {
 
 	trigger = {
 		technology_group = lotr_elven
-		
+		always = no
 		OR = {
 			tag = Y80
 			tag = Y67
@@ -510,7 +510,7 @@ country_event = {
 
 	trigger = {
 		technology_group = lotr_elven
-		
+		always = no
 		OR = {
 			tag = Y80
 			tag = Y67

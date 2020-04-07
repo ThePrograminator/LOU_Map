@@ -31,6 +31,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			spawn_mordor_territory_effect = yes
+			spawn_mordor_province_setup_effect = yes
 			spawn_mordor_vassal_effect = {VASSAL = V18}
 			spawn_mordor_vassal_effect = {VASSAL = V19}
 			spawn_mordor_vassal_effect = {VASSAL = ROOT}
@@ -141,8 +142,6 @@ country_event = {
 	title = servant_of_mordor.3.t
 	desc = servant_of_mordor.3.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	
-	is_triggered_only = yes
 
 	trigger = {
 		exists = V17
@@ -155,6 +154,11 @@ country_event = {
 			vassal_of = V17
 		}
 		has_global_flag = mordor_spawned
+		NOT = {
+			has_country_flag = servant_of_mordor_join
+			has_country_flag = servant_of_mordor_refused
+			is_year = 2960
+		}
 	}
 
 	mean_time_to_happen = {
@@ -169,6 +173,7 @@ country_event = {
 		}
 		
 		spawn_mordor_vassal_effect = {VASSAL = ROOT}
+		set_country_flag = servant_of_mordor_join
 	}
 
 	#Yes AI
@@ -194,6 +199,7 @@ country_event = {
 			}
 		}
 		spawn_mordor_vassal_effect = {VASSAL = ROOT}
+		set_country_flag = servant_of_mordor_join
 	}
 
 	#No
@@ -202,5 +208,6 @@ country_event = {
 		ai_chance = { factor = 1 }
 		
 		spawn_mordor_refused_effect = {REFUSED_COUNTRY = ROOT}
+		set_country_flag = servant_of_mordor_refused
 	}
 }
