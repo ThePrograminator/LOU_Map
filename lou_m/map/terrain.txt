@@ -378,7 +378,7 @@ categories =  {
 	##################
 	
 	unique_minas_tirith = {
-		color = { 10 10 10 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -396,7 +396,7 @@ categories =  {
 	}
 	
 	unique_osgilliath = {
-		color = { 40 40 40 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -414,7 +414,7 @@ categories =  {
 	}
 	
 	unique_amonhen = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -430,7 +430,7 @@ categories =  {
 	}
 	
 	unique_amon_lhaw = {
-		color = { 220 210 0 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.85
@@ -447,7 +447,7 @@ categories =  {
 	}
 	
 	unique_dolamroth = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -465,7 +465,7 @@ categories =  {
 	}
 	
 	unique_minasmorgul = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -485,7 +485,7 @@ categories =  {
 	
 	unique_ithilien = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.10
@@ -520,8 +520,8 @@ categories =  {
 	}
 	
 	unique_east_wall = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.20
@@ -538,7 +538,7 @@ categories =  {
 	}
 	
 	unique_edhellond = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.90
@@ -557,7 +557,7 @@ categories =  {
 	}
 	
 	unique_gobel_tolfalas = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.90
@@ -575,7 +575,7 @@ categories =  {
 	}
 	
 	unique_gondor_town = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = plains
 		
 		movement_cost = 0.90
@@ -593,7 +593,7 @@ categories =  {
 	}
 	
 	unique_imloth_melui = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.90
@@ -611,7 +611,7 @@ categories =  {
 	}
 	
 	unique_nan_lothanduin = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.90
@@ -628,7 +628,7 @@ categories =  {
 	}
 	
 	unique_parth_galen = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.80
@@ -645,8 +645,8 @@ categories =  {
 	}
 	
 	unique_argonath = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.25
@@ -662,8 +662,8 @@ categories =  {
 	}
 	
 	unique_emyn_muil = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 1.20
 		local_development_cost = 0.15
@@ -679,7 +679,7 @@ categories =  {
 	}
 	
 	unique_sarn_gebir = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.90
@@ -696,7 +696,7 @@ categories =  {
 	}
 	
 	unique_henneth_annun = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.90
@@ -714,8 +714,8 @@ categories =  {
 	}
 	
 	unique_calembel = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.80
 		local_development_cost = -0.05
@@ -733,7 +733,7 @@ categories =  {
 	
 	unique_erech = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = 0.05
@@ -749,8 +749,8 @@ categories =  {
 	}
 	
 	unique_pelennor = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.80
 		local_development_cost = -0.10
@@ -768,7 +768,7 @@ categories =  {
 	
 	unique_beacon_of_gondor = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.90
 		local_development_cost = -0.05
@@ -786,7 +786,7 @@ categories =  {
 	
 	unique_anorien = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.70
 		nation_designer_cost_multiplier = 1
@@ -802,7 +802,7 @@ categories =  {
 	
 	unique_anorien2 = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.70
 		nation_designer_cost_multiplier = 1
@@ -817,8 +817,8 @@ categories =  {
 	}
 	
 	unique_harlond = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.10
@@ -835,8 +835,8 @@ categories =  {
 	}
 	
 	unique_crossroads = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = 0.05
@@ -886,8 +886,8 @@ categories =  {
 	}
 	
 	unique_path_of_dead = {
-		color = { 60 60 60 }
-		sound_type = mountain
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.75
@@ -904,7 +904,7 @@ categories =  {
 	
 	unique_pinnath_gelin = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		local_development_cost = -0.05
@@ -920,8 +920,8 @@ categories =  {
 	}
 	
 	unique_pelargir = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.80
 		local_development_cost = -0.05
@@ -939,7 +939,7 @@ categories =  {
 	
 	unique_gondor = {
 		color = { 60 60 60 }
-		sound_type = farmlands
+		sound_type = plains
 		
 		movement_cost = 0.65
 		local_development_cost = -0.05
@@ -956,7 +956,7 @@ categories =  {
 	
 	unique_gondor_hills = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.10
@@ -972,8 +972,8 @@ categories =  {
 	}
 	
 	unique_gondor_coastline = {
-		color = { 60 60 60 }
-		sound_type = coastline
+		color = { 19 145 161 }
+		sound_type = sea
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -990,7 +990,7 @@ categories =  {
 	
 	unique_gondor_fields = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = 0.05
@@ -1010,7 +1010,7 @@ categories =  {
 	##################
 	
 	unique_mountdoom = {
-		color = { 30 30 30 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 2
@@ -1028,7 +1028,7 @@ categories =  {
 	}
 	
 	unique_blackgate = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -1047,7 +1047,7 @@ categories =  {
 	}
 	
 	unique_baraddur = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.5
@@ -1078,12 +1078,12 @@ categories =  {
 		local_defensiveness = 0
 		
 		terrain_override = {
-			231 3037 3038 977 1004 1005 542 544 1003 3042 326 3041 108 3034 3030 1744 1686 621 3043 3048 3049 735
+			231 3037 3038 977 1004 1005 542 544 1003 3042 326 3041 108 3034 3030 1744 1686 621 3043 3048 3049 735 3047
 		}
 	}
 	
 	unique_cirithungol = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -1120,7 +1120,7 @@ categories =  {
 	}
 	
 	unique_durthang = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.90
@@ -1139,7 +1139,7 @@ categories =  {
 	}
 	
 	unique_mordor_udun = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = desert
 		
 		movement_cost = 0.90
@@ -1157,7 +1157,7 @@ categories =  {
 	}
 	
 	unique_mordor_gorgoroth = {
-		color = { 60 60 60 }
+		color = { 80 80 80 }
 		sound_type = desert
 		
 		movement_cost = 0.90
@@ -1175,7 +1175,7 @@ categories =  {
 	}
 	
 	unique_mordor_mount_doom_area = {
-		color = { 60 60 60 }
+		color = { 48 48 48 }
 		sound_type = desert
 		
 		movement_cost = 0.90
@@ -1193,8 +1193,8 @@ categories =  {
 	}
 	
 	unique_ostigurth = {
-		color = { 60 60 60 }
-		sound_type = drylands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.80
 		local_development_cost = -0.05
@@ -1212,8 +1212,8 @@ categories =  {
 	}
 	
 	unique_shelob_lair = {
-		color = { 60 60 60 }
-		sound_type = mountain
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 1.30
 		local_development_cost = 0.25
@@ -1231,7 +1231,7 @@ categories =  {
 	
 	unique_nurn = {
 		color = { 60 60 60 }
-		sound_type = drylands
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = 0.05
@@ -1248,8 +1248,8 @@ categories =  {
 	}
 	
 	unique_nurnen_settlement = {
-		color = { 60 60 60 }
-		sound_type = drylands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = -0.05
@@ -1267,8 +1267,8 @@ categories =  {
 	}
 	
 	unique_mordor_fortress = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 128 128 128 }
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.10
@@ -1287,7 +1287,7 @@ categories =  {
 	
 	unique_dead_marshes = {
 		color = { 60 60 60 }
-		sound_type = marsh
+		sound_type = forest
 		
 		movement_cost = 1.20
 		local_development_cost = 0.25
@@ -1308,7 +1308,7 @@ categories =  {
 	##################
 	
 	unique_helmsdeep = {
-		color = { 20 20 20 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -1326,7 +1326,7 @@ categories =  {
 	}
 	
 	unique_aglarond = {
-		color = { 20 20 20 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.40
@@ -1343,7 +1343,7 @@ categories =  {
 	}
 	
 	unique_helms_dike = {
-		color = { 20 20 20 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.65
@@ -1359,7 +1359,7 @@ categories =  {
 	}
 	
 	unique_edoras = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -1378,7 +1378,7 @@ categories =  {
 	
 	unique_dunharrow = {
 		color = { 50 50 50 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		local_development_cost = -0.05
@@ -1394,7 +1394,7 @@ categories =  {
 	}
 	
 	unique_isengard = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.70
@@ -1412,7 +1412,7 @@ categories =  {
 	}
 	
 	unique_methedras = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.20
@@ -1446,7 +1446,7 @@ categories =  {
 	
 	unique_wold = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		local_development_cost = 0.15
@@ -1463,7 +1463,7 @@ categories =  {
 	
 	unique_eastfold = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -1480,7 +1480,7 @@ categories =  {
 	
 	unique_westfold = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -1497,7 +1497,7 @@ categories =  {
 	
 	unique_fenmark = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -1513,8 +1513,8 @@ categories =  {
 	}
 	
 	unique_fords_of_isen = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = 0.05
@@ -1530,8 +1530,8 @@ categories =  {
 	}
 	
 	unique_rohan_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = -0.05
@@ -1549,7 +1549,7 @@ categories =  {
 	
 	unique_undeeps = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = 0.10
@@ -1565,7 +1565,7 @@ categories =  {
 	}
 	
 	unique_nan_curunir = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -1586,8 +1586,8 @@ categories =  {
 	##################
 	
 	unique_amrun = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = -0.10
@@ -1604,7 +1604,7 @@ categories =  {
 	}
 	
 	unique_umbar = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = desert
 		
 		movement_cost = 0.75
@@ -1623,7 +1623,7 @@ categories =  {
 	
 	unique_kajbah = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.10
@@ -1640,8 +1640,8 @@ categories =  {
 	}
 	
 	unique_harondor_coastline = {
-		color = { 60 60 60 }
-		sound_type = coastline
+		color = { 19 145 161 }
+		sound_type = sea
 		
 		movement_cost = 0.70
 		local_development_cost = -0.05
@@ -1659,8 +1659,8 @@ categories =  {
 	}
 	
 	unique_gobel_ancalimon = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = -0.10
@@ -1678,8 +1678,8 @@ categories =  {
 	}
 	
 	unique_gobel_mirlond = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		local_development_cost = -0.10
@@ -1698,7 +1698,7 @@ categories =  {
 	
 	unique_chelkar = {
 		color = { 60 60 60 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.80
 		local_development_cost = 0.05
@@ -1715,8 +1715,8 @@ categories =  {
 	}
 	
 	unique_harad_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -1734,7 +1734,7 @@ categories =  {
 	}
 	
 	unique_desert_towns = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = desert
 		
 		movement_cost = 0.90
@@ -1752,7 +1752,7 @@ categories =  {
 	}
 	
 	unique_dune_sea = {
-		color = { 60 60 60 }
+		color = { 212 212 81 }
 		sound_type = desert
 		
 		movement_cost = 0.90
@@ -1771,7 +1771,7 @@ categories =  {
 	
 	unique_ered_harmal = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.80
 		local_development_cost = 0.05
@@ -1789,7 +1789,7 @@ categories =  {
 	
 	unique_harnen_river = {
 		color = { 60 60 60 }
-		sound_type = drylands
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = -0.05
@@ -1807,7 +1807,7 @@ categories =  {
 	
 	unique_harad_river = {
 		color = { 220 210 0 }
-		sound_type = drylands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -1829,7 +1829,7 @@ categories =  {
 	
 	unique_orc_mine = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = -0.05
@@ -1848,7 +1848,7 @@ categories =  {
 	
 	unique_abandoned_mine = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.20
 		local_development_cost = -0.05
@@ -1866,7 +1866,7 @@ categories =  {
 	
 	unique_cave = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.20
 		local_development_cost = 0.10
@@ -1884,7 +1884,7 @@ categories =  {
 	
 	unique_ice_cave = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.40
 		local_development_cost = 0.15
@@ -1902,7 +1902,7 @@ categories =  {
 	
 	unique_tunnels = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.50
 		local_development_cost = 0.05
@@ -1920,7 +1920,7 @@ categories =  {
 	
 	unique_dwarf_hold = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.30
 		local_development_cost = -0.10
@@ -1939,7 +1939,7 @@ categories =  {
 	
 	unique_mountain_pass = {
 		color = { 50 50 50 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.10
 		local_development_cost = 0.05
@@ -1975,7 +1975,7 @@ categories =  {
 	
 	unique_tomb = {
 		color = { 50 50 50 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 1
 		local_development_cost = 0.20
@@ -1992,7 +1992,7 @@ categories =  {
 	}
 	
 	unique_dolguldur = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.75
@@ -2011,7 +2011,7 @@ categories =  {
 	}
 	
 	unique_dains_halls = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.80
@@ -2029,7 +2029,7 @@ categories =  {
 	}
 	
 	unique_ravenhill = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.70
@@ -2047,7 +2047,7 @@ categories =  {
 	}
 	
 	unique_erebor = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -2065,7 +2065,7 @@ categories =  {
 	}
 	
 	unique_dale = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -2083,7 +2083,7 @@ categories =  {
 	}
 	
 	unique_laketown = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.70
@@ -2101,7 +2101,7 @@ categories =  {
 	}
 	
 	unique_rivendell = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -2119,8 +2119,8 @@ categories =  {
 	}
 	
 	unique_fords_of_bruinen = {
-		color = { 50 50 50 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		local_development_cost = -0.05
@@ -2137,7 +2137,7 @@ categories =  {
 	
 	unique_foreregion = {
 		color = { 50 50 50 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = 0.10
@@ -2153,7 +2153,7 @@ categories =  {
 	}
 	
 	unique_trollshaws = {
-		color = { 50 50 50 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.60
@@ -2170,8 +2170,8 @@ categories =  {
 	}
 	
 	unique_pinnath_tereg = {
-		color = { 50 50 50 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.70
 		local_development_cost = 0.05
@@ -2188,7 +2188,7 @@ categories =  {
 	
 	unique_rhudaur = {
 		color = { 50 50 50 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = 0.05
@@ -2205,7 +2205,7 @@ categories =  {
 	
 	unique_rhudaur_highlands = {
 		color = { 50 50 50 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		local_development_cost = 0.10
@@ -2221,7 +2221,7 @@ categories =  {
 	}
 	
 	unique_hobbitton = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.70
@@ -2239,8 +2239,8 @@ categories =  {
 	}
 	
 	unique_bywater = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = -0.05
@@ -2256,8 +2256,8 @@ categories =  {
 	}
 	
 	unique_waymeet = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = -0.05
@@ -2274,7 +2274,7 @@ categories =  {
 	
 	unique_tuckland = {
 		color = { 60 60 60 }
-		sound_type = farmlands
+		sound_type = plains
 		
 		movement_cost = 0.60
 		local_development_cost = -0.05
@@ -2291,8 +2291,8 @@ categories =  {
 	}
 	
 	unique_the_marish = {
-		color = { 60 60 60 }
-		sound_type = marsh
+		color = { 255 255 0 }
+		sound_type = forest
 		
 		movement_cost = 0.80
 		local_development_cost = 0.05
@@ -2309,7 +2309,7 @@ categories =  {
 	
 	unique_buckland = {
 		color = { 60 60 60 }
-		sound_type = farmlands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -2325,7 +2325,7 @@ categories =  {
 	}
 	
 	unique_tom_bombadil = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.80
@@ -2342,7 +2342,7 @@ categories =  {
 	}
 	
 	unique_woody_end = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.70
@@ -2359,7 +2359,7 @@ categories =  {
 	}
 	
 	unique_green_hill_country = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.60
@@ -2376,8 +2376,8 @@ categories =  {
 	}
 	
 	unique_hills_of_scary = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.05
@@ -2393,8 +2393,8 @@ categories =  {
 	}
 	
 	unique_sarn_ford = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = -0.10
@@ -2410,7 +2410,7 @@ categories =  {
 	}
 	
 	unique_moria = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.5
@@ -2429,7 +2429,7 @@ categories =  {
 	}
 	
 	unique_moria_west_gate = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.2
@@ -2448,7 +2448,7 @@ categories =  {
 	}
 	
 	unique_moria_east_gate = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.2
@@ -2467,7 +2467,7 @@ categories =  {
 	}
 	
 	unique_durins_tower = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.20
@@ -2485,8 +2485,8 @@ categories =  {
 	}
 	
 	unique_azanulbizar = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		local_development_cost = 0.05
@@ -2504,7 +2504,7 @@ categories =  {
 	
 	unique_barnas = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		local_development_cost = 0.05
@@ -2521,8 +2521,8 @@ categories =  {
 	}
 	
 	unique_ost_in_edhil = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.80
 		local_development_cost = 0.15
@@ -2558,7 +2558,7 @@ categories =  {
 	}
 	
 	unique_entmoot = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 1.4
@@ -2591,7 +2591,7 @@ categories =  {
 	}
 	
 	unique_nan_nimrodel = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.75
@@ -2606,7 +2606,7 @@ categories =  {
 	}
 	
 	unique_egladil = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.75
@@ -2621,7 +2621,7 @@ categories =  {
 	}
 	
 	unique_caras_galadhon = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.75
@@ -2636,7 +2636,7 @@ categories =  {
 	}
 	
 	unique_cerin_amroth = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.75
@@ -2651,7 +2651,7 @@ categories =  {
 	}
 	
 	unique_thalls = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.75
@@ -2666,7 +2666,7 @@ categories =  {
 	}
 	
 	unique_celebannon = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.70
@@ -2681,7 +2681,7 @@ categories =  {
 	}
 	
 	unique_gundabad = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.5
@@ -2697,7 +2697,7 @@ categories =  {
 	}
 	
 	unique_goblintown = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.5
@@ -2728,7 +2728,7 @@ categories =  {
 	}
 	
 	unique_gollums_cave = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1
@@ -2744,7 +2744,7 @@ categories =  {
 	}
 	
 	unique_high_pass = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.90
@@ -2760,7 +2760,7 @@ categories =  {
 	}
 	
 	unique_zagh_kala = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.10
@@ -2792,8 +2792,8 @@ categories =  {
 	}
 	
 	unique_framsburg = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 2
@@ -2807,8 +2807,8 @@ categories =  {
 	}
 	
 	unique_fornost = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -2822,7 +2822,7 @@ categories =  {
 	}
 	
 	unique_greyhavens = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -2837,7 +2837,7 @@ categories =  {
 	}
 	
 	unique_pass = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 3.2
@@ -2854,7 +2854,7 @@ categories =  {
 	
 	unique_shire = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 0
@@ -2869,7 +2869,7 @@ categories =  {
 	
 	unique_east_farthing = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 0
@@ -2883,7 +2883,7 @@ categories =  {
 	}
 	
 	unique_bree = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.75
@@ -2913,8 +2913,8 @@ categories =  {
 	}
 	
 	unique_midgewater = {
-		color = { 60 60 60 }
-		sound_type = marsh
+		color = { 255 255 0 }
+		sound_type = forest
 		
 		movement_cost = 1.10
 		defence = 0
@@ -2929,7 +2929,7 @@ categories =  {
 	}
 	
 	unique_chetwood = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.70
@@ -2944,8 +2944,8 @@ categories =  {
 	}
 	
 	unique_barrow_downs = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.95
 		defence = 1
@@ -2961,7 +2961,7 @@ categories =  {
 	
 	unique_tyrn_gorthad = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		defence = 1
@@ -2975,7 +2975,7 @@ categories =  {
 	}
 	
 	unique_tharbad = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = plains
 		
 		movement_cost = 0.95
@@ -2990,7 +2990,7 @@ categories =  {
 	}
 	
 	unique_carndum = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.95
@@ -3005,8 +3005,8 @@ categories =  {
 	}
 	
 	unique_amon_sul = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.75
 		defence = 2
@@ -3021,7 +3021,7 @@ categories =  {
 	
 	unique_emyn_sul = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		defence = 1
@@ -3036,7 +3036,7 @@ categories =  {
 	
 	unique_nothros = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.60
 		defence = 0
@@ -3051,7 +3051,7 @@ categories =  {
 	
 	unique_en_eredoriath = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		attrition = 0.50
@@ -3067,7 +3067,7 @@ categories =  {
 	
 	unique_gladden_fields = {
 		color = { 60 60 60 }
-		sound_type = marsh
+		sound_type = forest
 		
 		movement_cost = 1.25
 		defence = 0
@@ -3082,8 +3082,8 @@ categories =  {
 	}
 	
 	unique_relerindu = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 2
@@ -3097,7 +3097,7 @@ categories =  {
 	}
 	
 	unique_arentaurr = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.85
@@ -3112,8 +3112,8 @@ categories =  {
 	}
 	
 	unique_bozisha_dar = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 2
@@ -3127,8 +3127,8 @@ categories =  {
 	}
 	
 	unique_niluloni = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.85
 		defence = 2
@@ -3142,8 +3142,8 @@ categories =  {
 	}
 	
 	unique_nordinbad = {
-		color = { 60 60 60 }
-		sound_type = mountain
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.95
 		defence = 2
@@ -3158,7 +3158,7 @@ categories =  {
 	
 	unique_upper_anduin_vales = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.60
 		defence = 0
@@ -3172,8 +3172,8 @@ categories =  {
 	}
 	
 	unique_carrock = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 1
@@ -3188,7 +3188,7 @@ categories =  {
 	
 	unique_lone_fells = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 0
@@ -3202,7 +3202,7 @@ categories =  {
 	}
 	
 	unique_dungirith = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.70
@@ -3217,8 +3217,8 @@ categories =  {
 	}
 	
 	unique_beorn_home = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		defence = 1
@@ -3232,7 +3232,7 @@ categories =  {
 	}
 	
 	unique_eagles_eyrie = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = mountains
 		
 		movement_cost = 1.20
@@ -3247,8 +3247,8 @@ categories =  {
 	}
 	
 	unique_eotheod_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 0
@@ -3262,7 +3262,7 @@ categories =  {
 	}
 	
 	unique_rhosgobel = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.70
@@ -3292,7 +3292,7 @@ categories =  {
 	}
 	
 	unique_gulduin = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = forest
 		
 		movement_cost = 0.80
@@ -3368,7 +3368,7 @@ categories =  {
 	}
 	
 	unique_mirkwood_settlement = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = forest
 		
 		movement_cost = 0.80
@@ -3398,8 +3398,8 @@ categories =  {
 	}
 	
 	unique_argond = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 1.50
@@ -3414,7 +3414,7 @@ categories =  {
 	
 	unique_dwaithohirs_eyrie = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.4
 		defence = 2
@@ -3428,8 +3428,8 @@ categories =  {
 	}
 	
 	unique_druins_tower = {
-		color = { 60 60 60 }
-		sound_type = mountain
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		defence = 2
@@ -3443,8 +3443,8 @@ categories =  {
 	}
 	
 	unique_xyunai = {
-		color = { 60 60 60 }
-		sound_type = drylands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -3458,8 +3458,8 @@ categories =  {
 	}
 	
 	unique_chaiapun = {
-		color = { 60 60 60 }
-		sound_type = drylands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 2
@@ -3473,8 +3473,8 @@ categories =  {
 	}
 	
 	unique_nevazars_tomb = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		defence = 1
@@ -3503,8 +3503,8 @@ categories =  {
 	}
 	
 	unique_elostirion = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.65
 		defence = 1
@@ -3519,7 +3519,7 @@ categories =  {
 	
 	unique_etten_vale = {
 		color = { 60 60 60 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.80
 		defence = 0
@@ -3533,8 +3533,8 @@ categories =  {
 	}
 	
 	unique_ekhalshar = {
-		color = { 60 60 60 }
-		sound_type = hills
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.80
 		defence = 1
@@ -3549,7 +3549,7 @@ categories =  {
 	
 	unique_grey_foothills = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		defence = 0
@@ -3563,8 +3563,8 @@ categories =  {
 	}
 	
 	unique_high_fells = {
-		color = { 60 60 60 }
-		sound_type = mountain
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 1.40
 		defence = 1
@@ -3579,8 +3579,8 @@ categories =  {
 	}
 	
 	unique_mount_gram = {
-		color = { 60 60 60 }
-		sound_type = mountain
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 1.20
 		defence = 2
@@ -3595,7 +3595,7 @@ categories =  {
 	
 	unique_kykurian_hills = {
 		color = { 60 60 60 }
-		sound_type = hills
+		sound_type = mountains
 		
 		movement_cost = 0.90
 		defence = 0
@@ -3609,8 +3609,8 @@ categories =  {
 	}
 	
 	unique_mistrand = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 2
@@ -3624,7 +3624,7 @@ categories =  {
 	}
 	
 	unique_forodwaith = {
-		color = { 60 60 60 }
+		color = { 5 160 140 }
 		sound_type = snow
 		
 		movement_cost = 1.10
@@ -3642,7 +3642,7 @@ categories =  {
 	
 	unique_iron_hills = {
 		color = { 60 60 60 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 1
 		attrition = 0
@@ -3658,7 +3658,7 @@ categories =  {
 	
 	unique_baruk_shathur = {
 		color = { 60 60 60 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.95
 		attrition = 0
@@ -3689,8 +3689,8 @@ categories =  {
 	}
 	
 	unique_hollin_ridge = {
-		color = { 60 60 60 }
-		sound_type = highlands
+		color = { 255 255 0 }
+		sound_type = mountains
 		
 		movement_cost = 0.95
 		defence = 0
@@ -3705,7 +3705,7 @@ categories =  {
 	}
 	
 	unique_hyvat_kalat = {
-		color = { 60 60 60 }
+		color = { 255 255 0 }
 		sound_type = artic
 		
 		movement_cost = 1.10
@@ -3721,8 +3721,8 @@ categories =  {
 	}
 	
 	unique_parth_anduin = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 255 255 0 }
+		sound_type = plains
 		
 		movement_cost = 0.80
 		defence = 0
@@ -3738,7 +3738,7 @@ categories =  {
 	
 	unique_rast_arnor = {
 		color = { 60 60 60 }
-		sound_type = coastline
+		sound_type = sea
 		
 		movement_cost = 0.90
 		defence = 0
@@ -3753,8 +3753,8 @@ categories =  {
 	}
 	
 	unique_codya_settlement = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		defence = 1
@@ -3769,7 +3769,7 @@ categories =  {
 	
 	unique_eastern_island = {
 		color = { 60 60 60 }
-		sound_type = coastline
+		sound_type = sea
 		
 		movement_cost = 0.75
 		defence = 0
@@ -3785,7 +3785,7 @@ categories =  {
 	
 	unique_nan_turnath = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.70
 		defence = 0
@@ -3800,7 +3800,7 @@ categories =  {
 	
 	unique_tumnogoth_iaur = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.80
 		defence = 0
@@ -3831,8 +3831,8 @@ categories =  {
 	}
 	
 	unique_angmar_town = {
-		color = { 60 60 60 }
-		sound_type = grasslands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		defence = 1
@@ -3847,8 +3847,8 @@ categories =  {
 	}
 	
 	unique_dunland_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.65
 		defence = 1
@@ -3863,8 +3863,8 @@ categories =  {
 	}
 	
 	unique_hillmen_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		defence = 1
@@ -3880,7 +3880,7 @@ categories =  {
 	
 	unique_dunedain_ruin = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -3895,7 +3895,7 @@ categories =  {
 	}
 	
 	unique_forodwaith_town = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = artic
 		
 		movement_cost = 0.90
@@ -3911,8 +3911,8 @@ categories =  {
 	}
 	
 	unique_easterling_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		defence = 2
@@ -3927,7 +3927,7 @@ categories =  {
 	}
 	
 	unique_numenorean_port = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = coastal_desert
 		
 		movement_cost = 0.80
@@ -3947,8 +3947,8 @@ categories =  {
 	}
 	
 	unique_numenorean_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = -0.05
@@ -3966,8 +3966,8 @@ categories =  {
 	}
 	
 	unique_far_south_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 1
@@ -3982,7 +3982,7 @@ categories =  {
 	}
 	
 	unique_nomad_settlement = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = steppe
 		
 		movement_cost = 0.85
@@ -3998,8 +3998,8 @@ categories =  {
 	}
 	
 	unique_high_elven_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		defence = 2
@@ -4014,7 +4014,7 @@ categories =  {
 	}
 	
 	unique_wood_elven_town = {
-		color = { 60 60 60 }
+		color = { 200 80 0 }
 		sound_type = forest
 		
 		movement_cost = 0.80
@@ -4030,8 +4030,8 @@ categories =  {
 	}
 	
 	unique_orc_fortress = {
-		color = { 60 60 60 }
-		sound_type = highlands
+		color = { 128 128 128 }
+		sound_type = mountains
 		
 		movement_cost = 0.80
 		defence = 1
@@ -4047,7 +4047,7 @@ categories =  {
 	
 	unique_volcano = {
 		color = { 60 60 60 }
-		sound_type = mountain
+		sound_type = mountains
 		
 		movement_cost = 1.50
 		defence = 0
@@ -4080,8 +4080,8 @@ categories =  {
 	}
 	
 	unique_chyan_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.70
 		local_development_cost = -0.05
@@ -4117,8 +4117,8 @@ categories =  {
 	}
 	
 	unique_harshandatt_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -4173,7 +4173,7 @@ categories =  {
 	}
 	
 	unique_palisor_steppes = {
-		color = { 60 60 60 }
+		color = { 117 170 53 }
 		sound_type = steppe
 		
 		movement_cost = 1.05
@@ -4194,7 +4194,7 @@ categories =  {
 	
 	unique_eregion_ruin = {
 		color = { 60 60 60 }
-		sound_type = grasslands
+		sound_type = plains
 		
 		movement_cost = 1
 		local_development_cost = 0.20
@@ -4211,8 +4211,8 @@ categories =  {
 	}
 	
 	unique_rhovanion_town = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -4230,8 +4230,8 @@ categories =  {
 	}
 	
 	unique_rhovanion_burg = {
-		color = { 60 60 60 }
-		sound_type = farmlands
+		color = { 200 80 0 }
+		sound_type = plains
 		
 		movement_cost = 0.75
 		local_development_cost = -0.05
@@ -4249,8 +4249,8 @@ categories =  {
 	}
 	
 	unique_bellakar_coastline = {
-		color = { 60 60 60 }
-		sound_type = coastline
+		color = { 19 145 161 }
+		sound_type = sea
 		
 		movement_cost = 0.75
 		local_development_cost = 0.10
@@ -4268,7 +4268,7 @@ categories =  {
 	
 	unique_gundabad_plains = {
 		color = { 60 60 60 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.85
 		local_development_cost = -0.05
@@ -4286,7 +4286,7 @@ categories =  {
 	
 	unique_withered_heath = {
 		color = { 60 60 60 }
-		sound_type = highlands
+		sound_type = mountains
 		
 		movement_cost = 0.95
 		local_development_cost = 0.15
