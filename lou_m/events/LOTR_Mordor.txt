@@ -68,6 +68,10 @@ country_event = {
 				add_core = V17
 				cede_province = V17
 			}
+			country_event = {
+				id = flavor_mordor.35
+				days = 30
+			}
 		}
 	}
 
@@ -92,7 +96,10 @@ country_event = {
 		X86 = {
 			exists = yes
 		}
-		
+		any_core_province = {
+			owned_by = X86
+			region = mordor_region
+		}
 		#NOT = { war_with = X86 }
 	}
 	
@@ -137,13 +144,6 @@ country_event = {
 	}
 
 	immediate = {
-
-		
-	}
-	
-	option = {		# Oh no
-		name = "flavor_mordor.3.a"
-		
 		export_to_variable = {
 			which = NumberOfStates
 			value = trigger_value:num_of_states
@@ -157,25 +157,13 @@ country_event = {
 
 		if = {
 			limit = {
-				maegond_vale_area = {
-					type = all
-					owned_by = ROOT
+				any_owned_province = {
+					OR = {
+						area = maegond_vale_area
+						area = thaurband_area
+						area = sturlurtsa_nurn_area
+					}
 				}
-				thaurband_area = {
-					type = all
-					owned_by = ROOT
-				}
-				sturlurtsa_nurn_area = {
-					type = all
-					owned_by = ROOT
-				}
-				#any_owned_province = {
-				#	OR= {
-				#		area = maegond_vale_area
-				#		area = thaurband_area
-				#		area = sturlurtsa_nurn_area
-				#	}
-				#}
 			}
 			every_owned_province = { 
 				limit = {
@@ -188,10 +176,17 @@ country_event = {
 				add_core = V23
 				cede_province = V23
 			}
+			set_variable = {
+				which = effectId
+				value = 0
+			}
+			V23 = {
+				set_capital = 433
+			}
 		} 
 		else_if = {
 			limit = {
-				num_of_states > 1
+				num_of_states > 2
 			}
 			while = {
 				limit = {
@@ -211,9 +206,77 @@ country_event = {
 					cede_province = V23
 				}
 			}
+			set_variable = {
+				which = effectId
+				value = 1
+			}
+			V23 = {
+				set_capital = 433
+			}
 		}
 		else = {
 			switch_tag = V23
+			set_variable = {
+				which = effectId
+				value = 2
+			}
+		}
+		V17 = {
+			vassalize = V23
+		}
+		V23 = {
+			add_opinion = {
+				who = V17
+				modifier = nurnoth_mordor_relation
+				years = 100
+			}
+			add_country_modifier = {
+				name = mordor_nurnoth_subject
+				duration = -1
+			}
+		}
+	}
+	
+	option = {		# Oh no
+		name = "flavor_mordor.3.a"
+		
+		trigger = {
+			check_variable = {
+				which = effectId
+				value = 0
+			}
+		}
+
+		custom_tooltip = nurnoth_spawns
+	}
+
+	option = {		# Oh no
+		name = "flavor_mordor.3.b"
+		
+		trigger = {
+			check_variable = {
+				which = effectId
+				value = 1
+			}
+		}
+
+		custom_tooltip = nurnoth_spawns
+	}
+
+	option = {		# Oh no
+		name = "flavor_mordor.3.c"
+		trigger = {
+			check_variable = {
+				which = effectId
+				value = 2
+			}
+		}
+
+		tooltip = {
+			switch_tag = V23
+			V17 = {
+				vassalize = V23
+			}
 		}
 	}
 }

@@ -298,6 +298,7 @@ cb_independence_war = {
 cb_nationalist = {
 
 	prerequisites = {
+		always = no
 		dip_tech = 23
 		is_free_or_tributary_trigger = yes
 		culture_group_claim = FROM

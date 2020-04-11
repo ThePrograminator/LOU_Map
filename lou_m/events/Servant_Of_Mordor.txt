@@ -132,6 +132,10 @@ country_event = {
 			country_event = {
 				id = servant_of_mordor.2
 			}
+			country_event = {
+				id = flavor_mordor.35
+				days = 30
+			}
 		}
 	}
 }
@@ -152,13 +156,11 @@ country_event = {
 		}
 		NOT = {
 			vassal_of = V17
-		}
-		has_global_flag = mordor_spawned
-		NOT = {
 			has_country_flag = servant_of_mordor_join
 			has_country_flag = servant_of_mordor_refused
 			is_year = 2960
 		}
+		has_global_flag = mordor_spawned
 	}
 
 	mean_time_to_happen = {

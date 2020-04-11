@@ -8,7 +8,7 @@ namespace = flavor_isg
 normal_or_historical_nations = yes
 
 # Spawn Isengard
-province_event = {
+country_event = {
 	id = flavor_isg.1
 	title = flavor_isg.1.t
 	desc = flavor_isg.1.d
@@ -18,90 +18,82 @@ province_event = {
 	major = yes
 
 	trigger = {
+		tag = W53
 		NOT = { 
 			exists = V49 
 		}
-		is_year = 3018
-		isengard_area = {
-			is_empty = yes
-		}
+		is_year = 2953
 	}
+
 	option = { 
 		name = flavor_isg.1.a
-		isengard_area = {
-			add_core = V49
-		}		
-		
-		isengard_area = {
+
+		trigger = {
+			capital_scope = {
+				area = nan_curunir_area
+			}
+		}
+
+		nan_curunir_area = {
 			limit = {
-				is_empty = yes
+				owned_by = root
 			}
-			cede_province = V49
-			223 = {
-				change_culture = culture_urukhai
-				change_religion = religion_uruk
-				change_trade_goods = iron
-			}
-			744 = {
-				change_culture = culture_urukhai
-				change_religion = religion_uruk
-				change_trade_goods = grain
-			}
+			change_culture = culture_urukhai
+			change_religion = religion_uruk
 		}
-	}
-}
-
-# Event to send to other province owners of the area when Isengard is formed.
-country_event = {
-	id = flavor_isg.2
-	title = flavor_isg.1.t
-	desc = flavor_isg.1.d
-	picture = BORDER_TENSION_eventPicture
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		NOT = {
-			tag = V49
+		
+		change_tag = V49
+		change_primary_culture = culture_urukhai
+		change_religion = religion_uruk
+		change_technology_group = lotr_uruk_hai
+		hidden_effect = {
+			change_graphical_culture = lotr_isengard_gfx
+			change_unit_type = lotr_uruk_hai
+			set_global_flag = isengard_turned_uruk_hai
 		}
-		always = no
 	}
 
 	option = { 
-		name = flavor_isg.2.a
-		tooltip = {
-			isengard_area = {
-				add_core = V49
+		name = flavor_isg.1.a
+
+		trigger = {
+			capital_scope = {
+				NOT ={
+					area = nan_curunir_area
+				}
 			}
 		}
-	}
-}
 
-country_event = {
-	id = flavor_isg.3
-	title = flavor_isg.3.t
-	desc = flavor_isg.3.d
-	picture = ANGRY_MOB_event_Picture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_year = 3018
-		exists = V49
-		OR = { 
-			exists = Z48 
-			exists = V09 
+		capital_scope = {
+			area = {
+				limit = {
+					owned_by = root
+				}
+				change_culture = culture_urukhai
+				change_religion = religion_uruk
+			}
 		}
-		always = no
+		
+		change_tag = V49
+		change_primary_culture = culture_urukhai
+		change_religion = religion_uruk
+		change_technology_group = lotr_uruk_hai
+		hidden_effect = {
+			change_graphical_culture = lotr_isengard_gfx
+			change_unit_type = lotr_uruk_hai
+			set_global_flag = isengard_turned_uruk_hai
+		}
 	}
 
 	option = { 
-		name = flavor_isg.3.a
-		tooltip = {
-			isengard_area = {
-				add_core = V49
-			}
+		name = flavor_isg.1.b
+		
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+
+		hidden_effect = {
+			set_global_flag = isengard_turned_uruk_hai
 		}
 	}
 }
@@ -117,6 +109,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
+	#V07
 	trigger = {
 		tag = V49
 		is_year = 3018
