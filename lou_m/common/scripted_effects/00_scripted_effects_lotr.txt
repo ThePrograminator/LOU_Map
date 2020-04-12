@@ -1520,3 +1520,126 @@ spawn_mordor_refused_effect = {
 		}
 	}
 }
+
+desolation_of_smaug_won_effect = {
+	hidden_effect = {
+		every_province = {
+			kill_units = {
+				who = ROOT
+				type = lotr_elven_silvan_poachers_3
+				amount = 1000
+			}
+			kill_units = {
+				who = ROOT
+				type = lotr_elven_silvan_mounted_sentinels_2
+				amount = 1000
+			}
+		}
+	}
+}
+
+desolation_of_smaug_lost_effect = {
+	if = { 
+		limit = {
+			528 = {
+				owned_by = Y94
+			}
+		}
+		Y94 = {
+			change_tag = V51
+			set_capital = 528
+		}
+	}
+
+	287 = {
+		cede_province = ---
+		change_culture = culture_dragons
+		change_religion = religion_dragons
+		add_province_modifier = {
+			name = ruins_debuff
+			duration = -1
+		}
+	}
+
+	1903 = {
+		cede_province = ---
+		change_culture = culture_wilderness
+		change_religion = religion_wilderness
+	}
+
+	1951 = {
+		cede_province = ---
+		change_culture = culture_wilderness
+		change_religion = religion_wilderness
+	}
+
+	527 = {
+		cede_province = ---
+		change_culture = culture_wilderness
+		change_religion = religion_wilderness
+		add_province_modifier = {
+			name = ruins_debuff
+			duration = -1
+		}
+	}
+
+	527 = {
+		cede_province = ---
+		change_culture = culture_wilderness
+		change_religion = religion_wilderness
+		add_province_modifier = {
+			name = ruins_debuff
+			duration = -1
+		}
+	}
+
+	every_owned_province = {
+		limit = {
+			OR = {
+				culture_group = culture_group_dwarves
+				religion = religion_mahal
+			}
+		}
+
+		add_core = Y23
+		remove_core = ROOT
+		cede_province = Y23
+	}
+
+	every_owned_province = {
+		limit = {
+			culture = culture_ymirsfolk
+		}
+
+		add_core = Y90
+		remove_core = ROOT
+		cede_province = Y90
+	}
+
+	every_owned_province = {
+		limit = {
+			culture = culture_ymirsfolk
+		}
+
+		add_core = Y90
+		remove_core = ROOT
+		cede_province = Y90
+	}
+
+	every_owned_province = {
+		limit = {
+			NOT = {
+				culture = culture_ymirsfolk
+			}
+			religion = religion_nenedain
+		}
+
+		add_core = V51
+		remove_core = ROOT
+		cede_province = V51
+	}
+
+	every_owned_province = {
+		cede_province = ---
+	}
+}

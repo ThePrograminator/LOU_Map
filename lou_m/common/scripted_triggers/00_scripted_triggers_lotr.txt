@@ -462,3 +462,19 @@ servant_of_mordor_region_ithilien = {
 		}
 	}
 }
+
+war_of_the_dwarves_and_orcs_goblin_moria_exists= {
+	exists = Y57
+	Y57 = {
+		any_owned_province = {
+			area = khazad_dum_area
+		}
+	}
+	NOT = { 
+		exists = V53 
+		war_with = Y57
+		any_owned_province = {
+			area = khazad_dum_area
+		}
+	}
+}

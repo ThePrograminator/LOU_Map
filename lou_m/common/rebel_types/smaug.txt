@@ -23,7 +23,7 @@ smaug_rebels = {
 	infantry = 1.0
 	cavalry = 0.0
 	
-	morale = 1.47
+	morale = 1.00
 
 	# Possible handle actions
 	handle_action_negotiate = yes
@@ -93,5 +93,8 @@ smaug_rebels = {
 	demands_enforced_effect = {
 		set_country_flag = desolation_of_smaug_enforced
 		add_prestige = -50
+		country_event = {
+			id = flavor_desolation_of_smaug.2
+		}
 	}
 }

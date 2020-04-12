@@ -545,3 +545,34 @@ country_event = {
         }
 	}
 }
+
+# Flag Setup
+country_event = {
+	id = lotr_setup.21
+	title = lotr_setup.1.title
+	desc = lotr_setup.1.desc
+	picture = ASSASSINATION_eventPicture
+	
+    hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    trigger = {
+        NOT = { has_global_flag = completed_lotr_flag_setup }
+    }
+
+    immediate = {
+        set_global_flag = completed_lotr_flag_setup
+    }
+
+    option = {
+        name = lotr_setup.1.option.a
+        
+        trigger_switch = {
+			on_trigger = is_year
+			2770 = { set_global_flag = desolation_of_smaug_start}
+			2953 = { set_global_flag = desolation_of_smaug_start set_global_flag = isengard_turned_uruk_hai}
+			2942 = { set_global_flag = desolation_of_smaug_start set_global_flag = isengard_turned_uruk_hai set_global_flag = mordor_spawned}
+		}
+    }  
+}
