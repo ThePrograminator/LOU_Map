@@ -284,15 +284,16 @@ country_event = {
     is_triggered_only = yes
 	
 	trigger = {
+		always = no
 		exists = X17
 		OR = {
-		exists = Z05
-		exists = X28
+			exists = Z05
+			exists = X28
 		}
 		NOT = {
-				is_year = 2770
-				has_country_flag = startup_erebor_eryn_galen
-			}
+			is_year = 2770
+			has_country_flag = startup_erebor_eryn_galen
+		}
 	}
    
     option = {

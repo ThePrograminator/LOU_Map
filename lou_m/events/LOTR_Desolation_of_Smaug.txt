@@ -18,18 +18,20 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		AND = {
-			is_year = 2770
-			287 = {
-				is_core = PREV
-			}
-			NOT = {
-				has_country_flag = desolation_of_smaug
-				has_country_flag = desolation_of_smaug_lost
-				has_country_flag = desolation_of_smaug_won
-				has_country_flag = desolation_of_enforced
-				has_global_flag = desolation_of_smaug_start
-			}
+		check_date = {
+			YEAR = 2770
+			MONTH = 0
+			STARTED_BEFORE = 2770.1.1
+		}
+		287 = {
+			is_core = PREV
+		}
+		NOT = {
+			has_country_flag = desolation_of_smaug
+			has_country_flag = desolation_of_smaug_lost
+			has_country_flag = desolation_of_smaug_won
+			has_country_flag = desolation_of_enforced
+			has_global_flag = desolation_of_smaug_start
 		}
 	}
 	

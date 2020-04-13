@@ -569,10 +569,12 @@ country_event = {
         name = lotr_setup.1.option.a
         
         trigger_switch = {
-			on_trigger = is_year
-			2770 = { set_global_flag = desolation_of_smaug_start}
-			2953 = { set_global_flag = desolation_of_smaug_start set_global_flag = isengard_turned_uruk_hai}
-			2942 = { set_global_flag = desolation_of_smaug_start set_global_flag = isengard_turned_uruk_hai set_global_flag = mordor_spawned}
+			on_trigger = started_in
+			2954.1.1 = { setup_global_flag_after_2953 = yes}
+			2943.1.1 = { setup_global_flag_after_2942 = yes}
+			2794.1.1 = { setup_global_flag_after_2793 = yes}
+			2771.1.1 = { setup_global_flag_after_2770 = yes}
+			2760.1.1 = { setup_global_flag_after_2759 = yes}
 		}
     }  
 }

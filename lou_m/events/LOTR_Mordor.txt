@@ -18,7 +18,11 @@ country_event = {
 	major = yes
 
 	trigger = {
-		is_year = 2942
+		check_date = {
+			YEAR = 2942
+			MONTH = 0
+			STARTED_BEFORE = 2942.1.1
+		}
 		
 		mordor_region = {
 			is_empty = yes
@@ -27,7 +31,6 @@ country_event = {
 		NOT = {
 			exists = V17 
 			has_global_flag = mordor_spawned
-			is_year = 2943
 		}
 	}
 

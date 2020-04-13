@@ -107,6 +107,7 @@ khaganate_reform = {
 	potential = {
 		NOT = { has_country_flag = formed_khand_flag }
 		overlord = { has_reform = khaganate_ruler_reform }
+		culture_group = culture_group_ioriags
 	}
 	legacy_equivalent = lotr_khaganate_legacy
 	fixed_rank = 1
@@ -134,6 +135,7 @@ independent_khaganate_reform = {
 	allow_normal_conversion = no
 	potential = {
 		NOT = { has_country_flag = formed_khand_flag }
+		culture_group = culture_group_ioriags
 		OR = {
 			AND = {
 				OR = {
@@ -141,7 +143,6 @@ independent_khaganate_reform = {
 					overlord = { NOT = { has_reform = khaganate_ruler_reform } }
 				}
 				#capital_scope = { region = japan_region }
-				#culture_group = japanese_g
 			}
 			AND = {
 				is_playing_custom_nation = yes

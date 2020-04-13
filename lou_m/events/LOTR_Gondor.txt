@@ -636,16 +636,14 @@ country_event = {
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
-		AND = {
-			tag = X01
-			413 = {
-				owned_by = ROOT
-			}
-			is_year = 3019
-			is_month = 4
+		tag = X01
+		413 = {
+			owned_by = ROOT
 		}
-		NOT = {
-			is_year = 3020
+		check_date = {
+			YEAR = 3019
+			MONTH = 4
+			STARTED_BEFORE = 3019.4.1
 		}
 	}
 	
@@ -821,15 +819,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		AND = {
-			tag = X01
-			413 = {
-				owned_by = ROOT
-			}
-			is_year = 2852
+		tag = X01
+		413 = {
+			owned_by = ROOT
 		}
-		NOT = {
-			is_year = 2853
+		check_date = {
+			YEAR = 2852
+			MONTH = 0
+			STARTED_BEFORE = 2852.1.1
 		}
 	}
 	
@@ -841,61 +838,5 @@ country_event = {
 		add_legitimacy = -50
 		add_prestige = -50
 		add_patriarch_authority = -0.25
-	}
-}
-
-# Set Permanent Claim on Gondor Region
-country_event = {
-	id = flavor_gondor.12
-	title = flavor_gondor.12.t
-	desc = flavor_gondor.12.d
-	picture = COURT_eventPicture
-	
-	hidden = yes
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		AND = {
-			tag = X01
-		}
-	}
-	
-	option = { 
-		name = flavor_gondor.12.a
-		
-		gondor_region = {
-			add_permanent_claim = X01
-		}
-	}
-}
-
-# Set Permanent Claim on Harnendor Region
-country_event = {
-	id = flavor_gondor.13
-	title = flavor_gondor.13.t
-	desc = flavor_gondor.13.d
-	picture = COURT_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		AND = {
-			tag = X01
-		}
-		
-		#gondor_region = {
-		#	type = all
-		#	owned_by = ROOT
-		#}
-	}
-	
-	option = { 
-		name = flavor_gondor.13.a
-		
-		harnendor_region = {
-			add_permanent_claim = X012
-		}
 	}
 }

@@ -309,7 +309,6 @@ curedain_morgul_vale_fellowship_path = {
 	}
 }
 
-
 is_free_peoples_opinion = {
 	OR = {
 		religion_group = religion_group_numenorean
@@ -476,5 +475,27 @@ war_of_the_dwarves_and_orcs_goblin_moria_exists= {
 		any_owned_province = {
 			area = khazad_dum_area
 		}
+	}
+}
+
+check_year = {
+	is_year = $YEAR$
+	NOT = {
+		started_in = $DATE$
+	}
+}
+
+check_month = {
+	is_month = $MONTH$
+	NOT = {
+		started_in = $DATE$
+	}
+}
+
+check_date = {
+	is_year = $YEAR$
+	is_month = $MONTH$
+	NOT = {
+		started_in = $STARTED_BEFORE$
 	}
 }

@@ -17,7 +17,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_year = 2793
+		check_date = {
+			YEAR = 2793
+			MONTH = 0
+			STARTED_BEFORE = 2793.1.1
+		}
 		has_global_flag = desolation_of_smaug_lost
 		tag = Y16
 		war_of_the_dwarves_and_orcs_goblin_moria_exists = yes
@@ -84,7 +88,8 @@ country_event = {
 	
 	option = {
 		name = "war_of_the_dwarves_and_orcs.1.b"
-		custom_tooltip = war_of_the_dwarves_and_orcs_text_1
+		add_stability = -2
+		add_prestige = -50
 		set_global_flag = war_of_the_dwarves_and_orcs_aborted
 	}	
 }
@@ -157,7 +162,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_year = 2793
+		check_date = {
+			YEAR = 2793
+			MONTH = 0
+			STARTED_BEFORE = 2793.1.1
+		}
 		has_global_flag = war_of_the_dwarves_and_orcs
 		tag = Y16
 		war_of_the_dwarves_and_orcs_goblin_moria_exists = yes
@@ -229,6 +238,7 @@ country_event = {
 	}			
 }
 
+#Lost War
 country_event = {
 	id = war_of_the_dwarves_and_orcs.6
 	title = "war_of_the_dwarves_and_orcs.6.t"
@@ -245,6 +255,11 @@ country_event = {
 		FROM = {
 			tag = Y57
 		}
+		check_date = {
+			YEAR = 2793
+			MONTH = 0
+			STARTED_BEFORE = 2793.1.1
+		}
 
 		has_global_flag = war_of_the_dwarves_and_orcs_starts
 		NOT = {  	
@@ -252,7 +267,6 @@ country_event = {
 			has_global_flag = war_of_the_dwarves_and_orcs_wins	
 		}
 	}
-	#Y13 Thorins Halls
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.6.a"
@@ -271,125 +285,9 @@ country_event = {
 					limit = {
 						ai = no
 					}
-						switch_tag = Y13
-					}
-				}
-			}
-			country_event = {
-				id = flavor_ere.15
-				days = 1
-			}
-		}
-	}			
-}
-		
-country_event = {
-	id = flavor_ere.15
-	title = "war_of_the_dwarves_and_orcs.7.t"
-	desc = "war_of_the_dwarves_and_orcs.7.d"
-	picture = CONQUEST_eventPicture
-	
-	hidden = yes
-	fire_only_once = yes
-	
-	trigger = {
-		has_country_flag = desolation_of_smaug_lost
-		has_country_flag = war_of_the_dwarves_and_orcs_lost
-		tag = Y04
-		559 = {
-			owned_by = Y16
-		}
-		881 = {
-			owned_by = Y16
-		}
-	}
-
-	option = {
-		name = "war_of_the_dwarves_and_orcs.7.a"
-		559 = {
-			cede_province = ---
-			change_culture = culture_wilderness
-			change_religion = religion_wilderness
-			remove_core = Y16
-			add_province_modifier = {
-				name = wilderness_debuff
-				duration = -1
-			}
-		}
-		881 = {
-			cede_province = ---
-			change_culture = culture_wilderness
-			change_religion = religion_wilderness
-			remove_core = Y16
-			add_province_modifier = {
-				name = wilderness_debuff
-				duration = -1
-			}
-		}
-		hidden_effect = {
-			every_province = {
-				kill_units = {
-					who = Y16
-					amount = 1000
+					switch_tag = Y13
 				}
 			}
 		}
 	}			
 }
-	
-country_event = {
-	id = flavor_ere.16
-	title = "war_of_the_dwarves_and_orcs.8.t"
-	desc = "war_of_the_dwarves_and_orcs.8.d"
-	picture = CONQUEST_eventPicture
-	
-	is_triggered_only = yes
-	hidden = yes
-	fire_only_once = yes
-	
-	trigger = {
-		is_year = 2793
-		tag = Y16
-		exists = Y57
-		war_with = Y57
-		is_neighbor_of = Y57
-		882 = {
-			owned_by = Y57
-		}
-		285 = {
-			owned_by = Y57
-		}
-		NOT = { 
-			exists = V53 
-			owns_core_province = 882
-			owns_core_province = 285
-			has_country_flag = war_of_the_dwarves_and_orcs_lost
-			has_country_flag = war_of_the_dwarves_and_orcs_wins
-			has_country_flag = war_of_the_dwarves_and_orcs
-			has_country_flag = war_of_the_dwarves_and_starts
-			has_country_flag = desolation_of_smaug_lost
-		}
-	}
-
-	option = {
-		name = "war_of_the_dwarves_and_orcs.8.a"
-		set_country_flag = desolation_of_smaug_lost
-		set_country_flag = war_of_the_dwarves_and_orcs
-		set_country_flag = war_of_the_dwarves_and_orcs_starts
-		infantry = 559
-		infantry = 559
-		infantry = 559
-		add_country_modifier = {
-			name = war_of_dwarves_and_orcs
-			duration = 2548
-		}
-	}			
-}
-		
-#V51 = Laketown
-#Y16 = Thrors Company
-#Y04 - Khagolabbad
-#Y05 - Khagolabbad Faraku
-#Y18 - Nurunkhizdin
-#X43 - Zirakdum
-#V53 - Moria(Dwarf)

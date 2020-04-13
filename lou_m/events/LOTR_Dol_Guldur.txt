@@ -17,12 +17,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		AND = {
-			tag = V19
-			is_year = 2845
-			304 = {
-				owned_by = ROOT
-			}
+		tag = V19
+		check_date = {
+			YEAR = 2845
+			MONTH = 0
+			STARTED_BEFORE = 2845.1.1
+		}
+		304 = {
+			owned_by = ROOT
 		}
 		NOT = {
 			has_country_modifier = dol_guldur_thrain_captured
@@ -50,14 +52,16 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		AND = {
-			tag = V19
-			is_year = 2850
-			304 = {
-				owned_by = ROOT
-			}
-			has_country_modifier = dol_guldur_shrouded_mystery
+		tag = V19
+		check_date = {
+			YEAR = 2850
+			MONTH = 0
+			STARTED_BEFORE = 2850.1.1
 		}
+		304 = {
+			owned_by = ROOT
+		}
+		has_country_modifier = dol_guldur_shrouded_mystery
 		NOT = {
 			has_country_flag = dol_guldur_discovred
 		}
@@ -92,6 +96,7 @@ country_event = {
 			has_country_modifier = dol_guldur_shrouded_mystery
 			has_country_flag = dol_guldur_discovred
 			is_year = 2850
+			started_in = 2850.1.1
 		}
 	}
 	
@@ -275,6 +280,7 @@ country_event = {
 		
 		NOT = {
 			is_year = 2942
+			started_in = 2942.1.1
 			exists = V17
 		}
 	}

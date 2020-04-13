@@ -3,20 +3,17 @@
 # country
 on_startup = {
 	events = {
-		#Setup some Logging
 		lotr_setup.1
-
-		flavor_ere.16
-		lotr_general.44
-		lotr_general.22
-
 		lotr_setup.3
 		lotr_setup.21
-		#flavor_gondor.12
-		company_of_thorin_events.24
-		#institution_events.3
-		#institution_events.6
-		#lotr_general.27
+
+		lotr_general.44
+		lotr_general.22
+		
+		#Setup Paths Company of Thorin
+		institution_events.3
+		#Setup Paths Fellowship of the Ring
+		institution_events.6
 	}
 }
 
@@ -70,14 +67,20 @@ on_war_won = {
 # country
 # root = loser country, from = winner country
 on_war_lost = {
-
-	
 	ROOT = {
 		if = {
 			limit = {
 				has_country_modifier = the_one_ring_not_mordor
 			}
 			country_event = { id = fellowship_of_ring_events.35 }
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					tag = Y16
+				}
+			}
+			country_event = { id = war_of_the_dwarves_and_orcs.6 }
 		}
 	}
 }

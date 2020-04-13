@@ -52,14 +52,20 @@ gov_haradwaith_nomad = {
 gov_khaganate = {
 	rank = {
 		1 = KHAGANATE
+		2 = KHAGANATE
+		3 = KHAGANATE
 	}
 	
 	ruler_male = {
 		1 = LORD
+		2 = LORD
+		3 = LORD
 	}
 	
 	ruler_female = {
 		1 = LADY
+		2 = LADY
+		3 = LADY
 	}
 	
 	trigger = {
@@ -93,15 +99,21 @@ gov_independent_khaganate = {
 
 gov_khaganate_ruler = {
 	rank = {
+		1 = KHAGANATE_RULER
 		2 = KHAGANATE_RULER
+		3 = KHAGANATE_RULER
 	}
 
 	ruler_male = {
+		1 = LORD
 		2 = LORD
+		3 = LORD
 	}
 	
 	ruler_female = {
+		1 = LADY
 		2 = LADY
+		3 = LADY
 	}
 	
 	trigger = {

@@ -13,20 +13,66 @@ country_event = {
 	title = flavor_isg.1.t
 	desc = flavor_isg.1.d
 	picture = BORDER_TENSION_eventPicture
-	fire_only_once = yes
 	
+	hidden = yes
+	fire_only_once = yes
 	major = yes
 
 	trigger = {
-		tag = W53
 		NOT = { 
-			exists = V49 
+			exists = W53 
+			has_global_flag = isengard_spawned
 		}
-		is_year = 2953
+		check_date = {
+			YEAR = 2759
+			MONTH = 0
+			STARTED_BEFORE = 2759.1.1
+		}
 	}
 
 	option = { 
 		name = flavor_isg.1.a
+
+		nan_curunir_area = {
+			change_culture = culture_istari
+			change_religion = religion_daen
+			add_core = W53
+			cede_province = W53
+		}
+		set_global_flag = isengard_spawned
+	}
+}
+
+# Isengard Turn Evil
+country_event = {
+	id = flavor_isg.2
+	title = flavor_isg.2.t
+	desc = flavor_isg.2.d
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = W53
+		NOT = {
+			exists = V49 
+			has_global_flag = isengard_spawned
+			has_global_flag = isengard_turned_uruk_hai
+			has_global_flag = isengard_not_turned_uruk_hai
+		}
+		check_date = {
+			YEAR = 2953
+			MONTH = 0
+			STARTED_BEFORE = 2953.1.1
+		}
+	}
+
+	option = { 
+		name = flavor_isg.2.a
+		ai_chance = {
+			factor = 50
+		}
 
 		trigger = {
 			capital_scope = {
@@ -46,6 +92,8 @@ country_event = {
 		change_primary_culture = culture_urukhai
 		change_religion = religion_uruk
 		change_technology_group = lotr_uruk_hai
+		change_government = orc_gov
+		add_government_reform = lotr_isengard_reform
 		hidden_effect = {
 			change_graphical_culture = lotr_isengard_gfx
 			change_unit_type = lotr_uruk_hai
@@ -54,7 +102,10 @@ country_event = {
 	}
 
 	option = { 
-		name = flavor_isg.1.a
+		name = flavor_isg.2.a
+		ai_chance = {
+			factor = 50
+		}
 
 		trigger = {
 			capital_scope = {
@@ -78,6 +129,8 @@ country_event = {
 		change_primary_culture = culture_urukhai
 		change_religion = religion_uruk
 		change_technology_group = lotr_uruk_hai
+		change_government = orc_gov
+		add_government_reform = lotr_isengard_reform
 		hidden_effect = {
 			change_graphical_culture = lotr_isengard_gfx
 			change_unit_type = lotr_uruk_hai
@@ -86,112 +139,17 @@ country_event = {
 	}
 
 	option = { 
-		name = flavor_isg.1.b
+		name = flavor_isg.2.b
+		ai_chance = {
+			factor = 1
+		}
 		
 		add_adm_power = -100
 		add_dip_power = -100
 		add_mil_power = -100
 
 		hidden_effect = {
-			set_global_flag = isengard_turned_uruk_hai
-		}
-	}
-}
-
-# Clans join Isengard
-country_event = {
-	id = flavor_isg.3
-	title = "flavor_isg.3.t"
-	desc = "flavor_isg.3.d"
-	picture = DIPLOMACY_eventPicture
-
-	major = yes
-	
-	fire_only_once = yes
-	
-	#V07
-	trigger = {
-		always = no
-		tag = V49
-		is_year = 3018
-		is_subject = no
-		OR = {
-			Z48 = {
-				exists = yes
-				ai = yes
-				was_player = no
-				is_subject = no
-				is_neighbor_of = ROOT
-			}
-			V09 = {
-				exists = yes
-				ai = yes
-				was_player = no
-				is_subject = no
-				is_neighbor_of = ROOT
-			}
-			NOT = { war_with = Z48 }
-			NOT = { war_with = V09 }
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	
-	option = {		# gets a union
-		name = "flavor_isg.3.a"
-		ai_chance = { factor = 90 }
-		create_union = Z48
-		create_union = V09
-		add_opinion = {
-			who = Z48
-			modifier = isg_union
-		}
-		add_opinion = {
-			who = V09
-			modifier = isg_union
-		}
-		Z48 = {
-			add_opinion = {
-				who = ROOT
-				modifier = isg_union
-			}
-		}
-		V09 = {
-			add_opinion = {
-				who = ROOT
-				modifier = isg_union
-			}
-		}
-		every_known_country = {
-			limit = {
-				marriage_with = V09
-				marriage_with = Z48
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = isg_negative
-			}
-		}
-	}
-	
-	option = {		# No 
-		name = "flavor_isg.3.b"
-		ai_chance = { factor = 10 }
-		add_stability = 1
-		Z48 = {
-			add_opinion = {
-				who = ROOT
-				modifier = isg_declined
-			}
-		}
-		V09 = {
-			add_opinion = {
-				who = ROOT
-				modifier = isg_declined
-			}
+			set_global_flag = isengard_not_turned_uruk_hai
 		}
 	}
 }

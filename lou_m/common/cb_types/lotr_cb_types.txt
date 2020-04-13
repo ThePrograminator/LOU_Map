@@ -66,3 +66,77 @@ cb_take_erebor_both = {
 
 	war_goal = war_battle_for_erebor
 }
+
+# Daimyo on Japan
+cb_khaganate_annex = {
+	valid_for_subject = no
+	exclusive = yes
+	independence = yes
+
+	prerequisites = {
+		is_subject = yes
+		OR = {
+			vassal_of = FROM
+			junior_union_with = FROM
+		}
+		has_reform = khaganate_reform
+		from = { has_reform = khaganate_ruler_reform }
+		is_revolution_target = no
+	}
+
+	war_goal = annex_country_khangnate
+}
+
+cb_independent_khaganate_annex = {
+	valid_for_subject = no
+	exclusive = yes
+
+	prerequisites = {
+		is_subject = no
+		NOT = {
+			vassal_of = FROM
+			junior_union_with = FROM
+		}
+		has_reform = independent_khaganate_reform
+		from = { has_reform = khaganate_ruler_reform }
+		is_revolution_target = no
+	}
+
+	war_goal = annex_country_khangnate
+}
+
+cb_khaganate_ruler_annex = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_reform = khaganate_ruler_reform
+		from = {
+			has_reform = khaganate_reform
+			OR = {
+				num_of_cities = 5
+				is_subject = no
+			}
+		}
+		is_revolution_target = no
+	}
+
+	war_goal = annex_country_khangnate
+}
+
+# Sengoku - Daimyo infighting
+cb_khangnate_infighting = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_reform = khaganate_reform
+		is_neighbor_of = FROM
+		is_subject = yes
+		from = {
+			has_reform = khaganate_reform
+			is_subject = yes
+		}
+		is_revolution_target = no
+	}
+
+	war_goal = annex_country_khangnate
+}

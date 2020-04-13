@@ -1643,3 +1643,57 @@ desolation_of_smaug_lost_effect = {
 		cede_province = ---
 	}
 }
+
+setup_global_flag_after_2759 = {
+	set_global_flag = isengard_spawned
+}
+
+setup_global_flag_after_2770 = {
+	set_global_flag = isengard_spawned
+
+	set_global_flag = desolation_of_smaug_start
+	set_global_flag = desolation_of_smaug_no_aid
+	set_global_flag = desolation_of_smaug_lost
+}
+
+setup_global_flag_after_2793 = {
+	set_global_flag = isengard_spawned
+
+	set_global_flag = desolation_of_smaug_start
+	set_global_flag = desolation_of_smaug_no_aid
+	set_global_flag = desolation_of_smaug_lost
+
+	set_global_flag = war_of_the_dwarves_and_orcs
+	set_global_flag = war_of_the_dwarves_and_orcs_starts
+	set_global_flag = war_of_the_dwarves_and_orcs_lost
+}
+
+setup_global_flag_after_2942 = {
+	set_global_flag = isengard_spawned
+
+	set_global_flag = desolation_of_smaug_start
+	set_global_flag = desolation_of_smaug_no_aid
+	set_global_flag = desolation_of_smaug_lost
+
+	set_global_flag = war_of_the_dwarves_and_orcs
+	set_global_flag = war_of_the_dwarves_and_orcs_starts
+	set_global_flag = war_of_the_dwarves_and_orcs_lost
+
+	set_global_flag = mordor_spawned
+}
+
+setup_global_flag_after_2953 = {
+	set_global_flag = isengard_spawned
+
+	set_global_flag = desolation_of_smaug_start
+	set_global_flag = desolation_of_smaug_no_aid
+	set_global_flag = desolation_of_smaug_lost
+
+	set_global_flag = war_of_the_dwarves_and_orcs
+	set_global_flag = war_of_the_dwarves_and_orcs_starts
+	set_global_flag = war_of_the_dwarves_and_orcs_lost
+
+	set_global_flag = mordor_spawned
+
+	set_global_flag = isengard_turned_uruk_hai
+}
