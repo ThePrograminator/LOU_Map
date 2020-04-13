@@ -296,6 +296,10 @@ country_event = {
 	trigger = {
 		tag = V17
 		owns_core_province = 639
+		NOT = {
+			has_country_flag = rebuilding_barad_dur_flag
+			has_country_flag = rebuilding_barad_dur_finished_flag
+		}
 	}
 	
 	immediate = {
