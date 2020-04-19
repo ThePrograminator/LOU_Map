@@ -24,7 +24,7 @@ country_event = {
 			STARTED_BEFORE = 2770.1.1
 		}
 		287 = {
-			is_core = PREV
+			owned_by = PREV
 		}
 		NOT = {
 			has_country_flag = desolation_of_smaug
@@ -76,12 +76,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = desolation_of_smaug_owner
-		OR = { 
-			has_country_flag = desolation_of_smaug_enforced
-			287 = {
-				controlled_by = smaug_rebels
-			}
-		}
+		has_country_flag = desolation_of_smaug_enforced
 		NOT = {
 			has_global_flag = desolation_of_smaug_lost
 		}
@@ -134,6 +129,7 @@ country_event = {
 	desc = "desolation_of_smaug.3.d"
 	picture = SIEGE_eventPicture
 	
+	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	

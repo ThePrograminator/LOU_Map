@@ -1583,14 +1583,31 @@ desolation_of_smaug_lost_effect = {
 		}
 	}
 
-	527 = {
-		cede_province = ---
-		change_culture = culture_wilderness
-		change_religion = religion_wilderness
-		add_province_modifier = {
-			name = ruins_debuff
-			duration = -1
+	3175 = {
+		if = {
+			limit = {
+				exists = Y23
+			}
+			cede_province = Y23
 		}
+		else_if = {
+			limit = {
+				exists = Y34
+			}
+			cede_province = Y34
+		}
+		else_if = {
+			limit = {
+				exists = Y30
+			}
+			cede_province = Y30
+		}
+		else = {
+			cede_province = ---
+		}
+		
+		change_culture = culture_troll
+		change_religion = religion_olog
 	}
 
 	every_owned_province = {

@@ -70,10 +70,20 @@ smaug_rebels = {
 	}
 
 	siege_won_trigger = {
+		always = yes
 	}
 
 	siege_won_effect = {
-		owner = { add_prestige = -50 }
+		ROOT = {
+			limit = {
+				province_id = 287
+			}
+			set_country_flag = desolation_of_smaug_enforced
+			add_prestige = -50
+			country_event = {
+				id = flavor_desolation_of_smaug.2
+			}
+		}
 	}
 
 	# Country scope
@@ -91,10 +101,12 @@ smaug_rebels = {
 	
 	# Country scope
 	demands_enforced_effect = {
-		set_country_flag = desolation_of_smaug_enforced
-		add_prestige = -50
-		country_event = {
-			id = flavor_desolation_of_smaug.2
+		ROOT = {
+			set_country_flag = desolation_of_smaug_enforced
+			add_prestige = -50
+			country_event = {
+				id = flavor_desolation_of_smaug.2
+			}
 		}
 	}
 }
