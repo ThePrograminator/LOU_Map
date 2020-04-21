@@ -1,0 +1,61 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+### Nation specific idea groups
+
+DDN_ideas = {
+	start = {
+		heir_chance = 0.5
+		war_exhaustion = -0.25
+	}
+
+	bonus = {
+		land_morale = 0.10
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		primary_culture = culture_dunedain_of_arnor
+	}
+	free = yes		#will be added at load.
+	
+	rangers_of_the_north = {
+		leader_land_fire = 1
+		infantry_power = 0.1
+
+	}
+	ancestry_war_with_angmar = {
+		hostile_attrition = 2
+
+	}
+	former_glory = {
+		legitimacy = 1
+		prestige = 0.5
+
+	}
+	traveling_the_wild = {
+		land_attrition = -0.25
+		leader_land_manuever = 1
+
+	}
+	stationed_duty = {
+		defensiveness = 0.25
+		manpower_recovery_speed = 0.10
+
+	}
+	returning_to_the_ancestry_of_arnor = {
+		infantry_cost = -0.20
+		build_cost = -0.1
+
+	}
+	reunited_in_the_forth_age = {
+		heir_chance = 0.5
+		technology_cost = -0.10
+		free_leader_pool = 1
+		prestige_from_land = 0.5
+
+	}
+}

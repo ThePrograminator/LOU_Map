@@ -1,0 +1,52 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+### Nation specific idea groups
+
+DUN_ideas = {
+	start = {
+		siege_ability = 0.1
+		land_morale = 0.10
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.10
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		primary_culture = culture_dunlendings
+	}
+	free = yes		#will be added at load.
+	
+	driven_to_the_hills = {
+		land_attrition = -0.25
+	}
+	bitter_hatred = {
+		unjustified_demands = -0.5
+	}
+	uniting_the_clans = {
+		build_cost = -0.1
+		heir_chance = 0.25
+	}
+	feared = {
+		prestige = 1
+		prestige_decay = -0.25
+	}
+	welcoming_wildmen = {
+		vassal_income = 0.2
+		vassal_forcelimit_bonus = 0.33
+		rebel_support_efficiency = 0.2
+	}
+	influence_from_isengard = {
+		mil_tech_cost_modifier = -0.1
+	}
+	homeward_bound = {
+		enemy_core_creation = 0.5
+		envoy_travel_time = -0.20
+		legitimacy = 0.5
+	}
+}

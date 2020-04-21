@@ -1,0 +1,58 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+### Nation specific idea groups
+
+ORC_ideas = {
+	start = {
+		army_tradition = 1
+		hostile_attrition = 1
+	}
+
+	bonus = {
+		unjustified_demands = -0.5
+
+	}
+	
+	trigger = {
+		technology_group = lotr_orc
+		NOT = { 
+			tag = V17
+			tag = V19
+		}
+	}
+	free = yes		#will be added at load.
+	
+	the_eye_is_watching = {
+		discipline = 0.05
+		leader_land_manuever = 1
+	}
+	masters_with_whips = {
+		build_cost = -0.1
+		production_efficiency = 0.1
+	}
+	loot_everything = {
+		loot_amount = 0.25
+		prestige_from_land = 0.1
+	}
+	infiltrating_nations = {
+		rebel_support_efficiency = 0.25
+		discovered_relations_impact = -0.25
+	}
+	taste_of_man_flesh = {
+		infantry_power = 0.1
+		land_morale = 0.1
+	}
+	orcs_and_men_from_afar = {
+		possible_mercenaries = 2.0
+		mercenary_cost = -0.25
+	}
+	the_age_of_orcs = {
+		ae_impact = -0.1
+		global_unrest = -1
+		global_autonomy = 0.05
+	}
+}
