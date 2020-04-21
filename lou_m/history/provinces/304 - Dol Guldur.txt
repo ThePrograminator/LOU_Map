@@ -94,8 +94,8 @@ discovered_by = lotr_wights
 
 2941.10.13 = {
 	add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
+		name = ruins_debuff
+		duration = -1
 	}
 	capital_3_orc_building = no
 	add_base_tax = -10
@@ -103,6 +103,10 @@ discovered_by = lotr_wights
 	add_base_production = -10
 	culture = culture_wilderness
 	religion = religion_wilderness
+	add_province_modifier = {
+		name = wilderness_debuff
+		duration = -1
+	}
 }
 
 2951.5.1 = {

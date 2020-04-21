@@ -10,7 +10,7 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = no
+is_city = yes
 
 base_tax = 3
 base_production = 3
@@ -55,7 +55,7 @@ discovered_by = lotr_wights
 	controller = Y94
 	owner = Y94
 	culture = culture_bardings
-	religion = religion_rhovanion
+	religion = religion_nenedain
 	add_province_modifier = {
 		name = ruins_debuff
 		duration = -1

@@ -1,0 +1,50 @@
+country_decisions = {
+
+	khand_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W58
+			}
+			primary_culture = culture_variags
+
+			any_owned_province = {
+				region = khand_region
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			khand_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = W58
+			add_prestige = 50
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+			W58 = {
+				set_capital = 443		# Annunimas
+			}
+			swap_free_idea_group = yes		#keep progress
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
