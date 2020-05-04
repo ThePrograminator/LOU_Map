@@ -28,8 +28,12 @@ company_of_thorin = {
 	}
 	
 	can_start = {
-		#Date = 2941.04.26
 		is_year = 2941
+		#check_date = {
+		#	YEAR = 2941
+		#	MONTH = 3
+		#	STARTED_BEFORE = 2941.04.26
+		#}
 		province_id = 83
 		83 = {
 			owner = {
@@ -45,15 +49,14 @@ company_of_thorin = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = tooltip_erebor_lost_to_smaug
-			
-			has_global_flag = erebor_lost_smaug
+
+			has_global_flag = desolation_of_smaug_lost
 			NOT = {
 				has_global_flag = company_of_thorin_over
 			}
 		}
 	}
 	start_chance = 100		#in 100 for when a province can_start
-	
 	
 	on_start = institution_events.1
 	
@@ -63,32 +66,37 @@ company_of_thorin = {
 
 	embracement_speed = {
 		#Path
-		modifier = {
-			factor = 100
-			scale = yes
-			
-			potential = {
-				has_province_flag = thorin_company_path
-				any_neighbor_province = {
-					company_of_thorin = 100
-					OR = {
-						province_id = 83
-						has_province_modifier = thorin_position
-					}
-				}
-				NOT = {
-					has_global_flag = company_of_thorin_lost
-					has_global_flag = company_of_thorin_won
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_thorin_company_path
-				#has_province_flag = thorin_company_path
-				any_neighbor_province = {
-					company_of_thorin = 100
-				}
-			}
-		}
+		#modifier = {
+		#	factor = 100
+		#	scale = yes
+		#	
+		#	potential = {
+		#		has_province_flag = thorin_company_path
+		#		any_neighbor_province = {
+		#			company_of_thorin = 100
+		#			OR = {
+		#				province_id = 83
+		#				has_province_modifier = thorin_position
+		#			}
+		#			NOT = {
+		#				ROOT = {
+		#					province_id = 
+		#				}
+		#			}
+		#		}
+		#		NOT = {
+		#			has_global_flag = company_of_thorin_lost
+		#			has_global_flag = company_of_thorin_won
+		#		}
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_thorin_company_path
+		#		#has_province_flag = thorin_company_path
+		#		any_neighbor_province = {
+		#			company_of_thorin = 100
+		#		}
+		#	}
+		#}
 		
 		#Path
 		modifier = {
@@ -98,6 +106,8 @@ company_of_thorin = {
 			potential = {
 				OR = {
 					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
 					laketown_dale_fellowship_path = yes
 					dale_ravenhill_fellowship_path = yes
 					ravenhill_erebor_fellowship_path = yes
@@ -124,6 +134,15 @@ company_of_thorin = {
 			
 			potential = {
 				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
 				any_neighbor_province = {
 					company_of_thorin = 100
@@ -148,6 +167,15 @@ company_of_thorin = {
 			
 			potential = {
 				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
 				any_neighbor_province = {
 					company_of_thorin = 100
@@ -173,6 +201,15 @@ company_of_thorin = {
 			
 			potential = {
 				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
 				any_neighbor_province = {
 					company_of_thorin = 100
@@ -198,6 +235,15 @@ company_of_thorin = {
 			
 			potential = {
 				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
 				any_neighbor_province = {
 					company_of_thorin = 100
@@ -223,6 +269,15 @@ company_of_thorin = {
 			
 			potential = {
 				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
 				any_neighbor_province = {
 					company_of_thorin = 100
@@ -248,6 +303,15 @@ company_of_thorin = {
 			
 			potential = {
 				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
 				any_neighbor_province = {
 					company_of_thorin = 100
@@ -326,13 +390,15 @@ fellowship_of_ring = {
 	historical_start_province = 83 # Hobbitton
 
 	history = {
-			is_year = 3330
+		is_year = 3330
 	}
 	
 	can_start = {
-	#always = no
-		#Date = 3018.04.12
-		is_year = 3018
+		check_date = {
+			YEAR = 3018
+			MONTH = 3
+			STARTED_BEFORE = 3018.04.12
+		}
 		province_id = 83
 		83 = {
 			owner = {
@@ -346,7 +412,7 @@ fellowship_of_ring = {
 		custom_trigger_tooltip = {
 			tooltip = tooltip_bilbo_found_the_ring
 			
-			has_global_flag = erebor_lost_smaug
+			has_global_flag = desolation_of_smaug_lost
 			has_global_flag = company_of_thorin_over
 		}
 		

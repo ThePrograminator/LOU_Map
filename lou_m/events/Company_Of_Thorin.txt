@@ -42,7 +42,7 @@ country_event = {
 			add_province_modifier = {
 				name = "thorin_position"
 				duration = -1
-				hidden = yes
+				#hidden = yes
 			}
 			save_event_target_as = thorin_new_position
 		}
@@ -83,12 +83,12 @@ country_event = {
 		384 = {
 			company_of_thorin = 100
 			has_province_modifier = thorin_position
-			NOT = {
-				has_global_flag = company_of_thorin_lost
-				has_global_flag = company_of_thorin_won
-				has_global_flag = company_of_thorin_sur_trolls
-				has_global_flag = company_of_thorin_die_trolls
-			}
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_trolls
+			has_global_flag = company_of_thorin_die_trolls
 		}
 	}
 	
@@ -142,7 +142,6 @@ country_event = {
 
 	trigger = {
 		558 = {
-			
 			company_of_thorin = 100
 			has_province_modifier = thorin_position
 			
@@ -151,13 +150,12 @@ country_event = {
 				religion = religion_goblin
 				primary_culture = culture_goblin
 			}
-			
-			NOT = {
-				has_global_flag = company_of_thorin_lost
-				has_global_flag = company_of_thorin_won
-				has_global_flag = company_of_thorin_sur_goblins
-				has_global_flag = company_of_thorin_die_goblins
-			}
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_goblins
+			has_global_flag = company_of_thorin_die_goblins
 		}
 	}
 	
@@ -213,12 +211,12 @@ country_event = {
 		526 = {
 			company_of_thorin = 100
 			has_province_modifier = thorin_position
-			NOT = {
-				has_global_flag = company_of_thorin_lost
-				has_global_flag = company_of_thorin_won
-				has_global_flag = company_of_thorin_sur_spiders
-				has_global_flag = company_of_thorin_die_spiders
-			}
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_spiders
+			has_global_flag = company_of_thorin_die_spiders
 		}
 	}
 	
@@ -275,12 +273,12 @@ country_event = {
 		528 = {
 			company_of_thorin = 100
 			has_province_modifier = thorin_position
-			NOT = {
-				has_global_flag = company_of_thorin_lost
-				has_global_flag = company_of_thorin_won
-				has_global_flag = company_of_thorin_sur_spiders
-				has_global_flag = company_of_thorin_die_spiders
-			}
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_smaug
+			has_global_flag = company_of_thorin_die_smaug
 		}
 	}
 	
@@ -904,6 +902,14 @@ country_event = {
 			add_core = Y22
 			cede_province = Y22
 		}
+
+		anglad_area = {
+			limit = {
+				is_empty = yes
+			}
+			add_core = Y22
+			cede_province = Y22
+		}
 		
 		287 = {
 			change_culture = culture_longbeard
@@ -914,23 +920,29 @@ country_event = {
 				duration = -1
 			}
 		}
+
+		1951 = {
+			change_trade_goods = iron
+		}
+
+		1951 = {
+			change_trade_goods = copper
+		}
+		
+
+		V51 = {
+			change_tag = Y94
+		}
 		
 		527 = {
+			cede_province = Y94
+			add_core = Y94
+			remove_core = V51
 			change_trade_goods = silk
 			add_province_modifier = {
 				name = ruins_debuff
 				duration = -1
 			}
-		}
-		
-		1951 = {
-			add_core = Y22
-			cede_province = Y22
-			change_trade_goods = iron
-		}
-		
-		1953 = {
-			change_trade_goods = stone
 		}
 		
 		if = {
@@ -1043,23 +1055,23 @@ country_event = {
 			}
 		}
 		
-		if = {
-			limit = {
-				ai = yes
-			}
+		#if = {
+		#	limit = {
+		#		ai = yes
+		#	}
 			
-			every_province = {
-				limit = {
-					owned_by = Y23
-					NOT = {
-						area = iron_hills_area
-					}
-				}
+		#	every_province = {
+		#		limit = {
+		#			owned_by = Y23
+		#			NOT = {
+		#				area = iron_hills_area
+		#			}
+		#		}
 				
-				remove_core = Y23
-				add_core = Y22
-				cede_province = Y22
-			}
+		#		remove_core = Y23
+		#		add_core = Y22
+		#		cede_province = Y22
+		#	}
 			
 			Y23 = {
 				add_country_modifier = {
@@ -1664,13 +1676,13 @@ country_event = {
 				remove_core = Y22
 			}
 			
-			V51 = {
-				change_tag = X25
-			}
+			#V51 = {
+			#	change_tag = Y94
+			#}
 			
-			Y22 = {
-				create_union = X25
-			}
+			#Y22 = {
+			#	create_union = Y94
+			#}
 		}
 	}
 	
@@ -1712,13 +1724,13 @@ country_event = {
 				remove_core = Y22
 			}
 			
-			V51 = {
-				change_tag = X25
-			}
+			#V51 = {
+			#	change_tag = Y94
+			#}
 			
-			Y22 = {
-				create_union = X25
-			}
+			#Y22 = {
+			#	create_union = Y94
+			#}
 		}
 	}
 }

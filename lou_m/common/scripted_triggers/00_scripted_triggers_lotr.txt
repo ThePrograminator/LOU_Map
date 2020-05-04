@@ -219,14 +219,36 @@ regular_thorin_path = {
 		province_id = 527
 		province_id = 1903
 		province_id = 287
+		province_id = 299
+		province_id = 685
 	}
 	
 	any_neighbor_province = {
 		company_of_thorin = 100
 		OR = {
-			province_id = 84
+			province_id = 83
 			has_province_modifier = thorin_position
 		}
+	}
+}
+
+bridge_fields_high_hay_entrance_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 299
+	
+	1804 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
+	}
+}
+
+lone_fells_gollums_cave_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 685
+	
+	1126 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
 	}
 }
 
