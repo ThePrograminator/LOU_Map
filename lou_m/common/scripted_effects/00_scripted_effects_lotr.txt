@@ -162,7 +162,7 @@ create_fellowship_path = {
 		set_province_flag = fellowship_path
 	}
 	
-	96 = {
+	299 = {
 		set_province_flag = fellowship_path
 	}
 	
@@ -182,11 +182,7 @@ create_fellowship_path = {
 		set_province_flag = fellowship_path
 	}
 	
-	261 = {
-		set_province_flag = fellowship_path
-	}
-	
-	1836 = {
+	173 = {
 		set_province_flag = fellowship_path
 	}
 	
@@ -203,6 +199,10 @@ create_fellowship_path = {
 	}
 	
 	291 = {
+		set_province_flag = fellowship_path
+	}
+
+	293 = {
 		set_province_flag = fellowship_path
 	}
 	
@@ -350,10 +350,6 @@ create_fellowship_path = {
 		set_province_flag = fellowship_path
 	}
 	
-	419 = {
-		set_province_flag = fellowship_path
-	}
-	
 	52 = {
 		set_province_flag = fellowship_path
 	}
@@ -386,42 +382,175 @@ create_fellowship_path = {
 give_minas_ithil_to_gondor = {
 	if = {
 		limit = {
-			426 = {
-				owned_by = X84
+			413 = {
+				owned_by = X01
 			}
 			any_province = {
-				owned_by = X12
+				owned_by = X01
 				region = gondor_region
 			}
 		}
-		
-		426 = {
-			add_core = X12
-			cede_province = X12
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-	}
-	
-	if = {
-		limit = {
-			426 = {
-				owned_by = X84
-			}
-			
-			NOT = {
-				any_province = {
-					owned_by = X12
-					region = gondor_region
+
+		harithilien_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
 				}
 			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
 		}
-		
-		426 = {
-			add_core = Y10
-			cede_province = Y10
-			remove_core = X84
+		ithilien_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
+		}
+		forithilien_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
+		}
+		emyn_arnen_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
+		}
+		minas_ithil_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
+		}
+		nindalf_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
+		}
+		athrad_poros_area = {
+			limit = {
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+			}
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
+			}
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
 		}
 	}
 }
@@ -429,173 +558,40 @@ give_minas_ithil_to_gondor = {
 give_black_gate_to_gondor = {
 	if = {
 		limit = {
-			exists = X12
-			691 = {
-				owned_by = X84
+			413 = {
+				owned_by = X01
 			}
 			any_province = {
-				owned_by = X12
+				owned_by = X01
 				region = gondor_region
 			}
 		}
-		
-		691 = {
-			add_core = X12
-			cede_province = X12
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-	}
-	
-	if = {
-		limit = {
-			691 = {
-				owned_by = X84
-			}
-			
-			NOT = {
-				any_province = {
-					owned_by = X12
-					region = gondor_region
-				}
-			}
-		}
-		
-		691 = {
-			add_core = Y10
-			cede_province = Y10
-			remove_core = X84
-		}
-	}
-}
 
-give_dol_dagor_to_gondor = {
-	#Gondor exists and has a province in gondor region
-	if = {
-		limit = {
-			585 = {
-				owned_by = X84
-			}
-			any_province = {
-				owned_by = X12
-				region = gondor_region
-			}
-		}
-		
-		585 = {
-			add_core = X12
-			cede_province = X12
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-	}
-	
-	#gondor does not have a province in gondor region, and neigbor province is not owned by sagath
-	if = {
-		limit = {
-			AND = {
-				585 = {
-					owned_by = X84
-				}
-				
-				NOT = {
-					any_province = {
-						owned_by = X12
-						region = gondor_region
-					}
-				}
-			}
-			NOT = {
-				any_neighbor_province = { 
-					NOT = {
-						owned_by = Z01
-					}
-				}
-			}
-			
-		}
-		
-		585 = {
-			add_core = Y10
-			cede_province = Y10
-			remove_core = X84
-		}
-	}
-	
-	#gondor does not have a province in gondor region, and neigbor province is owned by sagath
-	if = {
-		limit = {
-			AND = {
-				585 = {
-					owned_by = X84
-				}
-				
-				NOT = {
-					any_province = {
-						owned_by = X12
-						region = gondor_region
-					}
-				}
-			}
-			AND = {
-				any_neighbor_province = { 
-					owned_by = Z01
-				}
-			}
-			
-		}
-		
-		585 = {
-			add_core = Z01
-			cede_province = Z01
-			remove_core = X84
-		}
-	}
-}
-
-give_emyn_muil_area_to_gondor = {
-	if = {
-		limit = {
-			exists = X12
-			any_province = {
-				owned_by = X12
-				region = gondor_region
-			}
-		}
-		
-		emyn_muil_area = {
+		morannon_area = {
 			limit = {
-				owned_by = X84
-			}
-			
-			add_core = X12
-			cede_province = X12
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-	}
-	
-	if = {
-		limit = {	
-			NOT = {
-				any_province = {
-					owned_by = X12
-					region = gondor_region
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
+				NOT = {
+					province_id = 71
 				}
 			}
-		}
-		
-		emyn_muil_area = {
-			limit = {
-				owned_by = X84
+			cede_province = X01
+			remove_core = V17
+			remove_core = V18
+			if = {
+				limit = {
+					culture = culture_orkish
+				}
+				change_culture = culture_wilderness
 			}
-			
-			add_core = Y12
-			cede_province = Y12
-			remove_core = X84
+			if = {
+				limit = {
+					religion = religion_orkish
+				}
+				change_religion = religion_wilderness
+			}
 		}
 	}
 }
@@ -604,61 +600,64 @@ give_gondor_region_to_gondor = {
 	if = {
 		limit = {
 			any_province = {
-				owned_by = X12
+				owned_by = X01
 				region = gondor_region
 			}
 		}
 		
 		gondor_region = {
 			limit = {
-				owned_by = X84
+				OR = {
+					owned_by = V17
+					owned_by = V18
+				}
 			}
 			
-			add_core = X12
-			cede_province = X12
-			remove_core = X84
+			add_core = X01
+			cede_province = X01
+			remove_core = V17
 		}
 	}
 	
-	if = {
-		limit = {
-			NOT = {
-				any_province = {
-					owned_by = X12
-					region = gondor_region
-				}
-			}
-		}
-		
-		gondor_region = {
-			limit = {
-				owned_by = X84
-			}
-			
-			add_core = Y07
-			cede_province = Y07
-			remove_core = X84
-		}
-	}
+	#if = {
+	#	limit = {
+	#		NOT = {
+	#			any_province = {
+	#				owned_by = X01
+	#				region = gondor_region
+	#			}
+	#		}
+	#	}
+	#	
+	#	gondor_region = {
+	#		limit = {
+	#			owned_by = V17
+	#		}
+	#		
+	#		add_core = Y07
+	#		cede_province = Y07
+	#		remove_core = V17
+	#	}
+	#}
 }
 
 give_rohan_region_to_rohan = {
 	if = {
 		limit = {
 			any_province = {
-				owned_by = X70
+				owned_by = X16
 				region = rohan_region
 			}
 		}
 		
 		rohan_region = {
 			limit = {
-				owned_by = X84
+				owned_by = V17
 			}
 			
-			add_core = X70
-			cede_province = X70
-			remove_core = X84
+			add_core = X16
+			cede_province = X16
+			remove_core = V17
 		}
 	}
 	
@@ -666,7 +665,7 @@ give_rohan_region_to_rohan = {
 		limit = {
 			NOT = {
 				any_province = {
-					owned_by = X70
+					owned_by = X16
 					region = rohan_region
 				}
 			}
@@ -674,12 +673,12 @@ give_rohan_region_to_rohan = {
 		
 		rohan_region = {
 			limit = {
-				owned_by = X84
+				owned_by = V17
 			}
 			
 			add_core = Y08
 			cede_province = Y08
-			remove_core = X84
+			remove_core = V17
 		}
 	}
 }
@@ -688,121 +687,24 @@ set_mordor_region_empty = {
 
 	mordor_region = {
 		limit = {
-			owned_by = X84
+			owned_by = V17
 			NOT = {
-				province_id = 691
-				province_id = 426
-				area = south_nurn_area
-				area = north_nurn_area
-				area = west_nurn_area
-				area = east_nurn_area
+				province_id = 48
+				province_id = 573
+				province_id = 675
+				area = thaurband_area
+				area = lithlad_area
+				area = maegond_vale_area
+				area = urlutsu_nurn_area
+				area = nurnen_area
+				area = sturlurtsa_nurn_area
 			}
 		}
 		
 		cede_province = ---
-		culture = culture_wilderness
-		religion = religion_wilderness
-		remove_core = X84
-	}
-
-	if = {
-		limit = {
-			any_province = {
-				owned_by = X20
-				region = mordor_region
-			}
-		}
-		
-		south_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = X20
-			cede_province = X20
-			remove_core = X84
-		}
-		
-		north_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = X20
-			cede_province = X20
-			remove_core = X84
-		}
-		
-		west_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = X20
-			cede_province = X20
-			remove_core = X84
-		}
-		
-		east_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = X20
-			cede_province = X20
-			remove_core = X84
-		}
-	}
-	
-	if = {
-		limit = {
-			NOT = {
-				any_province = {
-					owned_by = X20
-					region = mordor_region
-				}
-			}
-		}
-		
-		south_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = Y10
-			cede_province = Y10
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-		
-		north_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = Y10
-			cede_province = Y10
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-		
-		west_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = Y10
-			cede_province = Y10
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
-		
-		east_nurn_area = {
-			limit = {
-				owned_by = X84
-			}
-			add_core = Y10
-			cede_province = Y10
-			culture = culture_wilderness
-			religion = religion_wilderness
-			remove_core = X84
-		}
+		change_culture = culture_wilderness
+		change_religion = religion_wilderness
+		remove_core = V17
 	}
 }
 
@@ -1685,6 +1587,22 @@ setup_global_flag_after_2793 = {
 	set_global_flag = war_of_the_dwarves_and_orcs_lost
 }
 
+setup_global_flag_after_2941 = {
+	set_global_flag = isengard_spawned
+
+	set_global_flag = desolation_of_smaug_start
+	set_global_flag = desolation_of_smaug_no_aid
+	set_global_flag = desolation_of_smaug_lost
+
+	set_global_flag = war_of_the_dwarves_and_orcs
+	set_global_flag = war_of_the_dwarves_and_orcs_starts
+	set_global_flag = war_of_the_dwarves_and_orcs_lost
+
+	set_global_flag = company_of_thorin_sur_smaug
+	set_global_flag = company_of_thorin_thorin_dies
+	set_global_flag = company_of_thorin_over
+}
+
 setup_global_flag_after_2942 = {
 	set_global_flag = isengard_spawned
 
@@ -1695,6 +1613,10 @@ setup_global_flag_after_2942 = {
 	set_global_flag = war_of_the_dwarves_and_orcs
 	set_global_flag = war_of_the_dwarves_and_orcs_starts
 	set_global_flag = war_of_the_dwarves_and_orcs_lost
+
+	set_global_flag = company_of_thorin_sur_smaug
+	set_global_flag = company_of_thorin_thorin_dies
+	set_global_flag = company_of_thorin_over
 
 	set_global_flag = mordor_spawned
 }
@@ -1710,7 +1632,22 @@ setup_global_flag_after_2953 = {
 	set_global_flag = war_of_the_dwarves_and_orcs_starts
 	set_global_flag = war_of_the_dwarves_and_orcs_lost
 
+	set_global_flag = company_of_thorin_sur_smaug
+	set_global_flag = company_of_thorin_thorin_dies
+	set_global_flag = company_of_thorin_over
+
 	set_global_flag = mordor_spawned
 
 	set_global_flag = isengard_turned_uruk_hai
+}
+
+split_mordor_nation = {
+	$REGION$ = {
+		limit = {
+			owned_by = V17
+		}
+		add_core = $COUNTRY$
+		cede_province = $COUNTRY$
+		remove_core = V17
+	}
 }

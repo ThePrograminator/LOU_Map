@@ -337,33 +337,47 @@ company_of_thorin = {
 			
 			potential = {
 				always = no
-				#has_province_flag = thorin_company_path
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
 				
-				#any_neighbor_province = {
-				#	company_of_thorin = 100
-				#}
-				
-				#any_active_trade_node = {
-					#ROOT = {
-						#trading_policy_in_node = {
-						#	node = ROOT
-						#	policy = hinder_fellowships
-						#}
-					#}
-				#}
-				#NOT = {
-				#	has_global_flag = company_of_thorin_lost
-				#	has_global_flag = company_of_thorin_won
-				#}
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
 			}
 			
-			trading_policy_in_node = {
-				node = FROM
-				policy = hinder_fellowships
-			}
+			#trading_policy_in_node = {
+			#	node = FROM
+			#	policy = hinder_fellowships
+			#}
 			
+			#custom_trigger_tooltip = {
+			#	tooltip = tooltip_hinder_fellowships
+			#}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_hinder_fellowships
+				
+				any_trade_node_member_province = {
+					has_province_flag = fellowship_path
+					owner = {
+						trading_policy_in_node = {
+							node = PREV
+							policy = hinder_fellowships
+						}
+					}
+				}
 			}
 		}
 	}
@@ -394,11 +408,12 @@ fellowship_of_ring = {
 	}
 	
 	can_start = {
-		check_date = {
-			YEAR = 3018
-			MONTH = 3
-			STARTED_BEFORE = 3018.04.12
-		}
+		is_year = 3018
+		#check_date = {
+		#	YEAR = 3018
+		#	MONTH = 3
+		#	STARTED_BEFORE = 3018.04.12
+		#}
 		province_id = 83
 		83 = {
 			owner = {
@@ -413,7 +428,7 @@ fellowship_of_ring = {
 			tooltip = tooltip_bilbo_found_the_ring
 			
 			has_global_flag = desolation_of_smaug_lost
-			has_global_flag = company_of_thorin_over
+			has_global_flag = company_of_thorin_sur_smaug
 		}
 		
 		413 = {
@@ -454,6 +469,8 @@ fellowship_of_ring = {
 			potential = {
 				OR = {
 					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
 					amon_hen_emyn_muil_fellowship_path = yes
 					west_osgiliath_curedain_fellowship_path = yes
 					curedain_morgul_vale_fellowship_path = yes
@@ -481,6 +498,19 @@ fellowship_of_ring = {
 			potential = {
 				#always = no
 				
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+
 				has_province_flag = fellowship_path
 				any_neighbor_province = {
 					fellowship_of_ring = 100
@@ -505,6 +535,15 @@ fellowship_of_ring = {
 			
 			potential = {
 				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
 				has_province_flag = fellowship_path
 				any_neighbor_province = {
 					fellowship_of_ring = 100
@@ -530,6 +569,15 @@ fellowship_of_ring = {
 			
 			potential = {
 				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
 				has_province_flag = fellowship_path
 				any_neighbor_province = {
 					fellowship_of_ring = 100
@@ -555,6 +603,15 @@ fellowship_of_ring = {
 			
 			potential = {
 				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
 				has_province_flag = fellowship_path
 				
 				is_good_race_province = yes
@@ -577,6 +634,15 @@ fellowship_of_ring = {
 			
 			potential = {
 				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
 				has_province_flag = fellowship_path
 				
 				is_neutral_race_province = yes
@@ -599,6 +665,15 @@ fellowship_of_ring = {
 			
 			potential = {
 				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
 				has_province_flag = fellowship_path
 				
 				is_bad_race_province = yes
@@ -621,6 +696,15 @@ fellowship_of_ring = {
 			
 			potential = {
 				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
 				has_province_flag = fellowship_path
 				
 				any_neighbor_province = {

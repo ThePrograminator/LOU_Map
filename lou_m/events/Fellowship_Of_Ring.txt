@@ -8,7 +8,7 @@
 namespace = fellowship_of_ring_events
 
 #Current position of fellowship(hidden)
-country_event = {
+province_event = {
 	id = fellowship_of_ring_events.1
 	title = fellowship_of_ring_events.1.t
 	desc = fellowship_of_ring_events.1.d
@@ -20,56 +20,45 @@ country_event = {
 		NOT = {
 			has_global_flag = fellowship_lost
 		}
-		any_province = {
-			fellowship_of_ring = 100
-			NOT = {
-				province_id = 83
-				has_province_modifier = fellowship_passed
-				has_province_modifier = fellowship_position
-			}
+		fellowship_of_ring = 100
+		NOT = {
+			province_id = 83
+			has_province_modifier = fellowship_passed
+			has_province_modifier = fellowship_position
 		}
 	}
 	
 	immediate = {
-		random_province = {
+		set_province_flag = fellowship_set_position
+		add_province_modifier = {
+			name = "fellowship_position"
+			duration = -1
+			#hidden = yes
+		}
+		save_event_target_as = fellowship_new_position
+		every_neighbor_province = {
 			limit = {
 				fellowship_of_ring = 100
+				has_province_modifier = fellowship_position
+				
 				NOT = {
-					province_id = 83
-					has_province_modifier = fellowship_position
-					has_province_modifier = fellowship_passed
+					province_id = ROOT
 				}
 			}
-
-			set_province_flag = thorin_set_position
+			
 			add_province_modifier = {
-				name = "fellowship_position"
+				name = "fellowship_passed"
 				duration = -1
-				hidden = yes
+				#hidden = yes
 			}
-			save_event_target_as = fellowship_new_position
+			remove_province_modifier = fellowship_position
+			clr_province_flag = fellowship_set_position
 		}
 	}
 
 	option = {
 		name = company_of_thorin_events.1.a
 		
-		every_province = {
-			limit = {
-				fellowship_of_ring = 100
-				has_province_modifier = fellowship_position
-				NOT = {
-					province_id = event_target:fellowship_new_position
-				}
-			}
-			add_province_modifier = {
-				name = "fellowship_passed"
-				duration = -1
-				hidden = yes
-			}
-			remove_province_modifier = thorin_position
-			clr_province_flag = thorin_set_position
-		}
 	}
 }
 
@@ -790,7 +779,7 @@ country_event = {
 
 	trigger = {
 		#West Osgilliath
-		419 = {
+		418 = {
 			fellowship_of_ring = 100
 			has_province_modifier = fellowship_position
 		}
@@ -1413,6 +1402,12 @@ country_event = {
 					#	has_ruler_leader_from = THIS
 					#	controlled_by = ROOT
 					#}
+					147 = {
+						controlled_by = ROOT
+					}
+					NOT = {
+						is_bad_race = yes
+					}
 				}
 			}
 		}
@@ -1425,16 +1420,81 @@ country_event = {
 		
 		give_minas_ithil_to_gondor = yes
 		give_black_gate_to_gondor = yes
-		give_dol_dagor_to_gondor = yes
-		give_emyn_muil_area_to_gondor = yes
 		give_gondor_region_to_gondor = yes
 		give_rohan_region_to_rohan = yes
 		set_mordor_region_empty = yes
-		set_eriador_superregion_new_orc_nation = yes
-		set_rhovanion_superregion_new_orc_nation = yes
-		set_harad_superregion_new_orc_nation = yes
-		set_rhun_superregion_new_orc_nation = yes
-		set_forodwaith_superregion_new_orc_nation = yes
+
+		while = {
+			limit = {
+				exists = V17
+			}
+			random_list = {
+				25 = {
+					V17 = {
+						random_owned_province = {
+							region = {
+								if = {
+									limit = {
+										owned_by = V17 
+									}
+									add_core = W59
+									cede_province = W59
+									remove_core = V17
+								}
+							}
+						}
+					}
+				}
+				25 = {
+					V17 = {
+						random_owned_province = {
+							region = {
+								if = {
+									limit = {
+										owned_by = V17 
+									}
+									add_core = W60
+									cede_province = W60
+									remove_core = V17
+								}
+							}
+						}
+					}
+				}
+				25 = {
+					V17 = {
+						random_owned_province = {
+							region = {
+								if = {
+									limit = {
+										owned_by = V17 
+									}
+									add_core = W61
+									cede_province = W61
+									remove_core = V17
+								}
+							}
+						}
+					}
+				}
+				25 = {
+					V17 = {
+						random_owned_province = {
+							region = {
+								if = {
+									limit = {
+										owned_by = V17 
+									}
+									add_core = W62
+									cede_province = W62
+									remove_core = V17
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		
 		set_global_flag = fellowship_over
 		
@@ -1470,7 +1530,7 @@ country_event = {
 	desc = fellowship_of_ring_events.21.d
 	picture = HRE_eventPicture
 
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		has_global_flag = fellowship_won
@@ -1771,7 +1831,7 @@ country_event = {
 			tag = V17
 			ruler_has_personality = carries_ring_personality
 		}
-	}
+	} 
 
 	#Sets ring to ruler
 	option = {
@@ -1843,7 +1903,11 @@ country_event = {
 	desc = fellowship_of_ring_events.30.d
 	picture = COMET_SIGHTED_eventPicture
 
+	fire_only_once = yes
+
+
 	trigger = {
+		always = no
 		OR = {
 			has_global_flag = fellowship_won
 			has_global_flag = fellowship_ring_destroyed
@@ -2081,5 +2145,124 @@ country_event = {
 	option = {
 		name = fellowship_of_ring_events.36.a
 		
+	}
+}
+
+province_event = {
+	id = fellowship_of_ring_events.37
+	title = fellowship_of_ring_events.1.t
+	desc = fellowship_of_ring_events.1.d
+	picture = PAINTER_ARTIST_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = fellowship_lost
+		}
+		any_province = {
+			fellowship_of_ring = 100
+			has_province_modifier = fellowship_position
+			NOT = {
+				province_id = 83
+				has_province_modifier = fellowship_passed
+			}
+		}
+	}
+
+	option = {
+		name = company_of_thorin_events.1.a
+		
+		every_neighbor_province = {
+			limit = {
+				fellowship_of_ring = 100
+				
+				ROOT = {
+					any_neighbor_province = {
+						fellowship_of_ring = 100
+						has_province_modifier = fellowship_position
+					}
+				}
+				
+				NOT = {
+					province_id = ROOT
+				}
+			}
+			
+			add_province_modifier = {
+				name = "fellowship_passed"
+				duration = -1
+				#hidden = yes
+			}
+			remove_province_modifier = fellowship_position
+			clr_province_flag = fellowship_set_position
+		}
+	}
+}
+
+#Take ring from war
+country_event = {
+	id = fellowship_of_ring_events.38
+	title = fellowship_of_ring_events.38.t
+	desc = fellowship_of_ring_events.38.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+	}
+
+	#yes
+	option = {
+		name = fellowship_of_ring_events.38.a
+		
+		V17 = {
+			random_owned_area = {
+				if = {
+					limit = {
+						owned_by = V17 
+					}
+					add_core = V32
+					cede_province = V32
+					remove_core = V17
+				}
+			}
+		}
+	}
+}
+
+#Take ring from war
+country_event = {
+	id = fellowship_of_ring_events.39
+	title = fellowship_of_ring_events.39.t
+	desc = fellowship_of_ring_events.39.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+	}
+
+	#yes
+	option = {
+		name = fellowship_of_ring_events.39.a
+		
+		V17 = {
+			random_owned_province = {
+				region = {
+					if = {
+						limit = {
+							owned_by = V17 
+						}
+						add_core = V32
+						cede_province = V32
+						remove_core = V17
+					}
+				}
+			}
+		}
 	}
 }

@@ -705,13 +705,13 @@ call_crusade_action = {
 					religion = religion_haruzani
 				}
 				border_distance = {
-				who = FROM
-				distance = 300
+					who = FROM
+					distance = 300
 				}
 			}
 			FROM = {
-				#num_of_cities = 20
-				num_of_cities = ROOT
+				num_of_cities = 20
+				#num_of_cities = ROOT
 			}
 		}
 	}

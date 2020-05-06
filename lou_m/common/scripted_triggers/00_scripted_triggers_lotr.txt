@@ -287,17 +287,39 @@ ravenhill_erebor_fellowship_path = {
 regular_fellowship_path = {
 	has_province_flag = fellowship_path
 	NOT = {
+		province_id = 1835
 		province_id = 323
 		province_id = 52
 		province_id = 999
+		province_id = 263
 	}
 	
 	any_neighbor_province = {
 		fellowship_of_ring = 100
 		OR = {
-			province_id = 84
+			province_id = 83
 			has_province_modifier = fellowship_position
 		}
+	}
+}
+
+tom_bombadil_barrow_downs_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 1835
+	
+	1580 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
+	}
+}
+
+barrow_downs_bree_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 263
+	
+	1835 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
 	}
 }
 
@@ -315,7 +337,7 @@ west_osgiliath_curedain_fellowship_path = {
 	has_province_flag = fellowship_path
 	province_id = 52
 	
-	419 = {
+	418 = {
 		fellowship_of_ring = 100
 		has_province_modifier = fellowship_position
 	}
