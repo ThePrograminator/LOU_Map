@@ -1,20 +1,20 @@
 ##################################################
-# Institutions 
+# fellowships 
 #
 # written by DKStranger
 ##################################################
 
-namespace = institution_events
+namespace = fellowship_events
 
 ########################################
 # Company of Thorin.  
 ########################################
 
 country_event = {
-	id = institution_events.1
-	title = institution_events.1.t
-	desc = institution_events.1.d
-	picture = PAINTER_ARTIST_eventPicture
+	id = fellowship_events.1
+	title = fellowship_events.1.t
+	desc = fellowship_events.1.d
+	picture = THORINS_COMPANY_eventPicture
 
 	is_triggered_only = yes
 	
@@ -25,7 +25,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			#country_event = { id = institution_events.3 }
+			83 = {
+				add_province_modifier = {
+					name = "thorin_position"
+					duration = -1
+					hidden = yes
+				}
+				set_province_flag = thorin_set_position
+			}
 		}
 	}
 
@@ -34,7 +41,7 @@ country_event = {
 	}
 
 	option = {
-		name = institution_events.1.a
+		name = fellowship_events.1.a
 		custom_tooltip = tooltip_thorin_company_started
 		FROM = {
 			set_province_flag = thorin_company_path_start
@@ -46,17 +53,17 @@ country_event = {
 					NOT = { tag = ROOT }
 					has_discovered = 84
 				}
-				country_event = { id = institution_events.2 }
+				country_event = { id = fellowship_events.2 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = institution_events.2
-	title = institution_events.2.t
-	desc = institution_events.2.d
-	picture = PAINTER_ARTIST_eventPicture
+	id = fellowship_events.2
+	title = fellowship_events.2.t
+	desc = fellowship_events.2.d
+	picture = THORINS_COMPANY_eventPicture
 
 	is_triggered_only = yes
 
@@ -69,15 +76,15 @@ country_event = {
 	}
 
 	option = {
-		name = institution_events.2.a
+		name = fellowship_events.2.a
 		custom_tooltip = tooltip_thorin_company_started
 	}
 }
 
 country_event = {
-	id = institution_events.3
-	title = institution_events.3.t
-	desc = institution_events.3.d
+	id = fellowship_events.3
+	title = fellowship_events.3.t
+	desc = fellowship_events.3.d
 	picture = PAINTER_ARTIST_eventPicture
 
 	is_triggered_only = yes
@@ -88,7 +95,7 @@ country_event = {
 	}
 
 	option = {
-		name = institution_events.3.a
+		name = fellowship_events.3.a
 		
 		create_thorin_company_path = yes
 	}
@@ -98,10 +105,10 @@ country_event = {
 # Fellowship of the Ring
 #######################################
 country_event = {
-	id = institution_events.4
-	title = institution_events.4.t
-	desc = institution_events.4.d
-	picture = PAINTER_ARTIST_eventPicture
+	id = fellowship_events.4
+	title = fellowship_events.4.t
+	desc = fellowship_events.4.d
+	picture = FELLOWSHIP_eventPicture
 
 	is_triggered_only = yes
 
@@ -111,7 +118,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			#country_event = { id = institution_events.6 }
+			#country_event = { id = fellowship_events.6 }
 		}
 	}
 
@@ -120,7 +127,7 @@ country_event = {
 	}
 
 	option = {
-		name = institution_events.4.a
+		name = fellowship_events.4.a
 		custom_tooltip = tooltip_fellowship_started
 		FROM = {
 			set_province_flag = fellowship_path_start
@@ -132,7 +139,7 @@ country_event = {
 					NOT = { tag = ROOT }
 					has_discovered = 84
 				}
-				country_event = { id = institution_events.5 }
+				country_event = { id = fellowship_events.5 }
 			}
 		}
 	}
@@ -140,10 +147,10 @@ country_event = {
 
 
 country_event = {
-	id = institution_events.5
-	title = institution_events.5.t
-	desc = institution_events.5.d
-	picture = PAINTER_ARTIST_eventPicture
+	id = fellowship_events.5
+	title = fellowship_events.5.t
+	desc = fellowship_events.5.d
+	picture = FELLOWSHIP_eventPicture
 
 	is_triggered_only = yes
 	
@@ -157,15 +164,15 @@ country_event = {
 	}
 
 	option = {
-		name = institution_events.5.a
+		name = fellowship_events.5.a
 		custom_tooltip = tooltip_fellowship_started
 	}
 }
 
 country_event = {
-	id = institution_events.6
-	title = institution_events.6.t
-	desc = institution_events.6.d
+	id = fellowship_events.6
+	title = fellowship_events.6.t
+	desc = fellowship_events.6.d
 	picture = PAINTER_ARTIST_eventPicture
 
 	is_triggered_only = yes
@@ -176,7 +183,7 @@ country_event = {
 	}
 
 	option = {
-		name = institution_events.6.a
+		name = fellowship_events.6.a
 		
 		if = {
 			limit = {

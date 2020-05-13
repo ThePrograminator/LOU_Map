@@ -12,7 +12,7 @@ province_event = {
 	id = fellowship_of_ring_events.1
 	title = fellowship_of_ring_events.1.t
 	desc = fellowship_of_ring_events.1.d
-	picture = PAINTER_ARTIST_eventPicture
+	picture = FELLOWSHIP_eventPicture
 
 	hidden = yes
 
@@ -33,7 +33,7 @@ province_event = {
 		add_province_modifier = {
 			name = "fellowship_position"
 			duration = -1
-			#hidden = yes
+			hidden = yes
 		}
 		save_event_target_as = fellowship_new_position
 		every_neighbor_province = {
@@ -49,7 +49,7 @@ province_event = {
 			add_province_modifier = {
 				name = "fellowship_passed"
 				duration = -1
-				#hidden = yes
+				hidden = yes
 			}
 			remove_province_modifier = fellowship_position
 			clr_province_flag = fellowship_set_position

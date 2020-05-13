@@ -8,65 +8,57 @@
 namespace = company_of_thorin_events
 
 #Current position of thorin
-country_event = {
+province_event = {
 	id = company_of_thorin_events.1
 	title = company_of_thorin_events.1.t
 	desc = company_of_thorin_events.1.d
-	picture = PAINTER_ARTIST_eventPicture
+	picture = THORINS_COMPANY_eventPicture
 
 	hidden = yes
 
 	trigger = {
-		any_province = {
-			company_of_thorin = 100
-			NOT = {
-				province_id = 83
-				has_province_modifier = thorin_passed
-				has_province_modifier = thorin_position
-			}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+		}
+		company_of_thorin = 100
+		NOT = {
+			province_id = 83
+			has_province_modifier = thorin_passed
+			has_province_modifier = thorin_position
 		}
 	}
 	
 	immediate = {
-		random_province = {
-			limit = {
-				company_of_thorin = 100
-				NOT = {
-					province_id = 83
-					has_province_modifier = thorin_position
-					has_province_modifier = thorin_passed
-				}
-			}
-
-			set_province_flag = fellowship_set_position
-			add_province_modifier = {
-				name = "thorin_position"
-				duration = -1
-				#hidden = yes
-			}
-			save_event_target_as = thorin_new_position
+		set_province_flag = thorin_set_position
+		add_province_modifier = {
+			name = "thorin_position"
+			duration = -1
+			hidden = yes
 		}
-	}
-
-	option = {
-		name = company_of_thorin_events.1.a
-		
-		every_province = {
+		save_event_target_as = thorin_new_position
+		every_neighbor_province = {
 			limit = {
 				company_of_thorin = 100
 				has_province_modifier = thorin_position
+				
 				NOT = {
-					province_id = event_target:thorin_new_position
+					province_id = ROOT
 				}
 			}
+			
 			add_province_modifier = {
 				name = "thorin_passed"
 				duration = -1
 				hidden = yes
 			}
 			remove_province_modifier = thorin_position
-			clr_province_flag = fellowship_set_position
+			clr_province_flag = thorin_set_position
 		}
+	}
+
+	option = {
+		name = company_of_thorin_events.1.a
+		
 	}
 }
 
