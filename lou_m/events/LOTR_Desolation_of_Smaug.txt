@@ -40,7 +40,7 @@ country_event = {
 		set_global_flag = desolation_of_smaug_start
 		hidden_effect = {
 			country_event = {
-				id = desolation_of_smaug.5
+				id = flavor_desolation_of_smaug.5
 				days = 5
 			}
 		}
@@ -163,7 +163,8 @@ country_event = {
 		NOT = {
 			has_global_flag = desolation_of_smaug_lost
 			has_global_flag = desolation_of_smaug_won
-			any_owned_province = {
+			#any_owned_province = {
+			any_province = {
 				num_of_units_in_province = {
 					who = REB
 					type = smaug_rebels

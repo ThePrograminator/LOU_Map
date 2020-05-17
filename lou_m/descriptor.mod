@@ -40,6 +40,7 @@ replace_path="common/imperial_reforms"
 replace_path="common/religious_reforms"
 replace_path="common/parliament_issues"
 replace_path="common/trade_companies"
+replace_path="common/scripted_triggers"
 
 tags={
 	"Map"

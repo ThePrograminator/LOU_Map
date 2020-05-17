@@ -70,20 +70,38 @@ smaug_rebels = {
 	}
 
 	siege_won_trigger = {
-		always = yes
+		#always = yes
+		if = {
+			limit = {
+				ROOT = {
+					province_id = 287
+				}
+			}
+		}
 	}
 
 	siege_won_effect = {
-		ROOT = {
-			limit = {
-				province_id = 287
-			}
-			set_country_flag = desolation_of_smaug_enforced
-			add_prestige = -50
-			country_event = {
-				id = flavor_desolation_of_smaug.2
-			}
-		}
+		#FROM = {
+		#owner = {
+		#	set_country_flag = desolation_of_smaug_enforced
+		#	add_prestige = -50
+		#	country_event = {
+		#		id = flavor_desolation_of_smaug.2
+		#	}
+		#}
+			
+		#}
+
+		#ROOT = {
+		#	limit = {
+		#		province_id = 287
+		#	}
+		#	set_country_flag = desolation_of_smaug_enforced
+		#	add_prestige = -50
+		#	country_event = {
+		#		id = flavor_desolation_of_smaug.2
+		#	}
+		#}
 	}
 
 	# Country scope

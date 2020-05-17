@@ -45,18 +45,18 @@ discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
-culture = culture_orkish
-religion = religion_orkish
 
 2770.1.1 = {
-	add_owner = Y33
+	owner = Y33
 	add_controller = Y33
+	culture = culture_orkish
+	religion = religion_orkish
 	camp_orc_building=yes
 	orc_pit_orc_building=yes
 }
 
 2941.1.1 = {
-	add_owner = Y23
+	owner = Y23
 	add_controller = Y23
 }
 

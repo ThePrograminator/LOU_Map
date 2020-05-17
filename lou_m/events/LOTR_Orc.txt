@@ -140,8 +140,9 @@ country_event = {
       	name = "flavor_orc.3.a"
 		add_stability = -1
 		add_mil_power = -50
-        create_general = 45
 		set_country_flag = orc_warlord_risen
+		create_general = 45
+		
 		hidden_effect = {
 			country_event = {
 				id = flavor_orc.11
