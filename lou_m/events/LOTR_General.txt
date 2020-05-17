@@ -366,85 +366,27 @@ country_event = {
 			}
 }
 
-country_event = {
+province_event = {
 	id = lotr_general.23
 	title = "orc_raiders.1.title"
 	desc = "orc_raiders.1.desc"
 	picture = BORDER_TENSION_eventPicture
 	
-	trigger = { 
+	trigger = {
 		OR = {
-			AND = {
-				OR = {
-					forithilien_area = {
-						AND = { 
-							owned_by = ROOT 
-						}
-					}
-				
-					harithilien_area = {
-						AND = 
-						{ 
-							owned_by = ROOT 
-						}
-					}
-					
-					osgiliath_area = {
-						AND = 
-						{ 
-							owned_by = ROOT 
-						}
-					}
-					
-					emyn_muil_area = {
-						AND = 
-						{ 
-							owned_by = ROOT 
-						}
-					}
-				}
-				
-				NOT = {
-					is_year = 2942
-					tag = X84
-					culture_group = culture_group_melkor
-					culture_group = culture_group_haruzani
-					culture_group = culture_group_ulgath
-					
-					has_country_modifier = spawn_orc_raider_timer
-				}
-			}
-			
-			AND = {
-				exists = X84
+			area = forithilien_area
+			area = harithilien_area
+			area = osgiliath_area
+			area = emyn_muil_area
+		} 
+		owner = {
+			NOT = {
 				is_year = 2942
-			
-				OR = {
-					forithilien_area = {
-							owned_by = ROOT 
-					}
-				
-					harithilien_area = {
-						owned_by = ROOT 
-					}
-					
-					osgiliath_area = {
-						owned_by = ROOT 
-					}
-					
-					emyn_muil_area = {
-						owned_by = ROOT 
-					}
-				}
-				
-				NOT = {
-					tag = X84
-					culture_group = culture_group_melkor
-					culture_group = culture_group_haruzani
-					culture_group = culture_group_ulgath
-					
-					has_country_modifier = spawn_orc_raider_timer
-				}
+				tag = V17
+				culture_group = culture_group_melkor
+				culture_group = culture_group_haruzani
+				culture_group = culture_group_ulgath
+				has_country_modifier = spawn_orc_raider_timer
 			}
 		}
 	}
@@ -469,88 +411,37 @@ country_event = {
 	option = {
 		name = "orc_raiders.1.a"
 		hidden_effect = {
-			add_country_modifier = {
-				name = spawn_orc_raider_timer 
-				duration = 1095
-				hidden = yes
+			owner = {
+				add_country_modifier = {
+					name = spawn_orc_raider_timer 
+					duration = 1095
+					hidden = yes
+				}
 			}
 		}
-		
-		random_owned_province = {
-			limit = {
-				OR = { 
-					area = forithilien_area 
-					area = harithilien_area 
-				}
-				NOT = { 
-					units_in_province = 1 
-				}
-				is_capital = no
-			}
-			
-			if ={
-				limit = {
-					NOT = {
-						exists = X84
-					}
-				}
-				random_list = {
-					5 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 4
-						}
-					}
-					10 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 3
-						}
-					}
-					20 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 2
-						}
-					}
-					65 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 1
-						}
-					}
+		random_list = {
+			5 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 4
 				}
 			}
-			if = {
-				limit = 
-				{
-					exists = X84
+			10 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 3
 				}
-				random_list = {
-					20 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 4
-						}
-					}
-					20 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 3
-						}
-					}
-					30 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 2
-						}
-					}
-					30 = {
-						spawn_rebels = {
-							type = orc_raider_rebels
-							size = 1
-						}
-					}
+			}
+			20 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 2
+				}
+			}
+			65 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 1
 				}
 			}
 		}
