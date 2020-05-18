@@ -58,4 +58,4 @@ tags={
 	"Alternative History"
 }
 name="lou_m"
-path="C:/Users/ChristianH/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
+path="C:/Users/Christian/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
