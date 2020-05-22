@@ -26,6 +26,8 @@ country_event = {
 	#Let them fight
 	option = {
 		name = "flavor_orc.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.1 - Option : flavor_orc.1.a" }
 		
 		add_country_modifier = {
 			name = orc_stronger_orc_troops
@@ -36,6 +38,8 @@ country_event = {
 	#Break up the fighting
 	option = {
 		name = "flavor_orc.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.1 - Option : flavor_orc.1.b" }
 		
 		add_country_modifier = {
             name = orc_reinforce_orc_troops
@@ -76,6 +80,8 @@ country_event = {
 	#Finally some decend food
 	option = {
 		name = "flavor_orc.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.2 - Option : flavor_orc.2.a" }
 		
 		random_owned_province = {
 			limit = {
@@ -137,7 +143,10 @@ country_event = {
 	
     #A New Warlord Rises
  	option = {
-      	name = "flavor_orc.3.a"
+		name = "flavor_orc.3.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.3 - Option : flavor_orc.3.a" }
+
 		add_stability = -1
 		add_mil_power = -50
 		set_country_flag = orc_warlord_risen
@@ -219,7 +228,9 @@ country_event = {
 	
     #Yay
  	option = {
-      	name = "flavor_orc.4.a"
+		name = "flavor_orc.4.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.4 - Option : flavor_orc.4.a" }
 
 		add_mil_power = -50
 		add_manpower = 3
@@ -237,7 +248,9 @@ country_event = {
 	
 	#nay, slay them
  	option = {
-      	name = "flavor_orc.4.b"
+		name = "flavor_orc.4.b"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.4 - Option : flavor_orc.4.b" }
 
 		add_mil_power = 50
 		add_manpower = -1
@@ -278,7 +291,9 @@ country_event = {
 	
     #Send Out
  	option = {
-      	name = "flavor_orc.5.a"
+		name = "flavor_orc.5.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.5 - Option : flavor_orc.5.a" }
 		
 		random_neighbor_country  = {
 			limit = { has_removed_fow = no }
@@ -293,7 +308,9 @@ country_event = {
 	
 	#Don't Send
  	option = {
-      	name = "flavor_orc.5.b"
+		name = "flavor_orc.5.b"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.5 - Option : flavor_orc.5.b" }
 
 		add_mil_power = 50
 		set_country_flag = orc_send_scouts
@@ -333,7 +350,9 @@ country_event = {
 	
     #Industry
  	option = {
-      	name = "flavor_orc.6.a"
+		name = "flavor_orc.6.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.6 - Option : flavor_orc.6.a" }
 		
 		random_owned_province = {
 			limit = {
@@ -354,7 +373,9 @@ country_event = {
 	
 	#Campfires
  	option = {
-      	name = "flavor_orc.6.b"
+		name = "flavor_orc.6.b"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.6 - Option : flavor_orc.6.b" }
 
 		add_country_modifier = {
 			name = orc_wood_to_campfires
@@ -437,7 +458,9 @@ country_event = {
 	
     #Men
  	option = {
-      	name = "flavor_orc.7.a"
+		name = "flavor_orc.7.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.7 - Option : flavor_orc.7.a" }
 		
 		add_manpower = -3
 		add_mil_power = -25
@@ -459,7 +482,9 @@ country_event = {
 	
 	#Resouces
  	option = {
-      	name = "flavor_orc.7.b"
+		name = "flavor_orc.7.b"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.7 - Option : flavor_orc.7.b" }
 		
 		add_adm_power = -50
 		add_dip_power = -50
@@ -481,7 +506,9 @@ country_event = {
 	
 	#Don't
  	option = {
-      	name = "flavor_orc.7.c"
+		name = "flavor_orc.7.c"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.7 - Option : flavor_orc.7.c" }
 		
 		add_adm_power = 25
 		add_dip_power = 25
@@ -576,7 +603,9 @@ country_event = {
 	
     #We are stronger than you!
  	option = {
-      	name = "flavor_orc.8.a"
+		name = "flavor_orc.8.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.8 - Option : flavor_orc.8.a" }
 		
 		add_country_modifier = {
 			name = orc_offended_nation
@@ -705,7 +734,10 @@ country_event = {
 	
     #Kill Him
  	option = {
-      	name = "flavor_orc.9.a"
+		name = "flavor_orc.9.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.9 - Option : flavor_orc.9.a" }
+
 		kill_advisor = random
 		add_stability = 1
 		set_country_flag = orc_killed_advisor
@@ -720,7 +752,9 @@ country_event = {
 	
 	#Keep him
  	option = {
-      	name = "flavor_orc.9.b"
+		name = "flavor_orc.9.b"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.9 - Option : flavor_orc.9.b" }
 		
 		add_stability = -1
 		set_country_flag = orc_kept_advisor
@@ -760,7 +794,10 @@ country_event = {
 	
     #Convert Province
  	option = {
-      	name = "flavor_orc.10.a"
+		name = "flavor_orc.10.a"
+		  
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.10 - Option : flavor_orc.10.a" }
+
 		random_owned_province = { 
 			limit = {
 				controlled_by = ROOT
@@ -806,6 +843,9 @@ country_event = {
 	#doest matter
 	option = { 
 		name = flavor_orc.11.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.11 - Option : flavor_orc.11.a" }
+
 		clr_country_flag = orc_warlord_risen
 	}
 }
@@ -828,6 +868,9 @@ country_event = {
 	#doest matter
 	option = { 
 		name = flavor_orc.12.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.12 - Option : flavor_orc.12.a" }
+
 		clr_country_flag = orc_clan_arrives
 	}
 }
@@ -850,6 +893,9 @@ country_event = {
 	#doest matter
 	option = { 
 		name = flavor_orc.13.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.13 - Option : flavor_orc.13.a" }
+
 		clr_country_flag = orc_send_scouts
 	}
 }
@@ -875,6 +921,9 @@ country_event = {
 	#doest matter
 	option = { 
 		name = flavor_orc.14.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.14 - Option : flavor_orc.14.a" }
+
 		clr_country_flag = orc_killed_advisor
 		clr_country_flag = orc_kept_advisor
 	}
@@ -898,6 +947,9 @@ country_event = {
 	#doest matter
 	option = { 
 		name = flavor_orc.15.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc.15 - Option : flavor_orc.15.a" }
+
 		clr_country_flag = converted_province_recently
 	}
 }

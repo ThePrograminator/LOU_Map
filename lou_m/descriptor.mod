@@ -41,7 +41,6 @@ replace_path="common/religious_reforms"
 replace_path="common/parliament_issues"
 replace_path="common/trade_companies"
 replace_path="common/scripted_triggers"
-
 tags={
 	"Map"
 	"Military"
@@ -59,3 +58,5 @@ tags={
 	"Alternative History"
 }
 name="lou_m"
+supported_version="1.29.6"
+remote_file_id="2095475587"

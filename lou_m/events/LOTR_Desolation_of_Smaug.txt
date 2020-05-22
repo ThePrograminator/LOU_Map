@@ -36,6 +36,8 @@ country_event = {
 	}
 	
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.1 - Option : immediate" }
+
 		set_country_flag = desolation_of_smaug_owner
 		set_global_flag = desolation_of_smaug_start
 		hidden_effect = {
@@ -83,6 +85,8 @@ country_event = {
 	}
 
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.2 - Option : immediate" }
+
 		set_global_flag = desolation_of_smaug_lost
 		disband_rebels = smaug_rebels
 		if = {
@@ -139,6 +143,9 @@ country_event = {
 	
 	option = {
 		name = "desolation_of_smaug.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.3 - Option : desolation_of_smaug.3.a" }
+
 		custom_tooltip = desolation_of_smaug_text_1
 		hidden_effect = {
 			desolation_of_smaug_lost_effect = yes
@@ -176,6 +183,9 @@ country_event = {
 
 	option = {
 		name = "desolation_of_smaug.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.4 - Option : desolation_of_smaug.4.a" }
+
 		add_stability = 2
 		add_prestige = 50
 		set_global_flag = desolation_of_smaug_won
@@ -186,6 +196,9 @@ country_event = {
 		
 	option = {
 		name = "desolation_of_smaug.4.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.4 - Option : desolation_of_smaug.4.b" }
+
 		add_stability = 2
 		add_legitimacy = 25
 		set_global_flag = desolation_of_smaug_won
@@ -234,6 +247,9 @@ country_event = {
 
 	option = {
 		name = "desolation_of_smaug.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.5 - Option : desolation_of_smaug.5.a" }
+
 		random_list = {
 			20 = {
 				country_event = {
@@ -273,6 +289,8 @@ country_event = {
 
 	option = {
 		name = "desolation_of_smaug.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.6 - Option : desolation_of_smaug.6.a" }
 
 		Y67 = {
 			add_historical_friend = ROOT
@@ -324,6 +342,9 @@ country_event = {
 
 	option = {
 		name = "desolation_of_smaug.7.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.7 - Option : desolation_of_smaug.7.a" }
+
 		Y67 = {
 			add_opinion = {
 				who = ROOT

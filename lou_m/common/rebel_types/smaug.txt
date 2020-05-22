@@ -70,7 +70,8 @@ smaug_rebels = {
 	}
 
 	siege_won_trigger = {
-		province_id = 287
+		#province_id = 287
+		if = { limit = { has_global_flag = enable_event_logging } log = "Rebel Trigger - Smaug - siege_won_trigger" }
 	}
 
 	siege_won_effect = {
@@ -84,6 +85,7 @@ smaug_rebels = {
 		#		id = flavor_desolation_of_smaug.2
 		#	}
 		#}
+		if = { limit = { has_global_flag = enable_event_logging } log = "Rebel Effect - Smaug - siege_won_effect" }
 	}
 
 	# Country scope
@@ -101,6 +103,7 @@ smaug_rebels = {
 	
 	# Country scope
 	demands_enforced_effect = {
+		if = { limit = { has_global_flag = enable_event_logging } log = "Rebel Effect - Smaug - demands_enforced_effect" }
 		ROOT = {
 			set_country_flag = desolation_of_smaug_enforced
 			add_prestige = -50

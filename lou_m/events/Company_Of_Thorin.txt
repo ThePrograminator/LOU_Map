@@ -29,6 +29,7 @@ province_event = {
 	}
 	
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - province : [Root.GetName] company_of_thorin_events.1" }
 		set_province_flag = thorin_set_position
 		add_province_modifier = {
 			name = "thorin_position"
@@ -102,6 +103,7 @@ country_event = {
 		trigger = {
 			has_global_flag = company_of_thorin_sur_trolls
 		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.2 - Option : company_of_thorin_events.2.a" }
 	}
 	
 	#Dies
@@ -111,6 +113,8 @@ country_event = {
 		trigger = {
 			has_global_flag = company_of_thorin_die_trolls
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.2 - Option : company_of_thorin_events.2.b" }
 		
 		every_country = {
 			limit = {
@@ -169,15 +173,17 @@ country_event = {
 		trigger = {
 			has_global_flag = company_of_thorin_sur_goblins
 		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.4 - Option : company_of_thorin_events.4.a" }
 	}
 	
 	#Dies
 	option = {
 		name = company_of_thorin_events.3.b
-		
 		trigger = {
 			has_global_flag = company_of_thorin_die_goblins
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.3 - Option : company_of_thorin_events.3.b" }
 		
 		every_country = {
 			limit = {
@@ -230,6 +236,7 @@ country_event = {
 		trigger = {
 			has_global_flag = company_of_thorin_sur_spiders
 		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.4 - Option : company_of_thorin_events.4.a" }
 	}
 	
 	#Dies
@@ -240,6 +247,8 @@ country_event = {
 			has_global_flag = company_of_thorin_die_spiders
 		}
 		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.4 - Option : company_of_thorin_events.4.b" }
+
 		every_country = {
 			limit = {
 				ai = no
@@ -288,10 +297,11 @@ country_event = {
 	#Survives, Eryn Galen and Lake Town wants stuff
 	option = {
 		name = company_of_thorin_events.5.a
-		
 		trigger = {
 			has_global_flag = company_of_thorin_sur_smaug
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.5 - Option : company_of_thorin_events.5.a" }
 		
 		set_global_flag = company_of_thorin_won
 		
@@ -323,6 +333,8 @@ country_event = {
 		trigger = {
 			has_global_flag = company_of_thorin_die_smaug
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.5 - Option : company_of_thorin_events.5.b" }
 		
 		every_country = {
 			limit = {
@@ -370,6 +382,8 @@ country_event = {
 	option = {
 		name = company_of_thorin_events.6.a
 		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.6 - Option : company_of_thorin_events.6.a" }
+
 		set_country_flag = company_of_thorin_eryn_galen_demand
 		set_country_flag = company_of_thorin_eryn_galen_respond
 		
@@ -388,6 +402,8 @@ country_event = {
 	#Don't Demand
 	option = {
 		name = company_of_thorin_events.6.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.6 - Option : company_of_thorin_events.6.b" }
 		
 		set_country_flag = company_of_thorin_eryn_galen_refuse
 		set_country_flag = company_of_thorin_eryn_galen_respond
@@ -430,6 +446,8 @@ country_event = {
 	#Demand Money
 	option = {
 		name = company_of_thorin_events.7.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.7 - Option : company_of_thorin_events.7.a" }
 		
 		set_country_flag = company_of_thorin_lake_town_demand
 		set_country_flag = company_of_thorin_lake_town_respond
@@ -449,6 +467,8 @@ country_event = {
 	#Don't Demand
 	option = {
 		name = company_of_thorin_events.7.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.7 - Option : company_of_thorin_events.7.b" }
 		
 		set_country_flag = company_of_thorin_lake_town_refuse
 		set_country_flag = company_of_thorin_lake_town_respond
@@ -497,6 +517,8 @@ country_event = {
 	#Give Stuff
 	option = {
 		name = company_of_thorin_events.8.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.8 - Option : company_of_thorin_events.8.a" }
 		
 		set_global_flag = company_of_thorin_give_eryn_galen
 		
@@ -515,6 +537,8 @@ country_event = {
 	#Refuse
 	option = {
 		name = company_of_thorin_events.8.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.8 - Option : company_of_thorin_events.8.b" }
 		
 		set_global_flag = company_of_thorin_refuse_eryn_galen
 		
@@ -575,6 +599,8 @@ country_event = {
 	#Give Stuff
 	option = {
 		name = company_of_thorin_events.9.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.9 - Option : company_of_thorin_events.9.a" }
 		
 		set_global_flag = company_of_thorin_give_lake_town
 		
@@ -592,6 +618,8 @@ country_event = {
 	#Refuse
 	option = {
 		name = company_of_thorin_events.9.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.9 - Option : company_of_thorin_events.9.a" }
 		
 		set_global_flag = company_of_thorin_refuse_lake_town
 		
@@ -655,6 +683,8 @@ country_event = {
 	#Give Stuff
 	option = {
 		name = company_of_thorin_events.10.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.10 - Option : company_of_thorin_events.10.a" }
 		
 		set_global_flag = company_of_thorin_give_both
 		
@@ -677,6 +707,8 @@ country_event = {
 	#Refuse
 	option = {
 		name = company_of_thorin_events.10.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.10 - Option : company_of_thorin_events.10.b" }
 		
 		set_global_flag = company_of_thorin_refuse_both
 		
@@ -735,6 +767,8 @@ country_event = {
 	#War Eryn Galen
 	option = {
 		name = company_of_thorin_events.11.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.11 - Option : company_of_thorin_events.11.a" }
 		
 		set_global_flag = company_of_thorin_eryn_galen_war
 		
@@ -778,6 +812,8 @@ country_event = {
 	#War Lake Town
 	option = {
 		name = company_of_thorin_events.12.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.12 - Option : company_of_thorin_events.12.a" }
 		
 		set_global_flag = company_of_thorin_lake_town_war
 		
@@ -828,6 +864,8 @@ country_event = {
 	#War Both
 	option = {
 		name = company_of_thorin_events.13.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.13 - Option : company_of_thorin_events.13.a" }
 		
 		set_global_flag = company_of_thorin_both_war
 		
@@ -867,6 +905,7 @@ country_event = {
 	option = {
 		name = company_of_thorin_events.14.a
 		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.14 - Option : company_of_thorin_events.14.a" }
 	}
 }
 
@@ -889,6 +928,8 @@ country_event = {
 	#yes
 	option = {
 		name = company_of_thorin_events.15.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.15 - Option : company_of_thorin_events.15.a" }
 		
 		the_lonely_mountain_area = {
 			add_core = Y22
@@ -994,6 +1035,8 @@ country_event = {
 		trigger = {
 			ai = no 
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.16 - Option : company_of_thorin_events.16.a" }
 		
 		swap_free_idea_group = yes
 		switch_tag = Y22
@@ -1034,6 +1077,8 @@ country_event = {
 	#Stay Vassal to Erebor
 	option = {
 		name = company_of_thorin_events.16.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.16 - Option : company_of_thorin_events.16.b" }
 		
 		Y22 = {
 			vassalize = Y23
@@ -1047,29 +1092,10 @@ country_event = {
 			}
 		}
 		
-		#if = {
-		#	limit = {
-		#		ai = yes
-		#	}
-			
-		#	every_province = {
-		#		limit = {
-		#			owned_by = Y23
-		#			NOT = {
-		#				area = iron_hills_area
-		#			}
-		#		}
-				
-		#		remove_core = Y23
-		#		add_core = Y22
-		#		cede_province = Y22
-		#	}
-			
-			Y23 = {
-				add_country_modifier = {
-					name = iron_hills_subject
-					duration = -1
-				}
+		Y23 = {
+			add_country_modifier = {
+				name = iron_hills_subject
+				duration = -1
 			}
 		}
 	}
@@ -1122,6 +1148,8 @@ country_event = {
 	#War all that can
 	option = {
 		name = company_of_thorin_events.17.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.17 - Option : company_of_thorin_events.17.a" }
 		
 		set_global_flag = company_of_thorin_gundabad_attack
 		
@@ -1144,6 +1172,8 @@ country_event = {
 	#No War
 	option = {
 		name = company_of_thorin_events.17.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.17 - Option : company_of_thorin_events.17.b" }
 		
 		add_stability = -1
 		add_prestige = -50
@@ -1221,6 +1251,8 @@ country_event = {
 		#	white_peace = Y67
 		#	white_peace = V51
 		#}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.18 - Option : immediate" }
 		
 		if = {
 			limit = {
@@ -1324,6 +1356,8 @@ country_event = {
 	#Gandalf Intervene
 	option = {
 		name = company_of_thorin_events.19.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.19 - Option : company_of_thorin_events.19.b" }
 		
 		set_global_flag = company_of_thorin_gundabad_attack_responded
 		
@@ -1436,6 +1470,8 @@ country_event = {
 				has_global_flag = company_of_thorin_thorin_lives
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.21 - Option : company_of_thorin_events.21.a" }
 		
 		if = {
 			limit = {
@@ -1494,6 +1530,8 @@ country_event = {
 				has_global_flag = company_of_thorin_thorin_lives
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.21 - Option : company_of_thorin_events.21.b" }
 		
 		if = {
 			limit = {
@@ -1537,6 +1575,8 @@ country_event = {
 				has_global_flag = company_of_thorin_thorin_dies
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.21 - Option : company_of_thorin_events.21.c" }
 		
 		add_stability = 1
 		add_prestige = 50
@@ -1568,6 +1608,8 @@ country_event = {
 	#Thorin Dies
 	option = {
 		name = company_of_thorin_events.22.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.22 - Option : company_of_thorin_events.22.a" }
 		
 		swap_free_idea_group = yes
 		switch_tag = Y22
@@ -1628,6 +1670,8 @@ country_event = {
 				has_global_flag = company_of_thorin_both_war
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.23 - Option : company_of_thorin_events.23.a" }
 		
 		Y67 = {
 			add_treasury = 6000
@@ -1649,6 +1693,8 @@ country_event = {
 				has_global_flag = company_of_thorin_both_war
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.23 - Option : company_of_thorin_events.23.b" }
 
 		V51 = {
 			add_treasury = 4000
@@ -1692,6 +1738,8 @@ country_event = {
 				has_global_flag = company_of_thorin_both_war
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.23 - Option : company_of_thorin_events.23.c" }
 
 		Y67 = {
 			add_treasury = 5000

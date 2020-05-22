@@ -44,6 +44,8 @@ country_event = {
 	#Punish The Survivers
 	option = { 
 		name = flavor_orc_religion.1.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.1 - Option : flavor_orc_religion.1.a" }
 		
 		add_piety = 0.10
 		add_country_modifier = {
@@ -55,6 +57,8 @@ country_event = {
 	#Reward The Victors
 	option = { 
 		name = flavor_orc_religion.1.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.1 - Option : flavor_orc_religion.1.b" }
 
 		add_piety = -0.10
 	
@@ -101,6 +105,8 @@ country_event = {
 	#give them maggoty bread
 	option = { 
 		name = flavor_orc_religion.2.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.2 - Option : flavor_orc_religion.2.a" }
 		
 		add_piety = 0.05
 		
@@ -113,6 +119,8 @@ country_event = {
 	#buy the meat
 	option = { 
 		name = flavor_orc_religion.2.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.2 - Option : flavor_orc_religion.2.b" }
 		
 		add_piety = -0.05
 
@@ -161,6 +169,8 @@ country_event = {
 	#Force training
 	option = { 
 		name = flavor_orc_religion.3.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.3 - Option : flavor_orc_religion.3.a" }
 		
 		add_piety = 0.10
 		
@@ -175,6 +185,8 @@ country_event = {
 	#loose formation is also good
 	option = { 
 		name = flavor_orc_religion.3.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.3 - Option : flavor_orc_religion.3.b" }
 		
 		add_piety = -0.10
 		
@@ -228,6 +240,8 @@ country_event = {
 	#We are preparing
 	option = { 
 		name = flavor_orc_religion.4.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.4 - Option : flavor_orc_religion.4.a" }
 		
 		add_piety = 0.05
 
@@ -240,6 +254,8 @@ country_event = {
 	#Promise to start war
 	option = { 
 		name = flavor_orc_religion.4.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.4 - Option : flavor_orc_religion.4.b" }
 		
 		add_country_modifier = {
 			name = orc_religion_promise_war
@@ -288,6 +304,8 @@ country_event = {
 	#FAK
 	option = { 
 		name = flavor_orc_religion.5.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.5 - Option : flavor_orc_religion.5.a" }
 		
 		add_piety = -0.25
 		
@@ -365,6 +383,8 @@ country_event = {
 	#Let Them Raid
 	option = { 
 		name = flavor_orc_religion.6.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.6 - Option : flavor_orc_religion.6.a" }
 		
 		add_piety = -0.20
 		
@@ -471,6 +491,8 @@ country_event = {
 	#We haven't ordered a raid!
 	option = { 
 		name = flavor_orc_religion.6.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.6 - Option : flavor_orc_religion.6.b" }
 		
 		add_piety = 0.20
 		
@@ -500,6 +522,8 @@ province_event = {
 	#bring forth destruction
 	option = { 
 		name = flavor_orc_religion.7.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.7 - Option : flavor_orc_religion.7.a" }
 
 		tooltip = {
 			FROM = {
@@ -602,6 +626,8 @@ country_event = {
 	#This will hurt us
 	option = { 
 		name = flavor_orc_religion.8.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.8 - Option : flavor_orc_religion.8.a" }
 		
 		random_known_country = {
 			limit = {
@@ -651,6 +677,8 @@ country_event = {
 	#Compensate
 	option = { 
 		name = flavor_orc_religion.8.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.8 - Option : flavor_orc_religion.8.b" }
 		
 		add_adm_power = -50
 		add_dip_power = -50
@@ -686,6 +714,8 @@ country_event = {
 	#bring forth destruction
 	option = { 
 		name = flavor_orc_religion.9.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.9 - Option : flavor_orc_religion.9.b" }
 
 		tooltip = {
 			add_mercantilism = -2
@@ -739,6 +769,9 @@ country_event = {
 	}
 	
 	immediate = {
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.10 - Option : immediate" }
+
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
@@ -761,6 +794,8 @@ country_event = {
 	#Bash their skulls!
 	option = { 
 		name = flavor_orc_religion.10.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.10 - Option : flavor_orc_religion.10.b" }
 		
 		add_piety = 0.30
 		
@@ -809,6 +844,8 @@ country_event = {
 	#Where There Is a Whip There Is a Way
 	option = { 
 		name = flavor_orc_religion.11.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.11 - Option : flavor_orc_religion.11.a" }
 		
 		add_piety = 0.20
 		
@@ -823,6 +860,8 @@ country_event = {
 	#Leave Them Be
 	option = { 
 		name = flavor_orc_religion.11.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.11 - Option : flavor_orc_religion.11.b" }
 		
 		add_piety = -0.20
 		
@@ -870,6 +909,8 @@ country_event = {
 	#Keep The Grip
 	option = { 
 		name = flavor_orc_religion.12.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.12 - Option : flavor_orc_religion.12.a" }
 		
 		add_piety = 0.10
 		
@@ -884,6 +925,8 @@ country_event = {
 	#Loosen The Grip
 	option = { 
 		name = flavor_orc_religion.12.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.12 - Option : flavor_orc_religion.12.b" }
 		
 		add_piety = -0.10
 		
@@ -930,6 +973,8 @@ country_event = {
 	#They Were Controlled Too Much
 	option = { 
 		name = flavor_orc_religion.13.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_orc_religion.13 - Option : flavor_orc_religion.13.a" }
 		
 		add_piety = -0.30
 		

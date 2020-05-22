@@ -47,6 +47,8 @@ country_event = {
 	#Yes
 	option = {
 		name = "flavor_gondorian.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.1 - Option : flavor_gondorian.1.a" }
 		
 		add_country_modifier = {
 			name = gondorian_naval_prioritise
@@ -57,6 +59,8 @@ country_event = {
 	#No
 	option = {
 		name = "flavor_gondorian.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.1 - Option : flavor_gondorian.1.b" }
 		
 		add_country_modifier = {
 			name = gondorian_didnt_naval_prioritise
@@ -87,6 +91,8 @@ country_event = {
 	#Yes
 	option = {
 		name = "flavor_gondorian.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.2 - Option : flavor_gondorian.2.a" }
 		
 		add_country_modifier = {
 			name = gondorian_trade_flows
@@ -127,6 +133,8 @@ country_event = {
 	#Yes
 	option = {
 		name = "flavor_gondorian.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.3 - Option : flavor_gondorian.3.a" }
 		
 		ROOT = {
 			add_treasury = -50
@@ -171,6 +179,8 @@ country_event = {
 	#No
 	option = {
 		name = "flavor_gondorian.3.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.3 - Option : flavor_gondorian.3.b" }
 		
 		ROOT = {
 			add_prestige = -5
@@ -205,6 +215,8 @@ country_event = {
 	#Yes
 	option = {
 		name = "flavor_gondorian.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.4 - Option : flavor_gondorian.4.a" }
 		
 		add_treasury = -100
 		add_mil_power = 25
@@ -218,6 +230,8 @@ country_event = {
 	#No
 	option = {
 		name = "flavor_gondorian.4.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.4 - Option : flavor_gondorian.4.b" }
 		
 		add_prestige = 25
 	}
@@ -241,6 +255,8 @@ country_event = {
 	#Yes
 	option = {
 		name = "flavor_gondorian.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.5 - Option : flavor_gondorian.5.a" }
 		
 		add_prestige = -25
 		
@@ -253,6 +269,8 @@ country_event = {
 	#No
 	option = {
 		name = "flavor_gondorian.5.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.5 - Option : flavor_gondorian.5.b" }
 		
 		add_prestige = 25
 	}
@@ -289,6 +307,8 @@ country_event = {
 		#	}
 		#	add_spy_network_from = { who = PREV value = 100 }
 		#}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.6 - Option : flavor_gondorian.6.a" }
 		
 		add_prestige = -25
 		
@@ -301,6 +321,8 @@ country_event = {
 	#No
 	option = {
 		name = "flavor_gondorian.6.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.6 - Option : flavor_gondorian.6.b" }
 		
 		add_prestige = 25
 
@@ -340,6 +362,8 @@ country_event = {
 	#Very Good
 	option = {
 		name = "flavor_gondorian.7.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.7 - Option : flavor_gondorian.7.a" }
 		
 		add_stability = 1
 		add_prestige = 25
@@ -382,6 +406,8 @@ country_event = {
 	#Very Good
 	option = {
 		name = "flavor_gondorian.8.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.8 - Option : flavor_gondorian.8.a" }
 		
 		add_country_modifier = {
 			name = gondorian_united_cause
@@ -427,6 +453,9 @@ country_event = {
 	
 	option = {
 		name = "flavor_gondorian.9.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondorian.9 - Option : flavor_gondorian.9.a" }
+
 		hidden_effect = {
 			add_country_modifier = {
 				name = gondorian_spawn_umbar_raider_timer 

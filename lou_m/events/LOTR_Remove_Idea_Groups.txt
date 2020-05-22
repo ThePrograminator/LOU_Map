@@ -22,6 +22,9 @@ country_event = {
 	
 	option = {
 		name = "event_remove_idea_group.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - event_remove_idea_group.1 - Option : event_remove_idea_group.1.a" }
+
 		remove_idea_group = offensive_ideas	
 	}  
 }

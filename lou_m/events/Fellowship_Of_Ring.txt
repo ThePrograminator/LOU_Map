@@ -29,6 +29,8 @@ province_event = {
 	}
 	
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.1 - Option : Immediate" }
+
 		set_province_flag = fellowship_set_position
 		add_province_modifier = {
 			name = "fellowship_position"
@@ -104,6 +106,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_willow
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.2 - Option : fellowship_of_ring_events.2.a" }
 	}
 	
 	#Dies
@@ -113,6 +117,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_willow
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.2 - Option : fellowship_of_ring_events.2.b" }
 		
 		every_country = {
 			limit = {
@@ -171,6 +177,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_wight
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.3 - Option : fellowship_of_ring_events.3.a" }
 	}
 	
 	#Dies
@@ -180,6 +188,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_wight
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.3 - Option : fellowship_of_ring_events.3.b" }
 		
 		every_country = {
 			limit = {
@@ -238,6 +248,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_nazgul
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.4 - Option : fellowship_of_ring_events.4.a" }
 	}
 	
 	#Dies
@@ -247,6 +259,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_nazgul
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.4 - Option : fellowship_of_ring_events.4.b" }
 		
 		#Take the ring
 		if = {
@@ -318,6 +332,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_red_horn
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.5 - Option : fellowship_of_ring_events.5.a" }
 	}
 	
 	#Dies
@@ -327,6 +343,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_red_horn
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.5 - Option : fellowship_of_ring_events.5.b" }
 		
 		every_country = {
 			limit = {
@@ -385,6 +403,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_west_goblins
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.6 - Option : fellowship_of_ring_events.6.a" }
 	}
 	
 	#Dies
@@ -394,6 +414,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_west_goblins
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.6 - Option : fellowship_of_ring_events.6.b" }
 		
 		every_country = {
 			limit = {
@@ -452,6 +474,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_east_balrok
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.7 - Option : fellowship_of_ring_events.7.a" }
 	}
 	
 	#Dies
@@ -461,6 +485,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_east_balrok
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.7 - Option : fellowship_of_ring_events.7.b" }
 		
 		every_country = {
 			limit = {
@@ -519,6 +545,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_anduin_river
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.8 - Option : fellowship_of_ring_events.8.a" }
 	}
 	
 	#Dies
@@ -528,6 +556,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_anduin_river
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.8 - Option : fellowship_of_ring_events.8.b" }
 		
 		every_country = {
 			limit = {
@@ -586,6 +616,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_amon_hen
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.9 - Option : fellowship_of_ring_events.9.a" }
 	}
 	
 	#Dies
@@ -595,6 +627,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_amon_hen
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.9 - Option : fellowship_of_ring_events.9.b" }
 		
 		#Take the ring, Isengard
 		if = {
@@ -664,6 +698,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_dead_marshes
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.10 - Option : fellowship_of_ring_events.10.a" }
 	}
 	
 	#Dies
@@ -673,6 +709,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_dead_marshes
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.10 - Option : fellowship_of_ring_events.10.b" }
 		
 		every_country = {
 			limit = {
@@ -727,6 +765,8 @@ country_event = {
 	#Survives
 	option = {
 		name = fellowship_of_ring_events.11.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.11 - Option : fellowship_of_ring_events.11.a" }
 		
 		trigger = {
 			has_global_flag = fellowship_sur_black_gate
@@ -740,6 +780,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_black_gate
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.11 - Option : fellowship_of_ring_events.11.b" }
 		
 		#Take the ring
 		if = {
@@ -809,6 +851,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_west_osgilliath
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.12 - Option : fellowship_of_ring_events.12.a" }
 	}
 	
 	#Dies
@@ -818,6 +862,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_west_osgilliath
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.12 - Option : fellowship_of_ring_events.12.b" }
 		
 		#Take the ring
 		if = {
@@ -887,6 +933,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_shelob
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.13 - Option : fellowship_of_ring_events.13.a" }
 	}
 	
 	#Dies
@@ -896,6 +944,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_shelob
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.13 - Option : fellowship_of_ring_events.13.b" }
 		
 		every_country = {
 			limit = {
@@ -954,6 +1004,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_cirith_ungol
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.14 - Option : fellowship_of_ring_events.14.a" }
 	}
 	
 	#Dies
@@ -963,6 +1015,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_cirith_ungol
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.14 - Option : fellowship_of_ring_events.14.b" }
 		
 		#Take the ring
 		if = {
@@ -1032,6 +1086,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_mordor
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.15 - Option : fellowship_of_ring_events.15.a" }
 	}
 	
 	#Dies
@@ -1041,6 +1097,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_mordor
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.15 - Option : fellowship_of_ring_events.15.b" }
 		
 		#Take the ring
 		if = {
@@ -1245,6 +1303,8 @@ country_event = {
 	option = {
 		name = fellowship_of_ring_events.17.a
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.17 - Option : fellowship_of_ring_events.17.a" }
+
 		set_global_flag = fellowship_lost
 		set_global_flag = fellowship_rivendell_lost
 		
@@ -1301,6 +1361,8 @@ country_event = {
 	option = {
 		name = fellowship_of_ring_events.18.a
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.18 - Option : fellowship_of_ring_events.18.a" }
+
 		set_global_flag = fellowship_lost
 		set_global_flag = fellowship_gondor_lost
 		
@@ -1355,6 +1417,7 @@ country_event = {
 			has_global_flag = fellowship_rivendell_lost
 		}
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.19 - Option : fellowship_of_ring_events.19.a" }
 	}
 	
 	#Fellowship Ends, Gondor
@@ -1365,6 +1428,7 @@ country_event = {
 			has_global_flag = fellowship_gondor_lost
 		}
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.19 - Option : fellowship_of_ring_events.19.b" }
 	}
 }
 
@@ -1417,6 +1481,8 @@ country_event = {
 	#Mordor Explodes!
 	option = {
 		name = fellowship_of_ring_events.20.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.20 - Option : fellowship_of_ring_events.20.a" }
 		
 		give_minas_ithil_to_gondor = yes
 		give_black_gate_to_gondor = yes
@@ -1539,6 +1605,8 @@ country_event = {
 	#Fellowship Ends, won
 	option = {
 		name = fellowship_of_ring_events.21.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.21 - Option : fellowship_of_ring_events.21.a" }
 	}
 }
 
@@ -1613,6 +1681,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_sur_trade_policy
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.22 - Option : fellowship_of_ring_events.22.a" }
 		
 		clr_global_flag = fellowship_sur_trade_policy
 		set_global_flag = fellowship_sur_timer
@@ -1629,6 +1699,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_die_trade_policy
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.21 - Option : fellowship_of_ring_events.21.b" }
 		
 		if = {
 			limit = {
@@ -1674,6 +1746,8 @@ country_event = {
 	option = {
 		name = fellowship_of_ring_events.23.a
 		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.23 - Option : fellowship_of_ring_events.23.a" }
+
 		clr_global_flag = fellowship_sur_timer
 	}
 }
@@ -1702,6 +1776,8 @@ country_event = {
 		trigger = {
 			is_bad_race = yes
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.24 - Option : fellowship_of_ring_events.24.a" }
 		
 		if = {
 			limit = {
@@ -1737,6 +1813,8 @@ country_event = {
 		trigger = {
 			is_bad_race = no
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.24 - Option : fellowship_of_ring_events.24.b" }
 		
 		if = {
 			limit = {
@@ -1783,6 +1861,8 @@ country_event = {
 	#Ring given to Sauron
 	option = {
 		name = fellowship_of_ring_events.25.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.25 - Option : fellowship_of_ring_events.25.a" }
 		
 		add_country_modifier = {
 			name = the_one_ring_mordor
@@ -1814,7 +1894,7 @@ country_event = {
 	#Ring given to Sauron
 	option = {
 		name = fellowship_of_ring_events.26.a
-		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.26 - Option : fellowship_of_ring_events.26.a" }
 	}
 }
 
@@ -1836,6 +1916,8 @@ country_event = {
 	#Sets ring to ruler
 	option = {
 		name = fellowship_of_ring_events.27.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.27 - Option : fellowship_of_ring_events.27.a" }
 		
 		clear_scripted_personalities = yes
 		
@@ -1851,6 +1933,7 @@ country_event = {
 	picture = COURT_eventPicture
 	
 	hidden = yes
+	is_triggered_only = yes
 
 	trigger = {
 
@@ -1859,6 +1942,8 @@ country_event = {
 	#Remove ring to ruler
 	option = {
 		name = fellowship_of_ring_events.28.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.28 - Option : fellowship_of_ring_events.28.a" }
 		
 		remove_ruler_personality = carries_ring_personality
 	}
@@ -1887,6 +1972,8 @@ country_event = {
 	#Sets ring to ruler
 	option = {
 		name = fellowship_of_ring_events.29.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.29 - Option : fellowship_of_ring_events.29.a" }
 		
 		set_global_flag = fellowship_ring_destroyed
 		
@@ -1917,6 +2004,8 @@ country_event = {
 	#Ring has been destroyed, won
 	option = {
 		name = fellowship_of_ring_events.30.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.30 - Option : fellowship_of_ring_events.30.a" }
 	}
 }
 
@@ -1962,6 +2051,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_dint_f_ring
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.31 - Option : fellowship_of_ring_events.31.a" }
 		
 		clr_global_flag = fellowship_dint_f_ring
 		set_global_flag = fellowship_searching_timer
@@ -1978,6 +2069,8 @@ country_event = {
 		trigger = {
 			has_global_flag = fellowship_found_ring
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.31 - Option : fellowship_of_ring_events.31.b" }
 		
 		country_event = { id = fellowship_of_ring_events.24 }
 	}
@@ -2000,6 +2093,8 @@ country_event = {
 	#Survives
 	option = {
 		name = fellowship_of_ring_events.32.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.32 - Option : fellowship_of_ring_events.32.a" }
 		
 		clr_global_flag = fellowship_searching_timer
 	}
@@ -2033,6 +2128,8 @@ country_event = {
 	#Getting Worse
 	option = {
 		name = fellowship_of_ring_events.33.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.33 - Option : fellowship_of_ring_events.33.a" }
 		
 		random_list = {
 			33 = {
@@ -2072,6 +2169,8 @@ country_event = {
 	#Survives
 	option = {
 		name = fellowship_of_ring_events.34.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.34 - Option : fellowship_of_ring_events.34.a" }
 		
 		clr_country_flag = fellowship_ruler_carring_timer
 	}
@@ -2096,6 +2195,8 @@ country_event = {
 	#Lost the ring
 	option = {
 		name = fellowship_of_ring_events.35.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.35 - Option : fellowship_of_ring_events.35.a" }
 		
 		remove_country_modifier = the_one_ring_not_mordor
 		remove_ruler_personality = carries_ring_personality
@@ -2145,6 +2246,7 @@ country_event = {
 	option = {
 		name = fellowship_of_ring_events.36.a
 		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.36 - Option : fellowship_of_ring_events.36.a" }
 	}
 }
 
@@ -2173,6 +2275,8 @@ province_event = {
 
 	option = {
 		name = company_of_thorin_events.1.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.37 - Option : fellowship_of_ring_events.37.a" }
 		
 		every_neighbor_province = {
 			limit = {
@@ -2217,6 +2321,8 @@ country_event = {
 	#yes
 	option = {
 		name = fellowship_of_ring_events.38.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.38 - Option : fellowship_of_ring_events.38.a" }
 		
 		V17 = {
 			random_owned_area = {
@@ -2249,6 +2355,8 @@ country_event = {
 	#yes
 	option = {
 		name = fellowship_of_ring_events.39.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.39 - Option : fellowship_of_ring_events.39.a" }
 		
 		V17 = {
 			random_owned_province = {

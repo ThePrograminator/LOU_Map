@@ -34,7 +34,10 @@ country_event = {
 	#yes
 	option = { 
 		name = flavor_gondor.1.a
-			random_owned_area = {
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.1 - Option : flavor_gondor.1.a" }
+
+		random_owned_area = {
 			limit = {
 				owned_by = ROOT
 			}
@@ -63,6 +66,9 @@ country_event = {
 	#No
 	option = { 
 		name = flavor_gondor.1.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.1 - Option : flavor_gondor.1.b" }
+
 		random_owned_area = {
 			limit = {
 				owned_by = ROOT
@@ -112,6 +118,8 @@ country_event = {
 	#yes
 	option = { 
 		name = flavor_gondor.2.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.2 - Option : flavor_gondor.2.a" }
 		
 		add_treasury = -150
 		add_mil_power = -50
@@ -286,6 +294,8 @@ country_event = {
 	#No
 	option = { 
 		name = flavor_gondor.2.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.2 - Option : flavor_gondor.2.b" }
 		
 		add_army_tradition = -5
 		add_prestige = -5
@@ -319,6 +329,8 @@ country_event = {
 	#yes
 	option = { 
 		name = flavor_gondor.3.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.3 - Option : flavor_gondor.3.a" }
 		
 		add_treasury = -100
 		add_mil_power = -25
@@ -359,6 +371,8 @@ country_event = {
 	#No
 	option = { 
 		name = flavor_gondor.3.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.3 - Option : flavor_gondor.3.b" }
 		
 		add_army_tradition = -5
 		add_prestige = -5
@@ -390,6 +404,8 @@ country_event = {
 	#tax
 	option = { 
 		name = flavor_gondor.4.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.4 - Option : flavor_gondor.4.a" }
 		
 		413 = {
 			add_base_tax = 1
@@ -401,6 +417,8 @@ country_event = {
 	#production
 	option = { 
 		name = flavor_gondor.4.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.4 - Option : flavor_gondor.4.b" }
 		
 		413 = {
 			add_base_production = 1
@@ -412,6 +430,8 @@ country_event = {
 	#military
 	option = { 
 		name = flavor_gondor.4.c
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.4 - Option : flavor_gondor.4.c" }
 		
 		413 = {
 			add_base_manpower = 1
@@ -445,7 +465,10 @@ country_event = {
 	#yes
 	option = { 
 		name = flavor_gondor.5.a
-			random_owned_area = {
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.5 - Option : flavor_gondor.5.a" }
+
+		random_owned_area = {
 			limit = {
 				owned_by = ROOT
 				all_province_in_state = {
@@ -476,7 +499,10 @@ country_event = {
 	#No take taxes
 	option = { 
 		name = flavor_gondor.5.b
-			random_owned_area = {
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.5 - Option : flavor_gondor.5.b" }
+
+		random_owned_area = {
 			limit = {
 				owned_by = ROOT
 
@@ -542,6 +568,9 @@ country_event = {
 	#yes send manpower
 	option = { 
 		name = flavor_gondor.6.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.6 - Option : flavor_gondor.6.a" }
+
 		add_manpower = -5
 		
 		X16 = {
@@ -556,6 +585,8 @@ country_event = {
 	#No keep manpower
 	option = { 
 		name = flavor_gondor.6.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.6 - Option : flavor_gondor.6.a" }
 		
 		X16 = {
 			add_opinion = {
@@ -606,6 +637,9 @@ country_event = {
 				modifier = gondor_aided_rohan
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.7 - Option : flavor_gondor.7.a" }
+
 		add_manpower = 5
 	}
 	
@@ -618,6 +652,9 @@ country_event = {
 				modifier = gondor_didnt_aid_rohan
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.7 - Option : flavor_gondor.7.b" }
+
 		tooltip = {
 			add_opinion = {
 				who = ROOT
@@ -650,6 +687,8 @@ country_event = {
 	#Oh yes!
 	option = { 
 		name = flavor_gondor.8.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.8 - Option : flavor_gondor.8.a" }
 		
 		add_government_reform = feudalism_reform
 		set_government_rank = 3
@@ -697,6 +736,8 @@ country_event = {
 	#Oh yes!
 	option = { 
 		name = flavor_gondor.9.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.9 - Option : flavor_gondor.9.a" }
 		
 		add_stability = 1
 		add_prestige = 25
@@ -772,6 +813,8 @@ country_event = {
 	#Oh no
 	option = { 
 		name = flavor_gondor.10.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.10 - Option : flavor_gondor.10.a" }
 		
 		add_patriarch_authority = -0.05
 		
@@ -814,7 +857,7 @@ country_event = {
 	id = flavor_gondor.11
 	title = flavor_gondor.11.t
 	desc = flavor_gondor.11.d
-	picture = GREAT_BUILDING_eventPicture
+	picture = WHITE_TREE_DEAD_eventPicture
 	
 	fire_only_once = yes
 	
@@ -833,6 +876,8 @@ country_event = {
 	#Oh no!
 	option = { 
 		name = flavor_gondor.11.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_gondor.11 - Option : flavor_gondor.11.a" }
 		
 		add_stability = -2
 		add_legitimacy = -50

@@ -14,6 +14,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.1 - Option : LOTR_Elections.1.a" }
 		
 		add_scaled_republican_tradition = -0.10	
 		change_adm = 1
@@ -23,6 +25,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.1b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.1 - Option : LOTR_Elections.1.b" }
 		
 		define_ruler = {
 			mil = 1
@@ -34,6 +38,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.1c"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.1 - Option : LOTR_Elections.1.c" }
 		
 		define_ruler = {
 			mil = 1
@@ -45,6 +51,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.1d"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.1 - Option : LOTR_Elections.1.d" }
 		
 		define_ruler = {
 			mil = 4
@@ -70,6 +78,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.2a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.2 - Option : LOTR_Elections.2.a" }
 		
 		add_scaled_republican_tradition = -0.10	
 		change_adm = 1
@@ -79,6 +89,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.2b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.2 - Option : LOTR_Elections.2.b" }
 		
 		define_ruler = {
 			mil = 1
@@ -90,6 +102,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.2c"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.2 - Option : LOTR_Elections.2.c" }
 		
 		define_ruler = {
 			mil = 1
@@ -101,6 +115,8 @@ country_event = {
 	
 	option = {
 		name = "LOTR_Elections.2d"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.2 - Option : LOTR_Elections.2.d" }
 		
 		define_ruler = {
 			mil = 4

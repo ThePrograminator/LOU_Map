@@ -34,6 +34,8 @@ country_event = {
 	#
 	option = { 
 		name = flavor_dol_guldur.1.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.1 - Option : flavor_dol_guldur.1.a" }
 		
 		add_country_modifier = {
 			name = dol_guldur_thrain_captured
@@ -71,6 +73,8 @@ country_event = {
 	option = { 
 		name = flavor_dol_guldur.2.a
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.2 - Option : flavor_dol_guldur.2.a" }
+
 		set_country_flag = dol_guldur_discovred
 		remove_country_modifier = dol_guldur_shrouded_mystery
 	}
@@ -103,6 +107,8 @@ country_event = {
 	#
 	option = { 
 		name = flavor_dol_guldur.3.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.3 - Option : flavor_dol_guldur.3.a" }
 		
 		add_country_modifier = {
 			name = dol_guldur_shrouded_mystery
@@ -149,6 +155,8 @@ country_event = {
 	option = { 
 		name = flavor_dol_guldur.4.a
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.4 - Option : flavor_dol_guldur.4.a" }
+
 		add_country_modifier = {
 			name = dol_guldur_orcs_missing_meat
 			duration = 3650
@@ -177,6 +185,8 @@ country_event = {
 	#No
 	option = { 
 		name = flavor_dol_guldur.4.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.4 - Option : flavor_dol_guldur.4.b" }
 		
 		add_prestige = -5
 		add_adm_power = -25
@@ -221,6 +231,8 @@ country_event = {
 	#Yes
 	option = { 
 		name = flavor_dol_guldur.5.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.5 - Option : flavor_dol_guldur.5.a" }
 		
 		add_mil_power = -50
 		add_manpower = 3
@@ -244,6 +256,8 @@ country_event = {
 	#No
 	option = { 
 		name = flavor_dol_guldur.5.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.5 - Option : flavor_dol_guldur.5.b" }
 		
 		set_country_flag = dol_guldur_refused_troops
 		
@@ -298,6 +312,8 @@ country_event = {
 	#Yes
 	option = { 
 		name = flavor_dol_guldur.6.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.6 - Option : flavor_dol_guldur.6.a" }
 		
 		set_country_flag = dol_guldur_change_tag
 		
@@ -313,6 +329,8 @@ country_event = {
 		trigger = {
 			ai = no
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.6 - Option : flavor_dol_guldur.6.b" }
 
 		set_country_flag = dol_guldur_keep_tag
 		
@@ -342,6 +360,8 @@ country_event = {
 	
 	option = { 
 		name = flavor_dol_guldur.7.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.7 - Option : flavor_dol_guldur.7.a" }
 		
 		tooltip = {
 			mordor_region = {
@@ -403,6 +423,9 @@ country_event = {
 	#doest matter
 	option = { 
 		name = flavor_dol_guldur.8.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_guldur.8 - Option : flavor_dol_guldur.8.a" }
+
 		clr_country_flag = dol_guldur_refused_troops
 	}
 }

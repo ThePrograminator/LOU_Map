@@ -45,6 +45,9 @@ country_event = {
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.1 - Option : war_of_the_dwarves_and_orcs.1.a" }
+
 		custom_tooltip = war_of_the_dwarves_and_orcs_text_1
 		kill_heir = yes
 		define_heir = {
@@ -88,6 +91,9 @@ country_event = {
 	
 	option = {
 		name = "war_of_the_dwarves_and_orcs.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.1 - Option : war_of_the_dwarves_and_orcs.1.b" }
+
 		add_stability = -2
 		add_prestige = -50
 		set_global_flag = war_of_the_dwarves_and_orcs_aborted
@@ -115,6 +121,9 @@ country_event = {
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.2 - Option : war_of_the_dwarves_and_orcs.2.a" }
+
 		capital_scope = {
 			infantry = PREV
 			infantry = PREV
@@ -144,6 +153,9 @@ country_event = {
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.3 - Option : war_of_the_dwarves_and_orcs.3.a" }
+
 		capital_scope = {
 			infantry = PREV
 		}
@@ -179,6 +191,9 @@ country_event = {
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.4 - Option : war_of_the_dwarves_and_orcs.4.a" }
+
 		declare_war_with_cb = {
 			who = Y57
 			casus_belli = cb_war_of_the_dwarves_and_orcs
@@ -222,6 +237,9 @@ country_event = {
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.5 - Option : war_of_the_dwarves_and_orcs.5.a" }
+
 		change_tag = V53
 		add_stability = 2
 		add_prestige = 50
@@ -270,6 +288,9 @@ country_event = {
 
 	option = {
 		name = "war_of_the_dwarves_and_orcs.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.6 - Option : war_of_the_dwarves_and_orcs.6.a" }
+
 		custom_tooltip = war_of_the_dwarves_and_orcs_text_2
 		add_prestige = -50
 		set_global_flag = war_of_the_dwarves_and_orcs_lost

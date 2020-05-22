@@ -52,6 +52,8 @@ country_event = {
 	
 	option = {
 		name = "lotr_advisors.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_advisors.1 - Option : lotr_advisors.1.a" }
 		
 		add_adm_power = 100
 	}
@@ -109,6 +111,8 @@ country_event = {
 	
 	option = {
 		name = "lotr_advisors.2a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_advisors.2 - Option : lotr_advisors.2.a" }
 		
 		add_dip_power = 100
 	}
@@ -166,6 +170,8 @@ country_event = {
 	
 	option = {
 		name = "lotr_advisors.3a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_advisors.3 - Option : lotr_advisors.3.a" }
 		
 		add_mil_power = 100
 	}

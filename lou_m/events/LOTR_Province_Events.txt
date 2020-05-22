@@ -40,6 +40,8 @@ country_event = {
 	#Yes
 	option = { 
 		name = lotr_province_event.1.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_province_event.1 - Option : lotr_province_event.1.a" }
 		
 		random_owned_province = {
 			limit = {

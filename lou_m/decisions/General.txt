@@ -98,4 +98,42 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+	toggle_logging_on = {
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = enable_event_logging
+				has_global_flag = enable_onaction_logging
+			}
+		}
+		allow = {
+			ai = no
+		}
+		effect = {	
+			set_global_flag = enable_event_logging
+			set_global_flag = enable_onaction_logging
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	toggle_logging_off = {
+		potential = {
+			ai = no
+			has_global_flag = enable_event_logging
+			has_global_flag = enable_onaction_logging
+		}
+		allow = {
+			ai = no
+		}
+		effect = {	
+			clr_global_flag = enable_event_logging
+			clr_global_flag = enable_onaction_logging
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

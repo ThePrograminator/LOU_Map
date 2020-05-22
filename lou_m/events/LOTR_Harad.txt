@@ -35,6 +35,8 @@ country_event = {
 
 	option = {
 		name = "invasion_called.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.1 - Option : flavor_harad.1.a" }
 		
 		set_country_flag = Invasion_called_response
 	}			
@@ -56,6 +58,8 @@ country_event = {
 	}
 	
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.2 - Option : immediate" }
+
 		add_casus_belli = {
 			target = ROOT
 			type = cb_harad_invasion
@@ -116,6 +120,8 @@ country_event = {
 	}
 	
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.3 - Option : immediate" }
+
 		declare_war_with_cb = {
 			who =  FROM
 			casus_belli = cb_harad_invasion
@@ -128,6 +134,8 @@ country_event = {
 		trigger = {
 			has_country_flag = Invasion_Warlord
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.3 - Option : flavor_harad.3.a" }
 		
 		every_country = {
 			limit = {
@@ -155,6 +163,8 @@ country_event = {
 		trigger = {
 			has_country_flag = Invasion_Warlord_Gondor
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.3 - Option : flavor_harad.3.b" }
 		
 		every_country = {
 			limit = {
@@ -220,6 +230,9 @@ country_event = {
 			}
 		}
 		name = "flavor_harad.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.4 - Option : flavor_harad.4.a" }
+
 		custom_tooltip = invasion_started.3_text
 		ai_chance = { factor = 75 }
 		
@@ -229,6 +242,9 @@ country_event = {
 	#Not Declaring Invasion
 	option = {
 		name = "flavor_harad.4.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.4 - Option : flavor_harad.4.b" }
+
 		ai_chance = { factor = 15 }
 		add_stability = -1
 		add_prestige = -25
@@ -259,6 +275,9 @@ country_event = {
 			ai = yes
 		}
 		name = "flavor_harad.4.c"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.4 - Option : flavor_harad.4.c" }
+
 		custom_tooltip = invasion_started.3_text
 		ai_chance = { factor = 75 }
 		
@@ -309,6 +328,9 @@ country_event = {
 	#Didnt declare invasion
 	option = {
 		name = "invasion.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.5 - Option : flavor_harad.5.a" }
+
 		add_stability = -2
 		add_prestige = -50
 		add_legitimacy = -25
@@ -390,6 +412,8 @@ country_event = {
 				has_country_flag = Invasion_declared_war_gondor
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.6 - Option : flavor_harad.6.a" }
 		
 		clr_country_flag = Invasion_Promise
 		clr_country_flag = Invasion_Warlord
@@ -432,6 +456,8 @@ country_event = {
 				has_country_flag = Invasion_called_response
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.6 - Option : flavor_harad.6.a" }
 		
 		clr_country_flag = Invasion_Promise
 		clr_country_flag = Invasion_Warlord
@@ -478,6 +504,8 @@ country_event = {
 
 	option = {
 		name = "flavor_harad.7.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_harad.7 - Option : flavor_harad.7.a" }
 		
 		tooltip = {
 			custom_tooltip = tooltip_hard_invasion_called

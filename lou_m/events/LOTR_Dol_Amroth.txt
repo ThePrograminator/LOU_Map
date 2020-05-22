@@ -17,9 +17,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		AND = {
-			tag = X11
-		}
+		tag = X11
 		NOT = {
 			has_country_modifier = dol_amroth_harpers_donated
 			has_country_modifier = dol_amroth_scholar_donated
@@ -37,6 +35,8 @@ country_event = {
 	#Harper District
 	option = {
 		name = "flavor_dol_amroth.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.1 - Option : flavor_dol_amroth.1.a" }
 		
 		add_treasury = -50
 		
@@ -49,6 +49,8 @@ country_event = {
 	#Scholar Court
 	option = {
 		name = "flavor_dol_amroth.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.1 - Option : flavor_dol_amroth.1.b" }
 		
 		add_treasury = -50
 		
@@ -62,6 +64,8 @@ country_event = {
 	option = {
 		name = "flavor_dol_amroth.1.c"
 		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.1 - Option : flavor_dol_amroth.1.c" }
+
 		add_treasury = -50
 		
 		add_country_modifier = {
@@ -81,9 +85,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		AND = {
-			tag = X11
-		}
+		tag = X11
 		NOT = {
 			has_country_modifier = dol_amroth_cavalry_bonus
 			has_country_modifier = dol_amroth_infantry_bonus
@@ -94,6 +96,8 @@ country_event = {
 	#The Swan Knights
 	option = {
 		name = "flavor_dol_amroth.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.2 - Option : flavor_dol_amroth.2.a" }
 		
 		add_country_modifier = {
 			name = dol_amroth_cavalry_bonus
@@ -104,6 +108,8 @@ country_event = {
 	#Infantry
 	option = {
 		name = "flavor_dol_amroth.2.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.2 - Option : flavor_dol_amroth.2.b" }
 		
 		add_country_modifier = {
 			name = dol_amroth_infantry_bonus
@@ -114,6 +120,8 @@ country_event = {
 	#Galleys
 	option = {
 		name = "flavor_dol_amroth.2.c"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.2 - Option : flavor_dol_amroth.2.c" }
 		
 		add_country_modifier = {
 			name = dol_amroth_galley_bonus
@@ -144,6 +152,8 @@ country_event = {
 	#Low
 	option = {
 		name = "flavor_dol_amroth.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.3 - Option : flavor_dol_amroth.3.a" }
 		
 		add_treasury = 25
 		add_manpower = -2
@@ -160,6 +170,8 @@ country_event = {
 	#Medium
 	option = {
 		name = "flavor_dol_amroth.3.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.3 - Option : flavor_dol_amroth.3.b" }
 		
 		add_treasury = 50
 		add_manpower = -4
@@ -176,6 +188,8 @@ country_event = {
 	#High
 	option = {
 		name = "flavor_dol_amroth.3.c"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.3 - Option : flavor_dol_amroth.3.c" }
 		
 		add_treasury = 100
 		add_manpower = -6
@@ -213,6 +227,8 @@ country_event = {
 	#Response
 	option = {
 		name = "flavor_dol_amroth.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.4 - Option : flavor_dol_amroth.4.a" }
 		
 		if = {
 			limit = {
@@ -280,6 +296,8 @@ country_event = {
 	#GOood
 	option = {
 		name = "flavor_dol_amroth.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.5 - Option : flavor_dol_amroth.5.a" }
 		
 		add_stability = 1
 		add_adm_power = 100
@@ -320,6 +338,8 @@ country_event = {
 	#BADDDD
 	option = {
 		name = "flavor_dol_amroth.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dol_amroth.6 - Option : flavor_dol_amroth.6.a" }
 		
 		add_stability = -1
 		add_patriarch_authority = -0.05

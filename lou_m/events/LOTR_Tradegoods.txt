@@ -18,6 +18,8 @@ province_event = {
 	
 	option = {
 		name = "LOTR_Tradegoods.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Tradegoods.1 - Option : LOTR_Tradegoods.1.a" }
 		
 		random_list = {
 			25 = {
@@ -68,6 +70,8 @@ country_event = {
 
 	option = {
 		name = "LOTR_HONEY.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Tradegoods.2 - Option : LOTR_Tradegoods.2.a" }
 		
 		random_owned_province = {
 			limit = {
@@ -103,6 +107,9 @@ country_event = {
 
 	option = {
 		name = "LOTR_IRON.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Tradegoods.3 - Option : LOTR_Tradegoods.3.a" }
+
 		add_country_modifier = {
 				name = "iron_problems"
 				duration = 3650
@@ -135,6 +142,9 @@ country_event = {
 
 	option = {
 		name = "LOTR_WARGS.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Tradegoods.4 - Option : LOTR_Tradegoods.4.a" }
+
 		add_country_modifier = {
 			name = "wargs_captured"
 			duration = 3650

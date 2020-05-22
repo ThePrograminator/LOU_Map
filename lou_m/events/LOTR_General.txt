@@ -40,6 +40,9 @@ province_event = {
 				has_province_modifier = wilderness_debuff
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.8 - Option : lotr_general.8.a" }
+
 		add_province_modifier = {
 			name = "wilderness_debuff"
 			duration = -1
@@ -57,6 +60,9 @@ province_event = {
 				}
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.8 - Option : lotr_general.8.b" }
+
 		remove_province_modifier = wilderness_debuff
 	}
 }
@@ -82,6 +88,9 @@ province_event = {
 				has_building = resettlement_action
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.20 - Option : lotr_general.20.a" }
+
 		remove_province_modifier = ruins_debuff
 		remove_building = resettlement_action
 	}
@@ -102,7 +111,9 @@ country_event = {
 	}
    
     option = {
-        name = "lotr_hatred.1.option.a"
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.21 - Option : lotr_general.21.a" }
         # Good Hatred
         every_country = {
             limit = {
@@ -241,7 +252,10 @@ country_event = {
 	}
    
     option = {
-        name = "lotr_hatred.1.option.a"
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.44 - Option : lotr_general.44.a" }
+
         # Good Hatred
 		set_against_race_opinions_effect = yes 
 		set_free_peoples_opinions_effect = yes
@@ -265,7 +279,10 @@ country_event = {
 	}
    
     option = {
-        name = "lotr_hatred.1.option.a"
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.45 - Option : lotr_general.45.a" }
+
         # Good Hatred
 		set_against_race_opinions_effect = yes 
 		set_free_peoples_opinions_effect = yes
@@ -290,7 +307,10 @@ country_event = {
 	}
    
     option = {
-        name = "lotr_hatred.1.option.a"
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.46 - Option : lotr_general.46.a" }
+
         Y22 = {
 			every_owned_province = { 
 				add_core = PREV
@@ -327,43 +347,46 @@ country_event = {
 	}
    
     option = {
-        name = "lotr_erebor_eryn_galen.1.a"
-			set_country_flag = startup_erebor_eryn_galen
-			if = { 
-			limit = {
-					tag = X28
-				}
-				X17 = {
-					add_historical_friend = X28
-					}
-				add_historical_friend = X17
+		name = "lotr_erebor_eryn_galen.1.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.22 - Option : lotr_general.22.a" }
+
+		set_country_flag = startup_erebor_eryn_galen
+		if = { 
+		limit = {
+				tag = X28
 			}
-			if = { 
-			limit = {
-					tag = Z05
+			X17 = {
+				add_historical_friend = X28
 				}
-				X17 = {
-					add_historical_friend = Z05
-					}
-				add_historical_friend = X17
+			add_historical_friend = X17
+		}
+		if = { 
+		limit = {
+				tag = Z05
 			}
-			if = { 
-			limit = {
-					tag = X17
-				}
-				Z05 = {
-					add_historical_friend = X17
-					}
+			X17 = {
 				add_historical_friend = Z05
+				}
+			add_historical_friend = X17
+		}
+		if = { 
+		limit = {
+				tag = X17
 			}
-			#limit = {
-			#		tag = X17
-			#	}
-			#	X28 = {
-			#		add_historical_friend = X17
-			#		}
-			#	add_historical_friend = X28
-			}
+			Z05 = {
+				add_historical_friend = X17
+				}
+			add_historical_friend = Z05
+		}
+		#limit = {
+		#		tag = X17
+		#	}
+		#	X28 = {
+		#		add_historical_friend = X17
+		#		}
+		#	add_historical_friend = X28
+	}
 }
 
 province_event = {
@@ -410,6 +433,9 @@ province_event = {
 	
 	option = {
 		name = "orc_raiders.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.23 - Option : lotr_general.23.a" }
+
 		hidden_effect = {
 			owner = {
 				add_country_modifier = {
@@ -490,6 +516,9 @@ province_event = {
 	
 	option = {
 		name = "LOTR_PROVINCE_WIGHT.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.24 - Option : lotr_general.24.a" }
+
 		trigger = {
 				owner = {
 					NOT = {
@@ -532,6 +561,8 @@ province_event = {
 				}
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.24 - Option : lotr_general.24.b" }
 		remove_province_modifier = province_wight_debuff
 	}
 }
@@ -597,6 +628,9 @@ province_event = {
 	
 	option = {
 		name = "LOTR_PROVINCE_TROLL.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.25 - Option : lotr_general.25.a" }
+
 		trigger = {
 			owner = {
 				NOT = {
@@ -657,6 +691,8 @@ province_event = {
 				}
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.25 - Option : lotr_general.25.b" }
 		remove_province_modifier = province_troll_debuff
 	}
 }
@@ -728,6 +764,9 @@ province_event = {
 				has_province_modifier = province_huorn_debuff
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.26 - Option : lotr_general.26.a" }
+
 		add_province_modifier = {
 			name = "province_huorn_debuff"
 			duration = -1
@@ -758,6 +797,9 @@ province_event = {
 				}
 			}
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.26 - Option : lotr_general.26.b" }
+
 		remove_province_modifier = province_huorn_debuff
 	}
 }

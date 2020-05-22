@@ -422,9 +422,12 @@ X01_north_securing_against_rhun = {
 			calc_true_if = {
 				ROOT = {
 					any_owned_province = {
-						area = men-i-mordor_area
-						area = sagathavuld_area
-						area = cairn_angle_area
+						OR = {
+							area = men-i-mordor_area
+							area = sagathavuld_area
+							area = cairn_angle_area
+						}
+						
 						has_influencing_fort = yes
 					}
 				}

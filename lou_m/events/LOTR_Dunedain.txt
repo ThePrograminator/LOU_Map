@@ -32,6 +32,8 @@ country_event = {
 	option = {
 		name = "flavor_dunedain.1.a"
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.1 - Option : flavor_dunedain.1.a" }
+
 		add_treasury = -50
 		add_adm_power = -50
 		add_patriarch_authority = 0.05
@@ -40,6 +42,8 @@ country_event = {
 	#Our Coffers can't handle it
 	option = {
 		name = "flavor_dunedain.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.1 - Option : flavor_dunedain.1.b" }
 		
 		add_adm_power = 10
 		
@@ -77,6 +81,8 @@ country_event = {
 	option = {
 		name = "flavor_dunedain.2.a"
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.2 - Option : flavor_dunedain.2.a" }
+
 		add_patriarch_authority = -0.05
 		add_mil_power = -50
 		
@@ -89,6 +95,8 @@ country_event = {
 	#No
 	option = {
 		name = "flavor_dunedain.2.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.2 - Option : flavor_dunedain.2.b" }
 		
 		add_patriarch_authority = 0.05
 	} 
@@ -120,6 +128,8 @@ country_event = {
 	option = {
 		name = "flavor_dunedain.3.a"
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.3 - Option : flavor_dunedain.3.a" }
+
 		add_patriarch_authority = -0.05
 		add_dip_power = 10
 		
@@ -132,6 +142,8 @@ country_event = {
 	#Set Up Production
 	option = {
 		name = "flavor_dunedain.3.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.3 - Option : flavor_dunedain.3.b" }
 		
 		add_patriarch_authority = 0.05
 		add_dip_power = -50
@@ -181,6 +193,8 @@ province_event = {
 	#Defend Province
 	option = {
 		name = "flavor_dunedain.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.4 - Option : flavor_dunedain.4.a" }
 		
 		owner = {
 			add_treasury = -50
@@ -200,6 +214,8 @@ province_event = {
 	#Don't
 	option = {
 		name = "flavor_dunedain.4.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.4 - Option : flavor_dunedain.4.b" }
 		
 		owner = {
 			add_patriarch_authority = -0.05
@@ -249,6 +265,8 @@ country_event = {
 		trigger = {
 			has_country_flag = sad
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.5 - Option : flavor_dunedain.5.a" }
 		
 		add_adm_power = -50
 		add_dip_power = -50
@@ -266,6 +284,8 @@ country_event = {
 		trigger = {
 			has_country_flag = not_sad
 		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.5 - Option : flavor_dunedain.5.b" }
 		
 		add_patriarch_authority = 0.05
 		
@@ -297,6 +317,8 @@ country_event = {
 	#Our Leader Died
 	option = {
 		name = "flavor_dunedain.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.6 - Option : flavor_dunedain.6.a" }
 		
 		add_mil_power = -50
 		
@@ -337,6 +359,8 @@ country_event = {
 	#yes
 	option = {
 		name = "flavor_dunedain.7.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.7 - Option : flavor_dunedain.7.a" }
 		
 		add_treasury = 50
 		add_adm_power = 50
@@ -377,6 +401,8 @@ country_event = {
 	#yay
 	option = {
 		name = "flavor_dunedain.8.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.8 - Option : flavor_dunedain.8.a" }
 		
 		add_treasury = 50
 		
@@ -422,6 +448,8 @@ country_event = {
 	#no yay
 	option = {
 		name = "flavor_dunedain.9.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.9 - Option : flavor_dunedain.9.a" }
 
 		add_mil_power = -25
 		
@@ -513,6 +541,8 @@ country_event = {
 	#yay
 	option = {
 		name = "flavor_dunedain.10.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_dunedain.10 - Option : flavor_dunedain.10.a" }
 
 		add_stability = -1
 		

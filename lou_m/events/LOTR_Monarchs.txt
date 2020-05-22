@@ -80,6 +80,8 @@ country_event = {
 	
 	option = {
 		name = "lotr_monarch.1a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_monarch.1 - Option : lotr_monarch.1.a" }
 		
 		kill_ruler = yes
 	}

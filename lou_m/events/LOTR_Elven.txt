@@ -56,6 +56,8 @@ province_event = {
 	option = {
 		name = "flavor_elven.2.a"
 
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.2 - Option : flavor_elven.2.a" }
+
 		random_province = {
 			limit = {
 				owned_by = ROOT
@@ -145,6 +147,9 @@ country_event = {
 	
 	option = { 
 		name = "flavor_elven.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.3 - Option : flavor_elven.3.a" }
+
 		set_ruler_flag = imortal_flag
 	}
 }
@@ -186,6 +191,8 @@ country_event = {
 	}
 	
 	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.4 - Option : immediate" }
+
 		if = {
 			limit = {
 				tag = Y80
@@ -318,6 +325,9 @@ country_event = {
 	
 	option = { 
 		name = "flavor_elven.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.5 - Option : flavor_elven.5.a" }
+
 		kill_ruler = yes
 	}
 }
@@ -335,6 +345,9 @@ country_event = {
 	
 	option = { 
 		name = "flavor_elven.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.6 - Option : flavor_elven.6.a" }
+
 		add_karma = 30
 	}
 }
@@ -352,6 +365,9 @@ country_event = {
 	
 	option = { 
 		name = "flavor_elven.7.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.7 - Option : flavor_elven.7.a" }
+
 		add_karma = -30
 	}
 }
@@ -417,6 +433,8 @@ province_event = {
 	
 	option = {
 		name = "flavor_elven.8.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.8 - Option : flavor_elven.8.a" }
 
 		random_province = {
 			limit = {
@@ -497,6 +515,9 @@ country_event = {
 	
 	option = { 
 		name = "flavor_elven.9.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.9 - Option : flavor_elven.9.a" }
+
 		set_heir_flag = imortal_flag_heir
 	}
 }
@@ -527,6 +548,9 @@ country_event = {
 	}
 	
 	immediate = {
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.3 - Option : immediate" }
+
 		if = {
 			limit = {
 				tag = Y80
@@ -601,6 +625,9 @@ country_event = {
 	
 	option = { 
 		name = "flavor_elven.11.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_elven.11 - Option : flavor_elven.11.a" }
+
 		kill_heir = yes
 	}
 }
