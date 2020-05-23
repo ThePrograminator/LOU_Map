@@ -127,18 +127,14 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		AND = {
-			tag = V19
-			mirkwood_region = {
-				OR ={
-					owns_or_vassal_of = V20
-					owns_or_vassal_of = V41
-					owned_by = V19
-				}
-				OR = {
-					culture = culture_spider
-					religion = religion_spider
-				}
+		tag = V19
+
+		any_province = {
+			region = mirkwood_region
+			country_or_vassal_holds = ROOT
+			OR = {
+				culture = culture_spider
+				religion = religion_spider
 			}
 		}
 		NOT = {
@@ -161,14 +157,11 @@ country_event = {
 			name = dol_guldur_orcs_missing_meat
 			duration = 3650
 		}
-		
-		mirkwood_region = {
+
+		every_province = {
 			limit = {
-				OR ={
-					owns_or_vassal_of = V20
-					owns_or_vassal_of = V41
-					owned_by = V19
-				}
+				region = mirkwood_region
+				country_or_vassal_holds = ROOT
 				OR = {
 					culture = culture_spider
 					religion = religion_spider
@@ -214,7 +207,7 @@ country_event = {
 				}
 				OR = {
 					#culture = culture_guldurim
-					religion = religion_easterlings
+					#religion = religion_easterlings
 				}
 			}
 		}
@@ -244,7 +237,7 @@ country_event = {
 					owned_by = V19
 				}
 				#culture = culture_guldurim
-				religion = religion_easterlings
+				#religion = religion_easterlings
 			}
 			add_province_modifier = {
 				name = dol_guldur_ask_guldurim_troops

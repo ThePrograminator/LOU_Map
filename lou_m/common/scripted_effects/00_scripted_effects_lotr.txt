@@ -775,39 +775,6 @@ set_rhovanion_superregion_new_orc_nation = {
 	}
 }
 
-set_harad_superregion_new_orc_nation = {
-	harad_superregion = {
-		limit = {
-			owned_by = X84
-		}
-		add_core = Y11
-		cede_province = Y11
-		remove_core = X84
-	}
-}
-
-set_rhun_superregion_new_orc_nation = {
-	rhun_superregion = {
-		limit = {
-			owned_by = X84
-		}
-		add_core = Y12
-		cede_province = Y12
-		remove_core = X84
-	}
-}
-
-set_forodwaith_superregion_new_orc_nation = {
-	forodwaith_superregion = {
-		limit = {
-			owned_by = X84
-		}
-		add_core = Y13
-		cede_province = Y13
-		remove_core = X84
-	}
-}
-
 set_same_different_race_opinions_effect = {
 	every_country = {
 		limit = {
@@ -1429,12 +1396,12 @@ desolation_of_smaug_won_effect = {
 	hidden_effect = {
 		every_province = {
 			kill_units = {
-				who = ROOT
+				who = owner
 				type = lotr_elven_silvan_poachers_3
 				amount = 1000
 			}
 			kill_units = {
-				who = ROOT
+				who = owner
 				type = lotr_elven_silvan_mounted_sentinels_2
 				amount = 1000
 			}

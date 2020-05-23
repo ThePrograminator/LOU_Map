@@ -419,15 +419,17 @@ province_event = {
 		
 		modifier = {
 			factor = 0.55
-			ROOT = { war_exhaustion = 10 }
+			ROOT = { owner = {war_exhaustion = 10 } }
 		}
 		modifier = {
 			factor = 0.65
-			ROOT = { war_exhaustion = 15 }
+			ROOT = { owner = {war_exhaustion = 15 } }
 		}
 		modifier = {
 			factor = 0.85
-			tag = X12
+			owner = {
+				tag = X01
+			}
 		}
 	}
 	

@@ -160,6 +160,15 @@ defined_text = {
 			}
 		}
     }
+
+    text = {
+        localisation_key = europe
+		trigger = {
+			capital_scope = {
+				continent = europe
+			}
+		}
+    }
 }
 
 ### Upper left description textbox
@@ -653,28 +662,28 @@ defined_text  = {
 	text = {
         localisation_key = string_start_government_stewards
         trigger = {
-			government = lotr_stewardship
+			has_reform = lotr_stewardship
         }
     }
 	
 	text = {
         localisation_key = string_start_government_hand_of_mordor
         trigger = {
-			government = lotr_hand_of_mordor
+			has_reform = lotr_hand_of_mordor
         }
     }
 	
 	text = {
         localisation_key = string_start_government_orc_clan
         trigger = {
-			government = lotr_orc_clan
+			has_reform = lotr_orc_clan
         }
     }
 	
 	text = {
         localisation_key = string_start_government_hand_of_angmar
         trigger = {
-			government = lotr_hand_of_angmar
+			has_reform = lotr_hand_of_angmar
         }
     }
 }

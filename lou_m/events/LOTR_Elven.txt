@@ -13,7 +13,9 @@ province_event = {
 
 	trigger = {
 		NOT = {
-			has_country_modifier = elven_event_citizens_left
+			owner = {
+				has_country_modifier = elven_event_citizens_left
+			}
 		}
 	
 		owner = {
@@ -99,10 +101,13 @@ province_event = {
 		}
 		
 		hidden_effect = {
-			add_country_modifier = {
-			name = elven_event_citizens_left
-			duration = 730
+			owner = {
+				add_country_modifier = {
+					name = elven_event_citizens_left
+					duration = 730
+				}
 			}
+			
 		}
 	}
 }
@@ -163,7 +168,7 @@ country_event = {
 
 	trigger = {
 		technology_group = lotr_elven
-		always = on
+		always = no
 		OR = {
 			#Bigger nations
 			tag = Y80
@@ -202,8 +207,6 @@ country_event = {
 			  dynasty = original_dynasty
 			  age = 25
 			  claim = 100
-			  regency = no
-			  female = no
 			  adm = 6
 			  dip = 5
 			  mil = 6
@@ -220,8 +223,6 @@ country_event = {
 			  dynasty = original_dynasty
 			  age = 25
 			  claim = 100
-			  regency = no
-			  female = no
 			  adm = 6
 			  dip = 5
 			  mil = 6
@@ -238,8 +239,6 @@ country_event = {
 			  dynasty = original_dynasty
 			  age = 25
 			  claim = 100
-			  regency = no
-			  female = no
 			  adm = 6
 			  dip = 5
 			  mil = 6
@@ -256,8 +255,6 @@ country_event = {
 			  dynasty = original_dynasty
 			  age = 25
 			  claim = 100
-			  regency = no
-			  female = no
 			  adm = 6
 			  dip = 5
 			  mil = 6
@@ -274,8 +271,6 @@ country_event = {
 			  dynasty = original_dynasty
 			  age = 25
 			  claim = 100
-			  regency = no
-			  female = no
 			  adm = 4
 			  dip = 3
 			  mil = 4
@@ -292,8 +287,6 @@ country_event = {
 			  dynasty = original_dynasty
 			  age = 25
 			  claim = 100
-			  regency = no
-			  female = no
 			  adm = 5
 			  dip = 3
 			  mil = 3
@@ -380,7 +373,9 @@ province_event = {
 
 	trigger = {
 		NOT = {
-			has_country_modifier = elven_event_citizens_left
+			owner = {
+				has_country_modifier = elven_event_citizens_left
+			}
 		}
 	
 		owner = {
@@ -477,10 +472,13 @@ province_event = {
 		}
 		
 		hidden_effect = {
-			add_country_modifier = {
-			name = elven_event_citizens_left
-			duration = 730
+			owner = {
+				add_country_modifier = {
+					name = elven_event_citizens_left
+					duration = 730
+				}
 			}
+			
 		}
 	}
 }

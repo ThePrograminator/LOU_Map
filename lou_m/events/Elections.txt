@@ -15,9 +15,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-	
-		government = lotr_mayorship
-
+		has_reform = lotr_mayorship
 	}
 
 	option = {
@@ -55,7 +53,7 @@ country_event = {
 				government = republic
 				NOT = { republican_tradition = 20 }	
 			}	
-			change_government = tribal_despotism
+			add_government_reform = tribal_despotism
 		}
 		if = {
 			limit = {
@@ -64,7 +62,7 @@ country_event = {
 				NOT = { republican_tradition = 20 }				
 				has_dlc = "Res Publica"
 			}
-			change_government = lotr_absolute_mayorship	
+			add_government_reform = lotr_absolute_mayorship	
 		}
 		if = {
 			limit = {
@@ -73,7 +71,7 @@ country_event = {
 				NOT = { republican_tradition = 20 }
 				NOT = { has_dlc = "Res Publica" }
 			}
-			change_government = despotic_monarchy
+			add_government_reform = despotic_monarchy
 		}	
 		add_scaled_republican_tradition = -10
 		random_list = {
@@ -161,8 +159,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = lotr_mayorship
-
+		has_reform = lotr_mayorship
 	}
 	
 	option = {

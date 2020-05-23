@@ -151,7 +151,7 @@ native = {
 	color = { 194 127 209 }
 
 	legacy_government = {
-		native_council_legacy
+		tribal_federation_legacy
 	}
 }
 
@@ -160,13 +160,6 @@ theocracy = {
 	basic_reform = theocracy_mechanic
 	
 	color = { 75 170 75 }
-
-	legacy_government = {
-		
-	}
-	reform_levels = {
-		
-	}
 }
 
 orc_gov = {
@@ -263,10 +256,6 @@ dwarf_gov = {
         lotr_kingdom_dwarf_legacy
 		lotr_guild_aristocracy_legacy
     }
-	
-	exclusive_reforms = {
-
-	}
 }
 
 elf_gov = {
@@ -308,10 +297,6 @@ elf_gov = {
 		lotr_kingdom_elf_legacy
 		lotr_principality_elf_legacy
     }
-	
-	exclusive_reforms = {
-
-	}
 }
 
 melkor_gov = {
@@ -334,10 +319,6 @@ melkor_gov = {
 		lotr_wight_government_legacy
 		lotr_spider_government_legacy
     }
-	
-	exclusive_reforms = {
-
-	}
 }
 
 eru_gov = {
@@ -360,8 +341,4 @@ eru_gov = {
 		lotr_great_eagle_government_legacy
 		lotr_giant_government_legacy
     }
-	
-	exclusive_reforms = {
-
-	}
 }

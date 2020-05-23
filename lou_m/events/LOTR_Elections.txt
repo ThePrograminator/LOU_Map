@@ -9,7 +9,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = lotr_mayorship
+		has_reform = lotr_mayorship
 	}
 	
 	option = {
@@ -17,7 +17,7 @@ country_event = {
 
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.1 - Option : LOTR_Elections.1.a" }
 		
-		add_scaled_republican_tradition = -0.10	
+		add_scaled_republican_tradition = -10	
 		change_adm = 1
 		change_dip = 1
 		change_mil = 1
@@ -73,7 +73,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = lotr_trader_town
+		has_reform = lotr_trader_town
 	}
 	
 	option = {
@@ -81,7 +81,7 @@ country_event = {
 
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOTR_Elections.2 - Option : LOTR_Elections.2.a" }
 		
-		add_scaled_republican_tradition = -0.10	
+		add_scaled_republican_tradition = -10	
 		change_adm = 1
 		change_dip = 1
 		change_mil = 1

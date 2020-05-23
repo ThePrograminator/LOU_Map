@@ -144,34 +144,25 @@ country_event = {
 		
 		custom_tooltip = white_mountain_production
 		
-		tooltip = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = silver
+					trade_goods = gold
+					trade_goods = stone
+					trade_goods = marble
+					trade_goods = gems
+					trade_goods = mithril
+				}
+				is_core = owner
+				region = gondor_region
+			}
+			
 			add_province_modifier = {
 				name = province_gondorian_increased_production
 				duration = 3650
-			}
-		}
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					OR = {
-						trade_goods = copper
-						trade_goods = iron
-						trade_goods = silver
-						trade_goods = gold
-						trade_goods = stone
-						trade_goods = marble
-						trade_goods = gems
-						trade_goods = mithril
-					}
-					is_core = owner
-					region = gondor_region
-				}
-				
-				add_province_modifier = {
-					name = province_gondorian_increased_production
-					duration = 3650
-				}
 			}
 		}
 	}

@@ -387,7 +387,7 @@ country_event = {
 			
 			AND = {
 				any_country = {
-					has_truce = ROOT
+					truce_with = ROOT
 					has_country_flag = Invasion_called_response
 					NOT = { war_with = PREV }
 				}
@@ -404,7 +404,7 @@ country_event = {
 				has_country_flag = Invasion_called_response
 			}
 		
-			has_truce = X01
+			truce_with = X01
 			NOT = { war_with = X01 }
 			
 			OR = {

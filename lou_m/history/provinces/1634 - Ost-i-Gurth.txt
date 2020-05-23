@@ -10,8 +10,6 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
-
 base_tax = 7
 base_production = 7
 base_manpower = 12
@@ -41,6 +39,7 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
 2942.1.1 = {
+	is_city = yes
 	add_core = V17
 	owner = V17
 	controller = V17

@@ -345,13 +345,7 @@ country_event = {
 		add_patriarch_authority = -0.05
 		
 		custom_tooltip = dol_amroth_coast_raided
-		
-		tooltip = {
-			add_province_modifier = {
-				name = province_dol_amroth_coast_raided 
-				duration = 1095
-			}
-		}
+	
 		hidden_effect = {
 			every_owned_province = {
 				limit = {

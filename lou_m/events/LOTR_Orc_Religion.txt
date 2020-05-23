@@ -458,7 +458,7 @@ country_event = {
 				add_devastation = -100
 				
 				remove_loot = {
-					who = PREV
+					who = ROOT
 					amount = 100
 				}
 				
@@ -477,11 +477,11 @@ country_event = {
 				
 				hidden_effect = {
 					THIS = {
-						owner = {
-							country_event = {
+						#owner = {
+							province_event = {
 								id = flavor_orc_religion.7
 							}
-						}
+						#}
 					}
 				}
 			}
@@ -554,11 +554,6 @@ province_event = {
 				}
 				
 				add_devastation = -100
-				
-				remove_loot = {
-					who = PREV
-					amount = 100
-				}
 				
 				add_province_modifier = {
 					name = orc_religion_raided_neighbour_province 
@@ -643,7 +638,6 @@ country_event = {
 				}
 			}
 			add_mercantilism = -2
-			recall_merchant = THIS
 			kill_advisor = random
 			
 			add_country_modifier = {
@@ -719,7 +713,6 @@ country_event = {
 
 		tooltip = {
 			add_mercantilism = -2
-			recall_merchant = THIS
 			kill_advisor = random
 			
 			add_country_modifier = {
