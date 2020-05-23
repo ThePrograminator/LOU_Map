@@ -1,0 +1,13 @@
+pay_fervor = {
+	trigger = {
+		always = no
+	}
+	
+	effect = {
+		add_fervor = -5
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
