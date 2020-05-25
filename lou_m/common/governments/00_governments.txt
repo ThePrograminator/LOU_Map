@@ -38,8 +38,6 @@ monarchy = {
 		lotr_stewardship_legacy
 		lotr_principality_legacy
 		lotr_easterling_clan_legacy
-		lotr_lordship_dwarf_legacy
-		lotr_kingdom_dwarf_legacy
 	}
 	
 	exclusive_reforms = {
@@ -89,6 +87,7 @@ republic = {
 		lotr_thainship_legacy
 		oligarchic_republic
 		merchant_republic
+		trading_city_legacy
 	}
 }
 
@@ -96,15 +95,6 @@ tribal = {
 	basic_reform = tribe_mechanic
 	
 	color = { 220 165 95 }
-
-	legacy_government = {
-		lotr_clan_legacy
-		tribal_federation_legacy
-		steppe_horde_legacy
-		lotr_khaganate_legacy
-		lotr_independent_khaganate_legacy
-		lotr_khaganate_ruler_legacy
-	}
 
 	reform_levels = {
 		government_form_tribal = {
@@ -142,6 +132,15 @@ tribal = {
 				tribe_becomes_republic_reform
 			}
 		}
+	}
+
+	legacy_government = {
+		lotr_clan_legacy
+		tribal_federation_legacy
+		steppe_horde_legacy
+		lotr_khaganate_legacy
+		lotr_independent_khaganate_legacy
+		lotr_khaganate_ruler_legacy
 	}
 }
 
@@ -203,6 +202,7 @@ orc_gov = {
         lotr_orc_clan_legacy
 		lotr_orc_clan_federation_legacy
 		lotr_orc_kingdom_legacy
+		
 		lotr_nazgul_legacy
 		lotr_isengard_legacy
 		lotr_mordor_legacy

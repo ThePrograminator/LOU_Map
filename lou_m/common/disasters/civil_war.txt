@@ -10,13 +10,12 @@ civil_war = {
 		uses_doom = no
 		NOT = { has_country_flag = had_civil_war }
 	}
-
-	
 	
 	can_start = {
 		has_any_disaster = no
 		has_regency = no
 		average_home_autonomy = 30
+		NOT = { legitimacy_or_horde_unity = 50 }
 	}
 	
 	
@@ -24,6 +23,7 @@ civil_war = {
 		OR = {
 			has_any_disaster = yes
 			has_regency = yes
+			legitimacy_or_horde_unity = 75
 		}
 	}
 	
@@ -55,7 +55,7 @@ civil_war = {
 	}
 	
 	can_end = {
-
+		legitimacy_or_horde_unity = 90
 	}
 	
 
@@ -83,7 +83,6 @@ civil_war = {
 			100 = civil_war.11
 			100 = civil_war.12
 			100 = civil_war.13
-		
 		}
 	}
 }

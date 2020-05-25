@@ -2338,42 +2338,6 @@ country_event = {
 	}
 }
 
-# Government Differences
-country_event = {
-	id = ideagroups.605
-	title = ideagroups.605.t
-	desc = ideagroups.605.d
-	picture = DIPLOMACY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea_group = diplomatic_ideas
-		any_neighbor_country = {
-			religion = root
-			NOT = {
-				government  = root
-			}
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = ideagroups.605.a
-		random_neighbor_country = {
-			limit = {
-				religion = root
-				NOT = {
-					government  = root
-				}
-			}
-			add_opinion = { who = ROOT modifier = reconciling_differences }
-		}
-	}
-}
-
 # Improved Reputation
 country_event = {
 	id = ideagroups.606

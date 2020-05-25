@@ -64,11 +64,7 @@ just_personality = {
 		allow = {
 			NOT = { ruler_has_personality = cruel_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -87,11 +83,7 @@ just_personality = {
 			NOT = { heir_has_personality = cruel_personality }
 			
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -107,11 +99,7 @@ just_personality = {
 		allow = {
 			NOT = { consort_has_personality = cruel_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -137,11 +125,7 @@ righteous_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -160,11 +144,7 @@ righteous_personality = {
 	heir_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 		chance = {
@@ -178,11 +158,7 @@ righteous_personality = {
 	consort_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -200,11 +176,7 @@ righteous_personality = {
 			government = monarchy
 		}
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -226,11 +198,7 @@ tolerant_personality = {
 			NOT = { ruler_has_personality = zealot_personality }
 			NOT = { ruler_has_personality = free_thinker_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -240,11 +208,7 @@ tolerant_personality = {
 			NOT = { heir_has_personality = zealot_personality }
 			NOT = { heir_has_personality = free_thinker_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -254,11 +218,7 @@ tolerant_personality = {
 			NOT = { consort_has_personality = zealot_personality }
 			NOT = { consort_has_personality = free_thinker_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -272,11 +232,7 @@ tolerant_personality = {
 			has_idea_group = religious_ideas
 		}
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -306,11 +262,7 @@ kind_hearted_personality = {
 			NOT = { ruler_has_personality = cruel_personality }
 			NOT = { ruler_has_personality = malevolent_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -320,11 +272,7 @@ kind_hearted_personality = {
 			NOT = { heir_has_personality = cruel_personality }
 			NOT = { heir_has_personality = malevolent_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -334,11 +282,7 @@ kind_hearted_personality = {
 			NOT = { consort_has_personality = cruel_personality }
 			NOT = { consort_has_personality = malevolent_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -370,11 +314,7 @@ free_thinker_personality = {
 			NOT = { ruler_has_personality = zealot_personality }
 			NOT = { ruler_has_personality = tolerant_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -400,11 +340,7 @@ free_thinker_personality = {
 			NOT = { heir_has_personality = zealot_personality }
 			NOT = { heir_has_personality = tolerant_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -430,11 +366,7 @@ free_thinker_personality = {
 			NOT = { consort_has_personality = zealot_personality }
 			NOT = { consort_has_personality = tolerant_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -455,11 +387,7 @@ free_thinker_personality = {
 	}
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -478,11 +406,7 @@ well_connected_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 		
@@ -500,11 +424,7 @@ well_connected_personality = {
 	heir_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 		
@@ -522,11 +442,7 @@ well_connected_personality = {
 	consort_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -540,11 +456,7 @@ well_connected_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -566,11 +478,7 @@ calm_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -584,11 +492,7 @@ calm_personality = {
 	heir_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -602,22 +506,14 @@ calm_personality = {
 	consort_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -814,11 +710,7 @@ fertile_personality = {
 			NOT = { ruler_has_personality = infertile_personality }
 			NOT = { ruler_age = 35 }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -835,11 +727,7 @@ fertile_personality = {
 			NOT = { heir_has_personality = infertile_personality }
 			NOT = { heir_age = 35 }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -856,11 +744,7 @@ fertile_personality = {
 			NOT = { consort_has_personality = infertile_personality }
 			#NOT = { consort_age = 35 }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -874,11 +758,7 @@ fertile_personality = {
 	allow = {
 		government = monarchy
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -939,11 +819,7 @@ benevolent_personality = {
 			NOT = { ruler_has_personality = malevolent_personality }
 			DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -960,11 +836,7 @@ benevolent_personality = {
 			NOT = { heir_has_personality = malevolent_personality }
 			heir_DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -981,11 +853,7 @@ benevolent_personality = {
 			NOT = { consort_has_personality = malevolent_personality }
 			consort_DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -999,11 +867,7 @@ benevolent_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1028,11 +892,7 @@ zealot_personality = {
 			NOT = { ruler_has_personality = free_thinker_personality }
 			NOT = { ruler_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -1043,11 +903,7 @@ zealot_personality = {
 			NOT = { heir_has_personality = free_thinker_personality }
 			NOT = { heir_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -1058,11 +914,7 @@ zealot_personality = {
 			NOT = { consort_has_personality = free_thinker_personality }
 			NOT = { consort_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -1070,11 +922,7 @@ zealot_personality = {
 	allow = {
 		NOT = { has_idea_group = humanist_ideas }
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1118,11 +966,7 @@ pious_personality = {
 			NOT = { ruler_has_personality = sinner_personality }
 			NOT = { ruler_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -1132,11 +976,7 @@ pious_personality = {
 			NOT = { heir_has_personality = sinner_personality }
 			NOT = { heir_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	}
@@ -1144,11 +984,7 @@ pious_personality = {
 	allow = {
 		government = theocracy
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1230,11 +1066,7 @@ midas_touched_personality = {
 			NOT = { ruler_has_personality = greedy_personality }
 			ADM = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1255,11 +1087,7 @@ midas_touched_personality = {
 			NOT = { heir_has_personality = greedy_personality }
 			heir_ADM = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1280,11 +1108,7 @@ midas_touched_personality = {
 			NOT = { consort_has_personality = greedy_personality }
 			consort_ADM = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -1302,11 +1126,7 @@ midas_touched_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1386,11 +1206,7 @@ architectural_visionary_personality = {
 		allow = {
 			NOT = { ruler_has_personality = obsessive_perfectionist_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1406,11 +1222,7 @@ architectural_visionary_personality = {
 		allow = {
 			NOT = { heir_has_personality = obsessive_perfectionist_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1426,11 +1238,7 @@ architectural_visionary_personality = {
 		allow = {
 			NOT = { consort_has_personality = obsessive_perfectionist_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -1444,11 +1252,7 @@ architectural_visionary_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1466,11 +1270,7 @@ scholar_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1489,11 +1289,7 @@ scholar_personality = {
 	heir_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1512,11 +1308,7 @@ scholar_personality = {
 	consort_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1530,11 +1322,7 @@ scholar_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1551,11 +1339,7 @@ entrepreneur_personality = {
 		allow = {
 			NOT = { ruler_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1571,11 +1355,7 @@ entrepreneur_personality = {
 		allow = {
 			NOT = { heir_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1591,11 +1371,7 @@ entrepreneur_personality = {
 		allow = {
 			NOT = { consort_has_personality = drunkard_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -1609,11 +1385,7 @@ entrepreneur_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1745,11 +1517,7 @@ charismatic_negotiator_personality = {
 			NOT = { ruler_has_personality = babbling_buffoon_personality }
 			DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1770,11 +1538,7 @@ charismatic_negotiator_personality = {
 			NOT = { heir_has_personality = babbling_buffoon_personality }
 			heir_DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1795,11 +1559,7 @@ charismatic_negotiator_personality = {
 			NOT = { consort_has_personality = babbling_buffoon_personality }
 			consort_DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -1813,11 +1573,7 @@ charismatic_negotiator_personality = {
 
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -1837,11 +1593,7 @@ silver_tongue_personality = {
 			NOT = { ruler_has_personality = naive_personality }
 			DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1863,11 +1615,7 @@ silver_tongue_personality = {
 			NOT = { heir_has_personality = naive_personality }
 			heir_DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -1889,11 +1637,7 @@ silver_tongue_personality = {
 			NOT = { consort_has_personality = naive_personality }
 			consort_DIP = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -1907,11 +1651,7 @@ silver_tongue_personality = {
 
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -2219,11 +1959,7 @@ martial_educator_personality = {
 		allow = {
 			MIL = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2239,11 +1975,7 @@ martial_educator_personality = {
 		allow = {
 			heir_MIL = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2259,11 +1991,7 @@ martial_educator_personality = {
 		allow = {
 			consort_MIL = 3
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -2277,11 +2005,7 @@ martial_educator_personality = {
 
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -2298,11 +2022,7 @@ navigator_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2317,11 +2037,7 @@ navigator_personality = {
 	heir_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2336,11 +2052,7 @@ navigator_personality = {
 	consort_allow = {
 		allow = {
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2354,11 +2066,7 @@ navigator_personality = {
 
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	
 		OR = {
@@ -2625,11 +2333,7 @@ infertile_personality = {
 		allow = {
 			NOT = { ruler_has_personality = fertile_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2661,11 +2365,7 @@ infertile_personality = {
 		allow = {
 			NOT = { heir_has_personality = fertile_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2697,11 +2397,7 @@ infertile_personality = {
 		allow = {
 			NOT = { consort_has_personality = fertile_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -2731,11 +2427,7 @@ infertile_personality = {
 
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 		government = monarchy
 	}
@@ -2756,11 +2448,7 @@ drunkard_personality = {
 			NOT = { ruler_has_personality = entrepreneur_personality }
 			NOT = { ruler_has_personality = zealot_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2790,11 +2478,7 @@ drunkard_personality = {
 			NOT = { heir_has_personality = entrepreneur_personality }
 			NOT = { heir_has_personality = zealot_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2824,11 +2508,7 @@ drunkard_personality = {
 			NOT = { consort_has_personality = entrepreneur_personality }
 			NOT = { consort_has_personality = zealot_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -2854,11 +2534,7 @@ drunkard_personality = {
 
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -2877,11 +2553,7 @@ sinner_personality =  {
 		allow = {
 			NOT = { ruler_has_personality = pious_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2909,11 +2581,7 @@ sinner_personality =  {
 		allow = {
 			NOT = { heir_has_personality = pious_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -2941,11 +2609,7 @@ sinner_personality =  {
 		allow = {
 			NOT = { consort_has_personality = pious_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -2971,11 +2635,7 @@ sinner_personality =  {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -3403,11 +3063,7 @@ loose_lips_personality = {
 			NOT = { ruler_has_personality = intricate_web_weaver_personality }
 			NOT = { ruler_has_personality = secretive_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -3436,11 +3092,7 @@ loose_lips_personality = {
 			NOT = { heir_has_personality = intricate_web_weaver_personality }
 			NOT = { heir_has_personality = secretive_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -3469,11 +3121,7 @@ loose_lips_personality = {
 			NOT = { consort_has_personality = intricate_web_weaver_personality }
 			NOT = { consort_has_personality = secretive_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -3499,11 +3147,7 @@ loose_lips_personality = {
 
 	allow = {		
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -3520,11 +3164,7 @@ obsessive_perfectionist_personality = {
 		allow = {
 			NOT = { ruler_has_personality = architectural_visionary_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -3552,11 +3192,7 @@ obsessive_perfectionist_personality = {
 		allow = {
 			NOT = { heir_has_personality = architectural_visionary_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 	
@@ -3584,11 +3220,7 @@ obsessive_perfectionist_personality = {
 		allow = {
 			NOT = { consort_has_personality = architectural_visionary_personality }
 			NOT = {
-				technology_group = lotr_orc
-				technology_group = lotr_goblin
-				technology_group = lotr_uruk_hai
-				technology_group = lotr_troll
-				tag = X16
+				is_bad_race = yes
 			}
 		}
 
@@ -3614,11 +3246,7 @@ obsessive_perfectionist_personality = {
 	
 	allow = {
 		NOT = {
-			technology_group = lotr_orc
-			technology_group = lotr_goblin
-			technology_group = lotr_uruk_hai
-			technology_group = lotr_troll
-			tag = X16
+			is_bad_race = yes
 		}
 	}
 	
@@ -3760,6 +3388,14 @@ carries_ring_personality = {
 			always = no
 		}
 	}
+
+	allow = {
+
+	}
+
+	chance = {
+	}
+
 	wants_betray_allies = yes
 	wants_threaten_war = yes
 	send_warning_desire = 50

@@ -544,8 +544,6 @@ on_thri_yearly_pulse = {
 		
 		75 = flavor_orc.1
 		75 = flavor_orc.2
-		75 = flavor_orc.3
-		75 = flavor_orc.4
 		75 = flavor_orc.5
 		75 = flavor_orc.6
 		75 = flavor_orc.7
@@ -636,7 +634,6 @@ on_five_year_pulse = {
 		100 = ideagroups.310
 
 		# Religious		18 (11g 7b)
-		100 = ideagroups.400
 		100 = ideagroups.402
 		100 = ideagroups.403
 		100 = ideagroups.404
@@ -672,7 +669,6 @@ on_five_year_pulse = {
 		100 = ideagroups.602
 		100 = ideagroups.603
 		100 = ideagroups.604
-		100 = ideagroups.605
 		100 = ideagroups.606
 		100 = ideagroups.607
 		100 = ideagroups.608
@@ -1155,7 +1151,4 @@ on_flagship_destroyed = {
 # this = Released country, FROM = Releasing country
 on_country_released = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - [FROM.GetName] - on_country_released" }
-	events = {
-		lotr_general.45
-	}
 }
