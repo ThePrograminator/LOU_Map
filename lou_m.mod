@@ -58,7 +58,7 @@ tags={
 	"Loading Screen"
 	"Alternative History"
 }
-name="lou_m"
+name="Lord of Universalis 2"
 supported_version="1.29.6"
 path="C:/Users/Christian/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
 remote_file_id="2095475587"
