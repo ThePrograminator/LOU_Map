@@ -1,6 +1,16 @@
 pay_churchpower = {
 	trigger = {
-		always = no
+		OR = {
+			AND = {
+				religion = protestant
+				FROM = { religion = protestant }
+			}
+			AND = {
+				religion = anglican
+				FROM = { religion = anglican }
+			}
+		}
+		church_power = 5
 	}
 	
 	effect = {

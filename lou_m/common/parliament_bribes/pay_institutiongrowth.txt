@@ -1,7 +1,7 @@
 pay_institutiongrowth = {
 	trigger = {
 		FROM = {
-			current_institution = 1
+			current_institution = 5
 			NOT = { current_institution = 100 }
 		}
 	}

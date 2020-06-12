@@ -1,6 +1,8 @@
 pay_legitimacy = {
 	trigger = {
-		always = no
+		government = monarchy
+		legitimacy = 2
+		NOT = { has_reform = celestial_empire }
 	}
 	
 	effect = {

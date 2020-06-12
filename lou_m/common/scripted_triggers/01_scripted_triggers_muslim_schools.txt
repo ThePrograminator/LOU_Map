@@ -44,6 +44,66 @@ has_religious_scholars_trigger = {
 	}
 }
 
+#Scholars from where?
+#Country Scope
+scholar_from_our_school_trigger = {
+	has_country_modifier = $school$_scholar_modifier
+	ROOT = {
+		religious_school = {
+			group = muslim
+			school = $school$_school
+		}
+	}
+}
+our_scholar_matches_their_school_trigger = {
+	PREV = { has_country_modifier = $school$_scholar_modifier }
+	religious_school = {
+		group = muslim
+		school = $school$_school
+	}
+}
+
+#Uses one of the Shia schools:
+#Country
+has_shia_school_trigger = {
+	OR = {
+		religious_school = {
+			group = muslim
+			school = ismaili_school
+		}
+		religious_school = {
+			group = muslim
+			school = jafari_school
+		}
+		religious_school = {
+			group = muslim
+			school = zaidi_school
+		}
+	}
+}
+#Uses one of the Sunni schools:
+#Country
+has_sunni_school_trigger = {
+	OR = {
+		religious_school = {
+			group = muslim
+			school = hanbali_school
+		}
+		religious_school = {
+			group = muslim
+			school = hanafi_school
+		}
+		religious_school = {
+			group = muslim
+			school = shafii_school
+		}
+		religious_school = {
+			group = muslim
+			school = maliki_school
+		}
+	}
+}
+
 #Country Scope
 hidden_progressive_opinion_for_scholar_trigger = { #Used to pick best fit to invite scholar.
 	hidden_trigger = {

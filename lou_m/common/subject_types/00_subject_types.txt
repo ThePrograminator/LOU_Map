@@ -481,7 +481,11 @@ tributary_state = {
 		NOT = { 
 			is_subject_of_type = tributary_state
 		}
-		is_nomad = yes
+		OR = {
+			has_reform = celestial_empire
+			is_nomad = yes
+			religion_group = eastern
+		}
 	}
 	
 	# Graphics:

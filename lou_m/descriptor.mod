@@ -41,7 +41,7 @@ replace_path="common/isolationism"
 replace_path="common/religious_reforms"
 replace_path="common/parliament_issues"
 replace_path="common/trade_companies"
-replace_path="common/scripted_triggers"
+
 tags={
 	"Map"
 	"Military"
@@ -58,6 +58,5 @@ tags={
 	"Loading Screen"
 	"Alternative History"
 }
-name="Lord of Universalis 2"
+name="LOU Test 2"
 supported_version="1.30.1"
-remote_file_id="2095475587"

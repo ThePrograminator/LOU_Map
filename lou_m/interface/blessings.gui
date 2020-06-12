@@ -103,7 +103,7 @@ guiTypes = {
 			
 		guiButtonType = {
 			name = "close_button"
-			position = { x=296 y =760}
+			position = { x=296 y =660}
 			quadTextureSprite ="button_type_1"	
 			tooltip = ""
 			tooltipText =""
@@ -212,24 +212,24 @@ guiTypes = {
 			text = ""	
 			format = left
 		}
-		#164
+		
 		instantTextBoxType= {
 			position = { x = 218 y = 32}
 			name = "control"
-			font = "vic_16"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 200
+			maxWidth = 164
 			maxHeight = 20
 			text = "Controlled by Polandball"	
 			format = left
 		}
-		#164
+		
 		instantTextBoxType= {
 			position = { x = 218 y = 52}
 			name = "religion"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 200
+			maxWidth = 164
 			maxHeight = 20
 			text = "Pastafarian"	
 			format = left

@@ -1,6 +1,9 @@
 pay_fervor = {
 	trigger = {
-		always = no
+		religion = reformed
+		FROM = { religion = reformed }
+		has_dlc = "Wealth of Nations"
+		fervor = 5
 	}
 	
 	effect = {

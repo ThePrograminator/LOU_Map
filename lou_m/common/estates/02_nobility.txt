@@ -5,11 +5,43 @@ estate_nobles =
 	# If true, country will get estate
 	trigger = {
 		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = cossacks_reform }
 		NOT = { government = native }
+		NOT = { has_reform = trading_city }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { has_reform = revolutionary_empire_reform }
+		NOT = { has_reform = peasants_republic }
+		NOT = { has_reform = american_republic }
+		NOT = { has_reform = federal_republic }
+		if = {
+			limit = {
+				NOT = { religion_group = muslim }
+				NOT = { religion = sikhism }
+				NOT = { religion = buddhism }
+				NOT = { religion = vajrayana }
+				NOT = { religion = mahayana }
+			}
+			NOT = { has_estate = estate_maratha }
+			NOT = { has_estate = estate_rajput }
+		}
+		OR = {
+			NOT = { has_reform = celestial_empire }
+			has_dlc = "Mandate of Heaven"
+		}
 		is_nomad = no
 		is_colonial_nation = no
 		OR = {
 			NOT = { has_dlc = "Common Sense" }
+			AND = {
+				NOT = { has_reform = english_monarchy }
+				NOT = { has_reform = parliamentary_reform }
+				NOT = { has_reform = theocratic_democracy_reform }
+				NOT = { has_reform = regionally_elected_commanders }
+				NOT = { has_reform = protectorate_parliament_reform }
+			}
 		}
 		if = {
 			limit = {
@@ -17,12 +49,7 @@ estate_nobles =
 			}
 			has_parliament = no
 		}
-		OR = {
-			has_reform = monarchy_mechanic
-			has_reform = republic_mechanic
-			has_reform = theocracy_mechanic
-			has_reform = elf_gov_mechanic
-		}
+		NOT = { has_reform = revolutionary_empire_reform }
 	}
 
 	country_modifier_happy = {
@@ -65,12 +92,32 @@ estate_nobles =
 
 	# Influence modifiers
 	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_EASTERN_TECH
+		trigger = {
+			technology_group = eastern
+		}	
+		influence = 5
+	}
 	
 	# Influence modifiers from Events:
 	influence_modifier = {
+		desc = EST_HUN_MAGNATES
+		trigger = {
+			has_ruler_modifier = hun_power_to_magnates
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
-			has_disaster = estate_burghers_disaster
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
 		}	
 		influence = -40
 	}
@@ -78,7 +125,13 @@ estate_nobles =
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
-			has_disaster = estate_burghers_disaster
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
 		}
 		loyalty = -20
 	}
@@ -93,13 +146,189 @@ estate_nobles =
 	}
 	
 	# Great Peasants' War Modifiers
-
+	
+	influence_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MINOR_INFLUENCE
+		trigger = {
+			has_global_flag = gpw_nobles_win_minor
+			is_part_of_hre = yes
+		}
+		influence = 5
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MINOR_LOYALTY
+		trigger = {
+			has_global_flag = gpw_nobles_win_minor
+			is_part_of_hre = yes
+		}
+		loyalty = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MAJOR_INFLUENCE
+		trigger = {
+			has_global_flag = gpw_nobles_win_major
+			is_part_of_hre = yes
+		}
+		influence = 10
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_WIN_MAJOR_LOYALTY
+		trigger = {
+			has_global_flag = gpw_nobles_win_major
+			is_part_of_hre = yes
+		}
+		loyalty = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_INFLUENCE
+		trigger = {
+			has_global_flag = gpw_peasants_win_minor
+			is_part_of_hre = yes
+		}
+		influence = -5
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_LOYALTY
+		trigger = {
+			has_global_flag = gpw_peasants_win_minor
+			is_part_of_hre = yes
+		}
+		loyalty = -5
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MAJOR_INFLUENCE
+		trigger = {
+			has_global_flag = gpw_peasants_win_major
+			is_part_of_hre = yes
+		}
+		influence = -10
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MAJOR_LOYALTY
+		trigger = {
+			has_global_flag = gpw_peasants_win_major
+			is_part_of_hre = yes
+		}
+		loyalty = -10
+	}
 	
 	#Alternative naming of estates
-
-
-
-
+	custom_name = {
+		desc = estate_beys
+		trigger = {
+			technology_group = ottoman
+		}
+	}
+	custom_name = {
+		desc = estate_boyars
+		trigger = {
+			OR = {
+				culture_group = east_slavic
+				primary_culture = bulgarian
+				primary_culture = romanian
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_szlachta
+		trigger = {
+			OR = {
+				primary_culture = polish
+				primary_culture = lithuanian
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_timawa
+		trigger = {
+			tag = MAS
+		}
+	}
+	custom_name = {
+		desc = estate_nayaks
+		trigger = {
+			tag = VIJ
+		}
+	}
+	custom_name = {
+		desc = estate_samantas
+		trigger = {
+			tag = ORI
+		}
+	}
+	custom_name = {
+		desc = estate_kshatriyas
+		trigger = {
+			religion = hinduism
+		}
+	}
+	custom_name = {
+		desc = estate_qinwang
+		trigger = {
+			has_reform = celestial_empire
+		}
+	}
+	custom_name = {
+		desc = estate_mansabdars
+		trigger = {
+			tag = MUG
+		}
+	}
+	custom_name = {
+		desc = estate_tetecuhtin
+		trigger = {
+			religion = nahuatl
+		}
+	}
+	custom_name = {
+		desc = estate_andriana
+		trigger = {
+			tag = MIR
+		}
+	}
+	custom_name = {
+		desc = estate_amirs
+		trigger = {
+			religion_group = muslim
+			NOT = { technology_group = ottoman } #Should possibly be more restricted
+		}
+	}
+	custom_name = {
+		desc = estate_planters
+		trigger = {
+			tag = USA
+		}
+	}
+	custom_name = {
+		desc = estate_bushi
+		trigger = {
+			culture_group = japanese_g
+		}
+	}
+	custom_name = {
+		desc = estate_yangban_administrators
+		trigger = {
+			tag = KOR
+			religion = confucianism
+		}
+	}
+	custom_name = {
+		desc = estate_junkers
+		trigger = {
+			OR = {
+				has_reform = prussian_republic_reform
+				has_reform = prussian_monarchy
+				tag = GER
+			}
+		}
+	}
 
 	color = { 200 0 50 }
 	

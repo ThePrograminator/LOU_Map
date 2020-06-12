@@ -1,6 +1,7 @@
 grant_local_autonomy = {
 	trigger = {
 		FROM = { is_capital = no }
+		FROM = { NOT = { local_autonomy = 80 } }
 	}
 	
 	effect = {

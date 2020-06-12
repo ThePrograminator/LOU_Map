@@ -1,6 +1,8 @@
 pay_papal_influence = {
 	trigger = {
-		always = no
+		religion = catholic
+		FROM = { religion = catholic }
+		papal_influence = 20
 	}
 	
 	effect = {
