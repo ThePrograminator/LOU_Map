@@ -5,6 +5,8 @@ republic_mechanic = {
 	republic = yes
 	duration = 4
 	has_term_election = yes
+	fixed_rank = 2
+
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
@@ -24,6 +26,7 @@ oligarchy_reform = {
 	legacy_equivalent = oligarchic_republic
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	fixed_rank = 2
 	modifiers = {
 		global_tax_modifier = 0.05
 		max_absolutism = -40
@@ -46,6 +49,7 @@ merchants_reform = {
 	legacy_equivalent = merchant_republic
 	boost_income = yes
 	duration = 4
+	fixed_rank = 2
 	#factions = {
 	#	mr_aristocrats
 	#	mr_traders
@@ -92,7 +96,7 @@ mayorship_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	legacy_equivalent = lotr_mayorship_legacy
-	
+	fixed_rank = 2
 	modifiers = {
 		production_efficiency = 0.1
 		max_absolutism = -40
@@ -110,7 +114,7 @@ thainship_reform = {
 	valid_for_new_country = no
 	allow_convert = no
 	allow_normal_conversion = no
-	
+	fixed_rank = 2
 	potential = {
 		have_had_reform = thainship_reform
 	}

@@ -20,6 +20,7 @@ feudalism_reform = {
 	legacy_equivalent = lotr_kingship_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	fixed_rank = 2
 	
 	potential = {
 		NOT = {
@@ -39,6 +40,7 @@ autocracy_reform = {
 	legacy_equivalent = lotr_principality_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	fixed_rank = 2
 	
 	potential = {
 		NOT = {
@@ -59,7 +61,7 @@ principality_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	lock_level_when_selected = yes
-	fixed_rank = 1
+	fixed_rank = 2
 	
 	potential = {
 		NOT = {
@@ -83,7 +85,7 @@ stewardship_reform = {
 	valid_for_new_country = no
 	allow_convert = no
 	allow_normal_conversion = no
-	fixed_rank = 1
+	fixed_rank = 2
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_stewardship_legacy
@@ -112,6 +114,7 @@ easterling_clan_reform = {
 	legacy_equivalent = lotr_easterling_clan_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	fixed_rank = 2
 	
 	potential = {
 		culture_group = culture_group_ulgath

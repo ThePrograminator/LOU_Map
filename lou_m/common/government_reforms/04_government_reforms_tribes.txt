@@ -16,6 +16,7 @@ tribal_kingdom = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_clan_legacy
+	fixed_rank = 2
 	modifiers = {
 		vassal_income = 0.2
 	}
@@ -27,7 +28,7 @@ tribal_federation = {
 	potential = {
 		has_reform = tribal_federation
 	}
-
+	fixed_rank = 2
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	legacy_equivalent = tribal_federation_legacy
@@ -56,7 +57,7 @@ steppe_horde = {
 	nomad = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-
+	fixed_rank = 2
 	lock_level_when_selected = yes
 
 	start_territory_to_estates = 0.5
@@ -82,7 +83,7 @@ haradwaith_nomad_reform = {
 	potential = {
 		has_reform = tribal_federation
 	}
-
+	fixed_rank = 2
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	legacy_equivalent = tribal_federation_legacy
@@ -110,7 +111,7 @@ khaganate_reform = {
 		culture_group = culture_group_ioriags
 	}
 	legacy_equivalent = lotr_khaganate_legacy
-	fixed_rank = 1
+	fixed_rank = 2
 	maintain_dynasty = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -156,7 +157,8 @@ independent_khaganate_reform = {
 	
 	legacy_equivalent = lotr_independent_khaganate_legacy
 	maintain_dynasty = yes
-
+	fixed_rank = 2
+	
 	modifiers = {
 		land_morale = 0.1
 		cav_to_inf_ratio = 0.50
