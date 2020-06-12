@@ -8,6 +8,9 @@ monarchy_mechanic = {
 	custom_attributes = {
 		enables_aristocratic_idea_group = yes
 	}
+	modifiers = {
+		nobles_influence_modifier = 0.05
+	}
 }
 
 #############
@@ -20,13 +23,7 @@ feudalism_reform = {
 	legacy_equivalent = lotr_kingship_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	
-	potential = {
-		NOT = {
-			technology_group = lotr_dwarven 
-			technology_group = lotr_elven
-		}
-	}
+
 	
 	modifiers = {
 		vassal_income = 0.25
@@ -39,13 +36,6 @@ autocracy_reform = {
 	legacy_equivalent = lotr_principality_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	
-	potential = {
-		NOT = {
-			technology_group = lotr_dwarven 
-			technology_group = lotr_elven
-		}
-	}
 	
 	modifiers = {
 		unjustified_demands = -0.1
@@ -60,13 +50,6 @@ principality_reform = {
 	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	fixed_rank = 1
-	
-	potential = {
-		NOT = {
-			technology_group = lotr_dwarven 
-			technology_group = lotr_elven
-		}
-	}
 	
 	modifiers = {
 		global_unrest = -1
@@ -89,7 +72,6 @@ stewardship_reform = {
 	legacy_equivalent = lotr_stewardship_legacy
 	maintain_dynasty = yes
 	lock_level_when_selected = yes
-	
 	
 	potential = {
 		tag = X01

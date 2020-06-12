@@ -1,4 +1,4 @@
-version="1.29.3.0"
+version="1.30.1.0"
 replace_path="missions"
 replace_path="events"
 replace_path="decisions"
@@ -45,7 +45,7 @@ replace_path="common/scripted_triggers"
 tags={
 	"Map"
 	"Military"
-	"National Ideas)"
+	"National Ideas"
 	"Religion"
 	"Technologies"
 	"Sound"
@@ -59,5 +59,5 @@ tags={
 	"Alternative History"
 }
 name="Lord of Universalis 2"
-supported_version="1.29.6"
+supported_version="1.30.1"
 remote_file_id="2095475587"
