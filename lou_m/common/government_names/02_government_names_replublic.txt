@@ -48,3 +48,30 @@ gov_lotr_thainship = {
 		has_reform = thainship_reform
 	}
 }
+
+gov_lotr_dorwinrim_replublic = {
+	rank = {
+		1 = REPUBLIC
+		2 = GRAND_REPUBLIC
+		3 = GREAT_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = REALM_MASTER
+		2 = REALM_MASTER
+		3 = REALM_MASTER
+	}
+
+	ruler_female = {
+		1 = CONSULESS
+		2 = GRAND_CONSULESS
+		3 = GREAT_CONSULESS
+	}
+
+	government_reform = republic_mechanic
+
+	trigger = {
+		government = republic
+		culture_group = culture_group_donath
+	}
+}
