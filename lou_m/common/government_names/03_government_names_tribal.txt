@@ -120,3 +120,19 @@ gov_khaganate_ruler = {
 		has_reform = khaganate_ruler_reform
 	}
 }
+
+gov_lotr_dorwinrim_tribal = {
+	
+	ruler_male = {
+		1 = REALM_MASTER
+		2 = REALM_MASTER
+		3 = REALM_MASTER
+	}
+
+	government_reform = tribe_mechanic
+
+	trigger = {
+		government = tribal
+		culture_group = culture_group_donath
+	}
+}
