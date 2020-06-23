@@ -16,12 +16,13 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 
+add_core = W79
 add_core = Y48
-owner = Y48
-controller = Y48
+owner = W79
+controller = W79
 
-culture = culture_goblin
-religion = religion_goblin
+culture = culture_dorwinrim
+religion = religion_daen
 
 trade_goods = copper
 
@@ -44,3 +45,10 @@ discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
+2770.12.1 = {
+	add_core = Y48
+	owner = Y48
+	controller = Y48
+	culture = culture_goblin
+	religion = religion_goblin
+}

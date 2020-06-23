@@ -1,0 +1,55 @@
+name = "War of the Dwarves & Orcs"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 740 # Moria
+}
+
+2793.1.1 = {
+	add_attacker = Y23
+	add_attacker = Y16
+	add_attacker = Y07
+	add_attacker = Y06
+	add_attacker = Y18
+	add_attacker = Y08
+	add_attacker = Y09
+	add_attacker = Y12
+	add_attacker = Y10
+	add_attacker = Y11
+	add_attacker = W29
+	add_attacker = Y20
+	add_attacker = Y05
+	add_attacker = Y13
+	add_attacker = Y04
+	add_defender = Y57
+	add_defender = Y63
+	add_defender = Y30
+	add_defender = Y44
+	add_defender = Y56
+	add_defender = Y59
+}
+
+# The war ends with a stillmate
+2799.8.1 = {
+	rem_attacker = Y23
+	rem_attacker = Y16
+	rem_attacker = Y07
+	rem_attacker = Y06
+	rem_attacker = Y18
+	rem_attacker = Y08
+	rem_attacker = Y09
+	rem_attacker = Y12
+	rem_attacker = Y10
+	rem_attacker = Y11
+	rem_attacker = W29
+	rem_attacker = Y20
+	rem_attacker = Y05
+	rem_attacker = Y13
+	rem_attacker = Y04
+	rem_defender = Y57
+	rem_defender = Y63
+	rem_defender = Y30
+	rem_defender = Y44
+	rem_defender = Y56
+	rem_defender = Y59
+}

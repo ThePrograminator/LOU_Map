@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 7
+base_tax = 8
+base_production = 9
 base_manpower = 9
 
 add_core = X68
@@ -23,11 +23,19 @@ controller = X68
 culture = culture_chennacatti
 religion = religion_sirani
 
-trade_goods = naval_supplies
+trade_goods = gems
 
 hre = no
 
 center_of_trade = 1
+
+capital_3_building=yes
+trade_depot_building=yes
+bank_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_castle_building=yes
+garrison_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

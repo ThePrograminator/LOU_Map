@@ -1,13 +1,21 @@
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 5
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W51
+owner = W51
+controller = W51
 
-trade_goods = grain
+culture = culture_orkish
+religion = religion_orkish
+
+trade_goods = iron
 
 hre = no
+
+capital_1_orc_building=yes
+orc_pit_orc_building=yes
+small_arena_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

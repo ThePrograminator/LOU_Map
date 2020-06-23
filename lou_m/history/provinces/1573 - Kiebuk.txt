@@ -10,16 +10,31 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 8
-base_production = 3
-base_manpower = 2
+base_tax = 7
+base_production = 7
+base_manpower = 7
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W80
+owner = W80
+controller = W80
 
-trade_goods = gold
+culture = culture_half_orc
+religion = religion_orkish
+
+trade_goods = naval_supplies
 
 hre = no
+
+capital_2_orc_building=yes
+treasure_trove_orc_building=yes
+overseer_station_orc_building=yes
+metal_works_orc_building=yes
+orc_fissure_orc_building=yes
+warg_arena_orc_building=yes
+siege_works_orc_building=yes
+fort_wooden_walls_orc_building=yes
+large_arena_building=yes
+prisoner_cage_orc_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

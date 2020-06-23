@@ -1,13 +1,23 @@
-base_tax = 1
-base_production = 1
-base_manpower = 1
+is_city = yes
 
-culture = culture_wilderness
-religion = religion_wilderness
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-trade_goods = grain
+add_core = W49
+owner = W49
+controller = W49
+
+culture = culture_luindrim
+religion = religion_moriquendi
+
+trade_goods = herbs
 
 hre = no
+
+town_1_elf_building=yes
+temple_elf_building=yes
+green_pastures_elf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

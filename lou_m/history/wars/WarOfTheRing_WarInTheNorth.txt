@@ -1,0 +1,49 @@
+name = "War in the North"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 287 # Erebor
+}
+
+3018.4.1 = {
+	add_attacker = V39
+	add_attacker = Y30
+	add_attacker = Y63
+	add_attacker = Y01
+	add_attacker = X89
+	add_attacker = Y02
+	add_attacker = X88
+	add_attacker = X99
+	add_attacker = X90
+	add_attacker = X87
+	add_defender = Y22
+	add_defender = Y94
+	add_defender = Z02
+	add_defender = Z03
+	add_defender = Y99
+	add_defender = Z01
+	add_defender = Z04
+	add_defender = W41
+}
+
+# War of the Ring
+3019.5.1 = {
+	rem_attacker = V39
+	rem_attacker = Y30
+	rem_attacker = Y63
+	rem_attacker = Y01
+	rem_attacker = X89
+	rem_attacker = Y02
+	rem_attacker = X88
+	rem_attacker = X99
+	rem_attacker = X90
+	rem_attacker = X87
+	rem_defender = Y22
+	rem_defender = Y94
+	rem_defender = Z02
+	rem_defender = Z03
+	rem_defender = Y99
+	rem_defender = Z01
+	rem_defender = Z04
+	rem_defender = W41
+}

@@ -1,0 +1,24 @@
+bookmark =
+{
+    # Born of Hope
+	name = "LOTR_15_NAME"
+	desc = "LOTR_15_DESC"
+	date = 2930.9.1
+    
+    center = 375
+	country = Z06
+	country = V31
+	country = V33
+	country = V06
+	country = V36
+	country = Y80
+    
+    effect = {
+		Z06 = {
+			add_stability = -2
+		}
+		V36 = {
+			add_manpower = 8
+		}
+	}
+}

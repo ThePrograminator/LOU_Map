@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 7
+base_production = 7
+base_manpower = 8
 
 add_core = X67
 owner = X67
@@ -23,9 +23,15 @@ controller = X67
 culture = culture_harani
 religion = religion_sirani
 
-trade_goods = iron
+trade_goods = wool
 
 hre = no
+
+fortress_2_building=yes
+temple_building=yes
+work_camp_building=yes
+fort_castle_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
