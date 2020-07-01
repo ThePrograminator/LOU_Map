@@ -1,0 +1,15 @@
+# Rohirrim Horse Archers
+type = cavalry
+unit_type = lotr_human
+
+maneuver = 2
+offensive_morale = 3
+defensive_morale = 1
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 3
+defensive_shock = 2
+
+trigger = {
+	primary_culture = culture_eorlingas
+}

@@ -1,0 +1,699 @@
+#Country Name: Please see filename.
+graphical_culture = lotr_dwarf_gfx
+
+color = { 90 95 95 }
+
+revolutionary_colors = { 13 14 0 }
+
+historical_idea_groups = {
+	offensive_ideas
+	diplomatic_ideas
+	defensive_ideas
+	innovativeness_ideas
+	administrative_ideas
+	quantity_ideas
+	economic_ideas
+	aristocracy_ideas
+}
+
+historical_units = {
+	lotr_dwarven_halberdmen_1
+	lotr_dwarven_warriors_2
+	lotr_dwarven_vault_keepers_3
+	lotr_dwarven_iron_guard_4
+	lotr_dwarven_khazad_dum_protecters_5
+
+	lotr_dwarven_dale_cavalry_1
+	lotr_dwarven_boar_riders_2
+	lotr_dwarven_ram_caveraly_3
+}
+
+monarch_names = {
+	"Adwyn #0 " = 20
+	"Adw�n #0 " = 20
+	"Afwald #0 " = 20
+	"Albr�c #0 " = 20
+	"Aldwulf #0 " = 20
+	"Alf #0 " = 20
+	"Ali #0 " = 20
+	"Almar #0 " = 20
+	"Alth�r #0 " = 20
+	"Alvari #0 " = 20
+	"Alwar #0 " = 20
+	"Ambi #0 " = 20
+	"An #0 " = 20
+	"Andrew #0 " = 20
+	"Andri #0 " = 20
+	"Andur #0 " = 20
+	"Andvari #0 " = 20
+	"Ansur #0 " = 20
+	"An�r #0 " = 20
+	"Ari #0 " = 20
+	"Arn #0 " = 20
+	"Arnfinn #0 " = 20
+	"Arnfinnur #0 " = 20
+	"Arnfrei #0 " = 20
+	"Arngrim #0 " = 20
+	"Arnod #0 " = 20
+	"Arn�lfur #0 " = 20
+	"Arn�r #0 " = 20
+	"Asg�l #0 " = 20
+	"Asher #0 " = 20
+	"Asth�r #0 " = 20
+	"Asur #0 " = 20
+	"Athils #0 " = 20
+	"Aurvang #0 " = 20
+	"Austri #0 " = 20
+	"Authun #0 " = 20
+	"Auti #0 " = 20
+	"Avar #0 " = 20
+	"Azagh�l #0 " = 20
+	"Bafur #0 " = 20
+	"Bain #0 " = 20
+	"Balbor #0 " = 20
+	"Balfor #0 " = 20
+	"Balin #0 " = 20
+	"Bearni #0 " = 20
+	"Belg #0 " = 20
+	"Belgen #0 " = 20
+	"Bennt #0 " = 20
+	"Bertel #0 " = 20
+	"Bifur #0 " = 20
+	"Bilin #0 " = 20
+	"Billing #0 " = 20
+	"Bingir #0 " = 20
+	"Bin�r #0 " = 20
+	"Birgir #0 " = 20
+	"Birungur #0 " = 20
+	"Bodruith #0 " = 20
+	"Bofur #0 " = 20
+	"Bogi #0 " = 20
+	"Bolli #0 " = 20
+	"Bolt #0 " = 20
+	"Bombur #0 " = 20
+	"Borgar #0 " = 20
+	"Bori #0 " = 20
+	"Borin #0 " = 20
+	"Bothwar #0 " = 20
+	"Brand #0 " = 20
+	"Breki #0 " = 20
+	"Brestir #0 " = 20
+	"Brodi #0 " = 20
+	"Brogur #0 " = 20
+	"Brosa #0 " = 20
+	"Br�in #0 " = 20
+	"Br�mir #0 " = 20
+	"Br�ni #0 " = 20
+	"Br�r #0 " = 20
+	"Buri #0 " = 20
+	"Burin #0 " = 20
+	"Burkni #0 " = 20
+	"B�in #0 " = 20
+	"B�kk #0 " = 20
+	"B�ld #0 " = 20
+	"B�li #0 " = 20
+	"B�lwerk #0 " = 20
+	"B�si #0 " = 20
+	"B�vor #0 " = 20
+	"Craig #0 " = 20
+	"Dagfinn #0 " = 20
+	"Dagg #0 " = 20
+	"Dagthor #0 " = 20
+	"Dalwin #0 " = 20
+	"Daniel #0 " = 20
+	"Dannel #0 " = 20
+	"Dari #0 " = 20
+	"Dithrik #0 " = 20
+	"Dolgthrasir #0 " = 20
+	"Dori #0 " = 20
+	"Drafli #0 " = 20
+	"Draupnir #0 " = 20
+	"Dr�r #0 " = 20
+	"Durin #0 " = 20
+	"Durstan #0 " = 20
+	"Dwalin #0 " = 20
+	"D�f #0 " = 20
+	"D�fa #0 " = 20
+	"D�i #0 " = 20
+	"D�in #0 " = 20
+	"D�m�r #0 " = 20
+	"D�r #0 " = 20
+	"D�ri #0 " = 20
+	"D�si #0 " = 20
+	"D�thi #0 " = 20
+	"Egil #0 " = 20
+	"Eikinskealdi #0 " = 20
+	"Eilag #0 " = 20
+	"Eil�f #0 " = 20
+	"Eirik #0 " = 20
+	"Ekkill #0 " = 20
+	"Eldur #0 " = 20
+	"Elmar #0 " = 20
+	"Endrith #0 " = 20
+	"Erik #0 " = 20
+	"Erlar #0 " = 20
+	"Evind #0 " = 20
+	"E�wind #0 " = 20
+	"Falgir #0 " = 20
+	"Fangluin #0 " = 20
+	"Fann�r #0 " = 20
+	"Farin #0 " = 20
+	"Farman #0 " = 20
+	"Fastar #0 " = 20
+	"Fathi #0 " = 20
+	"Fealar #0 " = 20
+	"Feggi #0 " = 20
+	"Fengur #0 " = 20
+	"Fiel� #0 " = 20
+	"Finn #0 " = 20
+	"Fith #0 " = 20
+	"Flosi #0 " = 20
+	"Fl�i #0 " = 20
+	"Fl�k #0 " = 20
+	"Folkath #0 " = 20
+	"Fori #0 " = 20
+	"Fost�lf #0 " = 20
+	"Fraeg #0 " = 20
+	"Frerin #0 " = 20
+	"Frithbert #0 " = 20
+	"Frithgeir #0 " = 20
+	"Frosti #0 " = 20
+	"Fr�li #0 " = 20
+	"Fr�ll #0 " = 20
+	"Fr�r #0 " = 20
+	"Fr�rek #0 " = 20
+	"Fr�thi #0 " = 20
+	"Fundin #0 " = 20
+	"F�li #0 " = 20
+	"F�lki #0 " = 20
+	"F�ni #0 " = 20
+	"Gabilshath�r #0 " = 20
+	"Gaddi #0 " = 20
+	"Gagi #0 " = 20
+	"Galdar #0 " = 20
+	"Galfar #0 " = 20
+	"Galmi #0 " = 20
+	"Galti #0 " = 20
+	"Gamall #0 " = 20
+	"Gamil #0 " = 20
+	"Gamli #0 " = 20
+	"Gandalf #0 " = 20
+	"Gansi #0 " = 20
+	"Gapi #0 " = 20
+	"Garthar #0 " = 20
+	"Gaukur #0 " = 20
+	"Gautar #0 " = 20
+	"Geitir #0 " = 20
+	"Gerwith #0 " = 20
+	"Gestur #0 " = 20
+	"Gimbul #0 " = 20
+	"Gimli #0 " = 20
+	"Ginn�r #0 " = 20
+	"Gisur #0 " = 20
+	"Gladir #0 " = 20
+	"Glasi #0 " = 20
+	"Glombur #0 " = 20
+	"Gl�i #0 " = 20
+	"Gl�in #0 " = 20
+	"Gl�mur #0 " = 20
+	"Gorm #0 " = 20
+	"Gowan #0 " = 20
+	"Grani #0 " = 20
+	"Greip #0 " = 20
+	"Greithur #0 " = 20
+	"Grithur #0 " = 20
+	"Gr�in #0 " = 20
+	"Gr�mkell #0 " = 20
+	"Gr�mnir #0 " = 20
+	"Gr�r #0 " = 20
+	"Gr�ss #0 " = 20
+	"Gufi #0 " = 20
+	"Guthr�k #0 " = 20
+	"G�ir #0 " = 20
+	"G�li #0 " = 20
+	"G�llir #0 " = 20
+	"G�rgir #0 " = 20
+	"G�ri #0 " = 20
+	"G�sli #0 " = 20
+	"G�thi #0 " = 20
+	"Hadhod #0 " = 20
+	"Hadi #0 " = 20
+	"Hafberg #0 " = 20
+	"Hafgr�m #0 " = 20
+	"Haflithi #0 " = 20
+	"Hagan #0 " = 20
+	"Hakon #0 " = 20
+	"Halgir #0 " = 20
+	"Halli #0 " = 20
+	"Hallur #0 " = 20
+	"Halmur #0 " = 20
+	"Hamall #0 " = 20
+	"Hannis #0 " = 20
+	"Hann�r #0 " = 20
+	"Hathski #0 " = 20
+	"Hatt #0 " = 20
+	"Haugspori #0 " = 20
+	"Hazad #0 " = 20
+	"Hefti #0 " = 20
+	"Heggi #0 " = 20
+	"Heidmar #0 " = 20
+	"Heikki #0 " = 20
+	"Heithur #0 " = 20
+	"Hergils #0 " = 20
+	"Hers�r #0 " = 20
+	"Hethin #0 " = 20
+	"Hl�vang #0 " = 20
+	"Holmlag #0 " = 20
+	"Hornbori #0 " = 20
+	"Hr�ar #0 " = 20
+	"Hr�lfur #0 " = 20
+	"Hr�tur #0 " = 20
+	"Hugald #0 " = 20
+	"Hwati #0 " = 20
+	"H�kan #0 " = 20
+	"H�lgur #0 " = 20
+	"H�lmar #0 " = 20
+	"H�n #0 " = 20
+	"H�r #0 " = 20
+	"H�rth #0 " = 20
+	"H�sing #0 " = 20
+	"H�var #0 " = 20
+	"Ibun #0 " = 20
+	"Igul #0 " = 20
+	"Imi #0 " = 20
+	"Imir #0 " = 20
+	"Indrith #0 " = 20
+	"Ingiberg #0 " = 20
+	"Ingifast #0 " = 20
+	"Ingthor #0 " = 20
+	"Ingw� #0 " = 20
+	"Ing�l #0 " = 20
+	"Invar #0 " = 20
+	"Isl�fur #0 " = 20
+	"Is�lf #0 " = 20
+	"Ithi #0 " = 20
+	"Ivor #0 " = 20
+	"I�n #0 " = 20
+	"Jari #0 " = 20
+	"Jarm�r #0 " = 20
+	"Jes #0 " = 20
+	"Jolfur #0 " = 20
+	"Jorfi #0 " = 20
+	"J�nar #0 " = 20
+	"J�nsi #0 " = 20
+	"J�run #0 " = 20
+	"J�tgir #0 " = 20
+	"Kabbi #0 " = 20
+	"Kaldi #0 " = 20
+	"Kalman #0 " = 20
+	"Kalmar #0 " = 20
+	"Kambi #0 " = 20
+	"Karli #0 " = 20
+	"Kaupi #0 " = 20
+	"Ketill #0 " = 20
+	"Kettil #0 " = 20
+	"Kh�m #0 " = 20
+	"Kieri #0 " = 20
+	"Kimbur #0 " = 20
+	"Klintur #0 " = 20
+	"Knakk #0 " = 20
+	"Kobbi #0 " = 20
+	"Kol #0 " = 20
+	"Kolfinn #0 " = 20
+	"Kolmar #0 " = 20
+	"Kori #0 " = 20
+	"Korm�k #0 " = 20
+	"Kragg #0 " = 20
+	"Krum #0 " = 20
+	"K�li #0 " = 20
+	"K�ma #0 " = 20
+	"K�n #0 " = 20
+	"K�pur #0 " = 20
+	"Lar #0 " = 20
+	"Larus #0 " = 20
+	"Laufar #0 " = 20
+	"Leiknir #0 " = 20
+	"Leithi #0 " = 20
+	"Lifur #0 " = 20
+	"Lini #0 " = 20
+	"Listein #0 " = 20
+	"Lit #0 " = 20
+	"Litli #0 " = 20
+	"Lofar #0 " = 20
+	"Loftur #0 " = 20
+	"Ludde #0 " = 20
+	"Lurin #0 " = 20
+	"L�fi #0 " = 20
+	"L�kmund #0 " = 20
+	"L�m #0 " = 20
+	"L�mar #0 " = 20
+	"L�ni #0 " = 20
+	"L�thinn #0 " = 20
+	"L�thur #0 " = 20
+	"Mag #0 " = 20
+	"Maggi #0 " = 20
+	"Makan #0 " = 20
+	"Mathi #0 " = 20
+	"Melk�lf #0 " = 20
+	"Melmar #0 " = 20
+	"Meothvitn�r #0 " = 20
+	"Moggi #0 " = 20
+	"Molda #0 " = 20
+	"Mor�r #0 " = 20
+	"Mundgeir #0 " = 20
+	"M�k #0 " = 20
+	"M�m #0 " = 20
+	"M�ndil #0 " = 20
+	"M�r #0 " = 20
+	"M�rdan #0 " = 20
+	"M�rus #0 " = 20
+	"M�tsognir #0 " = 20
+	"Nafni #0 " = 20
+	"Nagli #0 " = 20
+	"Narvi #0 " = 20
+	"Naut #0 " = 20
+	"Nefi #0 " = 20
+	"Nir #0 " = 20
+	"Niri #0 " = 20
+	"Nisti #0 " = 20
+	"Nokki #0 " = 20
+	"Nokkvi #0 " = 20
+	"Nori #0 " = 20
+	"Nos #0 " = 20
+	"N�i #0 " = 20
+	"N�in #0 " = 20
+	"N�l #0 " = 20
+	"N�li #0 " = 20
+	"N�ls #0 " = 20
+	"N�mi #0 " = 20
+	"N�ping #0 " = 20
+	"N�r #0 " = 20
+	"N�rath #0 " = 20
+	"N�rthri #0 " = 20
+	"N�thi #0 " = 20
+	"Odbe�rn #0 " = 20
+	"Oddthor #0 " = 20
+	"Oddvar #0 " = 20
+	"Odmar #0 " = 20
+	"Ofl�r #0 " = 20
+	"Olaf #0 " = 20
+	"Olfun #0 " = 20
+	"Olin #0 " = 20
+	"Olm�th #0 " = 20
+	"Olwir #0 " = 20
+	"Ond�tt #0 " = 20
+	"Ongli #0 " = 20
+	"On� #0 " = 20
+	"On�r #0 " = 20
+	"On�si #0 " = 20
+	"Ori #0 " = 20
+	"Orm #0 " = 20
+	"Orso #0 " = 20
+	"Orvar #0 " = 20
+	"Ossur #0 " = 20
+	"Osvingarth #0 " = 20
+	"Otto #0 " = 20
+	"Ott� #0 " = 20
+	"Ovi #0 " = 20
+	"Oxi #0 " = 20
+	"P�lmar #0 " = 20
+	"Raf #0 " = 20
+	"Rafkell #0 " = 20
+	"Rambi #0 " = 20
+	"Ranald #0 " = 20
+	"Ranfast #0 " = 20
+	"Rangi #0 " = 20
+	"Refkell #0 " = 20
+	"Regin #0 " = 20
+	"Reifnir #0 " = 20
+	"Reng #0 " = 20
+	"Re�kur #0 " = 20
+	"Rhodri #0 " = 20
+	"Rink #0 " = 20
+	"Rokkvi #0 " = 20
+	"Rothgar #0 " = 20
+	"R�ar #0 " = 20
+	"R�kur #0 " = 20
+	"R�ni #0 " = 20
+	"R�nulf #0 " = 20
+	"R�on #0 " = 20
+	"R�sar #0 " = 20
+	"R�thswith #0 " = 20
+	"R�thulf #0 " = 20
+	"R�thwald #0 " = 20
+	"R�tur #0 " = 20
+	"Sandar #0 " = 20
+	"Sax�lf #0 " = 20
+	"Selur #0 " = 20
+	"Sibbi #0 " = 20
+	"Sigar #0 " = 20
+	"Sigbert #0 " = 20
+	"Sigdan #0 " = 20
+	"Sigebert #0 " = 20
+	"Siggir #0 " = 20
+	"Sigir #0 " = 20
+	"Signar #0 " = 20
+	"Sigrun #0 " = 20
+	"Sindri #0 " = 20
+	"Skafti #0 " = 20
+	"Skalli #0 " = 20
+	"Skirfir #0 " = 20
+	"Skolm #0 " = 20
+	"Skorgr�m #0 " = 20
+	"Sk�fith #0 " = 20
+	"Sk�gi #0 " = 20
+	"Sk�var #0 " = 20
+	"Slagvi #0 " = 20
+	"Sl�thi #0 " = 20
+	"Sm�thur #0 " = 20
+	"Sn�r #0 " = 20
+	"Solsi #0 " = 20
+	"Sori #0 " = 20
+	"Spaki #0 " = 20
+	"Spar #0 " = 20
+	"Spiall #0 " = 20
+	"Spor #0 " = 20
+	"Stein #0 " = 20
+	"Sturlu #0 " = 20
+	"St�ling #0 " = 20
+	"St�r #0 " = 20
+	"St�rlak #0 " = 20
+	"St�thkell #0 " = 20
+	"Sveri #0 " = 20
+	"Sweina #0 " = 20
+	"Swerthir #0 " = 20
+	"Swiur #0 " = 20
+	"Sw�fa #0 " = 20
+	"S�lfa #0 " = 20
+	"S�lki #0 " = 20
+	"S�lver #0 " = 20
+	"S�mbi #0 " = 20
+	"S�t #0 " = 20
+	"S�thri #0 " = 20
+	"S�vur #0 " = 20
+	"Tandri #0 " = 20
+	"Teitur #0 " = 20
+	"Telchar #0 " = 20
+	"Thalfar #0 " = 20
+	"Thekk #0 " = 20
+	"Thettm�r #0 " = 20
+	"Thithrand #0 " = 20
+	"Thithrandi #0 " = 20
+	"Thorgest #0 " = 20
+	"Thorin #0 " = 20
+	"Thorkell #0 " = 20
+	"Thorl�k #0 " = 20
+	"Thorm�th #0 " = 20
+	"Thorod #0 " = 20
+	"Thorth #0 " = 20
+	"Thorvald #0 " = 20
+	"Thrand #0 " = 20
+	"Throst #0 " = 20
+	"Throstur #0 " = 20
+	"Thrott�lf #0 " = 20
+	"Thr�in #0 " = 20
+	"Thr�mur #0 " = 20
+	"Thr�r #0 " = 20
+	"Th�lfi #0 " = 20
+	"Th�li #0 " = 20
+	"Th�rgn�r #0 " = 20
+	"Th�rhall #0 " = 20
+	"Tind #0 " = 20
+	"Torfi #0 " = 20
+	"Tori #0 " = 20
+	"Tralli #0 " = 20
+	"Trausti #0 " = 20
+	"Tr�ggwi #0 " = 20
+	"Tulk #0 " = 20
+	"Tweggi #0 " = 20
+	"T�bi #0 " = 20
+	"T�ki #0 " = 20
+	"T�ni #0 " = 20
+	"T�r #0 " = 20
+	"T�rth #0 " = 20
+	"Uffi #0 " = 20
+	"Uggi #0 " = 20
+	"Ulfied #0 " = 20
+	"Ulfkell #0 " = 20
+	"Ultan #0 " = 20
+	"Unn�r #0 " = 20
+	"Uxi #0 " = 20
+	"Vagun #0 " = 20
+	"Valg�t #0 " = 20
+	"Valthor #0 " = 20
+	"Vestri #0 " = 20
+	"Vigg #0 " = 20
+	"Vighar #0 " = 20
+	"Vindalf #0 " = 20
+	"Virfir #0 " = 20
+	"Vit #0 " = 20
+	"Vithar #0 " = 20
+	"Vurin #0 " = 20
+	"V�fill #0 " = 20
+	"V�in #0 " = 20
+	"V�li #0 " = 20
+	"Wafi #0 " = 20
+	"Wafri #0 " = 20
+	"Walgarth #0 " = 20
+	"Wathi #0 " = 20
+	"Wefroth #0 " = 20
+	"Wegeir #0 " = 20
+	"Wegil #0 " = 20
+	"Wethur #0 " = 20
+	"Wigfast #0 " = 20
+	"W�ghtor #0 " = 20
+	"W�li #0 " = 20
+	"W�ni #0 " = 20
+	"W�orn #0 " = 20
+	"W�r #0 " = 20
+	"W�thorm #0 " = 20
+	"Ymar #0 " = 20
+	"Yngvi #0 " = 20
+	"Zirak #0 " = 20
+	"Ziriak #0 " = 20
+	"�ddi #0 " = 20
+	"�gur #0 " = 20
+	"�guti #0 " = 20
+	"�i #0 " = 20
+	"�in #0 " = 20
+	"�lar #0 " = 20
+	"�leif #0 " = 20
+	"�lfrath #0 " = 20
+	"�lfur #0 " = 20
+	"�lfwald #0 " = 20
+	"�li #0 " = 20
+	"�l�f #0 " = 20
+	"�sleif #0 " = 20
+	"�spak #0 " = 20
+	"�srath #0 " = 20
+}
+
+leader_names = {
+	Adwyn Adw�n Afwald Albr�c Aldwulf Alf Ali Almar Alth�r Alvari 
+	Alwar Ambi An Andrew Andri Andur Andvari Ansur An�r Ari 
+	Arn Arnfinn Arnfinnur Arnfrei Arngrim Arnod Arn�lfur Arn�r Asg�l Asher 
+	Asth�r Asur Athils Aurvang Austri Authun Auti Avar Azagh�l Bafur 
+	Bain Balbor Balfor Balin Bearni Belg Belgen Bennt Bertel Bifur 
+	Bilin Billing Bingir Bin�r Birgir Birungur Bodruith Bofur Bogi Bolli 
+	Bolt Bombur Borgar Bori Borin Bothwar Brand Breki Brestir Brodi 
+	Brogur Brosa Br�in Br�mir Br�ni Br�r Buri Burin Burkni B�in 
+	B�kk B�ld B�li B�lwerk B�si B�vor Craig Dagfinn Dagg Dagthor 
+	Dalwin Daniel Dannel Dari Dithrik Dolgthrasir Dori Drafli Draupnir Dr�r 
+	Durin Durstan Dwalin D�f D�fa D�i D�in D�m�r D�r D�ri 
+	D�si D�thi Egil Eikinskealdi Eilag Eil�f Eirik Ekkill Eldur Elmar 
+	Endrith Erik Erlar Evind E�wind Falgir Fangluin Fann�r Farin Farman 
+	Fastar Fathi Fealar Feggi Fengur Fiel� Finn Fith Flosi Fl�i 
+	Fl�k Folkath Fori Fost�lf Fraeg Frerin Frithbert Frithgeir Frosti Fr�li 
+	Fr�ll Fr�r Fr�rek Fr�thi Fundin F�li F�lki F�ni Gabilshath�r Gaddi 
+	Gagi Galdar Galfar Galmi Galti Gamall Gamil Gamli Gandalf Gansi 
+	Gapi Garthar Gaukur Gautar Geitir Gerwith Gestur Gimbul Gimli Ginn�r 
+	Gisur Gladir Glasi Glombur Gl�i Gl�in Gl�mur Gorm Gowan Grani 
+	Greip Greithur Grithur Gr�in Gr�mkell Gr�mnir Gr�r Gr�ss Gufi Guthr�k 
+	G�ir G�li G�llir G�rgir G�ri G�sli G�thi Hadhod Hadi Hafberg 
+	Hafgr�m Haflithi Hagan Hakon Halgir Halli Hallur Halmur Hamall Hannis 
+	Hann�r Hathski Hatt Haugspori Hazad Hefti Heggi Heidmar Heikki Heithur 
+	Hergils Hers�r Hethin Hl�vang Holmlag Hornbori Hr�ar Hr�lfur Hr�tur Hugald 
+	Hwati H�kan H�lgur H�lmar H�n H�r H�rth H�sing H�var Ibun 
+	Igul Imi Imir Indrith Ingiberg Ingifast Ingthor Ingw� Ing�l Invar 
+	Isl�fur Is�lf Ithi Ivor I�n Jari Jarm�r Jes Jolfur Jorfi 
+	J�nar J�nsi J�run J�tgir Kabbi Kaldi Kalman Kalmar Kambi Karli 
+	Kaupi Ketill Kettil Kh�m Kieri Kimbur Klintur Knakk Kobbi Kol 
+	Kolfinn Kolmar Kori Korm�k Kragg Krum K�li K�ma K�n K�pur 
+	Lar Larus Laufar Leiknir Leithi Lifur Lini Listein Lit Litli 
+	Lofar Loftur Ludde Lurin L�fi L�kmund L�m L�mar L�ni L�thinn 
+	L�thur Mag Maggi Makan Mathi Melk�lf Melmar Meothvitn�r Moggi Molda 
+	Mor�r Mundgeir M�k M�m M�ndil M�r M�rdan M�rus M�tsognir Nafni 
+	Nagli Narvi Naut Nefi Nir Niri Nisti Nokki Nokkvi Nori 
+	Nos N�i N�in N�l N�li N�ls N�mi N�ping N�r N�rath 
+	N�rthri N�thi Odbe�rn Oddthor Oddvar Odmar Ofl�r Olaf Olfun Olin 
+	Olm�th Olwir Ond�tt Ongli On� On�r On�si Ori Orm Orso 
+	Orvar Ossur Osvingarth Otto Ott� Ovi Oxi P�lmar Raf Rafkell 
+	Rambi Ranald Ranfast Rangi Refkell Regin Reifnir Reng Re�kur Rhodri 
+	Rink Rokkvi Rothgar R�ar R�kur R�ni R�nulf R�on R�sar R�thswith 
+	R�thulf R�thwald R�tur Sandar Sax�lf Selur Sibbi Sigar Sigbert Sigdan 
+	Sigebert Siggir Sigir Signar Sigrun Sindri Skafti Skalli Skirfir Skolm 
+	Skorgr�m Sk�fith Sk�gi Sk�var Slagvi Sl�thi Sm�thur Sn�r Solsi Sori 
+	Spaki Spar Spiall Spor Stein Sturlu St�ling St�r St�rlak St�thkell 
+	Sveri Sweina Swerthir Swiur Sw�fa S�lfa S�lki S�lver S�mbi S�t 
+	S�thri S�vur Tandri Teitur Telchar Thalfar Thekk Thettm�r Thithrand Thithrandi 
+	Thorgest Thorin Thorkell Thorl�k Thorm�th Thorod Thorth Thorvald Thrand Throst 
+	Throstur Thrott�lf Thr�in Thr�mur Thr�r Th�lfi Th�li Th�rgn�r Th�rhall Tind 
+	Torfi Tori Tralli Trausti Tr�ggwi Tulk Tweggi T�bi T�ki T�ni 
+	T�r T�rth Uffi Uggi Ulfied Ulfkell Ultan Unn�r Uxi Vagun 
+	Valg�t Valthor Vestri Vigg Vighar Vindalf Virfir Vit Vithar Vurin 
+	V�fill V�in V�li Wafi Wafri Walgarth Wathi Wefroth Wegeir Wegil 
+	Wethur Wigfast W�ghtor W�li W�ni W�orn W�r W�thorm Ymar Yngvi 
+	Zirak Ziriak �ddi �gur �guti �i �in �lar �leif �lfrath 
+	�lfur �lfwald �li �l�f �sleif �spak �srath
+}
+
+ship_names = {
+	Eagletree
+	Feathersun
+	Lowtree
+	Distantblade
+	Pineweaver
+	Oceanfang
+	Humbleripper
+	Wiseblood
+	Sunmantle
+	Grandpunch
+	Pyrefollower
+	Hawkfall
+	Heartsteam
+	Stonestrength
+	Mastertide
+	Gloomsworn
+	Redfist
+	Riverwinds
+	Skyspire
+	Fireclaw
+	Lunapike
+	Whitbane
+	Tarrensnow
+	Leafroot
+	Softswallow
+	Peacereaper
+	Stagarm
+	Monsterfury
+	Horsebinder
+	Strongmoon
+	Moltenmourn
+	Skymight
+	Covenstriker
+	Glowstrider
+	Farwatcher
+	Fallendown
+	Tarrengem
+	Stonestar
+	Fernstriker
+	Roughheart
+}
+
+army_names = {
+	"Regiment of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

@@ -1,0 +1,20 @@
+# Haradrim Archers
+type = infantry
+unit_type = lotr_human
+
+maneuver = 1
+offensive_morale = 1
+defensive_morale = 2
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 0
+defensive_shock = 1
+
+trigger = {
+	OR = {
+		primary_culture = culture_haruze
+		primary_culture = culture_eluzan
+		primary_culture = culture_siaken
+		primary_culture = culture_haludji
+	}
+}

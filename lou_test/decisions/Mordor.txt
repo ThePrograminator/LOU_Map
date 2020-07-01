@@ -1,0 +1,153 @@
+country_decisions = {
+	
+	rebuild_barad_dur = {
+		major = yes
+	
+		potential = {
+			tag = V17
+			
+			NOT = {
+				has_country_flag = rebuilding_barad_dur_flag
+				has_country_flag = rebuilding_barad_dur_finished_flag
+				started_in = 2960.1.1
+			}
+		}
+		
+		allow = {
+			tag = V17
+			
+			#Barad Dur
+			639 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+		}
+		
+		effect = {	
+			add_prestige = 25
+			
+			add_country_modifier = {
+				name = "rebuilding_barad_dur"
+				duration = 3285
+			}
+			
+			country_event = {
+				id = flavor_mordor.4
+				#days = 1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 0
+				manpower_percentage = 0.45
+			}
+		}
+	}
+	
+	#Sauron’s Road
+	build_saurons_road = {
+		major = yes
+	
+		potential = {
+			tag = V17
+			
+			NOT = {
+				has_country_flag = building_saurons_road_flag
+				has_country_flag = building_saurons_road_finished_flag
+				started_in = 2960.1.1
+			}
+		}
+		
+		allow = {
+			tag = V17
+
+			#Gordul
+			3040 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+			
+			#Lag-Uyakdgul
+			3029 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+			
+			#Morgurth
+			3039 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+			
+			#Carach Angren
+			149 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+			
+			#udun
+			71 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+			
+			#Barad Dur
+			639 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+			
+			#Morannon (The Black Gate)
+			675 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+
+			#Morgai
+			146 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+
+			#Cirith Ungol
+			148 = {
+				culture = culture_orkish
+				religion = religion_orkish
+				owned_by = V17
+			}
+		}
+		
+		effect = {	
+			add_prestige = 25
+			
+			add_country_modifier = {
+				name = "building_saurons_road"
+				duration = 1095
+			}
+			
+			country_event = {
+				id = flavor_mordor.9
+				#days = 1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 0
+				manpower_percentage = 0.45
+			}
+		}
+	}
+}

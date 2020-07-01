@@ -1,0 +1,53 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+### Nation specific idea groups
+
+GOB_ideas = {
+	start = {
+		heir_chance = 0.5
+		interest = -1
+	}
+
+	bonus = {
+		unjustified_demands = -0.5
+	}
+	
+	trigger = {
+		technology_group = lotr_goblin
+	}
+	free = yes		#will be added at load.
+	
+	destruction = {
+		enemy_core_creation = 0.1
+		province_warscore_cost = -0.1
+	}
+	strength_in_numbers = {
+		leader_land_shock = 1
+		global_manpower_modifier = 0.1
+	}
+	loot_everything = {
+		loot_amount = 0.25
+		prestige_from_land = 0.1
+	}
+	dark_machines = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+		production_efficiency = 0.05
+	}
+	your_land_is_ours = {
+		core_creation = -0.5
+	}
+	orcs_and_men_from_afar = {
+		#possible_mercenaries = 2.0
+		mercenary_cost = -0.25
+	}
+	controlling_the_mass = {
+		years_of_nationalism = -5
+		stability_cost_modifier = -0.1
+		global_autonomy = 0.05
+	}
+}

@@ -1,0 +1,32 @@
+namespace = cede_test
+normal_or_historical_nations = yes
+
+country_event = {
+	id = cede_test.1
+	title = "cede_test.1.t"
+	desc = "cede_test.1.d"
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = "cede_test.1.a"
+			
+		1 = {
+			cede_province = ---
+		}
+
+		287 = {
+			cede_province = ---
+		}
+	}
+}

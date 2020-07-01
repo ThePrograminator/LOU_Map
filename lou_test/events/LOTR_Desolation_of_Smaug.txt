@@ -1,0 +1,362 @@
+########################################
+# Events for Desolation of Smaug
+########################################
+
+namespace = flavor_desolation_of_smaug
+normal_or_historical_nations = yes
+
+##########################
+#Spawn Smaug
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.1
+	title = desolation_of_smaug.1.t
+	desc = desolation_of_smaug.1.d
+	picture = DESOLATION_OF_SMAUG_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		check_date = {
+			YEAR = 2770
+			MONTH = 0
+			STARTED_BEFORE = 2770.1.1
+		}
+		287 = {
+			owned_by = PREV
+		}
+		NOT = {
+			has_country_flag = desolation_of_smaug
+			has_country_flag = desolation_of_smaug_lost
+			has_country_flag = desolation_of_smaug_won
+			has_country_flag = desolation_of_enforced
+			has_global_flag = desolation_of_smaug_start
+		}
+	}
+	
+	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.1 - Option : immediate" }
+
+		set_country_flag = desolation_of_smaug_owner
+		set_global_flag = desolation_of_smaug_start
+		hidden_effect = {
+			country_event = {
+				id = flavor_desolation_of_smaug.5
+				days = 5
+			}
+		}
+		
+		#Erebor
+		287 = {
+			spawn_rebels = {
+				type = smaug_rebels
+				size = 1
+				leader = "Smaug The Terrible"
+			}
+		} 
+	}
+	
+	option = {		# Event fired
+		name = "desolation_of_smaug.1.a"
+
+	}  
+}
+
+##########################
+#Smaug Lost
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.2
+	title = "desolation_of_smaug.2.t"
+	desc = "desolation_of_smaug.2.d"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = desolation_of_smaug_owner
+		has_country_flag = desolation_of_smaug_enforced
+		NOT = {
+			has_global_flag = desolation_of_smaug_lost
+		}
+	}
+
+	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.2 - Option : immediate" }
+
+		set_global_flag = desolation_of_smaug_lost
+		disband_rebels = smaug_rebels
+		if = {
+			limit = {
+				exists = Y16
+				Y16 = {
+					ai = yes
+				}
+			}
+			ROOT = {
+				switch_tag = Y16
+			}
+		}
+		else_if = {
+			limit = {
+				exists = Y23
+				Y23 = {
+					ai = yes
+				}
+			}
+			ROOT = {
+				switch_tag = Y23
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = flavor_desolation_of_smaug.3
+			}
+		}
+	}
+	
+	option = {
+		name = "desolation_of_smaug.2.a"
+		custom_tooltip = desolation_of_smaug_text_1
+	}
+}
+
+##########################
+#Cleanup Smaug Lost
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.3
+	title = "desolation_of_smaug.3.t"
+	desc = "desolation_of_smaug.3.d"
+	picture = SIEGE_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = desolation_of_smaug_owner
+	}
+	
+	option = {
+		name = "desolation_of_smaug.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.3 - Option : desolation_of_smaug.3.a" }
+
+		custom_tooltip = desolation_of_smaug_text_1
+		hidden_effect = {
+			desolation_of_smaug_lost_effect = yes
+		}		
+	}
+}
+
+##########################
+#Win Smaug
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.4
+	title = "desolation_of_smaug.4.t"
+	desc = "desolation_of_smaug.4.d"
+	picture = SIEGE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = desolation_of_smaug_owner
+		NOT = {
+			has_global_flag = desolation_of_smaug_lost
+			has_global_flag = desolation_of_smaug_won
+			#any_owned_province = {
+			any_province = {
+				num_of_units_in_province = {
+					who = REB
+					type = smaug_rebels
+					amount = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "desolation_of_smaug.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.4 - Option : desolation_of_smaug.4.a" }
+
+		add_stability = 2
+		add_prestige = 50
+		set_global_flag = desolation_of_smaug_won
+		hidden_effect = {
+			desolation_of_smaug_won_effect = yes
+		}
+	}	
+		
+	option = {
+		name = "desolation_of_smaug.4.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.4 - Option : desolation_of_smaug.4.b" }
+
+		add_stability = 2
+		add_legitimacy = 25
+		set_global_flag = desolation_of_smaug_won
+		add_country_modifier = {
+			name = honoured_the_dead_debuff
+			duration = 3650
+		}
+		hidden_effect = {
+			desolation_of_smaug_won_effect = yes
+		}
+	}
+}
+
+##########################
+#Call Elven Aid Event
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.5
+	title = "desolation_of_smaug.5.t"
+	desc = "desolation_of_smaug.5.d"
+	picture = CONQUEST_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = desolation_of_smaug_owner
+		Y67 = {
+			ai = yes
+		}
+		alliance_with = Y67
+		287 = { 
+			controlled_by = ROOT
+		}
+		316 = { 
+			controlled_by = Y67
+		}
+		NOT = {
+			has_global_flag = desolation_of_smaug_lost
+			has_global_flag = desolation_of_smaug_won
+			has_global_flag = desolation_of_smaug_no_aid
+			has_global_flag = desolation_of_smaug_aid
+		}
+	}
+
+	option = {
+		name = "desolation_of_smaug.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.5 - Option : desolation_of_smaug.5.a" }
+
+		random_list = {
+			20 = {
+				country_event = {
+					id = flavor_desolation_of_smaug.6
+				}
+			}
+			80 = {
+				country_event = {
+					id = flavor_desolation_of_smaug.7
+				}
+			}
+		}
+	}			
+}
+
+##########################
+#Get Elven Aid
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.6
+	title = "desolation_of_smaug.6.t"
+	desc = "desolation_of_smaug.6.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = desolation_of_smaug_owner
+		NOT = {
+			has_global_flag = desolation_of_smaug_lost
+			has_global_flag = desolation_of_smaug_won
+			has_global_flag = desolation_of_smaug_no_aid
+			has_global_flag = desolation_of_smaug_aid
+		}
+	}
+
+	option = {
+		name = "desolation_of_smaug.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.6 - Option : desolation_of_smaug.6.a" }
+
+		Y67 = {
+			add_historical_friend = ROOT
+			add_opinion = {
+				who = ROOT
+				modifier = thandruil_helped_ally
+				years = 100
+			}
+		}
+		
+		add_historical_friend = Y67
+		add_opinion = {
+			who = Y67
+			modifier = thandruil_helped
+			years = 100
+		}
+		hidden_effect = {
+			lotr_elven_silvan_poachers_3 = 527
+			lotr_elven_silvan_poachers_3 = 527
+			lotr_elven_silvan_poachers_3 = 527
+			lotr_elven_silvan_poachers_3 = 527
+			lotr_elven_silvan_mounted_sentinels_2 = 527
+			set_global_flag = desolation_of_smaug_aid
+		}
+	}			
+}
+
+##########################
+#Denied Elven Aid
+##########################
+country_event = {
+	id = flavor_desolation_of_smaug.7
+	title = "desolation_of_smaug.7.t"
+	desc = "desolation_of_smaug.7.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = desolation_of_smaug_owner
+		NOT = {
+			has_global_flag = desolation_of_smaug_lost
+			has_global_flag = desolation_of_smaug_won
+			has_global_flag = desolation_of_smaug_no_aid
+			has_global_flag = desolation_of_smaug_aid
+		}
+	}
+
+	option = {
+		name = "desolation_of_smaug.7.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_desolation_of_smaug.7 - Option : desolation_of_smaug.7.a" }
+
+		Y67 = {
+			add_opinion = {
+				who = ROOT
+				modifier = thandruil_left_ally
+				years = 200
+			}
+		}
+		add_opinion = {
+			who = Y67
+			modifier = thandruil_left
+			years = 200
+		}
+		set_global_flag = desolation_of_smaug_no_aid
+	}			
+}

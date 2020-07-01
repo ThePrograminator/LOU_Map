@@ -1,0 +1,15 @@
+# Rohirrim Archers
+type = infantry
+unit_type = lotr_human
+
+maneuver = 1
+offensive_morale = 4
+defensive_morale = 3
+offensive_fire = 2
+defensive_fire = 3
+offensive_shock = 2
+defensive_shock = 3
+
+trigger = {
+	primary_culture = culture_eorlingas
+}

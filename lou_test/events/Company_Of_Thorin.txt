@@ -1,0 +1,1776 @@
+##################################################
+# Institutions 
+#
+# written by DKStranger
+##################################################
+
+
+namespace = company_of_thorin_events
+
+#Current position of thorin
+province_event = {
+	id = company_of_thorin_events.1
+	title = company_of_thorin_events.1.t
+	desc = company_of_thorin_events.1.d
+	picture = THORINS_COMPANY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+		}
+		company_of_thorin = 100
+		NOT = {
+			province_id = 83
+			has_province_modifier = thorin_passed
+			has_province_modifier = thorin_position
+		}
+	}
+	
+	immediate = {
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - province : [Root.GetName] company_of_thorin_events.1" }
+		set_province_flag = thorin_set_position
+		add_province_modifier = {
+			name = "thorin_position"
+			duration = -1
+			hidden = yes
+		}
+		save_event_target_as = thorin_new_position
+		every_neighbor_province = {
+			limit = {
+				company_of_thorin = 100
+				has_province_modifier = thorin_position
+				
+				NOT = {
+					province_id = ROOT
+				}
+			}
+			
+			add_province_modifier = {
+				name = "thorin_passed"
+				duration = -1
+				hidden = yes
+			}
+			remove_province_modifier = thorin_position
+			clr_province_flag = thorin_set_position
+		}
+	}
+
+	option = {
+		name = company_of_thorin_events.1.a
+		
+	}
+}
+
+#Trolls Attack(Hidden)
+country_event = {
+	id = company_of_thorin_events.2
+	title = company_of_thorin_events.2.t
+	desc = company_of_thorin_events.2.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		384 = {
+			company_of_thorin = 100
+			has_province_modifier = thorin_position
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_trolls
+			has_global_flag = company_of_thorin_die_trolls
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			95 = {
+				set_global_flag = company_of_thorin_sur_trolls
+			}
+			5 = {
+				set_global_flag = company_of_thorin_die_trolls
+			}
+		}
+	}
+
+	#Survives
+	option = {
+		name = company_of_thorin_events.2.a
+		
+		trigger = {
+			has_global_flag = company_of_thorin_sur_trolls
+		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.2 - Option : company_of_thorin_events.2.a" }
+	}
+	
+	#Dies
+	option = {
+		name = company_of_thorin_events.2.b
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_trolls
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.2 - Option : company_of_thorin_events.2.b" }
+		
+		every_country = {
+			limit = {
+				ai = no
+				NOT = { tag = ROOT }
+			}
+			country_event = { id = company_of_thorin_events.20 }
+		}
+		set_global_flag = company_of_thorin_lost
+	}
+}
+
+#Goblin Town
+country_event = {
+	id = company_of_thorin_events.3
+	title = company_of_thorin_events.3.t
+	desc = company_of_thorin_events.3.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		558 = {
+			company_of_thorin = 100
+			has_province_modifier = thorin_position
+			
+			owner = {
+				technology_group = lotr_goblin
+				religion = religion_goblin
+				primary_culture = culture_goblin
+			}
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_goblins
+			has_global_flag = company_of_thorin_die_goblins
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			90 = {
+				set_global_flag = company_of_thorin_sur_goblins
+			}
+			10 = {
+				set_global_flag = company_of_thorin_die_goblins
+			}
+		}
+	}
+
+	#Survives
+	option = {
+		name = company_of_thorin_events.3.a
+		
+		trigger = {
+			has_global_flag = company_of_thorin_sur_goblins
+		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.4 - Option : company_of_thorin_events.4.a" }
+	}
+	
+	#Dies
+	option = {
+		name = company_of_thorin_events.3.b
+		trigger = {
+			has_global_flag = company_of_thorin_die_goblins
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.3 - Option : company_of_thorin_events.3.b" }
+		
+		every_country = {
+			limit = {
+				ai = no
+				NOT = { tag = ROOT }
+			}
+			country_event = { id = company_of_thorin_events.20 }
+		}
+		set_global_flag = company_of_thorin_lost
+	}
+}
+
+#Mirkwood Spiders
+country_event = {
+	id = company_of_thorin_events.4
+	title = company_of_thorin_events.4.t
+	desc = company_of_thorin_events.4.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		526 = {
+			company_of_thorin = 100
+			has_province_modifier = thorin_position
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_spiders
+			has_global_flag = company_of_thorin_die_spiders
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			95 = {
+				set_global_flag = company_of_thorin_sur_spiders
+			}
+			5 = {
+				set_global_flag = company_of_thorin_die_spiders
+			}
+		}
+	}
+
+	#Survives
+	option = {
+		name = company_of_thorin_events.4.a
+		
+		trigger = {
+			has_global_flag = company_of_thorin_sur_spiders
+		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.4 - Option : company_of_thorin_events.4.a" }
+	}
+	
+	#Dies
+	option = {
+		name = company_of_thorin_events.4.b
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_spiders
+		}
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.4 - Option : company_of_thorin_events.4.b" }
+
+		every_country = {
+			limit = {
+				ai = no
+				NOT = { tag = ROOT }
+			}
+			country_event = { id = company_of_thorin_events.20 }
+		}
+		set_global_flag = company_of_thorin_lost
+	}
+}
+
+#Smaug
+country_event = {
+	id = company_of_thorin_events.5
+	title = company_of_thorin_events.5.t
+	desc = company_of_thorin_events.5.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		528 = {
+			company_of_thorin = 100
+			has_province_modifier = thorin_position
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_won
+			has_global_flag = company_of_thorin_sur_smaug
+			has_global_flag = company_of_thorin_die_smaug
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			70 = {
+				set_global_flag = company_of_thorin_sur_smaug
+			}
+			30 = {
+				set_global_flag = company_of_thorin_die_smaug
+			}
+		}
+	}
+
+	#Survives, Eryn Galen and Lake Town wants stuff
+	option = {
+		name = company_of_thorin_events.5.a
+		trigger = {
+			has_global_flag = company_of_thorin_sur_smaug
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.5 - Option : company_of_thorin_events.5.a" }
+		
+		set_global_flag = company_of_thorin_won
+		
+		country_event = {
+			id = company_of_thorin_events.15
+		}
+		set_global_flag = company_of_thorin_eryn_galen_decision
+		Y67 = {
+			country_event = {
+				id = company_of_thorin_events.6
+				days = 3
+			}
+		}
+		
+		
+		set_global_flag = company_of_thorin_lake_town_decision
+		V51 = {
+			country_event = {
+				id = company_of_thorin_events.7
+				days = 3
+			}
+		}
+	}
+	
+	#Dies, Nothing more happens
+	option = {
+		name = company_of_thorin_events.5.b
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_smaug
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.5 - Option : company_of_thorin_events.5.b" }
+		
+		every_country = {
+			limit = {
+				ai = no
+				NOT = { tag = ROOT }
+			}
+			country_event = { id = company_of_thorin_events.20 }
+		}
+		set_global_flag = company_of_thorin_lost
+	}
+}
+
+#Eryn Galen Demand Stuff
+country_event = {
+	id = company_of_thorin_events.6
+	title = company_of_thorin_events.6.t
+	desc = company_of_thorin_events.6.d
+	picture = ACCUSATION_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y67
+		
+		any_province = { 
+			owned_by = Y67
+			region = mirkwood_region
+		}
+		
+		has_global_flag = company_of_thorin_won
+		has_global_flag = company_of_thorin_eryn_galen_decision
+		#has_global_flag = erebor_lost_smaug
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_country_flag = company_of_thorin_eryn_galen_demand
+			has_country_flag = company_of_thorin_eryn_galen_respond
+			has_country_flag = company_of_thorin_eryn_galen_refuse
+		}
+		is_vassal = no
+	}
+
+	#Demand Jewels
+	option = {
+		name = company_of_thorin_events.6.a
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.6 - Option : company_of_thorin_events.6.a" }
+
+		set_country_flag = company_of_thorin_eryn_galen_demand
+		set_country_flag = company_of_thorin_eryn_galen_respond
+		
+		Y67 = {
+			form_coalition_against = Y22
+		}
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+	}
+	
+	#Don't Demand
+	option = {
+		name = company_of_thorin_events.6.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.6 - Option : company_of_thorin_events.6.b" }
+		
+		set_country_flag = company_of_thorin_eryn_galen_refuse
+		set_country_flag = company_of_thorin_eryn_galen_respond
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+#Lake Town Demand Stuff
+country_event = {
+	id = company_of_thorin_events.7
+	title = company_of_thorin_events.7.t
+	desc = company_of_thorin_events.7.d
+	picture = LIBERUM_VETO_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = V51
+		
+		528 = { 
+			owned_by = V51
+		}
+		
+		has_global_flag = company_of_thorin_won
+		has_global_flag = company_of_thorin_lake_town_decision
+		#has_global_flag = erebor_lost_smaug
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_country_flag = company_of_thorin_lake_town_demand
+			has_country_flag = company_of_thorin_lake_town_respond
+			has_country_flag = company_of_thorin_lake_town_refuse
+		}
+		is_vassal = no
+	}
+
+	#Demand Money
+	option = {
+		name = company_of_thorin_events.7.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.7 - Option : company_of_thorin_events.7.a" }
+		
+		set_country_flag = company_of_thorin_lake_town_demand
+		set_country_flag = company_of_thorin_lake_town_respond
+		
+		V51 = {
+			form_coalition_against = Y22
+		}
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+	}
+	
+	#Don't Demand
+	option = {
+		name = company_of_thorin_events.7.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.7 - Option : company_of_thorin_events.7.b" }
+		
+		set_country_flag = company_of_thorin_lake_town_refuse
+		set_country_flag = company_of_thorin_lake_town_respond
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+#Only Eryn Galen Demand
+country_event = {
+	id = company_of_thorin_events.8
+	title = company_of_thorin_events.8.t
+	desc = company_of_thorin_events.8.d
+	picture = ACCUSATION_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+		has_global_flag = company_of_thorin_won
+		#has_global_flag = erebor_lost_smaug
+		
+		AND = {
+			Y67 = {
+				has_country_flag = company_of_thorin_eryn_galen_demand
+				has_country_flag = company_of_thorin_eryn_galen_respond
+			}
+		}
+		
+		AND = {
+			V51 = {
+				has_country_flag = company_of_thorin_lake_town_respond
+			}
+		}	
+		
+		NOT = {
+			V51 = {
+				has_country_flag = company_of_thorin_lake_town_demand
+			}
+			has_global_flag = company_of_thorin_lost
+		}
+	}
+
+	#Give Stuff
+	option = {
+		name = company_of_thorin_events.8.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.8 - Option : company_of_thorin_events.8.a" }
+		
+		set_global_flag = company_of_thorin_give_eryn_galen
+		
+		add_stability = -1
+		add_prestige = -50
+		
+		Y67 = {
+			add_treasury = 4000
+			custom_tooltip = company_of_thorin_give_eryn_galen_girion
+		}
+		ai_chance = { 
+			factor = 10
+		}
+	}
+	
+	#Refuse
+	option = {
+		name = company_of_thorin_events.8.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.8 - Option : company_of_thorin_events.8.b" }
+		
+		set_global_flag = company_of_thorin_refuse_eryn_galen
+		
+		#country_event = {
+		#	id = company_of_thorin_events.11
+		#}
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 0
+				Y67 = {
+					military_strength = {
+						who = ROOT
+						value = 3.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Only Lake Town Demand
+country_event = {
+	id = company_of_thorin_events.9
+	title = company_of_thorin_events.9.t
+	desc = company_of_thorin_events.9.d
+	picture = ACCUSATION_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+		has_global_flag = company_of_thorin_won
+		#has_global_flag = erebor_lost_smaug
+		
+		AND = {
+			Y67 = {
+				has_country_flag = company_of_thorin_eryn_galen_respond
+			}
+		}
+		
+		AND = {
+			V51 = {
+				has_country_flag = company_of_thorin_lake_town_demand
+				has_country_flag = company_of_thorin_lake_town_respond
+			}
+		}	
+		
+		NOT = {
+			Y67 = {
+				has_country_flag = company_of_thorin_eryn_galen_demand
+			}
+			has_global_flag = company_of_thorin_lost
+		}
+	}
+
+	#Give Stuff
+	option = {
+		name = company_of_thorin_events.9.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.9 - Option : company_of_thorin_events.9.a" }
+		
+		set_global_flag = company_of_thorin_give_lake_town
+		
+		add_stability = -1
+		add_prestige = -50
+		
+		V51 = {
+			add_treasury = 2000
+		}
+		ai_chance = { 
+			factor = 10 
+		}
+	}
+	
+	#Refuse
+	option = {
+		name = company_of_thorin_events.9.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.9 - Option : company_of_thorin_events.9.a" }
+		
+		set_global_flag = company_of_thorin_refuse_lake_town
+		
+		#country_event = {
+		#	id = company_of_thorin_events.12
+		#}
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0
+				V51 = {
+					military_strength = {
+						who = ROOT
+						value = 3.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Eryn Galen and Lake Town Demand Stuff
+country_event = {
+	id = company_of_thorin_events.10
+	title = company_of_thorin_events.10.t
+	desc = company_of_thorin_events.10.d
+	picture = ACCUSATION_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+		AND = {
+			Y67 = {
+				has_country_flag = company_of_thorin_eryn_galen_demand
+				has_country_flag = company_of_thorin_eryn_galen_respond
+			}
+		}
+		
+		AND = {
+			V51 = {
+				has_country_flag = company_of_thorin_lake_town_demand
+				has_country_flag = company_of_thorin_lake_town_respond
+			}
+		}	
+		
+		#AND = {
+		#	Y63 = {
+		#		has_country_flag = company_of_thorin_gundabad_respond
+		##	}
+		#}
+		
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+			has_global_flag = company_of_thorin_refuse_both
+			has_global_flag = company_of_thorin_give_both
+		}
+	}
+
+	#Give Stuff
+	option = {
+		name = company_of_thorin_events.10.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.10 - Option : company_of_thorin_events.10.a" }
+		
+		set_global_flag = company_of_thorin_give_both
+		
+		add_stability = -1
+		add_prestige = -50
+		
+		Y67 = {
+			add_treasury = 5000
+			custom_tooltip = company_of_thorin_give_eryn_galen_girion
+		}
+		
+		V51 = {
+			add_treasury = 3000
+		}
+		ai_chance = { 
+			factor = 10 
+		}
+	}
+	
+	#Refuse
+	option = {
+		name = company_of_thorin_events.10.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.10 - Option : company_of_thorin_events.10.b" }
+		
+		set_global_flag = company_of_thorin_refuse_both
+		
+		add_prestige = 50
+		
+		#country_event = {
+		#	id = company_of_thorin_events.13
+		#}
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0
+				Y67 = {
+					military_strength = {
+						who = ROOT
+						value = 2.0
+					}
+				}
+				V51 = {
+					military_strength = {
+						who = ROOT
+						value = 2.0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Eryn Galen Declare war alone
+country_event = {
+	id = company_of_thorin_events.11
+	title = company_of_thorin_events.11.t
+	desc = company_of_thorin_events.11.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+	}
+	
+	immediate = {
+		Y67 = {
+			declare_war_with_cb = {
+				who = Y22
+				casus_belli = cb_take_erebor_both
+			}
+			country_event = {
+				id = company_of_thorin_events.14
+			}
+		}
+	}
+
+	#War Eryn Galen
+	option = {
+		name = company_of_thorin_events.11.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.11 - Option : company_of_thorin_events.11.a" }
+		
+		set_global_flag = company_of_thorin_eryn_galen_war
+		
+		tooltip = {
+			Y67 = {
+				declare_war_with_cb = {
+					who = Y22
+					casus_belli = cb_take_erebor_both
+				}
+			}
+		}
+	}
+}
+
+#Lake Town Declare war alone
+country_event = {
+	id = company_of_thorin_events.12
+	title = company_of_thorin_events.12.t
+	desc = company_of_thorin_events.12.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+	}
+	
+	immediate = {
+		V51 = {
+			declare_war_with_cb = {
+				who = Y22
+				casus_belli = cb_take_erebor_both
+			}
+			country_event = {
+				id = company_of_thorin_events.14
+			}
+		}
+	}
+
+	#War Lake Town
+	option = {
+		name = company_of_thorin_events.12.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.12 - Option : company_of_thorin_events.12.a" }
+		
+		set_global_flag = company_of_thorin_lake_town_war
+		
+		tooltip = {
+			V51 = {
+				declare_war_with_cb = {
+					who = Y22
+					casus_belli = cb_take_erebor_both
+				}
+			}
+		}
+	}
+}
+
+#Eryn Galen and Lake Town Declare war Together
+country_event = {
+	id = company_of_thorin_events.13
+	title = company_of_thorin_events.13.t
+	desc = company_of_thorin_events.13.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+	}
+	
+	immediate = {
+		V51 = {
+			form_coalition_against = Y22
+			country_event = {
+				id = company_of_thorin_events.14
+			}
+		}
+		Y67 = {
+			form_coalition_against = Y22
+			declare_war_with_cb = {
+				who = Y22
+				casus_belli = cb_take_erebor_both
+			}
+			country_event = {
+				id = company_of_thorin_events.14
+			}
+		}
+	}
+
+	#War Both
+	option = {
+		name = company_of_thorin_events.13.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.13 - Option : company_of_thorin_events.13.a" }
+		
+		set_global_flag = company_of_thorin_both_war
+		
+		tooltip = {
+			V51 = {
+				form_coalition_against = Y22
+			}
+			Y67 = {
+				form_coalition_against = Y22
+				declare_war_with_cb = {
+					who = Y22
+					casus_belli = cb_take_erebor_both
+				}
+			}
+		}
+	}
+}
+
+#Eryn Galen and Lake Town receive respond
+country_event = {
+	id = company_of_thorin_events.14
+	title = company_of_thorin_events.14.t
+	desc = company_of_thorin_events.14.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = V51
+			tag = Y67
+		}
+	}
+
+	#War Both
+	option = {
+		name = company_of_thorin_events.14.a
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.14 - Option : company_of_thorin_events.14.a" }
+	}
+}
+
+#Smaug Dead, Form Erebor (Hidden)
+country_event = {
+	id = company_of_thorin_events.15
+	title = company_of_thorin_events.15.t
+	desc = company_of_thorin_events.15.d
+	picture = HRE_eventPicture
+
+	major = yes
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		
+	}
+
+	#yes
+	option = {
+		name = company_of_thorin_events.15.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.15 - Option : company_of_thorin_events.15.a" }
+		
+		the_lonely_mountain_area = {
+			add_core = Y22
+			cede_province = Y22
+		}
+
+		anglad_area = {
+			limit = {
+				is_empty = yes
+			}
+			add_core = Y22
+			cede_province = Y22
+		}
+		
+		287 = {
+			change_culture = culture_longbeard
+			change_religion = religion_mahal
+			change_trade_goods = gold
+			add_province_modifier = {
+				name = ruins_debuff
+				duration = -1
+			}
+		}
+
+		1951 = {
+			change_trade_goods = iron
+		}
+
+		1951 = {
+			change_trade_goods = copper
+		}
+		
+
+		V51 = {
+			change_tag = Y94
+		}
+		
+		527 = {
+			cede_province = Y94
+			add_core = Y94
+			remove_core = V51
+			change_trade_goods = silk
+			add_province_modifier = {
+				name = ruins_debuff
+				duration = -1
+			}
+		}
+		
+		if = {
+			limit = {
+				528 = {
+					is_bad_race_province = no
+				}
+			}
+			528 = {
+				add_province_modifier = {
+					name = ruins_debuff
+					duration = -1
+				}
+			}
+		}
+		
+		Y22 = {
+			add_treasury = 10000
+			if = {
+				limit = {
+					exists = Y23
+				}
+				add_adm_tech = Y23
+				add_dip_tech = Y23
+				add_mil_tech = Y23
+			}
+		}
+		hidden_effect = {
+			Y23 = {
+				country_event = {
+					id = company_of_thorin_events.16
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+#Erebor is formed, Iron Hills play as vassal or change to erebor
+country_event = {
+	id = company_of_thorin_events.16
+	title = company_of_thorin_events.16.t
+	desc = company_of_thorin_events.16.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y23
+	}
+
+	#Change to Erebor
+	option = {
+		name = company_of_thorin_events.16.a
+		
+		trigger = {
+			ai = no 
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.16 - Option : company_of_thorin_events.16.a" }
+		
+		swap_free_idea_group = yes
+		switch_tag = Y22
+		
+		Y22 = {
+			vassalize = Y23
+		}
+		
+		Y23 = {
+			add_opinion = {
+				who = Y22
+				modifier = erebor_master
+				years = 500
+			}
+			add_country_modifier = {
+				name = iron_hills_subject
+				duration = -1
+			}
+		}
+			
+		custom_tooltip = erebor_switch_nation_meta
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = Y23
+					NOT = {
+						area = iron_hills_area
+					}
+				}
+				
+				remove_core = Y23
+				add_core = Y22
+				cede_province = Y22
+			}
+		}
+	}
+	
+	#Stay Vassal to Erebor
+	option = {
+		name = company_of_thorin_events.16.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.16 - Option : company_of_thorin_events.16.b" }
+		
+		Y22 = {
+			vassalize = Y23
+		}
+		
+		Y23 = {
+			add_opinion = {
+				who = Y22
+				modifier = erebor_master
+				years = 500
+			}
+		}
+		
+		Y23 = {
+			add_country_modifier = {
+				name = iron_hills_subject
+				duration = -1
+			}
+		}
+	}
+}
+
+#Gundabad Decide To Attack
+country_event = {
+	id = company_of_thorin_events.17
+	title = company_of_thorin_events.17.t
+	desc = company_of_thorin_events.17.d
+	picture = REVOLUTION_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y63
+		has_global_flag = company_of_thorin_won
+		#has_global_flag = erebor_lost_smaug
+		NOT = {
+			has_global_flag = company_of_thorin_lost
+		}
+		OR = {
+			OR = {
+				has_global_flag = company_of_thorin_refuse_eryn_galen
+				has_global_flag = company_of_thorin_refuse_lake_town
+				has_global_flag = company_of_thorin_refuse_both
+			}
+			OR = {
+				has_global_flag = company_of_thorin_give_eryn_galen
+				has_global_flag = company_of_thorin_give_lake_town
+				has_global_flag = company_of_thorin_give_both
+			}
+		}
+		628 = {
+			owned_by = Y63
+		}
+		any_owned_province = {
+			OR = {
+				region = grey_mountains_region
+				region = vales_of_anduin_region
+				region = erebor_ironhills_region
+				region = mirkwood_region
+				region = dale_region
+			}
+		}
+		is_vassal = no
+	}
+
+	#War all that can
+	option = {
+		name = company_of_thorin_events.17.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.17 - Option : company_of_thorin_events.17.a" }
+		
+		set_global_flag = company_of_thorin_gundabad_attack
+		
+		
+		custom_tooltip = gundabad_attack_erebor
+		hidden_effect = {
+			country_event = {
+				id = company_of_thorin_events.18
+			}
+		}
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 50
+				is_at_war = yes
+			}
+		}
+	}
+	
+	#No War
+	option = {
+		name = company_of_thorin_events.17.b
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.17 - Option : company_of_thorin_events.17.b" }
+		
+		add_stability = -1
+		add_prestige = -50
+		
+		set_global_flag = company_of_thorin_gundabad_nothing
+		
+		if = {
+			limit = {
+				has_global_flag = company_of_thorin_refuse_eryn_galen
+				NOT = {
+					has_global_flag = company_of_thorin_refuse_both
+					has_global_flag = company_of_thorin_refuse_lake_town
+				}
+			}
+			Y22 = {
+				country_event = {
+					id = company_of_thorin_events.11
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_global_flag = company_of_thorin_refuse_lake_town
+				NOT = {
+					has_global_flag = company_of_thorin_refuse_both
+					has_global_flag = company_of_thorin_refuse_eryn_galen
+				}
+			}
+			Y22 = {
+				country_event = {
+					id = company_of_thorin_events.12
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_global_flag = company_of_thorin_refuse_both
+				NOT = {
+					has_global_flag = company_of_thorin_refuse_eryn_galen
+					has_global_flag = company_of_thorin_refuse_lake_town
+				}
+			}
+			Y22 = {
+				country_event = {
+					id = company_of_thorin_events.13
+				}
+			}
+			
+		}
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+#stop war, gundabad is attacking (Hidden)
+country_event = {
+	id = company_of_thorin_events.18
+	title = company_of_thorin_events.18.t
+	desc = company_of_thorin_events.18.d
+	picture = REVOLUTION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = company_of_thorin_gundabad_attack
+	}
+	
+	immediate = {
+		#Y22 = {
+		#	white_peace = Y67
+		#	white_peace = V51
+		#}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.18 - Option : immediate" }
+		
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = company_of_thorin_refuse_both
+					has_global_flag = company_of_thorin_give_both
+				}
+				NOT = {
+					has_global_flag = company_of_thorin_refuse_eryn_galen
+					has_global_flag = company_of_thorin_refuse_lake_town
+				}
+			}
+			
+			Y67 = {
+				create_guarantee = Y22
+			}
+			V51 = {
+				create_guarantee = Y22
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = company_of_thorin_refuse_eryn_galen
+					has_global_flag = company_of_thorin_give_eryn_galen
+				}
+				NOT = {
+					has_global_flag = company_of_thorin_refuse_both
+					has_global_flag = company_of_thorin_refuse_lake_town
+				}
+			}
+			
+			Y67 = {
+				create_guarantee = Y22
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = company_of_thorin_refuse_lake_town
+					has_global_flag = company_of_thorin_give_lake_town
+				}
+				NOT = {
+					has_global_flag = company_of_thorin_refuse_both
+					has_global_flag = company_of_thorin_refuse_eryn_galen
+				}
+			}
+			
+			V51 = {
+				create_guarantee = Y22
+			}
+		}
+		
+		
+		set_global_flag = company_of_thorin_gundabad_attack_responded
+		
+		Y63 = {
+			declare_war_with_cb = {
+				who = Y22
+				casus_belli = cb_take_erebor_alone
+			}
+		}
+		
+		#Y22 = {
+		#	country_event = {
+		#		id = company_of_thorin_events.19
+		#		days = 1
+		#	}
+		#}
+	}
+
+	#Gandalf Intervene
+	option = {
+		name = company_of_thorin_events.18.a
+		
+		
+	}
+}
+
+#Gundabad Decide To Attack
+country_event = {
+	id = company_of_thorin_events.19
+	title = company_of_thorin_events.19.t
+	desc = company_of_thorin_events.19.d
+	picture = REVOLUTION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+		has_global_flag = company_of_thorin_gundabad_attack
+		NOT = {
+			has_global_flag = company_of_thorin_gundabad_attack_responded
+		}
+		
+	}
+
+	#Gandalf Intervene
+	option = {
+		name = company_of_thorin_events.19.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.19 - Option : company_of_thorin_events.19.b" }
+		
+		set_global_flag = company_of_thorin_gundabad_attack_responded
+		
+		Y63 = {
+			declare_war_with_cb = {
+				who = Y22
+				casus_belli = cb_take_erebor_alone
+			}
+		}
+	}
+}
+
+#Thorin Company Dies
+country_event = {
+	id = company_of_thorin_events.20
+	title = company_of_thorin_events.20.t
+	desc = company_of_thorin_events.20.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+
+	}
+
+	#Trolls Death
+	option = {
+		name = company_of_thorin_events.20.a
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_trolls
+		}
+	}
+	
+	#Goblin Town Death
+	option = {
+		name = company_of_thorin_events.20.b
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_goblins
+		}
+	}
+	
+	#Spiders Death
+	option = {
+		name = company_of_thorin_events.20.c
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_spiders
+		}
+	}
+	
+	#Smaug Death
+	option = {
+		name = company_of_thorin_events.20.d
+		
+		trigger = {
+			has_global_flag = company_of_thorin_die_smaug
+		}
+	}
+}
+
+#Thorin Dies From Battle
+country_event = {
+	id = company_of_thorin_events.21
+	title = company_of_thorin_events.21.t
+	desc = company_of_thorin_events.21.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+		#had_recent_war = 1
+		has_global_flag = company_of_thorin_gundabad_attack
+		NOT = {
+			is_in_war = {
+				attacker_leader = Y63
+				defender_leader = ROOT
+			}
+			has_global_flag = company_of_thorin_thorin_dies
+			has_global_flag = company_of_thorin_thorin_lives
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			99 = {
+				set_global_flag = company_of_thorin_thorin_dies
+			}
+			1 = {
+				set_global_flag = company_of_thorin_thorin_lives
+			}
+		}
+		set_global_flag = company_of_thorin_over
+	}
+
+
+	#Thorin Dies, Erebor AI
+	option = {
+		name = company_of_thorin_events.21.a
+		
+		trigger = {
+			Y22 = {
+				ai = yes
+			}
+			has_global_flag = company_of_thorin_thorin_dies
+			NOT = {
+				has_global_flag = company_of_thorin_thorin_lives
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.21 - Option : company_of_thorin_events.21.a" }
+		
+		if = {
+			limit = {
+				exists = Y23
+				Y23 = {
+					vassal_of = ROOT
+					ai = yes
+				}
+			}
+			
+			hidden_effect = {
+				every_province = {
+					limit = {
+						owned_by = Y23
+					}
+					
+					remove_core = Y23
+					add_core = Y22
+					cede_province = Y22
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = Y23
+				Y23 = {
+					vassal_of = ROOT
+					ai = no
+				}
+			}
+			
+			Y23 = {
+				country_event = {
+					id = company_of_thorin_events.22
+					days = 1
+				}
+			}
+		}
+		Y22 = {
+			country_event = {
+				id = company_of_thorin_events.23
+				days = 5
+			}
+		}
+	}
+	
+	#Thorin Dies, Erebor Not AI
+	option = {
+		name = company_of_thorin_events.21.b
+		
+		trigger = {
+			ai = no
+			has_global_flag = company_of_thorin_thorin_dies
+			NOT = {
+				has_global_flag = company_of_thorin_thorin_lives
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.21 - Option : company_of_thorin_events.21.b" }
+		
+		if = {
+			limit = {
+				ai = no
+				exists = Y23
+				Y23 = {
+					vassal_of = ROOT
+					ai = yes
+				}
+			}
+			
+			custom_tooltip = erebor_switch_nation_meta
+			hidden_effect = {
+				every_province = {
+					limit = {
+						owned_by = Y23
+					}
+					
+					remove_core = Y23
+					add_core = Y22
+					cede_province = Y22
+				}
+			}
+		}
+		
+		Y22 = {
+			country_event = {
+				id = company_of_thorin_events.23
+				days = 5
+			}
+		}
+	}
+	
+	#Thorin Lives
+	option = {
+		name = company_of_thorin_events.21.c
+		
+		trigger = {
+			has_global_flag = company_of_thorin_thorin_lives
+			NOT = {
+				has_global_flag = company_of_thorin_thorin_dies
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.21 - Option : company_of_thorin_events.21.c" }
+		
+		add_stability = 1
+		add_prestige = 50
+		
+		Y22 = {
+			country_event = {
+				id = company_of_thorin_events.23
+				days = 5
+			}
+		}
+	}
+}
+
+#Thorin Dies From Battle, Iron Hills gains all erebor, if Erebor is not ai
+country_event = {
+	id = company_of_thorin_events.22
+	title = company_of_thorin_events.22.t
+	desc = company_of_thorin_events.22.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y23
+		has_global_flag = company_of_thorin_thorin_dies
+	}
+
+	#Thorin Dies
+	option = {
+		name = company_of_thorin_events.22.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.22 - Option : company_of_thorin_events.22.a" }
+		
+		swap_free_idea_group = yes
+		switch_tag = Y22
+			
+		custom_tooltip = erebor_switch_nation_meta
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = Y23
+				}
+				
+				remove_core = Y23
+				add_core = Y22
+				cede_province = Y22
+			}
+		}
+	}
+}
+
+#Thorin Dies, Give back
+country_event = {
+	id = company_of_thorin_events.23
+	title = company_of_thorin_events.23.t
+	desc = company_of_thorin_events.23.d
+	picture = CONQUEST_eventPicture
+
+	major = yes
+	is_triggered_only  = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = Y22
+		has_global_flag = company_of_thorin_thorin_dies
+		has_global_flag = company_of_thorin_gundabad_attack
+		NOT = {
+			has_global_flag = company_of_thorin_give_eryn_galen
+			has_global_flag = company_of_thorin_give_lake_town
+			has_global_flag = company_of_thorin_give_both
+		}
+		NOT = {
+			has_global_flag = company_of_thorin_eryn_galen_war
+			has_global_flag = company_of_thorin_lake_town_war
+			has_global_flag = company_of_thorin_both_war
+		}
+	}
+
+	#Give Eryn Galen Helped
+	option = {
+		name = company_of_thorin_events.23.a
+		
+		trigger = {
+			OR = {
+				has_global_flag = company_of_thorin_refuse_eryn_galen
+			}
+			NOT = {
+				has_global_flag = company_of_thorin_eryn_galen_war
+				has_global_flag = company_of_thorin_lake_town_war
+				has_global_flag = company_of_thorin_both_war
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.23 - Option : company_of_thorin_events.23.a" }
+		
+		Y67 = {
+			add_treasury = 6000
+			custom_tooltip = company_of_thorin_give_eryn_galen_girion
+		}
+	}
+	
+	#Give Lake Town Helped
+	option = {
+		name = company_of_thorin_events.23.b
+		
+		trigger = {
+			OR = {
+				has_global_flag = company_of_thorin_refuse_lake_town
+			}
+			NOT = {
+				has_global_flag = company_of_thorin_eryn_galen_war
+				has_global_flag = company_of_thorin_lake_town_war
+				has_global_flag = company_of_thorin_both_war
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.23 - Option : company_of_thorin_events.23.b" }
+
+		V51 = {
+			add_treasury = 4000
+		}
+		
+		if = {
+			limit = {
+				V51 = {
+					ai = yes
+					is_vassal = no
+				}
+			}
+			
+			527 = {
+				cede_province = V51
+				add_core = V51
+				remove_core = Y22
+			}
+			
+			#V51 = {
+			#	change_tag = Y94
+			#}
+			
+			#Y22 = {
+			#	create_union = Y94
+			#}
+		}
+	}
+	
+	#Give Both Helped
+	option = {
+		name = company_of_thorin_events.23.c
+		
+		trigger = {
+			OR = {
+				has_global_flag = company_of_thorin_refuse_both
+			}
+			NOT = {
+				has_global_flag = company_of_thorin_eryn_galen_war
+				has_global_flag = company_of_thorin_lake_town_war
+				has_global_flag = company_of_thorin_both_war
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - company_of_thorin_events.23 - Option : company_of_thorin_events.23.c" }
+
+		Y67 = {
+			add_treasury = 5000
+			custom_tooltip = company_of_thorin_give_eryn_galen_girion
+		}
+		
+		V51 = {
+			add_treasury = 3000
+		}
+		
+		if = {
+			limit = {
+				V51 = {
+					ai = yes
+					is_vassal = no
+				}
+			}
+			
+			527 = {
+				cede_province = V51
+				add_core = V51
+				remove_core = Y22
+			}
+			
+			#V51 = {
+			#	change_tag = Y94
+			#}
+			
+			#Y22 = {
+			#	create_union = Y94
+			#}
+		}
+	}
+}

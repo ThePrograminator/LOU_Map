@@ -11,7 +11,6 @@ replace_path="history/wars"
 replace_path="history/advisors"
 replace_path="common/bookmarks"
 replace_path="common/buildings"
-
 tags={
 	"Map"
 	"Military"

@@ -1,0 +1,739 @@
+#
+# remember to add graphics for relevant ones when you add to this
+#
+# if a modifier is scaled, its multiplied with development in the province.
+
+
+# any_friendly_coast_border_province is a special scope made for institution spread.
+# It checks for adjacent provinces or provinces one seazone away.
+# Friendly is defined as at positive relations or owned by the same country that owns the province.
+
+#######################################
+# Company of Thorin.  
+# 
+# 
+#######################################
+
+company_of_thorin = {
+	penalty = 0.0
+	bonus = {
+	
+	}
+	
+	historical_start_date = 2941.04.26
+	historical_start_province = 83 # Hobbitton
+
+	history = {
+		is_year = 3330
+	}
+	
+	can_start = {
+		is_year = 2941
+		#check_date = {
+		#	YEAR = 2941
+		#	MONTH = 3
+		#	STARTED_BEFORE = 2941.04.26
+		#}
+		province_id = 83
+		83 = {
+			owner = {
+				NOT = {
+					religion_group = religion_group_melkor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
+				}
+			}
+		}
+		287 = {
+			is_empty = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = tooltip_erebor_lost_to_smaug
+
+			has_global_flag = desolation_of_smaug_lost
+			NOT = {
+				has_global_flag = company_of_thorin_over
+			}
+		}
+	}
+	start_chance = 100		#in 100 for when a province can_start
+	
+	on_start = fellowship_events.1
+	
+	can_embrace = {
+		always = yes
+	}
+
+	embracement_speed = {
+		#Path
+		#modifier = {
+		#	factor = 100
+		#	scale = yes
+		#	
+		#	potential = {
+		#		has_province_flag = thorin_company_path
+		#		any_neighbor_province = {
+		#			company_of_thorin = 100
+		#			OR = {
+		#				province_id = 83
+		#				has_province_modifier = thorin_position
+		#			}
+		#			NOT = {
+		#				ROOT = {
+		#					province_id = 
+		#				}
+		#			}
+		#		}
+		#		NOT = {
+		#			has_global_flag = company_of_thorin_lost
+		#			has_global_flag = company_of_thorin_won
+		#		}
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_thorin_company_path
+		#		#has_province_flag = thorin_company_path
+		#		any_neighbor_province = {
+		#			company_of_thorin = 100
+		#		}
+		#	}
+		#}
+		
+		#Path
+		modifier = {
+			factor = 100
+			scale = yes
+			
+			potential = {
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+				
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_thorin_company_path
+				#has_province_flag = fellowship_path
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+			}
+		}
+		
+		#Easy Terrain
+		modifier = {
+			factor = 50
+			scale = yes
+			
+			potential = {
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+				
+				has_easy_terrain = yes
+				
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_easy_terrain
+			}
+		}
+		
+		#Rough Terrain
+		modifier = {
+			factor = 25
+			scale = yes
+			
+			potential = {
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+				
+				has_rough_terrain = yes
+				
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_rough_terrain
+			}
+		}
+		
+		#Hard Terrain
+		modifier = {
+			factor = -15
+			scale = yes
+			
+			potential = {
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+				
+				has_hard_terrain = yes
+				
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_hard_terrain
+			}
+		}
+		
+		#Good Race
+		modifier = {
+			factor = 50
+			scale = yes
+			
+			potential = {
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+				
+				is_good_race_province = yes
+				
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_good_race
+			}
+		}
+		
+		#Neutral Race
+		modifier = {
+			factor = 0
+			scale = yes
+			
+			potential = {
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+				
+				is_neutral_race_province = yes
+				
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_neutral_race
+			}
+		}
+		
+		#Bad Race
+		modifier = {
+			factor = -50
+			scale = yes
+			
+			potential = {
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+				
+				is_bad_race_province = yes
+				
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_bad_race
+			}
+		}
+		
+		#Being Hindered
+		modifier = {
+			factor = -50
+			scale = yes
+			
+			potential = {
+				always = no
+				has_province_flag = thorin_company_path
+
+				OR = {
+					regular_thorin_path = yes
+					bridge_fields_high_hay_entrance_fellowship_path = yes
+					lone_fells_gollums_cave_fellowship_path = yes
+					laketown_dale_fellowship_path = yes
+					dale_ravenhill_fellowship_path = yes
+					ravenhill_erebor_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+
+				NOT = {
+					has_global_flag = company_of_thorin_lost
+					has_global_flag = company_of_thorin_won
+				}
+			}
+			
+			#trading_policy_in_node = {
+			#	node = FROM
+			#	policy = hinder_fellowships
+			#}
+			
+			#custom_trigger_tooltip = {
+			#	tooltip = tooltip_hinder_fellowships
+			#}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_hinder_fellowships
+				
+				any_trade_node_member_province = {
+					has_province_flag = fellowship_path
+					owner = {
+						trading_policy_in_node = {
+							node = PREV
+							policy = hinder_fellowships
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 0
+	}
+}
+
+#######################################
+# The Fellow Ship of The Ring
+# 
+# 
+#######################################
+
+fellowship_of_ring = {
+	penalty = 0.0
+
+	bonus = {
+
+	}
+
+	historical_start_date = 3018.01.1
+	historical_start_province = 83 # Hobbitton
+
+	history = {
+		is_year = 3330
+	}
+	
+	can_start = {
+		is_year = 3018
+		#check_date = {
+		#	YEAR = 3018
+		#	MONTH = 3
+		#	STARTED_BEFORE = 3018.04.12
+		#}
+		province_id = 83
+		83 = {
+			owner = {
+				NOT = {
+					religion_group = religion_group_melkor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = tooltip_bilbo_found_the_ring
+			
+			has_global_flag = desolation_of_smaug_lost
+			has_global_flag = company_of_thorin_sur_smaug
+		}
+		
+		413 = {
+			owner = {
+				NOT = {
+					religion_group = religion_group_melkor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
+				}
+			}
+		}
+		
+		232 = {
+			owner = {
+				NOT = {
+					religion_group = religion_group_melkor
+					religion_group = religion_group_haradrim
+					religion_group = religion_group_talatherim
+				}
+			}
+		}
+	}
+	start_chance = 100		#in 100 for when a province can_start
+	
+	
+	on_start = fellowship_events.4
+	
+	can_embrace = {
+		always = yes
+	}
+	
+	embracement_speed = {
+		#Path
+		modifier = {
+			factor = 100
+			scale = yes
+			
+			potential = {
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+				
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_fellowship_path
+				#has_province_flag = fellowship_path
+				any_neighbor_province = {
+					fellowship_of_ring = 100
+				}
+			}
+		}
+	
+		#Easy Terrain
+		modifier = {
+			factor = 50
+			scale = yes
+			
+			potential = {
+				#always = no
+				
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+				
+				any_neighbor_province = {
+					company_of_thorin = 100
+				}
+
+				has_province_flag = fellowship_path
+				any_neighbor_province = {
+					fellowship_of_ring = 100
+				}
+				
+				has_easy_terrain = yes
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_easy_terrain
+			}
+		}
+		
+		#Rough Terrain
+		modifier = {
+			factor = 25
+			scale = yes
+			
+			potential = {
+				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
+				has_province_flag = fellowship_path
+				any_neighbor_province = {
+					fellowship_of_ring = 100
+				}
+				
+				has_rough_terrain = yes
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_rough_terrain
+			}
+		}
+		
+		#Hard Terrain
+		modifier = {
+			factor = -15
+			scale = yes
+			
+			potential = {
+				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
+				has_province_flag = fellowship_path
+				any_neighbor_province = {
+					fellowship_of_ring = 100
+				}
+				
+				has_hard_terrain = yes
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_hard_terrain
+			}
+		}
+		
+		#Good Race
+		modifier = {
+			factor = 50
+			scale = yes
+			
+			potential = {
+				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
+				has_province_flag = fellowship_path
+				
+				is_good_race_province = yes
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_good_race
+			}
+		}
+		
+		#Neutral Race
+		modifier = {
+			factor = 0
+			scale = yes
+			
+			potential = {
+				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
+				has_province_flag = fellowship_path
+				
+				is_neutral_race_province = yes
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_neutral_race
+			}
+		}
+		
+		#Bad Race
+		modifier = {
+			factor = -25
+			scale = yes
+			
+			potential = {
+				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
+				has_province_flag = fellowship_path
+				
+				is_bad_race_province = yes
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_company_bad_race
+			}
+		}
+		
+		#Being Hindered
+		modifier = {
+			factor = -35
+			scale = yes
+			
+			potential = {
+				#always = no
+				OR = {
+					regular_fellowship_path = yes
+					barrow_downs_bree_fellowship_path = yes
+					tom_bombadil_barrow_downs_fellowship_path = yes
+					amon_hen_emyn_muil_fellowship_path = yes
+					west_osgiliath_curedain_fellowship_path = yes
+					curedain_morgul_vale_fellowship_path = yes
+				}
+
+				has_province_flag = fellowship_path
+				
+				any_neighbor_province = {
+					fellowship_of_ring = 100
+				}
+				
+				NOT = {
+					has_global_flag = fellowship_lost
+					has_global_flag = fellowship_won
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_hinder_fellowships
+				
+				any_trade_node_member_province = {
+					has_province_flag = fellowship_path
+					owner = {
+						trading_policy_in_node = {
+							node = PREV
+							policy = hinder_fellowships
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 0
+	}
+}

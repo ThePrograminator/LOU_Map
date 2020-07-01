@@ -1,0 +1,545 @@
+# SOME META SCRIPT EXAMPLES
+# This also works for Scripted effects the same. Provided arguments will be pasted in
+# wherever the key occurs. If it fails to compile you should get a proper error message
+# and the source generated in the error log. There is no added overhead during runtime but
+# if used extensivley it might make loading time longer.
+#
+# my_test_trigger = {
+#	OR = {
+#		has_country_modifier = $ARG1$_modifier
+#		AND = {
+#			has_country_modifier = $ARG2$_modifier
+#			$CONTEXT$ = {
+#				NOT = { has_country_modifier = $ARG1$_modifier }
+#			}
+#		}
+#	}
+# }
+# Usage:
+# my_test_trigger = { ARG1=foo ARG2=bar CONTEXT=FROM }
+
+#GENERAL TRIGGERS
+has_easy_terrain = { #Province Scope
+	OR = {
+		has_terrain = farmlands
+		has_terrain = grasslands
+		has_terrain = coastline
+		has_terrain = drylands
+		has_terrain = savannah
+		has_terrain = steppe
+		has_terrain = unique_shire
+		has_terrain = unique_rohan
+		has_terrain = unique_bree
+		has_terrain = unique_dolamroth
+		has_terrain = unique_harad_river
+		has_terrain = unique_greyhavens
+		has_terrain = unique_thalls
+		has_terrain = unique_lothloria
+		has_terrain = unique_umbar
+		has_terrain = unique_hobbitton
+		has_terrain = unique_rivendell
+		has_terrain = unique_isengard
+		has_terrain = unique_edoras
+		has_terrain = unique_laketown
+		has_terrain = unique_dale
+		has_terrain = unique_erebor
+		has_terrain = unique_osgilliath
+		has_terrain = unique_helmsdeep
+		has_terrain = unique_minas_tirith
+	}
+}
+
+has_rough_terrain = { #Province Scope
+	OR = {
+		has_terrain = forest
+		has_terrain = hills
+		has_terrain = woods
+		has_terrain = desert
+		has_terrain = coastal_desert
+		has_terrain = highlands
+		has_terrain = unique_amonhen
+		has_terrain = unique_ithilien
+		has_terrain = unique_blackgate
+		has_terrain = unique_moria
+		has_terrain = unique_dolguldur
+	}
+}
+
+has_hard_terrain = { #Province Scope
+	OR = {
+		has_terrain = glacier
+		has_terrain = mountain
+		has_terrain = impassable_mountains
+		has_terrain = jungle
+		has_terrain = marsh
+		has_terrain = unique_fangorn
+		has_terrain = unique_goblintown
+		has_terrain = unique_pass
+		has_terrain = unique_mordor
+		has_terrain = unique_cirithungol
+		has_terrain = unique_minasmorgul
+		has_terrain = unique_baraddur
+		has_terrain = unique_gundabad
+		has_terrain = unique_mountdoom
+	}
+}
+
+is_good_race_province = { #Province Scope
+	owner = {
+		OR = {
+			#religion_group = religion_group_khazad
+			#religion_group = religion_group_eldar
+			#religion_group = religion_group_periannath
+			#religion_group = religion_group_edain
+			technology_group = lotr_human
+			technology_group = lotr_dwarven
+			technology_group = lotr_elven
+			technology_group = lotr_hobbit
+		}
+	}
+}
+
+is_neutral_race_province = { #Province Scope
+	owner = {
+		OR = {
+			#religion_group = religion_group_eruhini
+			#religion_group = religion_group_enyd
+			#religion_group = religion_group_sun
+			religion_group = religion_group_wilderness
+			technology_group = lotr_ent
+			technology_group = lotr_erus_children
+			technology_group = lotr_giant
+			technology_group = lotr_half_dwarf
+		}
+	}
+}
+
+is_bad_race_province = { #Province Scope
+	owner = {
+		OR = {
+			technology_group = lotr_dragon
+			technology_group = lotr_goblin
+			technology_group = lotr_great_spider
+			technology_group = lotr_half_orc
+			technology_group = lotr_orc
+			technology_group = lotr_troll
+			technology_group = lotr_uruk_hai
+			technology_group = lotr_wights
+		}
+	}
+}
+
+is_good_race = { #Country Scope
+	OR = {
+		#religion_group = religion_group_khazad
+		#religion_group = religion_group_eldar
+		#religion_group = religion_group_periannath
+		#religion_group = religion_group_edain
+		technology_group = lotr_human
+		technology_group = lotr_dwarven
+		technology_group = lotr_elven
+		technology_group = lotr_hobbit
+	}
+}
+
+is_neutral_race = { #Country Scope
+	OR = {
+		#religion_group = religion_group_eruhini
+		#religion_group = religion_group_enyd
+		#religion_group = religion_group_sun
+		religion_group = religion_group_wilderness
+		technology_group = lotr_ent
+		technology_group = lotr_erus_children
+		technology_group = lotr_giant
+		technology_group = lotr_half_dwarf
+	}
+}
+
+is_bad_race = { #Country Scope
+	OR = {
+		#religion_group = religion_group_hildor
+		#religion_group = religion_group_melkor
+		technology_group = lotr_dragon
+		technology_group = lotr_goblin
+		technology_group = lotr_great_spider
+		technology_group = lotr_half_orc
+		technology_group = lotr_orc
+		technology_group = lotr_troll
+		technology_group = lotr_uruk_hai
+		technology_group = lotr_wights
+	}
+}
+
+
+is_one_of_thorin_company_path = {
+	OR = {
+		province_id = 83
+		province_id = 84
+		province_id = 74
+		province_id = 75
+		province_id = 299
+		province_id = 263
+		province_id = 173
+		province_id = 1817
+		province_id = 300
+		province_id = 1442
+		province_id = 291
+		province_id = 364
+		province_id = 384
+		province_id = 226
+		province_id = 386
+		province_id = 1679
+		province_id = 232
+		province_id = 1875
+		province_id = 1127
+		province_id = 558
+		province_id = 1126
+		province_id = 685
+		province_id = 1887
+		province_id = 672
+		province_id = 673
+		province_id = 408
+		province_id = 314
+		province_id = 526
+		province_id = 3167
+		province_id = 316
+		province_id = 1901
+		province_id = 1902
+		province_id = 528
+		province_id = 527
+		province_id = 1903
+		province_id = 287
+	}
+}
+
+#Not used?
+regular_thorin_path = {
+	has_province_flag = thorin_company_path
+	NOT = {
+		province_id = 527
+		province_id = 1903
+		province_id = 287
+		province_id = 299
+		province_id = 685
+	}
+	
+	any_neighbor_province = {
+		company_of_thorin = 100
+		OR = {
+			province_id = 83
+			has_province_modifier = thorin_position
+		}
+	}
+}
+
+bridge_fields_high_hay_entrance_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 299
+	
+	1804 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
+	}
+}
+
+lone_fells_gollums_cave_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 685
+	
+	1126 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
+	}
+}
+
+laketown_dale_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 527
+	
+	528 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
+	}
+}
+
+dale_ravenhill_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 1903
+	
+	527 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
+	}
+}
+
+ravenhill_erebor_fellowship_path = {
+	has_province_flag = thorin_company_path
+	province_id = 287
+	
+	1903 = {
+		company_of_thorin = 100
+		has_province_modifier = thorin_position
+	}
+}
+
+###
+
+regular_fellowship_path = {
+	has_province_flag = fellowship_path
+	NOT = {
+		province_id = 1835
+		province_id = 323
+		province_id = 52
+		province_id = 999
+		province_id = 263
+	}
+	
+	any_neighbor_province = {
+		fellowship_of_ring = 100
+		OR = {
+			province_id = 83
+			has_province_modifier = fellowship_position
+		}
+	}
+}
+
+tom_bombadil_barrow_downs_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 1835
+	
+	1580 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
+	}
+}
+
+barrow_downs_bree_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 263
+	
+	1835 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
+	}
+}
+
+amon_hen_emyn_muil_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 323
+	
+	661 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
+	}
+}
+
+west_osgiliath_curedain_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 52
+	
+	418 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
+	}
+}
+
+curedain_morgul_vale_fellowship_path = {
+	has_province_flag = fellowship_path
+	province_id = 999
+	
+	52 = {
+		fellowship_of_ring = 100
+		has_province_modifier = fellowship_position
+	}
+}
+
+is_free_peoples_opinion = {
+	OR = {
+		religion_group = religion_group_numenorean
+		technology_group = lotr_ent
+		technology_group = lotr_erus_children
+		technology_group = lotr_elven
+		technology_group = lotr_dwarven
+		technology_group = lotr_hobbit
+		#Anarike
+		tag = X41
+		#Lynerian League
+		tag = Z74
+		#Niss
+		tag = Z83
+		#Elinse
+		tag = Z84
+		#Acaana
+		tag = Z85
+
+		culture_group = culture_group_zori
+		culture_group = culture_group_eriadorians
+		culture_group = culture_group_rivermen
+		culture_group = culture_group_daen_of_gondor
+		culture_group = culture_group_eotheod
+		culture_group = culture_group_ulthiuda
+		culture_group = culture_group_nenedain
+		culture_group = culture_group_donath
+		culture_group = culture_group_aivathiuda
+		culture_group = culture_group_beijabar
+	}
+	NOT = {
+		#Waw
+		tag = Z80
+		#Saralainn
+		tag = Z43
+	}
+}
+
+#is_neutral_race_opinion = {
+#	OR = {
+#		tag = V13
+#	}
+#}
+
+is_servants_of_evil_opinion = {
+	OR = {
+		religion_group = religion_group_melkor
+		primary_culture = culture_dunlendings
+		culture_group = culture_group_ioriags
+		culture_group = culture_group_black_numenorean
+		culture_group = culture_group_haruzani
+		culture_group = culture_group_apysani
+		culture_group = culture_group_sea_people
+		culture_group = culture_group_mornedain
+		culture_group = culture_group_chailuza
+		culture_group = culture_group_ulgath
+		culture_group = culture_group_surk
+		culture_group = culture_group_monhunrim
+		culture_group = culture_group_womaw
+		culture_group = culture_group_borians
+		primary_culture = culture_wolim
+		primary_culture = culture_dyrians
+		primary_culture = culture_dirians
+		primary_culture = culture_desdursy
+		primary_culture = culture_urdar
+		#Waw
+		tag = Z80
+		#Saralainn
+		tag = Z43
+	}
+	NOT = {
+		#Nurn
+		tag = X86
+		#Anarike
+		tag = X41
+		#Lynerian League
+		tag = Z74
+		#Niss
+		tag = Z83
+		#Elinse
+		tag = Z84
+		#Acaana
+		tag = Z85
+		primary_culture = culture_logath
+	}
+}
+
+servant_of_mordor_region_nurn = {
+	AND = {
+		cirith_nurn_area = {
+			type = all
+			owned_by = ROOT
+		}
+		maegoth_area = {
+			type = all
+			owned_by = ROOT
+		}
+		urlutsu_nurn_area = {
+			type = all
+			owned_by = ROOT
+		}
+		thaurband_area = {
+			type = all
+			owned_by = ROOT
+		}
+		nurnen_area = {
+			type = all
+			owned_by = ROOT
+		}
+		sturlurtsa_nurn_area = {
+			type = all
+			owned_by = ROOT
+		}
+		lithlad_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+}
+
+servant_of_mordor_region_ithilien = {
+	AND = {
+		harithilien_area = {
+			type = all
+			owned_by = ROOT
+		}
+		ithilien_area = {
+			type = all
+			owned_by = ROOT
+		}
+		forithilien_area = {
+			type = all
+			owned_by = ROOT
+		}
+		emyn_arnen_area = {
+			type = all
+			owned_by = ROOT
+		}
+		minas_ithil_area = {
+			type = all
+			owned_by = ROOT
+		}
+		nindalf_area = {
+			type = all
+			owned_by = ROOT
+		}
+		athrad_poros_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+}
+
+war_of_the_dwarves_and_orcs_goblin_moria_exists= {
+	exists = Y57
+	Y57 = {
+		any_owned_province = {
+			area = khazad_dum_area
+		}
+	}
+	NOT = { 
+		exists = V53 
+		war_with = Y57
+		any_owned_province = {
+			area = khazad_dum_area
+		}
+	}
+}
+
+check_year = {
+	is_year = $YEAR$
+	NOT = {
+		started_in = $DATE$
+	}
+}
+
+check_month = {
+	is_month = $MONTH$
+	NOT = {
+		started_in = $DATE$
+	}
+}
+
+check_date = {
+	is_year = $YEAR$
+	is_month = $MONTH$
+	NOT = {
+		started_in = $STARTED_BEFORE$
+	}
+}

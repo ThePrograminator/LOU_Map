@@ -1,0 +1,476 @@
+####################
+# Slot 1 - Securing the West  #
+####################
+servant_of_mordor_region_nurn = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V40
+			tag = V28
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_first
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_nurn_region = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 7
+		provinces_to_highlight = {
+			servant_of_mordor_region_nurn = yes
+			NOT = { 
+				owned_by = ROOT 
+				is_empty = yes
+			}
+		}
+		trigger = {
+			servant_of_mordor_region_nurn = yes
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = servant_of_mordor_first
+		}
+	}
+}
+
+servant_of_mordor_region_rhovanion = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V98
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_first
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_rhovanion_region = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 7
+		provinces_to_highlight = {
+			rhovanion_region = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { 
+				owned_by = ROOT 
+				is_empty = yes
+			}
+		}
+		trigger = {
+			rhovanion_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = servant_of_mordor_first
+		}
+	}
+}
+
+servant_of_mordor_region_mirkwood = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V19
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_first
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_mirkwood_region = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 7
+		provinces_to_highlight = {
+			mirkwood_region = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { 
+				owned_by = ROOT 
+				is_empty = yes
+			}
+		}
+		trigger = {
+			mirkwood_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = servant_of_mordor_first
+		}
+	}
+}
+
+servant_of_mordor_region_ithilien = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V18
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_first
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_ithilien_region = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 7
+		provinces_to_highlight = {
+			servant_of_mordor_region_ithilien = yes
+			NOT = { 
+				owned_by = ROOT 
+				is_empty = yes
+			}
+		}
+		trigger = {
+			servant_of_mordor_region_ithilien = yes
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = servant_of_mordor_first
+		}
+	}
+}
+
+servant_of_mordor_reserves = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V19
+			tag = V40
+			tag = V28
+			tag = V18
+			tag = V98
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_second
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_build_up_reserves = {
+		icon = mission_war_chest
+		required_missions = {
+		}
+		position = 7
+		trigger = {
+			adm_power = 750
+			dip_power = 750
+			mil_power = 750
+		}
+		effect = {
+			add_prestige = 5
+			add_adm_power = -750
+			add_dip_power = -750
+			add_mil_power = -750
+			set_country_flag = servant_of_mordor_second
+		}
+	}
+}
+
+servant_of_mordor_tech = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V19
+			tag = V40
+			tag = V28
+			tag = V18
+			tag = V98
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_third
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_build_tech = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {
+		}
+		position = 7
+		trigger = {
+			total_development = 200
+			adm_tech = 10
+			dip_tech = 10
+			mil_tech = 10
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = servant_of_mordor_third
+		}
+	}
+}
+
+servant_of_mordor_spawn_mordor_nurn = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V40
+			tag = V28
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_finish_securing_strength
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_nurn_finish = {
+		icon = servant_of_mordor_finish
+		required_missions = {
+			servant_of_mordor_build_up_reserves
+			servant_of_mordor_build_tech
+			servant_of_mordor_nurn_region
+		}
+		position = 8
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = dol_guldur_completed_ritual
+			#	
+			#	has_country_flag = servant_of_mordor_first
+			#	has_country_flag = servant_of_mordor_second
+			#	has_country_flag = servant_of_mordor_third
+			#}
+			
+			is_year = 2850
+			
+			NOT = {
+				is_year = 2942
+				exists = V17
+			}
+		}
+		effect = {
+			set_country_flag = servant_of_mordor_finish_securing_strength
+			
+			country_event = {
+				id = servant_of_mordor.1
+			}
+		}
+	}
+}
+
+servant_of_mordor_spawn_mordor_uruk_marzguram = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V98
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_finish_securing_strength
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_rhovanion_finish = {
+		icon = servant_of_mordor_finish
+		required_missions = {
+			servant_of_mordor_build_up_reserves
+			servant_of_mordor_build_tech
+			servant_of_mordor_rhovanion_region
+		}
+		position = 8
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = dol_guldur_completed_ritual
+			#	
+			#	has_country_flag = servant_of_mordor_first
+			#	has_country_flag = servant_of_mordor_second
+			#	has_country_flag = servant_of_mordor_third
+			#}
+			
+			is_year = 2850
+			
+			NOT = {
+				is_year = 2942
+				exists = V17
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = servant_of_mordor_finish_securing_strength
+			}
+			
+			country_event = {
+				id = servant_of_mordor.1
+			}
+		}
+	}
+}
+
+servant_of_mordor_spawn_mordor_dol_guldur = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V19
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_finish_securing_strength
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_mirkwood_finish = {
+		icon = servant_of_mordor_finish
+		required_missions = {
+			servant_of_mordor_build_up_reserves
+			servant_of_mordor_build_tech
+			servant_of_mordor_mirkwood_region
+		}
+		position = 8
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = dol_guldur_completed_ritual
+			#	
+			#	has_country_flag = servant_of_mordor_first
+			#	has_country_flag = servant_of_mordor_second
+			#	has_country_flag = servant_of_mordor_third
+			#}
+			
+			is_year = 2850
+			
+			NOT = {
+				is_year = 2942
+				exists = V17
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = servant_of_mordor_finish_securing_strength
+			}
+			
+			country_event = {
+				id = servant_of_mordor.1
+			}
+		}
+	}
+}
+
+servant_of_mordor_spawn_mordor_minas_morgul = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = V18
+		}
+		
+		NOT = {
+			map_setup = map_setup_random
+			is_year = 2942
+			exists = V17
+			has_country_flag = servant_of_mordor_finish_securing_strength
+		}
+	}
+
+	has_country_shield = yes
+
+	servant_of_mordor_ithilien_finish = {
+		icon = servant_of_mordor_finish
+		required_missions = {
+			servant_of_mordor_build_up_reserves
+			servant_of_mordor_build_tech
+			servant_of_mordor_ithilien_region
+		}
+		position = 8
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = dol_guldur_completed_ritual
+			#	
+			#	has_country_flag = servant_of_mordor_first
+			#	has_country_flag = servant_of_mordor_second
+			#	has_country_flag = servant_of_mordor_third
+			#}
+			
+			is_year = 2850
+			
+			NOT = {
+				is_year = 2942
+				exists = V17
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = servant_of_mordor_finish_securing_strength
+			}			
+			
+			country_event = {
+				id = servant_of_mordor.1
+			}
+		}
+	}
+}

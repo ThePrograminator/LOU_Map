@@ -1,0 +1,208 @@
+#Country Name: Please see filename.
+graphical_culture = westerngfx
+
+color = { 60 115 30 }
+
+revolutionary_colors = { 13 14 0 }
+
+historical_idea_groups = {
+	offensive_ideas
+	diplomatic_ideas
+	defensive_ideas
+	innovativeness_ideas
+	administrative_ideas
+	quantity_ideas
+	economic_ideas
+	aristocracy_ideas
+}
+
+historical_units = {
+	lotr_hobbit_in_arms_1
+	lotr_hobbit_sheriff_archers_2
+	lotr_hobbit_bandobras_followers_3
+
+	lotr_hobbit_pony_riders_1
+	lotr_hobbit_bandobras_riders_2
+}
+
+monarch_names = {
+	"Adalgrim #0 " = 20
+	"Adelard #0 " = 20
+	"Andwise #0 " = 20
+	"Anson #0 " = 20
+	"Balbo #0 " = 20
+	"Bandobras #0 " = 20
+	"Bergil #0 " = 20
+	"Bilbo #0 " = 20
+	"Bingo #0 " = 20
+	"Blanco #0 " = 20
+	"Bodo #0 " = 20
+	"Bowman #0 " = 20
+	"Bucca #0 " = 20
+	"Bungo #0 " = 20
+	"Carl #0 " = 20
+	"Cotman #0 " = 20
+	"Cottar #0 " = 20
+	"Dindonas #0 " = 20
+	"Doderic #0 " = 20
+	"Dodinas #0 " = 20
+	"Drogo #0 " = 20
+	"Dudo #0 " = 20
+	"Erling #0 " = 20
+	"Falco #0 " = 20
+	"Fastolph #0 " = 20
+	"Fastred #0 " = 20
+	"Ferdibrand #0 " = 20
+	"Ferdinand #0 " = 20
+	"Ferumbras #0 " = 20
+	"Filibert #0 " = 20
+	"Flambard #0 " = 20
+	"Folco #0 " = 20
+	"Fortinbras #0 " = 20
+	"Fosco #0 " = 20
+	"Fredegar #0 " = 20
+	"Frodo #0 " = 20
+	"Gerontius #0 " = 20
+	"Gorbadoc #0 " = 20
+	"Gorbulas #0 " = 20
+	"Gorhendad #0 " = 20
+	"Gormadoc #0 " = 20
+	"Griffo #0 " = 20
+	"Gundabald #0 " = 20
+	"Halfast #0 " = 20
+	"Halfred #0 " = 20
+	"Hamfast #0 " = 20
+	"Hamson #0 " = 20
+	"Harding #0 " = 20
+	"Hending #0 " = 20
+	"Hildibrand #0 " = 20
+	"Hildifons #0 " = 20
+	"Hildigard #0 " = 20
+	"Hildigrim #0 " = 20
+	"Hob #0 " = 20
+	"Hobson #0 " = 20
+	"Holfoot #0 " = 20
+	"Holman #0 " = 20
+	"Hugo #0 " = 20
+	"Ilberic #0 " = 20
+	"Isembard #0 " = 20
+	"Isembold #0 " = 20
+	"Isemgrim #0 " = 20
+	"Isengar #0 " = 20
+	"Isumbras #0 " = 20
+	"Largo #0 " = 20
+	"Longo #0 " = 20
+	"Lotho #0 " = 20
+	"Madoc #0 " = 20
+	"Marcho #0 " = 20
+	"Marmadas #0 " = 20
+	"Marmadoc #0 " = 20
+	"Marroc #0 " = 20
+	"Meriadoc #0 " = 20
+	"Merimac #0 " = 20
+	"Merimas #0 " = 20
+	"Milo #0 " = 20
+	"Minto #0 " = 20
+	"Moro #0 " = 20
+	"Mosco #0 " = 20
+	"Mungo #0 " = 20
+	"Nob #0 " = 20
+	"Odo #0 " = 20
+	"Odovacar #0 " = 20
+	"Olo #0 " = 20
+	"Orgolas #0 " = 20
+	"Otho #0 " = 20
+	"Paladin #0 " = 20
+	"Peregrin #0 " = 20
+	"Polo #0 " = 20
+	"Ponto #0 " = 20
+	"Porto #0 " = 20
+	"Posco #0 " = 20
+	"Reginard #0 " = 20
+	"Rendigar #0 " = 20
+	"Robin #0 " = 20
+	"Rorimac #0 " = 20
+	"Rudigar #0 " = 20
+	"Rufus #0 " = 20
+	"Sadoc #0 " = 20
+	"Samwise #0 " = 20
+	"Sancho #0 " = 20
+	"Saradas #0 " = 20
+	"Saradoc #0 " = 20
+	"Seredic #0 " = 20
+	"Sigismond #0 " = 20
+	"Tobold #0 " = 20
+	"Togo #0 " = 20
+	"Tolma #0 " = 20
+	"Tolman #0 " = 20
+	"Wilcome #0 " = 20
+	"Wilibald #0 " = 20
+	"Will #0 " = 20
+	"Wiseman #0 " = 20
+}
+
+leader_names = {
+	Adalgrim Adelard Andwise Anson Balbo Bandobras Bergil Bilbo Bingo Blanco 
+	Bodo Bowman Bucca Bungo Carl Cotman Cottar Dindonas Doderic Dodinas 
+	Drogo Dudo Erling Falco Fastolph Fastred Ferdibrand Ferdinand Ferumbras Filibert 
+	Flambard Folco Fortinbras Fosco Fredegar Frodo Gerontius Gorbadoc Gorbulas Gorhendad 
+	Gormadoc Griffo Gundabald Halfast Halfred Hamfast Hamson Harding Hending Hildibrand 
+	Hildifons Hildigard Hildigrim Hob Hobson Holfoot Holman Hugo Ilberic Isembard 
+	Isembold Isemgrim Isengar Isumbras Largo Longo Lotho Madoc Marcho Marmadas 
+	Marmadoc Marroc Meriadoc Merimac Merimas Milo Minto Moro Mosco Mungo 
+	Nob Odo Odovacar Olo Orgolas Otho Paladin Peregrin Polo Ponto 
+	Porto Posco Reginard Rendigar Robin Rorimac Rudigar Rufus Sadoc Samwise 
+	Sancho Saradas Saradoc Seredic Sigismond Tobold Togo Tolma Tolman Wilcome 
+	Wilibald Will Wiseman
+}
+
+ship_names = {
+	Eagletree
+	Feathersun
+	Lowtree
+	Distantblade
+	Pineweaver
+	Oceanfang
+	Humbleripper
+	Wiseblood
+	Sunmantle
+	Grandpunch
+	Pyrefollower
+	Hawkfall
+	Heartsteam
+	Stonestrength
+	Mastertide
+	Gloomsworn
+	Redfist
+	Riverwinds
+	Skyspire
+	Fireclaw
+	Lunapike
+	Whitbane
+	Tarrensnow
+	Leafroot
+	Softswallow
+	Peacereaper
+	Stagarm
+	Monsterfury
+	Horsebinder
+	Strongmoon
+	Moltenmourn
+	Skymight
+	Covenstriker
+	Glowstrider
+	Farwatcher
+	Fallendown
+	Tarrengem
+	Stonestar
+	Fernstriker
+	Roughheart
+}
+
+army_names = {
+	"Regiment of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

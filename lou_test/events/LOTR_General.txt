@@ -1,0 +1,808 @@
+namespace = lotr_general
+
+# Most events will be split for good and evil
+
+province_event = {
+	id = lotr_general.8
+	title = "LOTR_WILDERNESS.1t"
+	desc = "LOTR_WILDERNESS.1d"
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		OR = {
+			AND = {
+				OR = {
+					culture = culture_wilderness
+					religion = religion_wilderness
+				}
+				NOT = {
+					has_province_modifier = wilderness_debuff
+				}
+			}
+			AND = {
+				has_province_modifier = wilderness_debuff
+				NOT = {
+					culture = culture_wilderness
+					religion = religion_wilderness
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "LOTR_WILDERNESS.1a"
+		trigger = {
+			OR = {
+				culture = culture_wilderness
+				religion = religion_wilderness
+			}
+			NOT = {
+				has_province_modifier = wilderness_debuff
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.8 - Option : lotr_general.8.a" }
+
+		add_province_modifier = {
+			name = "wilderness_debuff"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "LOTR_WILDERNESS.1b"
+		trigger = {
+			AND = {
+				has_province_modifier = wilderness_debuff
+				NOT = {
+					culture = culture_wilderness
+					religion = religion_wilderness
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.8 - Option : lotr_general.8.b" }
+
+		remove_province_modifier = wilderness_debuff
+	}
+}
+
+province_event = {
+	id = lotr_general.20
+	title = "LOTR_RUINS.1t"
+	desc = "LOTR_RUINS.1d"
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		AND = {
+				has_province_modifier = ruins_debuff
+				has_building = resettlement_action
+			}
+	}
+	
+	option = {
+		name = "LOTR_RUINS.1a"
+		trigger = {
+			AND = {
+				has_province_modifier = ruins_debuff
+				has_building = resettlement_action
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.20 - Option : lotr_general.20.a" }
+
+		remove_province_modifier = ruins_debuff
+		remove_building = resettlement_action
+	}
+}
+
+country_event = {
+    id = lotr_general.21
+    title = "lotr_hatred.1.title"
+    desc = "lotr_hatred.1.desc"
+    picture = ADVISOR_eventPicture
+   
+    hidden = yes
+    is_triggered_only = yes
+	#fire_only_once = yes
+	
+	trigger = {
+
+	}
+   
+    option = {
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.21 - Option : lotr_general.21.a" }
+        # Good Hatred
+        every_country = {
+            limit = {
+                OR = {
+                    technology_group = lotr_human
+                    technology_group = lotr_dwarven
+                    technology_group = lotr_elven
+                    technology_group = lotr_hobbit
+                    technology_group = lotr_ent
+                }
+            }
+            every_country = {
+                limit = {
+                    OR = {
+                        technology_group = lotr_dragon
+                        technology_group = lotr_uruk_hai
+                        technology_group = lotr_troll
+                        technology_group = lotr_goblin
+                        technology_group = lotr_orc
+					}
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = race_hates
+						}
+					}
+                }
+               
+                # Good
+                PREV = {
+                    add_opinion = {
+                        who = PREV # Evil
+                        modifier = race_hates
+                    }
+                }
+               
+                add_opinion = {
+                    who = PREV
+                    modifier = race_hates
+                }
+            }
+			set_global_flag = opinion_flag
+        }
+       
+        # Good Friendly
+        every_country = {
+            limit = {
+                OR = {
+                    technology_group = lotr_human
+                    technology_group = lotr_dwarven
+                    technology_group = lotr_elven
+                    technology_group = lotr_hobbit
+                    technology_group = lotr_ent
+                }
+            }
+            every_country = {
+                limit = {
+                    OR = {
+                        technology_group = lotr_human
+                        technology_group = lotr_dwarven
+                        technology_group = lotr_elven
+                        technology_group = lotr_hobbit
+                        technology_group = lotr_ent
+					}
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = race_love
+						}
+					}
+                }
+               
+                # Good
+                PREV = {
+                    add_opinion = {
+                        who = PREV # Good
+                        modifier = race_love
+                    }
+                }
+            }
+			set_global_flag = opinion_flag
+        }
+       
+        # Evil Friendly
+        every_country = {
+            limit = {
+                OR = {
+                    technology_group = lotr_uruk_hai
+                    technology_group = lotr_troll
+                    technology_group = lotr_goblin
+                    technology_group = lotr_orc
+                }
+            }
+            every_country = {
+                limit = {
+                    OR = {
+                        technology_group = lotr_uruk_hai
+                        technology_group = lotr_troll
+                        technology_group = lotr_goblin
+                        technology_group = lotr_orc
+					}
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = race_love
+						}
+					}
+                }
+               
+                # Good
+                PREV = {
+                    add_opinion = {
+                        who = PREV # Good
+                        modifier = race_love
+                    }
+                }
+            }
+        }
+		set_global_flag = opinion_flag
+    }
+}
+
+#startup
+country_event = {
+    id = lotr_general.44
+    title = "lotr_hatred.1.title"
+    desc = "lotr_hatred.1.desc"
+    picture = ADVISOR_eventPicture
+   
+    hidden = yes
+    is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		#NOT ={ has_global_flag = opinion_flag }
+	}
+   
+    option = {
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.44 - Option : lotr_general.44.a" }
+
+        # Good Hatred
+		set_against_race_opinions_effect = yes 
+		set_free_peoples_opinions_effect = yes
+		set_servants_of_darkness_opinions_effect = yes
+		set_global_flag = opinion_flag
+    }
+}
+
+country_event = {
+    id = lotr_general.45
+    title = "lotr_hatred.1.title"
+    desc = "lotr_hatred.1.desc"
+    picture = ADVISOR_eventPicture
+   
+    hidden = yes
+    is_triggered_only = yes
+	#fire_only_once = yes
+	
+	trigger = {
+		#NOT ={ has_global_flag = opinion_flag }
+	}
+   
+    option = {
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.45 - Option : lotr_general.45.a" }
+
+        # Good Hatred
+		set_against_race_opinions_effect = yes 
+		set_free_peoples_opinions_effect = yes
+		set_servants_of_darkness_opinions_effect = yes
+		set_global_flag = opinion_flag
+    }
+}
+
+#startup Dale, durin folk core
+country_event = {
+    id = lotr_general.46
+    title = "lotr_hatred.1.title"
+    desc = "lotr_hatred.1.desc"
+    picture = ADVISOR_eventPicture
+   
+    hidden = yes
+    is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		#NOT ={ has_global_flag = opinion_flag }
+	}
+   
+    option = {
+		name = "lotr_hatred.1.option.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.46 - Option : lotr_general.46.a" }
+
+        Y22 = {
+			every_owned_province = { 
+				add_core = PREV
+			}
+		}
+		Y94 = {
+			every_owned_province = { 
+				add_core = PREV
+			}
+		}
+    }
+}
+
+country_event = {
+    id = lotr_general.22
+    title = "lotr_erebor_eryn_galen.1.title"
+    desc = "lotr_erebor_eryn_galen.1.desc"
+    picture = ADVISOR_eventPicture
+   
+    hidden = yes
+    is_triggered_only = yes
+	
+	trigger = {
+		always = no
+		exists = X17
+		OR = {
+			exists = Z05
+			exists = X28
+		}
+		NOT = {
+			is_year = 2770
+			has_country_flag = startup_erebor_eryn_galen
+		}
+	}
+   
+    option = {
+		name = "lotr_erebor_eryn_galen.1.a"
+		
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.22 - Option : lotr_general.22.a" }
+
+		set_country_flag = startup_erebor_eryn_galen
+		if = { 
+		limit = {
+				tag = X28
+			}
+			X17 = {
+				add_historical_friend = X28
+				}
+			add_historical_friend = X17
+		}
+		if = { 
+		limit = {
+				tag = Z05
+			}
+			X17 = {
+				add_historical_friend = Z05
+				}
+			add_historical_friend = X17
+		}
+		if = { 
+		limit = {
+				tag = X17
+			}
+			Z05 = {
+				add_historical_friend = X17
+				}
+			add_historical_friend = Z05
+		}
+		#limit = {
+		#		tag = X17
+		#	}
+		#	X28 = {
+		#		add_historical_friend = X17
+		#		}
+		#	add_historical_friend = X28
+	}
+}
+
+province_event = {
+	id = lotr_general.23
+	title = "orc_raiders.1.title"
+	desc = "orc_raiders.1.desc"
+	picture = BORDER_TENSION_eventPicture
+	
+	trigger = {
+		OR = {
+			area = forithilien_area
+			area = harithilien_area
+			area = osgiliath_area
+			area = emyn_muil_area
+		} 
+		owner = {
+			NOT = {
+				is_year = 2942
+				tag = V17
+				culture_group = culture_group_melkor
+				culture_group = culture_group_haruzani
+				culture_group = culture_group_ulgath
+				has_country_modifier = spawn_orc_raider_timer
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.55
+			ROOT = { owner = {war_exhaustion = 10 } }
+		}
+		modifier = {
+			factor = 0.65
+			ROOT = { owner = {war_exhaustion = 15 } }
+		}
+		modifier = {
+			factor = 0.85
+			owner = {
+				tag = X01
+			}
+		}
+	}
+	
+	option = {
+		name = "orc_raiders.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.23 - Option : lotr_general.23.a" }
+
+		hidden_effect = {
+			owner = {
+				add_country_modifier = {
+					name = spawn_orc_raider_timer 
+					duration = 1095
+					hidden = yes
+				}
+			}
+		}
+		random_list = {
+			5 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 4
+				}
+			}
+			10 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 3
+				}
+			}
+			20 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 2
+				}
+			}
+			65 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 1
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = lotr_general.24
+	title = "LOTR_PROVINCE_WIGHT.1.t"
+	desc = "LOTR_PROVINCE_WIGHT.1.d"
+	picture = COMET_SIGHTED_eventPicture
+
+	trigger = {
+		OR = {
+			AND = {
+				OR = {
+					culture = culture_wight
+					religion = religion_wight
+				}
+				NOT = {
+					has_province_modifier = province_wight_debuff
+					owner = {
+						primary_culture = culture_wight
+						religion = religion_wight
+					}
+				}
+			}
+			AND = {
+				has_province_modifier = province_wight_debuff
+				NOT = {
+					culture = culture_wight
+					religion = religion_wight
+				}
+			}
+			AND = {
+				has_province_modifier = province_wight_debuff
+				owner = {
+					AND = {
+						primary_culture = culture_wight
+						religion = religion_wight
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "LOTR_PROVINCE_WIGHT.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.24 - Option : lotr_general.24.a" }
+
+		trigger = {
+				owner = {
+					NOT = {
+						primary_culture = culture_wight
+						religion = religion_wight
+					}
+				}
+		
+			OR = {
+				culture = culture_wight
+				religion = religion_wight
+			}
+			NOT = {
+				has_province_modifier = province_wight_debuff
+			}
+		}
+		add_province_modifier = {
+			name = "province_wight_debuff"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "LOTR_PROVINCE_WIGHT.1.b"
+		trigger = {
+			AND = {
+				has_province_modifier = province_wight_debuff
+				
+				OR = {
+					AND = {
+						owner = {
+							primary_culture = culture_wight
+							religion = religion_wight
+						}
+					}
+					NOT = {
+						culture = culture_wight
+						religion = religion_wight
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.24 - Option : lotr_general.24.b" }
+		remove_province_modifier = province_wight_debuff
+	}
+}
+
+province_event = {
+	id = lotr_general.25
+	title = "LOTR_PROVINCE_TROLL.1.t"
+	desc = "LOTR_PROVINCE_TROLL.1.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+		OR = {
+			AND = {
+				OR = {
+					culture = culture_troll
+					religion = religion_olog
+				}
+				NOT = {
+					has_province_modifier = province_troll_debuff
+				}
+				owner = {
+					NOT = {
+						OR = {
+							primary_culture = culture_troll
+							primary_culture = culture_orkish
+							primary_culture = culture_goblin
+						}
+					}
+					NOT = {
+						OR = {
+							religion = religion_olog
+							religion = religion_goblin
+							religion = religion_orkish
+						}
+					}
+				}
+			}
+			AND = {
+				has_province_modifier = province_troll_debuff
+				NOT = {
+					culture = culture_troll
+					religion = religion_olog
+				}
+			}
+			AND = {
+				has_province_modifier = province_troll_debuff
+				owner = {
+					OR = {
+						primary_culture = culture_troll
+						primary_culture = culture_orkish
+						primary_culture = culture_goblin
+					}
+					
+					OR = {
+						religion = religion_olog
+						religion = religion_goblin
+						religion = religion_orkish
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "LOTR_PROVINCE_TROLL.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.25 - Option : lotr_general.25.a" }
+
+		trigger = {
+			owner = {
+				NOT = {
+					OR = {
+						primary_culture = culture_troll
+						primary_culture = culture_orkish
+						primary_culture = culture_goblin
+					}
+				
+					OR = {
+						religion = religion_olog
+						religion = religion_goblin
+						religion = religion_orkish
+					}
+				}
+			}
+		
+			OR = {
+				culture = culture_troll
+				religion = religion_olog
+			}
+			NOT = {
+				has_province_modifier = province_troll_debuff
+			}
+		}
+		add_province_modifier = {
+			name = "province_troll_debuff"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "LOTR_PROVINCE_TROLL.1.b"
+		trigger = {
+			AND = {
+				has_province_modifier = province_troll_debuff
+				
+				OR = {
+					AND = {
+						owner = {
+							OR = {
+								primary_culture = culture_troll
+								primary_culture = culture_orkish
+								primary_culture = culture_goblin
+							}
+							
+							OR = {
+								religion = religion_olog
+								religion = religion_goblin
+								religion = religion_orkish
+							}
+						}
+					}
+					NOT = {
+						culture = culture_troll
+						religion = religion_olog
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.25 - Option : lotr_general.25.b" }
+		remove_province_modifier = province_troll_debuff
+	}
+}
+
+province_event = {
+	id = lotr_general.26
+	title = "LOTR_PROVINCE_HUORN.1.t"
+	desc = "LOTR_PROVINCE_HUORN.1.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+		OR = {
+			AND = {
+				OR = {
+					culture = culture_huorn
+					religion = religion_ents
+				}
+				NOT = {
+					has_province_modifier = province_huorn_debuff
+				}
+				owner = {
+					NOT = {
+						OR = {
+							primary_culture = culture_ents
+							primary_culture = culture_huorn
+						}
+						religion = religion_ents
+					}
+				}
+			}
+			AND = {
+				has_province_modifier = province_huorn_debuff
+				NOT = {
+					culture = culture_huorn
+					religion = religion_ents
+				}
+			}
+			AND = {
+				has_province_modifier = province_huorn_debuff
+				owner = {
+					OR = {
+						primary_culture = culture_ents
+						primary_culture = culture_huorn
+					}
+					religion = religion_ents
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "LOTR_PROVINCE_HUORN.1.a"
+		trigger = {
+			owner = {
+				NOT = {
+					OR = {
+						primary_culture = culture_ents
+						primary_culture = culture_huorn
+					}
+					religion = religion_ents
+				}
+			}
+		
+			OR = {
+				culture = culture_huorn
+				religion = religion_ents
+			}
+			NOT = {
+				has_province_modifier = province_huorn_debuff
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.26 - Option : lotr_general.26.a" }
+
+		add_province_modifier = {
+			name = "province_huorn_debuff"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "LOTR_PROVINCE_HUORN.1.b"
+		trigger = {
+			
+			AND = {
+				has_province_modifier = province_huorn_debuff
+				OR = {
+					AND = {
+						owner = {
+							OR = {
+								primary_culture = culture_ents
+								primary_culture = culture_huorn
+							}
+							religion = religion_ents
+						}
+					}
+					
+					NOT = {
+						culture = culture_huorn
+						religion = religion_ents
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.26 - Option : lotr_general.26.b" }
+
+		remove_province_modifier = province_huorn_debuff
+	}
+}
+

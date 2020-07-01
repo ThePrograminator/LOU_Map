@@ -1,0 +1,519 @@
+####################
+# Slot 1 - Securing the West  #
+####################
+X16_conquer_enedwaith = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X16
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	conquer_to_the_isen = {
+		icon = mission_conquer_50_development
+		required_missions = {
+		}
+		position = 1
+		provinces_to_highlight = {
+			area = gap_of_rohan_area
+			area = west_march_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			gap_of_rohan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			west_march_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	cross_the_isen = {
+		icon = mission_conquer_50_development
+		required_missions = {
+			conquer_to_the_isen
+		}
+		position = 2
+		provinces_to_highlight = {
+			area = caladach_area
+			area = arilthach_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			caladach_area = {
+				type = all
+				owned_by = ROOT
+			}
+			arilthach_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	strengthen_the_front = {
+		icon = mission_conquer_50_development
+		required_missions = {
+			cross_the_isen
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = dor_wathui_area
+			area = talorgan_area
+			area = gyroth_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			dor_wathui_area = {
+				type = all
+				owned_by = ROOT
+			}
+			talorgan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gyroth_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	conquer_to_the_gwathlo = {
+		icon = mission_conquer_50_development
+		required_missions = {
+			strengthen_the_front
+		}
+		position = 4
+		provinces_to_highlight = {
+			area = cairg_erp_area
+			area = ethir_gwathlo_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			cairg_erp_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ethir_gwathlo_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	conquer_enedwaith = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_to_the_gwathlo
+		}
+		position = 4
+		provinces_to_highlight = {
+			region = enedhwaith_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			enedhwaith_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+X16_conquer_lond_angren = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X16
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	cross_the_angren = {
+		icon = mission_conquer_50_development
+		required_missions = {
+			conquer_to_the_isen
+		}
+		position = 2
+		provinces_to_highlight = {
+			area = druwaith_laur_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			druwaith_laur_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	conquer_the_angren = {
+		icon = mission_conquer_50_development
+		required_missions = {
+			cross_the_angren
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = angrast_area
+			area = nan_angren_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			angrast_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nan_angren_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	control_lond_angren_trade = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = {
+			conquer_the_angren
+		}
+		position = 4
+		trigger = {
+			229 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 150
+			add_country_modifier = {
+				name = "lond_angren_trade_X01_mission"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+X16_culture_of_west = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X16
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	culture_of_western_rohan = {
+		icon = mission_colonial
+		required_missions = {
+			conquer_to_the_isen
+		}
+		position = 2
+		provinces_to_highlight = {
+			area = gap_of_rohan_area
+			area = west_march_area
+			owned_by = ROOT
+			NOT = {
+				culture = ROOT
+			}
+		}
+		trigger = {
+			gap_of_rohan_area = {
+				type = all
+				owned_by = ROOT
+				culture = ROOT
+			}
+			west_march_area = {
+				type = all
+				owned_by = ROOT
+				culture = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+
+	secure_the_isen = {
+		icon = mission_great_wall
+		required_missions = {
+			culture_of_western_rohan
+		}
+		position = 3
+		trigger = {
+			calc_true_if = {
+				ROOT = {
+					any_owned_province = {
+						area = gap_of_rohan_area
+						area = west_march_area
+						has_influencing_fort = yes
+					}
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "securing_against_rhun_X01_mission"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+X16_deal_with_isengard = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X16
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	defeat_isengard = {
+		icon = mission_conquer_50_development
+		required_missions = {
+		}
+		position = 8
+		provinces_to_highlight = {
+			area = nan_curunir_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			exists = V49
+			V49 = {
+				technology_group = lotr_uruk_hai
+			}
+			nan_curunir_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+X16_conquer_anduin_vales = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X16
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	conquer_lothlorien = {
+		icon = mission_conquer_50_development
+		required_missions = {
+		}
+		position = 6
+		provinces_to_highlight = {
+			area = parth_celebrant_area
+			area = lothlorien_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			parth_celebrant_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lothlorien_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+
+	conquer_anduin_vales = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_lothlorien
+		}
+		position = 7
+		provinces_to_highlight = {
+			region = vales_of_anduin_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			vales_of_anduin_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+X16_conquer_anduin_vales = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = X16
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	secure_the_anduin = {
+		icon = mission_great_wall
+		required_missions = {
+			
+		}
+		position = 6
+		trigger = {
+			calc_true_if = {
+				ROOT = {
+					any_owned_province = {
+						area = the_wold_area
+						area = parth_galen_area
+						area = entwade_area
+						has_influencing_fort = yes
+					}
+				}
+				amount = 4
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "securing_against_rhun_X01_mission"
+				duration = 9125				#25 years
+			}
+		}
+	}
+
+	cross_the_anduin = {
+		icon = mission_alliances
+		required_missions = {
+			secure_the_anduin
+		}
+		position = 7
+		provinces_to_highlight = {
+			area = brown_lands_area
+			area = emyn_muil_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			brown_lands_area = {
+				type = all
+				owned_by = ROOT
+			}
+			emyn_muil_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}

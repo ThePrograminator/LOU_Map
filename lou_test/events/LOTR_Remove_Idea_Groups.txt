@@ -1,0 +1,30 @@
+########################################
+# Events for Removing Idea Groups
+#
+#
+########################################
+
+namespace = event_remove_idea_group
+normal_or_historical_nations = yes
+
+# Spawn Smaug
+country_event = {
+	id = event_remove_idea_group.1
+	title = event_remove_idea_group.1.t
+	desc = event_remove_idea_group.1.d
+	picture = DESOLATION_OF_SMAUG_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	
+	}
+	
+	option = {
+		name = "event_remove_idea_group.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - event_remove_idea_group.1 - Option : event_remove_idea_group.1.a" }
+
+		remove_idea_group = offensive_ideas	
+	}  
+}
