@@ -466,22 +466,12 @@ guiTypes = {
 		name = "new_buildings_entry"
 		backGround=""
 		position = { x=0 y =0}	
-		size = { x=400 y = 320}
+		size = { x=900 y = 4500}
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullscreen = no
-
-		#listboxType = {
-		#		name ="action_type_list"
-		#		position = { x = 16 y = 40 }
-		#		backGround=""
-		#		size = { x= 900 y = 900 }
-		#		horizontal = 1
-		#		spacing = 0
-		#		scrollbartype = "standardlistbox_slider"
-		#}
 		
 		listboxType = {
 			name = "action_type_list"
