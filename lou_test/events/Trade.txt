@@ -435,7 +435,6 @@ country_event = {
 		add_meritocracy_effect = yes
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=treasurer
-			advisor_type_if_not_state=treasurer
 			skill = 3
 			discount=yes
 		}
@@ -541,7 +540,6 @@ country_event = {
 		add_meritocracy_effect = yes
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=trader
-			advisor_type_if_not_state=trader
 			skill = 2
 			discount=yes
 		}

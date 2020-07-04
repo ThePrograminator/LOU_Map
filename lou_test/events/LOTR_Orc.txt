@@ -260,35 +260,8 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
-
-		modifier = {
-			factor = 1.0
-			AND = {
-				is_at_war = no
-				NOT = {
-					V17 = {
-						has_opinion = {
-							who = ROOT
-							value = -50
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			AND = { 
-				is_at_war = yes
-				V17 = {
-					has_opinion = {
-						who = ROOT
-						value = 10
-					}
-				}
-			}
-		}
-	}
+		days = 1
+    }
 	
     #Men
  	option = {
@@ -416,21 +389,8 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
-
-		modifier = {
-			factor = 0.5
-			AND = {
-				is_at_war = no
-			}
-		}
-		modifier = {
-			factor = 1.0
-			AND = { 
-				is_at_war = yes
-			}
-		}
-	}
+		days = 1
+    }
 	
     #We are stronger than you!
  	option = {
@@ -516,51 +476,8 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
-
-		modifier = {
-			factor = 1.0
-			OR = {
-				NOT = { stability = -2 }
-				AND = { war_exhaustion = 8}
-			}
-		}
-		modifier = {
-			factor = 1.0
-			OR = {
-				NOT = { stability = -1 }
-				AND = { war_exhaustion = 6}
-			}
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				NOT = { stability = 0 }
-				AND = { war_exhaustion = 4}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { stability = 1 }
-				AND = { war_exhaustion = 2}
-			}
-		}
-		modifier = {
-			factor = 0.7
-			OR = {
-				NOT = { stability = 2 }
-				AND = { war_exhaustion = 0}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				NOT = { stability = 3 }
-				AND = { war_exhaustion = 0}
-			}
-		}
-	}
+		days = 1
+    }
 	
     #Kill Him
  	option = {

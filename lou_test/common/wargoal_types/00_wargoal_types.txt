@@ -993,7 +993,7 @@ take_province_excommunication = {
 	allowed_provinces = {
 		owner = { 
 			is_excommunicated = yes
-			religion = catholic		
+			#religion = catholic		
 		}
 		OR = {
 			is_core = ROOT
@@ -1188,22 +1188,22 @@ superiority_overseas = {
 	peace_cost_factor = 0.5	
 	
 	allowed_provinces = {
-		owner = {
-			capital_scope = {
-				OR = {
-					continent = asia
-					continent = africa
-				}
-			}
-			OR = {
-				technology_group = indian
-				technology_group = sub_saharan
-				technology_group = east_african
-				technology_group = central_african
-				technology_group = chinese
-				technology_group = nomad_group
-			}
-		}
+		# owner = {
+			# capital_scope = {
+				# OR = {
+					# continent = asia
+					# continent = africa
+				# }
+			# }
+			# OR = {
+				# technology_group = indian
+				# technology_group = sub_saharan
+				# technology_group = east_african
+				# technology_group = central_african
+				# technology_group = chinese
+				# technology_group = nomad_group
+			# }
+		# }
 	}
 	
 	peace_options = {
@@ -1373,13 +1373,13 @@ annex_country_japan = {
 	peace_cost_factor = 1.0	
 	
 	allowed_provinces = {
-		owner = {
-			OR = {
-				has_reform = daimyo
-				has_reform = indep_daimyo
-				has_reform = shogunate
-			}
-		}
+		# owner = {
+			# OR = {
+				# has_reform = daimyo
+				# has_reform = indep_daimyo
+				# has_reform = shogunate
+			# }
+		# }
 	}
 
 	peace_options = {
@@ -1411,7 +1411,6 @@ war_goal_change_government = {
 	peace_options = {
 		po_change_government
 		po_demand_provinces
-		force_peasant_republic
 	}
 	
 	war_name = CHANGE_GOVERNMENT_WAR_NAME
@@ -1436,7 +1435,6 @@ war_goal_peasants_change_government = {
 
 	peace_options = {
 		po_demand_provinces
-		force_peasant_republic
 	}
 	
 	war_name = CHANGE_GOVERNMENT_WAR_NAME
@@ -1643,12 +1641,12 @@ superiority_chinese_unification = {
 		peace_cost_factor = 0.5
 		
 		allowed_provinces = {
-			OR = {
-				region = south_china_region
-				region = xinan_region
-				region = north_china_region
-				culture_group = FROM
-			}
+			# OR = {
+				# region = south_china_region
+				# region = xinan_region
+				# region = north_china_region
+				# culture_group = FROM
+			# }
 		}
 		
 		peace_options = {

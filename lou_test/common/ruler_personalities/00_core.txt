@@ -52,10 +52,43 @@
 # malevolent_personality
 # immortal_personality
 
+#-----------------------------------------
+# LOTR
+#-----------------------------------------
+carries_ring_personality = {
+	ruler_allow = {
+		allow = {
+			has_country_modifier = the_one_ring_not_mordor
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no
+		}
+	}
+    
+	wants_betray_allies = yes
+	wants_threaten_war = yes
+	send_warning_desire = 50
+	underestimate_ae = yes
+	razing = yes
+	random_troop_moves = yes
+	random_insults = yes
+	
+	legitimacy = -1
+	nation_designer_cost = 800
+}
+
 ###############################################
 # Good
 ###############################################
-
 
 #"Statesman" Traits
 just_personality = {
@@ -3369,41 +3402,3 @@ immortal_personality = {
 	static = yes # Makes nation_designer_cost not scale with age etc. 
 }
 
-carries_ring_personality = {
-	#personality_events.10
-	ruler_allow = {
-		allow = {
-			has_country_modifier = the_one_ring_not_mordor
-		}
-	}
-
-	heir_allow = {
-		allow = {
-			always = no
-		}
-	}
-	
-	consort_allow = {
-		allow = {
-			always = no
-		}
-	}
-
-	allow = {
-
-	}
-
-	chance = {
-	}
-
-	wants_betray_allies = yes
-	wants_threaten_war = yes
-	send_warning_desire = 50
-	underestimate_ae = yes
-	razing = yes
-	random_troop_moves = yes
-	random_insults = yes
-	
-	legitimacy = -1
-	nation_designer_cost = 800
-}

@@ -101,7 +101,7 @@ has_adm_advisor_3 = {
 			treasurer = 3
 			philosopher = 3
 			artist = 3
-			 theologian = 3
+			theologian = 3
 			master_of_mint = 3
 			inquisitor = 3
 			natural_scientist = 3
@@ -173,18 +173,6 @@ is_free_or_tributary_trigger = { #I.e. Tags that can conduct independent diploma
 		}
 	}
 }
-
-
-# Third Rome Triggers
-has_russian_government_interaction = {
-	has_dlc = "Third Rome"
-	OR = {
-		has_reform = tsardom
-		has_reform = principality
-		has_reform = veche_republic
-	}
-}
-
 
 #RIGHTS OF MAN TRIGGERS
 
@@ -426,162 +414,6 @@ consort_has_bad_mil_personality = {
 	consort_has_personality = craven_personality
 	#}
 }
- 
-can_have_center_of_reformation_trigger = { #Province Scope
-	#$RELIGION$ needs to match the religion of the center that is being spawned.
-	continent = europe
-	OR = {
-		religion = protestant
-		religion = catholic
-		religion = reformed
-	}
-	NOT = { province_id = 118 }
-	is_in_capital_area = yes
-	is_reformation_center = no
-	is_island = no
-	expelling_minorities = no
-	development = 10
-	NOT = {
-		any_neighbor_province = {
-			is_reformation_center = yes
-		}
-	}
-	NOT = {
-		any_province = {
-			area = PREV
-			is_reformation_center = yes
-			religion = $RELIGION$
-		}
-	}
-	NOT = { has_climate = arctic }
-	NOT = { has_climate = arid }
-	NOT = { has_terrain = coastline }
-	NOT = { has_terrain = coastal_desert }
-	NOT = { has_terrain = steppe }
-	NOT = { has_terrain = desert }
-	NOT = { has_terrain = glacier }
-	NOT = { has_climate = tropical }
-}
-
-province_viable_for_industrialization_events_trigger = { #Province Scope
-	is_state = yes
-	NOT = { devastation = 1 }
-	OR = {
-		is_in_capital_area = yes
-		continent = CAPITAL
-	}
-	enlightenment = 100
-}
-
-unindustrialized_province_trigger = { #Province Scope
-	#NOT = { has_province_flag = canals_and_turnpikes_flag }
-	#NOT = { has_province_flag = agricultural_revolution_province }
-	NOT = { has_province_flag = had_economic_urbanization }
-	NOT = { has_province_flag = swapped_to_cloth }
-	NOT = { has_province_flag = swapped_to_paper }
-	NOT = { has_province_flag = swapped_to_glass }
-	NOT = { has_province_flag = industrial_urbanization }
-	NOT = { has_province_flag = metalwork_center }
-	NOT = { has_province_flag = textile_center }
-	NOT = { has_province_flag = shipyards_of_x }
-}
-
-industrialized_province_trigger = { #Province Scope
-	OR = {
-		#has_province_flag = canals_and_turnpikes_flag
-		#has_province_flag = agricultural_revolution_province
-		has_province_flag = had_economic_urbanization 
-		has_province_flag = swapped_to_cloth
-		has_province_flag = swapped_to_paper
-		has_province_flag = swapped_to_glass
-		has_province_flag = industrial_urbanization
-		has_province_flag = metalwork_center
-		has_province_flag = textile_center
-		has_province_flag = shipyards_of_x
-	}
-}
-
-was_never_end_game_tag_trigger = {	#Country Scope
-	OR = {
-		NOT = { end_game_tags_blocked = yes }
-		AND = {
-			NOT = { was_tag = MUG }
-			NOT = { was_tag = TUR }
-			NOT = { was_tag = BYZ }
-			NOT = { was_tag = ROM }
-			NOT = { was_tag = HLR }
-			NOT = { was_tag = RUM }
-			NOT = { was_tag = QNG }
-			NOT = { was_tag = RUS }
-			NOT = { was_tag = PLC }
-			NOT = { was_tag = JAP }
-			NOT = { was_tag = YUA }
-			NOT = { was_tag = HIN }
-			NOT = { was_tag = BHA }
-			NOT = { was_tag = ARB }
-			NOT = { was_tag = PAP }
-			NOT = { was_tag = SPA }
-			NOT = { was_tag = GBR }
-			NOT = { was_tag = ITA }
-			NOT = { was_tag = GER }
-			NOT = { was_tag = MNG }
-			NOT = { was_tag = MGE }
-			NOT = { was_tag = SYN }
-			NOT = { was_tag = ADU }
-			NOT = { was_tag = LOT }
-			NOT = { tag = MUG }
-			NOT = { tag = TUR }
-			NOT = { tag = BYZ }
-			NOT = { tag = ROM }
-			NOT = { tag = HLR }
-			NOT = { tag = RUM }
-			NOT = { tag = QNG }
-			NOT = { tag = RUS }
-			NOT = { tag = PLC }
-			NOT = { tag = JAP }
-			NOT = { tag = YUA }
-			NOT = { tag = HIN }
-			NOT = { tag = BHA }
-			NOT = { tag = ARB }
-			NOT = { tag = PAP }
-			NOT = { tag = SPA }
-			NOT = { tag = GBR }
-			NOT = { tag = ITA }
-			NOT = { tag = GER }
-			NOT = { tag = MNG }
-			NOT = { tag = MGE }
-			NOT = { tag = SYN }
-			NOT = { tag = ADU }
-			NOT = { tag = LOT }
-		}
-	}
-}
-
-
-was_never_german_regional_tag_trigger = {	#Country Scope
-	NOT = { was_tag = BRA }
-	NOT = { was_tag = PRU }
-	NOT = { was_tag = POM }
-	NOT = { was_tag = SAX }
-	NOT = { was_tag = BAV }
-	NOT = { was_tag = HAB }
-	NOT = { was_tag = SWA }
-	NOT = { was_tag = FKN }
-	NOT = { was_tag = WES }
-	NOT = { was_tag = HAN }
-	
-	NOT = { tag = BRA }
-	NOT = { tag = PRU }
-	NOT = { tag = POM }
-	NOT = { tag = SAX }
-	NOT = { tag = BAV }
-	NOT = { tag = HAB }
-	NOT = { tag = SWA }
-	NOT = { tag = FKN }
-	NOT = { tag = WES }
-	NOT = { tag = HAN }
-}
-
 
 has_manufactory_trigger = { #Province Scope
 	custom_trigger_tooltip = {
@@ -708,7 +540,6 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = salt
             }
         }
-        ROOT = { dip_tech = 11 }
     }
     else_if = {
         limit = {
@@ -717,7 +548,6 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = iron
             }
         }
-        ROOT = { mil_tech = 11 }
     }
     else_if = {
         limit = {
@@ -728,7 +558,6 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = dyes
             }
         }
-        ROOT = { adm_tech = 11 }
     }
     else_if = {
         limit = {
@@ -741,7 +570,6 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = cocoa
             }
         }
-        ROOT = { adm_tech = 14 }
     }
     else_if = {
         limit = {
@@ -753,7 +581,6 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = incense
             }
         }
-        ROOT = { dip_tech = 14 }
     }
     else_if = {
         limit = {
@@ -763,7 +590,6 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = wine
             }
         }
-        ROOT = { adm_tech = 6 }
     }
     else_if = {
         limit = {
@@ -775,158 +601,12 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = chinaware
             }
         }
-        ROOT = { adm_tech = 16 }
     }
     else_if = {
         limit = {
             trade_goods = coal
         }
-        ROOT = { adm_tech = 21 }
     }
-}
-
-has_nobles_trade_good_trigger = {
-	OR = {
-		trade_goods = copper
-		trade_goods = iron
-		trade_goods = livestock
-		trade_goods = grain
-		trade_goods = gems
-		AND = {
-			trade_goods = slaves
-			ROOT = { NOT = { religion = nahuatl } }
-		}
-	}
-}
-
-has_burghers_trade_good_trigger = {
-	OR = {
-		trade_goods = naval_supplies
-		trade_goods = salt
-		trade_goods = coffee
-		trade_goods = cotton
-		trade_goods = sugar
-		trade_goods = tobacco
-		trade_goods = tea
-		trade_goods = cocoa
-		trade_goods = cloth
-		trade_goods = silk
-		trade_goods = dyes
-		trade_goods = coal
-		trade_goods = spices
-		trade_goods = tropical_wood
-		trade_goods = glass
-		trade_goods = chinaware
-		trade_goods = paper
-		trade_goods = ivory
-		AND = {
-			trade_goods = fish
-			ROOT = { NOT = { religion_group = christian } }
-		}
-	}
-}
-
-has_church_trade_good_trigger = {
-	OR = {
-		trade_goods = wool
-		trade_goods = fur
-		AND = {
-			trade_goods = wine
-			ROOT = { NOT = { religion_group = muslim } }
-		}
-		AND = {
-			trade_goods = slaves
-			ROOT = { religion = nahuatl }
-		}
-		trade_goods = incense
-		AND = {
-			trade_goods = fish
-			ROOT = { religion_group = christian }
-		}
-	}
-}
-
-has_dharma_elephants_trigger = {
-	OR = {
-		has_dlc = "Dharma"
-		has_dlc = "Dharma - Indian Sultanate Pack"
-		has_dlc = "Dharma - Hindu Unit Pack"
-	}
-	OR = {
-		culture_group = hindusthani
-		culture_group = eastern_aryan
-		culture_group = western_aryan
-		culture_group = dravidian
-		culture_group = central_indic
-		culture_group = southeastasian_group
-		culture_group = burman
-		primary_culture = cham
-		primary_culture = sumatran
-		primary_culture = javanese
-		primary_culture = malayan
-		tag = CDL #Dali
-	}
-}
-
-# This is for when we want to award government reform progress and need to check if that's useful to the player based on dlc ownership
-has_completed_all_reforms_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = has_completed_all_reforms_trigger_tooltip
-		NOT = { has_dlc = "Emperor" }
-		OR = {
-			has_reform = political_absolutism_reform
-			has_reform = legislative_houses_reform
-			has_reform = strengthen_executive_powers_reform
-			has_reform = reinforce_republican_values_reform
-			has_reform = enlightened_monarchy_reform
-			has_reform = emperor_of_the_revolution_reform
-			has_reform = government_for_people_reform
-			has_reform = president_for_life_reform
-			has_reform = all_under_tengri_reform
-			has_reform = proclaim_religious_head_reform
-			has_reform = priestly_autonomy_reform
-			has_reform = many_fingers_of_god_reform
-			has_reform = religious_permanent_revolution_reform
-			has_reform = religion_in_one_country_reform
-		}
-	}
-}
-
-# This is for all other situations
-has_final_tier_reforms_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = has_completed_all_reforms_trigger_tooltip
-		OR = {
-			has_reform = political_absolutism_reform
-			has_reform = legislative_houses_reform
-			has_reform = strengthen_executive_powers_reform
-			has_reform = reinforce_republican_values_reform
-			has_reform = enlightened_monarchy_reform
-			has_reform = emperor_of_the_revolution_reform
-			has_reform = government_for_people_reform
-			has_reform = president_for_life_reform
-			has_reform = all_under_tengri_reform
-			has_reform = proclaim_religious_head_reform
-			has_reform = priestly_autonomy_reform
-			has_reform = many_fingers_of_god_reform
-			has_reform = religious_permanent_revolution_reform
-			has_reform = religion_in_one_country_reform
-		}
-	}
-}
-
-has_holy_order_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = "has_holy_order_trigger_tooltip"
-		OR = {
-			holy_order = jesuit_order
-			holy_order = dominican_order
-			holy_order = franciscan_order
-			holy_order = shadhili_order
-			holy_order = qadiri_order
-			holy_order = aissawa_order
-		}
-	}
 }
 
 same_govt_as_root_trigger = {
@@ -973,65 +653,6 @@ same_govt_as_root_trigger = {
 	}
 }
 
-# Building triggers
-
-has_tax_building_trigger = {
-	OR = {
-		has_building = temple
-		has_building = cathedral
-	}
-}
-
-has_trade_building_trigger = {
-	OR = {
-		has_building = marketplace
-		has_building = trade_depot
-		has_building = stock_exchange
-	}
-}
-
-has_production_building_trigger = {
-	OR = {
-		has_building = workshop
-		has_building = counting_house
-	}
-}
-
-has_manpower_building_trigger = {
-	OR = {
-		has_building = barracks
-		has_building = training_fields
-	}
-}
-
-has_shipyard_building_trigger = {
-	OR = {
-		has_building = shipyard
-		has_building = grand_shipyard
-	}
-}
-
-has_dock_building_trigger = {
-	OR = {
-		has_building = dock
-		has_building = drydock
-	}
-}
-
-has_forcelimit_building_trigger = {
-	OR = {
-		has_building = regimental_camp
-		has_building = conscription_center
-	}
-}
-
-has_courthouse_building_trigger = {
-	OR = {	
-		has_building = courthouse
-		has_building = town_hall
-	}
-}
-
 has_been_insulted_by_root = {
 	custom_trigger_tooltip = {
 		tooltip = has_been_insulted_by_root
@@ -1051,52 +672,6 @@ has_been_insulted_by_root = {
 valid_for_personal_unions_trigger = {
 	is_subject = no
 	government = monarchy
-	religion_group = christian
-}
-
-is_shadow_kingdom_eligible_trigger = {
-	is_emperor = no
-	is_part_of_hre = yes
-	OR = {
-		capital_scope = { region = italy_region }
-		AND = {
-			culture_group = latin
-			any_owned_province = {
-				region = italy_region
-			}
-		}
-	}
-}
-
-will_leave_for_shadow_kingdom_trigger = {
-	NOT = {
-		OR = {
-			has_country_flag = reined_in_for_shadow_kingdom
-			emperor = {
-				alliance_with = PREV
-			}
-			has_opinion = {
-				who = emperor
-				value = 150
-			}
-			is_subject_of = emperor
-			has_reform = free_city
-		}
-	}
-}
-
-
-is_germanic_but_not_swamp = {
-	culture_group = germanic
-	NOT = { primary_culture = dutch }
-	NOT = { primary_culture = flemish }
-	NOT = { primary_culture = frisian }
-}
-
-is_germanic_but_not_mountains = {
-	culture_group = germanic
-	NOT = { primary_culture = swiss }
-	NOT = { primary_culture = austrian }
 }
 
 #province scope; checks it is highest or joint highest supply limit in the area owned by you (useful for spawning rebels)
@@ -1290,41 +865,15 @@ check_reducing_estate_revolt_size_more_trigger = {
 	}
 }
 
-is_revolutionary_republic_trigger = {
-	OR = {
-		has_reform = revolutionary_republic_reform
-		has_reform = junior_revolutionary_republic_reform
-	}
+is_absolutism_active = {    
+    always = yes
+	# OR = {
+		# current_age = age_of_absolutism
+		# current_age = age_of_revolutions
+	# }
 }
 
-revolution_event_can_happen_trigger = {
-	OR = {
-		revolution_target_exists = no
-		has_dlc = "Emperor"
-	}
-	OR = {
-		capital_scope = { 
-#			continent = europe 
-			controlled_by = REB
-		}
-		has_country_modifier = just_lost_to_revolutionary_rebels
-		has_country_flag = revolution_disaster_immediate_revolution
-	}
-	num_of_cities = 10
-	is_revolutionary = no
-}
-#country scope, used in election events to check whether generated rulers may be female
-republic_with_female_rulers_trigger = {
-	OR = {
-		has_active_policy = mandatory_service
-		has_country_modifier = sister_suffragettes
-		has_country_modifier = mary_inheritance_reforms
-	}
-}
-
-is_absolutism_active = {
-	OR = {
-		current_age = age_of_absolutism
-		current_age = age_of_revolutions
-	}
+# Used in sound/battle for cavalry combat sound
+has_dharma_elephants_trigger = {
+    always = no
 }

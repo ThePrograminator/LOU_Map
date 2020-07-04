@@ -24,12 +24,6 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = string_screen_title_papacy
-        trigger = {
-			tag = PAP
-        }
-    }
-    text = {
         localisation_key = string_screen_title
         trigger = {
 			always = yes
@@ -641,13 +635,6 @@ defined_text = {
     name = startup_culture_explanation
 	random = no
 
-    text = {
-        localisation_key = string_manchu_culture
-        trigger = {
-			primary_culture = manchu
-			has_dlc = "Mandate of Heaven"
-        }
-    }
 	text = {
         localisation_key = string_no_special_culture
         trigger = {
@@ -681,12 +668,6 @@ defined_text  = {
         }
     }
 	text = {
-        localisation_key = string_start_government_papacy
-        trigger = {
-			has_reform = papacy_reform
-        }
-    }
-	text = {
         localisation_key = string_start_government_theocracy
         trigger = {
 			government = theocracy
@@ -697,7 +678,6 @@ defined_text  = {
         trigger = {
 			tag_with_plural_name_trigger = yes
 			OR = {
-				has_reform = siberian_tribe
 				government = native
 			}
        }
@@ -706,7 +686,7 @@ defined_text  = {
         localisation_key = string_start_government_native_councils
         trigger = {
 			OR = {
-				has_reform = siberian_tribe
+				#has_reform = siberian_tribe
 				government = native
 			}
        }
@@ -721,15 +701,6 @@ defined_text = {
 		localisation_key = string_start_government_heirs
 		trigger = {
 			government = monarchy
-			NOT = { has_reform = mamluk_government }
-			NOT = { has_reform = steppe_horde }
-		}
-	}
-	text = {
-		localisation_key = string_start_government_horde_heirs
-		trigger = {
-			government = monarchy
-			has_reform = steppe_horde
 		}
 	}
 	text = {
@@ -745,18 +716,6 @@ defined_text  = {
     name = startup_government_factions
 	random = no
 
-    text = {
-        localisation_key = string_start_factions
-        trigger = {
-			OR = {
-				has_government_attribute = is_merchant_republic
-				AND = { 
-					is_revolutionary_republic_trigger = yes
-					has_dlc = "Rights of Man"
-				}
-			}
-		}
-    }
 	text = {
         localisation_key = string_start_factions_no
         trigger = {
