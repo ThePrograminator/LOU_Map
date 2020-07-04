@@ -23,14 +23,16 @@ objectTypes = {
 	pdxmesh = {
 		name = "mesh_rhun_arty_infantry_1"
 		
-		file = "gfx/models/Units/rhun/rhun_artillery.mesh"
+		file = "gfx/models/Units/gondor_arti.mesh"
 
 		animation = { id = "attack"				type = "gondor_arti_thrust_anim" }
-		animation = { id = "death"				type = "gondor_arti_move_anim" }		
+		animation = { id = "death"				type = "gondor_arti_idle_anim" }		
 		animation = { id = "idle"				type = "gondor_arti_idle_anim" }
 		animation = { id = "walk"				type = "gondor_arti_move_anim" }
 		animation = { id = "retreat"			type = "gondor_arti_move_anim" }
-		
+
+		animation = { id = "artillery_attack"	type = "gondor_arti_thrust_anim" }
+        
 		scale = 0.5
 	}
 	

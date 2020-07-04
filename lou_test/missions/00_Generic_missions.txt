@@ -290,24 +290,24 @@ administrative_missions = {
 			}
 		}
 	}
-	build_temples = {
-		icon = mission_early_game_buildings
-		required_missions = { high_income_mission }
-		trigger = {
-			temple = 5
-			workshop = 5
-		}
-		effect = {
-			add_adm_power = 50
-			add_country_modifier = {
-				name = "building_spree"
-				duration = 9125
-			}
-		}
-	}
+	# build_temples = {
+		# icon = mission_early_game_buildings
+		# required_missions = { high_income_mission }
+		# trigger = {
+			# temple = 5
+			# workshop = 5
+		# }
+		# effect = {
+			# add_adm_power = 50
+			# add_country_modifier = {
+				# name = "building_spree"
+				# duration = 9125
+			# }
+		# }
+	# }
 	build_treasury = {
 		icon = mission_war_chest
-		required_missions = { build_temples }
+		required_missions = { high_income_mission }
 		trigger = { treasury = 2000 }
 		effect = {
 			add_country_modifier = {
@@ -316,38 +316,38 @@ administrative_missions = {
 			}
 		}
 	}
-	build_manufactories = {
-		icon = mission_have_manufactories
-		required_missions = { build_treasury }
-		trigger = {
-			calc_true_if = {
-				desc = build_manufactories_mission_tooltip
-				all_owned_province = {
-					OR = {
-						has_building = mills
-						has_building = farm_estate
-						has_building = tradecompany
-						has_building = plantations
-						has_building = textile
-						has_building = weapons
-						has_building = wharf
-						has_building = furnace
-					}
-				}
-				amount = 20
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "proto_industrialization"
-				duration = 9125
-			}
-			add_years_of_income = 1.5
-		}
-	}
+	# build_manufactories = {
+		# icon = mission_have_manufactories
+		# required_missions = { build_treasury }
+		# trigger = {
+			# calc_true_if = {
+				# desc = build_manufactories_mission_tooltip
+				# all_owned_province = {
+					# OR = {
+						# has_building = mills
+						# has_building = farm_estate
+						# has_building = tradecompany
+						# has_building = plantations
+						# has_building = textile
+						# has_building = weapons
+						# has_building = wharf
+						# has_building = furnace
+					# }
+				# }
+				# amount = 20
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = "proto_industrialization"
+				# duration = 9125
+			# }
+			# add_years_of_income = 1.5
+		# }
+	# }
 	imperial_ambition_mission = {
 		icon = mission_empire
-		required_missions = { build_manufactories }
+		required_missions = { build_treasury }
 		trigger = {
 			total_development = 1000
 		}
