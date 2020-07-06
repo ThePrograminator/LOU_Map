@@ -459,9 +459,9 @@ guiTypes = {
 		}		
 	}
 
-	##########################################
-
-	### New buildings window (Common Sense and beyond) where layout is manual
+	#--------------------------------------------------------
+    # Buildings
+    #--------------------------------------------------------
 	windowType = {
 		name = "new_buildings_entry"
 		backGround=""
@@ -471,7 +471,17 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""
-		fullscreen = no
+		fullscreen = no	
+		
+		#listboxType = {
+		#		name ="action_type_list"
+		#		position = { x = 16 y = 40 }
+		#		backGround=""
+		#		size = { x= 900 y = 900 }
+		#		horizontal = 1
+		#		spacing = 0
+		#		scrollbartype = "standardlistbox_slider"
+		#}
 		
 		listboxType = {
 			name = "action_type_list"
