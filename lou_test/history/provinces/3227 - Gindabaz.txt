@@ -4,10 +4,6 @@ base_tax = 5
 base_production = 5
 base_manpower = 5
 
-add_core = Y16
-owner = Y16
-controller = Y16
-
 culture = culture_longbeard
 religion = religion_mahal
 
@@ -17,12 +13,12 @@ hre = no
 
 center_of_trade = 1
 
-hold_2_dwarf_building = yes
-fort_small_gatehouse_dwarf_building = yes
-rune_door_dwarf_building = yes
-mining_network_dwarf_building = yes
-libary_dwarf_building = yes
-armoury_dwarf_building = yes
+hold_2_dwarf_building=yes
+fort_small_gatehouse_dwarf_building=yes
+rune_door_dwarf_building=yes
+mining_network_dwarf_building=yes
+libary_dwarf_building=yes
+armoury_dwarf_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -40,3 +36,26 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+
+2770.1.1 = {
+	add_core = Y22
+	owner = Y22
+	controller = Y22
+	hold_2_dwarf_building=yes
+	fort_small_gatehouse_dwarf_building=yes
+	rune_door_dwarf_building=yes
+	mining_network_dwarf_building=yes
+	libary_dwarf_building=yes
+	armoury_dwarf_building=yes
+}
+2802.3.1 = {
+	add_core = Y16
+	owner = Y16
+	controller = Y16
+	capital_2_dwarf_building=yes
+	fort_small_gatehouse_dwarf_building=yes
+	rune_door_dwarf_building=yes
+	mining_network_dwarf_building=yes
+	libary_dwarf_building=yes
+	armoury_dwarf_building=yes
+}

@@ -1,0 +1,17 @@
+name = "Fall of Dradorny-Arnas"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 557 # Dradorny-Arnas
+}
+
+2758.1.1 = {
+	add_attacker = Y48
+	add_defender = Y70
+}
+
+# The orcs take the capital of Dradorny-Arnas
+2760.1.1 = {
+	rem_attacker = Y48
+	rem_defender = Y70
+}

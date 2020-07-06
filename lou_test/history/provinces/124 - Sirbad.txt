@@ -29,12 +29,12 @@ hre = no
 
 center_of_trade = 1
 
-city_1_building = yes
-fort_pallisade_building = yes
-dock_building = yes
-marketplace_building = yes
-workshop_building = yes
-temple_building = yes
+city_1_building=yes
+fort_pallisade_building=yes
+dock_building=yes
+marketplace_building=yes
+workshop_building=yes
+temple_building=yes
 
 
 discovered_by = lotr_human
@@ -53,6 +53,14 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+
+2758.9.15 = {
+	controller = V14
+}
+
+2759.8.20 = {
+	controller = X01
+}
 
 2901.1.1 = {
 	add_core = X24

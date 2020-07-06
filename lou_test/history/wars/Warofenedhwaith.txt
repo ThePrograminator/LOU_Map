@@ -1,0 +1,25 @@
+name = "War of Enedhwaith"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1494 # Gygrid
+}
+
+2756.1.1 = {
+	add_attacker = Z45
+	add_attacker = Z44
+	add_attacker = Z46
+	add_attacker = Z11
+	add_defender = V16
+	add_defender = V15
+}
+
+# The fall of Maolrunaidh & Maolfinn
+2759.1.1 = {
+	rem_attacker = Z45
+	rem_attacker = Z44
+	rem_attacker = Z46
+	rem_attacker = Z11
+	rem_defender = V16
+	rem_defender = V15
+}

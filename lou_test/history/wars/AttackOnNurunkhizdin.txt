@@ -1,0 +1,17 @@
+name = "War of Nurunkhizdin"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1017 # Kheledh-nala
+}
+
+2799.11.15 = {
+	add_attacker = Y48
+	add_defender = Y18
+}
+
+# The orcs take Kheledh-nala & Kablik-Madur
+2802.1.1 = {
+	rem_attacker = Y48
+	rem_defender = Y18
+}

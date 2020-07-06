@@ -1,0 +1,19 @@
+name = "Battle of Ered Harmal"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 630 # Namagaluz
+}
+
+3018.1.1 = {
+	add_attacker = Y40
+	add_defender = Y19
+	add_defender = Y20
+}
+
+# War of the Ring
+3021.3.1 = {
+	rem_attacker = Y40
+	rem_defender = Y19
+	rem_defender = Y20
+}

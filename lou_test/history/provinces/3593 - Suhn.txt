@@ -1,13 +1,27 @@
-base_tax = 1
-base_production = 1
-base_manpower = 1
+is_city = yes
 
-culture = culture_wilderness
-religion = religion_wilderness
+base_tax = 5
+base_production = 4
+base_manpower = 5
 
-trade_goods = grain
+add_core = W52
+owner = W52
+controller = W52
+
+culture = culture_nargaathi
+religion = religion_ivabi
+
+trade_goods = cloth
 
 hre = no
+
+capital_1_building=yes
+trade_outpost_building=yes
+tax_office_building=yes
+workshop_building=yes
+fort_pallisade_building=yes
+army_camp_building=yes
+dock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

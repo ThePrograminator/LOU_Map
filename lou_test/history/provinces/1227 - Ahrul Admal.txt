@@ -27,12 +27,12 @@ trade_goods = paper
 
 hre = no
 
-fortress_2_building = yes
-trade_outpost_building = yes
-tax_office_building = yes
-forge_building = yes
-fort_castle_building = yes
-barracks_building = yes
+fortress_2_building=yes
+trade_outpost_building=yes
+tax_office_building=yes
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -51,3 +51,8 @@ discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
+2922.5.10 = { 
+	add_core = X77
+	owner = X77
+	controller = X77
+}

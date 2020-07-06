@@ -1,0 +1,19 @@
+name = "Balin's Recolonization of Moria"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 740 # Moria
+}
+
+2989.4.1 = {
+	add_attacker = Y57
+	add_attacker = Y56
+	add_defender = V53
+}
+
+# Balin is slain and the remaining dwarves are killed by goblins
+2994.8.1 = {
+	rem_attacker = Y57
+	rem_attacker = Y56
+	rem_defender = V53
+}

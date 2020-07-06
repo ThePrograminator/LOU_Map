@@ -15,7 +15,7 @@ trade_goods = cloth
 
 hre = no
 
-settlement_building = yes
+settlement_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -33,6 +33,18 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+
+2758.9.15 = {
+	add_core = X99
+	owner = X99
+	controller = X99
+}
+
+2759.8.20 = {
+	add_core = X01
+	owner = X01
+	controller = X01
+}
 
 2951.1.1 = {
 	add_core = V17
