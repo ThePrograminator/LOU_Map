@@ -2098,7 +2098,7 @@ guiTypes = {
 			listboxType = 
 			{
 				name ="deity_listbox"
-				position = { x=56 y = -55}
+				position = { x=56 y = -30}
 				backGround=""
 				size = { x=319 y =300}
 				Orientation = "UPPER_LEFT"
@@ -2305,21 +2305,16 @@ guiTypes = {
 		horizontalBorder = ""
 		Orientation = "UPPER_LEFT"
 				
-		#EDITED HERE FOR ROHAN RELIGION
-		#5
-		#y = -4
 		iconType =
 		{
 			name ="deity_item_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= 25 y = 19 }
+			position = { x= 5 y = -4 }
 		}
 		
-		#y = 7
-		#
 		instantTextBoxType = {
 			name = "deity_item_name"
-			position = { x= -42 y = 30 }
+			position = { x= -50 y = 7 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityName"	
@@ -2329,11 +2324,9 @@ guiTypes = {
 			format = left
 		}
 		
-		#58
-		#y = -2
 		instantTextBoxType = {
 			name = "deity_item_effect"
-			position = { x = 83 y = 21 }
+			position = { x = 58 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityEffect"	
@@ -2343,10 +2336,9 @@ guiTypes = {
 			format = left
 		}
 		
-		#y = 1
 		guiButtonType = {
 			name = "pick_deity"
-			position = { x=320 y = 24}
+			position = { x=320 y = 1}
 			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"

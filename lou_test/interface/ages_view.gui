@@ -240,17 +240,17 @@ guiTypes = {
 		{
 			name ="icon"
 			spriteType = "GFX_idea_unknown"
-			position = { x= 8ยง y = 4 }
+			position = { x= 8 y = -9999 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 64 y = 2 }
+			position = { x = 12 y = 2 }
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
 			text = "name"	
-			maxWidth = 390
+			maxWidth = 420
 			maxHeight = 32
 			fixedsize = yes
 			format = left			
@@ -258,11 +258,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "desc"
-			position = { x = 64 y = 20 }
+			position = { x = 12 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "desc"	
-			maxWidth = 390
+			maxWidth = 420
 			maxHeight = 24
 			format = left			
 		}

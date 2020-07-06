@@ -58,6 +58,14 @@ wharf = {
 			factor = 1.5
 			base_production = 15
 		}
+		modifier = { 
+			factor = 5
+			OR = {
+				has_province_modifier = skanemarket
+				has_province_modifier = comet_ore_modifier
+				has_province_modifier = paradise_modifier
+			}
+		}
 		modifier = {
 			NOT = { num_free_building_slots = 3 }
 			factor = 1.5
@@ -261,6 +269,10 @@ state_house = {
 				owner = {
 					tag = ROOT
 				}
+				OR = {
+					has_building = state_house
+					has_construction = state_house
+				}
 			}
 		}
 	}
@@ -271,6 +283,10 @@ state_house = {
 				NOT = { province_id = root }
 				owner = {
 					tag = ROOT
+				}
+				OR = {
+					has_building = state_house
+					has_construction = state_house
 				}
 			}
 		}

@@ -2747,7 +2747,7 @@ guiTypes = {
 				{
 					name ="provinceview_building_bg"
 					spriteType = "GFX_provinceview_building_bg"
-					position = { x= -3 y = 115 }
+					position = { x= 14 y = 122 }
 				}
 
 				instantTextBoxType = {
@@ -2779,7 +2779,7 @@ guiTypes = {
 			windowType = {
 				name = "province_values_window"
 				backGround=""
-				position = { x=4 y=-106 }
+				position = { x=0 y=-106 }
 				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -2790,7 +2790,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "province_values_label"
-					position = { x = 30 y = 460 }
+					position = { x = 30 y = 464 }
 					textureFile = ""
 					font = "vic_22"
 					borderSize = {x = 2 y = 2}
@@ -2804,13 +2804,13 @@ guiTypes = {
 				{
 					name ="naval_forcelimit_icon"
 					spriteType = "GFX_naval_forcelimit_icon"
-					position = { x= 33 y = 542 }
+					position = { x= 33 y = 536 }
 					Orientation = "UPPER_LEFT"
 				}
 
 				instantTextBoxType = {
 					name = "naval_forcelimit_value"
-					position = { x = 72 y = 547 }
+					position = { x = 72 y = 540 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 2 y = 2}
@@ -2824,13 +2824,13 @@ guiTypes = {
 				{
 					name ="land_forcelimit_icon"
 					spriteType = "GFX_land_forcelimit_icon"
-					position = { x= 130 y = 542 }
+					position = { x= 130 y = 536 }
 					Orientation = "UPPER_LEFT"
 				}
 
 				instantTextBoxType = {
 					name = "land_forcelimit_value"
-					position = { x = 148 y = 547 }
+					position = { x = 148 y = 540 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 2 y = 2}
@@ -2935,14 +2935,14 @@ guiTypes = {
 				{
 					name ="governing_capacity_icon"
 					spriteType = "GFX_governing_capacity"
-					position = { x= 214 y = 534  }
+					position = { x= 218 y = 526 }
 					Orientation = "UPPER_LEFT"
-					scale = 0.75
+					scale = 0.8
 				}
 				
 				instantTextBoxType = {
 					name = "capacity_value"
-					position = { x = 262 y = 547 }
+					position = { x = 262 y = 540 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 2 y = 2}
@@ -5421,7 +5421,9 @@ guiTypes = {
 		}
 	}
 
-	### New buildings window (Common Sense and beyond) where layout is manual
+	#--------------------------------------------------------
+    # Buildings
+    #--------------------------------------------------------
 	windowType = {
 		name = "new_buildings_entry2"
 		backGround=""
@@ -5511,7 +5513,7 @@ guiTypes = {
 			font = "vic_22s"
 			borderSize = {x = 2 y = 2}
 			text = "..."
-			maxWidth = 180
+			maxWidth = 200
 			maxHeight = 20
 			format = left
 		}
@@ -5731,4 +5733,5 @@ guiTypes = {
 				clicksound = close_window
 			}
 		}
+
 }
