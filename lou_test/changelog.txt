@@ -1,18 +1,11 @@
 #--------------------------------------
 # Changes
 #--------------------------------------
-- Fixed various inteface issues.
-- Fixed bad name encoding in the cultures file.
-- Fixed missing ship entity references for the LOTR ship units, which was causing them to appear as infantry.
-- Split the culture file into separate files for each group, to make it easier to parse.
-- Added dynasties for cultures missing them.
-- Fixed bad encoding in the country files and fixed mangled names due to the old encoding.
+- Added new tradegoods to the manufactories
+- Added estates: Stewards, Merchants, Nobles, Commoners and Tribes.
+- Fixed the colony view so it works with the terrain images.
+- Adjusted the terrain image filenames to remove the need for duplication.
 
 #--------------------------------------
 # Notes
 #--------------------------------------
-estate_clergy -> estate_stewards
-estate_merchants
-estate_nobility
-estate_commoners
-estate_tribes

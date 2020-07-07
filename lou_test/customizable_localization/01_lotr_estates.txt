@@ -1,0 +1,64 @@
+defined_text = {
+	name = GetStewardsName
+    
+	random = no
+	
+	text = {
+		localisation_key = estate_stewards
+		trigger = {
+            has_estate = estate_stewards
+		}
+	}
+}
+
+defined_text = {
+	name = GetMerchantsName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_merchants
+		trigger = {
+			has_estate = estate_merchants
+		}
+	}
+}
+
+defined_text = {
+	name = GetNoblesName
+    
+	random = no
+
+    text = {
+		localisation_key = estate_nobles
+		trigger = {
+			has_estate = estate_nobles
+		}
+	}
+}
+
+defined_text = {
+	name = GetCommonersName
+    
+	random = no
+
+    text = {
+		localisation_key = estate_commoners
+		trigger = {
+			has_estate = estate_commoners
+		}
+	}
+}
+
+defined_text = {
+	name = GetTribesName
+    
+	random = no
+
+    text = {
+		localisation_key = estate_tribes
+		trigger = {
+			has_estate = estate_tribes
+		}
+	}
+}

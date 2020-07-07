@@ -5,25 +5,16 @@ estate_tribes = {
     influence_from_dev_modifier = 0.4
     
     # ----- Names -----
-    custom_name = {
-		desc = estate_khalasar
-		trigger = {
-			has_reform = khalasar_reform
-		}
-	}
-    custom_name = {
-		desc = estate_jhats
-		trigger = {
-			has_reform = jhattar_reform
-		}
-	}
+    # custom_name = {
+		# desc = estate_khalasar
+		# trigger = {
+			# has_reform = khalasar_reform
+		# }
+	# }
     
 	# ----- Conditions -----
     trigger = {
-        OR = {
-            has_reform = khalasar_reform
-            has_reform = jhattar_reform
-        }
+        always = no
     }
 
 	# ----- Country -----
@@ -79,47 +70,27 @@ estate_tribes = {
 	# ----- Influence -----
     base_influence = 30
 
-    influence_modifier = {
-		desc = EST_VAL_NOMADIC_IDEAGROUP
-		trigger = {
-			full_idea_group = got_nomadic_ideas
-		}
-		influence = 5
-	}
+    # influence_modifier = {
+		# desc = EST_VAL_NOMADIC_IDEAGROUP
+		# trigger = {
+			# full_idea_group = got_nomadic_ideas
+		# }
+		# influence = 5
+	# }
 	
     # ----- Loyalty -----
-    loyalty_modifier = {
-        desc = EST_VAL_HORDE_UNITY
-        trigger = {
-            OR = {
-                has_reform = khalasar_reform
-                has_reform = jhattar_reform
-            }
-            horde_unity = 75
-        }
-        loyalty = 5
-    }
-    
-    loyalty_modifier = {
-        desc = EST_VAL_HORDE_UNITY
-        trigger = {
-            OR = {
-                has_reform = khalasar_reform
-                has_reform = jhattar_reform
-            }
-            NOT = { horde_unity = 50 }
-        }
-        loyalty = -5
-    }
+    # loyalty_modifier = {
+        # desc = EST_VAL_HORDE_UNITY
+        # trigger = {
+            # OR = {
+                # has_reform = khalasar_reform
+                # has_reform = jhattar_reform
+            # }
+            # horde_unity = 75
+        # }
+        # loyalty = 5
+    # }
 
-    loyalty_modifier = {
-		desc = EST_VAL_NOMADIC_IDEAGROUP
-		trigger = {
-			full_idea_group = got_nomadic_ideas
-		}
-		loyalty = 5
-	}
-    
     # ----- Privileges -----
 	privileges = {
 		estate_tribes_land_rights
@@ -128,10 +99,10 @@ estate_tribes = {
 		estate_tribes_guaranteed_leadgership_in_host
 		estate_tribes_tribal_host
         estate_tribes_tribal_primacy
-        estate_tribes_monopoly_of_grain
-        estate_tribes_monopoly_of_copper
-        estate_tribes_monopoly_of_iron
-        estate_tribes_monopoly_of_slaves
+        # estate_tribes_monopoly_of_grain
+        # estate_tribes_monopoly_of_copper
+        # estate_tribes_monopoly_of_iron
+        # estate_tribes_monopoly_of_slaves
 	}
 
     # ----- Agendas -----

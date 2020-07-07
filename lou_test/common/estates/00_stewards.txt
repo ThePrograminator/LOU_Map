@@ -13,12 +13,6 @@ estate_stewards = {
 			# has_reform = wildling_clan_reform
 		# }
 	# }
-    # custom_name = {
-		# desc = estate_stewards
-		# trigger = {
-			# has_reform = nights_watch_reform
-		# }
-	# }
     
 	# ----- Conditions -----
 	trigger = {
@@ -44,7 +38,7 @@ estate_stewards = {
 	}
 
 	land_ownership_modifier = {
-		clergy_loyalty_modifier = 0.2
+		stewards_loyalty_modifier = 0.2
 	}
 
 	province_independence_weight = {
@@ -92,28 +86,21 @@ estate_stewards = {
     # ----- Privileges -----
 	privileges = {
 		estate_stewards_land_rights
-		estate_stewards_religious_state
-		estate_stewards_independent_inquisition
-		estate_stewards_far_east_mission
-		estate_stewards_clerical_ministers
-		estate_stewards_clerical_oversight
+		estate_stewards_administrative_state
+		estate_stewards_advisory_council
+		estate_stewards_savage_mission
+		estate_stewards_loyal_ministers
+		estate_stewards_administrative_oversight
 		estate_stewards_inwards_perfection
-		estate_stewards_enforced_one_faith
-		estate_stewards_for_the_faith
+		estate_stewards_racial_unity
+		estate_stewards_expanionist_zealotry
 		estate_stewards_statutory_rights
-        estate_stewards_monopoly_of_wine
-        estate_stewards_monopoly_of_wool
-        estate_stewards_monopoly_of_tea
-        estate_stewards_monopoly_of_coffee
-        estate_stewards_monopoly_of_cotton
-        estate_stewards_monopoly_of_candles
+        estate_stewards_monopoly_of_crafted_goods
 	}
 
     # ----- Agenda -----
 	agendas = {
 		estate_stewards_develop_x
-		estate_stewards_build_temple_in_y
-		estate_stewards_build_town_hall_in_y
 		estate_stewards_build_manufactory_in_y
 		estate_stewards_convert_province_x
 		estate_stewards_reduce_war_exhaustion

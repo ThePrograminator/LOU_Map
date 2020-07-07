@@ -5,23 +5,17 @@ estate_nobles = {
     influence_from_dev_modifier = 1.0
     
     # ----- Names -----
-    custom_name = {
-		desc = estate_chieftains
-		trigger = {
-			has_reform = wildling_clan_reform
-		}
-	}
-    custom_name = {
-		desc = estate_rangers
-		trigger = {
-			has_reform = nights_watch_reform
-		}
-	}
+    # custom_name = {
+		# desc = estate_chieftains
+		# trigger = {
+			# has_reform = wildling_clan_reform
+		# }
+	# }
     
 	# ----- Conditions -----
 	trigger = {
-        NOT = { has_reform = khalasar_reform }
-        NOT = { has_reform = jhattar_reform }
+        # NOT = { has_reform = khalasar_reform }
+        # NOT = { has_reform = jhattar_reform }
 	}
 
 	# ----- Country -----
@@ -69,94 +63,13 @@ estate_nobles = {
 	# ----- Influence -----
 	base_influence = 30
 	
-    influence_modifier = {
-		desc = EST_VAL_MONARCHY_IDEAGROUP
-		trigger = {
-			full_idea_group = got_monarchy_ideas
-		}
-		influence = 5
-	}
-    
-    influence_modifier = {
-		desc = EST_VAL_AUTONOMY_IDEAGROUP
-		trigger = {
-			full_idea_group = got_autonomy_ideas
-		}
-		influence = 5
-	}
-    
-    influence_modifier = {
-		desc = EST_VAL_DYNASTIC_IDEAGROUP
-		trigger = {
-			full_idea_group = got_dynastic_ideas
-		}
-		influence = 5
-	}
-    
-    influence_modifier = {
-		desc = EST_VAL_INFLUENCE_IDEAGROUP
-		trigger = {
-			full_idea_group = got_influence_ideas
-		}
-		influence = 5
-	}
-	
-	# ----- Loyalty -----
-    loyalty_modifier = {
-		desc = EST_VAL_MONARCHY_IDEAGROUP
-		trigger = {
-			full_idea_group = got_monarchy_ideas
-		}
-		loyalty = 5
-	}
-    
-    loyalty_modifier = {
-		desc = EST_VAL_AUTONOMY_IDEAGROUP
-		trigger = {
-			full_idea_group = got_autonomy_ideas
-		}
-		loyalty = 5
-	}
-    
-    loyalty_modifier = {
-		desc = EST_VAL_DYNASTIC_IDEAGROUP
-		trigger = {
-			full_idea_group = got_dynastic_ideas
-		}
-		loyalty = 5
-	}
-    
-    loyalty_modifier = {
-		desc = EST_VAL_HARMONY_IDEAGROUP
-		trigger = {
-			full_idea_group = got_harmony_ideas
-		}
-		loyalty = -5
-	}
-    
-    loyalty_modifier = {
-		desc = EST_VAL_RELIGIOUS_IDEAGROUP
-		trigger = {
-			full_idea_group = got_religious_ideas
-		}
-		loyalty = -5
-	}
-    
-    loyalty_modifier = {
-		desc = EST_VAL_INNOVATION_IDEAGROUP
-		trigger = {
-			full_idea_group = got_innovation_ideas
-		}
-		loyalty = -5
-	}
-    
-    loyalty_modifier = {
-		desc = EST_VAL_TRADE_IDEAGROUP
-		trigger = {
-			full_idea_group = got_trade_ideas
-		}
-		loyalty = -5
-	}
+    # influence_modifier = {
+		# desc = EST_VAL_MONARCHY_IDEAGROUP
+		# trigger = {
+			# full_idea_group = got_monarchy_ideas
+		# }
+		# influence = 5
+	# }
     
 	# ----- Privileges -----
 	privileges = {
@@ -169,24 +82,13 @@ estate_nobles = {
 		estate_nobility_strong_duchies
 		estate_nobility_supremacy_over_crown
 		estate_nobility_statutory_rights
-        estate_nobles_monopoly_of_cloth
-        estate_nobles_monopoly_of_fur
-        estate_nobles_monopoly_of_copper
-        estate_nobles_monopoly_of_iron
-        estate_nobles_monopoly_of_dyes
-        estate_nobles_monopoly_of_silk
-        estate_nobles_monopoly_of_sugar
-        estate_nobles_unsullied
+        estate_nobility_monopoly_of_exquisite_food
+        estate_nobility_monopoly_of_weaponry
 	}
 
     # ----- Agendas -----
 	agendas = {
 		estate_nobility_develop_x
-		estate_nobility_build_a_barracks_in_y
-		estate_nobility_build_a_drill_square_in_y
-        estate_nobility_build_a_paved_road_in_y
-        estate_nobility_build_a_supply_depot_in_y
-        estate_nobility_build_motte_and_bailey_in_y
 		estate_nobility_get_allies
 		estate_nobility_befriend_rival_of_rival
 		estate_nobility_restore_legitimacy

@@ -1,0 +1,43 @@
+defined_text = {
+	name = GetStateForm
+
+	text = {
+		localisation_key = string_crown
+		trigger = {
+			government = monarchy
+		}
+	}
+	text = {
+		localisation_key = string_council
+		trigger = {
+			government = republic
+		}
+	}
+	text = { #fallback
+		localisation_key = string_govtname
+		trigger = {
+			NOT = {
+				government = monarchy
+				government = republic
+			}
+		}
+	}
+}
+
+defined_text = {
+    name = GetRulerOrRegency
+	random = no
+	
+	text = {
+        localisation_key = string_ruler_name_really
+        trigger = {
+			has_regency = no
+        }
+    }
+    text = {
+        localisation_key = string_regency_council
+        trigger = {
+			has_regency = yes
+        }
+    }
+}
