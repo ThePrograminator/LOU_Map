@@ -1,11 +1,30 @@
 #--------------------------------------
 # Changes
 #--------------------------------------
-- Added new tradegoods to the manufactories
-- Added estates: Stewards, Merchants, Nobles, Commoners and Tribes.
-- Fixed the colony view so it works with the terrain images.
-- Adjusted the terrain image filenames to remove the need for duplication.
+- Assigned the estates to the relevant types of nations.
+- Added custom names for each estate.
 
 #--------------------------------------
 # Notes
 #--------------------------------------
+OR = {
+    has_reform = tribal_kingdom
+    has_reform = tribal_federation
+    has_reform = steppe_horde
+    has_reform = haradwaith_nomad_reform
+    has_reform = khaganate_reform
+    has_reform = independent_khaganate_reform
+    has_reform = khaganate_ruler_reform
+    has_reform = lotr_orc_clan_reform
+    has_reform = lotr_orc_clan_federation_reform
+    has_reform = lotr_orc_kingdom_reform
+    has_reform = lotr_nazgul_reform
+    has_reform = lotr_isengard_reform
+    has_reform = lotr_mordor_reform
+    has_reform = lotr_troll_clan_reform
+    has_reform = lotr_wight_government_reform
+    has_reform = lotr_spider_government_reform
+    has_reform = lotr_ent_government_reform
+    has_reform = lotr_great_eagle_government_reform
+    has_reform = lotr_giant_government_reform
+}

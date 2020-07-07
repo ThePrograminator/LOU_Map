@@ -5,31 +5,102 @@ estate_tribes = {
     influence_from_dev_modifier = 0.4
     
     # ----- Names -----
-    # custom_name = {
-		# desc = estate_khalasar
-		# trigger = {
-			# has_reform = khalasar_reform
-		# }
-	# }
+    custom_name = {
+		desc = estate_tribes_dragon
+		trigger = {
+			technology_group = lotr_dragon
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_goblin
+		trigger = {
+			technology_group = lotr_goblin
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_giant
+		trigger = {
+			technology_group = lotr_giant
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_spider
+		trigger = {
+			technology_group = lotr_great_spider
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_orc
+		trigger = {
+			OR = {
+                technology_group = lotr_orc
+                technology_group = lotr_half_orc
+            }
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_uruk_hai
+		trigger = {
+			technology_group = lotr_uruk_hai
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_wights
+		trigger = {
+			technology_group = lotr_wights
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_ent
+		trigger = {
+			technology_group = lotr_ent
+		}
+	}
+    custom_name = {
+		desc = estate_tribes_eagles
+		trigger = {
+			technology_group = lotr_erus_children
+		}
+	}
     
 	# ----- Conditions -----
     trigger = {
-        always = no
+        OR = {
+            has_reform = tribal_kingdom
+            has_reform = tribal_federation
+            has_reform = steppe_horde
+            has_reform = haradwaith_nomad_reform
+            has_reform = khaganate_reform
+            has_reform = independent_khaganate_reform
+            has_reform = khaganate_ruler_reform
+            has_reform = lotr_orc_clan_reform
+            has_reform = lotr_orc_clan_federation_reform
+            has_reform = lotr_orc_kingdom_reform
+            has_reform = lotr_nazgul_reform
+            has_reform = lotr_isengard_reform
+            has_reform = lotr_mordor_reform
+            has_reform = lotr_troll_clan_reform
+            has_reform = lotr_wight_government_reform
+            has_reform = lotr_spider_government_reform
+            has_reform = lotr_ent_government_reform
+            has_reform = lotr_great_eagle_government_reform
+            has_reform = lotr_giant_government_reform
+        }
     }
 
 	# ----- Country -----
     country_modifier_happy = {
-        cavalry_power = 0.2
+        shock_damage = 0.2
         land_maintenance_modifier = -0.5
         land_forcelimit_modifier = 0.5
     }
     country_modifier_neutral = {
-        cavalry_power = 0.1
+        shock_damage = 0.1
         land_maintenance_modifier = -0.25
         land_forcelimit_modifier = 0.25
     }    
     country_modifier_angry = {
-        cavalry_power = -0.2
+        shock_damage = -0.2
         land_maintenance_modifier = 0.5
         land_forcelimit_modifier = -0.5
     }
@@ -99,10 +170,6 @@ estate_tribes = {
 		estate_tribes_guaranteed_leadgership_in_host
 		estate_tribes_tribal_host
         estate_tribes_tribal_primacy
-        # estate_tribes_monopoly_of_grain
-        # estate_tribes_monopoly_of_copper
-        # estate_tribes_monopoly_of_iron
-        # estate_tribes_monopoly_of_slaves
 	}
 
     # ----- Agendas -----
