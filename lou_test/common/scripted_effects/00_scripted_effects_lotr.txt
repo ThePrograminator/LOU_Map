@@ -1355,6 +1355,43 @@ spawn_mordor_vassal_effect = {
 	}
 }
 
+mordor_vassal_modifier_effect = {
+	V17 = {
+		add_opinion = {
+			who = $VASSAL$
+			modifier = dol_guldur_servant
+			years = 500
+		}
+	}
+	
+	$VASSAL$ = {
+		add_opinion = {
+			who = V17
+			modifier = mordor_master
+			years = 500
+		}
+		add_country_modifier = {
+			name = mordor_orc_servant_subject
+			duration = -1
+		}
+	}
+}
+
+mordor_nurnoth_modifier_effect = {
+	
+	$VASSAL$ = {
+		add_opinion = {
+			who = V17
+			modifier = nurnoth_mordor_relation
+			years = 500
+		}
+		add_country_modifier = {
+			name = mordor_nurnoth_subject
+			duration = -1
+		}
+	}
+}
+
 spawn_morder_transfer_tech = {
 	#export_to_variable = {
 	#	which = adm_tech_var
