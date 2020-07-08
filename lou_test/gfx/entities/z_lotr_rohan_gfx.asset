@@ -264,8 +264,36 @@ entity = {
 		Left_hand_node = "shield_rohan" 
 	}
 }
-
 #Catapult
+entity = {
+	name = "lotr_rohan_gfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery_mesh"
+
+	state = { name = "attack"		animation = "artillery_attack" } #	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "artillery_idle" }
+	#state = { name = "death" 		animation = "artillery_idle" }
+	state = { name = "walk" 		animation = "artillery_moving" }
+	state = { name = "retreat" 		animation = "artillery_moving" }
+	
+}
+
+entity = {
+	clone = "lotr_rohan_gfx_ARTILLERY_1_cannon"
+	name = "lotr_rohan_gfx_ARTILLERY_2_cannon"
+}
+
+entity = {
+	clone = "lotr_rohan_gfx_ARTILLERY_1_cannon"
+	name = "lotr_rohan_gfx_ARTILLERY_3_cannon"
+}
+
+entity = {
+	clone = "lotr_rohan_gfx_ARTILLERY_1_cannon"
+	name = "lotr_rohan_gfx_ARTILLERY_4_cannon"
+}
+
+
+#Catapult and unit
 entity = {
 	name = "lotr_rohan_gfx_ARTILLERY_1"
 	pdxmesh = "artillery_base_mesh"
@@ -277,7 +305,7 @@ entity = {
 	attach = {
 		name = "gunman"
 		infantry_node = "lotr_rohan_gfx_ARTY_INFANTRY_1"
-		cannon_node = "easterngfx_ARTILLERY_1_cannon"
+		cannon_node = "lotr_rohan_gfx_ARTILLERY_1_cannon"
 	}
 }
 

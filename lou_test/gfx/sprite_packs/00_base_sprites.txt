@@ -285,3 +285,227 @@ westerngfx_sprite_pack = {
 		3 = westerngfx_ARTILLERY_4
 	}
 }
+
+lotr_gondorian_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_gondorian_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_gondorian_gfx_INFANTRY_1
+		1 = lotr_gondorian_gfx_INFANTRY_1
+		2 = lotr_gondorian_gfx_INFANTRY_1
+		3 = lotr_gondorian_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_gondorian_gfx_CAVALRY_1
+		1 = lotr_gondorian_gfx_CAVALRY_1
+		2 = lotr_gondorian_gfx_CAVALRY_1
+		3 = lotr_gondorian_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_gondorian_gfx_ARTILLERY_1_trebuchet
+		1 = lotr_gondorian_gfx_ARTILLERY_1_trebuchet
+		2 = lotr_gondorian_gfx_ARTILLERY_1_trebuchet
+		3 = lotr_gondorian_gfx_ARTILLERY_1_trebuchet
+	}
+}
+
+lotr_orc_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_orc_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_orc_gfx_INFANTRY_1
+		1 = lotr_orc_gfx_INFANTRY_1
+		2 = lotr_orc_gfx_INFANTRY_1
+		3 = lotr_orc_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_orc_gfx_CAVALRY_1
+		1 = lotr_orc_gfx_CAVALRY_1
+		2 = lotr_orc_gfx_CAVALRY_1
+		3 = lotr_orc_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_orc_gfx_ARTILLERY_1
+		1 = lotr_orc_gfx_ARTILLERY_1
+		2 = lotr_orc_gfx_ARTILLERY_1
+		3 = lotr_orc_gfx_ARTILLERY_1
+	}
+}
+
+lotr_rohan_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_rohan_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_rohan_gfx_INFANTRY_1
+		1 = lotr_rohan_gfx_INFANTRY_1
+		2 = lotr_rohan_gfx_INFANTRY_1
+		3 = lotr_rohan_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_rohan_gfx_CAVALRY_1
+		1 = lotr_rohan_gfx_CAVALRY_1
+		2 = lotr_rohan_gfx_CAVALRY_1
+		3 = lotr_rohan_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_rohan_gfx_ARTY_INFANTRY_1
+		1 = lotr_rohan_gfx_ARTY_INFANTRY_1
+		2 = lotr_rohan_gfx_ARTY_INFANTRY_1
+		3 = lotr_rohan_gfx_ARTY_INFANTRY_1
+	}
+}
+
+lotr_isengard_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_isengard_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_isengard_gfx_INFANTRY_1
+		1 = lotr_isengard_gfx_INFANTRY_1
+		2 = lotr_isengard_gfx_INFANTRY_1
+		3 = lotr_isengard_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_isengard_gfx_CAVALRY_1
+		1 = lotr_isengard_gfx_CAVALRY_1
+		2 = lotr_isengard_gfx_CAVALRY_1
+		3 = lotr_isengard_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_isengard_gfx_ARTILLERY_1
+		1 = lotr_isengard_gfx_ARTILLERY_1
+		2 = lotr_isengard_gfx_ARTILLERY_1
+		3 = lotr_isengard_gfx_ARTILLERY_1
+	}
+}
+
+lotr_dwarf_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_dwarf_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_dwarf_gfx_INFANTRY_1
+		1 = lotr_dwarf_gfx_INFANTRY_1
+		2 = lotr_dwarf_gfx_INFANTRY_1
+		3 = lotr_dwarf_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_dwarf_gfx_CAVALRY_1
+		1 = lotr_dwarf_gfx_CAVALRY_1
+		2 = lotr_dwarf_gfx_CAVALRY_1
+		3 = lotr_dwarf_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_dwarf_gfx_ARTILLERY_1
+		1 = lotr_dwarf_gfx_ARTILLERY_1
+		2 = lotr_dwarf_gfx_ARTILLERY_1
+		3 = lotr_dwarf_gfx_ARTILLERY_1
+	}
+}
+
+lotr_elf_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_elf_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_elf_gfx_INFANTRY_1
+		1 = lotr_elf_gfx_INFANTRY_1
+		2 = lotr_elf_gfx_INFANTRY_1
+		3 = lotr_elf_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_elf_gfx_CAVALRY_1
+		1 = lotr_elf_gfx_CAVALRY_1
+		2 = lotr_elf_gfx_CAVALRY_1
+		3 = lotr_elf_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_elf_gfx_ARTILLERY_1
+		1 = lotr_elf_gfx_ARTILLERY_1
+		2 = lotr_elf_gfx_ARTILLERY_1
+		3 = lotr_elf_gfx_ARTILLERY_1
+	}
+}
+
+lotr_rhun_gfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+
+	graphical_cultures = {
+		lotr_rhun_gfx
+	}
+
+	sprite_infantry = {
+		0 = lotr_rhun_gfx_INFANTRY_1
+		1 = lotr_rhun_gfx_INFANTRY_1
+		2 = lotr_rhun_gfx_INFANTRY_1
+		3 = lotr_rhun_gfx_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = lotr_rhun_gfx_CAVALRY_1
+		1 = lotr_rhun_gfx_CAVALRY_1
+		2 = lotr_rhun_gfx_CAVALRY_1
+		3 = lotr_rhun_gfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = lotr_rhun_gfx_ARTY_INFANTRY_1
+		1 = lotr_rhun_gfx_ARTY_INFANTRY_1
+		2 = lotr_rhun_gfx_ARTY_INFANTRY_1
+		3 = lotr_rhun_gfx_ARTY_INFANTRY_1
+	}
+}
