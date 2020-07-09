@@ -89,28 +89,47 @@ country_event = {
 
 		set_global_flag = desolation_of_smaug_lost
 		disband_rebels = smaug_rebels
+		#if = {
+		#	limit = {
+		#		exists = Y16
+		#		Y16 = {
+		#			ai = yes
+		#		}
+		#	}
+		#	ROOT = {
+		#		switch_tag = Y16
+		#	}
+		#}
+		#else_if = {
+		#	limit = {
+		#		exists = Y23
+		#		Y23 = {
+		#			ai = yes
+		#		}
+		#	}
+		#	ROOT = {
+		#		switch_tag = Y23
+		#	}
+		#}
 		if = {
 			limit = {
-				exists = Y16
-				Y16 = {
-					ai = yes
-				}
+				tag = Y22
 			}
-			ROOT = {
-				switch_tag = Y16
+			559 = {
+				add_core = Y22
+				cede_province = Y22
+				#controller = Y22
 			}
-		}
-		else_if = {
-			limit = {
-				exists = Y23
-				Y23 = {
-					ai = yes
-				}
+			3227 = {
+				add_core = Y22
+				cede_province = Y22
+				#controller = Y22
 			}
-			ROOT = {
-				switch_tag = Y23
+			Y22 = {
+				set_capital = 559
 			}
 		}
+		
 		hidden_effect = {
 			country_event = {
 				id = flavor_desolation_of_smaug.3
