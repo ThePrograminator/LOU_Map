@@ -20,111 +20,138 @@
 
 #GENERAL TRIGGERS
 has_mil_advisor = {
-	OR = {
-		advisor = army_organiser
-		advisor = army_reformer
-		advisor = commandant
-		advisor = grand_captain
-		advisor = recruitmaster
-		advisor = fortification_expert
-		advisor = quartermaster
+	custom_trigger_tooltip = {
+		tooltip = has_mil_advisor_tooltip
+		OR = {
+			advisor = army_organiser
+			advisor = army_reformer
+			advisor = commandant
+			advisor = grand_captain
+			advisor = recruitmaster
+			advisor = fortification_expert
+			advisor = quartermaster
+		}
 	}
 }
 
 has_mil_advisor_2 = {
-	OR = {
-		army_organiser = 2
-		army_reformer = 2
-		commandant = 2
-		grand_captain = 2
-		recruitmaster = 2
-		fortification_expert = 2
-		quartermaster = 2
+	custom_trigger_tooltip = {
+		tooltip = has_mil_advisor_2_tooltip
+		OR = {
+			army_organiser = 2
+			army_reformer = 2
+			commandant = 2
+			grand_captain = 2
+			recruitmaster = 2
+			fortification_expert = 2
+			quartermaster = 2
+		}
 	}
 }
 
 has_mil_advisor_3 = {
-	OR = {
-		army_organiser = 3
-		army_reformer = 3
-		commandant = 3
-		grand_captain = 3
-		recruitmaster = 3
-		fortification_expert = 3
-		quartermaster = 3
+	custom_trigger_tooltip = {
+		tooltip = has_mil_advisor_3_tooltip
+		OR = {
+			army_organiser = 3
+			army_reformer = 3
+			commandant = 3
+			grand_captain = 3
+			recruitmaster = 3
+			fortification_expert = 3
+			quartermaster = 3
+		}
 	}
 }
 
 has_adm_advisor = {
-	OR = {
-		advisor = treasurer
-		advisor = philosopher
-		advisor = artist
- 		advisor = theologian
-		advisor = master_of_mint
-		advisor = inquisitor
-		advisor = natural_scientist
+	custom_trigger_tooltip = {
+		tooltip = has_adm_advisor_tooltip
+		OR = {
+			advisor = treasurer
+			advisor = philosopher
+			advisor = artist
+			advisor = theologian
+			advisor = master_of_mint
+			advisor = inquisitor
+			advisor = natural_scientist
+		}
 	}
 }
 
 has_adm_advisor_2 = {
-	OR = {
-		treasurer = 2
-		philosopher = 2
-		artist = 2
- 		theologian = 2
-		master_of_mint = 2
-		inquisitor = 2
-		natural_scientist = 2
+	custom_trigger_tooltip = {
+		tooltip = has_adm_advisor_2_tooltip
+		OR = {
+			treasurer = 2
+			philosopher = 2
+			artist = 2
+			theologian = 2
+			master_of_mint = 2
+			inquisitor = 2
+			natural_scientist = 2
+		}
 	}
 }
 
 has_adm_advisor_3 = {
-	OR = {
-		treasurer = 3
-		philosopher = 3
-		artist = 3
- 		theologian = 3
-		master_of_mint = 3
-		inquisitor = 3
-		natural_scientist = 3
+	custom_trigger_tooltip = {
+		tooltip = has_adm_advisor_3_tooltip
+		OR = {
+			treasurer = 3
+			philosopher = 3
+			artist = 3
+			theologian = 3
+			master_of_mint = 3
+			inquisitor = 3
+			natural_scientist = 3
+		}
 	}
 }
 
 
 has_dip_advisor = {
-	OR = {
-		advisor = statesman
-		advisor = diplomat
-		advisor = naval_reformer
-		advisor = trader
-		advisor = colonial_governor
-		advisor = navigator
-		advisor = spymaster
+	custom_trigger_tooltip = {
+		tooltip = has_dip_advisor_tooltip
+		OR = {
+			advisor = statesman
+			advisor = diplomat
+			advisor = naval_reformer
+			advisor = trader
+			advisor = colonial_governor
+			advisor = navigator
+			advisor = spymaster
+		}
 	}
 }
 
 has_dip_advisor_2 = {
-	OR = {
-		statesman = 2
-		diplomat = 2
-		naval_reformer = 2
-		trader = 2
-		colonial_governor = 2
-		navigator = 2
-		spymaster = 2
+	custom_trigger_tooltip = {
+		tooltip = has_dip_advisor_2_tooltip
+		OR = {
+			statesman = 2
+			diplomat = 2
+			naval_reformer = 2
+			trader = 2
+			colonial_governor = 2
+			navigator = 2
+			spymaster = 2
+		}
 	}
 }
 
 has_dip_advisor_3 = {
-	OR = {
-		statesman = 3
-		diplomat = 3
-		naval_reformer = 3
-		trader = 3
-		colonial_governor = 3
-		navigator = 3
-		spymaster = 3
+	custom_trigger_tooltip = {
+		tooltip = has_dip_advisor_3_tooltip
+		OR = {
+			statesman = 3
+			diplomat = 3
+			naval_reformer = 3
+			trader = 3
+			colonial_governor = 3
+			navigator = 3
+			spymaster = 3
+		}
 	}
 }
 
@@ -388,158 +415,141 @@ consort_has_bad_mil_personality = {
 	#}
 }
 
-unindustrialized_province_trigger = { #Province Scope
-	#NOT = { has_province_flag = canals_and_turnpikes_flag }
-	#NOT = { has_province_flag = agricultural_revolution_province }
-	NOT = { has_province_flag = had_economic_urbanization }
-	NOT = { has_province_flag = swapped_to_cloth }
-	NOT = { has_province_flag = swapped_to_paper }
-	NOT = { has_province_flag = swapped_to_glass }
-	NOT = { has_province_flag = industrial_urbanization }
-	NOT = { has_province_flag = metalwork_center }
-	NOT = { has_province_flag = textile_center }
-	NOT = { has_province_flag = shipyards_of_x }
-}
-
-industrialized_province_trigger = { #Province Scope
-	OR = {
-		#has_province_flag = canals_and_turnpikes_flag
-		#has_province_flag = agricultural_revolution_province
-		has_province_flag = had_economic_urbanization 
-		has_province_flag = swapped_to_cloth
-		has_province_flag = swapped_to_paper
-		has_province_flag = swapped_to_glass
-		has_province_flag = industrial_urbanization
-		has_province_flag = metalwork_center
-		has_province_flag = textile_center
-		has_province_flag = shipyards_of_x
-	}
-}
-
-has_manufactory_trigger = { #Province Scope
-	if = {
-		limit = {
-			OR = {
-				trade_goods = naval_supplies
-				trade_goods = fish
-				trade_goods = salt
-			}
-		}
-		has_building = wharf
-	}
-	else_if = {
-		limit = {
-			OR = {
-				trade_goods = copper
-				trade_goods = iron
-			}
-		}
-		has_building = weapons
-	}
-	else_if = {
-		limit = {
-			OR = {
-				trade_goods = wool
-				trade_goods = cloth
-				trade_goods = silk
-				trade_goods = dyes
-			}
-		}
-		has_building = textile
-	}
-	else_if = {
-		limit = {
-			OR = {
-				trade_goods = ivory
-				trade_goods = slaves
-				trade_goods = spices
-				trade_goods = fur
-				trade_goods = incense
-			}
-		}
-		has_building = tradecompany
-	}
-	else_if = {
-		limit = {
-			OR = {
-				trade_goods = grain
-				trade_goods = livestock
-				trade_goods = wine
-			}
-		}
-		has_building = farm_estate
-	}
-	else_if = {
-		limit = {
-			OR = {
-				trade_goods = paper
-				trade_goods = gems
-				trade_goods = tropical_wood
-				trade_goods = glass
-				trade_goods = chinaware
-			}
-		}
-		has_building = mills
-	}
-	else_if = {
-		limit = {
-			trade_goods = coal
-		}
-		has_building = furnace
-	}
-	else = {
-		has_building = plantations
-	}
-}
-
-has_no_manufactory_trigger = { #Province Scope
-	NOT = { has_building = wharf }
-	NOT = { has_building = weapons }
-	NOT = { has_building = textile }
-	NOT = { has_building = tradecompany }
-	NOT = { has_building = farm_estate }
-	NOT = { has_building = mills }
-	NOT = { has_building = plantations }
-	NOT = { has_building = furnace }
-}
-
 same_govt_as_root_trigger = {
-	OR = {
-		AND = {
-			government = theocracy
-			root = {
+	custom_trigger_tooltip = {
+		tooltip = same_govt_as_root_tt
+		OR = {
+			AND = {
 				government = theocracy
+				root = {
+					government = theocracy
+				}
 			}
-		}
-		AND = {
-			government = monarchy
-			root = {
+			AND = {
 				government = monarchy
+				root = {
+					government = monarchy
+				}
 			}
-		}
-		AND = {
-			government = republic
-			root = {
+			AND = {
 				government = republic
+				root = {
+					government = republic
+				}
 			}
-		}
-		AND = {
-			government = dictatorship
-			root = {
+			AND = {
 				government = dictatorship
+				root = {
+					government = dictatorship
+				}
 			}
-		}
-		AND = {
-			government = tribal
-			root = {
+			AND = {
 				government = tribal
+				root = {
+					government = tribal
+				}
 			}
-		}
-		AND = {
-			government = native
-			root = {
+			AND = {
 				government = native
+				root = {
+					government = native
+				}
 			}
 		}
 	}
+}
+
+has_been_insulted_by_root = {
+	custom_trigger_tooltip = {
+		tooltip = has_been_insulted_by_root
+		OR = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = insulted
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = scornfully_insulted
+			}
+		}
+	}
+}
+
+valid_for_personal_unions_trigger = {
+	is_subject = no
+	government = monarchy
+}
+
+#province scope; checks it is highest or joint highest supply limit in the area owned by you (useful for spawning rebels)
+highest_supply_limit_in_area = {
+	NOT = {
+		area_for_scope_province = { 
+			NOT = { province_id = prev }
+			owned_by = root
+			supply_limit = prev 
+			NOT = { prev = { supply_limit = prev } }
+		}
+	}
+}
+
+# Has current fort level
+province_has_current_tech_fort_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = province_has_current_tech_fort_trigger_tt
+		if = {
+			limit = {
+				owner = {
+					NOT = { mil_tech = 14 }
+				}
+			}
+			has_building = fort_15th
+		}
+		else_if = {
+			limit = {
+				owner = {
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 19 }
+					}
+				}
+			}
+			has_building = fort_16th
+		}
+		else_if = {
+			limit = {
+				owner = {
+					AND = {
+						mil_tech = 19
+						NOT = { mil_tech = 24 }
+					}
+				}
+			}
+			has_building = fort_17th
+		}
+		else_if = {
+			limit = {
+				owner = {
+					mil_tech = 24
+				}
+			}
+			has_building = fort_18th
+		}
+	}
+}
+
+
+
+
+
+is_absolutism_active = {    
+    always = yes
+	# OR = {
+		# current_age = age_of_absolutism
+		# current_age = age_of_revolutions
+	# }
+}
+
+# Used in sound/battle for cavalry combat sound
+has_dharma_elephants_trigger = {
+    always = no
 }

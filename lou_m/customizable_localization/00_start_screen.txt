@@ -71,10 +71,56 @@ defined_text = {
 		}
     }
 	
-	
 	#Generic:
-	
-	
+	text = {
+        localisation_key = string_start_title_horde
+        trigger = {
+			has_reform = steppe_horde
+        }
+    }
+	text = {
+        localisation_key = string_start_title_monarchy_regency #Actually same as fallback
+        trigger = {
+			has_regency = yes
+			OR = {
+				government = monarchy
+				government = tribal
+			}
+        }
+    }
+    text = {
+        localisation_key = string_start_title_monarchy_plural
+        trigger = {
+			#has_regency = no
+			government = monarchy
+			tag_with_plural_name_trigger = yes
+        }
+    }
+    text = {
+        localisation_key = string_start_title_monarchy
+        trigger = {
+			#has_regency = no
+			government = monarchy
+        }
+    }
+	text = {
+        localisation_key = string_start_title_republic
+        trigger = {
+			government = republic
+        }
+    }
+    text = {
+        localisation_key = string_start_title_theocracy
+        trigger = {
+			government = theocracy
+        }
+    }
+	text = {
+        localisation_key = string_start_title_native_council
+        trigger = {
+			government = native
+        }
+    }
 	#Final Fallback
 	text = {
         localisation_key = string_start_title_fallback
@@ -130,6 +176,7 @@ defined_text = {
     name = StartScreenDownRightTitle
 	random = no
 
+   
 	text = {
         localisation_key = string_start_middle_earth
         trigger = {
@@ -160,14 +207,14 @@ defined_text = {
 			}
 		}
     }
-
-    text = {
-        localisation_key = europe
-		trigger = {
+	
+	text = {
+        localisation_key = new_world
+        trigger = {
 			capital_scope = {
-				continent = europe
+				continent = new_world
 			}
-		}
+        }
     }
 }
 
@@ -176,9 +223,7 @@ defined_text = {
 defined_text = {
     name = StartScreenUpLeftDesc
 	random = no
-	
-	#Country Specific:
-	
+
 	#Dunedain
 	text = { #Gondor
         localisation_key = string_start_gondor
@@ -259,40 +304,8 @@ defined_text = {
 		trigger = {
 			current_age = fourth_age
 		}
-	}
-	
-	text = {#Fallback
-        localisation_key = string_start_tag_generic
-		trigger = {
-			always = yes
-		}
-	}
-}
-
-### Upper right description textbox
-#Ex: ""
-defined_text = {
-    name = StartScreenUpRightDesc
-	random = no
-	
-	#Religion Mechanics - Base Text, these refer to custom loc keys below to insert DLC specific information.
-	
-	#Orthodox (Patriarch Authority) / Dunedain
-	text = {
-        localisation_key = string_start_religion_dunedain
-        trigger = {
-			religion = religion_dunedain
-        }
     }
-	
-	#Muslim / Orc
-	text = {
-        localisation_key = string_start_religion_orc
-        trigger = {
-			religion = religion_orkish
-        }
-    }
-	
+    
 	#Fallback (Currently used by Animism, Judaism and Totemism)
 	text = {
         localisation_key = string_start_religion_fallback
@@ -320,100 +333,84 @@ defined_text = {
 defined_text = {
 	name = start_religion_muslim_dlc_check
 	random = no
-	
-	#text = {
-    #    localisation_key = string_muslim_school #Has to end with \n
-    #    trigger = {
-	#		religion_group = muslim
-	#		has_dlc = "Cradle of Civilization"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_muslim_school_no #\n
-    #    trigger = {
-	#		NOT = { has_dlc = "Cradle of Civilization" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_start_religion_orc
+        trigger = {
+			religion = religion_orkish
+        }
+    }
 }
 
 #Iconography & Consecrate Patriarchs
 defined_text = {
 	name = start_religion_orthodox_dlc_check
 	random = no
-	#text = {
-    #    localisation_key = string_orthodox_icons #Has to end with \n
-    #    trigger = {
-	#		religion = orthodox
-	#		has_dlc = "Third Rome"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_orthodox_icons_no #\n
-    #    trigger = {
-	#		religion = orthodox
-	#		NOT = { has_dlc = "Third Rome" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_start_religion_dunedain
+        trigger = {
+			religion = religion_dunedain
+        }
+    }
 }
 
 #Tordesillas
 defined_text = {
 	name = start_religion_catholic_tordesillas
 	random = no
-	#text = {
-    #    localisation_key = string_catholic_tordesillas #Has to end with \n
-    #    trigger = {
-	#		religion = catholic
-	#		has_dlc = "El Dorado"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_catholic_tordesillas_no #\n
-    #    trigger = {
-	#		religion = catholic
-	#		NOT = { has_dlc = "El Dorado" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_catholic_tordesillas #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "El Dorado"
+        }
+    }
+	text = {
+        localisation_key = string_catholic_tordesillas_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "El Dorado" }
+        }
+    }
 }
 
 #Church Power
 defined_text = {
 	name = start_protestant_church_power
 	random = no
-	#text = {
-    #    localisation_key = string_church_power_info #Has to end with \n
-    #    trigger = {
-	#		religion = protestant
-	#		has_dlc = "Common Sense"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_church_power_info_no #\n
-    #    trigger = {
-	#		religion = protestant
-	#		NOT = { has_dlc = "Common Sense" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_church_power_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Common Sense"
+        }
+    }
+	text = {
+        localisation_key = string_church_power_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Common Sense" }
+        }
+    }
 }
 
 #Fervor
 defined_text = {
 	name = start_reformed_fervor
 	random = no
-	#text = {
-    #    localisation_key = string_fervor_info #Has to end with \n
-    #    trigger = {
-	#		religion = reformed
-	#		has_dlc = "Wealth of Nations"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_fervor_info_no #\n
-    #    trigger = {
-	#		religion = reformed
-	#		NOT = { has_dlc = "Wealth of Nations" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_fervor_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Wealth of Nations"
+        }
+    }
+	text = {
+        localisation_key = string_fervor_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Wealth of Nations" }
+        }
+    }
 }
 
 
@@ -421,68 +418,60 @@ defined_text = {
 defined_text = {
 	name = start_coptic_blessings
 	random = no
-	#text = {
-    #    localisation_key = string_blessings_info #Has to end with \n
-    #    trigger = {
-	#		religion = coptic
-	#		has_dlc = "Rights of Man"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_blessings_info_no #\n
-    #    trigger = {
-	#		religion = coptic
-	#		NOT = { has_dlc = "Rights of Man" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_blessings_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Rights of Man"
+        }
+    }
+	text = {
+        localisation_key = string_blessings_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Rights of Man" }
+        }
+    }
 }
 
 #Buddhist Karma
 defined_text = {
 	name = start_buddhist_karma
 	random = no
-	#text = {
-    #    localisation_key = string_karma_info #Has to end with \n
-    #    trigger = {
-	#		OR = {
-	#			religion = buddhism
-	#			religion = mahayana
-	#			religion = vajrayana
-	#		}
-	#		has_dlc = "Common Sense"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_karma_info_no #\n
-    #    trigger = {
-	#		OR = {
-	#			religion = buddhism
-	#			religion = mahayana
-	#			religion = vajrayana
-	#		}
-	#		NOT = { has_dlc = "Common Sense" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_karma_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Common Sense"
+        }
+    }
+	text = {
+        localisation_key = string_karma_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Common Sense" }
+        }
+    }
 }
 
 #Confucian Harmonization
 defined_text = {
 	name = start_confucian_harmonization
 	random = no
-	#text = {
-    #    localisation_key = string_harmonization_info #Has to end with \n
-    #    trigger = {
-	#		religion = confucianism
-	#		has_dlc = "Mandate of Heaven"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_harmonization_info_no #\n
-    #    trigger = {
-	#		religion = confucianism
-	#		NOT = { has_dlc = "Mandate of Heaven" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_harmonization_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Mandate of Heaven"
+        }
+    }
+	text = {
+        localisation_key = string_harmonization_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Mandate of Heaven" }
+        }
+    }
 }
 
 
@@ -490,100 +479,100 @@ defined_text = {
 defined_text = {
 	name = start_shinto_isolationism
 	random = no
-	#text = {
-    #    localisation_key = string_isolationism_info #Has to end with \n
-    #    trigger = {
-	#		religion = shinto
-	#		has_dlc = "Mandate of Heaven"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_isolationism_info_no #\n
-    #    trigger = {
-	#		religion = shinto
-	#		NOT = { has_dlc = "Mandate of Heaven" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_isolationism_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Mandate of Heaven"
+        }
+    }
+	text = {
+        localisation_key = string_isolationism_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Mandate of Heaven" }
+        }
+    }
 }
 
 #Hindu Deities
 defined_text = {
 	name = start_hindu_deities
 	random = no
-	#text = {
-    #    localisation_key = string_deities_info #Has to end with \n
-    #    trigger = {
-	#		religion = hinduism
-	#		has_dlc = "Wealth of Nations"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_deities_info_no #\n
-    #    trigger = {
-	#		religion = hinduism
-	#		NOT = { has_dlc = "Wealth of Nations" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_deities_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Wealth of Nations"
+        }
+    }
+	text = {
+        localisation_key = string_deities_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Wealth of Nations" }
+        }
+    }
 }
 
 #Fetishist Cults
 defined_text = {
 	name = start_fetishist_cults
 	random = no
-	#text = {
-    #    localisation_key = string_cults_info #Has to end with \n
-    #    trigger = {
-	#		religion = shamanism
-	#		has_dlc = "Rights of Man"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_cults_info_no #\n
-    #    trigger = {
-	#		religion = shamanism
-	#		NOT = { has_dlc = "Rights of Man" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_cults_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "Rights of Man"
+        }
+    }
+	text = {
+        localisation_key = string_cults_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Rights of Man" }
+        }
+    }
 }
 
 #Tengri Syncretism
 defined_text = {
 	name = start_tengri_syncretism
 	random = no
-	#text = {
-    #    localisation_key = string_syncretism_info #Has to end with \n
-    #    trigger = {
-	#		religion = tengri_pagan_reformed #Tengri
-	#		has_dlc = "The Cossacks"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_syncretism_info_no #\n
-    #    trigger = {
-	#		religion = tengri_pagan_reformed #Tengri
-	#		NOT = { has_dlc = "The Cossacks" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_syncretism_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "The Cossacks"
+        }
+    }
+	text = {
+        localisation_key = string_syncretism_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "The Cossacks" }
+        }
+    }
 }
 
 #Inti Authority
 defined_text = {
 	name = start_inti_authority
 	random = no
-	#text = {
-    #    localisation_key = string_authority_info #Has to end with \n
-    #    trigger = {
-	#		religion = inti
-	#		has_dlc = "El Dorado"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_authority_info_no #\n
-    #    trigger = {
-	#		religion = inti
-	#		NOT = { has_dlc = "El Dorado" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_authority_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "El Dorado"
+        }
+    }
+	text = {
+        localisation_key = string_authority_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "El Dorado" }
+        }
+    }
 }
 
 
@@ -591,40 +580,40 @@ defined_text = {
 defined_text = {
 	name = start_nahuatl_doom
 	random = no
-	#text = {
-    #    localisation_key = string_doom_info #Has to end with \n
-    #    trigger = {
-	#		religion = nahuatl
-	#		has_dlc = "El Dorado"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_doom_info_no #\n
-    #    trigger = {
-	#		religion = nahuatl
-	#		NOT = { has_dlc = "El Dorado" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_doom_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "El Dorado"
+        }
+    }
+	text = {
+        localisation_key = string_doom_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "El Dorado" }
+        }
+    }
 }
 
 #Mayan Mechanics
 defined_text = {
 	name = start_mayan_mechanics
 	random = no
-	#text = {
-    #    localisation_key = string_mayan_info #Has to end with \n
-    #    trigger = {
-	#		religion = mesoamerican_religion
-	#		has_dlc = "El Dorado"
-    #    }
-    #}
-	#text = {
-    #    localisation_key = string_mayan_info_no #\n
-    #    trigger = {
-	#		religion = mesoamerican_religion
-	#		NOT = { has_dlc = "El Dorado" }
-    #    }
-    #}
+	text = {
+        localisation_key = string_mayan_info #Has to end with \n
+        trigger = {
+			always = no
+			has_dlc = "El Dorado"
+        }
+    }
+	text = {
+        localisation_key = string_mayan_info_no #\n
+        trigger = {
+			always = no
+			NOT = { has_dlc = "El Dorado" }
+        }
+    }
 }
 
 ### Lower left description textbox
@@ -659,32 +648,48 @@ defined_text  = {
     name = startup_government_explanation
 	random = no
 	
-	text = {
-        localisation_key = string_start_government_stewards
+    text = {
+        localisation_key = string_start_government_monarchy_regency
         trigger = {
-			has_reform = lotr_stewardship
+			has_regency = yes
+			government = monarchy
         }
     }
-	
 	text = {
-        localisation_key = string_start_government_hand_of_mordor
+        localisation_key = string_start_government_monarchy
         trigger = {
-			has_reform = lotr_hand_of_mordor
+			government = monarchy
         }
     }
-	
 	text = {
-        localisation_key = string_start_government_orc_clan
+        localisation_key = string_start_government_republic
         trigger = {
-			has_reform = lotr_orc_clan
+			government = republic
         }
     }
-	
 	text = {
-        localisation_key = string_start_government_hand_of_angmar
+        localisation_key = string_start_government_theocracy
         trigger = {
-			has_reform = lotr_hand_of_angmar
+			government = theocracy
         }
+    }
+	text = {
+        localisation_key = string_start_government_native_councils_plural
+        trigger = {
+			tag_with_plural_name_trigger = yes
+			OR = {
+				government = native
+			}
+       }
+    }
+	text = {
+        localisation_key = string_start_government_native_councils
+        trigger = {
+			OR = {
+				#has_reform = siberian_tribe
+				government = native
+			}
+       }
     }
 }
 
@@ -692,6 +697,12 @@ defined_text = {
 	name = startup_government_heirs
 	random = no
 	
+	text = {
+		localisation_key = string_start_government_heirs
+		trigger = {
+			government = monarchy
+		}
+	}
 	text = {
 		localisation_key = string_start_government_heirs_no
 		trigger = {
@@ -716,7 +727,23 @@ defined_text  = {
 defined_text  = {
     name = startup_estates_explanation
 	random = no
-
+	text = {
+        localisation_key = string_startup_estates_explanation_cossacks
+        trigger = {
+			has_dlc = "The Cossacks"
+			has_estate = estate_cossacks
+        }
+    }
+    
+	text = {
+        localisation_key = string_startup_estates_explanation
+        trigger = {
+			has_estate = yes
+			NOT = {
+				has_estate = estate_cossacks
+			}
+		}
+    }
 	text = {
         localisation_key = string_startup_estates_explanation_no
         trigger = {
@@ -730,6 +757,12 @@ defined_text  = {
     name = startup_government_tribal
 	random = no
 
+    text = {
+        localisation_key = string_tribal_reform
+        trigger = {
+			government = tribal
+		}
+    }
 	text = {
         localisation_key = string_tribal_reform_no
         trigger = {
@@ -741,7 +774,13 @@ defined_text  = {
 defined_text  = {
     name = startup_government_tribal_institution_penalty
 	random = no
-	
+
+    text = {
+        localisation_key = string_tribal_institution_penalty
+        trigger = {
+			NOT = { has_reform = tribal_federation }
+		}
+    }
 	text = {
         localisation_key = string_tribal_institution_penalty_no
         trigger = {
@@ -756,6 +795,13 @@ defined_text  = {
     name = startup_consorts_explanation
 	random = no
 
+    text = {
+        localisation_key = string_start_consorts
+        trigger = {
+			government = monarchy
+			has_dlc = "Rights of Man"
+        }
+    }
 	text = {
         localisation_key = string_start_consorts_no #Empty string
         trigger = {
@@ -769,6 +815,13 @@ defined_text  = {
     name = startup_devotion_explanation
 	random = no
 
+    text = {
+        localisation_key = string_start_devotion
+        trigger = {
+			government = theocracy
+			has_dlc = "Common Sense"
+        }
+    }
 	text = {
         localisation_key = string_start_devotion_no #Empty string
         trigger = {
@@ -782,6 +835,12 @@ defined_text  = {
     name = startup_russian_government_interactions
 	random = no
 
+    text = {
+        localisation_key = string_start_russian_mechanics
+        trigger = {
+			has_government_mechanic = russian_mechanic
+        }
+    }
 	text = {
         localisation_key = string_start_russian_mechanics_no #Empty string
         trigger = {
@@ -795,6 +854,13 @@ defined_text  = {
     name = startup_iqta_government
 	random = no
 
+    text = {
+        localisation_key = string_start_iqta
+        trigger = {
+			always = no
+			has_dlc = "Cradle of Civilization"
+        }
+    }
 	text = {
         localisation_key = string_start_iqta_no #Empty string
         trigger = {
@@ -808,6 +874,13 @@ defined_text  = {
     name = startup_feudal_theocracy_government
 	random = no
 
+    text = {
+        localisation_key = string_start_feudal_theocracy
+        trigger = {
+			always = no
+			has_dlc = "Cradle of Civilization"
+        }
+    }
 	text = {
         localisation_key = string_start_feudal_theocracy_no #Empty string
         trigger = {
@@ -821,6 +894,13 @@ defined_text  = {
     name = startup_ottoman_government_harem
 	random = no
 
+    text = {
+        localisation_key = string_start_harem
+        trigger = {
+			always = no
+			has_dlc = "Rights of Man"
+        }
+    }
 	text = {
         localisation_key = string_start_harem_no #Empty string
         trigger = {
@@ -834,6 +914,13 @@ defined_text  = {
     name = startup_ottoman_government_pashas
 	random = no
 
+    text = {
+        localisation_key = string_start_pashas
+        trigger = {
+			always = no
+			has_dlc = "Cradle of Civilization"
+        }
+    }
 	text = {
         localisation_key = string_start_pashas_no #Empty string
         trigger = {
@@ -847,6 +934,13 @@ defined_text  = {
     name = startup_tribal_federation_government
 	random = no
 
+    text = {
+        localisation_key = string_start_tribal_federation
+        trigger = {
+			has_reform = tribal_federation
+			has_dlc = "Cradle of Civilization"
+        }
+    }
 	text = {
         localisation_key = start_tribal_federation_no #Empty string
         trigger = {
@@ -860,6 +954,13 @@ defined_text  = {
     name = startup_mamluk_government
 	random = no
 
+    text = {
+        localisation_key = string_start_mamluks
+        trigger = {
+			always = no
+			has_dlc = "Cradle of Civilization"
+        }
+    }
 	text = {
         localisation_key = string_start_harem_no #Empty string
         trigger = {
@@ -873,6 +974,15 @@ defined_text  = {
     name = startup_government_trade_league
 	random = no
 
+    text = {
+        localisation_key = string_start_trade_league
+        trigger = {
+			OR = {
+				has_government_attribute = is_merchant_republic
+			}
+			has_dlc = "Mare Nostrum"
+        }
+    }
 	text = {
         localisation_key = string_start_trade_league_no #Empty string
         trigger = {
@@ -886,6 +996,12 @@ defined_text  = {
     name = startup_government_parliaments
 	random = no
 
+    text = {
+        localisation_key = string_start_parliaments
+        trigger = {
+			has_parliament = yes
+        }
+    }
 	text = {
         localisation_key = string_start_parliaments_no #Empty string
         trigger = {
@@ -899,6 +1015,12 @@ defined_text  = {
     name = startup_government_prussian
 	random = no
 
+    text = {
+        localisation_key = string_start_prussian_government
+        trigger = {
+			always = no
+        }
+    }
 	text = {
         localisation_key = string_start_prussian_government_no #Empty string
         trigger = {
@@ -912,6 +1034,12 @@ defined_text  = {
     name = startup_government_prussian_dlc
 	random = no
 
+    text = {
+        localisation_key = string_start_prussian_government_dlc
+        trigger = {
+			has_dlc = "Rights of Man"
+        }
+    }
 	text = {
         localisation_key = string_start_prussian_government_dlc_no #Empty string
         trigger = {
@@ -925,6 +1053,13 @@ defined_text  = {
     name = startup_government_elective
 	random = no
 	
+    text = {
+        localisation_key = string_start_elective_monarchy
+        trigger = {
+			always = no
+			has_dlc = "Res Publica"
+        }
+    }
 	text = {
         localisation_key = string_start_elective_monarchy_no #Empty string
         trigger = {
@@ -938,6 +1073,13 @@ defined_text  = {
     name = startup_government_horde
 	random = no
 
+    text = {
+        localisation_key = string_start_horde
+        trigger = {
+			has_reform = steppe_horde
+			has_dlc = "The Cossacks"
+        }
+    }
 	text = {
         localisation_key = string_start_horde_no #Empty string
         trigger = {
@@ -952,6 +1094,21 @@ defined_text  = {
 	random = no
 	
 	text = {
+        localisation_key = string_start_native_council_opm
+        trigger = {
+			government = native
+			has_dlc = "Conquest of Paradise"
+			NOT = { num_of_cities = 2 }
+        }
+    }
+    text = {
+        localisation_key = string_start_native_council
+        trigger = {
+			government = native
+			has_dlc = "Conquest of Paradise"
+        }
+    }
+	text = {
         localisation_key = string_native_council_no #Empty string
         trigger = {
 			always = yes
@@ -964,6 +1121,14 @@ defined_text  = {
     name = startup_government_siberian_native_council
 	random = no
 	
+	text = {
+        localisation_key = string_start_siberian_native_council_opm
+        trigger = {
+			always = no
+			has_dlc = "Conquest of Paradise"
+			NOT = { num_of_cities = 2 }
+        }
+    }
 	text = {
         localisation_key = string_siberian_native_council_no #Empty string
         trigger = {
@@ -978,6 +1143,13 @@ defined_text  = {
 	random = no
 	
 	text = {
+        localisation_key = string_start_meritocracy
+        trigger = {
+			always = no
+			has_dlc = "Mandate of Heaven"
+        }
+    }
+	text = {
         localisation_key = string_meritocracy_no #Empty string
         trigger = {
 			always = yes
@@ -991,6 +1163,20 @@ defined_text  = {
 	random = no
 	
 	text = {
+        localisation_key = string_start_shogunate_moh
+        trigger = {
+			always = no
+			has_dlc = "Mandate of Heaven"
+        }
+    }
+	text = {
+        localisation_key = string_start_shogunate
+        trigger = {
+			always = no
+			NOT = { has_dlc = "Mandate of Heaven" }
+        }
+    }
+	text = {
         localisation_key = string_shogunate_no #Empty string
         trigger = {
 			always = yes
@@ -1003,7 +1189,7 @@ defined_text  = {
 defined_text = {
     name = StartScreenDownRightDesc
 	random = no
-
+	
 	text = {
         localisation_key = string_start_no_special_region_description
         trigger = {
@@ -1040,8 +1226,8 @@ defined_text = {
     name = start_imperial_cities_description
 	random = no
 
-	text = {
-        localisation_key = string_imperial_cities_desc_no #Empty String
+    text = {
+        localisation_key = string_imperial_cities_desc
         trigger = {
 			always = yes
         }
@@ -1051,9 +1237,70 @@ defined_text = {
 defined_text = {
     name = start_shogun_holders_through_the_years #used to display right clan name for the Shogunate in startup screen.
 	random = no
+
+    text = {
+        localisation_key = ASK
+        trigger = {
+			always = no
+        }
+    }
+	text = {
+        localisation_key = ODA
+        trigger = {
+			always = no
+        }
+    }
+	text = {
+        localisation_key = TKG
+        trigger = {
+			always = no
+        }
+    }
 }
 
 defined_text = {
     name = start_anglicanism_description
 	random = no
+
+    text = {
+        localisation_key = string_anglicanism_desc
+        trigger = {
+					has_dlc = "Rule Britannia"
+					culture_group = british
+        }
+    }
+	text = {
+        localisation_key = string_anglicanism_no #Empty String
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+	name = start_dharma_gov_reforms
+	random = no
+	
+    text = {
+        localisation_key = string_dharma_government_reforms
+    }
+}
+
+defined_text = {
+	name = start_cossacks_steppe_nomads
+	random = no
+	
+	text = {
+		localisation_key = string_cossacks_steppe_nomads
+        trigger = {
+			has_reform = steppe_horde
+			has_dlc = "The Cossacks"
+        }
+	}
+	text = {
+		localisation_key = string_cossacks_steppe_nomads_no
+        trigger = {
+			always = yes
+        }
+	}
 }

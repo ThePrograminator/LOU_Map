@@ -36,10 +36,14 @@ categories =  {
 		sound_type = desert
 
 		defence = 1
-		movement_cost = 1.30
+		movement_cost = 1.25
 		supply_limit = 2		
 		local_development_cost = 0.5
 		nation_designer_cost_multiplier = 0.75		
+		
+		terrain_override = {		
+			
+		}
 	}
 
 	farmlands = {
@@ -48,7 +52,7 @@ categories =  {
 		type = plains
 		sound_type = plains
 
-		movement_cost = 0.85
+		movement_cost = 1.10
 		local_development_cost = -0.05
 		supply_limit = 10
 		allowed_num_of_buildings = 1
@@ -56,18 +60,18 @@ categories =  {
 		
 		terrain_override = {
 			3223 3231 1757 
-		}		
+		}			
 	}
 	
 	forest = {
-		color = { 31 116 16 }
+		color = { 18 74 9 }
 
 		type = forest
 		sound_type = forest
 		
-		movement_cost = 1.0
+		movement_cost = 1.25
 		defence = 1
-		supply_limit = 5
+		supply_limit = 4
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9
 		
@@ -91,7 +95,7 @@ categories =  {
 		type = hills
 		sound_type = mountains
 
-		movement_cost = 1.15
+		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
 		local_development_cost = 0.25
@@ -114,13 +118,14 @@ categories =  {
 		}
 	}
 
+	
 	woods = {
 		color = { 41 155 22 }
 
 		type = forest
 		sound_type = forest
 
-		movement_cost = 0.85
+		movement_cost = 1.10
 		defence = 1
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9
@@ -142,10 +147,10 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 
-		movement_cost = 1.25
+		movement_cost = 1.5
 		defence = 2
 		local_defensiveness = 0.25
-		local_development_cost = 0.5
+		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 		
@@ -165,12 +170,12 @@ categories =  {
 	}
 
 	grasslands = {
-		color = { 130 255 47 }
+		color = { 90 235 27 }
 
 		type = plains
 		sound_type = plains
 
-		movement_cost = 0.75
+		movement_cost = 1.0
 		supply_limit = 8
 		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1
@@ -186,7 +191,7 @@ categories =  {
 		type = jungle
 		sound_type = jungle
 
-		movement_cost = 1.25
+		movement_cost = 1.5
 		defence = 1
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.8
@@ -203,7 +208,7 @@ categories =  {
 		type = marsh
 		sound_type = forest
 
-		movement_cost = 1.05
+		movement_cost = 1.3
 		defence = 1
 		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
@@ -222,9 +227,9 @@ categories =  {
 		type = desert
 		sound_type = desert
 
-		movement_cost = 0.85
+		movement_cost = 1.05
 		supply_limit = 4
-		local_development_cost = 0.35
+		local_development_cost = 0.50
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = {
@@ -238,10 +243,14 @@ categories =  {
 		type = desert
 		sound_type = desert
 
-		movement_cost = 0.85
-		local_development_cost = 0.25
+		movement_cost = 1.0
+		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.9		
-		supply_limit = 5	
+		supply_limit = 4
+
+		terrain_override = {
+			
+		}	
 	}
 	
 	coastline = {
@@ -249,8 +258,8 @@ categories =  {
 
 		sound_type = sea
 
-		movement_cost = 0.75
-		local_development_cost = 0.25
+		movement_cost = 1.0
+		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.85		
 		supply_limit = 6 
 		
@@ -266,7 +275,7 @@ categories =  {
 		type = plains
 		sound_type = plains
 
-		movement_cost = 0.75
+		movement_cost = 1.00
 		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.95
 		supply_limit = 7
@@ -310,7 +319,7 @@ categories =  {
 			1264 2909 1413 2918 1466 2967 1411 2905 2910 946
 			2912 2913 2920 945 1461 1456 2942 760 2943 2939
 			2924 2938 2935 2932 2933 1778 3212 3291 1773 659 3293
-		}		
+		}
 	}
 
 	highlands = {
@@ -320,7 +329,7 @@ categories =  {
 		sound_type = mountains
 		
 		supply_limit = 6
-		movement_cost = 1.15
+		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
 		local_development_cost = 0.2
@@ -339,7 +348,7 @@ categories =  {
 		sound_type = plains
 
 		supply_limit = 6
-		movement_cost = 0.75
+		movement_cost = 1.00
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.95	
 		
@@ -354,7 +363,7 @@ categories =  {
 		type = plains
 		sound_type = plains
 
-		movement_cost = 0.75
+		movement_cost = 1.00
 		local_development_cost = 0.20
 		nation_designer_cost_multiplier = 0.9	
 		supply_limit = 6
@@ -363,7 +372,7 @@ categories =  {
 			769 770 813 805 773 1322 1285 625 622 1610 809 1321 1657 1656 604 1663 1694 1676 1652 774 1646 1658 3403 962 1675 3404 1664 3410 1649 1644 1670 1628
 			3407 1645 1650 1430 1651 1250 692 2764 817 826 2767 822 1251 1643 1655 1666 1662 1665 1659 3411 3408 775 
 		}	
-	}
+	}	
 	
 	##################
 	#Gondor Specific #
@@ -4215,9 +4224,8 @@ categories =  {
 			664 3177 1990 614 706 3178 667 538
 		}
 	}
-	
 }
-
+	
 ##################################################################
 ### Graphical terrain
 ###		type	=	refers to the terrain defined above, "terrain category"'s 

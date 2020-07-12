@@ -165,13 +165,7 @@ add_loot_from_rich_province_general_effect = {
 #Religious Schools:
 #Country Scope
 clear_religious_scholar_modifiers_effect = {
-	remove_country_modifier = hanafi_scholar_modifier
-	remove_country_modifier = hanbali_scholar_modifier
-	remove_country_modifier = maliki_scholar_modifier
-	remove_country_modifier = shafii_scholar_modifier
-	remove_country_modifier = ismaili_scholar_modifier
-	remove_country_modifier = jafari_scholar_modifier
-	remove_country_modifier = zaidi_scholar_modifier
+	
 }
 
 #Move capital along with all that also needs to be done. Used in capital decisions.
@@ -192,10 +186,6 @@ move_capital_effect = {
 			}
 		}
 		add_imperial_influence = -1
-	}
-	if = {
-		limit = { has_estate = yes }
-		remove_estate = yes
 	}
 	if = {
 		limit = { is_capital = no }
@@ -225,10 +215,6 @@ prev_move_capital_effect = {
 			}
 		}
 		add_imperial_influence = -1
-	}
-	if = {
-		limit = { has_estate = yes }
-		remove_estate = yes
 	}
 	if = {
 		limit = { is_capital = no }
@@ -266,6 +252,395 @@ abolish_slavery_effect = {
 			}
 			change_trade_goods = unknown
 			remove_building = tradecompany
+		}
+	}
+}
+
+
+add_vassalise_cb_effect = {
+	add_casus_belli = {
+		type = cb_vassalize_mission
+		months = 300
+		target = ROOT
+	}
+}
+
+
+remove_vassalise_cb_effect = {
+	if = {
+		limit = {
+			has_casus_belli = {
+				type = cb_vassalize_mission
+				target = event_target:agenda_country
+			}
+		}
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = event_target:agenda_country
+		}
+	}
+}
+
+#province scope, chooses which random monarch point bonus to give for agendas
+choose_random_development_bonus_effect = {
+	random_list = {
+		1 = { set_province_flag = add_base_tax_flag }
+		1 = { set_province_flag = add_base_production_flag }
+		1 = { set_province_flag = add_base_manpower_flag }
+	}
+}
+
+apply_random_development_bonus_bonus_effect = {
+	trigger_switch = {
+		on_trigger = has_province_flag
+		add_base_tax_flag = { add_base_tax = 1 }
+		add_base_production_flag = { add_base_production = 1 }
+		add_base_manpower_flag = { add_base_manpower = 1 }
+	}
+	clear_random_development_bonus_flags_effect = yes
+}
+
+clear_random_development_bonus_flags_effect = {
+	clr_province_flag = add_base_tax_flag
+	clr_province_flag = add_base_production_flag
+	clr_province_flag = add_base_manpower_flag
+}
+#province scope, should be used whenever the revolution is removed from a province
+remove_revolution_from_province_effect = {
+	hidden_effect = { set_revolution_in_province = no }
+	custom_tooltip = no_spread_here_for_15_years_tt
+	add_province_modifier = {
+		name = no_revolution_here_dummy
+		duration = 5475
+		hidden = yes
+	}
+}
+
+
+spawn_small_scaled_rebels = {
+	#always specify type
+	#specify saved_name = <saved_name> if you want to use one of those
+	#specify leader and leader_dynasty if you want to do it that way
+	#otherwise state "no_defined_leader = yes"
+	if = {
+		limit = {
+			owner = {
+				total_development = 1000
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 500
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 2
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 2
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 2
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 200
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 1.5
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 1.5
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 1.5
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+	else = {
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 1
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 1
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 1
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+}
+
+spawn_large_scaled_rebels = {
+	#always specify type
+	#specify saved_name = <saved_name> if you want to use one of those
+	#specify leader and leader_dynasty if you want to do it that way
+	#otherwise state "no_defined_leader = yes"
+	if = {
+		limit = {
+			owner = {
+				total_development = 2000
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+			}
+			spawn_rebels = {
+				size = 2
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+			spawn_rebels = {
+				size = 2
+				type = $type$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $saved_name$
+			}
+			spawn_rebels = {
+				size = 2
+				type = $type$
+			}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 1000
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+			}
+			spawn_rebels = {
+				size = 1
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+			spawn_rebels = {
+				size = 1
+				type = $type$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $saved_name$
+			}
+			spawn_rebels = {
+				size = 1
+				type = $type$
+			}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 500
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 3
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 200
+			}
+		}
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 2.5
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 2.5
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 2.5
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+	else = {
+		[[no_defined_leader]
+			spawn_rebels = {
+				size = 2
+				type = $type$
+			}
+		]
+		[[leader]
+			spawn_rebels = {
+				size = 2
+				type = $type$
+				leader = $leader$
+				leader_dynasty = $leader_dynasty$
+			}
+		]
+		[[saved_name]
+			spawn_rebels = {
+				size = 2
+				type = $type$
+				leader = $saved_name$
+			}
+		]
+	}
+}
+
+change_government_to_republic = {
+	if = {
+		limit = {
+			NOT = { government = republic }
+		}
+		change_government = republic
+		lose_reforms = 2
+	}
+}
+
+change_government_to_monarchy = {
+	if = {
+		limit = {
+			NOT = { government = monarchy }
+		}
+		if = {
+			limit = {
+				government = republic
+			}
+			change_government = monarchy
+			lose_reforms = 4
+		}
+		else = {
+			change_government = monarchy
+			lose_reforms = 2
+		}
+	}
+}
+
+change_government_to_theocracy = {
+	if = {
+		limit = {
+			NOT = { government = theocracy }
+		}
+		if = {
+			limit = {
+				government = republic
+			}
+			change_government = theocracy
+			lose_reforms = 4
+		}
+		else = {
+			change_government = theocracy
+			lose_reforms = 2
 		}
 	}
 }

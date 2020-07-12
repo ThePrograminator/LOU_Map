@@ -255,7 +255,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 1
 	}
 	
 	#Our Leader sad
@@ -490,52 +490,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
-
-		modifier = {
-			factor = 0.6
-			OR = {
-				NOT = { stability = -2 }
-				AND = { war_exhaustion = 8}
-				exists = X84
-			}
-		}
-		modifier = {
-			factor = 0.7
-			OR = {
-				NOT = { stability = -1 }
-				AND = { war_exhaustion = 6}
-				exists = X84
-			}
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { stability = 0 }
-				AND = { war_exhaustion = 4}
-			}
-		}
-		modifier = {
-			factor = 0.9
-			OR = {
-				NOT = { stability = 1 }
-				AND = { war_exhaustion = 2}
-			}
-		}
-		modifier = {
-			factor = 1.0
-			OR = {
-				NOT = { stability = 2 }
-				AND = { war_exhaustion = 0}
-			}
-		}
-		modifier = {
-			factor = 1.0
-			OR = {
-				NOT = { stability = 3 }
-				AND = { war_exhaustion = 0}
-			}
-		}
+		days = 1
 	}
 	
 	#yay

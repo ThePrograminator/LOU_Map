@@ -273,16 +273,6 @@ country_event = {
 		name = "EVTOPTB6301"
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0
-				has_estate = estate_nobles
-				NOT = {
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 40
-					}
-				}
-			}
 		}
 		reduce_estate_nobles_loyalty_effect = yes
 		add_country_modifier = {
@@ -342,13 +332,6 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				has_estate = estate_burghers
-				NOT = {
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 40
-					}
-				}
 			}
 		}
 		reduce_estate_burghers_loyalty_effect = yes
@@ -544,7 +527,6 @@ country_event = {
 			treasurer_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=treasurer
-					advisor_type_if_not_state=treasurer
 					skill = 2
 					discount=yes
 				}
@@ -552,7 +534,6 @@ country_event = {
 			master_of_mint_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=master_of_mint
-					advisor_type_if_not_state=master_of_mint
 					skill = 2
 					discount=yes
 				}
@@ -560,7 +541,6 @@ country_event = {
 			trader_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=trader
-					advisor_type_if_not_state=trader
 					skill = 2
 					discount=yes
 				}
@@ -768,16 +748,6 @@ country_event = {
 		name = "EVTOPTA6303"
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0
-				has_estate = estate_nobles
-				NOT = {
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 40
-					}
-				}
-			}
 		}
 		add_stability = -1
 		reduce_estate_nobles_loyalty_effect = yes
@@ -1124,7 +1094,6 @@ country_event = {
 			natural_scientist_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=natural_scientist
-					advisor_type_if_not_state=natural_scientist
 					scaled_skill = yes
 					discount=yes
 				}
@@ -1132,7 +1101,6 @@ country_event = {
 			statesman_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=statesman
-					advisor_type_if_not_state=statesman
 					scaled_skill = yes
 					discount=yes
 				}
@@ -1140,7 +1108,6 @@ country_event = {
 			treasurer_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=treasurer
-					advisor_type_if_not_state=treasurer
 					scaled_skill = yes
 					discount=yes
 				}
@@ -1148,7 +1115,6 @@ country_event = {
 			naval_reformer_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=naval_reformer
-					advisor_type_if_not_state=naval_reformer
 					scaled_skill = yes
 					discount=yes
 				}
@@ -1156,7 +1122,6 @@ country_event = {
 			army_reformer_flag = {
 				generate_advisor_of_type_and_semi_random_religion_effect = {
 					advisor_type=army_reformer
-					advisor_type_if_not_state=army_reformer
 					scaled_skill = yes
 					discount=yes
 				}
@@ -1423,7 +1388,6 @@ country_event = {
 		add_meritocracy_effect = yes
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=theologian
-			advisor_type_if_not_state=theologian
 			skill = 2
 			discount=yes
 		}
@@ -1560,13 +1524,6 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 0
-				has_estate = estate_church
-				NOT = {
-					estate_loyalty = {
-						estate = estate_church
-						loyalty = 40
-					}
-				}
 			}
 		}
 		add_piety = -0.15
@@ -2917,7 +2874,6 @@ country_event = {
 		add_meritocracy_effect = yes
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=fortification_expert
-			advisor_type_if_not_state=fortification_expert
 			skill = 2
 			discount=yes
 		}
@@ -3001,16 +2957,6 @@ country_event = {
 		name = "EVTOPTB6131"
 		ai_chance = {
 			factor = 55
-			modifier = {
-				factor = 0
-				has_estate = estate_nobles
-				NOT = {
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 40
-					}
-				}
-			}
 		}
 		add_army_tradition = -20
 		add_estate_nobles_loyalty_effect = yes
@@ -3767,7 +3713,9 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6102"
-		create_admiral = 50
+		create_admiral = {
+            tradition = 50
+        }
 	}
 }
 
@@ -3799,13 +3747,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				has_estate = estate_nobles
-				NOT = {
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 40
-					}
-				}
 			}
 		}
 		add_stability = -1
@@ -4138,7 +4079,6 @@ country_event = {
 		add_meritocracy_effect = yes
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=naval_reformer
-			advisor_type_if_not_state=naval_reformer
 			scaled_skill = yes
 			discount=yes
 		}
@@ -4826,7 +4766,6 @@ country_event = {
 		add_army_professionalism = 0.01
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=commandant
-			advisor_type_if_not_state=commandant
 			skill = 2
 			discount=yes
 		}
@@ -5157,7 +5096,6 @@ country_event = {
 		add_army_professionalism = 0.01
 		generate_advisor_of_type_and_semi_random_religion_effect = {
 			advisor_type=army_organiser
-			advisor_type_if_not_state=army_organiser
 			skill = 2
 			discount=yes
 		}
@@ -5683,10 +5621,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 2.0
-			tag = POR
-		}
 	}
 
 	option = {
@@ -5780,7 +5714,9 @@ country_event = {
 
 	option = {
 		name = ideagroups.1701.a
-		create_admiral = 50
+		create_admiral = {
+            tradition = 50
+        }
 	}
 
 	option = {

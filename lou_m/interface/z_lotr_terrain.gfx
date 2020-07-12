@@ -1,2322 +1,2527 @@
 spriteTypes = {
-	# Terrain Pictures
+    #----------------------------
+    # Vanilla
+    #----------------------------
+    spriteType = {
+		name = "GFX_colony_terrain_desert_mountain"
+		texturefile = "gfx/interface/terrain/terrain_mountains.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_farmlands"
+		texturefile = "gfx/interface/terrain/terrain_hills.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_coastline"
+		texturefile = "gfx/interface/terrain/terrain_inland_ocean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_inland_ocean"
+		texturefile = "gfx/interface/terrain/terrain_inland_ocean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_grasslands"
+		texturefile = "gfx/interface/terrain/terrain_grasslands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_desert"
+		texturefile = "gfx/interface/terrain/terrain_desert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_forest"
+		texturefile = "gfx/interface/terrain/terrain_forest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_plains"
+		texturefile = "gfx/interface/terrain/terrain_plains.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_woods"
+		texturefile = "gfx/interface/terrain/terrain_woods.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_marsh"
+		texturefile = "gfx/interface/terrain/terrain_marsh.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_coastal_desert"
+		texturefile = "gfx/interface/terrain/terrain_coastal_desert.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_hills"
+		texturefile = "gfx/interface/terrain/terrain_hills.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_steppe"
+		texturefile = "gfx/interface/terrain/terrain_steppe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_mountain"
+		texturefile = "gfx/interface/terrain/terrain_mountains.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_glacier"
+		texturefile = "gfx/interface/terrain/terrain_arctic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_jungle"
+		texturefile = "gfx/interface/terrain/terrain_jungle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_colony_terrain_drylands"
+		texturefile = "gfx/interface/terrain/terrain_drylands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_savannah"
+		texturefile = "gfx/interface/terrain/terrain_savannah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_highlands"
+		texturefile = "gfx/interface/terrain/terrain_highlands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_farmlands"
+		texturefile = "gfx/interface/terrain/terrain_farmlands.dds"
+	}	
+    
+    spriteType = {
+		name = "GFX_combat_terrain_grasslands"	
+		texturefile = "gfx/interface/terrain/terrain_grasslands.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_plains"	
+		texturefile = "gfx/interface/terrain/terrain_plains.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_forest"	
+		texturefile = "gfx/interface/terrain/terrain_forest.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_desert"
+		texturefile = "gfx/interface/terrain/terrain_desert.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_farmlands"	
+		texturefile = "gfx/interface/terrain/terrain_hills.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_hills"	
+		texturefile = "gfx/interface/terrain/terrain_hills.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_glacier"	
+		texturefile = "gfx/interface/terrain/terrain_arctic.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_ocean"	
+		texturefile = "gfx/interface/terrain/terrain_ocean.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_coastal_desert"	
+		texturefile = "gfx/interface/terrain/terrain_coastal_desert.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_jungle"	
+		texturefile = "gfx/interface/terrain/terrain_jungle.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_marsh"	
+		texturefile = "gfx/interface/terrain/terrain_marsh.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_mountain"	
+		texturefile = "gfx/interface/terrain/terrain_mountains.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_steppe"	
+		texturefile = "gfx/interface/terrain/terrain_steppe.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_desert_mountain"
+		texturefile = "gfx/interface/terrain/terrain_mountains.tga"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_coastline"
+		texturefile = "gfx/interface/combat_terrain_inland_ocean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_woods"
+		texturefile = "gfx/interface/combat_terrain_woods.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_drylands"
+		texturefile = "gfx/interface/combat_terrain_drylands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_savannah"
+		texturefile = "gfx/interface/combat_terrain_savannah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_highlands"
+		texturefile = "gfx/interface/combat_terrain_highlands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_combat_terrain_farmlands"
+		texturefile = "gfx/interface/combat_terrain_farmlands.dds"
+	}	
+    
+    #----------------------------
+	# LOTR
+    #----------------------------
 	spriteType = {
 		name = "GFX_colony_terrain_unique_minas_tirith"
-		texturefile = "gfx/interface/colony_terrain_unique_minas_tirith.tga"
+		texturefile = "gfx/interface/terrain/terrain_minas_tirith.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_minas_tirith"	
-		texturefile = "gfx//interface//combat_terrain_unique_minas_tirith.tga"
+		texturefile = "gfx/interface/terrain/terrain_minas_tirith.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_helmsdeep"
-		texturefile = "gfx/interface/colony_terrain_unique_helmsdeep.tga"
+		texturefile = "gfx/interface/terrain/terrain_helmsdeep.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_helmsdeep"	
-		texturefile = "gfx//interface//combat_terrain_unique_helmsdeep.tga"
+		texturefile = "gfx/interface/terrain/terrain_helmsdeep.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mountdoom"
-		texturefile = "gfx/interface/colony_terrain_unique_mountdoom.tga"
+		texturefile = "gfx/interface/terrain/terrain_mountdoom.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mountdoom"	
-		texturefile = "gfx//interface//combat_terrain_unique_mountdoom.tga"
+		texturefile = "gfx/interface/terrain/terrain_mountdoom.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_osgilliath"
-		texturefile = "gfx/interface/colony_terrain_unique_osgilliath.tga"
+		texturefile = "gfx/interface/terrain/terrain_osgilliath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_osgilliath"	
-		texturefile = "gfx//interface//combat_terrain_unique_osgilliath.tga"
+		texturefile = "gfx/interface/terrain/terrain_osgilliath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dolguldur"
-		texturefile = "gfx/interface/colony_terrain_unique_dolguldur.tga"
+		texturefile = "gfx/interface/terrain/terrain_dolguldur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dolguldur"	
-		texturefile = "gfx//interface//combat_terrain_unique_dolguldur.tga"
+		texturefile = "gfx/interface/terrain/terrain_dolguldur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_erebor"
-		texturefile = "gfx/interface/colony_terrain_unique_erebor.tga"
+		texturefile = "gfx/interface/terrain/terrain_erebor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_erebor"	
-		texturefile = "gfx//interface//combat_terrain_unique_erebor.tga"
+		texturefile = "gfx/interface/terrain/terrain_erebor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dale"
-		texturefile = "gfx/interface/colony_terrain_unique_dale.tga"
+		texturefile = "gfx/interface/terrain/terrain_dale.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dale"	
-		texturefile = "gfx//interface//combat_terrain_unique_dale.tga"
+		texturefile = "gfx/interface/terrain/terrain_dale.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_laketown"
-		texturefile = "gfx/interface/colony_terrain_unique_laketown.tga"
+		texturefile = "gfx/interface/terrain/terrain_laketown.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_laketown"	
-		texturefile = "gfx//interface//combat_terrain_unique_laketown.tga"
+		texturefile = "gfx/interface/terrain/terrain_laketown.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_edoras"
-		texturefile = "gfx/interface/colony_terrain_unique_edoras.tga"
+		texturefile = "gfx/interface/terrain/terrain_edoras.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_edoras"	
-		texturefile = "gfx//interface//combat_terrain_unique_edoras.tga"
+		texturefile = "gfx/interface/terrain/terrain_edoras.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_isengard"
-		texturefile = "gfx/interface/colony_terrain_unique_isengard.tga"
+		texturefile = "gfx/interface/terrain/terrain_isengard.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_isengard"	
-		texturefile = "gfx//interface//combat_terrain_unique_isengard.tga"
+		texturefile = "gfx/interface/terrain/terrain_isengard.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rivendell"
-		texturefile = "gfx/interface/colony_terrain_unique_rivendell.tga"
+		texturefile = "gfx/interface/terrain/terrain_rivendell.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rivendell"	
-		texturefile = "gfx//interface//combat_terrain_unique_rivendell.tga"
+		texturefile = "gfx/interface/terrain/terrain_rivendell.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_hobbitton"
-		texturefile = "gfx/interface/colony_terrain_unique_hobbitton.tga"
+		texturefile = "gfx/interface/terrain/terrain_hobbitton.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_hobbitton"	
-		texturefile = "gfx//interface//combat_terrain_unique_hobbitton.tga"
+		texturefile = "gfx/interface/terrain/terrain_hobbitton.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_moria"
-		texturefile = "gfx/interface/colony_terrain_unique_moria.tga"
+		texturefile = "gfx/interface/terrain/terrain_moria.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_moria"	
-		texturefile = "gfx//interface//combat_terrain_unique_moria.tga"
+		texturefile = "gfx/interface/terrain/terrain_moria.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_moria_west_gate"
-		texturefile = "gfx/interface/colony_terrain_unique_moria_west_gate.tga"
+		texturefile = "gfx/interface/terrain/terrain_moria_west_gate.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_moria_west_gate"	
-		texturefile = "gfx//interface//combat_terrain_unique_moria_west_gate.tga"
+		texturefile = "gfx/interface/terrain/terrain_moria_west_gate.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_moria_east_gate"
-		texturefile = "gfx/interface/colony_terrain_unique_moria_east_gate.tga"
+		texturefile = "gfx/interface/terrain/terrain_moria_east_gate.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_moria_east_gate"	
-		texturefile = "gfx//interface//combat_terrain_unique_moria_east_gate.tga"
+		texturefile = "gfx/interface/terrain/terrain_moria_east_gate.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_blackgate"
-		texturefile = "gfx/interface/colony_terrain_unique_blackgate.tga"
+		texturefile = "gfx/interface/terrain/terrain_blackgate.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_blackgate"	
-		texturefile = "gfx//interface//combat_terrain_unique_blackgate.tga"
+		texturefile = "gfx/interface/terrain/terrain_blackgate.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_umbar"
-		texturefile = "gfx/interface/colony_terrain_unique_umbar.tga"
+		texturefile = "gfx/interface/terrain/terrain_umbar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_umbar"	
-		texturefile = "gfx//interface//combat_terrain_unique_umbar.tga"
+		texturefile = "gfx/interface/terrain/terrain_umbar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_fangorn"
-		texturefile = "gfx/interface/colony_terrain_unique_fangorn.tga"
+		texturefile = "gfx/interface/terrain/terrain_fangorn.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_fangorn"	
-		texturefile = "gfx//interface//combat_terrain_unique_fangorn.tga"
+		texturefile = "gfx/interface/terrain/terrain_fangorn.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_lothloria"
-		texturefile = "gfx/interface/colony_terrain_unique_lothloria.tga"
+		texturefile = "gfx/interface/terrain/terrain_lothloria.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_lothloria"	
-		texturefile = "gfx//interface//combat_terrain_unique_lothloria.tga"
+		texturefile = "gfx/interface/terrain/terrain_lothloria.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_thalls"
-		texturefile = "gfx/interface/colony_terrain_unique_thalls.tga"
+		texturefile = "gfx/interface/terrain/terrain_thalls.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_thalls"	
-		texturefile = "gfx//interface//combat_terrain_unique_thalls.tga"
+		texturefile = "gfx/interface/terrain/terrain_thalls.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gundabad"
-		texturefile = "gfx/interface/colony_terrain_unique_gundabad.tga"
+		texturefile = "gfx/interface/terrain/terrain_gundabad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gundabad"	
-		texturefile = "gfx//interface//combat_terrain_unique_gundabad.tga"
+		texturefile = "gfx/interface/terrain/terrain_gundabad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_goblintown"
-		texturefile = "gfx/interface/colony_terrain_unique_goblintown.tga"
+		texturefile = "gfx/interface/terrain/terrain_goblintown.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_goblintown"	
-		texturefile = "gfx//interface//combat_terrain_unique_goblintown.tga"
+		texturefile = "gfx/interface/terrain/terrain_goblintown.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_greyhavens"
-		texturefile = "gfx/interface/colony_terrain_unique_greyhavens.tga"
+		texturefile = "gfx/interface/terrain/terrain_greyhavens.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_greyhavens"	
-		texturefile = "gfx//interface//combat_terrain_unique_greyhavens.tga"
+		texturefile = "gfx/interface/terrain/terrain_greyhavens.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_amonhen"
-		texturefile = "gfx/interface/colony_terrain_unique_amonhen.tga"
+		texturefile = "gfx/interface/terrain/terrain_amonhen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_amonhen"	
-		texturefile = "gfx//interface//combat_terrain_unique_amonhen.tga"
+		texturefile = "gfx/interface/terrain/terrain_amonhen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_amon_lhaw"
-		texturefile = "gfx/interface/colony_terrain_unique_amon_lhaw.tga"
+		texturefile = "gfx/interface/terrain/terrain_amon_lhaw.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_amon_lhaw"	
-		texturefile = "gfx//interface//combat_terrain_unique_amon_lhaw.tga"
+		texturefile = "gfx/interface/terrain/terrain_amon_lhaw.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_baraddur"
-		texturefile = "gfx/interface/colony_terrain_unique_baraddur.tga"
+		texturefile = "gfx/interface/terrain/terrain_baraddur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_baraddur"	
-		texturefile = "gfx//interface//combat_terrain_unique_baraddur.tga"
+		texturefile = "gfx/interface/terrain/terrain_baraddur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dolamroth"
-		texturefile = "gfx/interface/colony_terrain_unique_dolamroth.tga"
+		texturefile = "gfx/interface/terrain/terrain_dolamroth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dolamroth"	
-		texturefile = "gfx//interface//combat_terrain_unique_dolamroth.tga"
+		texturefile = "gfx/interface/terrain/terrain_dolamroth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_pass"
-		texturefile = "gfx/interface/colony_terrain_unique_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_pass"	
-		texturefile = "gfx//interface//combat_terrain_unique_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_shire"
-		texturefile = "gfx/interface/colony_terrain_unique_shire.tga"
+		texturefile = "gfx/interface/terrain/terrain_shire.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_shire"	
-		texturefile = "gfx//interface//combat_terrain_unique_shire.tga"
+		texturefile = "gfx/interface/terrain/terrain_shire.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rohan"
-		texturefile = "gfx/interface/colony_terrain_unique_rohan.tga"
+		texturefile = "gfx/interface/terrain/terrain_rohan.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rohan"	
-		texturefile = "gfx//interface//combat_terrain_unique_rohan.tga"
+		texturefile = "gfx/interface/terrain/terrain_rohan.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mordor"
-		texturefile = "gfx/interface/colony_terrain_unique_mordor.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mordor"	
-		texturefile = "gfx//interface//combat_terrain_unique_mordor.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_bree"
-		texturefile = "gfx/interface/colony_terrain_unique_bree.tga"
+		texturefile = "gfx/interface/terrain/terrain_bree.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_bree"	
-		texturefile = "gfx//interface//combat_terrain_unique_bree.tga"
+		texturefile = "gfx/interface/terrain/terrain_bree.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_carndum"
-		texturefile = "gfx/interface/colony_terrain_unique_carndum.tga"
+		texturefile = "gfx/interface/terrain/terrain_carndum.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_carndum"	
-		texturefile = "gfx//interface//combat_terrain_unique_carndum.tga"
+		texturefile = "gfx/interface/terrain/terrain_carndum.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_cirithungol"
-		texturefile = "gfx/interface/colony_terrain_unique_cirithungol.tga"
+		texturefile = "gfx/interface/terrain/terrain_cirithungol.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_cirithungol"	
-		texturefile = "gfx//interface//combat_terrain_unique_cirithungol.tga"
+		texturefile = "gfx/interface/terrain/terrain_cirithungol.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_minasmorgul"
-		texturefile = "gfx/interface/colony_terrain_unique_minasmorgul.tga"
+		texturefile = "gfx/interface/terrain/terrain_minasmorgul.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_minasmorgul"	
-		texturefile = "gfx//interface//combat_terrain_unique_minasmorgul.tga"
+		texturefile = "gfx/interface/terrain/terrain_minasmorgul.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ithilien"
-		texturefile = "gfx/interface/colony_terrain_unique_ithilien.tga"
+		texturefile = "gfx/interface/terrain/terrain_ithilien.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ithilien"	
-		texturefile = "gfx//interface//combat_terrain_unique_ithilien.tga"
+		texturefile = "gfx/interface/terrain/terrain_ithilien.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_east_wall"
-		texturefile = "gfx/interface/colony_terrain_unique_east_wall.tga"
+		texturefile = "gfx/interface/terrain/terrain_east_wall.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_east_wall"	
-		texturefile = "gfx//interface//combat_terrain_unique_east_wall.tga"
+		texturefile = "gfx/interface/terrain/terrain_east_wall.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_edhellond"
-		texturefile = "gfx/interface/colony_terrain_unique_edhellond.tga"
+		texturefile = "gfx/interface/terrain/terrain_edhellond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_edhellond"	
-		texturefile = "gfx//interface//combat_terrain_unique_edhellond.tga"
+		texturefile = "gfx/interface/terrain/terrain_edhellond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gobel_tolfalas"
-		texturefile = "gfx/interface/colony_terrain_unique_gobel_tolfalas.tga"
+		texturefile = "gfx/interface/terrain/terrain_gobel_tolfalas.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gobel_tolfalas"	
-		texturefile = "gfx//interface//combat_terrain_unique_gobel_tolfalas.tga"
+		texturefile = "gfx/interface/terrain/terrain_gobel_tolfalas.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gondor_town"
-		texturefile = "gfx/interface/colony_terrain_unique_gondor_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gondor_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_gondor_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_imloth_melui"
-		texturefile = "gfx/interface/colony_terrain_unique_imloth_melui.tga"
+		texturefile = "gfx/interface/terrain/terrain_imloth_melui.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_imloth_melui"	
-		texturefile = "gfx//interface//combat_terrain_unique_imloth_melui.tga"
+		texturefile = "gfx/interface/terrain/terrain_imloth_melui.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nan_lothanduin"
-		texturefile = "gfx/interface/colony_terrain_unique_nan_lothanduin.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_lothanduin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nan_lothanduin"	
-		texturefile = "gfx//interface//combat_terrain_unique_nan_lothanduin.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_lothanduin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_parth_galen"
-		texturefile = "gfx/interface/colony_terrain_unique_parth_galen.tga"
+		texturefile = "gfx/interface/terrain/terrain_parth_galen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_parth_galen"	
-		texturefile = "gfx//interface//combat_terrain_unique_parth_galen.tga"
+		texturefile = "gfx/interface/terrain/terrain_parth_galen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_sarn_gebir"
-		texturefile = "gfx/interface/colony_terrain_unique_sarn_gebir.tga"
+		texturefile = "gfx/interface/terrain/terrain_sarn_gebir.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_sarn_gebir"	
-		texturefile = "gfx//interface//combat_terrain_unique_sarn_gebir.tga"
+		texturefile = "gfx/interface/terrain/terrain_sarn_gebir.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_calembel"
-		texturefile = "gfx/interface/colony_terrain_unique_calembel.tga"
+		texturefile = "gfx/interface/terrain/terrain_calembel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_calembel"	
-		texturefile = "gfx//interface//combat_terrain_unique_calembel.tga"
+		texturefile = "gfx/interface/terrain/terrain_calembel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_henneth_annun"
-		texturefile = "gfx/interface/colony_terrain_unique_henneth_annun.tga"
+		texturefile = "gfx/interface/terrain/terrain_henneth_annun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_henneth_annun"	
-		texturefile = "gfx//interface//combat_terrain_unique_henneth_annun.tga"
+		texturefile = "gfx/interface/terrain/terrain_henneth_annun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harad_river"
-		texturefile = "gfx/interface/colony_terrain_unique_harad_river.tga"
+		texturefile = "gfx/interface/terrain/terrain_harad_river.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harad_river"	
-		texturefile = "gfx//interface//combat_terrain_unique_harad_river.tga"
+		texturefile = "gfx/interface/terrain/terrain_harad_river.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_archet"
-		texturefile = "gfx/interface/colony_terrain_unique_archet.tga"
+		texturefile = "gfx/interface/terrain/terrain_archet.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_archet"	
-		texturefile = "gfx//interface//combat_terrain_unique_archet.tga"
+		texturefile = "gfx/interface/terrain/terrain_archet.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_amon_sul"
-		texturefile = "gfx/interface/colony_terrain_unique_amon_sul.tga"
+		texturefile = "gfx/interface/terrain/terrain_amon_sul.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_amon_sul"	
-		texturefile = "gfx//interface//combat_terrain_unique_amon_sul.tga"
+		texturefile = "gfx/interface/terrain/terrain_amon_sul.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_entmoot"
-		texturefile = "gfx/interface/colony_terrain_unique_entmoot.tga"
+		texturefile = "gfx/interface/terrain/terrain_entmoot.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_entmoot"	
-		texturefile = "gfx//interface//combat_terrain_unique_entmoot.tga"
+		texturefile = "gfx/interface/terrain/terrain_entmoot.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_argonath"
-		texturefile = "gfx/interface/colony_terrain_unique_argonath.tga"
+		texturefile = "gfx/interface/terrain/terrain_argonath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_argonath"	
-		texturefile = "gfx//interface//combat_terrain_unique_argonath.tga"
+		texturefile = "gfx/interface/terrain/terrain_argonath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_erech"
-		texturefile = "gfx/interface/colony_terrain_unique_erech.tga"
+		texturefile = "gfx/interface/terrain/terrain_erech.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_erech"	
-		texturefile = "gfx//interface//combat_terrain_unique_erech.tga"
+		texturefile = "gfx/interface/terrain/terrain_erech.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_pelennor"
-		texturefile = "gfx/interface/colony_terrain_unique_pelennor.tga"
+		texturefile = "gfx/interface/terrain/terrain_pelennor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_pelennor"	
-		texturefile = "gfx//interface//combat_terrain_unique_pelennor.tga"
+		texturefile = "gfx/interface/terrain/terrain_pelennor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harlond"
-		texturefile = "gfx/interface/colony_terrain_unique_harlond.tga"
+		texturefile = "gfx/interface/terrain/terrain_harlond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harlond"	
-		texturefile = "gfx//interface//combat_terrain_unique_harlond.tga"
+		texturefile = "gfx/interface/terrain/terrain_harlond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_pinnath_gelin"
-		texturefile = "gfx/interface/colony_terrain_unique_pinnath_gelin.tga"
+		texturefile = "gfx/interface/terrain/terrain_pinnath_gelin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_pinnath_gelin"	
-		texturefile = "gfx//interface//combat_terrain_unique_pinnath_gelin.tga"
+		texturefile = "gfx/interface/terrain/terrain_pinnath_gelin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_beacon_of_gondor"	
-		texturefile = "gfx//interface//combat_terrain_unique_beacon_of_gondor.tga"
+		texturefile = "gfx/interface/terrain/terrain_beacon_of_gondor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_beacon_of_gondor"
-		texturefile = "gfx/interface/colony_terrain_unique_beacon_of_gondor.tga"
+		texturefile = "gfx/interface/terrain/terrain_beacon_of_gondor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_anorien"	
-		texturefile = "gfx//interface//combat_terrain_unique_anorien.tga"
+		texturefile = "gfx/interface/terrain/terrain_anorien.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_anorien"
-		texturefile = "gfx/interface/colony_terrain_unique_anorien.tga"
+		texturefile = "gfx/interface/terrain/terrain_anorien.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_anorien2"	
-		texturefile = "gfx//interface//combat_terrain_unique_anorien2.tga"
+		texturefile = "gfx/interface/terrain/terrain_anorien2.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_anorien2"
-		texturefile = "gfx/interface/colony_terrain_unique_anorien2.tga"
+		texturefile = "gfx/interface/terrain/terrain_anorien2.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_crossroads"	
-		texturefile = "gfx//interface//combat_terrain_unique_crossroads.tga"
+		texturefile = "gfx/interface/terrain/terrain_crossroads.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_crossroads"
-		texturefile = "gfx/interface/colony_terrain_unique_crossroads.tga"
+		texturefile = "gfx/interface/terrain/terrain_crossroads.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_halifirien"	
-		texturefile = "gfx//interface//combat_terrain_unique_halifirien.tga"
+		texturefile = "gfx/interface/terrain/terrain_halifirien.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_halifirien"
-		texturefile = "gfx/interface/colony_terrain_unique_halifirien.tga"
+		texturefile = "gfx/interface/terrain/terrain_halifirien.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ithilien_mountain"	
-		texturefile = "gfx//interface//combat_terrain_unique_ithilien_mountain.tga"
+		texturefile = "gfx/interface/terrain/terrain_ithilien_mountain.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ithilien_mountain"
-		texturefile = "gfx/interface/colony_terrain_unique_ithilien_mountain.tga"
+		texturefile = "gfx/interface/terrain/terrain_ithilien_mountain.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_path_of_dead"	
-		texturefile = "gfx//interface//combat_terrain_unique_path_of_dead.tga"
+		texturefile = "gfx/interface/terrain/terrain_path_of_dead.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_path_of_dead"
-		texturefile = "gfx/interface/colony_terrain_unique_path_of_dead.tga"
+		texturefile = "gfx/interface/terrain/terrain_path_of_dead.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_pelargir"	
-		texturefile = "gfx//interface//combat_terrain_unique_pelargir.tga"
+		texturefile = "gfx/interface/terrain/terrain_pelargir.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_pelargir"
-		texturefile = "gfx/interface/colony_terrain_unique_pelargir.tga"
+		texturefile = "gfx/interface/terrain/terrain_pelargir.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gondor"	
-		texturefile = "gfx//interface//combat_terrain_unique_gondor.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gondor"
-		texturefile = "gfx/interface/colony_terrain_unique_gondor.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gondor_coastline"	
-		texturefile = "gfx//interface//combat_terrain_unique_gondor_coastline.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_coastline.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gondor_coastline"
-		texturefile = "gfx/interface/colony_terrain_unique_gondor_coastline.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_coastline.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gondor_fields"	
-		texturefile = "gfx//interface//combat_terrain_unique_gondor_fields.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_fields.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gondor_fields"
-		texturefile = "gfx/interface/colony_terrain_unique_gondor_fields.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_fields.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gondor_hills"	
-		texturefile = "gfx//interface//combat_terrain_unique_gondor_hills.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_hills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gondor_hills"
-		texturefile = "gfx/interface/colony_terrain_unique_gondor_hills.tga"
+		texturefile = "gfx/interface/terrain/terrain_gondor_hills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_amrun"	
-		texturefile = "gfx//interface//combat_terrain_unique_amrun.tga"
+		texturefile = "gfx/interface/terrain/terrain_amrun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_amrun"
-		texturefile = "gfx/interface/colony_terrain_unique_amrun.tga"
+		texturefile = "gfx/interface/terrain/terrain_amrun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mordor_pass"	
-		texturefile = "gfx//interface//combat_terrain_unique_mordor_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mordor_pass"
-		texturefile = "gfx/interface/colony_terrain_unique_mordor_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_durthang"	
-		texturefile = "gfx//interface//combat_terrain_unique_durthang.tga"
+		texturefile = "gfx/interface/terrain/terrain_durthang.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_durthang"
-		texturefile = "gfx/interface/colony_terrain_unique_durthang.tga"
+		texturefile = "gfx/interface/terrain/terrain_durthang.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mordor_udun"	
-		texturefile = "gfx//interface//combat_terrain_unique_mordor_udun.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_udun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mordor_udun"
-		texturefile = "gfx/interface/colony_terrain_unique_mordor_udun.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_udun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mordor_gorgoroth"	
-		texturefile = "gfx//interface//combat_terrain_unique_mordor_gorgoroth.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_gorgoroth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mordor_gorgoroth"
-		texturefile = "gfx/interface/colony_terrain_unique_mordor_gorgoroth.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_gorgoroth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mordor_mount_doom_area"	
-		texturefile = "gfx//interface//combat_terrain_unique_mordor_mount_doom_area.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_mount_doom_area.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mordor_mount_doom_area"
-		texturefile = "gfx/interface/colony_terrain_unique_mordor_mount_doom_area.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_mount_doom_area.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ostigurth"	
-		texturefile = "gfx//interface//combat_terrain_unique_ostigurth.tga"
+		texturefile = "gfx/interface/terrain/terrain_ostigurth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ostigurth"
-		texturefile = "gfx/interface/colony_terrain_unique_ostigurth.tga"
+		texturefile = "gfx/interface/terrain/terrain_ostigurth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_shelob_lair"	
-		texturefile = "gfx//interface//combat_terrain_unique_shelob_lair.tga"
+		texturefile = "gfx/interface/terrain/terrain_shelob_lair.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_shelob_lair"
-		texturefile = "gfx/interface/colony_terrain_unique_shelob_lair.tga"
+		texturefile = "gfx/interface/terrain/terrain_shelob_lair.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nurn"	
-		texturefile = "gfx//interface//combat_terrain_unique_nurn.tga"
+		texturefile = "gfx/interface/terrain/terrain_nurn.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nurn"
-		texturefile = "gfx/interface/colony_terrain_unique_nurn.tga"
+		texturefile = "gfx/interface/terrain/terrain_nurn.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nurnen_settlement"	
-		texturefile = "gfx//interface//combat_terrain_unique_nurnen_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_nurnen_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nurnen_settlement"
-		texturefile = "gfx/interface/colony_terrain_unique_nurnen_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_nurnen_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dead_marshes"	
-		texturefile = "gfx//interface//combat_terrain_unique_dead_marshes.tga"
+		texturefile = "gfx/interface/terrain/terrain_dead_marshes.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dead_marshes"
-		texturefile = "gfx/interface/colony_terrain_unique_dead_marshes.tga"
+		texturefile = "gfx/interface/terrain/terrain_dead_marshes.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mordor_fortress"	
-		texturefile = "gfx//interface//combat_terrain_unique_mordor_fortress.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_fortress.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mordor_fortress"
-		texturefile = "gfx/interface/colony_terrain_unique_mordor_fortress.tga"
+		texturefile = "gfx/interface/terrain/terrain_mordor_fortress.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_orc_mine"	
-		texturefile = "gfx//interface//combat_terrain_unique_orc_mine.tga"
+		texturefile = "gfx/interface/terrain/terrain_orc_mine.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_orc_mine"
-		texturefile = "gfx/interface/colony_terrain_unique_orc_mine.tga"
+		texturefile = "gfx/interface/terrain/terrain_orc_mine.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_kajbah"	
-		texturefile = "gfx//interface//combat_terrain_unique_kajbah.tga"
+		texturefile = "gfx/interface/terrain/terrain_kajbah.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_kajbah"
-		texturefile = "gfx/interface/colony_terrain_unique_kajbah.tga"
+		texturefile = "gfx/interface/terrain/terrain_kajbah.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harondor_coastline"	
-		texturefile = "gfx//interface//combat_terrain_unique_harondor_coastline.tga"
+		texturefile = "gfx/interface/terrain/terrain_harondor_coastline.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harondor_coastline"
-		texturefile = "gfx/interface/colony_terrain_unique_harondor_coastline.tga"
+		texturefile = "gfx/interface/terrain/terrain_harondor_coastline.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_midgewater"	
-		texturefile = "gfx//interface//combat_terrain_unique_midgewater.tga"
+		texturefile = "gfx/interface/terrain/terrain_midgewater.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_midgewater"
-		texturefile = "gfx/interface/colony_terrain_unique_midgewater.tga"
+		texturefile = "gfx/interface/terrain/terrain_midgewater.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_chetwood"	
-		texturefile = "gfx//interface//combat_terrain_unique_chetwood.tga"
+		texturefile = "gfx/interface/terrain/terrain_chetwood.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_chetwood"
-		texturefile = "gfx/interface/colony_terrain_unique_chetwood.tga"
+		texturefile = "gfx/interface/terrain/terrain_chetwood.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gobel_ancalimon"	
-		texturefile = "gfx//interface//combat_terrain_unique_gobel_ancalimon.tga"
+		texturefile = "gfx/interface/terrain/terrain_gobel_ancalimon.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gobel_ancalimon"
-		texturefile = "gfx/interface/colony_terrain_unique_gobel_ancalimon.tga"
+		texturefile = "gfx/interface/terrain/terrain_gobel_ancalimon.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_chelkar"	
-		texturefile = "gfx//interface//combat_terrain_unique_chelkar.tga"
+		texturefile = "gfx/interface/terrain/terrain_chelkar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_chelkar"
-		texturefile = "gfx/interface/colony_terrain_unique_chelkar.tga"
+		texturefile = "gfx/interface/terrain/terrain_chelkar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harnen_river"	
-		texturefile = "gfx//interface//combat_terrain_unique_harnen_river.tga"
+		texturefile = "gfx/interface/terrain/terrain_harnen_river.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harnen_river"
-		texturefile = "gfx/interface/colony_terrain_unique_harnen_river.tga"
+		texturefile = "gfx/interface/terrain/terrain_harnen_river.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dune_sea"	
-		texturefile = "gfx//interface//combat_terrain_unique_dune_sea.tga"
+		texturefile = "gfx/interface/terrain/terrain_dune_sea.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dune_sea"
-		texturefile = "gfx/interface/colony_terrain_unique_dune_sea.tga"
+		texturefile = "gfx/interface/terrain/terrain_dune_sea.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_desert_towns"	
-		texturefile = "gfx//interface//combat_terrain_unique_desert_towns.tga"
+		texturefile = "gfx/interface/terrain/terrain_desert_towns.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_desert_towns"
-		texturefile = "gfx/interface/colony_terrain_unique_desert_towns.tga"
+		texturefile = "gfx/interface/terrain/terrain_desert_towns.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harad_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_harad_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_harad_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harad_town"
-		texturefile = "gfx/interface/colony_terrain_unique_harad_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_harad_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ered_harmal"	
-		texturefile = "gfx//interface//combat_terrain_unique_ered_harmal.tga"
+		texturefile = "gfx/interface/terrain/terrain_ered_harmal.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ered_harmal"
-		texturefile = "gfx/interface/colony_terrain_unique_ered_harmal.tga"
+		texturefile = "gfx/interface/terrain/terrain_ered_harmal.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nan_curunir"	
-		texturefile = "gfx//interface//combat_terrain_unique_nan_curunir.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_curunir.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nan_curunir"
-		texturefile = "gfx/interface/colony_terrain_unique_nan_curunir.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_curunir.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dains_halls"	
-		texturefile = "gfx//interface//combat_terrain_unique_dains_halls.tga"
+		texturefile = "gfx/interface/terrain/terrain_dains_halls.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dains_halls"
-		texturefile = "gfx/interface/colony_terrain_unique_dains_halls.tga"
+		texturefile = "gfx/interface/terrain/terrain_dains_halls.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ravenhill"	
-		texturefile = "gfx//interface//combat_terrain_unique_ravenhill.tga"
+		texturefile = "gfx/interface/terrain/terrain_ravenhill.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ravenhill"
-		texturefile = "gfx/interface/colony_terrain_unique_ravenhill.tga"
+		texturefile = "gfx/interface/terrain/terrain_ravenhill.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nan_nimrodel"	
-		texturefile = "gfx//interface//combat_terrain_unique_nan_nimrodel.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_nimrodel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nan_nimrodel"
-		texturefile = "gfx/interface/colony_terrain_unique_nan_nimrodel.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_nimrodel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gladden_fields"	
-		texturefile = "gfx//interface//combat_terrain_unique_gladden_fields.tga"
+		texturefile = "gfx/interface/terrain/terrain_gladden_fields.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gladden_fields"
-		texturefile = "gfx/interface/colony_terrain_unique_gladden_fields.tga"
+		texturefile = "gfx/interface/terrain/terrain_gladden_fields.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_cerin_amroth"	
-		texturefile = "gfx//interface//combat_terrain_unique_cerin_amroth.tga"
+		texturefile = "gfx/interface/terrain/terrain_cerin_amroth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_cerin_amroth"
-		texturefile = "gfx/interface/colony_terrain_unique_cerin_amroth.tga"
+		texturefile = "gfx/interface/terrain/terrain_cerin_amroth.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_caras_galadhon"	
-		texturefile = "gfx//interface//combat_terrain_unique_caras_galadhon.tga"
+		texturefile = "gfx/interface/terrain/terrain_caras_galadhon.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_caras_galadhon"
-		texturefile = "gfx/interface/colony_terrain_unique_caras_galadhon.tga"
+		texturefile = "gfx/interface/terrain/terrain_caras_galadhon.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_egladil"	
-		texturefile = "gfx//interface//combat_terrain_unique_egladil.tga"
+		texturefile = "gfx/interface/terrain/terrain_egladil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_egladil"
-		texturefile = "gfx/interface/colony_terrain_unique_egladil.tga"
+		texturefile = "gfx/interface/terrain/terrain_egladil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_waymeet"	
-		texturefile = "gfx//interface//combat_terrain_unique_waymeet.tga"
+		texturefile = "gfx/interface/terrain/terrain_waymeet.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_waymeet"
-		texturefile = "gfx/interface/colony_terrain_unique_waymeet.tga"
+		texturefile = "gfx/interface/terrain/terrain_waymeet.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tuckland"	
-		texturefile = "gfx//interface//combat_terrain_unique_tuckland.tga"
+		texturefile = "gfx/interface/terrain/terrain_tuckland.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tuckland"
-		texturefile = "gfx/interface/colony_terrain_unique_tuckland.tga"
+		texturefile = "gfx/interface/terrain/terrain_tuckland.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_bywater"	
-		texturefile = "gfx//interface//combat_terrain_unique_bywater.tga"
+		texturefile = "gfx/interface/terrain/terrain_bywater.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_bywater"
-		texturefile = "gfx/interface/colony_terrain_unique_bywater.tga"
+		texturefile = "gfx/interface/terrain/terrain_bywater.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_sarn_ford"	
-		texturefile = "gfx//interface//combat_terrain_unique_sarn_ford.tga"
+		texturefile = "gfx/interface/terrain/terrain_sarn_ford.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_sarn_ford"
-		texturefile = "gfx/interface/colony_terrain_unique_sarn_ford.tga"
+		texturefile = "gfx/interface/terrain/terrain_sarn_ford.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_the_marish"	
-		texturefile = "gfx//interface//combat_terrain_unique_the_marish.tga"
+		texturefile = "gfx/interface/terrain/terrain_the_marish.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_the_marish"
-		texturefile = "gfx/interface/colony_terrain_unique_the_marish.tga"
+		texturefile = "gfx/interface/terrain/terrain_the_marish.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_woody_end"	
-		texturefile = "gfx//interface//combat_terrain_unique_woody_end.tga"
+		texturefile = "gfx/interface/terrain/terrain_woody_end.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_woody_end"
-		texturefile = "gfx/interface/colony_terrain_unique_woody_end.tga"
+		texturefile = "gfx/interface/terrain/terrain_woody_end.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tom_bombadil"	
-		texturefile = "gfx//interface//combat_terrain_unique_tom_bombadil.tga"
+		texturefile = "gfx/interface/terrain/terrain_tom_bombadil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tom_bombadil"
-		texturefile = "gfx/interface/colony_terrain_unique_tom_bombadil.tga"
+		texturefile = "gfx/interface/terrain/terrain_tom_bombadil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tharbad"	
-		texturefile = "gfx//interface//combat_terrain_unique_tharbad.tga"
+		texturefile = "gfx/interface/terrain/terrain_tharbad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tharbad"
-		texturefile = "gfx/interface/colony_terrain_unique_tharbad.tga"
+		texturefile = "gfx/interface/terrain/terrain_tharbad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tyrn_gorthad"	
-		texturefile = "gfx//interface//combat_terrain_unique_tyrn_gorthad.tga"
+		texturefile = "gfx/interface/terrain/terrain_tyrn_gorthad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tyrn_gorthad"
-		texturefile = "gfx/interface/colony_terrain_unique_tyrn_gorthad.tga"
+		texturefile = "gfx/interface/terrain/terrain_tyrn_gorthad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_barrow_downs"	
-		texturefile = "gfx//interface//combat_terrain_unique_barrow_downs.tga"
+		texturefile = "gfx/interface/terrain/terrain_barrow_downs.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_barrow_downs"
-		texturefile = "gfx/interface/colony_terrain_unique_barrow_downs.tga"
+		texturefile = "gfx/interface/terrain/terrain_barrow_downs.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_relerindu"	
-		texturefile = "gfx//interface//combat_terrain_unique_relerindu.tga"
+		texturefile = "gfx/interface/terrain/terrain_relerindu.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_relerindu"
-		texturefile = "gfx/interface/colony_terrain_unique_relerindu.tga"
+		texturefile = "gfx/interface/terrain/terrain_relerindu.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_arentaurr"	
-		texturefile = "gfx//interface//combat_terrain_unique_arentaurr.tga"
+		texturefile = "gfx/interface/terrain/terrain_arentaurr.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_arentaurr"
-		texturefile = "gfx/interface/colony_terrain_unique_arentaurr.tga"
+		texturefile = "gfx/interface/terrain/terrain_arentaurr.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_buckland"	
-		texturefile = "gfx//interface//combat_terrain_unique_buckland.tga"
+		texturefile = "gfx/interface/terrain/terrain_buckland.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_buckland"
-		texturefile = "gfx/interface/colony_terrain_unique_buckland.tga"
+		texturefile = "gfx/interface/terrain/terrain_buckland.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_barnas"	
-		texturefile = "gfx//interface//combat_terrain_unique_barnas.tga"
+		texturefile = "gfx/interface/terrain/terrain_barnas.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_barnas"
-		texturefile = "gfx/interface/colony_terrain_unique_barnas.tga"
+		texturefile = "gfx/interface/terrain/terrain_barnas.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_azanulbizar"	
-		texturefile = "gfx//interface//combat_terrain_unique_azanulbizar.tga"
+		texturefile = "gfx/interface/terrain/terrain_azanulbizar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_azanulbizar"
-		texturefile = "gfx/interface/colony_terrain_unique_azanulbizar.tga"
+		texturefile = "gfx/interface/terrain/terrain_azanulbizar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_bozisha_dar"	
-		texturefile = "gfx//interface//combat_terrain_unique_bozisha_dar.tga"
+		texturefile = "gfx/interface/terrain/terrain_bozisha_dar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_bozisha_dar"
-		texturefile = "gfx/interface/colony_terrain_unique_bozisha_dar.tga"
+		texturefile = "gfx/interface/terrain/terrain_bozisha_dar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_niluloni"	
-		texturefile = "gfx//interface//combat_terrain_unique_niluloni.tga"
+		texturefile = "gfx/interface/terrain/terrain_niluloni.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_niluloni"
-		texturefile = "gfx/interface/colony_terrain_unique_niluloni.tga"
+		texturefile = "gfx/interface/terrain/terrain_niluloni.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nordinbad"	
-		texturefile = "gfx//interface//combat_terrain_unique_nordinbad.tga"
+		texturefile = "gfx/interface/terrain/terrain_nordinbad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nordinbad"
-		texturefile = "gfx/interface/colony_terrain_unique_nordinbad.tga"
+		texturefile = "gfx/interface/terrain/terrain_nordinbad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_upper_anduin_vales"	
-		texturefile = "gfx//interface//combat_terrain_unique_upper_anduin_vales.tga"
+		texturefile = "gfx/interface/terrain/terrain_upper_anduin_vales.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_upper_anduin_vales"
-		texturefile = "gfx/interface/colony_terrain_unique_upper_anduin_vales.tga"
+		texturefile = "gfx/interface/terrain/terrain_upper_anduin_vales.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_eotheod_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_eotheod_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_eotheod_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_eotheod_town"
-		texturefile = "gfx/interface/colony_terrain_unique_eotheod_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_eotheod_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_volcano"	
-		texturefile = "gfx//interface//combat_terrain_unique_volcano.tga"
+		texturefile = "gfx/interface/terrain/terrain_volcano.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_volcano"
-		texturefile = "gfx/interface/colony_terrain_unique_volcano.tga"
+		texturefile = "gfx/interface/terrain/terrain_volcano.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_argond"	
-		texturefile = "gfx//interface//combat_terrain_unique_argond.tga"
+		texturefile = "gfx/interface/terrain/terrain_argond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_argond"
-		texturefile = "gfx/interface/colony_terrain_unique_argond.tga"
+		texturefile = "gfx/interface/terrain/terrain_argond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dwaithohirs_eyrie"	
-		texturefile = "gfx//interface//combat_terrain_unique_dwaithohirs_eyrie.tga"
+		texturefile = "gfx/interface/terrain/terrain_dwaithohirs_eyrie.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dwaithohirs_eyrie"
-		texturefile = "gfx/interface/colony_terrain_unique_dwaithohirs_eyrie.tga"
+		texturefile = "gfx/interface/terrain/terrain_dwaithohirs_eyrie.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_druins_tower"	
-		texturefile = "gfx//interface//combat_terrain_unique_druins_tower.tga"
+		texturefile = "gfx/interface/terrain/terrain_druins_tower.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_druins_tower"
-		texturefile = "gfx/interface/colony_terrain_unique_druins_tower.tga"
+		texturefile = "gfx/interface/terrain/terrain_druins_tower.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_emyn_sul"	
-		texturefile = "gfx//interface//combat_terrain_unique_emyn_sul.tga"
+		texturefile = "gfx/interface/terrain/terrain_emyn_sul.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_emyn_sul"
-		texturefile = "gfx/interface/colony_terrain_unique_emyn_sul.tga"
+		texturefile = "gfx/interface/terrain/terrain_emyn_sul.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_en_eredoriath"	
-		texturefile = "gfx//interface//combat_terrain_unique_en_eredoriath.tga"
+		texturefile = "gfx/interface/terrain/terrain_en_eredoriath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_en_eredoriath"
-		texturefile = "gfx/interface/colony_terrain_unique_en_eredoriath.tga"
+		texturefile = "gfx/interface/terrain/terrain_en_eredoriath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_fords_of_bruinen"	
-		texturefile = "gfx//interface//combat_terrain_unique_fords_of_bruinen.tga"
+		texturefile = "gfx/interface/terrain/terrain_fords_of_bruinen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_fords_of_bruinen"
-		texturefile = "gfx/interface/colony_terrain_unique_fords_of_bruinen.tga"
+		texturefile = "gfx/interface/terrain/terrain_fords_of_bruinen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gollums_cave"	
-		texturefile = "gfx//interface//combat_terrain_unique_gollums_cave.tga"
+		texturefile = "gfx/interface/terrain/terrain_gollums_cave.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gollums_cave"
-		texturefile = "gfx/interface/colony_terrain_unique_gollums_cave.tga"
+		texturefile = "gfx/interface/terrain/terrain_gollums_cave.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_framsburg"	
-		texturefile = "gfx//interface//combat_terrain_unique_framsburg.tga"
+		texturefile = "gfx/interface/terrain/terrain_framsburg.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_framsburg"
-		texturefile = "gfx/interface/colony_terrain_unique_framsburg.tga"
+		texturefile = "gfx/interface/terrain/terrain_framsburg.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_fornost"	
-		texturefile = "gfx//interface//combat_terrain_unique_fornost.tga"
+		texturefile = "gfx/interface/terrain/terrain_fornost.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_fornost"
-		texturefile = "gfx/interface/colony_terrain_unique_fornost.tga"
+		texturefile = "gfx/interface/terrain/terrain_fornost.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_green_hill_country"	
-		texturefile = "gfx//interface//combat_terrain_unique_green_hill_country.tga"
+		texturefile = "gfx/interface/terrain/terrain_green_hill_country.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_green_hill_country"
-		texturefile = "gfx/interface/colony_terrain_unique_green_hill_country.tga"
+		texturefile = "gfx/interface/terrain/terrain_green_hill_country.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_hills_of_scary"	
-		texturefile = "gfx//interface//combat_terrain_unique_hills_of_scary.tga"
+		texturefile = "gfx/interface/terrain/terrain_hills_of_scary.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_hills_of_scary"
-		texturefile = "gfx/interface/colony_terrain_unique_hills_of_scary.tga"
+		texturefile = "gfx/interface/terrain/terrain_hills_of_scary.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_xyunai"	
-		texturefile = "gfx//interface//combat_terrain_unique_xyunai.tga"
+		texturefile = "gfx/interface/terrain/terrain_xyunai.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_xyunai"
-		texturefile = "gfx/interface/colony_terrain_unique_xyunai.tga"
+		texturefile = "gfx/interface/terrain/terrain_xyunai.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mistrand"	
-		texturefile = "gfx//interface//combat_terrain_unique_mistrand.tga"
+		texturefile = "gfx/interface/terrain/terrain_mistrand.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mistrand"
-		texturefile = "gfx/interface/colony_terrain_unique_mistrand.tga"
+		texturefile = "gfx/interface/terrain/terrain_mistrand.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_trollshaws"	
-		texturefile = "gfx//interface//combat_terrain_unique_trollshaws.tga"
+		texturefile = "gfx/interface/terrain/terrain_trollshaws.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_trollshaws"
-		texturefile = "gfx/interface/colony_terrain_unique_trollshaws.tga"
+		texturefile = "gfx/interface/terrain/terrain_trollshaws.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_zagh_kala"	
-		texturefile = "gfx//interface//combat_terrain_unique_zagh_kala.tga"
+		texturefile = "gfx/interface/terrain/terrain_zagh_kala.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_zagh_kala"
-		texturefile = "gfx/interface/colony_terrain_unique_zagh_kala.tga"
+		texturefile = "gfx/interface/terrain/terrain_zagh_kala.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tir_doll"	
-		texturefile = "gfx//interface//combat_terrain_unique_tir_doll.tga"
+		texturefile = "gfx/interface/terrain/terrain_tir_doll.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tir_doll"
-		texturefile = "gfx/interface/colony_terrain_unique_tir_doll.tga"
+		texturefile = "gfx/interface/terrain/terrain_tir_doll.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ost_in_edhil"	
-		texturefile = "gfx//interface//combat_terrain_unique_ost_in_edhil.tga"
+		texturefile = "gfx/interface/terrain/terrain_ost_in_edhil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ost_in_edhil"
-		texturefile = "gfx/interface/colony_terrain_unique_ost_in_edhil.tga"
+		texturefile = "gfx/interface/terrain/terrain_ost_in_edhil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nothros"	
-		texturefile = "gfx//interface//combat_terrain_unique_nothros.tga"
+		texturefile = "gfx/interface/terrain/terrain_nothros.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nothros"
-		texturefile = "gfx/interface/colony_terrain_unique_nothros.tga"
+		texturefile = "gfx/interface/terrain/terrain_nothros.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_undeeps"	
-		texturefile = "gfx//interface//combat_terrain_unique_undeeps.tga"
+		texturefile = "gfx/interface/terrain/terrain_undeeps.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_undeeps"
-		texturefile = "gfx/interface/colony_terrain_unique_undeeps.tga"
+		texturefile = "gfx/interface/terrain/terrain_undeeps.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_helms_dike"	
-		texturefile = "gfx//interface//combat_terrain_unique_helms_dike.tga"
+		texturefile = "gfx/interface/terrain/terrain_helms_dike.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_helms_dike"
-		texturefile = "gfx/interface/colony_terrain_unique_helms_dike.tga"
+		texturefile = "gfx/interface/terrain/terrain_helms_dike.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dunharrow"	
-		texturefile = "gfx//interface//combat_terrain_unique_dunharrow.tga"
+		texturefile = "gfx/interface/terrain/terrain_dunharrow.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dunharrow"
-		texturefile = "gfx/interface/colony_terrain_unique_dunharrow.tga"
+		texturefile = "gfx/interface/terrain/terrain_dunharrow.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_chaiapun"	
-		texturefile = "gfx//interface//combat_terrain_unique_chaiapun.tga"
+		texturefile = "gfx/interface/terrain/terrain_chaiapun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_chaiapun"
-		texturefile = "gfx/interface/colony_terrain_unique_chaiapun.tga"
+		texturefile = "gfx/interface/terrain/terrain_chaiapun.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nevazars_tomb"	
-		texturefile = "gfx//interface//combat_terrain_unique_nevazars_tomb.tga"
+		texturefile = "gfx/interface/terrain/terrain_nevazars_tomb.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nevazars_tomb"
-		texturefile = "gfx/interface/colony_terrain_unique_nevazars_tomb.tga"
+		texturefile = "gfx/interface/terrain/terrain_nevazars_tomb.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_anglad"	
-		texturefile = "gfx//interface//combat_terrain_unique_anglad.tga"
+		texturefile = "gfx/interface/terrain/terrain_anglad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_anglad"
-		texturefile = "gfx/interface/colony_terrain_unique_anglad.tga"
+		texturefile = "gfx/interface/terrain/terrain_anglad.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_elostirion"	
-		texturefile = "gfx//interface//combat_terrain_unique_elostirion.tga"
+		texturefile = "gfx/interface/terrain/terrain_elostirion.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_elostirion"
-		texturefile = "gfx/interface/colony_terrain_unique_elostirion.tga"
+		texturefile = "gfx/interface/terrain/terrain_elostirion.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ekhalshar"	
-		texturefile = "gfx//interface//combat_terrain_unique_ekhalshar.tga"
+		texturefile = "gfx/interface/terrain/terrain_ekhalshar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ekhalshar"
-		texturefile = "gfx/interface/colony_terrain_unique_ekhalshar.tga"
+		texturefile = "gfx/interface/terrain/terrain_ekhalshar.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_etten_vale"	
-		texturefile = "gfx//interface//combat_terrain_unique_etten_vale.tga"
+		texturefile = "gfx/interface/terrain/terrain_etten_vale.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_etten_vale"
-		texturefile = "gfx/interface/colony_terrain_unique_etten_vale.tga"
+		texturefile = "gfx/interface/terrain/terrain_etten_vale.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_grey_foothills"	
-		texturefile = "gfx//interface//combat_terrain_unique_grey_foothills.tga"
+		texturefile = "gfx/interface/terrain/terrain_grey_foothills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_grey_foothills"
-		texturefile = "gfx/interface/colony_terrain_unique_grey_foothills.tga"
+		texturefile = "gfx/interface/terrain/terrain_grey_foothills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_high_fells"	
-		texturefile = "gfx//interface//combat_terrain_unique_high_fells.tga"
+		texturefile = "gfx/interface/terrain/terrain_high_fells.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_high_fells"
-		texturefile = "gfx/interface/colony_terrain_unique_high_fells.tga"
+		texturefile = "gfx/interface/terrain/terrain_high_fells.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mount_gram"	
-		texturefile = "gfx//interface//combat_terrain_unique_mount_gram.tga"
+		texturefile = "gfx/interface/terrain/terrain_mount_gram.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mount_gram"
-		texturefile = "gfx/interface/colony_terrain_unique_mount_gram.tga"
+		texturefile = "gfx/interface/terrain/terrain_mount_gram.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_kykurian_hills"	
-		texturefile = "gfx//interface//combat_terrain_unique_kykurian_hills.tga"
+		texturefile = "gfx/interface/terrain/terrain_kykurian_hills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_kykurian_hills"
-		texturefile = "gfx/interface/colony_terrain_unique_kykurian_hills.tga"
+		texturefile = "gfx/interface/terrain/terrain_kykurian_hills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_abandoned_mine"	
-		texturefile = "gfx//interface//combat_terrain_unique_abandoned_mine.tga"
+		texturefile = "gfx/interface/terrain/terrain_abandoned_mine.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_abandoned_mine"
-		texturefile = "gfx/interface/colony_terrain_unique_abandoned_mine.tga"
+		texturefile = "gfx/interface/terrain/terrain_abandoned_mine.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_cave"	
-		texturefile = "gfx//interface//combat_terrain_unique_cave.tga"
+		texturefile = "gfx/interface/terrain/terrain_cave.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_cave"
-		texturefile = "gfx/interface/colony_terrain_unique_cave.tga"
+		texturefile = "gfx/interface/terrain/terrain_cave.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ice_cave"	
-		texturefile = "gfx//interface//combat_terrain_unique_ice_cave.tga"
+		texturefile = "gfx/interface/terrain/terrain_ice_cave.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ice_cave"
-		texturefile = "gfx/interface/colony_terrain_unique_ice_cave.tga"
+		texturefile = "gfx/interface/terrain/terrain_ice_cave.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tunnels"	
-		texturefile = "gfx//interface//combat_terrain_unique_tunnels.tga"
+		texturefile = "gfx/interface/terrain/terrain_tunnels.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tunnels"
-		texturefile = "gfx/interface/colony_terrain_unique_tunnels.tga"
+		texturefile = "gfx/interface/terrain/terrain_tunnels.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dwarf_hold"	
-		texturefile = "gfx//interface//combat_terrain_unique_dwarf_hold.tga"
+		texturefile = "gfx/interface/terrain/terrain_dwarf_hold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dwarf_hold"
-		texturefile = "gfx/interface/colony_terrain_unique_dwarf_hold.tga"
+		texturefile = "gfx/interface/terrain/terrain_dwarf_hold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tomb"	
-		texturefile = "gfx//interface//combat_terrain_unique_tomb.tga"
+		texturefile = "gfx/interface/terrain/terrain_tomb.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tomb"
-		texturefile = "gfx/interface/colony_terrain_unique_tomb.tga"
+		texturefile = "gfx/interface/terrain/terrain_tomb.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mountain_pass"	
-		texturefile = "gfx//interface//combat_terrain_unique_mountain_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_mountain_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mountain_pass"
-		texturefile = "gfx/interface/colony_terrain_unique_mountain_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_mountain_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_grey_mountains"	
-		texturefile = "gfx//interface//combat_terrain_unique_grey_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_grey_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_grey_mountains"
-		texturefile = "gfx/interface/colony_terrain_unique_grey_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_grey_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_emyn_muil"	
-		texturefile = "gfx//interface//combat_terrain_unique_emyn_muil.tga"
+		texturefile = "gfx/interface/terrain/terrain_emyn_muil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_emyn_muil"
-		texturefile = "gfx/interface/colony_terrain_unique_emyn_muil.tga"
+		texturefile = "gfx/interface/terrain/terrain_emyn_muil.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_methedras"	
-		texturefile = "gfx//interface//combat_terrain_unique_methedras.tga"
+		texturefile = "gfx/interface/terrain/terrain_methedras.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_methedras"
-		texturefile = "gfx/interface/colony_terrain_unique_methedras.tga"
+		texturefile = "gfx/interface/terrain/terrain_methedras.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_wold"	
-		texturefile = "gfx//interface//combat_terrain_unique_wold.tga"
+		texturefile = "gfx/interface/terrain/terrain_wold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_wold"
-		texturefile = "gfx/interface/colony_terrain_unique_wold.tga"
+		texturefile = "gfx/interface/terrain/terrain_wold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_eastfold"	
-		texturefile = "gfx//interface//combat_terrain_unique_eastfold.tga"
+		texturefile = "gfx/interface/terrain/terrain_eastfold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_eastfold"
-		texturefile = "gfx/interface/colony_terrain_unique_eastfold.tga"
+		texturefile = "gfx/interface/terrain/terrain_eastfold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_westfold"	
-		texturefile = "gfx//interface//combat_terrain_unique_westfold.tga"
+		texturefile = "gfx/interface/terrain/terrain_westfold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_westfold"
-		texturefile = "gfx/interface/colony_terrain_unique_westfold.tga"
+		texturefile = "gfx/interface/terrain/terrain_westfold.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_fenmark"	
-		texturefile = "gfx//interface//combat_terrain_unique_fenmark.tga"
+		texturefile = "gfx/interface/terrain/terrain_fenmark.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_fenmark"
-		texturefile = "gfx/interface/colony_terrain_unique_fenmark.tga"
+		texturefile = "gfx/interface/terrain/terrain_fenmark.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rohan_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_rohan_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_rohan_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rohan_town"
-		texturefile = "gfx/interface/colony_terrain_unique_rohan_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_rohan_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_aglarond"	
-		texturefile = "gfx//interface//combat_terrain_unique_aglarond.tga"
+		texturefile = "gfx/interface/terrain/terrain_aglarond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_aglarond"
-		texturefile = "gfx/interface/colony_terrain_unique_aglarond.tga"
+		texturefile = "gfx/interface/terrain/terrain_aglarond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_forodwaith"	
-		texturefile = "gfx//interface//combat_terrain_unique_forodwaith.tga"
+		texturefile = "gfx/interface/terrain/terrain_forodwaith.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_forodwaith"
-		texturefile = "gfx/interface/colony_terrain_unique_forodwaith.tga"
+		texturefile = "gfx/interface/terrain/terrain_forodwaith.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_iron_hills"	
-		texturefile = "gfx//interface//combat_terrain_unique_iron_hills.tga"
+		texturefile = "gfx/interface/terrain/terrain_iron_hills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_iron_hills"
-		texturefile = "gfx/interface/colony_terrain_unique_iron_hills.tga"
+		texturefile = "gfx/interface/terrain/terrain_iron_hills.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_fords_of_isen"	
-		texturefile = "gfx//interface//combat_terrain_unique_fords_of_isen.tga"
+		texturefile = "gfx/interface/terrain/terrain_fords_of_isen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_fords_of_isen"
-		texturefile = "gfx/interface/colony_terrain_unique_fords_of_isen.tga"
+		texturefile = "gfx/interface/terrain/terrain_fords_of_isen.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gobel_mirlond"	
-		texturefile = "gfx//interface//combat_terrain_unique_gobel_mirlond.tga"
+		texturefile = "gfx/interface/terrain/terrain_gobel_mirlond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gobel_mirlond"
-		texturefile = "gfx/interface/colony_terrain_unique_gobel_mirlond.tga"
+		texturefile = "gfx/interface/terrain/terrain_gobel_mirlond.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_barak_shathur"	
-		texturefile = "gfx//interface//combat_terrain_unique_barak_shathur.tga"
+		texturefile = "gfx/interface/terrain/terrain_barak_shathur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_barak_shathur"
-		texturefile = "gfx/interface/colony_terrain_unique_barak_shathur.tga"
+		texturefile = "gfx/interface/terrain/terrain_barak_shathur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_lone_fells"	
-		texturefile = "gfx//interface//combat_terrain_unique_lone_fells.tga"
+		texturefile = "gfx/interface/terrain/terrain_lone_fells.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_lone_fells"
-		texturefile = "gfx/interface/colony_terrain_unique_lone_fells.tga"
+		texturefile = "gfx/interface/terrain/terrain_lone_fells.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_beorn_home"	
-		texturefile = "gfx//interface//combat_terrain_unique_beorn_home.tga"
+		texturefile = "gfx/interface/terrain/terrain_beorn_home.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_beorn_home"
-		texturefile = "gfx/interface/colony_terrain_unique_beorn_home.tga"
+		texturefile = "gfx/interface/terrain/terrain_beorn_home.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_eagles_eyrie"	
-		texturefile = "gfx//interface//combat_terrain_unique_eagles_eyrie.tga"
+		texturefile = "gfx/interface/terrain/terrain_eagles_eyrie.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_eagles_eyrie"
-		texturefile = "gfx/interface/colony_terrain_unique_eagles_eyrie.tga"
+		texturefile = "gfx/interface/terrain/terrain_eagles_eyrie.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dungirith"	
-		texturefile = "gfx//interface//combat_terrain_unique_dungirith.tga"
+		texturefile = "gfx/interface/terrain/terrain_dungirith.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dungirith"
-		texturefile = "gfx/interface/colony_terrain_unique_dungirith.tga"
+		texturefile = "gfx/interface/terrain/terrain_dungirith.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_carrock"	
-		texturefile = "gfx//interface//combat_terrain_unique_carrock.tga"
+		texturefile = "gfx/interface/terrain/terrain_carrock.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_carrock"
-		texturefile = "gfx/interface/colony_terrain_unique_carrock.tga"
+		texturefile = "gfx/interface/terrain/terrain_carrock.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_high_pass"	
-		texturefile = "gfx//interface//combat_terrain_unique_high_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_high_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_high_pass"
-		texturefile = "gfx/interface/colony_terrain_unique_high_pass.tga"
+		texturefile = "gfx/interface/terrain/terrain_high_pass.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rhosgobel"	
-		texturefile = "gfx//interface//combat_terrain_unique_rhosgobel.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhosgobel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rhosgobel"
-		texturefile = "gfx/interface/colony_terrain_unique_rhosgobel.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhosgobel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mirkwood"	
-		texturefile = "gfx//interface//combat_terrain_unique_mirkwood.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mirkwood"
-		texturefile = "gfx/interface/colony_terrain_unique_mirkwood.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mirkwood_mild"	
-		texturefile = "gfx//interface//combat_terrain_unique_mirkwood_mild.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_mild.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mirkwood_mild"
-		texturefile = "gfx/interface/colony_terrain_unique_mirkwood_mild.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_mild.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mirkwood_west"	
-		texturefile = "gfx//interface//combat_terrain_unique_mirkwood_west.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_west.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mirkwood_west"
-		texturefile = "gfx/interface/colony_terrain_unique_mirkwood_west.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_west.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mirkwood_mountains"	
-		texturefile = "gfx//interface//combat_terrain_unique_mirkwood_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mirkwood_mountains"
-		texturefile = "gfx/interface/colony_terrain_unique_mirkwood_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_mirkwood_settlement"	
-		texturefile = "gfx//interface//combat_terrain_unique_mirkwood_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_mirkwood_settlement"
-		texturefile = "gfx/interface/colony_terrain_unique_mirkwood_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_mirkwood_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dol_guldur_area"	
-		texturefile = "gfx//interface//combat_terrain_unique_dol_guldur_area.tga"
+		texturefile = "gfx/interface/terrain/terrain_dol_guldur_area.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dol_guldur_area"
-		texturefile = "gfx/interface/colony_terrain_unique_dol_guldur_area.tga"
+		texturefile = "gfx/interface/terrain/terrain_dol_guldur_area.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_old_forest"	
-		texturefile = "gfx//interface//combat_terrain_unique_old_forest.tga"
+		texturefile = "gfx/interface/terrain/terrain_old_forest.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_old_forest"
-		texturefile = "gfx/interface/colony_terrain_unique_old_forest.tga"
+		texturefile = "gfx/interface/terrain/terrain_old_forest.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_hollin_ridge"	
-		texturefile = "gfx//interface//combat_terrain_unique_hollin_ridge.tga"
+		texturefile = "gfx/interface/terrain/terrain_hollin_ridge.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_hollin_ridge"
-		texturefile = "gfx/interface/colony_terrain_unique_hollin_ridge.tga"
+		texturefile = "gfx/interface/terrain/terrain_hollin_ridge.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_hyvat_kalat"	
-		texturefile = "gfx//interface//combat_terrain_unique_hyvat_kalat.tga"
+		texturefile = "gfx/interface/terrain/terrain_hyvat_kalat.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_hyvat_kalat"
-		texturefile = "gfx/interface/colony_terrain_unique_hyvat_kalat.tga"
+		texturefile = "gfx/interface/terrain/terrain_hyvat_kalat.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_parth_anduin"	
-		texturefile = "gfx//interface//combat_terrain_unique_parth_anduin.tga"
+		texturefile = "gfx/interface/terrain/terrain_parth_anduin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_parth_anduin"
-		texturefile = "gfx/interface/colony_terrain_unique_parth_anduin.tga"
+		texturefile = "gfx/interface/terrain/terrain_parth_anduin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rast_arnor"	
-		texturefile = "gfx//interface//combat_terrain_unique_rast_arnor.tga"
+		texturefile = "gfx/interface/terrain/terrain_rast_arnor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rast_arnor"
-		texturefile = "gfx/interface/colony_terrain_unique_rast_arnor.tga"
+		texturefile = "gfx/interface/terrain/terrain_rast_arnor.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_celebannon"	
-		texturefile = "gfx//interface//combat_terrain_unique_celebannon.tga"
+		texturefile = "gfx/interface/terrain/terrain_celebannon.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_celebannon"
-		texturefile = "gfx/interface/colony_terrain_unique_celebannon.tga"
+		texturefile = "gfx/interface/terrain/terrain_celebannon.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_durins_tower"	
-		texturefile = "gfx//interface//combat_terrain_unique_durins_tower.tga"
+		texturefile = "gfx/interface/terrain/terrain_durins_tower.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_durins_tower"
-		texturefile = "gfx/interface/colony_terrain_unique_durins_tower.tga"
+		texturefile = "gfx/interface/terrain/terrain_durins_tower.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_annon_edhel"	
-		texturefile = "gfx//interface//combat_terrain_unique_annon_edhel.tga"
+		texturefile = "gfx/interface/terrain/terrain_annon_edhel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_annon_edhel"
-		texturefile = "gfx/interface/colony_terrain_unique_annon_edhel.tga"
+		texturefile = "gfx/interface/terrain/terrain_annon_edhel.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gulduin"	
-		texturefile = "gfx//interface//combat_terrain_unique_gulduin.tga"
+		texturefile = "gfx/interface/terrain/terrain_gulduin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gulduin"
-		texturefile = "gfx/interface/colony_terrain_unique_gulduin.tga"
+		texturefile = "gfx/interface/terrain/terrain_gulduin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rhudaur"	
-		texturefile = "gfx//interface//combat_terrain_unique_rhudaur.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhudaur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rhudaur"
-		texturefile = "gfx/interface/colony_terrain_unique_rhudaur.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhudaur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rhudaur_highlands"	
-		texturefile = "gfx//interface//combat_terrain_unique_rhudaur_highlands.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhudaur_highlands.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rhudaur_highlands"
-		texturefile = "gfx/interface/colony_terrain_unique_rhudaur_highlands.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhudaur_highlands.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_pinnath_tereg"	
-		texturefile = "gfx//interface//combat_terrain_unique_pinnath_tereg.tga"
+		texturefile = "gfx/interface/terrain/terrain_pinnath_tereg.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_pinnath_tereg"
-		texturefile = "gfx/interface/colony_terrain_unique_pinnath_tereg.tga"
+		texturefile = "gfx/interface/terrain/terrain_pinnath_tereg.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_front_porch"	
-		texturefile = "gfx//interface//combat_terrain_unique_front_porch.tga"
+		texturefile = "gfx/interface/terrain/terrain_front_porch.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_front_porch"
-		texturefile = "gfx/interface/colony_terrain_unique_front_porch.tga"
+		texturefile = "gfx/interface/terrain/terrain_front_porch.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_ithilien_north"	
-		texturefile = "gfx//interface//combat_terrain_unique_ithilien_north.tga"
+		texturefile = "gfx/interface/terrain/terrain_ithilien_north.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_ithilien_north"
-		texturefile = "gfx/interface/colony_terrain_unique_ithilien_north.tga"
+		texturefile = "gfx/interface/terrain/terrain_ithilien_north.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_foreregion"	
-		texturefile = "gfx//interface//combat_terrain_unique_foreregion.tga"
+		texturefile = "gfx/interface/terrain/terrain_foreregion.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_foreregion"
-		texturefile = "gfx/interface/colony_terrain_unique_foreregion.tga"
+		texturefile = "gfx/interface/terrain/terrain_foreregion.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_codya_settlement"	
-		texturefile = "gfx//interface//combat_terrain_unique_codya_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_codya_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_codya_settlement"
-		texturefile = "gfx/interface/colony_terrain_unique_codya_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_codya_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_eastern_island"	
-		texturefile = "gfx//interface//combat_terrain_unique_eastern_island.tga"
+		texturefile = "gfx/interface/terrain/terrain_eastern_island.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_eastern_island"
-		texturefile = "gfx/interface/colony_terrain_unique_eastern_island.tga"
+		texturefile = "gfx/interface/terrain/terrain_eastern_island.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nan_turnath"	
-		texturefile = "gfx//interface//combat_terrain_unique_nan_turnath.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_turnath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nan_turnath"
-		texturefile = "gfx/interface/colony_terrain_unique_nan_turnath.tga"
+		texturefile = "gfx/interface/terrain/terrain_nan_turnath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_tumnogoth_iaur"	
-		texturefile = "gfx//interface//combat_terrain_unique_tumnogoth_iaur.tga"
+		texturefile = "gfx/interface/terrain/terrain_tumnogoth_iaur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_tumnogoth_iaur"
-		texturefile = "gfx/interface/colony_terrain_unique_tumnogoth_iaur.tga"
+		texturefile = "gfx/interface/terrain/terrain_tumnogoth_iaur.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_wood_elven_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_wood_elven_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_wood_elven_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_wood_elven_town"
-		texturefile = "gfx/interface/colony_terrain_unique_wood_elven_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_wood_elven_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_easterling_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_easterling_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_easterling_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_easterling_town"
-		texturefile = "gfx/interface/colony_terrain_unique_easterling_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_easterling_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_far_south_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_far_south_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_far_south_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_far_south_town"
-		texturefile = "gfx/interface/colony_terrain_unique_far_south_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_far_south_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_numenorean_port"	
-		texturefile = "gfx//interface//combat_terrain_unique_numenorean_port.tga"
+		texturefile = "gfx/interface/terrain/terrain_numenorean_port.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_numenorean_port"
-		texturefile = "gfx/interface/colony_terrain_unique_numenorean_port.tga"
+		texturefile = "gfx/interface/terrain/terrain_numenorean_port.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_east_farthing"	
-		texturefile = "gfx//interface//combat_terrain_unique_east_farthing.tga"
+		texturefile = "gfx/interface/terrain/terrain_east_farthing.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_east_farthing"
-		texturefile = "gfx/interface/colony_terrain_unique_east_farthing.tga"
+		texturefile = "gfx/interface/terrain/terrain_east_farthing.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dunland_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_dunland_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_dunland_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dunland_town"
-		texturefile = "gfx/interface/colony_terrain_unique_dunland_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_dunland_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_hillmen_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_hillmen_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_hillmen_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_hillmen_town"
-		texturefile = "gfx/interface/colony_terrain_unique_hillmen_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_hillmen_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_dunedain_ruin"	
-		texturefile = "gfx//interface//combat_terrain_unique_dunedain_ruin.tga"
+		texturefile = "gfx/interface/terrain/terrain_dunedain_ruin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_dunedain_ruin"
-		texturefile = "gfx/interface/colony_terrain_unique_dunedain_ruin.tga"
+		texturefile = "gfx/interface/terrain/terrain_dunedain_ruin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_forodwaith_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_forodwaith_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_forodwaith_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_forodwaith_town"
-		texturefile = "gfx/interface/colony_terrain_unique_forodwaith_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_forodwaith_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_orc_fortress"	
-		texturefile = "gfx//interface//combat_terrain_unique_orc_fortress.tga"
+		texturefile = "gfx/interface/terrain/terrain_orc_fortress.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_orc_fortress"
-		texturefile = "gfx/interface/colony_terrain_unique_orc_fortress.tga"
+		texturefile = "gfx/interface/terrain/terrain_orc_fortress.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_nomad_settlement"	
-		texturefile = "gfx//interface//combat_terrain_unique_nomad_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_nomad_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_nomad_settlement"
-		texturefile = "gfx/interface/colony_terrain_unique_nomad_settlement.tga"
+		texturefile = "gfx/interface/terrain/terrain_nomad_settlement.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_high_elven_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_high_elven_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_high_elven_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_high_elven_town"
-		texturefile = "gfx/interface/colony_terrain_unique_high_elven_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_high_elven_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_angmar_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_angmar_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_angmar_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_angmar_town"
-		texturefile = "gfx/interface/colony_terrain_unique_angmar_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_angmar_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_angmar_mountains"	
-		texturefile = "gfx//interface//combat_terrain_unique_angmar_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_angmar_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_angmar_mountains"
-		texturefile = "gfx/interface/colony_terrain_unique_angmar_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_angmar_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harshandatt_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_harshandatt_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_harshandatt_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harshandatt_town"
-		texturefile = "gfx/interface/colony_terrain_unique_harshandatt_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_harshandatt_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_harshandatt"	
-		texturefile = "gfx//interface//combat_terrain_unique_harshandatt.tga"
+		texturefile = "gfx/interface/terrain/terrain_harshandatt.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_harshandatt"
-		texturefile = "gfx/interface/colony_terrain_unique_harshandatt.tga"
+		texturefile = "gfx/interface/terrain/terrain_harshandatt.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_chyan_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_chyan_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_chyan_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_chyan_town"
-		texturefile = "gfx/interface/colony_terrain_unique_chyan_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_chyan_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_chey_river"	
-		texturefile = "gfx//interface//combat_terrain_unique_chey_river.tga"
+		texturefile = "gfx/interface/terrain/terrain_chey_river.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_chey_river"
-		texturefile = "gfx/interface/colony_terrain_unique_chey_river.tga"
+		texturefile = "gfx/interface/terrain/terrain_chey_river.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_numenorean_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_numenorean_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_numenorean_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_numenorean_town"
-		texturefile = "gfx/interface/colony_terrain_unique_numenorean_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_numenorean_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_palisor_steppes"	
-		texturefile = "gfx//interface//combat_terrain_unique_palisor_steppes.tga"
+		texturefile = "gfx/interface/terrain/terrain_palisor_steppes.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_palisor_steppes"
-		texturefile = "gfx/interface/colony_terrain_unique_palisor_steppes.tga"
+		texturefile = "gfx/interface/terrain/terrain_palisor_steppes.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_south_eastern_mountains"	
-		texturefile = "gfx//interface//combat_terrain_unique_south_eastern_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_south_eastern_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_south_eastern_mountains"
-		texturefile = "gfx/interface/colony_terrain_unique_south_eastern_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_south_eastern_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_northern_mountains"	
-		texturefile = "gfx//interface//combat_terrain_unique_northern_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_northern_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_northern_mountains"
-		texturefile = "gfx/interface/colony_terrain_unique_northern_mountains.tga"
+		texturefile = "gfx/interface/terrain/terrain_northern_mountains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_eregion_ruin"	
-		texturefile = "gfx//interface//combat_terrain_unique_eregion_ruin.tga"
+		texturefile = "gfx/interface/terrain/terrain_eregion_ruin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_eregion_ruin"
-		texturefile = "gfx/interface/colony_terrain_unique_eregion_ruin.tga"
+		texturefile = "gfx/interface/terrain/terrain_eregion_ruin.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rhovanion_town"	
-		texturefile = "gfx//interface//combat_terrain_unique_rhovanion_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhovanion_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rhovanion_town"
-		texturefile = "gfx/interface/colony_terrain_unique_rhovanion_town.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhovanion_town.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_rhovanion_burg"	
-		texturefile = "gfx//interface//combat_terrain_unique_rhovanion_burg.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhovanion_burg.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_rhovanion_burg"
-		texturefile = "gfx/interface/colony_terrain_unique_rhovanion_burg.tga"
+		texturefile = "gfx/interface/terrain/terrain_rhovanion_burg.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_bellakar_coastline"	
-		texturefile = "gfx//interface//combat_terrain_unique_bellakar_coastline.tga"
+		texturefile = "gfx/interface/terrain/terrain_bellakar_coastline.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_bellakar_coastline"
-		texturefile = "gfx/interface/colony_terrain_unique_bellakar_coastline.tga"
+		texturefile = "gfx/interface/terrain/terrain_bellakar_coastline.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_gundabad_plains"	
-		texturefile = "gfx//interface//combat_terrain_unique_gundabad_plains.tga"
+		texturefile = "gfx/interface/terrain/terrain_gundabad_plains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_gundabad_plains"
-		texturefile = "gfx/interface/colony_terrain_unique_gundabad_plains.tga"
+		texturefile = "gfx/interface/terrain/terrain_gundabad_plains.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_combat_terrain_unique_withered_heath"	
-		texturefile = "gfx//interface//combat_terrain_unique_withered_heath.tga"
+		texturefile = "gfx/interface/terrain/terrain_withered_heath.tga"
 	}
 	
 	spriteType = {
 		name = "GFX_colony_terrain_unique_withered_heath"
-		texturefile = "gfx/interface/colony_terrain_unique_withered_heath.tga"
+		texturefile = "gfx/interface/terrain/terrain_withered_heath.tga"
 	}
 }

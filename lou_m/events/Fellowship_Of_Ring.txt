@@ -1919,8 +1919,6 @@ country_event = {
 
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - fellowship_of_ring_events.27 - Option : fellowship_of_ring_events.27.a" }
 		
-		clear_scripted_personalities = yes
-		
 		add_ruler_personality = carries_ring_personality
 	}
 }

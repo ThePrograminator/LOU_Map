@@ -4,7 +4,7 @@
 # cost = x #==> cost in $ to build (subject to other modifiers)
 # time = x #==> number of months to build.
 # modifier = m # a modifier on the province that the building gives
-# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# build_trigger = t # an and build_trigger that needs to be fullfilled to build and keep the building
 # one_per_country = yes/no # if yes, only one of these can exist in a country
 # manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
 # onmap = yes/no # show as a sprite on the map
@@ -29,7 +29,7 @@
 resettlement_action = {
 	cost = 100
 	time = 12
-	trigger = {
+	build_trigger = {
 		has_province_modifier = ruins_debuff
 		NOT = { has_province_modifier = wilderness_debuff }
 	}

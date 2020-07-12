@@ -1,0 +1,17 @@
+name = "Fall of Scari"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 567 # Scarikikot
+}
+
+2769.1.1 = {
+	add_attacker = Y48
+	add_defender = W79
+}
+
+# The orcs take Scarikikot
+2770.12.1 = {
+	rem_attacker = Y48
+	rem_defender = W79
+}

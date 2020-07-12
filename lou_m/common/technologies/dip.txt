@@ -15,6 +15,7 @@ monarch_power = DIP
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
 	trade_efficiency = 0.2
+	yearly_corruption = -0.05
 }
 
 # Pre-era techs
@@ -22,31 +23,34 @@ technology = {
 	# Tech 0
 	year = 2750
 	
-	naval_maintenance		=	0.1
-	naval_morale			=	2.0
-	range					=	50
-	trade_range				=	250
-	merchants = yes
+	num_accepted_cultures   = 2
+    global_colonial_growth	= 10
+	range					= 200
+	trade_range				= 200
+    trade_efficiency        = 0.0
+    naval_maintenance       = 0.0
+	naval_morale			= 2.0
 	
 	allow_client_states = yes
+	
+	merchants = yes
+	may_fabricate_claims = yes
+    may_steal_maps = yes
+    may_slander_merchants = yes
+    may_study_technology = yes
+    may_sabotage_recruitment = yes
+    may_sow_discontent = yes
+    may_sabotage_reputation = yes
+    may_corrupt_officials = yes
+    may_agitate_for_liberty = yes
+	may_infiltrate_administration = yes
 	
 	enable = lotr_warship
 	enable = lotr_cargoship
 	enable = lotr_galley
 	enable = lotr_cog
-	may_fabricate_claims = yes
 
-	may_steal_maps = yes
-	may_study_technology = yes
-	may_slander_merchants = yes
-	may_sabotage_recruitment = yes
-	may_sow_discontent = yes
-	may_sabotage_reputation = yes
-	may_corrupt_officials = yes
-	may_agitate_for_liberty = yes
-	may_infiltrate_administration = yes
-
-	num_accepted_cultures = 2
+	
 	
 	#Human Buildings
 	#Human Trade Buildings

@@ -2,8 +2,9 @@ monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
-# ahead_of_time = {
-# }
+ahead_of_time = {
+	land_morale = 0.1
+}
 
 #infantry_fire		= 0.25
 #infantry_shock		= 0.25
@@ -33,11 +34,18 @@ technology = {
 	
 	sprite_level = 1
 
-	infantry_fire		= 	0.25
-	infantry_shock 		= 	0.20	
-	cavalry_shock  		= 	0.8	
-	artillery_shock 	=	0.05
-	land_morale 		= 	2.0
+	land_morale 		= 2.0
+    military_tactics    = 0.5
+    combat_width        = 0.0
+    supply_limit        = 0.0
+    maneuver_value      = 0.0
+    
+    infantry_fire		= 1.0
+    infantry_shock 	    = 1.0
+    cavalry_fire  	    = 1.0
+    cavalry_shock   	= 2.0
+    artillery_fire 	    = 2.0
+    artillery_shock  	= 1.0
 	
 	enable = lotr_dunedain_militia_1
 	enable = lotr_dunedain_axemen_1
@@ -46,6 +54,7 @@ technology = {
 
 	enable = lotr_arnor_arnor_militia_1
 	enable = lotr_arnor_rangers_1
+	enable = lotr_arnor_mounted_militia_1
 
 	enable = lotr_dwarven_halberdmen_1
 	enable = lotr_dwarven_miners_1
@@ -340,6 +349,8 @@ technology = {
 	enable = lotr_dunedain_blackroot_archers_2
 	
 	enable = lotr_dale_dalesmen_2
+
+	enable = lotr_arnor_levies_2
 	
 	enable = lotr_eriador_greenway_guards_2
 	enable = lotr_eriador_greenway_rangers_2

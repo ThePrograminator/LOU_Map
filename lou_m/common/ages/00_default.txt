@@ -6,7 +6,9 @@ third_age = {
 	}
 	
 	religious_conflicts = yes
-    
+	papacy = 1.0
+	
+
 	objectives = {
 		obj_prestigious_capital_3 = {
             capital_scope = {
@@ -56,7 +58,8 @@ third_age = {
 	abilities = {
 		ab_soldiers_of_fortune_3 = {
             modifier = {
-                possible_mercenaries = 1.0
+                #possible_mercenaries = 1.0
+                ship_durability = 0.2
             }
             ai_will_do = {
 				factor = 100
@@ -146,7 +149,7 @@ third_age = {
         
         ab_administrative_competency_3 = {
             modifier = {
-                max_states = 5
+                governing_capacity = 100
             }
             ai_will_do = {
 				factor = 100
@@ -161,7 +164,10 @@ fourth_age = {
 	can_start = {
 		has_global_flag = fourth_age
 	}
-    
+	
+	
+	papacy = 1.25
+	
 	objectives = {
 		obj_prestigious_capital = {
             capital_scope = {
@@ -211,7 +217,8 @@ fourth_age = {
 	abilities = {
 		ab_soldiers_of_fortune_4 = {
             modifier = {
-                possible_mercenaries = 1.0
+                #possible_mercenaries = 1.0
+                ship_durability = 0.2
             }
             ai_will_do = {
 				factor = 100
@@ -301,7 +308,7 @@ fourth_age = {
         
         ab_administrative_competency_4 = {
             modifier = {
-                max_states = 5
+                governing_capacity = 100
             }
             ai_will_do = {
 				factor = 100

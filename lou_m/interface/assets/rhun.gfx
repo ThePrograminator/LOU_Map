@@ -11,11 +11,11 @@ objectTypes = {
 		
 		file = "gfx/models/Units/rhun/rhun_infantry.mesh"
 
-		animation = { id = "attack"				type = "gondorattack_anim" }
-		animation = { id = "death"				type = "gondoridle_anim" }		
-		animation = { id = "idle"				type = "gondoridle_anim" }
-		animation = { id = "walk"				type = "gondor_soldier_move_anim" }
-		animation = { id = "retreat"			type = "gondor_soldier_move_anim" }
+		animation = { id = "attack"				type = "rhun_thrust_anim" }
+		animation = { id = "death"				type = "rhun_move_anim" }		
+		animation = { id = "idle"				type = "rhun_idle_anim" }
+		animation = { id = "walk"				type = "rhun_move_anim" }
+		animation = { id = "retreat"			type = "rhun_move_anim" }
 		
 		scale = 0.5
 	}
@@ -25,12 +25,14 @@ objectTypes = {
 		
 		file = "gfx/models/Units/rhun/rhun_artillery.mesh"
 
-		animation = { id = "attack"				type = "gondor_arti_thrust_anim" }
-		animation = { id = "death"				type = "gondor_arti_move_anim" }		
-		animation = { id = "idle"				type = "gondor_arti_idle_anim" }
-		animation = { id = "walk"				type = "gondor_arti_move_anim" }
-		animation = { id = "retreat"			type = "gondor_arti_move_anim" }
-		
+		animation = { id = "attack"				type = "rhun_thrust_anim" }
+		animation = { id = "death"				type = "rhun_move_anim" }		
+		animation = { id = "idle"				type = "rhun_idle_anim" }
+		animation = { id = "walk"				type = "rhun_move_anim" }
+		animation = { id = "retreat"			type = "rhun_move_anim" }
+
+		animation = { id = "artillery_attack"	type = "gondor_arti_thrust_anim" }
+        
 		scale = 0.5
 	}
 	

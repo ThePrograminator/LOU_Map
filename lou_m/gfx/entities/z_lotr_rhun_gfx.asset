@@ -207,7 +207,7 @@ entity = {
 
 entity = {
 	name = "lotr_rhun_gfx_CAVALRY_1_rider"
-	pdxmesh = "mesh_rohan_cav_rider_1"
+	pdxmesh = "mesh_rhun_cav_rider_1"
 
 	state = { name = "idle" 		animation = "horse_idle" }
 	state = { name = "walk" 		animation = "horse_walk" }
@@ -219,8 +219,8 @@ entity = {
 	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
 
 	attach = {
-		Right_hand_node = "spear_rohan"
-		Left_hand_node = "shield_rohan" 
+		Right_hand_node = "cavalry_saber"
+		Left_hand_node = "shield_rhun" 
 	}
 }
 
@@ -246,7 +246,7 @@ entity = {
 ###################################################################################################################
 entity = {
 	name = "lotr_rhun_gfx_ARTY_INFANTRY_1"
-	pdxmesh = "mesh_rohan_arty_infantry_1"
+	pdxmesh = "mesh_rhun_arty_infantry_1"
 	version = 10
 
 	state = { name = "idle" 		animation = "idle" }
@@ -260,8 +260,8 @@ entity = {
 
 	
 	attach = {
-		Right_hand_node = "spear_rohan"
-		Left_hand_node = "shield_rohan" 
+		Right_hand_node = "spear_rhun"
+		Left_hand_node = "shield_rhun" 
 	}
 }
 

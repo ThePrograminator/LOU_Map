@@ -1,0 +1,32 @@
+#--------------------------------------
+# Features
+#--------------------------------------
+- Ported mod to current EU4 version 1.30.3
+- Added new tradegoods to the manufactories
+- New Bookmark ‘Born of Hope’
+- Added 63 new Provinces
+- Added 28 Historical wars 
+- Added 22 new Countries
+- Added 35 new flags
+
+#--------------------------------------
+# Changes
+#--------------------------------------
+- Added estates: Stewards, Merchants, Nobles, Commoners and Tribes. (Custom names for each estate determined by race)
+- Readded vanilla events and disasters for estates
+- Historical diplomacy changes (alliances, vassals etc.)
+- Changed development for some provinces
+
+#--------------------------------------
+# Fixes
+#--------------------------------------
+- Fixed various inteface issues.
+- Fixed bad name encoding in the cultures file.
+- Fixed missing ship entity references for the LOTR ship units, which was causing them to appear as infantry.
+- Added dynasties for cultures missing them.
+- Fixed bad encoding in the country files and fixed mangled names due to the old encoding.
+- Fixed the colony view so it works with the terrain images.
+- Fixed Mordor’s vassal liberty desire not high enough
+- Fixed missing model positions in some provinces
+- Fixed capital for Gram, Fangorn
+- Fixed Orc Raiders Event triggering, even though owner is Orc 

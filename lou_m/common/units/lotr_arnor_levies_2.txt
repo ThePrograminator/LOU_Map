@@ -11,5 +11,8 @@ offensive_shock = 1
 defensive_shock = 2
 
 trigger = {
-	culture_group = culture_group_avari
+	OR = {
+		primary_culture = culture_arnorian
+		primary_culture = culture_dunedain_of_arnor
+	}
 }

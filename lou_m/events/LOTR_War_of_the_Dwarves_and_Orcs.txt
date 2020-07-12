@@ -295,19 +295,26 @@ country_event = {
 		add_prestige = -50
 		set_global_flag = war_of_the_dwarves_and_orcs_lost
 		hidden_effect = {
-			if = { 
-				limit = {
-					Y13 = {
-						ai = yes
-					}
-				}
-				
-				if = {
-					limit = {
-						ai = no
-					}
-					switch_tag = Y13
-				}
+			#if = { 
+			#	limit = {
+			#		Y13 = {
+			#			ai = yes
+			#		}
+			#	}
+			#	
+			#	if = {
+			#		limit = {
+			#			ai = no
+			#		}
+			#		switch_tag = Y13
+			#	}
+			#}
+			237 = {
+				add_core = Y22
+				cede_province = Y22
+			}
+			Y22 = {
+				set_capital = 237
 			}
 		}
 	}			

@@ -23,3 +23,42 @@ annex_country_khangnate = {
 	
 	war_name = PRIMITIVE_WAR_NAME
 }
+
+war_battle_for_erebor = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 1.0	
+		
+		allowed_provinces = {
+			owned_by = X09
+			#area = lonely_mountain_area
+		}
+
+		peace_options = {
+			po_gold
+			po_concede_defeat
+			po_humiliate
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.50
+		prestige_factor = 1
+		peace_cost_factor = 1.0	
+		
+		allowed_provinces = {
+			always = no
+		}
+
+		peace_options = {
+			po_gold
+			po_concede_defeat
+			po_humiliate
+		}
+	}	
+	
+	war_name = BATTLE_FOR_EREBOR_WAR_NAME
+}

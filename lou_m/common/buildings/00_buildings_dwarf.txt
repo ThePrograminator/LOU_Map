@@ -4,7 +4,7 @@
 # cost = x #==> cost in $ to build (subject to other modifiers)
 # time = x #==> number of months to build.
 # modifier = m # a modifier on the province that the building gives
-# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# build_trigger = t # an and build_trigger that needs to be fullfilled to build and keep the building
 # one_per_country = yes/no # if yes, only one of these can exist in a country
 # manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
 # onmap = yes/no # show as a sprite on the map
@@ -32,7 +32,7 @@ colony_outpost_dwarf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -89,7 +89,7 @@ settlement_1_dwarf_building = {
 	time = 18
 	make_obsolete = colony_outpost_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = no
 		owner = {
@@ -152,7 +152,7 @@ settlement_2_dwarf_building = {
 	time = 24
 	make_obsolete = settlement_1_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = no
 		owner = {
@@ -209,7 +209,7 @@ settlement_3_dwarf_building = {
 	time = 30
 	make_obsolete = settlement_2_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = no
 		owner = {
@@ -265,7 +265,7 @@ hold_1_dwarf_building = {
 	time = 18
 	make_obsolete = colony_outpost_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = no
 		owner = {
@@ -321,7 +321,7 @@ hold_2_dwarf_building = {
 	time = 24
 	make_obsolete = hold_1_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = no
 		owner = {
@@ -372,7 +372,7 @@ hold_3_dwarf_building = {
 	time = 30
 	make_obsolete = hold_2_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = no
 		owner = {
@@ -422,7 +422,7 @@ capital_1_dwarf_building = {
 	time = 18
 	make_obsolete = colony_outpost_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		is_capital = yes
 		development = 5
 		owner = {
@@ -487,7 +487,7 @@ capital_2_dwarf_building = {
 	time = 24
 	make_obsolete = capital_1_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		is_capital = yes
 		development = 10
 		owner = {
@@ -544,7 +544,7 @@ capital_3_dwarf_building = {
 	time = 30
 	make_obsolete = capital_2_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		is_capital = yes
 		development = 15
 		owner = {
@@ -595,7 +595,7 @@ material_exchance_dwarf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -654,7 +654,7 @@ fairground_dwarf_building = {
 	time = 18
 	make_obsolete = material_exchance_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -713,7 +713,7 @@ great_market_dwarf_building = {
 	time = 30
 	make_obsolete = fairground_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -771,7 +771,7 @@ traders_guild_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -833,7 +833,7 @@ armoury_dwarf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -889,7 +889,7 @@ forge_dwarf_building = {
 	time = 18
 	make_obsolete = armoury_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -945,7 +945,7 @@ arsenal_dwarf_building = {
 	time = 30
 	make_obsolete = forge_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1000,7 +1000,7 @@ smithies_guild_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1059,7 +1059,7 @@ libary_dwarf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1115,7 +1115,7 @@ research_office_dwarf_building = {
 	time = 18
 	make_obsolete = libary_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1171,7 +1171,7 @@ acadamy_dwarf_building = {
 	time = 30
 	make_obsolete = research_office_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1226,7 +1226,7 @@ advisor_guild_dwarf_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1285,7 +1285,7 @@ mustering_hall_dwarf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1341,7 +1341,7 @@ training_hall_dwarf_building = {
 	time = 18
 	make_obsolete = mustering_hall_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1397,7 +1397,7 @@ hall_of_warriors_dwarf_building = {
 	time = 30
 	make_obsolete = training_hall_dwarf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1452,7 +1452,7 @@ warriors_guild_dwarf_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1513,7 +1513,7 @@ mine_shaft_dwarf_building = {
 	
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1570,7 +1570,7 @@ mining_network_dwarf_building = {
 	make_obsolete = mine_shaft_dwarf_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1627,7 +1627,7 @@ materials_depot_building = {
 	make_obsolete = mining_network_dwarf_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1684,7 +1684,7 @@ miners_guild_dwarf_building = {
 	make_obsolete = materials_depot_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1746,7 +1746,7 @@ fort_small_gatehouse_dwarf_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1834,7 +1834,7 @@ fort_great_gatehouse_dwarf_building = {
 	influencing_fort = yes
 	
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1922,7 +1922,7 @@ fort_mountain_fortress_dwarf_building = {
 	influencing_fort = yes
 	
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2009,7 +2009,7 @@ fort_mountain_citidal_dwarf_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2100,7 +2100,7 @@ fort_pallisade_dwarf_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2179,7 +2179,7 @@ fort_castle_dwarf_building = {
 	influencing_fort = yes
 	
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2258,7 +2258,7 @@ rune_door_dwarf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2320,7 +2320,7 @@ narrow_bridge_dwarf_building = {
 	cost = 100
 	time = 18
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2382,7 +2382,7 @@ moat_dwarf_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2444,7 +2444,7 @@ ballista_towers_dwarf_building = {
 	cost = 300
 	time = 30
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}

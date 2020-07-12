@@ -4,7 +4,7 @@
 # cost = x #==> cost in $ to build (subject to other modifiers)
 # time = x #==> number of months to build.
 # modifier = m # a modifier on the province that the building gives
-# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# build_trigger = t # an and build_trigger that needs to be fullfilled to build and keep the building
 # one_per_country = yes/no # if yes, only one of these can exist in a country
 # manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
 # onmap = yes/no # show as a sprite on the map
@@ -32,7 +32,7 @@ noble_residence_elf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -89,7 +89,7 @@ town_1_elf_building = {
 	time = 18
 	make_obsolete = noble_residence_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = no
 		owner = {
@@ -143,7 +143,7 @@ town_2_elf_building = {
 	time = 24
 	make_obsolete = town_1_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = no
 		owner = {
@@ -197,7 +197,7 @@ town_3_elf_building = {
 	time = 30
 	make_obsolete = town_2_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = no
 		owner = {
@@ -255,7 +255,7 @@ fort_1_elf_building = {
 	time = 18
 	make_obsolete = noble_residence_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = no
 		owner = {
@@ -310,7 +310,7 @@ fort_2_elf_building = {
 	time = 24
 	make_obsolete = fort_1_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = no
 		owner = {
@@ -365,7 +365,7 @@ fort_3_elf_building = {
 	time = 30
 	make_obsolete = fort_2_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = no
 		owner = {
@@ -424,7 +424,7 @@ capital_1_elf_building = {
 	time = 18
 	make_obsolete = noble_residence_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = yes
 		owner = {
@@ -490,7 +490,7 @@ capital_2_elf_building = {
 	time = 24
 	make_obsolete = capital_1_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = yes
 		owner = {
@@ -556,7 +556,7 @@ capital_3_elf_building = {
 	time = 30
 	make_obsolete = capital_2_elf_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = yes
 		owner = {
@@ -624,7 +624,7 @@ elven_fairground_elf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -684,7 +684,7 @@ craftsmen_plaza_elf_building = {
 	
 	make_obsolete = elven_fairground_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -744,7 +744,7 @@ exotic_wares_market_elf_building = {
 	
 	make_obsolete = craftsmen_plaza_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -806,7 +806,7 @@ temple_elf_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -857,7 +857,7 @@ theatre_elf_building = {
 	time = 18
 	make_obsolete = temple_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -908,7 +908,7 @@ amphitheatre_elf_building = {
 	time = 24
 	make_obsolete = theatre_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -963,7 +963,7 @@ workshop_elf_building = {
 	time = 12
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1015,7 +1015,7 @@ elven_forge_elf_building = {
 	make_obsolete = workshop_elf_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1067,7 +1067,7 @@ grand_forge_elf_building = {
 	make_obsolete = elven_forge_elf_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1121,7 +1121,7 @@ warriors_gallery_building = {
 	cost = 100
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1172,7 +1172,7 @@ heros_shrine_building = {
 	time = 18
 	make_obsolete = warriors_gallery_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1222,7 +1222,7 @@ green_pastures_elf_building = {
 	cost = 100
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1272,7 +1272,7 @@ grand_stables_elf_building = {
 	cost = 200
 	time = 18
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1326,7 +1326,7 @@ port_elf_building = {
 	cost = 100
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		owner = {
 			technology_group = lotr_elven
@@ -1394,7 +1394,7 @@ seaport_elf_building = {
 	cost = 200
 	time = 18
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		owner = {
 			technology_group = lotr_elven
@@ -1461,7 +1461,7 @@ harbour_elf_building = {
 	cost = 100
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		owner = {
 			technology_group = lotr_elven
@@ -1529,7 +1529,7 @@ haven_elf_building = {
 	cost = 200
 	time = 18
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		owner = {
 			technology_group = lotr_elven
@@ -1603,7 +1603,7 @@ fort_low_walls_elf_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1677,7 +1677,7 @@ fort_high_walls_elf_building = {
 	influencing_fort = yes
 	
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1751,7 +1751,7 @@ moat_elf_building = {
 	cost = 100
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1799,7 +1799,7 @@ wall_bastions_elf_building = {
 	cost = 200
 	time = 18
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1852,7 +1852,7 @@ mallorn_tree_elf_building = {
 	time = 30
 	one_per_country = yes
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1913,7 +1913,7 @@ statue_of_the_elders_elf_building = {
 	one_per_country = yes
 	make_obsolete = elven_fairground_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -1974,7 +1974,7 @@ mirror_fountain_elf_building = {
 	one_per_country = yes
 	make_obsolete = craftsmen_plaza_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}
@@ -2035,7 +2035,7 @@ star_of_earendil_shrine_elf_building = {
 	one_per_country = yes
 	make_obsolete = craftsmen_plaza_elf_building
 	
-	trigger = {
+	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
 		}

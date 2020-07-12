@@ -1,0 +1,108 @@
+estate_commoners = {
+	icon = 4
+    color = { 100 125 150 }
+    
+	influence_from_dev_modifier = 0.5
+    
+    # ----- Names -----
+    custom_name = {
+		desc = estate_commoners_dwarf
+		trigger = {
+			OR = {
+                technology_group = lotr_dwarven
+                technology_group = lotr_half_dwarf
+            }
+		}
+	}
+    custom_name = {
+		desc = estate_commoners_elven
+		trigger = {
+			technology_group = lotr_elven
+		}
+	}
+    custom_name = {
+		desc = estate_commoners_hobbit
+		trigger = {
+			technology_group = lotr_hobbit
+		}
+	}
+    
+	# ----- Conditions -----
+	trigger = {
+        NOT = { has_reform = tribal_kingdom }
+        NOT = { has_reform = tribal_federation }
+        NOT = { has_reform = steppe_horde }
+        NOT = { has_reform = haradwaith_nomad_reform }
+        NOT = { has_reform = khaganate_reform }
+        NOT = { has_reform = independent_khaganate_reform }
+        NOT = { has_reform = khaganate_ruler_reform }
+        NOT = { has_reform = lotr_orc_clan_reform }
+        NOT = { has_reform = lotr_orc_clan_federation_reform }
+        NOT = { has_reform = lotr_orc_kingdom_reform }
+        NOT = { has_reform = lotr_nazgul_reform }
+        NOT = { has_reform = lotr_isengard_reform }
+        NOT = { has_reform = lotr_mordor_reform }
+        NOT = { has_reform = lotr_troll_clan_reform }
+        NOT = { has_reform = lotr_wight_government_reform }
+        NOT = { has_reform = lotr_spider_government_reform }
+        NOT = { has_reform = lotr_ent_government_reform }
+        NOT = { has_reform = lotr_great_eagle_government_reform }
+        NOT = { has_reform = lotr_giant_government_reform }
+	}
+
+	# ----- Country -----
+	country_modifier_happy = {
+		global_unrest = -2
+		development_cost = -0.2
+		production_efficiency = 0.2
+	}
+	country_modifier_neutral = {
+		global_unrest = -1
+		development_cost = -0.1
+		production_efficiency = 0.1
+	}	
+	country_modifier_angry = {
+		global_unrest = 2
+		development_cost = 0.2
+		production_efficiency = -0.2
+	}	
+    
+	land_ownership_modifier = {
+		commoners_loyalty_modifier = 0.2
+	}
+
+    province_independence_weight = {
+		factor = 1
+	}
+    
+	# ----- Influence -----
+	base_influence = 30
+	
+    # influence_modifier = {
+		# desc = EST_VAL_TRIBAL_IDEAGROUP
+		# trigger = {
+			# full_idea_group = got_tribal_ideas
+		# }
+		# influence = 5
+	# }
+    
+    # ----- Privileges -----
+	privileges = {
+		estate_commoners_land_rights
+		estate_commoners_increased_taxes
+		estate_commoners_guaranteed_autonomy
+		estate_commoners_unlanded_nobles
+		estate_commoners_manpower
+		estate_commoners_racial_tolerance
+        estate_commoners_monopoly_of_simple_food
+	}
+
+    # ----- Agendas -----
+	agendas = {
+		estate_commoners_develop_x
+		estate_commoners_increase_autonomy_in_province_x
+		estate_commoners_three_privileges
+		estate_commoners_hire_advisor
+		estate_commoners_fire_advisor
+	}
+}

@@ -1355,6 +1355,43 @@ spawn_mordor_vassal_effect = {
 	}
 }
 
+mordor_vassal_modifier_effect = {
+	V17 = {
+		add_opinion = {
+			who = $VASSAL$
+			modifier = dol_guldur_servant
+			years = 500
+		}
+	}
+	
+	$VASSAL$ = {
+		add_opinion = {
+			who = V17
+			modifier = mordor_master
+			years = 500
+		}
+		add_country_modifier = {
+			name = mordor_orc_servant_subject
+			duration = -1
+		}
+	}
+}
+
+mordor_nurnoth_modifier_effect = {
+	
+	$VASSAL$ = {
+		add_opinion = {
+			who = V17
+			modifier = nurnoth_mordor_relation
+			years = 500
+		}
+		add_country_modifier = {
+			name = mordor_nurnoth_subject
+			duration = -1
+		}
+	}
+}
+
 spawn_morder_transfer_tech = {
 	#export_to_variable = {
 	#	which = adm_tech_var
@@ -1481,54 +1518,65 @@ desolation_of_smaug_lost_effect = {
 		change_religion = religion_olog
 	}
 
-	every_owned_province = {
+	if = {
 		limit = {
-			OR = {
-				culture_group = culture_group_dwarves
-				religion = religion_mahal
+			tag = Y22
+		}
+		
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture_group = culture_group_dwarves
+					religion = religion_mahal
+				}
 			}
+	
+			add_core = Y23
+			remove_core = ROOT
+			cede_province = Y23
 		}
-
-		add_core = Y23
-		remove_core = ROOT
-		cede_province = Y23
-	}
-
-	every_owned_province = {
-		limit = {
-			culture = culture_ymirsfolk
-		}
-
-		add_core = Y90
-		remove_core = ROOT
-		cede_province = Y90
-	}
-
-	every_owned_province = {
-		limit = {
-			culture = culture_ymirsfolk
-		}
-
-		add_core = Y90
-		remove_core = ROOT
-		cede_province = Y90
-	}
-
-	every_owned_province = {
-		limit = {
-			NOT = {
+	
+		every_owned_province = {
+			limit = {
 				culture = culture_ymirsfolk
 			}
-			religion = religion_nenedain
+	
+			add_core = Y90
+			remove_core = ROOT
+			cede_province = Y90
 		}
-
-		add_core = V51
-		remove_core = ROOT
-		cede_province = V51
-	}
-
-	every_owned_province = {
-		cede_province = ---
+	
+		every_owned_province = {
+			limit = {
+				culture = culture_ymirsfolk
+			}
+	
+			add_core = Y90
+			remove_core = ROOT
+			cede_province = Y90
+		}
+	
+		every_owned_province = {
+			limit = {
+				NOT = {
+					culture = culture_ymirsfolk
+				}
+				religion = religion_nenedain
+			}
+	
+			add_core = V51
+			remove_core = ROOT
+			cede_province = V51
+		}
+	
+		every_owned_province = {
+			limit = {
+				NOT = {
+					region = misty_mountains_region
+				}
+			}
+			cede_province = ---
+		}
 	}
 }
 

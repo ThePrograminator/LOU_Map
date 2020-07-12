@@ -13,6 +13,67 @@ create_new_internal_consort_effect = { #Don't use if you want more options with 
 	}
 }
 
+divorce_consort_effect = {
+
+	#Foreign consort family expresses anger
+	if = {
+		limit = {
+			has_foreign_consort = yes
+		}
+
+		random_country = {
+			limit = { has_given_consort_to = ROOT } 
+
+			hidden_effect = { country_event = { id = consort_events.205 days = 1 } } 
+
+			tooltip = {
+				add_opinion = {
+					who = ROOT
+					modifier = offended_by_divorce	
+				}
+
+				add_casus_belli = {
+					target = ROOT
+					type = cb_insult
+					months = 60
+				}
+			}
+		}
+	}
+
+	#Local consort family expresses anger
+	if = {
+		limit = {
+			has_foreign_consort = no
+			any_owned_province = {
+				has_province_modifier = domain_of_spouses_family
+			}
+		}
+
+		every_owned_province = {
+			limit = { has_province_modifier = domain_of_spouses_family } 
+			add_or_extend_province_modifier_effect = {
+				MODIFIER = angered_nobles
+				DURATION = 7300
+			}
+		}
+	}
+
+    custom_tooltip = divorce.a.tt
+
+    hidden_effect = {	
+        if = {
+            limit = { NOT = { any_country = { has_given_consort_to = ROOT } } }
+            remove_consort = yes
+            country_event = { id = consort_events.206 }
+        }
+    }
+
+    define_consort = { }
+	
+	add_prestige = -15
+}
+
 save_origin_of_consort_effect = { #Used for all internal consorts.
 	if = { # finds and saves foreign country as origin
 		limit = {

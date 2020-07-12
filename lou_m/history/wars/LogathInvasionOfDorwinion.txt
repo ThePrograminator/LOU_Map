@@ -1,0 +1,33 @@
+name = "The Logath raids of Dorwinion"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province =  # 
+}
+
+2987.6.1 = {
+	add_attacker = X91
+	add_attacker = X97
+	add_attacker = X96
+	add_attacker = X92
+	add_attacker = X95
+	add_attacker = X94
+	add_attacker = X93
+	add_defender = Z03
+	add_defender = Z02
+	add_defender = Y94
+}
+
+# Nothing major happens
+3017.1.1 = {
+	rem_attacker = X91
+	rem_attacker = X97
+	rem_attacker = X96
+	rem_attacker = X92
+	rem_attacker = X95
+	rem_attacker = X94
+	rem_attacker = X93
+	rem_defender = Z03
+	rem_defender = Z02
+	rem_defender = Y94
+}

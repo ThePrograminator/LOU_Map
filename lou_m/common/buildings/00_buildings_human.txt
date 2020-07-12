@@ -4,7 +4,7 @@
 # cost = x #==> cost in $ to build (subject to other modifiers)
 # time = x #==> number of months to build.
 # modifier = m # a modifier on the province that the building gives
-# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# build_trigger = t # an and build_trigger that needs to be fullfilled to build and keep the building
 # one_per_country = yes/no # if yes, only one of these can exist in a country
 # manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
 # onmap = yes/no # show as a sprite on the map
@@ -32,7 +32,7 @@ settlement_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_buildings = no
@@ -83,7 +83,7 @@ city_1_building = {
 	time = 18
 	make_obsolete = settlement_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = no
 		province_owner_is_human_race = yes
@@ -131,7 +131,7 @@ city_2_building = {
 	time = 24
 	make_obsolete = city_1_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = no
 		province_owner_is_human_race = yes
@@ -180,7 +180,7 @@ city_3_building = {
 	time = 30
 	make_obsolete = city_2_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = no
 		province_owner_is_human_race = yes
@@ -222,7 +222,7 @@ fortress_1_building = {
 	time = 18
 	make_obsolete = settlement_building
 	
-	trigger = {
+	build_trigger = {
 		development = 5
 		is_capital = no
 		province_owner_is_human_race = yes
@@ -271,7 +271,7 @@ fortress_2_building = {
 	time = 24
 	make_obsolete = fortress_1_building
 	
-	trigger = {
+	build_trigger = {
 		development = 10
 		is_capital = no
 		province_owner_is_human_race = yes
@@ -315,7 +315,7 @@ fortress_3_building = {
 	time = 30
 	make_obsolete = fortress_2_building
 	
-	trigger = {
+	build_trigger = {
 		development = 15
 		is_capital = no
 		province_owner_is_human_race = yes
@@ -358,7 +358,7 @@ capital_1_building = {
 	time = 18
 	make_obsolete = settlement_building
 	
-	trigger = {
+	build_trigger = {
 		is_capital = yes
 		development = 5
 		province_owner_is_human_race = yes
@@ -418,7 +418,7 @@ capital_2_building = {
 	time = 24
 	make_obsolete = capital_1_building
 	
-	trigger = {
+	build_trigger = {
 		is_capital = yes
 		development = 10
 		province_owner_is_human_race = yes
@@ -470,7 +470,7 @@ capital_3_building = {
 	time = 30
 	make_obsolete = capital_2_building
 	
-	trigger = {
+	build_trigger = {
 		is_capital = yes
 		development = 15
 		province_owner_is_human_race = yes
@@ -516,7 +516,7 @@ trade_outpost_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_1 = yes
@@ -570,7 +570,7 @@ marketplace_building = {
 	
 	make_obsolete = trade_outpost_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_2 = yes
@@ -619,7 +619,7 @@ trade_depot_building = {
 	
 	make_obsolete = marketplace_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_building_tier_3 = yes
@@ -668,7 +668,7 @@ forum_building = {
 	
 	make_obsolete = trade_depot_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_building_tier_4 = yes
@@ -714,7 +714,7 @@ temple_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_1 = yes
@@ -764,7 +764,7 @@ tax_office_building = {
 	time = 12
 	make_obsolete = temple_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_2 = yes
@@ -814,7 +814,7 @@ provincial_office_building = {
 	time = 18
 	make_obsolete = tax_office_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_building_tier_3 = yes
@@ -864,7 +864,7 @@ bank_building = {
 	time = 26
 	make_obsolete = provincial_office_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_building_tier_4 = yes
@@ -919,7 +919,7 @@ work_camp_building = {
 	
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_1 = yes
@@ -970,7 +970,7 @@ workshop_building = {
 	make_obsolete = work_camp_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_2 = yes
@@ -1021,7 +1021,7 @@ warehouse_building = {
 	make_obsolete = workshop_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_building_tier_3 = yes
@@ -1072,7 +1072,7 @@ stockpile_building = {
 	make_obsolete = warehouse_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_city_building_tier_4 = yes
@@ -1123,7 +1123,7 @@ forge_building = {
 	make_obsolete = workshop_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_fortress_building_tier_3 = yes
@@ -1175,7 +1175,7 @@ foundry_building = {
 	make_obsolete = forge_building
 	allow_in_gold_provinces = no
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_fortress_building_tier_4 = yes
@@ -1232,7 +1232,7 @@ fort_pallisade_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_1 = yes
@@ -1301,7 +1301,7 @@ fort_castle_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_2 = yes
@@ -1371,7 +1371,7 @@ fort_stronghold_building = {
 	influencing_fort = yes
 	
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_fortress_building_tier_3 = yes
@@ -1442,7 +1442,7 @@ fort_citidal_building = {
 	onmap = yes
 	influencing_fort = yes
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_fortress_building_tier_4 = yes
@@ -1514,7 +1514,7 @@ outpost_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_1 = yes
@@ -1564,7 +1564,7 @@ army_camp_building = {
 	time = 18
 	make_obsolete = outpost_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_main_building_tier_2 = yes
@@ -1614,7 +1614,7 @@ barracks_building = {
 	time = 24
 	make_obsolete = army_camp_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_fortress_building_tier_3 = yes
@@ -1664,7 +1664,7 @@ garrison_building = {
 	time = 30
 	make_obsolete = barracks_building
 	
-	trigger = {
+	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
 		province_human_has_fortress_building_tier_4 = yes
@@ -1717,7 +1717,7 @@ port_building = {
 	cost = 50
 	time = 12
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -1778,7 +1778,7 @@ dock_building = {
 	cost = 100
 	time = 18
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -1839,7 +1839,7 @@ seaport_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -1902,7 +1902,7 @@ dockyard_building = {
 	cost = 300
 	time = 30
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -1960,7 +1960,7 @@ drydock_building = {
 	cost = 200
 	time = 24
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -2022,7 +2022,7 @@ grand_shipyard_building = {
 	cost = 300
 	time = 30
 	
-	trigger = {
+	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
