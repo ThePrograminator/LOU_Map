@@ -22,7 +22,7 @@ reduce_estate_stewards_loyalty_effect = {
 		}
 	}
 }
-add_estate_merchants_loyalty_effect = {
+add_estate_burghers_loyalty_effect = {
 	if = {
 		limit = {
 			has_estate = estate_merchants
@@ -33,7 +33,7 @@ add_estate_merchants_loyalty_effect = {
 		}
 	}
 }
-reduce_estate_merchants_loyalty_effect = {
+reduce_estate_burghers_loyalty_effect = {
 	if = {
 		limit = {
 			has_estate = estate_merchants

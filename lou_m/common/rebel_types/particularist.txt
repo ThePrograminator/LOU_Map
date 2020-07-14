@@ -104,7 +104,7 @@ particularist_rebels = {
 		}
 		modifier = {
 			factor = 10
-			has_estate = estate_burghers
+			has_estate = estate_merchants
 		}
 	}
  
@@ -169,16 +169,16 @@ particularist_rebels = {
 		add_prestige = -20
 		if = {
 			limit = {
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					has_estate_influence_modifier = {
-						estate = estate_burghers
+						estate = estate_merchants
 						modifier = EST_VAL_SUCCESFUL_PARTICULARISTS
 					}
 				}
 			}
 			add_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				duration = 5475
 				influence = 15
 				desc = EST_VAL_SUCCESFUL_PARTICULARISTS

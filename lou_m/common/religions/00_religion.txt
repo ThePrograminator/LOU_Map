@@ -444,7 +444,7 @@ religion_group_haradrim = {
 			local_saint = {
 				cost = 100
 				potential = {
-					NOT = { tag = PAP }
+					#NOT = { tag = PAP }
 				}
 				allow = {
 					NOT = { has_country_modifier = challenge_to_a_duel_southron_religion }
@@ -462,7 +462,7 @@ religion_group_haradrim = {
 			forgiveness_for_usury = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					#NOT = { tag = PAP }
 				}
 				allow = {
 					NOT = { has_country_modifier = train_troops_southron_religion }

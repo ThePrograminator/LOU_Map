@@ -15,22 +15,22 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_ADVANCE
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_ADVANCE_20
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_DECLINE
 			}
 		}
@@ -45,7 +45,7 @@ country_event = {
 	option = {
 		name = burghers_estate_events.1.a #Ok
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHERS_ADVANCE
 			influence = 10
 			duration = 5475
@@ -62,25 +62,25 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		has_estate = estate_nobles
 		estate_influence = {
 			estate = estate_nobles
 			influence = 25
 		}
 		estate_territory = { 
-			estate = estate_burghers
+			estate = estate_merchants
 			territory = 1
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_ROBBER_BARONS
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_DEFEATED_ROBBER_BARONS
 			}
 		}
@@ -105,7 +105,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 40
 					}
 				}
@@ -113,7 +113,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 65
 				}
 			}
@@ -147,11 +147,11 @@ country_event = {
 			loyalty = 15
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHERS_ROBBER_BARONS
 			influence = -10
 			duration = 5475
@@ -171,7 +171,7 @@ country_event = {
 				factor = 1.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 40
 					}
 				}
@@ -179,7 +179,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 65
 				}
 			}
@@ -213,7 +213,7 @@ country_event = {
 			loyalty = -15
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 		add_estate_influence_modifier = {
@@ -223,7 +223,7 @@ country_event = {
 			duration = 5475
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHERS_DEFEATED_ROBBER_BARONS
 			influence = 10
 			duration = 5475
@@ -239,22 +239,22 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_ADVANCE
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_ADVANCE_20
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_DECLINE
 			}
 		}
@@ -269,7 +269,7 @@ country_event = {
 	option = {
 		name = burghers_estate_events.3.a #Ok
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHERS_DECLINE
 			influence = -10
 			duration = 5475
@@ -287,7 +287,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		any_owned_province = {
 			is_overseas = no
 			has_seat_in_parliament = no
@@ -301,7 +301,7 @@ country_event = {
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHERS_ADVANCE
 			}
 		}
@@ -346,9 +346,9 @@ country_event = {
 	
 	option = {
 		name = burghers_estate_events.4.a #Ok
-		give_estate_land_share_medium = { estate = estate_burghers }
+		give_estate_land_share_medium = { estate = estate_merchants }
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 		event_target:growing_city = {
@@ -358,11 +358,11 @@ country_event = {
 	option = {
 		name = burghers_estate_events.4.b #Ok
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_CITY_PRIVILEGES_DENIED
 			influence = -10
 			duration = 5475
@@ -379,9 +379,9 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		estate_territory = {
-			estate = estate_burghers
+			estate = estate_merchants
 			territory = 1
 		}
 		any_owned_province = {
@@ -395,13 +395,13 @@ country_event = {
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_FREE_OF_MEDDLING
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_PRICE_MEDDLING
 			}
 		}
@@ -425,7 +425,7 @@ country_event = {
 						development_in_provinces = {
 							has_province_flag = bread_revolt_vs_burghers
 							value = estate
-							estate = estate_burghers
+							estate = estate_merchants
 						}
 					}
 					any_owned_province = {
@@ -467,7 +467,7 @@ country_event = {
 				factor = 0.2
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -475,7 +475,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 65
 				}
 			}
@@ -487,11 +487,11 @@ country_event = {
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -20
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_PRICE_MEDDLING
 			influence = -10
 			duration = 5475
@@ -505,7 +505,7 @@ country_event = {
 				factor = 2.0
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -513,13 +513,13 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 65
 				}
 			}
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_FREE_OF_MEDDLING
 			influence = 10
 			duration = 5475
@@ -533,7 +533,7 @@ country_event = {
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 	}
@@ -549,7 +549,7 @@ country_event = {
 				factor = 2.0
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -557,20 +557,20 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 65
 				}
 			}
 		}
 		add_years_of_income = -0.15
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_FREE_OF_MEDDLING
 			influence = 10
 			duration = 5475
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 		hidden_effect = {
@@ -590,9 +590,9 @@ country_event = {
 	picture = BURGHER_ESTATE_UPSET_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		estate_influence = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = 70
 		}
 		any_owned_province = {
@@ -605,13 +605,13 @@ country_event = {
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHER_RIGHTS_EXTENDED
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHER_RIGHTS_REFUSED
 			}
 		}
@@ -631,7 +631,7 @@ country_event = {
 						development_in_provinces = {
 							has_province_flag = extended_burgher_privileges
 							value = estate
-							estate = estate_burghers
+							estate = estate_merchants
 						}
 					}
 					any_owned_province = {
@@ -667,13 +667,13 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 65
 				}
 			}
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHER_RIGHTS_EXTENDED
 			influence = 10
 			duration = 5475
@@ -694,7 +694,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -702,17 +702,17 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 85
 				}
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -20
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHER_RIGHTS_REFUSED
 			influence = -10
 			duration = 5475
@@ -729,17 +729,17 @@ country_event = {
 	picture = BURGHER_ESTATE_UPSET_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		num_of_trade_embargos = 1
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHER_BYPASSING_EMBARGO
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHER_DENIED_BYPASS_OF_EMBARGO
 			}
 		}
@@ -752,14 +752,14 @@ country_event = {
 	} 
 	
 	option = {
-		name = burghers_estate_events.8.a #We must support the $ESTATE_BURGHERS$
+		name = burghers_estate_events.8.a #We must support the $estate_merchants$
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 1.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 40
 					}
 				}
@@ -767,7 +767,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
@@ -777,11 +777,11 @@ country_event = {
 			duration = 3650
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHER_BYPASSING_EMBARGO
 			influence = 10
 			duration = 3650
@@ -795,7 +795,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 40
 					}
 				}
@@ -803,7 +803,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
@@ -813,11 +813,11 @@ country_event = {
 			duration = 3650
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHER_DENIED_BYPASS_OF_EMBARGO
 			influence = -10
 			duration = 3650
@@ -834,16 +834,16 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		dip_tech = 5
 		num_of_cities = 8
 		estate_territory = { 
-			estate = estate_burghers
+			estate = estate_merchants
 			territory = 1
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BURGHER_PROTO_CAPITALISTS
 			}
 		}
@@ -942,7 +942,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 40
 					}
 				}
@@ -950,13 +950,13 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -15
 		}
 		every_owned_province = {
@@ -977,18 +977,18 @@ country_event = {
 				factor = 1.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 40
 					}
 				}
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BURGHER_PROTO_CAPITALISTS
 			influence = 10
 			duration = 3650
@@ -1013,20 +1013,20 @@ country_event = {
 	picture = BURGHER_ESTATE_UPSET_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		estate_influence = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = 70
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_NEW_MEN
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BARRED_FROM_CAREERS
 			}
 		}
@@ -1054,13 +1054,13 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_NEW_MEN
 			influence = 10
 			duration = 7300
@@ -1086,7 +1086,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -1094,13 +1094,13 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 85
 				}
 			}
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_BARRED_FROM_CAREERS
 			influence = -10
 			duration = 7300
@@ -1110,7 +1110,7 @@ country_event = {
 			duration = 5475
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers	
+			estate = estate_merchants	
 			loyalty = -20
 		}
 		if = {
@@ -1135,17 +1135,17 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		estate_territory = { 
-			estate = estate_burghers
+			estate = estate_merchants
 			territory = 1
 		}
 		estate_influence = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = 60
 		}
 		estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 60
 		}
 		NOT = {
@@ -1234,16 +1234,16 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_COMPENSATING_LOSSES
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_BAD_FORTUNES
 			}
 		}
@@ -1264,7 +1264,7 @@ country_event = {
 				factor = 1.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -1272,7 +1272,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
@@ -1280,11 +1280,11 @@ country_event = {
 		add_years_of_income = -0.5
 		add_mercantilism = 1
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = 10
 			desc = EST_VAL_COMPENSATING_LOSSES
 			duration = 5475
@@ -1298,7 +1298,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -1306,17 +1306,17 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = -10
 			desc = EST_VAL_BAD_FORTUNES
 			duration = 5475
@@ -1333,20 +1333,20 @@ country_event = {
 	picture = BURGHER_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		estate_territory = { 
-			estate = estate_burghers
+			estate = estate_merchants
 			territory = 1
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_NOT_SUPPORTING_CITY_GROWTH
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_SUPPORTED_CITY_GROWTH
 			}
 		}
@@ -1460,7 +1460,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
@@ -1472,7 +1472,7 @@ country_event = {
 			clr_province_flag = urbanisation
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = 10
 			desc = EST_VAL_SUPPORTED_CITY_GROWTH
 			duration = 7300
@@ -1486,7 +1486,7 @@ country_event = {
 				factor = 0.5
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
@@ -1494,7 +1494,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				estate_influence = {
-					estate = estate_burghers
+					estate = estate_merchants
 					influence = 60
 				}
 			}
@@ -1508,11 +1508,11 @@ country_event = {
 			clr_province_flag = urbanisation
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = -10
 			desc = EST_VAL_NOT_SUPPORTING_CITY_GROWTH
 			duration = 7300
@@ -1529,20 +1529,20 @@ country_event = {
 	picture = BURGHER_ESTATE_UPSET_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		estate_influence = {
-			estate = estate_burghers
+			estate = estate_merchants
 			influence = 70
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_REFUSED_CHANGE_IN_TRADE_POLICY
 			}
 		}
 		NOT = {
 			has_estate_influence_modifier = {
-				estate = estate_burghers
+				estate = estate_merchants
 				modifier = EST_VAL_CHANGE_IN_TRADE_POLICY
 			}
 		}
@@ -1566,7 +1566,7 @@ country_event = {
 		}
 		add_mercantilism = -3
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_CHANGE_IN_TRADE_POLICY
 			influence = 10
 			duration = 5475
@@ -1580,18 +1580,18 @@ country_event = {
 				factor = 0.25
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 45
 					}
 				}
 			}
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = -20
 		}
 		add_estate_influence_modifier = {
-			estate = estate_burghers
+			estate = estate_merchants
 			desc = EST_VAL_REFUSED_CHANGE_IN_TRADE_POLICY
 			influence = -5
 			duration = 5475
@@ -1608,15 +1608,15 @@ country_event = {
 	picture = BURGHER_ESTATE_UPSET_eventPicture
 	
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		NOT = {
 			estate_loyalty = {
-				estate = estate_burghers
+				estate = estate_merchants
 				loyalty = 30
 			}
 		}
 		estate_territory = { 
-			estate = estate_burghers
+			estate = estate_merchants
 			territory = 10
 		}
 		any_owned_province = {
@@ -1640,7 +1640,7 @@ country_event = {
 						development_in_provinces = {
 							has_province_flag = city_protests
 							value = estate
-							estate = estate_burghers
+							estate = estate_merchants
 						}
 					}
 					any_owned_province = {
@@ -1680,7 +1680,7 @@ country_event = {
 			factor = 2.0
 			NOT = {
 				estate_loyalty = {
-					estate = estate_burghers
+					estate = estate_merchants
 					loyalty = 15
 				}
 			}
@@ -1716,7 +1716,7 @@ country_event = {
 			add_local_autonomy = 33
 		}
 		add_estate_loyalty = {
-			estate = estate_burghers
+			estate = estate_merchants
 			loyalty = 15
 		}
 	}

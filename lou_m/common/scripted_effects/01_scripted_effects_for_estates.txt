@@ -61,7 +61,7 @@
 	# }
 	# if = {
 		# limit = {
-			# has_estate = estate_burghers
+			# has_estate = estate_merchants
 		# }
 		# [[effect]
 			# $effect$
@@ -279,10 +279,10 @@ reduce_estate_nobles_loyalty_effect = {
 add_estate_burghers_loyalty_effect = {
 	# if = {
 		# limit = {
-			# has_estate = estate_burghers
+			# has_estate = estate_merchants
 		# }
 		# add_estate_loyalty = {
-			# estate = estate_burghers
+			# estate = estate_merchants
 			# loyalty = 10
 		# }
 	# }
@@ -308,10 +308,10 @@ add_estate_burghers_loyalty_effect = {
 reduce_estate_burghers_loyalty_effect = {
 	# if = {
 		# limit = {
-			# has_estate = estate_burghers
+			# has_estate = estate_merchants
 		# }
 		# add_estate_loyalty = {
-			# estate = estate_burghers
+			# estate = estate_merchants
 			# loyalty = -10
 		# }
 	# }
@@ -661,19 +661,19 @@ reduce_estate_rajput_loyalty_effect = {
 	# if = {
 		# limit = {
 			# owner = {
-				# has_estate_privilege = estate_burghers_the_great_privilege
+				# has_estate_privilege = estate_merchants_the_great_privilege
 			# }
 			# region = low_countries_region
 		# }
 		# add_province_modifier = {
-			# name = estate_burghers_the_great_privilege_mod
+			# name = estate_merchants_the_great_privilege_mod
 			# duration = -1
 		# }
 	# }
 	# if = {
 		# limit = {
 			# owner = {
-				# has_estate_privilege = estate_burghers_monopoly_of_textiles
+				# has_estate_privilege = estate_merchants_monopoly_of_textiles
 			# }
 			# OR = {
 				# trade_goods = cloth
@@ -681,7 +681,7 @@ reduce_estate_rajput_loyalty_effect = {
 			# }
 		# }
 		# add_province_modifier = {
-			# name = estate_burghers_monopoly_of_textiles_mod
+			# name = estate_merchants_monopoly_of_textiles_mod
 			# duration = -1
 		# }
 	# }
@@ -718,12 +718,12 @@ reduce_estate_rajput_loyalty_effect = {
 	# if = {
 		# limit = {
 			# owner = {
-				# has_estate_privilege = estate_burghers_monopoly_of_dyes
+				# has_estate_privilege = estate_merchants_monopoly_of_dyes
 			# }
 			# trade_goods = dyes
 		# }
 		# add_province_modifier = {
-			# name = estate_burghers_monopoly_of_dyes_mod
+			# name = estate_merchants_monopoly_of_dyes_mod
 			# duration = -1
 		# }
 	# }
@@ -754,12 +754,12 @@ reduce_estate_rajput_loyalty_effect = {
 	# if = {
 		# limit = {
 			# owner = {
-				# has_estate_privilege = estate_burghers_monopoly_of_glass
+				# has_estate_privilege = estate_merchants_monopoly_of_glass
 			# }
 			# trade_goods = glass
 		# }
 		# add_province_modifier = {
-			# name = estate_burghers_monopoly_of_glass_mod
+			# name = estate_merchants_monopoly_of_glass_mod
 			# duration = -1
 		# }
 	# }
@@ -790,12 +790,12 @@ reduce_estate_rajput_loyalty_effect = {
 	# if = {
 		# limit = {
 			# owner = {
-				# has_estate_privilege = estate_burghers_monopoly_of_paper
+				# has_estate_privilege = estate_merchants_monopoly_of_paper
 			# }
 			# trade_goods = paper
 		# }
 		# add_province_modifier = {
-			# name = estate_burghers_monopoly_of_paper_mod
+			# name = estate_merchants_monopoly_of_paper_mod
 			# duration = -1
 		# }
 	# }
@@ -1017,22 +1017,22 @@ reduce_estate_rajput_loyalty_effect = {
 # on_trade_good_changed_estate_privileges_effect = {
 	# if = {
 		# limit = {
-			# has_province_modifier = estate_burghers_monopoly_of_textiles_mod
+			# has_province_modifier = estate_merchants_monopoly_of_textiles_mod
 			# NOT = { trade_goods = silk }
 			# NOT = { trade_goods = cloth }
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_textiles_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_textiles_mod
 	# }
 	# else_if = {
 		# limit = {
-			# from = { has_estate_privilege = estate_burghers_monopoly_of_textiles }
-			# NOT = { has_province_modifier = estate_burghers_monopoly_of_textiles_mod }
+			# from = { has_estate_privilege = estate_merchants_monopoly_of_textiles }
+			# NOT = { has_province_modifier = estate_merchants_monopoly_of_textiles_mod }
 			# OR = {
 				# trade_goods = silk
 				# trade_goods = cloth
 			# }
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_textiles_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_textiles_mod
 	# }
 	# if = {
 		# limit = {
@@ -1074,18 +1074,18 @@ reduce_estate_rajput_loyalty_effect = {
 	# }
 	# if = {
 		# limit = {
-			# has_province_modifier = estate_burghers_monopoly_of_dyes_mod
+			# has_province_modifier = estate_merchants_monopoly_of_dyes_mod
 			# NOT = { trade_goods = dyes }
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_dyes_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_dyes_mod
 	# }
 	# else_if = {
 		# limit = {
-			# from = { has_estate_privilege = estate_burghers_monopoly_of_dyes }
-			# NOT = { has_province_modifier = estate_burghers_monopoly_of_dyes_mod }
+			# from = { has_estate_privilege = estate_merchants_monopoly_of_dyes }
+			# NOT = { has_province_modifier = estate_merchants_monopoly_of_dyes_mod }
 			# trade_goods = dyes
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_dyes_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_dyes_mod
 	# }
 	# if = {
 		# limit = {
@@ -1119,18 +1119,18 @@ reduce_estate_rajput_loyalty_effect = {
 	# }
 	# if = {
 		# limit = {
-			# has_province_modifier = estate_burghers_monopoly_of_glass_mod
+			# has_province_modifier = estate_merchants_monopoly_of_glass_mod
 			# NOT = { trade_goods = glass }
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_glass_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_glass_mod
 	# }
 	# else_if = {
 		# limit = {
-			# from = { has_estate_privilege = estate_burghers_monopoly_of_glass }
-			# NOT = { has_province_modifier = estate_burghers_monopoly_of_glass_mod }
+			# from = { has_estate_privilege = estate_merchants_monopoly_of_glass }
+			# NOT = { has_province_modifier = estate_merchants_monopoly_of_glass_mod }
 			# trade_goods = glass
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_glass_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_glass_mod
 	# }
 	# if = {
 		# limit = {
@@ -1164,18 +1164,18 @@ reduce_estate_rajput_loyalty_effect = {
 	# }
 	# if = {
 		# limit = {
-			# has_province_modifier = estate_burghers_monopoly_of_paper_mod
+			# has_province_modifier = estate_merchants_monopoly_of_paper_mod
 			# NOT = { trade_goods = paper }
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_paper_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_paper_mod
 	# }
 	# else_if = {
 		# limit = {
-			# from = { has_estate_privilege = estate_burghers_monopoly_of_paper }
-			# NOT = { has_province_modifier = estate_burghers_monopoly_of_paper_mod }
+			# from = { has_estate_privilege = estate_merchants_monopoly_of_paper }
+			# NOT = { has_province_modifier = estate_merchants_monopoly_of_paper_mod }
 			# trade_goods = paper
 		# }
-		# remove_province_modifier = estate_burghers_monopoly_of_paper_mod
+		# remove_province_modifier = estate_merchants_monopoly_of_paper_mod
 	# }
 	# if = {
 		# limit = {
@@ -1449,10 +1449,10 @@ reduce_estate_rajput_loyalty_effect = {
 # on_loan_repaid_estate_privileges_effect = {
 	# if = {
 		# limit = {
-			# has_estate_privilege = estate_burghers_indebted_to_burghers
+			# has_estate_privilege = estate_merchants_indebted_to_burghers
 			# NOT = { has_estate_loan = 1 }
 		# }
-		# remove_estate_privilege = estate_burghers_indebted_to_burghers
+		# remove_estate_privilege = estate_merchants_indebted_to_burghers
 	# }
 	# if = {
 		# limit = {
@@ -1501,8 +1501,8 @@ reduce_estate_rajput_loyalty_effect = {
 	# scaled_estate_land_share_reduce_effect = { estate = estate_nobles }
 # }
 
-# scaled_estate_burghers_land_share_effect = {
-	# scaled_estate_land_share_add_effect = { estate = estate_burghers }
+# scaled_estate_merchants_land_share_effect = {
+	# scaled_estate_land_share_add_effect = { estate = estate_merchants }
 # }
 
 # scaled_estate_rajput_land_share_effect = {
@@ -1816,10 +1816,10 @@ reduce_estate_rajput_loyalty_effect = {
 		# 1 = {
 			# trigger = {
 				# owner = {
-					# has_estate = estate_burghers
+					# has_estate = estate_merchants
 					# NOT = {
 						# estate_loyalty = {
-							# estate = estate_burghers
+							# estate = estate_merchants
 							# loyalty = 30
 						# }
 					# }
@@ -1828,7 +1828,7 @@ reduce_estate_rajput_loyalty_effect = {
 			# spawn_rebels = {
 				# type = particularist_rebels
 				# size = $size$
-				# estate = estate_burghers
+				# estate = estate_merchants
 				# as_if_faction = yes
 			# }
 		# }
@@ -1993,12 +1993,12 @@ reduce_estate_rajput_loyalty_effect = {
 		# }
 		# 1 = { 
 			# trigger = {
-				# has_estate = estate_burghers
-				# NOT = { has_country_flag = estate_burghers_$flag$ }
+				# has_estate = estate_merchants
+				# NOT = { has_country_flag = estate_merchants_$flag$ }
 			# }
-			# set_country_flag = estate_burghers_$flag$
+			# set_country_flag = estate_merchants_$flag$
 			# [[estate_action]
-			# $estate_action$ = estate_burghers
+			# $estate_action$ = estate_merchants
 			# ]
 		# }
 		# 1 = { 
