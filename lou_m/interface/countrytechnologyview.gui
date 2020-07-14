@@ -111,45 +111,61 @@ guiTypes = {
 				orientation = "UPPER_LEFT"
 			}
 			
+			#top title
 			instantTextBoxType = {
 				name = "institutions_title"
-				position = { x = 52 y = -28 }
+				position = { x = 100 y = -28 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
 				text = "INSTITUTIONS"	
 				maxWidth = 300
 				maxHeight = 32
-				format = left
+				format = center
 				fixedsize = yes
 			}			
 			
+			#Actual icons
 			OverlappingElementsBoxType = {
 				name = "institutions"
-				position = { x = -35 y = 79 }
-				size = { x = 230 y = 128 }
+				position = { x = 25 y = 23 }
+				size = { x = 604 y = 128 }
 				Orientation = "UPPER_LEFT"
-				format = center
-				spacing = 1
+				format = centre
+				spacing = 0
 			}
+			
+			#GFX_pause_banner
+			#GFX_institution_red_banner
+			#GFX_province_banner_foreign
 			
 			iconType = {
 				name = "institution_red_banner"
-				spriteType ="GFX_long_institutions_banner"	
-				position = { x = 17 y = 150 }
+				spriteType ="GFX_province_banner_foreign"	
+				position = { x = 0 y = 85 }
 				orientation = "UPPER_LEFT"
 			}		
+			
+			#Own
+			iconType = {
+				name = "institution_mood"
+				spriteType ="GFX_icon_institution_mood"	
+				position = { x = 70 y = 145 }
+				orientation = "UPPER_LEFT"
+			}
 			
 			iconType = {
 				name = "mod_institution_spread_icon"
 				spriteType = "GFX_institution_spread_icon"
-				position = { x= 20 y = 20 }
+				position = { x = 425 y = 175 }
 				Orientation = "UPPER_LEFT"
+				dontRender = ""
 			}
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "mod_institution_spread"
-				position = { x = 48 y = 25 }
+				position = { x = -500 y = 25 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
@@ -159,16 +175,17 @@ guiTypes = {
 				text = "Institution Spread: +70%"
 			}
 			
-			iconType = {
-				name ="mod_embracement_cost_icon"
-				spriteType = "GFX_institution_embracement_cost_icon"
-				position = { x= 271 y = 20 }
-				Orientation = "UPPER_LEFT"
-			}
+			#iconType = {
+			#	name ="mod_embracement_cost_icon"
+			#	spriteType = "GFX_institution_embracement_cost_icon"
+			#	position = { x= 271 y = 20 }
+			#	Orientation = "UPPER_LEFT"
+			#}
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "mod_embracement_cost"
-				position = { x = 299 y = 25 }
+				position = { x = -5000 y = 25 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
@@ -178,30 +195,33 @@ guiTypes = {
 				text = "Embracement Cost: -20%"
 			}
 			
+			#Dont show
 			guiButtonType =
 			{
 				name ="embrace_button"
 				quadTextureSprite= "GFX_standard_button_105"
-				position = { x = 378 y = 308 }
+				position = { x = -5000 y = 308 }
 				Orientation = "UPPER_LEFT"
 				buttonText = "BUTTON_EMBRACE"
 				buttonFont = "vic_18"
 			}			
 			
+			#institution titel
 			instantTextBoxType = {
 				name = "name"
-				position = { x = 28 y = 156 }
+				position = { x = 140 y = 100 }
 				textureFile = ""
-				font = "vic_29s"
+				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
-				maxWidth = 400
+				maxWidth = 230
 				maxHeight = 32
-				format = left
+				format = center
 			}
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "when_embraced_label"
-				position = { x = 28 y = 190 }
+				position = { x = -5000 y = 190 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -211,9 +231,10 @@ guiTypes = {
 				text = "WHEN_EMBRACED"
 			}
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "when_embraced"
-				position = { x = 36 y = 216 }
+				position = { x = -5000 y = 216 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -222,21 +243,24 @@ guiTypes = {
 				format = left
 			}
 			
+			#Dont show
 			iconType = {
 				name = "country_progress"
 				spriteType = "GFX_institution_progress"
-				position = { x = 39 y = 314 }
+				position = { x = -5000 y = 314 }
 			}
 			
+			#Dont show
 			iconType = {
 				name = "country_progress_frame"
 				spriteType = "GFX_institution_progress_frame"
-				position = { x = 26 y = 310 }
+				position = { x = -5000 y = 310 }
 			}			
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "country_progress_label"
-				position = { x = 28 y = 284 }
+				position = { x = -5000 y = 284 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -248,14 +272,14 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "origin"
-				position = { x = 264 y = 158 }
+				position = { x = 315 y = 250 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
 				text = "Origin: North of the Wall"	
 				maxWidth = 236
 				maxHeight = 32
-				format = right
+				format = center
 				fixedsize = yes
 			}
 			
@@ -263,7 +287,7 @@ guiTypes = {
 			{
 				name ="goto_origin"
 				quadTextureSprite= "GFX_standard_button_105"
-				position = { x = 400 y = 185 }
+				position = { x = 385 y = 300 }
 				Orientation = "UPPER_LEFT"
 				buttonText = "GOTO_GOTO"
 				buttonFont = "vic_18"
@@ -272,24 +296,26 @@ guiTypes = {
 			iconType = {
 				name = "spread_info_icon"
 				spriteType = "GFX_institution_spread_conditions"
-				position = { x = 286 y = 158 }
+				position = { x = 425 y = 175 }
 			}
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "embrace_cost"
-				position = { x = 140 y = 310 }
+				position = { x = -5000 y = 310 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
 				maxWidth = 120
 				maxHeight = 32
 				format = center
-				text = "4322 Â¤"
+				text = "4322 ¤"
 			}
 			
+			#Dont show
 			instantTextBoxType = {
 				name = "penalty"
-				position = { x = 36 y = 260 }
+				position = { x = -5000 y = 260 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
