@@ -6,40 +6,57 @@ merc_riders_of_snowbourn = {
     cost_modifier = 0.40
     home_province = 111
     trigger = {
-		always = no
-	}
+      OR = {
+        religion = religion_nenedain
+        religion = religion_aivathuida
+        religion = religion_ullthiuda
+        tag = X01
+        tag = X16
+      }
+  }
 }
 merc_gadrauhteis = {
-    regiments_per_development = 0.015
-    cavalry_weight = 0.7
-    artillery_weight = 0.0
-    cavalry_cap = 10
-    cost_modifier = 0.55
-    home_province = 1931
-    trigger = {
-		always = no
-	}
+  regiments_per_development = 0.015
+  cavalry_weight = 0.7
+  artillery_weight = 0.0
+  cavalry_cap = 10
+  cost_modifier = 0.55
+  home_province = 1931
+  trigger = {
+    OR = {
+      religion = religion_nenedain
+      religion = religion_aivathuida
+      religion = religion_ullthiuda
+    }
+  }
 }
 merc_guards_of_karna = {
-    regiments_per_development = 0.020
-    cavalry_weight = 0.2
-    artillery_weight = 0.1
-    cavalry_cap = 20
-    cost_modifier = 0.65
-    home_province = 1183
-    trigger = {
-		always = no
+  regiments_per_development = 0.020
+  cavalry_weight = 0.2
+  artillery_weight = 0.1
+  cavalry_cap = 20
+  cost_modifier = 0.65
+  home_province = 1183
+  trigger = {
+    OR = {
+      tag = V17
+      tag = X27
+      tag = X43
+      religion = religion_haruzani
+    }
 	}
 }
 merc_breeland_ruffians = {
-    regiments_per_development = 0.010
-    cavalry_weight = 0.0
-    artillery_weight = 0.0
-    cavalry_cap = 2
-    cost_modifier = 0.50
-    home_province = 263
-    trigger = {
-		always = no
+  regiments_per_development = 0.010
+  cavalry_weight = 0.0
+  artillery_weight = 0.0
+  cavalry_cap = 2
+  cost_modifier = 0.50
+  home_province = 263
+  trigger = {
+    OR = {
+      
+    }
 	}
 }
 merc_variags_of_khand = {
