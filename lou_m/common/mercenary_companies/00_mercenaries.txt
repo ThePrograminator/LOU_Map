@@ -55,30 +55,54 @@ merc_breeland_ruffians = {
   home_province = 263
   trigger = {
     OR = {
-      
+      tag = V49
+      tag = Z21
+      tag = Z43
+      tag = Z62
+      tag = Z11
+      tag = Z09
+      tag = Z37
     }
 	}
 }
 merc_variags_of_khand = {
-    regiments_per_development = 0.040
-    cavalry_weight = 1
-    artillery_weight = 0.0
-    cavalry_cap = 50
-    cost_modifier = 0.85
-    home_province = 443
-    trigger = {
-		always = no
+  regiments_per_development = 0.040
+  cavalry_weight = 1
+  artillery_weight = 0.0
+  cavalry_cap = 50
+  cost_modifier = 0.85
+  home_province = 443
+  trigger = {
+    OR = {
+      tag = V17
+      religion = religion_haruzani
+      religion = religion_ulgath
+      religion = religion_ioriags
+      religion = religion_chailuza
+    }
 	}
 }
 merc_tharbad_thieves = {
-    regiments_per_development = 0.015
-    cavalry_weight = 0.0
-    artillery_weight = 0.0
-    cavalry_cap = 5
-    cost_modifier = 0.55
-    home_province = 170
-    trigger = {
-		always = no
+  regiments_per_development = 0.015
+  cavalry_weight = 0.0
+  artillery_weight = 0.0
+  cavalry_cap = 5
+  cost_modifier = 0.55
+  home_province = 170
+  trigger = {
+    OR = {
+      primary_culture = culture_dunlendings
+      tag = Z45
+      tag = Z44
+      tag = V49
+      tag = Z20
+      tag = Z35
+      tag = Z17
+      tag = Z19
+      tag = Z43
+      tag = Z43
+      tag = Z46
+    }
 	}
 }
 merc_orocarni_mercenaries = {
