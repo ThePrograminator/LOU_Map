@@ -106,58 +106,73 @@ merc_tharbad_thieves = {
 	}
 }
 merc_orocarni_mercenaries = {
-    regiments_per_development = 0.025
-    cavalry_weight = 0.0
-    artillery_weight = 0.1
-    cavalry_cap = 1
-    cost_modifier = 0.60
-    home_province = 572
-    trigger = {
-		always = no
+  regiments_per_development = 0.025
+  cavalry_weight = 0.0
+  artillery_weight = 0.1
+  cavalry_cap = 1
+  cost_modifier = 0.60
+  home_province = 572
+  trigger = {
+    technology_group = lotr_dwarven
 	}
 }
 merc_dunlending_wildmen = {
-    regiments_per_development = 0.015
-    cavalry_weight = 0.1
-    artillery_weight = 0.0
-    cavalry_cap = 3
-    cost_modifier = 0.60
-    home_province = 1417
-    trigger = {
-		always = no
+  regiments_per_development = 0.015
+  cavalry_weight = 0.1
+  artillery_weight = 0.0
+  cavalry_cap = 3
+  cost_modifier = 0.60
+  home_province = 1417
+  trigger = {
+    OR = {
+      primary_culture = culture_dunlendings
+      tag = V49
+    }
 	}
 }
 merc_hunters_of_dir = {
-    regiments_per_development = 0.020
-    cavalry_weight = 0.0
-    artillery_weight = 0.0
-    cavalry_cap = 5
-    cost_modifier = 0.65
-    home_province = 2796
-    trigger = {
-		always = no
+  regiments_per_development = 0.020
+  cavalry_weight = 0.0
+  artillery_weight = 0.0
+  cavalry_cap = 5
+  cost_modifier = 0.65
+  home_province = 2796
+  trigger = {
+      OR = {
+        tag = V63
+        tag = V73
+        tag = V82
+        tag = V70
+        tag = W46
+      }
 	}
 }
 merc_desdursya_riders = {
-    regiments_per_development = 0.025
-    cavalry_weight = 0.9
-    artillery_weight = 0.0
-    cavalry_cap = 25
-    cost_modifier = 0.60
-    home_province = 972
-    trigger = {
-		always = no
+  regiments_per_development = 0.025
+  cavalry_weight = 0.9
+  artillery_weight = 0.0
+  cavalry_cap = 25
+  cost_modifier = 0.60
+  home_province = 972
+  trigger = {
+    OR = {
+      religion = religion_tyr
+      religion = religion_eastern_snowmen
+    }
 	}
 }
 merc_ahar_horde = {
-    regiments_per_development = 0.040
-    cavalry_weight = 1
-    artillery_weight = 0.0
-    cavalry_cap = 50
-    cost_modifier = 1.15
-    home_province = 1630
-    trigger = {
-		always = no
+  regiments_per_development = 0.040
+  cavalry_weight = 1
+  artillery_weight = 0.0
+  cavalry_cap = 50
+  cost_modifier = 1.15
+  home_province = 1630
+  trigger = {
+    OR = {
+      culture_group = culture_group_ahar
+      culture_group = culture_group_chailuza
+    }
 	}
 }
 merc_wolim_blood_brothers = {
