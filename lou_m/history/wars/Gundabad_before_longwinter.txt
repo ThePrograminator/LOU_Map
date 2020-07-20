@@ -1,0 +1,19 @@
+name = "Before_game_start"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1890 # Eofeld
+}
+
+2755.1.1 = {
+	add_attacker = Y63
+	add_attacker = Y30
+	add_defender = Y91
+}
+
+# The orcs fail to take Eofeld
+2757.12.1 = {
+	rem_attacker = Y63
+	rem_attacker = Y30
+	rem_defender = Y91
+}

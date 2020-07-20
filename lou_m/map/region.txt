@@ -1690,10 +1690,12 @@ kael_region = {
 
 womawas_drus_region = {
 	areas = {
-		#goak_area
-		#moak_area
-		#cuivac_womaw_area
+		goak_area
+		moak_area
+		cuivac_womaw_area
 		wom_shryac_area
+		womaw_reach_area
+		gendhari_area
 	}
 }
 
@@ -1701,11 +1703,11 @@ womawas_drus_region = {
 # Helcar Sael (Far East)
 #---------------------------
 
-#helcar_sael_region = {
-#	areas = {
-#		#helcar_sael_area
-#	}
-#}
+helcar_sael_region = {
+	areas = {
+		helcar_sael_area
+	}
+}
 
 #---------------------------
 # Karn Ord (Far East)
@@ -1721,11 +1723,13 @@ karn_ord_region = {
 # Aegan (Far East)
 #---------------------------
 
-#aegan_region = {
-#	areas = {
-#		aegan_area
-#	}
-#}
+aegan_region = {
+	areas = {
+		aegan_area
+		banakan_area
+		ankalzo_area
+	}
+}
 
 #---------------------------
 # Remnants of Numenor

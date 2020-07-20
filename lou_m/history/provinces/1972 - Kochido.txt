@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 9
+base_production = 8
+base_manpower = 9
 
 add_core = V85
 owner = V85
@@ -23,9 +23,19 @@ controller = V85
 culture = culture_vulmav
 religion = religion_cuivac
 
-trade_goods = grain
+trade_goods = dyes
 
 hre = no
+
+center_of_trade = 2
+
+fortress_3_building=yes
+marketplace_building=yes
+tax_office_building=yes
+foundry_building=yes
+fort_stronghold_building=yes
+garrison_building=yes
+grand_shipyard_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

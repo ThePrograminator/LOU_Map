@@ -65,12 +65,47 @@ alliance = {
 	start_date = 2758.1.1
 	end_date = 3500.1.1
 }
+# Ghnaznak and Blogrum-hai
+alliance = {
+	first = W82
+	second = Y49
+	start_date = 2758.1.1
+	end_date = 3500.1.1
+}
+# Isengard and Sharak-hai
+alliance = {
+	first = V49
+	second = V07
+	start_date = 2953.3.17
+	end_date = 2957.9.13
+}
+# Isengard and Feargan Clan
+alliance = {
+	first = V49
+	second = Z50
+	start_date = 2953.3.17
+	end_date = 3500.1.1
+}
 
 # Isengard and Sharak-hai
 vassal = {
 	first = V49
 	second = V07
 	start_date = 2957.9.13
+	end_date = 3500.1.1
+}
+# Isengard and arilthach clan
+vassal = {
+	first = V49
+	second = V08
+	start_date = 2989.1.1
+	end_date = 3500.1.1
+}
+# Isengard and arailt clan
+vassal = {
+	first = V49
+	second = Z49
+	start_date = 2989.1.1
 	end_date = 3500.1.1
 }
 
@@ -83,7 +118,7 @@ vassal = {
 }
 
 # Gundabad and Kul-Uruk
-vassal = {
+alliance = {
 	first = Y63
 	second = Y31
 	start_date = 2758.1.1
@@ -101,13 +136,6 @@ union = {
 alliance = {
 	first = Y63
 	second = Y44
-	start_date = 2758.1.1
-	end_date = 3500.1.1
-}
-# Gundabad and Asharag
-alliance = {
-	first = Y63
-	second = Y34
 	start_date = 2758.1.1
 	end_date = 3500.1.1
 }
@@ -279,6 +307,13 @@ vassal = {
 	start_date = 2758.1.1
 	end_date = 3500.1.1
 }
+#Zurghor & akensuhn
+vassal = {
+	first = Y45
+	second = W51
+	start_date = 2942.3.1
+	end_date = 3500.1.1
+}
 #Garbark-Lush & Ogurk-Bash
 alliance = {
 	first = V92
@@ -335,6 +370,42 @@ alliance = {
 alliance = {
 	first = W45
 	second = W35
+	start_date = 2758.1.1
+	end_date = 3500.1.1
+}
+
+#Morkai & Shedun
+alliance = {
+	first = Y54
+	second = Y55
+	start_date = 2758.1.1
+	end_date = 3500.1.1
+}
+#Litash & Shedun
+alliance = {
+	first = Y53
+	second = Y55
+	start_date = 2758.1.1
+	end_date = 3500.1.1
+}
+#Litash & Morkai
+alliance = {
+	first = Y53
+	second = Y54
+	start_date = 2758.1.1
+	end_date = 3500.1.1
+}
+#Litash & Uruk-kosh
+alliance = {
+	first = Y53
+	second = Y62
+	start_date = 2758.1.1
+	end_date = 3500.1.1
+}
+#Skuthrugai & Uruk-kosh
+alliance = {
+	first = Y60
+	second = Y62
 	start_date = 2758.1.1
 	end_date = 3500.1.1
 }

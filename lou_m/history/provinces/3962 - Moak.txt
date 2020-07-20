@@ -1,8 +1,8 @@
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 5
+base_production = 5
+base_manpower = 6
 
 add_core = V97
 owner = V97
@@ -14,6 +14,27 @@ religion = religion_avaradan
 trade_goods = fish
 
 hre = no
+
+base_tax = 4
+base_production = 5
+base_manpower = 4
+
+add_core = V97
+owner = V97
+controller = V97
+
+culture = culture_wom
+religion = religion_avaradan
+
+trade_goods = naval_supplies
+
+hre = no
+
+fortress_2_building=yes
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
+drydock_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

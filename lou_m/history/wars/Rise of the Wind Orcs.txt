@@ -1,0 +1,19 @@
+name = "Rise of the Wind Orcs"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 2040 # Ayig Bâs 
+}
+
+2883.12.1 = {
+	add_attacker = Y64
+	add_defender = Z77
+	add_defender = W13
+}
+
+# The orcs destroy Bâs and take land from Unvirnay
+2886.12.15 = {
+	rem_attacker = Y64
+	rem_defender = Z77
+	rem_defender = W13
+}

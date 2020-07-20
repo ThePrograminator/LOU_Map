@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = culture_urukhai
+add_accepted_culture = culture_dunlendings
 religion = religion_uruk
 technology_group = lotr_uruk_hai
 capital = 223
@@ -9,6 +10,8 @@ historical_friend = V07
 historical_friend = V08
 historical_friend = Z50
 historical_friend = Z49
+historical_friend = Z47
+historical_friend = Z52
 historical_rival = Z48
 historical_rival = Z93
 
@@ -16,7 +19,7 @@ historical_rival = Z93
 	monarch = {
 		name = "Saruman the White"
 		adm = 6
-		dip = 5
+		dip = 6
 		mil = 6
 		birth_date = 2933.1.1
 	}

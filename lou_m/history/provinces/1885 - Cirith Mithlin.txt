@@ -14,7 +14,7 @@ is_city = yes
 
 base_tax = 2
 base_production = 3
-base_manpower = 2
+base_manpower = 3
 
 add_core = Y30
 owner = Y30
@@ -44,4 +44,13 @@ discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
-
+2759.12.1 = { 
+	add_core = Y06
+	owner = Y06
+	controller = Y06
+}
+2770.10.1 = { 
+	add_core = Y30
+	owner = Y30
+	controller = Y30
+}

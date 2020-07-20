@@ -1,0 +1,21 @@
+name = "Fall of Unvirnay"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1997 # Helak Nay
+}
+
+2793.1.1 = {
+	add_attacker = Y45
+	add_attacker = W81
+	add_defender = W13
+	add_defender = W50
+}
+
+# The orcs destroy Unvirnay & Maaken
+2798.3.1 = {
+	rem_attacker = Y45
+	rem_attacker = W81
+	rem_defender = W13
+	rem_defender = W50
+}

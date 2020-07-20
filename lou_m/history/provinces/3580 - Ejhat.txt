@@ -1,13 +1,20 @@
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 4
+base_manpower = 4
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W90
+owner = W90
+controller = W90
 
-trade_goods = grain
+culture = culture_chasru
+religion = religion_eastern_black_peoples
+
+trade_goods = copper
 
 hre = no
+
+settlement_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven

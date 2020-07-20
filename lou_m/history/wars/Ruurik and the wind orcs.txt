@@ -1,0 +1,19 @@
+name = "Rise of the Wind Orcs"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 3342 # Bigdîn-Tumun
+}
+
+2939.10.1 = {
+	add_attacker = Y64
+	add_defender = W06
+	add_defender = W16
+}
+
+# A stillmate for both sides, but the orcs takes a few territories
+2942.12.1 = {
+	rem_attacker = Y64
+	rem_defender = W06
+	rem_defender = W16
+}

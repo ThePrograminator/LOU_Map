@@ -1,13 +1,25 @@
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 5
+base_manpower = 6
 
-culture = culture_wilderness
-religion = religion_wilderness
+add_core = W85
+owner = W85
+controller = W85
 
-trade_goods = grain
+culture = culture_verikis
+religion = religion_dhilikhran
+
+trade_goods = gems
 
 hre = no
+
+capital_2_building=yes
+marketplace_building=yes
+tax_office_building=yes
+warehouse_building=yes			
+forge_building=yes
+fort_stronghold_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
