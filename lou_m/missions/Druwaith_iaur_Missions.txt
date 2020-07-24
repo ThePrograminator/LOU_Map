@@ -1,0 +1,344 @@
+####################
+# Slot 1 - The Old Pukel Land  #
+####################
+X15_the_old_pukel_land = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X15
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	deal_with_clansmen = {
+		icon = pukel_land
+		position = 1
+		provinces_to_highlight = {
+			region = old_pukel_land_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			old_pukel_land_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 30
+			add_adm_power = 30
+			add_mil_power = 30
+			add_country_modifier = {
+				name = "conquer_old_pukel_land_X15_mission"
+				duration = 9125				#25 years
+			}
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300				#20 years
+			}
+			1443 = {
+				add_permanent_claim = X15
+			}
+			1491 = {
+				add_permanent_claim = X15
+			}
+			1510 = {
+				add_permanent_claim = X15
+			}
+			1359 = {
+				add_permanent_claim = X15
+			}
+			1431 = {
+				add_permanent_claim = X15
+			}
+			1457 = {
+				add_permanent_claim = X15
+			}
+		}
+	}
+	regain_lost_lands = {
+		icon = woses_1
+		required_missions = {
+			deal_with_clansmen
+		}
+		position = 1
+		provinces_to_highlight = {
+			province_id = 1443
+			province_id = 1491
+			province_id = 1510
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			1443 = {
+				owned_by = ROOT
+			}
+			1491 = {
+				owned_by = ROOT
+			}
+			1510 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_adm_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 7300				#20 years
+			}
+		}
+	}
+	unite_the_woses = {
+		icon = woses_2
+		required_missions = {
+			regain_lost_lands
+		}
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = Y85
+					Y85 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+				AND = {
+					alliance_with = Y89
+					Y89 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_stability = 1
+			eryn_vorn_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "conquer_lost_forests_of_the_druedain_X15_mission"
+				duration = 9125				#25 years
+			}
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	eryn_vorn_reconnects_with_the_homeland = {
+		icon = mission_unite_home_region
+		required_missions = {
+			unite_the_woses
+		}
+		position = 1
+		provinces_to_highlight = {
+			area = eryn_vorn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			eryn_vorn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 9125				#25 years
+			}
+			103 = {
+				add_permanent_claim = X15
+			}
+			1405 = {
+				add_permanent_claim = X15
+			}
+			dor-i-tinuviel_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	the_great_forest = {
+		icon = woses_1
+		required_missions = {
+			eryn_vorn_reconnects_with_the_homeland
+		}
+		position = 1
+		provinces_to_highlight = {
+			area = dor-i-tinuviel_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			dor-i-tinuviel_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 250
+			add_mil_power = 250
+			add_adm_power = 250
+			add_stability = 1
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125				#25 years
+			}
+			add_country_modifier = {
+				name = "the_great_forest_X15_mission"
+				duration = 9125				#25 years
+			}
+			333 = {
+				add_permanent_claim = X15
+			}
+			1061 = {
+				add_permanent_claim = X15
+			}
+			332 = {
+				add_permanent_claim = X15
+			}
+			3498 = {
+				add_permanent_claim = X15
+			}
+		}
+	}
+}
+
+####################
+# Slot 3 - Expanding into Gondor  #
+####################
+X15_expanding_into_gondor = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X15
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	eredrim_dominated = {
+		icon = mission_conquer_50_development
+		position = 1
+		provinces_to_highlight = {
+			AND = {
+				province_id = 983
+				province_id = 185
+				province_id = 201
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			983 = {
+				owned_by = ROOT
+			}
+			185 = {
+				owned_by = ROOT
+			}
+			201 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 7300				#20 years
+			}
+			tawar-in-druedain_area = {
+				add_permanent_claim = ROOT
+			}
+			978 = {
+				add_permanent_claim = X15
+			}
+			181 = {
+				add_permanent_claim = X15
+			}
+			979 = {
+				add_permanent_claim = X15
+			}
+		}
+	}
+	old_borders = {
+		icon = mission_unite_home_region
+		required_missions = {
+			eredrim_dominated
+		}
+		position = 1
+		provinces_to_highlight = {
+			AND = {
+				province_id = 979
+				province_id = 181
+				province_id = 978
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			979 = {
+				owned_by = ROOT
+			}
+			181 = {
+				owned_by = ROOT
+			}
+			978 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "fighting_gondor_X15_mission"
+				duration = 7300				#20 years
+			}
+		}
+	}
+	a_new_ally = {
+		icon = woses_2
+		required_missions = {
+			old_borders
+		}
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = Z93
+					Z93 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}

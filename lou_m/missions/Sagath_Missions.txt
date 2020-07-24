@@ -1,0 +1,524 @@
+####################
+# Slot 1 - Ally Mordor  #
+####################
+X99_ally_mordor = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X99
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	ally_mordor = {
+		icon = mordor_1
+		required_missions = {
+		}
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = V17
+					V17 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125				#25 years
+			}
+			add_country_modifier = {
+				name = "serving_the_dark_lord"
+				duration = 3650				#10 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 2 - Rhovanion  #
+####################
+X99_rhovanion = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X99
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	control_talath_harroch = {
+		icon = mission_unite_home_region
+		position = 1
+		provinces_to_highlight = {
+			area = talath_harroch_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			talath_harroch_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 25
+			add_adm_power = 25
+			add_mil_power = 25
+			add_prestige = 5
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 3650				#10 years
+			}
+		}
+	}
+	army_of_easterlings = {
+		icon = easterlings
+		required_missions = {
+		control_talath_harroch
+		}
+		position = 2
+		trigger = {
+			army_size_percentage = 0.8
+			manpower = 18
+		}
+		effect = {
+			add_mil_power = 50
+			add_manpower = 2
+			add_country_modifier = {
+				name = "easterling_army"
+				duration = 3650				#10 years
+			}
+			emyn_muil_area = {
+				add_territorial_core = ROOT
+			}
+			brown_lands_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	control_brown_lands = {
+		icon = mission_unite_home_region
+		required_missions = {
+		army_of_easterlings
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = brown_lands_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			306 = {
+				owned_by = ROOT
+			}
+			404 = {
+				owned_by = ROOT
+			}
+			269 = {
+				owned_by = ROOT
+			}
+			397 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 25
+			add_adm_power = 25
+			add_mil_power = 25
+			add_prestige = 5
+		}
+	}
+	foothold_in_rohan = {
+		icon = mission_unite_home_region
+		required_missions = {
+		control_brown_lands
+		}
+		position = 4
+		provinces_to_highlight = {
+			area = the_wold_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			the_wold_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_adm_power = 50
+			add_mil_power = 50
+			add_prestige = 10
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 7300				#20 years
+			}
+			rohan_region = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	conquer_rohan = {
+		icon = isengard_3
+		required_missions = {
+		foothold_in_rohan
+		}
+		position = 5
+		provinces_to_highlight = {
+			region = rohan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			rohan_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 150
+			add_adm_power = 150
+			add_dip_power = 150
+			add_prestige = 10
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 7300				#20 years
+			}
+		}
+	}
+}
+
+X99_rhovanion = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X99
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	control_emyn_muil = {
+		icon = mission_unite_home_region
+		required_missions = {
+		army_of_easterlings
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = emyn_muil_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			emyn_muil_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 25
+			add_prestige = 2
+		}
+	}
+}
+
+X99_rhovanion = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X99
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	control_east_bight = {
+		icon = mission_unite_home_region
+		required_missions = {
+		army_of_easterlings
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = east_bight_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			east_bight_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			add_manpower = 5
+			rhovanion_region = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	foothold_in_rhovanion = {
+		icon = mission_unite_home_region
+		required_missions = {
+		control_east_bight
+		}
+		position = 4
+		provinces_to_highlight = {
+			area = esgalabar_area
+			area = ilanin_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			esgalabar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ilanin_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			add_manpower = 10
+			dale_region = {
+				add_territorial_core = ROOT
+			}
+			lonely_mountain_area = {
+				add_territorial_core = ROOT
+			}
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 7300				#20 years
+			}
+		}
+	}
+	conquer_dale = {
+		icon = conquer_dale
+		required_missions = {
+		foothold_in_rhovanion
+		}
+		position = 5
+		provinces_to_highlight = {
+			region = dale_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			dale_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_prestige = 15
+		}
+	}
+}
+
+X99_rhovanion = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = X99
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	conquer_erebor = {
+		icon = conquer_erebor
+		required_missions = {
+		foothold_in_rhovanion
+		}
+		position = 5
+		provinces_to_highlight = {
+			area = lonely_mountain_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			lonely_mountain_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 10
+			add_treasury = 500
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 7300				#20 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 5 - Gondor  #
+####################
+
+X99_attack_gondor = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = X99
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	control_nindalf = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 1
+		provinces_to_highlight = {
+			area = nindalf_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			nindalf_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 25
+			573 = {
+				add_territorial_core = ROOT
+			}
+			48 = {
+				add_territorial_core = ROOT
+			}
+			46 = {
+				add_territorial_core = ROOT
+			}
+			3052 = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	preparing_to_march_on_gondor = {
+		icon = easterlings
+		required_missions = {
+		control_nindalf
+		}
+		position = 2
+		trigger = {
+			army_size_percentage = 0.8
+			manpower = 40
+		}
+		effect = {
+			add_mil_power = 50
+			add_manpower = 3
+			add_country_modifier = {
+				name = "easterling_army"
+				duration = 3650				#10 years
+			}
+			forithilien_area = {
+				add_territorial_core = ROOT
+			}
+			cair_andros_area = {
+				add_territorial_core = ROOT
+			}
+			anorien_area = {
+				add_territorial_core = ROOT
+			}
+			minas_tirith_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	burn_the_white_city = {
+		icon = white_tree_burning
+		required_missions = {
+		preparing_to_march_on_gondor
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = minas_tirith_area
+			area = cair_andros_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+			7 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 250
+			add_prestige = 15
+			gondor_region = {
+				add_territorial_core = ROOT
+			}
+			country_event = { 
+				id = flavor_mordor.33
+			}
+		}
+	}
+	conquer_gondor = {
+		icon = mission_unite_home_region
+		required_missions = {
+		burn_the_white_city
+		}
+		position = 4
+		provinces_to_highlight = {
+			region = gondor_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			gondor_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 250
+			add_adm_power = 250
+			add_dip_power = 250
+			add_prestige = 25
+		}
+	}
+}

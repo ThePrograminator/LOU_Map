@@ -2209,3 +2209,95 @@ province_event = {
 #	}
 #}
 ###################################################################
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = lotr_orc_raids.25
+	title = "lotr_orc_raids.25_NAME"
+	desc = "lotr_orc_raids.25_DESC"
+	picture = orc_raid_ice
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1151
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+
+		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
+		#So they won't spawn on easterlings, dunlendings haradrim etc.
+		#owner = {
+		#	NOT = {
+		#		is_servants_of_evil_opinion = yes
+		#	}
+		#}
+
+		#Year is the year it is triggered
+		#same with month (january is 0)
+		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
+		#So the player doesn't start 200 years later and the event still triggers
+		#STARTED_BEFORE month starts at 1 for january, just to confuse
+		#it is not possible to trigger at a certain day, only year and month
+		check_date = {
+			YEAR = 2770
+			MONTH = 10
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	
+	option = {
+		name = "lotr_orc_raids.25_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.25 - Option : lotr_orc_raids.25_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+##########
+#If you want random size orc raiders
+# use this below,
+# numbers 5, 10, 20, 65 are % chance, you can write any number
+# random_list = {
+#	5 = {
+#		spawn_rebels = {
+#			type = orc_raider_rebels
+#			size = 4
+#		}
+#	}
+#	10 = {
+#		spawn_rebels = {
+#			type = orc_raider_rebels
+#			size = 3
+#		}
+#	}
+#	20 = {
+#		spawn_rebels = {
+#			type = orc_raider_rebels
+#			size = 2
+#		}
+#	}
+#	65 = {
+#		spawn_rebels = {
+#			type = orc_raider_rebels
+#			size = 1
+#		}
+#	}
+#}
+###################################################################

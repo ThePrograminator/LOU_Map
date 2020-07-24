@@ -1,0 +1,718 @@
+####################
+# Slot 1 - Dunland  #
+####################
+V49_dunland = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = V49
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	subjects_in_dunland = {
+		icon = isengard_2
+		required_missions = {
+		}
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					calc_true_if = {
+						all_ally = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = enedhwaith_region
+							}
+						}
+						amount = 2
+					}
+				}
+				AND = {
+					calc_true_if = {
+						all_subject_country = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = enedhwaith_region
+							}
+						}
+						amount = 2
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_manpower = 2
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 5475				#15 years
+			}
+		}
+	}
+	ally_of_feargan_clan = {
+		icon = dunland_1
+		required_missions = {
+		subjects_in_dunland	
+		}
+		position = 2
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = Z50
+					Z50 = {
+						has_opinion = {
+							who = ROOT
+							value = 175
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 25
+			caladach_area = {
+				add_territorial_core = ROOT
+			}
+			arilthach_area = {
+				add_territorial_core = ROOT
+			}
+			gyroth_area = {
+				add_territorial_core = ROOT
+			}
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	foothold_in_dunland = {
+		icon = isengard_1
+		required_missions = {
+		ally_of_feargan_clan
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = arilthach_area
+			area = gyroth_area
+			area = caladach_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			arilthach_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gyroth_area = {
+				type = all
+				owned_by = ROOT
+			}
+			caladach_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_dip_power = 50
+			add_adm_power = 50
+			add_prestige = 5
+			talorgan_area = {
+				add_territorial_core = ROOT
+			}
+			tang_area = {
+				add_territorial_core = ROOT
+			}
+			dunfearan_area = {
+				add_territorial_core = ROOT
+			}
+			wredech_area = {
+				add_territorial_core = ROOT
+			}
+			morbet_area = {
+				add_territorial_core = ROOT
+			}
+			coit_cerdd_area = {
+				add_territorial_core = ROOT
+			}
+			fidach_area = {
+				add_territorial_core = ROOT
+			}
+			duncillien_area = {
+				add_territorial_core = ROOT
+			}
+			undrost_area = {
+				add_territorial_core = ROOT
+			}
+			bhainnan_area = {
+				add_territorial_core = ROOT
+			}
+			fearachas_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	control_dunland = {
+		icon = mission_unite_home_region
+		required_missions = {
+		foothold_in_dunland
+		}
+		position = 4
+		provinces_to_highlight = {
+			type = all
+			area = talorgan_area
+			area = dunfearan_area
+			area = wredech_area
+			area = morbet_area
+			area = coit_cerdd_area
+			area = fidach_area
+			area = duncillien_area
+			area = undrost_area
+			area = fearachas_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			talorgan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			dunfearan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			wredech_area = {
+				type = all
+				owned_by = ROOT
+			}
+			morbet_area = {
+				type = all
+				owned_by = ROOT
+			}
+			coit_cerdd_area = {
+				type = all
+				owned_by = ROOT
+			}
+			fidach_area = {
+				type = all
+				owned_by = ROOT
+			}
+			duncillien_area = {
+				type = all
+				owned_by = ROOT
+			}
+			undrost_area = {
+				type = all
+				owned_by = ROOT
+			}
+			fearachas_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_dip_power = 100
+			add_adm_power = 100
+			add_prestige = 10
+			andhas_area = {
+				add_territorial_core = ROOT
+			}
+			andhas_area = {
+				add_territorial_core = ROOT
+			}
+			cairg_erp_area = {
+				add_territorial_core = ROOT
+			}
+			dor_wathui_area = {
+				add_territorial_core = ROOT
+			}
+			angrast_area = {
+				add_territorial_core = ROOT
+			}
+			ethir_gwathlo_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	control_enedhwaith = {
+		icon = isengard_5
+		required_missions = {
+		control_dunland
+		}
+		position = 5
+		provinces_to_highlight = {
+			region = enedhwaith_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			enedhwaith_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_dip_power = 100
+			add_adm_power = 100
+			add_prestige = 10
+			tharbad_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+}
+
+####################
+# Slot 2 - Improve Isengard  #
+####################
+
+V49_improve_isengard = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = V49
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	methedras = {
+		icon = isengard_4
+		position = 1
+		provinces_to_highlight = {
+			province_id = 1585
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			1585 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_treasury = 50
+			add_country_modifier = {
+				name = "riches_of_methedras"
+				duration = 3650				#10 years
+			}
+			119 = {
+				add_territorial_core = ROOT
+			}
+			224 = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	gap_of_rohan = {
+		icon = isengard_1
+		required_missions = { 
+		methedras
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_id = 224
+			province_id = 119
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			119 = {
+				owned_by = ROOT
+			}
+			224 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 25
+			1025 = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	forges_of_isengard = {
+		icon = isengard_industry
+		required_missions = { 
+		gap_of_rohan
+		}
+		position = 3
+		trigger = {
+					metal_works_orc_building = 3
+				}
+		effect = {
+			add_manpower = 3
+			fangorn_area = {
+				add_territorial_core = ROOT
+			}
+			add_country_modifier = {
+				name = "forges_of_isengard"
+				duration = 9125			#25 years
+			}
+		}
+	}
+	burn_fangorn = {
+		icon = isengard_6
+		required_missions = {
+		forges_of_isengard
+		}
+		position = 4
+		provinces_to_highlight = {
+			area = fangorn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			fangorn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_dip_power = 50
+			add_adm_power = 50
+			add_prestige = 5
+		}
+	}
+}
+
+####################
+# Slot 3 - Rohan  #
+####################
+
+V49_fall_of_rohan = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V49
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	army_of_isengard = {
+		icon = isengard_army
+		position = 1
+		trigger = {
+			army_size_percentage = 0.9
+			manpower = 25
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "army_of_isengard"
+				duration = 3650				#10 years
+			}
+			gap_of_rohan_area = {
+				add_territorial_core = ROOT
+			}
+			west_march_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	cross_the_fords_of_isen = {
+		icon = isengard_1
+		required_missions = {
+		army_of_isengard
+		}
+		position = 2
+		provinces_to_highlight = {
+			area = west_march_area
+			area = gap_of_rohan_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			west_march_area = {
+				type = all
+				owned_by = ROOT
+			}
+			1025 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_dip_power = 50
+			add_adm_power = 50
+			add_prestige = 5
+			westfold_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	burning_of_westfold = {
+		icon = isengard_3
+		required_missions = {
+		cross_the_fords_of_isen
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = westfold_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			westfold_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_dip_power = 50
+			add_adm_power = 50
+			add_prestige = 5
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 7300				#20 years
+			}
+		}
+	}
+	siege_of_edoras = {
+		icon = mission_unite_home_region
+		required_missions = {
+		burning_of_westfold
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 114
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			114 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 75
+			add_dip_power = 75
+			add_adm_power = 75
+			add_prestige = 15
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300				#20 years
+			}
+			rohan_region = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	fall_of_the_riddermark = {
+		icon = isengard_5
+		required_missions = {
+		siege_of_edoras
+		}
+		position = 5
+		provinces_to_highlight = {
+			region = rohan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			rohan_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_prestige = 10
+		}
+	}
+	conquer_gondor = {
+		icon = isengard_5
+		required_missions = {
+		fall_of_the_riddermark
+		}
+		position = 6
+		provinces_to_highlight = {
+			region = gondor_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			gondor_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 250
+			add_adm_power = 250
+			add_dip_power = 250
+			add_prestige = 25
+			add_country_modifier = {
+				name = "army_of_isengard"
+				duration = 7300				#20 years
+			}
+		}
+	}
+}
+V49_fall_of_rohan = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = V49
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	fall_of_lothlorien_V49 = {
+		icon = isengard_5
+		required_missions = {
+		fall_of_the_riddermark
+		}
+		position = 6
+		provinces_to_highlight = {
+			area = lothlorien_area
+			area = parth_celebrant_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			lothlorien_area = {
+				type = all
+				owned_by = ROOT
+			}
+			parth_celebrant_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_prestige = 10
+		}
+	}
+	destroy_rivendell_V49 = {
+		icon = isengard_5
+		required_missions = {
+		fall_of_lothlorien_V49
+		}
+		position = 7
+		provinces_to_highlight = {
+			AND = {
+				area = rivendell_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			rivendell_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 5 - The Shire  #
+####################
+V49_scouring_of_the_shire = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = V49
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	spies_of_saruman = {
+		icon = isengard_7
+		required_missions = {
+		}
+		position = 1
+		trigger = {
+			Z16 = {
+                    has_spy_network_from = {
+                        who = ROOT
+                        value = 100
+                    }
+				}
+			}
+		effect = {
+			299 = {
+				add_territorial_core = ROOT
+			}
+			add_country_modifier = {
+				name = "spies_of_saruman"
+				duration = 7300				#20 years
+			}
+		}
+	}
+	scouring_of_the_shire = {
+		icon = shire_burning
+		required_missions = {
+		spies_of_saruman
+		}
+		position = 2
+		provinces_to_highlight = {
+			region = shire_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			shire_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 150
+			add_adm_power = 150
+			add_dip_power = 150
+			add_prestige = 15
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300				#20 years
+			}
+		}
+	}
+}
+

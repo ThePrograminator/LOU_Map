@@ -38,6 +38,13 @@ servant_of_mordor_region_nurn = {
 		}
 		effect = {
 			add_prestige = 5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "serving_the_dark_lord"
+				duration = 9125				#25 years
+			}
 			set_country_flag = servant_of_mordor_first
 		}
 	}
@@ -83,6 +90,13 @@ servant_of_mordor_region_rhovanion = {
 		}
 		effect = {
 			add_prestige = 5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "serving_the_dark_lord"
+				duration = 9125				#25 years
+			}
 			set_country_flag = servant_of_mordor_first
 		}
 	}
@@ -128,6 +142,13 @@ servant_of_mordor_region_mirkwood = {
 		}
 		effect = {
 			add_prestige = 5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "serving_the_dark_lord"
+				duration = 9125				#25 years
+			}
 			set_country_flag = servant_of_mordor_first
 		}
 	}
@@ -167,7 +188,14 @@ servant_of_mordor_region_ithilien = {
 		}
 		effect = {
 			add_prestige = 5
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
 			set_country_flag = servant_of_mordor_first
+			add_country_modifier = {
+				name = "serving_the_dark_lord"
+				duration = 9125				#25 years
+			}
 		}
 	}
 }
@@ -196,7 +224,7 @@ servant_of_mordor_reserves = {
 	has_country_shield = yes
 
 	servant_of_mordor_build_up_reserves = {
-		icon = mission_war_chest
+		icon = orc_army
 		required_missions = {
 		}
 		position = 7
@@ -210,6 +238,7 @@ servant_of_mordor_reserves = {
 			add_adm_power = -750
 			add_dip_power = -750
 			add_mil_power = -750
+			add_manpower = 5
 			set_country_flag = servant_of_mordor_second
 		}
 	}
@@ -239,7 +268,7 @@ servant_of_mordor_tech = {
 	has_country_shield = yes
 
 	servant_of_mordor_build_tech = {
-		icon = mission_build_up_to_force_limit
+		icon = secure_power
 		required_missions = {
 		}
 		position = 7
@@ -250,7 +279,9 @@ servant_of_mordor_tech = {
 			mil_tech = 10
 		}
 		effect = {
-			add_prestige = 5
+			add_prestige = 10
+			add_stability = 1
+			add_mil_power = 50
 			set_country_flag = servant_of_mordor_third
 		}
 	}

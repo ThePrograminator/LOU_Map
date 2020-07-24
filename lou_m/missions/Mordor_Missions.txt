@@ -1,0 +1,951 @@
+####################
+# Slot 2 - The Evil Men  #
+####################
+
+V17_evil_men = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	easterlings_of_rhun = {
+		icon = easterlings
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					calc_true_if = {
+						all_ally = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = rhun_region
+							}
+						}
+						amount = 2
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_manpower = 2
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 3650				#10 years
+			}
+		}
+	}
+	southrons_of_harad = {
+		icon = southrons
+		required_missions = {
+		easterlings_of_rhun
+		}
+		position = 2
+		trigger = {
+			OR = {
+				AND = {
+					calc_true_if = {
+						all_ally = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = harnendor_region
+								region = chelkar_region
+								region = pezarsan_region
+								region = haruzan_region
+								region = harondor_region
+							}
+						}
+						amount = 2
+					}
+				}
+				AND = {
+					calc_true_if = {
+						all_subject_country = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = harnendor_region
+								region = chelkar_region
+								region = pezarsan_region
+								region = haruzan_region
+								region = harondor_region
+							}
+						}
+						amount = 1
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_manpower = 3
+			add_country_modifier = {
+				name = "minions_of_the_dark_lord"
+				duration = 5475				#15 years
+			}
+		}
+	}
+	variags_of_khand = {
+		icon = variags
+		required_missions = {
+		southrons_of_harad
+		}
+		position = 3
+		trigger = {
+			OR = {
+				AND = {
+					calc_true_if = {
+						all_ally = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = khand_region
+							}
+						}
+						amount = 1
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_manpower = 3
+			add_prestige = 5
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 3650				#10 years
+			}
+		}
+	}
+}
+V17_evil_men = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	corsairs_of_umbar = {
+		icon = corsairs
+		required_missions = {
+		easterlings_of_rhun
+		}
+		position = 2
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = X27
+					X27 = {
+						has_opinion = {
+							who = ROOT
+							value = 175
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 25
+			add_manpower = 2
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 3650				#10 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 2 - Build Barad-dûr  #
+####################
+
+mordor_rebuild_barad_dur = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	mordor_rebuild_barad_dur_mission = {
+		icon = servant_of_mordor_finish
+		required_missions = {
+		}
+		position = 4
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = finished_rebuilding_barad_dur_tooltip
+				has_country_flag = rebuilding_barad_dur_finished_flag
+			}
+		}
+
+		effect = {
+			add_prestige = 50
+		}
+	}
+}
+
+
+####################
+# Slot 1 - The Fall of Gondor  #
+####################
+V17_fall_of_gondor = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	army_worthy_of_mordor = {
+		icon = orc_army
+		position = 3
+		trigger = {
+			army_size_percentage = 0.8
+			manpower = 50
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 3650				#10 years
+			}
+			ithilien_area = {
+				add_territorial_core = ROOT
+			}
+			forithilien_area = {
+				add_territorial_core = ROOT
+			}
+			nindalf_area = {
+				add_territorial_core = ROOT
+			}
+			418 = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	strike_gondor = {
+		icon = mordor_2
+		required_missions = {
+		army_worthy_of_mordor
+		}
+		position = 4
+		provinces_to_highlight = {
+			area = ithilien_area
+			area = nindalf_area
+			province_id = 418
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			ithilien_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nindalf_area = {
+				type = all
+				owned_by = ROOT
+			}
+			418 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 75
+			add_prestige = 10
+			emyn_arnen_area = {
+				add_territorial_core = ROOT
+			}
+			osgiliath_area = {
+				add_territorial_core = ROOT
+			}
+			nindalf_area = {
+				add_territorial_core = ROOT
+			}
+			cair_andros_area = {
+				add_territorial_core = ROOT
+			}
+			minas_tirith_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	burn_the_white_city = {
+		icon = white_tree_burning
+		required_missions = {
+		strike_gondor
+		mordor_rebuild_barad_dur_mission
+		}
+		position = 5
+		provinces_to_highlight = {
+			area = minas_tirith_area
+			area = cair_andros_area
+			area = osgiliath_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+			419 = {
+				owned_by = ROOT
+			}
+			7 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 250
+			add_prestige = 10
+			gondor_region = {
+				add_territorial_core = ROOT
+			}
+			country_event = { 
+				id = flavor_mordor.33
+			}
+		}
+	}
+	conquer_gondor = {
+		icon = mission_unite_home_region
+		required_missions = {
+		burn_the_white_city
+		}
+		position = 6
+		provinces_to_highlight = {
+			region = gondor_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			gondor_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 250
+			add_adm_power = 250
+			add_dip_power = 250
+			add_prestige = 10
+		}
+	}
+}
+
+V17_fall_of_gondor = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	conquer_rohan = {
+		icon = mission_unite_home_region
+		required_missions = {
+		burn_the_white_city
+		}
+		position = 6
+		provinces_to_highlight = {
+			region = rohan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			rohan_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 150
+			add_adm_power = 150
+			add_dip_power = 150
+			add_prestige = 10
+		}
+	}
+}
+
+####################
+# Slot 3 - Nûrn  #
+####################
+
+V17_expand_into_nurn = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	retake_old_orc_lands = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 1
+		provinces_to_highlight = {
+			AND = {
+				province_id = 542
+				province_id = 1003
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			542 = {
+				owned_by = ROOT
+			}
+			1003 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			thaurband_area = {
+				add_territorial_core = ROOT
+			}
+			maegond_vale_area = {
+				add_territorial_core = ROOT
+			}
+			cirith_nurn_area = {
+				add_territorial_core = ROOT
+			}
+			lithlad_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	orcs_of_mordor = {
+		icon = orc_army
+		required_missions = {
+		retake_old_orc_lands
+		}
+		position = 2
+		provinces_to_highlight = {
+			AND = {
+				area = cirith_nurn_area
+				area = lithlad_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			cirith_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lithlad_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_adm_power = 50
+			add_country_modifier = {
+				name = "serving_the_dark_lord"
+				duration = 3650				#10 years
+			}
+		}
+	}
+	fortify_orc_strongholds = {
+		icon = orc_building
+		required_missions = {
+		orcs_of_mordor	
+		}
+		position = 3
+		trigger = {
+			calc_true_if = {
+				ROOT = {
+					any_owned_province = {
+						OR = {
+							area = maegond_vale_area
+							area = thaurband_area
+							area = cirith_nurn_area
+						}
+						
+						has_influencing_fort = yes
+					}
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			add_manpower = 1
+			
+			add_country_modifier = {
+				name = "orc_defenses"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	the_land_of_shadows = {
+		icon = mordor_land
+		required_missions = {
+			fortify_orc_strongholds
+		}
+		position = 4
+		provinces_to_highlight = {
+			region = mordor_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			mordor_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_adm_power = 100
+			add_mil_power = 100
+			add_stability = 1
+			add_country_modifier = {
+				name = "the_land_of_shadows"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 3 - Dol Guldur  #
+####################
+
+V17_necromancer_of_dol_guldur = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	control_dol_guldur = {
+		icon = dol_guldur
+		required_missions = {
+		the_land_of_shadows
+		mordor_rebuild_barad_dur_mission
+		}
+		position = 5
+		provinces_to_highlight = {
+			AND = {
+				area = dol_guldur_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			dol_guldur_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_stability = 1
+			add_prestige = 5
+			ceber_fanuin_area = {
+				add_territorial_core = ROOT
+			}
+			narrows_of_mirkwood_area = {
+				add_territorial_core = ROOT
+			}
+			angalaladh_area = {
+				add_territorial_core = ROOT
+			}
+			emyn_nu_fuin_area = {
+				add_territorial_core = ROOT
+			}
+			men-i-naugrim_area = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	spiders_of_mirkwood = {
+		icon = spiders_of_mirkwood
+		required_missions = {
+		control_dol_guldur
+		}
+		position = 6
+		provinces_to_highlight = {
+			AND = {
+				area = ceber_fanuin_area
+				area = narrows_of_mirkwood_area
+				area = angalaladh_area
+				area = emyn_nu_fuin_area
+				area = men-i-naugrim_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			ceber_fanuin_area = {
+				type = all
+				owned_by = ROOT
+			}
+			narrows_of_mirkwood_area = {
+				type = all
+				owned_by = ROOT
+			}
+			angalaladh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			emyn_nu_fuin_area = {
+				type = all
+				owned_by = ROOT
+			}
+			men-i-naugrim_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 25
+			add_prestige = 5
+			mirkwood_region = {
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	destroy_the_woodland_realm = {
+		icon = secure_power
+		required_missions = {
+		spiders_of_mirkwood
+		}
+		position = 7
+		provinces_to_highlight = {
+			AND = {
+				area = annon_edhel_area
+				area = caras_amarth_area
+				area = thranduils_realm_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			annon_edhel_area = {
+				type = all
+				owned_by = ROOT
+			}
+			caras_amarth_area = {
+				type = all
+				owned_by = ROOT
+			}
+			thranduils_realm_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_prestige = 5
+		}
+	}
+}
+
+V17_necromancer_of_dol_guldur = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	destroy_lothlorien = {
+		icon = secure_power
+		required_missions = {
+		spiders_of_mirkwood
+		}
+		position = 7
+		provinces_to_highlight = {
+			AND = {
+				area = lothlorien_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			lothlorien_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 15
+			add_country_modifier = {
+				name = "fall_of_lothlorien"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	destroy_rivendell = {
+		icon = secure_power
+		required_missions = {
+		destroy_lothlorien
+		}
+		position = 8
+		provinces_to_highlight = {
+			AND = {
+				area = rivendell_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			rivendell_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	destroy_the_shire = {
+		icon = shire_burning
+		required_missions = {
+		destroy_rivendell
+		}
+		position = 9
+		provinces_to_highlight = {
+			AND = {
+				area = the_shire_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			the_shire_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+			add_splendor = 5
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	destroy_grey_havens = {
+		icon = secure_power
+		required_missions = {
+		destroy_the_shire
+		}
+		position = 10
+		provinces_to_highlight = {
+			AND = {
+				area = lindon_area
+				area = forlindon_area
+				area = harlindon_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			lindon_area = {
+				type = all
+				owned_by = ROOT
+			}
+			forlindon_area = {
+				type = all
+				owned_by = ROOT
+			}
+			harlindon_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_treasury = 250
+			add_splendor = 3
+			add_country_modifier = {
+				name = "sauron_the_great"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 5 Sauron's Road, Minas Morgul, Erebor  #
+####################
+
+V17_control_minas_morgul = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	control_minas_morgul = {
+		icon = minas_morgul
+		required_missions = {
+		}
+		position = 1
+		provinces_to_highlight = {
+			area = minas_ithil_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			minas_ithil_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_prestige = 5
+			add_manpower = 5
+		}
+	}
+}
+
+mordor_build_saurons_road = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	mordor_build_saurons_road_mission = {
+		icon = orc_industry
+		required_missions = {
+		}
+		position = 3
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = finished_building_saurons_road_tooltip
+				has_country_flag = building_saurons_road_finished_flag
+			}
+		}
+
+		effect = {
+			add_prestige = 20
+			add_adm_power = 25
+		}
+	}
+}
+
+V17_conquer_erebor = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = V17
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	conquer_erebor = {
+		icon = conquer_erebor
+		required_missions = {
+		the_land_of_shadows
+		}
+		position = 5
+		provinces_to_highlight = {
+			area = the_lonely_mountain_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			the_lonely_mountain_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+			add_prestige = 10
+			add_treasury = 500
+		}
+	}
+}

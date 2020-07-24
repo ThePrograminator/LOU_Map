@@ -1,0 +1,194 @@
+# START MISSION#
+Z06_reforge_arnor = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z06
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	regain_strength = {
+		icon = mission_assemble_an_army
+		required_missions = { 
+		}
+		position = 1
+		trigger = {
+					army_camp_building = 5
+				}
+		effect = {
+			add_patriarch_authority = 0.1
+		}
+	}
+}
+
+####################
+# Slot 1 - Rhudaur  #
+####################
+Z06_reforge_arnor = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z06
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	reconnect_lands = {
+		icon = mission_conquer_50_development
+		required_missions = {
+		regain_strength
+		}
+		position = 2
+		trigger = {
+					1442 = {
+				owned_by = ROOT
+				}
+			}
+		effect = {
+			add_patriarch_authority = 0.05
+			add_prestige = 5
+			227 = {
+				add_permanent_claim = ROOT
+			}
+			383 = {
+				add_permanent_claim = ROOT
+			}
+			1830 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	foothold_of_thorenhad = {
+		icon = mission_conquer_50_development
+		required_missions = {
+		reconnect_lands
+		}
+		position = 3
+		trigger = {
+					1830 = {
+				owned_by = ROOT
+				}
+			}
+		effect = {
+			add_prestige = 5
+			add_manpower = 3
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 7300				#20 years
+			}
+			pinnath_tereg_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	scouring_of_trollshaws = {
+		icon = mission_conquer_50_development
+		required_missions = {
+		foothold_of_thorenhad
+		}
+		position = 4
+		trigger = {
+				385 = {
+				owned_by = ROOT
+				}
+				292 = {
+				owned_by = ROOT
+				}
+				384 = {
+				owned_by = ROOT
+				}
+				293 = {
+				owned_by = ROOT
+				}
+				3446 = {
+				owned_by = ROOT
+				}
+			}
+		effect = {
+			add_treasury = 100
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 7300				#20 years
+			}
+			en_egladil_area = {
+				add_permanent_claim = ROOT
+			}
+			oiolad_area = {
+				add_permanent_claim = ROOT
+			}
+			nothva_rhaglaw_area = {
+				add_permanent_claim = ROOT
+			}
+			magillos_area = {
+				add_permanent_claim = ROOT
+			}
+			cameth_brin_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+####################
+# Slot 2 - Arthedain  #
+####################
+
+
+
+####################
+# Slot 3 - Cardolan  #
+####################
+
+
+
+####################
+# Slot 5 - Alliances  #
+####################
+Z06_alliances = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z06
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	protectors_of_the_north = {
+		icon = dunedain_1
+		position = 1
+		trigger = {
+		OR = {
+				AND = {
+					Y26 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					Z16 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { 
+				id = lotr_gandalf.5
+			}
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 7300				#20 years
+			}
+		}
+	}
+}

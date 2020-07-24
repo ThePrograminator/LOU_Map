@@ -12,7 +12,7 @@ country_event = {
 	id = lotr_province_event.1
 	title = lotr_province_event.1.t
 	desc = lotr_province_event.1.d
-	picture = COMET_SIGHTED_eventPicture
+	picture = mount_doom_eruption
 
 	#is_triggered_only = yes
 	
@@ -29,12 +29,13 @@ country_event = {
 		any_province = {
 			NOT = { 
 				has_province_modifier = province_ruined_by_mount_doom
+				province_id = 639
 			}
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 150
 	}
 	
 	#Yes

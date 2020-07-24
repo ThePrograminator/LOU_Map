@@ -34,8 +34,90 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "orc_raid"
-		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/orc_raid.dds"
+		name = "mount_doom_eruption"
+		texturefile = "gfx/event_pictures/event_pictures_HISTORY_2000-3019/MOUNT_DOOM_ERUPTION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	#-------------------------------------------------------------------------------------
+	# Races Event Pictures
+	#-------------------------------------------------------------------------------------
+	
+	spriteType = {
+		name = "hobbit_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/HOBBIT_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "elves_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/ELVES_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "dwarves_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/DWARVES_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ents_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/ENTS_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "eagles_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/EAGLES_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "giants_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/GIANTS_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "spiders_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/SPIDERS_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "trolls_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/TROLLS_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "orcs_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/ORC_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "goblin_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/GOBLIN_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "uruk-hai_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/URUK-HAI_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "dragon_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/DRAGON_event.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "wights_race"
+		texturefile = "gfx/event_pictures/event_pictures_RACES/WIGHTS_event.dds"
 		allwaystransparent = yes
 	}
 	
@@ -605,5 +687,111 @@ spriteTypes = {
 	spriteType = {
 		name = "FELLOWSHIP_eventPicture"
 		texturefile = "gfx/event_pictures/event_pictures_FELLOWSHIP_EVENTS/fellowship.dds"
+	}
+	
+	#-------------------------------------------------------------------------------------
+	# Dead King or Heir Event Pictures
+	#-------------------------------------------------------------------------------------
+	
+	spriteType = {
+		name = "DEAD_king_dunedain"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/DEAD_king_dunedain.dds"
+	}
+	
+	#-------------------------------------------------------------------------------------
+	# Generic Event Pictures
+	#-------------------------------------------------------------------------------------
+	
+	spriteType = {
+		name = "generic"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic.dds"
+	}
+	
+	spriteType = {
+		name = "generic2"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic2.dds"
+	}
+	
+	spriteType = {
+		name = "generic3"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic3.dds"
+	}
+	
+	spriteType = {
+		name = "generic4"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic4.dds"
+	}
+	
+	spriteType = {
+		name = "generic5"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic5.dds"
+	}
+	
+	spriteType = {
+		name = "generic6"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic6.dds"
+	}
+	
+	spriteType = {
+		name = "generic7"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/generic7.dds"
+	}
+	
+	spriteType = {
+		name = "orc_overseer"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/orc_overseer.dds"
+	}
+	
+	spriteType = {
+		name = "orc_pit"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/orc_pit.dds"
+	}
+	
+	spriteType = {
+		name = "ithilien_rangers"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/ithilien_rangers.dds"
+	}
+	
+	spriteType = {
+		name = "gandalf_events"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/gandalf_events.dds"
+	}
+	
+	spriteType = {
+		name = "gandalf_events2"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/gandalf_events2.dds"
+	}
+	
+	spriteType = {
+		name = "gandalf_events3"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/gandalf_events3.dds"
+	}
+	
+	spriteType = {
+		name = "gandalf_events4"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/gandalf_events4.dds"
+	}
+	
+	spriteType = {
+		name = "corsair_raid"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/corsair_raid.dds"
+	}
+	
+	spriteType = {
+		name = "orc_raid"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/orc_raid.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "orc_raid_ice"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/orc_raid_ice.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "agandaur"
+		texturefile = "gfx/event_pictures/event_pictures_GENERIC_AND_RANDOM/agandaur.dds"
+		allwaystransparent = yes
 	}
 }

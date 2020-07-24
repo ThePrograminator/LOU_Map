@@ -1,0 +1,108 @@
+####################
+# Slot 1 - Securing the West  #
+####################
+conquer_nurn_region_one = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	conquer_shadow_mountains = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 1
+
+		provinces_to_highlight = {
+			area = cirith_nurn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			cirith_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+}
+
+conquer_nurn_region_two = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	conquer_shadow_mountains = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 1
+
+		provinces_to_highlight = {
+			area = cirith_nargil_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			cirith_nargil_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	conquer_road_to_harad = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_shadow_mountains
+		}
+		position = 2
+
+		provinces_to_highlight = {
+			area = cirith_nargil_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			cirith_nargil_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+}

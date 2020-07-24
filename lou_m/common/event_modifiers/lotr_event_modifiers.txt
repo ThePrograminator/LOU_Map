@@ -374,11 +374,11 @@ troll_buff = {
 }
 
 uruk_hai_buff = {
-	discipline = 0.1
-	land_morale = 0.15
+	discipline = 0.08
+	land_morale = 0.10
 	production_efficiency = 0.15
 	unjustified_demands = -0.25
-	army_tradition = 1
+	army_tradition = 0.8
 	tolerance_own = 1
 	tolerance_heathen = -2
 	tolerance_heretic = -2
@@ -1033,6 +1033,12 @@ grant_export_rights_smithies_guild = {
 }
 
 #Gondor Missions
+osgiliath_rebuilt = {
+	prestige = 1
+	legitimacy = 0.8
+	land_morale = 0.10
+}
+
 lond_angren_trade_X01_mission = {
 	trade_efficiency = 0.15
 	global_trade_power = 0.15
@@ -1088,4 +1094,199 @@ conquer_cardolan_X01_mission = {
 conquer_arthedain_X01_mission = {
 	prestige = 1
 	legitimacy = 0.5
+}
+romendacil = {
+	prestige = 1
+	legitimacy = 1
+	land_morale = 0.10
+	discipline = 0.10
+}
+hyarmendacil = {
+	prestige = 1
+	legitimacy = 1
+	land_morale = 0.10
+	war_exhaustion = -0.25
+	harsh_treatment_cost = -0.33
+}
+umbardacil = {
+	prestige = 1
+	legitimacy = 1
+	naval_morale = 0.1
+	navy_tradition = 1
+	global_sailors_modifier = 0.20
+}
+#Rohan Missions
+restore_kingdom_of_vidugavia = {
+	prestige = 1.5
+	legitimacy = 1
+	harsh_treatment_cost = -0.33
+	diplomatic_reputation = 1
+}
+oath_of_eorl = {
+	land_morale = 0.10
+	discipline = 0.05
+	prestige = 0.20
+	recover_army_morale_speed = 0.05
+	cavalry_power = 0.15
+	reinforce_speed = 0.1
+	manpower_recovery_speed = 0.2
+}
+
+#Servants of the Dark Lord Missions
+serving_the_dark_lord = {
+	ae_impact = -0.10
+	land_morale = 0.10
+	discipline = 0.05
+	manpower_recovery_speed = 0.1
+	global_manpower_modifier = 0.20
+}
+
+# Mordor Missions 
+minions_of_the_dark_lord = {
+	vassal_forcelimit_bonus = 0.2
+	improve_relation_modifier = 0.1
+	fabricate_claims_cost= -0.1
+	diplomatic_upkeep = 1
+	diplomats = 1
+	unjustified_demands = -0.2
+}
+orc_defenses = {
+	army_tradition_from_battle = 0.05
+	discipline = 0.05
+	defensiveness = 0.10
+	garrison_size = 0.05
+	rival_border_fort_maintenance = -0.1
+}
+the_land_of_shadows = {
+	army_tradition = 0.2
+	infantry_cost = -0.1
+	land_attrition = -0.1
+	global_manpower_modifier = 0.05
+	land_forcelimit = 3
+	war_exhaustion_cost = -0.1
+	vassal_income = 0.1
+	production_efficiency = 0.05
+	state_maintenance_modifier = -0.25
+	core_creation = -0.1
+	culture_conversion_cost = -0.20
+	global_missionary_strength = 0.05
+	missionary_maintenance_cost = -0.1
+}
+fall_of_lothlorien = {
+	ae_impact = -0.20
+	army_tradition = 0.2
+	discipline = 0.1
+	land_morale = 0.15
+	core_creation = -0.1
+	culture_conversion_cost = -0.20
+	global_missionary_strength = 0.05
+	missionary_maintenance_cost = -0.1
+}
+sauron_the_great = {
+	ae_impact = -0.50
+	army_tradition = 0.5
+	discipline = 0.15
+	land_morale = 0.25
+	global_manpower_modifier = 0.20
+	war_exhaustion_cost = -0.15
+	core_creation = -0.25
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.15
+	missionary_maintenance_cost = -0.15
+	unjustified_demands = -0.50
+}
+
+#Isengard Missions
+
+riches_of_methedras = {
+	infantry_cost = -0.1
+	fort_maintenance_modifier = -0.05
+	production_efficiency = 0.05
+	build_cost = -0.1
+}
+forges_of_isengard = {
+	siege_ability = 0.1
+	reinforce_speed = 0.1
+	manpower_recovery_speed = 0.1
+	global_regiment_cost = -0.1
+	land_forcelimit_modifier = 0.1
+	production_efficiency = 0.10
+	global_tax_modifier = 0.05
+}
+army_of_isengard = {
+	siege_ability = 0.1
+	army_tradition_decay = -0.1
+	army_tradition_from_battle = 0.15
+	artillery_bonus_vs_fort = 1
+	discipline = 0.05
+	land_morale = 0.05
+	global_manpower = 5
+	land_forcelimit = 5
+}
+spies_of_saruman = {
+	envoy_travel_time = -0.2
+	fabricate_claims_cost = -0.2
+	advisor_pool = 1
+	global_spy_defence = 0.15
+	spy_offence = 0.15
+}
+
+#Drúwaith Iaur Missions
+
+conquer_old_pukel_land_X15_mission = {
+	ae_impact = -0.15
+}
+
+conquer_lost_forests_of_the_druedain_X15_mission = {
+	prestige = 1
+}
+the_great_forest_X15_mission = {
+	prestige = 1
+	ae_impact = -0.20
+	legitimacy = 1
+	rival_border_fort_maintenance = -0.2
+}
+fighting_gondor_X15_mission = {
+	core_creation = -0.10
+	prestige = 1
+}
+
+#Sagath Missions
+
+easterling_army = {
+	cavalry_cost = -0.1
+	cavalry_shock = 1
+	army_tradition = 0.05
+	cavalry_flanking = 0.03
+	discipline = 0.02
+	land_morale = 0.05
+	defensiveness = 0.05
+	manpower_recovery_speed = 0.05
+	global_manpower_modifier = 0.05
+}
+
+### GANDALF EVENTS ###
+
+dreams_of_reclaiming_erebor = {
+	legitimacy = 0.1
+	ae_impact = -0.05
+	land_morale = 0.05
+	global_supply_limit_modifier = 0.10
+	land_maintenance_modifier = -0.10
+}
+
+gandalf_aids_the_shire = {
+	diplomatic_reputation = 1
+	prestige = 0.5
+	land_maintenance_modifier = 0.1
+	fort_maintenance_modifier = 0.1
+}
+
+gandalf_and_dunedain_helps_the_shire = {
+	improve_relation_modifier = 0.2
+	vassal_income = 0.1
+	production_efficiency = 0.05
+	state_maintenance_modifier = 0.05
+	inflation_reduction = -0.1
+	advisor_cost = -0.10
 }

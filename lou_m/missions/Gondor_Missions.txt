@@ -1,108 +1,8 @@
 ####################
-# Slot 1 - Securing the West  #
+# Slot 2 - Rebuild Osgiliath  #
 ####################
-X01_secure_the_west = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		tag = X01
-		NOT = {
-			map_setup = map_setup_random
-		}
-	}
-	has_country_shield = yes
-	deal_with_eredrim = {
-		icon = mission_alliances
-		required_missions = {
-		}
-		position = 1
-		trigger = {
-			OR = {
-				AND = {
-					alliance_with = X13
-					X13 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-				AND = {
-					X13 = {
-						is_subject_of = ROOT
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			add_dip_power = 50
-			add_country_modifier = {
-				name = "obedient_subjects"
-				duration = 9125				#25 years
-			}
-		}
-	}
-	deal_with_old_pukel_land = {
-		icon = mission_unite_home_region
-		required_missions = {
-			deal_with_eredrim
-		}
-		position = 1
-		provinces_to_highlight = {
-			region = old_pukel_land_region
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		trigger = {
-			old_pukel_land_region = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			add_dip_power = 50
-			add_adm_power = 50
-			add_mil_power = 50
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 9125				#25 years
-			}
-		}
-	}
-	deal_with_lond_angren_trade = {
-		icon = mission_market_place_with_asian_traders
-		required_missions = {
-			deal_with_old_pukel_land
-		}
-		position = 2
-		trigger = {
-			229 = {
-				trade_share = {
-					country = ROOT
-					share = 75
-				}
-			}
-		}
-		effect = {
-			add_dip_power = 150
-			add_country_modifier = {
-				name = "lond_angren_trade_X01_mission"
-				duration = 9125				#25 years
-			}
-		}
-	}
-}
 
-####################
-# Slot 2 - Securing the South  #
-####################
-X01_secure_the_south = {
+X01_rebuild_osgiliath = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -113,8 +13,55 @@ X01_secure_the_south = {
 		}
 	}
 	has_country_shield = yes
+	rebuild_osgiliath = {
+		icon = osgiliath
+		position = 1
+		provinces_to_highlight = {
+			AND = {
+				province_id = 419
+				province_id = 418
+			}
+		}
+		trigger = {
+			418 ={ 
+				NOT ={
+				has_province_modifier = ruins_debuff
+				}
+				development = 25
+			}
+			419 ={ 
+				NOT ={
+				has_province_modifier = ruins_debuff
+				}
+				development = 25
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_country_modifier = {
+				name = "osgiliath_rebuilt"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+####################
+# Slot 1 - Securing the South  #
+####################
+X01_secure_the_south = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X01
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
 	harondor_conquest = {
-		icon = mission_arabian_fort
+		icon = harondor_land
 		required_missions = {
 		}
 		position = 1
@@ -171,6 +118,9 @@ X01_secure_the_south = {
 			nen_umbar_region = {
 				add_permanent_claim = ROOT
 			}
+			harnendor_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	umbar_conquest = {
@@ -178,7 +128,7 @@ X01_secure_the_south = {
 		required_missions = {
 			gulf_of_mirlond_conquest
 		}
-		position = 2
+		position = 3
 		provinces_to_highlight = {
 			region = nen_umbar_region
 			NOT = {
@@ -197,6 +147,112 @@ X01_secure_the_south = {
 			add_mil_power = 150
 			add_country_modifier = {
 				name = "conquer_umbar_X01_mission"
+				duration = 3650			#10 years
+			}
+			add_country_modifier = {
+				name = "umbardacil"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	reclaim_numenorean_colonies = {
+		icon = mission_cannons_firing
+		required_missions = {
+			umbar_conquest
+		}
+		position = 4
+		provinces_to_highlight = {
+			region = thani_hazad_region
+			area = mardruak_area
+			area = dusalan_area
+			area = bellazen_area
+			area = urid_an-abar_area
+			area = niluloni_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			thani_hazad_region = {
+				type = all
+				owned_by = ROOT
+			}
+			mardruak_area = {
+				type = all
+				owned_by = ROOT
+			}
+			dusalan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			bellazen_area = {
+				type = all
+				owned_by = ROOT
+			}
+			urid_an-abar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			niluloni_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 250
+			add_dip_power = 250
+			add_mil_power = 250
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+X01_secure_the_south = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X01
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	hyarmendacil_mission = {
+		icon = mission_arabian_fort
+		required_missions = {
+			gulf_of_mirlond_conquest
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = harnendor_area
+			area = arat_agmir_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			harnendor_area = {
+				type = all
+				owned_by = ROOT
+			}
+			arat_agmir_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 3650				#10 years
+			}
+			add_country_modifier = {
+				name = "hyarmendacil"
 				duration = 9125				#25 years
 			}
 		}
@@ -218,7 +274,7 @@ X01_secure_the_north = {
 	}
 	has_country_shield = yes
 	southern_rhovanion_conquest = {
-		icon = mission_conquer_50_development
+		icon = mission_cannons_firing
 		required_missions = {
 		}
 		position = 1
@@ -267,7 +323,7 @@ X01_north_secure_allies = {
 	}
 	has_country_shield = yes
 	secure_allies = {
-		icon = mission_alliances
+		icon = gondor_relations
 		required_missions = {
 			southern_rhovanion_conquest
 		}
@@ -326,7 +382,7 @@ X01_north_border_to_rhun = {
 	}
 	has_country_shield = yes
 	border_to_rhun = {
-		icon = mission_great_wall
+		icon = gondor_7
 		required_missions = {
 			secure_allies
 		}
@@ -359,13 +415,17 @@ X01_north_border_to_rhun = {
 			add_mil_power = 100
 			add_country_modifier = {
 				name = "border_to_rhun_X01_mission"
+				duration = 3650				#10 years
+			}
+			add_country_modifier = {
+				name = "romendacil"
 				duration = 9125				#25 years
 			}
 		}
 	}
 }
 
-X01_north_dismantel_rhun = {
+X01_north_dismantle_rhun = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -376,7 +436,7 @@ X01_north_dismantel_rhun = {
 		}
 	}
 	has_country_shield = yes
-	dismantel_rhun_empire = {
+	dismantle_rhun_empire = {
 		icon = mission_empire
 		required_missions = {
 			border_to_rhun
@@ -402,7 +462,7 @@ X01_north_dismantel_rhun = {
 }
 
 X01_north_securing_against_rhun = {
-	slot = 2
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -413,7 +473,7 @@ X01_north_securing_against_rhun = {
 	}
 	has_country_shield = yes
 	securing_against_rhun = {
-		icon = mission_great_wall
+		icon = easterling_battle_gondor
 		required_missions = {
 			border_to_rhun
 		}
@@ -445,6 +505,107 @@ X01_north_securing_against_rhun = {
 }
 
 ####################
+# Slot 5 - Securing the West  #
+####################
+X01_secure_the_west = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = X01
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	deal_with_eredrim = {
+		icon = gondor_relations
+		required_missions = {
+		}
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = X13
+					X13 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+				AND = {
+					X13 = {
+						is_subject_of = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "obedient_subjects"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	deal_with_old_pukel_land = {
+		icon = pukel_land
+		required_missions = {
+			deal_with_eredrim
+		}
+		position = 2
+		provinces_to_highlight = {
+			region = old_pukel_land_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			old_pukel_land_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_adm_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	deal_with_lond_angren_trade = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = {
+			deal_with_old_pukel_land
+		}
+		position = 3
+		trigger = {
+			229 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 150
+			add_country_modifier = {
+				name = "lond_angren_trade_X01_mission"
+				duration = 9125				#25 years
+			}
+		}
+	}
+}
+
+####################
 # Slot 1 - Mordor  #
 ####################
 X01_defeat_mordor_minas_ithil = {
@@ -459,10 +620,10 @@ X01_defeat_mordor_minas_ithil = {
 	}
 	has_country_shield = yes
 	reconquer_minas_ithil = {
-		icon = mission_conquer_50_development
+		icon = minas_morgul
 		required_missions = {
 		}
-		position = 4
+		position = 5
 		provinces_to_highlight = {
 			area = minas_ithil_area
 			NOT = {
@@ -503,7 +664,7 @@ X01_defeat_mordor_mordor = {
 	}
 	has_country_shield = yes
 	conquer_mordor = {
-		icon = mission_unite_home_region
+		icon = mordor_land
 		required_missions = {
 			reconquer_minas_ithil
 		}
@@ -545,11 +706,11 @@ X01_defeat_mordor_ally_nurn = {
 	}
 	has_country_shield = yes
 	ally_nurn = {
-		icon = mission_alliances
+		icon = gondor_relations
 		required_missions = {
 			reconquer_minas_ithil
 		}
-		position = 5
+		position = 6
 		trigger = {
 			OR = {
 				AND = {
@@ -583,10 +744,10 @@ X01_defeat_mordor_ally_nurn = {
 }
 
 ####################
-# Slot 2 - Arnor  #
+# Slot 3 - Arnor  #
 ####################
 X01_regain_arnor_start = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -600,7 +761,7 @@ X01_regain_arnor_start = {
 		icon = mission_invade_island
 		required_missions = {
 		}
-		position = 6
+		position = 5
 		provinces_to_highlight = {
 			area = saralainn_area
 			NOT = {
@@ -630,7 +791,7 @@ X01_regain_arnor_start = {
 }
 
 X01_regain_arnor_cardolan = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -641,11 +802,11 @@ X01_regain_arnor_cardolan = {
 	}
 	has_country_shield = yes
 	conquer_cardolan = {
-		icon = mission_unite_home_region
+		icon = gondor_conquer_arnor
 		required_missions = {
 			gain_foothold_in_cardolan
 		}
-		position = 7
+		position = 6
 		provinces_to_highlight = {
 			region = cardolan_region
 			NOT = {
@@ -677,7 +838,7 @@ X01_regain_arnor_cardolan = {
 }
 
 X01_regain_arnor_shire = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -688,11 +849,11 @@ X01_regain_arnor_shire = {
 	}
 	has_country_shield = yes
 	deal_with_shire = {
-		icon = mission_alliances
+		icon = gondor_relations
 		required_missions = {
 			conquer_cardolan
 		}
-		position = 8
+		position = 7
 		trigger = {
 			OR = {
 				AND = {
@@ -726,7 +887,7 @@ X01_regain_arnor_shire = {
 }
 
 X01_regain_arnor_arthedain = {
-	slot = 1
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -737,11 +898,11 @@ X01_regain_arnor_arthedain = {
 	}
 	has_country_shield = yes
 	conquer_arthedain = {
-		icon = mission_unite_home_region
+		icon = gondor_conquer_arnor
 		required_missions = {
 			conquer_cardolan
 		}
-		position = 8
+		position = 7
 		provinces_to_highlight = {
 			region = arthedain_region
 			NOT = {
@@ -767,7 +928,7 @@ X01_regain_arnor_arthedain = {
 }
 
 X01_regain_arnor_rhudaur = {
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -778,11 +939,11 @@ X01_regain_arnor_rhudaur = {
 	}
 	has_country_shield = yes
 	conquer_rhudaur = {
-		icon = mission_unite_home_region
+		icon = gondor_conquer_arnor
 		required_missions = {
 			conquer_cardolan
 		}
-		position = 8
+		position = 7
 		provinces_to_highlight = {
 			region = rhudaur_region
 			NOT = {

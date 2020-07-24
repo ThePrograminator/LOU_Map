@@ -117,4 +117,15 @@ spriteTypes = {
 		noOfFrames = 2
 		transparencecheck = yes
 	}
+	
+	#----------------------------------------------
+    # Country Ideas
+    #----------------------------------------------
+	spriteType = {
+		name = "ithilien_ranger"
+		texturefile = "gfx/interface/ideas_EU4/ithilien_ranger.dds"
+		loadType = "INGAME"
+		
+		allwaystransparent = yes
+	}
 }
