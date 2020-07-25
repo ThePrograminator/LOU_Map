@@ -15,7 +15,7 @@ conquer_nurn_region_one = {
 
 	has_country_shield = yes
 
-	conquer_shadow_mountains = {
+	build_cities_nurn = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
@@ -30,6 +30,109 @@ conquer_nurn_region_one = {
 
 		trigger = {
 			cirith_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	build_manufactories_nurn = {
+		icon = mission_unite_home_region
+		required_missions = {
+			build_cities_nurn
+		}
+		position = 2
+
+		provinces_to_highlight = {
+			area = cirith_nurn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			cirith_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	conquer_shadow_mountains = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 4
+
+		provinces_to_highlight = {
+			area = cirith_nurn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			cirith_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	drive_out_orcs = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_shadow_mountains
+		}
+		position = 5
+
+		provinces_to_highlight = {
+			region = mordor_region
+			culture = culture_orkish
+		}
+
+		trigger = {
+			all_province = { 
+				region = mordor_region
+				NOT = {
+					culture = culture_orkish
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	secure_the_passes = {
+		icon = mission_unite_home_region
+		required_missions = {
+			drive_out_orcs
+		}
+		position = 6
+
+		provinces_to_highlight = {
+			area = lithlad_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			lithlad_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -55,11 +158,11 @@ conquer_nurn_region_two = {
 
 	has_country_shield = yes
 
-	conquer_shadow_mountains = {
+	conquer_road_to_harad = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
-		position = 1
+		position = 4
 
 		provinces_to_highlight = {
 			area = cirith_nargil_area
@@ -79,28 +182,240 @@ conquer_nurn_region_two = {
 			add_prestige = 25
 		}
 	}
+}
 
-	conquer_road_to_harad = {
+conquer_nurn_region_three = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	ally_nurad = {
 		icon = mission_unite_home_region
 		required_missions = {
-			conquer_shadow_mountains
 		}
-		position = 2
+		position = 1
+
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = X85
+					X85 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+				AND = {
+					X85 = {
+						is_subject_of = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	conquer_lithlad = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 4
 
 		provinces_to_highlight = {
-			area = cirith_nargil_area
+			area = lithlad_area
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 
 		trigger = {
-			cirith_nargil_area = {
+			lithlad_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
 
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	secure_eastern_entrance = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 5
+
+		provinces_to_highlight = {
+			area = lithlad_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			lithlad_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+}
+
+conquer_nurn_region_four = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	conquer_sturlutsa_nurn = {
+		icon = mission_unite_home_region
+		required_missions = {
+		}
+		position = 4
+
+		provinces_to_highlight = {
+			area = sturlurtsa_nurn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			sturlurtsa_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	conquer_northern_khand = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_lithlad
+			conquer_sturlutsa_nurn
+		}
+		position = 5
+
+		provinces_to_highlight = {
+			area = neburkha_area
+			area = gap_of_khand_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			neburkha_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gap_of_khand_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	conquer_khand = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_northern_khand
+		}
+		position = 6
+
+		provinces_to_highlight = {
+			region = khand_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			khand_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+}
+
+conquer_nurn_region_five = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	drive_variags_out = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_sturlutsa_nurn
+		}
+		position = 5
+	
+		provinces_to_highlight = {
+			region = mordor_region
+			culture = culture_variags
+		}
+	
+		trigger = {
+			all_province = { 
+				region = mordor_region
+				NOT = {
+					culture = culture_variags
+				}
+			}
+		}
+	
 		effect = {
 			add_prestige = 25
 		}
