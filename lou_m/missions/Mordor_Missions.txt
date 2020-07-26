@@ -14,7 +14,7 @@ V17_evil_men = {
 	}
 	has_country_shield = yes
 	easterlings_of_rhun = {
-		icon = easterlings
+		icon = mission_easterlings
 		position = 1
 		trigger = {
 			OR = {
@@ -44,7 +44,7 @@ V17_evil_men = {
 		}
 	}
 	southrons_of_harad = {
-		icon = southrons
+		icon = mission_southrons
 		required_missions = {
 		easterlings_of_rhun
 		}
@@ -99,7 +99,7 @@ V17_evil_men = {
 		}
 	}
 	variags_of_khand = {
-		icon = variags
+		icon = mission_variags
 		required_missions = {
 		southrons_of_harad
 		}
@@ -145,7 +145,7 @@ V17_evil_men = {
 	}
 	has_country_shield = yes
 	corsairs_of_umbar = {
-		icon = corsairs
+		icon = mission_corsairs
 		required_missions = {
 		easterlings_of_rhun
 		}
@@ -193,7 +193,7 @@ mordor_rebuild_barad_dur = {
 	has_country_shield = yes
 
 	mordor_rebuild_barad_dur_mission = {
-		icon = servant_of_mordor_finish
+		icon = mission_servant_of_mordor_finish
 		required_missions = {
 		}
 		position = 4
@@ -226,7 +226,7 @@ V17_fall_of_gondor = {
 	}
 	has_country_shield = yes
 	army_worthy_of_mordor = {
-		icon = orc_army
+		icon = mission_orc_army
 		position = 3
 		trigger = {
 			army_size_percentage = 0.8
@@ -253,7 +253,7 @@ V17_fall_of_gondor = {
 		}
 	}
 	strike_gondor = {
-		icon = mordor_2
+		icon = mission_mordor_2
 		required_missions = {
 		army_worthy_of_mordor
 		}
@@ -300,7 +300,7 @@ V17_fall_of_gondor = {
 		}
 	}
 	burn_the_white_city = {
-		icon = white_tree_burning
+		icon = mission_white_tree_burning
 		required_missions = {
 		strike_gondor
 		mordor_rebuild_barad_dur_mission
@@ -456,7 +456,7 @@ V17_expand_into_nurn = {
 		}
 	}
 	orcs_of_mordor = {
-		icon = orc_army
+		icon = mission_orc_army
 		required_missions = {
 		retake_old_orc_lands
 		}
@@ -490,7 +490,7 @@ V17_expand_into_nurn = {
 		}
 	}
 	fortify_orc_strongholds = {
-		icon = orc_building
+		icon = mission_orc_building
 		required_missions = {
 		orcs_of_mordor	
 		}
@@ -521,7 +521,7 @@ V17_expand_into_nurn = {
 		}
 	}
 	the_land_of_shadows = {
-		icon = mordor_land
+		icon = mission_mordor_land
 		required_missions = {
 			fortify_orc_strongholds
 		}
@@ -567,7 +567,7 @@ V17_necromancer_of_dol_guldur = {
 	}
 	has_country_shield = yes
 	control_dol_guldur = {
-		icon = dol_guldur
+		icon = mission_dol_guldur
 		required_missions = {
 		the_land_of_shadows
 		mordor_rebuild_barad_dur_mission
@@ -609,7 +609,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	spiders_of_mirkwood = {
-		icon = spiders_of_mirkwood
+		icon = mission_spiders_of_mirkwood
 		required_missions = {
 		control_dol_guldur
 		}
@@ -658,7 +658,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	destroy_the_woodland_realm = {
-		icon = secure_power
+		icon = mission_secure_power
 		required_missions = {
 		spiders_of_mirkwood
 		}
@@ -708,7 +708,7 @@ V17_necromancer_of_dol_guldur = {
 	}
 	has_country_shield = yes
 	destroy_lothlorien = {
-		icon = secure_power
+		icon = mission_secure_power
 		required_missions = {
 		spiders_of_mirkwood
 		}
@@ -737,7 +737,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	destroy_rivendell = {
-		icon = secure_power
+		icon = mission_secure_power
 		required_missions = {
 		destroy_lothlorien
 		}
@@ -765,7 +765,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	destroy_the_shire = {
-		icon = shire_burning
+		icon = mission_shire_burning
 		required_missions = {
 		destroy_rivendell
 		}
@@ -794,7 +794,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	destroy_grey_havens = {
-		icon = secure_power
+		icon = mission_secure_power
 		required_missions = {
 		destroy_the_shire
 		}
@@ -851,7 +851,7 @@ V17_control_minas_morgul = {
 	}
 	has_country_shield = yes
 	control_minas_morgul = {
-		icon = minas_morgul
+		icon = mission_minas_morgul
 		required_missions = {
 		}
 		position = 1
@@ -892,7 +892,7 @@ mordor_build_saurons_road = {
 	has_country_shield = yes
 
 	mordor_build_saurons_road_mission = {
-		icon = orc_industry
+		icon = mission_orc_industry
 		required_missions = {
 		}
 		position = 3
@@ -923,7 +923,7 @@ V17_conquer_erebor = {
 	}
 	has_country_shield = yes
 	conquer_erebor = {
-		icon = conquer_erebor
+		icon = mission_conquer_erebor
 		required_missions = {
 		the_land_of_shadows
 		}

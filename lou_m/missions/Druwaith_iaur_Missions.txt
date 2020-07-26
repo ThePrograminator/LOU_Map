@@ -13,7 +13,7 @@ X15_the_old_pukel_land = {
 	}
 	has_country_shield = yes
 	deal_with_clansmen = {
-		icon = pukel_land
+		icon = mission_pukel_land
 		position = 1
 		provinces_to_highlight = {
 			region = old_pukel_land_region
@@ -60,7 +60,7 @@ X15_the_old_pukel_land = {
 		}
 	}
 	regain_lost_lands = {
-		icon = woses_1
+		icon = mission_woses_1
 		required_missions = {
 			deal_with_clansmen
 		}
@@ -95,7 +95,7 @@ X15_the_old_pukel_land = {
 		}
 	}
 	unite_the_woses = {
-		icon = woses_2
+		icon = mission_woses_2
 		required_missions = {
 			regain_lost_lands
 		}
@@ -175,7 +175,7 @@ X15_the_old_pukel_land = {
 		}
 	}
 	the_great_forest = {
-		icon = woses_1
+		icon = mission_woses_1
 		required_missions = {
 			eryn_vorn_reconnects_with_the_homeland
 		}
@@ -315,7 +315,7 @@ X15_expanding_into_gondor = {
 		}
 	}
 	a_new_ally = {
-		icon = woses_2
+		icon = mission_woses_2
 		required_missions = {
 			old_borders
 		}

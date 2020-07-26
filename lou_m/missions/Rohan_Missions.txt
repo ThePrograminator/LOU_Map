@@ -13,7 +13,7 @@ X16_conquer_enedwaith = {
 	}
 	has_country_shield = yes
 	conquer_to_the_isen = {
-		icon = rohan_conquer
+		icon = mission_rohan_conquer
 		required_missions = {
 		}
 		position = 1
@@ -43,7 +43,7 @@ X16_conquer_enedwaith = {
 		}
 	}
 	cross_the_isen = {
-		icon = rohan_conquer2
+		icon = mission_rohan_conquer2
 		required_missions = {
 			conquer_to_the_isen
 		}
@@ -110,7 +110,7 @@ X16_conquer_enedwaith = {
 		}
 	}
 	conquer_to_the_gwathlo = {
-		icon = rohan_conquer2
+		icon = mission_rohan_conquer2
 		required_missions = {
 			strengthen_the_front
 		}
@@ -180,7 +180,7 @@ X16_conquer_lond_angren = {
 	}
 	has_country_shield = yes
 	cross_the_angren = {
-		icon = rohan_conquer
+		icon = mission_rohan_conquer
 		required_missions = {
 			conquer_to_the_isen
 		}
@@ -206,7 +206,7 @@ X16_conquer_lond_angren = {
 		}
 	}
 	conquer_the_angren = {
-		icon = rohan_conquer2
+		icon = mission_rohan_conquer2
 		required_missions = {
 			cross_the_angren
 		}
@@ -272,7 +272,7 @@ X16_hunt_the_woses = {
 	}
 	has_country_shield = yes
 	hunt_down_the_woses = {
-		icon = woses_1
+		icon = mission_woses_1
 		required_missions = {
 			control_lond_angren_trade
 		}
@@ -343,7 +343,7 @@ X16_culture_of_west = {
 	}
 
 	secure_the_isen = {
-		icon = rohan_guard
+		icon = mission_rohan_guard
 		required_missions = {
 			culture_of_western_rohan
 		}
@@ -382,7 +382,7 @@ X16_deal_with_isengard = {
 	}
 	has_country_shield = yes
 	defeat_isengard = {
-		icon = rohan_conquer2
+		icon = mission_rohan_conquer2
 		required_missions = {
 		}
 		position = 8
@@ -424,7 +424,7 @@ X16_alliance_with_gondor = {
 	}
 	has_country_shield = yes
 	oath_of_eorl = {
-		icon = eorl
+		icon = mission_eorl
 		position = 1
 		trigger = {
 			OR = {
@@ -461,7 +461,7 @@ X16_conquer_rhovanion = {
 	}
 	has_country_shield = yes
 	secure_the_anduin = {
-		icon = rohan_guard
+		icon = mission_rohan_guard
 		required_missions = {
 			
 		}
@@ -526,7 +526,7 @@ X16_conquer_rhovanion = {
 		}
 	}
 	foothold_in_rhovanion = {
-		icon = rohan_conquer
+		icon = mission_rohan_conquer
 		required_missions = {
 			the_brown_lands
 		}
@@ -567,7 +567,7 @@ X16_conquer_rhovanion = {
 		}
 	}
 	kingdom_of_vidugavia = {
-		icon = rohan_conquer2
+		icon = mission_rohan_conquer2
 		required_missions = {
 			foothold_in_rhovanion
 		}
@@ -712,7 +712,7 @@ X16_conquer_rhovanion = {
 	}
 	has_country_shield = yes
 	bury_the_hatchet = {
-		icon = fram
+		icon = mission_farm
 		required_missions = {
 		foothold_in_rhovanion
 		}

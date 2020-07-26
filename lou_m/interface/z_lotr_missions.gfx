@@ -1,308 +1,229 @@
-### Purple Phoenix Mission Icons ###
-
+#-----------------------------------
+# Missions
+#-----------------------------------
 spriteTypes = {
-	spriteType = {
-		name = "servant_of_mordor_finish"
-		texturefile = "gfx//interface//Missions//servant_of_mordor_finish.dds"
+    spriteType = {
+		name = "mission_conquer_dale"
+		texturefile = "gfx//interface//missions//conquer_dale.dds"
 	}
-}	
-
-spriteTypes = {
-	spriteType = {
-		name = "woses_1"
-		texturefile = "gfx//interface//Missions//woses_1.dds"
+    spriteType = {
+		name = "mission_conquer_erebor"
+		texturefile = "gfx//interface//missions//conquer_erebor.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "woses_2"
-		texturefile = "gfx//interface//Missions//woses_2.dds"
+    spriteType = {
+		name = "mission_corsairs"
+		texturefile = "gfx//interface//missions//corsairs.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "pukel_land"
-		texturefile = "gfx//interface//Missions//pukel_land.dds"
+    spriteType = {
+		name = "mission_dol_guldur"
+		texturefile = "gfx//interface//missions//dol_guldur.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "minas_morgul"
-		texturefile = "gfx//interface//Missions//minas_morgul.dds"
+    spriteType = {
+		name = "mission_dunedain_1"
+		texturefile = "gfx//interface//missions//dunedain_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "gondor_7"
-		texturefile = "gfx//interface//Missions//gondor_7.dds"
+    spriteType = {
+		name = "mission_dunedain_2"
+		texturefile = "gfx//interface//missions//dunedain_2.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "gondor_conquer_arnor"
-		texturefile = "gfx//interface//Missions//gondor_conquer_arnor.dds"
+    spriteType = {
+		name = "mission_dunland_1"
+		texturefile = "gfx//interface//missions//dunland_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "gondor_relations"
-		texturefile = "gfx//interface//Missions//gondor_relations.dds"
+    spriteType = {
+		name = "mission_dwarves_1"
+		texturefile = "gfx//interface//missions//dwarves_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "mordor_land"
-		texturefile = "gfx//interface//Missions//mordor_land.dds"
+    spriteType = {
+		name = "mission_easterling_battle_gondor"
+		texturefile = "gfx//interface//missions//easterling_battle_gondor.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "harondor_land"
-		texturefile = "gfx//interface//Missions//harondor_land.dds"
+    spriteType = {
+		name = "mission_easterlings"
+		texturefile = "gfx//interface//missions//easterlings.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "easterling_battle_gondor"
-		texturefile = "gfx//interface//Missions//easterling_battle_gondor.dds"
+    spriteType = {
+		name = "mission_elves_1"
+		texturefile = "gfx//interface//missions//elves_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "rohan_conquer"
-		texturefile = "gfx//interface//Missions//rohan_conquer.dds"
+    spriteType = {
+		name = "mission_eorl"
+		texturefile = "gfx//interface//missions//eorl.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "rohan_conquer2"
-		texturefile = "gfx//interface//Missions//rohan_conquer2.dds"
+    spriteType = {
+		name = "mission_farm"
+		texturefile = "gfx//interface//missions//farm.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "rohan_guard"
-		texturefile = "gfx//interface//Missions//rohan_guard.dds"
+    spriteType = {
+		name = "mission_gondor_1"
+		texturefile = "gfx//interface//missions//gondor_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "eorl"
-		texturefile = "gfx//interface//Missions//eorl.dds"
+    spriteType = {
+		name = "mission_gondor_2"
+		texturefile = "gfx//interface//missions//gondor_2.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "osgiliath"
-		texturefile = "gfx//interface//Missions//osgiliath.dds"
+    spriteType = {
+		name = "mission_gondor_3"
+		texturefile = "gfx//interface//missions//gondor_3.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "fram"
-		texturefile = "gfx//interface//Missions//fram.dds"
+    spriteType = {
+		name = "mission_gondor_4"
+		texturefile = "gfx//interface//missions//gondor_4.dds"
 	}
-}
-spriteTypes = {
-	spriteType = {
-		name = "secure_power"
-		texturefile = "gfx//interface//Missions//secure_power.dds"
+    spriteType = {
+		name = "mission_gondor_5"
+		texturefile = "gfx//interface//missions//gondor_5.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "orc_army"
-		texturefile = "gfx//interface//Missions//orc_army.dds"
+    spriteType = {
+		name = "mission_gondor_6"
+		texturefile = "gfx//interface//missions//gondor_6.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "mordor_1"
-		texturefile = "gfx//interface//Missions//mordor_1.dds"
+    spriteType = {
+		name = "mission_gondor_7"
+		texturefile = "gfx//interface//missions//gondor_7.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "mordor_2"
-		texturefile = "gfx//interface//Missions//mordor_2.dds"
+    spriteType = {
+		name = "mission_gondor_8"
+		texturefile = "gfx//interface//missions//gondor_8.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "orc_industry"
-		texturefile = "gfx//interface//Missions//orc_industry.dds"
+    spriteType = {
+		name = "mission_gondor_conquer_arnor"
+		texturefile = "gfx//interface//missions//gondor_conquer_arnor.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "orc_building"
-		texturefile = "gfx//interface//Missions//orc_building.dds"
+    spriteType = {
+		name = "mission_gondor_relations"
+		texturefile = "gfx//interface//missions//gondor_relations.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "dol_guldur"
-		texturefile = "gfx//interface//Missions//dol_guldur.dds"
+    spriteType = {
+		name = "mission_harondor_land"
+		texturefile = "gfx//interface//missions//harondor_land.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "conquer_erebor"
-		texturefile = "gfx//interface//Missions//conquer_erebor.dds"
+    spriteType = {
+		name = "mission_isengard_1"
+		texturefile = "gfx//interface//missions//isengard_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "spiders_of_mirkwood"
-		texturefile = "gfx//interface//Missions//spiders_of_mirkwood.dds"
+    spriteType = {
+		name = "mission_isengard_2"
+		texturefile = "gfx//interface//missions//isengard_2.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "easterlings"
-		texturefile = "gfx//interface//Missions//easterlings.dds"
+    spriteType = {
+		name = "mission_isengard_3"
+		texturefile = "gfx//interface//missions//isengard_3.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "southrons"
-		texturefile = "gfx//interface//Missions//southrons.dds"
+    spriteType = {
+		name = "mission_isengard_4"
+		texturefile = "gfx//interface//missions//isengard_4.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "variags"
-		texturefile = "gfx//interface//Missions//variags.dds"
+    spriteType = {
+		name = "mission_isengard_5"
+		texturefile = "gfx//interface//missions//isengard_5.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "corsairs"
-		texturefile = "gfx//interface//Missions//corsairs.dds"
+    spriteType = {
+		name = "mission_isengard_6"
+		texturefile = "gfx//interface//missions//isengard_6.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "white_tree_burning"
-		texturefile = "gfx//interface//Missions//white_tree_burning.dds"
+    spriteType = {
+		name = "mission_isengard_7"
+		texturefile = "gfx//interface//missions//isengard_7.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "shire_burning"
-		texturefile = "gfx//interface//Missions//shire_burning.dds"
+    spriteType = {
+		name = "mission_isengard_army"
+		texturefile = "gfx//interface//missions//isengard_army.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_industry"
-		texturefile = "gfx//interface//Missions//isengard_industry.dds"
+    spriteType = {
+		name = "mission_isengard_industry"
+		texturefile = "gfx//interface//missions//isengard_industry.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_army"
-		texturefile = "gfx//interface//Missions//isengard_army.dds"
+    spriteType = {
+		name = "mission_minas_morgul"
+		texturefile = "gfx//interface//missions//minas_morgul.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "dunland_1"
-		texturefile = "gfx//interface//Missions//dunland_1.dds"
+    spriteType = {
+		name = "mission_mission_assemble_an_army"
+		texturefile = "gfx//interface//missions//mission_assemble_an_army.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_1"
-		texturefile = "gfx//interface//Missions//isengard_1.dds"
+    spriteType = {
+		name = "mission_mission_cannons_firing"
+		texturefile = "gfx//interface//missions//mission_cannons_firing.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_2"
-		texturefile = "gfx//interface//Missions//isengard_2.dds"
+    spriteType = {
+		name = "mission_mordor_1"
+		texturefile = "gfx//interface//missions//mordor_1.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_3"
-		texturefile = "gfx//interface//Missions//isengard_3.dds"
+    spriteType = {
+		name = "mission_mordor_2"
+		texturefile = "gfx//interface//missions//mordor_2.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_4"
-		texturefile = "gfx//interface//Missions//isengard_4.dds"
+    spriteType = {
+		name = "mission_mordor_land"
+		texturefile = "gfx//interface//missions//mordor_land.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_5"
-		texturefile = "gfx//interface//Missions//isengard_5.dds"
+    spriteType = {
+		name = "mission_orc_army"
+		texturefile = "gfx//interface//missions//orc_army.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_6"
-		texturefile = "gfx//interface//Missions//isengard_6.dds"
+    spriteType = {
+		name = "mission_orc_building"
+		texturefile = "gfx//interface//missions//orc_building.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "isengard_7"
-		texturefile = "gfx//interface//Missions//isengard_7.dds"
+    spriteType = {
+		name = "mission_orc_industry"
+		texturefile = "gfx//interface//missions//orc_industry.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "conquer_dale"
-		texturefile = "gfx//interface//Missions//conquer_dale.dds"
+    spriteType = {
+		name = "mission_osgiliath"
+		texturefile = "gfx//interface//missions//osgiliath.dds"
 	}
-}
-
-spriteTypes = {
-	spriteType = {
-		name = "dunedain_1"
-		texturefile = "gfx//interface//Missions//dunedain_1.dds"
+    spriteType = {
+		name = "mission_pukel_land"
+		texturefile = "gfx//interface//missions//pukel_land.dds"
+	}
+    spriteType = {
+		name = "mission_rohan_conquer"
+		texturefile = "gfx//interface//missions//rohan_conquer.dds"
+	}
+    spriteType = {
+		name = "mission_rohan_conquer2"
+		texturefile = "gfx//interface//missions//rohan_conquer2.dds"
+	}
+    spriteType = {
+		name = "mission_rohan_guard"
+		texturefile = "gfx//interface//missions//rohan_guard.dds"
+	}
+    spriteType = {
+		name = "mission_secure_power"
+		texturefile = "gfx//interface//missions//secure_power.dds"
+	}
+    spriteType = {
+		name = "mission_servant_of_mordor_finish"
+		texturefile = "gfx//interface//missions//servant_of_mordor_finish.dds"
+	}
+    spriteType = {
+		name = "mission_shire_burning"
+		texturefile = "gfx//interface//missions//shire_burning.dds"
+	}
+    spriteType = {
+		name = "mission_southrons"
+		texturefile = "gfx//interface//missions//southrons.dds"
+	}
+    spriteType = {
+		name = "mission_spiders_of_mirkwood"
+		texturefile = "gfx//interface//missions//spiders_of_mirkwood.dds"
+	}
+    spriteType = {
+		name = "mission_variags"
+		texturefile = "gfx//interface//missions//variags.dds"
+	}
+    spriteType = {
+		name = "mission_white_tree_burning"
+		texturefile = "gfx//interface//missions//white_tree_burning.dds"
+	}
+    spriteType = {
+		name = "mission_woses_1"
+		texturefile = "gfx//interface//missions//woses_1.dds"
+	}
+    spriteType = {
+		name = "mission_woses_2"
+		texturefile = "gfx//interface//missions//woses_2.dds"
 	}
 }

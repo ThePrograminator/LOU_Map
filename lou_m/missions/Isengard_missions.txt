@@ -13,7 +13,7 @@ V49_dunland = {
 	}
 	has_country_shield = yes
 	subjects_in_dunland = {
-		icon = isengard_2
+		icon = mission_isengard_2
 		required_missions = {
 		}
 		position = 1
@@ -59,7 +59,7 @@ V49_dunland = {
 		}
 	}
 	ally_of_feargan_clan = {
-		icon = dunland_1
+		icon = mission_dunland_1
 		required_missions = {
 		subjects_in_dunland	
 		}
@@ -95,7 +95,7 @@ V49_dunland = {
 		}
 	}
 	foothold_in_dunland = {
-		icon = isengard_1
+		icon = mission_isengard_1
 		required_missions = {
 		ally_of_feargan_clan
 		}
@@ -247,7 +247,7 @@ V49_dunland = {
 		}
 	}
 	control_enedhwaith = {
-		icon = isengard_5
+		icon = mission_isengard_5
 		required_missions = {
 		control_dunland
 		}
@@ -292,7 +292,7 @@ V49_improve_isengard = {
 	}
 	has_country_shield = yes
 	methedras = {
-		icon = isengard_4
+		icon = mission_isengard_4
 		position = 1
 		provinces_to_highlight = {
 			province_id = 1585
@@ -320,7 +320,7 @@ V49_improve_isengard = {
 		}
 	}
 	gap_of_rohan = {
-		icon = isengard_1
+		icon = mission_isengard_1
 		required_missions = { 
 		methedras
 		}
@@ -348,7 +348,7 @@ V49_improve_isengard = {
 		}
 	}
 	forges_of_isengard = {
-		icon = isengard_industry
+		icon = mission_isengard_industry
 		required_missions = { 
 		gap_of_rohan
 		}
@@ -368,7 +368,7 @@ V49_improve_isengard = {
 		}
 	}
 	burn_fangorn = {
-		icon = isengard_6
+		icon = mission_isengard_6
 		required_missions = {
 		forges_of_isengard
 		}
@@ -410,7 +410,7 @@ V49_fall_of_rohan = {
 	}
 	has_country_shield = yes
 	army_of_isengard = {
-		icon = isengard_army
+		icon = mission_isengard_army
 		position = 1
 		trigger = {
 			army_size_percentage = 0.9
@@ -431,7 +431,7 @@ V49_fall_of_rohan = {
 		}
 	}
 	cross_the_fords_of_isen = {
-		icon = isengard_1
+		icon = mission_isengard_1
 		required_missions = {
 		army_of_isengard
 		}
@@ -463,7 +463,7 @@ V49_fall_of_rohan = {
 		}
 	}
 	burning_of_westfold = {
-		icon = isengard_3
+		icon = mission_isengard_3
 		required_missions = {
 		cross_the_fords_of_isen
 		}
@@ -523,7 +523,7 @@ V49_fall_of_rohan = {
 		}
 	}
 	fall_of_the_riddermark = {
-		icon = isengard_5
+		icon = mission_isengard_5
 		required_missions = {
 		siege_of_edoras
 		}
@@ -548,7 +548,7 @@ V49_fall_of_rohan = {
 		}
 	}
 	conquer_gondor = {
-		icon = isengard_5
+		icon = mission_isengard_5
 		required_missions = {
 		fall_of_the_riddermark
 		}
@@ -589,7 +589,7 @@ V49_fall_of_rohan = {
 	}
 	has_country_shield = yes
 	fall_of_lothlorien_V49 = {
-		icon = isengard_5
+		icon = mission_isengard_5
 		required_missions = {
 		fall_of_the_riddermark
 		}
@@ -619,7 +619,7 @@ V49_fall_of_rohan = {
 		}
 	}
 	destroy_rivendell_V49 = {
-		icon = isengard_5
+		icon = mission_isengard_5
 		required_missions = {
 		fall_of_lothlorien_V49
 		}
@@ -663,7 +663,7 @@ V49_scouring_of_the_shire = {
 	}
 	has_country_shield = yes
 	spies_of_saruman = {
-		icon = isengard_7
+		icon = mission_isengard_7
 		required_missions = {
 		}
 		position = 1
@@ -686,7 +686,7 @@ V49_scouring_of_the_shire = {
 		}
 	}
 	scouring_of_the_shire = {
-		icon = shire_burning
+		icon = mission_shire_burning
 		required_missions = {
 		spies_of_saruman
 		}
