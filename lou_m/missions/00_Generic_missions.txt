@@ -240,34 +240,6 @@ diplomatic_missions = {
 			}
 		}
 	}
-	trade_company_region_abroad = {
-		icon = mission_trade_company_region_abroad
-		required_missions = { dominate_home_trade_node }
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = trade_company_region_abroad_tooltip
-				calc_true_if = {
-					all_trade_node = {
-						calc_true_if = {
-							all_trade_node_member_province = {
-								owned_by = ROOT
-								is_node_in_trade_company_region = yes
-								NOT = { continent = CAPITAL }
-							}
-							amount = 5
-						}
-					}
-					amount = 3
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "east_india_trade_rush"
-				duration = 9125 #25 years
-			}
-		}
-	}
 }
 
  #3nd mission series:
