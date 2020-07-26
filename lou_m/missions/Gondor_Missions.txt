@@ -13,7 +13,8 @@ X01_rebuild_osgiliath = {
 		}
 	}
 	has_country_shield = yes
-	rebuild_osgiliath = {
+	
+    gondor_rebuild_osgiliath = {
 		icon = mission_osgiliath
 		position = 1
 		provinces_to_highlight = {
@@ -60,7 +61,8 @@ X01_secure_the_south = {
 		}
 	}
 	has_country_shield = yes
-	harondor_conquest = {
+	
+    gondor_harondor_conquest = {
 		icon = mission_harondor_land
 		required_missions = {
 		}
@@ -90,10 +92,10 @@ X01_secure_the_south = {
 			}
 		}
 	}
-	gulf_of_mirlond_conquest = {
+	gondor_gulf_of_mirlond_conquest = {
 		icon = mission_arabian_fort
 		required_missions = {
-			harondor_conquest
+			gondor_harondor_conquest
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -123,10 +125,10 @@ X01_secure_the_south = {
 			}
 		}
 	}
-	umbar_conquest = {
+	gondor_umbar_conquest = {
 		icon = mission_arabian_fort
 		required_missions = {
-			gulf_of_mirlond_conquest
+			gondor_gulf_of_mirlond_conquest
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -155,10 +157,10 @@ X01_secure_the_south = {
 			}
 		}
 	}
-	reclaim_numenorean_colonies = {
+	gondor_reclaim_numenorean_colonies = {
 		icon = mission_cannons_firing
 		required_missions = {
-			umbar_conquest
+			gondor_umbar_conquest
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -166,7 +168,7 @@ X01_secure_the_south = {
 			area = mardruak_area
 			area = dusalan_area
 			area = bellazen_area
-			area = urid_an-abar_area
+			area = urid_an_abar_area
 			area = niluloni_area
 			NOT = {
 				owned_by = ROOT
@@ -189,7 +191,7 @@ X01_secure_the_south = {
 				type = all
 				owned_by = ROOT
 			}
-			urid_an-abar_area = {
+			urid_an_abar_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -220,10 +222,11 @@ X01_secure_the_south = {
 		}
 	}
 	has_country_shield = yes
-	hyarmendacil_mission = {
+	
+    gondor_hyarmendacil_mission = {
 		icon = mission_arabian_fort
 		required_missions = {
-			gulf_of_mirlond_conquest
+			gondor_gulf_of_mirlond_conquest
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -273,7 +276,8 @@ X01_secure_the_north = {
 		}
 	}
 	has_country_shield = yes
-	southern_rhovanion_conquest = {
+	
+    gondor_southern_rhovanion_conquest = {
 		icon = mission_cannons_firing
 		required_missions = {
 		}
@@ -322,10 +326,11 @@ X01_north_secure_allies = {
 		}
 	}
 	has_country_shield = yes
-	secure_allies = {
+	
+    gondor_secure_allies = {
 		icon = mission_gondor_relations
 		required_missions = {
-			southern_rhovanion_conquest
+			gondor_southern_rhovanion_conquest
 		}
 		position = 2
 		trigger = {
@@ -381,10 +386,11 @@ X01_north_border_to_rhun = {
 		}
 	}
 	has_country_shield = yes
-	border_to_rhun = {
+	
+    gondor_border_to_rhun = {
 		icon = mission_gondor_7
 		required_missions = {
-			secure_allies
+			gondor_secure_allies
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -436,10 +442,11 @@ X01_north_dismantle_rhun = {
 		}
 	}
 	has_country_shield = yes
-	dismantle_rhun_empire = {
+	
+    gondor_dismantle_rhun_empire = {
 		icon = mission_empire
 		required_missions = {
-			border_to_rhun
+			gondor_border_to_rhun
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -472,10 +479,11 @@ X01_north_securing_against_rhun = {
 		}
 	}
 	has_country_shield = yes
-	securing_against_rhun = {
+	
+    gondor_securing_against_rhun = {
 		icon = mission_easterling_battle_gondor
 		required_missions = {
-			border_to_rhun
+			gondor_border_to_rhun
 		}
 		position = 4
 		trigger = {
@@ -518,7 +526,8 @@ X01_secure_the_west = {
 		}
 	}
 	has_country_shield = yes
-	deal_with_eredrim = {
+	
+    gondor_deal_with_eredrim = {
 		icon = mission_gondor_relations
 		required_missions = {
 		}
@@ -553,10 +562,10 @@ X01_secure_the_west = {
 			}
 		}
 	}
-	deal_with_old_pukel_land = {
+	gondor_deal_with_old_pukel_land = {
 		icon = mission_pukel_land
 		required_missions = {
-			deal_with_eredrim
+			gondor_deal_with_eredrim
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -581,10 +590,10 @@ X01_secure_the_west = {
 			}
 		}
 	}
-	deal_with_lond_angren_trade = {
+	gondor_deal_with_lond_angren_trade = {
 		icon = mission_market_place_with_asian_traders
 		required_missions = {
-			deal_with_old_pukel_land
+			gondor_deal_with_old_pukel_land
 		}
 		position = 3
 		trigger = {
@@ -619,7 +628,8 @@ X01_defeat_mordor_minas_ithil = {
 		}
 	}
 	has_country_shield = yes
-	reconquer_minas_ithil = {
+	
+    gondor_reconquer_minas_ithil = {
 		icon = mission_minas_morgul
 		required_missions = {
 		}
@@ -663,10 +673,11 @@ X01_defeat_mordor_mordor = {
 		}
 	}
 	has_country_shield = yes
-	conquer_mordor = {
+	
+    gondor_conquer_mordor = {
 		icon = mission_mordor_land
 		required_missions = {
-			reconquer_minas_ithil
+			gondor_reconquer_minas_ithil
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -705,10 +716,11 @@ X01_defeat_mordor_ally_nurn = {
 		}
 	}
 	has_country_shield = yes
-	ally_nurn = {
+	
+    gondor_ally_nurn = {
 		icon = mission_gondor_relations
 		required_missions = {
-			reconquer_minas_ithil
+			gondor_reconquer_minas_ithil
 		}
 		position = 6
 		trigger = {
@@ -757,7 +769,8 @@ X01_regain_arnor_start = {
 		}
 	}
 	has_country_shield = yes
-	gain_foothold_in_cardolan = {
+	
+    gondor_gain_foothold_in_cardolan = {
 		icon = mission_invade_island
 		required_missions = {
 		}
@@ -801,10 +814,11 @@ X01_regain_arnor_cardolan = {
 		}
 	}
 	has_country_shield = yes
-	conquer_cardolan = {
+	
+    gondor_conquer_cardolan = {
 		icon = mission_gondor_conquer_arnor
 		required_missions = {
-			gain_foothold_in_cardolan
+			gondor_gain_foothold_in_cardolan
 		}
 		position = 6
 		provinces_to_highlight = {
@@ -848,10 +862,11 @@ X01_regain_arnor_shire = {
 		}
 	}
 	has_country_shield = yes
-	deal_with_shire = {
+	
+    gondor_deal_with_shire = {
 		icon = mission_gondor_relations
 		required_missions = {
-			conquer_cardolan
+			gondor_conquer_cardolan
 		}
 		position = 7
 		trigger = {
@@ -897,10 +912,11 @@ X01_regain_arnor_arthedain = {
 		}
 	}
 	has_country_shield = yes
-	conquer_arthedain = {
+	
+    gondor_conquer_arthedain = {
 		icon = mission_gondor_conquer_arnor
 		required_missions = {
-			conquer_cardolan
+			gondor_conquer_cardolan
 		}
 		position = 7
 		provinces_to_highlight = {
@@ -938,10 +954,11 @@ X01_regain_arnor_rhudaur = {
 		}
 	}
 	has_country_shield = yes
-	conquer_rhudaur = {
+	
+    gondor_conquer_rhudaur = {
 		icon = mission_gondor_conquer_arnor
 		required_missions = {
-			conquer_cardolan
+			gondor_conquer_cardolan
 		}
 		position = 7
 		provinces_to_highlight = {

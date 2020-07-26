@@ -12,7 +12,8 @@ X99_ally_mordor = {
 		}
 	}
 	has_country_shield = yes
-	ally_mordor = {
+	
+    sagath_ally_mordor = {
 		icon = mission_mordor_1
 		required_missions = {
 		}
@@ -58,7 +59,8 @@ X99_rhovanion = {
 		}
 	}
 	has_country_shield = yes
-	control_talath_harroch = {
+    
+	sagath_control_talath_harroch = {
 		icon = mission_unite_home_region
 		position = 1
 		provinces_to_highlight = {
@@ -84,10 +86,10 @@ X99_rhovanion = {
 			}
 		}
 	}
-	army_of_easterlings = {
+	sagath_army_of_easterlings = {
 		icon = mission_easterlings
 		required_missions = {
-		control_talath_harroch
+            sagath_control_talath_harroch
 		}
 		position = 2
 		trigger = {
@@ -109,10 +111,10 @@ X99_rhovanion = {
 			}
 		}
 	}
-	control_brown_lands = {
+	sagath_control_brown_lands = {
 		icon = mission_unite_home_region
 		required_missions = {
-		army_of_easterlings
+            sagath_army_of_easterlings
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -142,10 +144,10 @@ X99_rhovanion = {
 			add_prestige = 5
 		}
 	}
-	foothold_in_rohan = {
+	sagath_foothold_in_rohan = {
 		icon = mission_unite_home_region
 		required_missions = {
-		control_brown_lands
+            sagath_control_brown_lands
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -174,10 +176,10 @@ X99_rhovanion = {
 			}
 		}
 	}
-	conquer_rohan = {
+	sagath_conquer_rohan = {
 		icon = mission_isengard_3
 		required_missions = {
-		foothold_in_rohan
+            sagath_foothold_in_rohan
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -216,10 +218,11 @@ X99_rhovanion = {
 		}
 	}
 	has_country_shield = yes
-	control_emyn_muil = {
+    
+	sagath_control_emyn_muil = {
 		icon = mission_unite_home_region
 		required_missions = {
-		army_of_easterlings
+            sagath_army_of_easterlings
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -252,10 +255,11 @@ X99_rhovanion = {
 		}
 	}
 	has_country_shield = yes
-	control_east_bight = {
+    
+	sagath_control_east_bight = {
 		icon = mission_unite_home_region
 		required_missions = {
-		army_of_easterlings
+            sagath_army_of_easterlings
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -278,10 +282,10 @@ X99_rhovanion = {
 			}
 		}
 	}
-	foothold_in_rhovanion = {
+	sagath_foothold_in_rhovanion = {
 		icon = mission_unite_home_region
 		required_missions = {
-		control_east_bight
+            sagath_control_east_bight
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -307,7 +311,7 @@ X99_rhovanion = {
 			dale_region = {
 				add_territorial_core = ROOT
 			}
-			lonely_mountain_area = {
+			the_lonely_mountain_area = {
 				add_territorial_core = ROOT
 			}
 			add_country_modifier = {
@@ -316,10 +320,10 @@ X99_rhovanion = {
 			}
 		}
 	}
-	conquer_dale = {
+	sagath_conquer_dale = {
 		icon = mission_conquer_dale
 		required_missions = {
-		foothold_in_rhovanion
+            sagath_foothold_in_rhovanion
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -354,20 +358,21 @@ X99_rhovanion = {
 		}
 	}
 	has_country_shield = yes
-	conquer_erebor = {
+    
+	sagath_conquer_erebor = {
 		icon = mission_conquer_erebor
 		required_missions = {
-		foothold_in_rhovanion
+            sagath_foothold_in_rhovanion
 		}
 		position = 5
 		provinces_to_highlight = {
-			area = lonely_mountain_area
+			area = the_lonely_mountain_area
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			lonely_mountain_area = {
+			the_lonely_mountain_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -399,7 +404,8 @@ X99_attack_gondor = {
 		}
 	}
 	has_country_shield = yes
-	control_nindalf = {
+    
+	sagath_control_nindalf = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
@@ -432,10 +438,10 @@ X99_attack_gondor = {
 			}
 		}
 	}
-	preparing_to_march_on_gondor = {
+	sagath_preparing_to_march_on_gondor = {
 		icon = mission_easterlings
 		required_missions = {
-		control_nindalf
+            sagath_control_nindalf
 		}
 		position = 2
 		trigger = {
@@ -463,10 +469,10 @@ X99_attack_gondor = {
 			}
 		}
 	}
-	burn_the_white_city = {
+	sagath_burn_the_white_city = {
 		icon = mission_white_tree_burning
 		required_missions = {
-		preparing_to_march_on_gondor
+            sagath_preparing_to_march_on_gondor
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -496,10 +502,10 @@ X99_attack_gondor = {
 			}
 		}
 	}
-	conquer_gondor = {
+	sagath_conquer_gondor = {
 		icon = mission_unite_home_region
 		required_missions = {
-		burn_the_white_city
+            sagath_burn_the_white_city
 		}
 		position = 4
 		provinces_to_highlight = {
