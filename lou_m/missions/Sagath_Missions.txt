@@ -13,7 +13,7 @@ X99_ally_mordor = {
 	}
 	has_country_shield = yes
 	ally_mordor = {
-		icon = mordor_1
+		icon = mission_mordor_1
 		required_missions = {
 		}
 		position = 1
@@ -85,7 +85,7 @@ X99_rhovanion = {
 		}
 	}
 	army_of_easterlings = {
-		icon = easterlings
+		icon = mission_easterlings
 		required_missions = {
 		control_talath_harroch
 		}
@@ -175,7 +175,7 @@ X99_rhovanion = {
 		}
 	}
 	conquer_rohan = {
-		icon = isengard_3
+		icon = mission_isengard_3
 		required_missions = {
 		foothold_in_rohan
 		}
@@ -317,7 +317,7 @@ X99_rhovanion = {
 		}
 	}
 	conquer_dale = {
-		icon = conquer_dale
+		icon = mission_conquer_dale
 		required_missions = {
 		foothold_in_rhovanion
 		}
@@ -355,7 +355,7 @@ X99_rhovanion = {
 	}
 	has_country_shield = yes
 	conquer_erebor = {
-		icon = conquer_erebor
+		icon = mission_conquer_erebor
 		required_missions = {
 		foothold_in_rhovanion
 		}
@@ -433,7 +433,7 @@ X99_attack_gondor = {
 		}
 	}
 	preparing_to_march_on_gondor = {
-		icon = easterlings
+		icon = mission_easterlings
 		required_missions = {
 		control_nindalf
 		}
@@ -464,7 +464,7 @@ X99_attack_gondor = {
 		}
 	}
 	burn_the_white_city = {
-		icon = white_tree_burning
+		icon = mission_white_tree_burning
 		required_missions = {
 		preparing_to_march_on_gondor
 		}

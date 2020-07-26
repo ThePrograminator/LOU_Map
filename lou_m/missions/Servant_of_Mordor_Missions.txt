@@ -224,7 +224,7 @@ servant_of_mordor_reserves = {
 	has_country_shield = yes
 
 	servant_of_mordor_build_up_reserves = {
-		icon = orc_army
+		icon = mission_orc_army
 		required_missions = {
 		}
 		position = 7
@@ -268,7 +268,7 @@ servant_of_mordor_tech = {
 	has_country_shield = yes
 
 	servant_of_mordor_build_tech = {
-		icon = secure_power
+		icon = mission_secure_power
 		required_missions = {
 		}
 		position = 7
@@ -308,7 +308,7 @@ servant_of_mordor_spawn_mordor_nurn = {
 	has_country_shield = yes
 
 	servant_of_mordor_nurn_finish = {
-		icon = servant_of_mordor_finish
+		icon = mission_servant_of_mordor_finish
 		required_missions = {
 			servant_of_mordor_build_up_reserves
 			servant_of_mordor_build_tech
@@ -361,7 +361,7 @@ servant_of_mordor_spawn_mordor_uruk_marzguram = {
 	has_country_shield = yes
 
 	servant_of_mordor_rhovanion_finish = {
-		icon = servant_of_mordor_finish
+		icon = mission_servant_of_mordor_finish
 		required_missions = {
 			servant_of_mordor_build_up_reserves
 			servant_of_mordor_build_tech
@@ -416,7 +416,7 @@ servant_of_mordor_spawn_mordor_dol_guldur = {
 	has_country_shield = yes
 
 	servant_of_mordor_mirkwood_finish = {
-		icon = servant_of_mordor_finish
+		icon = mission_servant_of_mordor_finish
 		required_missions = {
 			servant_of_mordor_build_up_reserves
 			servant_of_mordor_build_tech
@@ -471,7 +471,7 @@ servant_of_mordor_spawn_mordor_minas_morgul = {
 	has_country_shield = yes
 
 	servant_of_mordor_ithilien_finish = {
-		icon = servant_of_mordor_finish
+		icon = mission_servant_of_mordor_finish
 		required_missions = {
 			servant_of_mordor_build_up_reserves
 			servant_of_mordor_build_tech

@@ -14,7 +14,7 @@ X01_rebuild_osgiliath = {
 	}
 	has_country_shield = yes
 	rebuild_osgiliath = {
-		icon = osgiliath
+		icon = mission_osgiliath
 		position = 1
 		provinces_to_highlight = {
 			AND = {
@@ -61,7 +61,7 @@ X01_secure_the_south = {
 	}
 	has_country_shield = yes
 	harondor_conquest = {
-		icon = harondor_land
+		icon = mission_harondor_land
 		required_missions = {
 		}
 		position = 1
@@ -323,7 +323,7 @@ X01_north_secure_allies = {
 	}
 	has_country_shield = yes
 	secure_allies = {
-		icon = gondor_relations
+		icon = mission_gondor_relations
 		required_missions = {
 			southern_rhovanion_conquest
 		}
@@ -382,7 +382,7 @@ X01_north_border_to_rhun = {
 	}
 	has_country_shield = yes
 	border_to_rhun = {
-		icon = gondor_7
+		icon = mission_gondor_7
 		required_missions = {
 			secure_allies
 		}
@@ -473,7 +473,7 @@ X01_north_securing_against_rhun = {
 	}
 	has_country_shield = yes
 	securing_against_rhun = {
-		icon = easterling_battle_gondor
+		icon = mission_easterling_battle_gondor
 		required_missions = {
 			border_to_rhun
 		}
@@ -519,7 +519,7 @@ X01_secure_the_west = {
 	}
 	has_country_shield = yes
 	deal_with_eredrim = {
-		icon = gondor_relations
+		icon = mission_gondor_relations
 		required_missions = {
 		}
 		position = 1
@@ -554,7 +554,7 @@ X01_secure_the_west = {
 		}
 	}
 	deal_with_old_pukel_land = {
-		icon = pukel_land
+		icon = mission_pukel_land
 		required_missions = {
 			deal_with_eredrim
 		}
@@ -620,7 +620,7 @@ X01_defeat_mordor_minas_ithil = {
 	}
 	has_country_shield = yes
 	reconquer_minas_ithil = {
-		icon = minas_morgul
+		icon = mission_minas_morgul
 		required_missions = {
 		}
 		position = 5
@@ -664,7 +664,7 @@ X01_defeat_mordor_mordor = {
 	}
 	has_country_shield = yes
 	conquer_mordor = {
-		icon = mordor_land
+		icon = mission_mordor_land
 		required_missions = {
 			reconquer_minas_ithil
 		}
@@ -706,7 +706,7 @@ X01_defeat_mordor_ally_nurn = {
 	}
 	has_country_shield = yes
 	ally_nurn = {
-		icon = gondor_relations
+		icon = mission_gondor_relations
 		required_missions = {
 			reconquer_minas_ithil
 		}
@@ -802,7 +802,7 @@ X01_regain_arnor_cardolan = {
 	}
 	has_country_shield = yes
 	conquer_cardolan = {
-		icon = gondor_conquer_arnor
+		icon = mission_gondor_conquer_arnor
 		required_missions = {
 			gain_foothold_in_cardolan
 		}
@@ -849,7 +849,7 @@ X01_regain_arnor_shire = {
 	}
 	has_country_shield = yes
 	deal_with_shire = {
-		icon = gondor_relations
+		icon = mission_gondor_relations
 		required_missions = {
 			conquer_cardolan
 		}
@@ -898,7 +898,7 @@ X01_regain_arnor_arthedain = {
 	}
 	has_country_shield = yes
 	conquer_arthedain = {
-		icon = gondor_conquer_arnor
+		icon = mission_gondor_conquer_arnor
 		required_missions = {
 			conquer_cardolan
 		}
@@ -939,7 +939,7 @@ X01_regain_arnor_rhudaur = {
 	}
 	has_country_shield = yes
 	conquer_rhudaur = {
-		icon = gondor_conquer_arnor
+		icon = mission_gondor_conquer_arnor
 		required_missions = {
 			conquer_cardolan
 		}
