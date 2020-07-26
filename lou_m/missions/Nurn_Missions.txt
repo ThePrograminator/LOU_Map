@@ -146,6 +146,51 @@ conquer_nurn_region_two = {
 		}
 	}
 
+	ally_vassal_rhun = {
+		icon = mission_unite_home_region
+		required_missions = {
+			ally_nurad
+		}
+		position = 2
+
+		trigger = {
+			OR = {
+				AND = {
+					calc_true_if = {
+						all_ally = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = rhun_region
+							}
+						}
+						amount = 2
+					}
+				}
+				AND = {
+					calc_true_if = {
+						all_subject_country = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+							any_owned_province = {
+								region = rhun_region
+							}
+						}
+						amount = 2
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
 	conquer_road_to_harad = {
 		icon = mission_unite_home_region
 		required_missions = {
@@ -201,8 +246,7 @@ conquer_nurn_region_two = {
 	conquer_chelkar_nurn = {
 		icon = mission_unite_home_region
 		required_missions = {
-			conquer_road_to_harad
-			conquer_shadow_mountains
+			drive_out_orcs
 		}
 		position = 8
 
@@ -228,25 +272,16 @@ conquer_nurn_region_two = {
 	conquer_amrun_trade_node_nurn = {
 		icon = mission_unite_home_region
 		required_missions = {
-			conquer_road_to_harad
-			conquer_shadow_mountains
+			conquer_chelkar_nurn
 		}
 		position = 8
 
-		provinces_to_highlight = {
-			region = chelkar_region
-			all_province = { 
-				
-			}
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-
 		trigger = {
-			chelkar_region = {
-				type = all
-				owned_by = ROOT
+			1762 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
 			}
 		}
 
@@ -411,6 +446,27 @@ conquer_nurn_region_four = {
 			khand_region = {
 				type = all
 				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	obamarl_trade_node_nurn = {
+		icon = mission_unite_home_region
+		required_missions = {
+			conquer_khand
+		}
+		position = 8
+
+		trigger = {
+			434 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
 			}
 		}
 
