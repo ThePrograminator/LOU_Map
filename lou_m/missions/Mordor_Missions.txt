@@ -13,7 +13,8 @@ V17_evil_men = {
 		}
 	}
 	has_country_shield = yes
-	easterlings_of_rhun = {
+    
+	mordor_easterlings_of_rhun = {
 		icon = mission_easterlings
 		position = 1
 		trigger = {
@@ -43,10 +44,10 @@ V17_evil_men = {
 			}
 		}
 	}
-	southrons_of_harad = {
+	mordor_southrons_of_harad = {
 		icon = mission_southrons
 		required_missions = {
-		easterlings_of_rhun
+            mordor_easterlings_of_rhun
 		}
 		position = 2
 		trigger = {
@@ -98,10 +99,10 @@ V17_evil_men = {
 			}
 		}
 	}
-	variags_of_khand = {
+	mordor_variags_of_khand = {
 		icon = mission_variags
 		required_missions = {
-		southrons_of_harad
+            mordor_southrons_of_harad
 		}
 		position = 3
 		trigger = {
@@ -144,10 +145,11 @@ V17_evil_men = {
 		}
 	}
 	has_country_shield = yes
-	corsairs_of_umbar = {
+    
+	mordor_corsairs_of_umbar = {
 		icon = mission_corsairs
 		required_missions = {
-		easterlings_of_rhun
+            mordor_easterlings_of_rhun
 		}
 		position = 2
 		trigger = {
@@ -225,7 +227,8 @@ V17_fall_of_gondor = {
 		}
 	}
 	has_country_shield = yes
-	army_worthy_of_mordor = {
+	
+    mordor_army_worthy_of_mordor = {
 		icon = mission_orc_army
 		position = 3
 		trigger = {
@@ -252,10 +255,10 @@ V17_fall_of_gondor = {
 			}
 		}
 	}
-	strike_gondor = {
+	mordor_strike_gondor = {
 		icon = mission_mordor_2
 		required_missions = {
-		army_worthy_of_mordor
+            mordor_army_worthy_of_mordor
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -299,11 +302,11 @@ V17_fall_of_gondor = {
 			}
 		}
 	}
-	burn_the_white_city = {
+	mordor_burn_the_white_city = {
 		icon = mission_white_tree_burning
 		required_missions = {
 		strike_gondor
-		mordor_rebuild_barad_dur_mission
+            mordor_mordor_rebuild_barad_dur_mission
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -337,10 +340,10 @@ V17_fall_of_gondor = {
 			}
 		}
 	}
-	conquer_gondor = {
+	mordor_conquer_gondor = {
 		icon = mission_unite_home_region
 		required_missions = {
-		burn_the_white_city
+            mordor_burn_the_white_city
 		}
 		position = 6
 		provinces_to_highlight = {
@@ -375,7 +378,8 @@ V17_fall_of_gondor = {
 		}
 	}
 	has_country_shield = yes
-	conquer_rohan = {
+	
+    mordor_conquer_rohan = {
 		icon = mission_unite_home_region
 		required_missions = {
 		burn_the_white_city
@@ -417,7 +421,8 @@ V17_expand_into_nurn = {
 		}
 	}
 	has_country_shield = yes
-	retake_old_orc_lands = {
+	
+    mordor_retake_old_orc_lands = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
@@ -455,10 +460,10 @@ V17_expand_into_nurn = {
 			}
 		}
 	}
-	orcs_of_mordor = {
+	mordor_orcs_of_mordor = {
 		icon = mission_orc_army
 		required_missions = {
-		retake_old_orc_lands
+            mordor_retake_old_orc_lands
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -489,10 +494,10 @@ V17_expand_into_nurn = {
 			}
 		}
 	}
-	fortify_orc_strongholds = {
+	mordor_fortify_orc_strongholds = {
 		icon = mission_orc_building
 		required_missions = {
-		orcs_of_mordor	
+            mordor_orcs_of_mordor	
 		}
 		position = 3
 		trigger = {
@@ -520,10 +525,10 @@ V17_expand_into_nurn = {
 			}
 		}
 	}
-	the_land_of_shadows = {
+	mordor_the_land_of_shadows = {
 		icon = mission_mordor_land
 		required_missions = {
-			fortify_orc_strongholds
+			mordor_fortify_orc_strongholds
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -566,11 +571,12 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	has_country_shield = yes
-	control_dol_guldur = {
+	
+    mordor_control_dol_guldur = {
 		icon = mission_dol_guldur
 		required_missions = {
-		the_land_of_shadows
-		mordor_rebuild_barad_dur_mission
+            mordor_the_land_of_shadows
+            mordor_rebuild_barad_dur_mission
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -608,10 +614,10 @@ V17_necromancer_of_dol_guldur = {
 			}
 		}
 	}
-	spiders_of_mirkwood = {
+	mordor_spiders_of_mirkwood = {
 		icon = mission_spiders_of_mirkwood
 		required_missions = {
-		control_dol_guldur
+            mordor_control_dol_guldur
 		}
 		position = 6
 		provinces_to_highlight = {
@@ -657,10 +663,10 @@ V17_necromancer_of_dol_guldur = {
 			}
 		}
 	}
-	destroy_the_woodland_realm = {
+	mordor_destroy_the_woodland_realm = {
 		icon = mission_secure_power
 		required_missions = {
-		spiders_of_mirkwood
+            mordor_spiders_of_mirkwood
 		}
 		position = 7
 		provinces_to_highlight = {
@@ -707,10 +713,11 @@ V17_necromancer_of_dol_guldur = {
 		}
 	}
 	has_country_shield = yes
-	destroy_lothlorien = {
+	
+    mordor_destroy_lothlorien = {
 		icon = mission_secure_power
 		required_missions = {
-		spiders_of_mirkwood
+            mordor_spiders_of_mirkwood
 		}
 		position = 7
 		provinces_to_highlight = {
@@ -736,10 +743,10 @@ V17_necromancer_of_dol_guldur = {
 			}
 		}
 	}
-	destroy_rivendell = {
+	mordor_destroy_rivendell = {
 		icon = mission_secure_power
 		required_missions = {
-		destroy_lothlorien
+            mordor_destroy_lothlorien
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -764,22 +771,22 @@ V17_necromancer_of_dol_guldur = {
 			}
 		}
 	}
-	destroy_the_shire = {
+	mordor_destroy_the_shire = {
 		icon = mission_shire_burning
 		required_missions = {
-		destroy_rivendell
+            mordor_destroy_rivendell
 		}
 		position = 9
 		provinces_to_highlight = {
 			AND = {
-				area = the_shire_area
+				region = shire_region
 			}
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			the_shire_area = {
+			shire_region = {
 				type = all
 				owned_by = ROOT
 			}
@@ -793,32 +800,32 @@ V17_necromancer_of_dol_guldur = {
 			}
 		}
 	}
-	destroy_grey_havens = {
+	mordor_destroy_grey_havens = {
 		icon = mission_secure_power
 		required_missions = {
-		destroy_the_shire
+            mordor_destroy_the_shire
 		}
 		position = 10
 		provinces_to_highlight = {
 			AND = {
-				area = lindon_area
-				area = forlindon_area
-				area = harlindon_area
+				region = lindon_region
+				region = forlindon_region
+                region = harlindon_region
 			}
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			lindon_area = {
+			lindon_region = {
 				type = all
 				owned_by = ROOT
 			}
-			forlindon_area = {
+			forlindon_region = {
 				type = all
 				owned_by = ROOT
 			}
-			harlindon_area = {
+			harlindon_region = {
 				type = all
 				owned_by = ROOT
 			}
@@ -850,7 +857,8 @@ V17_control_minas_morgul = {
 		}
 	}
 	has_country_shield = yes
-	control_minas_morgul = {
+	
+    mordor_control_minas_morgul = {
 		icon = mission_minas_morgul
 		required_missions = {
 		}
@@ -922,10 +930,11 @@ V17_conquer_erebor = {
 		}
 	}
 	has_country_shield = yes
-	conquer_erebor = {
+	
+    mordor_conquer_erebor = {
 		icon = mission_conquer_erebor
 		required_missions = {
-		the_land_of_shadows
+            mordor_the_land_of_shadows
 		}
 		position = 5
 		provinces_to_highlight = {

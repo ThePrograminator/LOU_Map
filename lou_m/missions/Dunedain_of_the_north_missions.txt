@@ -10,14 +10,15 @@ Z06_reforge_arnor = {
 		}
 	}
 	has_country_shield = yes
-	regain_strength = {
+	
+    dunedain_north_regain_strength = {
 		icon = mission_assemble_an_army
 		required_missions = { 
 		}
 		position = 1
 		trigger = {
-					army_camp_building = 5
-				}
+            army_camp_building = 5
+        }
 		effect = {
 			add_patriarch_authority = 0.1
 		}
@@ -38,10 +39,11 @@ Z06_reforge_arnor = {
 		}
 	}
 	has_country_shield = yes
-	reconnect_lands = {
+	
+    dunedain_north_reconnect_lands = {
 		icon = mission_conquer_50_development
 		required_missions = {
-		regain_strength
+            dunedain_north_regain_strength
 		}
 		position = 2
 		trigger = {
@@ -63,10 +65,10 @@ Z06_reforge_arnor = {
 			}
 		}
 	}
-	foothold_of_thorenhad = {
+	dunedain_north_foothold_of_thorenhad = {
 		icon = mission_conquer_50_development
 		required_missions = {
-		reconnect_lands
+            dunedain_north_reconnect_lands
 		}
 		position = 3
 		trigger = {
@@ -86,10 +88,10 @@ Z06_reforge_arnor = {
 			}
 		}
 	}
-	scouring_of_trollshaws = {
+	dunedain_north_scouring_of_trollshaws = {
 		icon = mission_conquer_50_development
 		required_missions = {
-		foothold_of_thorenhad
+            dunedain_north_foothold_of_thorenhad
 		}
 		position = 4
 		trigger = {
@@ -160,7 +162,8 @@ Z06_alliances = {
 		}
 	}
 	has_country_shield = yes
-	protectors_of_the_north = {
+	
+    dunedain_north_protectors_of_the_north = {
 		icon = mission_dunedain_1
 		position = 1
 		trigger = {
