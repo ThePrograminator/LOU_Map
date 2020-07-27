@@ -1,0 +1,57 @@
+gondor_increased_production_quotas_modifier = {
+	trade_goods_size_modifier = 0.25 
+}
+gondor_taxation_of_the_thevryn_gond_modifier = {
+	global_tax_modifier = 0.1
+	build_cost = -0.1
+}
+gondor_major_restoration_works_modifier = {
+	local_development_cost = -0.1 
+}
+gondor_secured_allegiance_modifier = {
+	vassal_forcelimit_bonus = 1
+}
+gondor_spearhead_of_gondor_modifier = {
+	army_tradition = 0.5 
+	land_morale = 0.05
+}
+gondor_mountainmen_regiments_modifier = {
+	movement_speed = 0.1 
+	land_attrition = -0.1 
+}
+gondor_a_new_great_power_modifier = {
+	province_warscore_cost = -0.2 
+	yearly_army_professionalism = 0.005 
+}
+gondor_corsair_tactics_modifier = {
+	capture_ship_chance = 0.25
+	galley_power = 0.10
+}
+gondor_rekindled_our_naval_flames_modifier = {
+	navy_tradition = 0.5
+	global_ship_cost = -0.1 
+}
+gondor_maritime_ties_modifier = {
+	global_ship_trade_power = 0.33 
+	global_prov_trade_power_modifier = 0.10 
+}
+gondor_pearl_of_the_anduin_river_modifier = { 
+	trade_goods_size = 1 
+}
+gondor_desert_warfare_modifier = { 
+	leader_land_shock =  1
+	siege_ability = 0.20 
+}
+gondor_victory_over_sauron_modifier = {
+	global_unrest = -1 
+	prestige_decay = -0.01 
+}
+gondor_era_of_progress_and_prosperity_modifier = {
+	years_of_nationalism = -5 
+	reform_progress_growth = 0.20 
+}
+gondor_usurper_modifier = { 
+	harsh_treatment_cost = -0.33 
+	diplomatic_reputation = -1 
+	stability_cost_modifier = 0.25 
+}
