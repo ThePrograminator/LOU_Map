@@ -1,9 +1,9 @@
 estate_stewards_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
-	max_absolutism = -5
-	loyalty = 0.05
-	influence = 0.05
+	max_absolutism = -20
+	loyalty = 0.10
+	influence = 0.10
 	can_select = {
 	}
 	on_granted = {
@@ -11,7 +11,8 @@ estate_stewards_land_rights = {
 	penalties = {
 	}
 	benefits = {
-		governing_capacity = 100
+		governing_capacity = 500
+		min_autonomy = 20
 	}
 	ai_will_do = {
 		factor = 5

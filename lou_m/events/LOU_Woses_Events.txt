@@ -1,0 +1,106 @@
+########################################
+# Events for Woses
+########################################
+
+namespace = flavor_woses
+normal_or_historical_nations = yes
+
+# Donate to a district
+country_event = {
+	id = flavor_woses.1
+	title = flavor_woses.1.t
+	desc = flavor_woses.1.d
+	picture = woses_gathering
+	
+	is_triggered_only = yes
+	
+	#Gathering the elders
+	option = {
+		name = "flavor_woses.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.1 - Option : flavor_woses.1.a" }
+		
+		add_country_modifier = {
+				name = "X15_gathering_manpower"
+				duration = 7300				#20 years
+			}
+	}
+	option = {
+		name = "flavor_woses.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.1 - Option : flavor_woses.1.b" }
+		
+		add_country_modifier = {
+			name = "growth_of_capital"
+			duration = 7300				#20 years
+		}
+	}
+}
+
+country_event = {
+	id = flavor_woses.2
+	title = flavor_woses.2.t
+	desc = flavor_woses.2.d
+	picture = woses_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_woses.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.2 - Option : flavor_woses.2.a" }
+		
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+	option = {
+		name = "flavor_woses.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.2 - Option : flavor_woses.2.b" }
+		
+		add_treasury = 100
+	}
+}
+
+country_event = {
+	id = flavor_woses.3
+	title = flavor_woses.3.t
+	desc = flavor_woses.3.d
+	picture = woses_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_woses.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.3 - Option : flavor_woses.3.a" }
+		
+		add_country_modifier = {
+			name = "X15_integrate_eryn_vorn_1"
+			duration = 9125				#25 years
+		}
+	}
+	option = {
+		name = "flavor_woses.3.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.3 - Option : flavor_woses.3.b" }
+		
+		add_country_modifier = {
+			name = "X15_integrate_eryn_vorn_2"
+			duration = 9125				#25 years
+		}
+	}
+	option = {
+		name = "flavor_woses.3.c"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_woses.3 - Option : flavor_woses.3.c" }
+		
+		add_country_modifier = {
+			name = "X15_integrate_eryn_vorn_3"
+			duration = 9125				#25 years
+		}
+	}
+}

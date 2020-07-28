@@ -1,21 +1,42 @@
 ####################
-# Slot 1 - The Old Pukel Land  #
+# Slot 1   #
 ####################
-X15_the_old_pukel_land = {
+X15_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
 		tag = X15
-		NOT = {
-			map_setup = map_setup_random
-		}
 	}
 	has_country_shield = yes
 	
-    dru_deal_with_clansmen = {
+	dru_prepare_for_war = {
+		icon = mission_woses_5
+		required_missions = { dru_a_great_gathering }
+		position = 2
+		
+		trigger = {
+			manpower_percentage = 0.60
+			army_size_percentage = 0.80
+		}
+		effect = {
+			druwaith_iaur_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = X15_druedain_preparing_for_war
+				duration = 3650 #10 years
+			}
+		}
+	}
+	dru_deal_with_clansmen = {
 		icon = mission_pukel_land
-		position = 1
+		required_missions = { dru_prepare_for_war }
+		position = 3
 		provinces_to_highlight = {
 			region = old_pukel_land_region
 			NOT = {
@@ -29,27 +50,17 @@ X15_the_old_pukel_land = {
 			}
 		}
 		effect = {
-			add_dip_power = 30
-			add_adm_power = 30
-			add_mil_power = 30
-			add_country_modifier = {
-				name = "conquer_old_pukel_land_X15_mission"
-				duration = 9125				#25 years
-			}
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 7300				#20 years
-			}
-			1443 = {
+			add_mil_power = 50
+				country_event = {
+					id = flavor_woses.2
+				}
+			1443 = { #this needs a custom tooltip
 				add_permanent_claim = X15
 			}
 			1491 = {
 				add_permanent_claim = X15
 			}
 			1510 = {
-				add_permanent_claim = X15
-			}
-			1359 = {
 				add_permanent_claim = X15
 			}
 			1431 = {
@@ -58,129 +69,157 @@ X15_the_old_pukel_land = {
 			1457 = {
 				add_permanent_claim = X15
 			}
+			1359 = {
+				add_permanent_claim = X15
+			}
 		}
 	}
-	dru_regain_lost_lands = {
-		icon = mission_woses_1
-		required_missions = {
-			dru_deal_with_clansmen
-		}
-		position = 1
+	dru_forests_of_enedhwaith = {
+		icon = mission_woses_10
+		required_missions = { dru_deal_with_clansmen }
+		position = 4
 		provinces_to_highlight = {
-			province_id = 1443
-			province_id = 1491
-			province_id = 1510
+			OR = {
+				province_id = 1443
+				province_id = 1491
+				province_id = 1510
+			}
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
+			owns = 1443
+			owns = 1491
+			owns = 1510
+		}
+		effect = {
+			add_prestige = 10
 			1443 = {
-				owned_by = ROOT
-			}
-			1491 = {
-				owned_by = ROOT
+				add_province_modifier = { 
+					name = X15_decrease_autonomy
+					duration = 7300  
+				}
 			}
 			1510 = {
-				owned_by = ROOT
+				add_province_modifier = { 
+					name = X15_decrease_autonomy
+					duration = 7300  
+				}
 			}
-		}
-		effect = {
-			add_dip_power = 50
-			add_adm_power = 50
-			add_mil_power = 50
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 7300				#20 years
+			1491 = {
+				add_province_modifier = { 
+					name = X15_decrease_autonomy
+					duration = 7300  
+				}
 			}
 		}
 	}
-	dru_unite_the_woses = {
-		icon = mission_woses_2
-		required_missions = {
-			dru_regain_lost_lands
-		}
+}
+
+####################
+# Slot 2   #
+####################
+
+X15_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X15
+	}
+	has_country_shield = yes
+	
+	dru_a_great_gathering = {
+		icon = mission_woses_3
 		position = 1
 		trigger = {
-			OR = {
-				AND = {
-					alliance_with = Y85
-					Y85 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-				AND = {
-					alliance_with = Y89
-					Y89 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-			}
+			stability = 1
 		}
 		effect = {
-			add_dip_power = 100
-			add_stability = 1
-			eryn_vorn_area = {
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = "conquer_lost_forests_of_the_druedain_X15_mission"
-				duration = 9125				#25 years
-			}
-			add_country_modifier = {
-				name = "influential_diplomacy"
-				duration = 9125				#25 years
+			country_event = {
+				id = flavor_woses.1
 			}
 		}
 	}
-	dru_eryn_vorn_reconnects_with_the_homeland = {
-		icon = mission_unite_home_region
-		required_missions = {
-			dru_unite_the_woses
-		}
-		position = 1
+	
+	dru_men_of_the_mountains = {
+		icon = mission_wildmen_1
+		required_missions = { dru_prepare_for_war }
+		position = 3
 		provinces_to_highlight = {
-			area = eryn_vorn_area
+			OR = {
+				province_id = 185
+				province_id = 983
+				province_id = 201
+			}
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			eryn_vorn_area = {
-				type = all
-				owned_by = ROOT
-			}
+			owns = 201
+			owns = 185
+			owns = 983
 		}
 		effect = {
-			add_dip_power = 100
-			add_mil_power = 100
 			add_country_modifier = {
-				name = "expansionist_country"
-				duration = 9125				#25 years
+				name = X15_defending_the_land
+				duration = -1
 			}
-			103 = {
+			655 = { #all these claims should get a custom tooltip so it looks nice
 				add_permanent_claim = X15
 			}
-			1405 = {
+			2164 = {
 				add_permanent_claim = X15
 			}
-			dor-i-tinuviel_area = {
-				add_permanent_claim = ROOT
+			978 = {
+				add_permanent_claim = X15
+			}
+			181 = {
+				add_permanent_claim = X15
+			}
+			979 = {
+				add_permanent_claim = X15
+			}
+			nan_i_feryth_area = {
+				add_permanent_claim = X15
 			}
 		}
 	}
+	dru_druadan_forest = {
+		icon = mission_woses_12
+		required_missions = { dru_men_of_the_mountains }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2164
+				province_id = 655
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns = 2164
+			owns = 655
+		}
+		effect = {
+			add_prestige = 15
+			add_dip_power = 100
+			add_adm_power = 100
+			add_mil_power = 100
+			add_country_modifier = {
+				name = X15_purify_the_forests
+				duration = -1
+			}
+		}
+	}
+	
 	dru_the_great_forest = {
 		icon = mission_woses_1
-		required_missions = {
-			dru_eryn_vorn_reconnects_with_the_homeland
-		}
-		position = 1
+		required_missions = { dru_forests_of_enedhwaith dru_integrate_eryn_vorn }
+		position = 5
 		provinces_to_highlight = {
 			area = dor-i-tinuviel_area
 			NOT = {
@@ -194,19 +233,15 @@ X15_the_old_pukel_land = {
 			}
 		}
 		effect = {
-			add_dip_power = 250
-			add_mil_power = 250
-			add_adm_power = 250
-			add_stability = 1
+			add_dip_power = 100
+			add_mil_power = 100
+			add_adm_power = 100
+			add_prestige = 10
 			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 9125				#25 years
+				name = "X15_great_forest"
+				duration = -1
 			}
-			add_country_modifier = {
-				name = "the_great_forest_X15_mission"
-				duration = 9125				#25 years
-			}
-			333 = {
+			333 = { #custom tooltip 
 				add_permanent_claim = X15
 			}
 			1061 = {
@@ -223,10 +258,98 @@ X15_the_old_pukel_land = {
 }
 
 ####################
-# Slot 3 - Expanding into Gondor  #
+# Slot 3   #
 ####################
-X15_expanding_into_gondor = {
+
+X15_missions_3 = {
 	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X15
+	}
+	has_country_shield = yes
+	
+	dru_reorganize_tribes = {
+		icon = mission_woses_7
+		required_missions = { dru_a_great_gathering }
+		position = 2
+		
+		trigger = {
+			is_at_war = no
+			NOT = { overextension_percentage = 0.05 }
+			legitimacy = 95
+			adm = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "X15_reorganize_tribes"
+				duration = 7300 #20 years
+			}
+		}
+	}
+	dru_brethren_of_eryn_vorn = {
+		icon = mission_woses_9
+		required_missions = { dru_reorganize_tribes }
+		position = 3
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = Y85
+					Y85 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_trust = {
+				who = Y85
+				value = 20
+				mutual = yes
+			}
+			add_country_modifier = {
+				name = influential_diplomacy
+				duration = 9125				#25 years
+			}
+		}
+	}
+	dru_integrate_eryn_vorn = {
+		icon = mission_woses_8
+		required_missions = { dru_brethren_of_eryn_vorn }
+		position = 4
+		
+		provinces_to_highlight = {
+			area = eryn_vorn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			eryn_vorn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			country_event = {
+				id = flavor_woses.3
+			}
+		}
+	}
+}
+
+####################
+# Slot 4   #
+####################
+
+X15_missions_4 = {
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -237,91 +360,183 @@ X15_expanding_into_gondor = {
 	}
 	has_country_shield = yes
 	
-    dru_eredrim_dominated = {
-		icon = mission_conquer_50_development
-		position = 1
-		provinces_to_highlight = {
-			AND = {
-				province_id = 983
-				province_id = 185
-				province_id = 201
-			}
-			NOT = {
-				owned_by = ROOT
-			}
-		}
+	dru_strengthen_balorn = {
+		icon = mission_woses_11
+		required_missions = { dru_gems_of_pukelhyrne }
+		position = 2
+		
 		trigger = {
-			983 = {
-				owned_by = ROOT
-			}
-			185 = {
-				owned_by = ROOT
-			}
-			201 = {
-				owned_by = ROOT
+			capital_scope = {
+				development = 20
 			}
 		}
 		effect = {
-			add_mil_power = 50
 			add_country_modifier = {
-				name = "thriving_arms_industry"
-				duration = 7300				#20 years
+				name = "X15_balorn_grows"
+				duration = 5475 #15 years
 			}
-			tawar-in-druedain_area = {
-				add_permanent_claim = ROOT
-			}
-			978 = {
-				add_permanent_claim = X15
-			}
-			181 = {
-				add_permanent_claim = X15
-			}
-			979 = {
-				add_permanent_claim = X15
+			change_price = {
+				trade_goods = herbs
+				key = X15_HEALING_HERBS
+				value = 0.5 #better to give a local goods produced bonuses
+				duration = 18250
 			}
 		}
 	}
-	dru_old_borders = {
-		icon = mission_unite_home_region
-		required_missions = {
-			dru_eredrim_dominated
+	dru_pukelmen = {
+		icon = mission_woses_2
+		required_missions = { dru_strengthen_balorn dru_reorganize_tribes }
+		position = 3
+		
+		trigger = {
+			fort_castle_building = 5
 		}
-		position = 1
-		provinces_to_highlight = {
-			AND = {
-				province_id = 979
-				province_id = 181
-				province_id = 978
+		effect = {
+			add_country_modifier = {
+				name = "X15_pukelmen_statues"
+				duration = -1
 			}
+		}
+	}
+	dru_druwaith_dae = {
+		icon = mission_woses_10
+		required_missions = { dru_pukelmen dru_gold_of_heahyrne }
+		position = 5
+		
+		provinces_to_highlight = {
+			region = druwaith_iaur_region
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			979 = {
+			AND = {
+				old_pukel_land_region = {
+				type = all
 				owned_by = ROOT
-			}
-			181 = {
-				owned_by = ROOT
-			}
-			978 = {
-				owned_by = ROOT
+				}
+				capital_scope = {
+					development = 30
+				}
+				total_development = 800
 			}
 		}
 		effect = {
-			add_mil_power = 100
+			add_stability = 1
 			add_country_modifier = {
-				name = "fighting_gondor_X15_mission"
-				duration = 7300				#20 years
+				name = "X15_druwaith_prestige"
+				duration = 9125
+			}
+			add_country_modifier = {
+				name = "X15_druwaith_dae"
+				duration = -1
+			}
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+####################
+# Slot 5   #
+####################
+
+X15_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = X15
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	has_country_shield = yes
+	
+	dru_gems_of_pukelhyrne = {
+		icon = mission_woses_4
+		position = 1
+		provinces_to_highlight = {
+			province_id = 3950
+		}
+		trigger = {
+			3950 = {
+				base_production = 7
+			}
+		}
+		effect = {
+			3950 = {
+				change_trade_goods = gems
+				add_province_modifier = { 
+					name = X15_gems_of_pukelhyrne
+					duration = -1  
+				}
+			}
+		}
+	}
+	dru_create_treasury = {
+		icon = mission_war_chest
+		required_missions = { dru_gems_of_pukelhyrne }
+		position = 2
+		
+		trigger = {
+			treasury = 500
+		}
+		effect = {
+			add_country_modifier = {
+				name = "X15_treasury_of_the_woses"
+				duration = 7300 #20 years
+			}
+		}
+	}
+	dru_new_mines = {
+		icon = mission_mine
+		required_missions = { dru_create_treasury }
+		position = 3
+		
+		trigger = {
+			workshop_building = 5 #should probably include better buildings, all under an OR = {
+			OR = {
+				has_terrain = mountain
+				has_terrain = hills
+				has_terrain = unique_mountain_pass
+				has_terrain = highlands
+			}
+		}
+		effect = {
+			3951 = {
+				add_permanent_claim = X15
+				cede_province = X15
+				change_trade_goods = stone
+			}
+		}
+	}
+	dru_gold_of_heahyrne = {
+		icon = mission_woses_6
+		required_missions = { dru_new_mines }
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 3951
+		}
+		trigger = {
+			3951 = {
+				base_production = 5
+				settlement_building = 1
+			}
+		}
+		effect = {
+			3951 = {
+				change_trade_goods = gold
 			}
 		}
 	}
 	dru_a_new_ally = {
-		icon = mission_woses_2
-		required_missions = {
-			dru_old_borders
-		}
-		position = 1
+		icon = mission_ents_1
+		position = 6
 		trigger = {
 			OR = {
 				AND = {
@@ -340,6 +555,44 @@ X15_expanding_into_gondor = {
 			add_country_modifier = {
 				name = "influential_diplomacy"
 				duration = 9125				#25 years
+			}
+		}
+	}
+	dru_hunt_down_sarumans_orcs = {
+		icon = mission_woses_1
+		required_missions = { dru_a_new_ally }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 223
+		}
+		trigger = {
+			NOT = {
+				exists = V49
+			}
+			OR = {
+				223 = {
+					owned_by = X15
+				}
+				223 = {
+					owned_by = Z93
+				}
+				223 = {
+					owned_by = X16
+				}
+				223 = {
+					owned_by = X01
+				}
+				223 = {
+					owned_by = Y68
+				}
+			}
+		}
+		effect = {
+			add_prestige = 5
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "X15_druwaith_prestige"
+				duration = 3650
 			}
 		}
 	}

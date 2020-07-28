@@ -11,6 +11,7 @@ monarchy = {
 				principality_reform
 				stewardship_reform
 				easterling_clan_reform
+				gondor_kingship_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -38,10 +39,12 @@ monarchy = {
 		lotr_stewardship_legacy
 		lotr_principality_legacy
 		lotr_easterling_clan_legacy
+		gondor_kingship_legacy
 	}
 	
 	exclusive_reforms = {
 		stewardship_reform
+		gondor_kingship_reform
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
