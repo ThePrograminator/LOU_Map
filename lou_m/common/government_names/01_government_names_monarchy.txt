@@ -279,3 +279,27 @@ gov_lotr_harshandatt_monarchy = {
 		tag = X64
 	}
 }
+
+gov_great_khaganate_of_nurn = {
+	rank = {
+		1 = KHAGANATE
+		2 = KHAGANATE
+		3 = KHAGANATE
+	}
+	
+	ruler_male = {
+		1 = KHAGANATE_RULER
+		2 = KHAGANATE_RULER
+		3 = KHAGANATE_RULER
+	}
+	
+	ruler_female = {
+		1 = LADY
+		2 = LADY
+		3 = LADY
+	}
+	
+	trigger = {
+		has_reform = great_khaganate_of_nurn_reform
+	}
+}

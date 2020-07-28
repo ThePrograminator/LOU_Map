@@ -16,7 +16,7 @@ conquer_nurn_region_one = {
 	has_country_shield = yes
 
 	build_cities_nurn = {
-		icon = mission_unite_home_region
+		icon = mission_conquer_tunisia
 		required_missions = {
 		}
 		position = 1
@@ -36,7 +36,7 @@ conquer_nurn_region_one = {
 	}
 
 	build_manufactories_nurn = {
-		icon = mission_unite_home_region
+		icon = mission_retake_ceuta
 		required_missions = {
 			build_cities_nurn
 		}
@@ -59,7 +59,7 @@ conquer_nurn_region_one = {
 	}
 
 	conquer_shadow_mountains = {
-		icon = mission_unite_home_region
+		icon = mission_shadow_mountains
 		required_missions = {
 		}
 		position = 5
@@ -84,7 +84,7 @@ conquer_nurn_region_one = {
 	}
 
 	secure_the_passes = {
-		icon = mission_unite_home_region
+		icon = mission_portuguese_oman
 		required_missions = {
 			drive_out_orcs
 		}
@@ -108,62 +108,13 @@ conquer_nurn_region_one = {
 			add_prestige = 25
 		}
 	}
-}
 
-conquer_nurn_region_two = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = X86
-		
-		NOT = {
-			map_setup = map_setup_random
-		}
-	}
-
-	has_country_shield = yes
-
-	ally_nurad = {
-		icon = mission_unite_home_region
+	ally_vassal_harad_nurn = {
+		icon = mission_southrons
 		required_missions = {
+			conquer_chelkar_nurn
 		}
-		position = 1
-
-		trigger = {
-			OR = {
-				AND = {
-					alliance_with = X85
-					X85 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-				AND = {
-					X85 = {
-						is_subject_of = ROOT
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-			}
-		}
-
-		effect = {
-			add_prestige = 25
-		}
-	}
-
-	ally_vassal_rhun = {
-		icon = mission_unite_home_region
-		required_missions = {
-			ally_nurad
-		}
-		position = 2
+		position = 9
 
 		trigger = {
 			OR = {
@@ -202,9 +153,24 @@ conquer_nurn_region_two = {
 			add_prestige = 25
 		}
 	}
+}
+
+conquer_nurn_region_two = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
 
 	conquer_road_to_harad = {
-		icon = mission_unite_home_region
+		icon = mission_bedouins
 		required_missions = {
 		}
 		position = 5
@@ -229,7 +195,7 @@ conquer_nurn_region_two = {
 	}
 
 	drive_out_orcs = {
-		icon = mission_unite_home_region
+		icon = mission_orc_army
 		required_missions = {
 			conquer_road_to_harad
 			conquer_shadow_mountains
@@ -282,7 +248,7 @@ conquer_nurn_region_two = {
 	}
 
 	conquer_amrun_trade_node_nurn = {
-		icon = mission_unite_home_region
+		icon = mission_trade_in_gold_coast
 		required_missions = {
 			conquer_chelkar_nurn
 		}
@@ -318,7 +284,7 @@ conquer_nurn_region_four = {
 	has_country_shield = yes
 
 	great_khaganate_of_nurn = {
-		icon = mission_unite_home_region
+		icon = mission_the_ganges_campaign
 		required_missions = {
 			drive_variags_out
 			drive_out_orcs
@@ -338,7 +304,7 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			country_event = { id = flavor_nurn.1 }
 		}
 	}
 }
@@ -358,7 +324,7 @@ conquer_nurn_region_four = {
 	has_country_shield = yes
 
 	conquer_lithlad = {
-		icon = mission_unite_home_region
+		icon = mission_lithlad
 		required_missions = {
 		}
 		position = 5
@@ -383,7 +349,7 @@ conquer_nurn_region_four = {
 	}
 
 	drive_variags_out = {
-		icon = mission_unite_home_region
+		icon = mission_variags
 		required_missions = {
 			conquer_lithlad
 			conquer_sturlutsa_nurn
@@ -410,7 +376,7 @@ conquer_nurn_region_four = {
 	}
 
 	conquer_northern_khand = {
-		icon = mission_unite_home_region
+		icon = mission_unite_west_india
 		required_missions = {
 			drive_variags_out
 		}
@@ -467,7 +433,7 @@ conquer_nurn_region_four = {
 	}
 
 	obamarl_trade_node_nurn = {
-		icon = mission_unite_home_region
+		icon = mission_reclaim_morocco
 		required_missions = {
 			conquer_khand
 		}
@@ -503,7 +469,7 @@ conquer_nurn_region_five = {
 	has_country_shield = yes
 
 	conquer_sturlutsa_nurn = {
-		icon = mission_unite_home_region
+		icon = mission_non-western_cavalry_raid
 		required_missions = {
 		}
 		position = 5
@@ -527,10 +493,45 @@ conquer_nurn_region_five = {
 		}
 	}
 
+	ally_nurad = {
+		icon = mission_easterlings
+		required_missions = {
+		}
+		position = 6
+
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = X85
+					X85 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+				AND = {
+					X85 = {
+						is_subject_of = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
 	secure_eastern_entrance = {
-		icon = mission_unite_home_region
+		icon = mission_arabian_fort
 		required_missions = {
 			drive_variags_out
+			ally_nurad
 		}
 		position = 7
 

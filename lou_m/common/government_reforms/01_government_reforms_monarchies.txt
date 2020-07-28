@@ -127,6 +127,26 @@ easterling_clan_reform = {
 	}
 }
 
+great_khaganate_of_nurn_reform = {
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_equivalent = lotr_principality_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	fixed_rank = 2
+	
+	potential = {
+		tag = X86
+		mission_completed = great_khaganate_of_nurn
+	}
+	
+	modifiers = {
+		legitimacy = 1
+		land_morale = 0.15
+		cav_to_inf_ratio = 0.50
+	}
+}
+
 ############
 #Noble Privileges#
 ############
