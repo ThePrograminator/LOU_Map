@@ -22,7 +22,12 @@ conquer_nurn_region_one = {
 		position = 1
 
 		trigger = {
-			city_1_building = 5
+			OR = {
+				city_1_building = 5
+				city_2_building = 5
+				city_3_building = 5
+			}
+			
 		}
 
 		effect = {
@@ -38,7 +43,14 @@ conquer_nurn_region_one = {
 		position = 2
 
 		trigger = {
-			manufactory = 5
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					region = mordor_region
+					has_building = farm_estate
+				}
+				amount = 5
+			}
 		}
 
 		effect = {
