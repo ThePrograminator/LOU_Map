@@ -85,7 +85,7 @@ stewardship_reform = {
 	valid_for_new_country = no
 	allow_convert = no
 	allow_normal_conversion = no
-	fixed_rank = 2
+	fixed_rank = 3
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_stewardship_legacy
@@ -100,7 +100,8 @@ stewardship_reform = {
 	
 	modifiers = {
 		legitimacy = -1
-		governing_capacity = 500
+		administrative_efficiency = -0.05
+		governing_capacity = 250
 	}
 	
 	custom_attributes = {
@@ -126,6 +127,36 @@ easterling_clan_reform = {
 		cav_to_inf_ratio = 0.25
 	}
 }
+
+gondor_kingship_reform = {
+	icon = soldiers_6
+	valid_for_new_country = no
+	allow_convert = no
+	allow_normal_conversion = no
+	fixed_rank = 3
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = gondor_kingship_legacy
+	maintain_dynasty = yes
+	lock_level_when_selected = yes
+	
+	potential = {
+		tag = X01 
+	}
+	
+	modifiers = {
+		governing_capacity = 500
+		development_cost = -0.1
+		monarch_military_power = 1	
+	}
+	ai = {
+		factor = 1
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}	
 
 ############
 #Noble Privileges#

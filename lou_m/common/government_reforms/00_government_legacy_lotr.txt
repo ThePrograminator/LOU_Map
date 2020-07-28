@@ -4,6 +4,29 @@
 #Monarchy#
 ########
 
+gondor_kingship_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+	
+	modifiers = {
+    	governing_capacity = 500
+		development_cost = -0.1
+		monarch_military_power = 1
+		estate_stewards_influence_modifier = -0.20
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
 lotr_kingship_legacy = {
 	# government mechanics flags go here
 	icon = "crown"
