@@ -8,12 +8,12 @@
 
 MDR_ideas = {
 	start = {
-		production_efficiency = 0.25
-		manpower_recovery_speed = 0.10
+		infantry_cost = -0.1 
+		artillery_bonus_vs_fort = 2
 	}
 
 	bonus = {
-		global_regiment_cost = -0.15
+		manpower_recovery_speed = 0.2
 	}
 	
 	trigger = {
@@ -22,32 +22,28 @@ MDR_ideas = {
 	free = yes		#will be added at load.
 	
 	regiments_of_mordor = {
-		discipline = 0.05
+		land_forcelimit_modifier = 0.33
 	}
 	mordors_allies = {
 		diplomatic_upkeep = 1
 		vassal_income = 0.20
 	}
 	working_trolls = {
-		build_cost = -0.2
-
+		build_cost = -0.15
 	}
 	emmisaries_of_mordor = {
-		advisor_cost = -0.15
-		advisor_pool = 1
-		envoy_travel_time = -0.20
-
+		accept_vassalization_reasons = 25
+		diplomatic_upkeep = 1
 	}
 	harsh_training = {
-		army_tradition = 1
-		infantry_power = 0.1
+		manpower_in_true_faith_provinces= 0.15
+		army_tradition = 0.5
 	}
 	the_whip = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 	the_battle_for_middle_earth = {
-		global_manpower_modifier = 0.1
-		land_morale = 0.15
-		siege_ability = 0.25
+		province_warscore_cost = -0.1 
+		administrative_efficiency = 0.05 
 	}
 }

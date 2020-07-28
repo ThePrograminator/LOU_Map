@@ -8,12 +8,12 @@
 
 DWF_ideas = {
 	start = {
-		idea_cost = -0.1
-		inflation_reduction = 0.1
+		idea_cost = -0.05
+		trade_goods_size_modifier = 0.20 
 	}
 
 	bonus = {
-		legitimacy = 1
+		siege_ability = 0.15 
 
 	}
 	
@@ -25,31 +25,27 @@ DWF_ideas = {
 	
 	architecture = {
 		build_cost = -0.1
-		development_cost = -0.1
+		build_time = -0.25
 	}
 	council_of_dwarves = {
-		advisor_cost = -0.15
+		advisor_cost = -0.10
 		advisor_pool = 1
 	}
 	broad_and_heavy = {
-		discipline = 0.10
-		infantry_power = 0.1
+		fire_damage = 0.1 
 	}
 	trading_caravans = {
 		caravan_power = 0.2
-		global_own_trade_power = 0.1
 	}
 	solid_defence = {
 		garrison_size = 0.25
-		fort_maintenance_modifier = -0.1
-		enemy_core_creation = 0.25
 	}
 	supply_tunnels = {
-		war_exhaustion = -0.1
+		war_exhaustion = -0.03
+		supply_limit_modifier = 0.25
 	}
 	claim_on_the_mountains = {
-		province_warscore_cost = -0.2
 		fabricate_claims_cost = -0.25
-		unjustified_demands = -0.25
+		ae_impact = -0.05 
 	}
 }

@@ -8,12 +8,12 @@
 
 ROH_ideas = {
 	start = {
-		cavalry_cost = -0.25
+		cavalry_power = 0.33 
 		leader_land_manuever = 1
 	}
 
 	bonus = {
-		prestige_from_land = 0.5
+		free_adm_policy = 1
 	}
 	
 	trigger = {
@@ -22,29 +22,27 @@ ROH_ideas = {
 	free = yes		#will be added at load.
 	
 	oath_of_eorl = {
-		diplomatic_reputation = 10
+		diplomatic_reputation = 1
 	}
 	the_rohirrim = {
-		cavalry_power = 0.20
+		cav_to_inf_ratio = 0.25
+		cavalry_cost = -0.05 
 	}
 	the_fords_of_isen = {
 		defensiveness = 0.20
 	}
 	the_beacons_of_gondor = {
-		improve_relation_modifier = 0.3
-		envoy_travel_time = -0.20
+		improve_relation_modifier = 0.15
+		envoy_travel_time = -0.25
 	}
 	muster_the_rohirrim = {
 		manpower_recovery_speed = 0.20
-		reinforce_speed = 0.20
 	}
 	fields_of_rohan = {
-		production_efficiency = 0.25
-		supply_limit_modifier = 0.1
+		development_cost = -0.05
+		supply_limit_modifier = 0.25
 	}
 	ruled_with_dignity = {
-		stability_cost_modifier = -0.1
 		global_unrest = -1
-		religious_unity = 0.5
 	}
 }

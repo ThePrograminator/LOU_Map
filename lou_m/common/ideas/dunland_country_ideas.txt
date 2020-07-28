@@ -29,23 +29,20 @@ DUN_ideas = {
 		unjustified_demands = -0.5
 	}
 	uniting_the_clans = {
-		build_cost = -0.1
-		heir_chance = 0.25
+		nobles_loyalty_modifier = 0.1
+		stability_cost_modifier = -0.15
 	}
 	feared = {
-		prestige = 1
-		prestige_decay = -0.25
+		improve_relation_modifier = 0.2
 	}
 	welcoming_wildmen = {
 		vassal_income = 0.2
-		vassal_forcelimit_bonus = 0.33
-		rebel_support_efficiency = 0.2
+		vassal_forcelimit_bonus = 1
 	}
 	influence_from_isengard = {
 		mil_tech_cost_modifier = -0.1
 	}
 	homeward_bound = {
-		enemy_core_creation = 0.5
 		envoy_travel_time = -0.20
 		legitimacy = 0.5
 	}

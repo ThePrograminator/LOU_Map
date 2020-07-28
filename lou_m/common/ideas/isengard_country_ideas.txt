@@ -9,11 +9,11 @@
 ISG_ideas = {
 	start = {
 		infantry_power = 0.10
-		artillery_cost = -0.10
+		build_time = -0.25
 	}
 
 	bonus = {
-		idea_cost = -0.10
+		backrow_artillery_damage = 0.1 
 	}
 	
 	trigger = {
@@ -22,38 +22,26 @@ ISG_ideas = {
 	free = yes		#will be added at load.
 	
 	preparation = {
-		core_creation = -0.5
+		global_regiment_recruit_speed = -0.1 
 		army_tradition_decay = -0.01
 	}
 	wormtongue = {
-		advisor_cost = -0.25
-		diplomats = 1
+		spy_offence = 0.5 
 	}
 	raiding_of_the_isen = {
-		merc_maintenance_modifier = -0.25
 		army_tradition_decay = -0.01
-
 	}
 	influence_of_isengard = {
-		global_spy_defence = 0.40
-		spy_offence = 0.40
-
+		global_spy_defence = 0.25
+		diplomats = 1
 	}
 	forges_of_isengard = {
-		production_efficiency = 0.15
-		build_cost = -0.2
-
+		production_efficiency = 0.20
 	}
 	the_white_hand_of_isengard = {
-		diplomatic_reputation = 5
 		leader_land_fire = 1
-		leader_land_manuever = 1
-		leader_land_shock = 1
-
 	}
 	unleash_isengard = {
-		army_tradition = 1
-		siege_ability = 0.30
-		discipline = 0.10
+	global_manpower_modifier = 0.33
 	}
 }

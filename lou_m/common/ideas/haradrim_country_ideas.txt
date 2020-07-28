@@ -8,9 +8,8 @@
 
 HAD_ideas = {
 	start = {
-		land_attrition = -0.25
-		reinforce_speed = 0.15
-		may_perform_slave_raid = yes
+		cavalry_power = 0.25
+		land_attrition = -0.20 
 	}
 
 	bonus = {
@@ -24,30 +23,28 @@ HAD_ideas = {
 	free = yes		#will be added at load.
 	
 	waring_tribes = {
-		war_exhaustion_cost = -0.2
+		nobles_loyalty_modifier = 0.05 
+		army_tradition = 0.5 
 	}
 	grip_of_sauron = {
-		mercenary_cost = -0.25
-		merc_maintenance_modifier = -0.10
+		mercenary_cost = -0.20
+		mercenary_discipline = 0.05
 	}
 	serpant_leaders = {
-		heir_chance = 0.5
+		heir_chance = 0.25
 		legitimacy = 0.5
 	}
 	taming_the_oliphaunts = {
-		cavalry_power = 0.30
-		siege_ability = 0.10
+		siege_ability = 0.20
 	}
 	hostile_attitude = {
 		ae_impact = -0.10
+		core_creation = -0.15
 	}
 	reqruitment_of_tribes = {
-		global_regiment_recruit_speed = -0.2
 		global_regiment_cost = -0.10
 	}
 	forever_rival = {
-		unjustified_demands = -0.5
-		fabricate_claims_cost = -0.25
-		core_creation = -0.5
+		cavalry_flanking = 0.5
 	}
 }
