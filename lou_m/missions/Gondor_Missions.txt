@@ -188,7 +188,7 @@ gondor_missions_1 = {
 	}
 	
 	gondor_raze_the_dark_tower = {
-		icon = mission_steppe_warriors 
+		icon = mission_gondor_11
 		required_missions = { gondor_defy_the_dark_lord }
 		position = 5 
 		trigger = {
@@ -208,7 +208,7 @@ gondor_missions_1 = {
 	}
 	
 	gondor_fain_dor = {
-		icon = the_fountain_of_youth
+		icon = mission_gondor_17
 		required_missions = { gondor_raze_the_dark_tower }
 		position = 6 
 		trigger = { #will add highlighting later
@@ -294,7 +294,7 @@ gondor_missions_3 = {
 	has_country_shield = yes	
 	
 	gondor_beyond_the_long_winter = {
-		icon = unite_the_wittelsbachs
+		icon = mission_gondor_10
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -334,7 +334,7 @@ gondor_missions_3 = {
 	}
 	
 	gondor_ered_nimrais = {
-		icon = alpine_defenses
+		icon = mission_gondor_13
 		required_missions = { gondor_raise_the_royal_forces }
 		position = 5
 		trigger = {
@@ -374,7 +374,7 @@ gondor_missions_3 = {
 	}
 	
 	gondor_gondor_resurgent = {
-		icon = give_him_back_his_legions
+		icon = mission_gondor_12
 		required_missions = { gondor_demand_gwedh_byr gondor_ered_nimrais gondor_the_southern_lands }
 		position = 6
 		trigger = { 
@@ -406,7 +406,7 @@ gondor_missions_3 = {
 	}
 	
 	gondor_the_return_of_the_king = {
-		icon = mission_empire 
+		icon = mission_gondor_9 
 		required_missions = { gondor_gondor_resurgent gondor_fain_dor gondor_campaign_in_harondor }
 		position = 7
 		trigger = {
@@ -440,7 +440,7 @@ gondor_missions_4 = {
 	has_country_shield = yes
 	
 	gondor_return_umbar_to_the_fold = {
-		icon = overshadow_venice
+		icon = mission_gondor_20
 		required_missions = { gondor_raise_the_royal_forces gondor_reinforce_our_maritime_ties }
 		position = 3
 		trigger = {
@@ -458,7 +458,7 @@ gondor_missions_4 = {
 	}
 	
 	gondor_the_southern_lands = {
-		icon = mission_conquer_timbuktu 
+		icon = mission_gondor_19 
 		required_missions = { }
 		position = 5
 		trigger = {
@@ -496,7 +496,7 @@ gondor_missions_5 = {
     has_country_shield = yes
     
     gondor_great_ship_kings_of_gondor = {
-        icon = mission_launch_a_flagship
+        icon = mission_gondor_16
         required_missions = { }
         position = 1
         trigger = {
@@ -562,7 +562,7 @@ gondor_missions_5 = {
     }
 	
 	gondor_reinforce_our_maritime_ties = {
-		icon = mission_corsairs_of_the_north_sea 
+		icon = mission_gondor_18 
         required_missions = { gondor_beyond_the_long_winter gondor_great_ship_kings_of_gondor }
         position = 2
         trigger = {
@@ -594,7 +594,7 @@ gondor_missions_5 = {
 	}
 	
 	gondor_secure_the_jewel_haven = {
-		icon = mission_guilds_of_barcelona 
+		icon = mission_gondor_14 
         required_missions = { gondor_reinforce_our_maritime_ties }
         position = 3
         trigger = {
@@ -616,7 +616,7 @@ gondor_missions_5 = {
 	}
 	
 	gondor_campaign_in_harondor = {
-		icon = mission_control_surat 
+		icon = mission_gondor_15 
         required_missions = { gondor_the_southern_lands gondor_secure_the_jewel_haven }
         position = 6
         trigger = {
