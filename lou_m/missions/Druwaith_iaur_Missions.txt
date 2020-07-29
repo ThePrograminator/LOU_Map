@@ -342,6 +342,68 @@ X15_missions_3 = {
 			}
 		}
 	}
+	dru_a_new_ally = {
+		icon = mission_ents_1
+		position = 6
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = Z93
+					Z93 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125				#25 years
+			}
+		}
+	}
+	dru_hunt_down_sarumans_orcs = {
+		icon = mission_woses_1
+		required_missions = { dru_a_new_ally }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 223
+		}
+		trigger = {
+			NOT = {
+				exists = V49
+			}
+			OR = {
+				223 = {
+					owned_by = X15
+				}
+				223 = {
+					owned_by = Z93
+				}
+				223 = {
+					owned_by = X16
+				}
+				223 = {
+					owned_by = X01
+				}
+				223 = {
+					owned_by = Y68
+				}
+			}
+		}
+		effect = {
+			add_prestige = 5
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "X15_druwaith_prestige"
+				duration = 3650
+			}
+		}
+	}
 }
 
 ####################
@@ -531,68 +593,6 @@ X15_missions_5 = {
 		effect = {
 			3951 = {
 				change_trade_goods = gold
-			}
-		}
-	}
-	dru_a_new_ally = {
-		icon = mission_ents_1
-		position = 6
-		trigger = {
-			OR = {
-				AND = {
-					alliance_with = Z93
-					Z93 = {
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			add_dip_power = 50
-			add_country_modifier = {
-				name = "influential_diplomacy"
-				duration = 9125				#25 years
-			}
-		}
-	}
-	dru_hunt_down_sarumans_orcs = {
-		icon = mission_woses_1
-		required_missions = { dru_a_new_ally }
-		position = 7
-		provinces_to_highlight = {
-			province_id = 223
-		}
-		trigger = {
-			NOT = {
-				exists = V49
-			}
-			OR = {
-				223 = {
-					owned_by = X15
-				}
-				223 = {
-					owned_by = Z93
-				}
-				223 = {
-					owned_by = X16
-				}
-				223 = {
-					owned_by = X01
-				}
-				223 = {
-					owned_by = Y68
-				}
-			}
-		}
-		effect = {
-			add_prestige = 5
-			add_mil_power = 50
-			add_country_modifier = {
-				name = "X15_druwaith_prestige"
-				duration = 3650
 			}
 		}
 	}
