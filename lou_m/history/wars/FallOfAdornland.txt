@@ -1,0 +1,17 @@
+name = "Fall of Adornland"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 980 # Frecasburg
+}
+
+2866.3.1 = {
+	add_attacker = X16
+	add_defender = V95
+}
+
+# Rohan wins
+2870.6.1 = {
+	rem_attacker = X16
+	rem_defender = V95
+}
