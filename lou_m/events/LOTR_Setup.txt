@@ -126,17 +126,9 @@ country_event = {
     
     is_triggered_only = yes
 
-    immediate = {
-		hidden_effect = {
-			add_country_modifier = {
-				name = "human_buff"
-				duration = -1
-			}
-		}
-	}
 	option = {
         name = LOTR_HUMAN.1a
-        custom_tooltip = LOU_HUMAN_BUFFS
+        custom_tooltip = LOU_RACE_BUFFS
 		hidden_effect = {
             add_country_modifier = {
                 name = "human_buff"
@@ -153,22 +145,16 @@ country_event = {
 	desc = LOTR_DWARF.1d
 	picture = dwarves_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "dwarven_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_DWARF.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "dwarven_buff"
-                duration = -1
-            }
-        }
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "dwarven_buff"
+				duration = -1
+			}
+		}	
 	}
 }
 
@@ -179,22 +165,17 @@ country_event = {
 	desc = LOTR_DRAGON.1d
 	picture = dragon_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "dragon_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_DRAGON.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "dragon_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "dragon_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -204,22 +185,17 @@ country_event = {
 	desc = LOTR_ELVEN.1d
 	picture = elves_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "elven_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_ELVEN.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "elven_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "elven_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -229,22 +205,17 @@ country_event = {
 	desc = LOTR_ENT.1d
 	picture = ents_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "ent_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_ENT.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "ent_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "ent_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -254,22 +225,17 @@ country_event = {
 	desc = LOTR_ERUS_CHILDREN.1d
 	picture = eagles_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "erus_children_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_ERUS_CHILDREN.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "erus_children_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "erus_children_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -279,22 +245,17 @@ country_event = {
 	desc = LOTR_GOBLIN.1d
 	picture = goblin_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "goblin_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_GOBLIN.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "goblin_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "goblin_buff"
+				duration = -1
+			}
+		}	
 	}
 }
 
@@ -304,22 +265,17 @@ country_event = {
 	desc = LOTR_GIANT.1d
 	picture = giants_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "giant_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_GIANT.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "giant_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "giant_buff"
+				duration = -1
+			}
+		}	
 	}
 }
 
@@ -329,22 +285,17 @@ country_event = {
 	desc = LOTR_SPIDER.1d
 	picture = spiders_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "great_spider_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_SPIDER.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "great_spider_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "great_spider_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -354,22 +305,17 @@ country_event = {
 	desc = LOTR_HALF_DWARF.1d
 	picture = dwarves_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "half_dwarf_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_HALF_DWARF.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "half_dwarf_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "half_dwarf_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -380,21 +326,16 @@ country_event = {
 	picture = hobbit_race
 	is_triggered_only = yes
     
-    immediate = {
-        add_country_modifier = {
-			name = "hobbit_buff"
-			duration = -1
-		}
-    }
-
 	option = {
 		name = LOTR_HOBBIT.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "hobbit_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "hobbit_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -404,22 +345,17 @@ country_event = {
 	desc = LOTR_HALF_ORC.1d
 	picture = orcs_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "half_orc_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_HALF_ORC.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "half_orc_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "half_orc_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -429,22 +365,17 @@ country_event = {
 	desc = LOTR_ORC.1d
 	picture = orcs_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "orc_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_ORC.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "orc_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "orc_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -455,21 +386,16 @@ country_event = {
 	picture = trolls_race
 	is_triggered_only = yes
     
-    immediate = {
-        add_country_modifier = {
-			name = "troll_buff"
-			duration = -1
-		}
-    }
-
 	option = {
 		name = LOTR_TROLL.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "troll_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "troll_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -480,21 +406,17 @@ country_event = {
 	picture = uruk-hai_race
 	is_triggered_only = yes
     
-    immediate = {
-        add_country_modifier = {
-			name = "uruk_hai_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_URUK_HAI.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "uruk_hai_buff"
-                duration = -1
-            }
-        }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "uruk_hai_buff"
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -504,21 +426,16 @@ country_event = {
 	desc = LOTR_WIZARD.1d
 	picture = COURT_eventPicture
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "wizard_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_WIZARD.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "wizard_buff"
-                duration = -1
-            }
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "wizard_buff"
+				duration = -1
+			}
         }
 	}
 }
@@ -529,21 +446,12 @@ country_event = {
 	desc = LOTR_WIGHTS.1d
 	picture = wights_race
 	is_triggered_only = yes
-    
-    immediate = {
-        add_country_modifier = {
-			name = "wights_buff"
-			duration = -1
-		}
-    }
 
 	option = {
 		name = LOTR_WIGHTS.1a
-		tooltip = {
-            add_country_modifier = {
-                name = "wights_buff"
-                duration = -1
-            }
+		add_country_modifier = {
+			name = "wights_buff"
+			duration = -1
         }
 	}
 }
