@@ -19,7 +19,10 @@ DWF_ideas = {
 	
 	trigger = {
 		technology_group = lotr_dwarven
-		NOT = { tag = Y24 }
+		NOT = { 
+			tag = Y24 
+			tag = Y22 
+		}
 	}
 	free = yes		#will be added at load.
 	
