@@ -217,206 +217,145 @@ war_of_dwarves_and_orcs = {
 
 # Human Buff/Debuff
 human_buff = {
-	stability_cost_modifier = 0.25
-	infantry_power = 0.1
-	infantry_cost = 0.25
-	cavalry_power = 0.1
-	global_tax_modifier = 0.05
-	global_trade_power = 0.1
-	artillery_power = 0.15
+	infantry_power = 0.05 
+	global_tax_modifier = 0.1
+	land_morale = 0.05 
 }
 
 dwarven_buff = {
 	land_forcelimit_modifier = -0.25
-	manpower_recovery_speed = -0.1
-	inflation_reduction = 0.2
-	production_efficiency = 0.25
-	global_unrest = -2
-	defensiveness = 0.25
-	fort_maintenance_modifier = -0.2
+	inflation_reduction = 0.05
+	production_efficiency = 0.15
+	defensiveness = 0.15
 }
 
 dragon_buff = {
-	land_forcelimit_modifier = -0.9
-	infantry_power = 0.75
-	infantry_cost = 0.5
-	siege_ability = 0.75
-	artillery_power = 0.5
-	artillery_cost = 0.5
-	manpower_recovery_speed = -0.50
+	land_forcelimit_modifier = -0.5
+	infantry_power = 0.10
+	siege_ability = 0.15
+	artillery_power = 0.10
+	manpower_recovery_speed = -0.25
 }
 
 elven_buff = {
-	land_forcelimit_modifier = -0.4
-	manpower_recovery_speed = -0.15
-	diplomatic_reputation = 3
-	advisor_cost = -0.5
-	tolerance_own = 3
-	discipline = 0.15
-	prestige = 1
+	land_forcelimit_modifier = -0.5
+	global_manpower_modifier = -0.25
+	diplomatic_reputation = 1
+	advisor_cost = -0.1
+	discipline = 0.05
 }
 
 ent_buff = {
-	land_forcelimit_modifier = -0.75
-	infantry_power = 0.6
-	infantry_cost = 0.5
-	land_morale = 1
-	discipline = 0.15
-	siege_ability = 0.6
-	artillery_power = 0.4
-	artillery_cost = 0.5
-	manpower_recovery_speed = -0.35
+	land_forcelimit_modifier = -0.5
+	infantry_power = 0.10
+	global_regiment_cost = 0.2
+	discipline = 0.05
+	manpower_recovery_speed = -0.5
 }
 
 erus_children_buff = {
-	land_forcelimit_modifier = -0.9
-	infantry_power = 0.65
-	infantry_cost = 0.5
-	siege_ability = 0.65
-	artillery_power = 0.5
-	artillery_cost = 0.5
-	manpower_recovery_speed = -0.40
+	land_forcelimit_modifier = -0.75
+	artillery_fire = 1 
+	fire_damage = 0.10
+	siege_ability = 0.20
+	manpower_recovery_speed = -0.50
 }
 
 goblin_buff = {
-	land_forcelimit_modifier = 0.75
-	infantry_power = -0.2
-	land_morale = -0.1
-	unjustified_demands = -0.25
-	tolerance_own = 1
-	tolerance_heathen = -2
-	tolerance_heretic = -2
-	global_missionary_strength = 0.05
-	culture_conversion_cost = -0.35
-	missionaries = 2
-	manpower_recovery_speed = 0.35
-	land_maintenance_modifier = -0.5
+	land_forcelimit_modifier = 0.33
+	infantry_power = -0.1
+	land_morale = -0.10
+	manpower_recovery_speed = 0.25
+	land_maintenance_modifier = -0.1
 }
 
 giant_buff = {
-	land_forcelimit_modifier = -0.9
-	infantry_power = 0.75
-	infantry_cost = 0.5
-	siege_ability = 0.75
-	artillery_power = 0.5
-	artillery_cost = 0.5
+	land_forcelimit_modifier = -0.75
+	infantry_power = 0.20
+	global_regiment_cost = 0.25 
+	siege_ability = 0.33
+	fire_damage = 0.1
 	manpower_recovery_speed = -0.50
 }
 
 # Spider Buff/Debuff
 great_spider_buff = {
-	land_forcelimit_modifier = -0.35
-	infantry_power = 0.1
-	infantry_cost = 0.25
-	hostile_attrition = 1
-	land_morale = -0.1
-	manpower_recovery_speed = -0.1
-	discipline = -0.25
+	land_forcelimit_modifier = -0.1
+	global_regiment_cost = 0.1
+	shock_damage = 0.10
+	discipline = -0.05
 }
 
 half_dwarf_buff = {
-	land_forcelimit_modifier = -0.25
-	manpower_recovery_speed = -0.1
-	inflation_reduction = 0.2
-	production_efficiency = 0.25
-	global_unrest = -2
-	defensiveness = 0.25
-	fort_maintenance_modifier = -0.2
+	land_forcelimit_modifier = -0.33
+	siege_ability = 0.2
+	inflation_reduction = 0.05
+	global_trade_goods_size_modifier = 0.15 
 }
 
 hobbit_buff = {
-	land_forcelimit_modifier = -0.75
+	land_forcelimit_modifier = -0.50
 	manpower_recovery_speed = -0.1
-	#possible_mercenaries = 1
-	merc_maintenance_modifier = -0.5
-	tolerance_own = 2
-	tolerance_heretic = 2
-	trade_efficiency = 0.15
+	merc_maintenance_modifier = -0.25
+	tolerance_heretic = 1
+	trade_efficiency = 0.10
 }
 
 half_orc_buff = {
-	land_forcelimit_modifier = 0.5
-	infantry_power = -0.1
-	unjustified_demands = -0.25
-	tolerance_own = 1
-	tolerance_heathen = -2
-	tolerance_heretic = -2
-	global_missionary_strength = 0.05
-	culture_conversion_cost = -0.35
-	missionaries = 2
-	manpower_recovery_speed = 0.25
-	land_maintenance_modifier = -0.25
+	land_forcelimit_modifier = 0.2
+	infantry_power = -0.05
+	tolerance_heathen = -1
+	tolerance_heretic = -1
+	manpower_recovery_speed = 0.1
+	land_maintenance_modifier = -0.05
 }
 
 orc_buff = {
-	land_forcelimit_modifier = 0.5
+	land_forcelimit_modifier = 0.33
 	infantry_power = -0.1
-	unjustified_demands = -0.25
-	tolerance_own = 1
-	tolerance_heathen = -2
-	tolerance_heretic = -2
-	global_missionary_strength = 0.05
-	culture_conversion_cost = -0.35
-	missionaries = 2
-	manpower_recovery_speed = 0.25
-	land_maintenance_modifier = -0.25
+	tolerance_heathen = -1
+	tolerance_heretic = -1
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.1
 }
 
 # Troll Buff/Debuff
 troll_buff = {
-	land_forcelimit_modifier = -0.65
-	infantry_power = 0.5
-	infantry_cost = 0.5
-	siege_ability = 0.5
-	artillery_power = 0.3
-	artillery_cost = 0.5
-	manpower_recovery_speed = -0.25
+	land_forcelimit_modifier = -0.5
+	infantry_power = 0.33
+	siege_ability = 0.25
+	manpower_recovery_speed = -0.1
 }
 
 uruk_hai_buff = {
-	discipline = 0.08
-	land_morale = 0.10
-	production_efficiency = 0.15
-	unjustified_demands = -0.25
-	army_tradition = 0.8
-	tolerance_own = 1
-	tolerance_heathen = -2
-	tolerance_heretic = -2
-	global_missionary_strength = 0.05
-	culture_conversion_cost = -0.35
-	missionaries = 2
-	land_maintenance_modifier = 0.25
+	discipline = 0.05
+	tolerance_heathen = -1
+	tolerance_heretic = -1
+	global_regiment_cost = 0.1
 }
 
 wizard_buff = {
-	stability_cost_modifier = 0.25
-	infantry_power = 0.1
-	infantry_cost = 0.25
-	cavalry_power = 0.1
-	global_tax_modifier = 0.05
-	global_trade_power = 0.1
-	artillery_power = 0.15
+	fire_damage = 0.05
+	shock_damage = 0.05
+	yearly_corruption = 0.05 
+	spy_offence = 0.33
 }
 
 wights_buff = {
-	land_forcelimit_modifier = -0.5
-	tolerance_own = 1
-	tolerance_heathen = -2
-	tolerance_heretic = -2
-	global_missionary_strength = 0.05
-	culture_conversion_cost = -0.35
-	missionaries = 2
-	manpower_recovery_speed = -0.25
+	land_forcelimit_modifier = -0.25
+	tolerance_heathen = -1
+	tolerance_heretic = -1
+	manpower_recovery_speed = -0.1
+	spy_offence = 0.5 
+	leader_land_manuever = 1 
 }
 
 beornings_buff = {
-	land_forcelimit_modifier = -0.65
-	infantry_power = 0.3
-	infantry_cost = 0.3
-	tolerance_own = 5
-	defensiveness = 0.1
-	hostile_attrition = 2
-	manpower_recovery_speed = -0.25
+	land_forcelimit_modifier = -0.50
+	infantry_power = 0.15
+	tolerance_own = 1
+	hostile_attrition = 1
+	manpower_recovery_speed = -0.20
 }
 
 spawn_orc_raider_timer = {
