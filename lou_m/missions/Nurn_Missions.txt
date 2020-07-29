@@ -91,16 +91,16 @@ conquer_nurn_region_one = {
 		position = 7
 
 		provinces_to_highlight = {
-			area = lithlad_area
-			NOT = {
-				owned_by = ROOT
-			}
+			province_id = 1750
 		}
 
 		trigger = {
-			lithlad_area = {
-				type = all
-				owned_by = ROOT
+			1750 = {
+				OR = {
+					has_building = fort_castle_building
+					has_building = fort_stronghold_building
+					has_building = fort_citidal_building
+				}
 			}
 		}
 
@@ -537,15 +537,21 @@ conquer_nurn_region_five = {
 
 		provinces_to_highlight = {
 			area = lithlad_area
-			NOT = {
-				owned_by = ROOT
-			}
+			area = sturlurtsa_nurn_area
+			owned_by = ROOT
 		}
 
 		trigger = {
-			lithlad_area = {
-				type = all
-				owned_by = ROOT
+			calc_true_if = {
+				desc = build_forts_mission_tooltip
+				all_owned_province = {
+					OR = {
+						area = lithlad_area
+						area = sturlurtsa_nurn_area
+					}
+					has_influencing_fort = yes
+				}
+				amount = 2
 			}
 		}
 
