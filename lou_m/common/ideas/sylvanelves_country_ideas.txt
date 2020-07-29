@@ -9,11 +9,11 @@
 SYE_ideas = {
 	start = {
 		tolerance_own = 2
-		religious_unity = 0.5
+		infantry_shock = 0.5 
 	}
 
 	bonus = {
-		num_accepted_cultures = 2
+		num_accepted_cultures = 1
 	}
 	
 	trigger = {
@@ -22,40 +22,24 @@ SYE_ideas = {
 	free = yes		#will be added at load.
 	
 	the_golden_wood = {
-		production_efficiency = 0.15
-
+		global_trade_goods_size_modifier = 0.15
 	}
 	assault_on_lothlorien  = {
-		hostile_attrition = 2
-		defensiveness = 0.30
-
+		hostile_attrition = 1
 	}
 	powers_of_galadriel = {
-		leader_land_fire = 2
-		tolerance_own = 2
-		stability_cost_modifier = -0.15
+		army_tradition = 0.5  
 	}
 	the_mallorn_trees  = {
 		idea_cost = -0.10
-		global_tax_modifier = 0.10
-
 	}
 	armor_of_the_sylvan_elves = {
-		infantry_power = 0.30
-		cavalry_power = 0.10
 		discipline = 0.05
-
 	}
 	cast_down_dol_guldur = {
-		siege_ability = 0.20
-		artillery_power = 0.15
 		leader_siege = 1
-
 	}
 	galadriels_departure = {
-		stability_cost_modifier = -0.30
-		ae_impact = -0.05
-		inflation_reduction = 0.1
-		legitimacy = 1
+		monarch_diplomatic_power = 1 
 	}
 }

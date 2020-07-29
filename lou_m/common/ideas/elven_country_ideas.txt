@@ -19,6 +19,11 @@ ELF_ideas = {
 	
 	trigger = {
 		technology_group = lotr_elven
+		NOT = { 
+			tag = Y80 
+			tag = Y68
+			tag = Y67
+		}
 	}
 	free = yes		#will be added at load.
 	

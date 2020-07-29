@@ -9,7 +9,7 @@
 CLN_ideas = {
 	start = {
 		heir_chance = 0.5
-		war_exhaustion = -0.25
+		war_exhaustion = -0.05
 
 	}
 
@@ -24,11 +24,10 @@ CLN_ideas = {
 	
 	stability_within_the_clan = {
 		stability_cost_modifier = -0.20
-
 	}
 	rivaling_the_other_clans = {
 		years_of_nationalism = -5
-		prestige = 1
+		prestige = 0.5
 
 	}
 	stockpiled = {
@@ -38,23 +37,18 @@ CLN_ideas = {
 	}
 	subjucate_the_other_clans = {
 		num_accepted_cultures = 1
-		global_unrest = -2
+		global_unrest = -1
 
 	}
 	hatred_to_outsiders = {
-		unjustified_demands = -0.5
+		unjustified_demands = -0.33
 		hostile_attrition = 1
-
 	}
 	united_cause = {
-		global_manpower_modifier = 0.10
-		land_maintenance_modifier = -0.20
-		manpower_recovery_speed = 0.20
-
+		land_maintenance_modifier = -0.10
 	}
 	unleash_upon_the_free_peoples = {
 		land_morale = 0.10
-		prestige_from_land = 0.5
 		ae_impact = -0.10
 	}
 }

@@ -8,12 +8,12 @@
 
 SHI_ideas = {
 	start = {
-		diplomatic_upkeep = 1
-		trade_efficiency = 0.05
+		development_cost = -0.10
+		diplomatic_upkeep = 1 
 	}
 
 	bonus = {
-		production_efficiency = 0.25
+		production_efficiency = 0.15
 	}
 	
 	trigger = {
@@ -22,29 +22,29 @@ SHI_ideas = {
 	free = yes		#will be added at load.
 	
 	the_free_fair = {
-		stability_cost_modifier = -0.1
+		republican_tradition = 0.20 
+		stability_cost_modifier = -0.10 
 	}
-	noble_hobbit_families = {
-		prestige = 1
+	noble_hobbit_families = { 
+		prestige_decay = -0.01 
 	}
 	the_courage_of_hobbits = {
-		land_morale = 0.20
+		land_morale = 0.05
+		shock_damage_received = -0.05 
 	}
 	border_control = {
-		global_spy_defence = 0.3
-		defensiveness = 0.20
-		global_unrest = -1
+		global_spy_defence = 0.25
+		defensiveness = 0.1
 	}
 	prospering_economy = {
-		inflation_reduction = 0.1
+		state_maintenance_modifier = -0.25
 		global_tax_modifier = 0.1
 	}
 	mustering = {
-		manpower_recovery_speed = 0.20
+		manpower_recovery_speed = 0.15
 	}
 	declared_free_by_elessar = {
-		diplomatic_reputation = 5
-		enemy_core_creation = 1.0
-		hostile_attrition = 2
+		diplomatic_reputation = 1
+		monthly_fervor_increase = 0.5
 	}
 }
