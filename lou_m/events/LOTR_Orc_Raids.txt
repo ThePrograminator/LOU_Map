@@ -2,46 +2,24 @@ namespace = lotr_orc_raids
 
 # Most events will be split for good and evil
 
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.1
 	title = "lotr_orc_raids.1_NAME"
 	desc = "lotr_orc_raids.1_DESC"
 	picture = orc_raid
 
-	#Only Happends once
 	fire_only_once = yes
 
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
 
-		#Set the id, for the province to spawn
 		province_id = 1890
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2758
 			MONTH = 11
@@ -52,88 +30,31 @@ province_event = {
 	option = {
 		name = "lotr_orc_raids.1_a"
 
-		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.1 - Option : lotr_orc_raids.1_a" }
 
-		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
 		spawn_rebels = {
 			type = orc_raider_rebels
 			size = 1
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.2
 	title = "lotr_orc_raids.2_NAME"
 	desc = "lotr_orc_raids.2_DESC"
 	picture = orc_raid
-
-	#Only Happends once
+	
 	fire_only_once = yes
 
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
-
-		#Set the id, for the province to spawn
 		province_id = 688
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2770
 			MONTH = 3
@@ -144,88 +65,33 @@ province_event = {
 	option = {
 		name = "lotr_orc_raids.2_a"
 
-		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.2 - Option : lotr_orc_raids.2_a" }
 
-		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
 		spawn_rebels = {
 			type = orc_raider_rebels
 			size = 1
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.3
 	title = "lotr_orc_raids.3_NAME"
 	desc = "lotr_orc_raids.3_DESC"
 	picture = orc_raid
 
-	#Only Happends once
 	fire_only_once = yes
 
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
 
-		#Set the id, for the province to spawn
 		province_id = 3170
 
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2770
 			MONTH = 5
@@ -236,88 +102,32 @@ province_event = {
 	option = {
 		name = "lotr_orc_raids.3_a"
 
-		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.3 - Option : lotr_orc_raids.3_a" }
 
-		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
 		spawn_rebels = {
 			type = orc_raider_rebels
 			size = 1
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.4
 	title = "lotr_orc_raids.4_NAME"
 	desc = "lotr_orc_raids.4_DESC"
 	picture = orc_raid
 
-	#Only Happends once
 	fire_only_once = yes
-
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
 
-		#Set the id, for the province to spawn
 		province_id = 1819
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2759
 			MONTH = 9
@@ -328,49 +138,14 @@ province_event = {
 	option = {
 		name = "lotr_orc_raids.4_a"
 
-		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.4 - Option : lotr_orc_raids.4_a" }
 
-		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
 		spawn_rebels = {
 			type = orc_raider_rebels
 			size = 2
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.5
 	title = "lotr_orc_raids.5_NAME"
@@ -395,21 +170,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2759
 			MONTH = 9
@@ -430,39 +190,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.6
 	title = "lotr_orc_raids.6_NAME"
@@ -487,21 +214,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2762
 			MONTH = 3
@@ -522,37 +234,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
 #Id must be unique per event, number is just incremented
 province_event = {
@@ -571,29 +252,12 @@ province_event = {
 		#Set the id, for the province to spawn
 		province_id = 3207
 
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2761
 			MONTH = 1
@@ -614,39 +278,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.8
 	title = "lotr_orc_raids.8_NAME"
@@ -671,21 +302,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2765
 			MONTH = 2
@@ -706,37 +322,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
 #Id must be unique per event, number is just incremented
 province_event = {
@@ -763,21 +348,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2911
 			MONTH = 10
@@ -798,37 +368,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
 #Id must be unique per event, number is just incremented
 province_event = {
@@ -855,21 +394,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2767
 			MONTH = 10
@@ -890,37 +414,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
 #Id must be unique per event, number is just incremented
 province_event = {
@@ -947,21 +440,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2767
 			MONTH = 10
@@ -982,39 +460,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.12
 	title = "lotr_orc_raids.12_NAME"
@@ -1039,21 +484,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2767
 			MONTH = 10
@@ -1074,39 +504,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.13
 	title = "lotr_orc_raids.13_NAME"
@@ -1131,21 +528,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2770
 			MONTH = 3
@@ -1166,37 +548,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
 #Id must be unique per event, number is just incremented
 province_event = {
@@ -1223,21 +574,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2772
 			MONTH = 0
@@ -1258,39 +594,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.15
 	title = "lotr_orc_raids.15_NAME"
@@ -1315,21 +618,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2771
 			MONTH = 1
@@ -1350,38 +638,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
 #Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.16
@@ -1396,32 +652,13 @@ province_event = {
 		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
 
-		#Set the id, for the province to spawn
 		province_id = 1592
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2760
 			MONTH = 1
@@ -1442,39 +679,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.17
 	title = "lotr_orc_raids.17_NAME"
@@ -1500,20 +704,6 @@ province_event = {
 			}
 		}
 
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2790
 			MONTH = 1
@@ -1534,39 +724,6 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.18
 	title = "lotr_orc_raids.18_NAME"
@@ -1591,21 +748,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2772
 			MONTH = 1
@@ -1626,46 +768,12 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.19
 	title = "lotr_orc_raids.19_NAME"
 	desc = "lotr_orc_raids.19_DESC"
 	picture = orc_raid
 
-	#Only Happends once
 	fire_only_once = yes
 
 	trigger = {
@@ -1674,30 +782,12 @@ province_event = {
 
 		#Set the id, for the province to spawn
 		province_id = 2014
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2761
 			MONTH = 2
@@ -1718,78 +808,23 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.20
 	title = "lotr_orc_raids.20_NAME"
 	desc = "lotr_orc_raids.20_DESC"
 	picture = orc_raid
 
-	#Only Happends once
 	fire_only_once = yes
 
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
-
-		#Set the id, for the province to spawn
 		province_id = 2021
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2761
 			MONTH = 2
@@ -1810,48 +845,13 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.21
 	title = "lotr_orc_raids.21_NAME"
 	desc = "lotr_orc_raids.21_DESC"
 	picture = orc_raid
-
-	#Only Happends once
+	
 	fire_only_once = yes
-
 	trigger = {
 		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
@@ -1867,21 +867,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2760
 			MONTH = 7
@@ -1902,78 +887,22 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.22
 	title = "lotr_orc_raids.22_NAME"
 	desc = "lotr_orc_raids.22_DESC"
 	picture = orc_raid
-
-	#Only Happends once
+	
 	fire_only_once = yes
-
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
-
-		#Set the id, for the province to spawn
 		province_id = 2977
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2760
 			MONTH = 4
@@ -1994,39 +923,7 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
 
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.23
 	title = "lotr_orc_raids.23_NAME"
@@ -2051,21 +948,6 @@ province_event = {
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2770
 			MONTH = 1
@@ -2086,170 +968,56 @@ province_event = {
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.24
 	title = "lotr_orc_raids.24_NAME"
 	desc = "lotr_orc_raids.24_DESC"
 	picture = orc_raid
 
-	#Only Happends once
 	fire_only_once = yes
-
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
 
-		#Set the id, for the province to spawn
 		province_id = 941
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2770
 			MONTH = 10
 			STARTED_BEFORE = 2771.1.1
 		}
 	}
-	
 	option = {
 		name = "lotr_orc_raids.24_a"
 
-		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.24 - Option : lotr_orc_raids.24_a" }
 
-		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
 		spawn_rebels = {
 			type = orc_raider_rebels
 			size = 6
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
-
-#Id must be unique per event, number is just incremented
 province_event = {
 	id = lotr_orc_raids.25
 	title = "lotr_orc_raids.25_NAME"
 	desc = "lotr_orc_raids.25_DESC"
 	picture = orc_raid_ice
 
-	#Only Happends once
 	fire_only_once = yes
-
 	trigger = {
-		#Remove this one below, it is just here so the event doesn't fire until you have made it.
 		always = yes
-
-		#Set the id, for the province to spawn
 		province_id = 1151
-
-		#This checks that the owner of the province is not orcs/goblins/trolls etc.
-		#If this doesn't matter then remove
 		owner = {
 			NOT = {
 				culture_group = culture_group_melkor
 				culture_group = culture_group_orcs
 			}
 		}
-
-		#if you instead want it to not trigger with those 'servants of evil' use this one instead of the one above
-		#So they won't spawn on easterlings, dunlendings haradrim etc.
-		#owner = {
-		#	NOT = {
-		#		is_servants_of_evil_opinion = yes
-		#	}
-		#}
-
-		#Year is the year it is triggered
-		#same with month (january is 0)
-		#STARTED_BEFORE means, the event will only fire, if the player started the game before the date
-		#So the player doesn't start 200 years later and the event still triggers
-		#STARTED_BEFORE month starts at 1 for january, just to confuse
-		#it is not possible to trigger at a certain day, only year and month
 		check_date = {
 			YEAR = 2770
 			MONTH = 10
@@ -2259,45 +1027,46 @@ province_event = {
 	
 	option = {
 		name = "lotr_orc_raids.25_a"
-
-		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.25 - Option : lotr_orc_raids.25_a" }
-
-		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		
 		spawn_rebels = {
 			type = orc_raider_rebels
 			size = 1
 		}
 	}
 }
-##########
-#If you want random size orc raiders
-# use this below,
-# numbers 5, 10, 20, 65 are % chance, you can write any number
-# random_list = {
-#	5 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 4
-#		}
-#	}
-#	10 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 3
-#		}
-#	}
-#	20 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 2
-#		}
-#	}
-#	65 = {
-#		spawn_rebels = {
-#			type = orc_raider_rebels
-#			size = 1
-#		}
-#	}
-#}
-###################################################################
+province_event = {
+	id = lotr_orc_raids.26
+	title = "lotr_orc_raids.26_NAME"
+	desc = "lotr_orc_raids.26_DESC"
+	picture = orc_raid_ice
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 2798
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2776
+			MONTH = 10
+			STARTED_BEFORE = 2777.1.1
+		}
+	}
+	
+	option = {
+		name = "lotr_orc_raids.26_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.26 - Option : lotr_orc_raids.26_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
