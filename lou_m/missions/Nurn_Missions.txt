@@ -15,54 +15,11 @@ conquer_nurn_region_one = {
 
 	has_country_shield = yes
 
-	build_cities_nurn = {
-		icon = mission_conquer_tunisia
-		required_missions = {
-		}
-		position = 1
-
-		trigger = {
-			OR = {
-				city_1_building = 5
-				city_2_building = 5
-				city_3_building = 5
-			}
-			
-		}
-
-		effect = {
-			add_prestige = 25
-		}
-	}
-
-	build_manufactories_nurn = {
-		icon = mission_retake_ceuta
-		required_missions = {
-			build_cities_nurn
-		}
-		position = 2
-
-		trigger = {
-			calc_true_if = {
-				desc = build_manufactories_mission_tooltip
-				all_owned_province = {
-					region = mordor_region
-					has_building = farm_estate
-				}
-				amount = 5
-			}
-		}
-
-		effect = {
-			add_prestige = 25
-		}
-	}
-
 	conquer_shadow_mountains = {
 		icon = mission_shadow_mountains
 		required_missions = {
 		}
-		position = 5
+		position = 3
 
 		provinces_to_highlight = {
 			area = cirith_nurn_area
@@ -88,7 +45,7 @@ conquer_nurn_region_one = {
 		required_missions = {
 			drive_out_orcs
 		}
-		position = 7
+		position = 5
 
 		provinces_to_highlight = {
 			province_id = 1750
@@ -114,7 +71,7 @@ conquer_nurn_region_one = {
 		required_missions = {
 			conquer_chelkar_nurn
 		}
-		position = 9
+		position = 7
 
 		trigger = {
 			OR = {
@@ -126,7 +83,7 @@ conquer_nurn_region_one = {
 								value = 150
 							}
 							any_owned_province = {
-								region = rhun_region
+								superregion = near_harad_superregion
 							}
 						}
 						amount = 2
@@ -140,7 +97,7 @@ conquer_nurn_region_one = {
 								value = 150
 							}
 							any_owned_province = {
-								region = rhun_region
+								superregion = near_harad_superregion
 							}
 						}
 						amount = 2
@@ -169,11 +126,31 @@ conquer_nurn_region_two = {
 
 	has_country_shield = yes
 
+	build_cities_nurn = {
+		icon = mission_conquer_tunisia
+		required_missions = {
+		}
+		position = 1
+
+		trigger = {
+			OR = {
+				city_1_building = 5
+				city_2_building = 5
+				city_3_building = 5
+			}
+			
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
 	conquer_road_to_harad = {
 		icon = mission_bedouins
 		required_missions = {
 		}
-		position = 5
+		position = 3
 
 		provinces_to_highlight = {
 			area = cirith_nargil_area
@@ -200,7 +177,7 @@ conquer_nurn_region_two = {
 			conquer_road_to_harad
 			conquer_shadow_mountains
 		}
-		position = 6
+		position = 4
 
 		provinces_to_highlight = {
 			region = mordor_region
@@ -226,7 +203,7 @@ conquer_nurn_region_two = {
 		required_missions = {
 			drive_out_orcs
 		}
-		position = 8
+		position = 6
 
 		provinces_to_highlight = {
 			region = chelkar_region
@@ -252,7 +229,7 @@ conquer_nurn_region_two = {
 		required_missions = {
 			conquer_chelkar_nurn
 		}
-		position = 8
+		position = 7
 
 		trigger = {
 			1762 = {
@@ -267,9 +244,34 @@ conquer_nurn_region_two = {
 			add_prestige = 25
 		}
 	}
+
+	conquer_den_nurn_nurn = {
+		icon = mission_mordor_land
+		required_missions = {
+		}
+		position = 9
+
+		provinces_to_highlight = {
+			area = den_nurn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			den_nurn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
 }
 
-conquer_nurn_region_four = {
+conquer_nurn_region_three = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -283,13 +285,13 @@ conquer_nurn_region_four = {
 
 	has_country_shield = yes
 
-	great_khaganate_of_nurn = {
-		icon = mission_the_ganges_campaign
+	build_capital_nurn = {
+		icon = mission_develop_alhambra
 		required_missions = {
-			drive_variags_out
-			drive_out_orcs
+			build_cities_nurn
+			build_manufactories_nurn
 		}
-		position = 7
+		position = 2
 
 		provinces_to_highlight = {
 			is_capital = yes
@@ -304,10 +306,94 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
+			add_prestige = 25
+		}
+	}
+
+	great_khaganate_of_nurn = {
+		icon = mission_the_ganges_campaign
+		required_missions = {
+			drive_variags_out
+			drive_out_orcs
+			build_capital_nurn
+		}
+		position = 5
+
+		trigger = {
+
+		}
+
+		effect = {
 			country_event = { id = flavor_nurn.1 }
 		}
 	}
+
+	conquer_mordor_nurn = {
+		icon = mission_gondor_11
+		required_missions = {
+			conquer_den_nurn_nurn
+			ally_gondor
+		}
+		position = 10
+
+		provinces_to_highlight = {
+			region = mordor_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+
+		trigger = {
+			mordor_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
 }
+
+nurn_nurnoth_series_three = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X86
+		exists = V23
+		
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+
+	has_country_shield = yes
+
+	destroy_nurnoth_nurn = {
+		icon = mission_secure_power
+		required_missions = {
+
+		}
+		position = 9
+
+		provinces_to_highlight = {
+			owned_by = V23
+		}
+
+		trigger = {
+			NOT = {
+				exists = V23
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+}
+
 
 conquer_nurn_region_four = {
 	slot = 4
@@ -323,11 +409,34 @@ conquer_nurn_region_four = {
 
 	has_country_shield = yes
 
+	build_manufactories_nurn = {
+		icon = mission_retake_ceuta
+		required_missions = {
+			
+		}
+		position = 1
+
+		trigger = {
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					region = mordor_region
+					has_building = farm_estate
+				}
+				amount = 3
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
 	conquer_lithlad = {
 		icon = mission_lithlad
 		required_missions = {
 		}
-		position = 5
+		position = 3
 
 		provinces_to_highlight = {
 			area = lithlad_area
@@ -354,7 +463,7 @@ conquer_nurn_region_four = {
 			conquer_lithlad
 			conquer_sturlutsa_nurn
 		}
-		position = 6
+		position = 4
 	
 		provinces_to_highlight = {
 			region = mordor_region
@@ -380,7 +489,7 @@ conquer_nurn_region_four = {
 		required_missions = {
 			drive_variags_out
 		}
-		position = 8
+		position = 6
 
 		provinces_to_highlight = {
 			area = neburkha_area
@@ -411,7 +520,7 @@ conquer_nurn_region_four = {
 		required_missions = {
 			conquer_northern_khand
 		}
-		position = 9
+		position = 7
 
 		provinces_to_highlight = {
 			region = khand_region
@@ -452,6 +561,27 @@ conquer_nurn_region_four = {
 			add_prestige = 25
 		}
 	}
+
+	ally_gondor = {
+		icon = mission_gondor_7
+		required_missions = {
+		}
+		position = 9
+
+		trigger = {
+			alliance_with = X01
+			X01 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
 }
 
 conquer_nurn_region_five = {
@@ -472,7 +602,7 @@ conquer_nurn_region_five = {
 		icon = mission_non-western_cavalry_raid
 		required_missions = {
 		}
-		position = 5
+		position = 3
 
 		provinces_to_highlight = {
 			area = sturlurtsa_nurn_area
@@ -497,7 +627,7 @@ conquer_nurn_region_five = {
 		icon = mission_easterlings
 		required_missions = {
 		}
-		position = 6
+		position = 4
 
 		trigger = {
 			OR = {
@@ -533,7 +663,7 @@ conquer_nurn_region_five = {
 			drive_variags_out
 			ally_nurad
 		}
-		position = 7
+		position = 5
 
 		provinces_to_highlight = {
 			area = lithlad_area
