@@ -36,7 +36,15 @@ conquer_nurn_region_one = {
 		}
 
 		effect = {
-			add_prestige = 25
+			urlutsu_nurn_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = nurn_safe_lands_modifier
+					duration = 3650
+				}
+			}
 		}
 	}
 
@@ -49,6 +57,7 @@ conquer_nurn_region_one = {
 
 		provinces_to_highlight = {
 			province_id = 1750
+			province_id = 1035
 		}
 
 		trigger = {
@@ -59,10 +68,26 @@ conquer_nurn_region_one = {
 					has_building = fort_citidal_building
 				}
 			}
+			1035 = {
+				OR = {
+					has_building = fort_castle_building
+					has_building = fort_stronghold_building
+					has_building = fort_citidal_building
+				}
+			}
 		}
 
 		effect = {
-			add_prestige = 25
+			1750 = {
+				add_permanent_province_modifier = {
+					name = nurn_secure_the_passes_modifier
+				}
+			}
+			1035 = {
+				add_permanent_province_modifier = {
+					name = nurn_secure_the_passes_modifier
+				}
+			}
 		}
 	}
 
@@ -142,7 +167,10 @@ conquer_nurn_region_two = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_country_modifier = {
+				name = nurn_build_cities_nurn_modifier
+				duration = 7300
+			}
 		}
 	}
 
@@ -167,7 +195,15 @@ conquer_nurn_region_two = {
 		}
 
 		effect = {
-			add_prestige = 25
+			nurnen_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = nurn_safe_lands_modifier
+					duration = 3650
+				}
+			}
 		}
 	}
 
@@ -180,13 +216,13 @@ conquer_nurn_region_two = {
 		position = 4
 
 		provinces_to_highlight = {
-			region = mordor_region
+			region = nurn_region
 			culture = culture_orkish
 		}
 
 		trigger = {
 			all_province = { 
-				region = mordor_region
+				region = nurn_region
 				NOT = {
 					culture = culture_orkish
 				}
@@ -194,7 +230,7 @@ conquer_nurn_region_two = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_stability = 1
 		}
 	}
 
@@ -306,7 +342,14 @@ conquer_nurn_region_three = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_country_modifier = {
+				name = nurn_build_capital_modifier
+				duration = 3650
+			}
+
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
 		}
 	}
 
@@ -428,7 +471,15 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			every_owned_province = {
+				limit = {
+					trade_goods = wheat
+				}
+				add_province_modifier = {
+					name = nurn_build_manufactories_nurn_modifier
+					duration = 7300
+				}
+			}
 		}
 	}
 
@@ -453,7 +504,15 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			lithlad_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = nurn_retaken_land_modifier
+					duration = 7300
+				}
+			}
 		}
 	}
 
@@ -466,13 +525,13 @@ conquer_nurn_region_four = {
 		position = 4
 	
 		provinces_to_highlight = {
-			region = mordor_region
+			region = nurn_region
 			culture = culture_variags
 		}
 	
 		trigger = {
 			all_province = { 
-				region = mordor_region
+				region = nurn_region
 				NOT = {
 					culture = culture_variags
 				}
@@ -480,7 +539,7 @@ conquer_nurn_region_four = {
 		}
 	
 		effect = {
-			add_prestige = 25
+			add_stability = 1
 		}
 	}
 
@@ -511,7 +570,10 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_country_modifier = {
+				name = nurn_entrance_to_east_modifier
+				duration = 7300
+			}
 		}
 	}
 
@@ -619,7 +681,15 @@ conquer_nurn_region_five = {
 		}
 
 		effect = {
-			add_prestige = 25
+			sturlurtsa_nurn_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = nurn_retaken_land_modifier
+					duration = 7300
+				}
+			}
 		}
 	}
 
@@ -686,7 +756,25 @@ conquer_nurn_region_five = {
 		}
 
 		effect = {
-			add_prestige = 25
+			lithlad_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = nurn_safe_lands_east_modifier
+					duration = 7300
+				}
+			}
+			sturlurtsa_nurn_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = nurn_safe_lands_east_modifier
+					duration = 7300
+				}
+			}
+			add_mil_power = 50
 		}
 	}
 }
