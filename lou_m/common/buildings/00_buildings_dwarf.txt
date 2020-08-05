@@ -42,6 +42,16 @@ colony_outpost_dwarf_building = {
 		province_dwarf_has_capital_buildings = no
 	}
 	
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_fortress_buildings = no
+		province_dwarf_has_capital_buildings = no
+	}
+
 	modifier = {
 		local_build_cost = -0.10
 	}
@@ -109,6 +119,26 @@ settlement_1_dwarf_building = {
 		}
 	}
 	
+	keep_trigger = {
+		development = 5
+		is_capital = no
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_fortress_buildings = no
+		province_dwarf_has_capital_buildings = no
+		OR = {
+			AND = {
+				province_dwarf_has_mountains_terrain = no
+				culture_group = culture_group_dwarves
+			}
+			NOT = {
+				culture_group = culture_group_dwarves
+			}
+		}
+	}
+
 	modifier = {
 		local_development_cost = -0.1
 	}
@@ -153,6 +183,25 @@ settlement_2_dwarf_building = {
 	make_obsolete = settlement_1_dwarf_building
 	
 	build_trigger = {
+		development = 10
+		is_capital = no
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_fortress_buildings = no
+		province_dwarf_has_capital_buildings = no
+		OR = {
+			AND = {
+				province_dwarf_has_mountains_terrain = no
+				culture_group = culture_group_dwarves
+			}
+			NOT = {
+				culture_group = culture_group_dwarves
+			}
+		}
+	}
+
+	keep_trigger = {
 		development = 10
 		is_capital = no
 		owner = {
@@ -227,6 +276,25 @@ settlement_3_dwarf_building = {
 			}
 		}
 	}
+
+	keep_trigger = {
+		development = 15
+		is_capital = no
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_fortress_buildings = no
+		province_dwarf_has_capital_buildings = no
+		OR = {
+			AND = {
+				province_dwarf_has_mountains_terrain = no
+				culture_group = culture_group_dwarves
+			}
+			NOT = {
+				culture_group = culture_group_dwarves
+			}
+		}
+	}
 	
 	modifier = {
 		local_development_cost = -0.3
@@ -266,6 +334,18 @@ hold_1_dwarf_building = {
 	make_obsolete = colony_outpost_dwarf_building
 	
 	build_trigger = {
+		development = 5
+		is_capital = no
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_capital_buildings = no
+		province_dwarf_has_mountains_terrain = yes
+		culture_group = culture_group_dwarves
+	}
+
+	keep_trigger = {
 		development = 5
 		is_capital = no
 		owner = {
@@ -332,6 +412,18 @@ hold_2_dwarf_building = {
 		province_dwarf_has_mountains_terrain = yes
 		culture_group = culture_group_dwarves
 	}
+
+	keep_trigger = {
+		development = 10
+		is_capital = no
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_capital_buildings = no
+		province_dwarf_has_mountains_terrain = yes
+		culture_group = culture_group_dwarves
+	}
 	
 	modifier = {
 		local_unrest = -1
@@ -383,6 +475,18 @@ hold_3_dwarf_building = {
 		province_dwarf_has_mountains_terrain = yes
 		culture_group = culture_group_dwarves
 	}
+
+	keep_trigger = {
+		development = 15
+		is_capital = no
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_capital_buildings = no
+		province_dwarf_has_mountains_terrain = yes
+		culture_group = culture_group_dwarves
+	}
 	
 	modifier = {
 		local_unrest = -1.5
@@ -423,6 +527,16 @@ capital_1_dwarf_building = {
 	make_obsolete = colony_outpost_dwarf_building
 	
 	build_trigger = {
+		is_capital = yes
+		development = 5
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_fortress_buildings = no
+	}
+
+	keep_trigger = {
 		is_capital = yes
 		development = 5
 		owner = {
@@ -496,6 +610,16 @@ capital_2_dwarf_building = {
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
 	}
+
+	keep_trigger = {
+		is_capital = yes
+		development = 10
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_fortress_buildings = no
+	}
 	
 	modifier = {
 		local_development_cost = -0.2
@@ -554,6 +678,16 @@ capital_3_dwarf_building = {
 		province_dwarf_has_fortress_buildings = no
 	}
 	
+	keep_trigger = {
+		is_capital = yes
+		development = 15
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_dwarf_has_city_buildings = no
+		province_dwarf_has_fortress_buildings = no
+	}
+
 	modifier = {
 		local_development_cost = -0.3
 		local_unrest = -1.5
@@ -596,6 +730,14 @@ material_exchance_dwarf_building = {
 	time = 12
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_1 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -661,6 +803,14 @@ fairground_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_2 = yes
+	}
 	
 	modifier = {
 		province_trade_power_modifier = 0.5
@@ -720,6 +870,14 @@ great_market_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_city_building_tier_4 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_city_building_tier_4 = yes
+	}
 	
 	modifier = {
 		province_trade_power_modifier = 0.75
@@ -772,6 +930,14 @@ traders_guild_building = {
 	time = 24
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_city_building_tier_3 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -840,6 +1006,14 @@ armoury_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_1 = yes
+	}
 	
 	modifier = {
 		local_regiment_cost = -0.25
@@ -890,6 +1064,14 @@ forge_dwarf_building = {
 	make_obsolete = armoury_dwarf_building
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_2 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -952,6 +1134,14 @@ arsenal_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_4 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_4 = yes
+	}
 	
 	modifier = {
 		local_regiment_cost = -0.75
@@ -1001,6 +1191,14 @@ smithies_guild_building = {
 	time = 24
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_3 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1066,6 +1264,14 @@ libary_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_1 = yes
+	}
 	
 	modifier = {
 		local_state_maintenance_modifier = -0.25
@@ -1116,6 +1322,14 @@ research_office_dwarf_building = {
 	make_obsolete = libary_dwarf_building
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_2 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1178,6 +1392,14 @@ acadamy_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_4 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_4 = yes
+	}
 	
 	modifier = {
 		local_state_maintenance_modifier = -0.75
@@ -1227,6 +1449,14 @@ advisor_guild_dwarf_building = {
 	time = 24
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_3 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1292,6 +1522,14 @@ mustering_hall_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_1 = yes
+	}
 	
 	modifier = {
 		local_manpower_modifier = 0.25
@@ -1342,6 +1580,14 @@ training_hall_dwarf_building = {
 	make_obsolete = mustering_hall_dwarf_building
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_2 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1404,6 +1650,14 @@ hall_of_warriors_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_4 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_fortress_building_tier_4 = yes
+	}
 	
 	modifier = {
 		local_manpower_modifier = 0.75
@@ -1453,6 +1707,14 @@ warriors_guild_dwarf_building = {
 	time = 24
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_fortress_building_tier_3 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1520,6 +1782,14 @@ mine_shaft_dwarf_building = {
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_1 = yes
+	}
 	
 	modifier = {
 		local_production_efficiency = 0.25
@@ -1571,6 +1841,14 @@ mining_network_dwarf_building = {
 	allow_in_gold_provinces = no
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_main_building_tier_2 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1634,6 +1912,14 @@ materials_depot_building = {
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_4 = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_fortress_building_tier_4 = yes
+	}
 	
 	modifier = {
 		local_production_efficiency = 0.75
@@ -1685,6 +1971,14 @@ miners_guild_dwarf_building = {
 	allow_in_gold_provinces = no
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_fortress_building_tier_3 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1747,6 +2041,24 @@ fort_small_gatehouse_dwarf_building = {
 	influencing_fort = yes
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_buildings = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_capital_buildings = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -1851,6 +2163,24 @@ fort_great_gatehouse_dwarf_building = {
 			}
 		}
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_buildings = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_capital_buildings = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
 	
 	modifier = {
 		fort_level = 2
@@ -1923,6 +2253,24 @@ fort_mountain_fortress_dwarf_building = {
 	
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_building_tier_3 = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_fortress_building_tier_3 = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2026,6 +2374,24 @@ fort_mountain_citidal_dwarf_building = {
 			}
 		}
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_building_tier_4 = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_fortress_building_tier_4 = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
 	
 	modifier = {
 		fort_level = 6
@@ -2108,6 +2474,15 @@ fort_pallisade_dwarf_building = {
 		province_dwarf_has_city_buildings = yes
 		province_dwarf_has_capital_buildings = yes
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_city_buildings = yes
+		province_dwarf_has_capital_buildings = yes
+	}
 	
 	modifier = {
 		fort_level = 1
@@ -2180,6 +2555,15 @@ fort_castle_dwarf_building = {
 	
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		province_dwarf_has_city_buildings = yes
+		province_dwarf_has_city_building_tier_2 = yes
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2281,6 +2665,30 @@ rune_door_dwarf_building = {
 			}
 		}
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			has_building = fort_small_gatehouse_dwarf_building
+			has_building = fort_great_gatehouse_dwarf_building
+			has_building = fort_mountain_fortress_dwarf_building
+			has_building = fort_mountain_citidal_dwarf_building
+		}
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_buildings = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_capital_buildings = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
 	
 	modifier = {
 		local_defensiveness = 0.15
@@ -2321,6 +2729,30 @@ narrow_bridge_dwarf_building = {
 	time = 18
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			has_building = fort_small_gatehouse_dwarf_building
+			has_building = fort_great_gatehouse_dwarf_building
+			has_building = fort_mountain_fortress_dwarf_building
+			has_building = fort_mountain_citidal_dwarf_building
+		}
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_buildings = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_capital_buildings = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
@@ -2405,6 +2837,30 @@ moat_dwarf_building = {
 			}
 		}
 	}
+
+	keep_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			has_building = fort_small_gatehouse_dwarf_building
+			has_building = fort_great_gatehouse_dwarf_building
+			has_building = fort_mountain_fortress_dwarf_building
+			has_building = fort_mountain_citidal_dwarf_building
+		}
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_building_tier_3 = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_fortress_building_tier_3 = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
 	
 	modifier = {
 		local_defensiveness = 0.45
@@ -2445,6 +2901,30 @@ ballista_towers_dwarf_building = {
 	time = 30
 	
 	build_trigger = {
+		owner = {
+			technology_group = lotr_dwarven
+		}
+		province_is_buildable = yes
+		OR = {
+			has_building = fort_small_gatehouse_dwarf_building
+			has_building = fort_great_gatehouse_dwarf_building
+			has_building = fort_mountain_fortress_dwarf_building
+			has_building = fort_mountain_citidal_dwarf_building
+		}
+		OR = {
+			AND = {
+				province_dwarf_has_fortress_building_tier_4 = yes
+				province_dwarf_has_mountains_terrain = yes
+			}
+			AND = {
+				is_capital = yes
+				province_dwarf_has_fortress_building_tier_4 = yes
+				#province_dwarf_has_mountains_terrain = yes
+			}
+		}
+	}
+
+	keep_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
 		}
