@@ -68,7 +68,7 @@ conquer_nurn_region_one = {
 					has_building = fort_citidal_building
 				}
 			}
-			1035 = {
+			1006 = {
 				OR = {
 					has_building = fort_castle_building
 					has_building = fort_stronghold_building
@@ -83,7 +83,7 @@ conquer_nurn_region_one = {
 					name = nurn_secure_the_passes_modifier
 				}
 			}
-			1035 = {
+			1006 = {
 				add_permanent_province_modifier = {
 					name = nurn_secure_the_passes_modifier
 				}
@@ -132,7 +132,10 @@ conquer_nurn_region_one = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_country_modifier = {
+				name = nurn_subjects_harad_modifier
+				duration = 7300
+			}
 		}
 	}
 }
@@ -256,7 +259,7 @@ conquer_nurn_region_two = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_prestige = 50
 		}
 	}
 
@@ -277,7 +280,11 @@ conquer_nurn_region_two = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_treasury = 200
+			add_country_modifier = {
+				name = nurn_control_trade_modifier
+				duration = 7300
+			}
 		}
 	}
 
@@ -302,7 +309,14 @@ conquer_nurn_region_two = {
 		}
 
 		effect = {
-			add_prestige = 25
+			mordor_region = {
+				add_permanent_claim = ROOT
+			}
+
+			add_country_modifier = {
+				name = nurn_den_nurn_modifier
+				duration = 7300
+			}
 		}
 	}
 }
@@ -368,6 +382,9 @@ conquer_nurn_region_three = {
 
 		effect = {
 			country_event = { id = flavor_nurn.1 }
+			nurn_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -394,7 +411,13 @@ conquer_nurn_region_three = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_legitimacy = 25
+			add_prestige = 50
+			add_treasury = 200
+			add_country_modifier = {
+				name = nurn_destroy_mordor_modifier
+				duration = 7300
+			}
 		}
 	}
 }
@@ -599,7 +622,8 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_prestige = 50
+			add_legitimacy = 25
 		}
 	}
 
@@ -620,7 +644,11 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_treasury = 200
+			add_country_modifier = {
+				name = nurn_control_trade_modifier
+				duration = 7300
+			}
 		}
 	}
 
@@ -641,7 +669,11 @@ conquer_nurn_region_four = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_prestige = 10
+			add_country_modifier = {
+				name = nurn_diplomatic_reputation_modifier
+				duration = 7300
+			}
 		}
 	}
 }

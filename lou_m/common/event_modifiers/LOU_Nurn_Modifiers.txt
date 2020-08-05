@@ -39,3 +39,27 @@ nurn_entrance_to_east_modifier = {
 	ae_impact =  -0.10
 	land_morale = 0.05
 }
+
+nurn_control_trade_modifier = {
+	trade_efficiency = 0.15
+}
+
+nurn_subjects_harad_modifier = {
+	reduced_liberty_desire = 15
+	vassal_income = 0.1
+}
+
+nurn_diplomatic_reputation_modifier = {
+	diplomatic_reputation = 2
+}
+
+nurn_den_nurn_modifier = {
+	discipline = 0.05
+	army_tradition = 0.005
+}
+
+nurn_destroy_mordor_modifier = {
+	land_morale = 0.1
+	global_tax_modifier = 0.1
+	global_unrest = -1
+}

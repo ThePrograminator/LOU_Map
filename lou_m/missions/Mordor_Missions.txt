@@ -532,13 +532,13 @@ V17_expand_into_nurn = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			region = mordor_region
+			superregion = mordor_superregion
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			mordor_region = {
+			mordor_superregion = {
 				type = all
 				owned_by = ROOT
 			}
