@@ -1069,4 +1069,72 @@ province_event = {
 			size = 2
 		}
 	}
+province_event = {
+	id = lotr_orc_raids.27
+	title = "lotr_orc_raids.27_NAME"
+	desc = "lotr_orc_raids.27_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 1458
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2759
+			MONTH = 1
+			STARTED_BEFORE = 2760.1.1
+		}
+	}
+	
+	option = {
+		name = "lotr_orc_raids.27_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.27 - Option : lotr_orc_raids.27_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+province_event = {
+	id = lotr_orc_raids.28
+	title = "lotr_orc_raids.28_NAME"
+	desc = "lotr_orc_raids.28_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 3192
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2758
+			MONTH = 11
+			STARTED_BEFORE = 2777.1.1
+		}
+	}
+	
+	option = {
+		name = "lotr_orc_raids.28_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_orc_raids.28 - Option : lotr_orc_raids.28_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
 }
