@@ -1,0 +1,83 @@
+administrative_excellence = {
+	monarch_power = ADM
+
+	potential = {
+		always = yes
+	}
+	allow = {
+        AND = {
+            full_idea_group = administrative_ideas 
+            OR  = {
+                full_idea_group = innovativeness_ideas
+                full_idea_group = religious_ideas
+                full_idea_group = economic_ideas
+                #full_idea_group = administrative_ideas
+                full_idea_group = humanist_ideas  
+                full_idea_group = assimilation_ideas
+            }
+        }
+	}
+	
+	# Modifier
+    adm_tech_cost_modifier = -0.1
+    
+	ai_will_do = {
+		factor = 1
+	}
+}
+bureaucratic_efficiency = {
+	monarch_power = DIP
+
+	potential = {
+		always = yes
+	}
+	allow = {
+        AND = {
+            full_idea_group = administrative_ideas 
+            OR  = {
+                full_idea_group = spy_ideas
+                full_idea_group = diplomatic_ideas
+                full_idea_group = trade_ideas
+                full_idea_group = maritime_ideas
+                full_idea_group = influence_ideas  
+                full_idea_group = subjugation_ideas
+            }
+        }
+	}
+	
+	# Modifier
+    state_maintenance_modifier = -0.5
+    
+	ai_will_do = {
+		factor = 1
+	}
+}
+effective_administration = {
+	monarch_power = MIL
+
+	potential = {
+		always = yes
+	}
+	allow = {
+        AND = {
+            full_idea_group = administrative_ideas 
+            OR  = {
+                full_idea_group = aristocracy_ideas
+                full_idea_group = plutocracy_ideas
+                full_idea_group = offensive_ideas
+                full_idea_group = defensive_ideas
+                full_idea_group = quality_ideas  
+                full_idea_group = quantity_ideas
+                full_idea_group = naval_ideas
+            }
+        }
+	}
+	
+	# Modifier
+    administrative_efficiency = 0.05
+    
+	ai_will_do = {
+		factor = 1
+	}
+}
+

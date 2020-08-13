@@ -5,3 +5,105 @@ primary_culture = culture_orkish
 religion = religion_orkish
 technology_group = lotr_orc
 capital = 3511
+
+2750.1.1 = {
+	monarch = {
+		name = "Radnag"
+		dynasty = "Gorhúr"
+		birth_date = 2676.1.1
+		adm = 4
+		dip = 3
+		mil = 0
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Shagduf"
+		dynasty = "Gorhúr"
+		birth_date = 2769.1.1
+		adm = 5
+		dip = 3
+		mil = 0
+	}
+	heir = {
+		monarch_name = "Lugnag"
+		name = "Lugnag"
+		dynasty = "Gorhúr"
+		birth_date = 2742.1.1
+		death_date = 2808.1.1
+		adm = 0
+		dip = 5
+		mil = 2
+		claim = 100
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Shagûl"
+		dynasty = "Gorhúr"
+		birth_date = 2826.1.1
+		adm = 1
+		dip = 0
+		mil = 5
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Lûndush"
+		dynasty = "Gorhúr"
+		birth_date = 2865.1.1
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+	heir = {
+		monarch_name = "Lûndush"
+		name = "Lûndush"
+		dynasty = "Gorhúr"
+		birth_date = 2848.1.1
+		death_date = 2931.1.1
+		adm = 5
+		dip = 0
+		mil = 2
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Radlúk"
+		dynasty = "Gorhúr"
+		birth_date = 2917.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+		female = yes
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Maugaz"
+		dynasty = "Gorhúr"
+		birth_date = 2973.1.1
+		adm = 1
+		dip = 0
+		mil = 1
+		female = yes
+	}
+	heir = {
+		monarch_name = "Gazthak"
+		name = "Gazthak"
+		dynasty = "Gorhúr"
+		birth_date = 2924.1.1
+		death_date = 3010.1.1
+		adm = 5
+		dip = 1
+		mil = 3
+		claim = 100
+	}
+}
+

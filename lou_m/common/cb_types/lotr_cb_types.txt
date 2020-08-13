@@ -140,3 +140,48 @@ cb_khangnate_infighting = {
 
 	war_goal = annex_country_khangnate
 }
+
+# Subjugation - From Ideagroup
+cb_vassalize_ideagroup = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_neighbor_of = FROM
+		cb_on_government_enemies = yes
+        army_strength = {
+            who = FROM
+            value = 2
+        }
+	}
+
+	war_goal = take_capital_vassalize
+}
+
+# Assimilation
+cb_assimilate = {
+    valid_for_subject = no
+    
+	prerequisites = {
+		cb_on_primitives = yes
+		culture_group_claim = FROM
+	}
+
+	war_goal = take_province_nationalist
+}
+
+# Purify
+cb_purify = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_neighbor_of = FROM
+		cb_on_religious_enemies = yes
+		NOT = {	has_matching_religion = FROM }
+	}
+
+	allowed_provinces = {
+		always = yes
+	}
+
+	war_goal = superiority_purification
+}

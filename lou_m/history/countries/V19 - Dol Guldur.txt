@@ -34,6 +34,39 @@ historical_rival = Y95
 historical_rival = Y96
 historical_rival = V26
 
+2750.1.1 = {
+	monarch = {
+		name = "Maubag"
+		dynasty = "Gazthak"
+		birth_date = 2714.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+	heir = {
+		monarch_name = "Lagrat"
+		name = "Lagrat"
+		dynasty = "Gazthak"
+		birth_date = 2702.1.1
+		death_date = 2730.1.1
+		adm = 0
+		dip = 1
+		mil = 5
+		claim = 100
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Shagduf"
+		dynasty = "Gazthak"
+		birth_date = 2774.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
 2845.1.1 = {
 	add_country_modifier = {
 		name = dol_guldur_thrain_captured
@@ -41,7 +74,84 @@ historical_rival = V26
 	}
 }
 
-2850.1.1 = {
-	set_country_flag = dol_guldur_discovred
+2850.1.1 = {    
+    set_country_flag = dol_guldur_discovred
 	remove_country_modifier = dol_guldur_shrouded_mystery
+    
+	monarch = {
+		name = "Lûnshag"
+		dynasty = "Gazthak"
+		birth_date = 2810.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+		female = yes
+	}
 }
+
+2900.1.1 = {
+	monarch = {
+		name = "Lûnûl"
+		dynasty = "Gazthak"
+		birth_date = 2818.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Nagug"
+		name = "Nagug"
+		dynasty = "Gazthak"
+		birth_date = 2871.1.1
+		death_date = 2932.1.1
+		adm = 2
+		dip = 3
+		mil = 4
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Gorduf"
+		dynasty = "Gazthak"
+		birth_date = 2895.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		monarch_name = "Shagthak"
+		name = "Shagthak"
+		dynasty = "Gazthak"
+		birth_date = 2881.1.1
+		death_date = 2909.1.1
+		adm = 1
+		dip = 4
+		mil = 5
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Lûnzag"
+		dynasty = "Gazthak"
+		birth_date = 2968.1.1
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+	heir = {
+		monarch_name = "Maubug"
+		name = "Maubug"
+		dynasty = "Gazthak"
+		birth_date = 2954.1.1
+		death_date = 3038.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		claim = 100
+	}
+}
+

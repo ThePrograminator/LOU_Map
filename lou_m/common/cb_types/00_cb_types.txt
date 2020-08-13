@@ -589,31 +589,6 @@ cb_defender_of_the_faith = {
 	war_goal = defend_country_faith
 }
 
-# Purging of Heresy
-cb_heretic = {
-	valid_for_subject = no
-
-	prerequisites = {
-		is_neighbor_of = FROM
-		cb_on_religious_enemies = yes
-		religion_group = from
-		NOT = {	has_matching_religion = FROM }
-		OR = {
-			NOT = { has_dlc = "Art of War" }
-			hre_religion_treaty = no
-			capital_scope = { is_part_of_hre = no }
-			FROM = { capital_scope = { is_part_of_hre = no } }
-		}
-		is_revolutionary = no
-	}
-
-	allowed_provinces = {
-		always = yes
-	}
-
-	war_goal = superiority_heretic
-}
-
 # Excommunication War
 cb_excommunication = {
 	valid_for_subject = no

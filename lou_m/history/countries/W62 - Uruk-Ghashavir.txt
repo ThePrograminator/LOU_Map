@@ -5,3 +5,105 @@ primary_culture = culture_orkish
 religion = religion_orkish
 technology_group = lotr_orc
 capital = 3511
+
+2750.1.1 = {
+	monarch = {
+		name = "Lugûl"
+		dynasty = "Gazbag"
+		birth_date = 2682.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Muzdush"
+		dynasty = "Gazbag"
+		birth_date = 2764.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Yagduf"
+		dynasty = "Gazbag"
+		birth_date = 2828.1.1
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+	heir = {
+		monarch_name = "Zagrat"
+		name = "Zagrat"
+		dynasty = "Gazbag"
+		birth_date = 2810.1.1
+		death_date = 2875.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Lûnthak"
+		dynasty = "Gazbag"
+		birth_date = 2835.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+		female = yes
+	}
+	heir = {
+		monarch_name = "Muzdush"
+		name = "Muzdush"
+		dynasty = "Gazbag"
+		birth_date = 2859.1.1
+		death_date = 2886.1.1
+		adm = 2
+		dip = 0
+		mil = 0
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Muzug"
+		dynasty = "Gazbag"
+		birth_date = 2913.1.1
+		adm = 5
+		dip = 0
+		mil = 2
+	}
+	heir = {
+		monarch_name = "Muzlag"
+		name = "Muzlag"
+		dynasty = "Gazbag"
+		birth_date = 2902.1.1
+		death_date = 2920.1.1
+		adm = 5
+		dip = 1
+		mil = 4
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Uglur"
+		dynasty = "Gazbag"
+		birth_date = 2964.1.1
+		adm = 3
+		dip = 0
+		mil = 3
+		female = yes
+	}
+}
+

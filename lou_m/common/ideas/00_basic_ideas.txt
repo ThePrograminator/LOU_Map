@@ -12,7 +12,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
-		# nobles_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -66,8 +66,7 @@ plutocracy_ideas = {
 
 	bonus = {
 		global_institution_spread = 0.10
-		# burghers_loyalty_modifier = 0.1
-		# vaisyas_loyalty_modifier = 0.1
+		merchants_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -118,13 +117,12 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
-		embracement_cost = -0.1
 	}
 	dynamic_court = {
 		advisor_pool = 1
 	}
 	print_culture = {
-		global_institution_spread = 0.25
+		free_policy = 1
 	}
 	optimism = {
 		war_exhaustion = -0.05
@@ -151,9 +149,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = {
-		culture_conversion_cost = -0.25
-		# brahmins_hindu_loyalty_modifier = 0.1
-		# church_loyalty_modifier = 0.1
+		monarch_lifespan = 0.25
 	}
 
 	missionary_schools = {
@@ -392,9 +388,6 @@ trade_ideas = {
 	}
 }
 
-
-
-
 economic_ideas = {
 	category = ADM
 
@@ -444,103 +437,6 @@ economic_ideas = {
 		}
 	}
 }
-
-
-exploration_ideas = {
-	category = DIP
-	important = yes
-
-	bonus = {
-		cb_on_primitives = yes
-	}
-
-	quest_for_the_new_world	= {
-		may_explore = yes
-	}
-
-	colonial_ventures = {
-		colonists = 1
-	}
-	
-	overseas_exploration = {
-		range = 0.5
-	}
-	land_of_opportunity = {
-		global_colonial_growth = 10
-	}
-	vice_roys  = {
-		global_tariffs = 0.10
- 		envoy_travel_time = -0.20
- 	}
-	free_colonies = {
-		expel_minorities_cost = -1.0
-	}
-	global_empire = {
-		naval_forcelimit_modifier = 0.25
-	}
-
-	ai_will_do = {
-		factor = 0.75
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
-		}		
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					has_port = yes
-				}
-			}
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}
-        }
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_ports = 3 }
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 2.0
-			num_of_ports = 5
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 10
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 15
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 20
-		}
-	}
-}
-
 
 maritime_ideas = {
 	category = DIP
@@ -673,62 +569,6 @@ quantity_ideas = {
 	}
 }
 
-
-expansion_ideas = {
-	category = ADM
-	important = yes
-
-	bonus = {
- 		min_autonomy_in_territories = -0.1
-	}
-
-	additional_colonists = {
-		colonists = 1
-	}
-	additional_merchants = {
-		merchants = 1
-	}
-	faster_colonists = {
-		global_colonial_growth = 20
-	}
-	factories = {
-		rival_border_fort_maintenance = -0.5
-		center_of_trade_upgrade_cost = -0.2
-	}
-	additional_diplomats = {
-		diplomatic_upkeep = 1
-	}
-	general_colonization_law  = {
-		colonists = 1
-		colonist_placement_chance = 0.05
-	}
-	competetive_merchants  = {
-		global_trade_power = 0.2
-	}
-
-	ai_will_do = {
-		factor = 0.48
-		modifier = {
-			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
-			NOT = {
-				any_owned_province = {
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-	}
-}
-
-
 administrative_ideas = {
 	category = ADM
 
@@ -769,8 +609,6 @@ humanist_ideas = {
 	bonus = {
 		idea_cost = -0.1
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-		# brahmins_muslim_loyalty_modifier = 0.1
-		# dhimmi_loyalty_modifier = 0.1
 	}
 
 	tolerance_idea = {
@@ -912,4 +750,93 @@ naval_ideas = {
 			num_of_cities = 50
 		}
 	}
+}
+
+# Assimilation
+assimilation_ideas = {
+    category = ADM
+
+    bonus = {
+        cb_on_primitives = yes
+    }
+    
+    # Cultural Doctrine
+    cultural_doctrine = {
+        culture_conversion_cost = -0.25
+    }
+    # Mixed Courts
+    mixed_courts = {
+        diplomatic_annexation_cost = -0.25
+    }
+    # Brothers in Arms
+    brothers_in_arms = {
+        global_manpower_modifier = 0.1
+    }
+    # Racial Tolerance
+    racial_tolerance = {
+        religious_unity = 0.1
+    }
+    # Local Concessions
+    local_concessions = {
+        years_of_nationalism = -5
+    }
+    # Cultural Heritage
+    cultural_heritage = {
+		stability_cost_modifier = -0.2
+    }
+    # Solidarity
+    solidarity = {
+        diplomatic_upkeep = 1
+        accept_vassalization_reasons = 5
+    }
+    
+    ai_will_do = {
+        factor = 1
+        
+        modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+    }
+}
+
+# Subjugation
+subjugation_ideas = {
+    category = DIP
+
+    bonus = {
+        cb_on_government_enemies = yes
+    }
+    # Relentless Conquest
+    relentless_conquest = {
+        province_warscore_cost = -0.2
+    }
+    # Intimidation
+    intimidation = {
+        unjustified_demands = -0.15
+    }
+    # Incorrigible Disputes
+    incorrigible_disputes = {
+        fabricate_claims_cost = -0.33
+    }
+    # Military Envoys
+    military_envoys = {
+        free_leader_pool = 2
+    }
+    # Subjugated Vassals
+    subjugated_vassals = {
+        vassal_forcelimit_bonus = 0.5
+    }
+    # Make Haste
+    make_haste = {
+        envoy_travel_time = -0.5
+    }
+    # Squeeze Them Dry
+    squeeze_them_dry = {
+        vassal_income = 0.15
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
 }

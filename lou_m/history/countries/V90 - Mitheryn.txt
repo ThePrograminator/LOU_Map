@@ -17,3 +17,117 @@ historical_rival = W37
 historical_rival = V73
 historical_rival = V70
 historical_rival = V75
+
+2750.1.1 = {
+	monarch = {
+		name = "Ardamírë"
+		dynasty = "Elrohir"
+		birth_date = 2701.1.1
+		adm = 5
+		dip = 0
+		mil = 5
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Míriel"
+		dynasty = "Elrohir"
+		birth_date = 2782.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+		female = yes
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Lúthien"
+		dynasty = "Elrohir"
+		birth_date = 2797.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+		female = yes
+	}
+	heir = {
+		monarch_name = "Míriel"
+		name = "Míriel"
+		dynasty = "Elrohir"
+		birth_date = 2772.1.1
+		death_date = 2833.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Elemmírë"
+		dynasty = "Elrohir"
+		birth_date = 2820.1.1
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Eärwen"
+		name = "Eärwen"
+		dynasty = "Elrohir"
+		birth_date = 2835.1.1
+		death_date = 2915.1.1
+		adm = 1
+		dip = 2
+		mil = 4
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Gil-galad"
+		dynasty = "Elrohir"
+		birth_date = 2886.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Nimrodel"
+		name = "Nimrodel"
+		dynasty = "Elrohir"
+		birth_date = 2931.1.1
+		death_date = 3020.1.1
+		adm = 3
+		dip = 3
+		mil = 0
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Nimrodel"
+		dynasty = "Elrohir"
+		birth_date = 2918.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+		female = yes
+	}
+	heir = {
+		monarch_name = "Neniel"
+		name = "Neniel"
+		dynasty = "Elrohir"
+		birth_date = 2953.1.1
+		death_date = 3037.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+		claim = 100
+	}
+}
+

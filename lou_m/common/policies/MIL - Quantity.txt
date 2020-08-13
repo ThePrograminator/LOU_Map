@@ -1,0 +1,82 @@
+organised_regimental_system = {
+	monarch_power = ADM
+
+	potential = {
+		always = yes
+	}
+	allow = {
+        AND = {
+            full_idea_group = quantity_ideas 
+            OR  = {
+                full_idea_group = innovativeness_ideas
+                full_idea_group = religious_ideas
+                full_idea_group = economic_ideas
+                full_idea_group = administrative_ideas
+                full_idea_group = humanist_ideas  
+                full_idea_group = assimilation_ideas
+            }
+        }
+	}
+	
+	# Modifier
+    land_maintenance_modifier = -0.2
+    
+	ai_will_do = {
+		factor = 1
+	}
+}
+mass_recruitment = {
+	monarch_power = DIP
+
+	potential = {
+		always = yes
+	}
+	allow = {
+        AND = {
+            full_idea_group = quantity_ideas
+            OR  = {
+                full_idea_group = spy_ideas
+                full_idea_group = diplomatic_ideas
+                full_idea_group = trade_ideas
+                full_idea_group = maritime_ideas
+                full_idea_group = influence_ideas  
+                full_idea_group = subjugation_ideas
+            }
+        }
+	}
+	
+	# Modifier
+    global_manpower_modifier = 0.2
+    
+	ai_will_do = {
+		factor = 1
+	}
+}
+village_militias = {
+	monarch_power = MIL
+
+	potential = {
+		always = yes
+	}
+	allow = {
+        AND = {
+            full_idea_group = quantity_ideas
+            OR  = {
+                full_idea_group = aristocracy_ideas
+                full_idea_group = plutocracy_ideas
+                full_idea_group = offensive_ideas
+                full_idea_group = defensive_ideas
+                full_idea_group = quality_ideas  
+                #full_idea_group = quantity_ideas
+                full_idea_group = naval_ideas
+            }
+        }
+	}
+	
+	# Modifier
+    manpower_recovery_speed = 0.15
+    
+	ai_will_do = {
+		factor = 1
+	}
+}

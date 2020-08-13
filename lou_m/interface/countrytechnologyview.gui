@@ -150,14 +150,15 @@ guiTypes = {
 			iconType = {
 				name = "institution_mood"
 				spriteType ="GFX_icon_institution_mood"	
-				position = { x = 70 y = 145 }
+				position = { x = 70 y = 160 }
 				orientation = "UPPER_LEFT"
+                scale = 0.9
 			}
 			
 			iconType = {
 				name = "mod_institution_spread_icon"
 				spriteType = "GFX_institution_spread_icon"
-				position = { x = 425 y = 175 }
+				position = { x = 410 y = 175 }
 				Orientation = "UPPER_LEFT"
 				dontRender = ""
 			}
@@ -272,7 +273,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "origin"
-				position = { x = 315 y = 250 }
+				position = { x = 305 y = 250 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	

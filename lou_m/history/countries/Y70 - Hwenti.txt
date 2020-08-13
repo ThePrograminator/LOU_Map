@@ -14,3 +14,95 @@ historical_rival = Y48
 historical_rival = V39
 historical_rival = Y01
 historical_rival = Y02
+
+2750.1.1 = {
+	monarch = {
+		name = "Celebrían"
+		dynasty = "Lindir"
+		birth_date = 2704.1.1
+		adm = 0
+		dip = 3
+		mil = 0
+		female = yes
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Lúthien"
+		dynasty = "Lindir"
+		birth_date = 2771.1.1
+		adm = 5
+		dip = 3
+		mil = 1
+		female = yes
+	}
+	heir = {
+		monarch_name = "Nimrodel"
+		name = "Nimrodel"
+		dynasty = "Lindir"
+		birth_date = 2727.1.1
+		death_date = 2816.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		claim = 100
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Laicolasse"
+		dynasty = "Lindir"
+		birth_date = 2814.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Ingwë"
+		dynasty = "Lindir"
+		birth_date = 2860.1.1
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Mithrellas"
+		dynasty = "Lindir"
+		birth_date = 2904.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+		female = yes
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Ingwë"
+		dynasty = "Lindir"
+		birth_date = 2912.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+	heir = {
+		monarch_name = "Eärwen"
+		name = "Eärwen"
+		dynasty = "Lindir"
+		birth_date = 2963.1.1
+		death_date = 3017.1.1
+		adm = 5
+		dip = 0
+		mil = 4
+		claim = 100
+	}
+}
+

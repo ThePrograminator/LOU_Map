@@ -951,6 +951,17 @@
  USES_ORTHODOX_ICONS: "$COUNTRY|Y$ uses Icons."
  USES_NOT_ORTHODOX_ICONS: "$COUNTRY|Y$ does NOT use Icons."
  
+ STAPAT_LOW_DEV: "Temples can only be constructed in states with at least $NEED|Y$ development and there is only $CUR|Y$ in $NAME$."
+ STAPAT_DO_IT: "You can construct Temples in states with 30 development if all provinces are the nation's race and of an Accepted Culture.\n\nConstructing a Temple in $NAME|Y$ will give us $VAL$ Hope, and the following permanent effect:\n$EFFECT$"
+ 
+ CONFIRCONSECRATEPATRIARCh: "Confirm Consecrate Temple"
+ CONFIRCONSECRATEPATRIARCH_TEXT: "$EFFECT$\nAre you sure?"
+ CONSECRATE_BUTTON: "Construct Temple"
+ METROPOLITAN_EMPTY: "No Temple"
+ 
+ PATRIARCH_MAP_TT_HAS: "$NAME|Y$ has a Temple."
+ PATRIARCH_MAP_TT_CAN: "$NAME|Y$ could get a Temple."
+ 
  #DEVOTION_TO_RELIGIOUS_UNITY: "§RHope will decrease to the value of your Religious Unity after the change.§!\n"
  #devotion: "Hope"
  #ADM_SCORE_DEVOTION: "Hope: $VAL$\n"
@@ -964,8 +975,8 @@
  
  #DEVOTION_IRO: "§YHope§!\nHope changes by $CHANGE$ every year due to:\n$WHY$"
  
- patriarch_state:1 "Metropolitan of $NAME$"
- CONSECRATE_FOR_PA:1 "You can Consecrate a Metropolitan of a state to get $VAL$ Hope."
+ patriarch_state:1 "Temple of $NAME$"
+ CONSECRATE_FOR_PA:1 "You can Consecrate a Temple of a state to get $VAL$ Hope."
  
  #icon_michael: "Icon of St. Michael"
  #desc_icon_michael:1 "Saint Michael, the Archistrategos, is the commander of the heavenly hosts and the Archangel who will defeat Satan in the war in Heaven. Icons of Saint Michaels are common throughout Orthodox Christendom and most Russian cities have a church dedicated to him."
@@ -1080,3 +1091,11 @@
  desc_birthplace_of_enlightenment: "This province is home to the very first centers of the Enlightenment movement."
  growth_of_global_trade: "Growth of Global Trade"
  desc_growth_of_global_trade: "This province has benefitted from us embracing our role in the global trade network."
+ 
+ religious_unity: "Racial Unity"
+ inverse_religious_unity: "Racial Unity"
+ 
+ MAY_ATTACK_GOVERNMENT_ENEMIES: "Permanent Casus Belli against weak neighbours."
+ MAY_ATTACK_PRIMITIVES: "Permanent Casus Belli against countries of the same culture group."
+ MAY_ATTACK_OVERSEAS: "Can Fabricate Claim Overseas in Trade Company Regions."
+ MAY_ATTACK_RELIGIOUS_ENEMIES: "Permanent Casus Belli against neighboring countries of differing race."
