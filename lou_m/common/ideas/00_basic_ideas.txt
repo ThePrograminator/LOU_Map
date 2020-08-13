@@ -766,7 +766,7 @@ assimilation_ideas = {
     }
     # Mixed Courts
     mixed_courts = {
-        diplomatic_annexation_cost = -0.25
+        diplomatic_annexation_cost = -0.2
     }
     # Brothers in Arms
     brothers_in_arms = {
@@ -774,11 +774,11 @@ assimilation_ideas = {
     }
     # Racial Tolerance
     racial_tolerance = {
-        religious_unity = 0.1
+        relation_with_heretics = 25
     }
     # Local Concessions
     local_concessions = {
-        years_of_nationalism = -5
+        global_autonomy = -0.05
     }
     # Cultural Heritage
     cultural_heritage = {
@@ -825,7 +825,7 @@ subjugation_ideas = {
     }
     # Subjugated Vassals
     subjugated_vassals = {
-        vassal_forcelimit_bonus = 0.5
+        vassal_forcelimit_bonus = 0.3
     }
     # Make Haste
     make_haste = {
@@ -833,7 +833,7 @@ subjugation_ideas = {
     }
     # Squeeze Them Dry
     squeeze_them_dry = {
-        vassal_income = 0.15
+        vassal_income = 0.3
     }
     
     ai_will_do = {
