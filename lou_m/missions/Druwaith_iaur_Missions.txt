@@ -20,7 +20,7 @@ X15_missions_1 = {
 			army_size_percentage = 0.80
 		}
 		effect = {
-			druwaith_iaur_region = {
+			druwaith_laur_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -221,13 +221,13 @@ X15_missions_2 = {
 		required_missions = { dru_forests_of_enedhwaith dru_integrate_eryn_vorn }
 		position = 5
 		provinces_to_highlight = {
-			area = dor-i-tinuviel_area
+			area = dor_i_tinuviel_area
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			dor-i-tinuviel_area = {
+			dor_i_tinuviel_area = {
 				type = all
 				owned_by = ROOT
 			}
