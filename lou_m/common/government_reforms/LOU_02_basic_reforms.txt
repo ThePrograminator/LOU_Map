@@ -1,0 +1,161 @@
+#------------------------------
+# Monarchy
+#------------------------------
+monarchy_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#------------------------------
+# Republic
+#------------------------------
+republic_mechanic = {
+	basic_reform = yes
+	republican_name = yes
+	royal_marriage = no
+	republic = yes
+	duration = 4
+	has_term_election = yes
+	fixed_rank = 2
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	valid_for_nation_designer = no
+}
+
+#------------------------------
+# Theocracy
+#------------------------------
+theocracy_mechanic = {
+	has_devotion = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	royal_marriage = no
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+	religion = yes
+	heir = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+}
+
+#------------------------------
+# Tribal
+#------------------------------
+tribe_mechanic = {
+	tribal = yes
+	monarchy = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	heir = yes
+	queen = yes
+}
+
+#------------------------------
+# Native
+#------------------------------
+native_basic_reform = {
+	basic_reform = yes
+	native_mechanic = yes
+	allow_migration = yes
+	valid_for_new_country = no
+	allow_convert = yes
+	republican_name = yes
+	royal_marriage = no
+	fixed_rank = 2
+	modifiers = {
+		stability_cost_modifier = -0.33
+		land_maintenance_modifier = -0.25
+		diplomatic_upkeep = -1
+		global_institution_spread = -0.025
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		
+	}
+}
+
+#------------------------------
+# Orc
+#------------------------------
+orc_gov_mechanic = {
+	monarchy = yes
+	heir = no
+	queen = no
+	royal_marriage = no
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#------------------------------
+# Dwarf
+#------------------------------
+dwarf_gov_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#------------------------------
+# Elf
+#------------------------------
+elf_gov_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#------------------------------
+# Melkor
+#------------------------------
+melkor_gov_mechanic = {
+	monarchy = yes
+	allow_convert = no
+	heir = no
+	queen = no
+	royal_marriage = no
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#------------------------------
+# Eru
+#------------------------------
+eru_gov_mechanic = {
+	monarchy = yes
+	allow_convert = no
+	heir = no
+	queen = no
+	royal_marriage = no
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}

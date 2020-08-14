@@ -8,7 +8,7 @@ NDefines.NGame.MAX_RANDOM_NEW_WORLD = "3500.1.1"
 
 NDefines.NCountry.STARTING_ARMY_SIZE = 0.75
 
-NDefines.NCountry.MONARCH_DEATH = 0
+-- NDefines.NCountry.MONARCH_DEATH = 0
 NDefines.NCountry.MAX_CROWN_COLONIES = 999
 
 NDefines.NCountry.POWER_MAX = 2800	
@@ -20,18 +20,20 @@ NDefines.NCountry.INSTITUTION_BASE_IMP_DEVELOPMENT = 1
 	
 NDefines.NCountry.EMBRACE_INSTITUTION_COST = 1000.0				-- 1000.0 per development (autonomy modified)
 
-NDefines.NFrontend.CAMERA_LOOKAT_X = 1100.0
-NDefines.NFrontend.CAMERA_LOOKAT_Z = 1800.0
-NDefines.NFrontend.CAMERA_LOOKAT_SETTINGS_X = 2787.0
-NDefines.NFrontend.CAMERA_LOOKAT_SETTINGS_Z = 1845.0
-NDefines.NFrontend.CAMERA_START_X = 1100.0
-NDefines.NFrontend.CAMERA_START_Z = 0.0
-NDefines.NFrontend.CAMERA_END_X = 1453.0
-NDefines.NFrontend.CAMERA_END_Z = 0.0
-NDefines.NFrontend.FRONTEND_POS_X = 1100.0
-NDefines.NFrontend.FRONTEND_POS_Z = 0.0
-NDefines.NFrontend.FRONTEND_LOOK_X = 1100.0
-NDefines.NFrontend.FRONTEND_LOOK_Z = 800.0
+NDefines.NFrontend.CAMERA_LOOKAT_X = 1850.0
+NDefines.NFrontend.CAMERA_LOOKAT_Z = 1000.0
+NDefines.NFrontend.FRONTEND_LOOK_X = 1850.0
+NDefines.NFrontend.FRONTEND_LOOK_Z = 1000.0
+NDefines.NFrontend.CAMERA_LOOKAT_SETTINGS_X = 1850.0
+NDefines.NFrontend.CAMERA_LOOKAT_SETTINGS_Z = 1000.0
+
+NDefines.NFrontend.CAMERA_START_X = 1750.0
+NDefines.NFrontend.CAMERA_START_Z = 700.0
+NDefines.NFrontend.CAMERA_END_X = 1750.0
+NDefines.NFrontend.CAMERA_END_Z = 700.0
+NDefines.NFrontend.FRONTEND_POS_X = 1750.0
+NDefines.NFrontend.FRONTEND_POS_Z = 700.0
+
 
 --NDefines.NFrontend.SETTINGS_POS_X = 2787.0
 --NDefines.NFrontend.SETTINGS_POS_Z = 1228.0
