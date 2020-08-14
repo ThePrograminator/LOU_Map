@@ -49,8 +49,8 @@ country_event = {
 						culture_group = culture_group_wilderness
 					}
 					NOT = {
-						religion_group = religion_group_melkor
-						religion_group = religion_group_wilderness
+						is_racial_group_melkor = yes
+						is_racial_group_wilderness = yes
 					}
 				}
 				set_local_autonomy = 50
@@ -81,8 +81,8 @@ country_event = {
 						culture_group = culture_group_wilderness
 					}
 					NOT = {
-						religion_group = religion_group_melkor
-						religion_group = religion_group_wilderness
+						is_racial_group_melkor = yes
+						is_racial_group_wilderness = yes
 					}
 				}
 			
@@ -478,8 +478,8 @@ country_event = {
 						culture_group = culture_group_wilderness
 					}
 					NOT = {
-						religion_group = religion_group_melkor
-						religion_group = religion_group_wilderness
+						is_racial_group_melkor = yes
+						is_racial_group_wilderness = yes
 					}
 				}
 			}
@@ -513,8 +513,8 @@ country_event = {
 						culture_group = culture_group_wilderness
 					}
 					NOT = {
-						religion_group = religion_group_melkor
-						religion_group = religion_group_wilderness
+						is_racial_group_melkor = yes
+						is_racial_group_wilderness = yes
 					}
 				}
 			}
@@ -776,8 +776,8 @@ country_event = {
 					culture_group = culture_group_wilderness
 				}
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_wilderness
+					is_racial_group_melkor = yes
+					is_racial_group_wilderness = yes
 				}
 				owned_by = ROOT
 			}
@@ -789,8 +789,8 @@ country_event = {
 					culture_group = culture_group_wilderness
 				}
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_wilderness
+					is_racial_group_melkor = yes
+					is_racial_group_wilderness = yes
 				}
 				owned_by = ROOT
 			}
@@ -802,8 +802,8 @@ country_event = {
 					culture_group = culture_group_wilderness
 				}
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_wilderness
+					is_racial_group_melkor = yes
+					is_racial_group_wilderness = yes
 				}
 				owned_by = ROOT
 			}
@@ -832,8 +832,8 @@ country_event = {
 					culture_group = culture_group_wilderness
 				}
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_wilderness
+					is_racial_group_melkor = yes
+					is_racial_group_wilderness = yes
 				}
 			}
 			

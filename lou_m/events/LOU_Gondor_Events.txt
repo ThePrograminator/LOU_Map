@@ -63,13 +63,19 @@ country_event = { #Gondor Calls for Help!
 		join_all_defensive_wars_of = X01
 		add_prestige = 10 
 		
-		ai_will_do = 1
+		ai_will_do = {
+            factor = 100
+        }
 	}
 	
 	option = {
 		name = LOU_Gondor_Events.2.b
 		
 		add_prestige = -20
+        
+        ai_will_do = {
+            factor = 0
+        }
 	}
 }
 	
@@ -150,7 +156,7 @@ country_event = { #A Promising General
 		any_country = {
 			capital_scope = {
 				OR = { 
-					region = harodor_region
+					region = harondor_region
 					region = mordor_region
 				}
 			}

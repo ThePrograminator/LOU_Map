@@ -84,11 +84,33 @@ hinder_fellowships =
 	can_select = {
 		is_year = 2941
 		is_institution_enabled = company_of_thorin
-		OR = {
-			religion_group = religion_group_melkor
-			religion_group = religion_group_haradrim
-			religion_group = religion_group_talatherim
-		}
+		OR = {  
+            # Melkor
+            religion = religion_wight
+            religion = religion_olog
+            religion = religion_orkish
+            religion = religion_goblin
+            religion = religion_uruk
+            religion = religion_dragons
+            religion = religion_spider
+            religion = religion_burz_uruk
+            
+            # Haradrim
+            religion = religion_haruzani
+            religion = religion_apysani_beduins
+            religion = religion_sea_peoples
+            
+            # Talatherim
+            religion = religion_talatherim
+            religion = religion_ioriags
+            religion = religion_ulgath
+            religion = religion_chailuza
+            religion = religion_chyans
+            religion = religion_sirani
+            religion = religion_tyr
+            religion = religion_chegra
+            religion = religion_ahar
+        }
 		dominant_religion = ROOT
 		FROM = {
 			has_trader = ROOT
@@ -100,11 +122,33 @@ hinder_fellowships =
 	}
 
 	can_maintain = {
-		OR = {
-			religion_group = religion_group_melkor
-			religion_group = religion_group_haradrim
-			religion_group = religion_group_talatherim
-		}
+		OR = {  
+            # Melkor
+            religion = religion_wight
+            religion = religion_olog
+            religion = religion_orkish
+            religion = religion_goblin
+            religion = religion_uruk
+            religion = religion_dragons
+            religion = religion_spider
+            religion = religion_burz_uruk
+            
+            # Haradrim
+            religion = religion_haruzani
+            religion = religion_apysani_beduins
+            religion = religion_sea_peoples
+            
+            # Talatherim
+            religion = religion_talatherim
+            religion = religion_ioriags
+            religion = religion_ulgath
+            religion = religion_chailuza
+            religion = religion_chyans
+            religion = religion_sirani
+            religion = religion_tyr
+            religion = religion_chegra
+            religion = religion_ahar
+        }
 		dominant_religion = ROOT
 		FROM = {
 			has_trader = ROOT

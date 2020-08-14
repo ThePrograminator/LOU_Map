@@ -19,7 +19,7 @@ province_event = {
 		}
 	
 		owner = {
-			religion_group = religion_group_eldar
+			is_racial_group_eldar = yes
 			karma = 30
 		}
 	}
@@ -379,7 +379,7 @@ province_event = {
 		}
 	
 		owner = {
-			religion_group = religion_group_eldar
+			is_racial_group_eldar = yes
 			NOT = {
 				karma = -29
 			}

@@ -2,15 +2,17 @@
 
 # Uses all 'modifiers' possible thats exported as a Modifier.
 
-###############
-#Human Races#
-###############
-
-religion_group_arhunerim = {
+#-------------------------------------------
+# Marriage Group - Human
+#-------------------------------------------
+religion_group_human = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
 	
+    #---------------
+    # Arhunerim
+    #---------------
 	religion_daen = {
 		icon = 1
 		color = { 0.33 0.23 0.15 }
@@ -113,16 +115,10 @@ religion_group_arhunerim = {
 		fervor = yes
 	}
 
-	crusade_name = HOLY_WAR
-}
-
-religion_group_numenorean = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_dunedain = {
+    #---------------
+    # Numenorean
+    #---------------
+    religion_dunedain = {
 		icon = 1
 		#color = { 0.05 0.21 0.31 }
 		color = { 0.21 0.35 0.88 }
@@ -156,17 +152,11 @@ religion_group_numenorean = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_eriedain = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_eriadorians = {
+    
+    #---------------
+    # Eriedain
+    #---------------
+    religion_eriadorians = {
 		icon = 1
 		color = { 0.11 0.50 0.41 }
 		
@@ -284,17 +274,11 @@ religion_group_eriedain = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_haradrim = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_haruzani = {
+    
+    #---------------
+    # Haradrim
+    #---------------
+    religion_haruzani = {
 		icon = 2
 		color = { 0.68 0.17 0.21 }
 		
@@ -570,17 +554,11 @@ religion_group_haradrim = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_mornerim = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_umli = {
+    
+    #---------------
+    # Mornerim
+    #---------------
+    religion_umli = {
 		icon = 1
 		color = { 0.35 0.37 0.37 }
 		
@@ -597,8 +575,8 @@ religion_group_mornerim = {
 		
 		fervor = yes
 	}
-	
-	religion_eastern_snowmen = {
+    
+    religion_eastern_snowmen = {
 		icon = 1
 		color = { 0.94 0.94 0.94 }
 		
@@ -615,17 +593,11 @@ religion_group_mornerim = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_eastern_black_peoples = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_eastern_black_peoples = {
+    
+    #---------------
+    # Eastern Black People
+    #---------------
+    religion_eastern_black_peoples = {
 		icon = 1
 		color = { 0.37 0.03 0.52 }
 		
@@ -642,17 +614,11 @@ religion_group_eastern_black_peoples = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_mornedain = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_mornedain = {
+    
+    #---------------
+    # Mornedain
+    #---------------
+    religion_mornedain = {
 		icon = 1
 		color = { 0.37 0.05 0.27 }
 		
@@ -669,8 +635,8 @@ religion_group_mornedain = {
 		
 		fervor = yes
 	}
-	
-	religion_kir = {
+    
+    religion_kir = {
 		icon = 1
 		color = { 0.64 0.15 0.15 }
 		
@@ -723,17 +689,11 @@ religion_group_mornedain = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_avarim = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_avaradan = {
+    
+    #---------------
+    # Avarim
+    #---------------
+    religion_avaradan = {
 		icon = 1
 		color = { 0.96 0.74 0.21 }
 		
@@ -750,8 +710,8 @@ religion_group_avarim = {
 		
 		fervor = yes
 	}
-	
-	religion_cuivac = {
+    
+    religion_cuivac = {
 		icon = 1
 		color = { 0.80 0.76 0.70 }
 		
@@ -768,8 +728,8 @@ religion_group_avarim = {
 		
 		fervor = yes
 	}
-	
-	religion_woodmen_of_the_far_east = {
+    
+    religion_woodmen_of_the_far_east = {
 		icon = 1
 		color = { 0.70 0.82 0.81 }
 		
@@ -786,8 +746,8 @@ religion_group_avarim = {
 		
 		fervor = yes
 	}
-	
-	religion_men_of_the_orocarni = {
+    
+    religion_men_of_the_orocarni = {
 		icon = 1
 		color = { 0.70 0.82 0.81 }
 		
@@ -804,8 +764,8 @@ religion_group_avarim = {
 		
 		fervor = yes
 	}
-	
-	religion_other_eastern_peoples = {
+    
+    religion_other_eastern_peoples = {
 		icon = 1
 		color = { 0.70 0.82 0.81 }
 		
@@ -822,8 +782,8 @@ religion_group_avarim = {
 		
 		fervor = yes
 	}
-	
-	religion_lakhab = {
+    
+    religion_lakhab = {
 		icon = 1
 		color = { 0.68 0.23 0.09 }
 		
@@ -840,17 +800,11 @@ religion_group_avarim = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_people_of_the_southeast = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_nargaathi = {
+    
+    #---------------
+    # People of the Southeast
+    #---------------
+    religion_nargaathi = {
 		icon = 1
 		color = { 0.70 0.82 0.81 }
 		
@@ -867,8 +821,8 @@ religion_group_people_of_the_southeast = {
 		
 		fervor = yes
 	}
-	
-	religion_ivabi = {
+    
+    religion_ivabi = {
 		icon = 1
 		color = { 0.33 0.49 0.45 }
 		
@@ -885,18 +839,11 @@ religion_group_people_of_the_southeast = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-
-}
-
-religion_group_talatherim = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_talatherim = {
+    
+    #---------------
+    # Talatherim
+    #---------------
+    religion_talatherim = {
 		icon = 1
 		color = { 0.60 0.74 0.80 }
 		
@@ -913,8 +860,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-	
-	religion_ioriags = {
+    
+    religion_ioriags = {
 		icon = 1
 		color = { 0.78 0.64 0.47 }
 		
@@ -931,8 +878,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-	
-	religion_ulgath = {
+    
+    religion_ulgath = {
 		icon = 1
 		color = { 0.45 0.07 0.07 }
 		
@@ -949,8 +896,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-	
-	religion_chailuza = {
+    
+    religion_chailuza = {
 		icon = 1
 		color = { 0.64 0.47 0.00 }
 		
@@ -967,8 +914,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-
-	religion_chyans = {
+    
+    religion_chyans = {
 		icon = 1
 		color = { 1.00 0.82 0.35 }
 		
@@ -985,8 +932,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-
-	religion_sirani = {
+    
+    religion_sirani = {
 		icon = 1
 		color = { 0.60 0.47 0.03 }
 		
@@ -1003,8 +950,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-	
-	religion_tyr = {
+    
+    religion_tyr = {
 		icon = 1
 		color = { 0.76 0.0 0.01 }
 		
@@ -1021,8 +968,8 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-
-	religion_chegra = {
+    
+    religion_chegra = {
 		icon = 1
 		color = { 0.76 0.0 0.01 }
 		
@@ -1057,17 +1004,11 @@ religion_group_talatherim = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_linerim = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_linerim = {
+    
+    #---------------
+    # Linerim
+    #---------------
+    religion_linerim = {
 		icon = 1
 		color = { 0.07 0.49 0.60 }
 		
@@ -1084,8 +1025,8 @@ religion_group_linerim = {
 		
 		fervor = yes
 	}
-	
-	religion_dhilikhran = {
+    
+    religion_dhilikhran = {
 		icon = 1
 		color = { 0.45 0.07 0.07 }
 		
@@ -1120,17 +1061,11 @@ religion_group_linerim = {
 		
 		fervor = yes
 	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_lynerians = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_nikkeans = {
+    
+    #---------------
+    # Lynerian
+    #---------------
+    religion_nikkeans = {
 		icon = 1
 		color = { 0.35 0.03 0.74 }
 		
@@ -1183,48 +1118,19 @@ religion_group_lynerians = {
 		
 		fervor = yes
 	}
-
+    
 	crusade_name = HOLY_WAR
 }
 
-###############
-#Fantasy Races#
-###############
-
-religion_group_periannath = {
-	
+#-------------------------------------------
+# Marriage Group - Dwarf
+#-------------------------------------------
+religion_group_dwarf = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
-	
-	religion_perian = {
-		icon = 1
-		color = { 0.69 1 0.39 }
-		
-		country = {
-			production_efficiency = 0.1
-			core_creation = -0.5
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { PERIANNATH_HERETIC }
-		
-		fervor = yes
-	}
-
-	crusade_name = HOLY_WAR
-}
-
-religion_group_khazad = {
-	
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_mahal = {
+    
+    religion_mahal = {
 		icon = 1
 		color = { 0.03 0.19 0.41 }
 		
@@ -1260,17 +1166,19 @@ religion_group_khazad = {
 		#Murthunin = 1569
 		#Kheledhkihizdin = 786
 	}
-
+    
 	crusade_name = HOLY_WAR
 }
 
-religion_group_eldar = {
-	
+#-------------------------------------------
+# Marriage Group - Elf
+#-------------------------------------------
+religion_group_elf = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
-	
-	religion_moriquendi = {
+    
+    religion_moriquendi = {
 		icon = 1
 		color = { 0.45 0.39 0.56 }
 		
@@ -1323,15 +1231,106 @@ religion_group_eldar = {
 		
 		uses_karma = yes
 	}
-
+    
 	crusade_name = HOLY_WAR
 }
 
-religion_group_children_of_iluvatar = {
+#-------------------------------------------
+# Marriage Group - Hobbit
+#-------------------------------------------
+religion_group_hobbit = {
+	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
-	
-	religion_ents = {
+    
+    religion_perian = {
+		icon = 1
+		color = { 0.69 1 0.39 }
+		
+		country = {
+			production_efficiency = 0.1
+			core_creation = -0.5
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { PERIANNATH_HERETIC }
+		
+		fervor = yes
+	}
+    
+	crusade_name = HOLY_WAR
+}
+
+#-------------------------------------------
+# Marriage Group - Giant
+#-------------------------------------------
+religion_group_giant = {
+	can_form_personal_unions = yes
+	flags_with_emblem_percentage = 33 # default == 0
+	flag_emblem_index_range = { 1 18 }
+    
+    religion_giants = {
+		icon = 1
+		color = { 0.23 0.43 0.52 }
+		
+		country = {
+			production_efficiency = 0.1
+			core_creation = -0.5
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { GIANTS_HERETIC }
+		
+		fervor = yes
+	}
+    
+	crusade_name = HOLY_WAR
+}
+
+#-------------------------------------------
+# Marriage Group - Great Eagles
+#-------------------------------------------
+religion_group_eagle = {
+	can_form_personal_unions = yes
+	flags_with_emblem_percentage = 33 # default == 0
+	flag_emblem_index_range = { 1 18 }
+    
+    religion_great_eagles = {
+		icon = 1
+		color = { 0.09 0.29 0.27 }
+		
+		country = {
+			production_efficiency = 0.1
+			core_creation = -0.5
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { GREAT_EAGLES_HERETIC }
+		
+		fervor = yes
+	}
+    
+	crusade_name = HOLY_WAR
+}
+
+#-------------------------------------------
+# Marriage Group - Ents
+#-------------------------------------------
+religion_group_ent = {
+	can_form_personal_unions = yes
+	flags_with_emblem_percentage = 33 # default == 0
+	flag_emblem_index_range = { 1 18 }
+    
+    religion_ents = {
 		icon = 1
 		color = { 0.15 0.50 0.0 }
 		
@@ -1366,50 +1365,18 @@ religion_group_children_of_iluvatar = {
 		
 		fervor = yes
 	}
-	
-	religion_great_eagles = {
-		icon = 1
-		color = { 0.09 0.29 0.27 }
-		
-		country = {
-			production_efficiency = 0.1
-			core_creation = -0.5
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { GREAT_EAGLES_HERETIC }
-		
-		fervor = yes
-	}
-	
-	religion_giants = {
-		icon = 1
-		color = { 0.23 0.43 0.52 }
-		
-		country = {
-			production_efficiency = 0.1
-			core_creation = -0.5
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { GIANTS_HERETIC }
-		
-		fervor = yes
-	}
-
+    
 	crusade_name = HOLY_WAR
 }
 
+#-------------------------------------------
+# Marriage Group - Melkor
+#-------------------------------------------
 religion_group_melkor = {
+	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
-	
+    
 	religion_wight = {
 		icon = 2
 		color = { 0.80 0.25 0.25 }
