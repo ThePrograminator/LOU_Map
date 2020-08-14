@@ -25,6 +25,13 @@ country_decisions = {
 				}
 			}
 		}
+        provinces_to_highlight = {
+			region = cardolan_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no

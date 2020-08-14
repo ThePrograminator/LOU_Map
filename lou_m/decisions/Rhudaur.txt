@@ -25,27 +25,47 @@ country_decisions = {
 				}
 			}
 		}
+        provinces_to_highlight = {
+			region = rhudaur_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 		allow = {
 			is_subject = no
+            is_free_or_tributary_trigger = yes
 			is_at_war = no
-			cardolan_region = {
+            NOT = { exists = W56 }
+            capital_scope = {
+				region = rhudaur_region
+				is_core = ROOT
+			}
+			rhudaur_region = {
 				type = all
 				owned_by = ROOT
 			}
 		}
 		effect = {
 			change_tag = W56
-			add_prestige = 50
-			change_government = monarchy
-			add_government_reform = feudalism_reform
 			
 			W56 = {
 				set_capital = 365		# Annunimas
 			}
-			swap_free_idea_group = yes		#keep progress
+            
+            add_prestige = 50
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {
