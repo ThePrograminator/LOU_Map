@@ -858,15 +858,6 @@
  LOTR_WIGHTS.1d: "The Barrow-wights were evil spirits, although their true nature is unknown; it is not known if they were perverted Maiar (Úmaiar) or spirits of Orcs, fallen Avari, or evil Men. The Witch-king of Angmar sent them to the Barrow-downs, in order to prevent a resurrection of the destroyed Dúnedain kingdom of Cardolan. The spirits stirred the dead bones in the mounds and haunted them."
  LOTR_WIGHTS.1a: "Understood!"
  
- # Elections (Hobbits)
- LOTR_Elections.1.t: "Election!"
- LOTR_Elections.1.desc: "The term is up for $MONARCH$. With enough support he can stay in office, but then he must defeat his three primary competitors..."
- LOTR_Elections.1.a: "Keep $MONARCH$"
- LOTR_Elections.1.b: "Bureaucrat Candidate"
- LOTR_Elections.1.c: "Diplomat Candidate"
- LOTR_Elections.1.d: "Military Candidate"
- LOTR_Elections.2.desc: "The unfortunate passing of $MONARCH$ forces us to hold a premature election. Three primary candidates have been nominated..."
- 
  #flags
  dol_guldur_first_tooltip: "Secure Dol Guldur"
  dol_guldur_second_tooltip: "Build Up Reserves"
@@ -1241,4 +1232,37 @@
  #custom tooltips for race buffs 
  LOU_RACE_BUFFS: "Our strength and heritage shall make the entire Middle Earth tremble!"
  
+ #---------------------------------------
+ # Elections
+ #---------------------------------------
+ LOTR_Elections.1.title: "Election!"
+ LOTR_Elections.1.desc: "The term is up for $MONARCH$. With enough support he can stay in office, but then he must defeat his three primary competitors..."
+ LOTR_Elections.1.option.a: "Keep $MONARCH$"
+ LOTR_Elections.1.option.b: "Bureaucrat Candidate"
+ LOTR_Elections.1.option.c: "Diplomat Candidate"
+ LOTR_Elections.1.option.d: "Military Candidate"
+ LOTR_Elections.1.option.e: "The beloved relative of [Root.Monarch.GetName]."
  
+ LOTR_Elections.2.title: "Election!"
+ LOTR_Elections.2.desc: "The unfortunate passing of $MONARCH$ forces us to hold a premature election. Three primary candidates have been nominated..."
+ LOTR_Elections.2.option.a: "Bureaucrat Candidate"
+ LOTR_Elections.2.option.b: "Diplomat Candidate"
+ LOTR_Elections.2.option.c: "Military Candidate"
+ 
+ LOTR_Elections.3.title: "Election in the [Root.GovernmentName]"
+ LOTR_Elections.3.desc: "The unfortunate passing of $MONARCH$ forces us to hold an election. After several rounds of secret allotment, three candidates have been presented each representing powerful factions within [Root.Country.GetName]. Officially the election should be decided by lottery, however we could pull some strings..."
+ LOTR_Elections.3.option.a: "Have [lottery_candidate_a_@ROOT.GetName] elected."
+ LOTR_Elections.3.option.b: "Have [lottery_candidate_b_@ROOT.GetName] elected."
+ LOTR_Elections.3.option.c: "Have [lottery_candidate_c_@ROOT.GetName] elected."
+ LOTR_Elections.3.option.d: "Let the Lottery decide."
+ LOTR_Elections.3.option.e: "Elect the beloved relative of [Root.Monarch.GetName]."
+ 
+ LOTR_Elections.4.title: "Election in the [Root.GovernmentName]"
+ LOTR_Elections.4.desc: "The strengthening of the Statists has forced $MONARCH$ to accept the election of a new [Root.Monarch.GetTitle]. Both the Statists and the Monarchists have put forward a new candidate."
+ LOTR_Elections.4.option.a: "A Statist Candidate"
+ LOTR_Elections.4.option.b: "A Monarchist Candidate"
+ 
+ LOTR_Elections.5.title: "Election in the [Root.GovernmentName]"
+ LOTR_Elections.5.desc: "The unfortunate passing of $MONARCH$ forces us to hold a premature election. Both the Statists and the Monarchists have put forward a new candidate."
+ LOTR_Elections.5.option.a: "A Statist Candidate"
+ LOTR_Elections.5.option.b: "A Monarchist Candidate"

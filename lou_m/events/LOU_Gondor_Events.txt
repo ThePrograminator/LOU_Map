@@ -63,7 +63,7 @@ country_event = { #Gondor Calls for Help!
 		join_all_defensive_wars_of = X01
 		add_prestige = 10 
 		
-		ai_will_do = {
+		ai_chance = {
             factor = 100
         }
 	}
@@ -73,7 +73,7 @@ country_event = { #Gondor Calls for Help!
 		
 		add_prestige = -20
         
-        ai_will_do = {
+        ai_chance = {
             factor = 0
         }
 	}

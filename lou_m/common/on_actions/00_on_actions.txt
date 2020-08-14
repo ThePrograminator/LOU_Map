@@ -258,14 +258,17 @@ on_regent = {
 on_new_term_election = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_new_term_election" }
 	events = {
-		flavor_elections.1
+		LOTR_Elections.1 # New Term
+        LOTR_Elections.4 # States General - New Term
 	}
 }
 
 # country
 on_death_election = {
 	events = {
-		flavor_elections.2
+		LOTR_Elections.2 # Death
+        LOTR_Elections.3 # Lottery 
+        LOTR_Elections.5 # States General - Death
 	}
 }
 

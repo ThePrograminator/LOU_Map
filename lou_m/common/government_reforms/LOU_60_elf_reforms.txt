@@ -52,7 +52,25 @@ principality_elf_reform = {
 }
 
 #------------------------------
-# 
+# Mission
+#------------------------------
+internal_mission_elf_reform = {
+	icon = "arabic_scripture"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1.5
+	}
+}
+external_mission_elf_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = yes
+	modifiers = {
+		province_warscore_cost = -0.15
+	}
+}
+
+#------------------------------
+# Elven Cause
 #------------------------------
 regaining_lost_artifacts_reform = {
 	icon = "castle"
