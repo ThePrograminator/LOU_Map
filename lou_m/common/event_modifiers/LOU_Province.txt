@@ -1,0 +1,86 @@
+# Provinces
+minas_tirith = {
+	local_defensiveness = 1
+	fort_level = 5
+}
+
+barad_dur = {
+	local_defensiveness = 1
+	fort_level = 5
+}
+
+osgiliath = {
+	local_defensiveness = 1
+	fort_level = 5
+}
+
+helmsdeep = {
+	local_defensiveness = 1
+	fort_level = 5
+}
+
+wilderness_debuff = {
+	local_manpower_modifier = -1
+	local_autonomy = 100
+	local_build_cost = 1000
+	local_production_efficiency = -1
+	local_tax_modifier = -1
+	local_development_cost = 1000
+	local_missionary_strength = 0.06
+	culture_conversion_cost = -0.25
+	local_unrest = -10000
+	allowed_num_of_buildings = -1
+}
+
+ruins_debuff = {
+	local_manpower_modifier = -0.5
+	local_production_efficiency = -0.5
+	local_tax_modifier = -0.5
+	local_development_cost = 1000
+	allowed_num_of_buildings = 0
+}
+
+constructing_capital_debuff = {
+	local_manpower_modifier = -0.25
+	local_production_efficiency = -0.25
+	local_build_cost = 1000
+	local_tax_modifier = -0.25
+	local_development_cost = 1000
+	allowed_num_of_buildings = 0
+}
+
+province_wight_debuff = {
+	local_manpower_modifier = -1
+	local_autonomy = 100
+	local_build_cost = 1000
+	local_production_efficiency = -1
+	local_tax_modifier = -1
+	local_development_cost = 1000
+	allowed_num_of_buildings = -1
+	local_missionary_strength = 0.02
+	culture_conversion_cost = -0.15
+}
+
+province_troll_debuff = {
+	local_manpower_modifier = -0.75
+	local_autonomy = 75
+	local_build_cost = 1000
+	local_production_efficiency = -0.75
+	local_tax_modifier = -0.75
+	local_development_cost = 1000
+	allowed_num_of_buildings = -1
+	local_missionary_strength = 0.01
+	culture_conversion_cost = -0.1
+}
+
+province_huorn_debuff = {
+	local_manpower_modifier = -1
+	local_autonomy = 100
+	local_build_cost = 1000
+	local_production_efficiency = -1
+	local_tax_modifier = -1
+	local_development_cost = 1000
+	allowed_num_of_buildings = -1
+	local_missionary_strength = 0.01
+	culture_conversion_cost = -0.1
+}

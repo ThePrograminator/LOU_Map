@@ -1,3 +1,86 @@
+osgiliath_rebuilt = {
+	prestige = 1
+	legitimacy = 0.8
+	land_morale = 0.10
+}
+
+lond_angren_trade_X01_mission = {
+	trade_efficiency = 0.15
+	global_trade_power = 0.15
+}
+
+conquer_arnor_X01_mission = {
+	ae_impact = -0.25
+}
+
+conquer_umbar_X01_mission = {
+	prestige = 1
+	legitimacy = 0.5
+}
+
+border_to_rhun_X01_mission = {
+	global_supply_limit_modifier = 0.25
+	prestige = 0.5
+}
+
+securing_against_rhun_X01_mission = {
+	fort_maintenance_modifier = -0.2
+	rival_border_fort_maintenance = -0.2
+}
+
+reconquer_minas_ithil_X01_mission = {
+	prestige = 1
+	legitimacy = 0.5
+}
+
+conquer_mordor_X01_mission = {
+	prestige = 1.5
+	legitimacy = 1
+}
+
+ally_vassal_shire_X01_mission = {
+	diplomatic_reputation = 1
+}
+
+ally_vassal_nurn_X01_mission = {
+	diplomatic_reputation = 1
+}
+
+conquer_rhudaur_X01_mission = {
+	prestige = 1
+	legitimacy = 0.5
+}
+
+conquer_cardolan_X01_mission = {
+	prestige = 1
+	legitimacy = 0.5
+}
+
+conquer_arthedain_X01_mission = {
+	prestige = 1
+	legitimacy = 0.5
+}
+romendacil = {
+	prestige = 1
+	legitimacy = 1
+	land_morale = 0.10
+	discipline = 0.10
+}
+hyarmendacil = {
+	prestige = 1
+	legitimacy = 1
+	land_morale = 0.10
+	war_exhaustion = -0.25
+	harsh_treatment_cost = -0.33
+}
+umbardacil = {
+	prestige = 1
+	legitimacy = 1
+	naval_morale = 0.1
+	navy_tradition = 1
+	global_sailors_modifier = 0.20
+}
+
 gondor_increased_production_quotas_modifier = {
 	trade_goods_size_modifier = 0.25 
 }

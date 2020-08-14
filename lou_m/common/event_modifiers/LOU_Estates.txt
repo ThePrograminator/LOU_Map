@@ -144,3 +144,20 @@ estate_nobility_monopoly_of_weaponry_mod = {
 estate_commoners_monopoly_of_simple_food_mod = {
 	local_production_efficiency = -10
 }
+
+# --------- Dwarf ---------
+higher_kvota_mining_guild = {
+	production_efficiency = 0.25
+}
+
+grant_mining_rights_mining_guild = {
+	local_tax_modifier = -0.25
+}
+
+change_maintenance_terms_smithies_guild = {
+	land_maintenance_modifier = -0.1
+}
+
+grant_export_rights_smithies_guild = {
+	global_regiment_cost = 0.4
+}

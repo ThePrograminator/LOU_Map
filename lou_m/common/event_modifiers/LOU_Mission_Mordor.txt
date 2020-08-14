@@ -1,0 +1,53 @@
+minions_of_the_dark_lord = {
+	vassal_forcelimit_bonus = 0.2
+	improve_relation_modifier = 0.1
+	fabricate_claims_cost= -0.1
+	diplomatic_upkeep = 1
+	diplomats = 1
+	unjustified_demands = -0.2
+}
+orc_defenses = {
+	army_tradition_from_battle = 0.05
+	discipline = 0.05
+	defensiveness = 0.10
+	garrison_size = 0.05
+	rival_border_fort_maintenance = -0.1
+}
+the_land_of_shadows = {
+	army_tradition = 0.2
+	infantry_cost = -0.1
+	land_attrition = -0.1
+	global_manpower_modifier = 0.05
+	land_forcelimit = 3
+	war_exhaustion_cost = -0.1
+	vassal_income = 0.1
+	production_efficiency = 0.05
+	state_maintenance_modifier = -0.25
+	core_creation = -0.1
+	culture_conversion_cost = -0.20
+	global_missionary_strength = 0.05
+	missionary_maintenance_cost = -0.1
+}
+fall_of_lothlorien = {
+	ae_impact = -0.20
+	army_tradition = 0.2
+	discipline = 0.1
+	land_morale = 0.15
+	core_creation = -0.1
+	culture_conversion_cost = -0.20
+	global_missionary_strength = 0.05
+	missionary_maintenance_cost = -0.1
+}
+sauron_the_great = {
+	ae_impact = -0.50
+	army_tradition = 0.5
+	discipline = 0.15
+	land_morale = 0.25
+	global_manpower_modifier = 0.20
+	war_exhaustion_cost = -0.15
+	core_creation = -0.25
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.15
+	missionary_maintenance_cost = -0.15
+	unjustified_demands = -0.50
+}

@@ -1,0 +1,82 @@
+gondor_hope_arises = {
+	land_morale = 0.1
+}
+
+gondorian_naval_prioritise = {
+	galley_cost = -0.25
+	heavy_ship_cost = -0.25
+	naval_maintenance_modifier = -0.1
+	dip_tech_cost_modifier = 0.2
+}
+
+gondorian_didnt_naval_prioritise = {
+	galley_cost = 0.25
+	heavy_ship_cost = 0.25
+	naval_maintenance_modifier = 0.1
+	dip_tech_cost_modifier = -0.2
+}
+
+gondorian_trade_flows = {
+	trade_efficiency = 0.05
+	global_spy_defence = -0.25
+}
+
+province_gondorian_increased_production = {
+	trade_goods_size_modifier = 0.1
+	local_defensiveness = 0.05
+}
+
+gondorian_purchase_rohan_horses = {
+	cavalry_power = 0.1
+	cavalry_flanking = 0.1
+	land_maintenance_modifier = 0.15
+}
+
+gondorian_close_advisor = {
+	advisor_cost = -0.1
+}
+
+gondorian_taking_gandalfs_advise = {
+	ae_impact = -0.05
+	unjustified_demands = -0.25
+}
+
+gondorian_not_taking_gandalfs_advise = {
+	fort_maintenance_modifier = -0.1
+	defensiveness = 0.1
+	garrison_size = 0.1
+}
+
+gondorian_united_cause = {
+	land_morale = 0.1
+	land_maintenance_modifier = -0.2
+}
+
+gondorian_spawn_umbar_raider_timer = {
+}
+
+province_increased_autonomy = {
+	local_unrest = -1
+}
+
+province_didnt_increased_autonomy = {
+	local_unrest = 2
+}
+
+province_increased_garrison = {
+	local_defensiveness = 0.25
+}
+
+province_ithilien_rangers = {
+	local_hostile_attrition = 2
+}
+
+province_lowered_development_cost = {
+	local_development_cost = -0.15
+}
+
+province_increased_taxes = {
+	local_tax_modifier = 0.1
+	local_unrest = 1
+}
+
