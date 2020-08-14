@@ -133,9 +133,10 @@ republic = {
 		government_form_republic = {
 			reforms = {
 				oligarchy_reform
-				merchants_reform
+				maritime_republic_reform
 				mayorship_reform
 				thainship_reform
+                trading_city_reform
 			}
 		}
 		republican_virtues = {
@@ -145,7 +146,7 @@ republic = {
 				republicanism_reform
                 mixed_republic_reform
                 independence_reform
-                sovereignity_reform
+                sovereignty_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -258,7 +259,7 @@ republic = {
 		lotr_mayorship_legacy
 		lotr_thainship_legacy
 		oligarchic_republic
-		merchant_republic
+		maritime_republic_legacy
 		trading_city_legacy
 	}
     

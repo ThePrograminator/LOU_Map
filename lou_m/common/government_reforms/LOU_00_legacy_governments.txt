@@ -194,7 +194,7 @@ oligarchic_republic = {
 	}
 }
 
-merchant_republic = {
+maritime_republic_legacy = {
 	# government mechanics flags go here
 	icon = "politician"
 	allow_normal_conversion = no
@@ -273,12 +273,6 @@ trading_city_legacy = {
 
 	is_trading_city = yes
 
-	factions = {
-		mr_aristocrats
-		mr_traders
-		mr_guilds
-	}
-
     fixed_rank = 2
 	republic = yes
 	modifiers = {
@@ -299,7 +293,7 @@ trading_city_legacy = {
 			NOT = { has_dlc = "Res Publica" }
 		}
 		can_form_trade_league = yes
-		trade_city_reform = merchant_republic # For trade cities this is their fallback government if they get more than 1 provinces
+		trade_city_reform = maritime_republic_reform # For trade cities this is their fallback government if they get more than 1 provinces
 	}
 	conditional = {
 		allow = {
@@ -308,7 +302,7 @@ trading_city_legacy = {
 		}
 		can_use_trade_post = yes
 		can_form_trade_league = yes
-		trade_city_reform = merchant_republic # For trade cities this is their fallback government if they get more than 1 provinces
+		trade_city_reform = maritime_republic_reform # For trade cities this is their fallback government if they get more than 1 provinces
 	}
 	ai = {
 		factor = 0

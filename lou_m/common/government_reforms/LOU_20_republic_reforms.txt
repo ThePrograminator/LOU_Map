@@ -18,24 +18,22 @@ oligarchy_reform = {
 		enables_aristocratic_idea_group = no
 	}
 }
-merchants_reform = {
-	icon = "politician"
+maritime_republic_reform = {
+	icon = "merchant_ship"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_absolutism = -50
 		merchants = 1
+		caravan_power = 0.33
+		max_absolutism = -50
+    	governing_capacity = 100
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
-	legacy_equivalent = merchant_republic
+	legacy_equivalent = maritime_republic_legacy
 	boost_income = yes
-	duration = 4
-	fixed_rank = 2
-	#factions = {
-	#	mr_aristocrats
-	#	mr_traders
-	#	mr_guilds
-	#}
+	
+    duration = 4
+
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -49,6 +47,7 @@ merchants_reform = {
 			NOT = { has_dlc = "Res Publica" }
 		}
 		can_form_trade_league = yes
+        trade_city_reform = trading_city_reform
 	}
 	conditional = {
 		allow = {
@@ -57,6 +56,7 @@ merchants_reform = {
 		}
 		can_use_trade_post = yes
 		can_form_trade_league = yes
+        trade_city_reform = trading_city_reform
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -116,6 +116,55 @@ thainship_reform = {
 		enables_aristocratic_idea_group = no
 	}
 }
+trading_city_reform = {
+	icon = "trading_city"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = trading_city_reform
+	}
+	valid_for_nation_designer = no
+	legacy_equivalent = trading_city_legacy
+	boost_income = yes
+	lock_level_when_selected = yes
+	is_trading_city = yes
+    
+	modifiers = {
+		max_absolutism = -20
+		global_trade_power = 0.1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = maritime_republic_reform # For trade cities this is their fallback government if they get more than 1 provinces
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = maritime_republic_reform # For trade cities this is their fallback government if they get more than 1 provinces
+	}
+	duration = 4
+}
 
 #------------------------------
 # Republican Virtues
@@ -169,7 +218,7 @@ independence_reform = {
 		factor = 1
 	}
 }
-sovereignity_reform = {
+sovereignty_reform = {
 	icon = "crown"
 	allow_normal_conversion = yes
 
