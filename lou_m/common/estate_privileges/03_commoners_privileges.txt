@@ -371,3 +371,28 @@ estate_commoners_monopoly_of_simple_food = {
 		factor = 0
 	}
 }
+
+estate_commoners_statutory_rights = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		has_estate_privilege = estate_commoners_statutory_rights
+	}
+	on_granted = {
+		change_estate_land_share = {
+			estate = all
+			share = -30
+		}
+	}
+	penalties = {
+		min_autonomy = 25
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+
+	cooldown_years = 20
+}
