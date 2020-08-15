@@ -767,27 +767,27 @@
  LOU_dunedain.1.a: "Import the Food"
  LOU_dunedain.1.b: "We Can't afford it"
  
- LOU_dunedain.2.t: "Recruit The Young"
+ LOU_dunedain.2.t: "Recruit the Young"
  LOU_dunedain.2.d: "Our Manpower is at a low point, and we need soldiers on the front-line. We could start recruiting young people from the ages of 13 and up, but the people will most likely disagreed on this."
  LOU_dunedain.2.a: "Start Recruiting"
  LOU_dunedain.2.b: "We cannot sink so low"
  
- LOU_dunedain.3.t: "Rusty Armor and Lack of Uniforms"
- LOU_dunedain.3.d: "From the wars we have endured, we have lost many pieces of armor and uniforms. For the new recruites it is not very encouraging to start training or enter battle with only scraps. What shall we do?"
+ LOU_dunedain.3.t: "Lack of Equipment"
+ LOU_dunedain.3.d: "From the wars we have endured, we have lost many pieces of armor and uniforms. For the new recruits it is not very encouraging to start training or enter battle with only scraps. What shall we do?"
  LOU_dunedain.3.a: "Slacken the uniforms"
  LOU_dunedain.3.b: "Increase Production"
  
- LOU_dunedain.4.t: "A Province Borders Orcs"
+ LOU_dunedain.4.t: "Patroling Orcs"
  LOU_dunedain.4.d: "A province of ours is bordering orcs, the people are afraid of raides and attacks. They demand that we increase our military presence there."
  LOU_dunedain.4.a: "Increase Defeneces"
  LOU_dunedain.4.b: "We are fine"
  
- LOU_dunedain.5.t: "Our $MONARCHTITLE$ Has Passed Away"
- LOU_dunedain.5.d: "Our recent $MONARCHTITLE$ has passed away, this has given our people concerns for the future."
- LOU_dunedain.5.a: "He was loved"
- LOU_dunedain.5.b: "He wasn't that great"
+ LOU_dunedain.5.t: "Mourning of the $MONARCHTITLE$"
+ LOU_dunedain.5.d: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] has passed away. As the people reflect on [Root.Monarch.GetHerHis] rule, concern for the future arises."
+ LOU_dunedain.5.a: "The good die young...."
+ LOU_dunedain.5.b: "Good riddance"
  
- LOU_dunedain.6.t: "A Battle Was Lost"
+ LOU_dunedain.6.t: "Battle Lost"
  LOU_dunedain.6.d: "Our people have heard of our recent defeat. Our people are concerned that this might be the begining of the end."
  LOU_dunedain.6.a: "Victory at all cost!"
  
@@ -795,15 +795,15 @@
  LOU_dunedain.7.d: "We have experienced an excellent harvest, both our people and our nation enjoys this occation."
  LOU_dunedain.7.a: "Just what we needed"
  
- LOU_dunedain.8.t: "We Won The War"
+ LOU_dunedain.8.t: "Victory in Hand"
  LOU_dunedain.8.d: "Our people dance in the streets with our recent victory against our enermies!"
  LOU_dunedain.8.a: "Our hope rises"
  
- LOU_dunedain.9.t: "Too Long War"
+ LOU_dunedain.9.t: "Exhaustion"
  LOU_dunedain.9.d: "Our people are sick and tired of war, they believe it has lasted for too long. We will soon need to end this, if we are to have the people on our side."
  LOU_dunedain.9.a: "We Will Fight To The End"
  
- LOU_dunedain.10.t: "The People Has Lost Hope"
+ LOU_dunedain.10.t: "Fading Hope"
  LOU_dunedain.10.d: "The fight continues for our survival and our way of life. The people are afraid that this struggel may never end."
  LOU_dunedain.10.a: "It's a struggel we all face"
  
@@ -1431,3 +1431,42 @@
  LOU_nurn.1.d: ""
  LOU_nurn.1.a: ""
  
+ #---------------------------------------
+ # Empire of Rhun
+ #---------------------------------------
+ LOU_empire_of_rhun.1.title: "Victory for [Root.Monarch.GetTitle] [Root.Monarch.GetName]"
+ LOU_empire_of_rhun.1.desc: "The [Root.Monarch.GetTitle] diplayed great competence during the recent war, much to the suprise of many nobles. This grants the Warlord of Rhûn more legitimacy and influence amoungst the lesser clans."
+ LOU_empire_of_rhun.1.option.a: "Great"
+ 
+ LOU_empire_of_rhun.2.title: "Defeat for [Root.Monarch.GetTitle] [Root.Monarch.GetName]"
+ LOU_empire_of_rhun.2.desc: "The [Root.Monarch.GetTitle] diplayed miserable incompetence during the recent war, meeting the expectations of many nobles. This will reduce the legitimacy of the Warlord of Rhûn and its influence amoungst the lesser clans."
+ LOU_empire_of_rhun.2.option.a: "..."
+ 
+ LOU_empire_of_rhun.3.title: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] the Good"
+ LOU_empire_of_rhun.3.desc: "Known for his intellect, [Root.Monarch.GetName] succession to [Root.Monarch.GetTitle] has been met by much of the clan elders with much applause, and as such grants the Warlord of Rhûn more legitimacy and influence amoungst the lesser clans."
+ LOU_empire_of_rhun.3.option.a: "Great"
+ 
+ LOU_empire_of_rhun.4.title: "[Root.Monarch.GetTitle] [Root.Monarch.GetName]"
+ LOU_empire_of_rhun.4.desc: "As a [Root.Monarch.GetTitle], [Root.Monarch.GetName] succession as Warlord of Rhûn has caused upset amoungst much of the elders, and as such reduces the legitimacy of the Warlord of Rhûn and its influence amoungst the lesser clans."
+ LOU_empire_of_rhun.4.option.a: "..."
+ 
+ LOU_empire_of_rhun.5.title: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] the Great"
+ LOU_empire_of_rhun.5.desc: "Known for his exceptional intellect, [Root.Monarch.GetName] succession to [Root.Monarch.GetTitle] has been met by much of the elders with much applause, and as such grants the Warlord of Rhûn more legitimacy and influence amoungst the lesser clans."
+ LOU_empire_of_rhun.5.option.a: "Great"
+ 
+ LOU_empire_of_rhun.6.title: "The End of the [From.GetAdjective] [From.GovernmentName]"
+ LOU_empire_of_rhun.6.desc: "With the fall of [From.Capital.GetCapitalName] the last remnants of the Empire of Rhûn have been crushed. The Warlord of Rhûn is now clearly seen as defunct concepts and the clan system will have to evolve into something else or perish.\nThough the memory of the Empire of Rhûn will live for some time the [Root.GovernmentName] of [Root.GetName] will forever be remembered as the destroyers of the last [From.Monarch.GetTitle] of the Rhûn."
+ LOU_empire_of_rhun.6.option.a: "Ok."
+ 
+ LOU_empire_of_rhun.7.title: "Claim Control of the Rhûn"
+ LOU_empire_of_rhun.7.desc:  "With the fall of [From.Capital.GetCapitalName] the former [From.Monarch.GetTitle] of the Empire of Rhûn has been crushed. Let us claim the mantle of Warlord of Rhûn as our own.
+ LOU_empire_of_rhun.7.option.a: "Hurrah!"
+ 
+ LOU_empire_of_rhun.10.title: "Powerful Warord"
+ LOU_empire_of_rhun.10.desc: "The empire of Rhûn, controlled by a powerful warlord is perilious close to our borders. It may be best to make a tribute to this mighty figure before they decide to attack us."
+ LOU_empire_of_rhun.10.option.a: "Send them a tribute"
+ LOU_empire_of_rhun.10.option.b: "We will not be intimidated"
+ 
+ LOU_empire_of_rhun.11.title: "Tribute from [tribute_country.GetName]"
+ LOU_empire_of_rhun.11.desc: "The people of [tribute_country.GetName] have sent an envoy and tribute for [Root.Monarch.GetTitle] [Root.Monarch.GetName]."
+ LOU_empire_of_rhun.11.option.a: "Just what we needed"

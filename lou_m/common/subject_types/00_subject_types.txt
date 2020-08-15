@@ -481,11 +481,7 @@ tributary_state = {
 		NOT = { 
 			is_subject_of_type = tributary_state
 		}
-		OR = {
-			#has_reform = celestial_empire
-			is_nomad = yes
-			#religion_group = eastern
-		}
+		has_reform = empire_of_rhun_reform
 	}
 	
 	# Graphics:
@@ -501,7 +497,7 @@ tributary_state = {
 	is_voluntary = yes
 	overlord_can_attack = yes
 	takes_diplo_slot = no
-	base_liberty_desire = -5
+	base_liberty_desire = -20
 	relative_power_class = 1
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
