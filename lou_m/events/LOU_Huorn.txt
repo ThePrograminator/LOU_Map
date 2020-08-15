@@ -1,0 +1,98 @@
+namespace = LOU_huorn
+
+# "Huorn Roam The Land"
+province_event = {
+	id = LOU_huorn.1
+	title = "LOU_huorn.1.t"
+	desc = "LOU_huorn.1.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = province_huorn_debuff }
+        # Province
+        OR = {
+            culture = culture_huorn
+            religion = religion_ents
+        }
+        # Owner
+        NOT = {
+            owner = {
+                OR = {
+                    primary_culture = culture_ents
+                    primary_culture = culture_huorn
+                }
+                religion = religion_ents
+            }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_huorn.1.a"
+
+		add_province_modifier = {
+			name = "province_huorn_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Huorn Expelled"
+province_event = {
+	id = LOU_huorn.2
+	title = "LOU_huorn.2.t"
+	desc = "LOU_huorn.2.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        has_province_modifier = province_huorn_debuff
+        AND = {
+            NOT = { culture = culture_huorn }
+            NOT = { religion = religion_ents }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_huorn.2.a"
+
+		remove_province_modifier = province_huorn_debuff
+	}
+}
+
+# "Huorn Expelled" - Is Huorn
+province_event = {
+	id = LOU_huorn.3
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    
+	trigger = {
+        has_province_modifier = province_huorn_debuff
+        owner = {
+            OR = {
+                primary_culture = culture_ents
+                primary_culture = culture_huorn
+            }
+            religion = religion_ents
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+        name = "dummy.1.a"
+        
+		remove_province_modifier = province_huorn_debuff
+	}
+}

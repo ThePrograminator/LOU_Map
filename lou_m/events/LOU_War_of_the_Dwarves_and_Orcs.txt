@@ -1,0 +1,318 @@
+#-----------------------------------------
+# War of the Dwarves and Orcs (WDO)
+#-----------------------------------------
+
+namespace = LOU_wdo
+
+country_event = {
+	id = LOU_wdo.1
+	title = "LOU_wdo.1.t"
+	desc = "LOU_wdo.1.d"
+	picture = CONQUEST_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		check_date = {
+			YEAR = 2793
+			MONTH = 0
+			STARTED_BEFORE = 2793.1.1
+		}
+		has_global_flag = desolation_of_smaug_lost
+		tag = Y16
+		war_of_the_dwarves_and_orcs_goblin_moria_exists = yes
+		
+		NOT = { 
+			281 = {
+				owned_by = ROOT
+			}
+			739 = {
+				owned_by = ROOT
+			}
+			740 = {
+				owned_by = ROOT
+			}
+			has_global_flag = war_of_the_dwarves_and_orcs
+			has_country_flag = war_of_the_dwarves_and_orcs_starts
+			has_country_flag = war_of_the_dwarves_and_orcs_lost
+			has_country_flag = war_of_the_dwarves_and_orcs_wins
+		}
+	}
+
+	option = {
+		name = "LOU_wdo.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.1 - Option : LOU_wdo.1.a" }
+
+		custom_tooltip = war_of_the_dwarves_and_orcs_text_1
+		kill_heir = yes
+		define_heir = {
+			claim = 100
+			dynasty = ROOT
+			name = "Thorin Bit Durin"
+			adm = 4
+			dip = 3
+			mil = 4
+			age = 15
+		}
+
+		khazad_dum_area = {
+			add_core = ROOT
+		}
+		set_global_flag = war_of_the_dwarves_and_orcs
+		hidden_effect = {
+			country_event = {
+				id = LOU_wdo.2
+				days = 30
+			}
+			country_event = {
+				id = LOU_wdo.3
+				days = 60
+			}
+			country_event = {
+				id = LOU_wdo.4
+				days = 90
+			}
+			add_country_modifier = {
+				name = war_of_dwarves_and_orcs
+				duration = 2548
+			}
+			
+			Y57 = {
+				add_historical_rival = Y16
+			}
+			add_historical_rival = Y57
+		}
+	}
+	
+	option = {
+		name = "LOU_wdo.1.b"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.1 - Option : LOU_wdo.1.b" }
+
+		add_stability = -2
+		add_prestige = -50
+		set_global_flag = war_of_the_dwarves_and_orcs_aborted
+	}	
+}
+
+country_event = {
+	id = LOU_wdo.2
+	title = "LOU_wdo.2.t"
+	desc = "LOU_wdo.2.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = war_of_the_dwarves_and_orcs
+		tag = Y16
+		exists = Y57
+		NOT = { 
+			exists = V53 
+			has_country_flag = war_of_the_dwarves_and_orcs_blacklocks
+		}
+	}
+
+	option = {
+		name = "LOU_wdo.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.2 - Option : LOU_wdo.2.a" }
+
+		capital_scope = {
+			infantry = PREV
+			infantry = PREV
+		}
+		set_country_flag = war_of_the_dwarves_and_orcs_blacklocks
+	}			
+}
+
+country_event = {
+	id = LOU_wdo.3
+	title = "LOU_wdo.3.t"
+	desc = "LOU_wdo.3.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = war_of_the_dwarves_and_orcs
+		tag = Y16
+		exists = Y57
+		NOT = { 
+			exists = V53 
+			has_country_flag = war_of_the_dwarves_and_orcs_stonefoots
+		}
+	}
+
+	option = {
+		name = "LOU_wdo.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.3 - Option : LOU_wdo.3.a" }
+
+		capital_scope = {
+			infantry = PREV
+		}
+		set_country_flag = war_of_the_dwarves_and_orcs_stonefoots
+	}			
+}
+
+country_event = {
+	id = LOU_wdo.4
+	title = "LOU_wdo.4.t"
+	desc = "LOU_wdo.4.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		check_date = {
+			YEAR = 2793
+			MONTH = 0
+			STARTED_BEFORE = 2793.1.1
+		}
+		has_global_flag = war_of_the_dwarves_and_orcs
+		tag = Y16
+		war_of_the_dwarves_and_orcs_goblin_moria_exists = yes
+		NOT = { 
+			has_country_flag = war_of_the_dwarves_and_orcs_starts
+			has_country_flag = war_of_the_dwarves_and_orcs_lost
+			has_country_flag = war_of_the_dwarves_and_orcs_wins
+		}
+	}
+
+	option = {
+		name = "LOU_wdo.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.4 - Option : LOU_wdo.4.a" }
+
+		declare_war_with_cb = {
+			who = Y57
+			casus_belli = cb_war_of_the_dwarves_and_orcs
+		}
+
+		set_global_flag = war_of_the_dwarves_and_orcs_starts
+	}			
+}
+
+country_event = {
+	id = LOU_wdo.5
+	title = "LOU_wdo.5.t"
+	desc = "LOU_wdo.5.d"
+	picture = CONQUEST_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = war_of_the_dwarves_and_orcs_starts
+		tag = Y16
+		truce_with = Y57
+		OR = {
+			281 = {
+				owned_by = ROOT
+			}
+			739 = {
+				owned_by = ROOT
+			}
+			740 = {
+				owned_by = ROOT
+			}
+		}
+		#had_recent_war = 0.1
+		NOT = { 
+			exists = V53 	
+			has_global_flag = war_of_the_dwarves_and_orcs_wins
+			has_global_flag = war_of_the_dwarves_and_orcs_lost
+		}
+	}
+
+	option = {
+		name = "LOU_wdo.5.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.5 - Option : LOU_wdo.5.a" }
+
+		change_tag = V53
+		add_stability = 2
+		add_prestige = 50
+		add_legitimacy = 25
+		
+		khazad_dum_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			change_culture = culture_longbeard
+			change_religion = religion_mahal
+		}
+		set_global_flag = war_of_the_dwarves_and_orcs_wins
+	}			
+}
+
+#Lost War
+country_event = {
+	id = LOU_wdo.6
+	title = "LOU_wdo.6.t"
+	desc = "LOU_wdo.6.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = Y16
+
+		FROM = {
+			tag = Y57
+		}
+		check_date = {
+			YEAR = 2793
+			MONTH = 0
+			STARTED_BEFORE = 2793.1.1
+		}
+
+		has_global_flag = war_of_the_dwarves_and_orcs_starts
+		NOT = {  	
+			has_global_flag = war_of_the_dwarves_and_orcs_lost
+			has_global_flag = war_of_the_dwarves_and_orcs_wins	
+		}
+	}
+
+	option = {
+		name = "LOU_wdo.6.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.6 - Option : LOU_wdo.6.a" }
+
+		custom_tooltip = war_of_the_dwarves_and_orcs_text_2
+		add_prestige = -50
+		set_global_flag = war_of_the_dwarves_and_orcs_lost
+		hidden_effect = {
+			#if = { 
+			#	limit = {
+			#		Y13 = {
+			#			ai = yes
+			#		}
+			#	}
+			#	
+			#	if = {
+			#		limit = {
+			#			ai = no
+			#		}
+			#		switch_tag = Y13
+			#	}
+			#}
+			237 = {
+				add_core = Y22
+				cede_province = Y22
+			}
+			Y22 = {
+				set_capital = 237
+			}
+		}
+	}			
+}

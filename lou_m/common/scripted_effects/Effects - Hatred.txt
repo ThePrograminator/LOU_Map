@@ -1,0 +1,93 @@
+set_against_race_opinions_effect = {
+	if = {
+		limit = {
+			is_free_peoples_opinion = yes
+		}
+		every_country = {
+			limit = {
+				is_servants_of_evil_opinion = yes
+				PREV = {
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = against_servants_of_darkness
+						}
+					}
+				}
+			}
+		   
+			# Good
+			PREV = {
+				add_opinion = {
+					who = PREV # Evil
+					modifier = against_servants_of_darkness
+				}
+			}
+		   
+			add_opinion = {
+				who = PREV
+				modifier = against_free_peoples
+			}
+		}
+	}
+}
+
+set_free_peoples_opinions_effect = {
+	# Good Friendly
+	if = {
+		limit = {
+			is_free_peoples_opinion = yes
+		}
+		every_country = {
+			limit = {
+				is_free_peoples_opinion = yes
+				PREV = {
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = free_peoples
+						}
+					}
+				}
+			}
+		   
+			# Good
+			PREV = {
+				add_opinion = {
+					who = PREV # Good
+					modifier = free_peoples
+				}
+			}
+		}
+	}
+}
+
+set_servants_of_darkness_opinions_effect = {
+	# Good Friendly
+	if = {
+		limit = {
+			is_servants_of_evil_opinion = yes
+		}
+		every_country = {
+			limit = {
+				is_servants_of_evil_opinion = yes
+				PREV = {
+					NOT = {
+						has_opinion_modifier = {
+							who = PREV
+							modifier = servants_of_darkness
+						}
+					}
+				}
+			}
+		   
+			# Good
+			PREV = {
+				add_opinion = {
+					who = PREV # Good
+					modifier = servants_of_darkness
+				}
+			}
+		}
+	}
+}

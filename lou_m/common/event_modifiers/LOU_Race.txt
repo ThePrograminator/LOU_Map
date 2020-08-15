@@ -10,7 +10,7 @@ dwarven_buff = {
 	inflation_reduction = 0.05
 	production_efficiency = 0.15
 	defensiveness = 0.15
-    monarch_lifespan = 0.5
+    monarch_lifespan = 2 # +200 years
 }
 
 dragon_buff = {
@@ -19,7 +19,7 @@ dragon_buff = {
 	siege_ability = 0.15
 	artillery_power = 0.10
 	manpower_recovery_speed = -0.25
-    monarch_lifespan = 1.0
+    monarch_lifespan = 10.0 # +1000 years (immortal)
 }
 
 elven_buff = {
@@ -28,7 +28,7 @@ elven_buff = {
 	diplomatic_reputation = 1
 	advisor_cost = -0.1
 	discipline = 0.05
-    monarch_lifespan = 1.0
+    monarch_lifespan = 10.0 # +1000 years (immortal)
 }
 
 ent_buff = {
@@ -37,7 +37,7 @@ ent_buff = {
 	global_regiment_cost = 0.2
 	discipline = 0.05
 	manpower_recovery_speed = -0.5
-    monarch_lifespan = 1.0
+    monarch_lifespan = 10.0 # +1000 years (immortal)
 }
 
 erus_children_buff = {
@@ -46,6 +46,7 @@ erus_children_buff = {
 	fire_damage = 0.10
 	siege_ability = 0.20
 	manpower_recovery_speed = -0.50
+    monarch_lifespan = 10.0 # +1000 years (immortal)
 }
 
 goblin_buff = {
@@ -54,6 +55,7 @@ goblin_buff = {
 	land_morale = -0.10
 	manpower_recovery_speed = 0.25
 	land_maintenance_modifier = -0.1
+    monarch_lifespan = -0.5 # -50 years
 }
 
 giant_buff = {
@@ -63,6 +65,7 @@ giant_buff = {
 	siege_ability = 0.33
 	fire_damage = 0.1
 	manpower_recovery_speed = -0.50
+    monarch_lifespan = 1 # +100 years
 }
 
 # Spider Buff/Debuff
@@ -71,13 +74,15 @@ great_spider_buff = {
 	global_regiment_cost = 0.1
 	shock_damage = 0.10
 	discipline = -0.05
+    monarch_lifespan = 1 # +100 years
 }
 
 half_dwarf_buff = {
 	land_forcelimit_modifier = -0.33
 	siege_ability = 0.2
 	inflation_reduction = 0.05
-	global_trade_goods_size_modifier = 0.15 
+	global_trade_goods_size_modifier = 0.15
+    monarch_lifespan = 2 # +200 years
 }
 
 hobbit_buff = {
@@ -105,6 +110,7 @@ orc_buff = {
 	tolerance_heretic = -1
 	manpower_recovery_speed = 0.20
 	land_maintenance_modifier = -0.1
+    monarch_lifespan = 1 # +100 years
 }
 
 # Troll Buff/Debuff
@@ -113,6 +119,7 @@ troll_buff = {
 	infantry_power = 0.33
 	siege_ability = 0.25
 	manpower_recovery_speed = -0.1
+    monarch_lifespan = 1 # +100 years
 }
 
 uruk_hai_buff = {
@@ -120,6 +127,7 @@ uruk_hai_buff = {
 	tolerance_heathen = -1
 	tolerance_heretic = -1
 	global_regiment_cost = 0.1
+    monarch_lifespan = 1 # +100 years
 }
 
 wizard_buff = {
@@ -127,6 +135,7 @@ wizard_buff = {
 	shock_damage = 0.05
 	yearly_corruption = 0.05 
 	spy_offence = 0.33
+    monarch_lifespan = 10 # +1000 years (immortal)
 }
 
 wights_buff = {
@@ -135,7 +144,8 @@ wights_buff = {
 	tolerance_heretic = -1
 	manpower_recovery_speed = -0.1
 	spy_offence = 0.5 
-	leader_land_manuever = 1 
+	leader_land_manuever = 1
+    monarch_lifespan = 10 # +1000 years (immortal)
 }
 
 beornings_buff = {

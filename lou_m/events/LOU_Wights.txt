@@ -1,0 +1,92 @@
+namespace = LOU_wights
+
+# "Wights Roam The Land"
+province_event = {
+	id = LOU_wights.1
+	title = "LOU_wights.1.t"
+	desc = "LOU_wights.1.d"
+	picture = COMET_SIGHTED_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = province_wight_debuff }
+        # Province
+        OR = {
+            culture = culture_wight
+            religion = religion_wight
+        }
+        # Owner
+        NOT = {
+            owner = {
+                primary_culture = culture_wight
+                religion = religion_wight
+            }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_wights.1.a"
+
+		add_province_modifier = {
+			name = "province_wight_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Wights Expelled"
+province_event = {
+	id = LOU_wights.2
+	title = "LOU_wights.2.t"
+	desc = "LOU_wights.2.d"
+	picture = COMET_SIGHTED_eventPicture
+
+	trigger = {
+        has_province_modifier = province_wight_debuff
+        AND = {
+            NOT = { culture = culture_wight }
+            NOT = { religion = religion_wight }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_wights.2.a"
+
+		remove_province_modifier = province_wight_debuff
+	}
+}
+
+# "Wights Expelled" - Is Wight
+province_event = {
+	id = LOU_wights.3
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    
+	trigger = {
+        has_province_modifier = province_wight_debuff
+        owner = {
+            primary_culture = culture_wight
+            religion = religion_wight
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+        name = "dummy.1.a"
+        
+		remove_province_modifier = province_wight_debuff
+	}
+}

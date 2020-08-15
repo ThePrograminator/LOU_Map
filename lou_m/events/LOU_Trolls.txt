@@ -1,0 +1,108 @@
+namespace = LOU_trolls
+
+# Trolls Roam The Land"
+province_event = {
+	id = LOU_trolls.1
+	title = "LOU_trolls.1.t"
+	desc = "LOU_trolls.1.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = province_troll_debuff }
+        # Province
+        OR = {
+            culture = culture_troll
+            religion = religion_olog
+        }
+        # Owner
+        NOT = {
+            owner = {
+                OR = {
+                    primary_culture = culture_troll
+                    primary_culture = culture_orkish
+                    primary_culture = culture_goblin
+                }
+                OR = {
+                    religion = religion_olog
+                    religion = religion_goblin
+                    religion = religion_orkish
+                }
+            }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_trolls.1.a"
+
+		add_province_modifier = {
+			name = "province_troll_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Trolls Expelled"
+province_event = {
+	id = LOU_trolls.2
+	title = "LOU_trolls.2.t"
+	desc = "LOU_trolls.2.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        has_province_modifier = province_troll_debuff
+        AND = {
+            NOT = { culture = culture_troll }
+            NOT = { religion = religion_olog }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_trolls.2.a"
+
+		remove_province_modifier = province_troll_debuff
+	}
+}
+
+# "Trolls Expelled" - Is Troll
+province_event = {
+	id = LOU_trolls.3
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    
+	trigger = {
+        has_province_modifier = province_troll_debuff
+        owner = {
+            OR = {
+                primary_culture = culture_troll
+                primary_culture = culture_orkish
+                primary_culture = culture_goblin
+            }
+            OR = {
+                religion = religion_olog
+                religion = religion_goblin
+                religion = religion_orkish
+            }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+        name = "dummy.1.a"
+        
+		remove_province_modifier = province_troll_debuff
+	}
+}

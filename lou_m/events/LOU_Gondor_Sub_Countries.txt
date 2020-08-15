@@ -1,0 +1,108 @@
+########################################
+# Events for Gondor Sub  Countries
+########################################
+
+namespace = LOU_gondor_sub_countries
+
+# Ithilien
+province_event = {
+	id = LOU_gondor_sub_countries.1
+	title = "system_wilderness.1t"
+	desc = "system_wilderness.1d"
+	picture = COLONIZATION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+		OR = {
+			area = forithilien_area
+			area = minas_ithil_area
+			area = ithilien_area
+			area = emyn_arnen_area
+			area = harithilien_area
+			area = athrad_poros_area
+		}
+		OR = {
+			AND = {
+				owner = {
+					OR = {
+						culture_group = culture_group_numenorean
+						culture_group = culture_group_daen_of_gondor
+					}
+				}
+				OR = {
+					culture_group = culture_group_numenorean
+					culture_group = culture_group_daen_of_gondor
+					culture_group = culture_group_wilderness
+				}
+				NOT = {
+					is_permanent_claim = X06
+				}
+			}
+			AND = {
+				is_permanent_claim = X06
+				OR = {
+					NOT = {
+						culture_group = culture_group_numenorean
+						culture_group = culture_group_daen_of_gondor
+						culture_group = culture_group_wilderness
+						
+					}
+					NOT = {
+						owner = {
+							culture_group = culture_group_numenorean
+							culture_group = culture_group_daen_of_gondor
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "system_wilderness.1a"
+		trigger = {
+			owner = {
+				OR = {
+					culture_group = culture_group_numenorean
+					culture_group = culture_group_daen_of_gondor
+				}
+			}
+			OR = {
+				culture_group = culture_group_numenorean
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_wilderness
+			}
+			NOT = {
+				is_core = X06
+			}
+		}
+		add_permanent_claim = X06
+	}
+	
+	option = {
+		name = "system_wilderness.1b"
+		trigger = {
+			AND = {
+				is_permanent_claim = X06
+				OR = {
+					NOT = {
+						culture_group = culture_group_numenorean
+						culture_group = culture_group_daen_of_gondor
+						culture_group = culture_group_wilderness
+						
+					}
+					NOT = {
+						owner = {
+							culture_group = culture_group_numenorean
+							culture_group = culture_group_daen_of_gondor
+						}
+					}
+				}
+			}
+		}
+		remove_claim = X06
+	}
+}

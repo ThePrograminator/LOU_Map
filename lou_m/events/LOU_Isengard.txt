@@ -1,0 +1,161 @@
+########################################
+# Events for Isengard
+#
+#
+########################################
+
+namespace = LOU_isengard
+
+# Spawn Isengard
+country_event = {
+	id = LOU_isengard.1
+	title = LOU_isengard.1.t
+	desc = LOU_isengard.1.d
+	picture = BORDER_TENSION_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { 
+			exists = W53 
+			has_global_flag = isengard_spawned
+		}
+		check_date = {
+			YEAR = 2759
+			MONTH = 0
+			STARTED_BEFORE = 2759.1.1
+		}
+	}
+
+	option = { 
+		name = LOU_isengard.1.a
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.1 - Option : LOU_isengard.1.a" }
+
+		nan_curunir_area = {
+			change_culture = culture_istari
+			change_religion = religion_daen
+			add_core = W53
+			cede_province = W53
+		}
+		set_global_flag = isengard_spawned
+	}
+}
+
+# Isengard Turn Evil
+country_event = {
+	id = LOU_isengard.2
+	title = LOU_isengard.2.t
+	desc = LOU_isengard.2.d
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = W53
+		NOT = {
+			exists = V49 
+			has_global_flag = isengard_spawned
+			has_global_flag = isengard_turned_uruk_hai
+			has_global_flag = isengard_not_turned_uruk_hai
+		}
+		check_date = {
+			YEAR = 2953
+			MONTH = 0
+			STARTED_BEFORE = 2953.1.1
+		}
+	}
+
+	option = { 
+		name = LOU_isengard.2.a
+		ai_chance = {
+			factor = 50
+		}
+
+		trigger = {
+			capital_scope = {
+				area = nan_curunir_area
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.2 - Option : LOU_isengard.2.a" }
+
+		nan_curunir_area = {
+			limit = {
+				owned_by = root
+			}
+			change_culture = culture_urukhai
+			change_religion = religion_uruk
+		}
+		
+		change_tag = V49
+		change_primary_culture = culture_urukhai
+		change_religion = religion_uruk
+		change_technology_group = lotr_uruk_hai
+		change_government = orc_gov
+		add_government_reform = lotr_isengard_reform
+		hidden_effect = {
+			change_graphical_culture = lotr_isengard_gfx
+			change_unit_type = lotr_uruk_hai
+			set_global_flag = isengard_turned_uruk_hai
+		}
+	}
+
+	option = { 
+		name = LOU_isengard.2.a
+		ai_chance = {
+			factor = 50
+		}
+
+		trigger = {
+			capital_scope = {
+				NOT ={
+					area = nan_curunir_area
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.2 - Option : LOU_isengard.2.b" }
+
+		capital_scope = {
+			area = {
+				limit = {
+					owned_by = root
+				}
+				change_culture = culture_urukhai
+				change_religion = religion_uruk
+			}
+		}
+		
+		change_tag = V49
+		change_primary_culture = culture_urukhai
+		change_religion = religion_uruk
+		change_technology_group = lotr_uruk_hai
+		change_government = orc_gov
+		add_government_reform = lotr_isengard_reform
+		hidden_effect = {
+			change_graphical_culture = lotr_isengard_gfx
+			change_unit_type = lotr_uruk_hai
+			set_global_flag = isengard_turned_uruk_hai
+		}
+	}
+
+	option = { 
+		name = LOU_isengard.2.b
+		ai_chance = {
+			factor = 1
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.2 - Option : LOU_isengard.2.c" }
+		
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+
+		hidden_effect = {
+			set_global_flag = isengard_not_turned_uruk_hai
+		}
+	}
+}

@@ -1,0 +1,56 @@
+namespace = LOU_wilderness
+
+# "Wilderness"
+province_event = {
+	id = LOU_wilderness.1
+	title = "LOU_wilderness.1.t"
+	desc = "LOU_wilderness.1.d"
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = wilderness_debuff }
+        OR = {
+            culture = culture_wilderness
+            religion = religion_wilderness
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_wilderness.1.a"
+
+		add_province_modifier = {
+			name = "wilderness_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Wilderness Tamed"
+province_event = {
+	id = LOU_wilderness.2
+	title = "LOU_wilderness.2.t"
+	desc = "LOU_wilderness.2.d"
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+        has_province_modifier = wilderness_debuff
+        AND = {
+            NOT = { culture = culture_wilderness }
+            NOT = { religion = religion_wilderness }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_wilderness.2.a"
+
+		remove_province_modifier = wilderness_debuff
+	}
+}

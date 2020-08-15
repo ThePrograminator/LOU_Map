@@ -1,0 +1,26 @@
+namespace = LOU_durin_folk
+
+country_event = {
+    id = LOU_durin_folk.1
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = "dummy.1.a"
+        
+        Y22 = {
+			every_owned_province = { 
+				add_core = PREV
+			}
+		}
+		Y94 = {
+			every_owned_province = { 
+				add_core = PREV
+			}
+		}
+    }
+}

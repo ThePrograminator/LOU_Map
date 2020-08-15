@@ -1,0 +1,65 @@
+namespace = LOU_erebor
+
+country_event = {
+    id = LOU_erebor.1
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    is_triggered_only = yes
+	
+	trigger = {
+		always = no
+		exists = X17
+		OR = {
+			exists = Z05
+			exists = X28
+		}
+		NOT = {
+			is_year = 2770
+			has_country_flag = startup_erebor_eryn_galen
+		}
+	}
+   
+    option = {
+        name = "dummy.1.a"
+        
+		set_country_flag = startup_erebor_eryn_galen
+		if = {
+            limit = {
+                tag = X28
+            }
+            X17 = {
+                add_historical_friend = X28
+                }
+            add_historical_friend = X17
+        }
+		if = { 
+            limit = {
+                tag = Z05
+            }
+            X17 = {
+                add_historical_friend = Z05
+                }
+            add_historical_friend = X17
+        }
+		if = { 
+            limit = {
+                tag = X17
+            }
+            Z05 = {
+                add_historical_friend = X17
+                }
+            add_historical_friend = Z05
+        }
+		#limit = {
+		#		tag = X17
+		#	}
+		#	X28 = {
+		#		add_historical_friend = X17
+		#		}
+		#	add_historical_friend = X28
+	}
+}
+

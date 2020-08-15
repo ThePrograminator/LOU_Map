@@ -722,10 +722,10 @@ call_crusade_action = {
 	effect = {
 		FROM = {
 			set_country_flag = Invasion_called
-			country_event = { id = flavor_harad.1}
+			country_event = { id = LOU_harad.1 }
 		}
 		ROOT = {
-			country_event = { id = flavor_harad.7}
+			country_event = { id = LOU_harad.7 }
 		}
 	}
 }
