@@ -26,7 +26,7 @@ military_overseers_decision = {
 	emperor = {
 		core_creation = -0.2
 	}
-	required_reform = reform_land_tax_decision
+	required_reform = reform_land_cultivation_decision
 }
 
 centralize_military_rule_decision = {
@@ -34,5 +34,5 @@ centralize_military_rule_decision = {
 	emperor = {
 		country_military_power = 1
 	}
-	required_reform = military_governors_decision
+	required_reform = military_overseers_decision
 }
