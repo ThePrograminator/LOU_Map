@@ -1,0 +1,66 @@
+﻿l_english:
+ # Events
+ LOU_empire_of_rhun.1.title: "Victory for [Root.Monarch.GetTitle] [Root.Monarch.GetName]"
+ LOU_empire_of_rhun.1.desc: "The [Root.Monarch.GetTitle] diplayed great competence during the recent war, much to the suprise of many nobles. This grants the Warlord of Rhûn more legitimacy and influence amoungst the lesser clans."
+ LOU_empire_of_rhun.1.option.a: "Great"
+ 
+ LOU_empire_of_rhun.2.title: "Defeat for [Root.Monarch.GetTitle] [Root.Monarch.GetName]"
+ LOU_empire_of_rhun.2.desc: "The [Root.Monarch.GetTitle] diplayed miserable incompetence during the recent war, meeting the expectations of many nobles. This will reduce the legitimacy of the Warlord of Rhûn and its influence amoungst the lesser clans."
+ LOU_empire_of_rhun.2.option.a: "..."
+ 
+ LOU_empire_of_rhun.3.title: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] the Good"
+ LOU_empire_of_rhun.3.desc: "Known for his intellect, [Root.Monarch.GetName] succession to [Root.Monarch.GetTitle] has been met by much of the clan elders with much applause, and as such grants the Warlord of Rhûn more legitimacy and influence amoungst the lesser clans."
+ LOU_empire_of_rhun.3.option.a: "Great"
+ 
+ LOU_empire_of_rhun.4.title: "[Root.Monarch.GetTitle] [Root.Monarch.GetName]"
+ LOU_empire_of_rhun.4.desc: "As a [Root.Monarch.GetTitle], [Root.Monarch.GetName] succession as Warlord of Rhûn has caused upset amoungst much of the elders, and as such reduces the legitimacy of the Warlord of Rhûn and its influence amoungst the lesser clans."
+ LOU_empire_of_rhun.4.option.a: "..."
+ 
+ LOU_empire_of_rhun.5.title: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] the Great"
+ LOU_empire_of_rhun.5.desc: "Known for his exceptional intellect, [Root.Monarch.GetName] succession to [Root.Monarch.GetTitle] has been met by much of the elders with much applause, and as such grants the Warlord of Rhûn more legitimacy and influence amoungst the lesser clans."
+ LOU_empire_of_rhun.5.option.a: "Great"
+ 
+ LOU_empire_of_rhun.30.title: "The End of the [From.GetAdjective] [From.GovernmentName]"
+ LOU_empire_of_rhun.30.desc: "With the fall of [From.Capital.GetCapitalName] the last remnants of the Empire of Rhûn have been crushed. The Warlord of Rhûn is now clearly seen as defunct concepts and the clan system will have to evolve into something else or perish.\nThough the memory of the Empire of Rhûn will live for some time the [Root.GovernmentName] of [Root.GetName] will forever be remembered as the destroyers of the last [From.Monarch.GetTitle] of the Rhûn."
+ LOU_empire_of_rhun.30.option.a: "Ok."
+ 
+ LOU_empire_of_rhun.31.title: "Claim Control of the Rhûn"
+ LOU_empire_of_rhun.31.desc:  "With the fall of [From.Capital.GetCapitalName] the former [From.Monarch.GetTitle] of the Empire of Rhûn has been crushed. Let us claim the mantle of Warlord of Rhûn as our own.
+ LOU_empire_of_rhun.31.option.a: "Hurrah!"
+ 
+ # Modifiers
+ warlord_of_the_rhun: "Warlord of the Rhûn"
+ desc_warlord_of_the_rhun: "We have established ourselves as the new warlord of the Rhûn."
+ 
+ fallen_warlord: "Fallen Warlord"
+ desc_fallen_warlord: "We have lost control of the Rhûn to another clan."
+ 
+ # Decrees
+ establish_clout_decision_title: "Establish Clout"
+ establish_clout_decision_desc: ""
+ push_into_the_west_decision_title: "Push into the West"
+ push_into_the_west_decision_desc: ""
+ reform_land_cultivation_decision_title: "Reform Land Cultivation"
+ reform_land_cultivation_decision_desc: ""
+ military_overseers_decision_title: "Military Overseers"
+ military_overseers_decision_desc: ""
+ centralize_military_rule_decision_title: "Centralize Military Rule"
+ centralize_military_rule_decision_desc: ""
+ 
+ # Edicts
+ prepare_for_war_decree_title: "Prepare for War"
+ prepare_for_war_decree_desc: ""
+ encourage_looting_decree_title: "Encourage Looting"
+ encourage_looting_decree_desc: ""
+ mend_clan_tensions_decree_title: "Mend Clan Tensions"
+ mend_clan_tensions_decree_desc: ""
+ enforce_absolute_rule_decree_title: "Enforce Absolute Rule"
+ enforce_absolute_rule_decree_desc: ""
+ fortify_borders_decree_title: "Fortify Borders"
+ fortify_borders_decree_desc: ""
+ consolidate_conquests_decree_title: "Consolidate Conquests"
+ consolidate_conquests_decree_desc: ""
+ develop_the_rhun_decree_title: "Develop the Rhûn"
+ develop_the_rhun_decree_desc: ""
+ attract_exotic_counsel_decree_title: "Attract Exotic Counsel"
+ attract_exotic_counsel_decree_desc: ""

@@ -3,6 +3,14 @@
 # country
 on_startup = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_startup" }
+    
+    if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+    
 	events = {
 		LOU_setup.1  # Global
 		LOU_setup.3  # Flag Setup 
@@ -62,13 +70,18 @@ on_peace_recipient = {
 on_war_won = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - winner : [Root.GetName] - loser : [From.GetName] - on_war_won" }
 	ROOT = { country_event = { id = LOU_dunedain.8 } }
+    
+    events = {
+        LOU_empire_of_rhun.1
+    }
 }
 
 # country
 # root = loser country, from = winner country
 on_war_lost = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - winner : [From.GetName] - loser : [Root.GetName] - on_war_lost" }
-	ROOT = {
+	
+    ROOT = {
 		if = {
 			limit = {
 				has_country_modifier = the_one_ring_not_mordor
@@ -84,12 +97,24 @@ on_war_lost = {
 			country_event = { id = LOU_wdo.6 } # War of the Dwarves and Orcs
 		}
 	}
+    
+    events = {
+        LOU_empire_of_rhun.2
+    }
 }
 
 # country
 # root = winning country, from = loser country
 on_battle_won_country = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - winner : [Root.GetName] - loser : [From.GetName] - on_battle_won_country" }
+    
+    # Empire of Rhûn
+    if = {
+        limit = {
+            is_emperor_of_china = yes
+        }
+        add_meritocracy = 1
+    }
 }
 
 # country
@@ -97,6 +122,14 @@ on_battle_won_country = {
 on_battle_lost_country = {
 
 	ROOT = { country_event = { id = LOU_dunedain.6 } }
+    
+    # Empire of Rhûn
+    if = {
+        limit = {
+            is_emperor_of_china = yes
+        }
+        add_meritocracy = -1
+    }
 }
 
 # province
@@ -225,6 +258,9 @@ on_new_monarch = {
 		#9492 					# Remove some event modifiers
 		#muslim_school_events.20 #No Religious School
 		LOU_dunedain.5 
+        LOU_empire_of_rhun.3
+        LOU_empire_of_rhun.4
+        LOU_empire_of_rhun.5
 	}
 	random_events = {
 		1000 = 0
@@ -403,24 +439,69 @@ on_integrate = {
 # FROM is the nation being annexed
 on_annexed = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_annexed" }
+    events = {
+        LOU_empire_of_rhun.6 # Empire of Rhûn dismantled
+        LOU_empire_of_rhun.7 # Claim Control of the Rhûn
+	}
+    on_annexed_estate_privileges_effect = yes
 }
 
 # When the chinese empire gets dismantled (e.g. when the emperor is annexed)
 # FROM = Emperor, ROOT = Current Nation
 on_chinese_empire_dismantled = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - emperor: [From.GetName] - country: [Root.GetName] - on_chinese_empire_dismantled" }
+    
+    clear_global_event_target = EmperorOfChina
 }
 
 # When a nation gains the Mandate of Heaven (becomes the Emperor of China)
 # FROM = Old Emperor, ROOT = New Emperor
 on_mandate_of_heaven_gained = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - old emperor: [From.GetName] - new emperor: [Root.GetName] - on_mandate_of_heaven_gained" }
+    
+    save_global_event_target_as = EmperorOfChina
+    add_government_reform = empire_of_rhun_reform
+	set_mandate = 60
+	set_meritocracy = 60
+    add_country_modifier = {
+		name = warlord_of_the_rhun
+		duration = 9125
+	}
+    rhun_region = {
+		limit = {
+			NOT = { is_core = ROOT }
+		}
+		add_permanent_claim = ROOT
+	}
 }
 
 # When a nation loses the Mandate of Heaven
 # FROM = New Emperor, ROOT = Old Emperor
 on_mandate_of_heaven_lost = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - old emperor: [Root.GetName] - new emperor: [From.GetName] - on_mandate_of_heaven_lost" }
+    
+    remove_government_reform = empire_of_rhun_reform
+    add_government_reform = easterling_clan_reform
+    set_government_rank = 2
+    
+	add_country_modifier = {
+		name = fallen_warlord
+		duration = 7300
+	}
+    
+    add_stability = -2
+	rhun_region = {
+		limit = {
+			is_permanent_claim = ROOT
+		}
+		remove_claim = ROOT
+	}
+    if = {
+		limit = {
+			has_country_modifier = warlord_of_the_rhun
+		}
+		remove_country_modifier = warlord_of_the_rhun
+	}
 }
 
 on_dismantle_revolution = {

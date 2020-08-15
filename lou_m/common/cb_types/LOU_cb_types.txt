@@ -185,3 +185,20 @@ cb_purify = {
 
 	war_goal = superiority_purification
 }
+
+# Claim Control of the Rhûn
+cb_claim_control_of_the_rhun = {
+	valid_for_subject = yes
+    
+    prerequisites = {
+		OR = {
+            religion = religion_ioriags
+            religion = religion_ulgath
+        }
+        FROM = { 
+            is_emperor_of_china = yes
+        }
+	}
+    
+    war_goal = take_capital_control_rhun
+}

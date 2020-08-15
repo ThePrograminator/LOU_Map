@@ -158,6 +158,51 @@ gondor_kingship_reform = {
 		locked_government_type = yes
 	}
 }	
+empire_of_rhun_reform = {
+    icon = "variags"
+	allow_normal_conversion = no
+	potential = {
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			is_emperor_of_china = yes
+		}
+		else = {
+			has_reform = empire_of_rhun_reform
+		}
+		NOT = { has_global_flag = empire_of_rhun_dismantled }
+	}
+	legacy_equivalent = empire_of_rhun_legacy
+    
+	maintain_dynasty = yes
+	allow_force_tributary = no
+    
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+    
+	lock_level_when_selected = yes
+	fixed_rank = 3
+
+	modifiers = {
+		prestige = 1
+		governing_capacity = 300
+	}
+	
+	ai = {
+		factor = 1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+}
 
 #------------------------------
 # Hereditary vs. Nobility

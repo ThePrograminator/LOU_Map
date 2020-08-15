@@ -544,7 +544,7 @@ base_values = {
 	vassal_income = 0.10
 	horde_unity = -2
 	devotion = -0.5
-	meritocracy = -2
+	meritocracy = -1
 	governing_capacity = 200
 	num_accepted_cultures = 2
 	monthly_splendor = 1
@@ -586,6 +586,7 @@ positive_stability = {
 	yearly_corruption = -0.02
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
+    meritocracy = 0.25
 }
 
 privateering = {
@@ -676,6 +677,7 @@ bankruptcy = {
 
 war = {
 	# rr_girondists_influence = 0.15
+    meritocracy = 2
 }
 
 peace = {
@@ -758,6 +760,7 @@ army_tradition = {
 	# nobles_loyalty_modifier = 0.05
 	# maratha_loyalty_modifier = 0.05
 	# rajput_loyalty_modifier = 0.05
+    meritocracy = 1
 }
 
 navy_tradition = {
@@ -899,13 +902,14 @@ devotion = {
 
 # Multiplied by current meritocracy - 50
 meritocracy = {
-	global_spy_defence = 1.0
-	advisor_cost = -0.5
+    global_regiment_cost = -0.5
+    land_maintenance_modifier = -0.5
 }
 
 # Multiplied by 50 - meritocracy
 low_meritocracy = {
-	yearly_corruption = 0.2 #i.e. 0.1 at 0 Meritocracy
+    global_unrest = 10
+	yearly_corruption = 0.1
 }
 
 # Scaled, multiplied by current corruption / 100
@@ -1455,7 +1459,6 @@ low_harmony = {
 	tolerance_own = -3
 	development_cost = 0.25
 	legitimacy = -1
-	meritocracy = -2
 }
 
 ########################################

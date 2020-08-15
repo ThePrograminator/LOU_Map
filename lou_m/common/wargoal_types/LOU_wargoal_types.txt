@@ -83,3 +83,30 @@ superiority_purification = {
 	prov_desc = ALL_PROVS
 	war_name = PURIFY_WAR_NAME	
 }
+
+take_capital_control_rhun = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_demand_provinces
+			po_take_mandate
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	
+	war_name = CLAIM_CONTROL_OF_THE_RHUN_NAME
+}

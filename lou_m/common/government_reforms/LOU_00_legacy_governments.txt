@@ -112,6 +112,36 @@ lotr_easterling_clan_legacy = {
 	}
 }
 
+empire_of_rhun_legacy = {
+    allow_normal_conversion = no
+	legacy_government = yes
+	monarchy = yes
+	icon = "crown"
+	maintain_dynasty = yes
+
+	allow_force_tributary = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_convert = no
+
+    fixed_rank = 3
+	modifiers = {
+		prestige = 1
+		governing_capacity = 250
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
 #-----------------------------------------
 # Republic
 #-----------------------------------------
