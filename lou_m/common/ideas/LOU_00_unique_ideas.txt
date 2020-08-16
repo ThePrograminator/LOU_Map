@@ -1,0 +1,583 @@
+#------------------------------------
+# Gondor
+#------------------------------------
+gondor_ideas = {
+	start = {
+		discipline = 0.05
+		heavy_ship_power = 0.1
+	}
+
+	bonus = {
+		prestige = 1 
+	}
+	
+	trigger = {
+		tag = X01
+	}
+	free = yes		
+	
+	numenorean_descendents = {
+		idea_cost = -0.05
+		build_cost = -0.1 
+	}
+	stewards_of_gondor = {
+		global_tax_modifier = 0.1
+		stewards_loyalty_modifier = 0.05
+	}
+	rangers_of_ithilien = {
+		shock_damage = 0.1
+	}
+	holding_osgilliath = {
+		defensiveness = 0.20
+	}
+	naval_matters = {
+		naval_maintenance_modifier = -0.05
+		naval_forcelimit_modifier = 0.2 
+	}
+	wanting_for_peace = {
+		diplomatic_reputation = 1 
+		years_of_nationalism = -5
+	}
+	return_of_the_king = {
+		land_morale = 0.15
+	}
+}
+
+#------------------------------------
+# Rohan
+#------------------------------------
+rohan_ideas = {
+	start = {
+		cavalry_shock = 1 
+		leader_land_manuever = 1
+	}
+
+	bonus = {
+		free_adm_policy = 1
+	}
+	
+	trigger = {
+		tag = X16
+	}
+	free = yes		
+	
+	oath_of_eorl = {
+		diplomatic_reputation = 1
+	}
+	the_rohirrim = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.15  
+	}
+	the_fords_of_isen = {
+		defensiveness = 0.20
+	}
+	the_beacons_of_gondor = {
+		improve_relation_modifier = 0.15
+		envoy_travel_time = -0.25
+	}
+	muster_the_rohirrim = {
+		manpower_recovery_speed = 0.20
+	}
+	fields_of_rohan = {
+		development_cost = -0.05
+		supply_limit_modifier = 0.25
+	}
+	ruled_with_dignity = {
+		global_unrest = -1
+	}
+}
+
+#------------------------------------
+# Mordor
+#------------------------------------
+mordor_ideas = {
+	start = {
+		infantry_cost = -0.1 
+		artillery_bonus_vs_fort = 2
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	
+	trigger = {
+		tag = V17
+	}
+	free = yes		
+	
+	regiments_of_mordor = {
+		land_forcelimit_modifier = 0.33
+	}
+	allies_of_the_dark_lord = {
+		diplomatic_upkeep = 1
+		vassal_income = 0.20
+	}
+	working_trolls = {
+		build_cost = -0.15
+	}
+	emmisaries_of_mordor = {
+		accept_vassalization_reasons = 25
+		diplomatic_upkeep = 1
+	}
+	harsh_training = {
+		manpower_in_true_faith_provinces = 0.15
+		army_tradition = 0.5
+	}
+	the_whip = {
+		global_unrest = -2
+	}
+	the_battle_for_middle_earth = {
+		province_warscore_cost = -0.1 
+		administrative_efficiency = 0.05 
+	}
+}
+
+#------------------------------------
+# Lothlorian
+#------------------------------------
+lothlorian_ideas = {
+	start = {
+		tolerance_own = 2
+		infantry_shock = 0.5 
+	}
+
+	bonus = {
+		num_accepted_cultures = 1
+	}
+	
+	trigger = {
+		tag = Y68
+	}
+	free = yes		
+	
+	the_golden_wood = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	assault_on_lothlorien  = {
+		hostile_attrition = 1
+	}
+	powers_of_galadriel = {
+		army_tradition = 0.5  
+	}
+	the_mallorn_trees  = {
+		idea_cost = -0.10
+	}
+	armor_of_the_sylvan_elves = {
+		discipline = 0.05
+	}
+	cast_down_dol_guldur = {
+		leader_siege = 1
+	}
+	galadriels_departure = {
+		monarch_diplomatic_power = 1 
+	}
+}
+
+#------------------------------------
+# Rivendell
+#------------------------------------
+rivendell_ideas = {
+	start = {
+		tolerance_own = 3
+		fire_damage_received = -0.1 
+	}
+
+	bonus = {
+		num_accepted_cultures = 2
+	}
+	
+	trigger = {
+		tag = Y80
+	}
+	free = yes		
+	
+	the_last_homely_house_east_of_the_sea = {
+		diplomats = 1
+		improve_relation_modifier = 0.25
+	}
+	last_alliance_of_elves_and_men = {
+		army_tradition = 0.5
+		army_tradition_from_battle = 0.5
+	}
+	glorfindel_of_gondolin = {
+		leader_land_shock = 1
+	}
+	elven_centre_of_learning = {
+		technology_cost = -0.10
+	}
+	might_of_the_eregion_elves = {
+		infantry_power = 0.20
+	}
+	the_council_of_elrond = {
+		advisor_cost = -0.1 
+		diplomatic_upkeep = 1 
+	}
+	elronds_departure = {
+		monarch_admin_power = 1 
+	}
+}
+
+#------------------------------------
+# Dol Guldur
+#------------------------------------
+dol_guldur_ideas = {
+	start = {
+		global_spy_defence = 0.50
+		hostile_attrition = 1 
+	}
+	bonus = {
+		ae_impact = -0.15
+	}
+	
+	trigger = {
+		tag = V19
+	}
+	free = yes		
+	
+	building_in_secrecy = {
+		build_cost = -0.1
+		global_regiment_cost = -0.05
+	}
+	
+	resources_of_mirkwood = {
+		production_efficiency = 0.1
+		development_cost = -0.1
+	}
+	
+	serving_the_dark_lord = {
+		global_manpower_modifier = 0.20
+		global_regiment_recruit_speed = -0.1  
+	}
+	
+	securing_mirkwood = {
+		province_warscore_cost = -0.1
+	}
+	
+	puppets_of_war = {
+		vassal_forcelimit_bonus = 1
+		diplomatic_upkeep = 1 
+	}
+	
+	seizing_land = {
+		core_creation = -0.2
+	}
+	
+	the_return_of_sauron = {
+		land_morale = 0.1 
+		siege_ability = 0.1 
+	}
+}
+
+#------------------------------------
+# Erebor
+#------------------------------------
+erebor_ideas = {
+	start = {
+		technology_cost = -0.05
+		vassal_income = 0.2
+	}
+	bonus = {
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = Y22
+	}
+	free = yes		
+	
+	colonization_of_the_west = {
+		governing_capacity_modifier = 0.15
+	}
+	digging_deep = {
+		global_trade_goods_size_modifier = 0.10
+		global_trade_power = 0.10
+	}
+	the_arken_stone = {
+		vassal_forcelimit_bonus = 1
+		global_tax_modifier = 0.05
+	}
+	cast_out = {
+		war_exhaustion = -0.03
+		recover_army_morale_speed = 0.20
+	}
+	king_under_the_mountain = {
+		global_manpower_modifier = 0.15
+	}
+	the_battle_of_the_five_armies = { 
+		army_tradition = 0.5
+		army_tradition_from_battle = 0.5
+	}
+	reclaiming_durins_land = {
+		land_forcelimit_modifier = 0.2
+	}
+}
+
+#------------------------------------
+# Isengard
+#------------------------------------
+isengard_ideas = {
+	start = {
+		infantry_power = 0.10
+		build_time = -0.25
+	}
+
+	bonus = {
+		backrow_artillery_damage = 0.1 
+	}
+	
+	trigger = {
+		tag = V49
+	}
+	free = yes		
+	
+	preparation = {
+		global_regiment_recruit_speed = -0.1 
+		land_forcelimit_modifier = 0.25
+	}
+	wormtongue = {
+		spy_offence = 0.5 
+	}
+	raiding_of_the_isen = {
+		army_tradition_decay = -0.01
+	}
+	influence_of_isengard = {
+		global_spy_defence = 0.25
+		diplomats = 1
+	}
+	forges_of_isengard = {
+		production_efficiency = 0.20
+	}
+	the_white_hand_of_isengard = {
+		leader_land_fire = 1
+	}
+	unleash_isengard = {
+        global_manpower_modifier = 0.33
+	}
+}
+
+#------------------------------------
+# Nurn
+#------------------------------------
+nurn_ideas = {
+	start = {
+		war_exhaustion = -0.15
+		cav_to_inf_ratio = 0.25
+	}
+
+	bonus = {
+		cavalry_power = 0.1
+	}
+	
+	trigger = {
+		tag = X86
+	}
+	free = yes		
+	
+	soil_of_nurn = {
+		global_supply_limit_modifier = 0.33
+		trade_efficiency = 0.1
+	}
+	nomads_to_settlers = {
+		build_cost = -0.05
+		development_cost = -0.05
+	}
+	need_of_allies = {
+		diplomats = 1
+		diplomatic_reputation = 2
+	}
+	preparing_for_mordor = {
+		army_tradition = 0.25
+		drill_gain_modifier = 0.1
+	}
+	governing_the_nurnen = {
+		state_governing_cost = 0.15
+	}
+	khaganate_of_nurn = {
+		legitimacy = 1
+		stability_cost_modifier = -0.1
+	}
+	breaking_the_chains = {
+		discipline = 0.1
+	}
+}
+
+#------------------------------------
+# Old Pukel Land
+#------------------------------------
+old_pukel_land_ideas = {
+	start = {
+		hostile_attrition = 1
+		stability_cost_modifier = -0.15
+	}
+
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = X15
+	}
+	free = yes		
+	
+	hidden_and_forgotten = {
+		global_spy_defence = 0.25
+		diplomatic_reputation = 1
+	}
+	enermies_of_the_drughu = {
+		land_morale = 0.1
+	}
+	pukel_men = {
+		defensiveness = 0.20
+		enemy_core_creation = 0.33
+	}
+	masters_of_poison = {
+		fire_damage = 0.1
+		hostile_attrition = 1
+	}
+	ways_of_the_forest = {
+		war_exhaustion = -0.15
+	}
+	living_of_the_land = {
+		global_tax_modifier = 0.05
+		trade_efficiency = 0.05
+	}
+	leader_of_the_drughu = {
+		legitimacy = 1
+		tolerance_own = 2
+	}
+}
+
+#------------------------------------
+# The Shire
+#------------------------------------
+shire_ideas = {
+	start = {
+		development_cost = -0.10
+		diplomatic_upkeep = 1 
+	}
+
+	bonus = {
+		production_efficiency = 0.15
+	}
+	
+	trigger = {
+		tag = Y26
+	}
+	free = yes		
+	
+	the_free_fair = {
+		republican_tradition = 0.20 
+		stability_cost_modifier = -0.10 
+	}
+	noble_hobbit_families = { 
+		prestige_decay = -0.01 
+	}
+	the_courage_of_hobbits = {
+		land_morale = 0.05
+		shock_damage_received = -0.05 
+	}
+	border_control = {
+		global_spy_defence = 0.25
+		defensiveness = 0.1
+	}
+	prospering_economy = {
+		state_maintenance_modifier = -0.25
+		global_tax_modifier = 0.1
+	}
+	mustering = {
+		manpower_recovery_speed = 0.15
+	}
+	declared_free_by_elessar = {
+		diplomatic_reputation = 1
+		monthly_fervor_increase = 0.5
+	}
+}
+
+#------------------------------------
+# Umbar
+#------------------------------------
+umbar_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.50
+		may_perform_slave_raid = yes #should be granted via government type ? 
+	}
+
+	bonus = {
+		privateer_efficiency = 0.50
+	}
+	
+	trigger = {
+		tag = X27
+	}
+	free = yes		
+	
+	gallies_of_umber = {
+		galley_power = 0.25
+		naval_morale = 0.10
+	}
+	amphibious_landing = {
+		movement_speed_onto_off_boat_modifier = 0.33
+		allowed_marine_fraction = 0.05 
+	}
+	bountiful_loot = {
+		loot_amount = 0.33
+		land_morale  = 0.05 
+	}
+	open_seas = {
+		global_trade_goods_size_modifier = 0.10
+		global_ship_trade_power = 0.33
+	}
+	pirate_lords = {
+		leader_naval_fire = 1
+	}
+	war_hungry = {
+		war_exhaustion = -0.05
+	}
+	mordors_influence = {
+		mil_tech_cost_modifier = -0.1
+	}
+}
+
+#------------------------------------
+# Woodland Realm
+#------------------------------------
+woodland_realm_ideas = {
+	start = {
+		tolerance_own = 2
+		defensiveness = 0.25
+	}
+
+	bonus = {
+		diplomatic_reputation = 1
+	}	
+	
+	trigger = {
+		tag = Y67
+	}
+	free = yes		
+	
+	war_of_attrition = {
+		land_attrition = -0.20
+	}
+	before_known_greenwood  = {
+		legitimacy = 1
+	}
+	enermies_at_all_fronts = {
+		land_morale = 0.1 
+	}
+	the_tonduin  = {
+		production_efficiency = 0.10
+		trade_efficiency = 0.05
+	}
+	faith_in_thandruil = {
+		global_unrest = -1
+		global_autonomy = -0.05
+	}
+	captain_legolas = {
+		army_tradition = 1
+		leader_land_manuever = 1
+	}
+	battle_of_the_five_armies = {
+		infantry_power = 0.10
+	}
+}

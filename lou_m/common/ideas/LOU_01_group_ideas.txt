@@ -1,0 +1,590 @@
+#------------------------------------
+# Elven
+#------------------------------------
+elven_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		shock_damage_received = -0.1
+	}
+
+	bonus = {
+		advisor_pool = 1
+
+	}
+	
+	trigger = {
+		OR = {
+            culture_group = culture_group_avari
+            culture_group = culture_group_nandor
+            culture_group = culture_group_noldor
+            culture_group = culture_group_sindar
+        }
+	}
+	free = yes		
+	
+	elven_discipline = {
+		discipline = 0.05
+	}
+	ships_that_cross_oceans = {
+		ship_durability = 0.05
+	}
+	elven_culture = {
+		same_culture_advisor_cost = -0.15 
+	}
+	exotic_tradegoods = {
+		trade_efficiency = 0.1
+	}
+	swift_recovery = {
+		reinforce_speed = 0.25
+	}
+	glory_of_the_elves = {
+		prestige_decay = -0.01
+	}
+	leaving_these_shores = {
+		navy_tradition = 1
+	}
+}
+
+#------------------------------------
+# Dwarven
+#------------------------------------
+dwarven_ideas = {
+	start = {
+		idea_cost = -0.05
+		trade_goods_size_modifier = 0.20 
+	}
+
+	bonus = {
+		siege_ability = 0.15 
+
+	}
+	
+	trigger = {
+		culture_group = culture_group_dwarves
+	}
+	free = yes		
+	
+	dwarven_architecture = {
+		build_cost = -0.1
+		build_time = -0.25
+	}
+	council_of_dwarves = {
+		advisor_cost = -0.10
+		advisor_pool = 1
+	}
+	broad_and_heavy = {
+		fire_damage = 0.1 
+	}
+	trading_caravans = {
+		caravan_power = 0.2
+	}
+	bosom_of_the_mountain = {
+		garrison_size = 0.25
+	}
+	dwarven_passages = {
+		war_exhaustion = -0.03
+		supply_limit_modifier = 0.25
+	}
+	mountainkin = {
+		fabricate_claims_cost = -0.25
+		ae_impact = -0.05 
+	}
+}
+
+#------------------------------------
+# Rhovanion
+#------------------------------------
+rhovanion_ideas = {
+	start = {
+		cavalry_flanking = 0.5 
+		loot_amount = 0.33
+	}
+
+	bonus = {
+		diplomats = 1
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		OR = {
+			culture_group = culture_group_aivathiuda
+			culture_group = culture_group_donath
+			culture_group = culture_group_nenedain
+		}
+	}
+	free = yes		
+	
+	forests_of_rhovanion = {
+		development_cost = -0.1
+	}
+	descendents_of_eotheod = {
+		cavalry_power = 0.1
+	}
+	enemies_from_the_east = {
+		army_tradition = 0.5
+	}
+	repopulation = {
+		global_manpower_modifier = 0.25
+	}
+	dwarven_ties = {
+		diplomatic_reputation = 1
+	}
+	from_south_to_north = {
+		trade_efficiency = 0.10
+	}
+	return_to_old_glory = {
+		prestige = 1
+	}
+}
+
+#------------------------------------
+# Easterling
+#------------------------------------
+easterling_ideas = {
+	start = {
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		is_racial_group_talatherim = yes
+	}
+	free = yes		
+	
+	eastern_goods = {
+		trade_range_modifier = 0.33
+		trade_efficiency = 0.05
+	}
+	clan_council = {
+		advisor_pool = 1
+	}
+	united_cultures = {
+		num_accepted_cultures = 1
+	}
+	combat_excellence = {
+		army_tradition = 0.5
+	}
+	the_plains_of_rhun = {
+		cavalry_power = 0.1
+	}
+	gather_the_easterling = {
+		diplomatic_annexation_cost = -0.15
+		vassal_forcelimit_bonus = 1
+	}
+	self_governing_villages = {
+		governing_capacity_modifier = 0.15
+	}
+}
+
+#------------------------------------
+# Dunedain
+#------------------------------------
+dunedain_ideas = {
+	start = {
+		heir_chance = 0.5
+		war_exhaustion = -0.05
+	}
+
+	bonus = {
+		global_missionary_strength = 0.02
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		primary_culture = culture_dunedain_of_arnor
+	}
+	free = yes		
+	
+	rangers_of_the_north = {
+		infantry_power = 0.1
+	}
+	ancestry_war_with_angmar = {
+		hostile_attrition = 1
+	}
+	former_glory = {
+		prestige = 0.5
+	}
+	traveling_the_wild = {
+		land_attrition = -0.25
+	}
+	stationed_duty = {
+		defensiveness = 0.1
+		manpower_recovery_speed = 0.05
+	}
+	returning_to_the_ancestry_of_arnor = {
+		legitimacy = 0.5
+		build_cost = -0.1
+	}
+	reunited_in_the_forth_age = {
+		monarch_diplomatic_power = 1
+	}
+}
+
+#------------------------------------
+# Dunlendings
+#------------------------------------
+dunlending_ideas = {
+	start = {
+		siege_ability = 0.1
+		land_morale = 0.10
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.10
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		primary_culture = culture_dunlendings
+	}
+	free = yes		
+	
+	driven_to_the_hills = {
+		land_attrition = -0.25
+	}
+	bitter_hatred = {
+		unjustified_demands = -0.5
+	}
+	uniting_the_clans = {
+		nobles_loyalty_modifier = 0.1
+		stability_cost_modifier = -0.15
+	}
+	feared = {
+		improve_relation_modifier = 0.2
+	}
+	welcoming_wildmen = {
+		vassal_income = 0.2
+		vassal_forcelimit_bonus = 1
+	}
+	influence_from_isengard = {
+		mil_tech_cost_modifier = -0.1
+	}
+	homeward_bound = {
+		envoy_travel_time = -0.20
+		legitimacy = 0.5
+	}
+}
+
+#------------------------------------
+# Eriadorian
+#------------------------------------
+eriadorian_ideas = {
+	start = {
+		defensiveness = 0.15 
+		improve_relation_modifier = 0.20
+	}
+
+	bonus = {
+		reduced_liberty_desire = 10 
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		religion = religion_eriadorians
+	}
+	free = yes		
+	
+	the_wild = {
+		movement_speed = 0.05
+		hostile_attrition = 1 
+	}
+	winter_reserves = {
+		land_attrition = -0.15
+	}
+	merchant_caravans = {
+		caravan_power = 0.2
+	}
+	united_cause = {
+		tolerance_own = 1
+	}
+	law_and_order = {
+		global_autonomy = -0.025
+		global_tax_modifier = 0.1
+	}
+	creating_actual_armies = {
+		army_tradition_decay = -0.01
+	}
+	to_live_in_peace = {
+		diplomatic_reputation = 1 
+	}
+}
+
+#------------------------------------
+# Haradrim
+#------------------------------------
+haradrim_ideas = {
+	start = {
+		cavalry_power = 0.25
+		land_attrition = -0.20 
+	}
+
+	bonus = {
+		free_leader_pool = 1
+	}
+	
+	trigger = {
+		technology_group = lotr_human
+		is_racial_group_haradrim = yes
+	}
+	free = yes		
+	
+	waring_tribes = {
+		nobles_loyalty_modifier = 0.05 
+		army_tradition = 0.5 
+	}
+	grip_of_sauron = {
+		mercenary_cost = -0.20
+		mercenary_discipline = 0.05
+	}
+	serpent_leaders = {
+		heir_chance = 0.25
+		legitimacy = 0.5
+	}
+	taming_the_oliphaunts = {
+		siege_ability = 0.20
+	}
+	hostile_attitude = {
+		ae_impact = -0.10
+		core_creation = -0.15
+	}
+	recruitment_of_tribes = {
+		global_regiment_cost = -0.10
+	}
+	permanent_rivalry = {
+		cavalry_flanking = 0.5
+	}
+}
+
+#------------------------------------
+# Goblin
+#------------------------------------
+goblin_ideas = {
+	start = {
+		technology_cost = -0.05 
+		interest = -1
+	}
+
+	bonus = {
+		unjustified_demands = -0.25
+	}
+	
+	trigger = {
+		technology_group = lotr_goblin
+	}
+	free = yes		
+	
+	destruction = {
+		leader_land_fire = 1  
+	}
+	strength_in_numbers = {
+		land_forcelimit_modifier = 0.20
+	}
+	loot_everything = {
+		loot_amount = 0.25
+	}
+	dark_machines = {
+		innovativeness_gain = 0.5
+		production_efficiency = 0.10
+	}
+	your_land_is_ours = {
+		core_creation = -0.15
+	}
+	orcs_and_men_from_afar = {
+		mercenary_cost = -0.20
+	}
+	controlling_the_mass = {
+		years_of_nationalism = -5
+	}
+}
+
+#------------------------------------
+# Orc
+#------------------------------------
+orc_ideas = {
+	start = {
+		global_regiment_cost = -0.1   
+		shock_damage = 0.1 
+	}
+
+	bonus = {
+		unjustified_demands = -0.25
+	}
+	
+	trigger = {
+		technology_group = lotr_orc
+	}
+	free = yes		
+	
+	the_eye_is_watching = {
+		movement_speed = 0.1 
+	}
+	whips = {
+		production_efficiency = 0.1
+	}
+	plunder_the_world = {
+		loot_amount = 0.33
+	}
+	infiltrating_nations = {
+		spy_offence = 0.25 
+		diplomats = 1
+	}
+	taste_of_man_flesh = {
+		warscore_cost_vs_other_religion = -0.1 
+	}
+	orcs_and_men_from_afar = {
+		mercenary_cost = -0.20
+	}
+	the_age_of_orcs = {
+		global_autonomy = -0.05
+		monthly_splendor = 1 
+	}
+}
+
+#------------------------------------
+# Snowmen
+#------------------------------------
+snowmen_ideas = {
+	start = {
+		global_unrest = -2
+        global_spy_defence = 0.25
+	}
+
+	bonus = {
+		land_morale = 0.15
+	}
+	
+	trigger = {
+		religion = religion_eastern_snowmen
+	}
+	free = yes		
+	
+    # Winter Conditioning
+	winter_conditioning = {
+		land_attrition = -0.2
+	}
+    # Makeshift Huts
+	makeshift_huts = {
+		build_cost = -0.1
+        build_time = -0.1
+	}
+    # Autonomous Villages
+    autonomous_villages = {
+		state_governing_cost = -0.2
+	}
+    # Frigid Winds
+    frigid_winds = {
+		hostile_attrition = 2
+	}
+    # Waste Not, Want Not
+    waste_not_want_not = {
+		production_efficiency = 0.1
+	}
+    # Snow Blindness
+    snow_blindness = {
+		shock_damage = 0.1
+	}
+    # Peaks of the North
+    peaks_of_the_north = {
+		defensiveness = 0.33
+	}
+}
+
+#------------------------------------
+# Avaradan
+#------------------------------------
+avaradan_ideas = {
+	start = {
+		global_manpower_modifier = 0.1
+        build_cost = -0.1
+	}
+
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		religion = religion_avaradan
+	}
+	free = yes		
+	
+    # Legacy of Palisor
+    legacy_of_palisor = {
+        army_tradition = 1
+    }
+    # Taming the East
+    taming_the_east = {
+        development_cost = -0.1
+    }
+    # The Eastern Ocean
+    the_eastern_ocean = {
+        naval_forcelimit_modifier = 0.2
+    }
+    # Soelâsi Bu
+    soelasi_bu = {
+        free_policy = 1
+    }
+    # Pupils of the Avari
+    pupils_of_the_avari = {
+        technology_cost = -0.1
+    }
+    # Illusionary Magic
+    illusionary_magic = {
+        fire_damage = 0.1
+    }
+    # Utumkôdur, Cult of the Dragon
+    cult_of_the_dragon = {
+        discipline = 0.1
+    }
+}
+
+# #------------------------------------
+# # Template
+# #------------------------------------
+# template_ideas = {
+	# start = {
+		
+	# }
+
+	# bonus = {
+		
+	# }
+	
+	# trigger = {
+		# religion = religion_avaradan
+	# }
+	# free = yes		
+	
+    # # 
+    # idea = {
+    
+    # }
+    # # 
+    # idea = {
+    
+    # }
+    # # 
+    # idea = {
+    
+    # }
+    # # 
+    # idea = {
+    
+    # }
+    # #
+    # idea = {
+    
+    # }
+    # # 
+    # idea = {
+    
+    # }
+    # # 
+    # idea = {
+    
+    # }
+# }
