@@ -896,3 +896,26 @@ abandon_union_action = {
 		}
 	}
 }
+
+tributary_state_action = {
+	condition = {
+        tooltip = TRIBUTARY_FREE_PEOPLE_THEN
+		potential = {
+            FROM = { is_free_peoples_opinion = yes }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+ask_for_tributary_state_action = {
+	condition = {
+        tooltip = TRIBUTARY_FREE_PEOPLE_US
+		potential = {
+            is_free_peoples_opinion = yes
+		}
+		allow = {
+			always = no
+		}
+	}
+}

@@ -1028,7 +1028,10 @@ cb_force_tributary = {
 	prerequisites = {
 		has_dlc = "Mandate of Heaven"
 		is_emperor_of_china = yes
-		FROM = { is_subject = no }
+		FROM = { 
+            is_subject = no
+            NOT = { is_free_peoples_opinion = yes }
+        }
 		is_neighbor_of = FROM
 	}
 	

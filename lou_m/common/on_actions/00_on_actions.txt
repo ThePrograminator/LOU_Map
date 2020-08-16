@@ -502,6 +502,15 @@ on_mandate_of_heaven_lost = {
 		}
 		remove_country_modifier = warlord_of_the_rhun
 	}
+    
+    if = {
+        limit = {
+            has_country_flag = formed_empire_of_rhun
+        }
+        clr_country_flag = formed_empire_of_rhun
+        restore_country_name = ROOT
+        remove_country_modifier = empire_of_rhun
+    }
 }
 
 on_dismantle_revolution = {
