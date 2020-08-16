@@ -5,7 +5,16 @@ country_decisions = {
             hidden_trigger = {
                 NOT = { has_country_flag = formed_empire_of_rhun }
             }
-			is_emperor_of_china = yes
+            if = {
+                limit = {
+                    has_dlc = "Mandate of Heaven"
+                }
+                is_emperor_of_china = yes
+            }
+            OR = {
+                religion = religion_ioriags
+                religion = religion_ulgath
+            }
 		}
         provinces_to_highlight = {
             OR = {
@@ -19,8 +28,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			imperial_mandate = 100
-            meritocracy = 100
+            if = {
+                limit = {
+                    has_dlc = "Mandate of Heaven"
+                }
+                imperial_mandate = 100
+                meritocracy = 100
+            }
             total_development = 500
             rhun_region = {
                 type = all
@@ -37,26 +51,31 @@ country_decisions = {
 		}
 		effect = {
             hidden_effect = { set_country_flag = formed_empire_of_rhun }
-            
-            override_country_name = EMPIRE_OF_RHUN
 
-            custom_tooltip = EMPIRE_OF_RHUN_INHERIT
-            hidden_effect = {
-                every_subject_country = {
-                    limit = {
-                        is_subject_of_type = tributary_state
-                    }
-                    ROOT = {
-                        inherit = PREV
+            if = {
+                limit = {
+                    has_dlc = "Mandate of Heaven"
+                }
+                custom_tooltip = EMPIRE_OF_RHUN_INHERIT
+                hidden_effect = {
+                    every_subject_country = {
+                        limit = {
+                            is_subject_of_type = tributary_state
+                        }
+                        ROOT = {
+                            inherit = PREV
+                        }
                     }
                 }
+                add_country_modifier = {
+                    name = "empire_of_rhun"
+                    duration = -1
+                }
             }
-            add_prestige = 50
-			add_country_modifier = {
-				name = "empire_of_rhun"
-				duration = -1
-			}
             
+            add_prestige = 50
+            override_country_name = EMPIRE_OF_RHUN
+
             # if = {
 				# limit = { has_custom_ideas = no }
 				# country_event = { id = ideagroups.1 } #Swap Ideas
