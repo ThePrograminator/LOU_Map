@@ -5,3 +5,104 @@ add_accepted_culture = culture_gondor_middlemen
 religion = religion_dunedain
 technology_group = lotr_human
 capital = 195
+
+2750.1.1 = {
+	monarch = {
+		name = "Gormadoc"
+		dynasty = "Anfalas"
+		birth_date = 2711.1.1
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Ahoztar"
+		dynasty = "Anfalas"
+		birth_date = 2725.1.1
+		adm = 3
+		dip = 5
+		mil = 0
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Erramos"
+		dynasty = "Anfalas"
+		birth_date = 2804.1.1
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+	heir = {
+		monarch_name = "Milia"
+		name = "Milia"
+		dynasty = "Anfalas"
+		birth_date = 2777.1.1
+		death_date = 2815.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Drorsald"
+		dynasty = "Anfalas"
+		birth_date = 2851.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Anderazu"
+		name = "Anderazu"
+		dynasty = "Anfalas"
+		birth_date = 2878.1.1
+		death_date = 2928.1.1
+		adm = 0
+		dip = 5
+		mil = 2
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Erramos"
+		dynasty = "Anfalas"
+		birth_date = 2867.1.1
+		adm = 1
+		dip = 0
+		mil = 4
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Ocanda"
+		dynasty = "Anfalas"
+		birth_date = 2949.1.1
+		adm = 4
+		dip = 3
+		mil = 5
+		female = yes
+	}
+	heir = {
+		monarch_name = "Araica"
+		name = "Araica"
+		dynasty = "Anfalas"
+		birth_date = 2947.1.1
+		death_date = 2965.1.1
+		adm = 1
+		dip = 0
+		mil = 5
+		claim = 100
+	}
+}
+

@@ -5,3 +5,104 @@ primary_culture = culture_longbeard
 religion = religion_mahal
 technology_group = lotr_dwarven
 capital = 237
+
+2750.1.1 = {
+	monarch = {
+		name = "Eldur"
+		dynasty = "Thror's House"
+		birth_date = 2705.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Eilag"
+		dynasty = "Thror's House"
+		birth_date = 2754.1.1
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Hálmar"
+		dynasty = "Thror's House"
+		birth_date = 2778.1.1
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Nótt"
+		name = "Nótt"
+		dynasty = "Thror's House"
+		birth_date = 2824.1.1
+		death_date = 2911.1.1
+		adm = 2
+		dip = 3
+		mil = 0
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Ori"
+		dynasty = "Thror's House"
+		birth_date = 2825.1.1
+		adm = 4
+		dip = 1
+		mil = 4
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Ingrid"
+		dynasty = "Thror's House"
+		birth_date = 2923.1.1
+		adm = 0
+		dip = 5
+		mil = 1
+		female = yes
+	}
+	heir = {
+		monarch_name = "Dís"
+		name = "Dís"
+		dynasty = "Thror's House"
+		birth_date = 2899.1.1
+		death_date = 2977.1.1
+		adm = 2
+		dip = 0
+		mil = 4
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Sigebert"
+		dynasty = "Thror's House"
+		birth_date = 2942.1.1
+		adm = 0
+		dip = 4
+		mil = 3
+	}
+	heir = {
+		monarch_name = "Blóthughada"
+		name = "Blóthughada"
+		dynasty = "Thror's House"
+		birth_date = 2974.1.1
+		death_date = 3037.1.1
+		adm = 1
+		dip = 2
+		mil = 4
+		claim = 100
+	}
+}
+
