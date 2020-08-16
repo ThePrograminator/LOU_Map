@@ -1,0 +1,541 @@
+namespace = LOU_estates
+
+country_event = {
+	id = LOU_estates.1
+	title = LOU_estates.1.title
+	desc = LOU_estates.1.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		has_estate_privilege = estate_nobility_supremacy_over_crown
+		NOT = { has_any_active_estate_agenda = yes }
+	}
+
+	immediate = {
+		country_event = { id = LOU_estates.2 }
+	}
+
+	option = {
+		name = LOU_estates.1.a
+	}
+}
+
+country_event = {
+	id = LOU_estates.2
+	title = LOU_estates.2.title
+	desc = LOU_estates.2.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+		}
+	}
+
+	after = {
+		clr_country_flag = estate_stewards_present_agenda
+		clr_country_flag = estate_merchants_present_agenda
+		clr_country_flag = estate_nobles_present_agenda
+		clr_country_flag = estate_commoners_present_agenda
+		clr_country_flag = estate_tribes_present_agenda
+		clear_estate_agenda_cache = ROOT
+	}
+
+	option = {
+		name = LOU_estates.2.option.a
+		trigger = { has_country_flag = estate_stewards_present_agenda }
+        
+		start_estate_agenda = estate_stewards
+        
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_stewards
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_stewards
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_stewards
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LOU_estates.2.option.b
+		trigger = { has_country_flag = estate_merchants_present_agenda }
+        
+		start_estate_agenda = estate_merchants
+        
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_merchants
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_merchants
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_merchants
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LOU_estates.2.option.c
+		trigger = { has_country_flag = estate_nobles_present_agenda }
+        
+		start_estate_agenda = estate_nobles
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_nobles
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_nobles
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_nobles
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = LOU_estates.2.option.d
+		trigger = { has_country_flag = estate_commoners_present_agenda }
+        
+		start_estate_agenda = estate_commoners
+        
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_commoners
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_commoners
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_commoners
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LOU_estates.2.option.e
+		trigger = { has_country_flag = estate_tribes_present_agenda }
+        
+		start_estate_agenda = estate_tribes
+        
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_tribes
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_tribes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_tribes
+				}
+			}
+		}
+	}
+}
+
+# Steward Estate - Statutory Rights
+country_event = {
+	id = LOU_estates.3
+	title = LOU_estates.3.title
+	desc = LOU_estates.3.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	trigger = {
+        NOT = { has_country_modifier = rejected_stewards_cooldown }
+        NOT = { has_country_flag = estate_statutory_rights_lock }
+		NOT = { crown_land_share = 11 }
+        has_estate = estate_stewards
+		NOT = { has_estate_privilege = estate_stewards_statutory_rights }
+	}
+
+	mean_time_to_happen = {
+		months = 128
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 1 }
+		}
+	}
+    
+    immediate = {
+        set_country_flag = estate_statutory_rights_lock
+    }
+    after = {
+        clr_country_flag = estate_statutory_rights_lock
+    }
+
+	option = {
+		name = LOU_estates.3.option.a
+		custom_tooltip = seize_land_unavailable_from_privilege
+        set_estate_privilege = estate_stewards_statutory_rights
+	}
+	option = {
+		name = LOU_estates.3.option.b
+        
+        add_prestige = -5
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = rejected_stewards_cooldown
+                duration = 1800
+                hidden = yes
+            }
+        }
+	}
+}
+
+# Merchants Estate - Statutory Rights
+country_event = {
+	id = LOU_estates.4
+	title = LOU_estates.4.title
+	desc = LOU_estates.4.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	trigger = {
+        NOT = { has_country_modifier = rejected_merchants_cooldown }
+        NOT = { has_country_flag = estate_statutory_rights_lock }
+		NOT = { crown_land_share = 11 }
+        has_estate = estate_merchants
+		NOT = { has_estate_privilege = estate_merchants_statutory_rights }
+	}
+
+	mean_time_to_happen = {
+		months = 128
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 1 }
+		}
+	}
+    
+    immediate = {
+        set_country_flag = estate_statutory_rights_lock
+    }
+    after = {
+        clr_country_flag = estate_statutory_rights_lock
+    }
+
+	option = {
+		name = LOU_estates.4.option.a
+		custom_tooltip = seize_land_unavailable_from_privilege
+        set_estate_privilege = estate_merchants_statutory_rights
+	}
+	option = {
+		name = LOU_estates.4.option.b
+        
+        add_prestige = -5
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = rejected_merchants_cooldown
+                duration = 1800
+                hidden = yes
+            }
+        }
+	}
+}
+
+# Nobility Estate - Statutory Rights
+country_event = {
+	id = LOU_estates.5
+	title = LOU_estates.5.title
+	desc = LOU_estates.5.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	trigger = {
+        NOT = { has_country_modifier = rejected_nobles_cooldown }
+        NOT = { has_country_flag = estate_statutory_rights_lock }
+		NOT = { crown_land_share = 11 }
+        has_estate = estate_nobles
+		NOT = { has_estate_privilege = estate_nobility_statutory_rights }
+	}
+
+	mean_time_to_happen = {
+		months = 128
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 1 }
+		}
+	}
+    
+    immediate = {
+        set_country_flag = estate_statutory_rights_lock
+    }
+    after = {
+        clr_country_flag = estate_statutory_rights_lock
+    }
+
+	option = {
+		name = LOU_estates.5.option.a
+		custom_tooltip = seize_land_unavailable_from_privilege
+        set_estate_privilege = estate_nobility_statutory_rights
+	}
+	option = {
+		name = LOU_estates.5.option.b
+        
+        add_prestige = -5
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = rejected_nobles_cooldown
+                duration = 1800
+                hidden = yes
+            }
+        }
+	}
+}
+
+# Commoners Estate - Statutory Rights
+country_event = {
+	id = LOU_estates.6
+	title = LOU_estates.6.title
+	desc = LOU_estates.6.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	trigger = {
+        NOT = { has_country_modifier = rejected_commoners_cooldown }
+        NOT = { has_country_flag = estate_statutory_rights_lock }
+		NOT = { crown_land_share = 11 }
+        has_estate = estate_commoners
+		NOT = { has_estate_privilege = estate_commoners_statutory_rights }
+	}
+
+	mean_time_to_happen = {
+		months = 200 # Less likely
+        
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 1 }
+		}
+	}
+    
+    immediate = {
+        set_country_flag = estate_statutory_rights_lock
+    }
+    after = {
+        clr_country_flag = estate_statutory_rights_lock
+    }
+
+	option = {
+		name = LOU_estates.6.option.a
+		custom_tooltip = seize_land_unavailable_from_privilege
+        set_estate_privilege = estate_commoners_statutory_rights
+	}
+	option = {
+		name = LOU_estates.6.option.b
+        
+        add_prestige = -5
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = rejected_commoners_cooldown
+                duration = 1800
+                hidden = yes
+            }
+        }
+	}
+}
+
+# Tribes Estate - Statutory Rights
+country_event = {
+	id = LOU_estates.7
+	title = LOU_estates.7.title
+	desc = LOU_estates.7.desc
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	trigger = {
+        NOT = { has_country_modifier = rejected_tribes_cooldown }
+        NOT = { has_country_flag = estate_statutory_rights_lock }
+		NOT = { crown_land_share = 11 }
+        has_estate = estate_tribes
+		NOT = { has_estate_privilege = estate_tribes_statutory_rights }
+	}
+
+	mean_time_to_happen = {
+		months = 200 # Less likely
+        
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 1 }
+		}
+	}
+    
+    immediate = {
+        set_country_flag = estate_statutory_rights_lock
+    }
+    after = {
+        clr_country_flag = estate_statutory_rights_lock
+    }
+
+	option = {
+		name = LOU_estates.7.option.a
+		custom_tooltip = seize_land_unavailable_from_privilege
+        set_estate_privilege = estate_tribes_statutory_rights
+	}
+	option = {
+		name = LOU_estates.7.option.b
+        
+        add_prestige = -5
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = rejected_tribes_cooldown
+                duration = 1800
+                hidden = yes
+            }
+        }
+	}
+}

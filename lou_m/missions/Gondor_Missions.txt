@@ -174,7 +174,7 @@ gondor_missions_1 = {
 							primary_culture = culture_noldor
 						}
 					}
-					country_event = { id = LOU_Gondor_Events.2 }
+					country_event = { id = LOU_mission_gondor.2 }
 				}
 				mordor_region = {
 					limit = {
@@ -203,7 +203,7 @@ gondor_missions_1 = {
 			}
 		}
 		effect = {
-			country_event = { id = LOU_Gondor_Events.3 }
+			country_event = { id = LOU_mission_gondor.3 }
 		}
 	}
 	
@@ -224,7 +224,7 @@ gondor_missions_1 = {
 				name = gondor_victory_over_sauron_modifier
 				duration = 10950
 			}
-			country_event = { id = LOU_Gondor_Events.4 }
+			country_event = { id = LOU_mission_gondor.4 }
 		}
 	}
 }
@@ -249,7 +249,7 @@ gondor_missions_2 = {
 			}
 		}
 		effect = {
-			country_event = { id = LOU_Gondor_Events.5 }
+			country_event = { id = LOU_mission_gondor.5 }
 		}
 	}
 	
@@ -424,7 +424,7 @@ gondor_missions_3 = {
 			is_at_war = no 
 		}
 		effect = {
-			country_event = { id = LOU_Gondor_Events.7 }
+			country_event = { id = LOU_mission_gondor.7 }
 			clr_country_flag = X01_HAD_THORONGIL_FLAG
 		}
 	}
@@ -555,7 +555,7 @@ gondor_missions_5 = {
 							}
 						}
 					}
-					country_event = { id = LOU_Gondor_Events.9 }
+					country_event = { id = LOU_mission_gondor.9 }
 				}
 			}
         }
@@ -611,7 +611,7 @@ gondor_missions_5 = {
 			468 = { change_trade_goods = gems }
 			130 = { change_trade_goods = gems }
 			1755 = { change_trade_goods = gems }
-			country_event = { id = LOU_Gondor_Events.10 }
+			country_event = { id = LOU_mission_gondor.10 }
 		}
 	}
 	

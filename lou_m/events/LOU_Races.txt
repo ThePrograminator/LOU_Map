@@ -1,0 +1,355 @@
+namespace = LOU_races
+
+# Human
+country_event = {
+	id = LOU_races.1
+	title = LOU_races.1.t
+	desc = LOU_races.1.d
+	picture = COURT_eventPicture
+    
+    is_triggered_only = yes
+
+	option = {
+        name = LOU_races.1.a
+        custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+            add_country_modifier = {
+                name = "human_buff"
+                duration = -1
+            }
+        }
+	}
+}
+
+# Dwarf
+country_event = {
+	id = LOU_races.2
+	title = LOU_races.2.t
+	desc = LOU_races.2.d
+	picture = dwarves_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.2.a
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "dwarven_buff"
+				duration = -1
+			}
+		}	
+	}
+}
+
+# Dragon
+country_event = {
+	id = LOU_races.3
+	title = LOU_races.3.t
+	desc = LOU_races.3.d
+	picture = dragon_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.3.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "dragon_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Elf
+country_event = {
+	id = LOU_races.4
+	title = LOU_races.4.t
+	desc = LOU_races.4.d
+	picture = elves_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.4.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "elven_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Ent
+country_event = {
+	id = LOU_races.5
+	title = LOU_races.5.t
+	desc = LOU_races.5.d
+	picture = ents_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.5.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "ent_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Great Eagle
+country_event = {
+	id = LOU_races.6
+	title = LOU_races.6.t
+	desc = LOU_races.6.d
+	picture = eagles_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.6.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "erus_children_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Goblin
+country_event = {
+	id = LOU_races.7
+	title = LOU_races.7.t
+	desc = LOU_races.7.d
+	picture = goblin_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.7.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "goblin_buff"
+				duration = -1
+			}
+		}	
+	}
+}
+
+# Giant
+country_event = {
+	id = LOU_races.8
+	title = LOU_races.8.t
+	desc = LOU_races.8.d
+	picture = giants_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.8.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "giant_buff"
+				duration = -1
+			}
+		}	
+	}
+}
+
+# Spider
+country_event = {
+	id = LOU_races.9
+	title = LOU_races.9.t
+	desc = LOU_races.9.d
+	picture = spiders_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.9.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "great_spider_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Half-dwarf
+country_event = {
+	id = LOU_races.10
+	title = LOU_races.10.t
+	desc = LOU_races.10.d
+	picture = dwarves_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.10.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "half_dwarf_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Hobbit
+country_event = {
+	id = LOU_races.11
+	title = LOU_races.11.t
+	desc = LOU_races.11.d
+	picture = hobbit_race
+	is_triggered_only = yes
+    
+	option = {
+		name = LOU_races.11.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "hobbit_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Half-orc
+country_event = {
+	id = LOU_races.12
+	title = LOU_races.12.t
+	desc = LOU_races.12.d
+	picture = orcs_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.12.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "half_orc_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Orc
+country_event = {
+	id = LOU_races.13
+	title = LOU_races.13.t
+	desc = LOU_races.13.d
+	picture = orcs_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.13.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "orc_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Troll
+country_event = {
+	id = LOU_races.14
+	title = LOU_races.14.t
+	desc = LOU_races.14.d
+	picture = trolls_race
+	is_triggered_only = yes
+    
+	option = {
+		name = LOU_races.14.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "troll_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Uruk-hai
+country_event = {
+	id = LOU_races.15
+	title = LOU_races.15.t
+	desc = LOU_races.15.d
+	picture = uruk-hai_race
+	is_triggered_only = yes
+    
+
+	option = {
+		name = LOU_races.15.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "uruk_hai_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Wizard
+country_event = {
+	id = LOU_races.16
+	title = LOU_races.16.t
+	desc = LOU_races.16.d
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.16.a
+		
+		custom_tooltip = LOU_RACE_BUFFS
+		hidden_effect = {
+			add_country_modifier = {
+				name = "wizard_buff"
+				duration = -1
+			}
+        }
+	}
+}
+
+# Wight
+country_event = {
+	id = LOU_races.17
+	title = LOU_races.17.t
+	desc = LOU_races.17.d
+	picture = wights_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.17.a
+        
+		add_country_modifier = {
+			name = "wights_buff"
+			duration = -1
+        }
+	}
+}

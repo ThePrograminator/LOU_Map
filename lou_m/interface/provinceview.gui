@@ -6287,6 +6287,83 @@ guiTypes = {
 			spriteType = "GFX_banner_buildings_green_small"
 		}
 
+		instantTextBoxType={
+			name = "title_elf_trade_buildings"
+			position = {x = 590 y = -247 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Trade"
+		}
+		
+		iconType ={
+			name ="elf_trade_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 561 y = -244 }
+			frame = 1
+		}
+		
+		checkboxType = {
+			name = "build_elven_fairground_elf_building"
+			position = { x = 576 y = -216 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "elven_fairground_elf_building_cost"
+			position = {x = 576 y = -166 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "elven_fairground_elf_building_to_craftsmen_plaza_elf_building_arrow"
+			position = { x = 624 y = 209 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_craftsmen_plaza_elf_building"
+			position = { x = 640 y = -216 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "craftsmen_plaza_elf_building_cost"
+			position = {x = 640 y = -166 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "craftsmen_plaza_elf_building_to_exotic_wares_market_building_arrow"
+			position = { x = 688 y = 209 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_exotic_wares_market_elf_building"
+			position = { x = 704 y = -216 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "exotic_wares_market_elf_building_cost"
+			position = {x = 704 y = -166 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
 		################################################
 		# Elf Taxation Buildings 
 		################################################

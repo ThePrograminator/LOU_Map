@@ -1,0 +1,295 @@
+namespace = LOU_empire_of_rhun
+
+# War Won
+country_event = {
+	id = LOU_empire_of_rhun.1
+	title = LOU_empire_of_rhun.1.title
+	desc = LOU_empire_of_rhun.1.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+    is_triggered_only = yes
+    
+    trigger = {
+        is_emperor_of_china = yes
+    }
+    
+    option = {
+        name = LOU_empire_of_rhun.1.option.a
+
+        add_mandate = 10
+    }  
+}
+
+# War Lost
+country_event = {
+	id = LOU_empire_of_rhun.2
+	title = LOU_empire_of_rhun.2.title
+	desc = LOU_empire_of_rhun.2.desc
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+    is_triggered_only = yes
+    
+    trigger = {
+        is_emperor_of_china = yes
+    }
+    
+    option = {
+        name = LOU_empire_of_rhun.2.option.a
+
+        add_mandate = -10
+    }  
+}
+
+# New Monarch
+country_event = {
+	id = LOU_empire_of_rhun.3
+	title = LOU_empire_of_rhun.3.title
+	desc = LOU_empire_of_rhun.3.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+    is_triggered_only = yes
+    
+    trigger = {
+        is_emperor_of_china = yes
+        is_female = no
+        adm = 3
+        dip = 3
+        mil = 3
+        NOT = {
+            adm = 5
+            dip = 5
+            mil = 5
+        }
+    }
+    
+    option = {
+        name = LOU_empire_of_rhun.3.option.a
+
+        add_mandate = 10
+    }  
+}
+
+# New Monarch - Female
+country_event = {
+	id = LOU_empire_of_rhun.4
+	title = LOU_empire_of_rhun.4.title
+	desc = LOU_empire_of_rhun.4.desc
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+    is_triggered_only = yes
+    
+    trigger = {
+        is_emperor_of_china = yes
+        is_female = yes
+    }
+    
+    option = {
+        name = LOU_empire_of_rhun.4.option.a
+
+        add_mandate = -10
+    }  
+}
+
+# New Monarch
+country_event = {
+	id = LOU_empire_of_rhun.5
+	title = LOU_empire_of_rhun.5.title
+	desc = LOU_empire_of_rhun.5.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+    is_triggered_only = yes
+    
+    trigger = {
+        is_emperor_of_china = yes
+        is_female = no
+        adm = 5
+        dip = 5
+        mil = 5
+    }
+    
+    option = {
+        name = LOU_empire_of_rhun.5.option.a
+
+        add_mandate = 15
+    }  
+}
+
+country_event = {
+	id = LOU_empire_of_rhun.6
+	title = LOU_empire_of_rhun.6.title
+	desc = LOU_empire_of_rhun.6.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		FROM = { is_emperor_of_china = yes }
+        NOT = { has_reform = easterling_clan_reform }
+	}
+	
+	option = {
+		name = LOU_empire_of_rhun.6.option.a
+		add_prestige = 20
+		add_dip_power = 50
+		add_mil_power = 50
+		add_adm_power = 50
+        
+        hidden_effect = {
+            dismantle_empire_of_china = yes
+            set_global_flag = empire_of_rhun_dismantled
+        }
+	}
+}
+
+country_event = {
+	id = LOU_empire_of_rhun.7
+	title = LOU_empire_of_rhun.7.title
+	desc = LOU_empire_of_rhun.7.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		FROM = { is_emperor_of_china = yes }
+        has_reform = easterling_clan_reform
+	}
+	
+	option = {
+		name = LOU_empire_of_rhun.7.option.a
+        
+        set_emperor_of_china = ROOT
+		add_prestige = 20
+		add_dip_power = 50
+		add_mil_power = 50
+		add_adm_power = 50
+	}
+}
+
+# Powerful Warlord
+country_event = {
+	id = LOU_empire_of_rhun.10
+	title = LOU_empire_of_rhun.10.title
+	desc = LOU_empire_of_rhun.10.desc
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	trigger = {
+        NOT = { total_development = 1000 }
+        NOT = { is_subject = yes }
+        NOT = { is_emperor_of_china = yes }
+        OR = {
+            capital_scope = {
+                OR = {
+                    region = rhun_region
+                    region = kykurian_region
+                    region = rhovanion_region
+                    region = logathavuld_region
+                }
+            }
+            event_target:EmperorOfChina = {
+                is_neighbor_of = ROOT
+            }
+        }
+        event_target:EmperorOfChina = {
+            is_emperor_of_china = yes
+        }
+        OR = {
+            religion = religion_ulgath
+            religion = religion_ioriags
+        }
+	}
+    
+    mean_time_to_happen = {
+		months = 1200
+        
+        modifier = {
+            factor = 2
+            total_development = 500
+        }
+        modifier = {
+            factor = 2
+            total_development = 250
+        }
+        modifier = {
+            factor = 0.5
+            event_target:EmperorOfChina = {
+                is_emperor_of_china = yes
+                army_strength = {
+                    who = ROOT
+                    value = 1.5
+                }
+            }
+        }
+        modifier = {
+            factor = 0.5
+            event_target:EmperorOfChina = {
+                is_emperor_of_china = yes
+                army_strength = {
+                    who = ROOT
+                    value = 2
+                }
+            }
+        }
+        modifier = {
+            factor = 0.5
+            event_target:EmperorOfChina = {
+                is_emperor_of_china = yes
+                army_strength = {
+                    who = ROOT
+                    value = 3
+                }
+            }
+        }
+    }
+    
+    immediate = {
+        hidden_effect = { save_event_target_as = tribute_country }
+    }
+    
+	option = {
+		name = LOU_empire_of_rhun.10.option.a
+
+        event_target:EmperorOfChina = {
+            create_subject = {
+                subject_type = tributary_state
+                subject = ROOT
+            }
+            country_event = {
+                id = LOU_empire_of_rhun.11
+            }
+        }
+        
+        ai_chance = {
+            factor = 75
+        }
+	}
+    option = {
+		name = LOU_empire_of_rhun.10.option.b
+
+        add_prestige = 10
+        
+        ai_chance = {
+            factor = 25
+        }
+	}
+}
+
+# Tribute from [FROM.GetName]
+country_event = {
+	id = LOU_empire_of_rhun.11
+	title = LOU_empire_of_rhun.11.title
+	desc = LOU_empire_of_rhun.11.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+    
+	option = {
+		name = LOU_empire_of_rhun.11.option.a
+
+        add_mandate = 10
+	}
+}
+

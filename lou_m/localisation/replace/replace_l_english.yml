@@ -1099,3 +1099,95 @@
  MAY_ATTACK_PRIMITIVES: "Permanent Casus Belli against countries of the same culture group."
  MAY_ATTACK_OVERSEAS: "Can Fabricate Claim Overseas in Trade Company Regions."
  MAY_ATTACK_RELIGIOUS_ENEMIES: "Permanent Casus Belli against neighboring countries of differing race."
+ 
+ RMTITLE: "Local Marriage"
+ RMDESCR: "A 'Royal Marriage' represents a marital union between the royal families of two countries that share the same race. It will improve relations greatly. If you declare war against a nation with which you have a Royal Marriage, you will suffer greatly."
+ 
+ #------------------------------------------------------
+ # Meritocracy (Clout)
+ #------------------------------------------------------
+ meritocracy: "Clout"
+ ADM_SCORE_MERITOCRACY: "Clout: $VAL$\n"
+ ENACT_DECREE_COST_DESC: "This will cost us $MERITOCRACYCOST|R$ Clout, and give us the following effects for $YEARS|Y$ years:\n$EFFECTS$"
+ ENACT_DECREE_NOT_ENOUGH_MERITOCRACY: "Enacting this Decree requires $MERITOCRACYREQUIRED$ Clout, you only have $CURRENTMERITOCRACY$."
+ YEARLY_MERITOCRACY: "Yearly Clout"
+ MERITOCRACY_IRO: "§YMeritocracy§!\nClout changes by $CHANGE$ every year due to:\n$WHY$"
+ YOU_MERITOCRACY_DRO: "This represents our Clout with the nations of the Rhûn. The higher it is, the more efficient our army will run!\nThis level of Clout gives the following effects:"
+ THEY_MERITOCRACY_DRO: "This represents the Clout inside their country. The higher it is, the more efficient their army will run!\nThis level of Clout gives the following effects:"
+ alert_can_enact_decree_delayed: "Your level of Clout is currently high enough to be able to enact a Decree."
+ 
+ mechanic_has_meritocracy_yes: "Uses Clout."
+ mechanic_has_meritocracy_no: "Does not use Clout."
+ 
+ MERITOCRACY_LESS_THAN: "Clout less than"
+ MERITOCRACY_AT_LEAST: "Clout is at least"
+ ADD_MERITOCRACY_EFFECT: "$DIRECTION$ $VALUE$ Clout.\n"
+ SET_MERITOCRACY_EFFECT: "Clout is set to $VALUE|Y$\n"
+ 
+ #------------------------------------------------------
+ # Empire of China (Empire of Rhûn)
+ #------------------------------------------------------
+ CELESTIAL_CELESTIAL: "Empire of Rhûn"
+ CELESTIAL_EMPEROR: "$EMPERORNAME|Y$ is the Warlord of Rhûn"
+ CELESTIAL_MANDATE: "Prominence"
+ CELESTIAL_DECISIONS: "Edicts"
+ CELESTIAL_TRIBUTARIES: "$NUM$ Tributaries"
+ CELESTIAL_DECREES: "Decrees"
+ CELESTIAL_CLOSE: "Close"
+ CELESTIAL_EMPIRE: "Empire of Rhûn"
+ 
+ MANDATE_GROWTH_MODIFIERS: "Modifiers affecting monthly §YProminence Growth§!:"
+ 
+ CELESTIAL_DECISION_MINIMUM_TO_ENACT: "Need a minimum of $MINVALUE|Y$ Prominence to take this Decision."
+ CELESTIAL_DECISION_NOT_ENOUGH_MANDATE: "This Decision costs $MANDATECOST|Y$ Prominence, but you only have $CURRENTMANDATE|Y$ Prominence."
+ CELESTIAL_DECISION_NOT_EMPEROR: "Must be the Warlord of Rhûn to enact Edicts."
+ CURRENT_CELESTIAL_EMPEROR: "$RULERNAME|Y$ is the Warlord of Rhûn."
+ CELESTIAL_EMPIRE_NO_EMPEROR: "The Warlord of Rhûn is currently in an interregnum."
+ IMPERIAL_MANDATE_DESC: "The Prominence value represents the authority of the Warlord of Rhûn. Prominence can be used to enact centralisation decisions within the Rhûn."
+ IMPERIAL_MANDATE_CURRENT_DESC: "Current Prominence gives the following Modifier:\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_BONUS_DESC: "Prominence above §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_PENALTY_DESC: "Prominence below §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$"
+ CELESTIAL_EMPEROR_BENEFIT: "Being the §YWarlord of Rhûn§! gives the following benefits:\n"
+ CELESTIAL_EMPEROR_BENEFIT_DESC: " -Bonuses from High Prominence.\n -Uses Clout Mechanics\n -Can enact Edict Decisions.\n -Can Establish Tributaries"
+ CELESTIAL_EMPEROR_DIPLOMATIC_ACTIONS_DESC: "The Warlord of Rhûn may take the following additional diplomatic actions:\n$LIST|Y$"
+ CELESTIAL_EMPIRE_PAST_EMPERORS: "Previous Rulers:"
+ 
+ CELESTIALREFORMBYUS_SETUP: "When we, as the Warlord of Rhûn, enact a reform."
+ CELESTIALREFORMBYUS_LOG: "We, as Warlord of Rhûn, enacted $REFORM$."
+ CELESTIALREFORM_SETUP: "When the Warlord of Rhûn enacts a reform."
+ CELESTIALREFORM_2: "$MONARCHTITLE$, the Warlord of Rhûn,"
+ CELESTIALREFORM_LOG: "The Warlord of Rhûn enacted $REFORM$."
+ bg_celestial_emperor: "In the year $YEAR$ $MONARCHTITLE$ $MONARCHNAME$ became the Warlord of Rhûn"
+ 
+ IS_CELESTIAL_EMPEROR: "Is the Warlord of Rhûn"
+ ISNT_CELESTIAL_EMPEROR: "Is NOT the Warlord of Rhûn"
+ SET_CELESTIAL_EMPEROR_DESC: "$COUNTRYNAME$ becomes the Warlord of Rhûn.\n"
+ DISMANTLE_CELESTIAL_EMPIRE_DESC: "Empire of Rhûn is dismantled.\n"
+ REFORM_CELESTIAL_EMPIRE_DESC: "Empire of Rhûn is re-formed.\n"
+ 
+ lost_mandate_of_heaven: "Lost Control of the Rhûn"
+ 
+ ENACT_DECREE_NOT_EMPEROR: "Only the Warlord of Rhûn can enact Decrees."
+ 
+ BENEFIT_FOR_EMPEROR: "Ruler gets:\n$MODIFIER$"
+ 
+ #------------------------------------------------------
+ # Mandate
+ #------------------------------------------------------
+ ENACT_REFORM_COST_DESC: "This will cost us $STABILITY|R$ Stability and $MANDATE|R$ Prominence, and give us the following long term effects:\n$EFFECTS$"
+ ENACT_DECREE_COST_DESC: "This will cost us $MERITOCRACYCOST|R$ Clout, and give us the following effects for $YEARS|Y$ years:\n$EFFECTS$"
+ MODIFIER_IMPERIAL_MANDATE: "Prominence Growth Modifier"
+ 
+ MANDATE_LESS_THAN: "Prominence less than"
+ MANDATE_AT_LEAST: "Prominence is at least"
+ ADD_MANDATE_DESC: "$DIRECTION$ $MANDATECHANGE|Y$ Prominence.\n"
+ 
+ positive_mandate: "Positive Prominence"
+ negative_mandate: "Negative Prominence"
+ 
+ #------------------------------------------------------
+ # Mandate of Heaven
+ #------------------------------------------------------
+ TAKE_MANDATE_PO_LIST_TEXT: "Claim Control of the Rhûn"
+ TAKE_MANDATE_PO_TOOLTIP: "Claim control of the Rhûn from the false pretender $CURRENTHOLDER|Y$!"
+ TAKE_MANDATE_PO_NOT_EMPEROR: "$COUNTRYNAME$ does not control of the Rhûn."

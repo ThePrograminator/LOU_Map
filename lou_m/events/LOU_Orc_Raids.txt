@@ -1,0 +1,1144 @@
+namespace = LOU_orc_raids
+
+# Most events will be split for good and evil
+
+province_event = {
+	id = LOU_orc_raids.1
+	title = "LOU_orc_raids.1_NAME"
+	desc = "LOU_orc_raids.1_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+
+		province_id = 1890
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2758
+			MONTH = 11
+			STARTED_BEFORE = 2759.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.1_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.1 - Option : LOU_orc_raids.1_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.2
+	title = "LOU_orc_raids.2_NAME"
+	desc = "LOU_orc_raids.2_DESC"
+	picture = orc_raid
+	
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 688
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2770
+			MONTH = 3
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.2_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.2 - Option : LOU_orc_raids.2_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.3
+	title = "LOU_orc_raids.3_NAME"
+	desc = "LOU_orc_raids.3_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+
+		province_id = 3170
+
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2770
+			MONTH = 5
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.3_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.3 - Option : LOU_orc_raids.3_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+
+province_event = {
+	id = LOU_orc_raids.4
+	title = "LOU_orc_raids.4_NAME"
+	desc = "LOU_orc_raids.4_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+	trigger = {
+		always = yes
+
+		province_id = 1819
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2759
+			MONTH = 9
+			STARTED_BEFORE = 2760.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.4_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.4 - Option : LOU_orc_raids.4_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.5
+	title = "LOU_orc_raids.5_NAME"
+	desc = "LOU_orc_raids.5_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 226
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2759
+			MONTH = 9
+			STARTED_BEFORE = 2760.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.5_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.5 - Option : LOU_orc_raids.5_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.6
+	title = "LOU_orc_raids.6_NAME"
+	desc = "LOU_orc_raids.6_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1597
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2762
+			MONTH = 3
+			STARTED_BEFORE = 2763.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.6_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.6 - Option : LOU_orc_raids.6_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_orc_raids.7
+	title = "LOU_orc_raids.7_NAME"
+	desc = "LOU_orc_raids.7_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 3207
+
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2761
+			MONTH = 1
+			STARTED_BEFORE = 2762.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.7_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.7 - Option : LOU_orc_raids.7_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.8
+	title = "LOU_orc_raids.8_NAME"
+	desc = "LOU_orc_raids.8_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 157
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2765
+			MONTH = 2
+			STARTED_BEFORE = 2766.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.8_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.8 - Option : LOU_orc_raids.8_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_orc_raids.9
+	title = "LOU_orc_raids.9_NAME"
+	desc = "LOU_orc_raids.9_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 157
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2911
+			MONTH = 10
+			STARTED_BEFORE = 2912.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.9_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.9 - Option : LOU_orc_raids.9_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_orc_raids.10
+	title = "LOU_orc_raids.10_NAME"
+	desc = "LOU_orc_raids.10_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1505
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2767
+			MONTH = 10
+			STARTED_BEFORE = 2768.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.10_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.10 - Option : LOU_orc_raids.10_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_orc_raids.11
+	title = "LOU_orc_raids.11_NAME"
+	desc = "LOU_orc_raids.11_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 99
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2767
+			MONTH = 10
+			STARTED_BEFORE = 2768.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.11_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.11 - Option : LOU_orc_raids.11_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.12
+	title = "LOU_orc_raids.12_NAME"
+	desc = "LOU_orc_raids.12_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1812
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2767
+			MONTH = 10
+			STARTED_BEFORE = 2768.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.12_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.12 - Option : LOU_orc_raids.12_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.13
+	title = "LOU_orc_raids.13_NAME"
+	desc = "LOU_orc_raids.13_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1853
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2770
+			MONTH = 3
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.13_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.13 - Option : LOU_orc_raids.13_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_orc_raids.14
+	title = "LOU_orc_raids.14_NAME"
+	desc = "LOU_orc_raids.14_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1442
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2772
+			MONTH = 0
+			STARTED_BEFORE = 2773.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.14_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.14 - Option : LOU_orc_raids.14_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.15
+	title = "LOU_orc_raids.15_NAME"
+	desc = "LOU_orc_raids.15_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1824
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2771
+			MONTH = 1
+			STARTED_BEFORE = 2772.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.15_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.15 - Option : LOU_orc_raids.15_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_orc_raids.16
+	title = "LOU_orc_raids.16_NAME"
+	desc = "LOU_orc_raids.16_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		province_id = 1592
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2760
+			MONTH = 1
+			STARTED_BEFORE = 2761.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.16_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.16 - Option : LOU_orc_raids.16_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.17
+	title = "LOU_orc_raids.17_NAME"
+	desc = "LOU_orc_raids.17_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 3341
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+
+		check_date = {
+			YEAR = 2790
+			MONTH = 1
+			STARTED_BEFORE = 2791.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.17_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.17 - Option : LOU_orc_raids.17_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.18
+	title = "LOU_orc_raids.18_NAME"
+	desc = "LOU_orc_raids.18_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 312
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2772
+			MONTH = 1
+			STARTED_BEFORE = 2773.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.18_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.18 - Option : LOU_orc_raids.18_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.19
+	title = "LOU_orc_raids.19_NAME"
+	desc = "LOU_orc_raids.19_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 2014
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2761
+			MONTH = 2
+			STARTED_BEFORE = 2762.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.19_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.19 - Option : LOU_orc_raids.19_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 3
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.20
+	title = "LOU_orc_raids.20_NAME"
+	desc = "LOU_orc_raids.20_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 2021
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2761
+			MONTH = 2
+			STARTED_BEFORE = 2762.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.20_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.20 - Option : LOU_orc_raids.20_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.21
+	title = "LOU_orc_raids.21_NAME"
+	desc = "LOU_orc_raids.21_DESC"
+	picture = orc_raid
+	
+	fire_only_once = yes
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 1552
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2760
+			MONTH = 7
+			STARTED_BEFORE = 2761.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.21_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.21 - Option : LOU_orc_raids.21_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.22
+	title = "LOU_orc_raids.22_NAME"
+	desc = "LOU_orc_raids.22_DESC"
+	picture = orc_raid
+	
+	fire_only_once = yes
+	trigger = {
+		always = yes
+		province_id = 2977
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2760
+			MONTH = 4
+			STARTED_BEFORE = 2761.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.22_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.22 - Option : LOU_orc_raids.22_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+province_event = {
+	id = LOU_orc_raids.23
+	title = "LOU_orc_raids.23_NAME"
+	desc = "LOU_orc_raids.23_DESC"
+	picture = orc_raid
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 2987
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2770
+			MONTH = 1
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.23_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.23 - Option : LOU_orc_raids.23_a" }
+
+		#the size of the rebels function really wierd, just know the higher the number, that larger the orc raid
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.24
+	title = "LOU_orc_raids.24_NAME"
+	desc = "LOU_orc_raids.24_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+	trigger = {
+		always = yes
+
+		province_id = 941
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2770
+			MONTH = 10
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	option = {
+		name = "LOU_orc_raids.24_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.24 - Option : LOU_orc_raids.24_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 6
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.25
+	title = "LOU_orc_raids.25_NAME"
+	desc = "LOU_orc_raids.25_DESC"
+	picture = orc_raid_ice
+
+	fire_only_once = yes
+	trigger = {
+		always = yes
+		province_id = 1151
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2770
+			MONTH = 10
+			STARTED_BEFORE = 2771.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.25_a"
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.25 - Option : LOU_orc_raids.25_a" }
+		
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 1
+		}
+	}
+}
+province_event = {
+	id = LOU_orc_raids.26
+	title = "LOU_orc_raids.26_NAME"
+	desc = "LOU_orc_raids.26_DESC"
+	picture = orc_raid_ice
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 2798
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2776
+			MONTH = 10
+			STARTED_BEFORE = 2777.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.26_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.26 - Option : LOU_orc_raids.26_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+province_event = {
+	id = LOU_orc_raids.27
+	title = "LOU_orc_raids.27_NAME"
+	desc = "LOU_orc_raids.27_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 1458
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2759
+			MONTH = 1
+			STARTED_BEFORE = 2760.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.27_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.27 - Option : LOU_orc_raids.27_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}
+
+province_event = {
+	id = LOU_orc_raids.28
+	title = "LOU_orc_raids.28_NAME"
+	desc = "LOU_orc_raids.28_DESC"
+	picture = orc_raid
+
+	fire_only_once = yes
+
+	trigger = {
+		always = yes
+		province_id = 3192
+		owner = {
+			NOT = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+			}
+		}
+		check_date = {
+			YEAR = 2758
+			MONTH = 11
+			STARTED_BEFORE = 2777.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raids.28_a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_raids.28 - Option : LOU_orc_raids.28_a" }
+
+		spawn_rebels = {
+			type = orc_raider_rebels
+			size = 2
+		}
+	}
+}

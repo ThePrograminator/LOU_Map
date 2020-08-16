@@ -6,337 +6,338 @@ merc_riders_of_snowbourn = {
     cost_modifier = 0.40
     home_province = 111
     trigger = {
-      OR = {
-        religion = religion_nenedain
-        religion = religion_aivathuida
-        religion = religion_ullthiuda
-        tag = X01
-        tag = X16
-      }
+        OR = {
+            religion = religion_nenedain
+            religion = religion_aivathuida
+            religion = religion_ullthiuda
+            tag = X01
+            tag = X16
+        }
   }
 }
 merc_gadrauhteis = {
-  regiments_per_development = 0.015
-  cavalry_weight = 0.7
-  artillery_weight = 0.0
-  cavalry_cap = 10
-  cost_modifier = 0.55
-  home_province = 1931
-  trigger = {
-    OR = {
-      religion = religion_nenedain
-      religion = religion_aivathuida
-      religion = religion_ullthiuda
+    regiments_per_development = 0.015
+    cavalry_weight = 0.7
+    artillery_weight = 0.0
+    cavalry_cap = 10
+    cost_modifier = 0.55
+    home_province = 1931
+    trigger = {
+        OR = {
+            religion = religion_nenedain
+            religion = religion_aivathuida
+            religion = religion_ullthiuda
+        }
     }
-  }
 }
 merc_guards_of_karna = {
-  regiments_per_development = 0.020
-  cavalry_weight = 0.2
-  artillery_weight = 0.1
-  cavalry_cap = 20
-  cost_modifier = 0.65
-  home_province = 1183
-  trigger = {
-    OR = {
-      tag = V17
-      tag = X27
-      tag = X43
-      religion = religion_haruzani
-    }
+    regiments_per_development = 0.020
+    cavalry_weight = 0.2
+    artillery_weight = 0.1
+    cavalry_cap = 20
+    cost_modifier = 0.65
+    home_province = 1183
+    trigger = {
+        OR = {
+            tag = V17
+            tag = X27
+            tag = X43
+            religion = religion_haruzani
+        }
 	}
 }
 merc_breeland_ruffians = {
-  regiments_per_development = 0.010
-  cavalry_weight = 0.0
-  artillery_weight = 0.0
-  cavalry_cap = 2
-  cost_modifier = 0.50
-  home_province = 263
-  trigger = {
-    OR = {
-      tag = V49
-      tag = Z21
-      tag = Z43
-      tag = Z62
-      tag = Z11
-      tag = Z09
-      tag = Z37
-    }
+    regiments_per_development = 0.010
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cavalry_cap = 2
+    cost_modifier = 0.50
+    home_province = 263
+    trigger = {
+        OR = {
+            tag = V49
+            tag = Z21
+            tag = Z43
+            tag = Z62
+            tag = Z11
+            tag = Z09
+            tag = Z37
+        }
 	}
 }
 merc_variags_of_khand = {
-  regiments_per_development = 0.040
-  cavalry_weight = 1
-  artillery_weight = 0.0
-  cavalry_cap = 50
-  cost_modifier = 0.85
-  home_province = 443
-  trigger = {
-    OR = {
-      tag = V17
-      religion = religion_haruzani
-      religion = religion_ulgath
-      religion = religion_ioriags
-      religion = religion_chailuza
-    }
+    regiments_per_development = 0.040
+    cavalry_weight = 1
+    artillery_weight = 0.0
+    cavalry_cap = 50
+    cost_modifier = 0.85
+    home_province = 443
+    trigger = {
+        OR = {
+            tag = V17
+            religion = religion_haruzani
+            religion = religion_ulgath
+            religion = religion_ioriags
+            religion = religion_chailuza
+        }
 	}
 }
 merc_tharbad_thieves = {
-  regiments_per_development = 0.015
-  cavalry_weight = 0.0
-  artillery_weight = 0.0
-  cavalry_cap = 5
-  cost_modifier = 0.55
-  home_province = 170
-  trigger = {
-    OR = {
-      primary_culture = culture_dunlendings
-      tag = Z45
-      tag = Z44
-      tag = V49
-      tag = Z20
-      tag = Z35
-      tag = Z17
-      tag = Z19
-      tag = Z43
-      tag = Z43
-      tag = Z46
-    }
+    regiments_per_development = 0.015
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cavalry_cap = 5
+    cost_modifier = 0.55
+    home_province = 170
+    trigger = {
+        OR = {
+            primary_culture = culture_dunlendings
+            tag = Z45
+            tag = Z44
+            tag = V49
+            tag = Z20
+            tag = Z35
+            tag = Z17
+            tag = Z19
+            tag = Z43
+            tag = Z43
+            tag = Z46
+        }
 	}
 }
 merc_orocarni_mercenaries = {
-  regiments_per_development = 0.025
-  cavalry_weight = 0.0
-  artillery_weight = 0.1
-  cavalry_cap = 1
-  cost_modifier = 0.60
-  home_province = 572
-  trigger = {
-    technology_group = lotr_dwarven
+    regiments_per_development = 0.025
+    cavalry_weight = 0.0
+    artillery_weight = 0.1
+    cavalry_cap = 1
+    cost_modifier = 0.60
+    home_province = 572
+    trigger = {
+        technology_group = lotr_dwarven
 	}
 }
 merc_dunlending_wildmen = {
-  regiments_per_development = 0.015
-  cavalry_weight = 0.1
-  artillery_weight = 0.0
-  cavalry_cap = 3
-  cost_modifier = 0.60
-  home_province = 1417
-  trigger = {
-    OR = {
-      primary_culture = culture_dunlendings
-      tag = V49
-    }
+    regiments_per_development = 0.015
+    cavalry_weight = 0.1
+    artillery_weight = 0.0
+    cavalry_cap = 3
+    cost_modifier = 0.60
+    home_province = 1417
+    trigger = {
+        OR = {
+            primary_culture = culture_dunlendings
+            tag = V49
+        }
 	}
 }
 merc_hunters_of_dir = {
-  regiments_per_development = 0.020
-  cavalry_weight = 0.0
-  artillery_weight = 0.0
-  cavalry_cap = 5
-  cost_modifier = 0.65
-  home_province = 2796
-  trigger = {
-      OR = {
-        tag = V63
-        tag = V73
-        tag = V82
-        tag = V70
-        tag = W46
-      }
+    regiments_per_development = 0.020
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cavalry_cap = 5
+    cost_modifier = 0.65
+    home_province = 2796
+    trigger = {
+        OR = {
+            tag = V63
+            tag = V73
+            tag = V82
+            tag = V70
+            tag = W46
+        }
 	}
 }
 merc_desdursya_riders = {
-  regiments_per_development = 0.025
-  cavalry_weight = 0.9
-  artillery_weight = 0.0
-  cavalry_cap = 25
-  cost_modifier = 0.60
-  home_province = 972
-  trigger = {
-    OR = {
-      religion = religion_tyr
-      religion = religion_eastern_snowmen
-    }
+    regiments_per_development = 0.025
+    cavalry_weight = 0.9
+    artillery_weight = 0.0
+    cavalry_cap = 25
+    cost_modifier = 0.60
+    home_province = 972
+    trigger = {
+        OR = {
+            religion = religion_tyr
+            religion = religion_eastern_snowmen
+        }
 	}
 }
 merc_ahar_horde = {
-  regiments_per_development = 0.040
-  cavalry_weight = 1
-  artillery_weight = 0.0
-  cavalry_cap = 50
-  cost_modifier = 1.15
-  home_province = 1630
-  trigger = {
-    OR = {
-      culture_group = culture_group_ahar
-      culture_group = culture_group_chailuza
-    }
+    regiments_per_development = 0.040
+    cavalry_weight = 1
+    artillery_weight = 0.0
+    cavalry_cap = 50
+    cost_modifier = 1.15
+    home_province = 1630
+    trigger = {
+        OR = {
+            culture_group = culture_group_ahar
+            culture_group = culture_group_chailuza
+        }
 	}
 }
 merc_wolim_blood_brothers = {
-  regiments_per_development = 0.025
-  cavalry_weight = 0.1
-  artillery_weight = 0.2
-  cavalry_cap = 15
-  cost_modifier = 0.90
-  home_province = 2035
-  trigger = {
-    OR = {
-      religion = religion_cuivac
-      religion = religion_lakhab
-    }
+    regiments_per_development = 0.025
+    cavalry_weight = 0.1
+    artillery_weight = 0.2
+    cavalry_cap = 15
+    cost_modifier = 0.90
+    home_province = 2035
+    trigger = {
+        OR = {
+            religion = religion_cuivac
+            religion = religion_lakhab
+        }
 	}
 }
 merc_axemen_of_dyr = {
-  regiments_per_development = 0.015
-  cavalry_weight = 0.1
-  artillery_weight = 0.0
-  cavalry_cap = 10
-  cost_modifier = 0.45
-  home_province = 816
-  trigger = {
-    OR = {
-      culture_group = culture_group_ulgath
-      tag = Z92
-    }
+    regiments_per_development = 0.015
+    cavalry_weight = 0.1
+    artillery_weight = 0.0
+    cavalry_cap = 10
+    cost_modifier = 0.45
+    home_province = 816
+    trigger = {
+        OR = {
+            culture_group = culture_group_ulgath
+            tag = Z92
+        }
 	}
 }
 merc_black_guard_of_mornost = {
-  regiments_per_development = 0.025
-  cavalry_weight = 0.2
-  artillery_weight = 0.1
-  cavalry_cap = 15
-  cost_modifier = 0.60
-  home_province = 903
-  trigger = {
-    technology_group = lotr_orc
+    regiments_per_development = 0.025
+    cavalry_weight = 0.2
+    artillery_weight = 0.1
+    cavalry_cap = 15
+    cost_modifier = 0.60
+    home_province = 903
+    trigger = {
+        technology_group = lotr_orc
 	}
 }
 merc_sled_horde = {
-  regiments_per_development = 0.040
-  cavalry_weight = 0.1
-  artillery_weight = 0.1
-  cavalry_cap = 5
-  cost_modifier = 1
-  home_province = 1991
-  trigger = {
-    OR = {
-      tag = Y36
-      tag = Y47
-      tag = Y35
-    }
+    regiments_per_development = 0.040
+    cavalry_weight = 0.1
+    artillery_weight = 0.1
+    cavalry_cap = 5
+    cost_modifier = 1
+    home_province = 1991
+    trigger = {
+        OR = {
+            tag = Y36
+            tag = Y47
+            tag = Y35
+        }
 	}
 }
 merc_wildmen_of_lothlann = {
-  regiments_per_development = 0.010
-  cavalry_weight = 0.0
-  artillery_weight = 0.0
-  cavalry_cap = 5
-  cost_modifier = 0.70
-  home_province = 234
-  trigger = {
-    OR = {
-      tag = Z36
-      tag = Z62
-      tag = Z37
-      tag = Z26
-      tag = Z34
-    }
+    regiments_per_development = 0.010
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cavalry_cap = 5
+    cost_modifier = 0.70
+    home_province = 234
+    trigger = {
+        OR = {
+            tag = Z36
+            tag = Z62
+            tag = Z37
+            tag = Z26
+            tag = Z34
+        }
 	}
 }
 merc_guardians_of_girithlin = {
-  regiments_per_development = 0.010
-  cavalry_weight = 0.0
-  artillery_weight = 0.0
-  cavalry_cap = 10
-  cost_modifier = 0.75
-  home_province = 101
-  trigger = {
-    religion = religion_eriadorians
+    regiments_per_development = 0.010
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cavalry_cap = 10
+    cost_modifier = 0.75
+    home_province = 101
+    trigger = {
+        religion = religion_eriadorians
 	}
 }
 merc_steel_riders = {
-  regiments_per_development = 0.010
-  cavalry_weight = 0.8
-  artillery_weight = 0.1
-  cavalry_cap = 4
-  cost_modifier = 0.75
-  home_province = 169
-  trigger = {
-    religion = religion_eriadorians
+    regiments_per_development = 0.010
+    cavalry_weight = 0.8
+    artillery_weight = 0.1
+    cavalry_cap = 4
+    cost_modifier = 0.75
+    home_province = 169
+    trigger = {
+        religion = religion_eriadorians
 	}
 }
 merc_guardians_of_argond = {
-  regiments_per_development = 0.010
-  cavalry_weight = 0.1
-  artillery_weight = 0.0
-  cavalry_cap = 12
-  cost_modifier = 0.75
-  home_province = 161
-  trigger = {
-    religion = religion_eriadorians
+    regiments_per_development = 0.010
+    cavalry_weight = 0.1
+    artillery_weight = 0.0
+    cavalry_cap = 12
+    cost_modifier = 0.75
+    home_province = 161
+    trigger = {
+        religion = religion_eriadorians
 	}
 }
 merc_ragh_crann_sleagha = {
-  regiments_per_development = 0.020
-  cavalry_weight = 0.2
-  artillery_weight = 0.1
-  cavalry_cap = 15
-  cost_modifier = 0.60
-  home_province = 154
-  trigger = {
-    tag = Z43
+    regiments_per_development = 0.020
+    cavalry_weight = 0.2
+    artillery_weight = 0.1
+    cavalry_cap = 15
+    cost_modifier = 0.60
+    home_province = 154
+    trigger = {
+        tag = Z43
 	}
 }
 merc_forak_eiginn = {
-  regiments_per_development = 0.020
-  cavalry_weight = 0.1
-  artillery_weight = 0.0
-  cavalry_cap = 8
-  cost_modifier = 0.55
-  home_province = 160
-  trigger = {
-    OR = {
-      technology_group = lotr_orc
-      technology_group = lotr_goblin
-    }
+    regiments_per_development = 0.020
+    cavalry_weight = 0.1
+    artillery_weight = 0.0
+    cavalry_cap = 8
+    cost_modifier = 0.55
+    home_province = 160
+    trigger = {
+        OR = {
+            technology_group = lotr_orc
+            technology_group = lotr_goblin
+        }
 	}
 }
 merc_mercenary_dwarves_of_ered_luin = {
-  regiments_per_development = 0.020
-  cavalry_weight = 0.0
-  artillery_weight = 0.1
-  cavalry_cap = 1
-  cost_modifier = 0.65
-  home_province = 743
-  trigger = {
-    technology_group = lotr_dwarven
+    regiments_per_development = 0.020
+    cavalry_weight = 0.0
+    artillery_weight = 0.1
+    cavalry_cap = 1
+    cost_modifier = 0.65
+    home_province = 743
+    trigger = {
+        technology_group = lotr_dwarven
 	}
 }
 merc_lusturangsuri_half_orcs = {
-  regiments_per_development = 0.010
-  cavalry_weight = 0.0
-  artillery_weight = 0.0
-  cavalry_cap = 2
-  cost_modifier = 0.45
-  home_province = 1572
-  trigger = {
-    technology_group = lotr_orc
-	}
+    regiments_per_development = 0.010
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cavalry_cap = 2
+    cost_modifier = 0.45
+    home_province = 1572
+    
+    trigger = {
+        technology_group = lotr_orc
+    }
 }
 merc_sons_of_cirlond = {
-  regiments_per_development = 0.030
-  cavalry_weight = 0.3
-  artillery_weight = 0.1
-  cavalry_cap = 15
-  cost_modifier = 0.70
-  home_province = 1269
-  trigger = {
-    OR = {
-      religion_group = religion_group_lynerians
-      religion = religion_black_numenorean
-    }
+    regiments_per_development = 0.030
+    cavalry_weight = 0.3
+    artillery_weight = 0.1
+    cavalry_cap = 15
+    cost_modifier = 0.70
+    home_province = 1269
+    trigger = {
+        OR = {
+            is_racial_group_lynerians = yes
+            religion = religion_black_numenorean
+        }
 	}
 }

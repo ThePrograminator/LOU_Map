@@ -1,0 +1,22 @@
+namespace = LOU_ruins
+
+province_event = {
+	id = LOU_ruins.1
+	title = "LOU_ruins.1.t"
+	desc = "LOU_ruins.1.d"
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		AND = {
+            has_province_modifier = ruins_debuff
+            has_building = resettlement_action
+        }
+	}
+	
+	option = {
+		name = "LOU_ruins.1.a"
+        
+		remove_province_modifier = ruins_debuff
+		remove_building = resettlement_action
+	}
+}

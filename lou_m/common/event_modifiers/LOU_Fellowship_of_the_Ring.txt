@@ -1,0 +1,28 @@
+the_one_ring_not_mordor = {
+}
+
+the_one_ring_mordor = {
+	army_tradition = 1
+	discipline = 0.15
+	land_morale = 0.15
+	siege_ability = 0.15
+	land_maintenance_modifier = -0.25
+	prestige = 1
+	stability_cost_modifier = -0.5
+	tolerance_own = 3
+	tolerance_heretic = 3
+	yearly_corruption = -0.1
+	war_exhaustion = -0.25
+	core_creation = -0.25
+	province_warscore_cost = -0.25
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+
+fellowship_position = {
+	#attrition = 1
+}
+
+fellowship_passed = {
+	#attrition = -1
+}

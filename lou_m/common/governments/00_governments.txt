@@ -12,26 +12,103 @@ monarchy = {
 				stewardship_reform
 				easterling_clan_reform
 				gondor_kingship_reform
+                empire_of_rhun_reform
 			}
 		}
 		hereditary_vs_nobility = {
 			reforms = {
+                # General
 				enforce_privileges_reform
 				quash_noble_power_reform
+                enforce_trader_privileges_reform
+                enforce_naval_privileges_reform
+                cultural_syncretism_reform
+                diplomatic_positions_reform
+                mandatory_court_attendance_reform
+                
+                # Specific
+                talatherim_nobility_reform
+                gondorian_nobility_reform
+                rohirrim_nobility_reform
 			}
 		}
 		bureaucracy = {
 			reforms = {
+                # General
 				centralize_reform
 				decentralize_reform
+                regional_fortifications_reform
+                local_enforcers_reform
+                independent_vassals_reform
+                city_planning_reform
+                
+                # Specific
 			}
 		}
+        military_organisation = {
+            reforms = {
+                # General
+                feudal_levies_reform
+                royal_guard_reform
+                mercenary_corps_reform
+                professional_army_reform
+                
+                # Specific
+            }
+        }
 		growth_of_administration = {
 			reforms = {
-				of_noble_bearing_reform
-				meritocratic_focus_reform
+                # General
+				stewards_in_administration_reform
+                merchants_in_administration_reform
+                nobility_in_administration_reform
+                commoners_in_administration_reform
+                
+                # Specific
 			}
 		}
+        deliberative_assembly = {
+            reforms = {
+                # General
+                royal_decree_reform
+                aristocratic_court_reform
+                states_general_reform
+                general_estates_reform
+                integrated_elites_reform
+                diverse_estates_reform
+                
+                # Specific
+            }
+        }
+        economic_policy = {
+            reforms = {
+                # General
+                strengthen_industry_reform
+                mercantilism_reform
+                noble_taxes_reform
+                
+                # Specific
+            }
+        }
+        seat_of_authority = {
+            reforms = {
+                # General
+                central_authority_reform
+                regional_representation_reform
+                racial_autonomy_reform
+                
+                # Specific
+            }
+        }
+        separation_of_power = {
+            reforms = {
+                # General
+                political_absolutism_reform
+                legislative_houses_reform
+                
+                # Specific
+            }
+        }
 	}
 
 	legacy_government = {
@@ -40,14 +117,13 @@ monarchy = {
 		lotr_principality_legacy
 		lotr_easterling_clan_legacy
 		gondor_kingship_legacy
+        empire_of_rhun_legacy
 	}
 	
 	exclusive_reforms = {
 		stewardship_reform
 		gondor_kingship_reform
 	}
-
-	# Each group of exclusive reforms are mutually exclusive to each other
 }
 
 republic = {
@@ -59,9 +135,10 @@ republic = {
 		government_form_republic = {
 			reforms = {
 				oligarchy_reform
-				merchants_reform
+				maritime_republic_reform
 				mayorship_reform
 				thainship_reform
+                trading_city_reform
 			}
 		}
 		republican_virtues = {
@@ -69,28 +146,131 @@ republic = {
 				republican_authoritarianism_reform
 				nepotism_reform
 				republicanism_reform
+                mixed_republic_reform
+                independence_reform
+                sovereignty_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
 			reforms = {
+                # General
 				frequent_elections_reform
 				consolidation_of_power_reform
+                lottery_reform
+                
+                # Specific
+                favour_the_thain_reform
+                favour_the_mayor_reform
+                favour_the_shire_reform
 			}
 		}
+        military_organisation = {
+            reforms = {
+                # General
+                feudal_levies_reform
+                royal_guard_reform
+                mercenary_corps_reform
+                professional_army_reform
+                
+                # Specific
+            }
+        }
 		federalism_vs_unitarism_vs_confederacy = {
 			reforms = {
+                # General
 				provincial_governments_reform
 				administrative_divisions_reform
+                mercantile_divisions_reform
+                advanced_bookkeeping_reform
+                communal_territories_reform
+                
+                # Specific
 			}
 		}
+        growth_of_administration = {
+			reforms = {
+                # General
+				stewards_in_administration_reform
+                merchants_in_administration_reform
+                nobility_in_administration_reform
+                commoners_in_administration_reform
+                
+                # Specific
+			}
+		}
+        consolidation_of_power_category = {
+            reforms = {
+                broaden_executive_powers_reform
+                devolution_of_powers_reform
+                absolute_rule_reform
+            }
+        }
+        guiding_principle_of_administration = {
+            reforms = {
+                political_principle_reform
+                moral_principle_reform
+                racial_equality_principle_reform
+                conquest_principle_reform
+            }
+        }
+        economic_policy = {
+            reforms = {
+                # General
+                strengthen_industry_reform
+                mercantilism_reform
+                noble_taxes_reform
+                
+                # Specific
+            }
+        }
+        electorate = {
+            reforms = {
+                # General
+                landholders_reform
+                citizenry_reform
+                fair_electorate_reform
+                naval_electorate_reform
+                army_electorate_reform
+                
+                # Specific
+            }
+        }
+        office_selection = {
+            reforms = {
+                # General
+                appointment_by_committee_reform
+                bureaucratic_aparatus_reform
+                universal_suffrage_reform
+                
+                # Specific
+            }
+        }
+        question_of_dictatorship = {
+            reforms = {
+                # General
+                strengthen_executive_powers_reform
+                reinforce_republican_values_reform
+                rule_for_life_reform
+                
+                # Specific
+            }
+        }
 	}
 	
 	legacy_government = {
 		lotr_mayorship_legacy
 		lotr_thainship_legacy
 		oligarchic_republic
-		merchant_republic
+		maritime_republic_legacy
 		trading_city_legacy
+	}
+    
+    exclusive_reforms = {
+        favour_the_thain_reform
+        favour_the_mayor_reform
+		lottery_reform
+		naval_electorate_reform
+		army_electorate_reform
 	}
 }
 
@@ -113,26 +293,45 @@ tribal = {
 		}
 		tribal_cultural_values = {
 			reforms = {
+                # General
 				martial_society_reform
 				civil_society_reform
+                village_raids_reform
+                
+                # Specific
+                law_of_peace_reform
+                herders_of_the_plains_reform
 			}
 		}
 		tribal_religion = {
 			reforms = {
+                # General
 				religious_societies_reform
 				lip_service_reform
+                
+                # Specific
+                code_of_nomads
 			}
 		}
 		tribal_modernization = {
 			reforms = {
+                # General
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
+                
+                # Specific
+                birth_of_the_khaganate_reform
 			}
 		}
 		tribal_reformation = {
 			reforms = {
+                # General
 				tribe_becomes_monarchy_reform
 				tribe_becomes_republic_reform
+                
+                # Specific
+                horde_barbaric_despoilers_reform
+                horde_tribal_unity_reform
 			}
 		}
 	}
@@ -234,12 +433,48 @@ dwarf_gov = {
 				external_mission_dwarf_reform
 			}
 		}
+        economic_policy = {
+            reforms = {
+                # General
+                strengthen_industry_reform
+                mercantilism_reform
+                noble_taxes_reform
+                
+                # Specific
+            }
+        }
 		bureaucracy = {
 			reforms = {
 				centralize_reform
 				decentralize_reform
+                regional_fortifications_reform
+                local_enforcers_reform
+                independent_vassals_reform
+                city_planning_reform
 			}
 		}
+        growth_of_administration = {
+			reforms = {
+                # General
+				stewards_in_administration_reform
+                merchants_in_administration_reform
+                nobility_in_administration_reform
+                commoners_in_administration_reform
+                
+                # Specific
+			}
+		}
+        military_organisation = {
+            reforms = {
+                # General
+                feudal_levies_reform
+                royal_guard_reform
+                mercenary_corps_reform
+                professional_army_reform
+                
+                # Specific
+            }
+        }
 		dwarven_cause = {
 			reforms = {
 				safeguard_dwelling_reform
@@ -272,16 +507,52 @@ elf_gov = {
 		}
 		internal_vs_external_mission = {
 			reforms = {
-				internal_mission_dwarf_reform
-				external_mission_dwarf_reform
+				internal_mission_elf_reform
+				external_mission_elf_reform
 			}
 		}
+        economic_policy = {
+            reforms = {
+                # General
+                strengthen_industry_reform
+                mercantilism_reform
+                noble_taxes_reform
+                
+                # Specific
+            }
+        }
 		bureaucracy = {
 			reforms = {
 				centralize_reform
 				decentralize_reform
+                regional_fortifications_reform
+                local_enforcers_reform
+                independent_vassals_reform
+                city_planning_reform
 			}
 		}
+        growth_of_administration = {
+			reforms = {
+                # General
+				stewards_in_administration_reform
+                merchants_in_administration_reform
+                nobility_in_administration_reform
+                commoners_in_administration_reform
+                
+                # Specific
+			}
+		}
+        military_organisation = {
+            reforms = {
+                # General
+                feudal_levies_reform
+                royal_guard_reform
+                mercenary_corps_reform
+                professional_army_reform
+                
+                # Specific
+            }
+        }
 		elven_cause = {
 			reforms = {
 				regaining_lost_artifacts_reform

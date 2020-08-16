@@ -123,7 +123,7 @@ interaction = {
     effect = {
         custom_tooltip = ESTATES_SUMMON_THE_DIET_DESC
         hidden_effect = {
-	        country_event = { id = lotr_estate_system.2 }
+	        country_event = { id = LOU_estates.2 }
         }
         custom_tooltip = SEPERATOR_TOOLTIP
         
@@ -166,43 +166,33 @@ interaction = {
         
 		if = {
 			limit = {
-				OR = {
-					has_estate_privilege = estate_nobility_statutory_rights
-					AND = {
-						has_estate = estate_nobles
-						OR = {
-                            government = monarchy
-                            government = occult
-                            government = mythical
-                        }
-					}
-				}
-			}
+				has_estate_privilege = estate_nobility_statutory_rights
+            }
 			NOT = { has_estate_privilege = estate_nobility_statutory_rights }
 		}
 		else_if = {
 			limit = {
-				OR = {
-					has_estate_privilege = estate_merchants_statutory_rights
-					AND = {
-						has_estate = estate_merchants
-						government = republic
-					}
-				}
+				has_estate_privilege = estate_merchants_statutory_rights
 			}
 			NOT = { has_estate_privilege = estate_merchants_statutory_rights }
 		}
 		else_if = {
 			limit = {
-				OR = {
-					has_estate_privilege = estate_stewards_statutory_rights
-					AND = {
-						has_estate = estate_stewards
-						government = theocracy
-					}
-				}
+				has_estate_privilege = estate_stewards_statutory_rights
 			}
 			NOT = { has_estate_privilege = estate_stewards_statutory_rights }
+		}
+        else_if = {
+			limit = {
+				has_estate_privilege = estate_commoners_statutory_rights
+			}
+			NOT = { has_estate_privilege = estate_commoners_statutory_rights }
+		}
+        else_if = {
+			limit = {
+				has_estate_privilege = estate_tribes_statutory_rights
+			}
+			NOT = { has_estate_privilege = estate_tribes_statutory_rights }
 		}
         is_at_war = no
     }

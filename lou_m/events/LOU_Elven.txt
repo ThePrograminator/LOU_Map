@@ -1,0 +1,107 @@
+namespace = LOU_elven
+
+province_event = {
+	id = LOU_elven.1
+	title = "LOU_elven.1.t"
+	desc = "LOU_elven.1.d"
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		NOT = {
+			owner = {
+				has_country_modifier = elven_event_citizens_left
+			}
+		}
+		owner = {
+			is_racial_group_eldar = yes
+			karma = 30
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 84
+		
+		modifier = {
+			factor = 0.55
+			owner = {
+				war_exhaustion = 10 
+				karma = 50
+			}
+		}
+		modifier = {
+			factor = 0.65
+			owner = {
+				war_exhaustion = 15 
+				karma = 50
+			}
+		}
+		modifier = {
+			factor = 0.80
+			owner = {
+				karma = 50
+			}
+		}
+		modifier = {
+			factor = 0.50
+			owner = {
+				karma = 75
+			}
+		}
+	}
+	
+	option = {
+		name = "LOU_elven.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_elven.2 - Option : LOU_elven.2.a" }
+
+		random_province = {
+			limit = {
+				owned_by = ROOT
+				
+				NOT = {
+					has_province_modifier = wilderness_debuff
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						base_manpower = 2
+						base_production = 2
+						base_tax = 2
+					}
+				}
+				change_culture = culture_wilderness
+				change_religion = religion_wilderness
+			}
+		
+			if = {
+				limit = {
+					OR = {
+						base_manpower = 2
+						base_production = 2
+						base_tax = 2
+					}
+				}
+				add_base_manpower = -1
+				add_base_production = -1
+				add_base_tax = -1
+				
+			}
+		}
+		
+		owner = {
+			add_karma = -5
+		}
+		
+		hidden_effect = {
+			owner = {
+				add_country_modifier = {
+					name = elven_event_citizens_left
+					duration = 730
+				}
+			}
+			
+		}
+	}
+}

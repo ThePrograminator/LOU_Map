@@ -38,9 +38,9 @@ company_of_thorin = {
 		83 = {
 			owner = {
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_haradrim
-					religion_group = religion_group_talatherim
+					is_racial_group_melkor = yes
+					is_racial_group_haradrim = yes
+					is_racial_group_talatherim = yes
 				}
 			}
 		}
@@ -58,7 +58,7 @@ company_of_thorin = {
 	}
 	start_chance = 100		#in 100 for when a province can_start
 	
-	on_start = fellowship_events.1
+	on_start = LOU_story.1
 	
 	can_embrace = {
 		always = yes
@@ -418,9 +418,9 @@ fellowship_of_ring = {
 		83 = {
 			owner = {
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_haradrim
-					religion_group = religion_group_talatherim
+					is_racial_group_melkor = yes
+					is_racial_group_haradrim = yes
+					is_racial_group_talatherim = yes
 				}
 			}
 		}
@@ -434,9 +434,9 @@ fellowship_of_ring = {
 		413 = {
 			owner = {
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_haradrim
-					religion_group = religion_group_talatherim
+					is_racial_group_melkor = yes
+					is_racial_group_haradrim = yes
+					is_racial_group_talatherim = yes
 				}
 			}
 		}
@@ -444,9 +444,9 @@ fellowship_of_ring = {
 		232 = {
 			owner = {
 				NOT = {
-					religion_group = religion_group_melkor
-					religion_group = religion_group_haradrim
-					religion_group = religion_group_talatherim
+					is_racial_group_melkor = yes
+					is_racial_group_haradrim = yes
+					is_racial_group_talatherim = yes
 				}
 			}
 		}
@@ -454,7 +454,7 @@ fellowship_of_ring = {
 	start_chance = 100		#in 100 for when a province can_start
 	
 	
-	on_start = fellowship_events.4
+	on_start = LOU_story.4
 	
 	can_embrace = {
 		always = yes

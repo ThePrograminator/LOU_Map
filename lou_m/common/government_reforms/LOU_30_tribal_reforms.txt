@@ -194,7 +194,7 @@ khaganate_ruler_reform = {
 }
 
 #------------------------------
-# 
+# Tribal Cultural Values
 #------------------------------
 martial_society_reform = {
 	allow_normal_conversion = yes
@@ -203,7 +203,6 @@ martial_society_reform = {
 		global_manpower_modifier = 0.2
 	}
 }
-
 civil_society_reform = {
 	allow_normal_conversion = yes
 	icon = "tribal_civil_society"
@@ -212,9 +211,57 @@ civil_society_reform = {
 		yearly_corruption = -0.05
 	}
 }
+village_raids_reform = {
+	icon = "horde_riding"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		loot_amount = 0.25
+        available_province_loot = 0.25
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+# Specific
+law_of_peace_reform = {
+	icon = "divine_guidance_reform"
+	allow_normal_conversion = yes
+    
+	potential = {
+		religion = religion_daen
+	}
+
+	modifiers = {
+		global_unrest = -2
+		governing_capacity_modifier = 0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+herders_of_the_plains_reform = {
+	icon = "variags"
+	allow_normal_conversion = yes
+    
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = tribal_federation
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		min_autonomy_in_territories = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
 
 #------------------------------
-# 
+# Tribal Religion
 #------------------------------
 religious_societies_reform = {
 	icon = "tribal_religious_society"
@@ -224,7 +271,6 @@ religious_societies_reform = {
 		religious_unity = 0.15
 	}
 }
-
 lip_service_reform = {
 	icon = "tribal_lip_service"
 	allow_normal_conversion = yes
@@ -233,8 +279,26 @@ lip_service_reform = {
 	}
 }
 
+# Specific
+code_of_nomads = {
+	icon = "tribal_pit"
+	allow_normal_conversion = yes
+    
+	potential = {
+		has_reform = steppe_horde
+	}
+    
+	modifiers = {
+		global_trade_power = 0.2
+		tolerance_own = 1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
 #------------------------------
-# 
+# Tribal Modernization
 #------------------------------
 retain_tribal_hierarchy_reform = {
 	icon = "retain_tribal_hierarchy"
@@ -244,21 +308,72 @@ retain_tribal_hierarchy_reform = {
 		max_absolutism = 10
 	}
 }
-
 centralize_tribal_power_reform = {
 	icon = "tribal_centralize_power"
 	allow_normal_conversion = yes
 	modifiers = {
-		core_creation = -0.05
+		core_creation = -0.1
 		stability_cost_modifier = -0.05
 	}
 }
 
+# Specific
+birth_of_the_khaganate_reform = {
+	icon = "burning_village"
+	allow_normal_conversion = yes
+    
+	potential = {
+		OR = {
+            has_reform = khaganate_reform
+            has_reform = independent_khaganate_reform
+			has_reform = khaganate_ruler_reform
+        }
+	}
+	modifiers = {
+		discipline = 0.05
+		idea_cost = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
 #------------------------------
-# 
+# Tribal Reformation
 #------------------------------
+horde_barbaric_despoilers_reform = {
+	icon = "rioting_burning_2"
+	allow_normal_conversion = yes
+    
+	potential = {
+		has_reform = steppe_horde
+		has_dlc = "The Cossacks"
+	}
+	modifiers = {
+		raze_power_gain = 0.33
+		
+	}
+	ai = {
+		factor = 2
+	}
+}
+horde_tribal_unity_reform = {
+	icon = "fist_in_air"
+	allow_normal_conversion = yes
+    
+	potential = {
+		has_reform = steppe_horde
+		has_dlc = "The Cossacks"
+	}
+	modifiers = {
+		horde_unity = 2
+	}
+	ai = {
+		factor = 2
+	}
+}
 tribe_becomes_monarchy_reform = {
-	icon = "king_highlighted"
+	icon = "king"
 	allow_normal_conversion = yes
 	effect = {
 		set_country_flag = populists_in_government
@@ -268,7 +383,7 @@ tribe_becomes_monarchy_reform = {
 }
 
 tribe_becomes_republic_reform = {
-	icon = "parliament_highlighted"
+	icon = "ballot_box"
 	allow_normal_conversion = yes
 	trigger = {
 		NOT = { is_lesser_in_union = yes }

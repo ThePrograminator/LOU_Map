@@ -1,0 +1,273 @@
+namespace = LOU_setup
+
+# Add global start-up stuff here
+country_event = {
+	id = LOU_setup.1
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_global_flag = completed_LOU_setup }
+    }
+
+    immediate = {
+        set_global_flag = completed_LOU_setup
+    }
+
+    option = {
+        name = "dummy.1.a"
+        
+        every_country = {
+            country_event = { id = LOU_setup.2 }
+        }
+        
+        # --- Logging flags
+        #   Comment these for release builds
+        #   Enabling these will spam the game.log
+        #set_global_flag = enable_onaction_logging
+        #set_global_flag = enable_event_logging
+        
+        # Power system flag
+        # set_global_flag = power_enabled
+
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global LOU_setup" }
+    }  
+}
+
+# Add country-specific start-up stuff here
+country_event = {
+	id = LOU_setup.2
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_country_flag = completed_country_LOU_setup }
+    }
+
+    immediate = {
+        set_country_flag = completed_country_LOU_setup
+    }
+
+    option = {
+        name = "dummy.1.a"
+        
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Start LOU_setup" }
+        
+        # Hatred          
+        set_against_race_opinions_effect = yes 
+        set_free_peoples_opinions_effect = yes
+        set_servants_of_darkness_opinions_effect = yes
+        
+        # Human
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "human_buff" }
+                technology_group = lotr_human
+            }
+            country_event = { 
+                id = LOU_races.1
+            }
+        }
+        # Dwarven
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "dwarven_buff" }
+                technology_group = lotr_dwarven
+            }
+            country_event = { 
+                id = LOU_races.2
+            }
+        }
+        # Dragon
+        if = {
+            limit = {
+			NOT = {	has_country_modifier =  "dragon_buff" }
+			technology_group = lotr_dragon
+		}
+		country_event = { 
+			id = LOU_races.3
+		}
+        }
+        # Elven
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "elven_buff" }
+                technology_group = lotr_elven
+            }
+            country_event = { 
+                id = LOU_races.4
+            }
+        }
+        # Ent
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "ent_buff" }
+                technology_group = lotr_ent
+            }
+            country_event = { 
+                id = LOU_races.5
+            }
+        }
+        # Eru's Children
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "erus_children_buff" }
+                technology_group = lotr_erus_children
+            }
+            country_event = { 
+                id = LOU_races.6
+            }
+        }
+        # Goblin
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "goblin_buff" }
+                technology_group = lotr_goblin
+            }
+            country_event = { 
+                id = LOU_races.7
+            }
+        }
+        # Giant
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "giant_buff" }
+                technology_group = lotr_giant
+            }
+            country_event = { 
+                id = LOU_races.8
+            }
+        }
+        # Great Spider
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "great_spider_buff" }
+                technology_group = lotr_great_spider
+            }
+            country_event = { 
+                id = LOU_races.9
+            }
+        }
+        # Half Dwarf
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "half_dwarf_buff" }
+                technology_group = lotr_half_dwarf
+            }
+            country_event = { 
+                id = LOU_races.10
+            }
+        }
+        # Hobbit
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "hobbit_buff" }
+                technology_group = lotr_hobbit
+            }
+            country_event = { 
+                id = LOU_races.11
+            }
+        }
+        # Half Orc
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "half_orc_buff" }
+                technology_group = lotr_half_orc
+            }
+            country_event = { 
+                id = LOU_races.12
+            }
+        }
+        # Orc
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "orc_buff" }
+                technology_group = lotr_orc
+            }
+            country_event = { 
+                id = LOU_races.13
+            }
+        }
+        # Troll
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "troll_buff" }
+                technology_group = lotr_troll
+            }
+            country_event = { 
+                id = LOU_races.14
+            }
+        }
+        # Uruk-hai
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "uruk_hai_buff" }
+                technology_group = lotr_uruk_hai
+            }
+            country_event = { 
+                id = LOU_races.15
+            }
+        }
+        # Wizard
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "wizard_buff" }
+                technology_group = lotr_wizard
+            }
+            country_event = { 
+                id = LOU_races.16
+            }
+        }
+        # Wights
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "wights_buff" }
+                technology_group = lotr_wights
+            }
+            country_event = { 
+                id = LOU_races.17
+            }
+        }
+    }  
+}
+
+# Flag Setup
+country_event = {
+	id = LOU_setup.3
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+	is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_global_flag = completed_lotr_flag_setup }
+    }
+
+    immediate = {
+        set_global_flag = completed_lotr_flag_setup
+    }
+
+    option = {
+        name = "dummy.1.a"
+        
+        trigger_switch = {
+			on_trigger = started_in
+			2954.1.1 = { setup_global_flag_after_2953 = yes}
+			2942.1.1 = { setup_global_flag_after_2941 = yes}
+			2943.1.1 = { setup_global_flag_after_2942 = yes}
+			2794.1.1 = { setup_global_flag_after_2793 = yes}
+			2771.1.1 = { setup_global_flag_after_2770 = yes}
+			2760.1.1 = { setup_global_flag_after_2759 = yes}
+		}
+    }  
+}

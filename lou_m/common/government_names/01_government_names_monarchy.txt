@@ -303,3 +303,27 @@ gov_great_khaganate_of_nurn = {
 		has_reform = great_khaganate_of_nurn_reform
 	}
 }
+
+gov_empire_of_rhun = {
+	rank = {
+		1 = EMPIRE_OF_RHUN
+		2 = EMPIRE_OF_RHUN
+		3 = EMPIRE_OF_RHUN
+	}
+	
+	ruler_male = {
+		1 = WARLORD
+		2 = WARLORD
+		3 = WARLORD
+	}
+	
+	ruler_female = {
+		1 = WARLORD
+		2 = WARLORD
+		3 = WARLORD
+	}
+	
+	trigger = {
+		has_reform = empire_of_rhun_reform
+	}
+}

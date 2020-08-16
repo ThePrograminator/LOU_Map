@@ -1,0 +1,38 @@
+establish_clout_decision = {
+	empire = celestial_empire
+	emperor = {
+		ae_impact = -0.2
+	}
+}
+
+push_into_the_west_decision = {
+	empire = celestial_empire
+	emperor = {
+		army_tradition = 1
+	}
+	required_reform = establish_clout_decision
+}
+
+reform_land_cultivation_decision = {
+	empire = celestial_empire
+	emperor = {
+		global_autonomy = -0.05
+	}
+	required_reform = push_into_the_west_decision
+}
+
+military_overseers_decision = {
+	empire = celestial_empire
+	emperor = {
+		core_creation = -0.2
+	}
+	required_reform = reform_land_cultivation_decision
+}
+
+centralize_military_rule_decision = {
+	empire = celestial_empire
+	emperor = {
+		country_military_power = 1
+	}
+	required_reform = military_overseers_decision
+}

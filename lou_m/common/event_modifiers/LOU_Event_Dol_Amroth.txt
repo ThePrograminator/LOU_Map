@@ -1,0 +1,38 @@
+dol_amroth_harpers_donated = {
+	global_unrest = -1
+	stability_cost_modifier = -0.25
+}
+
+dol_amroth_scholar_donated = {
+	technology_cost = -0.05
+}
+
+dol_amroth_mason_donated = {
+	build_cost = -0.1
+	build_time = -0.1
+}
+
+dol_amroth_cavalry_bonus = {
+	cavalry_power = 0.15
+	infantry_cost = 0.25
+	galley_cost = 0.25
+}
+
+dol_amroth_infantry_bonus = {
+	infantry_power = 0.15
+	cavalry_cost = 0.25
+	galley_cost = 0.25
+}
+
+dol_amroth_galley_bonus = {
+	galley_power = 0.15
+	infantry_cost = 0.25
+	cavalry_cost = 0.25
+}
+
+province_dol_amroth_coast_raided = {
+	local_tax_modifier = -0.25
+	local_production_efficiency = -0.25
+	local_manpower = -0.25
+	local_state_maintenance_modifier = 0.25
+}

@@ -1,0 +1,90 @@
+namespace = LOU_orc_raiders
+
+province_event = {
+	id = LOU_orc_raiders.1
+	title = "LOU_orc_raiders.1.title"
+	desc = "LOU_orc_raiders.1.desc"
+	picture = orc_raid
+	
+	trigger = {
+		OR = {
+			area = forithilien_area
+			area = harithilien_area
+			area = osgiliath_area
+			area = emyn_muil_area
+		} 
+		owner = {
+			NOT = {
+				is_year = 2942
+				tag = V17
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_haruzani
+				culture_group = culture_group_ulgath
+				has_country_modifier = spawn_orc_raider_timer
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.55
+			ROOT = { owner = {war_exhaustion = 10 } }
+		}
+		modifier = {
+			factor = 0.65
+			ROOT = { owner = {war_exhaustion = 15 } }
+		}
+		modifier = {
+			factor = 0.85
+			owner = {
+				tag = X01
+			}
+		}
+	}
+	
+	option = {
+		name = "LOU_orc_raiders.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - lotr_general.23 - Option : lotr_general.23.a" }
+
+		hidden_effect = {
+			owner = {
+				add_country_modifier = {
+					name = spawn_orc_raider_timer 
+					duration = 1095
+					hidden = yes
+				}
+			}
+		}
+		random_list = {
+			5 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 4
+				}
+			}
+			10 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 3
+				}
+			}
+			20 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 2
+				}
+			}
+			65 = {
+				spawn_rebels = {
+					type = orc_raider_rebels
+					size = 1
+				}
+			}
+		}
+	}
+}
+

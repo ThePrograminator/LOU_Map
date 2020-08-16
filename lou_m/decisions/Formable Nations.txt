@@ -1,0 +1,458 @@
+country_decisions = {
+    #-------------------------
+    # Arnor
+    #-------------------------
+	arnor_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W57
+				tag = X01
+			}
+			culture_group = culture_group_numenorean
+
+			any_owned_province = {
+				OR = {
+					region = arthedain_region
+					region = cardolan_region
+					region = rhudaur_region
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+            OR = {
+                region = arthedain_region
+                region = cardolan_region
+                region = rhudaur_region
+            }
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = W57 }
+            capital_scope = {
+				OR = {
+                    region = arthedain_region
+                    region = cardolan_region
+                    region = rhudaur_region
+                }
+				is_core = ROOT
+			}
+			cardolan_region = {
+				type = all
+				owned_by = ROOT
+			}
+			arthedain_region = {
+				type = all
+				owned_by = ROOT
+			}
+			rhudaur_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = W57
+			W57 = {
+				set_capital = 644		# Annunimas
+			}
+			
+            add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+    
+    #-------------------------
+    # Arthedain
+    #-------------------------
+    arthedain_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W54
+				exists = W57
+				tag = X01
+			}
+			culture_group = culture_group_numenorean
+
+			any_owned_province = {
+				OR = {
+					region = arthedain_region
+					region = cardolan_region
+					region = rhudaur_region
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+			region = arthedain_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = W54 }
+            capital_scope = {
+				region = arthedain_region
+				is_core = ROOT
+			}
+			arthedain_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = W54
+			W54 = {
+				set_capital = 644		# Annunimas
+			}
+			
+			add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+    
+    #-------------------------
+    # Cardolan
+    #-------------------------
+    cardolan_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W55
+				exists = W57
+				tag = X01
+			}
+			culture_group = culture_group_numenorean
+
+			any_owned_province = {
+				OR = {
+					region = arthedain_region
+					region = cardolan_region
+					region = rhudaur_region
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+			region = cardolan_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = W55 }
+            capital_scope = {
+				region = cardolan_region
+				is_core = ROOT
+			}
+			cardolan_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = W55
+			W55 = {
+				set_capital = 170		# Annunimas
+			}
+			
+            add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+    
+    #-------------------------
+    # Rhudaur
+    #-------------------------
+    rhudaur_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W56
+				exists = W57
+				tag = X01
+			}
+			culture_group = culture_group_numenorean
+
+			any_owned_province = {
+				OR = {
+					region = arthedain_region
+					region = cardolan_region
+					region = rhudaur_region
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+			region = rhudaur_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = W56 }
+            capital_scope = {
+				region = rhudaur_region
+				is_core = ROOT
+			}
+			rhudaur_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = W56
+			W56 = {
+				set_capital = 365		# Annunimas
+			}
+            
+            add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+    
+    #-------------------------
+    # Gondor
+    #-------------------------
+    gondor_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = X01 }
+				religion = religion_dunedain
+				culture_group = culture_group_numenorean
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+            OR = {
+                area = minas_tirith_area
+                area = osgiliath_area
+                province_id = 17
+                province_id = 51
+            }
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 10
+            
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = X01 }
+			
+			minas_tirith_area = {
+				type = all
+				owned_by = ROOT
+			}
+			osgiliath_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 17 #Pelargir
+			owns_core_province = 52 #Curedain
+		}
+		effect = {
+			change_tag = X01
+			X01 = {
+				set_capital = 413		# Minas Tirith
+			}
+            
+			add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+    
+    #-------------------------
+    # Khand
+    #-------------------------
+    khand_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W58
+			}
+			primary_culture = culture_variags
+
+			any_owned_province = {
+				region = khand_region
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+            region = khand_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = W58 }
+            capital_scope = {
+				region = khand_region
+				is_core = ROOT
+			}
+			khand_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = W58
+			W58 = {
+				set_capital = 443		# Annunimas
+			}
+			
+            add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

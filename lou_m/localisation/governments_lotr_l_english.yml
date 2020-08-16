@@ -25,6 +25,7 @@
  elf_gov_name: "Elf Government"
  melkor_gov_name: "Melkor Government"
  eru_gov_name: "Eru’s Children Government"
+ 
  #---------------------------------------------
  # Ranks
  #---------------------------------------------
@@ -96,6 +97,8 @@
  ENTMOOT: "Entmoot Council"
  GRAND_ENTMOOT: "Grand Entmoot Council"
  GREAT_ENTMOOT: "Great Entmoot Council"
+ 
+ EMPIRE_OF_RHUN: "Empire of Rhûn"
 
  #---------------------------------------------
  # Ruler Titles
@@ -140,6 +143,36 @@
  TARB: "Tarb"
  AUTARB: "Autarb"
  NHAZADH: "Nhazadh"
+ 
+ WARLORD: "Warlord"
+ 
+ #---------------------------------------------
+ # Government Tiers
+ #---------------------------------------------
+ dwarven_cause: "Dwarven Cause"
+ dwarven_cause_desc: "We must decide here and now the greatest cause for our nation and kinsmen."
+ 
+ elven_cause: "Elven Cause"
+ elven_cause_desc: "We must decide here and now the greatest cause for our nation and kinsmen."
+ 
+ orc_tribe_decision: "Tribal Decision"
+ orc_tribe_decision_desc: "We must decide here and now how our tribes of orcs are structured."
+ 
+ concentration_of_production: "Concentration of Production"
+ concentration_of_production_desc: "We must decide what our production must be focused on."
+ 
+ orc_cause: "Orc Cause"
+ orc_cause_desc: "We must decide here and now the greatest cause for our orcs."
+ 
+ military_organisation: "Military Organisation"
+ military_organisation_desc: "We must decide how to organise our military in an effective manner."
+ 
+ economic_policy: "Economic Policy"
+ economic_policy_desc: "We msut decide how to organise our economy in an effective manner."
+ 
+ seat_of_authority: "Seat of Authority"
+ seat_of_authority_desc: "The seat of authority within the nation."
+ 
  #---------------------------------------------
  # Mechanics
  #---------------------------------------------
@@ -170,25 +203,9 @@
  tribe_mechanic: "Tribal Government"
  tribe_mechanic_desc: "This is a Tribal Government."
  
- dwarven_cause: "Dwarven Cause"
- dwarven_cause_desc: "We must decide here and now the greatest cause for our nation and kinsmen."
- 
- elven_cause: "Elven Cause"
- elven_cause_desc: "We must decide here and now the greatest cause for our nation and kinsmen."
- 
- orc_tribe_decision: "Tribal Decision"
- orc_tribe_decision_desc: "We must decide here and now how our tribes of orcs are structured."
- 
- concentration_of_production: "Concentration of Production"
- concentration_of_production_desc: "We must decide what our production must be focused on."
- 
- orc_cause: "Orc Cause"
- orc_cause_desc: "We must decide here and now the greatest cause for our orcs."
- 
  #---------------------------------------------
  # Government Form (Monarchy)
  #---------------------------------------------
- 
  kingship_reform: "Kingship"
  kingship_reform_desc: "A realm governed by a king."
  lotr_kingship_legacy: "Kingship"
@@ -214,10 +231,104 @@
  lotr_great_khaganate_of_nurn_legacy: "Great Khaganate of Nûrn"
  lotr_great_khaganate_of_nurn_legacy_desc: "A realm governed by the Khaganate."
  
+ empire_of_rhun_reform: "Empire of Rhûn"
+ empire_of_rhun_reform_desc: "The current warlord of the Rhûn region."
+ empire_of_rhun_legacy: "Empire of Rhûn"
+ empire_of_rhun_legacy_desc: "The current warlord of the Rhûn region."
+ 
+ # Hereditary vs. Nobility
+ enforce_naval_privileges_reform: "Enforce Naval Privileges"
+ enforce_naval_privileges_reform_desc: "Our nation is a seafaring one, and as our nobility demands control over aspects of our naval strategy."
+ 
+ cultural_syncretism_reform: "Cultural Syncretism"
+ cultural_syncretism_reform_desc: "Our nation is comprised our a multitude of different cultures. Let us harness our diversity to propel the nation forward."
+ 
+ diplomatic_positions_reform: "Diplomatic Positions"
+ diplomatic_positions_reform_desc: "Grant our nobility more positions within our diplomatic corps."
+ 
+ mandatory_court_attendance_reform: "Mandatory Court Attendance"
+ mandatory_court_attendance_reform_desc: "Mandate the attendance of court by all of our nobles."
+ 
+ talatherim_nobility_reform: "Talatherim Nobility"
+ talatherim_nobility_reform_desc: "The nobles of the East are known for their brutal effectiveness in war."
+ 
+ gondorian_nobility_reform: "Gondorian Nobility"
+ gondorian_nobility_reform_desc: "The proximity of Gondor to the harsh lands of Mordor have lead to a tradition of military education within the elite caste."
+ 
+ rohirrim_nobility_reform: "Rohirrim Nobility"
+ rohirrim_nobility_reform_desc: "The plains of Rohan have encouraged the tradition of horse-riding. Almost all nobles are proficient upon a horse."
+ 
+ # Bureaucracy
+ regional_fortifications_reform: "Regional Fortifications"
+ regional_fortifications_reform_desc: "Invest in the fortifications in important areas of our nation. This will make our land far more defensible during war-time."
+ 
+ local_enforcers_reform: "Local Enforcers"
+ local_enforcers_reform_desc: "Send enforcers to troublesome villages and townships to enforce the rule of law in locations where the army would struggle to reach."
+ 
+ independent_vassals_reform: "Independant Vassals"
+ independent_vassals_reform_desc: "Grant our vassals a free-hand when it comes to internal affairs. This will please their nobility and make tax collection more efficient."
+ 
+ city_planning_reform: "City Planning"
+ city_planning_reform_desc: "Ensure our cities and towns are planned correctly. In the long-term this will help us administrate our nation."
+ 
+ # Military Organisation
+ feudal_levies_reform: "Feudal Levies"
+ feudal_levies_reform_desc: "Our feudal subjects shall be subjected to manpower levies during times of war."
+ 
+ royal_guard_reform: "Royal Guard"
+ royal_guard_reform_desc: "A royal guard shall be established, acting as an elite force in its own right."
+ 
+ mercenary_corps_reform: "Mercenary Corps"
+ mercenary_corps_reform_desc: "The nation shall rely on mercenaries instead of our own."
+ 
+ professional_army_reform: "Professional Army"
+ professional_army_reform_desc: "The nation shall rely on our own professional army, and discourage the use of mercenaries where ever possible."
+ 
+ # Growth of Administration
+ stewards_in_administration_reform: "Stewards in Administration"
+ stewards_in_administration_reform_desc: "The steward faction have established themselves firmly within our government."
+ 
+ merchants_in_administration_reform: "Merchants in Administration"
+ merchants_in_administration_reform_desc: "The merchant faction have established themselves firmly within our government."
+ 
+ nobility_in_administration_reform: "Nobles in Administration"
+ nobility_in_administration_reform_desc: "The nobility faction have established themselves firmly within our government."
+ 
+ commoners_in_administration_reform: "Commoners in Administration"
+ commoners_in_administration_reform_desc: "The commoner faction have established themselves firmly within our government."
+ 
+ # Deliberative Assembly
+ aristocratic_court_reform: "Aristocratic Court"
+ aristocratic_court_reform_desc: "Populate our royal court with aristocrats, ensuring they remain up-to-date on the latest happenings throughout the kingdom."
+ 
+ integrated_elites_reform: "Integrated Elites"
+ integrated_elites_reform_desc: "Encourage foreign nobility and other such elites to integrate into society fully."
+ 
+ diverse_estates_reform: "Diverse Estates"
+ diverse_estates_reform_desc: "Encourage diversity within the differing factions throughout our nation."
+ 
+ # Economic Policy
+ strengthen_industry_reform: "Strengthen Industry"
+ strengthen_industry_reform_desc: "Let us focus on strengthening our industrial output."
+ 
+ mercantilism_reform: "Mercantilism"
+ mercantilism_reform_desc: "Let us focus on improving our markets and the conditions for our traders."
+ 
+ noble_taxes_reform: "Noble Taxation"
+ noble_taxes_reform_desc: "Let us focus on extracting wealth from our nobility."
+ 
+ # Seat of Authority
+ central_authority_reform: "Central Authority"
+ central_authority_reform_desc: "Authority within our nation is centralized in our capital."
+ 
+ racial_autonomy_reform: "Racial Autonomy"
+ racial_autonomy_reform_desc: "The treatment of aligned races within our nation is fair and just, granting autonomy to the minor races."
+ 
+ # Separation of Power
+ 
  #---------------------------------------------
  # Government Form (Republic)
  #---------------------------------------------
- 
  mayorship_reform: "Mayorship"
  mayorship_reform_desc: "A realm governed by a Mayor."
  lotr_mayorship_legacy: "Mayorship"
@@ -228,10 +339,72 @@
  lotr_thainship_legacy: "Thainship"
  lotr_thainship_legacy_desc: "A realm governed by a Thain."
  
+ maritime_republic_reform: "Maritime Republic"
+ maritime_republic_reform_desc: "A republic specialising in trade and sailing."
+ maritime_republic_legacy: "Maritime Republic"
+ maritime_republic_legacy_desc: "A republic specialising in trade and sailing."
+ 
+ trading_city_reform: "Trading City"
+ trading_city_reform_desc: "A tradiing city belonging to a maritime republic."
+ 
+ # Republican Virtues
+ mixed_republic_reform: "Mixed Republic"
+ mixed_republic_reform_desc: "Our nation prides itself on the mixed representation within our republican processes."
+ 
+ independence_reform: "Independence"
+ independence_reform_desc: "Our nation prides itself on its independence from other nations, and will fight to preserve it."
+ 
+ sovereignty_reform: "Sovereignty"
+ sovereignty_reform_desc: "The sovereignty of our republic is to be defended, no matter the cost."
+ 
+ # Frequency of Elections
+ favour_the_thain_reform: "Favour the Thain"
+ favour_the_thain_reform_desc: "Consolidate power in the Thain, granting him extensive powers over the lands of the Shire."
+ 
+ favour_the_mayor_reform: "Favour the Mayor"
+ favour_the_mayor_reform_desc: "Consolidate power in the Mayor, granting him extensive powers over the lands of the Shire."
+ 
+ favour_the_shire_reform: "Favour the Shire"
+ favour_the_shire_reform_desc: "Assign power to individuals within the lands of the Shire."
+ 
+ # Regionalism
+ mercantile_divisions_reform: "Mercantile Divisions"
+ mercantile_divisions_reform_desc: "Assign power to the merchants in their respective reigions, benefiting the nation through more efficient trade."
+ 
+ advanced_bookkeeping_reform: "Advanced Book-keeping"
+ advanced_bookkeeping_reform_desc: "Institute advanced book-keepeing techniques to ensure the treasury is managed safely."
+ 
+ communal_territories_reform: "Communal Territories"
+ communal_territories_reform_desc: "Allow territories on the fringe of our nation to operate with more autonomy."
+ 
+ # Consolidation of Power
+ absolute_rule_reform: "Absolute Rule"
+ absolute_rule_reform_desc: "The extent of our nation has caused power to coalesced in the hands of the republican ruler."
+ 
+ # Guiding Principle of Administration
+ racial_equality_principle_reform: "Racial Equality"
+ racial_equality_principle_reform_desc: "Our guiding principle is to treat all forms of our race as equals."
+ 
+ conquest_principle_reform: "Conquest"
+ conquest_principle_reform_desc: "Our guiding principle is to conquer those that would wish to subdue us!"
+ 
+ # Electorate
+ fair_electorate_reform: "Fair Electorate"
+ fair_electorate_reform_desc: "The ability to vote is now open to all classes within our society, no matter what."
+ 
+ naval_electorate_reform: "Naval Electorate"
+ naval_electorate_reform_desc: "Narrow the electorate to those that serve in our navy, the true base of power in our nation."
+ 
+ army_electorate_reform: "Military Electorate"
+ army_electorate_reform_desc: "Narrow the electorate to those that serve in our army, the true base of power in our nation."
+ 
+ # Question of Dictatorship
+ rule_for_life_reform: "Rule for Life"
+ rule_for_life_reform_desc: "Our republican ruler has become a despot through shear force of will, and will no longer vacate their seat of power."
+ 
  #---------------------------------------------
  # Government Form (Tribal)
  #---------------------------------------------
- 
  lotr_clan_legacy: "Clan"
  lotr_clan_legacy_desc: "A realm ruled as a Chiefdom."
  
@@ -253,10 +426,29 @@
  lotr_khaganate_ruler_legacy: "Khaganate Ruler"
  lotr_khaganate_ruler_legacy_desc: "A realm governed by a Lord."
  
+ # Tribal Cultural Values
+ village_raids_reform: "Village Raids"
+ village_raids_reform_desc: "Our tribal host makes a habit of raiding unguarded villages, looting what they can."
+ 
+ law_of_peace_reform: "Law of Peace"
+ law_of_peace_reform_desc: "The Daen people that once inhabited all of the lands controlled by Gondor are a peaceful folk, and extolled this value whenever possible."
+ 
+ herders_of_the_plains_reform: "Herders of the Plains"
+ herders_of_the_plains_reform_desc: "Our tribesfolk are adept at herding across the vast plains they inhabit."
+ 
+ # Tribal Religion
+ code_of_nomads: "Code of Nomads"
+ code_of_nomads_desc: "As nomads, our tribesfolk live by a code that guides their moral actions."
+ 
+ # Tribal Modernization
+ birth_of_the_khaganate_reform: "Birth of the Khaganate"
+ birth_of_the_khaganate_reform_desc: "Let us give birth to a glorious khaganate, in which our nation shall revel in glory."
+ 
+ # Tribal Reformation
+ 
  #---------------------------------------------
  # Government Form (Orc)
  #---------------------------------------------
- 
  lotr_orc_clan_reform: "Orc Clan"
  lotr_orc_clan_reform_desc: "A realm of orcs ruled as a chiefdom."
  lotr_orc_clan_legacy: "Orc Clan"
@@ -287,10 +479,26 @@
  lotr_mordor_legacy: "Sauron"
  lotr_mordor_legacy_desc: "This land is ruled by Sauron."
  
+ # Concentration of Production
+ food_production_reform: "Food Production Focus"
+ food_production_reform_desc: "We must focus our attention to securing food for our many orcs."
+ 
+ weapons_production_reform: "Weapons Production Focus"
+ weapons_production_reform_desc: "We must assure that our orcs are well equiped."
+ 
+ machinery_production_reform: "Machinery Production Focus"
+ machinery_production_reform_desc: "We must assure that the machines of war are plentyful and always working away."
+ 
+ # Orc Cause
+ total_destruction_reform: "Total Destruction"
+ total_destruction_reform_desc: "All creation and life must be destroyed."
+ 
+ total_dominance_reform: "Total Dominance"
+ total_dominance_reform_desc: "All creation must be slaves of the orcs."
+ 
  #---------------------------------------------
  # Government Form (Dwarf)
  #---------------------------------------------
- 
  lordship_dwarf_reform: "Lordship"
  lordship_dwarf_reform_desc: "A realm governed by a Lord."
  lotr_lordship_dwarf_legacy: "Lordship"
@@ -306,10 +514,28 @@
  lotr_guild_aristocracy_legacy: "Guild Aristocracy"
  lotr_guild_aristocracy_legacy_desc: "A realm governed by a Chairman."
  
+ # Reforms
+ internal_mission_dwarf_reform: "Internal Mission"
+ internal_mission_dwarf_reform_desc: "We must tend to our own concerns."
+ 
+ external_mission_dwarf_reform: "External Mission"
+ external_mission_dwarf_reform_desc: "We must must not turn a blind eye to the world."
+ 
+ safeguard_dwelling_reform: "Safeguard Dwellings"
+ safeguard_dwelling_reform_desc: "We must focus our attention to secure our home."
+ 
+ recapture_lost_dwellings_reform: "Recapture Lost Dwellings"
+ recapture_lost_dwellings_reform_desc: "We must retake our lost lands."
+ 
+ expanding_dwellings_reform: "Expand Dwellings"
+ expanding_dwellings_reform_desc: "We must focus on the building and expansion of our current dwellings."
+ 
+ economic_growth_reform: "Economic Growth"
+ economic_growth_reform_desc: "We must focus on the economy of our entire realm."
+ 
  #---------------------------------------------
  # Government Form (Elf)
  #---------------------------------------------
- 
  lordship_elf_reform: "Lordship"
  lordship_elf_reform_desc: "A realm governed by a Lord."
  lotr_lordship_elf_legacy: "Lordship"
@@ -325,10 +551,26 @@
  lotr_principality_elf_legacy: "Principality"
  lotr_principality_elf_legacy_desc: "A realm governed by a Prince or Princess."
  
+ # Mission
+ internal_mission_elf_reform: "Internal Mission"
+ internal_mission_elf_reform_desc: "We must tend to our own concerns."
+ 
+ external_mission_elf_reform: "External Mission"
+ external_mission_elf_reform_desc: "We must must not turn a blind eye to the world."
+ 
+ # Elven Cause
+ regaining_lost_artifacts_reform: "Regaining Lost Artifacts"
+ regaining_lost_artifacts_reform_desc: "We must focus our attention to securing lost artifacts of our people."
+ 
+ reconquer_our_lands_reform: "Reconquer Our Lands"
+ reconquer_our_lands_reform_desc: "We must retake our lost lands."
+ 
+ peace_keepers_reform: "Peace Keepers"
+ peace_keepers_reform_desc: "We must focus on the well being of all good races of middle-earth."
+ 
  #---------------------------------------------
  # Government Form (Melkor)
  #---------------------------------------------
- 
  lotr_troll_clan_reform: "Troll Clan"
  lotr_troll_clan_reform_desc: "A realm of trolls ruled as a chiefdom."
  lotr_troll_clan_legacy: "Troll Clan"
@@ -344,10 +586,11 @@
  lotr_spider_government_legacy: "Spider Domain"
  lotr_spider_government_legacy_desc: "A realm of Spiders."
  
+ # Reforms
+ 
  #---------------------------------------------
  # Government Form (Eru’s Children)
  #---------------------------------------------
- 
  lotr_ent_government_reform: "Entmoot Council"
  lotr_ent_government_reform_desc: "A realm of Ents."
  lotr_ent_government_legacy: "Entmoot Council"
@@ -363,55 +606,5 @@
  lotr_giant_government_legacy: "Giant Kingdom"
  lotr_giant_government_legacy_desc: "A realm of Giants."
 
- #---------------------------------------------
- # Internal vs External Mission (Dwarf)
- #---------------------------------------------
+ # Reforms
  
- internal_mission_dwarf_reform: "Internal Mission"
- internal_mission_dwarf_reform_desc: "We must tend to our own concerns."
- external_mission_dwarf_reform: "External Mission"
- external_mission_dwarf_reform_desc: "We must must not turn a blind eye to the world."
- 
- #---------------------------------------------
- # Dwarven Cause
- #---------------------------------------------
- 
- safeguard_dwelling_reform: "Safeguard Dwellings"
- safeguard_dwelling_reform_desc: "We must focus our attention to secure our home."
- recapture_lost_dwellings_reform: "Recapture Lost Dwellings"
- recapture_lost_dwellings_reform_desc: "We must retake our lost lands."
- expanding_dwellings_reform: "Expand Dwellings"
- expanding_dwellings_reform_desc: "We must focus on the building and expansion of our current dwellings."
- economic_growth_reform: "Economic Growth"
- economic_growth_reform_desc: "We must focus on the economy of our entire realm."
- 
- #---------------------------------------------
- # Elven Cause
- #---------------------------------------------
- 
- regaining_lost_artifacts_reform: "Regaining Lost Artifacts"
- regaining_lost_artifacts_reform_desc: "We must focus our attention to securing lost artifacts of our people."
- reconquer_our_lands_reform: "Reconquer Our Lands"
- reconquer_our_lands_reform_desc: "We must retake our lost lands."
- peace_keepers_reform: "Peace Keepers"
- peace_keepers_reform_desc: "We must focus on the well being of all good races of middle-earth."
- 
- #---------------------------------------------
- # Concentration of Production
- #---------------------------------------------
- 
- food_production_reform: "Food Production Focus"
- food_production_reform_desc: "We must focus our attention to securing food for our many orcs."
- weapons_production_reform: "Weapons Production Focus"
- weapons_production_reform_desc: "We must assure that our orcs are well equiped."
- machinery_production_reform: "Machinery Production Focus"
- machinery_production_reform_desc: "We must assure that the machines of war are plentyful and always working away."
- 
- #---------------------------------------------
- # Orc Cause
- #---------------------------------------------
- 
- total_destruction_reform: "Total Destruction"
- total_destruction_reform_desc: "All creation and life must be destroyed."
- total_dominance_reform: "Total Dominance"
- total_dominance_reform_desc: "All creation must be slaves of the orcs."

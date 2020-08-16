@@ -1,0 +1,232 @@
+#------------------------------
+# Bureaucracy
+#------------------------------
+centralize_reform = {
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_autonomy = -0.05
+	}
+    ai = {
+		factor = 1
+	}
+}
+
+decentralize_reform = {
+	icon = "map"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = 2
+	}
+    ai = {
+		factor = 1
+	}
+}
+regional_fortifications_reform = {
+	icon = "city_wall"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		garrison_size = 0.2
+		fort_maintenance_modifier = -0.2
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 5
+			calc_true_if = {
+				all_subject_country = {
+					OR = {
+						is_march = yes
+						is_vassal = yes
+						is_lesser_in_union = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+}
+local_enforcers_reform = {
+	icon = "commander_looking"
+	allow_normal_conversion = yes
+    
+	modifiers = {
+		global_unrest = -2
+	}
+	ai = {
+		factor = 1
+	}
+}
+independent_vassals_reform = {
+	icon = "gondor_flag"
+	allow_normal_conversion = no
+
+	modifiers = {
+		reduced_liberty_desire = 5
+		vassal_income = 0.25
+	}
+	ai = {
+		factor = 1
+	}
+}
+city_planning_reform = {
+	icon = "gondor"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		governing_capacity_modifier = 0.05
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#------------------------------
+# Military Organisation
+#------------------------------
+feudal_levies_reform = {
+	icon = "gondor_ranks"
+	allow_normal_conversion = yes
+	
+	modifiers = {
+		war_taxes_cost_modifier = -0.5
+		nobles_influence_modifier = 0.05
+		vassal_forcelimit_bonus = 0.5
+	}
+    
+	ai = {
+		factor = 1
+	}
+}
+royal_guard_reform = {
+	icon = "gondor_soldier_defend"
+	allow_normal_conversion = yes
+	
+	modifiers = {
+		land_morale = 0.05
+		recover_army_morale_speed = 0.1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+mercenary_corps_reform = {
+	icon = "variags"
+	allow_normal_conversion = yes
+    
+	modifiers = {
+		mercenary_manpower = 0.1
+		reinforce_speed = 0.1
+		merc_maintenance_modifier = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
+professional_army_reform = {
+	icon = "rohan_charge"
+	allow_normal_conversion = yes
+	
+	modifiers = {
+		discipline = 0.03
+        drill_decay_modifier = -0.2
+		mercenary_discipline = -0.1
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+#------------------------------
+# Growth of Administration
+#------------------------------
+stewards_in_administration_reform = {
+	icon = "judge"
+	allow_normal_conversion = yes
+    
+	modifiers = {
+		governing_capacity = 100
+        
+		stewards_loyalty_modifier = 0.1
+        stewards_influence_modifier = 0.1
+	}
+}
+merchants_in_administration_reform = {
+	icon = "merchant"
+	allow_normal_conversion = yes
+    
+	modifiers = {
+		trade_efficiency = 0.15
+        
+		merchants_loyalty_modifier = 0.1
+        merchants_influence_modifier = 0.1
+	}
+}
+nobility_in_administration_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = yes
+    
+	modifiers = {
+		legitimacy = 1
+        
+		nobles_loyalty_modifier = 0.1
+        nobles_influence_modifier = 0.1
+	}
+}
+commoners_in_administration_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.2
+        
+		commoners_loyalty_modifier = 0.1
+        commoners_influence_modifier = 0.1
+	}
+}
+
+#------------------------------
+# Economic Policy
+#------------------------------
+strengthen_industry_reform = {
+ 	icon = "osgiliath"
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		production_efficiency = 0.2
+		build_cost = -0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
+mercantilism_reform = {
+ 	icon = "trading_city"
+	allow_normal_conversion = yes
+    
+	effect = {
+		add_mercantilism = 5
+	}
+	modifiers = {
+		trade_efficiency = 0.2
+		merchants = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+noble_taxes_reform = {
+ 	icon = "paper_money_map"
+	allow_normal_conversion = yes
+    
+	modifiers = {
+		global_tax_modifier = 0.2
+		diplomatic_upkeep = 1
+	}
+	ai = {
+		factor = 1
+	}
+}

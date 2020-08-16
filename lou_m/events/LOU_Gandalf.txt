@@ -1,0 +1,210 @@
+namespace = LOU_gandalf
+
+# Most events will be split for good and evil
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_gandalf.1
+	title = "LOU_gandalf.1_t"
+	desc = "LOU_gandalf.1_d"
+	picture = gandalf_events3
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 527 # Dale
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			tag = Y94
+		}
+		check_date = {
+			YEAR = 2944
+			MONTH = 4
+			STARTED_BEFORE = 2945.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_gandalf.1_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.1 - Option : LOU_gandalf.1_a" }
+		owner = {
+			add_stability = 1
+			add_adm_power = 50
+			add_country_modifier = {
+				name = "growth_of_capital"
+				duration = 3650				#10 years
+			}
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+country_event = {
+	id = LOU_gandalf.2
+	title = "LOU_gandalf.2_t"
+	desc = "LOU_gandalf.2_d"
+	picture = gandalf_events4
+
+	trigger = {
+		primary_culture = culture_longbeard
+		
+		NOT  = {
+			has_country_flag = gandalf_found_thrain_event
+		}
+		
+		check_date = {
+			YEAR = 2850
+			MONTH = 7
+			STARTED_BEFORE = 2851.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_gandalf.2_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.2 - Option : LOU_gandalf.2_a" }
+		
+		set_country_flag = gandalf_found_thrain_event
+		
+		add_stability = -1
+		add_country_modifier = {
+			name = "dreams_of_reclaiming_erebor"
+			duration = 5475				#15 years
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_gandalf.3
+	title = "LOU_gandalf.3_t"
+	desc = "LOU_gandalf.3_d"
+	picture = gandalf_events3
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 94 # Michel Delving
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			tag = Y26 # The Shire
+		}
+		check_date = {
+			YEAR = 2758
+			MONTH = 11
+			STARTED_BEFORE = 2759.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_gandalf.3_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.3 - Option : LOU_gandalf.3_a" }
+		owner = {
+			add_stability = 1
+			add_country_modifier = {
+				name = "gandalf_aids_the_shire"
+				duration = 1095				#3 years
+			}
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_gandalf.4
+	title = "LOU_gandalf.4_t"
+	desc = "LOU_gandalf.4_d"
+	picture = gandalf_events3
+
+	#Only Happends once
+	fire_only_once = yes
+
+	trigger = {
+		#Remove this one below, it is just here so the event doesn't fire until you have made it.
+		always = yes
+
+		#Set the id, for the province to spawn
+		province_id = 94 # The Shire 
+
+		#This checks that the owner of the province is not orcs/goblins/trolls etc.
+		#If this doesn't matter then remove
+		owner = {
+			tag = Y26 # The Shire
+		}
+		check_date = {
+			YEAR = 2911
+			MONTH = 11
+			STARTED_BEFORE = 2912.1.1
+		}
+	}
+	
+	option = {
+		name = "LOU_gandalf.4_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.4 - Option : LOU_gandalf.4_a" }
+		owner = {
+			add_country_modifier = {
+				name = "gandalf_and_dunedain_helps_the_shire"
+				duration = 1095				#3 years
+			}
+		}
+	}
+}
+
+#Id must be unique per event, number is just incremented
+province_event = {
+	id = LOU_gandalf.5
+	title = "LOU_gandalf.5_t"
+	desc = "LOU_gandalf.5_d"
+	picture = gandalf_events3
+
+	fire_only_once = yes
+	
+	option = {
+		name = "LOU_gandalf.5_a"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.5 - Option : LOU_gandalf.5_a" }
+		owner = {
+		add_adm_power = 50
+		}
+	}
+	option = {
+		name = "LOU_gandalf.5_b"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.5 - Option : LOU_gandalf.5_b" }
+		owner = {
+		add_dip_power = 50
+		}
+	}
+	option = {
+		name = "LOU_gandalf.5_c"
+
+		#Make sure this log number is also correct to the id, and option name
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.5 - Option : LOU_gandalf.5_c" }
+		owner = {
+		add_mil_power = 50
+		}
+	}
+}

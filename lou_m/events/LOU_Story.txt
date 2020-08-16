@@ -1,0 +1,202 @@
+namespace = LOU_story
+
+########################################
+# Company of Thorin.  
+########################################
+
+country_event = {
+	id = LOU_story.1
+	title = LOU_story.1.t
+	desc = LOU_story.1.d
+	picture = THORINS_COMPANY_eventPicture
+
+	is_triggered_only = yes
+	
+
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+		hidden_effect = {
+			83 = {
+				add_province_modifier = {
+					name = "thorin_position"
+					duration = -1
+					hidden = yes
+				}
+				set_province_flag = thorin_set_position
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = LOU_story.1.a
+		custom_tooltip = tooltip_thorin_company_started
+		FROM = {
+			set_province_flag = thorin_company_path_start
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					has_discovered = 84
+				}
+				country_event = { id = LOU_story.2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = LOU_story.2
+	title = LOU_story.2.t
+	desc = LOU_story.2.d
+	picture = THORINS_COMPANY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		#company_of_thorin = 100		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = LOU_story.2.a
+		custom_tooltip = tooltip_thorin_company_started
+	}
+}
+
+country_event = {
+	id = LOU_story.3
+	title = LOU_story.3.t
+	desc = LOU_story.3.d
+	picture = PAINTER_ARTIST_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		always = yes			
+	}
+
+	option = {
+		name = LOU_story.3.a
+		
+		create_thorin_company_path = yes
+	}
+}
+
+#######################################
+# Fellowship of the Ring
+#######################################
+country_event = {
+	id = LOU_story.4
+	title = LOU_story.4.t
+	desc = LOU_story.4.d
+	picture = FELLOWSHIP_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+		hidden_effect = {
+			#country_event = { id = LOU_story.6 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = LOU_story.4.a
+		custom_tooltip = tooltip_fellowship_started
+		FROM = {
+			set_province_flag = fellowship_path_start
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+					has_discovered = 84
+				}
+				country_event = { id = LOU_story.5 }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = LOU_story.5
+	title = LOU_story.5.t
+	desc = LOU_story.5.d
+	picture = FELLOWSHIP_eventPicture
+
+	is_triggered_only = yes
+	
+
+	trigger = {
+		always = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = LOU_story.5.a
+		custom_tooltip = tooltip_fellowship_started
+	}
+}
+
+country_event = {
+	id = LOU_story.6
+	title = LOU_story.6.t
+	desc = LOU_story.6.d
+	picture = PAINTER_ARTIST_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		always = yes			
+	}
+
+	option = {
+		name = LOU_story.6.a
+		
+		if = {
+			limit = {
+				84 = {
+					NOT = {
+						fellowship_of_ring = 100
+					}
+				}
+				started_in = 3018.1.1
+			}
+			
+			84 = {
+				add_institution_embracement = {
+					which = fellowship_of_ring
+					value = 10
+				}
+			}
+		}
+		
+		create_fellowship_path = yes
+	}
+}

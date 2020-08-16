@@ -1,0 +1,40 @@
+dunedain_failed_harvest = {
+	global_tax_modifier = -0.1
+	global_manpower_modifier = -0.15
+	global_unrest = 1
+}
+
+dunedain_recruite_young_people = {
+	global_manpower_modifier = 0.15
+	global_unrest = 1
+}
+
+dunedain_slacken_uniforms = {
+	land_morale = -0.1
+	land_maintenance_modifier = -0.25
+}
+
+dunedain_increase_uniforms = {
+	global_regiment_cost = 0.25
+	land_maintenance_modifier = 0.1
+}
+
+province_dunedain_defend_province = {
+	local_defensiveness = 0.1
+	local_hostile_attrition = 1
+}
+
+dudedain_harvest_timer = {
+}
+
+dudedain_won_war_timer = {
+}
+
+dudedain_long_war_timer = {
+}
+
+dudedain_battle_lost_timer = {
+}
+
+dudedain_lost_hope_timer = {
+}
