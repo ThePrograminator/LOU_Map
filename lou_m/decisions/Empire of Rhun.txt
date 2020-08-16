@@ -1,0 +1,70 @@
+country_decisions = {
+	form_the_empire_of_rhun = {
+		major = yes
+		potential = {
+            hidden_trigger = {
+                NOT = { has_country_flag = formed_empire_of_rhun }
+            }
+			is_emperor_of_china = yes
+		}
+        provinces_to_highlight = {
+            OR = {
+                region = rhun_region
+                region = rhovanion_region
+                region = kykurian_region
+            }
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			imperial_mandate = 100
+            meritocracy = 100
+            total_development = 500
+            rhun_region = {
+                type = all
+                country_or_subject_holds = ROOT
+            }
+            rhovanion_region = {
+                type = all
+                country_or_subject_holds = ROOT
+            }
+            kykurian_region = {
+                type = all
+                country_or_subject_holds = ROOT
+            }
+		}
+		effect = {
+            hidden_effect = { set_country_flag = formed_empire_of_rhun }
+            
+            override_country_name = EMPIRE_OF_RHUN
+
+            custom_tooltip = EMPIRE_OF_RHUN_INHERIT
+            hidden_effect = {
+                every_subject_country = {
+                    limit = {
+                        is_subject_of_type = tributary_state
+                    }
+                    ROOT = {
+                        inherit = PREV
+                    }
+                }
+            }
+            add_prestige = 50
+			add_country_modifier = {
+				name = "empire_of_rhun"
+				duration = -1
+			}
+            
+            # if = {
+				# limit = { has_custom_ideas = no }
+				# country_event = { id = ideagroups.1 } #Swap Ideas
+			# }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
