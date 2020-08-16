@@ -6,3 +6,117 @@ primary_culture = culture_oplan_din_kaarn
 religion = religion_linerim
 technology_group = lotr_human
 capital = 2901
+
+2750.1.1 = {
+	monarch = {
+		name = "Satenik"
+		dynasty = "Radameistos"
+		birth_date = 2689.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Vahram"
+		dynasty = "Radameistos"
+		birth_date = 2750.1.1
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Eunones"
+		dynasty = "Radameistos"
+		birth_date = 2797.1.1
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+	heir = {
+		monarch_name = "Allogia"
+		name = "Allogia"
+		dynasty = "Radameistos"
+		birth_date = 2793.1.1
+		death_date = 2836.1.1
+		adm = 3
+		dip = 2
+		mil = 0
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Dalita"
+		dynasty = "Radameistos"
+		birth_date = 2871.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+		female = yes
+	}
+	heir = {
+		monarch_name = "Sarukê"
+		name = "Sarukê"
+		dynasty = "Radameistos"
+		birth_date = 2872.1.1
+		death_date = 2912.1.1
+		adm = 0
+		dip = 5
+		mil = 3
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Storanê"
+		dynasty = "Radameistos"
+		birth_date = 2896.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+		female = yes
+	}
+	heir = {
+		monarch_name = "Eufemia"
+		name = "Eufemia"
+		dynasty = "Radameistos"
+		birth_date = 2892.1.1
+		death_date = 2943.1.1
+		adm = 4
+		dip = 2
+		mil = 1
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Kasais"
+		dynasty = "Radameistos"
+		birth_date = 2932.1.1
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+	heir = {
+		monarch_name = "Houri"
+		name = "Houri"
+		dynasty = "Radameistos"
+		birth_date = 2980.1.1
+		death_date = 3003.1.1
+		adm = 1
+		dip = 4
+		mil = 1
+		claim = 100
+	}
+}
+

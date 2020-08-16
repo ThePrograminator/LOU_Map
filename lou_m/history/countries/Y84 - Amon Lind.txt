@@ -17,3 +17,105 @@ historical_rival = Y56
 historical_rival = Y57
 historical_rival = Y59
 historical_rival = Y58
+
+2750.1.1 = {
+	monarch = {
+		name = "Ingoldo"
+		dynasty = "Artanáro"
+		birth_date = 2730.1.1
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Noue"
+		dynasty = "Artanáro"
+		birth_date = 2755.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Celebrían"
+		dynasty = "Artanáro"
+		birth_date = 2820.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+	heir = {
+		monarch_name = "Arwen"
+		name = "Arwen"
+		dynasty = "Artanáro"
+		birth_date = 2801.1.1
+		death_date = 2862.1.1
+		adm = 3
+		dip = 1
+		mil = 0
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Rodnor"
+		dynasty = "Artanáro"
+		birth_date = 2862.1.1
+		adm = 3
+		dip = 0
+		mil = 1
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Ingwë"
+		dynasty = "Artanáro"
+		birth_date = 2917.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+	heir = {
+		monarch_name = "Tinúviel"
+		name = "Tinúviel"
+		dynasty = "Artanáro"
+		birth_date = 2885.1.1
+		death_date = 2907.1.1
+		adm = 5
+		dip = 4
+		mil = 2
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Lúthien"
+		dynasty = "Artanáro"
+		birth_date = 2930.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+		female = yes
+	}
+	heir = {
+		monarch_name = "Nimrodel"
+		name = "Nimrodel"
+		dynasty = "Artanáro"
+		birth_date = 2930.1.1
+		death_date = 3012.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+		claim = 100
+	}
+}
+

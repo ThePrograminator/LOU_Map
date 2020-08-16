@@ -4,3 +4,92 @@ primary_culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 technology_group = lotr_human
 capital = 360
+
+2750.1.1 = {
+	monarch = {
+		name = "Belegorn"
+		dynasty = "Tol Falas"
+		birth_date = 2684.1.1
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Araglas"
+		dynasty = "Tol Falas"
+		birth_date = 2733.1.1
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Golasgil"
+		dynasty = "Tol Falas"
+		birth_date = 2797.1.1
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Aravir"
+		dynasty = "Tol Falas"
+		birth_date = 2871.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+	heir = {
+		monarch_name = "Gilraen"
+		name = "Gilraen"
+		dynasty = "Tol Falas"
+		birth_date = 2857.1.1
+		death_date = 2930.1.1
+		adm = 0
+		dip = 1
+		mil = 1
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Arvedui"
+		dynasty = "Tol Falas"
+		birth_date = 2873.1.1
+		adm = 3
+		dip = 0
+		mil = 3
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Arathorn"
+		dynasty = "Tol Falas"
+		birth_date = 2977.1.1
+		adm = 3
+		dip = 0
+		mil = 3
+	}
+	heir = {
+		monarch_name = "Lothíriel"
+		name = "Lothíriel"
+		dynasty = "Tol Falas"
+		birth_date = 2911.1.1
+		death_date = 2984.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+		claim = 100
+	}
+}
+
