@@ -4261,7 +4261,7 @@ categories =  {
 		movement_cost = 1
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.35
+		local_development_cost = 0.10
 		nation_designer_cost_multiplier = 0.65
 		supply_limit = 5
 		
@@ -4289,7 +4289,7 @@ categories =  {
 		movement_cost = 1.2
 		defence = 1
 		local_defensiveness = 0.2
-		local_development_cost = 0.40
+		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.45
 		supply_limit = 3
 		
@@ -4306,11 +4306,10 @@ categories =  {
 		sound_type = grasslands
 		
 		movement_cost = 1
-		defence = 2
-		local_defensiveness = 0.15
+		local_defensiveness = 0.10
 		local_development_cost = -0.10
 		nation_designer_cost_multiplier = 1.25
-		supply_limit = 6
+		supply_limit = 8
 		allowed_num_of_buildings = 2
 		
 		terrain_override = {
