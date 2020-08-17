@@ -3018,7 +3018,7 @@ guiTypes = {
 			windowType = {
 				name = "select_building"
 				backGround=""
-				position = { x=7 y=7 }
+				position = { x=-210 y=7 }
 				size = { x=345 y=465 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -3030,8 +3030,8 @@ guiTypes = {
 				iconType =
 				{
 					name ="background"
-					spriteType = "GFX_select_building_small_bg"
-					position = { x= 0 y = 0 }
+					spriteType = "GFX_select_building_lou_bg"
+					position = { x= -276 y = -449 }
 					Orientation = "UPPER_LEFT"
 				}
 
@@ -3079,7 +3079,7 @@ guiTypes = {
 			windowType = {
 				name = "select_building_large"
 				backGround=""
-				position = { x=7 y=7 }
+				position = { x=-210 y=7 }
 				size = { x=345 y=465 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -3091,14 +3091,14 @@ guiTypes = {
 				iconType =
 				{
 					name ="background"
-					spriteType = "gfx_select_building_large_bg2"
-					position = { x= 0 y = 0 }
+					spriteType = "GFX_select_building_lou_bg"
+					position = { x= -276 y = -449 }
 					Orientation = "UPPER_LEFT"
 				}
 
 				guiButtonType = {
 					name = "back_button"
-					position = { x=160 y =534}
+					position = { x=-190 y =-432 }
 					quadTextureSprite ="GFX_standard_button_71"
 					tooltip = ""
 					tooltipText =""
@@ -5503,7 +5503,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_trade_outpost_building"
 			position = { x = 4 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5602,7 +5602,7 @@ guiTypes = {
 			name = "build_port_building"
 			#position = { x = 30 y = 894 }
 			position = { x = 4 y = 324 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5627,7 +5627,7 @@ guiTypes = {
 			name = "build_dock_building"
 			#position = { x = 94 y = 894 }
 			position = { x = 68 y = 324 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5659,7 +5659,7 @@ guiTypes = {
 			name = "build_seaport_building"
 			#position = { x = 158 y = 870 }
 			position = { x = 132 y = 300 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -5673,14 +5673,14 @@ guiTypes = {
 			name = "build_dockyard_building"
 			#position = { x = 222 y = 870 }
 			position = { x = 196 y = 374 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		checkboxType = {
 			name = "build_drydock_building"
 			#position = { x = 158 y = 922 }
 			position = { x = 132 y = 350 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5705,7 +5705,7 @@ guiTypes = {
 			name = "build_grand_shipyard_building"
 			#position = { x = 222 y = 922 }
 			position = { x = 196 y = 426 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5792,7 +5792,7 @@ guiTypes = {
 			name = "build_colony_outpost_dwarf_building"
 			#position = { x = 30 y = 1190 }
 			position = { x = 278 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5821,7 +5821,7 @@ guiTypes = {
 			name = "build_settlement_1_dwarf_building"
 			#position = { x = 94 y = 1142 }
 			position = { x = 342 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -5835,7 +5835,7 @@ guiTypes = {
 			name = "build_settlement_2_dwarf_building"
 			#position = { x = 158 y = 1142 }
 			position = { x = 406 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -5849,7 +5849,7 @@ guiTypes = {
 			name = "build_settlement_3_dwarf_building"
 			#position = { x = 222 y = 1142 }
 			position = { x = 470 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		################################################
@@ -5859,7 +5859,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_hold_1_dwarf_building"
 			position = { x = 342 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5881,7 +5881,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_hold_2_dwarf_building"
 			position = { x = 406 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5904,7 +5904,7 @@ guiTypes = {
 			name = "build_hold_3_dwarf_building"
 			#position = { x = 222 y = -352 }
 			position = { x = 470 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -5925,7 +5925,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_1_dwarf_building"
 			position = { x = 342 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -5938,7 +5938,7 @@ guiTypes = {
 			name = "build_capital_2_dwarf_building"
 			#position = { x = 158 y = 352 }
 			position = { x = 406 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -5950,7 +5950,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_3_dwarf_building"
 			position = { x = 470 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		################################################
@@ -6020,7 +6020,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_pallisade_dwarf_building"
 			position = { x = 30 y = 1982 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6045,7 +6045,7 @@ guiTypes = {
 			name = "build_fort_castle_dwarf_building"
 			#position = { x = 94 y = 1982 }
 			position = { x = 544 y = 350 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6126,7 +6126,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_noble_residence_elf_building"
 			position = { x = 553 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6152,7 +6152,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_town_1_elf_building"
 			position = { x = 617 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6164,7 +6164,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_town_2_elf_building"
 			position = { x = 681 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6176,7 +6176,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_town_3_elf_building"
 			position = { x = 745 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		################################################
@@ -6185,8 +6185,8 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "build_fort_1_elf_building"
-			position = { x = 617 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 617 y = -280 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6208,7 +6208,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_2_elf_building"
 			position = { x = 681 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6230,7 +6230,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_3_elf_building"
 			position = { x = 745 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6250,7 +6250,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_1_elf_building"
 			position = { x = 617 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6262,7 +6262,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_2_elf_building"
 			position = { x = 681 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6274,7 +6274,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_3_elf_building"
 			position = { x = 745 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		################################################
@@ -6307,7 +6307,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_elven_fairground_elf_building"
 			position = { x = 576 y = -198 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6329,7 +6329,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_craftsmen_plaza_elf_building"
 			position = { x = 640 y = -198 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6351,7 +6351,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_exotic_wares_market_elf_building"
 			position = { x = 704 y = -198 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6394,7 +6394,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_temple_elf_building"
 			position = { x = 576 y = -98 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6416,7 +6416,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_theatre_elf_building"
 			position = { x = 640 y = -98 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6438,7 +6438,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_amphitheatre_elf_building"
 			position = { x = 704 y = -98 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6558,7 +6558,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_camp_orc_building"
 			position = { x = 828 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6584,7 +6584,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_encampment_1_orc_building"
 			position = { x = 892 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6596,7 +6596,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_encampment_2_orc_building"
 			position = { x = 956 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6608,7 +6608,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_encampment_3_orc_building"
 			position = { x = 1020 y = -400 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		################################################
@@ -6618,7 +6618,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fortress_1_orc_building"
 			position = { x = 892 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6640,7 +6640,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fortress_2_orc_building"
 			position = { x = 956 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6663,7 +6663,7 @@ guiTypes = {
 			name = "build_fortress_3_orc_building"
 			#position = { x = 222 y = 3334 }
 			position = { x = 1020 y = -304 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6683,7 +6683,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_1_orc_building"
 			position = { x = 892 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6695,7 +6695,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_capital_2_orc_building"
 			position = { x = 956 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		iconType = {
@@ -6708,7 +6708,7 @@ guiTypes = {
 			name = "build_capital_3_orc_building"
 			#position = { x = 222 y = 3276 }
 			position = { x = 1020 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		################################################
@@ -6741,7 +6741,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_meat_depot_orc_building"
 			position = { x = 851 y = -198 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6763,7 +6763,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_treasure_trove_orc_building"
 			position = { x = 915 y = -198 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6785,7 +6785,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_stockpile_orc_building"
 			position = { x = 979 y = -198 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6828,7 +6828,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_enforcer_camp_orc_building"
 			position = { x = 851 y = -98 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6850,7 +6850,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_overseer_station_orc_building"
 			position = { x = 915 y = -98 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6872,7 +6872,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_overseer_tower_orc_building"
 			position = { x = 979 y = -98 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6915,7 +6915,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_blacksmith_orc_building"
 			position = { x = 851 y = 2 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6937,7 +6937,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_metal_works_orc_building"
 			position = { x = 915 y = 2 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -6959,7 +6959,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_dark_iron_forge_orc_building"
 			position = { x = 979 y = 2 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7002,7 +7002,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_orc_pit_orc_building"
 			position = { x = 851 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7024,7 +7024,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_orc_fissure_orc_building"
 			position = { x = 915 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7046,7 +7046,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_army_garrison_orc_building"
 			position = { x = 979 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7066,7 +7066,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_warg_pit_orc_building"
 			position = { x = 851 y = 162 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7088,7 +7088,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_warg_arena_orc_building"
 			position = { x = 915 y = 162 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7110,7 +7110,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_troll_cage_orc_building"
 			position = { x = 979 y = 162 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7130,7 +7130,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_workshop_orc_building"
 			position = { x = 851 y = 232 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7152,7 +7152,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_siege_works_orc_building"
 			position = { x = 915 y = 232 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7174,7 +7174,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_great_siege_works_orc_building"
 			position = { x = 979 y = 232 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7217,7 +7217,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_pallisade_orc_building"
 			position = { x = 836 y = 326 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7239,7 +7239,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_wooden_walls_orc_building"
 			position = { x = 900 y = 326 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7261,7 +7261,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_orc_stronghold_orc_building"
 			position = { x = 964 y = 326 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7283,7 +7283,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_fort_large_orc_stronghold_orc_building"
 			position = { x = 1028 y = 326 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7326,7 +7326,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_small_arena_building"
 			position = { x = 836 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7348,7 +7348,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_large_arena_building"
 			position = { x = 900 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7364,7 +7364,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_prisoner_cage_orc_building"
 			position = { x = 964 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7386,7 +7386,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_tortur_chambers_orc_building"
 			position = { x = 1028 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
@@ -7460,7 +7460,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_manufactory"
 			position = { x = -254 y = -368 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		instantTextBoxType={
@@ -7476,7 +7476,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_furnace"
 			position = { x = -202 y = -368 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		instantTextBoxType={
@@ -7489,19 +7489,18 @@ guiTypes = {
 			text = "2000¤"
 		}
 		
-		################################################
+		#-----------------------------------------------------
 		# Actions Buildings (Common)
-		################################################
-		
+		#-----------------------------------------------------
 		iconType = {
 			name = "actions_buildings_banner"
-			position = { x = -271 y = -296 }
+			position = { x = -265 y = -296 }
 			spriteType = "GFX_banner_buildings_grey_small"
 		}
 		
 		instantTextBoxType={
 			name = "title_actions_buildings"
-			position = {x = -231 y = -283 }
+			position = {x = -225 y = -283 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
@@ -7512,19 +7511,19 @@ guiTypes = {
 		iconType ={
 			name ="actions_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = -260 y = -286}
+			position = { x = -255 y = -290 }
 			frame = 8
 		}
 		
 		checkboxType = {
 			name = "build_resettlement_action"
-			position = { x = -254 y = -258 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = -255 y = -256 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		instantTextBoxType={
 			name = "resettlement_action_cost"
-			position = {x = -254 y = -208 }
+			position = {x = -255 y = -206 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
