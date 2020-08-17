@@ -7,7 +7,18 @@ third_age = {
 	
 	religious_conflicts = yes
 	papacy = 1.0
-	
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		seat_in_parliament = -3
+		war_exhaustion = -1
+	}
 
 	objectives = {
 		obj_prestigious_capital_3 = {
@@ -165,9 +176,20 @@ fourth_age = {
 		has_global_flag = fourth_age
 	}
 	
-	
 	papacy = 1.25
-	
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		seat_in_parliament = -3
+		war_exhaustion = -1
+	}
+    
 	objectives = {
 		obj_prestigious_capital = {
             capital_scope = {

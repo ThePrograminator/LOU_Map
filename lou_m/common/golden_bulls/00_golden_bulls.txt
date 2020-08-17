@@ -1,0 +1,81 @@
+warchief_loyalty = {
+    modifier = {
+        curia_powers_cost = -0.5
+    }
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+harad_development = {
+    modifier = {
+		build_cost = -0.1
+        development_cost = -0.1
+    }
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+call_upon_the_tribes = {
+    modifier = {
+        global_regiment_cost = -0.25
+        global_regiment_recruit_speed = -0.25
+    }
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+haradrim_glory = {
+    modifier = {
+        prestige = 1
+        advisor_pool = 2
+    }
+    trigger = {
+        is_papal_controller = yes
+        prestige = 0
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+invasion_preparation = {
+    mechanics = {
+        crusades_after_age_limit
+    }
+	modifier = {
+		army_tradition = 1
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+support_of_the_dark_lord = {
+    modifier = {
+        war_exhaustion = -0.05
+        land_morale = 0.2
+    }
+    trigger = {
+        is_papal_controller = yes
+        alliance_with = V17
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+

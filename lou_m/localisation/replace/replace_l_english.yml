@@ -1,8 +1,13 @@
 ﻿l_english:
+ #-------------------------------------
+ # General
+ #-------------------------------------
  WORLD_YEAR: "Arda $YEAR$ Third Age"
  
+ #-------------------------------------
+ # Missionary Stuff
+ #-------------------------------------
  EXPENSEMIS: "Purification Regiments"
- CONVREL_PAPACY: "The Papacy cannot convert to another race."
  PATRIARCH_DESCRIPTION: "Devotion represents the level devotion the inhabitants of your realm exercise. In provinces matching your realm devotion, high devotion will decrease revolt risk and increase the number of willing soldiers."
  CONFIRMDOF: "Claim the title Racial Leader!"
  CONFIRMDOFDESC: "Are you sure you want to claim the title Racial Leader?"
@@ -86,13 +91,18 @@
  BLM: "Blue Mountains"
  BLM_ADJ: "Dwarves of the Blue Mountains"
  
- # Southron Religon Texts
+ #-------------------------------------
+ # Papacy
+ #-------------------------------------
+ crusades_after_age_limit:0 "Invasions in the Forth Age"
  
- IS_PAPAL_CONTROLLER: "The ruler of $NAME$ is Warlord of The Haradrim."
- ARE_NOT_PAPAL_CONTROLLER: "Are NOT the Warlord of The Haradrim"
- ARE_PAPAL_CONTROLLER: "Are the Warlord of The Haradrim"
- ARE_NOT_PREVIOUS_PAPAL_CONTROLLER: "Were NOT the Warlord of The Haradrim previously"
- ARE_PREVIOUS_PAPAL_CONTROLLER: "Were the Warlord of The Haradrim previously"
+ PAPACY_CONTROLLER: "§YWarlord§!\n$NAME$ is currently in control of the Haradrim."
+ CONVREL_PAPACY: "The Warlord of the Haradrim cannot convert to another race."
+ IS_PAPAL_CONTROLLER: "The ruler of $NAME$ is Warlord of the Haradrim."
+ ARE_NOT_PAPAL_CONTROLLER: "Are NOT the Warlord of the Haradrim"
+ ARE_PAPAL_CONTROLLER: "Are the Warlord of the Haradrim"
+ ARE_NOT_PREVIOUS_PAPAL_CONTROLLER: "Were NOT the Warlord of the Haradrim previously"
+ ARE_PREVIOUS_PAPAL_CONTROLLER: "Were the Warlord of the Haradrim previously"
  PAPAL_INFLUENCE: "Warlord Influence"
  PAPAL_INFLUENCE_NOT_ENOUGH: "§R- You do not have enough Warlord influence.§!"
  PAPAL_INFLUENCE_NO_CARDINAL: "§R- It is not possible to invest Warlord influence if you have no active Warchiefs.§!"
@@ -100,7 +110,7 @@
  CURRENT_PAPAL_INFLUENCE: "Warlord Influence: §Y$VAL$§!"
  MONTHLY_PAPAL_INFLUENCE: "Each year you gain $VAL$ Warlord Influence."
  CARDINALS_PAPAL_INFLUENCE: "From Controlled Warchiefs:"
- PAPAL_RELATIONS: "Warlord of The Haradrim Relations"
+ PAPAL_RELATIONS: "Warlord of the Haradrim Relations"
  PAPAL_INF_LESS_THAN: "Warlord Influence less than"
  PAPAL_INF_AT_LEAST: "Warlord Influence at least"
  INVESTED_PAPAL_INF_LESS_THAN: "Invested Warlord Influence less than"
@@ -118,13 +128,13 @@
  ALREADY_CRUSADING: "The Warlord of the Haradrim has already launched an Invasion. We must wait for it to end before calling another."
  CRUSADE_SAME_RELIGION: "While tempting, we cannot launch an Invasion against fellow Southron, heretics or not."
  
- IS_POPE: "They are the Warlord of The Haradrim."
+ IS_POPE: "They are the Warlord of the Haradrim."
  EXCOM_NOT_PAPACY: "We cannot have the Warlord of the Haradrim himself Dishonored."
  PAPACYVIEW_CANDIDATE: "There's a §Y$CHANCE$%§W chance that the next Warchief will come from §Y$COUNTRY$§W. They have a Warlord influence of §Y$INFLUENCE$%§W."
  PAPACY_CARDINALS: "Warchiefs:"
- PAPACY_THE_HOLY_SEE: "The Warlord of The Haradrim"
+ PAPACY_THE_HOLY_SEE: "The Warlord of the Haradrim"
  
- M_VATICAN_BUTTON: "Warlord of The Haradrim"
+ M_VATICAN_BUTTON: "Warlord of the Haradrim"
  
  HAVE_LESS_CARDINALS_THAN: "Warchiefs less than "
  HAVE_MORE_CARDINALS_THAN: "Warchiefs at least "
@@ -179,15 +189,15 @@
  FUTURECARDINALLOYALTYSTOP_LOG: "Warchief $NAME$ is no longer loyal to us!"
  
  HINT_PAPALCONTROLLER_TITLE: "Warlord of the Haradrim"
- HINT_PAPALCONTROLLER_TEXT:1 "When a new Warlord rules in The Haradrim Region, a new country is picked as Curia Controller based on their Invested Warlord Influence.  The Curia Controller gains access to bonuses and specific Warlord Actions that can be used through the Diplomacy view."
+ HINT_PAPALCONTROLLER_TEXT:1 "When a new Warlord rules in The Haradrim Region, a new country is picked as Warlord of the Haradrim based on their Invested Warlord Influence.  The Warlord of the Haradrim gains access to bonuses and specific Warlord Actions that can be used through the Diplomacy view."
  HINT_PAPALACTIONS_TITLE: "Warlord Actions"
  HINT_PAPALACTIONS_TEXT: "The Warlord of the Haradrim has access to a few extra Diplomatic Actions called Warlord Actions. These actions include Dishonor, which allows you to Dishonor a Southron ruler provided their relation with the Warlord is bad enough. Call Crusade is another Warlord Action which allows the Warlord of the Haradrim to call a crusade against an infidel country, encouraging other Southron countries to attack them."
  
  HINT_PAPALINFLUENCE_TITLE: "Warlord Influence"
- HINT_PAPALINFLUENCE_TEXT:1 "Warlord Influence is a resource you use to gain bonuses from the Warlord and try to become Curia Controller. Warlord Influence is gained yearly from Religious Unity and having good relations with the Warlord of the Haradrim. Certain Ideas can also increase your Warlord Influence."
+ HINT_PAPALINFLUENCE_TEXT:1 "Warlord Influence is a resource you use to gain bonuses from the Warlord and try to become Warlord of the Haradrim. Warlord Influence is gained yearly from Religious Unity and having good relations with the Warlord of the Haradrim. Certain Ideas can also increase your Warlord Influence."
  
  HINT_PAPACY_TITLE: "Warlord of the Haradrim"
- HINT_PAPACY_TEXT:1 "Southron countries can compete for influence with the Warlord of the Haradrim by spending Warlord Influence on a chance to be the next Curia Controller."
+ HINT_PAPACY_TEXT:1 "Southron countries can compete for influence with the Warlord of the Haradrim by spending Warlord Influence on a chance to be the next Warlord of the Haradrim."
  
  HINT_CARDINAL_TITLE: "Warchiefs"
  HINT_CARDINAL_TEXT:1 "Warchiefs are randomly assigned to Southron provinces in Europe.  Owners of these provinces receive a bonus to their Warlord Influence."
@@ -196,7 +206,7 @@
  CARDINAL_CONTROLLER_FUTURE_DESC: "This Warchief belongs to $COUNTRY|Y$ since they have given them $VOTES|Y$ votes so far."
  CARDINAL_TOOLTIP_AMOUNT: "§Y$COUNTRY$§W has §Y$AMOUNT$§W active Warchiefs."
  CARDINAL_TOOLTIP_PAPAL: "§Y$COUNTRY$§W has §Y$AMOUNT$§W Warlord influence."
- CARDINAL_TOOLTIP_INVESTED: "§Y$COUNTRY$§W has invested §Y$AMOUNT$§W Warlord influence in becoming the next curia controller."
+ CARDINAL_TOOLTIP_INVESTED: "§Y$COUNTRY$§W has invested §Y$AMOUNT$§W Warlord influence in becoming the next Warlord of the Haradrim."
  
  CARDINAL_NEW: "§YActive Warchief§!\nWe control this active Warchief from $HOME|Y$. Each active Warchief gives us $BENEFIT$ Warlord Influence per year."
  NO_ACTIVE_CARDINALS: "Spend your Warlord influence to vote on future Warchiefs to increase your chance to control a Warchief in the Warchief Council in the future."
@@ -216,8 +226,8 @@
  CARDINAL_CONTROLLER_FUTURE_DESC: "This Warchief belongs to $COUNTRY|Y$ since they have given them $VOTES|Y$ votes so far."
  CARDINAL_TOOLTIP_AMOUNT: "§Y$COUNTRY$§W has §Y$AMOUNT$§W active Warchiefs."
  CARDINAL_TOOLTIP_PAPAL: "§Y$COUNTRY$§W has §Y$AMOUNT$§W Warlord influence."
- CARDINAL_TOOLTIP_INVESTED: "§Y$COUNTRY$§W has invested §Y$AMOUNT$§W Warlord influence in becoming the next curia controller."
- CARDINAL_TOOLTIP_CHANCE: "§Y$COUNTRY$§W has $AMOUNT$ chance of being the next curia controller."
+ CARDINAL_TOOLTIP_INVESTED: "§Y$COUNTRY$§W has invested §Y$AMOUNT$§W Warlord influence in becoming the next Warlord of the Haradrim."
+ CARDINAL_TOOLTIP_CHANCE: "§Y$COUNTRY$§W has $AMOUNT$ chance of being the next Warlord of the Haradrim."
  
  OPEN_PAPACY: "§YWarlord of the Haradrim view§!\nClick here to open the Warlord of the Haradrim view."
  USES_PAPACY: "$COUNTRY|Y$ uses Warlord of the Haradrim."
@@ -237,7 +247,7 @@
  
  PAPAL_NOT_ALLOW: "§RYou do not meet all the requirements for taking this action.§!"
  PAPAL_NOT_ENOUGH: "§RYou need at least §Y$COST$§R Warlord Influence to take this action.§!"
- PAPAL_COST: "Costs §Y$COST$§W Warlord Influence."
+ PAPAL_COST: "Costs §Y$COST$§W Warlord Influence.\n"
  PAPAL_INVEST: "Spend §Y$MOD_COST$§W Warlord Influence to gain §Y$COST$§W Invested influence towards becoming the next Warlord of the Haradrim."
  
  OPEN_PAPACY: "§YWarlord of the Haradraim view§!\nClick here to open the Warlord of the Haradraim view."
@@ -269,31 +279,89 @@
  IS_EXCOMMUNICATED: "Is Dishonored "
  IS_NOT_EXCOMMUNICATED: "Is not Dishonored "
  
- levy_church_tax: "Hunt and Capture Mummakill"
- bless_monarch: "Hold a Race"
- indulgence_for_sins: "Hold a Feast"
- local_saint: "Challenge to a Duel"
- forgiveness_for_usury: "Train Troops"
- proclaim_holy_war: "Prepare for War"
- send_papal_legate: "Encourage Trade Imports"
- sanction_commercial_monopoly: "Display Might"
+ MODIFIER_CURIA_POWERS_COST: "Warlord Action cost"
+ MODIFIER_APPOINT_CARDINAL_COST: "Appoint Warchief cost"
+ MODIFIER_CURIA_TREASURY_CONTRIBUTION: "Treasure Pile Contribution"
  
- #buddist / elven
+  # Curia tithe
+ CURIA_TREASURY: "The treasure pile contain $VALUE|Y$¤"
+ CURIA_TREASURY_DESC: "Every month, as a demonstration of loyalty, the Haradrim countries will offer a tribute to the Warlord to fill the treasure pile. The estimate tribute for this month is $INCREMENT|Y$¤\n$WHY$"
+ EXPENSE_PAPAL_ACTION: "Warlord Actions"
+ USE_CURIA_TREASURY: "Spend Treasure Pile"
+ CURIA_TREASURY_NOT_CURIA_CONTROLLER: "§ROnly the Warlord can use the Treasure Pile!§!"
+ USE_CURIA_TREASURY_DESC: "As the Warlord you have access to the Treasure Pile."
  
- #karma_just_right: "Neutral Assistance"
-#karma_too_high: "High Assistance"
- #karma_too_low: "Low Assistance"
+ # Buy Indulgence
+ CURIA_BUY_INDULGENCE: "Spend $COST|Y$¤ to send a tribute. $TREASURY|Y$¤ will enrich the treasure pile, and you will gain $INFLUENCE|G$ yearly Warlord Influence for $YEARS|Y$ years. The Warlord will appreciate this voluntary tribute, and therefore this will increase our relations with him."
+ CURIA_BUY_INDULGENCE_EXCOMMUNICATED: "You are Dishonored, so the price for your tribute is $MULTIPLIER|Y$ times bigger. The Warlord, on the other hand, will reward your proof of loyalty by lifting it and will not try dishonor you again for $YEARS|Y$ years."
+ CURIA_BUY_INDULGENCE_TITLE: "Send Tribute"
+ CURIA_BUY_INDULGENCE_DESC: "Do you want to spend $COST|Y$¤ to send a tribute? $TREASURY|Y$¤ will enrich the treasure pile, and you will gain $INFLUENCE|G$ yearly Warlord Influence for $YEARS|Y$ years. The Warlord will appreciate this voluntary tribute, and therefore this will increase our relations with him."
+ CURIA_BUY_INDULGENCE_ALREADY_BOUGHT: "§RYou have already sent a tribute, no amount of money can change the Warlord's mind at the moment.§!"
+ CURIA_BUY_INDULGENCE_NOT_ENOUGH_MONEY: "§RYou need $COST|Y$¤ to send a tribute, but you only have $AVAILABLE|Y$¤§!"
+ EXCOM_TARGET_BOUGHT_INDULGENCE: "§RThe target has sent a tribute, you cannot Dishonor him now.§!"
+ EXCOMM_INDULG: "This will remove our dishonor, and any nations we are in a union with!"
  
- #KARMA_JUST_RIGHT_DESC: "Assistance between $LOW$ and $HIGH$"
- #KARMA_TOO_HIGH_DESC: "Assistance $HIGH$ or higher"
- #KARMA_TOO_LOW_DESC: "Assistance $LOW$ or lower"
+ bought_indulgence: "Sent Tribute"
  
- #KARMA_FOR_CTA: "We would gain $KARMA$ Assistance, since this is the right thing to do."
+ # Call ecumenical council
+ CURIA_CALL_ECUMENICAL_COUNCIL: "Spend $COST|Y$¤ to fill the treasure pile. $TREASURY|Y$¤ will enrich the Treasure Pile, and you will gain §Y$INFLUENCE$§W Invested influence towards becoming the next Warlord."
+ CURIA_CALL_ECUMENICAL_COUNCIL_NOT_ENOUGH_MONEY: "§RYou need $COST|Y$¤ to fill the treasure pile, but you only have $AVAILABLE|Y$¤§!"
+ CURIA_CALL_ECUMENICAL_COUNCIL_TITLE: "Fill the Treasure Pile"
+ CURIA_CALL_ECUMENICAL_COUNCIL_DESC: "Do you want to spend $COST|Y$¤ to fill the treasure pile? $TREASURY|Y$¤ will enrich the treasure pile, and you will gain §Y$INFLUENCE$§W Invested influence towards becoming the next Warlord."
  
- #ADD_KARMA_EFFECT: "$DIRECTION$ $VALUE$ Karma.\n"
- #SET_KARMA_EFFECT: "Karma set to $VALUE$.\n"
+ # Appoint Cardinal diplomatic action
+ APPOINT_CARDINAL_COST_WHY: "The $VAL|2Y$¤ cost of appointing this warchief is due to:\n$WHY$"
+ CARDINAL_BASE_COST: "Base Cost: $VAL|+=$¤\n"
+ CARDINAL_TOTAL_CARDINAL: "Total of $NUM$ Warchiefs in the Faith: $VAL|+=$¤\n"
+ CARDINAL_TARGET_CARDINAL: "$NUM$ Warchief from $NAME$: $VAL|+=$¤\n"
+ APPOINT_CARDINALTITLE: "Appoint Warchief"
+ APPOINT_CARDINALDESC: "Appoint a Warchief in the target Country, increasing their opinion of us and increasing the Invested Influence for the next Warlord election."
+ APPOINT_CARDINAL_DESCRIPTION: "Invest $COST|Y$¤ to Appoint a Warchief in $RECIPIENT$ land. This is a great honor and they will owe us a debt of gratitude, increasing their opinion of us by $OPINION|G$.\n\nOur Invested influence towards becoming the next Warlord will be increased by $INFLUENCE|Y$."
+ APPOINT_CARDINAL_NOT_IN_SUBJECTS_DIEING: "§R- Warchief cannot be appointed in Countries that we are about to annex.§!"
+ APPOINT_CARDINAL_ONLY_CATHOLICS: "§RWarchief can only be appointed in Countries that are considered Haradrim.§!"
+ APPOINT_CARDINAL_TOO_MANY_IN_COUNTRY: "§RNo more than $MAX$ Warchiefs can be appointed in the same country.§!"
+ APPOINT_CARDINAL_TOO_MANY_IN_WORLD: "§RThere are already enough Warchiefs in the World, Appointing one more would destabilize our authority.§!"
+ APPOINT_CARDINAL_NO_PROVINCE_AVAILABLE: "§RThere are no suitable Provinces for us to Appoint a Warchief.§!"
+ APPOINT_CARDINAL_NEED_MORE_CASH: "§RAppointing a Warchief will cost $REQUIRED$¤ but you only have $AVAILABLE$¤.§!"
+ CURIA_APPOINT_CARDINAL:2 "Spend $COST|Y$¤ of your own money to Appoint one of your loyalists as a Warchief. This will give us $CORRUPTION|R$ Corruption and increase our Invested influence towards becoming the next Warlord by $INFLUENCE|Y$ every year."
+ CURIA_APPOINT_CARDINAL_SELF_TITLE: "Appoint loyalist Warchief"
+ CURIA_APPOINT_CARDINAL_SELF_DESC: "Do you want to spend $COST|Y$¤ to Appoint one of your loyalists as a Warchief? This will give us $CORRUPTION|R$ Corruption and increase our Invested influence towards becoming the next Warlord by $INFLUENCE|Y$ every year."
  
+ # Golden Bulls
+ CURIA_PICK_GOLDEN_BULL_NOT_ENOUGH_CASH: "§RYou need $REQUIRED|Y$¤ in the Treasure Pile to pick a Decree but you only have $AVAILABLE|Y$¤.§!"
+ CURIA_PICK_GOLDEN_BULL_ALREADY_PICKED: "§RThere can only be one Decree enacted at a time.§!"
+ CURIA_CURRENT_GOLDEN_BULL_PICKED: "§YThis Decree has been enacted by the Warlord and will remain active for the rest of his life.§!"
+ 
+ cardinals_spread_institution: "Warchiefs spread institutions"
+ CURIA_PICK_GOLDEN_BULL_TITLE: "Pick Decree"
+ CURIA_PICK_GOLDEN_BULL_DESC:2 "Do you want to pick $NAME|Y$?\n\nPicking this Decree will cost $COST|Y$¤ from the §YTreasure Pile§!, and will until the death $POPE|Y$ give the following benefits to all $RELIGION|Y$ countries:\n\n$DESCRIPTION$"
+ 
+ PAPAL_BULL_POSSIBLE: "§YDecrees§!\nThese are the possible decrees that the Warlord can enact.\n"
+ PAPAL_BULL_EXPLANATION: "Decrees are bonuses that the Warlord can enact using the Treasure Pile that benefits all Haradrim Countries! They last until the current Warlord dies."
+ 
+ GOLDEN_BULL_INSTANT: "$NAME|Y$\n$EFFECT$\nInvest $COST|Y$¤ from the §YTreasure Pile§! and pick this Decree"
+ PAPACY_GOLDEN_BULLS: "Decrees"
+ GOLDEN_BULL_PICKED_TITLE: "Decree Picked"
+ GOLDEN_BULL_PICKED_SETUP: "When the Warlord picks a Decree."
+ GOLDEN_BULL_PICKED_HEADER: "$MESSENGER$"
+ GOLDEN_BULL_PICKED_1: "The Warlord has picked a Decree!"
+ GOLDEN_BULL_PICKED_2: "$MONARCHTITLE$, by virtue of the powers granted him by the warchiefs,"
+ GOLDEN_BULL_PICKED_3: "the Warlord has decided to enact the following Decree: "
+ GOLDEN_BULL_PICKED_4: "$BULL$."
+ GOLDEN_BULL_PICKED_5: "This Decree has the following effect: "
+ GOLDEN_BULL_PICKED_6: "$EFFECT$"
+ GOLDEN_BULL_PICKED_LOG: "The Warlord picked $BULL$."
+ GOLDEN_BULL_PICKED_BTN1: "OK"
+ GOLDEN_BULL_PICKED_BTN2: "OK"
+ GOLDEN_BULL_PICKED_BTN3: "Go to"
+ 
+ PAPACY_PICK_GOLDEN_BULL: "Pick a Decree"
+ PAPAL_BULL_NOT_CURIA_CONTROLLER: "§RYou are not the Warlord. Only the Warlord can spend the Treasure Pile to enact a Decree.§!"
+ PICK_GOLDEN_BULL_TOOLTIP: "§YPick a Decree§!\n"
+ 
+ #-------------------------------------
  # Institutions
+ #-------------------------------------
  eudalism_date: "2560"
  renaissance_date: "2770"
  new_world_i_date: "2799"

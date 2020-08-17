@@ -33,7 +33,41 @@ spriteTypes = {
 		texturefile = "gfx//interface//religion//province_view_religion.tga"
 		noOfFrames = 2
 	}
-	
+    
+    #----------------------------------------------
+    # Golden Bulls
+    #----------------------------------------------
+	spriteType = {
+		name = "GFX_invasion_preparation"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_selected.dds"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_warchief_loyalty"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_selected.dds"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_harad_development"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_selected.dds"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_call_upon_the_tribes"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_selected.dds"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_support_of_the_dark_lord"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_selected.dds"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_haradrim_glory"
+		texturefile = "gfx/interface/the_holy_see/golden_bull_selected.dds"
+		loadType = "INGAME"
+	}
+    
 	#-------------------------------------------------------------------------------------
 	# Holy Sites / Sacred Sites (Dwarven Religion)
 	#-------------------------------------------------------------------------------------
