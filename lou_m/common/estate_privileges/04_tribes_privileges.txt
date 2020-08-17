@@ -205,7 +205,8 @@ estate_tribes_settlers = {
     
 	max_absolutism = -5
 	loyalty = 0.1
-
+    influence = 0.05
+    
 	benefits = {
         colonists = 1
 	}
@@ -217,5 +218,69 @@ estate_tribes_settlers = {
             
             num_of_total_ports = 3
         }
+	}
+}
+
+estate_tribes_garrison_borders = {
+	icon = privilege_demand_more_troops
+	max_absolutism = -10
+	influence = 0.1
+	can_select = {
+		manpower_percentage = 0.5
+	}
+	on_granted = {
+		add_yearly_manpower = -0.2
+	}
+	penalties = {
+	}
+	benefits = {
+		global_unrest = -1
+        years_of_nationalism = -5
+        
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_tribes_purify_realm = {
+	icon = privilege_recruit_inouisitor
+	max_absolutism = -10
+	loyalty = -0.1
+	can_select = {
+		
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+	}
+	benefits = {
+        global_missionary_strength = 0.03
+		global_unrest = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_tribes_cleanse_population = {
+	icon = privilege_limited_war_support
+	max_absolutism = -10
+	loyalty = -0.1
+	can_select = {
+		
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+	}
+	benefits = {
+		culture_conversion_cost = -0.25
+        global_unrest = 1
+	}
+	ai_will_do = {
+		factor = 0
 	}
 }

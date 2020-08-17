@@ -548,3 +548,25 @@ estate_nobility_monopoly_of_weaponry = {
 		factor = 0
 	}
 }
+
+estate_nobility_garrison_borders = {
+	icon = privilege_demand_more_troops
+	max_absolutism = -10
+	influence = 0.1
+	can_select = {
+		manpower_percentage = 0.5
+	}
+	on_granted = {
+		add_yearly_manpower = -0.2
+	}
+	penalties = {
+	}
+	benefits = {
+		global_unrest = -1
+        years_of_nationalism = -5
+        
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
