@@ -6461,6 +6461,83 @@ guiTypes = {
 			spriteType = "GFX_banner_buildings_green_small"
 		}
 
+		instantTextBoxType={
+			name = "title_elf_production_buildings"
+			position = {x = 590 y = -29 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Production"
+		}
+		
+		iconType ={
+			name ="elf_production_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 561 y = -32 }
+			frame = 4
+		}
+		
+		checkboxType = {
+			name = "build_workshop_elf_building"
+			position = { x = 576 y = -4 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "workshop_elf_building_cost"
+			position = {x = 576 y = 46 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "workshop_elf_building_to_elven_forge_elf_building_arrow"
+			position = { x = 624 y = 3 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_elven_forge_elf_building"
+			position = { x = 640 y = -4 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "elven_forge_elf_building_cost"
+			position = {x = 640 y = 46 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "elven_forge_elf_building_to_grand_forge_elf_building_arrow"
+			position = { x = 688 y = 3 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_grand_forge_elf_building"
+			position = { x = 704 y = -4 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "grand_forge_elf_building_cost"
+			position = {x = 704 y = 46 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
 		################################################
 		# Elf Army Buildings 
 		################################################
@@ -6469,6 +6546,99 @@ guiTypes = {
 			name = "elf_army_buildings_banner"
 			position = { x = 550 y = 62 }
 			spriteType = "GFX_banner_buildings_green_small"
+		}
+
+		instantTextBoxType={
+			name = "title_elf_army_buildings"
+			position = {x = 590 y = 71 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Army"
+		}
+		
+		iconType ={
+			name ="elf_army_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 561 y = 68 }
+			frame = 5
+		}
+		
+		checkboxType = {
+			name = "build_warriors_gallery_building"
+			position = { x = 561 y = 96 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "warriors_gallery_building_cost"
+			position = {x = 561 y = 146 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "warriors_gallery_building_to_heros_shrine_building_arrow"
+			position = { x = 609 y = 103 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_heros_shrine_building"
+			position = { x = 625 y = 96 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "heros_shrine_building_cost"
+			position = {x = 625 y = 146 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_green_pastures_elf_building"
+			position = { x = 689 y = 96 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "green_pastures_elf_building_cost"
+			position = {x = 689 y = 146 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "green_pastures_elf_building_to_grand_stables_elf_building_arrow"
+			position = { x = 737 y = 103 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_grand_stables_elf_building"
+			position = { x = 753 y = 96 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "grand_stables_elf_building_cost"
+			position = {x = 753 y = 146 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
 
 		################################################
@@ -6481,6 +6651,99 @@ guiTypes = {
 			spriteType = "GFX_banner_buildings_green_small"
 		}
 
+		instantTextBoxType={
+			name = "title_elf_navy_buildings"
+			position = {x = 590 y = 171 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Navy"
+		}
+		
+		iconType ={
+			name ="elf_navy_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 561 y = 168 }
+			frame = 3
+		}
+		
+		checkboxType = {
+			name = "build_port_elf_building"
+			position = { x = 561 y = 196 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "port_elf_building_cost"
+			position = {x = 561 y = 246 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "port_elf_building_to_seaport_elf_building_arrow"
+			position = { x = 609 y = 203 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_seaport_elf_building"
+			position = { x = 625 y = 196 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "seaport_elf_building_cost"
+			position = {x = 625 y = 246 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_harbour_elf_building"
+			position = { x = 689 y = 196 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "harbour_elf_building_cost"
+			position = {x = 689 y = 246 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "harbour_elf_building_to_haven_elf_building_arrow"
+			position = { x = 737 y = 203 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_haven_elf_building"
+			position = { x = 753 y = 196 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "haven_elf_building_cost"
+			position = {x = 753 y = 246 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
 		################################################
 		# Elf Fortifications Buildings 
 		################################################
@@ -6489,6 +6752,99 @@ guiTypes = {
 			name = "elf_fortification_buildings_banner"
 			position = { x = 550 y = 262 }
 			spriteType = "GFX_banner_buildings_green_small"
+		}
+
+		instantTextBoxType={
+			name = "title_elf_fortification_buildings"
+			position = {x = 590 y = 271 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Fortifications"
+		}
+		
+		iconType ={
+			name ="elf_fortification_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 561 y = 268 }
+			frame = 7
+		}
+		
+		checkboxType = {
+			name = "build_fort_low_walls_elf_building"
+			position = { x = 561 y = 296 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "fort_low_walls_elf_building_cost"
+			position = {x = 561 y = 346 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "fort_low_walls_elf_building_to_fort_high_walls_elf_building_arrow"
+			position = { x = 609 y = 303 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_fort_high_walls_elf_building"
+			position = { x = 625 y = 296 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "fort_high_walls_elf_building_cost"
+			position = {x = 625 y = 346 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_moat_elf_building"
+			position = { x = 689 y = 296 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "moat_elf_building_cost"
+			position = {x = 689 y = 346 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		iconType = {
+			name = "moat_elf_building_to_wall_bastions_elf_building_arrow"
+			position = { x = 737 y = 303 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		
+		checkboxType = {
+			name = "build_wall_bastions_elf_building"
+			position = { x = 753 y = 296 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "wall_bastions_elf_building_cost"
+			position = {x = 753 y = 346 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
 
 		################################################
@@ -6500,6 +6856,97 @@ guiTypes = {
 			position = { x = 550 y = 362 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
+
+		instantTextBoxType={
+			name = "title_elf_monument_buildings"
+			position = {x = 590 y = 371 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Monument Buildings"
+		}
+		
+		iconType ={
+			name ="elf_monument_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 561 y = 368 }
+			frame = 2
+		}
+		
+		checkboxType = {
+			name = "build_mallorn_tree_elf_building"
+			position = { x = 561 y = 396 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "mallorn_tree_elf_building_cost"
+			position = {x = 561 y = 446 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_statue_of_the_elders_elf_building"
+			position = { x = 625 y = 396 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "statue_of_the_elders_elf_building_cost"
+			position = {x = 625 y = 446 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_mirror_fountain_elf_building"
+			position = { x = 689 y = 396 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "mirror_fountain_elf_building_cost"
+			position = {x = 689 y = 446 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_star_of_earendil_shrine_elf_building"
+			position = { x = 753 y = 396 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "star_of_earendil_shrine_elf_building_cost"
+			position = {x = 753 y = 446 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		################################################
+		# Elf End
+		################################################
+		
+		#iconType = {
+		#	name = "elf_buildings_end_banner"
+		#	position = { x = 4 y = 3064 }
+		#	spriteType = "GFX_banner_buildings_green"
+		#}
 
 		################################################
 		# Orc Start
