@@ -6183,7 +6183,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			name = "port_building_cost"
+			name = "fort_pallisade_building_cost"
 			position = {x = 22 y = 415 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -6227,60 +6227,38 @@ guiTypes = {
 		#-----------------------------------------------------
         # Dwarf
         #-----------------------------------------------------
-		################################################
-		# Human End
-		################################################
-		
-		#iconType = {
-		#	name = "human_buildings_end_banner"
-			#position = { x = 4 y = 988 }
-		#	position = { x = 4 y = 416 }
-		#	spriteType = "GFX_banner_buildings_blue_small"
-		#}
-
-		################################################
-		# Dwarf Start
-		################################################
-		
-		iconType ={
-			name ="background_dwarf_icon"
-			spriteType = "GFX_background_dwarf"
-			position = { x = 6 y = 1070}
-		}
-		
+		        #-----------------------------------------------------
+        # Human
+        #-----------------------------------------------------
 		iconType = {
 			name = "dwarf_buildings_banner"
-			position = { x = 275 y = -466 }
-			spriteType = "GFX_banner_buildings_yellow_small"
+			position = { x = 275 y = -435 }
+			spriteType = "LOU_decree_button"
 		}
 		
 		instantTextBoxType={
-			name = "title_dwarf_buildings"
-			#position = {x = 150 y = 1065 }
-			position = {x = 350 y = -453 }
+			name = "titledwarf_buildings"
+			position = {x = 342 y = -428 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Dwarf Buildings"	
+			text = "Dwarven Buildings"	
 			format = center
 		}
-		
-		################################################
-		# Dwarf Main Buildings
-		################################################
-		
+        
+        #-----------------------
+        # Main Buildings
+        #-----------------------
 		iconType = {
 			name = "dwarf_main_buildings_banner"
-			#position = { x = 4 y = 1084 }
-			position = { x = 275 y = -434 }
+			position = { x = 275 y = -406 }
 			spriteType = "GFX_banner_buildings_yellow_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_dwarf_main_buildings"
-			#position = {x = 44 y = -421 }
-			position = {x = 319 y = -425 }
+			name = "dwarf_main_buildings_buildings"
+			position = {x = 325 y = -394 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
@@ -6291,22 +6269,69 @@ guiTypes = {
 		iconType ={
 			name ="dwarf_main_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			#position = { x = 15 y = 1092}
-			position = { x = 290 y = -428}
+			position = { x = 285 y = -400 }
 			frame = 2
 		}
 		
+        # Row 1
+        checkboxType = {
+			name = "build_settlement_1_dwarf_building"
+			position = { x = 355 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "settlement_1_dwarf_building_cost"
+			position = {x = 357 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_settlement_2_dwarf_building"
+			position = { x = 415 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "settlement_2_dwarf_building_cost"
+			position = {x = 417 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_settlement_3_dwarf_building"
+			position = { x = 475 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "settlement_3_dwarf_building_cost"
+			position = {x = 477 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 2
 		checkboxType = {
 			name = "build_colony_outpost_dwarf_building"
-			#position = { x = 30 y = 1190 }
-			position = { x = 278 y = -352 }
+			position = { x = 295 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "colony_outpost_dwarf_building_cost"
-			#position = {x = 4 y = 1240 }
-			position = {x = 278 y = -302 }
+			position = {x = 297 y = -316 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6314,252 +6339,675 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		iconType = {
-			name = "colony_outpost_dwarf_building_to_settlement_1_dwarf_building_arrow"
-			#position = { x = 158 y = 1142 }
-			position = { x = 326 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		################################################
-		# Dwarf Main Buildings (City)
-		################################################
-		
-		checkboxType = {
-			name = "build_settlement_1_dwarf_building"
-			#position = { x = 94 y = 1142 }
-			position = { x = 342 y = -400 }
+        checkboxType = {
+			name = "build_capital_1_dwarf_building"
+			position = { x = 355 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		iconType = {
-			name = "settlement_1_dwarf_building_to_settlement_2_dwarf_building_arrow"
-			#position = { x = 142 y = 1151 }
-			position = { x = 390 y = -391 }
-			spriteType = "GFX_building_upgrade_icon"
+		instantTextBoxType={
+			name = "capital_1_dwarf_building_cost"
+			position = {x = 357 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
-		
-		checkboxType = {
-			name = "build_settlement_2_dwarf_building"
-			#position = { x = 158 y = 1142 }
-			position = { x = 406 y = -400 }
+
+        checkboxType = {
+			name = "build_capital_2_dwarf_building"
+			position = { x = 415 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		iconType = {
-			name = "settlement_2_dwarf_building_to_settlement_3_dwarf_building_arrow"
-			#position = { x = 158 y = 1142 }
-			position = { x = 454 y = -391 }
-			spriteType = "GFX_building_upgrade_icon"
+		instantTextBoxType={
+			name = "capital_2_dwarf_building_cost"
+			position = {x = 417 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
-		
-		checkboxType = {
-			name = "build_settlement_3_dwarf_building"
-			#position = { x = 222 y = 1142 }
-			position = { x = 470 y = -400 }
+        
+        checkboxType = {
+			name = "build_capital_3_dwarf_building"
+			position = { x = 475 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		################################################
-		# Dwarf Main Buildings (Fortress)
-		################################################
-		
-		checkboxType = {
+		instantTextBoxType={
+			name = "capital_3_dwarf_building_cost"
+			position = {x = 477 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 3
+        checkboxType = {
 			name = "build_hold_1_dwarf_building"
-			position = { x = 342 y = -304 }
+			position = { x = 355 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "hold_1_dwarf_building_cost"
-			position = { x = 342 y = -254 }
+			position = {x = 357 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "hold_1_dwarf_building_to_hold_2_dwarf_building_arrow"
-			position = { x = 390 y = -292 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_hold_2_dwarf_building"
-			position = { x = 406 y = -304 }
+			position = { x = 415 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "hold_2_dwarf_building_cost"
-			position = { x = 406 y = -254 }
+			position = {x = 417 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "hold_2_dwarf_building_to_hold_3_dwarf_building_arrow"
-			position = { x = 454 y = -292 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_hold_3_dwarf_building"
-			#position = { x = 222 y = -352 }
-			position = { x = 470 y = -304 }
+			position = { x = 475 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "hold_3_dwarf_building_cost"
-			#position = { x = 222 y = 1288 }
-			position = { x = 470 y = -354 }
+			position = {x = 477 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		################################################
-		# Dwarf Main Buildings (Capital)
-		################################################
-		
-		checkboxType = {
-			name = "build_capital_1_dwarf_building"
-			position = { x = 342 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		iconType = {
-			name = "capital_1_dwarf_building_to_capital_2_dwarf_building_arrow"
-			position = { x = 390 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
-			name = "build_capital_2_dwarf_building"
-			#position = { x = 158 y = 352 }
-			position = { x = 406 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		iconType = {
-			name = "capital_2_dwarf_building_to_capital_3_dwarf_building_arrow"
-			position = { x = 454 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
-			name = "build_capital_3_dwarf_building"
-			position = { x = 470 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-
-		################################################
-		# Dwarf Trade Buildings 
-		################################################
-		
+        
+        #-----------------------
+        # Trade
+        #-----------------------
 		iconType = {
 			name = "dwarf_trade_buildings_banner"
-			position = { x = 275 y = -238 }
+			position = { x = 275 y = -220 }
 			spriteType = "GFX_banner_buildings_yellow_small"
 		}
-
-		################################################
-		# Dwarf Taxation Buildings 
-		################################################
 		
+		instantTextBoxType={
+			name = "dwarf_trade_buildings"
+			position = {x = 325 y = -208 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Trade"	
+		}
+        
+        iconType ={
+			name ="dwarf_trade_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 285 y = -214 }
+			frame = 1
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_material_exchance_dwarf_building"
+			position = { x = 295 y = -180 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "material_exchance_dwarf_building_cost"
+			position = {x = 297 y = -180 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_fairground_dwarf_building"
+			position = { x = 355 y = -180 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "fairground_dwarf_building_cost"
+			position = {x = 357 y = -180 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_great_market_dwarf_building"
+			position = { x = 415 y = -180 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "great_market_dwarf_building_cost"
+			position = {x = 417 y = -180 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_traders_guild_building"
+			position = { x = 475 y = -180 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "traders_guild_building_cost"
+			position = {x = 477 y = -180 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        #-----------------------
+        # Taxation
+        #-----------------------
 		iconType = {
-			name = "dwarf_taxation_buildings_banner"
-			position = { x = 275 y = -138 }
+			name = "dwarf_tax_buildings_banner"
+			position = { x = 275 y = -120 }
 			spriteType = "GFX_banner_buildings_yellow_small"
 		}
-
-		################################################
-		# Dwarf State Buildings 
-		################################################
 		
-		iconType = {
-			name = "dwarf_state_buildings_banner"
-			position = { x = 275 y = -38 }
-			spriteType = "GFX_banner_buildings_yellow_small"
+		instantTextBoxType={
+			name = "dwarf_tax_buildings"
+			position = {x = 325 y = -108 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Taxation"	
+		}
+        
+        iconType ={
+			name ="dwarf_tax_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 285 y = -114 }
+			frame = 6
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_armoury_dwarf_building"
+			position = { x = 295 y = -80 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "armoury_dwarf_building_cost"
+			position = {x = 297 y = -80 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
 
-		################################################
-		# Dwarf Army Buildings 
-		################################################
+        checkboxType = {
+			name = "build_forge_dwarf_building"
+			position = { x = 355 y = -80 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
 		
-		iconType = {
-			name = "dwarf_army_buildings_banner"
-			position = { x = 275 y = 62 }
-			spriteType = "GFX_banner_buildings_yellow_small"
+		instantTextBoxType={
+			name = "forge_dwarf_building_cost"
+			position = {x = 357 y = -80 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
 
-		################################################
-		# Dwarf Production Buildings 
-		################################################
+        checkboxType = {
+			name = "build_arsenal_dwarf_building"
+			position = { x = 415 y = -80 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
 		
+		instantTextBoxType={
+			name = "arsenal_dwarf_building_cost"
+			position = {x = 417 y = -80 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_smithies_guild_building"
+			position = { x = 475 y = -80 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "smithies_guild_building_cost"
+			position = {x = 477 y = -80 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        #-----------------------
+        # Production
+        #-----------------------
 		iconType = {
 			name = "dwarf_production_buildings_banner"
-			position = { x = 275 y = 162 }
+			position = { x = 275 y = -20 }
 			spriteType = "GFX_banner_buildings_yellow_small"
 		}
-
-		################################################
-		# Dwarf Fortifications Buildings (Forts for Holds)
-		################################################
 		
+		instantTextBoxType={
+			name = "dwarf_production_buildings"
+			position = {x = 325 y = -8 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Production"	
+		}
+        
+        iconType ={
+			name ="dwarf_production_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 285 y = -14 }
+			frame = 4
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_mine_shaft_dwarf_building"
+			position = { x = 295 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "mine_shaft_dwarf_building_cost"
+			position = {x = 297 y = 20 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_mining_network_dwarf_building"
+			position = { x = 355 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "mining_network_dwarf_building_cost"
+			position = {x = 357 y = 20 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_materials_depot_building"
+			position = { x = 415 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "materials_depot_building_cost"
+			position = {x = 417 y = 20 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_miners_guild_dwarf_building"
+			position = { x = 475 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "miners_guild_dwarf_building_cost"
+			position = {x = 477 y = 20 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        #-----------------------
+        # Army
+        #-----------------------
 		iconType = {
-			name = "dwarf_fortification_buildings_banner"
-			position = { x = 275 y = 262 }
+			name = "dwarf_army_buildings_banner"
+			position = { x = 275 y = 80 }
 			spriteType = "GFX_banner_buildings_yellow_small"
 		}
-
-		################################################
-		# Dwarf Fortifications Buildings (Settlement Only)
-		################################################
 		
+		instantTextBoxType={
+			name = "dwarf_army_buildings"
+			position = {x = 325 y = 92 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Army"	
+		}
+        
+        iconType ={
+			name ="dwarf_army_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 285 y = 86 }
+			frame = 5
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_mustering_hall_dwarf_building"
+			position = { x = 295 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "mustering_hall_dwarf_building_cost"
+			position = {x = 297 y = 120 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_training_hall_dwarf_building"
+			position = { x = 355 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "training_hall_dwarf_building_cost"
+			position = {x = 357 y = 120 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_hall_of_warriors_dwarf_building"
+			position = { x = 415 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "hall_of_warriors_dwarf_building_cost"
+			position = {x = 417 y = 120 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_warriors_guild_dwarf_building"
+			position = { x = 475 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "warriors_guild_dwarf_building_cost"
+			position = {x = 477 y = 120 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        #-----------------------
+        # State
+        #-----------------------
+		iconType = {
+			name = "dwarf_state_buildings_banner"
+			position = { x = 275 y = 180 }
+			spriteType = "GFX_banner_buildings_yellow_small"
+		}
+		
+		instantTextBoxType={
+			name = "dwarf_state_buildings"
+			position = {x = 325 y = 192 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "State Buildings"	
+		}
+        
+        iconType ={
+			name ="dwarf_state_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 285 y = 186 }
+			frame = 2
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_libary_dwarf_building"
+			position = { x = 295 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "libary_dwarf_building_cost"
+			position = {x = 297 y = 220 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_research_office_dwarf_building"
+			position = { x = 355 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "research_office_dwarf_building_cost"
+			position = {x = 357 y = 220 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_acadamy_dwarf_building"
+			position = { x = 415 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "acadamy_dwarf_building_cost"
+			position = {x = 417 y = 220 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_advisor_guild_dwarf_building"
+			position = { x = 475 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "advisor_guild_dwarf_building_cost"
+			position = {x = 477 y = 220 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        #-----------------------
+        # Fortification
+        #-----------------------
+		iconType = {
+			name = "dwarf_fort_buildings_banner"
+			position = { x = 275 y = 280 }
+			spriteType = "GFX_banner_buildings_yellow_small"
+		}
+		
+		instantTextBoxType={
+			name = "dwarf_fort_buildings"
+			position = {x = 325 y = 292 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Fortifications"	
+		}
+        
+        iconType ={
+			name ="fort_fort_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 285 y = 286 }
+			frame = 7
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_fort_small_gatehouse_dwarf_building"
+			position = { x = 295 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "fort_small_gatehouse_dwarf_building_cost"
+			position = {x = 297 y = 320 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_fort_great_gatehouse_dwarf_building"
+			position = { x = 355 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "fort_great_gatehouse_dwarf_building_cost"
+			position = {x = 357 y = 320 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_fort_mountain_fortress_dwarf_building"
+			position = { x = 415 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "fort_mountain_fortress_dwarf_building_cost"
+			position = {x = 417 y = 320 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_fort_mountain_citidal_dwarf_building"
+			position = { x = 475 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "fort_mountain_citidal_dwarf_building_cost"
+			position = {x = 477 y = 320 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 2
 		checkboxType = {
 			name = "build_fort_pallisade_dwarf_building"
-			position = { x = 30 y = 1982 }
+			position = { x = 295 y = 380 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_pallisade_dwarf_building_cost"
-			#position = {x = 30 y = 2032 }
-			position = {x = 30 y = 2032 }
+			position = {x = 297 y = 380 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_pallisade_dwarf_building_to_fort_castle_dwarf_building_arrow"
-			#position = { x = 78 y = 1989 }
-			position = { x = 528 y = 357 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_fort_castle_dwarf_building"
-			#position = { x = 94 y = 1982 }
-			position = { x = 544 y = 350 }
+			position = { x = 355 y = 380 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_castle_dwarf_building_cost"
-			#position = {x = 94 y = 2032 }
-			position = {x = 544 y = 400 }
+			position = {x = 357 y = 380 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6567,16 +7015,77 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		################################################
-		# Dwarf End
-		################################################
+        checkboxType = {
+			name = "build_rune_door_dwarf_building"
+			position = { x = 415 y = 380 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
 		
-		iconType = {
-			name = "dwarf_buildings_end_banner"
-			position = { x = 275 y = 2048 }
-			spriteType = "GFX_banner_buildings_yellow_small"
+        # Row 3
+        checkboxType = {
+			name = "build_rune_door_dwarf_building"
+			position = { x = 295 y = 440 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "rune_door_dwarf_building_cost"
+			position = {x = 297 y = 440 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_narrow_bridge_dwarf_building"
+			position = { x = 355 y = 440 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "narrow_bridge_dwarf_building_cost"
+			position = {x = 357 y = 440 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
 
+        checkboxType = {
+			name = "build_moat_dwarf_building"
+			position = { x = 415 y = 440 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "moat_dwarf_building_cost"
+			position = {x = 417 y = 440 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_ballista_towers_dwarf_building"
+			position = { x = 475 y = 440 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "ballista_towers_dwarf_building_cost"
+			position = {x = 477 y = 440 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
 		################################################
 		# Elf Start
 		################################################
@@ -8400,6 +8909,7 @@ guiTypes = {
 			frame = 8
 		}
 		
+        # Row 1
 		checkboxType = {
 			name = "build_manufactory"
 			position = { x = -255 y = -366 }
@@ -8408,7 +8918,7 @@ guiTypes = {
 
 		instantTextBoxType={
 			name = "manufactory_cost"
-			position = {x = -255 y = -316 }
+			position = {x = -253 y = -366 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -8424,7 +8934,23 @@ guiTypes = {
 
 		instantTextBoxType={
 			name = "furnace_cost"
-			position = {x = -202 y = -316 }
+			position = {x = -200 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+        
+        checkboxType = {
+			name = "build_ramparts"
+			position = { x = -152 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+
+		instantTextBoxType={
+			name = "ramparts_cost"
+			position = {x = -150 y = -366 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -8432,18 +8958,67 @@ guiTypes = {
 			text = "2000¤"
 		}
 		
+        checkboxType = {
+			name = "build_soldier_households"
+			position = { x = -102 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+
+		instantTextBoxType={
+			name = "soldier_households_cost"
+			position = {x = -100 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+        
+        # Row 2
+        checkboxType = {
+			name = "build_impressment_offices"
+			position = { x = -255 y = -316 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+
+		instantTextBoxType={
+			name = "impressment_offices_cost"
+			position = {x = -253 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+        
+        checkboxType = {
+			name = "build_state_house"
+			position = { x = -202 y = -316 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+
+		instantTextBoxType={
+			name = "state_house_cost"
+			position = {x = -200 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+        
 		#-----------------------
         # Actions
         #-----------------------
 		iconType = {
 			name = "actions_buildings_banner"
-			position = { x = -265 y = -296 }
+			position = { x = -265 y = -246 }
 			spriteType = "GFX_banner_buildings_grey_small"
 		}
 		
 		instantTextBoxType={
 			name = "title_actions_buildings"
-			position = {x = -225 y = -284 }
+			position = {x = -225 y = -234 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
@@ -8454,19 +9029,19 @@ guiTypes = {
 		iconType ={
 			name ="actions_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = -255 y = -290 }
+			position = { x = -255 y = -240 }
 			frame = 8
 		}
 		
 		checkboxType = {
 			name = "build_resettlement_action"
-			position = { x = -255 y = -256 }
+			position = { x = -255 y = -206 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		instantTextBoxType={
 			name = "resettlement_action_cost"
-			position = {x = -255 y = -206 }
+			position = {x = -253 y = -206 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
