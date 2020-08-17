@@ -581,3 +581,161 @@ woodland_realm_ideas = {
 		infantry_power = 0.10
 	}
 }
+
+#------------------------------------
+# Adek
+#------------------------------------
+adek_ideas = {
+	start = {
+		cavalry_shock = 1
+        army_tradition_decay = -0.01
+	}
+
+	bonus = {
+		province_warscore_cost = -0.2
+	}
+	
+	trigger = {
+		OR = {
+            tag = W03
+            tag = W02
+        }
+	}
+	free = yes		
+	
+    # Descendants of Hildorien
+    descendants_of_hildorien = {
+        development_cost = -0.1
+    }
+    # Plains Herders
+    plains_herders = {
+        reinforce_cost_modifier = -0.2
+    }
+    # Adek Traders
+    adek_traders = {
+        trade_steering = 0.2
+        trade_efficiency = 0.05
+    }
+    # Warrior-Scions
+    warrior_scions = {
+        global_manpower_modifier = 0.2
+    }
+    # Great Eastern Road
+    great_eastern_road = {
+        movement_speed = 0.15
+    }
+    # Borne atop the Horse
+    borne_atop_the_horse = {
+        cavalry_cost = -0.2
+        cavalry_power = 0.1
+    }
+    # Adek Kinship
+    adek_kinship = {
+        improve_relation_modifier = 0.2
+    }
+}
+
+#------------------------------------
+# Shay
+#------------------------------------
+shay_ideas = {
+	start = {
+		global_unrest = -1
+        core_creation = -0.1
+	}
+
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		OR = {
+            tag = W13
+            tag = W14
+        }
+	}
+	free = yes		
+	
+    # Fisherfolk
+    fisherfolk = {
+        global_tax_modifier = 0.1
+    }
+    # Shayan Farmers
+    shayan_farmers = {
+        production_efficiency = 0.1
+    }
+    # Shores of the Ormal
+    shores_of_the_ormal = {
+        global_sailors_modifier = 0.2
+    }
+    # The Sakal Threat
+    the_sakal_threat = {
+        reinforce_speed = 0.2
+    }
+    # Zurghôr Incursions
+    zurghor_incursions = {
+        global_regiment_cost = -0.2
+        global_regiment_recruit_speed = -0.2
+    }
+    # Mountains of the Wind
+    mountains_of_the_wind = {
+        leader_land_manuever = 2
+    }
+    # The Legend of Shasindi
+    the_legend_of_shasindi = {
+        legitimacy = 0.5
+        republican_tradition = 0.5
+        devotion = 0.5
+        horde_unity = 0.5
+        meritocracy = 0.5
+    }
+}
+
+#------------------------------------
+# Zurghor
+#------------------------------------
+zurghor_ideas = {
+	start = {
+		discipline = 0.1
+        yearly_corruption = -0.05
+	}
+
+	bonus = {
+		country_military_power = 1
+	}
+	
+	trigger = {
+		tag = Y45
+	}
+	free = yes		
+	
+    # Haven of the Half-Orcs
+    haven_of_the_half_orcs = {
+        land_morale = 0.15
+    }
+    # Subdue the Fisherfolk
+    subdue_the_fisherfolk = {
+        infantry_power = 0.1
+    }
+    # Push back the Sakal
+    push_back_the_sakal = {
+        recover_army_morale_speed = 0.15
+    }
+    # The Wind Mountains
+    the_wind_mountains = {
+        defensiveness = 0.2
+    }
+    # Conflicts across the Ormal
+    conflicts_across_the_ormal = {
+        global_manpower_modifier = 0.15
+    }
+    # Jungles of Zurghor
+    jungles_of_zurghor = {
+        movement_speed = 0.1
+        hostile_attrition = 1
+    }
+    # Half-Orc Breeding
+    half_orc_breeding = {
+        culture_conversion_cost = -0.33
+    }
+}

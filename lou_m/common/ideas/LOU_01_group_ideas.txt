@@ -153,6 +153,10 @@ easterling_ideas = {
 	trigger = {
 		technology_group = lotr_human
 		is_racial_group_talatherim = yes
+        
+        
+        NOT = { religion = religion_tyr }
+        NOT = { religion = religion_ahar }
 	}
 	free = yes		
 	
@@ -574,7 +578,7 @@ cuivac_ideas = {
     }
     # Kûiwak Herbs
     kuiwak_herbs = {
-        siege_ability = 0.1
+        land_morale = 0.1
     }
     # Wanderers of the Coast
     wanderers_of_the_coast = {
@@ -640,9 +644,9 @@ woodmen_of_the_far_east_ideas = {
 }
 
 #------------------------------------
-# Linerim
+# Eastern Lakemen
 #------------------------------------
-linerim_ideas = {
+eastern_lakemen_ideas = {
 	start = {
 		global_supply_limit_modifier = 0.1
         idea_cost = -0.05
@@ -653,7 +657,11 @@ linerim_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_linerim
+		OR = {
+            religion = religion_linerim
+            religion = religion_dhilikhran
+            religion = religion_raliani
+        } 
 	}
 	free = yes		
 	
@@ -689,6 +697,101 @@ linerim_ideas = {
     }
 }
 
+#------------------------------------
+# Tyr
+#------------------------------------
+tyr_ideas = {
+	start = {
+		global_regiment_cost = -0.1
+        land_forcelimit_modifier = 0.1
+	}
+
+	bonus = {
+		siege_ability = 0.1
+	}
+	
+	trigger = {
+		religion = religion_tyr
+	}
+	free = yes		
+	
+    # Descendants of the Talath
+    descendants_of_the_talath = {
+        infantry_power = 0.1
+    }
+    # Tall and Swarthy
+    tall_and_swarthy = {
+        diplomatic_reputation = 2
+    }
+    # Tyr Agriculture
+    tyr_agriculture = {
+        state_maintenance_modifier = -0.2
+    }
+    # Adept Craftsmen
+    adept_craftsmen = {
+        production_efficiency = 0.1
+    }
+    # Cult of the Stars
+    cult_of_the_stars = {
+        technology_cost = -0.05
+    }
+    # Civility of Desdûrsya
+    civility_of_desdursya = {
+        governing_capacity_modifier = 0.25
+    }
+    # The Double-hand Ax
+    the_double_hand_ax = {
+        infantry_shock = 1
+    }
+}
+
+#------------------------------------
+# Ahar
+#------------------------------------
+ahar_ideas = {
+	start = {
+		cavalry_cost = -0.25
+        cavalry_flanking = 0.2
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		religion = religion_ahar
+	}
+	free = yes		
+	
+    # The Maker-folk
+    the_maker_folk = {
+        production_efficiency = 0.1
+    }
+    # Remembering Palisor
+    remembering_palisor = {
+        army_tradition_from_battle = 0.5
+    }
+    # Oxen Breeding
+    oxen_breeding = {
+        global_tax_modifier = 0.15
+    }
+    # Rykholi Architecture
+    rykholi_architecture = {
+        build_cost = -0.1
+    }
+    # Khurmand Markets
+    khurmand_markets = {
+        global_trade_power = 0.15
+    }
+    # Orgothran Steel
+    orgothran_steel = {
+        discipline = 0.05
+    }
+    # The Plains of Kargagis Ahar
+    plains_of_kargagis_ahar = {
+        cavalry_power = 0.25
+    }
+}
 
 # #------------------------------------
 # # Template
