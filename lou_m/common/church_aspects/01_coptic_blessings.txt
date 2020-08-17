@@ -5,6 +5,9 @@
 dwarven_blessing_send_traders = {
 	is_blessing = yes
 
+    trigger = {
+        adm_power = 100
+    }
 	modifier = {
 		trade_efficiency = 0.10
 		trade_range_modifier = 0.10

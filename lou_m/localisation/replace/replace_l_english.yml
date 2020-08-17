@@ -890,9 +890,10 @@
  mil_tech_cs_94_name: "Military Advancements"
  mil_tech_cs_94_desc: "Our military servants have learnt new techniques that will benefit our armies."
  
- # Coptic / Dwarven
- 
- ALREADY_PICKED_BLESSING: "Already Send this Envoy!"
+ #--------------------------------------------------
+ # Blessings/Holy Sites (Dwarfs)
+ #--------------------------------------------------
+ ALREADY_PICKED_BLESSING: "Already sent this Envoy!"
  ALL_BLESSINGS_PICKED: "§GAll possible Envoys picked already!§!"
  LOST_HOLY_SITES: "§RNot all Sacred Sites are controlled by your religion. Effects of your $NUM_LOST$ most recently chosen Envoys are disabled.§!"
  TOO_FEW_HOLY_SITES: "§RToo few Sacred Sites are controlled by Dwarven Kin to create another Envoy (currently $CURR|Y$ of $MAX$).§!"
@@ -911,19 +912,25 @@
  dwarven_blessing_send_miners: "Workers Envoy"
  dwarven_blessing_send_warriors: "Warriors Envoy"
  dwarven_blessing_send_advisors: "Advisor Envoy"
- #Erebor
- HOLY_SITE_292_DESC: "The Dwarves of Durin's Folk discovered the mineral wealth of the Lonely Mountain sometime after the awakening of the first Durin. A mining colony was soon set up and a road was laid out to connect the Dwarves to their great cities from the Iron Hills and as far west as their realms and possessions in the Blue Mountains."
- #Dains Halls
- HOLY_SITE_679_DESC: "Dáin's halls was a name used for the halls that formed the capital of the Grey Mountains, the name coming from the Dwarf-king Dáin I"
- #Gundabad
- HOLY_SITE_642_DESC: "Durin the Deathless, oldest of the Fathers of the Dwarves, awoke at Mount Gundabad in the north of the Misty Mountains shortly after the Awakening of the Elves in the Years of the Trees. Mount Gundabad then became a sacred place to the Dwarves."
- #Western Halls of Moria
- HOLY_SITE_285_DESC: "Moria was a Dwarven underground city beneath the Misty Mountains. For thousands of years a thriving Dwarvish community had delved deep below the mountains seeking to build their lives there, and to find sources of treasure, gold and Mithril. The city was abandoned during the Third Age after excavations accidentally awoke a Balrog."
- #Eastern Halls of Moria
- HOLY_SITE_882_DESC: "Moria was a Dwarven underground city beneath the Misty Mountains. For thousands of years a thriving Dwarvish community had delved deep below the mountains seeking to build their lives there, and to find sources of treasure, gold and Mithril. The city was abandoned during the Third Age after excavations accidentally awoke a Balrog."
  
- # Orthodox / Dunedain
+ # Erebor
+ HOLY_SITE_287_DESC: "The Dwarves of Durin's Folk discovered the mineral wealth of the Lonely Mountain sometime after the awakening of the first Durin. A mining colony was soon set up and a road was laid out to connect the Dwarves to their great cities from the Iron Hills and as far west as their realms and possessions in the Blue Mountains."
  
+ # Dain's Halls
+ HOLY_SITE_663_DESC: "Dáin's halls was a name used for the halls that formed the capital of the Grey Mountains, the name coming from the Dwarf-king Dáin I"
+ 
+ # Gundabad
+ HOLY_SITE_628_DESC: "Durin the Deathless, oldest of the Fathers of the Dwarves, awoke at Mount Gundabad in the north of the Misty Mountains shortly after the Awakening of the Elves in the Years of the Trees. Mount Gundabad then became a sacred place to the Dwarves."
+ 
+ # Moria
+ HOLY_SITE_740_DESC: "Moria was a Dwarven underground city beneath the Misty Mountains. For thousands of years a thriving Dwarvish community had delved deep below the mountains seeking to build their lives there, and to find sources of treasure, gold and Mithril. The city was abandoned during the Third Age after excavations accidentally awoke a Balrog."
+ 
+ # Khazad-Madur
+ HOLY_SITE_2004_DESC: "One of the sacred halls built by the Dwarves in the Utter East."
+ 
+ #--------------------------------------------------
+ # Patriarch Authority (Dunedain)
+ #--------------------------------------------------
  STATE_PATRIARCH_ALREADY_MAX_AUTH: "Hope is already maximized."
  ORTHIC_NOT_CURR: "The '$NAME|Y$' is already our commissioned icon!"
  ORTHIC_NO_AUTH: "You need $VAL|Y$ Hope to commission new icons to all churches, but you only have $CURR|Y$."
@@ -989,9 +996,11 @@
  #icon_climacus: "Icon of St. John Climacus"
  #desc_icon_climacus:1 "The Author of 'The Ladder of Divine Ascent', St. John Climacus has inspired generations of Orthodox Christians by describing how to strive towards the divine through asceticism and a pious life."
  
- #Orc Religion based on Muslim religion
+ #--------------------------------------------------
+ # Piety (Control)
+ #--------------------------------------------------
  positive_piety:1 "Order"
- negative_piety:1 "Chaotic"
+ negative_piety:1 "Chaos"
  
  MODIFIER_MONTHLY_PIETY: "Monthly Control"
  ADD_PIETY: "$DIRECTION$ $VALUE$ Control"
@@ -1003,55 +1012,55 @@
  USES_NOT_PIETY: "$COUNTRY|Y$ does NOT use Control."
  
  GAIN_PIETY: "Move $VALUE|Y$ towards Order"
- LOSE_PIETY: "Move $VALUE|Y$ towards Chaotic"
+ LOSE_PIETY: "Move $VALUE|Y$ towards Chaos"
  
  PIETY_BAD_WAR_EFF:2 "Declaring war on a fellow $REL$ will move us away from Order by §Y$VAL$§!."
  PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Order by §Y$VAL$§!."
  
  converted_to_islam: "Joined the Orcs"
  
- PIETY_DESCRIPTION:1 "Control represents in what way our ruler controlls the many masses of Orcs and other beings within our borders. It is measured on a scale between -100 (§YChaotic§!) and 100 (§YOrder§!).\nThe Control you have on your orcs can be affected by various actions you can take. Event options will move your position on the scale as will declaring war on other races (Increase), other Orcs will (Decrease) or succesfully converting provinces (Increase)."
- PIETY_DESCRIPTION_ESTATES:1 "\nThe type of Control of your ruler will influence the loyalty of your Estates."
+ PIETY_DESCRIPTION:1 "Control represents the control a ruler has over the masses of Orcs within our borders. \n\nIt is measured on a scale between -100 (§YChaos§!) and 100 (§YOrder§!).\n\nChaos is gained via:\n- Declaring war against other Orcs\n\nOrder is gained via:\n- Declaring war against other races\n- Purifying provinces"
+ PIETY_DESCRIPTION_ESTATES:1 "\n"
  
- PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Coruption§!' we need to be at least $NEED|Y$ towards Order. This would impact corruption by $CORRUPTION$."
- PIETY_LEGALISM_BONUS:1 "Our tradition of Order is a great advantage. §YReduce Coruption§! will move us by $COST|Y$ towards Chaotic but impact corruption by $CORRUPTION$."
- PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YTurn Orc Workers To Warriors§!' we need to be at least $NEED|Y$ towards Chaotic. This would gives us the following impact:\n$GAIN$"
- PIETY_MYSTICISM_BONUS:1 "Our tradition of Chaotic is a great advantage. §YTurn Orc Workers To Warriors§! will move us by $COST|Y$ towards Order but offer us $GAIN$"
- PIETY_MYSTICISM_COOLDOWN: "You can only '§YTurn Orc Workers To Warriors§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
- PIETY_LEGALISM_COOLDOWN: "You can only '§YReduce Coruption§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Corruption§!' we need to be at least $NEED|Y$ towards Order. This would impact corruption by $CORRUPTION$."
+ PIETY_LEGALISM_BONUS:1 "Our tradition of Order is a great advantage. §YReduce Coruption§! will move us by $COST|Y$ towards Chaos but impact corruption by $CORRUPTION$."
+ PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YMuster Warriors§!' we need to be at least $NEED|Y$ towards Chaos. This would gives us the following impact:\n$GAIN$"
+ PIETY_MYSTICISM_BONUS:1 "Our tradition of Chaos is a great advantage. §YMuster Warriors§! will move us by $COST|Y$ towards Order but offer us $GAIN$"
+ PIETY_MYSTICISM_COOLDOWN: "You can only '§YMuster Warriors§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_LEGALISM_COOLDOWN: "You can only '§YReduce Corruption§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
  
- LEGALISM_TITLE: "Reduce Coruption!"
- LEGALISM_SETUP: "When we have used our strong legalism to enforce faithful adherence."
+ LEGALISM_TITLE: "Reduce Corruption!"
+ LEGALISM_SETUP: "When we have used our strong order to remove corruption within our ranks."
  LEGALISM_HEADER: "$MESSENGER$"
- LEGALISM_1: "Faithful Adherence Enforced!"
+ LEGALISM_1: "Corruption Reduced!"
  LEGALISM_2: ""
  LEGALISM_3: "$DESC$"
  LEGALISM_4: ""
  LEGALISM_5: ""
  LEGALISM_6: ""
- LEGALISM_LOG: "Faithful Adherence Enforced!"
+ LEGALISM_LOG: "Corruption Reduced!"
  LEGALISM_BTN1: "OK"
  LEGALISM_BTN2: "OK"
  LEGALISM_BTN3: "Go to"
  LEGALISM_MAP: ""
- MYSTICISM_TITLE: "Call orcs!"
- MYSTICISM_SETUP: "When we have used our strong mysticism to call on religious followers."
+ MYSTICISM_TITLE: "Muster Warriors!"
+ MYSTICISM_SETUP: "When we have used the chaos within our borders to call upon more warriors."
  MYSTICISM_HEADER: "$MESSENGER$"
- MYSTICISM_1: "Call on Religious Followers!"
+ MYSTICISM_1: "Muster Warriors!"
  MYSTICISM_2: ""
  MYSTICISM_3: "$DESC$"
  MYSTICISM_4: ""
  MYSTICISM_5: ""
  MYSTICISM_6: ""
- MYSTICISM_LOG: "Call on Religious Followers!"
+ MYSTICISM_LOG: "Muster Warriors!"
  MYSTICISM_BTN1: "OK"
  MYSTICISM_BTN2: "OK"
  MYSTICISM_BTN3: "Go to"
  MYSTICISM_MAP: ""
  
- ####################
- #  Institutions    #
- ####################
+ #--------------------------------------------------
+ # Institutions (Fellowship)
+ #--------------------------------------------------
  obj_two_institutions: "Control Fellowship"
  obj_two_institutions_desc: "Own and Control at least 2 origins of Fellowships."
  ab_institution_spread_from_true_faith: "Fellowship Travel Speed"

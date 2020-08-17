@@ -28,9 +28,9 @@ guiTypes = {
 			position = { x= 66 y = 18 }
 		}
 		
-		instantTextBoxType = {
+        instantTextBoxType = {
 			name = "header_label"
-			position = { x = 76 y = 58 }
+			position = { x = 76 y = -9999 }
 			format = centre
 			textureFile = ""
 			font = "vic_29"
@@ -40,10 +40,17 @@ guiTypes = {
 			maxHeight = 32
 			alwaystransparent = yes
 		}
-		
+        
+        iconType = {
+			name = "header_bg"
+			spriteType ="LOU_decree_button"
+			alwaystransparent = yes
+			position = { x = 240 y = 85 }
+		}
+
 		instantTextBoxType = {
 			name = "blessings_label"
-			position = { x = 76 y = 66 }
+			position = { x = 76 y = 49 }
 			format = centre
 			textureFile = ""
 			font = "vic_22s"
@@ -56,16 +63,23 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "blessings"
-			position = { x = 146 y = 166 }
+			position = { x = 146 y = 180 }
 			size = { x = 480 y = 64 }
 			Orientation = "UPPER_LEFT"
 			format = center
 			spacing = 60
 		}
 		
+        iconType = {
+			name = "holy_site_header_bg"
+			spriteType ="LOU_decree_button"
+			alwaystransparent = yes
+			position = { x = 240 y = 220 }
+		}
+        
 		instantTextBoxType = {
 			name = "holy_site_label"
-			position = { x = 76 y = 188 }
+			position = { x = 76 y = 184 }
 			format = centre
 			textureFile = ""
 			font = "vic_22s"
@@ -78,7 +92,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "holy_site_num"
-			position = { x = 476 y = 188 }
+			position = { x = 440 y = 184 }
 			format = right
 			textureFile = ""
 			font = "vic_22s"
@@ -93,7 +107,7 @@ guiTypes = {
 			name ="holy_site_listbox"
 			position = { x = 110 y = 242 }
 			backGround=""
-			size = { x = 498 y = 480}
+			size = { x = 498 y = 340 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -116,7 +130,7 @@ guiTypes = {
 		
 		windowType = {
 			name = "blessing_selection"
-			position = { x = 0 y = 0 }	
+			position = { x = 0 y = -30 }	
 			size = { x=750 y=750 }
 			moveable = 1
 			dontRender = ""
@@ -134,7 +148,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "label"
-				position = { x = 76 y = 66 }
+				position = { x = 76 y = -9999 }
 				format = centre
 				textureFile = ""
 				font = "vic_22s"
@@ -146,7 +160,7 @@ guiTypes = {
 			
 			listboxType =  {
 				name ="blessing_listbox"
-				position = { x = 115 y = 128 }
+				position = { x = 115 y = 200 }
 				backGround=""
 				size = { x = 498 y = 580}
 				Orientation = "UPPER_LEFT"
@@ -222,6 +236,8 @@ guiTypes = {
 			maxHeight = 20
 			text = "Controlled by Polandball"	
 			format = left
+            truncate = yes
+            fixedsize = yes
 		}
 		
 		instantTextBoxType= {
@@ -233,6 +249,8 @@ guiTypes = {
 			maxHeight = 20
 			text = "Pastafarian"	
 			format = left
+            truncate = yes
+            fixedsize = yes
 		}
 		
 		iconType = {
@@ -348,8 +366,8 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "select_button"
-			position = { x=410 y = 4}
-			quadTextureSprite ="GFX_standard_button_71"
+			position = { x=300 y = 4}
+			quadTextureSprite ="button_type_8"
 			buttonText = "SELECT"
 			buttonFont = "vic_18"
 		}
