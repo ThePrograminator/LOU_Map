@@ -542,6 +542,154 @@ avaradan_ideas = {
     }
 }
 
+#------------------------------------
+# Cuivac
+#------------------------------------
+cuivac_ideas = {
+	start = {
+		naval_morale = 0.2
+        naval_attrition = -0.25
+	}
+
+	bonus = {
+		ship_durability = 0.1
+	}
+	
+	trigger = {
+		religion = religion_cuivac
+	}
+	free = yes		
+	
+    # Island Nomads
+    island_nomads = {
+        global_sailors_modifier = 0.25
+    }
+    # Hewn Canoes
+    hewn_canoes = {
+        galley_power = 0.2
+    }
+    # Tribal Communities
+    tribal_communities = {
+        global_unrest = -2
+    }
+    # Kûiwak Herbs
+    kuiwak_herbs = {
+        siege_ability = 0.1
+    }
+    # Wanderers of the Coast
+    wanderers_of_the_coast = {
+        naval_maintenance_modifier = -0.1
+    }
+    # Avatani Teachings
+    avatani_teachings = {
+        free_dip_policy = 1
+    }
+    # Wômaw Subjugation
+    womaw_subjugation = {
+        advisor_cost = -0.1
+    }
+}
+
+#------------------------------------
+# Woodmen of the Far East
+#------------------------------------
+woodmen_of_the_far_east_ideas = {
+	start = {
+		global_manpower_modifier = 0.1
+        ae_impact = -0.1
+	}
+
+	bonus = {
+		development_cost = -0.2
+	}
+	
+	trigger = {
+		religion = religion_woodmen_of_the_far_east
+	}
+	free = yes		
+	
+    # Stone-hewn Tools
+    stone_hewn_tools = {
+        build_time = -0.33
+    }
+    # Lay of the Woods
+    lay_of_the_woods = {
+        recover_army_morale_speed = 0.2
+    }
+    # Potent Poisons
+    potent_poisons = {
+        infantry_power = 0.1
+    }
+    # One with the Forest
+    one_with_the_forest = {
+        stability_cost_modifier = -0.25
+    }
+    # Lessons from the Avari
+    lessons_from_the_avari = {
+        idea_cost = -0.1
+    }
+    # Emissaries from Wômaw
+    emissaries_from_womaw = {
+        advisor_cost = -0.1
+        advisor_pool = 1
+    }
+    # Wômaw Integration
+    womaw_integration = {
+        core_creation = -0.1
+    }
+}
+
+#------------------------------------
+# Linerim
+#------------------------------------
+linerim_ideas = {
+	start = {
+		global_supply_limit_modifier = 0.1
+        idea_cost = -0.05
+	}
+
+	bonus = {
+		yearly_corruption = -0.1
+	}
+	
+	trigger = {
+		religion = religion_linerim
+	}
+	free = yes		
+	
+    # Descendants of the Asrabi
+    descendants_of_the_asrabi = {
+        land_morale = 0.1
+    }
+    # Sea of Helcar
+    sea_of_helcar = {
+        navy_tradition_decay = -0.02
+    }
+    # Adek Herders
+    adek_herders = {
+        cavalry_power = 0.1
+        cavalry_cost = -0.1
+    }
+    # Ráliani Merchants
+    raliani_merchants = {
+        trade_efficiency = 0.1
+        merchants = 1
+    }
+    # Jendi Farmers
+    jendi_farmers = {
+        global_tax_modifier = 0.1
+    }
+    # Easterling Fortifications
+    easterling_fortifications = {
+        war_exhaustion = -0.05
+    }
+    # Bounties of the Lakes
+    bounties_of_the_lakes = {
+        production_efficiency = 0.2
+    }
+}
+
+
 # #------------------------------------
 # # Template
 # #------------------------------------
