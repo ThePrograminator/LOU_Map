@@ -49,7 +49,7 @@ settlement_building = {
 	}
 	
 	modifier = {
-		local_build_cost = -0.10
+		local_build_cost = -0.1
 	}
 	
 	ai_will_do = {
@@ -1953,8 +1953,149 @@ port_building = {
 	}
 	
 	modifier = {
-		local_ship_repair = 0.15
-		local_ship_cost = -0.15
+		naval_forcelimit = 1
+		local_sailors_modifier = 0.2
+        province_trade_power_modifier = 0.2
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {
+			factor = 5 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		
+		modifier = {
+			factor = 0
+			province_is_buildable = no
+		}
+		
+		modifier = {
+			factor = 0
+			province_owner_is_human_race = no
+		}
+		
+		modifier = {
+			factor = 1.5
+			development = 5
+		}
+		
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		
+		modifier = {
+			factor = 4.5
+			development = 15
+		}
+		
+		modifier = {
+			factor = 6
+			development = 20
+		}
+	}
+}
+
+seaport_building = {
+	cost = 200
+	time = 24
+	make_obsolete = port_building
+    
+	build_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_city_building_tier_3 = yes
+	}
+
+	keep_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_city_building_tier_3 = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 2
+		local_sailors_modifier = 0.3
+        province_trade_power_modifier = 0.3
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {
+			factor = 5 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		
+		modifier = {
+			factor = 0
+			province_is_buildable = no
+		}
+		
+		modifier = {
+			factor = 0
+			province_owner_is_human_race = no
+		}
+		
+		modifier = {
+			factor = 1.5
+			development = 5
+		}
+		
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		
+		modifier = {
+			factor = 4.5
+			development = 15
+		}
+		
+		modifier = {
+			factor = 6
+			development = 20
+		}
+	}
+}
+
+grand_shipyard_building = {
+	cost = 300
+	time = 30
+	make_obsolete = seaport_building
+    
+	build_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_fortress_building_tier_4 = yes
+	}
+
+	keep_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_fortress_building_tier_4 = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 3
+		local_sailors_modifier = 0.5
+        province_trade_power_modifier = 0.5
 	}
 	
 	ai_will_do = {
@@ -2021,78 +2162,9 @@ dock_building = {
 	}
 	
 	modifier = {
-		local_ship_repair = 0.30
-		local_ship_cost = -0.30
-	}
-	
-	ai_will_do = {
-		factor = 100
-		
-		modifier = {
-			factor = 5 # Little above build cost
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-		
-		modifier = {
-			factor = 0
-			province_is_buildable = no
-		}
-		
-		modifier = {
-			factor = 0
-			province_owner_is_human_race = no
-		}
-		
-		modifier = {
-			factor = 1.5
-			development = 5
-		}
-		
-		modifier = {
-			factor = 3
-			development = 10
-		}
-		
-		modifier = {
-			factor = 4.5
-			development = 15
-		}
-		
-		modifier = {
-			factor = 6
-			development = 20
-		}
-	}
-}
-
-seaport_building = {
-	cost = 200
-	time = 24
-	
-	build_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
-	}
-
-	keep_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
-	}
-	
-	modifier = {
-		province_trade_power_modifier = 0.15
-		local_sailors_modifier = 0.15
-		local_ship_repair = 0.30
-		local_ship_cost = -0.30
+		local_ship_repair = 0.2
+		local_ship_cost = -0.2
+        ship_recruit_speed = -0.2
 	}
 	
 	ai_will_do = {
@@ -2143,7 +2215,8 @@ seaport_building = {
 dockyard_building = {
 	cost = 300
 	time = 30
-	
+	make_obsolete = dock_building
+    
 	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
@@ -2159,10 +2232,9 @@ dockyard_building = {
 	}
 	
 	modifier = {
-		province_trade_power_modifier = 0.30
-		local_sailors_modifier = 0.30
-		local_ship_repair = 0.30
-		local_ship_cost = -0.30
+		local_ship_repair = 0.3
+		local_ship_cost = -0.3
+        ship_recruit_speed = -0.3
 	}
 	
 	ai_will_do = {
@@ -2208,7 +2280,8 @@ dockyard_building = {
 drydock_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = dockyard_building
+    
 	build_trigger = {
 		has_port = yes
 		province_owner_is_human_race = yes
@@ -2224,9 +2297,9 @@ drydock_building = {
 	}
 	
 	modifier = {
-		naval_forcelimit = 1
-		local_ship_repair = 0.45
-		local_ship_cost = -0.45
+		local_ship_repair = 0.5
+		local_ship_cost = -0.5
+        ship_recruit_speed = -0.5
 	}
 	
 	ai_will_do = {
@@ -2274,71 +2347,3 @@ drydock_building = {
 	}
 }
 
-grand_shipyard_building = {
-	cost = 300
-	time = 30
-	
-	build_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_fortress_building_tier_4 = yes
-	}
-
-	keep_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_fortress_building_tier_4 = yes
-	}
-	
-	modifier = {
-		naval_forcelimit = 2
-		local_ship_repair = 0.60
-		local_ship_cost = -0.60
-	}
-	
-	ai_will_do = {
-		factor = 100
-		
-		modifier = {
-			factor = 5 # Little above build cost
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-		
-		modifier = {
-			factor = 0
-			province_is_buildable = no
-		}
-		
-		modifier = {
-			factor = 0
-			province_owner_is_human_race = no
-		}
-		
-		modifier = {
-			factor = 1.5
-			development = 5
-		}
-		
-		modifier = {
-			factor = 3
-			development = 10
-		}
-		
-		modifier = {
-			factor = 4.5
-			development = 15
-		}
-		
-		modifier = {
-			factor = 6
-			development = 20
-		}
-	}
-}

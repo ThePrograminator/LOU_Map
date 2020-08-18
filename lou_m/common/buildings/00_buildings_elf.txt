@@ -1476,7 +1476,8 @@ green_pastures_elf_building = {
 grand_stables_elf_building = {
 	cost = 200
 	time = 18
-	
+	make_obsolete = green_pastures_elf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_elven
@@ -1616,7 +1617,8 @@ port_elf_building = {
 seaport_elf_building = {
 	cost = 200
 	time = 18
-	
+	make_obsolete = port_elf_building
+    
 	build_trigger = {
 		has_port = yes
 		owner = {
@@ -1636,8 +1638,8 @@ seaport_elf_building = {
 	}
 	
 	modifier = {
-		local_sailors_modifier = 0.15
-		province_trade_power_modifier = 0.15
+		local_sailors_modifier = 0.3
+		province_trade_power_modifier = 0.3
 	}
 	
 	ai_will_do = {
@@ -1770,7 +1772,8 @@ harbour_elf_building = {
 haven_elf_building = {
 	cost = 200
 	time = 18
-	
+	make_obsolete = harbour_elf_building
+    
 	build_trigger = {
 		has_port = yes
 		owner = {
@@ -1791,7 +1794,7 @@ haven_elf_building = {
 	
 	modifier = {
 		local_ship_cost = -0.30
-		local_ship_repair = 0.15
+		local_ship_repair = 0.3
 	}
 	
 	ai_will_do = {
@@ -2077,7 +2080,8 @@ moat_elf_building = {
 wall_bastions_elf_building = {
 	cost = 200
 	time = 18
-	
+	make_obsolete = moat_elf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_elven

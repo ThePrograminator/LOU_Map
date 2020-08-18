@@ -1246,7 +1246,8 @@ orc_pit_orc_building = {
 orc_fissure_orc_building = {
 	cost = 100
 	time = 18
-	
+	make_obsolete = orc_pit_orc_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -1303,7 +1304,8 @@ orc_fissure_orc_building = {
 army_garrison_orc_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = orc_fissure_orc_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -1421,7 +1423,8 @@ warg_pit_orc_building = {
 warg_arena_orc_building = {
 	cost = 100
 	time = 18
-	
+	make_obsolete = warg_pit_orc_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -1478,7 +1481,8 @@ warg_arena_orc_building = {
 troll_cage_orc_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = warg_arena_orc_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -1596,7 +1600,8 @@ workshop_orc_building = {
 siege_works_orc_building = {
 	cost = 100
 	time = 18
-	
+	make_obsolete = workshop_orc_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -1653,7 +1658,8 @@ siege_works_orc_building = {
 great_siege_works_orc_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = siege_works_orc_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -2085,7 +2091,8 @@ small_arena_building = {
 large_arena_building = {
 	cost = 150
 	time = 18
-	
+	make_obsolete = small_arena_building
+    
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
@@ -2215,6 +2222,7 @@ prisoner_cage_orc_building = {
 tortur_chambers_orc_building = {
 	cost = 150
 	time = 18
+    make_obsolete = prisoner_cage_orc_building
 	
 	build_trigger = {
 		province_owner_is_melkor_race = yes

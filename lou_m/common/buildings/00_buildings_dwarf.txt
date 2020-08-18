@@ -2727,7 +2727,8 @@ rune_door_dwarf_building = {
 narrow_bridge_dwarf_building = {
 	cost = 100
 	time = 18
-	
+	make_obsolete = rune_door_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
@@ -2813,7 +2814,8 @@ narrow_bridge_dwarf_building = {
 moat_dwarf_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = narrow_bridge_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
@@ -2899,7 +2901,8 @@ moat_dwarf_building = {
 ballista_towers_dwarf_building = {
 	cost = 300
 	time = 30
-	
+	make_obsolete = moat_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven

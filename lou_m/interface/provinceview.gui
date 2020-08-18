@@ -5481,6 +5481,43 @@ guiTypes = {
 			frame = 2
 		}
 		
+        # Links
+        iconType = {
+			name = "human_main_building_link_arrow_1"
+			position = { x = 128 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_main_building_link_arrow_2"
+			position = { x = 188 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_main_building_link_arrow_3"
+			position = { x = 128 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_main_building_link_arrow_4"
+			position = { x = 188 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_main_building_link_arrow_5"
+			position = { x = 128 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_main_building_link_arrow_6"
+			position = { x = 188 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_main_building_link_arrow_7"
+			position = { x = 68 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_city_1_building"
@@ -5497,7 +5534,7 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
+        
         checkboxType = {
 			name = "build_city_2_building"
 			position = { x = 140 y = -366 }
@@ -5670,6 +5707,23 @@ guiTypes = {
 			frame = 1
 		}
         
+        # Links
+        iconType = {
+			name = "human_trade_link_arrow_1"
+			position = { x = 68 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_trade_link_arrow_2"
+			position = { x = 128 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_trade_link_arrow_3"
+			position = { x = 188 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_trade_outpost_building"
@@ -5761,6 +5815,23 @@ guiTypes = {
 			frame = 6
 		}
         
+        # Links
+        iconType = {
+			name = "human_tax_link_arrow_1"
+			position = { x = 68 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_tax_link_arrow_2"
+			position = { x = 128 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_tax_link_arrow_3"
+			position = { x = 188 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_temple_building"
@@ -5850,6 +5921,23 @@ guiTypes = {
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 20 y = -14 }
 			frame = 4
+		}
+        
+        # Links
+        iconType = {
+			name = "human_production_link_arrow_1"
+			position = { x = 128 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_production_link_arrow_2"
+			position = { x = 68 y = 80 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_production_link_arrow_3"
+			position = { x = 128 y = 80 }
+			spriteType = "GFX_building_upgrade_icon"
 		}
         
         # Row 1
@@ -5960,6 +6048,23 @@ guiTypes = {
 			frame = 5
 		}
         
+        # Links
+        iconType = {
+			name = "human_army_link_arrow_1"
+			position = { x = 68 y = 175 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_army_link_arrow_2"
+			position = { x = 128 y = 175 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_army_link_arrow_3"
+			position = { x = 188 y = 175 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_outpost_building"
@@ -6051,15 +6156,37 @@ guiTypes = {
 			frame = 3
 		}
         
+        # Links
+        iconType = {
+			name = "human_navy_link_arrow_1"
+			position = { x = 68 y = 275 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_navy_link_arrow_2"
+			position = { x = 128 y = 275 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_navy_link_arrow_3"
+			position = { x = 68 y = 325 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_navy_link_arrow_4"
+			position = { x = 128 y = 325 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
-			name = "build_port_building"
+			name = "build_dock_building"
 			position = { x = 20 y = 265 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "port_building_cost"
+			name = "dock_building_cost"
 			position = {x = 22 y = 265 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -6069,30 +6196,14 @@ guiTypes = {
 		}
 
         checkboxType = {
-			name = "build_dock_building"
+			name = "build_dockyard_building"
 			position = { x = 80 y = 265 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "dock_building_cost"
+			name = "dockyard_building_cost"
 			position = {x = 82 y = 265 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-
-        checkboxType = {
-			name = "build_seaport_building"
-			position = { x = 140 y = 265 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		instantTextBoxType={
-			name = "seaport_building_cost"
-			position = {x = 142 y = 265 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6101,14 +6212,14 @@ guiTypes = {
 		}
         
         checkboxType = {
-			name = "build_dockyard_building"
-			position = { x = 200 y = 265 }
+			name = "build_drydock_building"
+			position = { x = 140 y = 265 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "dockyard_building_cost"
-			position = {x = 202 y = 265 }
+			name = "drydock_building_cost"
+			position = {x = 142 y = 265 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6118,13 +6229,13 @@ guiTypes = {
         
         # Row 2
         checkboxType = {
-			name = "build_drydock_building"
+			name = "build_port_building"
 			position = { x = 20 y = 315 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "drydock_building_cost"
+			name = "port_building_cost"
 			position = {x = 22 y = 315 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -6134,13 +6245,13 @@ guiTypes = {
 		}
 
         checkboxType = {
-			name = "build_grand_shipyard_building"
+			name = "build_seaport_building"
 			position = { x = 80 y = 315 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "grand_shipyard_building_cost"
+			name = "seaport_building_cost"
 			position = {x = 82 y = 315 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -6149,6 +6260,22 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
+        checkboxType = {
+			name = "build_grand_shipyard_building"
+			position = { x = 140 y = 315 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "grand_shipyard_building_cost"
+			position = {x = 142 y = 315 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
         #-----------------------
         # Fort
         #-----------------------
@@ -6173,6 +6300,18 @@ guiTypes = {
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 20 y = 381 }
 			frame = 7
+		}
+        
+        # Links
+        iconType = {
+			name = "human_fort_link_arrow_1"
+			position = { x = 68 y = 425 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "human_fort_link_arrow_2"
+			position = { x = 128 y = 425 }
+			spriteType = "GFX_building_upgrade_icon"
 		}
         
         # Row 1
@@ -6227,9 +6366,6 @@ guiTypes = {
 		#-----------------------------------------------------
         # Dwarf
         #-----------------------------------------------------
-		        #-----------------------------------------------------
-        # Human
-        #-----------------------------------------------------
 		iconType = {
 			name = "dwarf_buildings_banner"
 			position = { x = 275 y = -435 }
@@ -6273,6 +6409,43 @@ guiTypes = {
 			frame = 2
 		}
 		
+        # Links
+        iconType = {
+			name = "dwarf_main_building_link_arrow_1"
+			position = { x = 403 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_main_building_link_arrow_2"
+			position = { x = 463 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_main_building_link_arrow_3"
+			position = { x = 403 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_main_building_link_arrow_4"
+			position = { x = 463 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_main_building_link_arrow_5"
+			position = { x = 403 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_main_building_link_arrow_6"
+			position = { x = 463 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_main_building_link_arrow_7"
+			position = { x = 343 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_settlement_1_dwarf_building"
@@ -6462,6 +6635,23 @@ guiTypes = {
 			frame = 1
 		}
         
+        # Links
+        iconType = {
+			name = "dwarf_trade_link_arrow_1"
+			position = { x = 343 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_trade_link_arrow_2"
+			position = { x = 403 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_trade_link_arrow_3"
+			position = { x = 463 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_material_exchance_dwarf_building"
@@ -6551,6 +6741,23 @@ guiTypes = {
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 285 y = -114 }
 			frame = 6
+		}
+        
+        # Links
+        iconType = {
+			name = "dwarf_tax_link_arrow_1"
+			position = { x = 343 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_tax_link_arrow_2"
+			position = { x = 403 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_tax_link_arrow_3"
+			position = { x = 463 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
 		}
         
         # Row 1
@@ -6644,6 +6851,23 @@ guiTypes = {
 			frame = 4
 		}
         
+        # Links
+        iconType = {
+			name = "dwarf_production_link_arrow_1"
+			position = { x = 343 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_production_link_arrow_2"
+			position = { x = 403 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_production_link_arrow_3"
+			position = { x = 463 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_mine_shaft_dwarf_building"
@@ -6733,6 +6957,23 @@ guiTypes = {
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 285 y = 86 }
 			frame = 5
+		}
+        
+        # Links
+        iconType = {
+			name = "dwarf_army_link_arrow_1"
+			position = { x = 343 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_army_link_arrow_2"
+			position = { x = 403 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_army_link_arrow_3"
+			position = { x = 463 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
 		}
         
         # Row 1
@@ -6826,6 +7067,23 @@ guiTypes = {
 			frame = 2
 		}
         
+        # Links
+        iconType = {
+			name = "dwarf_state_link_arrow_1"
+			position = { x = 343 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_state_link_arrow_2"
+			position = { x = 403 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_state_link_arrow_3"
+			position = { x = 463 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
         # Row 1
         checkboxType = {
 			name = "build_libary_dwarf_building"
@@ -6915,6 +7173,43 @@ guiTypes = {
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 285 y = 286 }
 			frame = 7
+		}
+        
+        # Links
+        iconType = {
+			name = "dwarf_fort_link_arrow_1"
+			position = { x = 343 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_fort_link_arrow_2"
+			position = { x = 403 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_fort_link_arrow_3"
+			position = { x = 463 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_fort_link_arrow_4"
+			position = { x = 343 y = 390 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_fort_link_arrow_5"
+			position = { x = 343 y = 450 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_fort_link_arrow_6"
+			position = { x = 403 y = 450 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "dwarf_fort_link_arrow_7"
+			position = { x = 463 y = 450 }
+			spriteType = "GFX_building_upgrade_icon"
 		}
         
         # Row 1
@@ -7086,46 +7381,38 @@ guiTypes = {
 			text = "2000¤"	
 		}
         
-		################################################
-		# Elf Start
-		################################################
-		
-		iconType ={
-			name ="background_elf_icon"
-			spriteType = "GFX_background_elf"
-			position = { x = 6 y = 2130}
-		}
-		
+        #-----------------------------------------------------
+        # Elf
+        #-----------------------------------------------------
 		iconType = {
 			name = "elf_buildings_banner"
-			position = { x = 550 y = -466 }
-			spriteType = "GFX_banner_buildings_green_small"
+			position = { x = 540 y = -435 }
+			spriteType = "LOU_decree_button"
 		}
 		
 		instantTextBoxType={
 			name = "title_elf_buildings"
-			position = {x = 625 y = -453 }
+			position = {x = 607 y = -428 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Elf Buildings"	
+			text = "Elven Buildings"	
 			format = center
 		}
-
-		################################################
-		# Elf Main Buildingss
-		################################################
-		
+        
+        #-----------------------
+        # Main Buildings
+        #-----------------------
 		iconType = {
 			name = "elf_main_buildings_banner"
-			position = { x = 550 y = -434 }
+			position = { x = 540 y = -406 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_main_buildings"
-			position = {x = 590 y = -425 }
+			name = "elf_main_buildings_buildings"
+			position = {x = 580 y = -394 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
@@ -7136,19 +7423,106 @@ guiTypes = {
 		iconType ={
 			name ="elf_main_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 559 y = -428}
+			position = { x = 550 y = -400 }
 			frame = 2
 		}
 		
+        # Links
+        iconType = {
+			name = "elf_main_building_link_arrow_1"
+			position = { x = 658 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_main_building_link_arrow_2"
+			position = { x = 718 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_main_building_link_arrow_3"
+			position = { x = 658 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_main_building_link_arrow_4"
+			position = { x = 718 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_main_building_link_arrow_5"
+			position = { x = 658 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_main_building_link_arrow_6"
+			position = { x = 718 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_main_building_link_arrow_7"
+			position = { x = 598 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_town_1_elf_building"
+			position = { x = 610 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "town_1_elf_building_cost"
+			position = {x = 612 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_town_2_elf_building"
+			position = { x = 670 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "town_2_elf_building_cost"
+			position = { x = 672 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_town_3_elf_building"
+			position = { x = 730 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "town_3_elf_building_cost"
+			position = { x = 732 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 2
 		checkboxType = {
 			name = "build_noble_residence_elf_building"
-			position = { x = 553 y = -352 }
+			position = { x = 550 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "noble_residence_elf_building_cost"
-			position = {x = 553 y = -302 }
+			position = { x = 552 y = -316 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -7156,224 +7530,183 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		iconType = {
-			name = "noble_residence_elf_building_to_capital_1_elf_building_arrow"
-			position = { x = 601 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		################################################
-		# Elf Main Buildings (City)
-		################################################
-		
-		checkboxType = {
-			name = "build_town_1_elf_building"
-			position = { x = 617 y = -400 }
+        checkboxType = {
+			name = "build_capital_1_elf_building"
+			position = { x = 610 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		iconType = {
-			name = "town_1_elf_building_to_town_2_elf_building_arrow"
-			position = { x = 665 y = -391 }
-			spriteType = "GFX_building_upgrade_icon"
+		instantTextBoxType={
+			name = "capital_1_elf_building_cost"
+			position = {x = 612 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
-		
-		checkboxType = {
-			name = "build_town_2_elf_building"
-			position = { x = 681 y = -400 }
+
+        checkboxType = {
+			name = "build_capital_2_elf_building"
+			position = { x = 670 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		iconType = {
-			name = "town_2_elf_building_to_town_3_elf_building_arrow"
-			position = { x = 729 y = -391 }
-			spriteType = "GFX_building_upgrade_icon"
+		instantTextBoxType={
+			name = "capital_2_elf_building_cost"
+			position = { x = 672 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
-		
-		checkboxType = {
-			name = "build_town_3_elf_building"
-			position = { x = 745 y = -400 }
+        
+        checkboxType = {
+			name = "build_capital_3_elf_building"
+			position = { x = 730 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		################################################
-		# Elf Main Buildings (Fortress)
-		################################################
-		
-		checkboxType = {
+		instantTextBoxType={
+			name = "capital_3_elf_building_cost"
+			position = { x = 732 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 3
+        checkboxType = {
 			name = "build_fort_1_elf_building"
-			position = { x = 617 y = -280 }
+			position = { x = 610 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_1_elf_building_cost"
-			position = { x = 617 y = -254 }
+			position = {x = 612 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_1_elf_building_to_fort_2_elf_building_arrow"
-			position = { x = 665 y = -292 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_fort_2_elf_building"
-			position = { x = 681 y = -304 }
+			position = { x = 670 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_2_elf_building_cost"
-			position = { x = 681 y = -254 }
+			position = { x = 672 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_2_elf_building_to_fort_3_elf_building_arrow"
-			position = { x = 729 y = -292 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_fort_3_elf_building"
-			position = { x = 745 y = -304 }
+			position = { x = 730 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_3_elf_building_cost"
-			position = { x = 745 y = -254 }
+			position = { x = 732 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		################################################
-		# Elf Main Buildings (Capital)
-		################################################
-		
-		checkboxType = {
-			name = "build_capital_1_elf_building"
-			position = { x = 617 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		iconType = {
-			name = "capital_1_elf_building_to_capital_2_elf_building_arrow"
-			position = { x = 665 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
-			name = "build_capital_2_elf_building"
-			position = { x = 681 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		iconType = {
-			name = "capital_2_elf_building_to_capital_3_elf_building_arrow"
-			position = { x = 729 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
-			name = "build_capital_3_elf_building"
-			position = { x = 745 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-
-		################################################
-		# Elf Trade Buildings 
-		################################################
-		
+        
+        #-----------------------
+        # Trade
+        #-----------------------
 		iconType = {
 			name = "elf_trade_buildings_banner"
-			position = { x = 550 y = -238 }
+			position = { x = 540 y = -220 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_trade_buildings"
-			position = {x = 590 y = -229 }
+			name = "elf_trade_buildings"
+			position = {x = 580 y = -208 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Trade"
+			text = "Trade"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="elf_trade_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = -226 }
+			position = { x = 550 y = -214 }
 			frame = 1
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "elf_trade_link_arrow_1"
+			position = { x = 598 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_trade_link_arrow_2"
+			position = { x = 658 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_elven_fairground_elf_building"
-			position = { x = 576 y = -198 }
+			position = { x = 550 y = -180 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "elven_fairground_elf_building_cost"
-			position = {x = 576 y = -148 }
+			position = { x = 552 y = -180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "elven_fairground_elf_building_to_craftsmen_plaza_elf_building_arrow"
-			position = { x = 624 y = -189 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_craftsmen_plaza_elf_building"
-			position = { x = 640 y = -198 }
+			position = { x = 610 y = -180 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "craftsmen_plaza_elf_building_cost"
-			position = {x = 640 y = -148 }
+			position = {x = 612 y = -180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "craftsmen_plaza_elf_building_to_exotic_wares_market_building_arrow"
-			position = { x = 688 y = -189 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_exotic_wares_market_elf_building"
-			position = { x = 704 y = -198 }
+			position = { x = 670 y = -180 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "exotic_wares_market_elf_building_cost"
-			position = {x = 704 y = -148 }
+			position = { x = 672 y = -180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -7381,86 +7714,85 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		################################################
-		# Elf Taxation Buildings 
-		################################################
-		
+        #-----------------------
+        # Taxation
+        #-----------------------
 		iconType = {
-			name = "elf_taxation_buildings_banner"
-			position = { x = 550 y = -138 }
+			name = "elf_tax_buildings_banner"
+			position = { x = 540 y = -120 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_taxation_buildings"
-			position = {x = 590 y = -129 }
+			name = "elf_tax_buildings"
+			position = {x = 580 y = -108 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Taxation"
+			text = "Taxation"	
 		}
-		
-		iconType ={
-			name ="elf_taxation_buildings_icon"
+        
+        iconType ={
+			name ="elf_tax_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = -126 }
+			position = { x = 550 y = -114 }
 			frame = 6
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "elf_tax_link_arrow_1"
+			position = { x = 598 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_tax_link_arrow_2"
+			position = { x = 658 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        # Row 1
+        checkboxType = {
 			name = "build_temple_elf_building"
-			position = { x = 576 y = -98 }
+			position = { x = 550 y = -80 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "temple_elf_building_cost"
-			position = {x = 576 y = -48 }
+			position = { x = 552 y = -80 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "temple_elf_building_to_theatre_elf_building_arrow"
-			position = { x = 624 y = -88 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_theatre_elf_building"
-			position = { x = 640 y = -98 }
+			position = { x = 610 y = -80 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "theatre_elf_building_cost"
-			position = {x = 640 y = -48 }
+			position = {x = 612 y = -80 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "theatre_elf_building_to_amphitheatre_elf_building_arrow"
-			position = { x = 688 y = -88 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_amphitheatre_elf_building"
-			position = { x = 704 y = -98 }
+			position = { x = 670 y = -80 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "amphitheatre_elf_building_cost"
-			position = {x = 704 y = -48 }
+			position = { x = 672 y = -80 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -7468,522 +7800,505 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		################################################
-		# Elf Production Buildings 
-		################################################
-		
+        #-----------------------
+        # Production
+        #-----------------------
 		iconType = {
 			name = "elf_production_buildings_banner"
-			position = { x = 550 y = -38 }
+			position = { x = 540 y = -20 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_production_buildings"
-			position = {x = 590 y = -29 }
+			name = "elf_production_buildings"
+			position = {x = 580 y = -8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Production"
+			text = "Production"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="elf_production_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = -32 }
+			position = { x = 550 y = -14 }
 			frame = 4
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "elf_production_link_arrow_1"
+			position = { x = 598 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_production_link_arrow_2"
+			position = { x = 658 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+
+        # Row 1
+        checkboxType = {
 			name = "build_workshop_elf_building"
-			position = { x = 576 y = -4 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 550 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "workshop_elf_building_cost"
-			position = {x = 576 y = 46 }
+			position = { x = 552 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "workshop_elf_building_to_elven_forge_elf_building_arrow"
-			position = { x = 624 y = 3 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_elven_forge_elf_building"
-			position = { x = 640 y = -4 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 610 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "elven_forge_elf_building_cost"
-			position = {x = 640 y = 46 }
+			position = {x = 612 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "elven_forge_elf_building_to_grand_forge_elf_building_arrow"
-			position = { x = 688 y = 3 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_grand_forge_elf_building"
-			position = { x = 704 y = -4 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 670 y = 20 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "grand_forge_elf_building_cost"
-			position = {x = 704 y = 46 }
+			position = { x = 672 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Elf Army Buildings 
-		################################################
-		
+        
+        #-----------------------
+        # Army
+        #-----------------------
 		iconType = {
 			name = "elf_army_buildings_banner"
-			position = { x = 550 y = 62 }
+			position = { x = 540 y = 80 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_army_buildings"
-			position = {x = 590 y = 71 }
+			name = "elf_army_buildings"
+			position = {x = 580 y = 92 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Army"
+			text = "Army"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="elf_army_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = 68 }
+			position = { x = 550 y = 86 }
 			frame = 5
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "elf_army_link_arrow_1"
+			position = { x = 598 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_army_link_arrow_2"
+			position = { x = 718 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_warriors_gallery_building"
-			position = { x = 561 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 550 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "warriors_gallery_building_cost"
-			position = {x = 561 y = 146 }
+			position = { x = 552 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "warriors_gallery_building_to_heros_shrine_building_arrow"
-			position = { x = 609 y = 103 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_heros_shrine_building"
-			position = { x = 625 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 610 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "heros_shrine_building_cost"
-			position = {x = 625 y = 146 }
+			position = {x = 612 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_green_pastures_elf_building"
-			position = { x = 689 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 670 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "green_pastures_elf_building_cost"
-			position = {x = 689 y = 146 }
+			position = { x = 672 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "green_pastures_elf_building_to_grand_stables_elf_building_arrow"
-			position = { x = 737 y = 103 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_grand_stables_elf_building"
-			position = { x = 753 y = 96 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 730 y = 120 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "grand_stables_elf_building_cost"
-			position = {x = 753 y = 146 }
+			position = { x = 732 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Elf Navy Buildings 
-		################################################
-		
+        
+        #-----------------------
+        # Navy
+        #-----------------------
 		iconType = {
 			name = "elf_navy_buildings_banner"
-			position = { x = 550 y = 162 }
+			position = { x = 540 y = 180 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_navy_buildings"
-			position = {x = 590 y = 171 }
+			name = "elf_navy_buildings"
+			position = {x = 580 y = 192 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Navy"
+			text = "Navy"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="elf_navy_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = 168 }
+			position = { x = 550 y = 186 }
 			frame = 3
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "elf_navy_link_arrow_1"
+			position = { x = 598 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_navy_link_arrow_2"
+			position = { x = 718 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_port_elf_building"
-			position = { x = 561 y = 196 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 550 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "port_elf_building_cost"
-			position = {x = 561 y = 246 }
+			position = { x = 552 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "port_elf_building_to_seaport_elf_building_arrow"
-			position = { x = 609 y = 203 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_seaport_elf_building"
-			position = { x = 625 y = 196 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 610 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "seaport_elf_building_cost"
-			position = {x = 625 y = 246 }
+			position = {x = 612 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_harbour_elf_building"
-			position = { x = 689 y = 196 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 670 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "harbour_elf_building_cost"
-			position = {x = 689 y = 246 }
+			position = { x = 672 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "harbour_elf_building_to_haven_elf_building_arrow"
-			position = { x = 737 y = 203 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_haven_elf_building"
-			position = { x = 753 y = 196 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 730 y = 220 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "haven_elf_building_cost"
-			position = {x = 753 y = 246 }
+			position = { x = 732 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Elf Fortifications Buildings 
-		################################################
-		
+        
+        #-----------------------
+        # Fort
+        #-----------------------
 		iconType = {
-			name = "elf_fortification_buildings_banner"
-			position = { x = 550 y = 262 }
+			name = "elf_fort_buildings_banner"
+			position = { x = 540 y = 280 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_fortification_buildings"
-			position = {x = 590 y = 271 }
+			name = "elf_fort_buildings"
+			position = {x = 580 y = 292 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Fortifications"
+			text = "Fortifications"	
 		}
-		
-		iconType ={
-			name ="elf_fortification_buildings_icon"
+        
+        iconType ={
+			name ="elf_fort_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = 268 }
+			position = { x = 550 y = 286 }
 			frame = 7
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "elf_fort_link_arrow_1"
+			position = { x = 598 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "elf_fort_link_arrow_2"
+			position = { x = 718 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_fort_low_walls_elf_building"
-			position = { x = 561 y = 296 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 550 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_low_walls_elf_building_cost"
-			position = {x = 561 y = 346 }
+			position = { x = 552 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_low_walls_elf_building_to_fort_high_walls_elf_building_arrow"
-			position = { x = 609 y = 303 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_fort_high_walls_elf_building"
-			position = { x = 625 y = 296 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 610 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_high_walls_elf_building_cost"
-			position = {x = 625 y = 346 }
+			position = {x = 612 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_moat_elf_building"
-			position = { x = 689 y = 296 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 670 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "moat_elf_building_cost"
-			position = {x = 689 y = 346 }
+			position = { x = 672 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "moat_elf_building_to_wall_bastions_elf_building_arrow"
-			position = { x = 737 y = 303 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_wall_bastions_elf_building"
-			position = { x = 753 y = 296 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 730 y = 320 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "wall_bastions_elf_building_cost"
-			position = {x = 753 y = 346 }
+			position = { x = 732 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Elf Monument Buildings 
-		################################################
-		
+        
+        #-----------------------
+        # Monuments
+        #-----------------------
 		iconType = {
-			name = "elf_monument_buildings_banner"
-			position = { x = 550 y = 362 }
+			name = "elf_monuments_buildings_banner"
+			position = { x = 540 y = 380 }
 			spriteType = "GFX_banner_buildings_green_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_elf_monument_buildings"
-			position = {x = 590 y = 371 }
+			name = "elf_monuments_buildings"
+			position = {x = 580 y = 392 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Monument Buildings"
+			text = "Monuments"	
 		}
-		
-		iconType ={
-			name ="elf_monument_buildings_icon"
+        
+        iconType ={
+			name ="elf_monuments_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 561 y = 368 }
+			position = { x = 550 y = 386 }
 			frame = 2
 		}
-		
-		checkboxType = {
+        
+        # Row 1
+        checkboxType = {
 			name = "build_mallorn_tree_elf_building"
-			position = { x = 561 y = 396 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 550 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "mallorn_tree_elf_building_cost"
-			position = {x = 561 y = 446 }
+			position = { x = 552 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_statue_of_the_elders_elf_building"
-			position = { x = 625 y = 396 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 610 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "statue_of_the_elders_elf_building_cost"
-			position = {x = 625 y = 446 }
+			position = {x = 612 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_mirror_fountain_elf_building"
-			position = { x = 689 y = 396 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 670 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "mirror_fountain_elf_building_cost"
-			position = {x = 689 y = 446 }
+			position = { x = 672 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_star_of_earendil_shrine_elf_building"
-			position = { x = 753 y = 396 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+			position = { x = 730 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "star_of_earendil_shrine_elf_building_cost"
-			position = {x = 753 y = 446 }
+			position = { x = 732 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		################################################
-		# Elf End
-		################################################
-		
-		#iconType = {
-		#	name = "elf_buildings_end_banner"
-		#	position = { x = 4 y = 3064 }
-		#	spriteType = "GFX_banner_buildings_green"
-		#}
-
-		################################################
-		# Orc Start
-		################################################
-		
-		iconType ={
-			name ="background_orc_icon"
-			spriteType = "GFX_background_orc"
-			position = { x = 6 y = 3146}
-		}
-		
+        
+        #-----------------------------------------------------
+        # Orc
+        #-----------------------------------------------------
 		iconType = {
 			name = "orc_buildings_banner"
-			position = { x = 825 y = -466 }
-			spriteType = "GFX_banner_buildings_red_small"
+			position = { x = 805 y = -435 }
+			spriteType = "LOU_decree_button"
 		}
 		
 		instantTextBoxType={
 			name = "title_orc_buildings"
-			position = {x = 900 y = -453 }
+			position = { x = 872 y = -428 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
@@ -7991,20 +8306,19 @@ guiTypes = {
 			text = "Orc Buildings"	
 			format = center
 		}
-		
-		################################################
-		# Orc Main Buildingss
-		################################################
-		
+        
+        #-----------------------
+        # Main Buildings
+        #-----------------------
 		iconType = {
 			name = "orc_main_buildings_banner"
-			position = { x = 825 y = -434 }
+			position = { x = 805 y = -406 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_orc_main_buildings"
-			position = {x = 865 y = -421 }
+			name = "orc_main_buildings_buildings"
+			position = {x = 845 y = -394 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
@@ -8015,19 +8329,106 @@ guiTypes = {
 		iconType ={
 			name ="orc_main_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = -430 }
+			position = { x = 815 y = -400 }
 			frame = 2
 		}
 		
+        # Links
+        iconType = {
+			name = "orc_main_building_link_arrow_1"
+			position = { x = 923 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_main_building_link_arrow_2"
+			position = { x = 983 y = -356 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_main_building_link_arrow_3"
+			position = { x = 923 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_main_building_link_arrow_4"
+			position = { x = 983 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_main_building_link_arrow_5"
+			position = { x = 923 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_main_building_link_arrow_6"
+			position = { x = 983 y = -256 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_main_building_link_arrow_7"
+			position = { x = 863 y = -306 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_encampment_1_orc_building"
+			position = { x = 875 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "encampment_1_orc_building_cost"
+			position = {x = 877 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_encampment_2_orc_building"
+			position = { x = 935 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "encampment_2_orc_building_cost"
+			position = { x = 937 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_encampment_3_orc_building"
+			position = { x = 995 y = -366 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "encampment_3_orc_building_cost"
+			position = { x = 997 y = -366 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 2
 		checkboxType = {
 			name = "build_camp_orc_building"
-			position = { x = 828 y = -352 }
+			position = { x = 815 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "camp_orc_building_cost"
-			position = {x = 828 y = -302 }
+			position = { x = 817 y = -316 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -8035,226 +8436,183 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		iconType = {
-			name = "camp_orc_building_to_capital_1_orc_building_arrow"
-			position = { x = 876 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		################################################
-		# Orc Main Buildings (City)
-		################################################
-		
-		checkboxType = {
-			name = "build_encampment_1_orc_building"
-			position = { x = 892 y = -400 }
+        checkboxType = {
+			name = "build_capital_1_orc_building"
+			position = { x = 875 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		iconType = {
-			name = "encampment_1_orc_building_to_encampment_2_orc_building_arrow"
-			position = { x = 940 y = -391 }
-			spriteType = "GFX_building_upgrade_icon"
+		instantTextBoxType={
+			name = "capital_1_orc_building_cost"
+			position = {x = 877 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
-		
-		checkboxType = {
-			name = "build_encampment_2_orc_building"
-			position = { x = 956 y = -400 }
+
+        checkboxType = {
+			name = "build_capital_2_orc_building"
+			position = { x = 935 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		iconType = {
-			name = "encampment_2_orc_building_to_encampment_3_orc_building_arrow"
-			position = { x = 1004 y = -391 }
-			spriteType = "GFX_building_upgrade_icon"
+		instantTextBoxType={
+			name = "capital_2_orc_building_cost"
+			position = { x = 937 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
 		}
-		
-		checkboxType = {
-			name = "build_encampment_3_orc_building"
-			position = { x = 1020 y = -400 }
+        
+        checkboxType = {
+			name = "build_capital_3_orc_building"
+			position = { x = 995 y = -316 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
-		################################################
-		# Orc Main Buildings (Fortress)
-		################################################
-		
-		checkboxType = {
+		instantTextBoxType={
+			name = "capital_3_orc_building_cost"
+			position = { x = 997 y = -316 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # Row 3
+        checkboxType = {
 			name = "build_fortress_1_orc_building"
-			position = { x = 892 y = -304 }
+			position = { x = 875 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fortress_1_orc_building_cost"
-			position = { x = 892 y = -254 }
+			position = {x = 877 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fortress_1_orc_building_to_fortress_2_orc_building_arrow"
-			position = { x = 940 y = -292 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_fortress_2_orc_building"
-			position = { x = 956 y = -304 }
+			position = { x = 935 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fortress_2_orc_building_cost"
-			position = { x = 956 y = -254 }
+			position = { x = 937 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fortress_2_orc_building_to_fortress_3_orc_building_arrow"
-			position = { x = 1004 y = -292 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_fortress_3_orc_building"
-			#position = { x = 222 y = 3334 }
-			position = { x = 1020 y = -304 }
+			position = { x = 995 y = -266 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fortress_3_orc_building_cost"
-			position = { x = 1020 y = -254 }
+			position = { x = 997 y = -266 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		################################################
-		# Orc Main Buildings (Capital)
-		################################################
-		
-		checkboxType = {
-			name = "build_capital_1_orc_building"
-			position = { x = 892 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		iconType = {
-			name = "capital_1_orc_building_to_capital_2_orc_building_arrow"
-			position = { x = 940 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
-			name = "build_capital_2_orc_building"
-			position = { x = 956 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		iconType = {
-			name = "capital_2_orc_building_to_capital_3_orc_building_arrow"
-			position = { x = 1004 y = -343 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
-			name = "build_capital_3_orc_building"
-			#position = { x = 222 y = 3276 }
-			position = { x = 1020 y = -352 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-
-		################################################
-		# Orc Trade Buildings
-		################################################
-		
+        
+        #-----------------------
+        # Trade
+        #-----------------------
 		iconType = {
 			name = "orc_trade_buildings_banner"
-			position = { x = 825 y = -238 }
+			position = { x = 805 y = -220 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_orc_trade_buildings"
-			position = {x = 865 y = -229 }
+			name = "orc_trade_buildings"
+			position = {x = 845 y = -208 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Trade"
+			text = "Trade"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="orc_trade_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = -226 }
+			position = { x = 815 y = -214 }
 			frame = 1
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "orc_trade_link_arrow_1"
+			position = { x = 863 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_trade_link_arrow_2"
+			position = { x = 923 y = -170 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_meat_depot_orc_building"
-			position = { x = 851 y = -198 }
+			position = { x = 815 y = -180 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "meat_depot_orc_building_cost"
-			position = {x = 851 y = -148 }
+			position = { x = 817 y = -180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "meat_depot_orc_building_to_treasure_trove_orc_building_arrow"
-			position = { x = 899 y = -189 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_treasure_trove_orc_building"
-			position = { x = 915 y = -198 }
+			position = { x = 875 y = -180 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "treasure_trove_orc_building_cost"
-			position = {x = 915 y = -148 }
+			position = {x = 877 y = -180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "treasure_trove_orc_building_to_stockpile_orc_building_arrow"
-			position = { x = 963 y = -189 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_stockpile_orc_building"
-			position = { x = 979 y = -198 }
+			position = { x = 935 y = -180 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "stockpile_orc_building_cost"
-			position = {x = 979 y = -148 }
+			position = { x = 937 y = -180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -8262,86 +8620,86 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		################################################
-		# Orc Taxation Buildings
-		################################################
-		
+        #-----------------------
+        # Taxation
+        #-----------------------
 		iconType = {
-			name = "orc_taxation_buildings_banner"
-			position = { x = 825 y = -138 }
+			name = "orc_tax_buildings_banner"
+			position = { x = 805 y = -120 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_orc_taxation_buildings"
-			position = {x = 865 y = -129 }
+			name = "orc_tax_buildings"
+			position = {x = 845 y = -108 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Taxation"
+			text = "Taxation"	
 		}
-		
-		iconType ={
-			name ="orc_taxation_buildings_icon"
+        
+        iconType ={
+			name ="orc_tax_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = -126 }
+			position = { x = 815 y = -114 }
 			frame = 6
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "orc_tax_link_arrow_1"
+			position = { x = 863 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_tax_link_arrow_2"
+			position = { x = 923 y = -70 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_enforcer_camp_orc_building"
-			position = { x = 851 y = -98 }
+			position = { x = 815 y = -80 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "enforcer_camp_orc_building_cost"
-			position = {x = 851 y = -48 }
+			position = { x = 817 y = -80 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "enforcer_camp_orc_building_to_overseer_station_orc_building_arrow"
-			position = { x = 895 y = -88 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_overseer_station_orc_building"
-			position = { x = 915 y = -98 }
+			position = { x = 875 y = -80 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "overseer_station_orc_building_cost"
-			position = {x = 915 y = -48 }
+			position = {x = 877 y = -80 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "overseer_station_orc_building_to_overseer_tower_orc_building_arrow"
-			position = { x = 895 y = -88 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_overseer_tower_orc_building"
-			position = { x = 979 y = -98 }
+			position = { x = 935 y = -80 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "overseer_tower_orc_building_cost"
-			position = {x = 979 y = -48 }
+			position = { x = 937 y = -80 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -8349,513 +8707,502 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		################################################
-		# Orc Production Buildings
-		################################################
-		
+        #-----------------------
+        # Production
+        #-----------------------
 		iconType = {
 			name = "orc_production_buildings_banner"
-			position = { x = 825 y = -38 }
+			position = { x = 805 y = -20 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_orc_production_buildings"
-			position = {x = 865 y = -29 }
+			name = "orc_production_buildings"
+			position = {x = 845 y = -8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
-			text = "Production"
+			text = "Production"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="orc_production_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = -26 }
+			position = { x = 815 y = -14 }
 			frame = 4
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "orc_production_link_arrow_1"
+			position = { x = 863 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_production_link_arrow_2"
+			position = { x = 923 y = 30 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_blacksmith_orc_building"
-			position = { x = 851 y = 2 }
+			position = { x = 815 y = 20 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "blacksmith_orc_building_cost"
-			position = {x = 851 y = 52 }
+			position = { x = 817 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "blacksmith_orc_building_to_metal_works_orc_building_arrow"
-			position = { x = 899 y = 11 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_metal_works_orc_building"
-			position = { x = 915 y = 2 }
+			position = { x = 875 y = 20 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "metal_works_orc_building_cost"
-			position = {x = 915 y = 52 }
+			position = {x = 877 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "metal_works_orc_building_to_dark_iron_forge_orc_building_arrow"
-			position = { x = 963 y = 11 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_dark_iron_forge_orc_building"
-			position = { x = 979 y = 2 }
+			position = { x = 935 y = 20 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "dark_iron_forge_orc_building_cost"
-			position = {x = 979 y = 52 }
+			position = { x = 937 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Orc Army
-		################################################
-		
+        
+        #-----------------------
+        # Army
+        #-----------------------
 		iconType = {
 			name = "orc_army_buildings_banner"
-			position = { x = 825 y = 62 }
+			position = { x = 805 y = 80 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_orc_army_buildings"
-			position = {x = 865 y = 71 }
+			name = "orc_army_buildings"
+			position = {x = 845 y = 92 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
 			text = "Army"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="orc_army_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = 68 }
+			position = { x = 815 y = 86 }
 			frame = 5
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "orc_army_link_arrow_1"
+			position = { x = 863 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_army_link_arrow_2"
+			position = { x = 923 y = 130 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_army_link_arrow_3"
+			position = { x = 863 y = 180 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_army_link_arrow_4"
+			position = { x = 923 y = 180 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_army_link_arrow_5"
+			position = { x = 863 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_army_link_arrow_6"
+			position = { x = 923 y = 230 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_orc_pit_orc_building"
-			position = { x = 851 y = 96 }
+			position = { x = 815 y = 120 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "orc_pit_orc_building_cost"
-			position = {x = 851 y = 146 }
+			position = { x = 817 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "orc_pit_orc_building_to_orc_fissure_orc_building_arrow"
-			position = { x = 899 y = 105 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_orc_fissure_orc_building"
-			position = { x = 915 y = 96 }
+			position = { x = 875 y = 120 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "orc_fissure_orc_building_cost"
-			position = {x = 915 y = 146 }
+			position = {x = 877 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "orc_fissure_orc_building_to_army_garrison_orc_building_arrow"
-			position = { x = 963 y = 105 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_army_garrison_orc_building"
-			position = { x = 979 y = 96 }
+			position = { x = 935 y = 120 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "army_garrison_orc_building_cost"
-			position = {x = 979 y = 146 }
+			position = { x = 937 y = 120 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		################################################
-		# Orc Army (Cav)
-		################################################
-		
-		checkboxType = {
+        
+        # Row 2
+        checkboxType = {
 			name = "build_warg_pit_orc_building"
-			position = { x = 851 y = 162 }
+			position = { x = 815 y = 170 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "warg_pit_orc_building_cost"
-			position = {x = 851 y = 212 }
+			position = { x = 817 y = 170 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "warg_pit_orc_building_to_warg_arena_orc_building_arrow"
-			position = { x = 899 y = 171 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_warg_arena_orc_building"
-			position = { x = 915 y = 162 }
+			position = { x = 875 y = 170 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "warg_arena_orc_building_cost"
-			position = {x = 915 y = 212 }
+			position = {x = 877 y = 170 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "warg_arena_orc_building_to_troll_cage_orc_building_arrow"
-			position = { x = 963 y = 171 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_troll_cage_orc_building"
-			position = { x = 979 y = 162 }
+			position = { x = 935 y = 170 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "troll_cage_orc_building_cost"
-			position = {x = 979 y = 212 }
+			position = { x = 937 y = 170 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		################################################
-		# Orc Army (arty)
-		################################################
-		
-		checkboxType = {
+        
+        # Row 3
+        checkboxType = {
 			name = "build_workshop_orc_building"
-			position = { x = 851 y = 232 }
+			position = { x = 815 y = 220 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "workshop_orc_building_cost"
-			position = {x = 851 y = 282 }
+			position = { x = 817 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "workshop_orc_building_to_siege_works_orc_building_arrow"
-			position = { x = 899 y = 241 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_siege_works_orc_building"
-			position = { x = 915 y = 232 }
+			position = { x = 875 y = 220 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "siege_works_orc_building_cost"
-			position = {x = 915 y = 282 }
+			position = {x = 877 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "siege_works_orc_building_to_great_siege_works_orc_building_arrow"
-			position = { x = 963 y = 241 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_great_siege_works_orc_building"
-			position = { x = 979 y = 232 }
+			position = { x = 935 y = 220 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "great_siege_works_orc_building_cost"
-			position = {x = 979 y = 282 }
+			position = { x = 937 y = 220 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Orc Fortifications
-		################################################
-		
+        
+        #-----------------------
+        # Fort
+        #-----------------------
 		iconType = {
-			name = "orc_fortification_buildings_banner"
-			position = { x = 825 y = 292 }
+			name = "orc_fort_buildings_banner"
+			position = { x = 805 y = 280 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
 		
 		instantTextBoxType={
-			name = "title_orc_fortification_buildings"
-			position = {x = 865 y = 301 }
+			name = "orc_fort_buildings"
+			position = {x = 845 y = 292 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
-			maxHeight = 18 
+			maxHeight = 18
 			text = "Fortifications"	
 		}
-		
-		iconType ={
-			name ="orc_fortification_buildings_icon"
+        
+        iconType ={
+			name ="orc_fort_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = 298 }
+			position = { x = 815 y = 286 }
 			frame = 7
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "orc_fort_link_arrow_1"
+			position = { x = 863 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_fort_link_arrow_2"
+			position = { x = 923 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_fort_link_arrow_3"
+			position = { x = 983 y = 330 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_fort_pallisade_orc_building"
-			position = { x = 836 y = 326 }
+			position = { x = 815 y = 320 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_pallisade_orc_building_cost"
-			position = {x = 836 y = 376 }
+			position = { x = 817 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_pallisade_orc_building_to_fort_wooden_walls_orc_building_arrow"
-			position = { x = 884 y = 335 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_fort_wooden_walls_orc_building"
-			position = { x = 900 y = 326 }
+			position = { x = 875 y = 320 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_wooden_walls_orc_building_cost"
-			position = {x = 900 y = 376 }
+			position = {x = 877 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_wooden_walls_orc_building_to_fort_orc_stronghold_orc_building_arrow"
-			position = { x = 948 y = 335 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_fort_orc_stronghold_orc_building"
-			position = { x = 964 y = 326 }
+			position = { x = 935 y = 320 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_orc_stronghold_orc_building_cost"
-			position = {x = 964 y = 376 }
+			position = { x = 937 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "fort_orc_stronghold_orc_building_to_fort_large_orc_stronghold_orc_building_arrow"
-			position = { x = 1012 y = 335 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_fort_large_orc_stronghold_orc_building"
-			position = { x = 1028 y = 326 }
+			position = { x = 995 y = 320 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "fort_large_orc_stronghold_orc_building_cost"
-			position = {x = 1028 y = 376 }
+			position = { x = 997 y = 320 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-		################################################
-		# Orc Unrest
-		################################################
-		
+        
+        #-----------------------
+        # Unrest
+        #-----------------------
 		iconType = {
 			name = "orc_unrest_buildings_banner"
-			position = { x = 825 y = 386 }
+			position = { x = 805 y = 380 }
 			spriteType = "GFX_banner_buildings_red_small"
 		}
-
+		
 		instantTextBoxType={
-			name = "title_orc_unrest_buildings"
-			position = {x = 865 y = 395 }
+			name = "orc_unrest_buildings"
+			position = {x = 845 y = 392 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 120
 			maxHeight = 18
 			text = "Unrest"	
 		}
-		
-		iconType ={
+        
+        iconType ={
 			name ="orc_unrest_buildings_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 836 y = 392 }
+			position = { x = 815 y = 386 }
 			frame = 2
 		}
-		
-		checkboxType = {
+        
+        # Links
+        iconType = {
+			name = "orc_unrest_link_arrow_1"
+			position = { x = 863 y = 430 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        iconType = {
+			name = "orc_unrest_link_arrow_2"
+			position = { x = 983 y = 430 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+        
+        # Row 1
+        checkboxType = {
 			name = "build_small_arena_building"
-			position = { x = 836 y = 420 }
+			position = { x = 815 y = 420 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "small_arena_building_cost"
-			position = {x = 836 y = 470 }
+			position = { x = 817 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "small_arena_building_to_large_arena_building_arrow"
-			position = { x = 884 y = 429 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_large_arena_building"
-			position = { x = 900 y = 420 }
+			position = { x = 875 y = 420 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "large_arena_building_cost"
-			position = {x = 900 y = 470 }
+			position = {x = 877 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		checkboxType = {
+
+        checkboxType = {
 			name = "build_prisoner_cage_orc_building"
-			position = { x = 964 y = 420 }
+			position = { x = 935 y = 420 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "prisoner_cage_orc_building_cost"
-			position = {x = 964 y = 470 }
+			position = { x = 937 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-		
-		iconType = {
-			name = "prisoner_cage_orc_building_to_tortur_chambers_orc_building_arrow"
-			position = { x = 1012 y = 429 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-		
-		checkboxType = {
+        
+        checkboxType = {
 			name = "build_tortur_chambers_orc_building"
-			position = { x = 1028 y = 420 }
+			position = { x = 995 y = 420 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "tortur_chambers_orc_building_cost"
-			position = {x = 1028 y = 470 }
+			position = { x = 997 y = 420 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
