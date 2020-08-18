@@ -3,29 +3,8 @@ monarch_power = MIL
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
 ahead_of_time = {
-	land_morale = 0.1
+	land_morale = 0.5
 }
-
-#infantry_fire		= 0.25
-#infantry_shock		= 0.25
-#cavalry_shock		= 0.25
-#cavalry_fire		= 0.25
-#artillery_fire		= 0.25
-#artillery_shock	= 0.025
-
-#land_morale		= 0.05
-#combat_width		= 1.0
-#military_tactics	= 0.25
-#supply_limit		= 0.25
-#maneuver_value		= 0.15
-
-#barracks = yes
-#regimental_camp = yes
-#fort_16th = yes
-#training_fields = yes
-#conscription_center = yes
-#fort_17th = yes
-#fort_18th = yes
 
 # Pre-era techs
 technology = {
@@ -35,7 +14,7 @@ technology = {
 	sprite_level = 1
 
 	land_morale 		= 2.0
-    military_tactics    = 0.5
+    military_tactics    = 0.0
     combat_width        = 0.0
     supply_limit        = 0.0
     maneuver_value      = 0.0
@@ -293,57 +272,49 @@ technology = {
 }
 technology = {
 	# Tech 1
-	year = 2760
-
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+	year = 2763
+    
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 2
-	year = 2770
+	year = 2776
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    cavalry_shock = 0.5
+    cavalry_fire = 0.1
+    maneuver_value = 0.1
 }
 
 technology = {
 	# Tech 3
-	year = 2780
+	year = 2789
 
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 4
-	year = 2790
+	year = 2802
 	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+    land_morale = 0.5
+    military_tactics = 0.5
 }
 
 technology = {
 	# Tech 5
-	year = 2800
+	year = 2815
 
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    artillery_fire = 0.5
+    artillery_shock = 0.1
 }
 
 technology = {
 	# Tech 6
-	year = 2810
+	year = 2828
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
-	
 	enable = lotr_dunedain_pelargir_spears_2
 	enable = lotr_dunedain_pelargir_swords_2
 	enable = lotr_dunedain_blackroot_archers_2
@@ -512,7 +483,7 @@ technology = {
 
 technology = {
 	# Tech 7
-	year = 2820
+	year = 2841
 	
 	#Human Buildings
 	#Human Fortifications Buildings
@@ -558,54 +529,44 @@ technology = {
 	#Orc Fortifications Buildings
 	fort_orc_stronghold_orc_building = yes
 
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
 }
 
 technology = {
 	# Tech 8
-	year = 2830
+	year = 2854
 	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+    land_morale = 1
+    military_tactics = 0.5
 }
 
 technology = {
 	# Tech 9
-	year = 2840
+	year = 2867
 
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    cavalry_shock = 0.5
+    cavalry_fire = 0.1
+    maneuver_value = 0.1
 }
 
 technology = {
 	# Tech 10
-	year = 2850
+	year = 2880
 	
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 11
-	year = 2860
+	year = 2893
 
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+    artillery_fire = 0.5
+    artillery_shock = 0.1
 }
 
 technology = {
 	# Tech 12
-	year = 2870
-	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+	year = 2906
 	
 	enable = lotr_dunedain_gondor_archers_3
 	enable = lotr_dunedain_gondor_spears_3
@@ -819,25 +780,24 @@ technology = {
 
 technology = {
 	# Tech 13
-	year = 2880
+	year = 2919
 
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 14
-	year = 2890
+	year = 2932
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    cavalry_shock = 0.5
+    cavalry_fire = 0.1
+    maneuver_value = 0.1
 }
 
 technology = {
 	# Tech 15
-	year = 2900
+	year = 2945
 	
 	#Human Buildings
 	#Human Fortifications Buildings
@@ -871,38 +831,28 @@ technology = {
 	
 	#Orc Fortifications Buildings
 	fort_large_orc_stronghold_orc_building = yes
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
 }
 
 technology = {
 	# Tech 16
-	year = 2910
+	year = 2958
 	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+    land_morale = 0.5
+    military_tactics = 0.5
 }
 
 technology = {
 	# Tech 17
-	year = 2920
+	year = 2971
 
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    supply_limit = 0.25
+    combat_width = 2
 }
 
 technology = {
 	# Tech 18
-	year = 2930
+	year = 2984
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
-	
 	enable = lotr_dunedain_citidal_archers_4
 	enable = lotr_dunedain_fountain_spear_4
 	enable = lotr_dunedain_citidal_sword_4
@@ -1057,56 +1007,48 @@ technology = {
 
 technology = {
 	# Tech 19
-	year = 2940
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+	year = 2997
+    
+    artillery_fire = 0.5
+    artillery_shock = 0.1
 }
 
 technology = {
 	# Tech 20
-	year = 2950
-	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+	year = 3010
+
+    land_morale = 1
+    military_tactics = 0.5
 }
 
 technology = {
 	# Tech 21
-	year = 2960
+	year = 3023
 
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 22
-	year = 2970
+	year = 3036
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    cavalry_shock = 0.5
+    cavalry_fire = 0.1
+    maneuver_value = 0.1
 }
 
 technology = {
 	# Tech 23
-	year = 2980
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+	year = 3049
+    
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 24
-	year = 2990
-	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+	year = 3062
 	
 	enable = lotr_dunedain_ithilien_rangers_5
 	enable = lotr_dunedain_osgiliath_guard_5
@@ -1311,279 +1253,131 @@ technology = {
 
 technology = {
 	# Tech 25
-	year = 3000
+	year = 3075
 	
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    supply_limit = 0.25
+    combat_width = 2
 }
 
 technology = {
 	# Tech 26
-	year = 3010
+	year = 3088
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 27
-	year = 3020
+	year = 3101
 
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+    artillery_fire = 0.5
+    artillery_shock = 0.1
 }
 
 technology = {
 	# Tech 28
-	year = 3030
+	year = 3114
 	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+    land_morale = 0.5
+    military_tactics = 0.75
 }
 
 technology = {
 	# Tech 29
-	year = 3040
+	year = 3127
 
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+    supply_limit = 0.25
+    combat_width = 2
 }
 
 technology = {
 	# Tech 30
-	year = 3050
+	year = 3140
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    cavalry_shock = 1
+    cavalry_fire = 0.3
+    maneuver_value = 0.1
 }
 
 technology = {
 	# Tech 31
-	year = 3060
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+	year = 3153
+    
+    infantry_fire = 0.25
+    infantry_shock = 0.25
 }
 
 technology = {
 	# Tech 32
-	year = 3070
+	year = 3166
 
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+    land_morale = 1
+    military_tactics = 0.75
 }
 
 technology = {
 	# Tech 33
-	year = 3080
-	
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+	year = 3179
+
+    supply_limit = 0.25
+    combat_width = 2	
 }
 
 technology = {
 	# Tech 34
-	year = 3090
+	year = 3192
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    artillery_fire = 1
+    artillery_shock = 0.3
 }
 
 technology = {
 	# Tech 35
-	year = 3100
+	year = 3205
 
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+    infantry_fire = 0.5
+    infantry_shock = 0.5
 }
 
 technology = {
 	# Tech 36
-	year = 3110
+	year = 3220
 
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
+    land_morale = 0.5
+    military_tactics = 1
 }
 
 technology = {
 	# Tech 37
-	year = 3120
-	
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
+	year = 3235
+
+    cavalry_shock = 1
+    cavalry_fire = 0.3
+    maneuver_value = 0.1
 }
 
 technology = {
 	# Tech 38
-	year = 3130
+	year = 3250
 
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
+    infantry_fire = 0.5
+    infantry_shock = 0.5
 }
 
 technology = {
 	# Tech 39
-	year = 3140
-	
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+	year = 3265
+    
+    artillery_fire = 1
+    artillery_shock = 0.3
 }
 
 technology = {
 	# Tech 40
-	year = 3150
-	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
-}
-
-technology = {
-	# Tech 41
-	year = 3160
-	
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
-}
-
-technology = {
-	# Tech 42
-	year = 3170
-
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
-}
-
-technology = {
-	# Tech 43
-	year = 3180
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
-}
-
-technology = {
-	# Tech 44
-	year = 3190
-	
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
-}
-
-technology = {
-	# Tech 45
-	year = 3200
-
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
-}
-
-technology = {
-	# Tech 46
-	year = 3210
-
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
-}
-
-technology = {
-	# Tech 47
-	year = 3220
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
-}
-
-technology = {
-	# Tech 48
-	year = 3230
-
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
-}
-
-technology = {
-	# Tech 49
-	year = 3240
-
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
-}
-
-technology = {
-	# Tech 50
-	year = 3250
-
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
-}
-
-technology = {
-	# Tech 51
-	year = 3260
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
-}
-
-technology = {
-	# Tech 52
-	year = 3270
-
-	combat_width		= 1.0
-	military_tactics	= 0.25
-	supply_limit		= 0.25
-}
-
-technology = {
-	# Tech 53
 	year = 3280
-
-	infantry_fire		= 0.25
-	infantry_shock		= 0.25
-	land_morale			= 0.25
-}
-
-technology = {
-	# Tech 54
-	year = 3290
-
-	cavalry_shock		= 0.25
-	cavalry_fire		= 0.25
-	maneuver_value		= 0.15
-}
-
-technology = {
-	# Tech 55
-	year = 3300
-
-	artillery_fire		= 0.25
-	artillery_shock		= 0.25
-	military_tactics	= 0.25
+	
+    land_morale = 1
+    military_tactics = 1
+    combat_width = 2
 }
