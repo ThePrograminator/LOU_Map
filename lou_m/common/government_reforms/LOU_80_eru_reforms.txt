@@ -2,7 +2,7 @@
 # Government Form
 #------------------------------
 lotr_ent_government_reform = {
-	icon = "chieftain"
+	icon = "fangorn"
 	valid_for_new_country = no
 	allow_convert = no
 	allow_normal_conversion = no
@@ -24,7 +24,7 @@ lotr_ent_government_reform = {
 	}
 }
 lotr_great_eagle_government_reform = {
-	icon = "chieftain"
+	icon = "great_eagle"
 	valid_for_new_country = no
 	allow_convert = no
 	allow_normal_conversion = no
@@ -46,7 +46,7 @@ lotr_great_eagle_government_reform = {
 	}
 }
 lotr_giant_government_reform = {
-	icon = "chieftain"
+	icon = "giant"
 	valid_for_new_country = no
 	allow_convert = no
 	allow_normal_conversion = no
@@ -69,5 +69,136 @@ lotr_giant_government_reform = {
 }
 
 #------------------------------
-# 
+# Question of Motive
 #------------------------------
+ent_haven_reform = {
+	icon = "fangorn"
+	allow_normal_conversion = yes
+    
+    potential = {
+        has_reform = lotr_ent_government_reform
+    }
+	modifiers = {
+		ae_impact = -0.1
+	}
+    ai = {
+		factor = 1
+	}
+}
+great_eagle_haven_reform = {
+	icon = "great_eagle"
+	allow_normal_conversion = yes
+    
+    potential = {
+        has_reform = lotr_great_eagle_government_reform
+    }
+	modifiers = {
+		idea_cost = -0.1
+	}
+    ai = {
+		factor = 1
+	}
+}
+giant_haven_reform = {
+	icon = "giant"
+	allow_normal_conversion = yes
+    
+    potential = {
+        has_reform = lotr_giant_government_reform
+    }
+	modifiers = {
+		core_creation = -0.1
+	}
+    ai = {
+		factor = 1
+	}
+}
+cleanse_evil_reform = {
+	icon = "eru"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		global_manpower_modifier = 0.1
+	}
+    custom_attributes = {
+        enables_cleanse_evil = yes
+    }
+    ai = {
+		factor = 10
+	}
+}
+
+#------------------------------
+# Outward Attitude
+#------------------------------
+kind_attitude_reform = {
+	icon = "elassar"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		improve_relation_modifier = 0.1
+        diplomatic_upkeep = 1
+	}
+    ai = {
+		factor = 1
+	}
+}
+isolation_attitude_reform = {
+	icon = "eagles_flying"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		development_cost = -0.15
+	}
+    ai = {
+		factor = 1
+	}
+}
+
+#------------------------------
+# Note of Ilúvatar
+#------------------------------
+note_ire_reform = {
+	icon = "battle"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		infantry_power = 0.1
+	}
+    ai = {
+		factor = 1
+	}
+}
+note_elation_reform = {
+	icon = "sunny_mountain"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		stability_cost_modifier = -0.25
+	}
+    ai = {
+		factor = 1
+	}
+}
+note_desolation_reform = {
+	icon = "desolation"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		diplomatic_reputation = 2
+	}
+    ai = {
+		factor = 1
+	}
+}
+note_angst_reform = {
+	icon = "celestial"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		land_morale = 0.1
+	}
+    ai = {
+		factor = 1
+	}
+}

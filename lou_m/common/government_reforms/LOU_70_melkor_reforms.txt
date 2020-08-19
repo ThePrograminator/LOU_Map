@@ -75,5 +75,185 @@ lotr_spider_government_reform = {
 }
 
 #------------------------------
-# 
+# Question of Aggression
 #------------------------------
+troll_haven_reform = {
+	icon = "troll_clan"
+	allow_normal_conversion = yes
+    
+    potential = {
+        has_reform = lotr_troll_clan_reform
+    }
+	modifiers = {
+		shock_damage = 0.25
+	}
+    ai = {
+		factor = 1
+	}
+}
+wight_haven_reform = {
+	icon = "wight"
+	allow_normal_conversion = yes
+    
+    potential = {
+        has_reform = lotr_wight_government_reform
+    }
+	modifiers = {
+		fire_damage_received = -0.15
+        shock_damage_received = -0.15
+	}
+    ai = {
+		factor = 1
+	}
+}
+spider_haven_reform = {
+	icon = "spider_swarm"
+	allow_normal_conversion = yes
+    
+    potential = {
+        has_reform = lotr_spider_government_reform
+    }
+	modifiers = {
+		movement_speed = 0.25
+	}
+    ai = {
+		factor = 1
+	}
+}
+crush_interlopers_reform = {
+	icon = "sauron_eye"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		global_manpower_modifier = 0.1
+	}
+    custom_attributes = {
+        enables_crush_the_interlopers = yes
+    }
+    ai = {
+		factor = 10
+	}
+}
+
+#------------------------------
+# Preparation for War
+#------------------------------
+enforce_discipline_reform = {
+    icon = "southrons"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		discipline = 0.05
+	}
+    ai = {
+		factor = 1
+	}
+}
+strengthen_morale_reform = {
+    icon = "orc"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		land_morale = 0.1
+	}
+    ai = {
+		factor = 1
+	}
+}
+reinforce_defences_reform = {
+    icon = "minas_morgul"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		defensiveness = 0.5
+        hostile_attrition = 2
+	}
+    ai = {
+		factor = 1
+	}
+}
+
+#------------------------------
+# Proof of Legitimacy
+#------------------------------
+display_prestige_reform = {
+    icon = "orc_army"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		prestige = 1
+	}
+    ai = {
+		factor = 1
+	}
+}
+execution_of_the_weak_reform = {
+    icon = "secure_power"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		legitimacy = 1
+	}
+    ai = {
+		factor = 1
+	}
+}
+confide_in_the_trusted_reform = {
+    icon = "praying_man"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		advisor_cost = -0.2
+	}
+    ai = {
+		factor = 1
+	}
+}
+
+#------------------------------
+# Definition of Success
+#------------------------------
+proof_of_domination_reform = {
+    icon = "dol_guldur"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		siege_ability = 0.1
+	}
+    ai = {
+		factor = 1
+	}
+}
+proof_of_oppression_reform = {
+    icon = "uruk_kai"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		global_unrest = -3
+	}
+    ai = {
+		factor = 1
+	}
+}
+proof_of_superiority_reform = {
+    icon = "pensive_saruman"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+        global_missionary_strength = 0.03
+	}
+    ai = {
+		factor = 1
+	}
+}
+proof_of_tyranny_reform = {
+    icon = "mine"
+	allow_normal_conversion = yes
+    
+    modifiers = {
+		production_efficiency = 0.2
+	}
+    ai = {
+		factor = 1
+	}
+}

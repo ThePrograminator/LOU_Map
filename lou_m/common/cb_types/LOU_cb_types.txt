@@ -202,3 +202,29 @@ cb_claim_control_of_the_rhun = {
     
     war_goal = take_capital_control_rhun
 }
+
+# Crush Interlopers
+cb_crush_interlopers = {
+	prerequisites = {
+		has_reform = crush_interlopers_reform
+        is_neighbor_of = FROM
+        FROM = {
+            is_free_peoples_opinion = yes
+        }
+	}
+
+	war_goal = take_capital_imperial
+}
+
+# Cleanse Evil
+cb_cleanse_evil = {
+	prerequisites = {
+		has_reform = cleanse_evil_reform
+        is_neighbor_of = FROM
+        FROM = {
+            is_servants_of_evil_opinion = yes
+        }
+	}
+
+	war_goal = take_capital_imperial
+}
