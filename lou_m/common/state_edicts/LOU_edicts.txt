@@ -49,6 +49,36 @@ edict_racial_unity = {
 	
 	modifier = {
 		local_missionary_strength = 0.02
+	}
+	
+	color = { 117 38 143 }
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				has_missionary = no
+			}
+		}
+		modifier = {
+			factor = 3
+			any_province_in_state = {
+				has_missionary = yes
+			}
+		}
+	}
+}
+edict_cultural_unity = {
+	potential = {
+		always = yes		
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
         local_culture_conversion_cost = -0.2
 	}
 	
@@ -342,7 +372,7 @@ edict_centralization_effort = {
 	}
 	
 	modifier = {
-		local_autonomy = -0.03
+		local_autonomy = -0.05
 	}
 	
 	color = {  220 178 155 }
@@ -364,31 +394,6 @@ edict_centralization_effort = {
 				local_autonomy_above_min = 10
 			}
 		}
-	}
-}
-edict_coastal_patrols_effort = {
-	potential = {
-		any_province_in_state = {
-            has_port = yes
-        }
-	}
-	
-	allow = {
-		any_province_in_state = {
-            has_port = yes
-        }
-	}
-	
-	modifier = {
-        blockade_force_required = 0.5
-		hostile_disembark_speed = 0.5
-        hostile_fleet_attrition = 1
-	}
-	
-	color = { 60 120 50 }
-	
-	ai_will_do = {
-		factor = 10
 	}
 }
 edict_subsidised_administration_effort = {
