@@ -141,6 +141,7 @@ settlement_1_dwarf_building = {
 
 	modifier = {
 		local_development_cost = -0.1
+        local_governing_cost = -0.1
 	}
 	
 	ai_will_do = {
@@ -222,6 +223,7 @@ settlement_2_dwarf_building = {
 	
 	modifier = {
 		local_development_cost = -0.2
+        local_governing_cost = -0.2
 	}
 	
 	ai_will_do = {
@@ -298,6 +300,7 @@ settlement_3_dwarf_building = {
 	
 	modifier = {
 		local_development_cost = -0.3
+        local_governing_cost = -0.3
 	}
 	
 	ai_will_do = {
@@ -358,8 +361,9 @@ hold_1_dwarf_building = {
 	}
 	
 	modifier = {
-		local_unrest = -0.5
+		local_unrest = -1
 		local_manpower_modifier = 0.1
+        local_monthly_devastation = -0.02
 	}
 	
 	ai_will_do = {
@@ -426,8 +430,9 @@ hold_2_dwarf_building = {
 	}
 	
 	modifier = {
-		local_unrest = -1
+		local_unrest = -2
 		local_manpower_modifier = 0.2
+        local_monthly_devastation = -0.04
 	}
 	
 	ai_will_do = {
@@ -489,8 +494,9 @@ hold_3_dwarf_building = {
 	}
 	
 	modifier = {
-		local_unrest = -1.5
+		local_unrest = -3
 		local_manpower_modifier = 0.3
+        local_monthly_devastation = -0.06
 	}
 	
 	ai_will_do = {
@@ -548,9 +554,10 @@ capital_1_dwarf_building = {
 	
 	modifier = {
 		local_development_cost = -0.1
-		local_unrest = -0.5
+		local_unrest = -1
 		local_manpower_modifier = 0.1
 		local_state_maintenance_modifier = -0.1
+        local_monthly_devastation = -0.02
 	}
 	
 	ai_will_do = {
@@ -623,9 +630,10 @@ capital_2_dwarf_building = {
 	
 	modifier = {
 		local_development_cost = -0.2
-		local_unrest = -1
+		local_unrest = -2
 		local_manpower_modifier = 0.2
 		local_state_maintenance_modifier = -0.2
+        local_monthly_devastation = -0.04
 	}
 	
 	ai_will_do = {
@@ -690,8 +698,10 @@ capital_3_dwarf_building = {
 
 	modifier = {
 		local_development_cost = -0.3
-		local_unrest = -1.5
+		local_unrest = -3
 		local_manpower_modifier = 0.3
+		local_state_maintenance_modifier = -0.3
+        local_monthly_devastation = -0.06
 	}
 	
 	ai_will_do = {
@@ -928,7 +938,8 @@ great_market_dwarf_building = {
 traders_guild_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = great_market_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
@@ -946,7 +957,8 @@ traders_guild_building = {
 	}
 	
 	modifier = {
-		trade_value_modifier = 0.15
+        province_trade_power_modifier = 1.0
+		trade_value_modifier = 0.25
 	}
 	
 	ai_will_do = {
@@ -1189,7 +1201,8 @@ arsenal_dwarf_building = {
 smithies_guild_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = arsenal_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
@@ -1207,6 +1220,7 @@ smithies_guild_building = {
 	}
 	
 	modifier = {
+        local_regiment_cost = -0.8
 		allowed_num_of_buildings = 2
 	}
 	
@@ -1274,7 +1288,8 @@ libary_dwarf_building = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = -0.25
+        idea_cost = -0.001
+		local_state_maintenance_modifier = -0.2
 	}
 	
 	ai_will_do = {
@@ -1338,7 +1353,8 @@ research_office_dwarf_building = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = -0.50
+		idea_cost = -0.0015
+		local_state_maintenance_modifier = -0.4
 	}
 	
 	ai_will_do = {
@@ -1402,7 +1418,8 @@ acadamy_dwarf_building = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = -0.75
+		idea_cost = -0.002
+		local_state_maintenance_modifier = -0.6
 	}
 	
 	ai_will_do = {
@@ -1447,7 +1464,8 @@ acadamy_dwarf_building = {
 advisor_guild_dwarf_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = acadamy_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
@@ -1465,7 +1483,8 @@ advisor_guild_dwarf_building = {
 	}
 	
 	modifier = {
-		local_development_cost = -0.15
+        idea_cost = -0.0025
+		local_state_maintenance_modifier = -0.8
 	}
 	
 	ai_will_do = {
@@ -1705,7 +1724,8 @@ hall_of_warriors_dwarf_building = {
 warriors_guild_dwarf_building = {
 	cost = 200
 	time = 24
-	
+	make_obsolete = hall_of_warriors_dwarf_building
+    
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
@@ -1723,7 +1743,8 @@ warriors_guild_dwarf_building = {
 	}
 	
 	modifier = {
-		regiment_recruit_speed = -0.50
+        local_manpower_modifier = 1.0
+		regiment_recruit_speed = -0.5
 	}
 	
 	ai_will_do = {
@@ -1987,6 +2008,7 @@ miners_guild_dwarf_building = {
 	}
 	
 	modifier = {
+        local_production_efficiency = 1.0
 		local_build_cost = -0.15
 	}
 	
@@ -2691,7 +2713,7 @@ rune_door_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.15
+		local_defensiveness = 0.25
 	}
 	
 	ai_will_do = {
@@ -2778,7 +2800,7 @@ narrow_bridge_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.30
+		local_defensiveness = 0.5
 	}
 	
 	ai_will_do = {
@@ -2865,7 +2887,7 @@ moat_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.45
+		local_defensiveness = 0.75
 	}
 	
 	ai_will_do = {
@@ -2952,7 +2974,7 @@ ballista_towers_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.60
+		local_defensiveness = 1.0
 	}
 	
 	ai_will_do = {

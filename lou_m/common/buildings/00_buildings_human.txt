@@ -111,6 +111,7 @@ city_1_building = {
 	
 	modifier = {
 		local_development_cost = -0.1
+        local_governing_cost = -0.1
 	}
 	
 	ai_will_do = {
@@ -168,6 +169,7 @@ city_2_building = {
 	
 	modifier = {
 		local_development_cost = -0.2
+        local_governing_cost = -0.2
 	}
 	
 	ai_will_do = {
@@ -226,6 +228,7 @@ city_3_building = {
 	
 	modifier = {
 		local_development_cost = -0.3
+        local_governing_cost = -0.3
 	}
 	
 	ai_will_do = {
@@ -276,8 +279,9 @@ fortress_1_building = {
 	}
 	
 	modifier = {
-		local_unrest = -0.5
+		local_unrest = -1
 		local_manpower_modifier = 0.1
+        local_monthly_devastation = -0.02
 	}
 	
 	ai_will_do = {
@@ -334,8 +338,9 @@ fortress_2_building = {
 	}
 	
 	modifier = {
-		local_unrest = -1
+		local_unrest = -2
 		local_manpower_modifier = 0.2
+        local_monthly_devastation = -0.04
 	}
 	
 	ai_will_do = {
@@ -387,8 +392,9 @@ fortress_3_building = {
 	}
 	
 	modifier = {
-		local_unrest = -1.5
+		local_unrest = -3
 		local_manpower_modifier = 0.3
+        local_monthly_devastation = -0.06
 	}
 	
 	ai_will_do = {
@@ -440,9 +446,10 @@ capital_1_building = {
 	
 	modifier = {
 		local_development_cost = -0.1
-		local_unrest = -0.5
+		local_unrest = -1
 		local_manpower_modifier = 0.1
 		local_state_maintenance_modifier = -0.1
+        local_monthly_devastation = -0.02
 	}
 	
 	ai_will_do = {
@@ -509,9 +516,10 @@ capital_2_building = {
 	
 	modifier = {
 		local_development_cost = -0.2
-		local_unrest = -1
+		local_unrest = -2
 		local_manpower_modifier = 0.2
 		local_state_maintenance_modifier = -0.2
+        local_monthly_devastation = -0.04
 	}
 	
 	ai_will_do = {
@@ -570,8 +578,10 @@ capital_3_building = {
 	
 	modifier = {
 		local_development_cost = -0.3
-		local_unrest = -1.5
+		local_unrest = -3
 		local_manpower_modifier = 0.3
+		local_state_maintenance_modifier = -0.3
+        local_monthly_devastation = -0.06
 	}
 	
 	ai_will_do = {
