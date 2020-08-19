@@ -2013,149 +2013,10 @@ port_building = {
 	}
 }
 
-seaport_building = {
-	cost = 200
-	time = 24
-	make_obsolete = port_building
-    
-	build_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
-	}
-
-	keep_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
-	}
-	
-	modifier = {
-		naval_forcelimit = 2
-		local_sailors_modifier = 0.3
-        province_trade_power_modifier = 0.3
-	}
-	
-	ai_will_do = {
-		factor = 100
-		
-		modifier = {
-			factor = 5 # Little above build cost
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-		
-		modifier = {
-			factor = 0
-			province_is_buildable = no
-		}
-		
-		modifier = {
-			factor = 0
-			province_owner_is_human_race = no
-		}
-		
-		modifier = {
-			factor = 1.5
-			development = 5
-		}
-		
-		modifier = {
-			factor = 3
-			development = 10
-		}
-		
-		modifier = {
-			factor = 4.5
-			development = 15
-		}
-		
-		modifier = {
-			factor = 6
-			development = 20
-		}
-	}
-}
-
-grand_shipyard_building = {
-	cost = 300
-	time = 30
-	make_obsolete = seaport_building
-    
-	build_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_fortress_building_tier_4 = yes
-	}
-
-	keep_trigger = {
-		has_port = yes
-		province_owner_is_human_race = yes
-		province_is_buildable = yes
-		province_human_has_fortress_building_tier_4 = yes
-	}
-	
-	modifier = {
-		naval_forcelimit = 3
-		local_sailors_modifier = 0.5
-        province_trade_power_modifier = 0.5
-	}
-	
-	ai_will_do = {
-		factor = 100
-		
-		modifier = {
-			factor = 5 # Little above build cost
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-		
-		modifier = {
-			factor = 0
-			province_is_buildable = no
-		}
-		
-		modifier = {
-			factor = 0
-			province_owner_is_human_race = no
-		}
-		
-		modifier = {
-			factor = 1.5
-			development = 5
-		}
-		
-		modifier = {
-			factor = 3
-			development = 10
-		}
-		
-		modifier = {
-			factor = 4.5
-			development = 15
-		}
-		
-		modifier = {
-			factor = 6
-			development = 20
-		}
-	}
-}
-
 dock_building = {
 	cost = 100
 	time = 18
+	make_obsolete = port_building
 	
 	build_trigger = {
 		has_port = yes
@@ -2222,10 +2083,80 @@ dock_building = {
 	}
 }
 
+seaport_building = {
+	cost = 200
+	time = 24
+	make_obsolete = dock_building
+    
+	build_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_city_building_tier_3 = yes
+	}
+
+	keep_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_city_building_tier_3 = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 2
+		local_sailors_modifier = 0.3
+        province_trade_power_modifier = 0.3
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {
+			factor = 5 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		
+		modifier = {
+			factor = 0
+			province_is_buildable = no
+		}
+		
+		modifier = {
+			factor = 0
+			province_owner_is_human_race = no
+		}
+		
+		modifier = {
+			factor = 1.5
+			development = 5
+		}
+		
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		
+		modifier = {
+			factor = 4.5
+			development = 15
+		}
+		
+		modifier = {
+			factor = 6
+			development = 20
+		}
+	}
+}
+
 dockyard_building = {
 	cost = 300
 	time = 30
-	make_obsolete = dock_building
+	make_obsolete = seaport_building
     
 	build_trigger = {
 		has_port = yes
@@ -2290,7 +2221,7 @@ dockyard_building = {
 drydock_building = {
 	cost = 200
 	time = 24
-	make_obsolete = dockyard_building
+	make_obsolete = dock_building
     
 	build_trigger = {
 		has_port = yes
@@ -2310,6 +2241,76 @@ drydock_building = {
 		local_ship_repair = 0.5
 		local_ship_cost = -0.5
         ship_recruit_speed = -0.5
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {
+			factor = 5 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		
+		modifier = {
+			factor = 0
+			province_is_buildable = no
+		}
+		
+		modifier = {
+			factor = 0
+			province_owner_is_human_race = no
+		}
+		
+		modifier = {
+			factor = 1.5
+			development = 5
+		}
+		
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		
+		modifier = {
+			factor = 4.5
+			development = 15
+		}
+		
+		modifier = {
+			factor = 6
+			development = 20
+		}
+	}
+}
+
+grand_shipyard_building = {
+	cost = 300
+	time = 30
+	make_obsolete = drydock_building
+    
+	build_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_fortress_building_tier_4 = yes
+	}
+
+	keep_trigger = {
+		has_port = yes
+		province_owner_is_human_race = yes
+		province_is_buildable = yes
+		province_human_has_fortress_building_tier_4 = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 3
+		local_sailors_modifier = 0.5
+        province_trade_power_modifier = 0.5
 	}
 	
 	ai_will_do = {
