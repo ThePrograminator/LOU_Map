@@ -5926,12 +5926,12 @@ guiTypes = {
         # Links
         iconType = {
 			name = "human_production_link_arrow_1"
-			position = { x = 128 y = 30 }
+			position = { x = 68 y = 80 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
 			name = "human_production_link_arrow_2"
-			position = { x = 68 y = 80 }
+			position = { x = 188 y = 30 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
@@ -5939,17 +5939,22 @@ guiTypes = {
 			position = { x = 128 y = 80 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
+        iconType = {
+			name = "human_production_link_arrow_4"
+			position = { x = 188 y = 80 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
         
         # Row 1
         checkboxType = {
 			name = "build_forge_building"
-			position = { x = 80 y = 20 }
+			position = { x = 140 y = 20 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "forge_building_cost"
-			position = {x = 82 y = 20 }
+			position = {x = 142 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -5959,13 +5964,13 @@ guiTypes = {
 
         checkboxType = {
 			name = "build_foundry_building"
-			position = { x = 140 y = 20 }
+			position = { x = 200 y = 20 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "foundry_building_cost"
-			position = {x = 142 y = 20 }
+			position = {x = 202 y = 20 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -5974,30 +5979,30 @@ guiTypes = {
 		}
 
         # Row 2
-		checkboxType = {
-			name = "build_workshop_building"
+        checkboxType = {
+			name = "build_work_camp_building"
 			position = { x = 20 y = 70 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "workshop_building_cost"
-			position = {x = 22 y = 70 }
+			name = "work_camp_building_cost"
+			position = {x = 822 y = 70 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
-
-        checkboxType = {
-			name = "build_warehouse_building"
+        
+		checkboxType = {
+			name = "build_workshop_building"
 			position = { x = 80 y = 70 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "warehouse_building_cost"
+			name = "workshop_building_cost"
 			position = {x = 82 y = 70 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -6007,14 +6012,30 @@ guiTypes = {
 		}
 
         checkboxType = {
-			name = "build_stockpile_building"
+			name = "build_warehouse_building"
 			position = { x = 140 y = 70 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "stockpile_building_cost"
+			name = "warehouse_building_cost"
 			position = {x = 142 y = 70 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        checkboxType = {
+			name = "build_stockpile_building"
+			position = { x = 200 y = 70 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "stockpile_building_cost"
+			position = {x = 202 y = 70 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6313,6 +6334,11 @@ guiTypes = {
 			position = { x = 128 y = 425 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
+        iconType = {
+			name = "human_fort_link_arrow_3"
+			position = { x = 188 y = 425 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
         
         # Row 1
         checkboxType = {
@@ -6363,6 +6389,22 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
+        checkboxType = {
+			name = "build_fort_citidal_building"
+			position = { x = 200 y = 415 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "fort_citidal_building_cost"
+			position = {x = 202 y = 415 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
 		#-----------------------------------------------------
         # Dwarf
         #-----------------------------------------------------
@@ -7310,12 +7352,6 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-        checkboxType = {
-			name = "build_rune_door_dwarf_building"
-			position = { x = 415 y = 380 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
         # Row 3
         checkboxType = {
 			name = "build_rune_door_dwarf_building"
