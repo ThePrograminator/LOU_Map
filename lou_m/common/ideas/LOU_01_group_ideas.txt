@@ -157,6 +157,8 @@ easterling_ideas = {
         
         NOT = { religion = religion_tyr }
         NOT = { religion = religion_ahar }
+        NOT = { culture_group = culture_group_ioriags }
+        NOT = { primary_culture = culture_sagath }
 	}
 	free = yes		
 	
@@ -792,6 +794,105 @@ ahar_ideas = {
         cavalry_power = 0.25
     }
 }
+
+#------------------------------------
+# Sagath
+#------------------------------------
+sagath_ideas = {
+	start = {
+		cavalry_power = 0.2
+        global_regiment_cost = -0.1
+	}
+
+	bonus = {
+		province_warscore_cost = -0.2
+	}
+	
+	trigger = {
+		primary_culture = culture_sagath
+	}
+	free = yes		
+	
+    # Legacy of Dagorland
+    legacy_of_dagorland = {
+        global_unrest = -1
+    }
+    # Nomadic Looters
+    nomadic_looters = {
+        available_province_loot = 1.0
+    }
+    # Life of Mayhem
+    life_of_mayhem = {
+        cavalry_shock = 1
+    }
+    # Tribal Legitimacy
+    tribal_legitimacy = {
+        legitimacy = 1
+    }
+    # Relentless Assaults
+    relentless_assaults = {
+        reinforce_cost_modifier = -0.25
+    }
+    # Patriarchal Dominance
+    patriarchal_dominance = {
+        yearly_corruption = -0.05
+    }
+    # Succession of Warlords
+    succession_of_warlords = {
+        army_tradition = 1
+    }
+}
+
+
+#------------------------------------
+# Ioriags
+#------------------------------------
+ioriags_ideas = {
+	start = {
+		army_tradition = 1
+        monarch_military_power = 1
+	}
+
+	bonus = {
+		governing_capacity_modifier = 0.1
+	}
+	
+	trigger = {
+		culture_group = culture_group_ioriags
+	}
+	free = yes		
+	
+    # Talataerim Descendants
+    talataerim_descendants = {
+        advisor_pool = 2
+    }
+    # Horse-nomads
+    horse_nomads = {
+        cavalry_power = 0.15
+    }
+    # Aharic Influence
+    aharic_influence = {
+        movement_speed = 0.1
+    }
+    # Witchcraft of Asdriag
+    witchcraft_of_asdriag = {
+        shock_damage = 0.2
+    }
+    # Kykurian Concubines
+    kykurian_concubines = {
+        heir_chance = 1.0
+    }
+    # Cult of the Eye
+    cult_of_the_eye = {
+        missionaries = 1
+        global_missionary_strength = 0.01
+    }
+    # Ûvatha's Ring
+    uvatha_ring = {
+        prestige = 1
+    }
+}
+
 
 # #------------------------------------
 # # Template
