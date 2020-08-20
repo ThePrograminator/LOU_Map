@@ -936,13 +936,16 @@ great_market_dwarf_building = {
 }
 
 traders_guild_building = {
-	cost = 200
+	cost = 400
 	time = 24
-	make_obsolete = great_market_dwarf_building
     
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
+			estate_loyalty = {
+				estate = estate_merchants
+				loyalty = 80
+			}
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_building_tier_3 = yes
@@ -1199,13 +1202,13 @@ arsenal_dwarf_building = {
 }
 
 smithies_guild_building = {
-	cost = 200
+	cost = 400
 	time = 24
-	make_obsolete = arsenal_dwarf_building
     
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
+			
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_3 = yes
@@ -1220,8 +1223,7 @@ smithies_guild_building = {
 	}
 	
 	modifier = {
-        local_regiment_cost = -0.8
-		allowed_num_of_buildings = 2
+		allowed_num_of_buildings = 3
 	}
 	
 	ai_will_do = {
@@ -1462,13 +1464,16 @@ acadamy_dwarf_building = {
 }
 
 advisor_guild_dwarf_building = {
-	cost = 200
+	cost = 400
 	time = 24
-	make_obsolete = acadamy_dwarf_building
     
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
+			estate_loyalty = {
+				estate = estate_stewards
+				loyalty = 80
+			}
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_3 = yes
@@ -1483,8 +1488,7 @@ advisor_guild_dwarf_building = {
 	}
 	
 	modifier = {
-        idea_cost = -0.0025
-		local_state_maintenance_modifier = -0.8
+		local_development_cost = -0.15
 	}
 	
 	ai_will_do = {
@@ -1722,13 +1726,16 @@ hall_of_warriors_dwarf_building = {
 }
 
 warriors_guild_dwarf_building = {
-	cost = 200
+	cost = 400
 	time = 24
-	make_obsolete = hall_of_warriors_dwarf_building
     
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 80
+			}
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_3 = yes
@@ -1743,7 +1750,6 @@ warriors_guild_dwarf_building = {
 	}
 	
 	modifier = {
-        local_manpower_modifier = 1.0
 		regiment_recruit_speed = -0.5
 	}
 	
@@ -1986,14 +1992,17 @@ materials_depot_building = {
 }
 
 miners_guild_dwarf_building = {
-	cost = 200
+	cost = 400
 	time = 24
-	make_obsolete = materials_depot_building
 	allow_in_gold_provinces = no
 	
 	build_trigger = {
 		owner = {
 			technology_group = lotr_dwarven
+			estate_loyalty = {
+				estate = estate_commoners
+				loyalty = 80
+			}
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_3 = yes
@@ -2008,7 +2017,6 @@ miners_guild_dwarf_building = {
 	}
 	
 	modifier = {
-        local_production_efficiency = 1.0
 		local_build_cost = -0.15
 	}
 	
@@ -2661,7 +2669,7 @@ fort_castle_dwarf_building = {
 ################################################
 
 rune_door_dwarf_building = {
-	cost = 50
+	cost = 150
 	time = 12
 	
 	build_trigger = {
@@ -2747,9 +2755,8 @@ rune_door_dwarf_building = {
 }
 
 narrow_bridge_dwarf_building = {
-	cost = 100
-	time = 18
-	make_obsolete = rune_door_dwarf_building
+	cost = 150
+	time = 12
     
 	build_trigger = {
 		owner = {
@@ -2800,7 +2807,7 @@ narrow_bridge_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.5
+		local_defensiveness = 0.25
 	}
 	
 	ai_will_do = {
@@ -2834,9 +2841,8 @@ narrow_bridge_dwarf_building = {
 }
 
 moat_dwarf_building = {
-	cost = 200
-	time = 24
-	make_obsolete = narrow_bridge_dwarf_building
+	cost = 150
+	time = 12
     
 	build_trigger = {
 		owner = {
@@ -2887,7 +2893,7 @@ moat_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.75
+		local_defensiveness = 0.25
 	}
 	
 	ai_will_do = {
@@ -2921,9 +2927,8 @@ moat_dwarf_building = {
 }
 
 ballista_towers_dwarf_building = {
-	cost = 300
-	time = 30
-	make_obsolete = moat_dwarf_building
+	cost = 150
+	time = 12
     
 	build_trigger = {
 		owner = {
@@ -2974,7 +2979,7 @@ ballista_towers_dwarf_building = {
 	}
 	
 	modifier = {
-		local_defensiveness = 1.0
+		local_defensiveness = 0.25
 	}
 	
 	ai_will_do = {

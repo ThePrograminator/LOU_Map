@@ -5926,7 +5926,7 @@ guiTypes = {
         # Links
         iconType = {
 			name = "human_production_link_arrow_1"
-			position = { x = 68 y = 80 }
+			position = { x = 68 y = 56 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
@@ -5936,7 +5936,7 @@ guiTypes = {
 		}
         iconType = {
 			name = "human_production_link_arrow_3"
-			position = { x = 128 y = 80 }
+			position = { x = 128 y = 56 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
@@ -5981,13 +5981,13 @@ guiTypes = {
         # Row 2
         checkboxType = {
 			name = "build_work_camp_building"
-			position = { x = 20 y = 70 }
+			position = { x = 20 y = 46 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "work_camp_building_cost"
-			position = {x = 822 y = 70 }
+			position = {x = 22 y = 46 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -5997,13 +5997,13 @@ guiTypes = {
         
 		checkboxType = {
 			name = "build_workshop_building"
-			position = { x = 80 y = 70 }
+			position = { x = 80 y = 46 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "workshop_building_cost"
-			position = {x = 82 y = 70 }
+			position = {x = 82 y = 46 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6180,35 +6180,67 @@ guiTypes = {
         # Links
         iconType = {
 			name = "human_navy_link_arrow_1"
-			position = { x = 68 y = 275 }
+			position = { x = 68 y = 299 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
 			name = "human_navy_link_arrow_2"
-			position = { x = 128 y = 275 }
+			position = { x = 128 y = 299 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
 			name = "human_navy_link_arrow_3"
-			position = { x = 68 y = 325 }
+			position = { x = 188 y = 275 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         iconType = {
 			name = "human_navy_link_arrow_4"
-			position = { x = 128 y = 325 }
+			position = { x = 188 y = 325 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
         
-        # Row 1
+		checkboxType = {
+			name = "build_port_building"
+			position = { x = 20 y = 289 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "port_building_cost"
+			position = {x = 22 y = 289 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
         checkboxType = {
 			name = "build_dock_building"
-			position = { x = 20 y = 265 }
+			position = { x = 80 y = 289 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "dock_building_cost"
-			position = {x = 22 y = 265 }
+			position = {x = 82 y = 289 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+		# Row 1
+		checkboxType = {
+			name = "build_seaport_building"
+			position = { x = 140 y = 263 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx"
+		}
+		
+		instantTextBoxType={
+			name = "seaport_building_cost"
+			position = {x = 142 y = 263 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6218,29 +6250,13 @@ guiTypes = {
 
         checkboxType = {
 			name = "build_dockyard_building"
-			position = { x = 80 y = 265 }
+			position = { x = 200 y = 263 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "dockyard_building_cost"
-			position = {x = 82 y = 265 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-        
-        checkboxType = {
-			name = "build_drydock_building"
-			position = { x = 140 y = 265 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		instantTextBoxType={
-			name = "drydock_building_cost"
-			position = {x = 142 y = 265 }
+			position = {x = 202 y = 263 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6249,31 +6265,16 @@ guiTypes = {
 		}
         
         # Row 2
-        checkboxType = {
-			name = "build_port_building"
-			position = { x = 20 y = 315 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx"
-		}
-		
-		instantTextBoxType={
-			name = "port_building_cost"
-			position = {x = 22 y = 315 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
 
-        checkboxType = {
-			name = "build_seaport_building"
-			position = { x = 80 y = 315 }
+		checkboxType = {
+			name = "build_drydock_building"
+			position = { x = 140 y = 315 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
-			name = "seaport_building_cost"
-			position = {x = 82 y = 315 }
+			name = "drydock_building_cost"
+			position = {x = 142 y = 315 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6283,13 +6284,13 @@ guiTypes = {
 
         checkboxType = {
 			name = "build_grand_shipyard_building"
-			position = { x = 140 y = 315 }
+			position = { x = 200 y = 315 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 		
 		instantTextBoxType={
 			name = "grand_shipyard_building_cost"
-			position = {x = 142 y = 315 }
+			position = {x = 200 y = 315 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -6688,11 +6689,11 @@ guiTypes = {
 			position = { x = 403 y = -170 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-        iconType = {
-			name = "dwarf_trade_link_arrow_3"
-			position = { x = 463 y = -170 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+        #iconType = {
+		#	name = "dwarf_trade_link_arrow_3"
+		#	position = { x = 463 y = -170 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
         
         # Row 1
         checkboxType = {
@@ -6796,11 +6797,11 @@ guiTypes = {
 			position = { x = 403 y = -70 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-        iconType = {
-			name = "dwarf_tax_link_arrow_3"
-			position = { x = 463 y = -70 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+        #iconType = {
+		#	name = "dwarf_tax_link_arrow_3"
+		#	position = { x = 463 y = -70 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
         
         # Row 1
         checkboxType = {
@@ -6904,11 +6905,11 @@ guiTypes = {
 			position = { x = 403 y = 30 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-        iconType = {
-			name = "dwarf_production_link_arrow_3"
-			position = { x = 463 y = 30 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+        #iconType = {
+		#	name = "dwarf_production_link_arrow_3"
+		#	position = { x = 463 y = 30 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
         
         # Row 1
         checkboxType = {
@@ -7012,11 +7013,11 @@ guiTypes = {
 			position = { x = 403 y = 130 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-        iconType = {
-			name = "dwarf_army_link_arrow_3"
-			position = { x = 463 y = 130 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+        #iconType = {
+		#	name = "dwarf_army_link_arrow_3"
+		#	position = { x = 463 y = 130 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
         
         # Row 1
         checkboxType = {
@@ -7120,11 +7121,11 @@ guiTypes = {
 			position = { x = 403 y = 230 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-        iconType = {
-			name = "dwarf_state_link_arrow_3"
-			position = { x = 463 y = 230 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+        #iconType = {
+		#	name = "dwarf_state_link_arrow_3"
+		#	position = { x = 463 y = 230 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
         
         # Row 1
         checkboxType = {
@@ -7238,21 +7239,21 @@ guiTypes = {
 			position = { x = 343 y = 390 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-        iconType = {
-			name = "dwarf_fort_link_arrow_5"
-			position = { x = 343 y = 450 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-        iconType = {
-			name = "dwarf_fort_link_arrow_6"
-			position = { x = 403 y = 450 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-        iconType = {
-			name = "dwarf_fort_link_arrow_7"
-			position = { x = 463 y = 450 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+        #iconType = {
+		#	name = "dwarf_fort_link_arrow_5"
+		#	position = { x = 343 y = 450 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
+        #iconType = {
+		#	name = "dwarf_fort_link_arrow_6"
+		#	position = { x = 403 y = 450 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
+        #iconType = {
+		#	name = "dwarf_fort_link_arrow_7"
+		#	position = { x = 463 y = 450 }
+		#	spriteType = "GFX_building_upgrade_icon"
+		#}
         
         # Row 1
         checkboxType = {
