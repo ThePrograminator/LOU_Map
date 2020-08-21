@@ -672,7 +672,7 @@ shay_ideas = {
     the_sakal_threat = {
         reinforce_speed = 0.2
     }
-    # Zurghôr Incursions
+    # Zurghï¿½r Incursions
     zurghor_incursions = {
         global_regiment_cost = -0.2
         global_regiment_recruit_speed = -0.2
@@ -740,3 +740,53 @@ zurghor_ideas = {
     }
 }
 
+#------------------------------------
+# Igath
+#------------------------------------
+igath_ideas = {
+	start = {
+		meritocracy = 1
+        num_accepted_cultures = 1
+	}
+
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+		tag = V39
+	}
+	free = yes		
+	
+    # Wares of the East
+    wares_of_the_east = {
+        embargo_efficiency = 0.25
+		trade_range_modifier = 0.25
+    }
+    # The All-People
+    the_all_people = {
+        ae_impact = -0.15
+		unjustified_demands = -0.15
+    }
+    # Art of Diplomacy
+    art_of_diplomacy = {
+		diplomatic_reputation = 1
+        diplomatic_upkeep = 1
+    }
+    # Silk of Mistrand
+    silk_of_mistrand = {
+        global_trade_power = 0.15
+    }
+    # Eastern Mercenaries
+    eastern_mercenaries = {
+        merc_maintenance_modifier = -0.15
+    }
+    # Governerning Nomads
+    governing_nomads = {
+        state_governing_cost = 0.1
+    }
+    # Golden Armor
+    golden_armor = {
+        discipline = 0.1
+    }
+}
