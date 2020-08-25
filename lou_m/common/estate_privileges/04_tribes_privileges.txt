@@ -200,26 +200,26 @@ estate_tribes_statutory_rights = {
 	cooldown_years = 20
 }
 
-estate_tribes_settlers = {
-	icon = privilege_grant_new_world_charter
-    
-	max_absolutism = -5
-	loyalty = 0.1
-    influence = 0.05
-    
-	benefits = {
-        colonists = 1
-	}
-	ai_will_do = {
-		factor = 0
-        
-        modifier = {
-            factor = 1
-            
-            num_of_total_ports = 3
-        }
-	}
-}
+#estate_tribes_settlers = {
+#	icon = privilege_grant_new_world_charter
+#   
+#	max_absolutism = -5
+#	loyalty = 0.1
+#    influence = 0.05
+#    
+#	benefits = {
+#        colonists = 1
+#	}
+#	ai_will_do = {
+#		factor = 0
+#        
+#        modifier = {
+#            factor = 1
+#            
+#            num_of_total_ports = 3
+#        }
+#	}
+#}
 
 estate_tribes_garrison_borders = {
 	icon = privilege_demand_more_troops

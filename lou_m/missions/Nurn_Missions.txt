@@ -224,8 +224,8 @@ conquer_nurn_region_two = {
 		}
 
 		trigger = {
-			all_province = { 
-				region = nurn_region
+			nurn_region = { 
+				type = all
 				NOT = {
 					culture = culture_orkish
 				}
@@ -484,9 +484,9 @@ conquer_nurn_region_four = {
 
 		trigger = {
 			calc_true_if = {
-				desc = build_manufactories_mission_tooltip
+				desc = build_farm_estate_mission_tooltip
 				all_owned_province = {
-					region = mordor_region
+					region = nurn_region
 					has_building = farm_estate
 				}
 				amount = 3
@@ -553,8 +553,8 @@ conquer_nurn_region_four = {
 		}
 	
 		trigger = {
-			all_province = { 
-				region = nurn_region
+			nurn_region = { 
+				type = all
 				NOT = {
 					culture = culture_variags
 				}
