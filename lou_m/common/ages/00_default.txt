@@ -39,7 +39,7 @@ third_age = {
         }
         # Religious Defender
         obj_third_age_racial_unity = {
-            is_defender_of_faith = yes
+            #is_defender_of_faith = yes
             religious_unity = 1.0
         }
         obj_third_age_colassal_fleet = {
@@ -83,17 +83,17 @@ third_age = {
 				factor = 100
 			}
         }
-        ab_third_age_secret_trails = {
-            rule = {
-                can_bypass_forts = yes
-            }
-            ai_will_do = {
-				factor = 100
-			}
-        }
+        #ab_third_age_secret_trails = {
+        #    rule = {
+        #        can_bypass_forts = yes
+        #    }
+        #    ai_will_do = {
+		#		factor = 100
+		#	}
+        #}
 		ab_third_age_integrated_sappers = {
             modifier = {
-                artillery_bonus_vs_fort = 3
+                artillery_bonus_vs_fort = 1
             }
             ai_will_do = {
 				factor = 100
@@ -156,7 +156,7 @@ third_age = {
                 tag = V17
             }
             modifier = {
-                country_military_power = 3
+                country_military_power = 1
             }
             ai_will_do = {
 				factor = 100

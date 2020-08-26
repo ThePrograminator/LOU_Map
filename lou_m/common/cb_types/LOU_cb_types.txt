@@ -18,8 +18,9 @@ cb_war_of_the_dwarves_and_orcs = {
 	
 	prerequisites = {
 		core_claim = FROM
+		technology_group = lotr_dwarves
 	}
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	war_goal = annex_country
 }
@@ -186,7 +187,7 @@ cb_purify = {
 	war_goal = superiority_purification
 }
 
-# Claim Control of the Rhûn
+# Claim Control of the Rhï¿½n
 cb_claim_control_of_the_rhun = {
 	valid_for_subject = yes
     
