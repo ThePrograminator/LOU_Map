@@ -1,0 +1,43 @@
+ulgath_cult =
+{
+	naval_maintenance_modifier = -0.15
+
+	allow = {
+		OR = {
+			has_unlocked_cult = avari_cult
+			religion = religion_ulgath
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+avari_cult =
+{
+	naval_maintenance_modifier = -0.15
+
+	allow = {
+		OR = {
+			has_unlocked_cult = avari_cult
+			any_neighbor_country = { 
+                religion = religion_moriquendi
+            }
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
