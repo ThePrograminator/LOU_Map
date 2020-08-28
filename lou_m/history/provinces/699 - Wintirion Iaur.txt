@@ -17,6 +17,7 @@ base_production = 6
 base_manpower = 7
 
 add_core = Y69
+add_core = W67
 owner = Y69
 controller = Y69
 
@@ -53,4 +54,15 @@ discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
 
+2760.1.15 = {
+	owner = W67
+	controller = W67
+	culture = culture_baradhrim
+	religion = religion_baradhrim
+	city_2_building=yes
+	marketplace_building=yes
+	tax_office_building=yes
+	warehouse_building=yes
+	dock_building=yes
+}
 
