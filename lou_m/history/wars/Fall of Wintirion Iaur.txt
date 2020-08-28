@@ -1,0 +1,19 @@
+name = "Fall of Wintirion Iaur"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_border_war
+	province = 699 # Wintirion Iaur
+}
+
+2757.9.1 = {
+	add_attacker = W67
+	add_attacker = X95
+	add_defender = Y69
+}
+
+# Szreldor wins
+2760.1.15 = {
+	rem_attacker = W67
+	rem_attacker = X95
+	rem_defender = Y69
+}
