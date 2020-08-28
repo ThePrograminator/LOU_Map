@@ -16,10 +16,10 @@ country_event = {
 	trigger = {
 		AND = {
 		tag = X99
-		}
-		OR = {
-		core_claim = X01
-		core_claim = X16
+			OR = {
+			core_claim = X01
+			core_claim = X16
+			}
 		}
 	}
 	
