@@ -4,8 +4,35 @@ ulgath_cult =
 
 	allow = {
 		OR = {
-			has_unlocked_cult = avari_cult
+			has_unlocked_cult = ulgath_cult
 			religion = religion_ulgath
+			any_neighbor_country = { 
+                religion = religion_ulgath
+            }
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+ioriags_cult =
+{
+	cavalry_power = 0.05
+
+	allow = {
+		OR = {
+			has_unlocked_cult = ioriags_cult
+			religion = religion_ioriags
+			any_neighbor_country = { 
+                religion = religion_ioriags
+            }
 		}
 	}
 	sprite = 1
@@ -21,13 +48,151 @@ ulgath_cult =
 
 avari_cult =
 {
-	naval_maintenance_modifier = -0.15
+	trade_efficiency = 0.1
 
 	allow = {
 		OR = {
 			has_unlocked_cult = avari_cult
 			any_neighbor_country = { 
                 religion = religion_moriquendi
+            }
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+dwarven_cult =
+{
+	build_cost = -0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = dwarven_cult
+			any_neighbor_country = { 
+                technology_group = lotr_dwarven
+            }
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+orc_cult =
+{
+	army_tradition = 0.5
+
+	allow = {
+		OR = {
+			has_unlocked_cult = orc_cult
+			any_neighbor_country = { 
+                technology_group = lotr_orc
+            }
+		}
+	}
+	sprite = 2
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+goblin_cult =
+{
+	mil_tech_cost_modifier = -0.05
+
+	allow = {
+		OR = {
+			has_unlocked_cult = goblin_cult
+			any_neighbor_country = { 
+                technology_group = lotr_goblin
+            }
+		}
+	}
+	sprite = 2
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+ahar_cult =
+{
+	movement_speed = 0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = ahar_cult
+			any_neighbor_country = { 
+                religion = religion_ahar
+            }
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+nenedain_cult =
+{
+	core_creation = -0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = nenedain_cult
+			any_neighbor_country = { 
+                religion = religion_nenedain
+            }
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+donath_cult =
+{
+	num_accepted_cultures = 1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = donath_cult
+			any_neighbor_country = { 
+                culture_group = culture_group_donath
             }
 		}
 	}
