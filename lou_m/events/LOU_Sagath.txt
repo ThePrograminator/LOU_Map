@@ -2,7 +2,7 @@
 # Events for Sagath
 ########################################
 
-namespace = flavor_sagath
+namespace = LOU_sagath
 normal_or_historical_nations = yes
 
 # Donate to a district
@@ -21,7 +21,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-	months = 60
+	months = 150
 	}
 	
 	#Increasement in available men - Manpower
@@ -30,7 +30,9 @@ country_event = {
 
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_sagath.1 - Option : LOU_sagath.1.a" }
 		
-		add_country_modifier = "X99_increasing_manpower"
-		duration = 3650
+		add_country_modifier = {
+			name = X99_increasing_manpower
+			duration = 3650
+		}
 	}
 }
