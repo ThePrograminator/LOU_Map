@@ -7,9 +7,9 @@ normal_or_historical_nations = yes
 
 # Donate to a district
 country_event = {
-	id = flavor_sagath.1
-	title = flavor_sagath.1.t
-	desc = flavor_sagath.1.d
+	id = LOU_sagath.1
+	title = LOU_sagath.1.t
+	desc = LOU_sagath.1.d
 	picture = easterling_race
 	
 	is_triggered_only = yes
@@ -26,9 +26,9 @@ country_event = {
 	
 	#Increasement in available men - Manpower
 	option = {
-		name = "flavor_sagath.1.a"
+		name = "LOU_sagath.1.a"
 
-		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - flavor_sagath.1 - Option : flavor_sagath.1.a" }
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_sagath.1 - Option : LOU_sagath.1.a" }
 		
 		add_country_modifier = "X99_increasing_manpower"
 		duration = 3650
