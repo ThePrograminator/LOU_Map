@@ -14,6 +14,9 @@ country_event = {
 	
 	is_triggered_only = yes
 	trigger = {
+		AND = {
+		tag = X99
+		}
 		OR = {
 		core_claim = X01
 		core_claim = X16
