@@ -1,6 +1,6 @@
 ulgath_cult =
 {
-	naval_maintenance_modifier = -0.15
+	global_unrest = -0.5
 
 	allow = {
 		OR = {
@@ -61,9 +61,9 @@ avari_cult =
 	sprite = 1
 
 	ai_will_do = {
-		factor = 1
+		factor = 10
 		modifier = {
-			personality = ai_militarist
+			personality = ai_balanced
 			factor = 2
 		}
 	}
@@ -84,9 +84,9 @@ dwarven_cult =
 	sprite = 1
 
 	ai_will_do = {
-		factor = 1
+		factor = 10
 		modifier = {
-			personality = ai_militarist
+			personality = ai_balanced
 			factor = 2
 		}
 	}
@@ -176,9 +176,9 @@ nenedain_cult =
 	sprite = 1
 
 	ai_will_do = {
-		factor = 1
+		factor = 10
 		modifier = {
-			personality = ai_militarist
+			personality = ai_balanced
 			factor = 2
 		}
 	}
@@ -201,7 +201,7 @@ donath_cult =
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			personality = ai_militarist
+			personality = ai_diplomat
 			factor = 2
 		}
 	}
