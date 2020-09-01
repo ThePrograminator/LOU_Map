@@ -1,0 +1,25 @@
+name = "Rhovanion Rivalry War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_border_war
+	province = 3919 # Wayhidstede
+}
+
+3017.9.1 = {
+	add_attacker = V25
+	add_attacker = Y97
+	add_attacker = Y98
+	add_defender = V27
+	add_defender = V26
+	add_defender = Y96
+}
+
+# Szreldor wins
+3019.6.15 = {
+	rem_attacker = V25
+	rem_attacker = Y97
+	rem_attacker = Y98
+	rem_defender = V27
+	rem_defender = V26
+	rem_defender = Y96
+}

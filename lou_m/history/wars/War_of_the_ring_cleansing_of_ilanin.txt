@@ -1,0 +1,17 @@
+name = "Cleansing of Ilanin"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_border_war
+	province = 3900 # Haradruin
+}
+
+3018.4.1 = {
+	add_attacker = Z02
+	add_defender = W82
+}
+
+# Szreldor wins
+3019.3.15 = {
+	rem_attacker = Z02
+	rem_defender = W82
+}
