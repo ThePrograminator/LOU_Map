@@ -28,7 +28,6 @@ trade_goods = herbs
 hre = no
 
 discovered_by = lotr_human
-discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
 discovered_by = lotr_elven
@@ -60,6 +59,10 @@ discovered_by = lotr_wights
 		name = wilderness_debuff
 		duration = -1
 	}
+}
+
+3018.4.1 = {
+	controller = V17
 }
 
 

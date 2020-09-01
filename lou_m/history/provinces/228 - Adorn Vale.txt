@@ -28,7 +28,6 @@ trade_goods = grain
 hre = no
 
 discovered_by = lotr_human
-discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
 discovered_by = lotr_elven
@@ -58,4 +57,8 @@ discovered_by = lotr_wights
 	controller = X16
 	culture = culture_eorlingas
 	religion = religion_eorlingas
+}
+
+3018.4.1 = {
+	controller = V49
 }
