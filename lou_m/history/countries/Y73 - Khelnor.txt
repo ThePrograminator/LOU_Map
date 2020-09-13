@@ -9,7 +9,7 @@ capital = 235
 
 2750.1.1 = {
 	monarch = {
-		name = "Lúthien"
+		name = "LÃºthien"
 		dynasty = "Beleg"
 		birth_date = 2712.1.1
 		adm = 1
@@ -28,11 +28,15 @@ capital = 235
 		mil = 0
 		claim = 100
 	}
+	add_country_modifier = {
+		name = lands_in_ardor
+		duration = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Morwë"
+		name = "MorwÃ«"
 		dynasty = "Beleg"
 		birth_date = 2765.1.1
 		adm = 5
@@ -43,7 +47,7 @@ capital = 235
 
 2850.1.1 = {
 	monarch = {
-		name = "Eärendil"
+		name = "EÃ¤rendil"
 		dynasty = "Beleg"
 		birth_date = 2802.1.1
 		adm = 2
@@ -74,8 +78,8 @@ capital = 235
 		female = yes
 	}
 	heir = {
-		monarch_name = "Míriel"
-		name = "Míriel"
+		monarch_name = "MÃ­riel"
+		name = "MÃ­riel"
 		dynasty = "Beleg"
 		birth_date = 2860.1.1
 		death_date = 2878.1.1
@@ -110,7 +114,7 @@ capital = 235
 
 3000.1.1 = {
 	monarch = {
-		name = "Rían"
+		name = "RÃ­an"
 		dynasty = "Beleg"
 		birth_date = 2917.1.1
 		adm = 2
