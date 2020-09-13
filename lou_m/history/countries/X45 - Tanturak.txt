@@ -20,7 +20,7 @@ historical_rival = X41
 
 2750.1.1 = {
 	monarch = {
-		name = "Fëanor"
+		name = "FÃ«anor"
 		dynasty = "Huthayfah"
 		birth_date = 2702.1.1
 		adm = 5
@@ -28,8 +28,8 @@ historical_rival = X41
 		mil = 1
 	}
 	heir = {
-		monarch_name = "Mírien"
-		name = "Mírien"
+		monarch_name = "MÃ­rien"
+		name = "MÃ­rien"
 		dynasty = "Huthayfah"
 		birth_date = 2712.1.1
 		death_date = 2751.1.1
@@ -38,11 +38,15 @@ historical_rival = X41
 		mil = 1
 		claim = 100
 	}
+	add_country_modifier = {
+		name = thani_hazad
+		duration = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Mírëatan"
+		name = "MÃ­rÃ«atan"
 		dynasty = "Huthayfah"
 		birth_date = 2726.1.1
 		adm = 1
@@ -75,7 +79,7 @@ historical_rival = X41
 
 2900.1.1 = {
 	monarch = {
-		name = "Eärnil"
+		name = "EÃ¤rnil"
 		dynasty = "Huthayfah"
 		birth_date = 2835.1.1
 		adm = 0
@@ -86,7 +90,7 @@ historical_rival = X41
 
 2950.1.1 = {
 	monarch = {
-		name = "Vëaher"
+		name = "VÃ«aher"
 		dynasty = "Huthayfah"
 		birth_date = 2882.1.1
 		adm = 0
@@ -94,8 +98,8 @@ historical_rival = X41
 		mil = 5
 	}
 	heir = {
-		monarch_name = "Eärwen"
-		name = "Eärwen"
+		monarch_name = "EÃ¤rwen"
+		name = "EÃ¤rwen"
 		dynasty = "Huthayfah"
 		birth_date = 2906.1.1
 		death_date = 2959.1.1
