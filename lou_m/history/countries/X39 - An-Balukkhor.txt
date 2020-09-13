@@ -24,7 +24,7 @@ historical_rival = X57
 
 2750.1.1 = {
 	monarch = {
-		name = "Aranwë"
+		name = "AranwÃ«"
 		dynasty = "Umayr"
 		birth_date = 2687.1.1
 		adm = 2
@@ -32,8 +32,8 @@ historical_rival = X57
 		mil = 2
 	}
 	heir = {
-		monarch_name = "Minissë"
-		name = "Minissë"
+		monarch_name = "MinissÃ«"
+		name = "MinissÃ«"
 		dynasty = "Umayr"
 		birth_date = 2666.1.1
 		death_date = 2707.1.1
@@ -41,6 +41,10 @@ historical_rival = X57
 		dip = 4
 		mil = 4
 		claim = 100
+	}
+	add_country_modifier = {
+		name = thani_hazad
+		duration = -1
 	}
 }
 
@@ -54,8 +58,8 @@ historical_rival = X57
 		mil = 1
 	}
 	heir = {
-		monarch_name = "Núneth"
-		name = "Núneth"
+		monarch_name = "NÃºneth"
+		name = "NÃºneth"
 		dynasty = "Umayr"
 		birth_date = 2764.1.1
 		death_date = 2787.1.1
@@ -79,7 +83,7 @@ historical_rival = X57
 
 2900.1.1 = {
 	monarch = {
-		name = "Eädil"
+		name = "EÃ¤dil"
 		dynasty = "Umayr"
 		birth_date = 2869.1.1
 		adm = 3
@@ -90,7 +94,7 @@ historical_rival = X57
 
 2950.1.1 = {
 	monarch = {
-		name = "Súlion"
+		name = "SÃºlion"
 		dynasty = "Umayr"
 		birth_date = 2922.1.1
 		adm = 0
@@ -112,7 +116,7 @@ historical_rival = X57
 
 3000.1.1 = {
 	monarch = {
-		name = "Súrien"
+		name = "SÃºrien"
 		dynasty = "Umayr"
 		birth_date = 2954.1.1
 		adm = 1
