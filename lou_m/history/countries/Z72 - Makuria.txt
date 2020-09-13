@@ -18,18 +18,22 @@ historical_rival = Y14
 
 2750.1.1 = {
 	monarch = {
-		name = "Bôropsazos"
+		name = "BÃ´ropsazos"
 		dynasty = "Theothorses"
 		birth_date = 2676.1.1
 		adm = 2
 		dip = 2
 		mil = 4
 	}
+	add_country_modifier = {
+		name = lands_in_ardor
+		duration = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Marcus"
+		name = "Marcuvilos"
 		dynasty = "Theothorses"
 		birth_date = 2713.1.1
 		adm = 5
@@ -39,7 +43,7 @@ historical_rival = Y14
 	heir = {
 		monarch_name = "Hasmig"
 		name = "Hasmig"
-		dynasty = "Theothorses"
+		dynasty = "Thebalsis"
 		birth_date = 2714.1.1
 		death_date = 2776.1.1
 		adm = 0
@@ -51,16 +55,16 @@ historical_rival = Y14
 
 2850.1.1 = {
 	monarch = {
-		name = "Lupo"
-		dynasty = "Theothorses"
+		name = "Luponis"
+		dynasty = "Thebalsis"
 		birth_date = 2809.1.1
 		adm = 3
 		dip = 0
 		mil = 0
 	}
 	heir = {
-		monarch_name = "Málfríôr"
-		name = "Málfríôr"
+		monarch_name = "MÃ¡lfrÃ­Ã´r"
+		name = "MÃ¡lfrÃ­Ã´r"
 		dynasty = "Theothorses"
 		birth_date = 2816.1.1
 		death_date = 2862.1.1
@@ -73,7 +77,7 @@ historical_rival = Y14
 
 2900.1.1 = {
 	monarch = {
-		name = "Aritê"
+		name = "AritÃª"
 		dynasty = "Theothorses"
 		birth_date = 2839.1.1
 		adm = 4
@@ -86,7 +90,7 @@ historical_rival = Y14
 2950.1.1 = {
 	monarch = {
 		name = "Zbyslava"
-		dynasty = "Theothorses"
+		dynasty = "IgbÃ¢"
 		birth_date = 2931.1.1
 		adm = 1
 		dip = 1
@@ -94,14 +98,15 @@ historical_rival = Y14
 		female = yes
 	}
 	heir = {
-		monarch_name = "Alice"
-		name = "Alice"
+		monarch_name = "Alicia"
+		name = "Alicia"
 		dynasty = "Theothorses"
 		birth_date = 2923.1.1
 		death_date = 2982.1.1
 		adm = 1
 		dip = 1
 		mil = 3
+		female = yes
 		claim = 100
 	}
 }
@@ -109,7 +114,7 @@ historical_rival = Y14
 3000.1.1 = {
 	monarch = {
 		name = "Marina"
-		dynasty = "Theothorses"
+		dynasty = "Vilaneses"
 		birth_date = 2965.1.1
 		adm = 5
 		dip = 4
@@ -119,12 +124,13 @@ historical_rival = Y14
 	heir = {
 		monarch_name = "Rita"
 		name = "Rita"
-		dynasty = "Theothorses"
+		dynasty = "Vilaneses"
 		birth_date = 2926.1.1
 		death_date = 2985.1.1
 		adm = 1
-		dip = 1
+		dip = 2
 		mil = 3
+		female = yes
 		claim = 100
 	}
 }
