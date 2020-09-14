@@ -8,12 +8,12 @@ capital = 624
 
 2750.1.1 = {
 	monarch = {
-		name = "Nagbug"
-		dynasty = "Maugaz"
+		name = "Shahassasîl"
+		dynasty = "Mehgenê"
 		birth_date = 2712.1.1
-		adm = 5
-		dip = 5
-		mil = 3
+		adm = 3
+		dip = 3
+		mil = 5
 	}
 	heir = {
 		monarch_name = "Ubrutta"
@@ -26,11 +26,15 @@ capital = 624
 		mil = 1
 		claim = 100
 	}
+	add_country_modifier = {
+		name = curse_of_akalai_zaj
+		duration = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "L�nbug"
+		name = "Lúnbug"
 		dynasty = "Maugaz"
 		birth_date = 2746.1.1
 		adm = 3
@@ -85,7 +89,7 @@ capital = 624
 
 2950.1.1 = {
 	monarch = {
-		name = "L�nzag"
+		name = "Lúnzag"
 		dynasty = "Maugaz"
 		birth_date = 2876.1.1
 		adm = 0
