@@ -29,6 +29,10 @@ historical_rival = X11
 		dip = 5
 		mil = 5
 	}
+	add_country_modifier = {
+		name = corsairs
+		duration = -1
+	}
 }
 
 2800.1.1 = {
@@ -63,8 +67,8 @@ historical_rival = X11
 		mil = 1
 	}
 	heir = {
-		monarch_name = "Berúthiel"
-		name = "Berúthiel"
+		monarch_name = "BerÃºthiel"
+		name = "BerÃºthiel"
 		dynasty = "Ubayy"
 		birth_date = 2774.1.1
 		death_date = 2857.1.1
