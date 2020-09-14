@@ -32,6 +32,14 @@ historical_rival = X11
 		mil = 0
 		claim = 100
 	}
+	add_country_modifier = {
+		name = corsairs
+		duration = -1
+	}
+	add_country_modifier = {
+		name = umbarean_admirals
+		duration = -1
+	}
 }
 
 2800.1.1 = {
@@ -44,8 +52,8 @@ historical_rival = X11
 		mil = 5
 	}
 	heir = {
-		monarch_name = "Míriel"
-		name = "Míriel"
+		monarch_name = "MÃ­riel"
+		name = "MÃ­riel"
 		dynasty = "Nizar"
 		birth_date = 2758.1.1
 		death_date = 2783.1.1
