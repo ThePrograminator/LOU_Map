@@ -42,6 +42,10 @@ historical_rival = W52
 		mil = 2
 		claim = 100
 	}
+	add_country_modifier = {
+		name = hordes_of_zurghor
+		duration = -1
+	}
 }
 
 2800.1.1 = {
@@ -92,7 +96,7 @@ historical_rival = W52
 
 2900.1.1 = {
 	monarch = {
-		name = "Lûnzag"
+		name = "LÃ»nzag"
 		dynasty = "Gazug"
 		birth_date = 2868.1.1
 		adm = 2
@@ -122,8 +126,8 @@ historical_rival = W52
 		mil = 5
 	}
 	heir = {
-		monarch_name = "Shaglúk"
-		name = "Shaglúk"
+		monarch_name = "ShaglÃºk"
+		name = "ShaglÃºk"
 		dynasty = "Gazug"
 		birth_date = 2893.1.1
 		death_date = 2965.1.1
