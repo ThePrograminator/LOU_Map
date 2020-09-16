@@ -34,6 +34,11 @@ forge_building=yes
 fort_castle_building=yes
 barracks_building=yes
 
+add_province_modifier = {
+	name = ancient_capital_of_the_tarlai
+	duration = -1
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
