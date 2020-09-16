@@ -24,7 +24,7 @@ historical_rival = Y45
 
 2750.1.1 = {
 	monarch = {
-		name = "Nóliel"
+		name = "NÃ³liel"
 		dynasty = "Qusay"
 		birth_date = 2690.1.1
 		adm = 5
@@ -42,6 +42,26 @@ historical_rival = Y45
 		dip = 1
 		mil = 4
 		claim = 100
+	}
+	add_country_modifier = {
+		name = aruaglar
+		duration = -1
+	}
+	add_country_modifier = {
+		name = azriyabar
+		duration = -1
+	}
+	add_country_modifier = {
+		name = barradtud
+		duration = -1
+	}
+	add_country_modifier = {
+		name = sapthathon
+		duration = -1
+	}
+	add_country_modifier = {
+		name = zenannas
+		duration = -1
 	}
 }
 
@@ -78,8 +98,8 @@ historical_rival = Y45
 		female = yes
 	}
 	heir = {
-		monarch_name = "Ríanna"
-		name = "Ríanna"
+		monarch_name = "RÃ­anna"
+		name = "RÃ­anna"
 		dynasty = "Qusay"
 		birth_date = 2830.1.1
 		death_date = 2890.1.1
@@ -101,8 +121,8 @@ historical_rival = Y45
 		female = yes
 	}
 	heir = {
-		monarch_name = "Celebrían"
-		name = "Celebrían"
+		monarch_name = "CelebrÃ­an"
+		name = "CelebrÃ­an"
 		dynasty = "Qusay"
 		birth_date = 2851.1.1
 		death_date = 2893.1.1
