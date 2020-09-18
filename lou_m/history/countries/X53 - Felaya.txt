@@ -21,13 +21,16 @@ historical_rival = Y78
 
 2750.1.1 = {
 	monarch = {
-		name = "Sawda"
+		name = "Siw√¢rdar"
 		dynasty = "Aadil"
 		birth_date = 2719.1.1
 		adm = 4
 		dip = 3
 		mil = 5
-		female = yes
+	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
 	}
 }
 
@@ -130,8 +133,8 @@ historical_rival = Y78
 		mil = 1
 	}
 	heir = {
-		monarch_name = "Da‚'d"
-		name = "Da‚'d"
+		monarch_name = "Da√¢'d"
+		name = "Da√¢'d"
 		dynasty = "Aadil"
 		birth_date = 2926.1.1
 		death_date = 2988.1.1
