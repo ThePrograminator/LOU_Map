@@ -18,17 +18,17 @@ historical_rival = Y29
 
 2750.1.1 = {
 	monarch = {
-		name = "AdrÓm"
-		dynasty = "Gh‚n"
+		name = "Adr√Æm"
+		dynasty = "Gh√¢n"
 		birth_date = 2672.1.1
 		adm = 0
 		dip = 2
 		mil = 5
 	}
 	heir = {
-		monarch_name = "GrÓ"
-		name = "GrÓ"
-		dynasty = "Gh‚n"
+		monarch_name = "Gr√Æ"
+		name = "Gr√Æ"
+		dynasty = "Gh√¢n"
 		birth_date = 2704.1.1
 		death_date = 2722.1.1
 		adm = 0
@@ -36,21 +36,25 @@ historical_rival = Y29
 		mil = 2
 		claim = 100
 	}
+	add_country_modifier = {
+		name = druedain_ambush_tactics
+		duartion = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Br‚wi"
-		dynasty = "Gh‚n"
+		name = "Br√¢wi"
+		dynasty = "Gh√¢n"
 		birth_date = 2775.1.1
 		adm = 2
 		dip = 3
 		mil = 4
 	}
 	heir = {
-		monarch_name = "GÓma"
-		name = "GÓma"
-		dynasty = "Gh‚n"
+		monarch_name = "G√Æma"
+		name = "G√Æma"
+		dynasty = "Gh√¢n"
 		birth_date = 2754.1.1
 		death_date = 2785.1.1
 		adm = 4
@@ -62,8 +66,8 @@ historical_rival = Y29
 
 2850.1.1 = {
 	monarch = {
-		name = "G˚za"
-		dynasty = "Gh‚n"
+		name = "G√ªza"
+		dynasty = "Gh√¢n"
 		birth_date = 2772.1.1
 		adm = 5
 		dip = 2
@@ -73,8 +77,8 @@ historical_rival = Y29
 
 2900.1.1 = {
 	monarch = {
-		name = "G˚ma"
-		dynasty = "Gh‚n"
+		name = "G√ªma"
+		dynasty = "Gh√¢n"
 		birth_date = 2842.1.1
 		adm = 3
 		dip = 2
@@ -82,9 +86,9 @@ historical_rival = Y29
 		female = yes
 	}
 	heir = {
-		monarch_name = "Iz˚n"
-		name = "Iz˚n"
-		dynasty = "Gh‚n"
+		monarch_name = "Iz√ªn"
+		name = "Iz√ªn"
+		dynasty = "Gh√¢n"
 		birth_date = 2862.1.1
 		death_date = 2920.1.1
 		adm = 3
@@ -96,17 +100,17 @@ historical_rival = Y29
 
 2950.1.1 = {
 	monarch = {
-		name = "MadrÓn"
-		dynasty = "Gh‚n"
+		name = "Madr√Æn"
+		dynasty = "Gh√¢n"
 		birth_date = 2909.1.1
 		adm = 5
 		dip = 4
 		mil = 3
 	}
 	heir = {
-		monarch_name = "GhÍrdu"
-		name = "GhÍrdu"
-		dynasty = "Gh‚n"
+		monarch_name = "Gh√™rdu"
+		name = "Gh√™rdu"
+		dynasty = "Gh√¢n"
 		birth_date = 2930.1.1
 		death_date = 2970.1.1
 		adm = 4
@@ -118,8 +122,8 @@ historical_rival = Y29
 
 3000.1.1 = {
 	monarch = {
-		name = "Dig‚r"
-		dynasty = "Gh‚n"
+		name = "Dig√¢r"
+		dynasty = "Gh√¢n"
 		birth_date = 2972.1.1
 		adm = 5
 		dip = 3
@@ -127,9 +131,9 @@ historical_rival = Y29
 		female = yes
 	}
 	heir = {
-		monarch_name = "Bagh‚d"
-		name = "Bagh‚d"
-		dynasty = "Gh‚n"
+		monarch_name = "Bagh√¢d"
+		name = "Bagh√¢d"
+		dynasty = "Gh√¢n"
 		birth_date = 2929.1.1
 		death_date = 3017.1.1
 		adm = 4
