@@ -27,6 +27,15 @@ trade_goods = silk
 
 hre = no
 
+add_province_modifier = {
+  name = walls_of_pelargir
+  duration = -1
+}
+add_province_modifier = {
+  name = docks_of_pelargir
+  duration = -1
+}
+
 city_2_building=yes
 fort_castle_building=yes
 workshop_building=yes
