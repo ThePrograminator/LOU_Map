@@ -16,17 +16,17 @@ historical_rival = Z46
 
 2750.1.1 = {
 	monarch = {
-		name = "Drûna"
-		dynasty = "Ghûn"
+		name = "DrÃ»na"
+		dynasty = "GhÃ»n"
 		birth_date = 2723.1.1
 		adm = 3
 		dip = 1
 		mil = 5
 	}
 	heir = {
-		monarch_name = "Gurîgha"
-		name = "Gurîgha"
-		dynasty = "Ghûn"
+		monarch_name = "GurÃ®gha"
+		name = "GurÃ®gha"
+		dynasty = "GhÃ»n"
 		birth_date = 2687.1.1
 		death_date = 2760.1.1
 		adm = 4
@@ -34,12 +34,16 @@ historical_rival = Z46
 		mil = 0
 		claim = 100
 	}
+	add_country_modifier = {
+		name = druedain_ambush_tactics
+		duartion = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Drûna"
-		dynasty = "Ghûn"
+		name = "DrÃ»na"
+		dynasty = "GhÃ»n"
 		birth_date = 2763.1.1
 		adm = 4
 		dip = 1
@@ -50,8 +54,8 @@ historical_rival = Z46
 
 2850.1.1 = {
 	monarch = {
-		name = "Brâwi"
-		dynasty = "Ghûn"
+		name = "BrÃ¢wi"
+		dynasty = "GhÃ»n"
 		birth_date = 2764.1.1
 		adm = 1
 		dip = 2
@@ -59,9 +63,9 @@ historical_rival = Z46
 		female = yes
 	}
 	heir = {
-		monarch_name = "Brûdri"
-		name = "Brûdri"
-		dynasty = "Ghûn"
+		monarch_name = "BrÃ»dri"
+		name = "BrÃ»dri"
+		dynasty = "GhÃ»n"
 		birth_date = 2817.1.1
 		death_date = 2899.1.1
 		adm = 0
@@ -73,17 +77,17 @@ historical_rival = Z46
 
 2900.1.1 = {
 	monarch = {
-		name = "Dhôn"
-		dynasty = "Ghûn"
+		name = "DhÃ´n"
+		dynasty = "GhÃ»n"
 		birth_date = 2852.1.1
 		adm = 1
 		dip = 1
 		mil = 4
 	}
 	heir = {
-		monarch_name = "Andrî"
-		name = "Andrî"
-		dynasty = "Ghûn"
+		monarch_name = "AndrÃ®"
+		name = "AndrÃ®"
+		dynasty = "GhÃ»n"
 		birth_date = 2818.1.1
 		death_date = 2907.1.1
 		adm = 5
@@ -95,8 +99,8 @@ historical_rival = Z46
 
 2950.1.1 = {
 	monarch = {
-		name = "Ghêrdu"
-		dynasty = "Ghûn"
+		name = "GhÃªrdu"
+		dynasty = "GhÃ»n"
 		birth_date = 2879.1.1
 		adm = 0
 		dip = 4
@@ -104,9 +108,9 @@ historical_rival = Z46
 		female = yes
 	}
 	heir = {
-		monarch_name = "Abûmi"
-		name = "Abûmi"
-		dynasty = "Ghûn"
+		monarch_name = "AbÃ»mi"
+		name = "AbÃ»mi"
+		dynasty = "GhÃ»n"
 		birth_date = 2861.1.1
 		death_date = 2883.1.1
 		adm = 1
@@ -118,17 +122,17 @@ historical_rival = Z46
 
 3000.1.1 = {
 	monarch = {
-		name = "Darîgha"
-		dynasty = "Ghûn"
+		name = "DarÃ®gha"
+		dynasty = "GhÃ»n"
 		birth_date = 2944.1.1
 		adm = 0
 		dip = 5
 		mil = 3
 	}
 	heir = {
-		monarch_name = "Gurîgha"
-		name = "Gurîgha"
-		dynasty = "Ghûn"
+		monarch_name = "GurÃ®gha"
+		name = "GurÃ®gha"
+		dynasty = "GhÃ»n"
 		birth_date = 2953.1.1
 		death_date = 2986.1.1
 		adm = 3
