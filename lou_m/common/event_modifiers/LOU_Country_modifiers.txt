@@ -146,7 +146,6 @@ shayan_guerrilla_tactics = {
 	hostile_attrition = 1
 }
 
-#Chyan Empire
 loyal_people = {
 	global_unrest = -1
 	commoners_loyalty_modifier = 0.1
@@ -160,6 +159,7 @@ royal_ancestry = {
 	monarch_admin_power = 1
 }
 
+#Chyan Empire
 chyan_imperial_administration = {
 	governing_capacity = 150
 	num_accepted_cultures = 1
@@ -206,5 +206,18 @@ harshandatt_spies = {
 	global_spy_defence = 0.1
 }
 
+#Codya
+codyan_navy_traditions = {
+	navy_tradition = 1
+	naval_tradition_from_battle = 0.1
+	global_ship_recruit_speed = 0.1
+	naval_forcelimit_modifier = 0.1
+	naval_maintenance_modifier = -0.1
+}
 
-
+codyan_sailors = {
+	global_sailors_modifier = 0.1
+	naval_morale = 0.1
+	admiral_cost = -0.15
+	movement_speed_onto_off_boat_modifier = 0.1
+}
