@@ -42,6 +42,22 @@ historical_rival = X29
 		mil = 3
 		claim = 100
 	}
+	add_country_modifier = {
+		name = naerphys_order_of_the_high_priests
+		duration = -1
+	}
+	add_country_modifier = {
+		name = harshandatt_scholars
+		duration = -1
+	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
+	}
+	add_country_modifier = {
+		name = loyal_people
+		duration = -1
+	}
 }
 
 2800.1.1 = {
@@ -110,8 +126,8 @@ historical_rival = X29
 		mil = 4
 	}
 	heir = {
-		monarch_name = "Da‚'d"
-		name = "Da‚'d"
+		monarch_name = "Da√¢'d"
+		name = "Da√¢'d"
 		dynasty = "Imaan"
 		birth_date = 2931.1.1
 		death_date = 2962.1.1
