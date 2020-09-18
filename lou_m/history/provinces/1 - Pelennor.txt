@@ -27,8 +27,12 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
+add_province_modifier = {
+  name = rammas_echor
+  duration = -1
+}
 
+settlement_building=yes
 fort_pallisade_building=yes
 
 discovered_by = lotr_human
