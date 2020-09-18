@@ -146,6 +146,65 @@ shayan_guerrilla_tactics = {
 	hostile_attrition = 1
 }
 
+#Chyan Empire
+loyal_people = {
+	global_unrest = -1
+	commoners_loyalty_modifier = 0.1
+	nobility_loyalty_modifier = 0.1
+}
+
+royal_ancestry = {
+	prestige = 0.5
+	legitimacy = 1
+	heir_chance = 0.5
+	monarch_admin_power = 1
+}
+
+chyan_imperial_administration = {
+	governing_capacity = 150
+	num_accepted_cultures = 1
+	missionaries = 1
+}
+
+chyan_vassal_authority = {
+	vassal_forcelimit_bonus = 0.2
+	liberty_desire = -10
+}
+
+chyan_diplomacy_renown = {
+	diplomats = 1
+	diplomatic_reputation = 1
+}
+
+chyan_scholars = {
+	technology_cost = -0.1
+	innovativeness_gain = 0.5
+	advisor_pool = 1
+}
+
+#Harshandatt
+harshandatt_scholars = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+	innovativeness_gain = 0.5
+	advisor_pool = 1
+	prestige_decay = -0.01
+}
+
+naerphys_order_of_the_high_priests = {
+	missionaries = 2
+	global_missionary_strength = 0.1
+	missionary_maintenance_cost = -0.1
+	religious_unity = 0.5
+	enforce_religion_cost = -0.5
+	relation_with_heretics = -10
+}
+
+#Harshandatt & Sons of Sadeh
+harshandatt_spies = {
+	spy_offence = 0.15
+	global_spy_defence = 0.1
+}
 
 
 
