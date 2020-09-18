@@ -39,6 +39,10 @@ historical_rival = X44
 		mil = 2
 		claim = 100
 	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
+	}
 }
 
 2800.1.1 = {
@@ -109,8 +113,8 @@ historical_rival = X44
 		female = yes
 	}
 	heir = {
-		monarch_name = "Da‚'d"
-		name = "Da‚'d"
+		monarch_name = "Da√¢'d"
+		name = "Da√¢'d"
 		dynasty = "Sabir"
 		birth_date = 2890.1.1
 		death_date = 2919.1.1
