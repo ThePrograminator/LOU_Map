@@ -22,8 +22,8 @@ historical_rival = X55
 
 2750.1.1 = {
 	monarch = {
-		name = "Orleg"
-		dynasty = "Hudhayfah"
+		name = "Bêlphazân"
+		dynasty = "Âruyati"
 		birth_date = 2677.1.1
 		adm = 5
 		dip = 0
@@ -37,12 +37,16 @@ historical_rival = X55
 		name = zenannas
 		duration = -1
 	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Ondoher"
-		dynasty = "Hudhayfah"
+		name = "Balchârmagan"
+		dynasty = "Âruyati"
 		birth_date = 2761.1.1
 		adm = 4
 		dip = 3
@@ -52,8 +56,8 @@ historical_rival = X55
 
 2850.1.1 = {
 	monarch = {
-		name = "Halboron"
-		dynasty = "Hudhayfah"
+		name = "Halphêzan"
+		dynasty = "Âruyati"
 		birth_date = 2783.1.1
 		adm = 5
 		dip = 5
@@ -62,7 +66,7 @@ historical_rival = X55
 	heir = {
 		monarch_name = "Niënor"
 		name = "Niënor"
-		dynasty = "Hudhayfah"
+		dynasty = "Âruyati"
 		birth_date = 2809.1.1
 		death_date = 2882.1.1
 		adm = 1
@@ -74,17 +78,17 @@ historical_rival = X55
 
 2900.1.1 = {
 	monarch = {
-		name = "Algund"
-		dynasty = "Hudhayfah"
+		name = "Alkhôr"
+		dynasty = "Âruyati"
 		birth_date = 2862.1.1
 		adm = 0
 		dip = 4
 		mil = 0
 	}
 	heir = {
-		monarch_name = "Gilwen"
-		name = "Gilwen"
-		dynasty = "Hudhayfah"
+		monarch_name = "Gilwë"
+		name = "Gilwë"
+		dynasty = "Âruyati"
 		birth_date = 2817.1.1
 		death_date = 2859.1.1
 		adm = 3
@@ -97,7 +101,7 @@ historical_rival = X55
 2950.1.1 = {
 	monarch = {
 		name = "Númemir"
-		dynasty = "Hudhayfah"
+		dynasty = "Âruyati"
 		birth_date = 2914.1.1
 		adm = 1
 		dip = 3
@@ -107,8 +111,8 @@ historical_rival = X55
 
 3000.1.1 = {
 	monarch = {
-		name = "Rómer"
-		dynasty = "Hudhayfah"
+		name = "Rómerion"
+		dynasty = "Âruyati"
 		birth_date = 2932.1.1
 		adm = 3
 		dip = 4
