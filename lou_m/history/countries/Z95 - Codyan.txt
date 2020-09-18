@@ -32,7 +32,14 @@ historical_rival = X40
 		adm = 3
 		dip = 3
 		mil = 4
-		female = yes
+	}
+	add_country_modifier = {
+		name = codyan_sailors
+		duration = -1
+	}
+	add_country_modifier = {
+		name = codyan_navy_traditions
+		duration = -1
 	}
 }
 
