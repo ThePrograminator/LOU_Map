@@ -6,6 +6,7 @@ establish_trust = {
 	require_acceptance = no
 	
 	is_visible = {
+        always = no
         FROM = {
             has_opinion = {
                 who = ROOT
@@ -15,6 +16,7 @@ establish_trust = {
 	}
     
 	is_allowed = {
+        always = no
         FROM = {
             has_opinion = {
                 who = ROOT
