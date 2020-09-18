@@ -25,8 +25,8 @@ historical_rival = W15
 		mil = 0
 	}
 	heir = {
-		monarch_name = "Málfríôr"
-		name = "Málfríôr"
+		monarch_name = "MÃ¡lfrÃ­Ã´r"
+		name = "MÃ¡lfrÃ­Ã´r"
 		dynasty = "Artashes"
 		birth_date = 2669.1.1
 		death_date = 2724.1.1
@@ -34,6 +34,10 @@ historical_rival = W15
 		dip = 3
 		mil = 0
 		claim = 100
+	}
+	add_country_modifier = {
+		name = shayan_guerrilla_tactics
+		duration = -1
 	}
 }
 
@@ -51,7 +55,7 @@ historical_rival = W15
 
 2850.1.1 = {
 	monarch = {
-		name = "Storanê"
+		name = "StoranÃª"
 		dynasty = "Artashes"
 		birth_date = 2823.1.1
 		adm = 1
@@ -74,7 +78,7 @@ historical_rival = W15
 
 2900.1.1 = {
 	monarch = {
-		name = "Bôrnôn"
+		name = "BÃ´rnÃ´n"
 		dynasty = "Artashes"
 		birth_date = 2833.1.1
 		adm = 5
