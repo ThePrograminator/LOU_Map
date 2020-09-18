@@ -14,7 +14,7 @@ historical_rival = X89
 
 2750.1.1 = {
 	monarch = {
-		name = "Araouêgos"
+		name = "AraouÃªgos"
 		dynasty = "Chodiakios"
 		birth_date = 2671.1.1
 		adm = 4
@@ -31,6 +31,14 @@ historical_rival = X89
 		dip = 3
 		mil = 1
 		claim = 100
+	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
+	}
+	add_country_modifier = {
+		name = loyal_people
+		duration = -1
 	}
 }
 
@@ -69,7 +77,7 @@ historical_rival = X89
 
 2900.1.1 = {
 	monarch = {
-		name = "Tiranês"
+		name = "TiranÃªs"
 		dynasty = "Chodiakios"
 		birth_date = 2856.1.1
 		adm = 1
@@ -113,7 +121,7 @@ historical_rival = X89
 
 3000.1.1 = {
 	monarch = {
-		name = "Bagês"
+		name = "BagÃªs"
 		dynasty = "Chodiakios"
 		birth_date = 2977.1.1
 		adm = 4
