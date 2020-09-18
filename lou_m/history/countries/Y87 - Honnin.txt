@@ -19,29 +19,33 @@ historical_rival = X44
 
 2750.1.1 = {
 	monarch = {
-		name = "Îbi"
-		dynasty = "Gûbi"
+		name = "ÃŽbi"
+		dynasty = "GÃ»bi"
 		birth_date = 2686.1.1
 		adm = 4
 		dip = 1
 		mil = 1
 		female = yes
 	}
+	add_country_modifier = {
+		name = druedain_ambush_tactics
+		duartion = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Andrî"
-		dynasty = "Gûbi"
+		name = "AndrÃ®"
+		dynasty = "GÃ»bi"
 		birth_date = 2720.1.1
 		adm = 0
 		dip = 4
 		mil = 2
 	}
 	heir = {
-		monarch_name = "Êrrîgha"
-		name = "Êrrîgha"
-		dynasty = "Gûbi"
+		monarch_name = "ÃŠrrÃ®gha"
+		name = "ÃŠrrÃ®gha"
+		dynasty = "GÃ»bi"
 		birth_date = 2773.1.1
 		death_date = 2846.1.1
 		adm = 2
@@ -53,17 +57,17 @@ historical_rival = X44
 
 2850.1.1 = {
 	monarch = {
-		name = "Baghâd"
-		dynasty = "Gûbi"
+		name = "BaghÃ¢d"
+		dynasty = "GÃ»bi"
 		birth_date = 2776.1.1
 		adm = 1
 		dip = 2
 		mil = 3
 	}
 	heir = {
-		monarch_name = "Râma"
-		name = "Râma"
-		dynasty = "Gûbi"
+		monarch_name = "RÃ¢ma"
+		name = "RÃ¢ma"
+		dynasty = "GÃ»bi"
 		birth_date = 2763.1.1
 		death_date = 2843.1.1
 		adm = 5
@@ -75,8 +79,8 @@ historical_rival = X44
 
 2900.1.1 = {
 	monarch = {
-		name = "Dhôn"
-		dynasty = "Gûbi"
+		name = "DhÃ´n"
+		dynasty = "GÃ»bi"
 		birth_date = 2868.1.1
 		adm = 5
 		dip = 0
@@ -86,8 +90,8 @@ historical_rival = X44
 
 2950.1.1 = {
 	monarch = {
-		name = "Îbi"
-		dynasty = "Gûbi"
+		name = "ÃŽbi"
+		dynasty = "GÃ»bi"
 		birth_date = 2913.1.1
 		adm = 4
 		dip = 2
@@ -97,17 +101,17 @@ historical_rival = X44
 
 3000.1.1 = {
 	monarch = {
-		name = "Arû"
-		dynasty = "Gûbi"
+		name = "ArÃ»"
+		dynasty = "GÃ»bi"
 		birth_date = 2942.1.1
 		adm = 5
 		dip = 5
 		mil = 1
 	}
 	heir = {
-		monarch_name = "Grî"
-		name = "Grî"
-		dynasty = "Gûbi"
+		monarch_name = "GrÃ®"
+		name = "GrÃ®"
+		dynasty = "GÃ»bi"
 		birth_date = 2940.1.1
 		death_date = 2990.1.1
 		adm = 4
