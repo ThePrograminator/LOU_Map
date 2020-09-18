@@ -22,17 +22,17 @@ historical_rival = X39
 
 2750.1.1 = {
 	monarch = {
-		name = "Mahd"
-		dynasty = "Korlea"
+		name = "Kharûzor"
+		dynasty = "Mûrathôrion"
 		birth_date = 2672.1.1
 		adm = 4
 		dip = 5
 		mil = 5
 	}
 	heir = {
-		monarch_name = "Hind"
-		name = "Hind"
-		dynasty = "Korlea"
+		monarch_name = "Tûmakhor"
+		name = "Tûmakhor"
+		dynasty = "Mûrathôrion"
 		birth_date = 2718.1.1
 		death_date = 2746.1.1
 		adm = 3
@@ -40,12 +40,16 @@ historical_rival = X39
 		mil = 4
 		claim = 100
 	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
+	}
 }
 
 2800.1.1 = {
 	monarch = {
-		name = "Suhayr"
-		dynasty = "Korlea"
+		name = "Câleshya"
+		dynasty = "Mûrathôrion"
 		birth_date = 2753.1.1
 		adm = 4
 		dip = 3
@@ -53,9 +57,9 @@ historical_rival = X39
 		female = yes
 	}
 	heir = {
-		monarch_name = "Rumaythah"
-		name = "Rumaythah"
-		dynasty = "Korlea"
+		monarch_name = "Rumateveh"
+		name = "Rumateveh"
+		dynasty = "Mûrathôrion"
 		birth_date = 2757.1.1
 		death_date = 2832.1.1
 		adm = 0
@@ -67,8 +71,8 @@ historical_rival = X39
 
 2850.1.1 = {
 	monarch = {
-		name = "Gulab"
-		dynasty = "Korlea"
+		name = "Lanchâllon"
+		dynasty = "Mûrathôrion"
 		birth_date = 2784.1.1
 		adm = 3
 		dip = 0
@@ -78,17 +82,17 @@ historical_rival = X39
 
 2900.1.1 = {
 	monarch = {
-		name = "Jari"
-		dynasty = "Korlea"
+		name = "Jarimôr"
+		dynasty = "Mûrathôrion"
 		birth_date = 2825.1.1
 		adm = 4
 		dip = 3
 		mil = 3
 	}
 	heir = {
-		monarch_name = "Sumayyaa"
-		name = "Sumayyaa"
-		dynasty = "Korlea"
+		monarch_name = "Sumenyâ"
+		name = "Sumenyâ"
+		dynasty = "Mûrathôrion"
 		birth_date = 2855.1.1
 		death_date = 2898.1.1
 		adm = 5
@@ -100,8 +104,8 @@ historical_rival = X39
 
 2950.1.1 = {
 	monarch = {
-		name = "Nadim"
-		dynasty = "Korlea"
+		name = "Bachâllos"
+		dynasty = "Mûrathôrion"
 		birth_date = 2891.1.1
 		adm = 5
 		dip = 5
@@ -111,17 +115,17 @@ historical_rival = X39
 
 3000.1.1 = {
 	monarch = {
-		name = "Aayan"
-		dynasty = "Korlea"
+		name = "Arânatâr"
+		dynasty = "Mûrathôrion"
 		birth_date = 2928.1.1
 		adm = 0
 		dip = 3
 		mil = 2
 	}
 	heir = {
-		monarch_name = "Tamadhur"
-		name = "Tamadhur"
-		dynasty = "Korlea"
+		monarch_name = "Tamadhûr"
+		name = "Tamadhûr"
+		dynasty = "Mûrathôrion"
 		birth_date = 2949.1.1
 		death_date = 2998.1.1
 		adm = 0
