@@ -90,64 +90,22 @@ gondor_missions_1 = {
 			}
 		}
 	}
-	
-	gondor_citadel_of_the_stars = { 
-		icon = mission_osgiliath
+
+	gondor_construct_henneth_annun = {
+		icon = mission_gondor_6
 		required_missions = { gondor_great_stone_builders }
 		position = 3
 		trigger = {
-			owns = 418
-			owns = 419
-			is_at_war = no 
-			stability = 1
-			custom_trigger_tooltip = {
-				tooltip = X01_HAS_HAD_THE_REBUILD_OSGILIATH_EVENT
-				OR = { 
-					has_country_flag = GONDOR_HAS_NOT_REBUILT_OSGILIATH
-					has_country_flag = GONDOR_HAS_REBUILT_OSGILIATH
-				}
-			}
+			
 		}
 		effect = {
-			if = { 
-				limit = { 
-					has_country_flag = GONDOR_HAS_REBUILT_OSGILIATH
-				}
-				418 = {
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-					add_province_modifier = {
-						name = gondor_major_restoration_works_modifier
-						duration = 9125
-					}
-				}
-				419 = {
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-					add_province_modifier = {
-						name = gondor_major_restoration_works_modifier
-						duration = 9125
-					}
-				}
-				clr_country_flag = GONDOR_HAS_REBUILT_OSGILIATH
-			}
-			else = { 
-				418 = {
-					add_building = resettlement_action
-				}
-				419 = { 
-					add_building = resettlement_action 
-				}
-				clr_country_flag = GONDOR_HAS_NOT_REBUILT_OSGILIATH
-			}
+			
 		}
 	}
 	
 	gondor_defy_the_dark_lord = {
 		icon = mission_gondor_2
-		required_missions = { gondor_citadel_of_the_stars gondor_restore_minas_ithil }
+		required_missions = { gondor_construct_henneth_annun gondor_fortify_along_anduin }
 		position = 4 
 		trigger = {
 			war_with = V17
@@ -237,19 +195,16 @@ gondor_missions_2 = {
 		tag = X01
 	}
 	has_country_shield = yes	
-	
-	gondor_restore_minas_ithil = {
-		icon = mission_minas_morgul
+
+	gondor_fortify_along_anduin = {
+		icon = mission_gondor_6
 		required_missions = { gondor_great_stone_builders gondor_raise_the_royal_forces }
 		position = 3
 		trigger = {
-			minas_ithil_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			
 		}
 		effect = {
-			country_event = { id = LOU_mission_gondor.5 }
+			
 		}
 	}
 	
@@ -278,6 +233,46 @@ gondor_missions_2 = {
 				add_country_modifier = {
 					name = gondor_spearhead_of_gondor_modifier
 					duration = 3650
+				}
+			}
+		}
+	}
+
+	gondor_ered_nimrais = {
+		icon = mission_gondor_13
+		required_missions = { gondor_demand_gwedh_byr }
+		position = 5
+		trigger = {
+			daningweth_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nan_i_feryth_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nan_lefnui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			old_pukel_land_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = gondor_mountainmen_regiments_modifier
+				duration = 7300
+			}
+			202 = {
+				add_building_construction = {
+					building = fort_stronghold_building
+					speed = 0.5
+					cost = 0
 				}
 			}
 		}
@@ -332,51 +327,83 @@ gondor_missions_3 = {
 			add_core = 417 
 		}
 	}
-	
-	gondor_ered_nimrais = {
-		icon = mission_gondor_13
+
+	gondor_dor_en_romen = {
+		icon = mission_gondor_6
 		required_missions = { gondor_raise_the_royal_forces }
-		position = 5
+		position = 4
 		trigger = {
-			daningweth_area = {
+			talath_harroch_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
+				is_core = ROOT
 			}
-			nan_i_feryth_area = {
+			nindalf_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
+				is_core = ROOT
 			}
-			nan_lefnui_area = {
+			emyn_muil_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			48 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			573 = {
+				owned_by = ROOT
+				is_core = ROOT
 			}
 		}
-		effect = { 
-			old_pukel_land_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
+		effect = {
+			
+		}
+	}
+
+	gondor_fortify_against_easterlings = {
+		icon = mission_gondor_6
+		required_missions = { gondor_dor_en_romen }
+		position = 5
+		trigger = {
+			men_i_mordor_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
 			}
-			add_country_modifier = {
-				name = gondor_mountainmen_regiments_modifier
-				duration = 7300
+			sagathavuld_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
 			}
-			202 = {
-				add_building_construction = {
-					building = fort_stronghold_building
-					speed = 0.5
-					cost = 0
-				}
+			cairn_angle_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
 			}
+		}
+		effect = {
+			
+		}
+	}
+
+	gondor_romendacil = {
+		icon = mission_gondor_6
+		required_missions = { gondor_fortify_against_easterlings }
+		position = 5
+		trigger = {
+			
+		}
+		effect = {
+			
 		}
 	}
 	
 	gondor_gondor_resurgent = {
 		icon = mission_gondor_12
-		required_missions = { gondor_demand_gwedh_byr gondor_ered_nimrais gondor_the_southern_lands }
-		position = 6
+		required_missions = { gondor_romendacil gondor_ered_nimrais gondor_hyarmendacil gondor_fain_dor gondor_campaign_in_harondor }
+		position = 7
 		trigger = { 
 			grown_by_development = 200
 			share_of_starting_income = 1.5
@@ -407,8 +434,8 @@ gondor_missions_3 = {
 	
 	gondor_the_return_of_the_king = {
 		icon = mission_gondor_9 
-		required_missions = { gondor_gondor_resurgent gondor_fain_dor gondor_campaign_in_harondor }
-		position = 7
+		required_missions = { }
+		position = 8
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = X01_YEAR_IS_3010_OR_HAD_THORONGIL
@@ -456,32 +483,32 @@ gondor_missions_4 = {
 			add_years_of_income = 0.25
 		}
 	}
-	
-	gondor_the_southern_lands = {
-		icon = mission_gondor_19 
-		required_missions = { }
+
+	gondor_reclaim_old_numenorean_colonies = {
+		icon = mission_gondor_20
+		required_missions = { gondor_return_umbar_to_the_fold }
 		position = 5
 		trigger = {
-			laergaladrin_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			owns = 123
-			owns = 1786 
-			owns = 1751 
-			owns = 3235
-			owns = 3297
+			#edit trigger
+			423 = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		effect = {
-			harondor_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
+		effect = { 
+
+		}
+	}
+
+	gondor_hyarmendacil = {
+		icon = mission_gondor_20
+		required_missions = { gondor_trade_from_the_south }
+		position = 6
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = harnendor_region
 			}
-			add_mil_power = 100
-			add_army_tradition = 10
+		}
+		effect = { 
+
 		}
 	}
 }
@@ -592,11 +619,39 @@ gondor_missions_5 = {
 			}
 		}
 	}
+
+	gondor_the_southern_lands = {
+		icon = mission_gondor_19 
+		required_missions = { gondor_reinforce_our_maritime_ties }
+		position = 3
+		trigger = {
+			laergaladrin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 123
+			owns = 1786 
+			owns = 1751 
+			owns = 3235
+			owns = 3297
+		}
+		effect = {
+			harondor_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_mil_power = 100
+			add_army_tradition = 10
+		}
+	}
 	
 	gondor_secure_the_jewel_haven = {
 		icon = mission_gondor_14 
-        required_missions = { gondor_reinforce_our_maritime_ties }
-        position = 3
+        required_missions = { gondor_the_southern_lands }
+        position = 4
         trigger = {
 			1755 = { country_or_non_sovereign_subject_holds = ROOT }
 			468 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -612,6 +667,29 @@ gondor_missions_5 = {
 			130 = { change_trade_goods = gems }
 			1755 = { change_trade_goods = gems }
 			country_event = { id = LOU_mission_gondor.10 }
+		}
+	}
+
+	gondor_trade_from_the_south = {
+		icon = mission_gondor_14 
+        required_missions = { gondor_secure_the_jewel_haven }
+        position = 5
+        trigger = {
+			17 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			130 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			
 		}
 	}
 	
@@ -634,3 +712,94 @@ gondor_missions_5 = {
 			}
 		}
 	}
+}
+
+gondor_missions_2_aragorn = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X01
+	}
+	has_country_shield = yes	
+	
+	gondor_citadel_of_the_stars = { 
+		icon = mission_osgiliath
+		required_missions = { gondor_the_return_of_the_king }
+		position = 9
+		trigger = {
+			owns = 418
+			owns = 419
+			is_at_war = no 
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = X01_HAS_HAD_THE_REBUILD_OSGILIATH_EVENT
+				OR = { 
+					has_country_flag = GONDOR_HAS_NOT_REBUILT_OSGILIATH
+					has_country_flag = GONDOR_HAS_REBUILT_OSGILIATH
+				}
+			}
+		}
+		effect = {
+			if = { 
+				limit = { 
+					has_country_flag = GONDOR_HAS_REBUILT_OSGILIATH
+				}
+				418 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+					add_province_modifier = {
+						name = gondor_major_restoration_works_modifier
+						duration = 9125
+					}
+				}
+				419 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+					add_province_modifier = {
+						name = gondor_major_restoration_works_modifier
+						duration = 9125
+					}
+				}
+				clr_country_flag = GONDOR_HAS_REBUILT_OSGILIATH
+			}
+			else = { 
+				418 = {
+					add_building = resettlement_action
+				}
+				419 = { 
+					add_building = resettlement_action 
+				}
+				clr_country_flag = GONDOR_HAS_NOT_REBUILT_OSGILIATH
+			}
+		}
+	}
+}
+
+gondor_missions_4_aragorn = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = X01
+	}
+	has_country_shield = yes	
+	
+	gondor_restore_minas_ithil = {
+		icon = mission_minas_morgul
+		required_missions = { gondor_the_return_of_the_king }
+		position = 9
+		trigger = {
+			minas_ithil_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = LOU_mission_gondor.5 }
+		}
+	}
+}
+
