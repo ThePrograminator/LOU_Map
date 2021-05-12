@@ -553,3 +553,207 @@ is_absolutism_active = {
 has_dharma_elephants_trigger = {
     always = no
 }
+
+same_govt_as_root_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = same_govt_as_root_tt
+		OR = {
+			AND = {
+				government = theocracy
+				root = {
+					government = theocracy
+				}
+			}
+			AND = {
+				government = monarchy
+				root = {
+					government = monarchy
+				}
+			}
+			AND = {
+				government = republic
+				root = {
+					government = republic
+				}
+			}
+			AND = {
+				government = dictatorship
+				root = {
+					government = dictatorship
+				}
+			}
+			AND = {
+				government = tribal
+				root = {
+					government = tribal
+				}
+			}
+			AND = {
+				government = native
+				root = {
+					government = native
+				}
+			}
+		}
+	}
+}
+
+has_been_insulted_by_root = {
+	custom_trigger_tooltip = {
+		tooltip = has_been_insulted_by_root
+		OR = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = insulted
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = scornfully_insulted
+			}
+		}
+	}
+}
+
+#province scope; checks it is highest or joint highest supply limit in the area owned by you (useful for spawning rebels)
+highest_supply_limit_in_area = {
+	NOT = {
+		area_for_scope_province = { 
+			NOT = { province_id = prev }
+			owned_by = root
+			supply_limit = prev 
+			NOT = { prev = { supply_limit = prev } }
+		}
+	}
+}
+
+check_reducing_estate_revolt_size_trigger = {
+	if = {
+		limit = {
+			NOT = { num_of_cities = 8 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 2
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 12 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 18 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 4
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 28 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 40 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 6
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 50 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 7
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else = {
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 8
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+}
+
+check_reducing_estate_revolt_size_more_trigger = {
+	if = {
+		limit = {
+			NOT = { num_of_cities = 10 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 2
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 16 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 24 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 4
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { num_of_cities = 36 }
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+	else = {
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 6
+				has_province_flag = $FLAG$
+			}
+		}
+	}
+}
