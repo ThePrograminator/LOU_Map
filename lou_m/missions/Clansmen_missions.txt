@@ -1,0 +1,176 @@
+####### SLOT 1 #######
+Clansmen_slot_1 = {
+	generic = no             
+	ai = yes                  
+	has_country_shield = yes      
+	slot = 1
+	potential = {
+		OR = {
+			TAG = Z11
+			FROM = {
+				primary_culture = culture_clansmen
+			}	
+		}
+	}
+	the_isles_of_rast_arnor = {
+		position = 1
+		icon = mission_dunland_1 #Temp
+		provinces_to_highlight = {
+			area = rast_arnor_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			rast_arnor_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			AND = {
+			province_ID = {1406}
+			add_province_modifier = {
+				name = rast_arnor_lighthouse
+				duration = -1
+				desc = rast_arnor_lighthouse_tooltip
+				}
+			}
+		}
+	}
+	rebuilding_the_harbor = {
+		position = 2
+		icon = mission_dunland_1 #Temp
+		required_missions = {
+			the_isles_of_rast_arnor
+		}
+		provinces_to_highlight = {
+			AND = {
+				province_ID = {153}
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+		}
+		trigger = {
+			AND = {
+				153 = province_has_center_of_trade_of_level = 2
+				153 = owned_by ROOT
+			}
+		}
+		effect = { 
+			AND = {
+				Province_ID = {153}
+				add_province_modifier = {
+					name = rebuild_harbor
+					duration = -1
+					desc = rebuild_harbor_tootip
+				}
+			}
+		}
+	}
+}
+		
+	####### SLOT 2 #######
+Clansmen_slot_2 = {
+	generic = no             
+	ai = yes                  
+	has_country_shield = yes      
+	slot = 2
+	potential = {
+		OR = {
+			TAG = Z11
+			FROM = {
+				primary_culture = culture_clansmen
+			}
+		}
+	}
+	the_tharbad_trade = {
+		position = 1
+		icon = mission_dunland_1 #Temp
+		provinces_to_highlight = {1503}
+		trigger = {
+			1503 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		effect = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 5475
+				power = 15
+				key = STRONG_MERCHANTS
+			}
+		}
+			
+		
+	greyflood_glass = {
+		position = 3
+		icon = mission_dunland_1 
+		required_missions = {
+			rebuilding_the_harbor
+			the_tharbad_trade
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = glass
+			}
+			NOT = {
+				owned_by = ROOT
+			}	
+		
+		trigger = {
+			calc_true_if = {
+				any_owned_province = { 
+					trade_goods = glass
+					owned_by = ROOT
+				}
+				amount = 4
+		
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					trade_goods = glass
+				}
+			}
+		}
+		
+	
+	####### SLOT 3 #######
+Clansmen_slot_3 = {
+	generic = no             
+	ai = yes                  
+	has_country_shield = yes      
+	slot = 3
+	potential = {
+		FROM = {
+			primary_culture = culture_clansmen
+		}
+	}
+	
+	####### SLOT 4 #######
+Clansmen_slot_4 = {
+	generic = no             
+	ai = yes                  
+	has_country_shield = yes      
+	slot = 4
+	potential = {
+		FROM = {
+			primary_culture = culture_clansmen
+		}
+	}
+	
+	####### SLOT 5 #######
+Clansmen_slot_5 = {
+	generic = no             
+	ai = yes                  
+	has_country_shield = yes      
+	slot = 5
+	potential = {
+		FROM = {
+			primary_culture = culture_clansmen
+		}
+	}
