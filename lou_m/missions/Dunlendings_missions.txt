@@ -5,29 +5,22 @@ Dunlendings_slot_1 = {
 	has_country_shield = yes      
 	slot = 1
 	potential = {
-		FROM = {
-			primary_culture = culture_dunlendings
-		}
+		primary_culture = culture_dunlendings #no need for FROM
 	}
 	
 	warg_hunters = {
 		position = 2
 		icon = mission_dunland_1
 		provinces_to_highlight = {
-			OR = {
-				trade_goods = fur
-			}
+			trade_goods = fur #removed the OR 
 			NOT = {
 				owned_by = ROOT
 			}	
 		}
 		trigger = {
-			calc_true_if = {
-				any_owned_province = { 
-					trade_goods = fur
-					owned_by = ROOT
-				}
-				amount = 6
+			num_of_owned_provinces_with = { #proper arithmetic trigger that works better / well 
+				trade_goods = fur 
+				value = 6 
 			}
 		}
 		effect = {
@@ -35,7 +28,7 @@ Dunlendings_slot_1 = {
 				trade_goods = fur
 				key = warg_furs
 				value = 0.5
-				duration = 3600
+				duration = 3650 #changed to fit exactly 10 years
 			}
 			add_country_modifier = {
 				name = experienced_hunters
@@ -47,17 +40,13 @@ Dunlendings_slot_1 = {
 		position = 4
 		icon = mission_dunland_1
 		provinces_to_highlight = {
-			OR = {
-				area = west_march_area
-			}
-			NOT = {
-				owned_by = ROOT
-			}
+			area = west_march_area #removed the OR
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
 			west_march_area = {
 				type = all
-				owned_by = ROOT
+				owned_by = ROOT #it's best to use country_or_non_sovereign_subject_holds = ROOT cause some people play with subjects and vassals
 			}
 		}
 		effect = {
@@ -79,28 +68,20 @@ Dunlendings_slot_2 = {
 	has_country_shield = yes      
 	slot = 2
 	potential = {
-		FROM = {
-			primary_culture = culture_dunlendings
-		}
+		primary_culture = culture_dunlendings
 	}
 	claim_the_hornburg = {
 		position = 1
 		icon = mission_dunland_1
 		provinces_to_highlight = {
-			OR = {
-				province_ID = 121
-			}
-			NOT = {
-				owned_by = ROOT
-			}	
+			province_id = 121 #ID was capitalized, game did not register it.
+			NOT = { owned_by = ROOT }	
 		}
 		trigger = {
-			121 = {
-				owned_by = ROOT
-			}
+			121 = { owned_by = ROOT }
 		}
 		effect = {
-			add_adm_power = 200
+			add_adm_power = 200 
 			add_dip_power = 200
 			add_mil_power = 200
 		}
@@ -122,7 +103,7 @@ Dunlendings_slot_2 = {
 		}
 		effect = {
 			1502 = {
-				center_of_trade = 1
+				center_of_trade = 1 #to be clear this CREATES center of trade, not upgrade it. for reference.
 			}
 		}
 	}
@@ -144,11 +125,12 @@ Dunlendings_slot_3 = {
 		position = 1
 		icon = mission_dunland_1                 	
 		trigger = {
-			X16 = {NOT = {has_ruler = Helm Hammerhand House of Eorl}
+			X16 = {  #fixed intendetation and bracket placement and added quotation marks on the name, check if it works!
+				NOT = { has_ruler = "Helm Hammerhand House of Eorl" }
 			}
 		}
 		effect = {
-			add_manpower = 20
+			add_manpower = 20 #should probably use non-static reward add_yearly_manpower, from a gameplay POV
 		}
 	}
 	dunlendings_ascendant = {
@@ -160,13 +142,13 @@ Dunlendings_slot_3 = {
 			claim_the_hornburg
 		}
 		trigger = {
-
+			#empty trigger is empty 
 		}
 
 		effect = {
 			121 = {
 				add_reform_center = {
-					religion_daen
+					religion_daen #not sure this works as intended?
 				}
 			}
 		}
@@ -175,9 +157,7 @@ Dunlendings_slot_3 = {
 		position = 3
 		icon = mission_dunland_1
 		provinces_to_highlight = {
-			OR = {
-				area = dunfearan_area
-			}
+			area = dunfearan_area #removed OR 
 			NOT = {
 				owned_by = ROOT
 			}
@@ -207,15 +187,13 @@ Dunlendings_slot_3 = {
 			capital_of_dunland
 		}
 		trigger = {
-			AND = {
-				prestige = 50
-				legitimacy = 80
-			}
+			prestige = 50
+			legitimacy = 80
 		}
 		effect = {
 			add_adm_power = 100
 			add_dip_power = 100
-			add_mil_power = 100
+			add_mil_power = 100 
 		}
 	}
 	dunland_united = {
@@ -227,10 +205,10 @@ Dunlendings_slot_3 = {
 			conquer_the_northern_clans
 		}
 		trigger = { 
-			#ROOT = (dunland TAG)
+			#ROOT = (dunland TAG) #what 
 		}
 		effect = { 
-		
+			#missing effect 
 		}
 	}
 }
@@ -242,28 +220,26 @@ Dunlendings_slot_4 = {
 	has_country_shield = yes      
 	slot = 4
 	potential = {
-		FROM = {
-			primary_culture = culture_dunlendings
-		}
+		primary_culture = culture_dunlendings
 	}
 	raiding_the_royal_stables = {
 		position = 1
 		icon = mission_dunland_1
 		
 		provinces_to_highlight = {
-			province_ID = 114
+			province_id = 114 #again ID was capitalized and therefore not read by the game engine properly
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			controls = 114
+			controls = 114 #THIS MEANS CONTROL, NOT NECESSARILY OWN. Control as in siege during a war. 
 		}
 	
 		effect = {
 			add_country_modifier = {
 				name = raided_horses 
-				duration = 3600
+				duration = 3650 #changed to perfectly fit 10 years
 			}
 		}
 	}
@@ -271,9 +247,7 @@ Dunlendings_slot_4 = {
 		position = 3
 		icon = mission_dunland_1
 		provinces_to_highlight = {
-			OR = {
-				area = talorgan_area
-			}
+			area = talorgan_area
 			NOT = {
 				owned_by = ROOT
 			}
@@ -286,7 +260,7 @@ Dunlendings_slot_4 = {
 		}
 		effect = {
 			376 = {
-				add_unit_construction = {
+				add_unit_construction = { #just spawn it, why bother with unit construction ? 
 					type = cavalry
 					amount = 3
 					speed = 1
@@ -312,9 +286,7 @@ Dunlendings_slot_5 = {
 	has_country_shield = yes      
 	slot = 5
 	potential = {
-		FROM = {
-			primary_culture = culture_dunlendings
-		}
+		primary_culture = culture_dunlendings
 	}
 	dwarves_of_dunland = {
 		position = 2
@@ -326,15 +298,12 @@ Dunlendings_slot_5 = {
 			}	
 		}
 		trigger = {
-			calc_true_if = {
-				any_owned_province = { 
-					trade_goods = iron
-					owned_by = ROOT
-				}
-				amount = 2
+			num_of_owned_provinces_with = {
+				trade_goods = iron 
+				value = 2 
 			}
 			treasury = 200
-			is_year = 2770
+			is_year = 2770 #year-gated missions are annoying fyi 
 			NOT = {
 				is_year = 2800
 			}
@@ -351,46 +320,31 @@ Dunlendings_slot_5 = {
 		position = 4
 		icon = mission_dunland_1
 		provinces_to_highlight = {
-			OR = {
-				province_ID = 1434
-				province_ID = 377
-				province_ID = 1860
-				province_ID = 1469
-				province_ID = 288
-				province_ID = 1855
-				province_ID = 1862
+			OR = { #none of these highlighs worked for the same reason, the ID being capitalized. 
+				province_id = 1434 
+				province_id = 377
+				province_id = 1860
+				province_id = 1469
+				province_id = 288
+				province_id = 1855
+				province_id = 1862 
 			}
-			NOT = {
-				owned_by = ROOT
-			}
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			1434 = {
-				owned_by = ROOT
-			}
-			377 = {
-				owned_by = ROOT
-			}
-			1860 = {
-				owned_by = ROOT
-			}
-			1469 = {
-				owned_by = ROOT
-			}
-			288 = {
-				owned_by = ROOT
-			}
-			1855 = {
-				owned_by = ROOT
-			}
-			1862 = {
-				owned_by = ROOT
-			}	
+			1434 = { owned_by = ROOT } #fixed indentation 
+			377 = { owned_by = ROOT }
+			1860 = { owned_by = ROOT }
+			1469 = { owned_by = ROOT }
+			288 = { owned_by = ROOT }
+			1855 = { owned_by = ROOT }
+			1862 = { owned_by = ROOT }	
 		}
 		effect = {
 			add_country_modifier = {
 				name = warriors_gather
-				duration = 3600
+				duration = 3600 #missing bracket 
+			}
 		}
 	}
 }
