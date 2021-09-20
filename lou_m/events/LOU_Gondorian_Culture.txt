@@ -16,7 +16,7 @@ country_event = {
 				exists = yes
 			}
 			any_owned_province = {
-				region = gondor_region
+				superregion = gondor_superregion
 				has_port = yes
 				is_core = owner
 			}
@@ -75,7 +75,7 @@ country_event = {
 		AND = {
 			primary_culture = culture_dunedain_of_gondor
 			any_owned_province = {
-				region = gondor_region
+				superregion = gondor_superregion
 				is_core = owner
 			}
 		}
@@ -116,7 +116,7 @@ country_event = {
 				trade_goods = mithril
 			}
 				
-			region = gondor_region
+			superregion = gondor_superregion
 			owner = {
 				primary_culture = culture_dunedain_of_gondor
 			}
@@ -150,7 +150,7 @@ country_event = {
 					trade_goods = mithril
 				}
 				is_core = owner
-				region = gondor_region
+				superregion = gondor_superregion
 			}
 			
 			add_province_modifier = {
@@ -186,7 +186,7 @@ country_event = {
 		AND = {
 			primary_culture = culture_dunedain_of_gondor
 			any_owned_province = {
-				region = gondor_region
+				superregion = gondor_superregion
 				is_core = owner
 			}
 		}

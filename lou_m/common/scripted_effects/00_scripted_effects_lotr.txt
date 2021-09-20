@@ -387,7 +387,7 @@ give_minas_ithil_to_gondor = {
 			}
 			any_province = {
 				owned_by = X01
-				region = gondor_region
+				superregion = gondor_superregion
 			}
 		}
 
@@ -563,7 +563,7 @@ give_black_gate_to_gondor = {
 			}
 			any_province = {
 				owned_by = X01
-				region = gondor_region
+				superregion = gondor_superregion
 			}
 		}
 
@@ -601,11 +601,11 @@ give_gondor_region_to_gondor = {
 		limit = {
 			any_province = {
 				owned_by = X01
-				region = gondor_region
+				superregion = gondor_superregion
 			}
 		}
 		
-		gondor_region = {
+		gondor_superregion = {
 			limit = {
 				OR = {
 					owned_by = V17

@@ -500,7 +500,7 @@ X99_attack_gondor = {
 		effect = {
 			add_mil_power = 250
 			add_prestige = 15
-			gondor_region = {
+			gondor_superregion = {
 				add_territorial_core = ROOT
 			}
 			country_event = { 
@@ -515,13 +515,13 @@ X99_attack_gondor = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			region = gondor_region
+			superregion = gondor_superregion
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			gondor_region = {
+			gondor_superregion = {
 				type = all
 				owned_by = ROOT
 			}

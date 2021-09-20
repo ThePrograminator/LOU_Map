@@ -556,13 +556,13 @@ V49_fall_of_rohan = {
 		}
 		position = 6
 		provinces_to_highlight = {
-			region = gondor_region
+			superregion = gondor_superregion
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			gondor_region = {
+			gondor_superregion = {
 				type = all
 				owned_by = ROOT
 			}

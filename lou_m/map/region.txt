@@ -101,41 +101,82 @@ gondor_region = {
 		minas_tirith_area
 		osgiliath_area
 		lossarnach_area
-		forithilien_area
-		harithilien_area
-		pelargir_area
-		linhir_area
-		gilrain_area
-		arnach_area
-		celosien_area
-		lebenninivet_area
-		lamedon_area
-		mornan_area
-		pinnath_gelin_area
-		anfalas_area
-		dol_amroth_area
-		edhellond_area
-		tol_falas_area
-		belfalas_area
-		andrast_area
-		nan_lefnui_area
-		nindalf_area
-		tarlang_area
-		nan_i_feryth_area
-		daningweth_area
-		ethir_anduin_area
-		emyn_arnen_area
-		dor_en_ernil_area
 		cair_andros_area
 		tawar_in_druedain_area
-		athrad_poros_area
-		ithilien_area
-		methrast_area
-		emyn_tarnost_area
-		annulond_area
-		minas_ithil_area
 	}
 }
+
+ithilien_region = {
+	areas = {
+		nindalf_area
+		forithilien_area
+		minas_ithil_area
+		emyn_arnen_area
+		ithilien_area
+		harithilien_area
+		athrad_poros_area
+	}
+}
+
+lebennin_region = {
+	areas = {
+		arnach_area
+		pelargir_area
+		lebenninivet_area
+		celosien_area
+		linhir_area
+		ethir_anduin_area
+	}
+}
+
+belfalas_region = {
+	areas = {
+		tol_falas_area
+		belfalas_area
+		methrast_area
+		dol_amroth_area
+		emyn_tarnost_area
+		dor_en_ernil_area
+	}
+}
+
+anfalas_region = {
+	areas = {
+		edhellond_area
+		anfalas_area
+		annulond_area
+	}
+}
+
+lamedon_region = {
+	areas = {
+		gilrain_area
+		lamedon_area
+	}
+}
+
+erech_region = {
+	areas = {
+		mornan_area
+		tarlang_area
+	}
+}
+
+pinnath_gelin_region = {
+	areas = {
+		pinnath_gelin_area
+		daningweth_area
+		nan_i_feryth_area
+		nan_lefnui_area
+	}
+}
+
+andrast_region = {
+	areas = {
+		andrast_area
+	}
+}
+
 old_pukel_land_region = {
 	areas = {
 		parth_laur_area

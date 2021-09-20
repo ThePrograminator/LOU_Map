@@ -351,7 +351,7 @@ gondor_missions_3 = {
 			}
 		}
 		effect = {
-			gondor_region = {
+			gondor_superregion = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -732,7 +732,11 @@ gondor_missions_4_2 = {
 		position = 12
 		required_missions = { gondor_retake_rhudaur }
 		trigger = { 
-			
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = ROOT
+				region = rhudaur_region
+			}
 		}
 		effect = { }
 	}
@@ -952,7 +956,20 @@ gondor_missions_1_2 = {
 		position = 12
 		required_missions = { gondor_retake_cardolan }
 		trigger = {
-			
+			alliance_with = Y26
+			Y26 = {
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+			alliance_with = Z16
+			Z16 = {
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
 		}
 		effect = {
 			
@@ -990,10 +1007,16 @@ gondor_missions_5_2 = {
 		position = 10
 		required_missions = { gondor_restore_minas_ithil gondor_house_of_hurin }
 		trigger = { 
-			#development_in_provinces = {
-			#	value = 200
-			#	region = korea_region
-			#}
+			development_in_provinces = {
+				value = 350
+				region = ithilien_region
+			}
+			NOT = {
+				any_owned_province = {
+					region = ithilien_region
+					culture = culture_wilderness
+				}
+			}
 		}
 		effect = { }
 	}
