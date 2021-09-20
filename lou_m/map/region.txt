@@ -300,25 +300,29 @@ shire_region = {
 enedhwaith_region = {
 	areas = {
         caladach_area
-        gyroth_area
         arilthach_area
         dor_wathui_area
         angrast_area
         ethir_gwathlo_area
-        morbet_area
         talorgan_area
         dunfearan_area
         andhas_area
         cairg_erp_area
-        fidach_area
         tang_area
         swanfleet_area
+        wredech_area
+	}
+}
+dunland_region = {
+	areas = {
+        gyroth_area
+        morbet_area
+        fidach_area
         undrost_area
         duncillien_area
         bhainnan_area
         nan_laeglin_area
         fearachas_area
-        wredech_area
         coit_cerdd_area
 	}
 }
@@ -634,6 +638,7 @@ harnendor_region = {
 		glinfalas_area
 		arat_agmir_area
 		ruilin_area
+		ethir_harnen_area
 	}
 }
 haruzan_region = {
