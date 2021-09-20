@@ -406,7 +406,7 @@ guiTypes = {
 			maxWidth = 165
 			maxHeight = 42
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		OverlappingElementsBoxType = {
@@ -754,7 +754,7 @@ guiTypes = {
 			maxWidth = 165
 			maxHeight = 42
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		OverlappingElementsBoxType = {
@@ -978,6 +978,26 @@ guiTypes = {
 			format = right
 		}			
 
+		iconType =
+		{
+			name = "tech_engagement"
+			spriteType = "GFX_engagement_width_icon"
+			position = { x= 330 y = 130 } 
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_combatwidth"
+		}
+		
+		instantTextBoxType = {
+			name = "tech_engagement_value"
+			position = { x = 352 y = 130 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "+2.5"	
+			maxWidth = 44
+			maxHeight = 32
+			format = right
+		}			
 
 		
 		iconType =
@@ -1183,7 +1203,7 @@ guiTypes = {
 			maxWidth = 165
 			maxHeight = 42
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		OverlappingElementsBoxType = {
@@ -1600,7 +1620,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_unit_types_strip_mil_center_view"
-			position = { x= 0 y = -2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.7
 		}	
@@ -1638,7 +1658,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_military_tactics"
-			position = { x= 0 y = 2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			#scale = 0.5
 		}		
@@ -1657,7 +1677,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_land_moral"
-			position = { x= 0 y = -2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 		}		
@@ -1694,7 +1714,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_naval_moral"
-			position = { x= 0 y = -2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 		}		
@@ -1749,7 +1769,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_trade_range"
-			position = { x= 0 y = 2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}		
 	}
@@ -1767,7 +1787,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_tech_range"
-			position = { x= 0 y = 2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}		
 	}
@@ -1813,7 +1833,7 @@ guiTypes = {
 	windowType = {
 		name = "countrytechnologyview_enable_flag"
 		backGround =""
-		position = { x=0 y=0 }	
+		position = { x=2 y=0 }	
 		size = { x=32 y=32 }
 		moveable = 0
 		dontRender = ""
@@ -1823,7 +1843,7 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_tech_may_study_technology"
-			position = { x= -4 y = -4 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.6
 		}		
@@ -1963,6 +1983,7 @@ guiTypes = {
 	}
 
 
+
 	windowType = {
 		name = "countrytechnologyview_researchcombatwidthitem"
 		backGround =""
@@ -1976,10 +1997,29 @@ guiTypes = {
 		{
 			name ="item_icon"
 			spriteType = "GFX_icon_combat_width"
-			position = { x= 0 y = 2 }
+			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}		
 	}
+
+	windowType = {
+		name = "countrytechnologyview_researchnavalengagementwidthitem"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=32 y=32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+
+		iconType =
+		{
+			name ="item_icon"
+			spriteType = "GFX_engagement_width_icon"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
+	}
+
 	
 	windowType = {
 		name = "countrytechnologyview_researchfireitem"
