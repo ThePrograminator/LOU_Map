@@ -102,7 +102,12 @@ gondor_missions_1 = {
 			}
 		}
 		effect = {
-			
+			forithilien_area = {
+				add_province_modifier = {
+					name = gondor_henneth_annun_modifier
+					duration = -1
+				}
+			}
 		}
 	}
 	gondor_defy_the_dark_lord = {
@@ -188,7 +193,31 @@ gondor_missions_1 = {
 				has_building = outpost_building
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			every_owned_province = {
+				limit = {
+					region = mordor_region
+					has_influencing_fort = yes
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_fortify_mordor_modifier
+					duration = -1
+				}
+			}
+
+			every_owned_province = {
+				limit = {
+					region = mordor_region
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_fortify_mordor_supply_modifier
+					duration = -1
+				}
+			}
+		}
 	}
 }
 
@@ -242,7 +271,30 @@ gondor_missions_2 = {
 			}
 		}
 		effect = { 
-
+			every_owned_province = {
+				limit = {
+					OR ={
+						area = arnach_area
+						area = pelargir_area
+						area = lebenninivet_area
+						area = lossarnach_area
+						area = osgiliath_area
+						area = minas_tirith_area
+						area = anorien_area
+						area = cair_andros_area
+						area = ethir_anduin_area
+						has_port = yes
+						has_influencing_fort = yes
+					}
+					is_core = owner
+					superregion = gondor_superregion
+				}
+				
+				add_province_modifier = {
+					name = gondor_fortify_anduin_modifier
+					duration = -1
+				}
+			}
 		}
 	}
 	gondor_demand_fealty = {
@@ -400,7 +452,19 @@ gondor_missions_3 = {
 				is_core = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 50
+			add_army_tradition = 5
+			talath_harroch_area = {
+				add_claim = ROOT
+			}
+			sagathavuld_area = {
+				add_claim = ROOT
+			}
+			men_i_mordor_area = {
+				add_claim = ROOT
+			}
+		}
 	}
 	gondor_fortify_easterlings = {
 		icon = mission_build_up_to_force_limit
@@ -427,7 +491,9 @@ gondor_missions_3 = {
 				has_building = garrison_building
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 25
+		}
 	}
 	gondor_romendacil = {
 		icon = mission_build_up_to_force_limit
@@ -455,14 +521,20 @@ gondor_missions_3 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_mil_power = 50
+		}
 	}
 	gondor_restore_glory_gondor = {
 		icon = mission_build_up_to_force_limit
 		position = 7
 		required_missions = { gondor_ered_nimrais gondor_campaign_in_harondor gondor_hyarmendacil gondor_romendacil gondor_fortify_mordor }
 		trigger = { }
-		effect = { }
+		effect = { 
+			add_stability = 3
+			add_prestige = 50
+		}
 	}
 }
 
@@ -495,8 +567,12 @@ gondor_missions_4 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { gondor_umbardacil }
-		trigger = { }
-		effect = { }
+		trigger = { 
+
+		}
+		effect = { 
+
+		}
 	}
 	gondor_hyarmendacil = {
 		icon = mission_build_up_to_force_limit
@@ -514,7 +590,13 @@ gondor_missions_4 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 100
+			add_country_modifier = {
+				name = gondor_hyarmendacil_modifier
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -682,7 +764,12 @@ gondor_missions_5 = {
 				has_most_province_trade_power = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = gondor_trade_pelargir_gobel_mirlond_modifier
+				duration = 5475
+			}
+		}
 	}
 	gondor_campaign_in_harondor = {
 		icon = mission_gondor_15
@@ -738,7 +825,18 @@ gondor_missions_4_2 = {
 				region = rhudaur_region
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 200
+			rhudaur_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_dunedain_to_rhudaur_modifier
+					duration = -1
+				}
+			}
+		}
 	}
 }
 
@@ -778,7 +876,11 @@ gondor_missions_3_2 = {
 		position = 10
 		required_missions = { gondor_the_return_of_the_king }
 		trigger = { }
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_prestige = 50
+			override_country_name = REUNITED_KINGDOM
+		}
 	}
 	gondor_retake_arthedain = {
 		icon = mission_build_up_to_force_limit
@@ -790,7 +892,23 @@ gondor_missions_3_2 = {
 				region = arthedain_region
 			}
 		}
-		effect = { }
+		effect = { 
+			arthedain_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+
+			every_owned_province = {
+				limit = {
+					region = arthedain_region
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_retake_arnor_province_modifier
+					duration = 5475
+				}
+			} 
+		}
 	}
 	gondor_rebuild_annuminas_fornost = {
 		icon = mission_build_up_to_force_limit
@@ -816,21 +934,47 @@ gondor_missions_3_2 = {
 				has_building = marketplace_building
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 25
+			644 = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
+			}
+			266 = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
+			}
+		}
 	}
 	gondor_reforge_arnor = {
 		icon = mission_build_up_to_force_limit
 		position = 13
 		required_missions = { gondor_ally_rivendel_lindon gondor_dunedain_to_rhudaur gondor_rebuild_annuminas_fornost gondor_breeland_shire_independent gondor_rebuild_tharbad }
-		trigger = { }
-		effect = { }
+		trigger = { 
+
+		}
+		effect = { 
+			angmar_region = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	gondor_vengeance_of_the_dunedain = {
 		icon = mission_build_up_to_force_limit
 		position = 14
 		required_missions = { gondor_reforge_arnor }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			angmar_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_stability = 2
+			add_prestige = 50
+		}
 	}
 }
 
@@ -915,7 +1059,28 @@ gondor_missions_2_2 = {
 				has_building = forum_building
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = tharbad_area
+						area = caladir_area
+						area = balost_area
+						area = lond_daer_area
+						area = swanfleet_area
+						area = andhas_area
+						area = cairg_erp_area
+						area = ethir_gwathlo_area
+					}
+					
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_rebuild_tharbad_modifier
+					duration = -1
+				}
+			} 
+		}
 	}
 }
 
@@ -935,7 +1100,12 @@ gondor_missions_1_2 = {
 			#has_country_flag = EXPANDED_LIBRARY_OF_MINAS_TIRITH_FLAG
 			has_country_modifier = expanded_library_of_minas_tirith
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = gondor_expand_library_modifier
+				duration = -1
+			}
+		}
 	}
 
 	gondor_retake_cardolan = {
@@ -948,7 +1118,23 @@ gondor_missions_1_2 = {
 				region = cardolan_region
 			}
 		}
-		effect = { }
+		effect = { 
+			cardolan_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+
+			every_owned_province = {
+				limit = {
+					region = cardolan_region
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_retake_arnor_province_modifier
+					duration = 5475
+				}
+			} 
+		}
 	}
 
 	gondor_breeland_shire_independent = {
@@ -972,7 +1158,11 @@ gondor_missions_1_2 = {
 			}
 		}
 		effect = {
-			
+			add_dip_power = 100
+			add_country_modifier = {
+				name = gondor_breeland_shire_independent_modifier
+				duration = 5475
+			}
 		}
 	}
 }
@@ -1000,7 +1190,18 @@ gondor_missions_5_2 = {
 				has_building = fort_castle_building
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					region = ithilien_region
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_house_of_hurin_modifier
+					duration = -1
+				}
+			}
+		}
 	}
 	gondor_resettle_ithilien = {
 		icon = mission_build_up_to_force_limit
@@ -1008,7 +1209,7 @@ gondor_missions_5_2 = {
 		required_missions = { gondor_restore_minas_ithil gondor_house_of_hurin }
 		trigger = { 
 			development_in_provinces = {
-				value = 350
+				value = 300
 				region = ithilien_region
 			}
 			NOT = {
@@ -1018,7 +1219,19 @@ gondor_missions_5_2 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 100
+			every_owned_province = {
+				limit = {
+					region = ithilien_region
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_resettle_ithilien_modifier
+					duration = -1
+				}
+			}
+		}
 	}
 	gondor_retake_rhudaur = {
 		icon = mission_build_up_to_force_limit
@@ -1030,7 +1243,23 @@ gondor_missions_5_2 = {
 				region = rhudaur_region
 			}
 		}
-		effect = { }
+		effect = { 
+			rhudaur_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+
+			every_owned_province = {
+				limit = {
+					region = rhudaur_region
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = gondor_retake_arnor_province_modifier
+					duration = 5475
+				}
+			} 
+		}
 	}
 	gondor_ally_rivendel_lindon = {
 		icon = mission_build_up_to_force_limit
@@ -1045,7 +1274,12 @@ gondor_missions_5_2 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = gondor_ally_rivendel_lindon_modifier
+				duration = 5475
+			}
+		}
 	}
 }
 

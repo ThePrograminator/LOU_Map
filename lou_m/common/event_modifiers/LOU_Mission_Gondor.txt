@@ -141,3 +141,67 @@ gondor_usurper_modifier = {
 gondor_blood_of_numenor_modifier = {
 	monarch_lifespan = 0.50
 }
+gondor_henneth_annun_modifier = {
+	local_hostile_attrition = 2
+	local_defensiveness = 0.25
+}
+
+gondor_fortify_anduin_modifier = {
+	fort_level = 1
+	local_defensiveness = 0.25
+}
+
+gondor_trade_pelargir_gobel_mirlond_modifier = {
+	merchants = 1
+	global_trade_power = 0.25
+}
+
+gondor_hyarmendacil_modifier = {
+	army_tradition = 1
+	ae_impact = -0.2
+}
+
+gondor_fortify_mordor_modifier = {
+	local_hostile_attrition = 2
+	local_defensiveness = 0.2
+	supply_limit_modifier = 0.25
+}
+
+gondor_fortify_mordor_supply_modifier = {
+	supply_limit_modifier = 0.25
+}
+
+gondor_expand_library_modifier = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+}
+
+gondor_house_of_hurin_modifier = {
+	local_unrest = -2
+	local_state_maintenance_modifier = -0.5
+}
+
+gondor_resettle_ithilien_modifier = {
+	local_build_cost = -0.25
+	local_development_cost = -0.2
+}
+
+gondor_retake_arnor_province_modifier = {
+	local_years_of_nationalism = -5
+}
+
+gondor_ally_rivendel_lindon_modifier = {
+	diplomatic_reputation = 2
+}
+
+gondor_rebuild_tharbad_modifier = {
+	province_trade_power_modifier = 0.2
+}
+
+gondor_dunedain_to_rhudaur_modifier = {
+	local_development_cost = -0.1
+}
+
+gondor_breeland_shire_independent_modifier = {
+	improve_relation_modifier = 0.25
+}
