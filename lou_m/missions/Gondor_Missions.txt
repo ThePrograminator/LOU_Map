@@ -155,6 +155,12 @@ gondor_missions_1 = {
 		icon = mission_gondor_11
 		position = 5
 		required_missions = { gondor_defy_the_dark_lord }
+		provinces_to_highlight = {
+			province_id = 639
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			owns = 639
 			V17 = {
@@ -330,6 +336,18 @@ gondor_missions_2 = {
 		icon = mission_gondor_13
 		position = 6
 		required_missions = { gondor_demand_fealty }
+		provinces_to_highlight = {
+			OR ={
+				area = daningweth_area
+				area = nan_i_feryth_area
+				area = lebenninivet_area
+				area = nan_lefnui_area
+			}
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			daningweth_area = {
 				type = all
@@ -418,11 +436,14 @@ gondor_missions_3 = {
 		position = 4
 		required_missions = { gondor_raise_the_royal_forces }
 		provinces_to_highlight = {
-			area = talath_harroch_area
-			area = nindalf_area
-			area = emyn_muil_area
-			province_id = 573
-			province_id = 48
+			OR = {
+				area = talath_harroch_area
+				area = nindalf_area
+				area = emyn_muil_area
+				province_id = 573
+				province_id = 48
+			}
+			
 			NOT = {
 				owned_by = ROOT
 			}
@@ -471,8 +492,11 @@ gondor_missions_3 = {
 		position = 5
 		required_missions = { gondor_dor_en_romen }
 		provinces_to_highlight = {
-			province_id = 1935
-			province_id = 581
+			OR = {
+				province_id = 1935
+				province_id = 581
+			}
+			
 			NOT = {
 				owned_by = ROOT
 			}
@@ -500,9 +524,12 @@ gondor_missions_3 = {
 		position = 6
 		required_missions = { gondor_fortify_easterlings }
 		provinces_to_highlight = {
-			area = men_i_mordor_area
-			area = sagathavuld_area
-			area = cairn_angle_area
+			OR = {
+				area = men_i_mordor_area
+				area = sagathavuld_area
+				area = cairn_angle_area
+			}
+			
 			NOT = {
 				owned_by = ROOT
 			}
@@ -550,6 +577,17 @@ gondor_missions_4 = {
 		icon = mission_gondor_20
 		position = 3
 		required_missions = { gondor_raise_the_royal_forces gondor_reinforce_our_maritime_ties }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 421
+				province_id = 424
+				province_id = 423
+			}
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			421 = { country_or_non_sovereign_subject_holds = ROOT }
 			424 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -567,11 +605,25 @@ gondor_missions_4 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { gondor_umbardacil }
+		provinces_to_highlight = {
+			province_id = 3611
+			
+			NOT = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
 		trigger = { 
-
+			3611 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		effect = { 
-
+			add_country_modifier = {
+				name = "gondor_reclaim_old_numenorean_colonies_modifier"
+				duration = -1
+			}
 		}
 	}
 	gondor_hyarmendacil = {
@@ -708,6 +760,28 @@ gondor_missions_5 = {
 		icon = mission_gondor_19
 		position = 3
 		required_missions = { gondor_reinforce_our_maritime_ties }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = laergaladrin_area
+			
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				OR = {
+					province_id = 123
+					province_id = 1786
+					province_id = 1751
+					province_id = 3235
+					province_id = 3297
+				}
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+			
+		}
 		trigger = {
 			laergaladrin_area = {
 				type = all
@@ -735,6 +809,18 @@ gondor_missions_5 = {
 		icon = mission_gondor_14
 		position = 4
 		required_missions = { gondor_the_southern_lands }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1755
+				province_id = 468
+				province_id = 1751
+				province_id = 130
+				province_id = 751
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			1755 = { country_or_non_sovereign_subject_holds = ROOT }
 			468 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -756,6 +842,15 @@ gondor_missions_5 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { gondor_secure_the_jewel_haven }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 17
+				province_id = 130
+			}
+			NOT = {
+				has_most_province_trade_power = ROOT
+			}
+		}
 		trigger = { 
 			17 = {
 				has_most_province_trade_power = ROOT
@@ -775,6 +870,16 @@ gondor_missions_5 = {
 		icon = mission_gondor_15
 		position = 6
 		required_missions = { gondor_trade_pelargir_gobel_mirlond }
+		provinces_to_highlight = {
+			OR = {
+				region = harondor_region
+				province_id = 1754
+			}
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
@@ -804,6 +909,13 @@ gondor_missions_4_2 = {
 		icon = mission_minas_morgul
 		position = 9
 		required_missions = { gondor_the_return_of_the_king }
+		provinces_to_highlight = {
+			area = minas_ithil_area
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			minas_ithil_area = {
 				type = all
@@ -818,6 +930,13 @@ gondor_missions_4_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 12
 		required_missions = { gondor_retake_rhudaur }
+		provinces_to_highlight = {
+			region = rhudaur_region
+			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = { 
 			num_of_owned_provinces_with = {
 				value = 30
@@ -886,6 +1005,13 @@ gondor_missions_3_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 11
 		required_missions = { gondor_form_reunited_kingdom }
+		provinces_to_highlight = {
+			region = arthedain_region
+			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
@@ -894,7 +1020,6 @@ gondor_missions_3_2 = {
 		}
 		effect = { 
 			arthedain_region = {
-				type = all
 				add_permanent_claim = ROOT
 			}
 
@@ -914,6 +1039,23 @@ gondor_missions_3_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 12
 		required_missions = { gondor_retake_arthedain }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 644
+				province_id = 266
+			}
+			
+			
+			NOT = {
+				is_core = ROOT
+				culture = ROOT
+				religion = ROOT
+				has_building = fortress_3_building
+				has_building = fort_castle_building
+				has_building = army_camp_building
+				has_building = marketplace_building
+			}
+		}
 		trigger = { 
 			644 = {
 				is_core = ROOT
@@ -965,6 +1107,14 @@ gondor_missions_3_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 14
 		required_missions = { gondor_reforge_arnor }
+		provinces_to_highlight = {
+			region = angmar_region
+			
+			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = { 
 			angmar_region = {
 				type = all
@@ -990,6 +1140,16 @@ gondor_missions_2_2 = {
 		icon = mission_osgiliath
 		position = 9
 		required_missions = { gondor_the_return_of_the_king }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 418
+				province_id = 419
+			}
+			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			owns = 418
 			owns = 419
@@ -1044,8 +1204,15 @@ gondor_missions_2_2 = {
 		position = 12
 		required_missions = { gondor_retake_cardolan }
 		provinces_to_highlight = {
-			province_id = 170
-			province_id = 677
+			OR = {
+				province_id = 170
+				province_id = 677
+			}
+			NOT = {
+				is_core = ROOT
+				has_building = city_2_building
+				has_building = forum_building
+			}
 		}
 		trigger = { 
 			170 = {
@@ -1101,10 +1268,7 @@ gondor_missions_1_2 = {
 			has_country_modifier = expanded_library_of_minas_tirith
 		}
 		effect = { 
-			add_country_modifier = {
-				name = gondor_expand_library_modifier
-				duration = -1
-			}
+			add_prestige = 25
 		}
 	}
 
@@ -1112,6 +1276,12 @@ gondor_missions_1_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 11
 		required_missions = { gondor_form_reunited_kingdom }
+		provinces_to_highlight = {
+			region = cardolan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
@@ -1120,7 +1290,6 @@ gondor_missions_1_2 = {
 		}
 		effect = { 
 			cardolan_region = {
-				type = all
 				add_permanent_claim = ROOT
 			}
 
@@ -1207,6 +1376,10 @@ gondor_missions_5_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 10
 		required_missions = { gondor_restore_minas_ithil gondor_house_of_hurin }
+		provinces_to_highlight = {
+			region = ithilien_region
+			culture = culture_wilderness
+		}
 		trigger = { 
 			development_in_provinces = {
 				value = 300
@@ -1237,6 +1410,12 @@ gondor_missions_5_2 = {
 		icon = mission_build_up_to_force_limit
 		position = 11
 		required_missions = { gondor_form_reunited_kingdom }
+		provinces_to_highlight = {
+			region = rhudaur_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
@@ -1245,7 +1424,6 @@ gondor_missions_5_2 = {
 		}
 		effect = { 
 			rhudaur_region = {
-				type = all
 				add_permanent_claim = ROOT
 			}
 
