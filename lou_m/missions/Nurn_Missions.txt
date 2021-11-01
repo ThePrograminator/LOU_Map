@@ -496,7 +496,7 @@ conquer_nurn_region_four = {
 		effect = {
 			every_owned_province = {
 				limit = {
-					trade_goods = wheat
+					trade_goods = grain
 				}
 				add_province_modifier = {
 					name = nurn_build_manufactories_nurn_modifier

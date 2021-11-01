@@ -138,27 +138,6 @@ estate_stewards_advisory_council = {
 	}
 }
 
-estate_stewards_savage_mission = {
-	icon = privilege_new_world_mission
-	max_absolutism = -5
-	loyalty = 0.05
-	influence = 0.05
-	is_valid = {
-		OR = {
-			num_of_colonists = 1
-			num_of_colonies = 1
-		}
-	}
-	penalties = {
-	}
-	benefits = {
-		native_assimilation = 0.5
-	}
-	ai_will_do = {
-		factor = 0
-	}
-}
-
 estate_stewards_loyal_ministers = {
 	icon = privilege_recruit_minister
 	max_absolutism = -5

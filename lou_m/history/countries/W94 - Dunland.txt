@@ -1,0 +1,134 @@
+
+government = tribal
+add_government_reform = feudalism_reform
+primary_culture = culture_dunlendings
+religion = religion_daen
+technology_group = lotr_human
+capital = 980
+
+
+
+historical_friend = Z53
+historical_friend = Z51
+historical_friend = Z52
+historical_friend = Z49
+historical_friend = Z58
+historical_friend = Z48
+historical_friend = Z56
+historical_rival = X16
+historical_rival = Z54
+historical_rival = Y16
+historical_rival = Y58
+
+2750.1.1 = {
+	monarch = {
+		name = "Sanrind"
+		dynasty = "Adorn"
+		birth_date = 2698.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Heled"
+		dynasty = "Adorn"
+		birth_date = 2764.1.1
+		adm = 4
+		dip = 2
+		mil = 0
+		female = yes
+	}
+	heir = {
+		monarch_name = "Heled"
+		name = "Heled"
+		dynasty = "Adorn"
+		birth_date = 2726.1.1
+		death_date = 2788.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+		claim = 100
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Sadoc"
+		dynasty = "Adorn"
+		birth_date = 2826.1.1
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Melmidoc"
+		dynasty = "Adorn"
+		birth_date = 2833.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		monarch_name = "Sath"
+		name = "Sath"
+		dynasty = "Adorn"
+		birth_date = 2827.1.1
+		death_date = 2914.1.1
+		adm = 0
+		dip = 0
+		mil = 5
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Cadi"
+		dynasty = "Adorn"
+		birth_date = 2876.1.1
+		adm = 4
+		dip = 1
+		mil = 0
+		female = yes
+	}
+	heir = {
+		monarch_name = "Sarf"
+		name = "Sarf"
+		dynasty = "Adorn"
+		birth_date = 2874.1.1
+		death_date = 2962.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Cadarn"
+		dynasty = "Adorn"
+		birth_date = 2951.1.1
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+	heir = {
+		monarch_name = "Cadi"
+		name = "Cadi"
+		dynasty = "Adorn"
+		birth_date = 2923.1.1
+		death_date = 2961.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+		claim = 100
+	}
+}
+

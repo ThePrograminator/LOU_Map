@@ -1,0 +1,263 @@
+namespace = lou_ruler
+
+# Any culture that lives longer 120 years max should be given this flag
+country_event = {
+	id = lou_ruler.0
+	title = lou_ruler.0.t
+	desc = {
+		trigger = { ruler_is_dunedain = yes }
+		desc = lou_ruler.0.dunedain
+	}
+	desc = {
+		trigger = { ruler_is_dwarven = yes }
+		desc = lou_ruler.0.dwarven
+	}
+	desc = {
+		trigger = { ruler_is_elven = yes }
+		desc = lou_ruler.0.elven
+	}
+	desc = {
+		trigger = { ruler_is_melkor = yes }
+		desc = lou_ruler.0.melkor
+	}
+	desc = {
+		trigger = { ruler_is_wizard = yes }
+		desc = lou_ruler.0.wizard
+	}
+	desc = {
+		trigger = { ruler_is_eru = yes }
+		desc = lou_ruler.0.eru
+	}
+	picture = DIPLOMACY_eventPicture
+	
+    trigger = {
+		has_dlc = "Rights of Man"
+		months_of_ruling = 1
+		OR = {
+			ruler_is_dunedain = yes
+			ruler_is_dwarven = yes
+			ruler_is_elven = yes
+			ruler_is_melkor = yes
+			ruler_is_wizard = yes
+			ruler_is_eru = yes
+        }
+		NOT = { ruler_has_personality = immortal_personality } 
+        NOT = { has_ruler_flag = set_immortality }
+		is_lesser_in_union = no
+    }
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { ruler_has_max_personalities = yes }
+				clear_ruler_personalities = yes
+			}
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
+		}
+	}
+	option = {
+		name = lou_ruler.0.a
+	}
+}
+
+# Death event
+# When a ruler has an Immortal flag, and is of a culture with a long, but not immortal lifespan, this event will strip them of the flag up when they reach the "Old" age for their culture
+country_event = {
+	id = lou_ruler.1
+	title = lou_ruler.1.t
+	desc lou_ruler.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+    trigger = {
+        has_dlc = "Rights of Man"
+        ruler_has_personality = immortal_personality
+		is_lesser_in_union = no
+		NOT = { ruler_is_immortal = yes }
+		NOT = { has_ruler_flag = end_life }
+        OR = {
+			AND = {
+                ruler_is_dunedain = yes
+                ruler_age = 100 #200 Expectancy
+            }
+            # Dwarfs
+            AND = {
+                ruler_is_dwarven = yes
+                ruler_age = 160 #200 Expectancy
+            }
+        }
+    }
+   
+	option = {
+		name = lou_ruler.1.a
+		
+		hidden_effect = { set_ruler_flag = end_life }
+		if = {
+			limit = { ruler_is_dunedain = yes }
+			custom_tooltip = ruler_is_dunedain_tooltip
+			hidden_effect = { country_event = { id = lou_ruler.4 days = 7300 random = 3650 } } #30 years + ~20years
+		}
+		else_if = {
+			limit = { ruler_is_dwarven = yes }
+			custom_tooltip = ruler_is_dwarven_tooltip
+			hidden_effect = { country_event = { id = lou_ruler.4 days = 10950 random = 7300 } } #30 years + ~20years
+		}
+	}
+}
+#Immortal ruler die
+country_event = {
+	id = lou_ruler.2
+	title = lou_ruler.2.t
+	desc = lou_ruler.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+    trigger = {
+        has_ruler_flag = end_life
+		NOT = { ruler_is_immortal = yes } 
+		is_lesser_in_union = no
+    }
+   
+	option = {
+		name = lou_ruler.2.a
+		
+        kill_ruler = yes
+	}
+}
+
+#Long lived consort die
+country_event = {
+	id = lou_ruler.3
+	title = lou_ruler.3.t
+	desc = lou_ruler.3.d
+	picture = DIPLOMACY_eventPicture
+	
+    trigger = {
+		has_dlc = "Rights of Man"
+		consort_has_personality = immortal_personality
+		consort_age = 90
+		is_lesser_in_union = no
+		OR = {
+			# Dunedain
+            AND = {
+				consort_is_dunedain = yes
+                consort_age = 100 #120 Expectancy
+            }
+            # Dwarfs
+            AND = {
+				consort_is_dwarven = yes
+                consort_age = 185 #200 Expectancy
+            }
+        }
+    }
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = {
+		name = lou_ruler.3.a
+		remove_consort = yes
+	}
+}
+
+#Long lived heir die
+country_event = {
+	id = lou_ruler.4
+	title = lou_ruler.4.t
+	desc = lou_ruler.4.d
+	picture = DIPLOMACY_eventPicture
+	
+    trigger = {
+		has_dlc = "Rights of Man"
+		heir_has_personality = immortal_personality
+		is_lesser_in_union = no
+		heir_age = 90
+		OR = {
+			# Dunedain
+            AND = {
+				heir_is_dunedain = yes
+                heir_age = 100 #120 Expectancy
+            }
+            # Dwarfs
+            AND = {
+				heir_is_dwarven = yes
+                heir_age = 185 #200 Expectancy
+            }
+        }
+    }
+	
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = {
+		name = lou_ruler.4.a
+		kill_heir = yes
+	}
+}
+
+#Consort get immortality
+country_event = {
+	id = lou_ruler.100
+	title = lou_ruler.100.t
+	desc = lou_ruler.100.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+    trigger = {
+		has_dlc = "Rights of Man"
+		OR = {
+			consort_is_dunedain = yes
+			consort_is_dwarven = yes
+			consort_is_elven = yes
+			consort_is_melkor = yes
+			consort_is_wizard = yes
+			consort_is_eru = yes
+		}
+    }
+	
+	option = {
+		name = lou_ruler.100.a
+		
+		clear_consort_personalities = yes
+		add_queen_personality = immortal_personality
+		set_consort_flag = set_immortality
+	}
+}
+
+#Heir get immortality
+country_event = {
+	id = lou_ruler.101
+	title = lou_ruler.101.t
+	desc = lou_ruler.101.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+    trigger = {
+		has_dlc = "Rights of Man"
+		OR = {
+			heir_is_dundain = yes
+			heir_is_dwarven = yes
+			heir_is_elven = yes
+			heir_is_melkor = yes
+			heir_is_wizard = yes
+			heir_is_eru = yes
+		}
+    }
+	
+	option = {
+		name = lou_ruler.100.a
+		
+		clear_heir_personalities = yes
+		add_heir_personality = immortal_personality
+		set_heir_flag = set_immortality
+	}
+}

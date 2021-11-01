@@ -397,27 +397,6 @@ estate_commoners_statutory_rights = {
 	cooldown_years = 20
 }
 
-estate_commoners_settlers = {
-	icon = privilege_grant_new_world_charter
-    
-	max_absolutism = -5
-	loyalty = 0.1
-    influence = 0.05
-    
-	benefits = {
-        colonists = 1
-	}
-	ai_will_do = {
-		factor = 0
-        
-        modifier = {
-            factor = 1
-            
-            num_of_total_ports = 3
-        }
-	}
-}
-
 estate_commoners_purify_realm = {
 	icon = privilege_recruit_inouisitor
 	max_absolutism = -10

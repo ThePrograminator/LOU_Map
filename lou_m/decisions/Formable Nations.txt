@@ -455,4 +455,89 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+
+	dunland_nation = {
+		major = yes
+		potential = {
+			NOT = { 
+				exists = W94
+			}
+			primary_culture = culture_dunlendings
+
+			any_owned_province = {
+				OR = {
+					superregion = eriador_superregion
+					superregion = old_pukel_land_superregion
+					superregion = rohan_superregion
+				}
+				
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 1
+				}
+			}
+		}
+        provinces_to_highlight = {
+            region = dunland_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = W94 }
+            capital_scope = {
+				region = dunland_region
+				is_core = ROOT
+			}
+			1861 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			#dunland_region = {
+			#	type = all
+			#	owned_by = ROOT
+			#}
+			#calc_true_if = {
+			#	amount = 15
+			#	any_owned_province = {
+			#		region = dunland_region
+			#	}
+			#}
+			num_of_owned_provinces_with = {
+				value = 15
+				region = dunland_region
+			}
+		}
+		effect = {
+			change_tag = W94
+			W94 = {
+				set_capital = 1861		# Annunimas
+			}
+			
+            add_prestige = 50
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+            
+            change_government = monarchy
+			add_government_reform = feudalism_reform
+			
+            if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

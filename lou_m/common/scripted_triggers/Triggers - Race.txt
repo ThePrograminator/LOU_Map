@@ -139,3 +139,293 @@ is_racial_group_wilderness = {
         religion = religion_wilderness
     }
 }
+
+ruler_is_dunedain = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_dunedain_tooltip
+		OR = {
+			ruler_culture = culture_numenorean
+			ruler_culture = culture_arnorian
+			ruler_culture = culture_dunedain_of_gondor
+			ruler_culture = culture_dunedain_of_arnor
+		}
+	}
+}
+
+consort_is_dunedain = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_dunedain_tooltip
+        OR = {
+			consort_culture = culture_numenorean
+			consort_culture = culture_arnorian
+			consort_culture = culture_dunedain_of_gondor
+			consort_culture = culture_dunedain_of_arnor
+		}
+	}
+}
+
+heir_is_dunedain = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_dunedain_tooltip
+        OR = {
+			heir_culture = culture_numenorean
+			heir_culture = culture_arnorian
+			heir_culture = culture_dunedain_of_gondor
+			heir_culture = culture_dunedain_of_arnor
+		}
+	}
+}
+
+ruler_is_dwarven = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_dwarven_tooltip
+		OR = {
+			ruler_culture = culture_longbeard
+			ruler_culture = culture_firebeard
+			ruler_culture = culture_broadbeam
+			ruler_culture = culture_ironfist
+			ruler_culture = culture_stiffbeard
+			ruler_culture = culture_blacklock
+			ruler_culture = culture_stonefoot
+		}
+	}
+}
+
+consort_is_dwarven = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_dwarven_tooltip
+        OR = {
+			consort_culture = culture_longbeard
+			consort_culture = culture_firebeard
+			consort_culture = culture_broadbeam
+			consort_culture = culture_ironfist
+			consort_culture = culture_stiffbeard
+			consort_culture = culture_blacklock
+			consort_culture = culture_stonefoot
+		}
+	}
+}
+
+heir_is_dwarven = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_dwarven_tooltip
+        OR = {
+			heir_culture = culture_longbeard
+			heir_culture = culture_firebeard
+			heir_culture = culture_broadbeam
+			heir_culture = culture_ironfist
+			heir_culture = culture_stiffbeard
+			heir_culture = culture_blacklock
+			heir_culture = culture_stonefoot
+		}
+	}
+}
+
+ruler_is_elven = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_elven_tooltip
+		OR = {
+            #Avari
+			ruler_culture = culture_hisildi
+			ruler_culture = culture_hvettir
+			ruler_culture = culture_hwenti
+			ruler_culture = culture_luindrim
+			ruler_culture = culture_nelyarin
+			ruler_culture = culture_kwindi
+			ruler_culture = culture_kindi
+			ruler_culture = culture_kuorind
+			ruler_culture = culture_awartasi
+			ruler_culture = culture_kinn-lai
+
+            #Nandor
+			ruler_culture = culture_silvan
+			ruler_culture = culture_galadhrim
+			ruler_culture = culture_hwanin
+			ruler_culture = culture_uialrim
+			ruler_culture = culture_lossidil
+			ruler_culture = culture_laiquendi
+
+            #Noldor
+			ruler_culture = culture_noldor
+
+            #Sindar
+			ruler_culture = culture_falathrim
+			ruler_culture = culture_mithrim
+		}
+	}
+}
+
+consort_is_elven = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_elven_tooltip
+        OR = {
+            #Avari
+			consort_culture = culture_hisildi
+			consort_culture = culture_hvettir
+			consort_culture = culture_hwenti
+			consort_culture = culture_luindrim
+			consort_culture = culture_nelyarin
+			consort_culture = culture_kwindi
+			consort_culture = culture_kindi
+			consort_culture = culture_kuorind
+			consort_culture = culture_awartasi
+			consort_culture = culture_kinn-lai
+
+            #Nandor
+			consort_culture = culture_silvan
+			consort_culture = culture_galadhrim
+			consort_culture = culture_hwanin
+			consort_culture = culture_uialrim
+			consort_culture = culture_lossidil
+			consort_culture = culture_laiquendi
+
+            #Noldor
+			consort_culture = culture_noldor
+
+            #Sindar
+			consort_culture = culture_falathrim
+			consort_culture = culture_mithrim
+		}
+	}
+}
+
+heir_is_elven = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_elven_tooltip
+        OR = {
+            #Avari
+			heir_culture = culture_hisildi
+			heir_culture = culture_hvettir
+			heir_culture = culture_hwenti
+			heir_culture = culture_luindrim
+			heir_culture = culture_nelyarin
+			heir_culture = culture_kwindi
+			heir_culture = culture_kindi
+			heir_culture = culture_kuorind
+			heir_culture = culture_awartasi
+			heir_culture = culture_kinn-lai
+
+            #Nandor
+			heir_culture = culture_silvan
+			heir_culture = culture_galadhrim
+			heir_culture = culture_hwanin
+			heir_culture = culture_uialrim
+			heir_culture = culture_lossidil
+			heir_culture = culture_laiquendi
+
+            #Noldor
+			heir_culture = culture_noldor
+
+            #Sindar
+			heir_culture = culture_falathrim
+			heir_culture = culture_mithrim
+		}
+	}
+}
+
+ruler_is_melkor = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_melkor_tooltip
+		OR = {
+			ruler_culture = culture_dragons
+			ruler_culture = culture_spider
+			ruler_culture = culture_balrog
+			ruler_culture = culture_troll
+			ruler_culture = culture_wight
+		}
+	}
+}
+
+consort_is_melkor = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_melkor_tooltip
+        OR = {
+			consort_culture = culture_dragons
+			consort_culture = culture_spider
+			consort_culture = culture_balrog
+			consort_culture = culture_troll
+			consort_culture = culture_wight
+		}
+	}
+}
+
+heir_is_melkor = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_melkor_tooltip
+        OR = {
+			heir_culture = culture_dragons
+			heir_culture = culture_spider
+			heir_culture = culture_balrog
+			heir_culture = culture_troll
+			heir_culture = culture_wight
+		}
+	}
+}
+
+ruler_is_wizard = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_wizard_tooltip
+		OR = {
+			ruler_culture = culture_istari
+			ruler_culture = culture_maiar
+
+		}
+	}
+}
+
+consort_is_wizard = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_wizard_tooltip
+        OR = {
+			consort_culture = culture_istari
+			consort_culture = culture_maiar
+		}
+	}
+}
+
+heir_is_wizard = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_wizard_tooltip
+        OR = {
+			heir_culture = culture_istari
+			heir_culture = culture_maiar
+		}
+	}
+}
+
+ruler_is_eru = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_eru_tooltip
+		OR = {
+			ruler_culture = culture_ents
+			ruler_culture = culture_huorn
+			ruler_culture = culture_great_eagles
+			ruler_culture = culture_giants
+
+		}
+	}
+}
+
+consort_is_eru = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_eru_tooltip
+        OR = {
+			consort_culture = culture_ents
+			consort_culture = culture_huorn
+			consort_culture = culture_great_eagles
+			consort_culture = culture_giants
+		}
+	}
+}
+
+heir_is_eru = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_eru_tooltip
+        OR = {
+			heir_culture = culture_ents
+			heir_culture = culture_huorn
+			heir_culture = culture_great_eagles
+			heir_culture = culture_giants
+		}
+	}
+}
