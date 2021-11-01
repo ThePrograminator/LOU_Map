@@ -66,7 +66,7 @@ country_event = {
 country_event = {
 	id = lou_ruler.1
 	title = lou_ruler.1.t
-	desc lou_ruler.1.d
+	desc = lou_ruler.1.d
 	picture = DIPLOMACY_eventPicture
 	
 	mean_time_to_happen = {
@@ -77,7 +77,6 @@ country_event = {
         has_dlc = "Rights of Man"
         ruler_has_personality = immortal_personality
 		is_lesser_in_union = no
-		NOT = { ruler_is_immortal = yes }
 		NOT = { has_ruler_flag = end_life }
         OR = {
 			AND = {
@@ -119,7 +118,7 @@ country_event = {
 	
     trigger = {
         has_ruler_flag = end_life
-		NOT = { ruler_is_immortal = yes } 
+		#NOT = { ruler_is_immortal = yes } 
 		is_lesser_in_union = no
     }
    
@@ -244,7 +243,7 @@ country_event = {
     trigger = {
 		has_dlc = "Rights of Man"
 		OR = {
-			heir_is_dundain = yes
+			heir_is_dunedain = yes
 			heir_is_dwarven = yes
 			heir_is_elven = yes
 			heir_is_melkor = yes
