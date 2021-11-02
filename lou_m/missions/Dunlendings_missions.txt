@@ -123,10 +123,16 @@ Dunlendings_slot_3 = {
 	the_fall_of_hammerhand = {
 		icon = mission_dunland_1
 		position = 1
+		completed_by = 2759.1.1 
 		required_missions = {  }
 		trigger = {
-			X16 = {
-				NOT = { has_ruler = "Helm Hammerhand House of Eorl" }
+			custom_trigger_tooltip = {
+				tooltip = rohan_has_helm_as_ruler_tooltip
+				X16 = {
+					NOT = {
+						has_ruler_flag = HELM_IS_RULER_FLAG
+					}
+				}
 			}
 		}
 		effect = {
