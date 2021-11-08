@@ -13,6 +13,7 @@ monarchy = {
 				easterling_clan_reform
 				gondor_kingship_reform
                 empire_of_rhun_reform
+                dunland_kingdom_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -118,6 +119,7 @@ monarchy = {
 		lotr_easterling_clan_legacy
 		gondor_kingship_legacy
         empire_of_rhun_legacy
+        dunland_kingdom_legacy
 	}
 	
 	exclusive_reforms = {
@@ -284,6 +286,9 @@ tribal = {
 			reforms = {
 				tribal_kingdom
 				tribal_federation
+                tribal_rivermen
+                tribal_townsmen
+                tribal_wildmen
 				steppe_horde
 				haradwaith_nomad_reform
 				khaganate_reform
@@ -339,6 +344,9 @@ tribal = {
 	legacy_government = {
 		lotr_clan_legacy
 		tribal_federation_legacy
+		tribal_rivermen_legacy
+		tribal_townsmen_legacy
+		tribal_wildmen_legacy
 		steppe_horde_legacy
 		lotr_khaganate_legacy
 		lotr_independent_khaganate_legacy

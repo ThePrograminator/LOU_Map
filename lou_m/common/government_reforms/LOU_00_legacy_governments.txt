@@ -372,6 +372,122 @@ tribal_federation_legacy = {
 	}
 }
 
+tribal_rivermen_legacy = {
+	# government mechanics flags go here
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	legacy_government = yes
+	allow_convert = no
+	tribal = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	monarchy = yes
+	modifiers = {
+		global_trade_power = 0.05
+		trade_efficiency = 0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+tribal_townsmen_legacy = {
+	# government mechanics flags go here
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	legacy_government = yes
+	allow_convert = no
+	tribal = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	monarchy = yes
+	modifiers = {
+		global_unrest = -1
+		state_governing_cost = -0.15
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+tribal_wildmen_legacy = {
+	# government mechanics flags go here
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	legacy_government = yes
+	allow_convert = no
+	tribal = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	monarchy = yes
+	modifiers = {
+		hostile_attrition = 1
+		shock_damage = 0.10
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+dunland_kingdom_legacy = {
+	# government mechanics flags go here
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	legacy_government = yes
+	allow_convert = no
+	tribal = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	monarchy = yes
+	modifiers = {
+		hostile_attrition = 1
+		shock_damage = 0.10
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
 steppe_horde_legacy = {
 	# government mechanics flags go here
 	icon = "tribal_council"

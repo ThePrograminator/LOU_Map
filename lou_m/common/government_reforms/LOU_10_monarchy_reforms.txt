@@ -204,6 +204,43 @@ empire_of_rhun_reform = {
 	}
 }
 
+dunland_kingdom_reform = {
+	icon = "elective_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		culture_group = culture_group_daen_lintis
+		tag = W94
+		OR = {
+			has_reform = dunland_kingdom_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = dunland_kingdom_reform
+			}
+		}
+	}
+	legacy_equivalent = dunland_kingdom_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	raze_province = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+	modifiers = {
+		global_manpower_modifier = 0.10
+		legitimacy = 0.5
+		tolerance_own = 2
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		is_elective = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 #------------------------------
 # Hereditary vs. Nobility
 #------------------------------

@@ -33,6 +33,9 @@ estate_stewards = {
 	trigger = {
         NOT = { has_reform = tribal_kingdom }
         NOT = { has_reform = tribal_federation }
+		NOT = { has_reform = tribal_rivermen }
+        NOT = { has_reform = tribal_townsmen }
+        NOT = { has_reform = tribal_wildmen }
         NOT = { has_reform = steppe_horde }
         NOT = { has_reform = haradwaith_nomad_reform }
         NOT = { has_reform = khaganate_reform }

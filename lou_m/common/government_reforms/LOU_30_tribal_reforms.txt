@@ -21,6 +21,8 @@ tribal_federation = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	legacy_equivalent = tribal_federation_legacy
+	allow_convert = no
+	valid_for_new_country = no
 
 	lock_level_when_selected = yes
 
@@ -33,6 +35,84 @@ tribal_federation = {
 		government_abilities = {
 			tribal_federation_mechanic
 		}
+	}
+}
+tribal_rivermen = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = culture_group_daen_lintis
+		#has_reform = tribal_rivermen
+	}
+	fixed_rank = 2
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_rivermen_legacy
+	allow_convert = no
+	valid_for_new_country = no
+	raze_province = yes
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		global_trade_power = 0.05
+		trade_efficiency = 0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+	}
+}
+tribal_townsmen = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = culture_group_daen_lintis
+		#has_reform = tribal_townsmen
+	}
+	fixed_rank = 2
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_townsmen_legacy
+	allow_convert = no
+	valid_for_new_country = no
+	raze_province = yes
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		global_unrest = -1
+		state_governing_cost = -0.15
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+	}
+}
+tribal_wildmen = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = culture_group_daen_lintis
+		#has_reform = tribal_wildmen
+	}
+	fixed_rank = 2
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_wildmen_legacy
+	allow_convert = no
+	valid_for_new_country = no
+	raze_province = yes
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		hostile_attrition = 1
+		shock_damage = 0.10
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
 	}
 }
 steppe_horde = {
