@@ -40,8 +40,11 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.1 - Option : LOU_ithilien_rangers.1_a" }
 
-		add_manpower = -2
-		add_prestige = -2
+		owner = {
+			add_manpower = -2
+			add_prestige = -2
+		}
+		
 	}
 }
 
@@ -83,8 +86,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.2 - Option : LOU_ithilien_rangers.2_a" }
 
-		add_manpower = -2
-		add_prestige = -2
+		owner = {
+			add_manpower = -2
+			add_prestige = -2
+		}
 	}
 }
 
@@ -126,8 +131,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.3 - Option : LOU_ithilien_rangers.3_a" }
 
-		add_manpower = -3
-		add_prestige = -2
+		owner = {
+			add_manpower = -2
+			add_prestige = -2
+		}
 	}
 }
 
@@ -169,8 +176,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.4 - Option : LOU_ithilien_rangers.4_a" }
 
-		add_manpower = -2
-		add_prestige = -2
+		owner = {
+			add_manpower = -2
+			add_prestige = -2
+		}
 	}
 }
 
@@ -212,8 +221,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.5 - Option : LOU_ithilien_rangers.5_a" }
 
-		add_manpower = -2
-		add_prestige = -2
+		owner = {
+			add_manpower = -2
+			add_prestige = -2
+		}
 	}
 }
 
@@ -255,8 +266,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.6 - Option : LOU_ithilien_rangers.6_a" }
 
-		add_manpower = -2
-		add_prestige = -1
+		owner = {
+			add_manpower = -2
+			add_prestige = -1
+		}
 	}
 }
 
@@ -298,8 +311,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.7 - Option : LOU_ithilien_rangers.7_a" }
 
-		add_manpower = -2
-		add_prestige = -1
+		owner = {
+			add_manpower = -2
+			add_prestige = -1
+		}
 	}
 }
 
@@ -341,8 +356,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.8 - Option : LOU_ithilien_rangers.8_a" }
 
-		add_manpower = -3
-		add_prestige = -2
+		owner = {
+			add_manpower = -3
+			add_prestige = -2
+		}
 	}
 }
 
@@ -384,8 +401,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.9 - Option : LOU_ithilien_rangers.9_a" }
 
-		add_manpower = -2
-		add_prestige = -1
+		owner = {
+			add_manpower = -2
+			add_prestige = -1
+		}
 	}
 }
 
@@ -427,8 +446,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.10 - Option : LOU_ithilien_rangers.10_a" }
 
-		add_manpower = -2
-		add_prestige = -1
+		owner = {
+			add_manpower = -2
+			add_prestige = -1
+		}
 	}
 }
 
@@ -466,8 +487,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.11 - Option : LOU_ithilien_rangers.11_a" }
 
-		add_manpower = -2
-		add_prestige = -1
+		owner = {
+			add_manpower = -2
+			add_prestige = -1
+		}
 	}
 }
 
@@ -505,8 +528,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.12 - Option : LOU_ithilien_rangers.12_a" }
 
-		add_manpower = -3
-		add_prestige = -2
+		owner = {
+			add_manpower = -3
+			add_prestige = -2
+		}
 	}
 }
 
@@ -544,8 +569,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.13 - Option : LOU_ithilien_rangers.13_a" }
 
-		add_manpower = -2
-		add_prestige = -2
+		owner = {
+			add_manpower = -2
+			add_prestige = -2
+		}
 	}
 }
 
@@ -583,8 +610,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.14 - Option : LOU_ithilien_rangers.14_a" }
 
-		add_manpower = -2
-		add_prestige = -1
+		owner = {
+			add_manpower = -2
+			add_prestige = -1
+		}
 	}
 }
 
@@ -622,8 +651,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.15 - Option : LOU_ithilien_rangers.15_a" }
 
-		add_manpower = -3
-		add_prestige = -2
+		owner = {
+			add_manpower = -3
+			add_prestige = -2
+		}
 	}
 }
 
@@ -661,8 +692,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.16 - Option : LOU_ithilien_rangers.16_a" }
 
-		add_manpower = -1
-		add_prestige = -1
+		owner = {
+			add_manpower = -1
+			add_prestige = -1
+		}
 	}
 }
 
@@ -700,8 +733,10 @@ province_event = {
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_ithilien_rangers.17 - Option : LOU_ithilien_rangers.17_a" }
 
-		add_manpower = -1
-		add_prestige = -1
+		owner = {
+			add_manpower = -1
+			add_prestige = -1
+		}
 	}
 }
 

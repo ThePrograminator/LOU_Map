@@ -749,9 +749,11 @@ gondor_missions_5 = {
 				limit = {
 					17 = { province_has_center_of_trade_of_level = 3 }
 				}
-				add_province_modifier = {
-					name = gondor_pearl_of_the_anduin_river_modifier
-					duration = -1
+				17 = {
+					add_province_modifier = {
+						name = gondor_pearl_of_the_anduin_river_modifier
+						duration = -1
+					}
 				}
 			}
 		}

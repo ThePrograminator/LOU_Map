@@ -15,10 +15,12 @@
 #######################################
 
 company_of_thorin = {
-	penalty = 0.0
+	#penalty = 0.0
 	bonus = {
 	
 	}
+
+	trade_company_efficiency = 0.4
 	
 	historical_start_date = 2941.04.26
 	historical_start_province = 83 # Hobbitton
@@ -394,11 +396,13 @@ company_of_thorin = {
 #######################################
 
 fellowship_of_ring = {
-	penalty = 0.0
+	#penalty = 0.0
 
 	bonus = {
 
 	}
+
+	trade_company_efficiency = 0.4
 
 	historical_start_date = 3018.01.1
 	historical_start_province = 83 # Hobbitton

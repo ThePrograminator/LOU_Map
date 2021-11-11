@@ -1,5 +1,5 @@
 # START MISSION#
-Z06_reforge_arnor = {
+Z06_build_army = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -185,8 +185,10 @@ Z06_alliances = {
 			}
 		}
 		effect = {
-			country_event = { 
-				id = LOU_gandalf.5
+			capital_scope = {
+				province_event = {
+					id = LOU_gandalf.5
+				}
 			}
 			add_country_modifier = {
 				name = "influential_diplomacy"

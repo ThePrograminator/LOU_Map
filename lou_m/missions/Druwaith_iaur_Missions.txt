@@ -560,12 +560,17 @@ X15_missions_5 = {
 		position = 3
 		
 		trigger = {
-			workshop_building = 5 #should probably include better buildings, all under an OR = {
-			OR = {
-				has_terrain = mountain
-				has_terrain = hills
-				has_terrain = unique_mountain_pass
-				has_terrain = highlands
+			num_of_owned_provinces_with = {
+				value = 5
+				AND ={
+					OR = {
+						has_terrain = mountain
+						has_terrain = hills
+						has_terrain = unique_mountain_pass
+						has_terrain = highlands
+					}
+					has_building = workshop_building
+				}
 			}
 		}
 		effect = {
@@ -587,7 +592,7 @@ X15_missions_5 = {
 		trigger = {
 			3951 = {
 				base_production = 5
-				settlement_building = 1
+				has_building = settlement_building
 			}
 		}
 		effect = {

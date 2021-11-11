@@ -126,7 +126,7 @@ V17_evil_men = {
 		}
 	}
 }
-V17_evil_men = {
+V17_cosairs = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -297,8 +297,8 @@ V17_fall_of_gondor = {
 	mordor_burn_the_white_city = {
 		icon = mission_white_tree_burning
 		required_missions = {
-		strike_gondor
-            mordor_mordor_rebuild_barad_dur_mission
+			mordor_strike_gondor
+            mordor_rebuild_barad_dur_mission
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -359,7 +359,7 @@ V17_fall_of_gondor = {
 	}
 }
 
-V17_fall_of_gondor = {
+V17_fall_of_rohan = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -374,7 +374,7 @@ V17_fall_of_gondor = {
     mordor_conquer_rohan = {
 		icon = mission_unite_home_region
 		required_missions = {
-		burn_the_white_city
+			mordor_burn_the_white_city
 		}
 		position = 6
 		provinces_to_highlight = {
@@ -694,7 +694,7 @@ V17_necromancer_of_dol_guldur = {
 	}
 }
 
-V17_necromancer_of_dol_guldur = {
+V17_destroy_elves = {
 	slot = 4
 	generic = no
 	ai = yes

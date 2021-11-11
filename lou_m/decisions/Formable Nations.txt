@@ -496,20 +496,17 @@ country_decisions = {
 				region = dunland_region
 				is_core = ROOT
 			}
-			1861 = {
-				owned_by = ROOT
-				is_core = ROOT
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 1
+					region = dunland_region
+					has_terrain = unique_dunland_town
+				}
+				980 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
 			}
-			#dunland_region = {
-			#	type = all
-			#	owned_by = ROOT
-			#}
-			#calc_true_if = {
-			#	amount = 15
-			#	any_owned_province = {
-			#		region = dunland_region
-			#	}
-			#}
 			num_of_owned_provinces_with = {
 				value = 15
 				region = dunland_region

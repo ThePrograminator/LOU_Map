@@ -26,11 +26,11 @@ lond_daer_1 = {
 			}
 		}
 		effect = {
-			province_ID = 1406
-			add_province_modifier = {
-				name = rast_arnor_lighthouse
-				duration = -1
-				desc = rast_arnor_lighthouse_tooltip
+			1406 = {
+				add_province_modifier = {
+					name = rast_arnor_lighthouse
+					duration = -1
+				}
 			}
 		}
 	}
