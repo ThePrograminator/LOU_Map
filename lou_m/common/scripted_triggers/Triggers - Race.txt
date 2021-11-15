@@ -140,6 +140,21 @@ is_racial_group_wilderness = {
     }
 }
 
+is_larger_gondorian_culture = {
+	OR = {
+		primary_culture = culture_dunedain_of_gondor
+		primary_culture = culture_dunedain_of_ithilien
+		primary_culture = culture_dunedain_of_lebennin
+		primary_culture = culture_dunedain_of_belfalas
+		primary_culture = culture_dunedain_of_tol_falas
+		primary_culture = culture_gondor_middlemen_lamedon
+		primary_culture = culture_gondor_middlemen_mornan
+		primary_culture = culture_gondor_middlemen_anfalas
+		primary_culture = culture_gondor_middlemen_pinnath_gelin
+		primary_culture = culture_numenorean
+	}
+}
+
 ruler_is_dunedain = {
 	custom_trigger_tooltip = {
 		tooltip = ruler_is_dunedain_tooltip

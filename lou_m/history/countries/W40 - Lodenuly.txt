@@ -2,8 +2,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 
-primary_culture = culture_dunedain_of_gondor
-religion = religion_dunedain
+primary_culture = culture_lodenuly
+religion = religion_chyans
 technology_group = lotr_human
 capital = 875
 
@@ -16,101 +16,11 @@ historical_rival = Y41
 
 2750.1.1 = {
 	monarch = {
-		name = "Hallas"
-		dynasty = "Ecthelion"
-		birth_date = 2692.1.1
-		adm = 1
-		dip = 1
-		mil = 0
-	}
-}
-
-2800.1.1 = {
-	monarch = {
-		name = "Arannel"
-		dynasty = "Ecthelion"
-		birth_date = 2733.1.1
-		adm = 3
-		dip = 4
-		mil = 3
-	}
-}
-
-2850.1.1 = {
-	monarch = {
-		name = "Arathorn"
-		dynasty = "Ecthelion"
-		birth_date = 2796.1.1
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
-
-2900.1.1 = {
-	monarch = {
-		name = "Halbarad"
-		dynasty = "Ecthelion"
-		birth_date = 2849.1.1
-		adm = 0
-		dip = 5
-		mil = 1
-	}
-	heir = {
-		monarch_name = "Lothíriel"
-		name = "Lothíriel"
-		dynasty = "Ecthelion"
-		birth_date = 2856.1.1
-		death_date = 2886.1.1
-		adm = 1
-		dip = 5
-		mil = 1
-		claim = 100
-	}
-}
-
-2950.1.1 = {
-	monarch = {
-		name = "Lothíriel"
-		dynasty = "Ecthelion"
-		birth_date = 2909.1.1
-		adm = 4
+		name = "Philosir"
+		dynasty = "Mercurius"
+		birth_date = 2728.1.1
+		adm = 2
 		dip = 3
-		mil = 0
-		female = yes
-	}
-	heir = {
-		monarch_name = "Morwen"
-		name = "Morwen"
-		dynasty = "Ecthelion"
-		birth_date = 2883.1.1
-		death_date = 2963.1.1
-		adm = 1
-		dip = 3
-		mil = 2
-		claim = 100
-	}
-}
-
-3000.1.1 = {
-	monarch = {
-		name = "Anborn"
-		dynasty = "Ecthelion"
-		birth_date = 2934.1.1
-		adm = 4
-		dip = 4
 		mil = 4
 	}
-	heir = {
-		monarch_name = "Lothíriel"
-		name = "Lothíriel"
-		dynasty = "Ecthelion"
-		birth_date = 2926.1.1
-		death_date = 2984.1.1
-		adm = 1
-		dip = 2
-		mil = 1
-		claim = 100
-	}
 }
-

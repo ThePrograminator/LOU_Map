@@ -11,7 +11,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 			X27 = {
 				exists = yes
 			}
@@ -73,7 +74,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 			any_owned_province = {
 				superregion = gondor_superregion
 				is_core = owner
@@ -118,7 +120,8 @@ country_event = {
 				
 			superregion = gondor_superregion
 			owner = {
-				primary_culture = culture_dunedain_of_gondor
+				#primary_culture = culture_dunedain_of_gondor
+				is_larger_gondorian_culture = yes
 			}
 		}
 	}
@@ -184,7 +187,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 			any_owned_province = {
 				superregion = gondor_superregion
 				is_core = owner
@@ -232,7 +236,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 		}
 	}
 	
@@ -271,7 +276,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 		}
 		any_rival_country = {
 			army_size_percentage = 0.7
@@ -328,7 +334,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 		}
 		OR = {
 			413 = {
@@ -367,7 +374,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 		}
 		NOT = {
 			has_country_modifier = gondor_hope_arises
@@ -411,7 +419,8 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			primary_culture = culture_dunedain_of_gondor
+			#primary_culture = culture_dunedain_of_gondor
+			is_larger_gondorian_culture = yes
 			exists = X27
 		}
 		any_owned_province = {
