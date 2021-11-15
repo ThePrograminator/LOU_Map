@@ -20,15 +20,24 @@ historical_rival = Z54
 historical_rival = Y16
 historical_rival = Y58
 
-2750.1.1 = {
+2754.1.1 = {
 	monarch = {
-		name = "Sanrind"
+		name = "Wulf"
 		dynasty = "Adorn"
-		birth_date = 2698.1.1
-		adm = 2
-		dip = 2
-		mil = 2
+		birth_date = 2736.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+		leader = {
+			name = "Wulf"
+			type = general
+			fire = 3
+			shock = 5
+			manuever = 5
+			siege = 3
+		}
 	}
+	add_ruler_personality = strict_personality
 }
 
 2800.1.1 = {
