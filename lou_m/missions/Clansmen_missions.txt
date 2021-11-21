@@ -41,8 +41,14 @@ lond_daer_1 = {
 		provinces_to_highlight = {
 			province_ID = 153
 		}
-		trigger = { }
-		effect = { }
+		trigger = {
+			153 = {
+				is_prosperous = yes}
+		effect = { 
+			ROOT = 
+				add_years_of_income = 1.5
+			}
+		}
 	}
 	legacy_of_lond_daer = {
 		icon = mission_early_game_buildings
@@ -56,8 +62,14 @@ lond_daer_1 = {
 				base_production = 20
 			}
 		}
-		effect = { 
-
+		effect = {
+			153 = {
+				add_province_modifier = {
+					name = the_great_haven
+					duration = -1
+				}
+				change_trade_good = tropical_wood
+			}
 		}
 	}
 }
@@ -85,8 +97,11 @@ lond_daer_2 = {
 				}
 			}
 		}
-		effect = { }
+		effect = {
+			ROOT = trade_steering = 0.2
+		}
 	}
+	
 	greyflood_glass = {
 		icon = mission_sw_torquoise_mining
 		position = 3
@@ -101,7 +116,17 @@ lond_daer_2 = {
 				value = 4
 			}
 		}
-		effect = { }
+		effect = { 
+			ROOT = {
+				add_prestige = 30
+			}
+			change_price = {
+				trade_goods = glass
+				key = greyflood_glass
+				value = 1.5
+				duration = 3650
+			}
+		}
 	}
 }
 
@@ -165,7 +190,11 @@ lond_angren_1 = {
 				value = 3
 			}
 		}
-		effect = { }
+		effect = {
+			ROOT = 
+				light_ship_cost = -0.2
+				duration = 3650
+			}
 	}
 }
 
@@ -190,8 +219,13 @@ lond_angren_2 = {
 				type = all
 				owned_by = ROOT
 			}
+			ROOT = 
+				stability = 2
+				
 		}
-		effect = { }
+		effect = {
+			370 = add_prosperity = 1
+		}
 	}
 	the_river_trade = {
 		icon = mission_market_place_with_asian_traders
@@ -225,7 +259,9 @@ lond_angren_2 = {
 				value = 3
 			}
 		}
-		effect = { }
+		effect = {
+			add_trade_node_income = 10
+			}
 	}
 }
 
@@ -261,13 +297,6 @@ lond_angren_3 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
-	}
-	new_goods = {
-		icon = mission_trade_company_region_abroad
-		position = 4
-		required_missions = { the_river_trade }
-		trigger = { }
 		effect = { }
 	}
 }
