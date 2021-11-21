@@ -10,7 +10,7 @@ lond_daer_1 = {
 	}
 
 	the_isles_of_rast_arnor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_invade_island
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -35,7 +35,7 @@ lond_daer_1 = {
 		}
 	}
 	rebuild_the_city = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		position = 2
 		required_missions = { the_isles_of_rast_arnor }
 		provinces_to_highlight = {
@@ -45,11 +45,20 @@ lond_daer_1 = {
 		effect = { }
 	}
 	legacy_of_lond_daer = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_early_game_buildings
 		position = 4
 		required_missions = { rebuild_the_city }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			province_ID = 153
+		}
+		trigger = { 
+			153 = {
+				base_production = 20
+			}
+		}
+		effect = { 
+
+		}
 	}
 }
 
@@ -65,17 +74,33 @@ lond_daer_2 = {
 	}
 
 	trading_with_tharbad = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_home_trade_node
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			170 = { #Tharbad
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		}
 		effect = { }
 	}
 	greyflood_glass = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_sw_torquoise_mining
 		position = 3
 		required_missions = { rebuild_the_city trading_with_tharbad }
-		trigger = { }
+		provinces_to_highlight = {
+			trade_goods = glass
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = glass
+				value = 4
+			}
+		}
 		effect = { }
 	}
 }
@@ -88,18 +113,58 @@ lond_angren_1 = {
 		primary_culture = culture_clansmen
 	}
 
-	a_southern_port = {
-		icon = mission_build_up_to_force_limit
+	a_southern_bank = {
+		icon = mission_conquer_50_development
 		position = 2
 		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			area = nan_angren_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			nan_angren_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			country_event = {
+				id = LOU_mission_clansmen.1
+			}
+		}
 	}
 	protecting_our_river = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_sea_battles
 		position = 4
 		required_missions = { the_river_trade }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					trade_goods = tropical_wood
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					trade_goods = tropical_wood
+					owned_by = ROOT
+					NOT = {
+						OR = {
+							has_building = workshop_building
+							has_building = warehouse_building
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				OR = {
+					has_building = workshop_building
+					has_building = warehouse_building
+				}
+				value = 3
+			}
+		}
 		effect = { }
 	}
 }
@@ -113,17 +178,53 @@ lond_angren_2 = {
 	}
 
 	the_north_bank = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		provinces_to_highlight = {
+			area = angrast_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			angrast_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	the_river_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_market_place_with_asian_traders
 		position = 3
-		required_missions = { a_southern_port the_north_bank the_inland_trade }
-		trigger = { }
+		required_missions = { a_southern_bank the_north_bank the_inland_trade }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_has_center_of_trade_of_level = 1
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					province_has_center_of_trade_of_level = 1
+					owned_by = ROOT
+					NOT = {
+						OR = {
+							has_building = marketplace_building
+							has_building = trade_depot_building
+						}
+					}
+				}
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				province_has_center_of_trade_of_level = 1
+				OR = {
+					has_building = marketplace_building
+					has_building = trade_depot_building
+				}
+				value = 3
+			}
+		}
 		effect = { }
 	}
 }
@@ -137,14 +238,33 @@ lond_angren_3 = {
 	}
 
 	the_inland_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		position = 2
 		required_missions = {  }
-		trigger = { }
+		provinces_to_highlight = {
+			OR ={
+				province_id = 1490
+				province_id = 382
+				province_id = 1448
+			}
+			
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			1490 = {
+				owned_by = ROOT
+			}
+			382 = {
+				owned_by = ROOT
+			}
+			1448 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	new_goods = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_trade_company_region_abroad
 		position = 4
 		required_missions = { the_river_trade }
 		trigger = { }

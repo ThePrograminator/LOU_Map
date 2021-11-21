@@ -7,7 +7,7 @@ Dunlendings_slot_1 = {
 	}
 
 	warg_hunters = {
-		icon = mission_dunland_1
+		icon = mission_wargs
 		position = 2
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -36,7 +36,7 @@ Dunlendings_slot_1 = {
 		}
 	}
 	the_southern_vale = {
-		icon = mission_dunland_1
+		icon = mission_unite_home_region
 		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -70,7 +70,7 @@ Dunlendings_slot_2 = {
 	}
 
 	claim_the_hornburg = {
-		icon = mission_dunland_1
+		icon = mission_hornburg
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -86,8 +86,9 @@ Dunlendings_slot_2 = {
 			add_mil_power = 200
 		}
 	}
+
 	the_dunlending_port = {
-		icon = mission_dunland_1
+		icon = mission_galleys_in_port
 		position = 3
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -121,7 +122,7 @@ Dunlendings_slot_3 = {
 	}
 
 	the_fall_of_hammerhand = {
-		icon = mission_dunland_1
+		icon = mission_dunland_3
 		position = 1
 		completed_by = 2759.1.1 
 		required_missions = {  }
@@ -140,7 +141,7 @@ Dunlendings_slot_3 = {
 		}
 	}
 	dunlendings_ascendant = {
-		icon = mission_dunland_1
+		icon = mission_dunland_2
 		position = 2
 		required_missions = { the_fall_of_hammerhand raiding_the_royal_stables claim_the_hornburg }
 		trigger = { }
@@ -151,7 +152,7 @@ Dunlendings_slot_3 = {
 		}
 	}
 	capital_of_dunland = {
-		icon = mission_dunland_1
+		icon = mission_colonial
 		position = 3
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -184,13 +185,6 @@ Dunlendings_slot_3 = {
 			add_mil_power = 100
 		}
 	}
-	dunland_united = {
-		icon = mission_dunland_1
-		position = 5
-		required_missions = { the_central_clans_united the_southern_vale conquer_the_northern_clans }
-		trigger = { }
-		effect = { }
-	}
 }
 
 Dunlendings_slot_4 = {
@@ -202,7 +196,7 @@ Dunlendings_slot_4 = {
 	}
 
 	raiding_the_royal_stables = {
-		icon = mission_dunland_1
+		icon = mission_steppe_warriors
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -222,7 +216,7 @@ Dunlendings_slot_4 = {
 		}
 	}
 	the_plains_of_talorgan = {
-		icon = mission_dunland_1
+		icon = mission_sw_against_the_desert
 		position = 3
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -267,7 +261,7 @@ Dunlendings_slot_5 = {
 	}
 
 	dwarves_of_dunland = {
-		icon = mission_dunland_1
+		icon = mission_dwarves_1
 		position = 2
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -296,7 +290,7 @@ Dunlendings_slot_5 = {
 		}
 	}
 	conquer_the_northern_clans = {
-		icon = mission_dunland_1
+		icon = mission_unite_home_region
 		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {

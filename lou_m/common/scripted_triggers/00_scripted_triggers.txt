@@ -411,14 +411,14 @@ consort_has_bad_dip_personality = {
 can_have_center_of_reformation_trigger = { #Province Scope
 	#$RELIGION$ needs to match the religion of the center that is being spawned.
 	continent = middle_earth
-	OR = {
-		religion = religion_daen
-	}
-	is_in_capital_area = yes
+	#OR = {
+		#religion = religion_daen
+	#}
+	#is_in_capital_area = yes
 	is_reformation_center = no
 	is_island = no
 	expelling_minorities = no
-	development = 10
+	#development = 10
 	NOT = {
 		any_neighbor_province = {
 			is_reformation_center = yes
