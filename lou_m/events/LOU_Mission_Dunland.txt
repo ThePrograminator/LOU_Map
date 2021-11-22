@@ -30,3 +30,35 @@ country_event = { #Forgo Dunedain Influence
 		} 
 	}
 }
+
+country_event = { #test
+	id = LOU_mission_dunland.2
+	title = LOU_mission_dunland.2.t
+	desc = LOU_mission_dunland.2.d
+	picture = ruined_eventpicture
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+	
+	trigger = { 
+		any_province = {
+			#can_have_center_of_reformation_trigger = {
+			#	RELIGION = religion_daen
+			#}
+			OR = {
+				superregion = old_pukel_land_superregion
+				superregion = rohan_superregion
+				superregion = gondor_superregion
+				superregion = eriador_superregion
+			}
+		}
+	}
+	
+	option = { #Tear down dunedain ruins
+		name = LOU_mission_dunland.2.a
+		
+		121 = {
+			add_reform_center = religion_daen
+		}
+	}
+}

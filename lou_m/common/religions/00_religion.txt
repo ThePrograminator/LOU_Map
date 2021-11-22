@@ -9,6 +9,8 @@ religion_group_human = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
+
+	center_of_religion = 413
 	
     #---------------
     # Arhunerim
@@ -29,9 +31,15 @@ religion_group_human = {
 		ancestors = yes
 		declare_war_in_regency = yes
 		will_get_center = { #Refered to even for initial CoR Spawn
-			any_owned_province = {
-				can_have_center_of_reformation_trigger = {
-					RELIGION = religion_daen
+			any_province = {
+				#can_have_center_of_reformation_trigger = {
+				#	RELIGION = religion_daen
+				#}
+				OR = {
+					superregion = old_pukel_land_superregion
+					superregion = rohan_superregion
+					superregion = gondor_superregion
+					superregion = eriador_superregion
 				}
 			}
 		}

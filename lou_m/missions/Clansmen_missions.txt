@@ -3,10 +3,7 @@ lond_daer_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			primary_culture = culture_clansmen
-			tag = Z11
-		}
+		primary_culture = culture_clansmen
 	}
 
 	the_isles_of_rast_arnor = {
@@ -43,13 +40,14 @@ lond_daer_1 = {
 		}
 		trigger = {
 			153 = {
-				is_prosperous = yes}
-		effect = { 
-			ROOT = 
-				add_years_of_income = 1.5
+				is_prosperous = yes
 			}
 		}
+		effect = { 
+			add_years_of_income = 1.5
+		}
 	}
+
 	legacy_of_lond_daer = {
 		icon = mission_early_game_buildings
 		position = 4
@@ -68,7 +66,7 @@ lond_daer_1 = {
 					name = the_great_haven
 					duration = -1
 				}
-				change_trade_good = tropical_wood
+				change_trade_goods = tropical_wood
 			}
 		}
 	}
@@ -79,10 +77,7 @@ lond_daer_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			primary_culture = culture_clansmen
-			tag = Z11
-		}
+		primary_culture = culture_clansmen
 	}
 
 	trading_with_tharbad = {
@@ -98,7 +93,10 @@ lond_daer_2 = {
 			}
 		}
 		effect = {
-			ROOT = trade_steering = 0.2
+			add_country_modifier = {
+				name = controlling_the_grey_flod
+				duration = 7300
+			}
 		}
 	}
 	
@@ -117,9 +115,7 @@ lond_daer_2 = {
 			}
 		}
 		effect = { 
-			ROOT = {
-				add_prestige = 30
-			}
+			add_prestige = 30
 			change_price = {
 				trade_goods = glass
 				key = greyflood_glass
@@ -191,10 +187,11 @@ lond_angren_1 = {
 			}
 		}
 		effect = {
-			ROOT = 
-				light_ship_cost = -0.2
-				duration = 3650
+			add_country_modifier = {
+				name = increase_timber_production
+				duration = 7300
 			}
+		}
 	}
 }
 
@@ -219,12 +216,12 @@ lond_angren_2 = {
 				type = all
 				owned_by = ROOT
 			}
-			ROOT = 
-				stability = 2
-				
+			stability = 2
 		}
 		effect = {
-			370 = add_prosperity = 1
+			370 = {
+				add_prosperity = 1
+			} 
 		}
 	}
 	the_river_trade = {
@@ -260,8 +257,10 @@ lond_angren_2 = {
 			}
 		}
 		effect = {
-			add_trade_node_income = 10
+			370 = {
+				add_trade_node_income = 10
 			}
+		}
 	}
 }
 
