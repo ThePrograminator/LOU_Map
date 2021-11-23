@@ -41,7 +41,7 @@ country_event = {
 			ruler_is_wizard = yes
 			ruler_is_eru = yes
         }
-		NOT = { ruler_has_personality = immortal_personality } 
+		#NOT = { ruler_has_personality = immortal_personality } 
         NOT = { has_ruler_flag = set_immortality }
 		is_lesser_in_union = no
     }
@@ -49,11 +49,29 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { ruler_has_max_personalities = yes }
+				limit = { 
+					ruler_has_max_personalities = yes 
+					NOT = {
+						ruler_has_personality = immortal_personality
+					}
+				}
 				clear_ruler_personalities = yes
+				add_ruler_personality = immortal_personality
+				set_ruler_flag = set_immortality
 			}
-			add_ruler_personality = immortal_personality
-			set_ruler_flag = set_immortality
+			else_if = {
+				limit = { ruler_has_personality = immortal_personality }
+				set_ruler_flag = set_immortality
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						ruler_has_personality = immortal_personality
+					}
+				}
+				add_ruler_personality = immortal_personality
+				set_ruler_flag = set_immortality
+			}
 		}
 	}
 	option = {
@@ -98,12 +116,12 @@ country_event = {
 		if = {
 			limit = { ruler_is_dunedain = yes }
 			custom_tooltip = ruler_is_dunedain_tooltip
-			hidden_effect = { country_event = { id = lou_ruler.4 days = 7300 random = 3650 } } #30 years + ~20years
+			hidden_effect = { country_event = { id = lou_ruler.2 days = 7300 random = 3650 } } #30 years + ~20years
 		}
 		else_if = {
 			limit = { ruler_is_dwarven = yes }
 			custom_tooltip = ruler_is_dwarven_tooltip
-			hidden_effect = { country_event = { id = lou_ruler.4 days = 10950 random = 7300 } } #30 years + ~20years
+			hidden_effect = { country_event = { id = lou_ruler.2 days = 10950 random = 7300 } } #30 years + ~20years
 		}
 	}
 }
