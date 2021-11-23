@@ -2,7 +2,7 @@
 # Eotheod (Human)
 #-----------------------------------
 culture_group_eotheod = {
-	graphical_culture = westerngfx
+	graphical_culture = lotr_rohan_gfx
 	
 	culture_eothod = {
 		male_names = {
@@ -27,8 +27,152 @@ culture_group_eotheod = {
 		}
 	}
 	
-	culture_eorlingas = {
-		primary = X16
+	culture_folde = {
+		primary = Q02
+		male_names = {
+			Aldor Baldor Baldred Bregdan Brego Brytta
+			Ceorl Déor Déorbrand Déorgar
+			Déorhelm Déorthain Déorwine Dernfara Derngar Dernhelm Dernwine Dúnhere
+			Elfhelm Elfwine Éadig Éadmód Éoblod Éogar Éohere Éoheort
+			Éomer Éomód Éomund Éorl Éoman Éorcanstan Éored Éothain Éowine 
+			Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram
+			Fréa Fréaláf Fréawine Freca Frumgar Fulgar Fulgrim
+			Fulor Fulthain Gálmód Gamling Gárbald
+			Gárulf Gárwine Gléobeam Gléomer Gléothain Gléowine
+			Goldwine Gram Gríma Grimbold Guthbrand
+			Guthláf Guthmer Guthred Haleth Háma Helm Héostor Herefara
+			Herubrand Herumer Heruthain Heruwine
+			Holdred Holdwine Horn Léod Léofa Léofara Léofred Léofwine Léonere
+			Tengel Téoden Téodred Walda Wídfara Wulf 
+		}
+		female_names = {
+			Dernhild Dernwyn Déorhild Déorwyn Elfhild Elfwyn Gléowyn Guthwyn Heruwyn Hild 
+			Holdwyn Léofwyn Éohild Éowyn Téodwyn
+		}
+	}
+
+	culture_west_march = {
+		primary = W95
+		male_names = {
+			Aldor Baldor Baldred Bregdan Brego Brytta
+			Ceorl Déor Déorbrand Déorgar
+			Déorhelm Déorthain Déorwine Dernfara Derngar Dernhelm Dernwine Dúnhere
+			Elfhelm Elfwine Éadig Éadmód Éoblod Éogar Éohere Éoheort
+			Éomer Éomód Éomund Éorl Éoman Éorcanstan Éored Éothain Éowine 
+			Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram
+			Fréa Fréaláf Fréawine Freca Frumgar Fulgar Fulgrim
+			Fulor Fulthain Gálmód Gamling Gárbald
+			Gárulf Gárwine Gléobeam Gléomer Gléothain Gléowine
+			Goldwine Gram Gríma Grimbold Guthbrand
+			Guthláf Guthmer Guthred Haleth Háma Helm Héostor Herefara
+			Herubrand Herumer Heruthain Heruwine
+			Holdred Holdwine Horn Léod Léofa Léofara Léofred Léofwine Léonere
+			Tengel Téoden Téodred Walda Wídfara Wulf 
+		}
+		female_names = {
+			Dernhild Dernwyn Déorhild Déorwyn Elfhild Elfwyn Gléowyn Guthwyn Heruwyn Hild 
+			Holdwyn Léofwyn Éohild Éowyn Téodwyn
+		}
+	}
+
+	culture_westfold = {
+		primary = W96
+		male_names = {
+			Aldor Baldor Baldred Bregdan Brego Brytta
+			Ceorl Déor Déorbrand Déorgar
+			Déorhelm Déorthain Déorwine Dernfara Derngar Dernhelm Dernwine Dúnhere
+			Elfhelm Elfwine Éadig Éadmód Éoblod Éogar Éohere Éoheort
+			Éomer Éomód Éomund Éorl Éoman Éorcanstan Éored Éothain Éowine 
+			Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram
+			Fréa Fréaláf Fréawine Freca Frumgar Fulgar Fulgrim
+			Fulor Fulthain Gálmód Gamling Gárbald
+			Gárulf Gárwine Gléobeam Gléomer Gléothain Gléowine
+			Goldwine Gram Gríma Grimbold Guthbrand
+			Guthláf Guthmer Guthred Haleth Háma Helm Héostor Herefara
+			Herubrand Herumer Heruthain Heruwine
+			Holdred Holdwine Horn Léod Léofa Léofara Léofred Léofwine Léonere
+			Tengel Téoden Téodred Walda Wídfara Wulf 
+		}
+		female_names = {
+			Dernhild Dernwyn Déorhild Déorwyn Elfhild Elfwyn Gléowyn Guthwyn Heruwyn Hild 
+			Holdwyn Léofwyn Éohild Éowyn Téodwyn
+		}
+	}
+
+	culture_eastfold = {
+		primary = W97
+		male_names = {
+			Aldor Baldor Baldred Bregdan Brego Brytta
+			Ceorl Déor Déorbrand Déorgar
+			Déorhelm Déorthain Déorwine Dernfara Derngar Dernhelm Dernwine Dúnhere
+			Elfhelm Elfwine Éadig Éadmód Éoblod Éogar Éohere Éoheort
+			Éomer Éomód Éomund Éorl Éoman Éorcanstan Éored Éothain Éowine 
+			Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram
+			Fréa Fréaláf Fréawine Freca Frumgar Fulgar Fulgrim
+			Fulor Fulthain Gálmód Gamling Gárbald
+			Gárulf Gárwine Gléobeam Gléomer Gléothain Gléowine
+			Goldwine Gram Gríma Grimbold Guthbrand
+			Guthláf Guthmer Guthred Haleth Háma Helm Héostor Herefara
+			Herubrand Herumer Heruthain Heruwine
+			Holdred Holdwine Horn Léod Léofa Léofara Léofred Léofwine Léonere
+			Tengel Téoden Téodred Walda Wídfara Wulf 
+		}
+		female_names = {
+			Dernhild Dernwyn Déorhild Déorwyn Elfhild Elfwyn Gléowyn Guthwyn Heruwyn Hild 
+			Holdwyn Léofwyn Éohild Éowyn Téodwyn
+		}
+	}
+
+	culture_eastemnet = {
+		primary = W98
+		male_names = {
+			Aldor Baldor Baldred Bregdan Brego Brytta
+			Ceorl Déor Déorbrand Déorgar
+			Déorhelm Déorthain Déorwine Dernfara Derngar Dernhelm Dernwine Dúnhere
+			Elfhelm Elfwine Éadig Éadmód Éoblod Éogar Éohere Éoheort
+			Éomer Éomód Éomund Éorl Éoman Éorcanstan Éored Éothain Éowine 
+			Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram
+			Fréa Fréaláf Fréawine Freca Frumgar Fulgar Fulgrim
+			Fulor Fulthain Gálmód Gamling Gárbald
+			Gárulf Gárwine Gléobeam Gléomer Gléothain Gléowine
+			Goldwine Gram Gríma Grimbold Guthbrand
+			Guthláf Guthmer Guthred Haleth Háma Helm Héostor Herefara
+			Herubrand Herumer Heruthain Heruwine
+			Holdred Holdwine Horn Léod Léofa Léofara Léofred Léofwine Léonere
+			Tengel Téoden Téodred Walda Wídfara Wulf 
+		}
+		female_names = {
+			Dernhild Dernwyn Déorhild Déorwyn Elfhild Elfwyn Gléowyn Guthwyn Heruwyn Hild 
+			Holdwyn Léofwyn Éohild Éowyn Téodwyn
+		}
+	}
+
+	culture_westemnet = {
+		primary = W99
+		male_names = {
+			Aldor Baldor Baldred Bregdan Brego Brytta
+			Ceorl Déor Déorbrand Déorgar
+			Déorhelm Déorthain Déorwine Dernfara Derngar Dernhelm Dernwine Dúnhere
+			Elfhelm Elfwine Éadig Éadmód Éoblod Éogar Éohere Éoheort
+			Éomer Éomód Éomund Éorl Éoman Éorcanstan Éored Éothain Éowine 
+			Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram
+			Fréa Fréaláf Fréawine Freca Frumgar Fulgar Fulgrim
+			Fulor Fulthain Gálmód Gamling Gárbald
+			Gárulf Gárwine Gléobeam Gléomer Gléothain Gléowine
+			Goldwine Gram Gríma Grimbold Guthbrand
+			Guthláf Guthmer Guthred Haleth Háma Helm Héostor Herefara
+			Herubrand Herumer Heruthain Heruwine
+			Holdred Holdwine Horn Léod Léofa Léofara Léofred Léofwine Léonere
+			Tengel Téoden Téodred Walda Wídfara Wulf 
+		}
+		female_names = {
+			Dernhild Dernwyn Déorhild Déorwyn Elfhild Elfwyn Gléowyn Guthwyn Heruwyn Hild 
+			Holdwyn Léofwyn Éohild Éowyn Téodwyn
+		}
+	}
+
+	culture_wold = {
+		primary = Q01
 		male_names = {
 			Aldor Baldor Baldred Bregdan Brego Brytta
 			Ceorl Déor Déorbrand Déorgar

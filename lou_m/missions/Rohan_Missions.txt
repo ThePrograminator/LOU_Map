@@ -282,9 +282,8 @@ X16_hunt_the_woses = {
 		position = 5
 		provinces_to_highlight = {
 			region = old_pukel_land_region
-			owned_by = ROOT
 			NOT = {
-				culture = ROOT
+				owned_by = ROOT
 			}
 		}
 		trigger = {
@@ -322,19 +321,19 @@ X16_culture_of_west = {
 			area = west_march_area
 			owned_by = ROOT
 			NOT = {
-				culture = ROOT
+				religion = ROOT
 			}
 		}
 		trigger = {
 			gap_of_rohan_area = {
 				type = all
 				owned_by = ROOT
-				culture = ROOT
+				religion = ROOT
 			}
 			west_march_area = {
 				type = all
 				owned_by = ROOT
-				culture = ROOT
+				religion = ROOT
 			}
 		}
 		effect = {
