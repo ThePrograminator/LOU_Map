@@ -1217,22 +1217,19 @@ desolation_of_smaug_lost_effect = {
 				OR = {
 					culture_group = culture_group_dwarves
 					religion = religion_mahal
+					superregion = rhovanion_superregion
+					superregion = forodwaith_superregion
+				}
+				NOT = {
+					region = misty_mountains_region
+					province_id = 3227
+					province_id = 559
 				}
 			}
 	
 			add_core = Y23
 			remove_core = ROOT
 			cede_province = Y23
-		}
-	
-		every_owned_province = {
-			limit = {
-				culture = culture_ymirsfolk
-			}
-	
-			add_core = Y90
-			remove_core = ROOT
-			cede_province = Y90
 		}
 	
 		every_owned_province = {

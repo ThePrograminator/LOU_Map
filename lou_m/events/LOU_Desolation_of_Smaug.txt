@@ -53,6 +53,15 @@ country_event = {
 				size = 4
 				leader = "Smaug The Terrible"
 			}
+			spawn_rebels = {
+				type = smaug_rebels
+				size = 2
+				leader = "Smaug The Terrible"
+			}
+			add_province_modifier = {
+				name = smaug_breached_walls
+				duration = 1825
+			}
 		} 
 	}
 	
@@ -114,19 +123,41 @@ country_event = {
 			limit = {
 				tag = Y22
 			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						superregion = rhovanion_superregion
+						superregion = forodwaith_superregion
+						owned_by = Y22
+					}
+				}
+				kill_units = {
+					who = owner
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = Y22
+			}
 			559 = {
 				add_core = Y22
 				cede_province = Y22
 				#controller = Y22
+				change_culture = root
+				change_religion	= root
 			}
 			3227 = {
 				add_core = Y22
 				cede_province = Y22
 				#controller = Y22
+				change_culture = root
+				change_religion	= root
 			}
 			Y22 = {
 				set_capital = 559
 			}
+			
 		}
 		
 		hidden_effect = {

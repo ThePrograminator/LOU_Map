@@ -321,19 +321,19 @@ X16_culture_of_west = {
 			area = west_march_area
 			owned_by = ROOT
 			NOT = {
-				religion = ROOT
+				culture = ROOT
 			}
 		}
 		trigger = {
 			gap_of_rohan_area = {
 				type = all
 				owned_by = ROOT
-				religion = ROOT
+				culture = ROOT
 			}
 			west_march_area = {
 				type = all
 				owned_by = ROOT
-				religion = ROOT
+				culture = ROOT
 			}
 		}
 		effect = {

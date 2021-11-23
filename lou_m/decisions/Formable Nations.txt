@@ -492,10 +492,24 @@ country_decisions = {
             is_free_or_tributary_trigger = yes
 			is_at_war = no
             NOT = { exists = W94 }
-            capital_scope = {
-				region = dunland_region
-				is_core = ROOT
+			OR = {
+				capital_scope = {
+					region = dunland_region
+					is_core = ROOT
+				}
+				AND = {
+					tag = V95
+					capital_scope = {
+						OR = {
+							region = dunland_region
+							region = rohan_region
+						}
+						
+						is_core = ROOT
+					}
+				}
 			}
+            
 			OR = {
 				num_of_owned_provinces_with = {
 					value = 1

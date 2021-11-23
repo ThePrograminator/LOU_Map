@@ -236,7 +236,7 @@ knights_of_dol_amroth = {
 }
 
 dark_times = {
-	global_unrest = 5
+	global_unrest = 3
 	stability_cost_modifier = 0.5
 	global_foreign_trade_power = -0.2
 }
@@ -244,4 +244,8 @@ dark_times = {
 settling_our_people = {
 	missionaries = 1
 	global_missionary_strength = 0.03
+}
+
+smaug_breached_walls = {
+	local_defensiveness = -0.5
 }
