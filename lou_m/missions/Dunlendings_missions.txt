@@ -81,9 +81,14 @@ Dunlendings_slot_2 = {
 			121 = { owned_by = ROOT }
 		}
 		effect = {
-			add_adm_power = 200
-			add_dip_power = 200
-			add_mil_power = 200
+			#add_adm_power = 200
+			#add_dip_power = 200
+			#add_mil_power = 200
+			add_country_modifier = {
+				name = settling_our_people
+				duration = 7300
+			}
+			add_prestige = 20
 		}
 	}
 
@@ -146,9 +151,32 @@ Dunlendings_slot_3 = {
 		required_missions = { the_fall_of_hammerhand raiding_the_royal_stables claim_the_hornburg }
 		trigger = { }
 		effect = {
-			121 = {
-				add_reform_center = religion_daen
-			}
+			#121 = {
+				if = {
+					limit = {
+						exists = X16
+					}
+					hidden_effect = {
+						X16 = {
+							country_event = {
+								id = LOU_mission_dunland.2
+							}
+						}
+					}
+					tooltip = {
+						X16 = {
+							add_country_modifier = {
+								name = dark_times
+								duration = 7300
+							}
+						}
+					}
+				}
+				else = {
+					add_prestige = 20
+					add_legitimacy = 20
+				}
+			#}
 		}
 	}
 	capital_of_dunland = {

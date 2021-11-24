@@ -237,6 +237,7 @@ dunedain_ideas = {
 dunlending_ideas = {
 	start = {
 		local_hostile_attrition = 1
+		shock_damage = 0.15
 	}
 
 	bonus = {
@@ -249,27 +250,27 @@ dunlending_ideas = {
 	}
 	free = yes		
 	
-	Welcoming_all_tribesmen = {
+	welcoming_all_tribesmen = {
 		manpower_recovery_speed = 0.1
 	}
-	Uniting_the_clans = {
+	uniting_the_clans = {
 		diplomatic_reputation = 1
 		stability_cost_modifier = -0.15
 	}
-	Organizing_the_raids = {
+	organizing_the_raids = {
 		vassal_forcelimit_bonus = 0.5
 	}
-	Circle_of_elders = {
+	circle_of_elders = {
 		advisor_cost = -0.25
 		improve_relation_modifier = 0.1
 	}
-	Maintaining_clan_identities = {
+	maintaining_clan_identities = {
 		liberty_desire = -25
 	}
-	Integrating_the_clans = {
+	integrating_the_clans = {
 		diplomatic_annexation_cost = -0.25
 	}
-	Always_prepared = {
+	always_prepared = {
 		land_maintenance_modifier = -0.1
 	}
 }
@@ -893,7 +894,7 @@ ioriags_ideas = {
 #------------------------------------
 # Clansmen
 #------------------------------------
-Clansmen_ideas = {
+clansmen_ideas = {
 	start = {
 		global_unrest = -2
 		stability_cost_modifier = -0.1
@@ -913,9 +914,8 @@ Clansmen_ideas = {
     travellers_and_cobblers = {
 		trade_efficiency = +0.1
     }
-	
     # Our Towns #
-    Our_towns = {
+    our_towns = {
 		build_cost = -0.1
     }
     # Our Homes # 
@@ -923,20 +923,20 @@ Clansmen_ideas = {
 		garrison_size = 0.25
     }
     # river barges # 
-    River_barges = { 
+    river_barges = { 
 		trade_range_modifier = 0.2
     }
     # Town Elders #
-    Town_elders = {
+    town_elders = {
 		improve_relation_modifier = 0.2
 		diplomatic_reputation = 0.1
     }
     # Great Towns # 
-    Great_Towns = {
+    great_towns = {
 		global_manpower_modifier = 0.2
     }
     # Caravan Guards # 
-    Caravan_guards = {
+    caravan_guards = {
 		land_forcelimit_modifier = 0.1
     }
 }

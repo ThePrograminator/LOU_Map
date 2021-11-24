@@ -258,7 +258,7 @@ lond_angren_2 = {
 		}
 		effect = {
 			370 = {
-				add_trade_node_income = 10
+				add_trade_node_income = 50
 			}
 		}
 	}
@@ -296,7 +296,12 @@ lond_angren_3 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = greater_inland_trade
+				duration = 3650
+			}
+		}
 	}
 }
 
