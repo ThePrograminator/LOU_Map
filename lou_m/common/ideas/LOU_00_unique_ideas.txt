@@ -790,3 +790,46 @@ igath_ideas = {
         discipline = 0.1
     }
 }
+
+#------------------------------------
+# Dunland
+#------------------------------------
+dunland_ideas = {
+	start = {
+		unjustified_demands = -0.5
+	}
+
+	bonus = {
+		discipline = 5 
+	}
+	
+	trigger = {
+		tag = W94
+	}
+	free = yes		
+	
+	reclaiming_our_lands = {
+		ae_impact = -0.2
+	}
+	fueling_the_hatred = {
+		land_morale = 0.1
+	}
+	pikes_and_spears = {
+		shock_damage_received = -0.1
+	}
+	resettling_the_plains = {
+		culture_conversion_cost = -0.25
+	}
+	new_organization = {
+		infantry_power = 0.1 
+		envoy_travel_time = -0.25
+	}
+	advice_from_isengard = {
+		mil_tech_cost_modifier = -0.1 
+		advisor_cost = -0.10
+	}
+	true_heirs_of_calenarghon = {
+		legitimacy = 1
+		prestige = 1
+	}
+}
