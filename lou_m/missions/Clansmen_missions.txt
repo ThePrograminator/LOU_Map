@@ -122,6 +122,17 @@ lond_daer_2 = {
 				value = 1.5
 				duration = 3650
 			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = cardolan_region
+						region = enedhwaith_region
+					}
+					trade_goods = glass
+					owned_by = ROOT
+				}
+				add_base_production = 3
+			}
 		}
 	}
 }
@@ -220,7 +231,7 @@ lond_angren_2 = {
 		}
 		effect = {
 			370 = {
-				add_prosperity = 1
+				add_prosperity = 50
 			} 
 		}
 	}

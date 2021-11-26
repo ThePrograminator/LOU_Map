@@ -1,36 +1,5 @@
 namespace = LOU_mission_dunland
 
-country_event = { #Forgo Dunedain Influence
-	id = LOU_mission_dunland.1
-	title = LOU_mission_dunland.1.t
-	desc = LOU_mission_dunland.1.d
-	picture = ruined_eventpicture
-	
-	fire_only_once = yes 
-	
-	trigger = { 
-		owns = 1455
-		owns = 1861
-		is_at_war = no
-	}
-	mean_time_to_happen = {
-		months = 18
-	}
-	
-	option = { #Tear down dunedain ruins
-		name = LOU_mission_dunland.1.a
-		
-		1455 = {
-			add_base_tax = -2
-			add_base_production = -2
-		}
-		1861 = { 
-			add_base_tax = 2
-			add_base_production = 2
-		} 
-	}
-}
-
 country_event = { #Rohan gets Dark Times
 	id = LOU_mission_dunland.2
 	title = LOU_mission_dunland.2.t

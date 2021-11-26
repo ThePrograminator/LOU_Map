@@ -1,0 +1,286 @@
+dunland_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		tag = W94
+	}
+
+	expel_the_drugu = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	cross_then_angren = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { expel_the_drugu }
+		trigger = { }
+		effect = { }
+	}
+	conquer_andrast = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { cross_then_angren }
+		trigger = { }
+		effect = { }
+	}
+	blood_of_daen = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { conquer_andrast the_white_mountains }
+		trigger = { }
+		effect = { }
+	}
+	conquer_southern_enedwaith = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	southern_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { conquer_southern_enedwaith conquer_northern_enedwaith }
+		trigger = { }
+		effect = { }
+	}
+	peninsula_of_eryn_vorn = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { southern_cardolan }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dunland_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		tag = W94
+	}
+
+	the_white_mountains = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { cross_then_angren }
+		trigger = { }
+		effect = { }
+	}
+	orcs_of_lag_sharak = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	conquer_northern_enedwaith = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	eastern_baranduin_river = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { southern_cardolan }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dunland_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		tag = W94
+	}
+
+	fields_of_dunland = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	cities_of_dunland = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	defense_of_our_cities = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { cities_of_dunland }
+		trigger = { }
+		effect = { }
+	}
+	conquer_gap_of_rohan = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { the_southern_vale }
+		trigger = { }
+		effect = { }
+	}
+	conquer_isengard = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { conquer_gap_of_rohan }
+		trigger = { }
+		effect = { }
+	}
+	northern_rohan = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { western_rohan }
+		trigger = { }
+		effect = { }
+	}
+	goblin_menace = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	orcs_of_eregion = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { orcs_of_lag_sharak goblin_menace }
+		trigger = { }
+		effect = { }
+	}
+	central_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { conquer_southern_enedwaith conquer_northern_enedwaith }
+		trigger = { }
+		effect = { }
+	}
+	reconquest_of_bree = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { northern_cardolan }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dunland_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		tag = W94
+	}
+
+	mines_of_dunland = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	trade_of_the_rivers = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { mines_of_dunland fields_of_dunland }
+		trigger = { }
+		effect = { }
+	}
+	western_rohan = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { conquer_gap_of_rohan }
+		trigger = { }
+		effect = { }
+	}
+	southern_rohan = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { western_rohan }
+		trigger = { }
+		effect = { }
+	}
+	fall_of_rohan = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { southern_rohan }
+		trigger = { }
+		effect = { }
+	}
+	northern_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { conquer_tharbad central_cardolan }
+		trigger = { }
+		effect = { }
+	}
+	elves_of_eregion = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	hill_men_of_rhudaur = {
+		icon = mission_build_up_to_force_limit
+		position = 14
+		required_missions = { elves_of_eregion conquer_en_egladil }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dunland_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		tag = W94
+	}
+
+	wood_of_fangorn = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { western_rohan }
+		trigger = { }
+		effect = { }
+	}
+	conquer_tharbad = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { conquer_southern_enedwaith conquer_northern_enedwaith }
+		trigger = { }
+		effect = { }
+	}
+	dunedain_of_arnor = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { northern_cardolan }
+		trigger = { }
+		effect = { }
+	}
+	conquer_en_egladil = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+}
+

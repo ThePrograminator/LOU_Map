@@ -1,6 +1,6 @@
 Dunlendings_slot_1 = {
 	slot = 1
-	generic = no
+	generic = yes
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
@@ -8,7 +8,7 @@ Dunlendings_slot_1 = {
 
 	warg_hunters = {
 		icon = mission_wargs
-		position = 2
+		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
 			trade_goods = fur
@@ -35,27 +35,35 @@ Dunlendings_slot_1 = {
 			}
 		}
 	}
-	the_southern_vale = {
+	conquer_the_northern_clans = {
 		icon = mission_unite_home_region
-		position = 4
+		position = 3
 		required_missions = {  }
 		provinces_to_highlight = {
-			area = west_march_area
+			OR = {
+				province_id = 1434
+				province_id = 377
+				province_id = 1860
+				province_id = 1469
+				province_id = 288
+				province_id = 1855
+				province_id = 1862
+			}
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			west_march_area = {
-				type = all
-				owned_by = ROOT
-			}
+			1434 = { owned_by = ROOT }
+			377 = { owned_by = ROOT }
+			1860 = { owned_by = ROOT }
+			1469 = { owned_by = ROOT }
+			288 = { owned_by = ROOT }
+			1855 = { owned_by = ROOT }
+			1862 = { owned_by = ROOT }
 		}
 		effect = {
-			gap_of_rohan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = warriors_gather
+				duration = 3600
 			}
 		}
 	}
@@ -67,34 +75,14 @@ Dunlendings_slot_2 = {
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
-	}
-
-	claim_the_hornburg = {
-		icon = mission_hornburg
-		position = 1
-		required_missions = {  }
-		provinces_to_highlight = {
-			province_id = 121
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			121 = { owned_by = ROOT }
-		}
-		effect = {
-			#add_adm_power = 200
-			#add_dip_power = 200
-			#add_mil_power = 200
-			add_country_modifier = {
-				name = settling_our_people
-				duration = 7300
-			}
-			add_prestige = 20
+		NOT = {
+		tag = W94
 		}
 	}
 
 	the_dunlending_port = {
 		icon = mission_galleys_in_port
-		position = 3
+		position = 5
 		required_missions = {  }
 		provinces_to_highlight = {
 			area = andhas_area
@@ -116,20 +104,125 @@ Dunlendings_slot_2 = {
 	}
 }
 
+Dunlendings_common_slot_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+	}
+
+	the_southern_vale = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {  }
+		provinces_to_highlight = {
+			area = west_march_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			west_march_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			gap_of_rohan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	settle_heahyrne = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { the_southern_vale }
+		trigger = { }
+		effect = { }
+	}
+}
+
 Dunlendings_slot_3 = {
 	slot = 3
 	generic = no
 	ai = yes
 	potential = {
-		FROM = {
-			primary_culture = culture_dunlendings
+		primary_culture = culture_dunlendings
+		NOT = {
+		tag = W94
+		}
+	}
+
+	claim_the_hornburg = {
+		icon = mission_hornburg
+		position = 2
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 121
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			121 = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = settling_our_people
+				duration = 7300
+			}
+			add_prestige = 20
+		}
+	}
+	forgo_dunedain_influence = {
+		icon = mission_osgiliath
+		position = 5
+		required_missions = { capital_of_dunland }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1455
+				province_id = 1861
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns = 1455
+			is_core = 1455
+			owns = 1861
+			is_core = 1861
+			is_at_war = no
+		}
+		effect = {
+			1455 = {
+				add_base_tax = -2
+				add_base_production = -2
+			}
+			1861 = {
+				add_base_tax = 2
+				add_base_production = 2
+			}
+		}
+	}
+}
+
+Dunlendings_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		NOT = {
+		tag = W94
 		}
 	}
 
 	the_fall_of_hammerhand = {
 		icon = mission_dunland_3
-		position = 1
-		completed_by = 2759.1.1 
+		position = 2
+		completed_by = 2759.1.1
 		required_missions = {  }
 		trigger = {
 			custom_trigger_tooltip = {
@@ -147,41 +240,39 @@ Dunlendings_slot_3 = {
 	}
 	dunlendings_ascendant = {
 		icon = mission_dunland_2
-		position = 2
-		required_missions = { the_fall_of_hammerhand raiding_the_royal_stables claim_the_hornburg }
+		position = 3
+		required_missions = { claim_the_hornburg the_fall_of_hammerhand raiding_the_royal_stables }
 		trigger = { }
 		effect = {
-			#121 = {
-				if = {
-					limit = {
-						exists = X16
-					}
-					hidden_effect = {
-						X16 = {
-							country_event = {
-								id = LOU_mission_dunland.2
-							}
-						}
-					}
-					tooltip = {
-						X16 = {
-							add_country_modifier = {
-								name = dark_times
-								duration = 7300
-							}
+			if = {
+				limit = {
+					exists = X16
+				}
+				hidden_effect = {
+					X16 = {
+						country_event = {
+							id = LOU_mission_dunland.2
 						}
 					}
 				}
-				else = {
-					add_prestige = 20
-					add_legitimacy = 20
+				tooltip = {
+					X16 = {
+						add_country_modifier = {
+							name = dark_times
+							duration = 7300
+						}
+					}
 				}
-			#}
+			}
+			else = {
+				add_prestige = 20
+				add_legitimacy = 20
+			}
 		}
 	}
 	capital_of_dunland = {
 		icon = mission_colonial
-		position = 3
+		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {
 			area = dunfearan_area
@@ -197,12 +288,21 @@ Dunlendings_slot_3 = {
 		}
 		effect = {
 			add_prestige = 30
+			add_core = 118
+			if = {
+				limit = {
+					NOT = {
+						tag = V95
+					}
+				}
+				set_capital = 1861
+			}
 		}
 	}
 	the_central_clans_united = {
 		icon = mission_dunland_1
-		position = 4
-		required_missions = { the_dunlending_port the_plains_of_talorgan capital_of_dunland }
+		position = 6
+		required_missions = { the_dunlending_port capital_of_dunland the_plains_of_talorgan }
 		trigger = {
 			prestige = 50
 			legitimacy = 80
@@ -215,17 +315,20 @@ Dunlendings_slot_3 = {
 	}
 }
 
-Dunlendings_slot_4 = {
-	slot = 4
+Dunlendings_slot_5 = {
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
+		NOT = {
+		tag = W94
+		}
 	}
 
 	raiding_the_royal_stables = {
 		icon = mission_steppe_warriors
-		position = 1
+		position = 2
 		required_missions = {  }
 		provinces_to_highlight = {
 			province_id = 114
@@ -245,7 +348,7 @@ Dunlendings_slot_4 = {
 	}
 	the_plains_of_talorgan = {
 		icon = mission_sw_against_the_desert
-		position = 3
+		position = 5
 		required_missions = {  }
 		provinces_to_highlight = {
 			area = talorgan_area
@@ -280,9 +383,9 @@ Dunlendings_slot_4 = {
 	}
 }
 
-Dunlendings_slot_5 = {
+Dunlendings_common_slot_5 = {
 	slot = 5
-	generic = no
+	generic = yes
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
@@ -290,7 +393,7 @@ Dunlendings_slot_5 = {
 
 	dwarves_of_dunland = {
 		icon = mission_dwarves_1
-		position = 2
+		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
 			trade_goods = iron
@@ -314,38 +417,6 @@ Dunlendings_slot_5 = {
 			add_country_modifier = {
 				name = dwarven_teachers
 				duration = -1
-			}
-		}
-	}
-	conquer_the_northern_clans = {
-		icon = mission_unite_home_region
-		position = 4
-		required_missions = {  }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1434
-				province_id = 377
-				province_id = 1860
-				province_id = 1469
-				province_id = 288
-				province_id = 1855
-				province_id = 1862
-			}
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			1434 = { owned_by = ROOT }
-			377 = { owned_by = ROOT }
-			1860 = { owned_by = ROOT }
-			1469 = { owned_by = ROOT }
-			288 = { owned_by = ROOT }
-			1855 = { owned_by = ROOT }
-			1862 = { owned_by = ROOT }
-		}
-		effect = {
-			add_country_modifier = {
-				name = warriors_gather
-				duration = 3600
 			}
 		}
 	}
