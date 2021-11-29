@@ -7,53 +7,85 @@ dunland_slot_1 = {
 		tag = W94
 	}
 
-	expel_the_drugu = {
-		icon = mission_build_up_to_force_limit
+	conquer_northern_enedwaith = {
+		icon = mission_unite_home_region
 		position = 4
-		required_missions = {  }
-		trigger = { }
-		effect = { }
-	}
-	cross_then_angren = {
-		icon = mission_build_up_to_force_limit
-		position = 5
-		required_missions = { expel_the_drugu }
-		trigger = { }
-		effect = { }
-	}
-	conquer_andrast = {
-		icon = mission_build_up_to_force_limit
-		position = 6
-		required_missions = { cross_then_angren }
-		trigger = { }
-		effect = { }
-	}
-	blood_of_daen = {
-		icon = mission_build_up_to_force_limit
-		position = 7
-		required_missions = { conquer_andrast the_white_mountains }
-		trigger = { }
-		effect = { }
-	}
-	conquer_southern_enedwaith = {
-		icon = mission_build_up_to_force_limit
-		position = 9
-		required_missions = {  }
-		trigger = { }
+		required_missions = { conquer_the_northern_clans }
+		provinces_to_highlight = {
+			OR = {
+				area = cairg_erp_area
+				area = andhas_area
+				area = tang_area
+				area = swanfleet_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			cairg_erp_area = {
+				type = all
+				owned_by = ROOT
+			}
+			andhas_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tang_area = {
+				type = all
+				owned_by = ROOT
+			}
+			swanfleet_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	southern_cardolan = {
-		icon = mission_build_up_to_force_limit
-		position = 10
-		required_missions = { conquer_southern_enedwaith conquer_northern_enedwaith }
-		trigger = { }
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = { conquer_northern_enedwaith }
+		provinces_to_highlight = {
+			OR = {
+				area = saralainn_area
+				area = lond_daer_area
+				area = minhiriath_area
+				area = rast_arnor_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				OR = {
+					area = saralainn_area
+					area = lond_daer_area
+					area = minhiriath_area
+					area = rast_arnor_area
+				}
+			}
+		}
 		effect = { }
 	}
 	peninsula_of_eryn_vorn = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_woses_8
 		position = 11
-		required_missions = { southern_cardolan }
-		trigger = { }
+		required_missions = { southern_cardolan cross_then_angren }
+		provinces_to_highlight = {
+			area = eryn_vorn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			eryn_vorn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -67,32 +99,199 @@ dunland_slot_2 = {
 		tag = W94
 	}
 
-	the_white_mountains = {
-		icon = mission_build_up_to_force_limit
-		position = 6
-		required_missions = { cross_then_angren }
-		trigger = { }
-		effect = { }
-	}
-	orcs_of_lag_sharak = {
-		icon = mission_build_up_to_force_limit
-		position = 7
+	goblin_menace = {
+		icon = mission_goblin_1
+		position = 3
 		required_missions = {  }
-		trigger = { }
+		provinces_to_highlight = {
+			area = zudrugund_area
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					culture = ROOT
+				}
+			}
+		}
+		trigger = {
+			zudrugund_area = {
+				type = all
+				owned_by = ROOT
+				culture = ROOT
+			}
+		}
 		effect = { }
 	}
-	conquer_northern_enedwaith = {
-		icon = mission_build_up_to_force_limit
+	drive_out_orcs_cardolan = {
+		icon = mission_mordor_1
+		position = 4
+		required_missions = { goblin_menace }
+		provinces_to_highlight = {
+			region = cardolan_region
+			culture = culture_orkish
+		}
+		trigger = {
+			any_province = {
+				region = cardolan_region
+				NOT = {
+					culture = culture_orkish
+				}
+			}
+		}
+		effect = { }
+	}
+	central_cardolan = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = { southern_cardolan conquer_tharbad drive_out_orcs_cardolan }
+		provinces_to_highlight = {
+			OR = {
+				area = balost_area
+				area = creb_durga_area
+				area = caladir_area
+				area = tharbad_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				OR = {
+					area = balost_area
+					area = creb_durga_area
+					area = caladir_area
+					area = tharbad_area
+				}
+			}
+		}
+		effect = { }
+	}
+	northern_cardolan = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = { central_cardolan }
+		provinces_to_highlight = {
+			OR = {
+				area = dol_tinereb_area
+				area = faerdor_area
+				area = tyrn_gorthad_area
+				area = breeland_area
+				area = pinnath_ceren_area
+				area = taur_iaur_area
+				area = lostiriand_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				OR = {
+					area = dol_tinereb_area
+					area = faerdor_area
+					area = tyrn_gorthad_area
+					area = pinnath_ceren_area
+					area = taur_iaur_area
+					area = lostiriand_area
+				}
+			}
+		}
+		effect = { }
+	}
+	reconquest_of_bree = {
+		icon = mission_bree_1
+		position = 8
+		required_missions = { northern_cardolan }
+		provinces_to_highlight = {
+			province_id = 263
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			263 = {
+				owned_by = ROOT
+			}
+		}
+		effect = { }
+	}
+	conquer_southern_enedwaith = {
+		icon = mission_unite_home_region
 		position = 9
 		required_missions = {  }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				area = ethir_gwathlo_area
+				area = dor_wathui_area
+				area = angrast_area
+				area = arilthach_area
+				area = caladach_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			ethir_gwathlo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			dor_wathui_area = {
+				type = all
+				owned_by = ROOT
+			}
+			angrast_area = {
+				type = all
+				owned_by = ROOT
+			}
+			arilthach_area = {
+				type = all
+				owned_by = ROOT
+			}
+			caladach_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
-	eastern_baranduin_river = {
-		icon = mission_build_up_to_force_limit
+	cross_then_angren = {
+		icon = mission_pukel_land
+		position = 10
+		required_missions = { conquer_southern_enedwaith expel_the_drugu }
+		provinces_to_highlight = {
+			region = old_pukel_land_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = old_pukel_land_region
+				owned_by = ROOT
+				value = 15
+			}
+		}
+		effect = { }
+	}
+	conquest_of_andrast = {
+		icon = mission_invade_island
 		position = 11
-		required_missions = { southern_cardolan }
-		trigger = { }
+		required_missions = { cross_then_angren }
+		provinces_to_highlight = {
+			area = andrast_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			andrast_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -106,74 +305,118 @@ dunland_slot_3 = {
 		tag = W94
 	}
 
-	fields_of_dunland = {
-		icon = mission_build_up_to_force_limit
-		position = 1
-		required_missions = {  }
-		trigger = { }
-		effect = { }
-	}
-	cities_of_dunland = {
-		icon = mission_build_up_to_force_limit
-		position = 2
-		required_missions = {  }
-		trigger = { }
-		effect = { }
-	}
-	defense_of_our_cities = {
-		icon = mission_build_up_to_force_limit
-		position = 3
-		required_missions = { cities_of_dunland }
-		trigger = { }
-		effect = { }
-	}
-	conquer_gap_of_rohan = {
-		icon = mission_build_up_to_force_limit
-		position = 4
-		required_missions = { the_southern_vale }
-		trigger = { }
-		effect = { }
-	}
-	conquer_isengard = {
-		icon = mission_build_up_to_force_limit
+	conquer_tharbad = {
+		icon = mission_tharbad
 		position = 5
-		required_missions = { conquer_gap_of_rohan }
-		trigger = { }
+		required_missions = { trade_of_the_rivers }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 170
+				province_id = 677
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			170 = {
+				owned_by = ROOT
+			}
+			677 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
-	northern_rohan = {
-		icon = mission_build_up_to_force_limit
+	raids_of_cardolan = {
+		icon = mission_shire_burning
 		position = 6
-		required_missions = { western_rohan }
+		required_missions = { conquer_tharbad }
 		trigger = { }
 		effect = { }
 	}
-	goblin_menace = {
-		icon = mission_build_up_to_force_limit
+	orcs_of_lag_sharak = {
+		icon = mission_orc_army
 		position = 7
-		required_missions = {  }
-		trigger = { }
+		required_missions = { conquer_isengard }
+		provinces_to_highlight = {
+			area = methedras_area
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					culture = ROOT
+				}
+			}
+		}
+		trigger = {
+			methedras_area = {
+				type = all
+				owned_by = ROOT
+				culture = ROOT
+			}
+		}
 		effect = { }
 	}
-	orcs_of_eregion = {
-		icon = mission_build_up_to_force_limit
+	dunedain_of_arnor = {
+		icon = mission_dunedain_2
 		position = 8
-		required_missions = { orcs_of_lag_sharak goblin_menace }
-		trigger = { }
-		effect = { }
-	}
-	central_cardolan = {
-		icon = mission_build_up_to_force_limit
-		position = 10
-		required_missions = { conquer_southern_enedwaith conquer_northern_enedwaith }
-		trigger = { }
-		effect = { }
-	}
-	reconquest_of_bree = {
-		icon = mission_build_up_to_force_limit
-		position = 12
 		required_missions = { northern_cardolan }
-		trigger = { }
+		provinces_to_highlight = {
+			#superregion = eriador_superregion
+			owned_by = Z06
+		}
+		trigger = { 
+			Z06 = {
+				exists = no
+			}
+		}
+		effect = { }
+	}
+	expel_the_drugu = {
+		icon = mission_woses_7
+		position = 9
+		required_missions = {  }
+		provinces_to_highlight = {
+			region = dunland_region
+			culture_group = culture_group_drughu
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			dunland_region = {
+				type = all
+				NOT = {
+					culture_group = culture_group_drughu
+				}
+			}
+		}
+		effect = { }
+	}
+	blood_of_daen = {
+		icon = mission_wildmen_1
+		position = 12
+		required_missions = { the_white_mountains conquest_of_andrast }
+		provinces_to_highlight = {
+			OR = {
+				region = pinnath_gelin_region
+				region = erech_region
+				region = lamedon_region
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 35
+				OR = {
+					region = pinnath_gelin_region
+					region = erech_region
+					region = lamedon_region
+				}
+			}
+		}
 		effect = { }
 	}
 }
@@ -187,60 +430,114 @@ dunland_slot_4 = {
 		tag = W94
 	}
 
-	mines_of_dunland = {
-		icon = mission_build_up_to_force_limit
-		position = 1
-		required_missions = {  }
-		trigger = { }
-		effect = { }
-	}
-	trade_of_the_rivers = {
-		icon = mission_build_up_to_force_limit
-		position = 2
-		required_missions = { mines_of_dunland fields_of_dunland }
-		trigger = { }
-		effect = { }
-	}
-	western_rohan = {
-		icon = mission_build_up_to_force_limit
-		position = 5
-		required_missions = { conquer_gap_of_rohan }
-		trigger = { }
-		effect = { }
-	}
-	southern_rohan = {
-		icon = mission_build_up_to_force_limit
+	conquer_isengard = {
+		icon = mission_isengard_8
 		position = 6
-		required_missions = { western_rohan }
-		trigger = { }
+		required_missions = { conquer_gap_of_rohan }
+		provinces_to_highlight = {
+			area = nan_curunir_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			nan_curunir_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
-	fall_of_rohan = {
-		icon = mission_build_up_to_force_limit
+	wood_of_fangorn = {
+		icon = mission_fangorn_1
 		position = 7
-		required_missions = { southern_rohan }
-		trigger = { }
+		required_missions = { conquer_isengard }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 64
+				province_id = 70
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+					has_building = manufactory
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				64 = {
+					owned_by = ROOT
+					is_core = ROOT
+					custom_trigger_tooltip = {
+						tooltip = tooltip_mills_on_province
+						has_building = manufactory
+					}
+				}
+				70 = {
+					owned_by = ROOT
+					is_core = ROOT
+					custom_trigger_tooltip = {
+						tooltip = tooltip_mills_on_province
+						has_building = manufactory
+					}
+				}
+			}
+		}
 		effect = { }
 	}
-	northern_cardolan = {
-		icon = mission_build_up_to_force_limit
+	northern_rohan = {
+		icon = mission_dunland_3
+		position = 8
+		required_missions = { western_rohan }
+		provinces_to_highlight = {
+			OR = {
+				area = eastemnet_area
+				area = the_wold_area
+				area = parth_galen_area
+				area = entwade_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = eastemnet_area
+					area = the_wold_area
+					area = parth_galen_area
+					area = entwade_area
+				}
+			}
+		}
+		effect = { }
+	}
+	the_white_mountains = {
+		icon = mission_gondor_13
 		position = 11
-		required_missions = { conquer_tharbad central_cardolan }
-		trigger = { }
-		effect = { }
-	}
-	elves_of_eregion = {
-		icon = mission_build_up_to_force_limit
-		position = 13
-		required_missions = {  }
-		trigger = { }
-		effect = { }
-	}
-	hill_men_of_rhudaur = {
-		icon = mission_build_up_to_force_limit
-		position = 14
-		required_missions = { elves_of_eregion conquer_en_egladil }
-		trigger = { }
+		required_missions = { cross_then_angren }
+		provinces_to_highlight = {
+			OR = {
+				area = nan_lefnui_area
+				area = nan_i_feryth_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			nan_lefnui_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nan_i_feryth_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -254,32 +551,87 @@ dunland_slot_5 = {
 		tag = W94
 	}
 
-	wood_of_fangorn = {
-		icon = mission_build_up_to_force_limit
-		position = 6
+	conquer_gap_of_rohan = {
+		icon = mission_rohan_1
+		position = 5
+		required_missions = { the_southern_vale }
+		provinces_to_highlight = {
+			area = gap_of_rohan_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			gap_of_rohan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { }
+	}
+	western_rohan = {
+		icon = mission_hornburg
+		position = 7
+		required_missions = { conquer_gap_of_rohan }
+		provinces_to_highlight = {
+			OR = {
+				area = westfold_area
+				area = westemnet_area
+				area = kings_land_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = westfold_area
+					area = westemnet_area
+					area = kings_land_area
+				}
+			}
+		}
+		effect = { }
+	}
+	southern_rohan = {
+		icon = mission_rohan_2
+		position = 8
 		required_missions = { western_rohan }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				area = eastfold_area
+				area = fenmark_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			eastfold_area = {
+				type = all
+				owned_by = ROOT
+			}
+			fenmark_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
-	conquer_tharbad = {
-		icon = mission_build_up_to_force_limit
-		position = 10
-		required_missions = { conquer_southern_enedwaith conquer_northern_enedwaith }
-		trigger = { }
-		effect = { }
-	}
-	dunedain_of_arnor = {
-		icon = mission_build_up_to_force_limit
-		position = 12
-		required_missions = { northern_cardolan }
-		trigger = { }
-		effect = { }
-	}
-	conquer_en_egladil = {
-		icon = mission_build_up_to_force_limit
-		position = 13
-		required_missions = {  }
-		trigger = { }
+	fall_of_rohan = {
+		icon = mission_isengard_3
+		position = 9
+		required_missions = { northern_rohan southern_rohan }
+		provinces_to_highlight = {
+			owned_by = X16
+		}
+		trigger = { 
+			X16 = {
+				exists = no
+			}
+		}
 		effect = { }
 	}
 }

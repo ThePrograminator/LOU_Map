@@ -115,5 +115,5 @@ tags={
 	"Expansion"
 }
 name="Lord of Universalis 2"
-supported_version="1.30.*"
+supported_version="1.32.*"
 remote_file_id="2095475587"

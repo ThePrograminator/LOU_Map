@@ -1,180 +1,14 @@
 Dunlendings_slot_1 = {
 	slot = 1
-	generic = yes
-	ai = yes
-	potential = {
-		primary_culture = culture_dunlendings
-	}
-
-	warg_hunters = {
-		icon = mission_wargs
-		position = 1
-		required_missions = {  }
-		provinces_to_highlight = {
-			trade_goods = fur
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				trade_goods = fur
-				value = 6
-			}
-		}
-		effect = {
-			change_price = {
-				trade_goods = fur
-				key = warg_furs
-				value = 0.5
-				duration = 3650
-			}
-			add_country_modifier = {
-				name = experienced_hunters
-				duration = -1
-			}
-		}
-	}
-	conquer_the_northern_clans = {
-		icon = mission_unite_home_region
-		position = 3
-		required_missions = {  }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1434
-				province_id = 377
-				province_id = 1860
-				province_id = 1469
-				province_id = 288
-				province_id = 1855
-				province_id = 1862
-			}
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			1434 = { owned_by = ROOT }
-			377 = { owned_by = ROOT }
-			1860 = { owned_by = ROOT }
-			1469 = { owned_by = ROOT }
-			288 = { owned_by = ROOT }
-			1855 = { owned_by = ROOT }
-			1862 = { owned_by = ROOT }
-		}
-		effect = {
-			add_country_modifier = {
-				name = warriors_gather
-				duration = 3600
-			}
-		}
-	}
-}
-
-Dunlendings_slot_2 = {
-	slot = 2
 	generic = no
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
 		NOT = {
-		tag = W94
+			tag = W94
 		}
 	}
 
-	the_dunlending_port = {
-		icon = mission_galleys_in_port
-		position = 5
-		required_missions = {  }
-		provinces_to_highlight = {
-			area = andhas_area
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		trigger = {
-			andhas_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			1502 = {
-				center_of_trade = 1
-			}
-		}
-	}
-}
-
-Dunlendings_common_slot_2 = {
-	slot = 2
-	generic = yes
-	ai = yes
-	potential = {
-		primary_culture = culture_dunlendings
-	}
-
-	the_southern_vale = {
-		icon = mission_unite_home_region
-		position = 3
-		required_missions = {  }
-		provinces_to_highlight = {
-			area = west_march_area
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			west_march_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			gap_of_rohan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	settle_heahyrne = {
-		icon = mission_build_up_to_force_limit
-		position = 4
-		required_missions = { the_southern_vale }
-		trigger = { }
-		effect = { }
-	}
-}
-
-Dunlendings_slot_3 = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		primary_culture = culture_dunlendings
-		NOT = {
-		tag = W94
-		}
-	}
-
-	claim_the_hornburg = {
-		icon = mission_hornburg
-		position = 2
-		required_missions = {  }
-		provinces_to_highlight = {
-			province_id = 121
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			121 = { owned_by = ROOT }
-		}
-		effect = {
-			add_country_modifier = {
-				name = settling_our_people
-				duration = 7300
-			}
-			add_prestige = 20
-		}
-	}
 	forgo_dunedain_influence = {
 		icon = mission_osgiliath
 		position = 5
@@ -206,70 +40,41 @@ Dunlendings_slot_3 = {
 			}
 		}
 	}
+	the_dunlending_port = {
+		icon = mission_galleys_in_port
+		position = 6
+		required_missions = {  }
+		provinces_to_highlight = {
+			area = andhas_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			andhas_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			1502 = {
+				center_of_trade = 1
+			}
+		}
+	}
 }
 
-Dunlendings_slot_4 = {
-	slot = 4
+Dunlendings_slot_2 = {
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
 		NOT = {
-		tag = W94
+			tag = W94
 		}
 	}
 
-	the_fall_of_hammerhand = {
-		icon = mission_dunland_3
-		position = 2
-		completed_by = 2759.1.1
-		required_missions = {  }
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = rohan_has_helm_as_ruler_tooltip
-				X16 = {
-					NOT = {
-						has_ruler_flag = HELM_IS_RULER_FLAG
-					}
-				}
-			}
-		}
-		effect = {
-			add_manpower = 20
-		}
-	}
-	dunlendings_ascendant = {
-		icon = mission_dunland_2
-		position = 3
-		required_missions = { claim_the_hornburg the_fall_of_hammerhand raiding_the_royal_stables }
-		trigger = { }
-		effect = {
-			if = {
-				limit = {
-					exists = X16
-				}
-				hidden_effect = {
-					X16 = {
-						country_event = {
-							id = LOU_mission_dunland.2
-						}
-					}
-				}
-				tooltip = {
-					X16 = {
-						add_country_modifier = {
-							name = dark_times
-							duration = 7300
-						}
-					}
-				}
-			}
-			else = {
-				add_prestige = 20
-				add_legitimacy = 20
-			}
-		}
-	}
 	capital_of_dunland = {
 		icon = mission_colonial
 		position = 4
@@ -301,7 +106,7 @@ Dunlendings_slot_4 = {
 	}
 	the_central_clans_united = {
 		icon = mission_dunland_1
-		position = 6
+		position = 7
 		required_missions = { the_dunlending_port capital_of_dunland the_plains_of_talorgan }
 		trigger = {
 			prestige = 50
@@ -315,40 +120,39 @@ Dunlendings_slot_4 = {
 	}
 }
 
-Dunlendings_slot_5 = {
-	slot = 5
+Dunlendings_slot_3 = {
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
 		primary_culture = culture_dunlendings
 		NOT = {
-		tag = W94
+			tag = W94
 		}
 	}
 
-	raiding_the_royal_stables = {
-		icon = mission_steppe_warriors
-		position = 2
+	claim_the_hornburg = {
+		icon = mission_hornburg
+		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {
-			province_id = 114
-			NOT = {
-				owned_by = ROOT
-			}
+			province_id = 121
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			controls = 114
+			121 = { owned_by = ROOT }
 		}
 		effect = {
 			add_country_modifier = {
-				name = raided_horses
-				duration = 3650
+				name = settling_our_people
+				duration = 7300
 			}
+			add_prestige = 20
 		}
 	}
 	the_plains_of_talorgan = {
 		icon = mission_sw_against_the_desert
-		position = 5
+		position = 6
 		required_missions = {  }
 		provinces_to_highlight = {
 			area = talorgan_area
@@ -383,7 +187,104 @@ Dunlendings_slot_5 = {
 	}
 }
 
-Dunlendings_common_slot_5 = {
+Dunlendings_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		NOT = {
+			tag = W94
+		}
+	}
+
+	the_fall_of_hammerhand = {
+		icon = mission_dunland_3
+		position = 4
+		completed_by = 2759.1.1
+		required_missions = {  }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = rohan_has_helm_as_ruler_tooltip
+				X16 = {
+					NOT = {
+						has_ruler_flag = HELM_IS_RULER_FLAG
+					}
+				}
+			}
+		}
+		effect = {
+			add_manpower = 20
+		}
+	}
+	dunlendings_ascendant = {
+		icon = mission_dunland_2
+		position = 5
+		required_missions = { claim_the_hornburg the_fall_of_hammerhand raiding_the_royal_stables }
+		trigger = { }
+		effect = {
+			if = {
+				limit = {
+					exists = X16
+				}
+				hidden_effect = {
+					X16 = {
+						country_event = {
+							id = LOU_mission_dunland.2
+						}
+					}
+				}
+				tooltip = {
+					X16 = {
+						add_country_modifier = {
+							name = dark_times
+							duration = 7300
+						}
+					}
+				}
+			}
+			else = {
+				add_prestige = 20
+				add_legitimacy = 20
+			}
+		}
+	}
+}
+
+Dunlendings_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+		NOT = {
+			tag = W94
+		}
+	}
+
+	raiding_the_royal_stables = {
+		icon = mission_steppe_warriors
+		position = 4
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 114
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			controls = 114
+		}
+		effect = {
+			add_country_modifier = {
+				name = raided_horses
+				duration = 3650
+			}
+		}
+	}
+}
+
+Dunlendings_generic_slot_5 = {
 	slot = 5
 	generic = yes
 	ai = yes
@@ -417,6 +318,365 @@ Dunlendings_common_slot_5 = {
 			add_country_modifier = {
 				name = dwarven_teachers
 				duration = -1
+			}
+		}
+	}
+	the_southern_vale = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {  }
+		provinces_to_highlight = {
+			area = west_march_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			west_march_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			gap_of_rohan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+Dunledings_generic_slot_4 = {
+	slot = 4
+	generic = yes
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+	}
+
+	mines_of_dunland = {
+		icon = mission_mine
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				region = dunland_region
+				region = enedhwaith_region
+				region = rohan_region
+			}
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					has_building = workshop_building
+				}
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+				}
+				OR = {
+					region = dunland_region
+					region = enedhwaith_region
+					region = rohan_region
+				}
+				has_building = workshop_building
+				value = 3
+			}
+		}
+		effect = { }
+	}
+	settle_heahyrne = {
+		icon = mission_woses_4
+		position = 3
+		required_missions = { the_southern_vale mines_of_dunland }
+		trigger = {
+			3951 = {
+				has_building = settlement_building
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			3951 = {
+				add_province_modifier = {
+					name = increased_production
+					duration = 7300
+				}
+				add_base_production = 3
+			}
+		}
+	}
+}
+
+Dunlendings_generic_slot_3 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+	}
+
+	fields_of_dunland = {
+		icon = mission_have_manufactories
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				region = dunland_region
+				region = enedhwaith_region
+				region = rohan_region
+			}
+			trade_goods = grain
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					has_building = workshop_building
+				}
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				trade_goods = grain
+				OR = {
+					region = dunland_region
+					region = enedhwaith_region
+					region = rohan_region
+				}
+				has_building = workshop_building
+				value = 5
+			}
+		}
+		effect = { }
+	}
+	trade_of_the_rivers = {
+		icon = mission_ne_birch_bark_canoes
+		position = 2
+		required_missions = { warg_hunters fields_of_dunland mines_of_dunland }
+		provinces_to_highlight = {
+			OR = {
+				region =  cardolan_region
+				region = enedhwaith_region
+				region = dunland_region
+				region = old_pukel_land_region
+				region = rohan_region
+			}
+			has_province_modifier = river_estuary_modifier
+			NOT = {
+				owned_by = ROOT
+				has_building = city_1_building
+				has_building = marketplace_building
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				OR = {
+					region =  cardolan_region
+					region = enedhwaith_region
+					region = dunland_region
+					region = old_pukel_land_region
+					region = rohan_region
+				}
+				has_province_modifier = river_estuary_modifier
+				has_building = city_1_building
+				has_building = marketplace_building
+				value = 4
+			}
+		}
+		effect = { }
+	}
+}
+
+Dunlendings_generic_slot_2 = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+	}
+
+	warg_hunters = {
+		icon = mission_wargs
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				region = dunland_region
+				region = enedhwaith_region
+				region = rohan_region
+				region = old_pukel_land_region
+			}
+			trade_goods = fur
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = fur
+				OR = {
+					region = dunland_region
+					region = enedhwaith_region
+					region = rohan_region
+					region = old_pukel_land_region
+				}
+				value = 6
+			}
+		}
+		effect = {
+			change_price = {
+				trade_goods = fur
+				key = warg_furs
+				value = 0.5
+				duration = 3650
+			}
+			add_country_modifier = {
+				name = experienced_hunters
+				duration = -1
+			}
+		}
+	}
+}
+
+Dunlendings_generic_slot_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		primary_culture = culture_dunlendings
+	}
+
+	cities_of_dunland = {
+		icon = mission_colonial
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			has_terrain = unique_dunland_town
+			OR = {
+				region = dunland_region
+				region = enedhwaith_region
+			}
+			NOT = {
+				AND = {
+					development = 25
+					owned_by = ROOT
+					OR = {
+						has_building = city_2_building
+						has_building = city_3_building
+						has_building = capital_2_building
+						has_building = capital_3_building
+						has_building = fortress_2_building
+						has_building = fortress_3_building
+					}
+				}
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				has_terrain = unique_dunland_town
+				OR = {
+					region = dunland_region
+					region = enedhwaith_region
+				}
+				OR = {
+					has_building = city_2_building
+					has_building = city_3_building
+					has_building = capital_2_building
+					has_building = capital_3_building
+					has_building = fortress_2_building
+					has_building = fortress_3_building
+				}
+				development = 25
+				value = 3
+			}
+		}
+		effect = { }
+	}
+	defenses_of_our_cities = {
+		icon = mission_ne_palisades
+		position = 2
+		required_missions = { cities_of_dunland }
+		provinces_to_highlight = {
+			has_terrain = unique_dunland_town
+			OR = {
+				region = dunland_region
+				region = enedhwaith_region
+			}
+			NOT = {
+				AND = {
+					development = 25
+					owned_by = ROOT
+					OR = {
+						has_building = city_2_building
+						has_building = city_3_building
+						has_building = capital_2_building
+						has_building = capital_3_building
+						has_building = fortress_2_building
+						has_building = fortress_3_building
+					}
+					has_building = army_camp_building
+					has_building = fort_castle_building
+				}
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				has_terrain = unique_dunland_town
+				OR = {
+					region = dunland_region
+					region = enedhwaith_region
+				}
+				OR = {
+					has_building = city_2_building
+					has_building = city_3_building
+					has_building = capital_2_building
+					has_building = capital_3_building
+					has_building = fortress_2_building
+					has_building = fortress_3_building
+				}
+				development = 25
+				has_building = army_camp_building
+				has_building = fort_castle_building
+				value = 3
+			}
+		}
+		effect = { }
+	}
+	conquer_the_northern_clans = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1434
+				province_id = 377
+				province_id = 1860
+				province_id = 1469
+				province_id = 288
+				province_id = 1855
+				province_id = 1862
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			1434 = { owned_by = ROOT }
+			377 = { owned_by = ROOT }
+			1860 = { owned_by = ROOT }
+			1469 = { owned_by = ROOT }
+			288 = { owned_by = ROOT }
+			1855 = { owned_by = ROOT }
+			1862 = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = warriors_gather
+				duration = 3600
 			}
 		}
 	}

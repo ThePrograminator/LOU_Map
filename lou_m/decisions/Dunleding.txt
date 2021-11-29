@@ -1,0 +1,48 @@
+country_decisions = {
+	
+	settle_heahyrne_decision = {
+	
+		potential = {
+			primary_culture = culture_dunlendings
+			any_owned_province = {
+				area = west_march_area
+			}
+			3951 = {
+				is_empty = yes
+			}
+		}
+		
+		allow = {
+			primary_culture = culture_dunlendings
+			treasury = 300
+			
+			west_march_area = {
+				type = all
+				owned_by = ROOT
+			}
+			3951 = {
+				is_empty = yes
+			}
+		}
+		
+		effect = {	
+			add_treasury = -300
+			
+			3951 = {
+				cede_province = ROOT
+				add_core = ROOT
+				change_trade_goods = stone
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					treasury = 500
+				}
+			}
+		}
+	}
+}

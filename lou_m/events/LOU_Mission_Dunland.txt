@@ -22,3 +22,43 @@ country_event = { #Rohan gets Dark Times
 		}
 	}
 }
+
+country_event = { #Debug for changin to Dunland
+	id = LOU_mission_dunland.3
+	title = LOU_mission_dunland.3.t
+	desc = LOU_mission_dunland.3.d
+	picture = ruined_eventpicture
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+	
+	trigger = { 
+		
+	}
+	
+	option = { #Oh no
+		name = LOU_mission_dunland.3.a
+		
+		change_tag = W94
+		W94 = {
+			set_capital = 1861		# Annunimas
+		}
+		
+		add_prestige = 50
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+		
+		change_government = monarchy
+		add_government_reform = dunland_kingdom_reform
+		swap_non_generic_missions = yes
+		
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+}
+
+
