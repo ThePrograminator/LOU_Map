@@ -391,7 +391,21 @@ Dunledings_generic_slot_4 = {
 				value = 3
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					has_terrain = unique_dunland_town
+					OR = {
+						region = dunland_region
+						region = enedhwaith_region
+					}
+				}
+				add_province_modifier = {
+					name = promising_mines
+					duration = 7300
+				}
+			}
+		}
 	}
 	settle_heahyrne = {
 		icon = mission_woses_4
@@ -469,9 +483,11 @@ Dunlendings_generic_slot_3 = {
 			}
 			has_province_modifier = river_estuary_modifier
 			NOT = {
-				owned_by = ROOT
-				has_building = city_1_building
-				has_building = marketplace_building
+				AND = {
+					owned_by = ROOT
+					has_building = city_1_building
+					has_building = marketplace_building
+				}
 			}
 		}
 		trigger = { 
@@ -489,7 +505,12 @@ Dunlendings_generic_slot_3 = {
 				value = 4
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = trade_of_the_rivers
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -596,7 +617,21 @@ Dunlendings_generic_slot_1 = {
 				value = 3
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					has_terrain = unique_dunland_town
+					OR = {
+						region = dunland_region
+						region = enedhwaith_region
+					}
+				}
+				add_province_modifier = {
+					name = promising_cities
+					duration = 7300
+				}
+			}
+		}
 	}
 	defenses_of_our_cities = {
 		icon = mission_ne_palisades
@@ -646,7 +681,13 @@ Dunlendings_generic_slot_1 = {
 				value = 3
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 100
+			add_country_modifier = {
+				name = impressive_defenses
+				duration = 3650
+			}
+		}
 	}
 	conquer_the_northern_clans = {
 		icon = mission_unite_home_region
