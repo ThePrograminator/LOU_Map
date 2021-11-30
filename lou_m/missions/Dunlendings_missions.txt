@@ -392,19 +392,33 @@ Dunledings_generic_slot_4 = {
 			}
 		}
 		effect = { 
-			every_owned_province = {
-				limit = {
-					has_terrain = unique_dunland_town
-					OR = {
-						region = dunland_region
-						region = enedhwaith_region
-					}
-				}
+			tooltip = {
+				custom_tooltip = DUNLEDING_MINS_OF_DUNLAND
 				add_province_modifier = {
 					name = promising_mines
 					duration = 7300
 				}
 			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							trade_goods = iron
+							trade_goods = copper
+						}
+						OR = {
+							region = dunland_region
+							region = enedhwaith_region
+							region = rohan_region
+						}
+					}
+					add_province_modifier = {
+						name = promising_mines
+						duration = 7300
+					}
+				}
+			}
+			
 		}
 	}
 	settle_heahyrne = {
@@ -467,7 +481,22 @@ Dunlendings_generic_slot_3 = {
 				value = 5
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					trade_goods = grain
+					OR = {
+						region = dunland_region
+						region = enedhwaith_region
+						region = rohan_region
+					}
+				}
+				add_province_modifier = {
+					name = promising_fields
+					duration = 7300
+				}
+			}
+		}
 	}
 	trade_of_the_rivers = {
 		icon = mission_ne_birch_bark_canoes
@@ -621,6 +650,7 @@ Dunlendings_generic_slot_1 = {
 			every_owned_province = {
 				limit = {
 					has_terrain = unique_dunland_town
+					owned_by = ROOT
 					OR = {
 						region = dunland_region
 						region = enedhwaith_region

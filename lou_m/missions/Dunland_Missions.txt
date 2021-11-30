@@ -40,7 +40,13 @@ dunland_slot_1 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 100
+			add_country_modifier = {
+				name = coring_enedwaith
+				duration = 3650
+			}
+		}
 	}
 	southern_cardolan = {
 		icon = mission_unite_home_region
@@ -68,7 +74,12 @@ dunland_slot_1 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = entering_cardolan
+				duration = 7300
+			}
+		}
 	}
 	peninsula_of_eryn_vorn = {
 		icon = mission_woses_8
@@ -86,7 +97,33 @@ dunland_slot_1 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			eryn_vorn_area = {
+				add_province_modifier = {
+					name = bringing_down_resistance
+					duration = 7300
+				}
+			}
+			
+			tooltip = {
+				custom_tooltip = W94_WOOD_PRODUCTION
+				add_province_modifier = {
+					name = wood_production
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				eryn_vorn_area = {
+					limit = {
+						trade_goods = tropical_wood
+					}
+					add_province_modifier = {
+						name = wood_production
+						duration = 7300
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -121,9 +158,23 @@ dunland_slot_2 = {
 		}
 		effect = { 
 			add_mil_power = 100
-			add_country_modifier = {
-				name = mountain_tactics
-				duration = 3650
+			tooltip = {
+				custom_tooltip = W94_DUNLAND_IS_SAFE
+				add_province_modifier = {
+					name = dunland_is_safe
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = dunland_region
+					}
+					add_province_modifier = {
+						name = dunland_is_safe
+						duration = 7300
+					}
+				}
 			}
 		}
 	}
@@ -143,7 +194,27 @@ dunland_slot_2 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			tooltip = {
+				custom_tooltip = W94_CARDOLAN_IS_SAFE
+				add_province_modifier = {
+					name = cardolan_is_safe
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = cardolan_region
+						owned_by = ROOT
+					}
+					add_province_modifier = {
+						name = cardolan_is_safe
+						duration = 7300
+					}
+				}
+			}
+		}
 	}
 	central_cardolan = {
 		icon = mission_unite_home_region
@@ -171,7 +242,12 @@ dunland_slot_2 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = conquest_of_cardolan
+				duration = 7300
+			}
+		}
 	}
 	northern_cardolan = {
 		icon = mission_unite_home_region
@@ -204,7 +280,12 @@ dunland_slot_2 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = road_to_bree
+				duration = 7300
+			}
+		}
 	}
 	reconquest_of_bree = {
 		icon = mission_bree_1
@@ -221,7 +302,10 @@ dunland_slot_2 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_treasury = 300
+			add_prestige = 50
+		}
 	}
 	conquer_southern_enedwaith = {
 		icon = mission_unite_home_region
@@ -261,7 +345,13 @@ dunland_slot_2 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 100
+			add_country_modifier = {
+				name = coring_enedwaith
+				duration = 3650
+			}
+		}
 	}
 	cross_then_angren = {
 		icon = mission_pukel_land
@@ -280,7 +370,29 @@ dunland_slot_2 = {
 				value = 15
 			}
 		}
-		effect = { }
+		effect = { 
+			nan_i_feryth_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nan_lefnui_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			andrast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	conquest_of_andrast = {
 		icon = mission_invade_island
@@ -298,7 +410,10 @@ dunland_slot_2 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 100
+			add_prestige = 25
+		}
 	}
 }
 
@@ -349,13 +464,21 @@ dunland_slot_3 = {
 			}
 		}
 	}
-	raids_of_cardolan = {
+	looting_of_cardolan = {
 		icon = mission_shire_burning
 		position = 6
 		required_missions = { conquer_tharbad }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			check_variable = {
+				which = W94lootedAmount_VAR
+				value = 10
+			}
+		}
+		effect = { 
+			add_treasury = 500
+		}
 	}
+
 	orcs_of_lag_sharak = {
 		icon = mission_orc_army
 		position = 7
@@ -376,7 +499,13 @@ dunland_slot_3 = {
 				culture = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 100
+			add_country_modifier = {
+				name = mountain_tactics
+				duration = 3650
+			}
+		}
 	}
 	dunedain_of_arnor = {
 		icon = mission_dunedain_2
@@ -391,7 +520,10 @@ dunland_slot_3 = {
 				exists = no
 			}
 		}
-		effect = { }
+		effect = { 
+			add_legitimacy = 50
+			add_prestige = 50
+		}
 	}
 	expel_the_drugu = {
 		icon = mission_woses_7
@@ -412,7 +544,31 @@ dunland_slot_3 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			tooltip = {
+				custom_tooltip = W94_THE_FOREST_IS_SAFE
+				add_province_modifier = {
+					name = the_forest_is_safe
+					duration = 3650
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = morbet_area
+							area = fidach_area
+							area = coit_cerdd_area
+							area = undrost_area
+						} 
+					}
+					add_province_modifier = {
+						name = the_forest_is_safe
+						duration = 3650
+					}
+				}
+			}
+		}
 	}
 	blood_of_daen = {
 		icon = mission_wildmen_1
@@ -438,7 +594,15 @@ dunland_slot_3 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_legitimacy = 50
+			add_prestige = 50
+			add_mil_power =200
+			add_country_modifier = {
+				name = victory_over_gondor
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -467,7 +631,11 @@ dunland_slot_4 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
 	}
 	wood_of_fangorn = {
 		icon = mission_fangorn_1
@@ -506,7 +674,21 @@ dunland_slot_4 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_treasury = 200
+			64 = {
+				add_province_modifier = {
+					name = wood_production_of_fangorn
+					duration = -1
+				}
+			}
+			70 = {
+				add_province_modifier = {
+					name = wood_production_of_fangorn
+					duration = -1
+				}
+			}
+		}
 	}
 	northern_rohan = {
 		icon = mission_dunland_3
@@ -534,7 +716,10 @@ dunland_slot_4 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 20
+			add_stability = 1
+		}
 	}
 	the_white_mountains = {
 		icon = mission_gondor_13
@@ -559,7 +744,30 @@ dunland_slot_4 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			tooltip = {
+				custom_tooltip = W94_WHITE_MOUNTAINS
+				add_province_modifier = {
+					name = white_mountains
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = nan_lefnui_area
+							area = nan_i_feryth_area
+						}
+						owned_by = ROOT
+					}
+					add_province_modifier = {
+						name = white_mountains
+						duration = 7300
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -643,7 +851,29 @@ dunland_slot_5 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			tooltip = {
+				custom_tooltip = W94_CONQUEST_OF_ROHAN
+				add_province_modifier = {
+					name = conquest_of_rohan
+					duration = 18250
+				}
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						region = rohan_region
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_province_modifier = {
+						name = conquest_of_rohan
+						duration = 18250
+					}
+				}
+			}
+		}
 	}
 	southern_rohan = {
 		icon = mission_rohan_2
@@ -668,7 +898,10 @@ dunland_slot_5 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 20
+			add_stability = 1
+		}
 	}
 	fall_of_rohan = {
 		icon = mission_isengard_3
@@ -682,7 +915,15 @@ dunland_slot_5 = {
 				exists = no
 			}
 		}
-		effect = { }
+		effect = { 
+			add_legitimacy = 50
+			add_prestige = 50
+			add_mil_power = 200
+			add_country_modifier = {
+				name = victory_over_rohan
+				duration = -1
+			}
+		}
 	}
 }
 

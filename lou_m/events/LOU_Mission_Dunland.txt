@@ -42,6 +42,10 @@ country_event = { #Debug for changin to Dunland
 		change_tag = W94
 		W94 = {
 			set_capital = 1861		# Annunimas
+			set_variable = {
+				which = W94lootedAmount_VAR
+				value = 0
+			}
 		}
 		
 		add_prestige = 50
@@ -61,4 +65,34 @@ country_event = { #Debug for changin to Dunland
 	}
 }
 
+province_event = { #Counting Loot
+	id = LOU_mission_dunland.4
+	title = LOU_mission_dunland.4.t
+	desc = LOU_mission_dunland.4.d
+	picture = ruined_eventpicture
 
+	hidden = yes
+	
+	trigger = { 
+		region = cardolan_region
+		is_looted = yes
+		num_of_units_in_province = {
+			who = W94
+			amount = 1
+		}
+		NOT ={
+			owned_by = W94
+		}
+	}
+	
+	option = { #Oh no
+		name = LOU_mission_dunland.3.a
+		
+		W94 = {
+			change_variable  = {
+				which = W94lootedAmount_VAR
+				value = 1
+			}
+		}
+	}
+}

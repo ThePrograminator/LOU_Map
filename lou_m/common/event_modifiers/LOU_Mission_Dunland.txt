@@ -3,5 +3,73 @@ trade_of_tharbad = {
 }
 
 mountain_tactics = {
-	military_tactics = 0.15
+	army_tradition = 1
+}
+
+coring_enedwaith = {
+	core_creation = -0.2
+}
+
+entering_cardolan = {
+	unjustified_demands = -0.2
+	province_warscore_cost = -0.2
+	ae_impact = -0.2
+}
+
+bringing_down_resistance = {
+	local_unrest = -1
+	local_missionary_strength = 0.03
+}
+
+wood_production = {
+	local_production_efficiency = 0.25
+	trade_goods_size_modifier = 0.50
+}
+
+cardolan_is_safe = {
+	local_tax_modifier = 0.25
+	local_unrest = -1
+	local_years_of_nationalism = -5
+}
+
+conquest_of_cardolan = {
+	loot_amount = 0.50
+	available_province_loot = 0.50
+}
+
+road_to_bree = {
+	war_exhaustion = -0.2
+	war_exhaustion_cost = -0.50
+}
+
+dunland_is_safe = {
+	local_tax_modifier = 0.25
+	local_unrest = -1
+}
+
+the_forest_is_safe = {
+	local_production_efficiency = 0.25
+	local_unrest = -1
+}
+
+victory_over_gondor = {
+	land_morale = 0.10
+}
+
+victory_over_rohan = {
+	land_morale = 0.10
+}
+
+wood_production_of_fangorn = {
+	trade_goods_size_modifier = 0.50
+	local_production_efficiency = 0.20
+}
+
+conquest_of_rohan = {
+	local_core_creation = -0.25
+}
+
+white_mountains = {
+	local_production_efficiency = 0.1
+	defensiveness = 0.10
 }

@@ -530,6 +530,12 @@ country_decisions = {
 			change_tag = W94
 			W94 = {
 				set_capital = 1861		# Dun 
+				hidden_effect = {
+					set_variable = {
+						which = W94lootedAmount_VAR
+						value = 0
+					}
+				}
 			}
 			
             add_prestige = 50

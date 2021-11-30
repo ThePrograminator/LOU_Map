@@ -1,32 +1,348 @@
 ﻿l_spanish:
- #estate_nobles: "Nobility"
- #estate_nobles_desc: "This estate represents the families of landed aristocrats in your country. Their privileges are guaranteed by old traditions and most have originally been won through performing great services to the state. Their traditional responsibility is to fight and protect the realm against outside dangers as well as help the ruler keep the peace."
- estate_traders_guild: "Traders Guild"
- estate_traders_guild_desc: ""
- estate_miners_guild: "Miners Guild"
- estate_miners_guild_desc: ""
- estate_smithies_guild: "Smithies Guild"
- estate_smithies_guild_desc: ""
- estate_advisors_guild: "Advisors Guild"
- estate_advisors_guild_desc: ""
- estate_warriors_guild: "Warriors Guild"
- estate_warriors_guild_desc: ""
+ #-----------------------------------------
+ # Crownland
+ #-----------------------------------------
+ lotr_crown_land_ownership: "Crown Land Ownership"
+ estate_stewards_ownership: "Steward Ownership"
+ estate_merchants_ownership: "Merchant Ownership"
+ estate_nobles_ownership: "Nobility Ownership"
+ estate_commoners_ownership: "Commoner Ownership"
+ estate_tribes_ownership: "Tribal Ownership"
+ 
+ #-----------------------------------------
+ # Stewards
+ #-----------------------------------------
+ estate_stewards: "Stewards"
+ estate_stewards_desc: "The affable administrators of the realm comprise our stewards. Helpful folks, they will help those who need it most. However, if we do not support them, our realm is liable to fall into ruin."
+ 
+ estate_stewards_dwarf: "Guild of Advisors"
+ estate_stewards_elven: "Aranduri"
+ estate_stewards_hobbit: "Mayors"
+ 
+ stewards_loyalty_modifier: "[Country.GetStewardsName] Loyalty Equilibrium"
+ stewards_influence_modifier: "[Country.GetStewardsName] Influence"
+ 
+ # ------------ Privileges ------------ 
+ estate_stewards_land_rights: "$ESTATE_NAME$ Land Rights"
+ estate_stewards_land_rights_desc: "If they cannot support themselves from the land they have been granted, the [Root.GetStewardsName] will be unable to perform their spiritual duties."
+ 
+ estate_stewards_administrative_state: "Administrative State"
+ estate_stewards_administrative_state_desc: "By making matters of administration our foremost priority, we shall forge our nation into a more cohesive whole."
+ 
+ estate_stewards_advisory_council: "Advisory Council"
+ estate_stewards_advisory_council_desc: "A key role of the [Root.GetStewardsName] is to advise the [Root.Monarch.GetTitle]. Formalizing this arrangement would ease the process and allow their wisdom to better serve the [Root.GovernmentName], although it would also grant them unlimited access to the ear of the [Root.Monarch.GetTitle]."
+ 
+ estate_stewards_savage_mission: "Establish Wilderness Missions"
+ estate_stewards_savage_mission_desc: "The wilderness is teeming with heathens. It is the calling of the [Root.GetStewardsName] to bring the truth of the [Root.Religion.GetName] to these lands."
+ 
+ estate_stewards_loyal_ministers: "Loyal Ministers"
+ estate_stewards_loyal_ministers_desc: "If we listen to the advice of the [Root.GetStewardsName] and place their concerns at the forefront of our mind, we may derive considerable benefits for our rule and see the people's faith greatly strengthened."
+ 
+ estate_stewards_administrative_oversight: "Oversight by the $ESTATE_NAME$"
+ estate_stewards_administrative_oversight_desc: "The only sure way to guarantee that correct practices are maintained is to allow the [Root.GetStewardsName] to oversee the implementation of the [Root.Monarch.GetTitle]'s decisions."
+ 
+ estate_stewards_inwards_perfection: "Inwards Perfection"
+ estate_stewards_inwards_perfection_desc: "The core principles of administration are to focus inwards on improving the self rather than outwards on any aspect of the other. The supposed glory achieved through violent conquest is irrelevant in such a society."
+ 
+ estate_stewards_racial_unity: "Enforced Racial Unity"
+ estate_stewards_racial_unity_desc: "It is self-evident that our race is the one true race. There shall be no compromising our beliefs for those who heed the words of lesser races!"
+ 
+ estate_stewards_expanionist_zealotry: "Expansionist Zealotry"
+ estate_stewards_expanionist_zealotry_desc: "To wage war for our race is the prime calling of all true members."
+ estate_stewards_expanionist_zealotry_effect_tooltip:2 "Morale of Armies: §G+5%§! when at war with heretics or heathens.\n\nMorale of Armies: §R-5%§! if at peace with heretics and heathens for 15 years"
+ 
+ estate_stewards_statutory_rights: "Estates Statutory Rights"
+ estate_stewards_statutory_rights_desc: "In return for their support in a moment of need, the [Root.Monarch.GetTitle] has agreed to grant the Estates considerable rights that place stringent limitations on [Root.Monarch.GetHerHis] authority."
+ 
+ estate_stewards_monopoly_of_crafted_goods: "Monopoly over Crafted Goods"
+ estate_stewards_monopoly_of_crafted_goods_desc: "The [Root.GetStewardsName] shall be granted a monopoly over the production of numerous crafted goods."
+ 
+ #-----------------------------------------
+ # Merchants
+ #-----------------------------------------
+ estate_merchants: "Merchants"
+ estate_merchants_desc: "The buyers and sellers of our realm. Merchants care for one thing only, money and will persue its accumlation without undue vigor. If we attempt to part them with their money, expect major resistance."
+ 
+ estate_merchants_dwarf: "Guild of Traders"
+ estate_merchants_elven: "Manci"
+ estate_merchants_hobbit: "Traders"
+ 
+ merchants_loyalty_modifier: "[Country.GetMerchantsName] Loyalty Equilibrium"
+ merchants_influence_modifier: "[Country.GetMerchantsName] Influence"
+ 
+ # ------------ Privileges ------------ 
+ estate_merchants_land_rights: "$ESTATE_NAME$ Land Rights"
+ estate_merchants_land_rights_desc: "The [Root.GetMerchantsName], the middle classes of our society, desire land above all else, so that they may finally be seen as equals by the Nobility. Granting them this wish would earn their immeasurable gratitude."
+ 
+ estate_merchants_land_of_commerce: "Land of Commerce"
+ estate_merchants_land_of_commerce_desc: "In the land where the Burgher is king, the interests of commerce shall be well looked after."
+ 
+ estate_merchants_admirals: "$ESTATE_NAME$ in the Admirality"
+ estate_merchants_admirals_desc: "The expertise of the many great seafarers among the [Root.GetMerchantsName] shall be our first port of call when seeking admirals for our navy!"
+ 
+ estate_merchants_patronage_of_the_arts: "Patronage of the Arts"
+ estate_merchants_patronage_of_the_arts_desc: "By offering patronage to prominent artists and intellectuals, we can convince the world of the splendor of [Root.GetAdjective] culture."
+ 
+ estate_merchants_commercial_board_of_advice: "Commercial Advisory Board"
+ estate_merchants_commercial_board_of_advice_desc: "In matters of commerce, the [Root.GetMerchantsName] are far more knowledgeable than the [Root.Monarch.GetTitle]. It would be folly not to make use of this advice to ensure that the wheels of the economy remain in motion."
+ 
+ estate_merchants_settlement_charter: "Grant Settlement Charters"
+ estate_merchants_settlement_charter_desc: "The wilderness is a land of opportunities - particularly for entrepreneurs seeking to enrichen themselves. We should encourage this by offering the [Root.GetMerchantsName] charters granting them favorable conditions for their businesses."
+ 
+ estate_merchants_indebted_to_merchants: "Indebted to the $ESTATE_NAME$"
+ estate_merchants_indebted_to_merchants_desc: "The [Root.GetMerchantsName] are willing to offer cheap loans to the [Root.GovernmentName] in return for greater political influence. However, this would drain funding away from their business interests and cause a slowdown in the economy."
+ estate_merchants_indebted_to_merchants_effect_tooltip: "Take §Y5§! five-year loans at §Y1.0%§! interest. The privilege will be removed automatically when repaid."
+ 
+ estate_merchants_free_enterprise: "Free Enterprise"
+ estate_merchants_free_enterprise_desc: "Granting the [Root.GetMerchantsName] greater freedom in their commercial affairs will increase their willingness to support the [Root.Monarch.GetTitle]."
+ 
+ estate_merchants_exclusive_trade_rights: "Exclusive Trade Rights"
+ estate_merchants_exclusive_trade_rights_desc: "The [Root.GetMerchantsName] livelihood depends on trade. Their position would be considerably strengthened if we granted them a degree of exclusivity in their control of the revenues derived from it, a move which would surely be reciprocated in the form of greater support for the [Root.Monarch.GetTitle]."
+ 
+ estate_merchants_exclusive_trade_rights_revoke_tooltip: "Removes "Exclusive Trade Rights" modifier from all owned provinces"
+ 
+ estate_merchants_exclusive_trade_rights_mod: "Exclusive Trade Rights"
+ desc_estate_merchants_exclusive_trade_rights_mod: "The state has ceded exclusive trade rights in this province to commercial interest groups."
+ 
+ estate_merchants_control_over_monetary_policy: "Control over Monetary Policy"
+ estate_merchants_control_over_monetary_policy_desc: "By giving the [Root.GetMerchantsName] the final say over monetary policy, the state guarantees that commercial interests will be taken into account when key economic decisions are made."
+ 
+ estate_merchants_private_trade_fleets: "Private Trade Fleets"
+ estate_merchants_private_trade_fleets_desc: "Wealth derived from shipping is particularly important to the [Root.GetMerchantsName], making up a significant part of their income. It is only right that they should be allowed to maintain private fleets for the purpose of protecting this trade from disruption."
+ 
+ estate_merchants_enforced_interracial_dialogue: "Enforced Inter-racial Dialog"
+ estate_merchants_enforced_interracial_dialogue_desc: "The accumulation of wealth is truly a higher calling than that of race. We must cast off our differences and come together in our pursuit of riches."
+ 
+ estate_merchants_statutory_rights: "Estates Statutory Rights"
+ estate_merchants_statutory_rights_desc: "In return for their support in a moment of need, the [Root.Monarch.GetTitle] has agreed to grant the Estates considerable rights that place stringent limitations on [Root.Monarch.GetHerHis] authority."
+ 
+ estate_merchants_monopoly_of_fabrics: "Monopoly over Fabrics"
+ estate_merchants_monopoly_of_fabrics_desc: "The [Root.GetMerchantsName] shall be granted a monopoly over the production of numerous fabrics."
+ 
+ estate_merchants_monopoly_of_exotic_goods: "Monopoly over Exotic Goods"
+ estate_merchants_monopoly_of_exotic_goods_desc: "The [Root.GetMerchantsName] shall be granted a monopoly over the production of numerous exotic goods."
+ 
+ #-----------------------------------------
+ # Nobility
+ #-----------------------------------------
+ estate_nobles: "Nobility"
+ estate_nobles_desc: "Lords and ladies of the realm comprise our nobility. Fickle creatures, nobles will only follow orders once they've been paid off, or if they're particularly deranged, had somebody killed off."
+  
+ estate_nobles_dwarf: "Guild of Warriors"
+ estate_nobles_elven: "Nobilitime"
+ estate_nobles_hobbit: "Masters"
+  
+ nobles_loyalty_modifier: "[Country.GetNoblesName] Loyalty Equilibrium"
+ nobles_influence_modifier: "[Country.GetNoblesName] Influence"
+ 
+ # ------------ Privileges ------------ 
+ estate_nobility_land_rights: "$ESTATE_NAME$ Land Rights"
+ estate_nobility_land_rights_desc: "The [Root.GetNoblesName], the best men of the nation, are surely those with the greatest claim to its lands."
+ 
+ estate_nobility_nobility_primacy: "Primacy of the $ESTATE_NAME$"
+ estate_nobility_nobility_primacy_desc: "Giving the [Root.GetNoblesName] free rein over our military would strengthen our capacities considerably, even if it may cost us dearly in compensating their contributions."
+ 
+ estate_nobility_officer_corp: "$ESTATE_NAME$ in Officer Corps"
+ estate_nobility_officer_corp_desc: "The [Root.GetNoblesName] are experienced in the art of leading men. It is only sensible that they should be the ones to lead our armies."
+ 
+ estate_nobility_levies: "Increased Levies"
+ estate_nobility_levies_desc: "Levies from the [Root.GetNoblesName] provide the majority of our nation's armies. An arrangement can be made for them to provide us with more men in return for other compensation."
 
- estate_families: "Families"
+ estate_nobility_advisors: "Aristocratic Counselors"
+ estate_nobility_advisors_desc: "There can be no better source of advice than the [Root.GetNoblesName], who are able more than anyone else to dedicate themselves to the cultivation of their minds."
 
- SET_HIGHER_KVOTA: "Set Higher Kvota"
- SET_HIGHER_KVOTA_desc: ""
- DEMAND_SUPPORT_ADVISORS: "Demand Support From Advisors"
- DEMAND_SUPPORT_ADVISORS_desc: ""
- DEMAND_FINEST_JEWELS: "Demand Finest Jewelery"
- DEMAND_FINEST_JEWELS_desc: ""
- GRANT_MINING_RIGHTS: "Grant Mining Rights"
- GRANT_MINING_RIGHTS_desc: ""
- CHANGE_MAINTENANCE_TERMS: "Change Maintenance Terms"
- CHANGE_MAINTENANCE_TERMS_desc: ""
- DEMAND_PRESTIEGE_ARMOR: "Demand Prestigious Armor"
- DEMAND_PRESTIEGE_ARMOR_desc: ""
- GRANT_EXPORT_RIGHTS: "Grant Export Rights"
- GRANT_EXPORT_RIGHTS_desc: ""
- SEEK_SUPPORT_OF_ADVISORS: "Seek Support of Advisors"
- SEEK_SUPPORT_OF_ADVISORS_desc: ""
+ estate_nobility_right_of_counsel: "Right of Counsel"
+ estate_nobility_right_of_counsel_desc: "The [Root.GetNobilityName] must have the right to speak to the [Root.Monarch.GetTitle] openly and freely, without fear of repercussions."
+ 
+ estate_nobility_strong_duchies: "Strong Duchies"
+ estate_nobility_strong_duchies_desc: "Middle Earth is a decentralized land in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
+ 
+ estate_nobility_strong_duchies_trigger_tooltip: "§Y[Root.GetName]§! has at least 2 vassals or marches."
+ 
+ estate_nobility_supremacy_over_crown: "Supremacy over the [Root.GetStateForm]"
+ estate_nobility_supremacy_over_crown_desc: "With the scales tipping towards the decentralization of power, the Estates are increasingly able to dictate their priorities to the [Root.Monarch.GetTitle], leaving [Root.Monarch.GetHerHim] little choice but to agree to their will."
+ estate_nobility_supremacy_over_crown_effect_tooltip: "§YEstates§! can give §YAgendas§! without the §YCouncil§! having been summoned."
+ 
+ estate_nobility_statutory_rights: "Estates Statutory Rights"
+ estate_nobility_statutory_rights_desc: "In return for their support in a moment of need, the [Root.Monarch.GetTitle] has agreed to grant the Estates considerable rights that place stringent limitations on [Root.Monarch.GetHerHis] authority."
+ 
+ estate_nobility_monopoly_of_exquisite_food: "Monopoly over Exquisite Food"
+ estate_nobility_monopoly_of_exquisite_food_desc: "The [Root.GetMerchantsName] shall be granted a monopoly over the production of numerous forms of exquisite food."
+ 
+ estate_nobility_monopoly_of_weaponry: "Monopoly over Weaponry"
+ estate_nobility_monopoly_of_weaponry_desc: "The [Root.GetMerchantsName] shall be granted a monopoly over the production of numerous materials used in weaponry."
+ 
+ estate_nobility_garrison_borders: "Garrison Borders"
+ estate_nobility_garrison_borders_desc: "We should garrison more troops by our borders to quell any potential unrest."
+ 
+ #-----------------------------------------
+ # Commoners
+ #-----------------------------------------
+ estate_commoners: "Commonfolk"
+ estate_commoners_desc: "The common folk. A wide and unorganised group, commoners will rare want for much and are often satisfied if the status quo is not distrubed. However, if times get particularly tough, they will resent their overseers and plot rebellion."
+ 
+ estate_commoners_dwarf: "Guild of Miners"
+ estate_commoners_elven: "Nórë"
+ estate_commoners_hobbit: "Hobbits"
+ 
+ commoners_loyalty_modifier: "[Country.GetCommonersName] Loyalty Equilibrium"
+ commoners_influence_modifier: "[Country.GetCommonersName] Influence"
+ 
+ # ------------ Privileges ------------ 
+ estate_commoners_land_rights: "$ESTATE_NAME$ Land Rights"
+ estate_commoners_land_rights_desc: "The [Root.GetCommonersName] may be simple, but they can be very useful simpletons if handled well. Granting them more land may not rub well with some of the wealthier in our nation, but it could nevertheless be of considerable benefit to us."
+ 
+ estate_commoners_increased_taxes: "Increased Taxes"
+ estate_commoners_increased_taxes_desc: "Although they are sure to protest, the [Root.GetCommonersName] can be persuaded to give up a greater portion of their wealth in taxes in return for certain guarantees."
+ 
+ estate_commoners_increased_taxes_effect_tooltip: "Every owned province gains §Y'Increased Taxes'§!, giving the following effects:\nLocal Tax Modifier: §G15.0%§!"
+ estate_commoners_increased_taxes_revoke_effect_tooltip: "The modifier §Y'Increased Taxes'§! is removed from all owned provinces."
+ 
+ estate_commoners_increased_taxes_privilege_mod: "Increased Taxes"
+ desc_estate_commoners_increased_taxes_privilege_mod: "The state demands higher taxes from the commonfolk than from the rest of the population."
+ 
+ estate_commoners_guaranteed_autonomy: "Guaranteed Autonomy"
+ estate_commoners_guaranteed_autonomy_desc: "Guaranteeing the [Root.GetCommonersName] freedom from government interference will ease the burdens of our administration and be sure to make them more supportive of our rule."
+ 
+ estate_commoners_guaranteed_autonomy_effect_tooltip: "Every owned province  gains:\nLocal Purification Strength: §R-100%§!\nLocal Racial Unity Contribution: §G-100%§!"
+ estate_commoners_guaranteed_autonomy_revoke_effect_tooltip: "The modifier §Y'Guaranteed Autonomy'§! is removed from all owned provinces."
+ 
+ estate_commoners_guaranteed_autonomy_mod: "Guaranteed Autonomy"
+ desc_estate_commoners_guaranteed_autonomy_mod: "The state has guaranteed greater autonomy for the commonfolk."
+ 
+ estate_commoners_unlanded_nobles: "Promote Unlanded Nobles"
+ estate_commoners_unlanded_nobles_desc: "A key aspiration of the [Root.GetCommonersName] is for their wealthy to enjoy the same legal rights and prominence as the [Root.GetAdjective] [Root.GetNobilityName]."
+ 
+ estate_commoners_manpower: "Mass Conscription"
+ estate_commoners_manpower_desc: "If the reward of tax relief is offered, the [Root.GetCommonersName] will be more than willing to serve as the backbone of our armies."
+ 
+ estate_commoners_manpower_effect_tooltip: "Every owned province gains §Y'Mass Conscription'§!, giving the following effects:\nLocal Manpower Modifier: §G+20.0%§!"
+ 
+ estate_commoners_manpower_revoke_effect_tooltip: "The modifier §Y'Mass Conscription'§! is removed from all owned provinces."
+ 
+ estate_commoners_manpower_mod: "Mass Conscription"
+ desc_estate_commoners_manpower_mod: "The state has increased its conscription of the commonfolk."
+ 
+ estate_commoners_racial_tolerance: "Guaranteed Racial Rights"
+ estate_commoners_racial_tolerance_desc: "Discrimination and prejudice based on racial divisions cause the [Root.GetCommonersName] great suffering. We must cast off our differences and come together to truly unite the state if we are to unlock our people's full potential."
+ 
+ estate_commoners_monopoly_of_simple_food: "Monopoly over Simple Food"
+ estate_commoners_monopoly_of_simple_food_desc: "The [Root.GetCommonersName] shall be granted a monopoly over the production of numerous simple foods."
+ 
+ estate_commoners_statutory_rights: "Estates Statutory Rights"
+ estate_commoners_statutory_rights_desc: "In return for their support in a moment of need, the [Root.Monarch.GetTitle] has agreed to grant the Estates considerable rights that place stringent limitations on [Root.Monarch.GetHerHis] authority."
+ 
+ estate_commoners_settlers: "Local Settlers"
+ estate_commoners_settlers_desc: "There are lands yet unknown that are devoid of people. Let us assign some of our [Root.GetCommonersName] to settle these lands."
+ 
+ estate_commoners_purify_realm: "Purify Realm"
+ estate_commoners_purify_realm_desc: "We should focus on purifying our realm of other races."
+ 
+ estate_commoners_cleanse_population: "Cleanse Population"
+ estate_commoners_cleanse_population_desc: "We should focus on cleansing our population of subersive cultures."
+ 
+ #-----------------------------------------
+ # Tribes
+ #-----------------------------------------
+ estate_tribes: "Tribes"
+ estate_tribes_desc: "Tribal chieftains are loyal to their chief. They will fight to their death to protect the chief, but only if he is worthy of such protection."
+ 
+ estate_tribes_dragon: "Dragons"
+ estate_tribes_goblin: "Goblins"
+ estate_tribes_giant: "Giants"
+ estate_tribes_spider: "Spiders"
+ estate_tribes_orc: "Orcs"
+ estate_tribes_uruk_hai: "Uruk-hai"
+ estate_tribes_wights: "Wights"
+ estate_tribes_ent: "Ents"
+ estate_tribes_eagles: "Eagles"
+ 
+ tribes_loyalty_modifier: "[Country.GetTribesName] Loyalty Equilibrium"
+ tribes_influence_modifier: "[Country.GetTribesName] Influence"
+ 
+ # ------------ Privileges ------------ 
+ estate_tribes_land_rights: "$ESTATE_NAME$ Land Rights"
+ estate_tribes_land_rights_desc: "The strength of the [Root.GetTribesName] is the backbone of [Root.GetName]. Granting them more land will only feed our own strength and allow us to grow even mightier in future!"
+ 
+ estate_tribes_share_of_the_spoils: "Share of the Spoils"
+ estate_tribes_share_of_the_spoils_desc: "The greatest happiness is to vanquish your enemies, to chase them before you, to rob them of their wealth, to see those dear to them bathed in tears, to clasp to your bosom their wives and daughters."
+ 
+ estate_tribes_chieftains_autonomy: "Greater Autonomy for Chieftains"
+ estate_tribes_chieftains_autonomy_desc: "So long as they continue to obey the orders of the [Root.Monarch.GetTitle], the local chieftains shall have free rein to rule over their tribes in whatever manner they please."
+ 
+ estate_tribes_guaranteed_leadgership_in_host: "Guaranteed Leadership of Host"
+ estate_tribes_guaranteed_leadgership_in_host_desc: "Our tribal chieftains make fine leaders of men. We need look no further when seeking new generals for our armies."
+ 
+ estate_tribes_tribal_host: "Larger Tribal Hosts"
+ estate_tribes_tribal_host_desc: "By offering the [Root.GetTribesName] further influence over the [Root.Monarch.GetTitle], we can persuade them to allow us to levy more of their men for our armies."
+ 
+ estate_tribes_tribal_primacy: "Primacy of the $ESTATE_NAME$"
+ estate_tribes_tribal_primacy_desc: "Giving the [Root.GetTribesName] free rein over our military would strengthen our capacities considerably, even if it may cost us dearly in compensating their contributions."
+ 
+ estate_tribes_statutory_rights: "Estates Statutory Rights"
+ estate_tribes_statutory_rights_desc: "In return for their support in a moment of need, the [Root.Monarch.GetTitle] has agreed to grant the Estates considerable rights that place stringent limitations on [Root.Monarch.GetHerHis] authority."
+ 
+ estate_tribes_settlers: "Tribal Settlers"
+ estate_tribes_settlers_desc: "There are lands yet unknown that are devoid of people. Let us assign some of our [Root.GetCommonersName] to settle these lands."
+ 
+ estate_tribes_purify_realm: "Purify Realm"
+ estate_tribes_purify_realm_desc: "We should focus on purifying our realm of other races."
+ 
+ estate_tribes_cleanse_population: "Cleanse Population"
+ estate_tribes_cleanse_population_desc: "We should focus on cleansing our population of subersive cultures."
+ 
+ estate_tribes_garrison_borders: "Garrison Borders"
+ estate_tribes_garrison_borders_desc: "We should garrison more troops by our borders to quell any potential unrest."
+ 
+ #-----------------------------------------
+ # Loyalty
+ #-----------------------------------------
+ EST_VAL_DUMMY: "Dummy: §Y$VAL$§!"
+
+ #-----------------------------------------
+ # Influence Modifiers
+ #-----------------------------------------
+ EST_VAL_AI: "AI §Y$VAL$%§!"
+ 
+ #-----------------------------------------
+ # Monopolies
+ #-----------------------------------------
+ estate_stewards_monopoly_of_crafted_goods_mod: "Monopoly over Crafted Goods"
+ desc_estate_stewards_monopoly_of_crafted_goods_mod: "The state has granted monopoly rights over the production of numerous crafted goods."
+ 
+ estate_merchants_monopoly_of_fabrics_mod: "Monopoly over Fabrics"
+ desc_estate_merchants_monopoly_of_fabrics_mod: "The state has granted monopoly rights over the production of numerous fabrics."
+ 
+ estate_merchants_monopoly_of_exotic_goods_mod: "Monopoly over Exotic Goods"
+ desc_estate_merchants_monopoly_of_exotic_goods_mod: "The state has granted monopoly rights over the production of numerous exotic goods."
+ 
+ estate_nobility_monopoly_of_exquisite_food_mod: "Monopoly over Exquisite Food"
+ desc_estate_nobility_monopoly_of_exquisite_food_mod: "The state has granted monopoly rights over the production of numerous exquisite foods."
+ 
+ estate_nobility_monopoly_of_weaponry_mod: "Monopoly over Weaponry"
+ desc_estate_nobility_monopoly_of_weaponry_mod: "The state has granted monopoly rights over the production of numerous materials used in weaponry."
+ 
+ estate_commoners_monopoly_of_simple_food_mod: "Monopoly over Simple Food"
+ desc_estate_commoners_monopoly_of_simple_food_mod: "The state has granted monopoly rights over the production of numerous simple food."
+ 
+ RESTORE_INCOME_CRAFTED_GOODS_TT: "Production income from §YCrafted Goods§! is restored"
+ RESTORE_INCOME_FABRICS_TT: "Production income from §YFabrics§! is restored"
+ RESTORE_INCOME_EXOTIC_GOODS_TT: "Production income from §YExotic Foods§! is restored"
+ RESTORE_INCOME_EXQUISITE_FOOD_TT: "Production income from §YExquisite Food§! is restored"
+ RESTORE_INCOME_WEAPONRY_TT: "Production income from §YWeaponry§! is restored"
+ RESTORE_INCOME_SIMPLE_FOOD_TT: "Production income from §YSimple Food§! is restored"
+ 
+ NO_INCOME_CRAFTED_GOODS_TT: "§RNo income from §YCrafted Goods§!§!"
+ NO_INCOME_FABRICS_TT: "§RNo income from §YFabrics§!§!"
+ NO_INCOME_EXOTIC_GOODS_TT: "§RNo income from §YExotic Goods!§!"
+ NO_INCOME_EXQUISITE_FOOD_TT: "§RNo income from §YExquisite Food§!§!"
+ NO_INCOME_WEAPONRY_TT: "§RNo income from §YWeaponry§!§!"
+ NO_INCOME_SIMPLE_FOOD_TT: "§RNo income from §YSimple Food§!§!"
+ 
+ MONOPOLY_INCOME_CRAFTED_GOODS_DESC: "from crafted goods production."
+ MONOPOLY_INCOME_FABRICS_DESC: "from fabrics production."
+ MONOPOLY_INCOME_EXOTIC_GOODS_DESC: "from exotic goods production."
+ MONOPOLY_INCOME_EXQUISITE_FOOD_DESC: "from exquisite food production."
+ MONOPOLY_INCOME_WEAPONRY_DESC: "from weaponry production."
+ MONOPOLY_INCOME_SIMPLE_FOOD_DESC: "from simple food production."
+ 
