@@ -187,8 +187,8 @@ dunland_slot_2 = {
 			culture = culture_orkish
 		}
 		trigger = {
-			any_province = {
-				region = cardolan_region
+			cardolan_region = {
+				type = all
 				NOT = {
 					culture = culture_orkish
 				}
@@ -219,7 +219,7 @@ dunland_slot_2 = {
 	central_cardolan = {
 		icon = mission_unite_home_region
 		position = 6
-		required_missions = { southern_cardolan conquer_tharbad drive_out_orcs_cardolan }
+		required_missions = { southern_cardolan conquer_tharbad }
 		provinces_to_highlight = {
 			OR = {
 				area = balost_area
@@ -305,6 +305,7 @@ dunland_slot_2 = {
 		effect = { 
 			add_treasury = 300
 			add_prestige = 50
+			add_accepted_culture = culture_breelanders
 		}
 	}
 	conquer_southern_enedwaith = {
