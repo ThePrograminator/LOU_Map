@@ -122,16 +122,22 @@ lond_daer_2 = {
 				value = 1.5
 				duration = 3650
 			}
-			every_owned_province = {
-				limit = {
-					OR = {
-						region = cardolan_region
-						region = enedhwaith_region
-					}
-					trade_goods = glass
-					owned_by = ROOT
-				}
+			tooltip = {
+				custom_tooltip = CLANSMEN_GLASS_PRODUCTION
 				add_base_production = 3
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = cardolan_region
+							region = enedhwaith_region
+						}
+						trade_goods = glass
+						owned_by = ROOT
+					}
+					add_base_production = 3
+				}
 			}
 		}
 	}

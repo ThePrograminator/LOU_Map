@@ -13,7 +13,7 @@ country_event = {
 	desc = LOU_isengard.1.d
 	picture = BORDER_TENSION_eventPicture
 	
-	hidden = yes
+	#hidden = yes
 	fire_only_once = yes
 
 	trigger = {
@@ -26,10 +26,59 @@ country_event = {
 			MONTH = 0
 			STARTED_BEFORE = 2759.1.1
 		}
+		223 = {
+			owned_by = ROOT
+		}
 	}
 
 	option = { 
 		name = LOU_isengard.1.a
+
+		trigger = {
+			ai = yes
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.1 - Option : LOU_isengard.1.a" }
+
+		nan_curunir_area = {
+			change_culture = culture_istari
+			change_religion = religion_daen
+			add_core = W53
+			cede_province = W53
+		}
+		set_global_flag = isengard_spawned
+	}
+
+	#Switch Tag
+	option = { 
+		name = LOU_isengard.1.b
+
+		trigger = {
+			ai = no
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.1 - Option : LOU_isengard.1.a" }
+
+
+
+		nan_curunir_area = {
+			change_culture = culture_istari
+			change_religion = religion_daen
+			add_core = W53
+			cede_province = W53
+		}
+
+		switch_tag = W53
+		set_global_flag = isengard_spawned
+	}
+
+	#Not Switch Tag
+	option = { 
+		name = LOU_isengard.1.c
+
+		trigger = {
+			ai = no
+		}
 
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_isengard.1 - Option : LOU_isengard.1.a" }
 

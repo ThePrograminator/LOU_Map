@@ -1,5 +1,5 @@
 ﻿l_french:
-  #----------------------------------
+ #----------------------------------
  # Setup
  #----------------------------------
  dummy.1.t: ""
@@ -171,6 +171,12 @@
  #-----------------------------------------
  # Isengard
  #-----------------------------------------
+ LOU_isengard.1.t: "Saruman Occupies Isengard"
+ LOU_isengard.1.d: "Saruman the white has Occupied Isengard, you get to choose to switch to Isengard or continue playing your country."
+ LOU_isengard.1.a: "i am ai"
+ LOU_isengard.1.b: "Change to Isengard"
+ LOU_isengard.1.b: "Keep Playing $COUNTRY$"
+
  LOU_isengard.2.t: "The Treason of Isengard"
  LOU_isengard.2.d: "The time is now to decide which side of middle-earth we stand."
  LOU_isengard.2.a: "Create the Uruk-hai!"
