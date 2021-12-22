@@ -352,15 +352,13 @@ X16_culture_of_west = {
 		}
 		position = 3
 		trigger = {
-			calc_true_if = {
-				ROOT = {
-					any_owned_province = {
-						area = gap_of_rohan_area
-						area = west_march_area
-						has_influencing_fort = yes
-					}
+			num_of_owned_provinces_with = {
+				value = 3
+				OR = {
+					area = gap_of_rohan_area
+					area = west_march_area
 				}
-				amount = 3
+				has_influencing_fort = yes
 			}
 		}
 		effect = {
@@ -473,16 +471,14 @@ X16_conquer_rhovanion = {
 		}
 		position = 5
 		trigger = {
-			calc_true_if = {
-				ROOT = {
-					any_owned_province = {
-						area = the_wold_area
-						area = parth_galen_area
-						area = entwade_area
-						has_influencing_fort = yes
-					}
+			num_of_owned_provinces_with = {
+				value = 4
+				OR = {
+					area = the_wold_area
+					area = parth_galen_area
+					area = entwade_area
 				}
-				amount = 4
+				has_influencing_fort = yes
 			}
 		}
 		effect = {

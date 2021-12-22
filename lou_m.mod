@@ -115,6 +115,6 @@ tags={
 	"Expansion"
 }
 name="Lord of Universalis 2"
-supported_version="1.30.*"
+supported_version="1.32.*"
 path="C:/Users/chris/Documents/Paradox Interactive/Europa Universalis IV/mod/lou_m"
 remote_file_id="2095475587"

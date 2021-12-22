@@ -121,8 +121,7 @@ gondor_missions_1 = {
 				all_ally = {
 					OR = {
 						culture_group = culture_group_eotheod
-						primary_culture = culture_silvan
-						primary_culture = culture_noldor
+						technology_group = lotr_elven
 					}
 				}
 			}
@@ -135,8 +134,7 @@ gondor_missions_1 = {
 						alliance_with = ROOT
 						OR = {
 							culture_group = culture_group_eotheod
-							primary_culture = culture_silvan
-							primary_culture = culture_noldor
+							technology_group = lotr_elven
 						}
 					}
 					country_event = { id = LOU_mission_gondor.2 }
@@ -240,40 +238,44 @@ gondor_missions_2 = {
 		position = 3
 		required_missions = { gondor_great_stone_builders gondor_raise_the_royal_forces }
 		provinces_to_highlight = {
-			area = arnach_area
-			area = pelargir_area
-			area = lebenninivet_area
-			area = lossarnach_area
-			area = osgiliath_area
-			area = minas_tirith_area
-			area = anorien_area
-			area = cair_andros_area
-			area = ethir_anduin_area
+			OR = {
+				area = arnach_area
+				area = pelargir_area
+				area = lebenninivet_area
+				area = lossarnach_area
+				area = osgiliath_area
+				area = minas_tirith_area
+				area = anorien_area
+				area = cair_andros_area
+				area = ethir_anduin_area
+			}
+			has_port = yes
 			NOT = {
-				has_port = yes
+				#OR = {
+				#	has_building = fort_pallisade_building
+				#	has_building = fort_castle_building
+				#	has_building = fort_stronghold_building
+				#	has_building = fort_citidal_building
+				#}
 				has_influencing_fort = yes
 			}
 		}
 		trigger = { 
-			calc_true_if = {
-				ROOT = {
-					any_owned_province = {
-						OR ={
-							area = arnach_area
-							area = pelargir_area
-							area = lebenninivet_area
-							area = lossarnach_area
-							area = osgiliath_area
-							area = minas_tirith_area
-							area = anorien_area
-							area = cair_andros_area
-							area = ethir_anduin_area
-						}
-						has_port = yes
-						has_influencing_fort = yes
-					}
+			num_of_owned_provinces_with = {
+				value = 6
+				OR ={
+					area = arnach_area
+					area = pelargir_area
+					area = lebenninivet_area
+					area = lossarnach_area
+					area = osgiliath_area
+					area = minas_tirith_area
+					area = anorien_area
+					area = cair_andros_area
+					area = ethir_anduin_area
 				}
-				amount = 6
+				has_port = yes
+				has_influencing_fort = yes
 			}
 		}
 		effect = { 
@@ -289,10 +291,15 @@ gondor_missions_2 = {
 						area = anorien_area
 						area = cair_andros_area
 						area = ethir_anduin_area
-						has_port = yes
-						has_influencing_fort = yes
+					}
+					OR = {
+						has_building = fort_pallisade_building
+						has_building = fort_castle_building
+						has_building = fort_stronghold_building
+						has_building = fort_citidal_building
 					}
 					is_core = owner
+					has_port = yes
 					superregion = gondor_superregion
 				}
 				

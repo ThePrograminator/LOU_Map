@@ -493,19 +493,14 @@ V17_expand_into_nurn = {
 		}
 		position = 3
 		trigger = {
-			calc_true_if = {
-				ROOT = {
-					any_owned_province = {
-						OR = {
-							area = maegond_vale_area
-							area = thaurband_area
-							area = cirith_nurn_area
-						}
-						
-						has_influencing_fort = yes
-					}
+			num_of_owned_provinces_with = {
+				value = 3
+				OR = {
+					area = maegond_vale_area
+					area = thaurband_area
+					area = cirith_nurn_area
 				}
-				amount = 3
+				has_influencing_fort = yes
 			}
 		}
 		effect = {

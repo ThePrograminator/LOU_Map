@@ -483,14 +483,19 @@ conquer_nurn_region_four = {
 		position = 1
 
 		trigger = {
-			calc_true_if = {
-				desc = build_farm_estate_mission_tooltip
-				all_owned_province = {
-					region = nurn_region
-					has_building = farm_estate
-				}
-				amount = 3
+			num_of_owned_provinces_with = {
+				value = 3
+				region = nurn_region
+				has_building = farm_estate
 			}
+			#calc_true_if = {
+			#	desc = build_farm_estate_mission_tooltip
+			#	all_owned_province = {
+			#		region = nurn_region
+			#		has_building = farm_estate
+			#	}
+			#	amount = 3
+			#}
 		}
 
 		effect = {
@@ -774,17 +779,25 @@ conquer_nurn_region_five = {
 		}
 
 		trigger = {
-			calc_true_if = {
-				desc = build_forts_mission_tooltip
-				all_owned_province = {
-					OR = {
-						area = lithlad_area
-						area = sturlurtsa_nurn_area
-					}
-					has_influencing_fort = yes
+			num_of_owned_provinces_with = {
+				value = 2
+				OR = {
+					area = lithlad_area
+					area = sturlurtsa_nurn_area
 				}
-				amount = 2
+				has_influencing_fort = yes
 			}
+			#calc_true_if = {
+			#	desc = build_forts_mission_tooltip
+			#	all_owned_province = {
+			#		OR = {
+			#			area = lithlad_area
+			#			area = sturlurtsa_nurn_area
+			#		}
+			#		has_influencing_fort = yes
+			#	}
+			#	amount = 2
+			#}
 		}
 
 		effect = {
