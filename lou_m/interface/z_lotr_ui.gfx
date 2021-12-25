@@ -46,4 +46,11 @@ spriteTypes = {
 		name = "GFX_summon_the_council"
 		texturefile = "gfx/interface/estates/summon_the_diet.dds"
 	}
+
+	spriteType = {
+		name = "GFX_coptic_blessing_select"
+		texturefile = "gfx//interface//copts_blessing_select.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
 }

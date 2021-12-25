@@ -677,7 +677,7 @@ meat_depot_orc_building = {
 	
 	modifier = {
 		province_trade_power_modifier = 0.25
-		local_unrest = 0.5
+		local_unrest = 1
 	}
 	
 	ai_will_do = {
@@ -738,7 +738,7 @@ treasure_trove_orc_building = {
 	
 	modifier = {
 		province_trade_power_modifier = 0.5
-		local_unrest = 1.0
+		local_unrest = 1.75
 	}
 	
 	ai_will_do = {
@@ -799,7 +799,7 @@ stockpile_orc_building = {
 	
 	modifier = {
 		province_trade_power_modifier = 0.75
-		local_unrest = 1.5
+		local_unrest = 2.5
 	}
 	
 	ai_will_do = {
@@ -862,7 +862,7 @@ enforcer_camp_orc_building = {
 	
 	modifier = {
 		local_tax_modifier = 0.25
-		local_unrest = 0.5
+		local_unrest = 1
 	}
 	
 	ai_will_do = {
@@ -919,7 +919,7 @@ overseer_station_orc_building = {
 	
 	modifier = {
 		local_tax_modifier = 0.5
-		local_unrest = 1.0
+		local_unrest = 1.75
 	}
 	
 	ai_will_do = {
@@ -976,7 +976,7 @@ overseer_tower_orc_building = {
 	
 	modifier = {
 		local_tax_modifier = 0.75
-		local_unrest = 1.5
+		local_unrest = 2.45
 	}
 	
 	ai_will_do = {
@@ -1038,7 +1038,7 @@ blacksmith_orc_building = {
 	
 	modifier = {
 		local_production_efficiency = 0.25
-		local_unrest = 0.5
+		local_unrest = 1
 	}
 	
 	ai_will_do = {
@@ -1096,7 +1096,7 @@ metal_works_orc_building = {
 	
 	modifier = {
 		local_production_efficiency = 0.5
-		local_unrest = 1.0
+		local_unrest = 1.75
 	}
 	
 	ai_will_do = {
@@ -1154,7 +1154,7 @@ dark_iron_forge_orc_building = {
 	
 	modifier = {
 		local_production_efficiency = 0.75
-		local_unrest = 1.5
+		local_unrest = 2.5
 	}
 	
 	ai_will_do = {
@@ -1216,7 +1216,7 @@ orc_pit_orc_building = {
 		local_manpower_modifier = 0.2
 		local_regiment_cost = -0.2
         infantry_power = 0.001
-		local_unrest = 0.25
+		local_unrest = 1
 	}
 	
 	ai_will_do = {
@@ -1275,7 +1275,7 @@ orc_fissure_orc_building = {
 		local_manpower_modifier = 0.3
 		local_regiment_cost = -0.3
         infantry_power = 0.002
-		local_unrest = 0.5
+		local_unrest = 1.75
 	}
 	
 	ai_will_do = {
@@ -1334,7 +1334,7 @@ army_garrison_orc_building = {
 		local_manpower_modifier = 0.4
 		local_regiment_cost = -0.4
         infantry_power = 0.003
-		local_unrest = 0.75
+		local_unrest = 2.5
 	}
 	
 	ai_will_do = {
@@ -1396,7 +1396,7 @@ warg_pit_orc_building = {
 		local_manpower_modifier = 0.2
 		local_regiment_cost = -0.2
         cavalry_power = 0.001
-		local_unrest = 0.25
+		local_unrest = 1
 	}
 	
 	ai_will_do = {
@@ -1455,7 +1455,7 @@ warg_arena_orc_building = {
 		local_manpower_modifier = 0.3
 		local_regiment_cost = -0.3
         cavalry_power = 0.002
-		local_unrest = 0.5
+		local_unrest = 1.75
 	}
 	
 	ai_will_do = {
@@ -1514,7 +1514,7 @@ troll_cage_orc_building = {
 		local_manpower_modifier = 0.4
 		local_regiment_cost = -0.4
         cavalry_power = 0.003
-		local_unrest = 0.75
+		local_unrest = 2.5
 	}
 	
 	ai_will_do = {
@@ -1576,7 +1576,7 @@ workshop_orc_building = {
 		local_manpower_modifier = 0.2
 		local_regiment_cost = -0.2
         artillery_power = 0.001
-		local_unrest = 0.25
+		local_unrest = 1
 	}
 	
 	ai_will_do = {
@@ -1635,7 +1635,7 @@ siege_works_orc_building = {
 		local_manpower_modifier = 0.3
 		local_regiment_cost = -0.3
         artillery_power = 0.002
-		local_unrest = 0.5
+		local_unrest = 1.75
 	}
 	
 	ai_will_do = {
@@ -1694,7 +1694,7 @@ great_siege_works_orc_building = {
 		local_manpower_modifier = 0.4
 		local_regiment_cost = -0.4
         artillery_power = 0.003
-		local_unrest = 0.75
+		local_unrest = 2.5
 	}
 	
 	ai_will_do = {
