@@ -1,0 +1,80 @@
+stewards_order = {
+    icon = GFX_holy_order_jesuits
+    trigger = {
+        primary_culture = culture_dunedain_of_arnor
+        religion = religion_dunedain
+    }
+    cost = 50
+    cost_type = adm_power
+    per_province_effect = {
+        add_base_tax = 1
+    }
+    per_province_abandon_effect = {
+        add_base_tax = -1
+    }
+    modifier = {
+        local_govering_cost = -0.10
+        local_tax_modifier = 0.1
+    }
+    ai_priority = {
+        factor = 2
+        modifier = {
+            factor = 2.0
+            NOT = { religion = ROOT }
+        }
+    }
+}
+
+edain_order = {
+    icon = GFX_holy_order_jesuits
+    trigger = {
+        primary_culture = culture_dunedain_of_arnor
+        religion = religion_dunedain
+    }
+    cost = 50
+    cost_type = dip_power
+    per_province_effect = {
+        add_base_production = 1
+    }
+    per_province_abandon_effect = {
+        add_base_production = -1
+    }
+    modifier = {
+        local_development_cost = -0.1
+        local_build_cost = 0.1
+    }
+    ai_priority = {
+        factor = 2
+        modifier = {
+            factor = 2.0
+            NOT = { religion = ROOT }
+        }
+    }
+}
+
+rangers_order = {
+    icon = GFX_holy_order_jesuits
+    trigger = {
+        primary_culture = culture_dunedain_of_arnor
+        religion = religion_dunedain
+    }
+    cost = 50
+    cost_type = adm_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+    }
+    modifier = {
+        local_friendly_movement_speed = 0.1
+        local_hostile_attrition = 0.1
+    }
+    ai_priority = {
+        factor = 2
+        modifier = {
+            factor = 2.0
+            NOT = { religion = ROOT }
+        }
+    }
+}
