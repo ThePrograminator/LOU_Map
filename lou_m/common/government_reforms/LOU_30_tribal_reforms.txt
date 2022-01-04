@@ -37,6 +37,33 @@ tribal_federation = {
 		}
 	}
 }
+tribal_dunedain_arnor = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = culture_dunedain_of_arnor
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_federation_legacy
+	allow_convert = no
+	valid_for_new_country = no
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		diplomatic_reputation = 1
+		reduced_liberty_desire = 10
+		land_maintenance_modifier = -0.20
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+}
 tribal_rivermen = {
 	icon = "chieftain"
 	allow_normal_conversion = yes

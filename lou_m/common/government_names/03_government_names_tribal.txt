@@ -120,3 +120,27 @@ gov_khaganate_ruler = {
 		has_reform = khaganate_ruler_reform
 	}
 }
+
+gov_tribal_dunedain_arnor = {
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male = {
+		1 = CHIEF
+		2 = KING
+		3 = EMPEROR
+	}
+	
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		has_reform = tribal_dunedain_arnor
+	}
+}
