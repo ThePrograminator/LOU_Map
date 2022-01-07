@@ -48,3 +48,22 @@ gov_lotr_thainship = {
 		has_reform = thainship_reform
 	}
 }
+
+gov_faerdor_peasants_republic = {
+	rank = {
+		1 = REPUBLIC
+	}
+
+	ruler_male = {
+		1 = GENERAL
+	}
+
+	ruler_female = {
+		1 = GENERAL
+	}
+	
+	trigger = {
+		has_reform = faerdor_peasants_republic_reform
+		primary_culture = culture_feotari
+	}
+}

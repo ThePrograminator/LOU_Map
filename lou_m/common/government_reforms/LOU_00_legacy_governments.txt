@@ -339,6 +339,35 @@ trading_city_legacy = {
 	}
 }
 
+peasants_republic_legacy = {
+	# government mechanics flags go here
+	icon = "fist_in_air"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	duration = 5
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+	modifiers = {
+		governing_capacity = 50
+		production_efficiency = 0.1
+		land_morale = 0.05
+		global_autonomy = -0.05
+		max_absolutism = -50
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
 #-----------------------------------------
 # Tribal
 #-----------------------------------------
