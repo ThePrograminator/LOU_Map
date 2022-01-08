@@ -134,6 +134,21 @@ is_racial_group_melkor = {
         religion = religion_burz_uruk
     }
 }
+is_owner_racial_group_melkor = {
+	owner = {
+		OR = {
+			technology_group = lotr_dragon
+			technology_group = lotr_goblin
+			technology_group = lotr_great_spider
+			technology_group = lotr_half_orc
+			technology_group = lotr_orc
+			technology_group = lotr_troll
+			technology_group = lotr_uruk_hai
+			technology_group = lotr_wights
+		}
+	}
+}
+
 is_racial_group_wilderness = {
     OR = {
         religion = religion_wilderness
