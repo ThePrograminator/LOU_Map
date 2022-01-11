@@ -29,6 +29,12 @@ country_event = {
 				is_capital = no
 			}
 		}
+		OR = {
+			is_human = yes
+			technology_group = lotr_dwarven
+			technology_group = lotr_elven
+			technology_group = lotr_hobbit
+		}
 	}
 
 	is_triggered_only = yes
@@ -272,6 +278,7 @@ country_event = {
 	
 	trigger = {
 		has_estate = estate_tribes
+		is_human = yes
 	}
 	
 	is_triggered_only = yes
@@ -409,6 +416,12 @@ country_event = {
 			NOT = { has_country_flag = refused_tribal_stability_aid }
 			had_country_flag = { flag = refused_tribal_stability_aid days = 7300 }
 		}
+		OR = {
+			is_human = yes
+			technology_group = lotr_dwarven
+			technology_group = lotr_elven
+			technology_group = lotr_hobbit
+		}
 	}
 	
 	is_triggered_only = yes
@@ -481,6 +494,7 @@ country_event = {
 			NOT = { has_country_flag = refused_tribal_armies }
 			had_country_flag = { flag = refused_tribal_armies days = 7300 }
 		}
+		is_human = yes
 	}
 	
 	is_triggered_only = yes
@@ -618,6 +632,7 @@ country_event = {
 			influence = 50
 		}
 		NOT = { has_country_modifier = the_proper_old_ways }
+		is_human = yes
 	}
 	
 	is_triggered_only = yes
@@ -785,6 +800,7 @@ country_event = {
 				estate = estate_tribes
 			}
 		}
+		is_human = yes
 	}
 	
 	is_triggered_only = yes
@@ -862,6 +878,12 @@ country_event = {
 		any_owned_province = {
 			is_capital = no
 			is_city = yes
+		}
+		OR = {
+			is_human = yes
+			technology_group = lotr_dwarven
+			technology_group = lotr_elven
+			technology_group = lotr_hobbit
 		}
 	}
 	
@@ -971,6 +993,12 @@ country_event = {
 				modifier = EST_VAL_TRIBES_REFUSED_DEMANDING
 				estate = estate_tribes
 			}
+		}
+		OR = {
+			is_human = yes
+			technology_group = lotr_dwarven
+			technology_group = lotr_elven
+			technology_group = lotr_hobbit
 		}
 	}
 	
