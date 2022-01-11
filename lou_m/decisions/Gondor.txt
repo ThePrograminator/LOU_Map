@@ -4,6 +4,9 @@ country_decisions = {
 	
 		potential = {
 			tag = X01
+			NOT = {
+				has_dlc = "Leviathan"
+			}
 			413 = {
 				owned_by = ROOT
 				is_core = ROOT

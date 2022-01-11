@@ -1,12 +1,12 @@
-# Province ID : 1901
+# Province ID : 2612
 # Province Name : Celebannon
 # Province RGB : (42, 131, 67)
-# Province Area : Thranduil's Realm
-# Province Region : Mirkwood
-# Province Super Region : Rhovanion
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Lake-Town
-# Province Climate : Severe_winter
+# Province Tradenode : null
+# Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -27,22 +27,17 @@ trade_goods = wine
 
 hre = no
 
-town_2_elf_building=yes
-
-seaport_elf_building=yes
-
-craftsmen_plaza_elf_building=yes
-
-theatre_elf_building=yes
-
-elven_forge_elf_building=yes
-
-warriors_gallery_building=yes
-
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
+
+town_2_elf_building=yes
+seaport_elf_building=yes
+craftsmen_plaza_elf_building=yes
+theatre_elf_building=yes
+elven_forge_elf_building=yes
+warriors_gallery_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -61,6 +56,5 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
 

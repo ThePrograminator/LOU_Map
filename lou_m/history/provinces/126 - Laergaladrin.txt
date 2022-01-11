@@ -1,9 +1,9 @@
 # Province ID : 126
 # Province Name : Laergaladrín
 # Province RGB : (89, 191, 13)
-# Province Area : Laergaladrín
-# Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -27,12 +27,6 @@ trade_goods = grain
 
 hre = no
 
-2741.1.1 = {
-	add_core = X24
-	owner = X24
-	controller = X24
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -50,6 +44,10 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
+2741.1.1 = {
+	add_core = X24
+	owner = X24
+	controller = X24
+}
 

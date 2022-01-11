@@ -1,15 +1,3 @@
-# Province ID : 3216
-# Province Name : Scrandburg
-# Province RGB : (127, 135, 38)
-# Province Area : Anglad
-# Province Region : The Iron Hills & The Lonely Mountain
-# Province Super Region : Rhovanion
-# Province Continent : Middle Earth
-# Province Tradenode : Erebor
-# Province Climate : Severe_winter
-# Province is not Sea/Lake Province
-# Province Contents : 
-
 is_city = yes
 
 base_tax = 3
@@ -19,27 +7,14 @@ base_manpower = 3
 add_core = Y22
 owner = Y22
 controller = Y22
-
 add_core = Y90
+
 culture = culture_ymirsfolk
 religion = religion_nenedain
 
 trade_goods = copper
 
 hre = no
-
-2770.1.1 = {
-	owner = Y90
-	controller = Y90
-	settlement_building=yes
-	work_camp_building=yes
-}
-
-2941.11.23 = {
-	add_core = Y22
-	owner = Y22
-	controller = Y22
-}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -58,6 +33,16 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2770.1.1 = {
+	owner = Y90
+	controller = Y90
+	settlement_building=yes
+	work_camp_building=yes
+}
+
+2941.11.23 = {
+	add_core = Y22
+	owner = Y22
+	controller = Y22
+}

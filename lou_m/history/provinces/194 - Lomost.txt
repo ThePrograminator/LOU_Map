@@ -1,11 +1,11 @@
-# Province ID : 194
+# Province ID : 196
 # Province Name : Lómost
 # Province RGB : (226, 184, 43)
 # Province Area : Anfalas
-# Province Region : Anfalas
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : Annúlond
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -29,16 +29,7 @@ trade_goods = dyes
 hre = no
 
 fortress_1_building=yes
-
 outpost_building=yes
-
-2758.9.15 = {
-	controller = X27
-}
-
-2759.8.20 = {
-	controller = X01
-}
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -56,6 +47,11 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2758.9.15 = {
+	controller = X27
+}
+
+2759.8.20 = {
+	controller = X01
+}

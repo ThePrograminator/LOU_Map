@@ -1,11 +1,11 @@
-# Province ID : 997
+# Province ID : 1439
 # Province Name : Ethir Anduin
 # Province RGB : (30, 129, 79)
 # Province Area : Ethir Anduin
-# Province Region : Lebennin
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : Pelargir
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -27,18 +27,6 @@ trade_goods = fish
 
 hre = no
 
-2758.9.15 = {
-	controller = X27
-}
-
-2759.8.20 = {
-	controller = X01
-}
-
-3018.4.1 = {
-	controller = X19
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
@@ -55,6 +43,15 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2758.9.15 = {
+	controller = X27
+}
+
+2759.8.20 = {
+	controller = X01
+}
+
+3018.4.1 = {
+	controller = X19
+}

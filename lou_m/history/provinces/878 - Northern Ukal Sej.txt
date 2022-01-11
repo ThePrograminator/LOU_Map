@@ -1,11 +1,11 @@
 # Province ID : 878
 # Province Name : Northern Ukal Sêj
 # Province RGB : (46, 102, 136)
-# Province Area : Ukal Sêj
-# Province Region : Ukal Sêj
-# Province Super Region : Dyria
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Yjuvit
+# Province Tradenode : null
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -27,17 +27,6 @@ trade_goods = fish
 
 hre = no
 
-2911.12.15 = {
-	add_core = Y36
-	owner = Y36
-	controller = Y36
-}
-
-2951.1.1 = {
-	culture = culture_ice_orkish
-	religion = religion_orkish
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -55,5 +44,13 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
 
+2911.12.15 = {
+	add_core = Y36
+	owner = Y36
+	controller = Y36
+}
+2951.1.1 = {
+	culture = culture_ice_orkish
+	religion = religion_orkish
+}

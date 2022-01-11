@@ -1,12 +1,12 @@
-# Province ID : 1818
+# Province ID : 2529
 # Province Name : Fennas Drúnin
 # Province RGB : (177, 232, 118)
-# Province Area : En Egladil
-# Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Fennas Drunin
-# Province Climate : Mild_winter
+# Province Tradenode : null
+# Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -27,24 +27,20 @@ trade_goods = paper
 
 hre = no
 
-capital_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
+center_of_trade = 2
 
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
+
+capital_2_building=yes
+marketplace_building=yes
+provincial_office_building=yes
+warehouse_building=yes			
+forge_building=yes
+fort_castle_building=yes
+barracks_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -63,6 +59,5 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
 

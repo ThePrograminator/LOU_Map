@@ -1,12 +1,12 @@
-# Province ID : 665
+# Province ID : 681
 # Province Name : Norr-dûm
 # Province RGB : (255, 156, 205)
-# Province Area : Norr-Dûm
-# Province Region : The Grey Mountains
-# Province Super Region : Rhovanion
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Erebor
-# Province Climate : Severe_winter
+# Province Tradenode : null
+# Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -19,8 +19,8 @@ base_manpower = 10
 add_core = Y30
 owner = Y30
 controller = Y30
-
 add_core = Y22
+
 culture = culture_orkish
 religion = religion_orkish
 
@@ -28,24 +28,17 @@ trade_goods = gems
 
 hre = no
 
+center_of_trade = 1
+
 fortress_3_orc_building=yes
-
 meat_depot_orc_building=yes
-
 enforcer_camp_orc_building=yes
-
 blacksmith_orc_building=yes
-
 army_garrison_orc_building=yes
-
 troll_cage_orc_building=yes
-
 siege_works_orc_building=yes
-
 fort_orc_stronghold_orc_building=yes
-
 tortur_chambers_orc_building=yes
-
 large_arena_building=yes
 
 discovered_by = lotr_human
@@ -65,6 +58,5 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
 

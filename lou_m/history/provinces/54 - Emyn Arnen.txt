@@ -1,11 +1,11 @@
-# Province ID : 54
+# Province ID : 55
 # Province Name : Emyn Arnen
 # Province RGB : (157, 205, 65)
 # Province Area : Emyn Arnen
-# Province Region : Ithilien
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : Minas Tirith
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -32,19 +32,6 @@ settlement_building=yes
 
 outpost_building=yes
 
-2954.1.1 = {
-	culture = culture_wilderness
-	religion = religion_wilderness
-	add_province_modifier = {
-		name = wilderness_debuff
-		duration = -1
-	}
-}
-
-3018.4.1 = {
-	controller = V17
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
@@ -61,6 +48,17 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
+2954.1.1 = {
+	culture = culture_wilderness
+	religion = religion_wilderness
+	add_province_modifier = {
+		name = wilderness_debuff
+		duration = -1
+	}
+}
+
+3018.4.1 = {
+	controller = V17
+}
 

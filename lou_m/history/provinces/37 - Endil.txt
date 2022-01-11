@@ -1,8 +1,8 @@
-# Province ID : 37
-# Province Name : Endil
+# Province ID : 38
+# Province Name : Tyliand
 # Province RGB : (0, 86, 103)
-# Province Area : Methrast
-# Province Region : Belfalas
+# Province Area : Belfalas
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
 # Province Tradenode : null
@@ -29,20 +29,10 @@ trade_goods = grain
 hre = no
 
 city_1_building=yes
-
 trade_outpost_building=yes
-
 temple_building=yes
-
 outpost_building=yes
-
 port_building=yes
-
-2900.1.1 = {
-	army_camp_building=yes
-	workshop_building=yes
-	dock_building=yes
-}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -61,6 +51,9 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2900.1.1 = {
+	army_camp_building=yes
+	workshop_building=yes
+	dock_building=yes
+}

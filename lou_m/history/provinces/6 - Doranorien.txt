@@ -1,19 +1,19 @@
-# Province ID : 6
-# Province Name : Doranórien
+# Province ID : 7
+# Province Name : Elena
 # Province RGB : (255, 75, 45)
 # Province Area : Anórien
-# Province Region : Anoríen
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : Minas Tirith
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
 is_city = yes
 
-base_tax = 1
-base_production = 7
+base_tax = 2
+base_production = 1
 base_manpower = 1
 
 add_core = X01
@@ -23,7 +23,7 @@ controller = X01
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 
-trade_goods = paper
+trade_goods = grain
 
 hre = no
 
@@ -44,5 +44,5 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
+
 

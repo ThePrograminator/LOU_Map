@@ -1,12 +1,12 @@
-# Province ID : 385
+# Province ID : 394
 # Province Name : Dol Carak
 # Province RGB : (98, 120, 98)
-# Province Area : Pinnath Tereg
-# Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Cameth Brin
-# Province Climate : Normal_winter
+# Province Tradenode : null
+# Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,24 +28,7 @@ trade_goods = grain
 hre = no
 
 settlement_building=yes
-
 outpost_building=yes
-
-2758.1.1 = {
-	add_core = Q05
-	owner = Q05
-	controller = Q05
-	culture = culture_dunedain_of_arnor
-	religion = religion_dunedain
-}
-
-2933.4.19 = {
-	add_core = Z62
-	owner = Z62
-	controller = Z62
-	culture = culture_hillmen_of_rhudaur
-	religion = religion_daen
-}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -64,6 +47,19 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2758.1.1 = { 
+	add_core = Q05
+	owner = Q05
+	controller = Q05
+	culture = culture_dunedain_of_arnor
+	religion = religion_dunedain
+}
+
+2933.4.19 = { 
+	add_core = Z62
+	owner = Z62
+	controller = Z62
+	culture = culture_hillmen_of_rhudaur
+	religion = religion_daen
+}

@@ -1,12 +1,12 @@
 # Province ID : 1935
 # Province Name : Rómenost
 # Province RGB : (137, 71, 49)
-# Province Area : Talath Harroch
-# Province Region : Rhovanion
-# Province Super Region : Rhovanion
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Rómenost
-# Province Climate : Mild_winter
+# Province Tradenode : null
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -27,13 +27,30 @@ trade_goods = grain
 
 hre = no
 
+center_of_trade = 1
+
 fortress_2_building=yes
-
 fort_castle_building=yes
-
 army_camp_building=yes
-
 forge_building=yes
+
+discovered_by = lotr_human
+discovered_by = lotr_erus_children
+discovered_by = lotr_dwarven
+discovered_by = lotr_dragon
+discovered_by = lotr_elven
+discovered_by = lotr_ent
+discovered_by = lotr_goblin
+discovered_by = lotr_giant
+discovered_by = lotr_great_spider
+discovered_by = lotr_half_dwarf
+discovered_by = lotr_hobbit
+discovered_by = lotr_half_orc
+discovered_by = lotr_orc
+discovered_by = lotr_troll
+discovered_by = lotr_uruk_hai
+discovered_by = lotr_wizard
+discovered_by = lotr_wights
 
 2758.9.15 = {
 	add_core = V30
@@ -56,9 +73,10 @@ forge_building=yes
 	controller = V27
 	culture = culture_eothraim
 	religion = religion_aivathuida
+
 }
 
-2999.1.1 = {
+2999.1.1 = { 
 	add_core = X99
 	owner = X99
 	controller = X99
@@ -66,24 +84,3 @@ forge_building=yes
 	culture = culture_sagath
 	religion = religion_ulgath
 }
-
-discovered_by = lotr_human
-discovered_by = lotr_erus_children
-discovered_by = lotr_dwarven
-discovered_by = lotr_dragon
-discovered_by = lotr_elven
-discovered_by = lotr_ent
-discovered_by = lotr_goblin
-discovered_by = lotr_giant
-discovered_by = lotr_great_spider
-discovered_by = lotr_half_dwarf
-discovered_by = lotr_hobbit
-discovered_by = lotr_half_orc
-discovered_by = lotr_orc
-discovered_by = lotr_troll
-discovered_by = lotr_uruk_hai
-discovered_by = lotr_wizard
-discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
-

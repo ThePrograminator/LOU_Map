@@ -1,11 +1,11 @@
-# Province ID : 148
+# Province ID : 149
 # Province Name : Cirith Ungol
 # Province RGB : (112, 42, 18)
-# Province Area : Cirith Ungol
-# Province Region : Mordor
-# Province Super Region : Mordor
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Barad-Dûr
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -19,7 +19,6 @@ base_manpower = 9
 add_core = V18
 owner = V18
 controller = V18
-
 culture = culture_orkish
 religion = religion_orkish
 
@@ -27,41 +26,18 @@ trade_goods = copper
 
 hre = no
 
+center_of_trade = 1
+
 fortress_2_orc_building=yes
-
 treasure_trove_orc_building=yes
-
 overseer_station_orc_building=yes
-
 metal_works_orc_building=yes
-
 orc_fissure_orc_building=yes
-
 workshop_orc_building=yes
-
 fort_wooden_walls_orc_building=yes
-
 large_arena_building=yes
-
 prisoner_cage_orc_building=yes
-
 tortur_chambers_orc_building=yes
-
-2942.1.1 = {
-	add_core = V17
-	owner = V17
-	controller = V17
-	culture = culture_orkish
-	religion = religion_orkish
-	fortress_1_orc_building=yes
-	fort_pallisade_orc_building=yes
-}
-
-2953.7.1 = {
-	fortress_2_orc_building=yes
-	orc_pit_orc_building=yes
-	fort_wooden_walls_orc_building=yes
-}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -80,6 +56,18 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2942.1.1 = {
+	add_core = V17
+	owner = V17
+	controller = V17
+	culture = culture_orkish
+	religion = religion_orkish
+	fortress_1_orc_building=yes
+	fort_pallisade_orc_building=yes
+}
+2953.7.1 = {
+	fortress_2_orc_building=yes
+	orc_pit_orc_building=yes
+	fort_wooden_walls_orc_building=yes
+}

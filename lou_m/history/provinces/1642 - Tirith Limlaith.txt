@@ -6,7 +6,7 @@
 # Province Super Region : Rohan
 # Province Continent : Middle Earth
 # Province Tradenode : Edoras
-# Province Climate : Mild_winter
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,16 +28,14 @@ trade_goods = copper
 
 hre = no
 
-fortress_1_building=yes
-
-outpost_building=yes
-
-fort_pallisade_building=yes
-
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
+
+fortress_1_building=yes
+outpost_building=yes
+fort_pallisade_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -56,5 +54,4 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
 

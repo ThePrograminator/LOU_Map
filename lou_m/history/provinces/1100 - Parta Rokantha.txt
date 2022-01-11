@@ -1,12 +1,12 @@
-# Province ID : 1100
+# Province ID : 1545
 # Province Name : Parta Rokantha
 # Province RGB : (127, 43, 144)
-# Province Area : Parta Rogartha
-# Province Region : Rhovanion
-# Province Super Region : Rhovanion
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Riavod
-# Province Climate : Mild_winter
+# Province Tradenode : null
+# Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -17,24 +17,16 @@ base_production = 3
 base_manpower = 3
 
 add_core = W79
+add_core = Y48
 owner = W79
 controller = W79
 
-add_core = Y48
 culture = culture_dorwinrim
 religion = religion_daen
 
 trade_goods = copper
 
 hre = no
-
-2770.12.1 = {
-	add_core = Y48
-	owner = Y48
-	controller = Y48
-	culture = culture_goblin
-	religion = religion_goblin
-}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -53,6 +45,11 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2770.12.1 = {
+	add_core = Y48
+	owner = Y48
+	controller = Y48
+	culture = culture_goblin
+	religion = religion_goblin
+}

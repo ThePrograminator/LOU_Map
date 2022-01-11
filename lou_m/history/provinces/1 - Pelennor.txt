@@ -2,10 +2,10 @@
 # Province Name : Pelennor
 # Province RGB : (194, 129, 255)
 # Province Area : Minas Tirith
-# Province Region : Anoríen
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : Minas Tirith
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -27,14 +27,13 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-fort_pallisade_building=yes
-
 add_province_modifier = {
-	name = rammas_echor
-	duration = -1
+  name = rammas_echor
+  duration = -1
 }
+
+settlement_building=yes
+fort_pallisade_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -54,6 +53,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
+
 

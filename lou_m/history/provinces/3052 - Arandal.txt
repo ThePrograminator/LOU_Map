@@ -1,15 +1,3 @@
-# Province ID : 3052
-# Province Name : Arandal
-# Province RGB : (26, 32, 71)
-# Province Area : Forithilien
-# Province Region : Ithilien
-# Province Super Region : Gondor
-# Province Continent : Middle Earth
-# Province Tradenode : Minas Tirith
-# Province Climate : null
-# Province is not Sea/Lake Province
-# Province Contents : 
-
 is_city = yes
 
 base_tax = 2
@@ -27,6 +15,23 @@ religion = religion_dunedain
 trade_goods = grain
 
 hre = no
+
+discovered_by = lotr_human
+discovered_by = lotr_dwarven
+discovered_by = lotr_dragon
+discovered_by = lotr_elven
+discovered_by = lotr_ent
+discovered_by = lotr_goblin
+discovered_by = lotr_giant
+discovered_by = lotr_great_spider
+discovered_by = lotr_half_dwarf
+discovered_by = lotr_hobbit
+discovered_by = lotr_half_orc
+discovered_by = lotr_orc
+discovered_by = lotr_troll
+discovered_by = lotr_uruk_hai
+discovered_by = lotr_wizard
+discovered_by = lotr_wights
 
 2758.9.15 = {
 	controller = X99
@@ -48,23 +53,3 @@ hre = no
 3018.4.1 = {
 	controller = V17
 }
-
-discovered_by = lotr_human
-discovered_by = lotr_dwarven
-discovered_by = lotr_dragon
-discovered_by = lotr_elven
-discovered_by = lotr_ent
-discovered_by = lotr_goblin
-discovered_by = lotr_giant
-discovered_by = lotr_great_spider
-discovered_by = lotr_half_dwarf
-discovered_by = lotr_hobbit
-discovered_by = lotr_half_orc
-discovered_by = lotr_orc
-discovered_by = lotr_troll
-discovered_by = lotr_uruk_hai
-discovered_by = lotr_wizard
-discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
-

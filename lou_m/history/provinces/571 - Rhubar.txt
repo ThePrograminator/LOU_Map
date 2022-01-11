@@ -1,11 +1,11 @@
 # Province ID : 571
 # Province Name : Rhûbar
 # Province RGB : (54, 70, 16)
-# Province Area : Rhûbar
-# Province Region : Rhûn
-# Province Super Region : Rhûn
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Kugavod
+# Province Tradenode : null
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -27,28 +27,22 @@ trade_goods = naval_supplies
 
 hre = no
 
-capital_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-foundry_building=yes
-
-fort_stronghold_building=yes
-
-garrison_building=yes
-
-dockyard_building=yes
-
-grand_shipyard_building=yes
+center_of_trade = 2
 
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
+
+capital_3_building=yes
+forum_building=yes
+bank_building=yes
+stockpile_building=yes			
+foundry_building=yes
+fort_stronghold_building=yes
+garrison_building=yes
+dockyard_building=yes			
+grand_shipyard_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -67,6 +61,4 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 

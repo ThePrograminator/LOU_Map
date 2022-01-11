@@ -27,27 +27,6 @@ trade_goods = grain
 
 hre = no
 
-2758.1.1 = {
-	add_core = V95
-	owner = V95
-	controller = V95
-	culture = culture_dunlendings
-	religion = religion_daen
-}
-
-2870.6.1 = {
-	add_core = X16
-	owner = X16
-	controller = X16
-	add_core = W95
-	culture = culture_west_march
-	religion = religion_eorlingas
-}
-
-3018.4.1 = {
-	controller = V49
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
@@ -64,5 +43,23 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
 
+2758.1.1 = {
+	add_core = V95
+	owner = V95
+	controller = V95
+	culture = culture_dunlendings
+	religion = religion_daen
+}
+2870.6.1 = {
+	add_core = X16
+	owner = X16
+	controller = X16
+	add_core = W95
+	culture = culture_west_march
+	religion = religion_eorlingas
+}
+
+3018.4.1 = {
+	controller = V49
+}

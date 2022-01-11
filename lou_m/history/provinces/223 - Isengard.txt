@@ -1,12 +1,12 @@
-# Province ID : 223
+# Province ID : 225
 # Province Name : Isengard
 # Province RGB : (137, 137, 137)
-# Province Area : Nan Curunir
-# Province Region : Rohan
-# Province Super Region : Rohan
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Gap of Rohan
-# Province Climate : Mild_winter
+# Province Tradenode : null
+# Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -27,50 +27,6 @@ trade_goods = iron
 
 hre = no
 
-2759.5.1 = {
-	culture = culture_istari
-	religion = religion_daen
-	add_core = W53
-	remove_core = Z48
-	owner = W53
-	controller = W53
-}
-
-2953.1.1 = {
-	culture = culture_urukhai
-	religion = religion_uruk
-	add_core = V49
-	remove_core = W53
-	owner = V49
-	controller = V49
-	capital_1_orc_building=yes
-	meat_depot_orc_building=yes
-	blacksmith_orc_building=yes
-	orc_pit_orc_building=yes
-}
-
-2957.1.1 = {
-	capital_2_orc_building=yes
-	fort_orc_stronghold_orc_building=yes
-	warg_pit_orc_building=yes
-	prisoner_cage_orc_building=yes
-}
-
-3000.1.1 = {
-	add_base_tax = 7
-	add_base_production = 10
-	add_base_manpower = 9
-	capital_3_orc_building=yes
-	dark_iron_forge_orc_building=yes
-	orc_fissure_orc_building=yes
-	army_garrison_orc_building=yes
-	warg_arena_orc_building=yes
-	great_siege_works_orc_building=yes
-	fort_large_orc_stronghold_orc_building=yes
-	large_arena_building=yes
-	tortur_chambers_orc_building=yes
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -88,5 +44,48 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
+
+2759.5.1 = { 
+	culture = culture_istari
+	religion = religion_daen
+	add_core = W53
+	remove_core = Z48
+	owner = W53
+	controller = W53
+}
+
+2953.1.1 = { 
+	culture = culture_urukhai 
+	religion = religion_uruk
+	add_core = V49
+	remove_core = W53
+	owner = V49
+	controller = V49
+	capital_1_orc_building=yes
+	meat_depot_orc_building=yes
+	blacksmith_orc_building=yes
+	orc_pit_orc_building=yes
+}
+
+2957.1.1 = { 
+	capital_2_orc_building=yes
+	fort_orc_stronghold_orc_building=yes
+	warg_pit_orc_building=yes
+	prisoner_cage_orc_building=yes
+}
+
+3000.1.1 = { 
+	add_base_tax = 7
+	add_base_production = 10
+	add_base_manpower = 9
+	capital_3_orc_building=yes
+	dark_iron_forge_orc_building=yes
+	orc_fissure_orc_building=yes
+	army_garrison_orc_building=yes
+	warg_arena_orc_building=yes
+	great_siege_works_orc_building=yes
+	fort_large_orc_stronghold_orc_building=yes
+	large_arena_building=yes
+	tortur_chambers_orc_building=yes
+}
 

@@ -1,11 +1,11 @@
 # Province ID : 532
 # Province Name : Gramavuld
 # Province RGB : (6, 67, 7)
-# Province Area : Gramavuld
-# Province Region : Dale
-# Province Super Region : Rhovanion
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Ilanin
+# Province Tradenode : null
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -26,6 +26,24 @@ religion = religion_nenedain
 trade_goods = grain
 
 hre = no
+
+discovered_by = lotr_human
+discovered_by = lotr_erus_children
+discovered_by = lotr_dwarven
+discovered_by = lotr_dragon
+discovered_by = lotr_elven
+discovered_by = lotr_ent
+discovered_by = lotr_goblin
+discovered_by = lotr_giant
+discovered_by = lotr_great_spider
+discovered_by = lotr_half_dwarf
+discovered_by = lotr_hobbit
+discovered_by = lotr_half_orc
+discovered_by = lotr_orc
+discovered_by = lotr_troll
+discovered_by = lotr_uruk_hai
+discovered_by = lotr_wizard
+discovered_by = lotr_wights
 
 2770.1.1 = {
 	add_core = V51
@@ -48,24 +66,4 @@ hre = no
 2960.1.1 = {
 	remove_province_modifier = ruins_debuff
 }
-
-discovered_by = lotr_human
-discovered_by = lotr_erus_children
-discovered_by = lotr_dwarven
-discovered_by = lotr_dragon
-discovered_by = lotr_elven
-discovered_by = lotr_ent
-discovered_by = lotr_goblin
-discovered_by = lotr_giant
-discovered_by = lotr_great_spider
-discovered_by = lotr_half_dwarf
-discovered_by = lotr_hobbit
-discovered_by = lotr_half_orc
-discovered_by = lotr_orc
-discovered_by = lotr_troll
-discovered_by = lotr_uruk_hai
-discovered_by = lotr_wizard
-discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 

@@ -1,7 +1,7 @@
 # Province ID : 1025
 # Province Name : Fords of Isen
 # Province RGB : (13, 189, 37)
-# Province Area : Gap of Rohan
+# Province Area : Westfold
 # Province Region : Rohan
 # Province Super Region : Rohan
 # Province Continent : Middle Earth
@@ -28,14 +28,6 @@ trade_goods = livestock
 
 hre = no
 
-2758.9.15 = {
-	controller = V95
-}
-
-2759.8.20 = {
-	controller = X16
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -53,5 +45,11 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
 
+2758.9.15 = {
+	controller = V95
+}
+
+2759.8.20 = {
+	controller = X16
+}

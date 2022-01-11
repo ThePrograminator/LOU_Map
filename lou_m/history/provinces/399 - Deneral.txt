@@ -1,11 +1,11 @@
 # Province ID : 399
 # Province Name : Deneral
 # Province RGB : (164, 144, 89)
-# Province Area : Ilanin
-# Province Region : Rhovanion
-# Province Super Region : Rhovanion
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
-# Province Tradenode : Ilanin
+# Province Tradenode : null
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -17,10 +17,10 @@ base_production = 8
 base_manpower = 6
 
 add_core = Z02
+add_core = W71
 owner = Z02
 controller = Z02
 
-add_core = W71
 culture = culture_gargath
 religion = religion_daen
 
@@ -28,18 +28,15 @@ trade_goods = livestock
 
 hre = no
 
-city_2_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-work_camp_building=yes
-
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
+
+city_2_building=yes
+marketplace_building=yes
+tax_office_building=yes
+work_camp_building=yes
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -58,6 +55,4 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 

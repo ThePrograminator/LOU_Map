@@ -737,9 +737,31 @@ gondor_missions_5 = {
 		position = 2
 		required_missions = { gondor_beyond_the_long_winter gondor_great_ship_kings_of_gondor }
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
-				province_has_center_of_trade_of_level = 2
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Leviathan"
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					province_has_center_of_trade_of_level = 1
+					OR = {
+						has_building = city_2_building
+						has_building = city_3_building
+					}
+					OR = {
+						has_building = marketplace_building
+						has_building = trade_depot_building
+						has_building = forum_building
+					}
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 5
+					province_has_center_of_trade_of_level = 2
+				}
 			}
 			num_of_light_ship = 15
 		}
@@ -1219,19 +1241,29 @@ gondor_missions_2_2 = {
 			}
 			NOT = {
 				is_core = ROOT
-				has_building = city_2_building
+				OR = {
+					has_building = city_2_building
+					has_building = city_3_building
+				}
 				has_building = forum_building
 			}
 		}
 		trigger = { 
 			170 = {
 				is_core = ROOT
-				has_building = city_2_building
+				OR = {
+					has_building = city_2_building
+					has_building = city_3_building
+				}
 				has_building = forum_building
 			}
 			677 = {
 				is_core = ROOT
-				has_building = city_2_building
+				OR = {
+					has_building = city_2_building
+					has_building = city_3_building
+				}
+				
 				has_building = forum_building
 			}
 		}
@@ -1274,7 +1306,23 @@ gondor_missions_1_2 = {
 		required_missions = { gondor_the_return_of_the_king }
 		trigger = { 
 			#has_country_flag = EXPANDED_LIBRARY_OF_MINAS_TIRITH_FLAG
-			has_country_modifier = expanded_library_of_minas_tirith
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Leviathan"
+					}
+				}
+				has_country_modifier = expanded_library_of_minas_tirith
+			}
+			else = {
+				413 = {
+					has_great_project = {
+						type = library_of_minas_tirith_monument
+						tier = 3
+					}
+				}
+			}
+			
 		}
 		effect = { 
 			add_prestige = 25

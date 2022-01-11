@@ -1,8 +1,8 @@
 # Province ID : 53
-# Province Name : Barad Othnir
+# Province Name : Othnir
 # Province RGB : (100, 151, 1)
-# Province Area : Ithilien
-# Province Region : Ithilien
+# Province Area : Forithilien
+# Province Region : Gondor
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
 # Province Tradenode : Minas Tirith
@@ -31,18 +31,6 @@ settlement_building=yes
 
 fort_pallisade_building=yes
 
-2901.1.1 = {
-	add_core = V18
-	owner = V18
-	controller = V18
-	culture = culture_wilderness
-	religion = religion_wilderness
-	add_province_modifier = {
-		name = wilderness_debuff
-		duration = -1
-	}
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -60,6 +48,16 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
+
+2901.1.1 = {
+	add_core = V18
+	owner = V18
+	controller = V18
+	culture = culture_wilderness
+	religion = religion_wilderness
+	add_province_modifier = {
+		name = wilderness_debuff
+		duration = -1
+	}
+}
 

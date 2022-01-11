@@ -1,9 +1,9 @@
 # Province ID : 138
 # Province Name : Emyn Imladrim
 # Province RGB : (76, 75, 60)
-# Province Area : Emyn Imladrim
-# Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Area : null
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -27,14 +27,6 @@ trade_goods = salt
 
 hre = no
 
-2884.1.1 = {
-	add_core = X23
-	owner = X23
-	controller = X23
-	culture = culture_haruze
-	religion = religion_haruzani
-}
-
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -52,6 +44,11 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-discovered_by = lotr_human_rohan
-discovered_by = lotr_human_rohan
 
+2884.1.1 = {
+	add_core = X23
+	owner = X23
+	controller = X23
+	culture = culture_haruze
+	religion = religion_haruzani
+}
