@@ -1,12 +1,12 @@
-# Province ID : 2623
+# Province ID : 1912
 # Province Name : Brugath Thraim
 # Province RGB : (99, 54, 76)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Narrows of Mirkwood
+# Province Region : Mirkwood
+# Province Super Region : Rhovanion
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Woodsmen-Town
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,7 +28,14 @@ trade_goods = mushrooms
 hre = no
 
 encampment_1_orc_building=yes
+
 small_arena_building=yes
+
+2951.3.1 = {
+	add_core = V19
+	owner = V19
+	controller = V19
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -46,9 +53,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2951.3.1 = {
-	add_core = V19
-	owner = V19
-	controller = V19
-}

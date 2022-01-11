@@ -1,3 +1,15 @@
+# Province ID : 3173
+# Province Name : Dyn Odoric
+# Province RGB : (88, 26, 68)
+# Province Area : Gramavuld
+# Province Region : Dale
+# Province Super Region : Rhovanion
+# Province Continent : Middle Earth
+# Province Tradenode : Lake-Town
+# Province Climate : Normal_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 4
@@ -14,6 +26,22 @@ religion = religion_nenedain
 trade_goods = grain
 
 hre = no
+
+2770.1.1 = {
+	add_core = V51
+	controller = V51
+	owner = V51
+}
+
+2941.11.23 = {
+	add_core = Y94
+	controller = Y94
+	owner = Y94
+	culture = culture_bardings
+	religion = religion_nenedain
+	settlement_building=yes
+	outpost_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,19 +60,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2770.1.1 = {
-	add_core = V51
-	controller = V51
-	owner = V51
-}
-
-2941.11.23 = {
-	add_core = Y94
-	controller = Y94
-	owner = Y94
-	culture = culture_bardings
-	religion = religion_nenedain
-	settlement_building=yes
-	outpost_building=yes
-}

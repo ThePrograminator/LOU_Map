@@ -1,12 +1,12 @@
 # Province ID : 591
 # Province Name : Sharukan
 # Province RGB : (57, 107, 81)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Gathod
+# Province Region : Rhûn
+# Province Super Region : Rhûn
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Burh Ermanarikis
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -17,10 +17,10 @@ base_production = 5
 base_manpower = 6
 
 add_core = X87
-add_core = Y03
 owner = X87
 controller = X87
 
+add_core = Y03
 culture = culture_asdriags
 religion = religion_ioriags
 
@@ -29,9 +29,13 @@ trade_goods = cloth
 hre = no
 
 fortress_2_building=yes
+
 trade_outpost_building=yes
+
 forge_building=yes
+
 fort_castle_building=yes
+
 barracks_building=yes
 
 discovered_by = lotr_human
@@ -51,4 +55,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

@@ -1,12 +1,12 @@
-# Province ID : 1890
+# Province ID : 1444
 # Province Name : Anccraug
 # Province RGB : (157, 38, 126)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Dor Wathui
+# Province Region : Enedhwaith
+# Province Super Region : Eriador
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Dun Larach
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,7 +28,14 @@ trade_goods = iron
 hre = no
 
 settlement_building=yes
+
 outpost_building=yes
+
+2759.1.1 = {
+	add_core = Z44
+	owner = Z44
+	controller = Z44
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -47,9 +54,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2759.1.1 = {
-	add_core = Z44
-	owner = Z44
-	controller = Z44
-}

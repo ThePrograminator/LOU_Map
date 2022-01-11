@@ -22,7 +22,7 @@
 province_owner_is_human_race = { #Province Scope
 	owner = {
 		OR = {
-			technology_group = lotr_human
+			is_human = yes
 			technology_group = lotr_hobbit
 			technology_group = lotr_wizard
 		}

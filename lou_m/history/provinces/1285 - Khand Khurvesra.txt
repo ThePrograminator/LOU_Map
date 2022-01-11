@@ -1,11 +1,11 @@
 # Province ID : 1285
 # Province Name : Khand Khûrvesra
 # Province RGB : (44, 161, 54)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Nebûrkha
+# Province Region : Khand
+# Province Super Region : Rhûn
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Relerindú
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -27,6 +27,16 @@ trade_goods = livestock
 
 hre = no
 
+2922.5.10 = {
+	add_core = X78
+	owner = X78
+	controller = X78
+}
+
+2950.10.10 = {
+	culture = culture_variags
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -44,13 +54,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2922.5.10 = { 
-	add_core = X78
-	owner = X78
-	controller = X78
-}
-
-2950.10.10 = { 
-	culture = culture_variags
-}

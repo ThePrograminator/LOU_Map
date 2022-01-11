@@ -1,12 +1,12 @@
-# Province ID : 817
+# Province ID : 699
 # Province Name : Wintirion Iaur
 # Province RGB : (180, 68, 9)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Shrel Arkasa
+# Province Region : Logathavuld
+# Province Super Region : Rhûn
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Sadvar
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -17,10 +17,10 @@ base_production = 6
 base_manpower = 7
 
 add_core = Y69
-add_core = W67
 owner = Y69
 controller = Y69
 
+add_core = W67
 culture = culture_uialrim
 religion = religion_umanyar
 
@@ -28,14 +28,29 @@ trade_goods = mushrooms
 
 hre = no
 
-center_of_trade = 1
-
 fort_2_elf_building=yes
-heros_shrine_building=yes	
+
+heros_shrine_building=yes
+
 grand_stables_elf_building=yes
+
 harbour_elf_building=yes
+
 fort_high_walls_elf_building=yes
+
 wall_bastions_elf_building=yes
+
+2760.1.15 = {
+	owner = W67
+	controller = W67
+	culture = culture_baradhrim
+	religion = religion_baradhrim
+	city_2_building=yes
+	marketplace_building=yes
+	tax_office_building=yes
+	warehouse_building=yes
+	dock_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -54,16 +69,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-
-2760.1.15 = {
-	owner = W67
-	controller = W67
-	culture = culture_baradhrim
-	religion = religion_baradhrim
-	city_2_building=yes
-	marketplace_building=yes
-	tax_office_building=yes
-	warehouse_building=yes
-	dock_building=yes
-}
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

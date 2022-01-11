@@ -1,3 +1,15 @@
+# Province ID : 3031
+# Province Name : Mormaegon
+# Province RGB : (4, 103, 13)
+# Province Area : Forithilien
+# Province Region : Ithilien
+# Province Super Region : Gondor
+# Province Continent : Middle Earth
+# Province Tradenode : Minas Tirith
+# Province Climate : null
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 3
@@ -7,14 +19,19 @@ base_manpower = 5
 add_core = V18
 owner = V18
 controller = V18
+
 culture = culture_orkish
 religion = religion_orkish
 
 trade_goods = stone
 
+hre = no
+
 camp_orc_building=yes
 
-hre = no
+3000.1.1 = {
+	orc_pit_orc_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -33,7 +50,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-3000.1.1 = {
-	orc_pit_orc_building=yes
-}

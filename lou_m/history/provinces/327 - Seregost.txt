@@ -1,11 +1,11 @@
-# Province ID : 334
+# Province ID : 327
 # Province Name : Seregost
 # Province RGB : (242, 183, 162)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Gaer Dûrlith
+# Province Region : Mordor
+# Province Super Region : Mordor
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Barad-Dûr
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -20,6 +20,28 @@ religion = religion_wilderness
 trade_goods = copper
 
 hre = no
+
+2942.1.1 = {
+	is_city = yes
+	add_core = V17
+	owner = V17
+	controller = V17
+	culture = culture_orkish
+	religion = religion_orkish
+	encampment_1_orc_building=yes
+	meat_depot_orc_building=yes
+	enforcer_camp_orc_building=yes
+}
+
+2953.7.1 = {
+	encampment_2_orc_building=yes
+	orc_pit_orc_building=yes
+	warg_pit_orc_building=yes
+	workshop_orc_building=yes
+	fort_pallisade_orc_building=yes
+	large_arena_building=yes
+	prisoner_cage_orc_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -38,24 +60,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2942.1.1 = {
-	is_city = yes
-	add_core = V17
-	owner = V17
-	controller = V17
-	culture = culture_orkish
-	religion = religion_orkish
-	encampment_1_orc_building=yes
-	meat_depot_orc_building=yes
-	enforcer_camp_orc_building=yes
-}
-2953.7.1 = {
-	encampment_2_orc_building=yes
-	orc_pit_orc_building=yes
-	warg_pit_orc_building=yes
-	workshop_orc_building=yes
-	fort_pallisade_orc_building=yes
-	large_arena_building=yes
-	prisoner_cage_orc_building=yes
-}

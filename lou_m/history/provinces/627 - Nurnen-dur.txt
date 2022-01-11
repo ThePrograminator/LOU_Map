@@ -1,11 +1,11 @@
 # Province ID : 627
 # Province Name : Nûrnen-dûr
 # Province RGB : (30, 19, 141)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Sturlurtsa Nurn
+# Province Region : Nûrn
+# Province Super Region : Mordor
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Sturlurtsa-Núrn
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -28,7 +28,14 @@ trade_goods = salt
 hre = no
 
 capital_1_building=yes
+
 outpost_building=yes
+
+3000.1.1 = {
+	add_core = V23
+	owner = V23
+	controller = V23
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -47,9 +54,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-3000.1.1 = {
-	add_core = V23
-	owner = V23
-	controller = V23
-}

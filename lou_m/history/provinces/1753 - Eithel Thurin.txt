@@ -1,9 +1,9 @@
 # Province ID : 1753
 # Province Name : Eithel Thûrin
 # Province RGB : (252, 132, 64)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Harfalas
+# Province Region : Harondor
+# Province Super Region : Near Harad
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -28,8 +28,16 @@ trade_goods = salt
 hre = no
 
 fortress_1_building=yes
+
 fort_castle_building=yes
+
 army_camp_building=yes
+
+2886.1.1 = {
+	add_core = V14
+	owner = V14
+	controller = V14
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -48,9 +56,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2886.1.1 = {
-	add_core = V14
-	owner = V14
-	controller = V14
-}

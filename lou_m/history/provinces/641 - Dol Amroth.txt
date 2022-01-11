@@ -1,8 +1,8 @@
-# Province ID : 656
+# Province ID : 641
 # Province Name : Dol Amroth
 # Province RGB : (8, 48, 56)
 # Province Area : Dol Amroth
-# Province Region : Gondor
+# Province Region : Belfalas
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
 # Province Tradenode : null
@@ -36,7 +36,17 @@ dock_building=yes
 
 marketplace_building=yes
 
-center_of_trade = 2
+2760.1.1 = {
+	capital_2_building = yes
+	drydock_building = yes
+	barracks_building = yes
+	trade_depot_building = yes
+}
+
+2900.1.1 = {
+	capital_3_building = yes
+	grand_shipyard_building = yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -55,17 +65,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-
-2760.1.1 = {
-	capital_2_building = yes
-	drydock_building = yes
-	barracks_building = yes
-	trade_depot_building = yes
-}
-
-2900.1.1 = {
-	capital_3_building = yes
-	grand_shipyard_building = yes
-}
-
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

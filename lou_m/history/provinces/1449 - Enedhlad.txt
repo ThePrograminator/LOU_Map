@@ -1,12 +1,12 @@
-# Province ID : 1895
+# Province ID : 1449
 # Province Name : Enedhlad
 # Province RGB : (224, 164, 14)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Dor Wathui
+# Province Region : Enedhwaith
+# Province Super Region : Eriador
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Lond Angren
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -27,6 +27,12 @@ trade_goods = wool
 
 hre = no
 
+2759.1.1 = {
+	add_core = Z46
+	owner = Z46
+	controller = Z46
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -44,9 +50,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2759.1.1 = {
-	add_core = Z46
-	owner = Z46
-	controller = Z46
-}

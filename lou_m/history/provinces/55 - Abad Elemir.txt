@@ -1,11 +1,11 @@
-# Province ID : 56
-# Province Name : Elemir
+# Province ID : 55
+# Province Name : Abad Elemir
 # Province RGB : (0, 51, 78)
 # Province Area : Emyn Arnen
-# Province Region : Gondor
+# Province Region : Ithilien
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Minas Tirith
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -28,6 +28,19 @@ trade_goods = grain
 
 hre = no
 
+2954.1.1 = {
+	culture = culture_wilderness
+	religion = religion_wilderness
+	add_province_modifier = {
+		name = wilderness_debuff
+		duration = -1
+	}
+}
+
+3018.4.1 = {
+	controller = V17
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
@@ -44,18 +57,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-
-2954.1.1 = {
-	culture = culture_wilderness
-	religion = religion_wilderness
-	add_province_modifier = {
-		name = wilderness_debuff
-		duration = -1
-	}
-}
-
-3018.4.1 = {
-	controller = V17
-}
-
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

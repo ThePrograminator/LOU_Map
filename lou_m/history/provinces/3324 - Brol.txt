@@ -1,3 +1,15 @@
+# Province ID : 3324
+# Province Name : Brol
+# Province RGB : (83, 41, 33)
+# Province Area : Ethir Gwathló
+# Province Region : Enedhwaith
+# Province Super Region : Eriador
+# Province Continent : Middle Earth
+# Province Tradenode : Lond Daer
+# Province Climate : Mild_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 3
@@ -14,6 +26,18 @@ religion = religion_daen
 trade_goods = salt
 
 hre = no
+
+2759.1.1 = {
+	add_core = Z11
+	owner = Z11
+	controller = Z11
+}
+
+2912.9.10 = {
+	add_core = Z43
+	owner = Z43
+	controller = Z43
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,14 +56,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2759.1.1 = {
-	add_core = Z11
-	owner = Z11
-	controller = Z11
-}
-2912.9.10 = {
-	add_core = Z43
-	owner = Z43
-	controller = Z43
-}

@@ -1,12 +1,12 @@
-# Province ID : 220
+# Province ID : 218
 # Province Name : Calembel
 # Province RGB : (239, 202, 0)
 # Province Area : Lamedon
-# Province Region : Gondor
+# Province Region : Lamedon
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Calembel
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,14 +28,22 @@ trade_goods = copper
 
 hre = no
 
-center_of_trade = 2
-
 city_2_building=yes
+
 tax_office_building=yes
+
 marketplace_building=yes
+
 workshop_building=yes
+
 army_camp_building=yes
+
 fort_pallisade_building=yes
+
+2820.1.1 = {
+	city_3_building = yes
+	bank_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -54,10 +62,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-
-2820.1.1 = {
-	city_3_building = yes
-	bank_building=yes
-}
-
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

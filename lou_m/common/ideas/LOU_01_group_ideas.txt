@@ -105,7 +105,7 @@ rhovanion_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		OR = {
 			culture_group = culture_group_aivathiuda
 			culture_group = culture_group_donath
@@ -151,7 +151,7 @@ easterling_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		is_racial_group_talatherim = yes
         
         
@@ -201,7 +201,7 @@ dunedain_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		primary_culture = culture_dunedain_of_arnor
 	}
 	free = yes		
@@ -245,7 +245,7 @@ dunlending_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		primary_culture = culture_dunlendings
 	}
 	free = yes		
@@ -289,7 +289,7 @@ eriadorian_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		religion = religion_eriadorians
 	}
 	free = yes		
@@ -333,7 +333,7 @@ haradrim_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		is_racial_group_haradrim = yes
 	}
 	free = yes		
@@ -905,7 +905,7 @@ clansmen_ideas = {
 	}
 	
 	trigger = {
-		technology_group = lotr_human
+		is_human = yes
 		primary_culture = culture_clansmen
 	}
 	free = yes		

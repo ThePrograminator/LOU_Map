@@ -1,3 +1,15 @@
+# Province ID : 3390
+# Province Name : Severna
+# Province RGB : (70, 38, 47)
+# Province Area : Dacranamel
+# Province Region : Rhûn
+# Province Super Region : Rhûn
+# Province Continent : Middle Earth
+# Province Tradenode : Mistrand
+# Province Climate : Mild_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 3
@@ -5,10 +17,10 @@ base_production = 4
 base_manpower = 4
 
 add_core = V39
-add_core = W64
 owner = V39
 controller = V39
 
+add_core = W64
 culture = culture_igath
 religion = religion_ulgath
 
@@ -17,7 +29,9 @@ trade_goods = fish
 hre = no
 
 city_1_building=yes
+
 workshop_building=yes
+
 outpost_building=yes
 
 discovered_by = lotr_human
@@ -37,3 +51,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
+

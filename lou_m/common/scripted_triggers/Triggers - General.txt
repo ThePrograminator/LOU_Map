@@ -87,7 +87,7 @@ has_hard_terrain = { #Province Scope
 is_good_race_province = { #Province Scope
 	owner = {
 		OR = {
-			technology_group = lotr_human
+			is_human = yes
 			technology_group = lotr_dwarven
 			technology_group = lotr_elven
 			technology_group = lotr_hobbit
@@ -124,7 +124,7 @@ is_bad_race_province = { #Province Scope
 
 is_good_race = { #Country Scope
 	OR = {
-		technology_group = lotr_human
+		is_human = yes
 		technology_group = lotr_dwarven
 		technology_group = lotr_elven
 		technology_group = lotr_hobbit

@@ -1,3 +1,15 @@
+# Province ID : 2763
+# Province Name : Heleqfalas
+# Province RGB : (142, 224, 190)
+# Province Area : Sula
+# Province Region : Northern Waste
+# Province Super Region : Forodwaith
+# Province Continent : Middle Earth
+# Province Tradenode : Hyvät Kalat
+# Province Climate : Severe_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 2
@@ -14,6 +26,18 @@ religion = religion_umli
 trade_goods = fish
 
 hre = no
+
+2911.12.15 = {
+	add_core = Y36
+	owner = Y36
+	controller = Y36
+}
+
+2941.12.1 = {
+	add_core = Y24
+	owner = Y24
+	controller = Y24
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,14 +56,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2911.12.15 = {
-	add_core = Y36
-	owner = Y36
-	controller = Y36
-}
-2941.12.1 = {
-	add_core = Y24
-	owner = Y24
-	controller = Y24
-}

@@ -1,11 +1,11 @@
 # Province ID : 1923
 # Province Name : Vadran
 # Province RGB : (142, 127, 81)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Sekelavuld
+# Province Region : Rhovanion
+# Province Super Region : Rhovanion
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Riavod
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -17,10 +17,10 @@ base_production = 5
 base_manpower = 4
 
 add_core = Y97
-add_core = W71
 owner = Y97
 controller = Y97
 
+add_core = W71
 culture = culture_eothraim
 religion = religion_aivathuida
 
@@ -29,8 +29,11 @@ trade_goods = fur
 hre = no
 
 city_1_building=yes
+
 workshop_building=yes
+
 temple_building=yes
+
 army_camp_building=yes
 
 discovered_by = lotr_human
@@ -50,4 +53,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

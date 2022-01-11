@@ -1,3 +1,15 @@
+# Province ID : 3386
+# Province Name : Lag-Ulurikon
+# Province RGB : (111, 30, 33)
+# Province Area : Men-i-Mordor
+# Province Region : Rhovanion
+# Province Super Region : Rhovanion
+# Province Continent : Middle Earth
+# Province Tradenode : The Black Gate
+# Province Climate : Mild_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 4
@@ -16,14 +28,28 @@ trade_goods = copper
 hre = no
 
 encampment_2_orc_building=yes
+
 meat_depot_orc_building=yes
+
 overseer_station_orc_building=yes
+
 metal_works_orc_building=yes
+
 orc_pit_orc_building=yes
+
 warg_pit_orc_building=yes
+
 fort_pallisade_orc_building=yes
+
 small_arena_building=yes
+
 prisoner_cage_orc_building=yes
+
+3000.1.1 = {
+	add_core = V17
+	owner = V17
+	controller = V17
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -42,9 +68,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-3000.1.1 = {
-	add_core = V17
-	owner = V17
-	controller = V17
-}

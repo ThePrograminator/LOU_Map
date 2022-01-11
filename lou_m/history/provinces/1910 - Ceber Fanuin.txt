@@ -1,12 +1,12 @@
-# Province ID : 2621
+# Province ID : 1910
 # Province Name : Ceber Fanuin
 # Province RGB : (193, 87, 31)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Ceber Fanuin
+# Province Region : Mirkwood
+# Province Super Region : Rhovanion
 # Province Continent : Middle Earth
 # Province Tradenode : null
-# Province Climate : null
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,9 +28,22 @@ trade_goods = iron
 hre = no
 
 fortress_1_orc_building=yes
+
 enforcer_camp_orc_building=yes
+
 blacksmith_orc_building=yes
+
 workshop_orc_building=yes
+
+2941.12.1 = {
+	owner = V20
+	controller = V20
+}
+
+2951.3.1 = {
+	owner = V19
+	controller = V19
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -48,13 +61,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2941.12.1 = {
-	owner = V20
-	controller = V20
-}
-
-2951.3.1 = {
-	owner = V19
-	controller = V19
-}

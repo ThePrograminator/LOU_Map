@@ -1,12 +1,12 @@
-# Province ID : 120
+# Province ID : 119
 # Province Name : Gap of Rohan
 # Province RGB : (150, 49, 36)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Gap of Rohan
+# Province Region : Rohan
+# Province Super Region : Rohan
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Gap of Rohan
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -19,8 +19,8 @@ base_manpower = 5
 add_core = Z48
 owner = Z48
 controller = Z48
-add_core = X16
 
+add_core = X16
 culture = culture_dunlendings
 religion = religion_daen
 
@@ -28,7 +28,13 @@ trade_goods = grain
 
 hre = no
 
-center_of_trade = 1
+2989.4.1 = {
+	add_core = V49
+	owner = V49
+	controller = V49
+	culture = culture_urukhai
+	religion = religion_uruk
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -47,11 +53,5 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
 
-2989.4.1 = {
-	add_core = V49
-	owner = V49
-	controller = V49
-	culture = culture_urukhai 
-	religion = religion_uruk 
-}

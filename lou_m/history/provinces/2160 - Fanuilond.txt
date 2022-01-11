@@ -1,10 +1,10 @@
-# Province ID : 2874
+# Province ID : 2160
 # Province Name : Fanuilond
 # Province RGB : (220, 12, 45)
 # Province Area : Lebenninivet
-# Province Region : Gondor
+# Province Region : Lebennin
 # Province Super Region : Gondor
-# Province Continent : null
+# Province Continent : Middle Earth
 # Province Tradenode : Linhir
 # Province Climate : null
 # Province is not Sea/Lake Province
@@ -28,14 +28,25 @@ trade_goods = wine
 
 hre = no
 
-center_of_trade = 1
-
 city_1_building=yes
+
 marketplace_building=yes
+
 tax_office_building=yes
+
 workshop_building=yes
+
 outpost_building=yes
+
 dock_building=yes
+
+2758.9.15 = {
+	controller = X27
+}
+
+2759.8.20 = {
+	controller = X01
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -54,11 +65,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2758.9.15 = {
-	controller = X27
-}
-
-2759.8.20 = {
-	controller = X01
-}

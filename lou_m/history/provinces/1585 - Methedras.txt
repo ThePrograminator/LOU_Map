@@ -1,12 +1,12 @@
-# Province ID : 2032
+# Province ID : 1585
 # Province Name : Methedras
 # Province RGB : (124, 248, 1)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Methedras
+# Province Region : The Misty Mountains
+# Province Super Region : The Misty Mountains
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Gap of Rohan
+# Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -27,6 +27,15 @@ trade_goods = iron
 
 hre = no
 
+3000.1.1 = {
+	culture = culture_urukhai
+	religion = religion_uruk
+	add_core = V49
+	owner = V49
+	controller = V49
+	trade_goods = silver
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -44,12 +53,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-3000.1.1 = { 
-	culture = culture_urukhai 
-	religion = religion_uruk 
-	add_core = V49
-	owner = V49
-	controller = V49
-	trade_goods = silver
-}

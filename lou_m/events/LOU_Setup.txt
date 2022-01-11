@@ -71,7 +71,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "human_buff" }
-                technology_group = lotr_human
+                is_human = yes
             }
             country_event = { 
                 id = LOU_races.1

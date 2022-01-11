@@ -1,8 +1,8 @@
-# Province ID : 1405
+# Province ID : 963
 # Province Name : Tol Aduil
 # Province RGB : (55, 230, 50)
-# Province Area : Tol Falas
-# Province Region : Gondor
+# Province Area : Tolfalas
+# Province Region : Belfalas
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
 # Province Tradenode : null
@@ -29,6 +29,18 @@ trade_goods = fish
 
 hre = no
 
+2758.9.15 = {
+	controller = X27
+}
+
+2759.8.20 = {
+	controller = X11
+}
+
+3018.4.1 = {
+	controller = X27
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
@@ -45,15 +57,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2758.9.15 = {
-	controller = X27
-}
-
-2759.8.20 = {
-	controller = X11
-}
-
-3018.4.1 = {
-	controller = X27
-}

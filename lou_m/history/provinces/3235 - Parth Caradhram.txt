@@ -1,3 +1,15 @@
+# Province ID : 3235
+# Province Name : Parth Caradhram
+# Province RGB : (151, 137, 80)
+# Province Area : Eredtir
+# Province Region : Harondor
+# Province Super Region : Near Harad
+# Province Continent : Middle Earth
+# Province Tradenode : null
+# Province Climate : null
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 2
@@ -14,6 +26,12 @@ religion = religion_daen
 trade_goods = stone
 
 hre = no
+
+2741.1.1 = {
+	add_core = X24
+	owner = X24
+	controller = X24
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,9 +50,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2741.1.1 = {
-	add_core = X24
-	owner = X24
-	controller = X24
-}

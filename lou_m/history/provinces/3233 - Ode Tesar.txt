@@ -1,3 +1,15 @@
+# Province ID : 3233
+# Province Name : Ode Tesar
+# Province RGB : (51, 45, 80)
+# Province Area : Emyn Gonngaran
+# Province Region : Harondor
+# Province Super Region : Near Harad
+# Province Continent : Middle Earth
+# Province Tradenode : null
+# Province Climate : null
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 2
@@ -14,6 +26,14 @@ religion = religion_daen
 trade_goods = silver
 
 hre = no
+
+2884.1.1 = {
+	add_core = X17
+	owner = X17
+	controller = X17
+	culture = culture_haruze
+	religion = religion_haruzani
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,11 +52,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2884.1.1 = {
-	add_core = X17
-	owner = X17
-	controller = X17
-	culture = culture_haruze
-	religion = religion_haruzani
-}

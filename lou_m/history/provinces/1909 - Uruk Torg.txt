@@ -1,12 +1,12 @@
-# Province ID : 2620
+# Province ID : 1909
 # Province Name : Uruk Torg
 # Province RGB : (214, 190, 53)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Ceber Fanuin
+# Province Region : Mirkwood
+# Province Super Region : Rhovanion
 # Province Continent : Middle Earth
 # Province Tradenode : null
-# Province Climate : null
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,7 +28,18 @@ trade_goods = copper
 hre = no
 
 encampment_1_orc_building=yes
+
 warg_pit_orc_building=yes
+
+2941.12.1 = {
+	owner = V20
+	controller = V20
+}
+
+2951.3.1 = {
+	owner = V19
+	controller = V19
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -46,13 +57,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2941.12.1 = {
-	owner = V20
-	controller = V20
-}
-
-2951.3.1 = {
-	owner = V19
-	controller = V19
-}

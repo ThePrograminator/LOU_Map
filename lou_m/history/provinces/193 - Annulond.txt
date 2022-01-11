@@ -1,11 +1,11 @@
-# Province ID : 195
+# Province ID : 193
 # Province Name : Annúlond
 # Province RGB : (74, 92, 109)
-# Province Area : Anfalas
-# Province Region : Gondor
+# Province Area : Annulond
+# Province Region : Anfalas
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Annúlond
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -29,14 +29,23 @@ trade_goods = naval_supplies
 hre = no
 
 city_2_building=yes
+
 marketplace_building=yes
+
 dock_building=yes
+
 tax_office_building=yes
+
 workshop_building=yes
+
 fort_pallisade_building=yes
+
 outpost_building=yes
 
-center_of_trade = 2
+2820.1.1 = {
+	seaport_building = yes
+	army_camp_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
@@ -54,10 +63,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-
-2820.1.1 = {
-	seaport_building = yes
-	army_camp_building=yes
-}
-
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

@@ -1,12 +1,12 @@
-# Province ID : 1940
+# Province ID : 1494
 # Province Name : Gygrid
 # Province RGB : (69, 117, 155)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Ethir Gwathló
+# Province Region : Enedhwaith
+# Province Super Region : Eriador
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Lond Daer
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -28,10 +28,25 @@ trade_goods = glass
 hre = no
 
 capital_2_building=yes
+
 fort_pallisade_building=yes
+
 army_camp_building=yes
+
 trade_outpost_building=yes
+
 tax_office_building=yes
+
+2759.1.1 = {
+	add_core = Z45
+	owner = Z45
+	controller = Z45
+	city_2_building=yes
+	fort_pallisade_building=yes
+	army_camp_building=yes
+	trade_outpost_building=yes
+	tax_office_building=yes
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -50,14 +65,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2759.1.1 = {
-	add_core = Z45
-	owner = Z45
-	controller = Z45
-	city_2_building=yes
-	fort_pallisade_building=yes
-	army_camp_building=yes
-	trade_outpost_building=yes
-	tax_office_building=yes
-}

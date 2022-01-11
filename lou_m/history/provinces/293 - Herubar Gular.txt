@@ -1,12 +1,12 @@
-# Province ID : 298
+# Province ID : 293
 # Province Name : Herubar Gûlar
 # Province RGB : (208, 255, 177)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Pinnath Tereg
+# Province Region : Rhudaur
+# Province Super Region : Eriador
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Cameth Brin
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
@@ -17,10 +17,10 @@ base_production = 6
 base_manpower = 5
 
 add_core = V33
-add_core = Y07
 owner = V33
 controller = V33
 
+add_core = Y07
 culture = culture_orkish
 religion = religion_orkish
 
@@ -28,17 +28,24 @@ trade_goods = iron
 
 hre = no
 
-center_of_trade = 1
-
 capital_2_orc_building=yes
+
 treasure_trove_orc_building=yes
+
 overseer_station_orc_building=yes
+
 metal_works_orc_building=yes
+
 orc_fissure_orc_building=yes
+
 warg_arena_orc_building=yes
+
 workshop_orc_building=yes
+
 fort_wooden_walls_orc_building=yes
+
 large_arena_building=yes
+
 tortur_chambers_orc_building=yes
 
 discovered_by = lotr_human
@@ -58,5 +65,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
-
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

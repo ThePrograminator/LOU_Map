@@ -1,3 +1,15 @@
+# Province ID : 3341
+# Province Name : Baglul-Tumun
+# Province RGB : (52, 60, 52)
+# Province Area : Iron Hills
+# Province Region : The Iron Hills & The Lonely Mountain
+# Province Super Region : Rhovanion
+# Province Continent : Middle Earth
+# Province Tradenode : Azanulimbar-Dûm
+# Province Climate : Severe_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 3
@@ -14,6 +26,12 @@ religion = religion_mahal
 trade_goods = iron
 
 hre = no
+
+2989.4.1 = {
+	add_core = Y22
+	owner = Y22
+	controller = Y22
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,9 +50,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2989.4.1 = {
-	add_core = Y22
-	owner = Y22
-	controller = Y22
-}

@@ -1,3 +1,15 @@
+# Province ID : 3361
+# Province Name : Buhr Rilagad
+# Province RGB : (193, 193, 133)
+# Province Area : Sagathavuld
+# Province Region : Rhovanion
+# Province Super Region : Rhovanion
+# Province Continent : Middle Earth
+# Province Tradenode : Burh Ermanarikis
+# Province Climate : Mild_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 4
@@ -14,6 +26,12 @@ religion = religion_aivathuida
 trade_goods = cloth
 
 hre = no
+
+2953.1.1 = {
+	add_core = X90
+	owner = X90
+	controller = X90
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
@@ -32,9 +50,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2953.1.1 = { 
-	add_core = X90
-	owner = X90
-	controller = X90
-}

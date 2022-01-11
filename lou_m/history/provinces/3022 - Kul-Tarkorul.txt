@@ -1,3 +1,15 @@
+# Province ID : 3022
+# Province Name : Kûl-Tarkorûl
+# Province RGB : (86, 5, 84)
+# Province Area : Cirith Nargil
+# Province Region : Nûrn
+# Province Super Region : Mordor
+# Province Continent : Middle Earth
+# Province Tradenode : Den Nurn
+# Province Climate : null
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 3
@@ -17,6 +29,12 @@ hre = no
 
 camp_orc_building=yes
 
+3000.1.1 = {
+	add_core = V17
+	owner = V17
+	controller = V17
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -34,9 +52,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-3000.1.1 = {
-	add_core = V17
-	owner = V17
-	controller = V17
-}

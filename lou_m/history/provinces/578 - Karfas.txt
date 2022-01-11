@@ -1,11 +1,11 @@
 # Province ID : 578
 # Province Name : Karfas
 # Province RGB : (75, 78, 22)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Ilanin
+# Province Region : Rhovanion
+# Province Super Region : Rhovanion
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Ilanin
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -17,10 +17,10 @@ base_production = 6
 base_manpower = 4
 
 add_core = Z02
-add_core = W73
 owner = Z02
 controller = Z02
 
+add_core = W73
 culture = culture_gargath
 religion = religion_daen
 
@@ -29,6 +29,7 @@ trade_goods = grain
 hre = no
 
 city_1_building=yes
+
 work_camp_building=yes
 
 discovered_by = lotr_human
@@ -48,4 +49,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

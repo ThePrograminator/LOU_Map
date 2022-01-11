@@ -1,11 +1,11 @@
 # Province ID : 1622
 # Province Name : Suzdal
 # Province RGB : (181, 76, 153)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Kugathavuld
+# Province Region : Rhûn
+# Province Super Region : Rhûn
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : Dyr
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -17,10 +17,10 @@ base_production = 5
 base_manpower = 8
 
 add_core = Y01
-add_core = W65
 owner = Y01
 controller = Y01
 
+add_core = W65
 culture = culture_kugath
 religion = religion_ulgath
 
@@ -28,11 +28,12 @@ trade_goods = paper
 
 hre = no
 
-center_of_trade = 1
-
 fortress_2_building=yes
+
 forge_building=yes
+
 fort_castle_building=yes
+
 barracks_building=yes
 
 discovered_by = lotr_human
@@ -52,4 +53,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 

@@ -1,8 +1,8 @@
-# Province ID : 28
-# Province Name : Daldor
+# Province ID : 27
+# Province Name : Minas Daldor
 # Province RGB : (255, 160, 123)
 # Province Area : Lebenninivet
-# Province Region : Gondor
+# Province Region : Lebennin
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
 # Province Tradenode : Linhir
@@ -32,6 +32,14 @@ fortress_1_building=yes
 
 fort_castle_building=yes
 
+2758.9.15 = {
+	controller = X27
+}
+
+2759.8.20 = {
+	controller = X01
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -49,11 +57,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2758.9.15 = {
-	controller = X27
-}
-
-2759.8.20 = {
-	controller = X01
-}

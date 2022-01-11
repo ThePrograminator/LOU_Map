@@ -1,3 +1,15 @@
+# Province ID : 3417
+# Province Name : Pudarid
+# Province RGB : (51, 51, 39)
+# Province Area : Den Lóke
+# Province Region : Forodwaith
+# Province Super Region : Forodwaith
+# Province Continent : Middle Earth
+# Province Tradenode : Gundabad
+# Province Climate : Severe_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 2
@@ -15,6 +27,54 @@ trade_goods = mushrooms
 
 hre = no
 
+2758.1.1 = {
+	add_core = Y91
+	owner = Y91
+	controller = Y91
+	culture = culture_estaravi
+	religion = religion_nenedain
+}
+
+2770.1.1 = {
+	add_core = Y32
+	owner = Y32
+	controller = Y32
+	culture = culture_orkish
+	religion = religion_orkish
+}
+
+2799.12.1 = {
+	add_core = Y91
+	owner = Y91
+	controller = Y91
+	culture = culture_estaravi
+	religion = religion_nenedain
+}
+
+2845.3.1 = {
+	add_core = Y32
+	owner = Y32
+	controller = Y32
+	culture = culture_orkish
+	religion = religion_orkish
+}
+
+2941.12.1 = {
+	add_core = Y91
+	owner = Y91
+	controller = Y91
+	culture = culture_estaravi
+	religion = religion_nenedain
+}
+
+2953.2.1 = {
+	add_core = Y63
+	owner = Y63
+	controller = Y63
+	culture = culture_orkish
+	religion = religion_orkish
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_dwarven
 discovered_by = lotr_dragon
@@ -31,46 +91,6 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_rohan
 
-2758.1.1 = {
-	add_core = Y91
-	owner = Y91
-	controller = Y91
-	culture = culture_estaravi
-	religion = religion_nenedain
-}
-2770.1.1 = {
-	add_core = Y32
-	owner = Y32
-	controller = Y32
-	culture = culture_orkish
-	religion = religion_orkish
-}
-2799.12.1 = {
-	add_core = Y91
-	owner = Y91
-	controller = Y91
-	culture = culture_estaravi
-	religion = religion_nenedain
-}
-2845.3.1 = {
-	add_core = Y32
-	owner = Y32
-	controller = Y32
-	culture = culture_orkish
-	religion = religion_orkish
-}
-2941.12.1 = {
-	add_core = Y91
-	owner = Y91
-	controller = Y91
-	culture = culture_estaravi
-	religion = religion_nenedain
-}
-2953.2.1 = {
-	add_core = Y63
-	owner = Y63
-	controller = Y63
-	culture = culture_orkish
-	religion = religion_orkish
-}
