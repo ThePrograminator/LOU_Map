@@ -34,7 +34,7 @@ noble_residence_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -44,7 +44,7 @@ noble_residence_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -68,7 +68,7 @@ noble_residence_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -103,7 +103,7 @@ town_1_elf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = no
@@ -114,7 +114,7 @@ town_1_elf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = no
@@ -138,7 +138,7 @@ town_1_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -169,7 +169,7 @@ town_2_elf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = no
@@ -180,7 +180,7 @@ town_2_elf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = no
@@ -204,7 +204,7 @@ town_2_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -235,7 +235,7 @@ town_3_elf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = no
@@ -246,7 +246,7 @@ town_3_elf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = no
@@ -270,7 +270,7 @@ town_3_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -305,7 +305,7 @@ fort_1_elf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -316,7 +316,7 @@ fort_1_elf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -341,7 +341,7 @@ fort_1_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -372,7 +372,7 @@ fort_2_elf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -383,7 +383,7 @@ fort_2_elf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -408,7 +408,7 @@ fort_2_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -439,7 +439,7 @@ fort_3_elf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -450,7 +450,7 @@ fort_3_elf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -475,7 +475,7 @@ fort_3_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -510,7 +510,7 @@ capital_1_elf_building = {
 		development = 5
 		is_capital = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -521,7 +521,7 @@ capital_1_elf_building = {
 		development = 5
 		is_capital = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -548,7 +548,7 @@ capital_1_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -588,7 +588,7 @@ capital_2_elf_building = {
 		development = 10
 		is_capital = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -599,7 +599,7 @@ capital_2_elf_building = {
 		development = 10
 		is_capital = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -626,7 +626,7 @@ capital_2_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -666,7 +666,7 @@ capital_3_elf_building = {
 		development = 15
 		is_capital = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -677,7 +677,7 @@ capital_3_elf_building = {
 		development = 15
 		is_capital = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = no
@@ -704,7 +704,7 @@ capital_3_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -745,7 +745,7 @@ elven_fairground_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -753,7 +753,7 @@ elven_fairground_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -775,7 +775,7 @@ elven_fairground_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -813,7 +813,7 @@ craftsmen_plaza_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -821,7 +821,7 @@ craftsmen_plaza_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -843,7 +843,7 @@ craftsmen_plaza_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -881,7 +881,7 @@ exotic_wares_market_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
@@ -889,7 +889,7 @@ exotic_wares_market_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
@@ -911,7 +911,7 @@ exotic_wares_market_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -951,7 +951,7 @@ temple_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -959,7 +959,7 @@ temple_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -981,7 +981,7 @@ temple_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1010,7 +1010,7 @@ theatre_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -1018,7 +1018,7 @@ theatre_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -1040,7 +1040,7 @@ theatre_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1069,7 +1069,7 @@ amphitheatre_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
@@ -1077,7 +1077,7 @@ amphitheatre_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
@@ -1099,7 +1099,7 @@ amphitheatre_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1132,7 +1132,7 @@ workshop_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1140,7 +1140,7 @@ workshop_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1162,7 +1162,7 @@ workshop_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1192,7 +1192,7 @@ elven_forge_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -1200,7 +1200,7 @@ elven_forge_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -1222,7 +1222,7 @@ elven_forge_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1252,7 +1252,7 @@ grand_forge_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
@@ -1260,7 +1260,7 @@ grand_forge_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
@@ -1282,7 +1282,7 @@ grand_forge_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1314,7 +1314,7 @@ warriors_gallery_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1322,7 +1322,7 @@ warriors_gallery_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1344,7 +1344,7 @@ warriors_gallery_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1373,7 +1373,7 @@ heros_shrine_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
@@ -1381,7 +1381,7 @@ heros_shrine_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
@@ -1403,7 +1403,7 @@ heros_shrine_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1431,7 +1431,7 @@ green_pastures_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1439,7 +1439,7 @@ green_pastures_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1461,7 +1461,7 @@ green_pastures_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1490,7 +1490,7 @@ grand_stables_elf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
@@ -1498,7 +1498,7 @@ grand_stables_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
@@ -1520,7 +1520,7 @@ grand_stables_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1553,7 +1553,7 @@ port_elf_building = {
 	build_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = yes
@@ -1563,7 +1563,7 @@ port_elf_building = {
 	keep_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_buildings = yes
@@ -1598,7 +1598,7 @@ port_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1633,7 +1633,7 @@ seaport_elf_building = {
 	build_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -1642,7 +1642,7 @@ seaport_elf_building = {
 	keep_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
@@ -1676,7 +1676,7 @@ seaport_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1710,7 +1710,7 @@ harbour_elf_building = {
 	build_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = yes
@@ -1720,7 +1720,7 @@ harbour_elf_building = {
 	keep_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_buildings = yes
@@ -1755,7 +1755,7 @@ harbour_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1790,7 +1790,7 @@ haven_elf_building = {
 	build_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
@@ -1799,7 +1799,7 @@ haven_elf_building = {
 	keep_trigger = {
 		has_port = yes
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
@@ -1833,7 +1833,7 @@ haven_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1873,7 +1873,7 @@ fort_low_walls_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1881,7 +1881,7 @@ fort_low_walls_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -1903,7 +1903,7 @@ fort_low_walls_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -1955,7 +1955,7 @@ fort_high_walls_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
@@ -1963,7 +1963,7 @@ fort_high_walls_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
@@ -1985,7 +1985,7 @@ fort_high_walls_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -2037,7 +2037,7 @@ moat_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -2049,7 +2049,7 @@ moat_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
@@ -2075,7 +2075,7 @@ moat_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -2098,7 +2098,7 @@ wall_bastions_elf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
@@ -2110,7 +2110,7 @@ wall_bastions_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
@@ -2136,7 +2136,7 @@ wall_bastions_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -2163,7 +2163,7 @@ mallorn_tree_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2171,7 +2171,7 @@ mallorn_tree_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2193,7 +2193,7 @@ mallorn_tree_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -2231,7 +2231,7 @@ statue_of_the_elders_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2239,7 +2239,7 @@ statue_of_the_elders_elf_building = {
 	
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2261,7 +2261,7 @@ statue_of_the_elders_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -2299,7 +2299,7 @@ mirror_fountain_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2307,7 +2307,7 @@ mirror_fountain_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2329,7 +2329,7 @@ mirror_fountain_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}
@@ -2367,7 +2367,7 @@ star_of_earendil_shrine_elf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2375,7 +2375,7 @@ star_of_earendil_shrine_elf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
@@ -2401,7 +2401,7 @@ star_of_earendil_shrine_elf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_elven
+					is_elf = yes
 				}
 			}
 		}

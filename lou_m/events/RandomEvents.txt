@@ -316,9 +316,9 @@ country_event = {
 		has_regency = no
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -528,9 +528,9 @@ country_event = {
 		NOT = { has_country_modifier = exceptional_year }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -654,9 +654,9 @@ country_event = {
 		NOT = { has_country_modifier = exceptional_year }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -768,9 +768,9 @@ country_event = {
 		NOT = { has_country_modifier = exceptional_year }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -968,9 +968,9 @@ country_event = {
 		dip = 4
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -1500,9 +1500,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -1730,9 +1730,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -1895,8 +1895,8 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
+			is_dwarf = yes
+			is_elf = yes
 		}
 	}
 
@@ -1984,8 +1984,8 @@ country_event = {
 		NOT = { has_country_modifier = disorder }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
+			is_dwarf = yes
+			is_elf = yes
 		}
 	}
 
@@ -2500,9 +2500,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -2654,8 +2654,8 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
+			is_dwarf = yes
+			is_elf = yes
 		}
 	}
 
@@ -2741,9 +2741,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -2933,9 +2933,9 @@ country_event = {
 		has_regency = no
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -2999,9 +2999,9 @@ country_event = {
 		num_of_merchants = 3
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3068,9 +3068,9 @@ country_event = {
 		statesman = 2
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3195,15 +3195,15 @@ country_event = {
 		NOT = { navy_size_percentage = 1.25 }
 		NOT = {
 			OR = {
-				technology_group = lotr_dwarven
-				technology_group = lotr_hobbit
+				is_dwarf = yes
+				is_hobbit = yes
 				technology_group = lotr_dragon
-				technology_group = lotr_ent
-				technology_group = lotr_erus_children
+				is_ent = yes
+				is_erus_children = yes
 				technology_group = lotr_giant
-				technology_group = lotr_great_spider
+				is_great_spider = yes
 				technology_group = lotr_troll
-				technology_group = lotr_wights
+				is_wight = yes
 			}
 		}
 	}
@@ -3264,12 +3264,12 @@ country_event = {
 		NOT = {
 			OR = {
 				technology_group = lotr_dragon
-				technology_group = lotr_ent
-				technology_group = lotr_erus_children
+				is_ent = yes
+				is_erus_children = yes
 				technology_group = lotr_giant
-				technology_group = lotr_great_spider
+				is_great_spider = yes
 				technology_group = lotr_troll
-				technology_group = lotr_wights
+				is_wight = yes
 			}
 		}
 	}
@@ -3330,9 +3330,9 @@ country_event = {
 		has_regency = no
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3425,9 +3425,9 @@ country_event = {
 		NOT = { has_country_modifier = offensive_modifier }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3505,9 +3505,9 @@ country_event = {
 		NOT = { DIP = 4 }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3544,9 +3544,9 @@ country_event = {
 		NOT = { advisor = master_of_mint }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3697,9 +3697,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -3899,9 +3899,9 @@ country_event = {
 		NOT = { has_country_modifier = compromised_spy_defence }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -4015,9 +4015,9 @@ country_event = {
 		government = republic
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 	
@@ -4130,9 +4130,9 @@ country_event = {
 		war_exhaustion = 5
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 	
@@ -4229,9 +4229,9 @@ country_event = {
 		crown_land_share = 5
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 	
@@ -4331,9 +4331,9 @@ country_event = {
 		is_month = 7
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 	
@@ -4643,9 +4643,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 	
@@ -4682,7 +4682,7 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_hobbit
+			is_hobbit = yes
 		}
 	}	
 	
@@ -4905,9 +4905,9 @@ country_event = {
 		wine  = 1
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -4960,9 +4960,9 @@ country_event = {
 		NOT = { has_country_modifier = poor_uniforms }
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -4995,9 +4995,9 @@ country_event = {
 		primitives = no
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -5083,9 +5083,9 @@ country_event = {
 		gold = 1
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -5146,9 +5146,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 
@@ -5262,9 +5262,9 @@ country_event = {
 		}
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 

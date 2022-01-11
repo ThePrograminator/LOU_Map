@@ -23,8 +23,8 @@ province_owner_is_human_race = { #Province Scope
 	owner = {
 		OR = {
 			is_human = yes
-			technology_group = lotr_hobbit
-			technology_group = lotr_wizard
+			is_hobbit = yes
+			is_wizard = yes
 		}
 	}
 }
@@ -34,9 +34,9 @@ province_owner_is_melkor_race = { #Province Scope
 		OR = {
 			technology_group = lotr_orc
 			technology_group = lotr_half_orc
-			technology_group = lotr_goblin
+			is_goblin = yes
 			technology_group = lotr_uruk_hai
-			technology_group = lotr_wights
+			is_wight = yes
 		}
 	}
 }

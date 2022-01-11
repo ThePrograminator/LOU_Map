@@ -88,9 +88,9 @@ is_good_race_province = { #Province Scope
 	owner = {
 		OR = {
 			is_human = yes
-			technology_group = lotr_dwarven
-			technology_group = lotr_elven
-			technology_group = lotr_hobbit
+			is_dwarf = yes
+			is_elf = yes
+			is_hobbit = yes
 		}
 	}
 }
@@ -99,8 +99,8 @@ is_neutral_race_province = { #Province Scope
 	owner = {
 		OR = {
 			is_racial_group_wilderness = yes
-			technology_group = lotr_ent
-			technology_group = lotr_erus_children
+			is_ent = yes
+			is_erus_children = yes
 			technology_group = lotr_giant
 			technology_group = lotr_half_dwarf
 		}
@@ -111,13 +111,13 @@ is_bad_race_province = { #Province Scope
 	owner = {
 		OR = {
 			technology_group = lotr_dragon
-			technology_group = lotr_goblin
-			technology_group = lotr_great_spider
+			is_goblin = yes
+			is_great_spider = yes
 			technology_group = lotr_half_orc
 			technology_group = lotr_orc
 			technology_group = lotr_troll
 			technology_group = lotr_uruk_hai
-			technology_group = lotr_wights
+			is_wight = yes
 		}
 	}
 }
@@ -125,17 +125,17 @@ is_bad_race_province = { #Province Scope
 is_good_race = { #Country Scope
 	OR = {
 		is_human = yes
-		technology_group = lotr_dwarven
-		technology_group = lotr_elven
-		technology_group = lotr_hobbit
+		is_dwarf = yes
+		is_elf = yes
+		is_hobbit = yes
 	}
 }
 
 is_neutral_race = { #Country Scope
 	OR = {
 		is_racial_group_wilderness = yes
-		technology_group = lotr_ent
-		technology_group = lotr_erus_children
+		is_ent = yes
+		is_erus_children = yes
 		technology_group = lotr_giant
 		technology_group = lotr_half_dwarf
 	}
@@ -144,13 +144,13 @@ is_neutral_race = { #Country Scope
 is_bad_race = { #Country Scope
 	OR = {
 		technology_group = lotr_dragon
-		technology_group = lotr_goblin
-		technology_group = lotr_great_spider
+		is_goblin = yes
+		is_great_spider = yes
 		technology_group = lotr_half_orc
 		technology_group = lotr_orc
 		technology_group = lotr_troll
 		technology_group = lotr_uruk_hai
-		technology_group = lotr_wights
+		is_wight = yes
 	}
 }
 

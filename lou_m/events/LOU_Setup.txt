@@ -81,7 +81,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "dwarven_buff" }
-                technology_group = lotr_dwarven
+                is_dwarf = yes
             }
             country_event = { 
                 id = LOU_races.2
@@ -101,7 +101,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "elven_buff" }
-                technology_group = lotr_elven
+                is_elf = yes
             }
             country_event = { 
                 id = LOU_races.4
@@ -111,7 +111,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "ent_buff" }
-                technology_group = lotr_ent
+                is_ent = yes
             }
             country_event = { 
                 id = LOU_races.5
@@ -121,7 +121,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "erus_children_buff" }
-                technology_group = lotr_erus_children
+                is_erus_children = yes
             }
             country_event = { 
                 id = LOU_races.6
@@ -131,7 +131,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "goblin_buff" }
-                technology_group = lotr_goblin
+                is_goblin = yes
             }
             country_event = { 
                 id = LOU_races.7
@@ -151,7 +151,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "great_spider_buff" }
-                technology_group = lotr_great_spider
+                is_great_spider = yes
             }
             country_event = { 
                 id = LOU_races.9
@@ -171,7 +171,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "hobbit_buff" }
-                technology_group = lotr_hobbit
+                is_hobbit = yes
             }
             country_event = { 
                 id = LOU_races.11
@@ -221,7 +221,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "wizard_buff" }
-                technology_group = lotr_wizard
+                is_wizard = yes
             }
             country_event = { 
                 id = LOU_races.16
@@ -231,7 +231,7 @@ country_event = {
         if = {
             limit = {
                 NOT = {	has_country_modifier =  "wights_buff" }
-                technology_group = lotr_wights
+                is_wight = yes
             }
             country_event = { 
                 id = LOU_races.17

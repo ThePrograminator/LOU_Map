@@ -10,7 +10,7 @@ lordship_elf_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_elven
+		is_elf = yes
 	}
 	
 	modifiers = {
@@ -26,7 +26,7 @@ kingdom_elf_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_elven
+		is_elf = yes
 	}
 	
 	modifiers = {
@@ -42,7 +42,7 @@ principality_elf_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_elven
+		is_elf = yes
 		have_had_reform = principality_elf_reform
 	}
 	

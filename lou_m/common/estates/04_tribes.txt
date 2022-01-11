@@ -14,7 +14,7 @@ estate_tribes = {
     custom_name = {
 		desc = estate_tribes_goblin
 		trigger = {
-			technology_group = lotr_goblin
+			is_goblin = yes
 		}
 	}
     custom_name = {
@@ -26,7 +26,7 @@ estate_tribes = {
     custom_name = {
 		desc = estate_tribes_spider
 		trigger = {
-			technology_group = lotr_great_spider
+			is_great_spider = yes
 		}
 	}
     custom_name = {
@@ -47,19 +47,19 @@ estate_tribes = {
     custom_name = {
 		desc = estate_tribes_wights
 		trigger = {
-			technology_group = lotr_wights
+			is_wight = yes
 		}
 	}
     custom_name = {
 		desc = estate_tribes_ent
 		trigger = {
-			technology_group = lotr_ent
+			is_ent = yes
 		}
 	}
     custom_name = {
 		desc = estate_tribes_eagles
 		trigger = {
-			technology_group = lotr_erus_children
+			is_erus_children = yes
 		}
 	}
     

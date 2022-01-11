@@ -138,13 +138,13 @@ is_owner_racial_group_melkor = {
 	owner = {
 		OR = {
 			technology_group = lotr_dragon
-			technology_group = lotr_goblin
-			technology_group = lotr_great_spider
+			is_goblin = yes
+			is_great_spider = yes
 			technology_group = lotr_half_orc
 			technology_group = lotr_orc
 			technology_group = lotr_troll
 			technology_group = lotr_uruk_hai
-			technology_group = lotr_wights
+			is_wight = yes
 		}
 	}
 }
@@ -473,29 +473,149 @@ heir_is_eru = {
 }
 
 is_human = {
-    OR = {
-        technology_group = lotr_human
-        technology_group = lotr_human_palisor
-        technology_group = lotr_human_womarin_realms
-        technology_group = lotr_human_lochan_daer
-        technology_group = lotr_human_islands_of_helkaer
-        technology_group = lotr_human_urd
-        technology_group = lotr_human_balizar
-        technology_group = lotr_human_ered_harmal
-        technology_group = lotr_human_haradwaith
-        technology_group = lotr_human_far_harad
-        technology_group = lotr_human_sirayn
-        technology_group = lotr_human_chy
-        technology_group = lotr_human_mumakan
-        technology_group = lotr_human_rohan
-        technology_group = lotr_human_mordor
-        technology_group = lotr_human_rhovanion
-        technology_group = lotr_human_misty_mountains
-        technology_group = lotr_human_eriador
-        technology_group = lotr_human_forodwaith
-        technology_group = lotr_human_near_harad
-        technology_group = lotr_human_rhun
-        technology_group = lotr_human_dyria
+	custom_trigger_tooltip = {
+		tooltip = IS_HUMAN_TOOLTIP
+		OR = {
+			technology_group = lotr_human
+			technology_group = lotr_human_palisor
+			technology_group = lotr_human_womarin_realms
+			technology_group = lotr_human_lochan_daer
+			technology_group = lotr_human_islands_of_helkaer
+			technology_group = lotr_human_urd
+			technology_group = lotr_human_balizar
+			technology_group = lotr_human_ered_harmal
+			technology_group = lotr_human_haradwaith
+			technology_group = lotr_human_far_harad
+			technology_group = lotr_human_sirayn
+			technology_group = lotr_human_chy
+			technology_group = lotr_human_mumakan
+			technology_group = lotr_human_rohan
+			technology_group = lotr_human_mordor
+			technology_group = lotr_human_rhovanion
+			technology_group = lotr_human_misty_mountains
+			technology_group = lotr_human_eriador
+			technology_group = lotr_human_forodwaith
+			technology_group = lotr_human_near_harad
+			technology_group = lotr_human_rhun
+			technology_group = lotr_human_dyria
+	
+		}
+	}
+}
 
-    }
+is_dwarf = {
+	custom_trigger_tooltip = {
+		tooltip = IS_DWARF_TOOLTIP
+		OR = {
+			technology_group = lotr_dwarven
+			technology_group = lotr_dwarven_palisor
+			technology_group = lotr_dwarven_womarin_realms
+			technology_group = lotr_dwarven_lochan_daer
+			technology_group = lotr_dwarven_urd
+			technology_group = lotr_dwarven_ered_harmal
+			technology_group = lotr_dwarven_mumakan
+			technology_group = lotr_dwarven_rhovanion
+			technology_group = lotr_dwarven_misty_mountains
+			technology_group = lotr_dwarven_eriador
+			technology_group = lotr_dwarven_dyria
+		}
+	}
+}
+
+is_elf = {
+	custom_trigger_tooltip = {
+		tooltip = IS_ELF_TOOLTIP
+		OR = {
+			technology_group = lotr_elven
+			technology_group = lotr_elven_palisor
+			technology_group = lotr_elven_urd
+			technology_group = lotr_elven_lochan_daer
+			technology_group = lotr_elven_rhun
+			technology_group = lotr_elven_rhovanion
+			technology_group = lotr_elven_balizar
+			technology_group = lotr_elven_mumakan
+			technology_group = lotr_elven_islands_of_helkaer
+			technology_group = lotr_elven_haradwaith
+			technology_group = lotr_elven_forodwaith
+		}
+	}
+}
+
+is_ent = {
+	custom_trigger_tooltip = {
+		tooltip = IS_ENT_TOOLTIP
+		OR = {
+			technology_group = lotr_ent
+			technology_group = lotr_ent_eriador
+		}
+	}
+}
+
+is_erus_children = {
+	custom_trigger_tooltip = {
+		tooltip = IS_ERUS_CHILDREN_TOOLTIP
+		OR = {
+			technology_group = lotr_erus_children
+			technology_group = lotr_erus_children_womarin_realms
+			technology_group = lotr_erus_children_eriador
+		}
+	}
+}
+
+is_goblin = {
+	custom_trigger_tooltip = {
+		tooltip = IS_GOBLIN_TOOLTIP
+		OR = {
+			technology_group = lotr_goblin
+			technology_group = lotr_goblin_eriador
+			technology_group = lotr_goblin_forodwaith
+			technology_group = lotr_goblin_rhovanion
+		}
+	}
+}
+
+is_great_spider = {
+	custom_trigger_tooltip = {
+		tooltip = IS_GREAT_SPIDER_TOOLTIP
+		OR = {
+			technology_group = lotr_great_spider
+			technology_group = lotr_great_spider_eriador
+			technology_group = lotr_great_spider_urd
+		}
+	}
+}
+
+is_hobbit = {
+	custom_trigger_tooltip = {
+		tooltip = IS_HOBBIT_TOOLTIP
+		OR = {
+			technology_group = lotr_hobbit
+			technology_group = lotr_hobbit_womarin_realms
+			technology_group = lotr_hobbit_mumakan
+		}
+	}
+}
+
+is_wizard = {
+	custom_trigger_tooltip = {
+		tooltip = IS_WIZARD_TOOLTIP
+		OR = {
+			technology_group = lotr_wizard
+			technology_group = lotr_wizard_rhovanion
+			technology_group = lotr_wizard_palisor
+		}
+	}
+}
+
+is_wight = {
+	custom_trigger_tooltip = {
+		tooltip = IS_WIGHT_TOOLTIP
+		OR = {
+			technology_group = lotr_wights
+			technology_group = lotr_wights_dyria
+			technology_group = lotr_wights_ered_harmal
+			technology_group = lotr_wights_balizor
+			technology_group = lotr_wights_womarin_realms
+		}
+	}
 }

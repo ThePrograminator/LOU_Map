@@ -49,10 +49,10 @@ minas_tirith_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -65,10 +65,10 @@ minas_tirith_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -80,10 +80,10 @@ minas_tirith_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -258,10 +258,10 @@ library_of_minas_tirith_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -274,10 +274,10 @@ library_of_minas_tirith_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -289,10 +289,10 @@ library_of_minas_tirith_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -467,10 +467,10 @@ amon_hen_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -483,10 +483,10 @@ amon_hen_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -498,10 +498,10 @@ amon_hen_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -676,10 +676,10 @@ amon_lhaw_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -692,10 +692,10 @@ amon_lhaw_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -707,10 +707,10 @@ amon_lhaw_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -1244,10 +1244,10 @@ minas_ithil_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -1260,10 +1260,10 @@ minas_ithil_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -1275,10 +1275,10 @@ minas_ithil_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -1435,10 +1435,10 @@ edhellond_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -1801,10 +1801,10 @@ imloth_melui_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -2005,10 +2005,10 @@ argonath_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -2028,10 +2028,10 @@ argonath_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -2373,10 +2373,10 @@ calembel_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -3476,10 +3476,10 @@ helmsdeep_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -3662,10 +3662,10 @@ edoras_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -4023,10 +4023,10 @@ amrun_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -4209,10 +4209,10 @@ umbar_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -4587,10 +4587,10 @@ gobel_ancalimon_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -4768,10 +4768,10 @@ gobel_mirlond_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -5138,7 +5138,7 @@ dains_halls_monument = {
 		AND = {
 			owner = {
 				OR = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
 				}
 			}
@@ -5321,7 +5321,7 @@ erebor_monument = {
 		AND = {
 			owner = {
 				OR = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
 				}
 			}
@@ -5505,10 +5505,10 @@ dale_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -5691,10 +5691,10 @@ laketown_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -5874,7 +5874,7 @@ rivendell_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -6053,7 +6053,7 @@ michel_delving_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -6084,10 +6084,10 @@ michel_delving_monument = {
 		owner = {
 			OR = {
 				is_human = yes
-				technology_group = lotr_elven
-				technology_group = lotr_dwarven
+				is_elf = yes
+				is_dwarf = yes
 				technology_group = lotr_half_dwarf
-				technology_group = lotr_hobbit
+				is_hobbit = yes
 			}
 		}
 	}
@@ -6423,10 +6423,10 @@ sarn_ford_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -6608,7 +6608,7 @@ moria_monument = {
 		AND = {
 			owner = {
 				OR = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
 				}
 			}
@@ -6790,7 +6790,7 @@ ost_in_edhil_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -6971,7 +6971,7 @@ entmoot_monument = {
 		AND = {
 			owner = {
 				OR = {
-					technology_group = lotr_ent
+					is_ent = yes
 				}
 			}
 			has_owner_religion = yes
@@ -6993,7 +6993,7 @@ entmoot_monument = {
 		AND = {
 			owner = {
 				OR = {
-					technology_group = lotr_ent
+					is_ent = yes
 				}
 			}
 			has_owner_religion = yes
@@ -7005,7 +7005,7 @@ entmoot_monument = {
 		AND = {
 			owner = {
 				OR = {
-					technology_group = lotr_ent
+					is_ent = yes
 				}
 			}
 			has_owner_religion = yes
@@ -7016,7 +7016,7 @@ entmoot_monument = {
 	keep_trigger = {
 		owner = {
 			OR = {
-				technology_group = lotr_ent
+				is_ent = yes
 			}
 		}
 	}
@@ -7171,7 +7171,7 @@ cerin_amroth_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -7191,7 +7191,7 @@ cerin_amroth_monument = {
 	can_use_modifiers_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}
@@ -7201,7 +7201,7 @@ cerin_amroth_monument = {
 	can_upgrade_trigger = {	
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}	
@@ -7211,7 +7211,7 @@ cerin_amroth_monument = {
 	keep_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 		}
 	}
@@ -7366,7 +7366,7 @@ thalls_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}		
@@ -7549,7 +7549,7 @@ gundabad_monument = {
 				is_owner_racial_group_melkor = yes
 				owner = {
 					OR = {
-						technology_group = lotr_dwarven
+						is_dwarf = yes
 						technology_group = lotr_half_dwarf
 					}
 				}
@@ -7919,10 +7919,10 @@ framsburg_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -8105,10 +8105,10 @@ fornost_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -8289,7 +8289,7 @@ greyhavens_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -8471,7 +8471,7 @@ bree_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -8494,7 +8494,7 @@ bree_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -8507,7 +8507,7 @@ bree_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -8520,7 +8520,7 @@ bree_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 		}
@@ -9033,10 +9033,10 @@ amon_sul_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -9219,10 +9219,10 @@ relerindu_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -9403,7 +9403,7 @@ arentaurr_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -9585,10 +9585,10 @@ bozisha_dar_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -9771,10 +9771,10 @@ niluloni_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -9957,10 +9957,10 @@ nordinbad_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -10143,10 +10143,10 @@ argond_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -10329,10 +10329,10 @@ druins_tower_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -10515,10 +10515,10 @@ xyunai_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -10701,10 +10701,10 @@ chaiapun_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -10885,7 +10885,7 @@ elostirion_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				technology_group = lotr_elven
+				is_elf = yes
 			}
 			has_owner_religion = yes
 		}			
@@ -11067,10 +11067,10 @@ ekhalshar_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -11611,10 +11611,10 @@ mistrand_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -11797,10 +11797,10 @@ hyvat_kalat_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -11983,10 +11983,10 @@ dun_larach_hall_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes
@@ -12366,10 +12366,10 @@ tharbad_bridge_monument = {
 			owner = {
 				OR = {
 					is_human = yes
-					technology_group = lotr_elven
-					technology_group = lotr_dwarven
+					is_elf = yes
+					is_dwarf = yes
 					technology_group = lotr_half_dwarf
-					technology_group = lotr_hobbit
+					is_hobbit = yes
 				}
 			}
 			has_owner_religion = yes

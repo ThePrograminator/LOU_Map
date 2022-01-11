@@ -9,7 +9,7 @@ estate_commoners = {
 		desc = estate_commoners_dwarf
 		trigger = {
 			OR = {
-                technology_group = lotr_dwarven
+                is_dwarf = yes
                 technology_group = lotr_half_dwarf
             }
 		}
@@ -17,13 +17,13 @@ estate_commoners = {
     custom_name = {
 		desc = estate_commoners_elven
 		trigger = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 	}
     custom_name = {
 		desc = estate_commoners_hobbit
 		trigger = {
-			technology_group = lotr_hobbit
+			is_hobbit = yes
 		}
 	}
     

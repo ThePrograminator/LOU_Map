@@ -36,7 +36,7 @@ lotr_wight_government_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_wights
+		is_wight = yes
 	}
 	
 	modifiers = {
@@ -60,7 +60,7 @@ lotr_spider_government_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_great_spider
+		is_great_spider = yes
 	}
 	
 	modifiers = {

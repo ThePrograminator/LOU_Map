@@ -77,7 +77,7 @@ dwarven_cult =
 		OR = {
 			has_unlocked_cult = dwarven_cult
 			any_neighbor_country = { 
-                technology_group = lotr_dwarven
+                is_dwarf = yes
             }
 		}
 	}
@@ -123,7 +123,7 @@ goblin_cult =
 		OR = {
 			has_unlocked_cult = goblin_cult
 			any_neighbor_country = { 
-                technology_group = lotr_goblin
+                is_goblin = yes
             }
 		}
 	}

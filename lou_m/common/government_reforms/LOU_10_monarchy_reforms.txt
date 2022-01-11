@@ -10,8 +10,8 @@ feudalism_reform = {
 	
 	potential = {
 		NOT = {
-			technology_group = lotr_dwarven 
-			technology_group = lotr_elven
+			is_dwarf = yes 
+			is_elf = yes
 		}
 	}
 	
@@ -29,8 +29,8 @@ autocracy_reform = {
 	
 	potential = {
 		NOT = {
-			technology_group = lotr_dwarven 
-			technology_group = lotr_elven
+			is_dwarf = yes 
+			is_elf = yes
 		}
 	}
 	
@@ -49,8 +49,8 @@ principality_reform = {
 	
 	potential = {
 		NOT = {
-			technology_group = lotr_dwarven 
-			technology_group = lotr_elven
+			is_dwarf = yes 
+			is_elf = yes
 		}
 	}
 	

@@ -9,7 +9,7 @@ estate_merchants = {
 		desc = estate_merchants_dwarf
 		trigger = {
 			OR = {
-                technology_group = lotr_dwarven
+                is_dwarf = yes
                 technology_group = lotr_half_dwarf
             }
 		}
@@ -17,13 +17,13 @@ estate_merchants = {
     custom_name = {
 		desc = estate_merchants_elven
 		trigger = {
-			technology_group = lotr_elven
+			is_elf = yes
 		}
 	}
     custom_name = {
 		desc = estate_merchants_hobbit
 		trigger = {
-			technology_group = lotr_hobbit
+			is_hobbit = yes
 		}
 	}
     

@@ -7,7 +7,7 @@ defined_text = {
 		localisation_key = estate_stewards_dwarf
 		trigger = {
             OR = {
-                technology_group = lotr_dwarven
+                is_dwarf = yes
                 technology_group = lotr_half_dwarf
             }
             has_estate = estate_stewards
@@ -16,14 +16,14 @@ defined_text = {
     text = {
 		localisation_key = estate_stewards_elven
 		trigger = {
-            technology_group = lotr_elven
+            is_elf = yes
             has_estate = estate_stewards
 		}
 	}
     text = {
 		localisation_key = estate_stewards_hobbit
 		trigger = {
-            technology_group = lotr_hobbit
+            is_hobbit = yes
             has_estate = estate_stewards
 		}
 	}
@@ -45,7 +45,7 @@ defined_text = {
 		localisation_key = estate_merchants_dwarf
 		trigger = {
             OR = {
-                technology_group = lotr_dwarven
+                is_dwarf = yes
                 technology_group = lotr_half_dwarf
             }
             has_estate = estate_merchants
@@ -54,14 +54,14 @@ defined_text = {
     text = {
 		localisation_key = estate_merchants_elven
 		trigger = {
-            technology_group = lotr_elven
+            is_elf = yes
             has_estate = estate_merchants
 		}
 	}
     text = {
 		localisation_key = estate_merchants_hobbit
 		trigger = {
-            technology_group = lotr_hobbit
+            is_hobbit = yes
             has_estate = estate_merchants
 		}
 	}
@@ -83,7 +83,7 @@ defined_text = {
 		localisation_key = estate_nobles_dwarf
 		trigger = {
             OR = {
-                technology_group = lotr_dwarven
+                is_dwarf = yes
                 technology_group = lotr_half_dwarf
             }
             has_estate = estate_nobles
@@ -92,14 +92,14 @@ defined_text = {
     text = {
 		localisation_key = estate_nobles_elven
 		trigger = {
-            technology_group = lotr_elven
+            is_elf = yes
             has_estate = estate_nobles
 		}
 	}
     text = {
 		localisation_key = estate_nobles_hobbit
 		trigger = {
-            technology_group = lotr_hobbit
+            is_hobbit = yes
             has_estate = estate_nobles
 		}
 	}
@@ -121,7 +121,7 @@ defined_text = {
 		localisation_key = estate_commoners_dwarf
 		trigger = {
             OR = {
-                technology_group = lotr_dwarven
+                is_dwarf = yes
                 technology_group = lotr_half_dwarf
             }
             has_estate = estate_commoners
@@ -130,14 +130,14 @@ defined_text = {
     text = {
 		localisation_key = estate_commoners_elven
 		trigger = {
-            technology_group = lotr_elven
+            is_elf = yes
             has_estate = estate_commoners
 		}
 	}
     text = {
 		localisation_key = estate_commoners_hobbit
 		trigger = {
-            technology_group = lotr_hobbit
+            is_hobbit = yes
             has_estate = estate_commoners
 		}
 	}
@@ -165,7 +165,7 @@ defined_text = {
     text = {
 		localisation_key = estate_tribes_goblin
 		trigger = {
-            technology_group = lotr_goblin
+            is_goblin = yes
             has_estate = estate_tribes
 		}
 	}
@@ -179,7 +179,7 @@ defined_text = {
     text = {
 		localisation_key = estate_tribes_spider
 		trigger = {
-            technology_group = lotr_great_spider
+            is_great_spider = yes
             has_estate = estate_tribes
 		}
 	}
@@ -203,21 +203,21 @@ defined_text = {
     text = {
 		localisation_key = estate_tribes_wights
 		trigger = {
-            technology_group = lotr_wights
+            is_wight = yes
             has_estate = estate_tribes
 		}
 	}
     text = {
 		localisation_key = estate_tribes_ent
 		trigger = {
-            technology_group = lotr_ent
+            is_ent = yes
             has_estate = estate_tribes
 		}
 	}
     text = {
 		localisation_key = estate_tribes_eagles
 		trigger = {
-            technology_group = lotr_erus_children
+            is_erus_children = yes
             has_estate = estate_tribes
 		}
 	}

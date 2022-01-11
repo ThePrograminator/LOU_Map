@@ -12,7 +12,7 @@ lotr_ent_government_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_ent 
+		is_ent = yes 
 	}
 	
 	modifiers = {
@@ -34,7 +34,7 @@ lotr_great_eagle_government_reform = {
 	fixed_rank = 2
 	
 	potential = {
-		technology_group = lotr_erus_children
+		is_erus_children = yes
 	}
 	
 	modifiers = {

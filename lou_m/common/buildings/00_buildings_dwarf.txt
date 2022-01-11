@@ -34,7 +34,7 @@ colony_outpost_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_buildings = no
@@ -44,7 +44,7 @@ colony_outpost_dwarf_building = {
 	
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_buildings = no
@@ -68,7 +68,7 @@ colony_outpost_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -103,7 +103,7 @@ settlement_1_dwarf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_buildings = no
@@ -123,7 +123,7 @@ settlement_1_dwarf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_buildings = no
@@ -156,7 +156,7 @@ settlement_1_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -187,7 +187,7 @@ settlement_2_dwarf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_fortress_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -206,7 +206,7 @@ settlement_2_dwarf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_fortress_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -238,7 +238,7 @@ settlement_2_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -264,7 +264,7 @@ settlement_3_dwarf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_fortress_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -283,7 +283,7 @@ settlement_3_dwarf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_fortress_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -315,7 +315,7 @@ settlement_3_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -340,7 +340,7 @@ hold_1_dwarf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -352,7 +352,7 @@ hold_1_dwarf_building = {
 		development = 5
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -378,7 +378,7 @@ hold_1_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -409,7 +409,7 @@ hold_2_dwarf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -421,7 +421,7 @@ hold_2_dwarf_building = {
 		development = 10
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -447,7 +447,7 @@ hold_2_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -473,7 +473,7 @@ hold_3_dwarf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -485,7 +485,7 @@ hold_3_dwarf_building = {
 		development = 15
 		is_capital = no
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_capital_buildings = no
@@ -511,7 +511,7 @@ hold_3_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -536,7 +536,7 @@ capital_1_dwarf_building = {
 		is_capital = yes
 		development = 5
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
@@ -546,7 +546,7 @@ capital_1_dwarf_building = {
 		is_capital = yes
 		development = 5
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
@@ -572,7 +572,7 @@ capital_1_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -612,7 +612,7 @@ capital_2_dwarf_building = {
 		is_capital = yes
 		development = 10
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
@@ -622,7 +622,7 @@ capital_2_dwarf_building = {
 		is_capital = yes
 		development = 10
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
@@ -648,7 +648,7 @@ capital_2_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -680,7 +680,7 @@ capital_3_dwarf_building = {
 		is_capital = yes
 		development = 15
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
@@ -690,7 +690,7 @@ capital_3_dwarf_building = {
 		is_capital = yes
 		development = 15
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_dwarf_has_city_buildings = no
 		province_dwarf_has_fortress_buildings = no
@@ -716,7 +716,7 @@ capital_3_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -741,7 +741,7 @@ material_exchance_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -749,7 +749,7 @@ material_exchance_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -771,7 +771,7 @@ material_exchance_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -808,7 +808,7 @@ fairground_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -816,7 +816,7 @@ fairground_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -838,7 +838,7 @@ fairground_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -875,7 +875,7 @@ great_market_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_building_tier_4 = yes
@@ -883,7 +883,7 @@ great_market_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_building_tier_4 = yes
@@ -905,7 +905,7 @@ great_market_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -941,7 +941,7 @@ traders_guild_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 			estate_loyalty = {
 				estate = estate_merchants
 				loyalty = 80
@@ -953,7 +953,7 @@ traders_guild_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_building_tier_3 = yes
@@ -976,7 +976,7 @@ traders_guild_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1016,7 +1016,7 @@ armoury_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1024,7 +1024,7 @@ armoury_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1046,7 +1046,7 @@ armoury_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1080,7 +1080,7 @@ forge_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1088,7 +1088,7 @@ forge_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1110,7 +1110,7 @@ forge_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1144,7 +1144,7 @@ arsenal_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_4 = yes
@@ -1152,7 +1152,7 @@ arsenal_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_4 = yes
@@ -1174,7 +1174,7 @@ arsenal_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1207,7 +1207,7 @@ smithies_guild_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 			
 		}
 		province_is_buildable = yes
@@ -1216,7 +1216,7 @@ smithies_guild_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_3 = yes
@@ -1238,7 +1238,7 @@ smithies_guild_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1275,7 +1275,7 @@ libary_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1283,7 +1283,7 @@ libary_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1306,7 +1306,7 @@ libary_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1340,7 +1340,7 @@ research_office_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1348,7 +1348,7 @@ research_office_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1371,7 +1371,7 @@ research_office_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1405,7 +1405,7 @@ acadamy_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_4 = yes
@@ -1413,7 +1413,7 @@ acadamy_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_4 = yes
@@ -1436,7 +1436,7 @@ acadamy_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1469,7 +1469,7 @@ advisor_guild_dwarf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 			estate_loyalty = {
 				estate = estate_stewards
 				loyalty = 80
@@ -1481,7 +1481,7 @@ advisor_guild_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_3 = yes
@@ -1503,7 +1503,7 @@ advisor_guild_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1540,7 +1540,7 @@ mustering_hall_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1548,7 +1548,7 @@ mustering_hall_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1570,7 +1570,7 @@ mustering_hall_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1604,7 +1604,7 @@ training_hall_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1612,7 +1612,7 @@ training_hall_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1634,7 +1634,7 @@ training_hall_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1668,7 +1668,7 @@ hall_of_warriors_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_4 = yes
@@ -1676,7 +1676,7 @@ hall_of_warriors_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_4 = yes
@@ -1698,7 +1698,7 @@ hall_of_warriors_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1731,7 +1731,7 @@ warriors_guild_dwarf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 			estate_loyalty = {
 				estate = estate_nobles
 				loyalty = 80
@@ -1743,7 +1743,7 @@ warriors_guild_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_3 = yes
@@ -1765,7 +1765,7 @@ warriors_guild_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1804,7 +1804,7 @@ mine_shaft_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1812,7 +1812,7 @@ mine_shaft_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_1 = yes
@@ -1834,7 +1834,7 @@ mine_shaft_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1869,7 +1869,7 @@ mining_network_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1877,7 +1877,7 @@ mining_network_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_main_building_tier_2 = yes
@@ -1899,7 +1899,7 @@ mining_network_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1934,7 +1934,7 @@ materials_depot_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_4 = yes
@@ -1942,7 +1942,7 @@ materials_depot_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_4 = yes
@@ -1964,7 +1964,7 @@ materials_depot_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -1998,7 +1998,7 @@ miners_guild_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 			estate_loyalty = {
 				estate = estate_commoners
 				loyalty = 80
@@ -2010,7 +2010,7 @@ miners_guild_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_fortress_building_tier_3 = yes
@@ -2032,7 +2032,7 @@ miners_guild_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2072,7 +2072,7 @@ fort_small_gatehouse_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2090,7 +2090,7 @@ fort_small_gatehouse_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2122,7 +2122,7 @@ fort_small_gatehouse_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2178,7 +2178,7 @@ fort_great_gatehouse_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2196,7 +2196,7 @@ fort_great_gatehouse_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2228,7 +2228,7 @@ fort_great_gatehouse_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2284,7 +2284,7 @@ fort_mountain_fortress_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2302,7 +2302,7 @@ fort_mountain_fortress_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2334,7 +2334,7 @@ fort_mountain_fortress_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2389,7 +2389,7 @@ fort_mountain_citidal_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2407,7 +2407,7 @@ fort_mountain_citidal_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2439,7 +2439,7 @@ fort_mountain_citidal_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2498,7 +2498,7 @@ fort_pallisade_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_buildings = yes
@@ -2507,7 +2507,7 @@ fort_pallisade_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_buildings = yes
@@ -2530,7 +2530,7 @@ fort_pallisade_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2586,7 +2586,7 @@ fort_castle_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_buildings = yes
@@ -2595,7 +2595,7 @@ fort_castle_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		province_dwarf_has_city_buildings = yes
@@ -2618,7 +2618,7 @@ fort_castle_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2674,7 +2674,7 @@ rune_door_dwarf_building = {
 	
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2698,7 +2698,7 @@ rune_door_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2736,7 +2736,7 @@ rune_door_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2760,7 +2760,7 @@ narrow_bridge_dwarf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2784,7 +2784,7 @@ narrow_bridge_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2822,7 +2822,7 @@ narrow_bridge_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2846,7 +2846,7 @@ moat_dwarf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2870,7 +2870,7 @@ moat_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2908,7 +2908,7 @@ moat_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}
@@ -2932,7 +2932,7 @@ ballista_towers_dwarf_building = {
     
 	build_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2956,7 +2956,7 @@ ballista_towers_dwarf_building = {
 
 	keep_trigger = {
 		owner = {
-			technology_group = lotr_dwarven
+			is_dwarf = yes
 		}
 		province_is_buildable = yes
 		OR = {
@@ -2994,7 +2994,7 @@ ballista_towers_dwarf_building = {
 			factor = 0
 			NOT = {
 				owner = {
-					technology_group = lotr_dwarven
+					is_dwarf = yes
 				}
 			}
 		}

@@ -121,7 +121,7 @@ gondor_missions_1 = {
 				all_ally = {
 					OR = {
 						culture_group = culture_group_eotheod
-						technology_group = lotr_elven
+						is_elf = yes
 					}
 				}
 			}
@@ -134,7 +134,7 @@ gondor_missions_1 = {
 						alliance_with = ROOT
 						OR = {
 							culture_group = culture_group_eotheod
-							technology_group = lotr_elven
+							is_elf = yes
 						}
 					}
 					country_event = { id = LOU_mission_gondor.2 }
