@@ -1,11 +1,11 @@
-# Province ID : 586
+# Province ID : 574
 # Province Name : Dead Marshes
 # Province RGB : (11, 100, 4)
 # Province Area : Nindalf
-# Province Region : Gondor
+# Province Region : Ithilien
 # Province Super Region : Gondor
 # Province Continent : Middle Earth
-# Province Tradenode : null
+# Province Tradenode : The Black Gate
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -32,6 +32,13 @@ add_province_modifier = {
 	duration = -1
 }
 
+2942.1.1 = {
+	add_core = V17
+	owner = V17
+	controller = V17
+	remove_core = X99
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_erus_children
 discovered_by = lotr_dwarven
@@ -49,10 +56,37 @@ discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wights
+discovered_by = lotr_human_rohan
+discovered_by = lotr_orc_rohan
+discovered_by = lotr_human_mordor
+discovered_by = lotr_human_rhovanion
+discovered_by = lotr_dwarven_rhovanion
+discovered_by = lotr_elven_rhovanion
+discovered_by = lotr_goblin_rhovanion
+discovered_by = lotr_hobbit_rhovanion
+discovered_by = lotr_orc_rhovanion
+discovered_by = lotr_wizard_rhovanion
+discovered_by = lotr_human_misty_mountains
+discovered_by = lotr_dwarven_misty_mountains
+discovered_by = lotr_orc_misty_mountains
+discovered_by = lotr_human_eriador
+discovered_by = lotr_dwarven_eriador
+discovered_by = lotr_ent_eriador
+discovered_by = lotr_erus_children_eriador
+discovered_by = lotr_goblin_eriador
+discovered_by = lotr_great_spider_eriador
+discovered_by = lotr_orc_eriador
+discovered_by = lotr_human_forodwaith
+discovered_by = lotr_elven_forodwaith
+discovered_by = lotr_goblin_forodwaith
+discovered_by = lotr_orc_forodwaith
+discovered_by = lotr_wights_forodwaith
+discovered_by = lotr_human_near_harad
+discovered_by = lotr_orc_near_harad
+discovered_by = lotr_human_haradwaith
+discovered_by = lotr_elven_haradwaith
+discovered_by = lotr_orc_haradwaith
+discovered_by = lotr_human_far_harad
+discovered_by = lotr_orc_far_harad
+discovered_by = lotr_orc_gondor
 
-2942.1.1 = {
-	add_core = V17
-	owner = V17
-	controller = V17
-	remove_core = X99
-}
