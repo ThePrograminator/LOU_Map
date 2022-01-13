@@ -1,16 +1,15 @@
-# Province ID : 571
+# Province ID : 559
 # Province Name : Thrór's Coomb
 # Province RGB : (131, 97, 140)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province Area : Thrór's Coomb
+# Province Region : The Misty Mountains
+# Province Super Region : The Misty Mountains
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Moria
+# Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
 
 base_tax = 5
 base_production = 5
@@ -23,29 +22,6 @@ trade_goods = iron
 
 hre = no
 
-hold_1_dwarf_building=yes
-fort_small_gatehouse_dwarf_building=yes
-armoury_dwarf_building=yes
-mustering_hall_dwarf_building=yes
-mining_network_dwarf_building=yes
-
-discovered_by = lotr_human
-discovered_by = lotr_erus_children
-discovered_by = lotr_dwarven
-discovered_by = lotr_dragon
-discovered_by = lotr_elven
-discovered_by = lotr_ent
-discovered_by = lotr_goblin
-discovered_by = lotr_giant
-discovered_by = lotr_great_spider
-discovered_by = lotr_half_dwarf
-discovered_by = lotr_hobbit
-discovered_by = lotr_half_orc
-discovered_by = lotr_orc
-discovered_by = lotr_troll
-discovered_by = lotr_uruk_hai
-discovered_by = lotr_wizard
-discovered_by = lotr_wights
 
 2758.1.1 = {
 	add_core = W25
@@ -67,8 +43,54 @@ discovered_by = lotr_wights
 	mustering_hall_dwarf_building=yes
 	mining_network_dwarf_building=yes
 }
+
 2802.3.1 = {
 	add_core = Y16
 	owner = Y16
 	controller = Y16
 }
+
+discovered_by = lotr_human
+discovered_by = lotr_human_rohan
+discovered_by = lotr_human_mordor
+discovered_by = lotr_human_rhovanion
+discovered_by = lotr_human_misty_mountains
+discovered_by = lotr_human_eriador
+discovered_by = lotr_human_forodwaith
+discovered_by = lotr_human_near_harad
+discovered_by = lotr_human_rhun
+discovered_by = lotr_dwarven
+discovered_by = lotr_dwarven_eriador
+discovered_by = lotr_dwarven_rhovanion
+discovered_by = lotr_dwarven_misty_mountains
+discovered_by = lotr_elven
+discovered_by = lotr_elven_rhun
+discovered_by = lotr_elven_rhovanion
+discovered_by = lotr_elven_forodwaith
+discovered_by = lotr_ent
+discovered_by = lotr_ent_eriador
+discovered_by = lotr_erus_children
+discovered_by = lotr_erus_children_eriador
+discovered_by = lotr_goblin
+discovered_by = lotr_goblin_eriador
+discovered_by = lotr_goblin_forodwaith
+discovered_by = lotr_goblin_rhovanion
+discovered_by = lotr_giant
+discovered_by = lotr_great_spider
+discovered_by = lotr_great_spider_eriador
+discovered_by = lotr_hobbit
+discovered_by = lotr_hobbit_rhovanion
+discovered_by = lotr_orc
+discovered_by = lotr_orc_rohan
+discovered_by = lotr_orc_gondor
+discovered_by = lotr_orc_rhovanion
+discovered_by = lotr_orc_misty_mountains
+discovered_by = lotr_orc_eriador
+discovered_by = lotr_orc_forodwaith
+discovered_by = lotr_orc_near_harad
+discovered_by = lotr_orc_rhun
+discovered_by = lotr_troll
+discovered_by = lotr_uruk_hai
+discovered_by = lotr_wizard
+discovered_by = lotr_wizard_rhovanion
+
