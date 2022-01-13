@@ -1,3 +1,15 @@
+# Province ID : 3371
+# Province Name : Di-Gak
+# Province RGB : (90, 37, 90)
+# Province Area : Suza Sumar
+# Province Region : Raj
+# Province Super Region : Far Harad
+# Province Continent : Hither Lands
+# Province Tradenode : Bozisha-Dar
+# Province Climate : null
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 5
@@ -16,23 +28,32 @@ trade_goods = tropical_wood
 hre = no
 
 fortress_2_building=yes
+
 barracks_building=yes
+
 fort_pallisade_building=yes
 
-discovered_by = lotr_human
-discovered_by = lotr_erus_children
-discovered_by = lotr_dwarven
-discovered_by = lotr_dragon
-discovered_by = lotr_elven
-discovered_by = lotr_ent
-discovered_by = lotr_goblin
-discovered_by = lotr_giant
-discovered_by = lotr_great_spider
-discovered_by = lotr_half_dwarf
-discovered_by = lotr_hobbit
-discovered_by = lotr_half_orc
-discovered_by = lotr_orc
-discovered_by = lotr_troll
-discovered_by = lotr_uruk_hai
-discovered_by = lotr_wizard
-discovered_by = lotr_wights
+#Far Harad Superregion Discovery
+discovered_by = lotr_human_balizar
+discovered_by = lotr_human_ered_harmal
+discovered_by = lotr_human_haradwaith
+discovered_by = lotr_human_far_harad
+discovered_by = lotr_human_sirayn
+discovered_by = lotr_human_chy
+discovered_by = lotr_human_mumakan
+discovered_by = lotr_human_near_harad
+discovered_by = lotr_dwarven_ered_harmal
+discovered_by = lotr_dwarven_mumakan
+discovered_by = lotr_elven_balizar
+discovered_by = lotr_elven_mumakan
+discovered_by = lotr_elven_haradwaith
+discovered_by = lotr_hobbit_mumakan
+discovered_by = lotr_orc_balizar
+discovered_by = lotr_orc_ered_harmal
+discovered_by = lotr_orc_haradwaith
+discovered_by = lotr_orc_far_harad
+discovered_by = lotr_orc_sirayn
+discovered_by = lotr_orc_chy
+discovered_by = lotr_orc_mumakan
+discovered_by = lotr_orc_near_harad
+

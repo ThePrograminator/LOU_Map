@@ -1,45 +1,38 @@
-# Province ID : 3367
-# Province Name : Erizan
-# Province RGB : (40, 122, 40)
-# Province Area : Suza Sumar
-# Province Region : Raj
-# Province Super Region : Far Harad
+# Province ID : 1782
+# Province Name : Póan
+# Province RGB : (150, 105, 120)
+# Province Area : Kirmlesra
+# Province Region : Sîrayn
+# Province Super Region : Sîrayn
 # Province Continent : Hither Lands
-# Province Tradenode : Bozisha-Dar
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 8
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
-add_core = Y87
-owner = Y87
-controller = Y87
+add_core = X66
+owner = X66
+controller = X66
 
-culture = culture_honnin
-religion = religion_drughu
+culture = culture_harani
+religion = religion_sirani
 
-trade_goods = herbs
+trade_goods = salt
 
 hre = no
 
-fortress_2_building=yes
+settlement_building=yes
 
-trade_outpost_building=yes
+work_camp_building=yes
 
-tax_office_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-#Far Harad Superregion Discovery
+#Sirayn Superregion Discovery
+discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_haradwaith
@@ -48,12 +41,15 @@ discovered_by = lotr_human_sirayn
 discovered_by = lotr_human_chy
 discovered_by = lotr_human_mumakan
 discovered_by = lotr_human_near_harad
+discovered_by = lotr_dwarven_lochan_daer
 discovered_by = lotr_dwarven_ered_harmal
 discovered_by = lotr_dwarven_mumakan
+discovered_by = lotr_elven_lochan_daer
 discovered_by = lotr_elven_balizar
 discovered_by = lotr_elven_mumakan
 discovered_by = lotr_elven_haradwaith
 discovered_by = lotr_hobbit_mumakan
+discovered_by = lotr_orc_lochan_daer
 discovered_by = lotr_orc_balizar
 discovered_by = lotr_orc_ered_harmal
 discovered_by = lotr_orc_haradwaith

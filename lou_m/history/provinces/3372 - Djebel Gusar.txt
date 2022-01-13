@@ -1,7 +1,7 @@
-# Province ID : 3367
-# Province Name : Erizan
-# Province RGB : (40, 122, 40)
-# Province Area : Suza Sumar
+# Province ID : 3372
+# Province Name : Djebel Gusar
+# Province RGB : (195, 37, 90)
+# Province Area : Brij-Mijesec
 # Province Region : Raj
 # Province Super Region : Far Harad
 # Province Continent : Hither Lands
@@ -14,30 +14,18 @@ is_city = yes
 
 base_tax = 4
 base_production = 5
-base_manpower = 8
+base_manpower = 3
 
-add_core = Y87
-owner = Y87
-controller = Y87
+add_core = X51
+owner = X51
+controller = X51
 
-culture = culture_honnin
-religion = religion_drughu
+culture = culture_bozishnarod
+religion = religion_sea_peoples
 
-trade_goods = herbs
+trade_goods = iron
 
 hre = no
-
-fortress_2_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
 
 #Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
