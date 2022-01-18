@@ -1,8 +1,8 @@
-# Province ID : 2791
-# Province Name : Taurimorn
-# Province RGB : (35, 104, 213)
-# Province Area : Mitheryn
-# Province Region : Mitheryn
+# Province ID : 1660
+# Province Name : Thûrlomar
+# Province RGB : (76, 250, 36)
+# Province Area : Thûrlornar
+# Province Region : Desdursyton
 # Province Super Region : Urd
 # Province Continent : Palisor
 # Province Tradenode : Mitheryn
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
+base_tax = 3
 base_production = 4
-base_manpower = 4
+base_manpower = 3
 
 add_core = V90
 owner = V90
@@ -23,17 +23,9 @@ controller = V90
 culture = culture_hwendi
 religion = religion_moriquendi
 
-trade_goods = wine
+trade_goods = fur
 
 hre = no
-
-town_1_elf_building=yes
-
-temple_elf_building=yes
-
-workshop_elf_building=yes
-
-warriors_gallery_building=yes
 
 #Urd Superregion Discovery
 discovered_by = lotr_human_palisor

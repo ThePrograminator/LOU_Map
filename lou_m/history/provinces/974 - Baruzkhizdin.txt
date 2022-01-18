@@ -1,8 +1,8 @@
-# Province ID : 2791
-# Province Name : Taurimorn
-# Province RGB : (35, 104, 213)
-# Province Area : Mitheryn
-# Province Region : Mitheryn
+# Province ID : 974
+# Province Name : Baruzkhizdîn
+# Province RGB : (190, 69, 80)
+# Province Area : Tarapársa
+# Province Region : Desdursyton
 # Province Super Region : Urd
 # Province Continent : Palisor
 # Province Tradenode : Mitheryn
@@ -12,28 +12,48 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 12
+base_production = 12
+base_manpower = 12
 
-add_core = V90
-owner = V90
-controller = V90
+add_core = W38
+owner = W38
+controller = W38
 
-culture = culture_hwendi
-religion = religion_moriquendi
+culture = culture_stonefoot
+religion = religion_mahal
 
-trade_goods = wine
+trade_goods = silver
 
 hre = no
 
-town_1_elf_building=yes
+capital_3_dwarf_building=yes
 
-temple_elf_building=yes
+great_market_dwarf_building=yes
 
-workshop_elf_building=yes
+traders_guild_building=yes
 
-warriors_gallery_building=yes
+arsenal_dwarf_building=yes
+
+smithies_guild_building=yes
+
+acadamy_dwarf_building=yes
+
+advisor_guild_dwarf_building=yes
+
+hall_of_warriors_dwarf_building=yes
+
+warriors_guild_dwarf_building=yes
+
+materials_depot_building=yes
+
+miners_guild_dwarf_building=yes
+
+fort_mountain_citidal_dwarf_building=yes
+
+ballista_towers_dwarf_building=yes
+
+center_of_trade = 2
 
 #Urd Superregion Discovery
 discovered_by = lotr_human_palisor

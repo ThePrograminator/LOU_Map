@@ -1,8 +1,8 @@
-# Province ID : 2791
-# Province Name : Taurimorn
-# Province RGB : (35, 104, 213)
-# Province Area : Mitheryn
-# Province Region : Mitheryn
+# Province ID : 3598
+# Province Name : Shiyas
+# Province RGB : (220, 113, 45)
+# Province Area : Thûrlornar
+# Province Region : Desdursyton
 # Province Super Region : Urd
 # Province Continent : Palisor
 # Province Tradenode : Mitheryn
@@ -12,28 +12,32 @@
 
 is_city = yes
 
-base_tax = 4
+base_tax = 3
 base_production = 4
 base_manpower = 4
 
-add_core = V90
-owner = V90
-controller = V90
+add_core = W48
+owner = W48
+controller = W48
 
-culture = culture_hwendi
-religion = religion_moriquendi
+culture = culture_ky_taari
+religion = religion_chegra
 
-trade_goods = wine
+trade_goods = naval_supplies
 
 hre = no
 
-town_1_elf_building=yes
+city_1_building=yes
 
-temple_elf_building=yes
+trade_outpost_building=yes
 
-workshop_elf_building=yes
+temple_building=yes
 
-warriors_gallery_building=yes
+work_camp_building=yes
+
+outpost_building=yes
+
+dock_building=yes
 
 #Urd Superregion Discovery
 discovered_by = lotr_human_palisor

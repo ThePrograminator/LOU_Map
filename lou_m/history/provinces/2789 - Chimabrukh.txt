@@ -1,6 +1,6 @@
-# Province ID : 2791
-# Province Name : Taurimorn
-# Province RGB : (35, 104, 213)
+# Province ID : 2789
+# Province Name : Chimabrûkh
+# Province RGB : (213, 69, 35)
 # Province Area : Mitheryn
 # Province Region : Mitheryn
 # Province Super Region : Urd
@@ -12,28 +12,36 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 5
+base_production = 5
+base_manpower = 8
 
-add_core = V90
-owner = V90
-controller = V90
+add_core = V63
+owner = V63
+controller = V63
 
-culture = culture_hwendi
-religion = religion_moriquendi
+culture = culture_urdar
+religion = religion_eastern_snowmen
 
-trade_goods = wine
+trade_goods = naval_supplies
 
 hre = no
 
-town_1_elf_building=yes
+city_2_building=yes
 
-temple_elf_building=yes
+marketplace_building=yes
 
-workshop_elf_building=yes
+provincial_office_building=yes
 
-warriors_gallery_building=yes
+warehouse_building=yes
+
+fort_castle_building=yes
+
+army_camp_building=yes
+
+seaport_building=yes
+
+center_of_trade = 1
 
 #Urd Superregion Discovery
 discovered_by = lotr_human_palisor
