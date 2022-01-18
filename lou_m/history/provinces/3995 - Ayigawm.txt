@@ -1,3 +1,15 @@
+# Province ID : 3995
+# Province Name : Ayîgawm
+# Province RGB : (166, 117, 137)
+# Province Area : Helcar Sael
+# Province Region : Helcar Sael
+# Province Super Region : Womarin Realms
+# Province Continent : Palisor
+# Province Tradenode : Tatamúrilis
+# Province Climate : Severe_winter
+# Province is not Sea/Lake Province
+# Province Contents : 
+
 is_city = yes
 
 base_tax = 3
@@ -5,10 +17,10 @@ base_production = 4
 base_manpower = 4
 
 add_core = W32
-add_core = V97
 owner = W32
 controller = W32
 
+add_core = V97
 culture = culture_orkish
 religion = religion_orkish
 
@@ -16,20 +28,37 @@ trade_goods = mushrooms
 
 hre = no
 
-discovered_by = lotr_human
-discovered_by = lotr_erus_children
-discovered_by = lotr_dwarven
-discovered_by = lotr_dragon
-discovered_by = lotr_elven
-discovered_by = lotr_ent
-discovered_by = lotr_goblin
-discovered_by = lotr_giant
-discovered_by = lotr_great_spider
-discovered_by = lotr_half_dwarf
-discovered_by = lotr_hobbit
-discovered_by = lotr_half_orc
-discovered_by = lotr_orc
-discovered_by = lotr_troll
-discovered_by = lotr_uruk_hai
-discovered_by = lotr_wizard
-discovered_by = lotr_wights
+#Womarin Realms Superregion Discovery
+discovered_by = lotr_human_palisor
+discovered_by = lotr_human_womarin_realms
+discovered_by = lotr_human_lochan_daer
+discovered_by = lotr_human_islands_of_helkaer
+discovered_by = lotr_human_urd
+discovered_by = lotr_human_balizar
+discovered_by = lotr_human_ered_harmal
+discovered_by = lotr_dwarven_palisor
+discovered_by = lotr_dwarven_womarin_realms
+discovered_by = lotr_dwarven_lochan_daer
+discovered_by = lotr_dwarven_urd
+discovered_by = lotr_dwarven_ered_harmal
+discovered_by = lotr_elven_palisor
+discovered_by = lotr_elven_urd
+discovered_by = lotr_elven_lochan_daer
+discovered_by = lotr_elven_balizar
+discovered_by = lotr_elven_mumakan
+discovered_by = lotr_elven_islands_of_helkaer
+discovered_by = lotr_erus_children_womarin_realms
+discovered_by = lotr_great_spider_urd
+discovered_by = lotr_hobbit_womarin_realms
+discovered_by = lotr_orc_palisor
+discovered_by = lotr_orc_womarin_realms
+discovered_by = lotr_orc_lochan_daer
+discovered_by = lotr_orc_islands_of_helkaer
+discovered_by = lotr_orc_urd
+discovered_by = lotr_orc_balizar
+discovered_by = lotr_orc_ered_harmal
+discovered_by = lotr_wizard_palisor
+discovered_by = lotr_wights_ered_harmal
+discovered_by = lotr_wights_balizor
+discovered_by = lotr_wights_womarin_realms
+

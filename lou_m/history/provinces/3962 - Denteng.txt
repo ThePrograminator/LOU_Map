@@ -1,31 +1,41 @@
-# Province ID : 1982
-# Province Name : Sumoto
-# Province RGB : (110, 110, 100)
-# Province Area : Thendo
-# Province Region : Thuriac Codya
+# Province ID : 3962
+# Province Name : Denteng
+# Province RGB : (34, 150, 138)
+# Province Area : Móak
+# Province Region : Wômawas Drûs
 # Province Super Region : Womarin Realms
 # Province Continent : Palisor
-# Province Tradenode : Thuriac Codya
-# Province Climate : null
+# Province Tradenode : Wômacûon
+# Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 5
+base_production = 5
+base_manpower = 6
 
-add_core = V85
-owner = V85
-controller = V85
+add_core = V97
+owner = V97
+controller = V97
 
-culture = culture_vulmav
-religion = religion_cuivac
+culture = culture_wom
+religion = religion_avaradan
 
-trade_goods = copper
+trade_goods = fish
 
 hre = no
+
+fortress_2_building=yes
+
+forge_building=yes
+
+fort_castle_building=yes
+
+barracks_building=yes
+
+drydock_building=yes
 
 #Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor

@@ -1,31 +1,47 @@
-# Province ID : 1982
-# Province Name : Sumoto
-# Province RGB : (110, 110, 100)
-# Province Area : Thendo
-# Province Region : Thuriac Codya
+# Province ID : 3512
+# Province Name : Unâkh Ublag's Lair
+# Province RGB : (55, 167, 207)
+# Province Area : Urulis
+# Province Region : Orocarni
 # Province Super Region : Womarin Realms
 # Province Continent : Palisor
-# Province Tradenode : Thuriac Codya
-# Province Climate : null
+# Province Tradenode : Moinarlin
+# Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 5
+base_production = 5
+base_manpower = 6
 
-add_core = V85
-owner = V85
-controller = V85
+add_core = W32
+owner = W32
+controller = W32
 
-culture = culture_vulmav
-religion = religion_cuivac
+culture = culture_orkish
+religion = religion_orkish
 
-trade_goods = copper
+trade_goods = gems
 
 hre = no
+
+fortress_2_orc_building=yes
+
+blacksmith_orc_building=yes
+
+orc_pit_orc_building=yes
+
+orc_fissure_orc_building=yes
+
+warg_pit_orc_building=yes
+
+fort_wooden_walls_orc_building=yes
+
+small_arena_building=yes
+
+prisoner_cage_orc_building=yes
 
 #Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor
