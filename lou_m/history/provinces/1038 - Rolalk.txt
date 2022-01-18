@@ -1,8 +1,8 @@
-# Province ID : 3505
-# Province Name : Vorom Uiven
-# Province RGB : (4, 100, 4)
-# Province Area : Uiven
-# Province Region : Uiven
+# Province ID : 1038
+# Province Name : Rolálk
+# Province RGB : (156, 174, 85)
+# Province Area : Rôlfandas
+# Province Region : Rôlfandas
 # Province Super Region : Islands of Helkeäar Sea
 # Province Continent : Palisor
 # Province Tradenode : Tatamâc Pîvân
@@ -12,40 +12,38 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 6
+base_tax = 7
+base_production = 6
+base_manpower = 7
 
-add_core = Y77
-owner = Y77
-controller = Y77
+add_core = V83
+owner = V83
+controller = V83
 
-culture = culture_nelyarin
-religion = religion_moriquendi
+culture = culture_rolfandan
+religion = religion_avaradan
 
-trade_goods = silk
+trade_goods = naval_supplies
 
 hre = no
 
-capital_2_elf_building=yes
+capital_2_building=yes
 
-craftsmen_plaza_elf_building=yes
+marketplace_building=yes
 
-theatre_elf_building=yes
+provincial_office_building=yes
 
-elven_forge_elf_building=yes
+warehouse_building=yes
 
-heros_shrine_building=yes
+forge_building=yes
 
-grand_stables_elf_building=yes
+fort_castle_building=yes
 
-seaport_elf_building=yes
+barracks_building=yes
 
-haven_elf_building=yes
+seaport_building=yes
 
-fort_high_walls_elf_building=yes
-
-wall_bastions_elf_building=yes
+drydock_building=yes
 
 center_of_trade = 1
 
