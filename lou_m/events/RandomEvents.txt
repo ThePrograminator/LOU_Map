@@ -1471,14 +1471,14 @@ country_event = {
 	title = "EVTNAME5051"
 	desc = {
 		trigger = {
-			NOT = { has_estate = estate_burghers }
+			NOT = { has_estate = estate_merchants }
 		}
 		desc = "EVTDESC5051"
 	}
 	desc = {
 		trigger = {
 			OR = {
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 			}
 		}
 		desc = event.5051.desc
@@ -1490,10 +1490,10 @@ country_event = {
 
 	trigger = {
 		if = {
-			limit = { has_estate = estate_burghers }
+			limit = { has_estate = estate_merchants }
 			NOT = {
 				estate_loyalty = {
-					estate = estate_burghers
+					estate = estate_merchants
 					loyalty = 30
 				}
 			}
@@ -1546,10 +1546,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -1720,10 +1720,10 @@ country_event = {
 	trigger = {
 		NOT = { mercantilism = 30 }
 		if = {
-			limit = { has_estate = estate_burghers }
+			limit = { has_estate = estate_merchants }
 			NOT = {
 				estate_loyalty = {
-					estate = estate_burghers
+					estate = estate_merchants
 					loyalty = 30
 				}
 			}
@@ -1759,10 +1759,10 @@ country_event = {
 			factor = 55
 			modifier = {
 				factor = 0
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -2568,10 +2568,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.25
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -2732,10 +2732,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_estate = estate_burghers
+		has_estate = estate_merchants
 		NOT = {
 			num_of_estate_privileges = {
-				estate = estate_burghers
+				estate = estate_merchants
 				value = 3
 			}
 		}
@@ -2789,10 +2789,10 @@ country_event = {
 			factor = 45
 			modifier = {
 				factor = 0.25
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -2888,10 +2888,10 @@ country_event = {
 			factor = 45
 			modifier = {
 				factor = 0
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -3034,10 +3034,10 @@ country_event = {
 			factor = 30
 			modifier = {
 				factor = 0
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -3641,10 +3641,10 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 2
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
@@ -4273,10 +4273,10 @@ country_event = {
 		add_years_of_income = 0.5
 		if = {
 			limit = {
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 			}
 			change_estate_land_share = {
-				estate = estate_burghers
+				estate = estate_merchants
 				share = 5
 			}
 		}
@@ -4303,10 +4303,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				has_estate = estate_burghers
+				has_estate = estate_merchants
 				NOT = {
 					estate_loyalty = {
-						estate = estate_burghers
+						estate = estate_merchants
 						loyalty = 30
 					}
 				}
