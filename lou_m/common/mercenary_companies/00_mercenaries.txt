@@ -211,7 +211,7 @@ merc_black_guard_of_mornost = {
     cost_modifier = 0.60
     home_province = 903
     trigger = {
-        technology_group = lotr_orc
+        is_orc = yes
 	}
 }
 merc_sled_horde = {
@@ -299,7 +299,7 @@ merc_forak_eiginn = {
     home_province = 160
     trigger = {
         OR = {
-            technology_group = lotr_orc
+            is_orc = yes
             is_goblin = yes
         }
 	}
@@ -324,7 +324,7 @@ merc_lusturangsuri_half_orcs = {
     home_province = 1572
     
     trigger = {
-        technology_group = lotr_orc
+        is_orc = yes
     }
 }
 merc_sons_of_cirlond = {

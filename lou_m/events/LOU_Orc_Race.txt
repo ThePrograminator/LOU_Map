@@ -1009,7 +1009,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		technology_group = lotr_orc
+		is_orc = yes
 		
 		any_owned_province = {
 			has_owner_culture = yes
@@ -1062,7 +1062,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        technology_group = lotr_orc
+        is_orc = yes
 		NOT = {
 			has_country_modifier = orc_send_warg_scouts
 			has_country_flag = orc_send_scouts
@@ -1118,7 +1118,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        technology_group = lotr_orc
+        is_orc = yes
 		NOT = {
 			has_country_modifier = orc_wood_to_industry
 			has_country_modifier = orc_wood_to_campfires
@@ -1178,7 +1178,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        technology_group = lotr_orc
+        
 		
 		exists = V17
 		
@@ -1294,7 +1294,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        technology_group = lotr_orc
+        
 
 		NOT = {
 			has_country_modifier = orc_offended_nation
@@ -1315,19 +1315,19 @@ country_event = {
 			}
 			OR ={
 				AND = {
-					technology_group = lotr_orc
+					
 					alliance_with = ROOT
 				}
 				AND = {
-					technology_group = lotr_orc
+					
 					is_neighbor_of = ROOT
 				}
 				AND = {
-					technology_group = lotr_orc
+					
 					is_subject_of = ROOT
 				}
 				AND = {
-					technology_group = lotr_orc
+					
 					NOT = {
 						alliance_with = ROOT
 						is_neighbor_of = ROOT
@@ -1363,22 +1363,22 @@ country_event = {
 				}
 				OR ={
 					AND = {
-						technology_group = lotr_orc
+						
 						alliance_with = ROOT
 					}
 					AND = {
-						technology_group = lotr_orc
+						
 						is_neighbor_of = ROOT
 					}
 					AND = {
-						technology_group = lotr_orc
+						
 						OR = {	
 							is_subject_of = ROOT
 							alliance_with = ROOT
 						}
 					}
 					AND = {
-						technology_group = lotr_orc
+						
 						NOT = {
 							alliance_with = ROOT
 							is_neighbor_of = ROOT
@@ -1412,7 +1412,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        technology_group = lotr_orc
+        
 		
 		has_advisor = yes
 		
@@ -1475,7 +1475,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        technology_group = lotr_orc
+        
 		
 		NOT = {
 			has_country_flag = converted_province_recently

@@ -11,8 +11,7 @@ lotr_orc_clan_reform = {
 	potential = {
 		OR = {
 			technology_group = lotr_uruk_hai    
-			technology_group = lotr_orc   
-			technology_group = lotr_half_orc  
+			is_orc = yes
 			is_goblin = yes 
 		}
 	}
@@ -34,8 +33,7 @@ lotr_orc_clan_federation_reform = {
 	potential = {
 		OR = {
 			technology_group = lotr_uruk_hai    
-			technology_group = lotr_orc   
-			technology_group = lotr_half_orc  
+			is_orc = yes  
 			is_goblin = yes 
 		}
 	}
@@ -57,8 +55,7 @@ lotr_orc_kingdom_reform = {
 	potential = {
 		OR = {
 			technology_group = lotr_uruk_hai    
-			technology_group = lotr_orc   
-			technology_group = lotr_half_orc  
+			is_orc = yes  
 			is_goblin = yes 
 		}
 	}

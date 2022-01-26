@@ -32,10 +32,7 @@ estate_tribes = {
     custom_name = {
 		desc = estate_tribes_orc
 		trigger = {
-			OR = {
-                technology_group = lotr_orc
-                technology_group = lotr_half_orc
-            }
+			is_orc = yes
 		}
 	}
     custom_name = {

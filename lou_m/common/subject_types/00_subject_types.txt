@@ -267,6 +267,7 @@ daimyo_vassal = {
 	separatists_become_subjects = yes
 	allows_taking_land_without_independence = yes
 	can_use_claims = no
+	can_concentrate_development = no
 
 	trust_on_start = 0
 	
@@ -345,6 +346,7 @@ personal_union = {
 	can_have_subjects_of_other_types = yes
 	can_union_break = yes
 	transfer_subjects_when_made = yes
+	can_concentrate_development = no
 
 	liberty_desire_negative_prestige = 1.0
 	military_focus = 0.66
@@ -428,6 +430,7 @@ colony = {
 	can_transfer_in_peace = no
 	press_sailors = yes
 	forcelimit_bonus = 1.0
+	can_concentrate_development = no
 	
 	liberty_desire_development_ratio = 0.1
 
@@ -611,6 +614,7 @@ tributary_state = {
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
+	can_concentrate_development = no
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0

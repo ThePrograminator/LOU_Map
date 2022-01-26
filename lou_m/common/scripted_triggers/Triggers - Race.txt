@@ -140,8 +140,7 @@ is_owner_racial_group_melkor = {
 			technology_group = lotr_dragon
 			is_goblin = yes
 			is_great_spider = yes
-			technology_group = lotr_half_orc
-			technology_group = lotr_orc
+			is_orc = yes
 			technology_group = lotr_troll
 			technology_group = lotr_uruk_hai
 			is_wight = yes
@@ -487,6 +486,7 @@ is_human = {
 			technology_group = lotr_human_haradwaith
 			technology_group = lotr_human_far_harad
 			technology_group = lotr_human_sirayn
+			technology_group = lotr_human_harshandatt
 			technology_group = lotr_human_chy
 			technology_group = lotr_human_mumakan
 			technology_group = lotr_human_rohan
@@ -517,6 +517,7 @@ is_dwarf = {
 			technology_group = lotr_dwarven_rhovanion
 			technology_group = lotr_dwarven_misty_mountains
 			technology_group = lotr_dwarven_eriador
+			technology_group = lotr_dwarven_rhun
 			technology_group = lotr_dwarven_dyria
 		}
 	}
@@ -592,6 +593,38 @@ is_hobbit = {
 			technology_group = lotr_hobbit
 			technology_group = lotr_hobbit_womarin_realms
 			technology_group = lotr_hobbit_mumakan
+		}
+	}
+}
+
+is_orc = {
+	custom_trigger_tooltip = {
+		tooltip = IS_ORC_TOOLTIP
+		OR = {
+			technology_group = lotr_orc
+			technology_group = lotr_orc_palisor
+			technology_group = lotr_orc_womarin_realms
+			technology_group = lotr_orc_lochan_daer
+			technology_group = lotr_orc_islands_of_helkaer
+			technology_group = lotr_orc_urd
+			technology_group = lotr_orc_balizar
+			technology_group = lotr_orc_ered_harmal
+			technology_group = lotr_orc_haradwaith
+			technology_group = lotr_orc_far_harad
+			technology_group = lotr_orc_sirayn
+			technology_group = lotr_orc_harshandatt
+			technology_group = lotr_orc_chy
+			technology_group = lotr_orc_mumakan
+			technology_group = lotr_orc_rohan
+			technology_group = lotr_orc_gondor
+			technology_group = lotr_orc_rhovanion
+			technology_group = lotr_orc_misty_mountains
+			technology_group = lotr_orc_eriador
+			technology_group = lotr_orc_forodwaith
+			technology_group = lotr_orc_near_harad
+			technology_group = lotr_orc_rhun
+			technology_group = lotr_orc_dyria
+			technology_group = lotr_half_orc
 		}
 	}
 }

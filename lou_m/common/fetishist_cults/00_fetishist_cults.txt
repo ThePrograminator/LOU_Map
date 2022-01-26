@@ -100,7 +100,7 @@ orc_cult =
 		OR = {
 			has_unlocked_cult = orc_cult
 			any_neighbor_country = { 
-                technology_group = lotr_orc
+                is_orc = yes
             }
 		}
 	}

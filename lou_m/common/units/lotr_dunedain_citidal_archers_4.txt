@@ -11,5 +11,12 @@ offensive_shock = 1
 defensive_shock = 2
 
 trigger = {
-	is_larger_gondorian_culture = yes
+	OR = {
+		primary_culture = culture_dunedain_of_gondor
+		primary_culture = culture_dunedain_of_ithilien
+		primary_culture = culture_dunedain_of_lebennin
+		primary_culture = culture_dunedain_of_belfalas
+		primary_culture = culture_dunedain_of_tol_falas
+		primary_culture = culture_numenorean
+	}
 }
