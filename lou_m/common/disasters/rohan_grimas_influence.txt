@@ -4,24 +4,26 @@ rohan_grimas_influence = {
 		exists = V49
 		NOT = { has_country_flag = disaster_rohan_grimas_influence }
 		NOT = { has_country_flag = had_disaster_rohan_grimas_influence }
-		is_year = 3010
-		#check_date = {
-		#	YEAR = 3010
-		#	MONTH = 0
-		#	STARTED_BEFORE = 3014.1.1
-		#}
+		#is_year = 3010
+		check_date = {
+			YEAR = 3010
+			MONTH = 0
+			STARTED_BEFORE = 3014.1.1
+		}
 	}
 	
 	can_start = {
-		has_any_disaster = no
-		is_year = 3010
+		always = yes
+		#has_any_disaster = no
+		#is_year = 3010  
 		##average_home_autonomy = 30
 		#NOT = { legitimacy_or_horde_unity = 75 }
 	}
 	
 	
 	can_stop = {
-		
+		#NOT = { prestige = 100 }
+		always = no
 	}
 	
 	progress = {
@@ -30,12 +32,15 @@ rohan_grimas_influence = {
 			always = yes
 		}	
 		modifier = {
+			factor = 2
+		}	
+		modifier = {
 			factor = 1
 			war_exhaustion = 10
 		}
 		modifier = {
-			factor = 1
-			NOT = { stability = 1 }
+			factor = 2
+			NOT = { stability = 3 }
 		}		
 		modifier = {
 			factor = 1.5
@@ -67,14 +72,15 @@ rohan_grimas_influence = {
 			AND = {
 				has_country_flag = disaster_rohan_force_removal_of_grima
 				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = {
+					has_country_flag = disaster_rohan_force_removal_of_grima_lost
+				}
 			}
 			AND = {
 				#gandalf
 				custom_trigger_tooltip = {
 					tooltip = DISASTER_ROHAN_GRIMAS_INFLUENCE_GANDALF
-					NOT = {
-						has_country_flag = disaster_rohan_grimas_influence_gandalf
-					}
+					has_country_flag = disaster_rohan_grimas_influence_gandalf
 				}
 			}
 			AND = {
@@ -104,7 +110,6 @@ rohan_grimas_influence = {
 		}
 		random_events = { 
 			1000 = 0
-			75 = disaster_rohan_grimas_influence.3
 			75 = disaster_rohan_grimas_influence.4
 			75 = disaster_rohan_grimas_influence.5
 			75 = disaster_rohan_grimas_influence.6

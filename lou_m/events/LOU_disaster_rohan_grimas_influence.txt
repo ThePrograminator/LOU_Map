@@ -93,7 +93,7 @@ country_event = {
 				is_capital = yes
 			}
 			spawn_rebels = {
-				type = 	pretender_rebels
+				type = 	grima_pretender_rebels
 				religion = ROOT
 				size = 2
 				win = yes
@@ -107,7 +107,7 @@ country_event = {
 				area = west_march_area
 			}
 			spawn_rebels = {
-				type = 	pretender_rebels
+				type = 	grima_pretender_rebels
 				religion = ROOT
 				size = 1
 				win = yes
@@ -121,7 +121,7 @@ country_event = {
 				area = westfold_area
 			}
 			spawn_rebels = {
-				type = 	pretender_rebels
+				type = 	grima_pretender_rebels
 				religion = ROOT
 				size = 1
 				win = yes
@@ -167,8 +167,8 @@ country_event = {
 				religion = ROOT
 				size = 1
 			}
-			add_local_autonomy = 25
-			add_devastation = 1
+			add_local_autonomy = 50
+			add_devastation = 50
 		}
 	}
 }
@@ -209,6 +209,7 @@ country_event = {
 	option = {
 		name = disaster_rohan_grimas_influence.5.a			# Crush them!
 		add_prestige = -10
+		
 	}
 }
 
@@ -282,5 +283,42 @@ country_event = {
 	option = {
 		name = disaster_rohan_grimas_influence.100.a			# Crush them!
 		set_country_flag = disaster_rohan_grimas_influence_gandalf
+	}
+}
+
+#Test
+country_event = {
+	id = disaster_rohan_grimas_influence.101
+	title = disaster_rohan_grimas_influence.101.t
+	desc = disaster_rohan_grimas_influence.101.d
+	picture = gandalf_events
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			has_country_flag = disaster_rohan_force_removal_of_grima
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		AND = {
+			#gandalf
+			custom_trigger_tooltip = {
+				tooltip = DISASTER_ROHAN_GRIMAS_INFLUENCE_GANDALF
+					has_country_flag = disaster_rohan_grimas_influence_gandalf
+			}
+		}
+		AND = {
+			NOT = {
+				exists = V49
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = disaster_rohan_grimas_influence.101.a			# Crush them!
+		
 	}
 }

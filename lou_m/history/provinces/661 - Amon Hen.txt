@@ -27,6 +27,11 @@ trade_goods = stone
 
 hre = no
 
+add_province_modifier = {
+	name = wilderness_debuff
+	duration = -1
+}
+
 #Rohan Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
