@@ -1,0 +1,115 @@
+rohan_grimas_influence = {
+	potential = {
+		tag = X16
+		exists = V49
+		NOT = { has_country_flag = disaster_rohan_grimas_influence }
+		NOT = { has_country_flag = had_disaster_rohan_grimas_influence }
+		is_year = 3010
+		#check_date = {
+		#	YEAR = 3010
+		#	MONTH = 0
+		#	STARTED_BEFORE = 3014.1.1
+		#}
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		is_year = 3010
+		##average_home_autonomy = 30
+		#NOT = { legitimacy_or_horde_unity = 75 }
+	}
+	
+	
+	can_stop = {
+		
+	}
+	
+	progress = {
+		modifier = {
+			factor = 2
+			always = yes
+		}	
+		modifier = {
+			factor = 1
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy = 50 }
+		} 
+		modifier = {
+			factor = 1
+			num_of_loans = 10
+		}	
+		modifier = {
+			factor = 2
+			is_bankrupt = yes
+		}		
+		modifier = {
+			factor = 0.5
+			overextension_percentage = 0.25
+			NOT = { 
+				overextension_percentage = 0.5
+			}
+		}
+		modifier = {
+			factor = 1.0
+			overextension_percentage = 0.5
+		}
+	}
+	
+	can_end = {
+		OR = {
+			AND = {
+				has_country_flag = disaster_rohan_force_removal_of_grima
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
+			AND = {
+				#gandalf
+				custom_trigger_tooltip = {
+					tooltip = DISASTER_ROHAN_GRIMAS_INFLUENCE_GANDALF
+					NOT = {
+						has_country_flag = disaster_rohan_grimas_influence_gandalf
+					}
+				}
+			}
+			AND = {
+				NOT = {
+					exists = V49
+				}
+			}
+		}
+	}
+	
+
+	modifier = {
+		global_unrest = 5
+		land_morale = -0.05
+		army_tradition = -1
+		global_tax_modifier = -0.15
+		production_efficiency = -0.15
+		stability_cost_modifier = 0.5
+	}	
+	
+	
+	on_start = disaster_rohan_grimas_influence.1
+	on_end = disaster_rohan_grimas_influence.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			75 = disaster_rohan_grimas_influence.3
+			75 = disaster_rohan_grimas_influence.4
+			75 = disaster_rohan_grimas_influence.5
+			75 = disaster_rohan_grimas_influence.6
+			75 = disaster_rohan_grimas_influence.7
+		}
+	}
+}
+

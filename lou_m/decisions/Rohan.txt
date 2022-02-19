@@ -1,0 +1,35 @@
+country_decisions = {
+	
+	disaster_rohan_force_removal_of_grima = {
+	
+		potential = {
+			tag = X16
+			has_country_flag = rohan_grimas_influence
+			NOT = { has_country_flag = had_disaster_rohan_grimas_influence }
+			check_date = {
+				YEAR = 3014
+				MONTH = 0
+				STARTED_BEFORE = 3014.1.1
+			}
+		}
+		
+		allow = {
+			tag = X16
+			has_country_flag = rohan_grimas_influence
+		}
+		
+		effect = {	
+			country_event = {
+				id = disaster_rohan_grimas.3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				always = yes
+			}
+		}
+	}
+}

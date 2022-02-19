@@ -1,68 +1,111 @@
-# estate_merchants_disaster = {
-	# potential = {
-		# has_estate = estate_merchants
-		# estate_influence = {
-			# estate = estate_merchants
-			# influence = 80
-		# }
-	# }
+estate_merchants_disaster = {
+	potential = {
+		has_estate = estate_merchants
+		estate_influence = {
+			estate = estate_merchants
+			influence = 80
+		}
+	}
 
 
-	# can_start = {
-		# has_any_disaster = no
-		# estate_influence = {
-			# estate = estate_merchants
-			# influence = 100
-		# }
-	# }
+	can_start = {
+		has_any_disaster = no
+		estate_influence = {
+			estate = estate_merchants
+			influence = 100
+		}
+		is_at_war = no
+	}
 	
-	# can_stop = {
-		# OR = {
-			# has_any_disaster = yes
-			# NOT = {
-				# estate_influence = {
-					# estate = estate_merchants
-					# influence = 100
-				# }		
-			# }
-		# }
-	# }
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = {
+				estate_influence = {
+					estate = estate_merchants
+					influence = 100
+				}		
+			}
+		}
+	}
 	
-	# down_progress = {
-		# factor = 1
-	# }
+	down_progress = {
+		factor = 0
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_influence = {
+					estate = estate_merchants
+					influence = 100
+				}
+			}
+		}
+	}
 	
-	# progress = {
-		# modifier = {
-			# factor = 5
-			# estate_influence = {
-				# estate = estate_merchants
-				# influence = 100
-			# }
-		# }		
-	# }
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_merchants
+					loyalty = 50
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_merchants
+					loyalty = 40
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_merchants
+					loyalty = 30
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_merchants
+					loyalty = 20
+				}
+			}
+			is_at_war = no
+		}
+	}
 	
-	# can_end = {
-		# custom_trigger_tooltip = {
-			# tooltip = EST_CRUSHED_BURGHERS
-			# OR = {
-				# NOT = { has_country_flag = burghers_estate_in_power }
-				# has_country_flag = noble_estate_in_power
-			# }						
-		# }
-	# }
+	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = EST_CRUSHED_BURGHERS
+			OR = {
+				NOT = { has_country_flag = burghers_estate_in_power }
+				has_country_flag = noble_estate_in_power
+			}						
+		}
+	}
 	
-	# modifier = {	
-		# land_morale = -0.1
-		# global_manpower_modifier = -0.25
-		# land_forcelimit_modifier = -0.25
-		# prestige = -1
-	# }
+	modifier = {	
+		land_morale = -0.1
+		global_manpower_modifier = -0.25
+		land_forcelimit_modifier = -0.25
+		prestige = -1
+	}
 
-	# on_start = estate_disasters.5
-	# on_end = estate_disasters.6
+	on_start = estate_disasters.5
+	on_end = estate_disasters.6
 	
-	# on_monthly = {
-	# }
-# }
+	on_monthly = {
+	}
+}
 

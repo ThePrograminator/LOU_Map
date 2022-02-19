@@ -1,0 +1,286 @@
+namespace = disaster_rohan_grimas_influence
+
+# Grima Acts as regency
+country_event = {
+	id = disaster_rohan_grimas_influence.1
+	title = disaster_rohan_grimas_influence.1.t
+	desc = disaster_rohan_grimas_influence.1.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_country_flag = disaster_rohan_grimas_influence
+		set_country_flag = had_disaster_rohan_grimas_influence
+		define_ruler = {
+			name = "Grima"
+			dynasty = "Wormtongue"
+			adm = 1
+			dip = 1
+			mil = 1
+			age = 20
+			regency = yes
+		}
+	}
+	
+	
+	option = {
+		name = disaster_rohan_grimas_influence.1.a		# Crush them!
+		add_prestige = -30
+	}
+}
+
+# End of Grima
+country_event = {
+	id = disaster_rohan_grimas_influence.2
+	title = disaster_rohan_grimas_influence.2.t
+	desc = disaster_rohan_grimas_influence.2.d
+	picture = COURT_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = disaster_rohan_grimas_influence
+	}
+	
+	option = {
+		name = disaster_rohan_grimas_influence.2.a
+		clr_country_flag = civilwar_on_capital
+		add_legitimacy = 10
+		add_horde_unity = 10
+		add_stability = 3
+		define_ruler = {
+			name = "Théoden"
+			dynasty = "House of Hildeson"
+			adm = 4
+			dip = 3
+			mil = 5
+			age = 40
+		}
+	}
+}
+
+#Fight Grima
+country_event = {
+	id = disaster_rohan_grimas_influence.3
+	title = disaster_rohan_grimas_influence.3.t
+	desc = disaster_rohan_grimas_influence.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				is_capital = yes
+			}
+			spawn_rebels = {
+				type = 	pretender_rebels
+				religion = ROOT
+				size = 2
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
+
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				area = west_march_area
+			}
+			spawn_rebels = {
+				type = 	pretender_rebels
+				religion = ROOT
+				size = 1
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
+
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				area = westfold_area
+			}
+			spawn_rebels = {
+				type = 	pretender_rebels
+				religion = ROOT
+				size = 1
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
+		set_country_flag = disaster_rohan_force_removal_of_grima
+	}
+	
+	
+	option = {
+		name = disaster_rohan_grimas_influence.3.a			# Crush them!
+	}
+}
+
+#Raiding
+country_event = {
+	id = disaster_rohan_grimas_influence.4
+	title = disaster_rohan_grimas_influence.4.t
+	desc = disaster_rohan_grimas_influence.4.d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = disaster_rohan_grimas_influence.3.a			# Crush them!
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				OR = {
+					area = westfold_area
+					area = west_march_area
+				}
+				
+			}
+			spawn_rebels = {
+				type = 	uruk_hai_raider_rebels
+				religion = ROOT
+				size = 1
+			}
+			add_local_autonomy = 25
+			add_devastation = 1
+		}
+	}
+}
+
+#Men Disbanded
+country_event = {
+	id = disaster_rohan_grimas_influence.5
+	title = disaster_rohan_grimas_influence.5.t
+	desc = disaster_rohan_grimas_influence.5.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_at_war = no
+		any_core_province = { 
+			units_in_province = 2
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_core_province = {
+			limit = {
+				units_in_province = 2
+			}
+			kill_units = {
+				who = root
+				amount = 2
+			}
+		}
+	}
+	
+	
+	option = {
+		name = disaster_rohan_grimas_influence.5.a			# Crush them!
+		add_prestige = -10
+	}
+}
+
+#Money gone
+country_event = {
+	id = disaster_rohan_grimas_influence.6
+	title = disaster_rohan_grimas_influence.6.t
+	desc = disaster_rohan_grimas_influence.6.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = disaster_rohan_grimas_influence.6.a			# Crush them!
+		add_treasury = -100
+	}
+}
+
+#Army Reserves removed gone
+country_event = {
+	id = disaster_rohan_grimas_influence.7
+	title = disaster_rohan_grimas_influence.7.t
+	desc = disaster_rohan_grimas_influence.7.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = disaster_rohan_grimas_influence.7.a			# Crush them!
+		add_manpower = -1
+	}
+}
+
+#Gandalf
+country_event = {
+	id = disaster_rohan_grimas_influence.100
+	title = disaster_rohan_grimas_influence.100.t
+	desc = disaster_rohan_grimas_influence.100.d
+	picture = gandalf_events
+	fire_only_once = yes
+
+	trigger = {
+		tag = X16
+		has_country_flag = disaster_rohan_grimas_influence
+		NOT = {
+			has_country_flag = disaster_rohan_grimas_influence_gandalf
+		}
+		is_year = 3018
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = disaster_rohan_grimas_influence.100.a			# Crush them!
+		set_country_flag = disaster_rohan_grimas_influence_gandalf
+	}
+}
