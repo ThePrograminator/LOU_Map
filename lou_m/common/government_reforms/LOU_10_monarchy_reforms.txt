@@ -157,6 +157,34 @@ gondor_kingship_reform = {
 		locked_government_type = yes
 	}
 }	
+rohan_kingship_reform = {
+	icon = soldiers_3
+	valid_for_new_country = no
+	allow_convert = no
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = rohan_kingship_legacy
+	maintain_dynasty = yes
+	lock_level_when_selected = yes
+	
+	potential = {
+		tag = X16 
+	}
+	
+	modifiers = {
+		prestige = 1.0
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 1.0
+	}
+	ai = {
+		factor = 1
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
 empire_of_rhun_reform = {
     icon = "variags"
 	allow_normal_conversion = no

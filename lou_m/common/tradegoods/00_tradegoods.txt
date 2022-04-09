@@ -438,6 +438,13 @@ slaves = {
 			factor = 0
 			island = yes
 		}
+		modifier = {
+			factor = 0
+			NOT = {	superregion = eriador_superregion }
+			NOT = {	superregion = rohan_superregion }
+			NOT = {	superregion = rhovanion_superregion }
+			NOT = {	superregion = gondor_superregion }
+		}
 	}
 }
 
@@ -464,6 +471,14 @@ ivory = {
 				has_terrain = jungle
 				has_terrain = savannah
 			}
+		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
 		}
 	}
 }
@@ -498,6 +513,14 @@ tea = {
 			factor = 1.2
 			has_terrain = farmlands
 		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
+		}
 	}
 }
 
@@ -521,6 +544,14 @@ chinaware = {
 			factor = 0
 			NOT = { development = 8 }
 		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
+		}
 	}
 }
 
@@ -537,6 +568,25 @@ spices = {
 		modifier = {
 			factor = 0
 			has_terrain = mountain
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = glacier
+				has_terrain = forest
+				has_climate = arctic
+				has_winter = severe_winter
+				has_winter = normal_winter
+				has_winter = mild_winter
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
 		}
 	}
 }
@@ -569,6 +619,14 @@ coffee = {
 			is_random_new_world = yes
 			continent = new_world #Always in RNW
 			NOT = { has_climate = tropical }
+		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
 		}
 	}
 }
@@ -606,6 +664,14 @@ cotton = {
 				has_terrain = grasslands
 			}
 		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
+		}
 	}
 }
 
@@ -633,6 +699,14 @@ sugar = {
 				has_terrain = forest
 				has_terrain = steppe
 			}
+		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
 		}
 	}
 }
@@ -700,6 +774,14 @@ cocoa = {
 				has_winter = normal_winter
 				has_winter = severe_winter
 			}
+		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
 		}
 	}
 }
@@ -779,11 +861,7 @@ tropical_wood = {
 	}
 	chance = {
 		factor = 25
-		modifier = {
-			factor = 0
-			NOT = { has_terrain = jungle }
-			NOT = { has_climate = tropical }
-		}
+		
 	}
 }
 
@@ -831,6 +909,14 @@ incense = {
 		modifier = {
 			factor = 0
 			has_terrain = mountain
+		}
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
 		}
 	}
 }
@@ -1034,5 +1120,13 @@ mithril = {
 	}
 	chance = {
 		factor = 5
+		modifier = {
+			factor = 0
+			AND = {	superregion = eriador_superregion }
+			AND = {	superregion = mordor_superregion }
+			AND = {	superregion = rohan_superregion }
+			AND = {	superregion = rhovanion_superregion }
+			AND = {	superregion = gondor_superregion }
+		}
 	}
 }

@@ -24,6 +24,28 @@ gondor_kingship_legacy = {
 	}
 }
 
+rohan_kingship_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+	
+	modifiers = {
+    	prestige = 1.0
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 1.0
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
 lotr_kingship_legacy = {
 	# government mechanics flags go here
 	icon = "crown"

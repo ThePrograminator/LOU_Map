@@ -277,16 +277,22 @@ daimyo_vassal = {
 	relative_power_class = 1
 
 	can_fight = {
+		independent_nations = yes
 		same_overlord = daimyo_vassal
+		other_overlord = all
 	}
 	can_rival = {
+		independent_nations = yes
 		same_overlord = daimyo_vassal
+		other_overlord = all
 	}
 	can_ally = {
 		same_overlord = daimyo_vassal
 	}
 	can_marry = {
+		independent_nations = yes
 		same_overlord = daimyo_vassal
+		other_overlord = all
 	}
 	
 	# Subject Interactions

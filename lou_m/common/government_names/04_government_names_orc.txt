@@ -21,7 +21,10 @@ gov_lotr_orc_clan = {
 	}
 	
 	trigger = {
-		has_reform = lotr_orc_clan_reform
+		OR = {
+			has_reform = lotr_orc_clan_reform
+			has_reform = lotr_orc_migrating_clan_reform
+		}
 	}
 }
 

@@ -10,32 +10,34 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
+#is_city = yes
 
 base_tax = 5
 base_production = 5
 base_manpower = 4
 
-add_core = Z43
-owner = Z43
-controller = Z43
+#add_core = Z43
+#owner = Z43
+#controller = Z43
 
-culture = culture_clansmen
-religion = religion_daen
+culture = culture_wilderness
+religion = religion_wilderness
 
 trade_goods = livestock
 
 hre = no
 
-city_2_building=yes
+#city_2_building=yes
 
-marketplace_building=yes
+#marketplace_building=yes
 
-provincial_office_building=yes
+#provincial_office_building=yes
 
-warehouse_building=yes
+#warehouse_building=yes
 
-army_camp_building=yes
+#army_camp_building=yes
+
+2758.1.1 = { tribal_owner = Q08 }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

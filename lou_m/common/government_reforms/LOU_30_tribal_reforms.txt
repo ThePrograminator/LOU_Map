@@ -48,6 +48,7 @@ tribal_dunedain_arnor = {
 	legacy_equivalent = tribal_federation_legacy
 	allow_convert = no
 	valid_for_new_country = no
+	fixed_rank = 1
 
 	lock_level_when_selected = yes
 
@@ -56,12 +57,27 @@ tribal_dunedain_arnor = {
 		reduced_liberty_desire = 10
 		land_maintenance_modifier = -0.20
 	}
+}
+tribal_leader_of_the_dunedain_arnor = {
+	icon = "soldiers_6"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = culture_dunedain_of_arnor
+		have_had_reform = tribal_leader_of_the_dunedain_arnor
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_federation_legacy
+	allow_convert = no
+	valid_for_new_country = no
+	fixed_rank = 1
 
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		government_abilities = {
-			tribal_federation_mechanic
-		}
+	lock_level_when_selected = yes
+
+	modifiers = {
+		diplomatic_upkeep = 3
+		country_diplomatic_power = 1
+		army_tradition = 1
 	}
 }
 tribal_rivermen = {

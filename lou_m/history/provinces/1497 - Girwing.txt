@@ -10,15 +10,15 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
+#is_city = yes
 
 base_tax = 4
 base_production = 3
 base_manpower = 3
 
-add_core = Z17
-owner = Z17
-controller = Z17
+#add_core = Z17
+#owner = Z17
+#controller = Z17
 
 culture = culture_cardolani
 religion = religion_eriadorians
@@ -26,6 +26,8 @@ religion = religion_eriadorians
 trade_goods = honey
 
 hre = no
+
+2758.1.1 = { tribal_owner = Q06 }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

@@ -1,0 +1,524 @@
+#Country Name: Please see filename.
+graphical_culture = easterngfx
+
+color = { 50 130 195 }
+
+revolutionary_colors = { 13 14 0 }
+
+historical_idea_groups = {
+	offensive_ideas
+	diplomatic_ideas
+	defensive_ideas
+	innovativeness_ideas
+	administrative_ideas
+	quantity_ideas
+	economic_ideas
+	aristocracy_ideas
+}
+
+historical_units = {
+	lotr_eriador_lumbermen_1
+	lotr_eriador_greenway_guards_2
+	lotr_eriador_merchant_militia_3
+	lotr_eriador_greenleaf_pikes_4
+
+	lotr_eriador_greenway_sentries_1
+	lotr_eriador_merchant_cavalry_2
+	lotr_eriador_greenleaf_cavalry_3
+}
+
+monarch_names = {
+	"Al #0" = 20
+	"Albert #0" = 20
+	"Alden #0" = 20
+	"Alf #0" = 20
+	"Alfred #0" = 20
+	"Alvin #0" = 20
+	"Andrew #0" = 20
+	"Andy #0" = 20
+	"Archibald #0" = 20
+	"Archie #0" = 20
+	"Arnie #0" = 20
+	"Arnold #0" = 20
+	"Art #0" = 20
+	"Arthur #0" = 20
+	"Artie #0" = 20
+	"Ash #0" = 20
+	"Ashley #0" = 20
+	"Bail #0" = 20
+	"Bailey #0" = 20
+	"Barliman #0" = 20
+	"Barnie #0" = 20
+	"Bernard #0" = 20
+	"Bernie #0" = 20
+	"Bert #0" = 20
+	"Bertie #0" = 20
+	"Bill #0" = 20
+	"Billy #0" = 20
+	"Bob #0" = 20
+	"Bobby #0" = 20
+	"Bran #0" = 20
+	"Brandon #0" = 20
+	"Charles #0" = 20
+	"Charlie #0" = 20
+	"Cliff #0" = 20
+	"Clifford #0" = 20
+	"Cris #0" = 20
+	"Crispin #0" = 20
+	"Dale #0" = 20
+	"Del #0" = 20
+	"Delbert #0" = 20
+	"Ed #0" = 20
+	"Eddy #0" = 20
+	"Edgar #0" = 20
+	"Edmund #0" = 20
+	"Edward #0" = 20
+	"Edwin #0" = 20
+	"Egbert #0" = 20
+	"Ernest #0" = 20
+	"Ernie #0" = 20
+	"Fred #0" = 20
+	"Freddy #0" = 20
+	"Frederick #0" = 20
+	"Harold #0" = 20
+	"Harry #0" = 20
+	"Herb #0" = 20
+	"Herbert #0" = 20
+	"Herbie #0" = 20
+	"Howard #0" = 20
+	"Howie #0" = 20
+	"Kip #0" = 20
+	"Kipling #0" = 20
+	"Larry #0" = 20
+	"Lawrence #0" = 20
+	"Len #0" = 20
+	"Lenny #0" = 20
+	"Leo #0" = 20
+	"Leonard #0" = 20
+	"Mat #0" = 20
+	"Matthew #0" = 20
+	"Matty #0" = 20
+	"Morton #0" = 20
+	"Morty #0" = 20
+	"Nick #0" = 20
+	"Nicky #0" = 20
+	"Nicolas #0" = 20
+	"Osbert #0" = 20
+	"Osborn #0" = 20
+	"Osmond #0" = 20
+	"Oswald #0" = 20
+	"Oswin #0" = 20
+	"Oz #0" = 20
+	"Ozzie #0" = 20
+	"Peregrin #0" = 20
+	"Perry #0" = 20
+	"Ray #0" = 20
+	"Raymond #0" = 20
+	"Rich #0" = 20
+	"Richard #0" = 20
+	"Rob #0" = 20
+	"Robbie #0" = 20
+	"Robert #0" = 20
+	"Robin #0" = 20
+	"Rod #0" = 20
+	"Roddy #0" = 20
+	"Roderick #0" = 20
+	"Rodney #0" = 20
+	"Rowland #0" = 20
+	"Rowlie #0" = 20
+	"Sage #0" = 20
+	"Sid #0" = 20
+	"Sidney #0" = 20
+	"Spike #0" = 20
+	"Stan #0" = 20
+	"Stanley #0" = 20
+	"Stew #0" = 20
+	"Stewart #0" = 20
+	"Ted #0" = 20
+	"Teddy #0" = 20
+	"Terence #0" = 20
+	"Terry #0" = 20
+	"Tobias #0" = 20
+	"Toby #0" = 20
+	"Tod #0" = 20
+	"Todd #0" = 20
+	"Tom #0" = 20
+	"Tommy #0" = 20
+	"Wally #0" = 20
+	"Walt #0" = 20
+	"Walter #0" = 20
+	"Wes #0" = 20
+	"Wesley #0" = 20
+	"Wil #0" = 20
+	"Wilbur #0" = 20
+	"Wilfred #0" = 20
+	"Willard #0" = 20
+	"William #0" = 20
+	"Willy #0" = 20
+	"Win #0" = 20
+	"Winfred #0" = 20
+	"Winny #0" = 20
+	"Woodrow #0" = 20
+	"Woody #0" = 20
+	"Theo #0" = 20
+	"Theobald #0" = 20
+	"Theodore #0" = 20
+	"Thomas #0" = 20
+}
+
+leader_names = {
+	Abram
+    Acker
+    Acton
+    Addington
+    Adley
+    Ainsley
+    Ainsworth
+    Alby
+    Allerton
+    Alston
+    Altham
+    Alton
+    Anderton
+    Ansley
+    Anstey
+    Appleton
+    Asheton
+    Ashley
+    Ashton
+    Astley
+    Atherton
+    Atterton
+    Axton
+    Badger
+    Barclay
+    Barlow
+    Barney
+    Barton
+    Becker
+    Beckwith
+    Benson
+    Bentham
+    Bentley
+    Berkeley
+    Beverley
+    Beverly
+    Bing
+    Birkenhead
+    Blackwood
+    Blakeley
+    Blakely
+    Blankley
+    Blyth
+    Blythe
+    Bradford
+    Bradley
+    Bradly
+    Bradshaw
+    Brady
+    Brandon
+    Branson
+    Braxton
+    Breeden
+    Brent
+    Brenton
+    Bristol
+    Brixton
+    Browning
+    Brownrigg
+    Buckingham
+    Budd
+    Burton
+    Byron
+    Camden
+    Carlisle
+    Carlton
+    Cason
+    Charlton
+    Chatham
+    Chester
+    Cholmondeley
+    Churchill
+    Clapham
+    Clare
+    Clayden
+    Clayton
+    Clifford
+    Clifton
+    Clinton
+    Clive
+    Colby
+    Colgate
+    Colton
+    Compton
+    Coombs
+    Copeland
+    Cornish
+    Cotton
+    Crawford
+    Cromwell
+    Cumberbatch
+    Dalton
+    Darby
+    Darlington
+    Davenport
+    Dayton
+    Deighton
+    Denholm
+    Denver
+    Digby
+    Dryden
+    Dudley
+    Durham
+    Eastaughffe
+    Eastoft
+    Easton
+    Eaton
+    Elton
+    Emsworth
+    Enfield
+    England
+    Everleigh
+    Everly
+    Farley
+    Fawcett
+    Fulton
+    Garfield
+    Garrick
+    Gladstone
+    Goody
+    Graeme
+    Graham
+    Gresham
+    Hackney
+    Hadlee
+    Hadleigh
+    Hadley
+    Hailey
+    Hale
+    Hales
+    Haley
+    Hallewell
+    Halsey
+    Hamilton
+    Hampton
+    Harlan
+    Harley
+    Harlow
+    Harrington
+    Hartford
+    Hastings
+    Hayden
+    Hayes
+    Hayhurst
+    Hayley
+    Hazelton
+    Holton
+    Home
+    Hornsby
+    Huckabee
+    Hurley
+    Huxley
+    Keene
+    Kelsey
+    Kendal
+    Kendall
+    Kenley
+    Kensley
+    Kent
+    Kimberley
+    Kimberly
+    Kinsley
+    Kirby
+    Lancaster
+    Landon
+    Langdon
+    Langley
+    Langston
+    Law
+    Leighton
+    Lester
+    Lincoln
+    Linden
+    Lindsay
+    Lindsey
+    Livingstone
+    Lynn
+    Manley
+    Marlee
+    Marleigh
+    Marley
+    Marlowe
+    Marston
+    Merton
+    Middleton
+    Milton
+    Mitchell
+    Morley
+    Morton
+    Myerscough
+    Nibley
+    Northcott
+    Norton
+    Nye
+    Oakes
+    Oakley
+    Ogden
+    Paxton
+    Payton
+    Perry
+    Peyton
+    Pickering
+    Pinkerton
+    Prescott
+    Presley
+    Preston
+    Quinton
+    Ramsay
+    Ramsey
+    Rayden
+    Read
+    Redfield
+    Reed
+    Reid
+    Remington
+    Ridley
+    Riley
+    Rodney
+    Roscoe
+    Rowley
+    Royal
+    Royston
+    Rutherford
+    Rylan
+    Ryland
+    Ryley
+    Sandford
+    Sanford
+    Scarboro
+    Scarbrough
+    Shelby
+    Sheldon
+    Shelley
+    Shelly
+    Sherwood
+    Shipley
+    Shirley
+    Sidney
+    Skelton
+    Snape
+    Snowdon
+    Soames
+    Southey
+    Spalding
+    Spaulding
+    Springfield
+    Stafford
+    Stanford
+    Stanhope
+    Stanley
+    Stansfield
+    Stanton
+    Stapleton
+    Start
+    Stone
+    Stourton
+    Stratford
+    Sutherland
+    Sutton
+    Sydney
+    Tattersall
+    Tatum
+    Tenley
+    Tewksbury
+    Thornton
+    Thorpe
+    Tickle
+    Tindall
+    Tinley
+    Trollope
+    Tyndall
+    Upton
+    Vance
+    Wade
+    Wakefield
+    Walcott
+    Wallace
+    Walpole
+    Warwick
+    Washington
+    Webley
+    Wedgwood
+    Weld
+    Wellington
+    Wentworth
+    Wesley
+    Westbrook
+    Westcott
+    Weston
+    Wharton
+    Wheatley
+    Whitby
+    Wilberforce
+    Willoughby
+    Winchester
+    Windsor
+    Winterbourne
+    Winthrop
+    Wordsworth
+    Yardley
+    Yeardley
+    York
+    Yorke
+}
+
+ship_names = {
+	Eagletree
+	Feathersun
+	Lowtree
+	Distantblade
+	Pineweaver
+	Oceanfang
+	Humbleripper
+	Wiseblood
+	Sunmantle
+	Grandpunch
+	Pyrefollower
+	Hawkfall
+	Heartsteam
+	Stonestrength
+	Mastertide
+	Gloomsworn
+	Redfist
+	Riverwinds
+	Skyspire
+	Fireclaw
+	Lunapike
+	Whitbane
+	Tarrensnow
+	Leafroot
+	Softswallow
+	Peacereaper
+	Stagarm
+	Monsterfury
+	Horsebinder
+	Strongmoon
+	Moltenmourn
+	Skymight
+	Covenstriker
+	Glowstrider
+	Farwatcher
+	Fallendown
+	Tarrengem
+	Stonestar
+	Fernstriker
+	Roughheart
+}
+
+army_names = {
+	"Regiment of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}
