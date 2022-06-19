@@ -88,7 +88,7 @@ gondor_missions_1 = {
 		}
 	}
 	gondor_construct_henneth_annun = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_22
 		position = 3
 		required_missions = { gondor_great_stone_builders }
 		provinces_to_highlight = {
@@ -175,7 +175,7 @@ gondor_missions_1 = {
 		}
 	}
 	gondor_fortify_mordor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_fortify_2
 		position = 6
 		required_missions = { gondor_raze_the_dark_tower }
 		trigger = { 
@@ -234,7 +234,7 @@ gondor_missions_2 = {
 	}
 
 	gondor_fortify_anduin = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_fortify_1
 		position = 3
 		required_missions = { gondor_great_stone_builders gondor_raise_the_royal_forces }
 		provinces_to_highlight = {
@@ -439,7 +439,7 @@ gondor_missions_3 = {
 		}
 	}
 	gondor_dor_en_romen = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_easterlings_2
 		position = 4
 		required_missions = { gondor_raise_the_royal_forces }
 		provinces_to_highlight = {
@@ -495,7 +495,7 @@ gondor_missions_3 = {
 		}
 	}
 	gondor_fortify_easterlings = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_easterling_battle_gondor
 		position = 5
 		required_missions = { gondor_dor_en_romen }
 		provinces_to_highlight = {
@@ -527,7 +527,7 @@ gondor_missions_3 = {
 		}
 	}
 	gondor_romendacil = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_easterlings_2
 		position = 6
 		required_missions = { gondor_fortify_easterlings }
 		provinces_to_highlight = {
@@ -561,7 +561,7 @@ gondor_missions_3 = {
 		}
 	}
 	gondor_restore_glory_gondor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_12
 		position = 7
 		required_missions = { gondor_ered_nimrais gondor_campaign_in_harondor gondor_hyarmendacil gondor_romendacil gondor_fortify_mordor }
 		trigger = { }
@@ -609,7 +609,7 @@ gondor_missions_4 = {
 		}
 	}
 	gondor_reclaim_numenroean_colonies = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_12
 		position = 5
 		required_missions = { gondor_umbardacil }
 		provinces_to_highlight = {
@@ -634,7 +634,7 @@ gondor_missions_4 = {
 		}
 	}
 	gondor_hyarmendacil = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_sw_against_the_desert
 		position = 6
 		required_missions = { gondor_trade_pelargir_gobel_mirlond }
 		provinces_to_highlight = {
@@ -800,18 +800,19 @@ gondor_missions_5 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
-				OR = {
-					province_id = 123
-					province_id = 1786
-					province_id = 1751
-					province_id = 3235
-					province_id = 3297
-				}
-				NOT = {
-					owned_by = ROOT
+				AND = {
+					OR = {
+						province_id = 123
+						province_id = 1786
+						province_id = 1751
+						province_id = 3235
+						province_id = 3297
+					}
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 			}
-			
 		}
 		trigger = {
 			laergaladrin_area = {
@@ -870,7 +871,7 @@ gondor_missions_5 = {
 		}
 	}
 	gondor_trade_pelargir_gobel_mirlond = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_home_trade_node
 		position = 5
 		required_missions = { gondor_secure_the_jewel_haven }
 		provinces_to_highlight = {
@@ -958,7 +959,7 @@ gondor_missions_4_2 = {
 		}
 	}
 	gondor_dunedain_to_rhudaur = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_25
 		position = 12
 		required_missions = { gondor_retake_rhudaur }
 		provinces_to_highlight = {
@@ -1033,7 +1034,7 @@ gondor_missions_3_2 = {
 		}
 	}
 	gondor_retake_arthedain = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_9
 		position = 11
 		required_missions = { gondor_form_reunited_kingdom }
 		provinces_to_highlight = {
@@ -1067,7 +1068,7 @@ gondor_missions_3_2 = {
 		}
 	}
 	gondor_rebuild_annuminas_fornost = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_13
 		position = 12
 		required_missions = { gondor_retake_arthedain }
 		provinces_to_highlight = {
@@ -1122,7 +1123,7 @@ gondor_missions_3_2 = {
 		}
 	}
 	gondor_reforge_arnor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_12
 		position = 13
 		required_missions = { gondor_ally_rivendel_lindon gondor_dunedain_to_rhudaur gondor_rebuild_annuminas_fornost gondor_breeland_shire_independent gondor_rebuild_tharbad }
 		trigger = { 
@@ -1135,7 +1136,7 @@ gondor_missions_3_2 = {
 		}
 	}
 	gondor_vengeance_of_the_dunedain = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_1
 		position = 14
 		required_missions = { gondor_reforge_arnor }
 		provinces_to_highlight = {
@@ -1231,7 +1232,7 @@ gondor_missions_2_2 = {
 		}
 	}
 	gondor_rebuild_tharbad = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_tharbad
 		position = 12
 		required_missions = { gondor_retake_cardolan }
 		provinces_to_highlight = {
@@ -1301,7 +1302,7 @@ gondor_missions_1_2 = {
 	}
 
 	gondor_expand_library = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_23
 		position = 9
 		required_missions = { gondor_the_return_of_the_king }
 		trigger = { 
@@ -1330,7 +1331,7 @@ gondor_missions_1_2 = {
 	}
 
 	gondor_retake_cardolan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_10
 		position = 11
 		required_missions = { gondor_form_reunited_kingdom }
 		provinces_to_highlight = {
@@ -1364,7 +1365,7 @@ gondor_missions_1_2 = {
 	}
 
 	gondor_breeland_shire_independent = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_relations
 		position = 12
 		required_missions = { gondor_retake_cardolan }
 		trigger = {
@@ -1402,7 +1403,7 @@ gondor_missions_5_2 = {
 	}
 
 	gondor_house_of_hurin = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_21
 		position = 9
 		required_missions = { gondor_the_return_of_the_king }
 		provinces_to_highlight = {
@@ -1430,7 +1431,7 @@ gondor_missions_5_2 = {
 		}
 	}
 	gondor_resettle_ithilien = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_24
 		position = 10
 		required_missions = { gondor_restore_minas_ithil gondor_house_of_hurin }
 		provinces_to_highlight = {
@@ -1464,7 +1465,7 @@ gondor_missions_5_2 = {
 		}
 	}
 	gondor_retake_rhudaur = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_8
 		position = 11
 		required_missions = { gondor_form_reunited_kingdom }
 		provinces_to_highlight = {
@@ -1497,7 +1498,7 @@ gondor_missions_5_2 = {
 		}
 	}
 	gondor_ally_rivendel_lindon = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_6
 		position = 12
 		required_missions = { gondor_retake_rhudaur }
 		trigger = { 

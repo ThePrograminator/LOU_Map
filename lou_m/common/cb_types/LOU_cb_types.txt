@@ -142,51 +142,6 @@ cb_khangnate_infighting = {
 	war_goal = annex_country_khangnate
 }
 
-# Subjugation - From Ideagroup
-cb_vassalize_ideagroup = {
-	valid_for_subject = no
-
-	prerequisites = {
-		is_neighbor_of = FROM
-		cb_on_government_enemies = yes
-        army_strength = {
-            who = FROM
-            value = 2
-        }
-	}
-
-	war_goal = take_capital_vassalize
-}
-
-# Assimilation
-cb_assimilate = {
-    valid_for_subject = no
-    
-	prerequisites = {
-		cb_on_primitives = yes
-		culture_group_claim = FROM
-	}
-
-	war_goal = take_province_nationalist
-}
-
-# Purify
-cb_purify = {
-	valid_for_subject = no
-
-	prerequisites = {
-		is_neighbor_of = FROM
-		cb_on_religious_enemies = yes
-		NOT = {	has_matching_religion = FROM }
-	}
-
-	allowed_provinces = {
-		always = yes
-	}
-
-	war_goal = superiority_purification
-}
-
 # Claim Control of the Rh�n
 cb_claim_control_of_the_rhun = {
 	valid_for_subject = yes
@@ -204,28 +159,10 @@ cb_claim_control_of_the_rhun = {
     war_goal = take_capital_control_rhun
 }
 
-# Crush Interlopers
-cb_crush_interlopers = {
-	prerequisites = {
-		has_reform = crush_interlopers_reform
-        is_neighbor_of = FROM
-        FROM = {
-            is_free_peoples_opinion = yes
-        }
-	}
+cb_return_rivendell_lands_dunedain = {
+	valid_for_subject = no
 
-	war_goal = take_capital_imperial
-}
+	is_triggered_only = yes
 
-# Cleanse Evil
-cb_cleanse_evil = {
-	prerequisites = {
-		has_reform = cleanse_evil_reform
-        is_neighbor_of = FROM
-        FROM = {
-            is_servants_of_evil_opinion = yes
-        }
-	}
-
-	war_goal = take_capital_imperial
+	war_goal = return_rivendell_lands_country
 }

@@ -1,0 +1,46 @@
+namespace = LOU_mission_dunedain_of_arnor
+
+country_event = { #The State of Osgiliath
+	id = LOU_mission_dunedain_of_arnor.1
+	title = LOU_mission_dunedain_of_arnor.1.t
+	desc = LOU_mission_dunedain_of_arnor.1.d
+	picture = HARBOUR_eventPicture #ugh the in-game picture is Minas Tirith kill me
+	
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	trigger = { 
+		tag = Y80
+		ai = NO
+	}
+	
+	option = { #Give them rhudaur
+		name = LOU_mission_dunedain_of_arnor.1.a
+
+		add_stability = 1
+		
+		rhudaur_region = {
+			limit = {
+				owned_by = Y80
+			}
+			add_core = Z06
+			change_religion = religion_dunedain
+			change_culture = culture_dunedain_of_arnor
+			remove_core = Z06
+		}
+	}
+	
+	option = { 
+		name = LOU_mission_dunedain_of_arnor.1.b
+		
+		add_prestige = 25
+		Z06 = {
+			add_opinion = {
+				who = ROOT
+				modifier = rivendell_rhudaur_relation
+			}
+		}
+		
+		set_country_flag = GONDOR_HAS_NOT_REBUILT_OSGILIATH
+	}
+}

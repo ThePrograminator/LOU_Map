@@ -1965,7 +1965,7 @@ port_building = {
 	modifier = {
 		naval_forcelimit = 1
 		local_sailors_modifier = 0.2
-        province_trade_power_modifier = 0.2
+        province_trade_power_modifier = 0.1
 	}
 	
 	ai_will_do = {
@@ -2033,9 +2033,13 @@ dock_building = {
 	}
 	
 	modifier = {
-		local_ship_repair = 0.2
-		local_ship_cost = -0.2
-        ship_recruit_speed = -0.2
+		naval_forcelimit = 2
+		local_sailors_modifier = 0.4
+        province_trade_power_modifier = 0.25
+
+		#local_ship_repair = 0.2
+		#local_ship_cost = -0.2
+        #ship_recruit_speed = -0.2
 	}
 	
 	ai_will_do = {
@@ -2104,8 +2108,8 @@ seaport_building = {
 	
 	modifier = {
 		naval_forcelimit = 2
-		local_sailors_modifier = 0.3
-        province_trade_power_modifier = 0.3
+		local_sailors_modifier = 0.5
+        province_trade_power_modifier = 0.5
 	}
 	
 	ai_will_do = {
@@ -2173,9 +2177,9 @@ dockyard_building = {
 	}
 	
 	modifier = {
-		local_ship_repair = 0.3
-		local_ship_cost = -0.3
-        ship_recruit_speed = -0.3
+		naval_forcelimit = 2
+		local_sailors_modifier = 0.6
+        province_trade_power_modifier = 0.75
 	}
 	
 	ai_will_do = {
@@ -2238,9 +2242,13 @@ drydock_building = {
 	}
 	
 	modifier = {
-		local_ship_repair = 0.5
-		local_ship_cost = -0.5
-        ship_recruit_speed = -0.5
+		naval_forcelimit = 3
+		local_sailors_modifier = 0.4
+        province_trade_power_modifier = 0.25
+
+		local_ship_repair = 0.25
+		local_ship_cost = -0.25
+        ship_recruit_speed = -0.25
 	}
 	
 	ai_will_do = {
@@ -2308,9 +2316,13 @@ grand_shipyard_building = {
 	}
 	
 	modifier = {
-		naval_forcelimit = 3
-		local_sailors_modifier = 0.5
-        province_trade_power_modifier = 0.5
+		naval_forcelimit = 4
+		local_sailors_modifier = 0.4
+        province_trade_power_modifier = 0.25
+
+		local_ship_repair = 0.5
+		local_ship_cost = -0.5
+        ship_recruit_speed = -0.5
 	}
 	
 	ai_will_do = {

@@ -5,6 +5,7 @@ country_decisions = {
 	arnor_nation = {
 		major = yes
 		potential = {
+			always = no
 			NOT = { 
 				exists = W57
 				tag = X01
@@ -133,9 +134,9 @@ country_decisions = {
 				region = arthedain_region
 				is_core = ROOT
 			}
-			arthedain_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+				value = 30
+				region = arthedain_region
 			}
 		}
 		effect = {
@@ -208,10 +209,11 @@ country_decisions = {
 				region = cardolan_region
 				is_core = ROOT
 			}
-			cardolan_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+				value = 35
+				region = cardolan_region
 			}
+			
 		}
 		effect = {
 			change_tag = W55
@@ -279,13 +281,9 @@ country_decisions = {
             is_free_or_tributary_trigger = yes
 			is_at_war = no
             NOT = { exists = W56 }
-            capital_scope = {
+            num_of_owned_provinces_with = {
+				value = 30
 				region = rhudaur_region
-				is_core = ROOT
-			}
-			rhudaur_region = {
-				type = all
-				owned_by = ROOT
 			}
 		}
 		effect = {

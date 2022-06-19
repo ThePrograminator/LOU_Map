@@ -1,173 +1,777 @@
-# START MISSION#
-Z06_build_army = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = Z06
-		NOT = {
-			map_setup = map_setup_random
-		}
-	}
-	has_country_shield = yes
-	
-    dunedain_north_regain_strength = {
-		icon = mission_assemble_an_army
-		required_missions = { 
-		}
-		position = 1
-		trigger = {
-            army_camp_building = 5
-        }
-		effect = {
-			add_patriarch_authority = 0.1
-		}
-	}
-}
-
-####################
-# Slot 1 - Rhudaur  #
-####################
-Z06_reforge_arnor = {
+slot_01_series = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = Z06
-		NOT = {
-			map_setup = map_setup_random
+		OR = {
+			tag = Z06
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
 		}
 	}
-	has_country_shield = yes
-	
-    dunedain_north_reconnect_lands = {
-		icon = mission_conquer_50_development
-		required_missions = {
-            dunedain_north_regain_strength
+
+	border_amon_sul = {
+		icon = mission_dunedain_2
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1496
+				province_id = 4056
+				province_id = 4057
+				province_id = 1442
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
+		trigger = {
+			1496 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4056 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1442 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4057 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	rebuild_tower_of_amon_sul = {
+		icon = mission_dunedain_15
 		position = 2
-		trigger = {
-					1442 = {
-				owned_by = ROOT
+		required_missions = { border_amon_sul }
+		provinces_to_highlight = {
+			province_id = 300
+			NOT = {
+				has_great_project = {
+					type = amon_sul_monument
+					tier = 1
 				}
 			}
-		effect = {
-			add_patriarch_authority = 0.05
-			add_prestige = 5
-			227 = {
-				add_permanent_claim = ROOT
-			}
-			383 = {
-				add_permanent_claim = ROOT
-			}
-			1830 = {
-				add_permanent_claim = ROOT
+		}
+		trigger = {
+			300 = {
+				has_great_project = {
+					type = amon_sul_monument
+					tier = 1
+				}
 			}
 		}
+		effect = { }
 	}
-	dunedain_north_foothold_of_thorenhad = {
-		icon = mission_conquer_50_development
-		required_missions = {
-            dunedain_north_reconnect_lands
-		}
+	return_the_mountain = {
+		icon = mission_gondor_13
 		position = 3
+		required_missions = { rebuild_tower_of_amon_sul }
+		provinces_to_highlight = {
+			area = emyn_sul_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
-					1830 = {
-				owned_by = ROOT
-				}
+			emyn_sul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-		effect = {
-			add_prestige = 5
-			add_manpower = 3
-			add_country_modifier = {
-				name = "expansionist_country"
-				duration = 7300				#20 years
+		}
+		effect = { }
+	}
+	the_oiolad_plains = {
+		icon = mission_sw_against_the_desert
+		position = 4
+		required_missions = { return_the_mountain }
+		provinces_to_highlight = {
+			area = oiolad_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			pinnath_tereg_area = {
-				add_permanent_claim = ROOT
+		}
+		trigger = {
+			oiolad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
+		}
+		effect = { }
+	}
+	reclaim_fornost = {
+		icon = mission_dunedain_13
+		position = 5
+		required_missions = { the_oiolad_plains }
+		provinces_to_highlight = {
+			province_id = 266
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			266 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	the_former_capital_of_arnor = {
+		icon = mission_dunedain_14
+		position = 6
+		required_missions = { reclaim_fornost }
+		provinces_to_highlight = {
+			province_id = 644
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			644 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	control_the_lake = {
+		icon = mission_invade_island
+		position = 7
+		required_missions = { the_former_capital_of_arnor }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 95
+				province_id = 248
+				province_id = 249
+				province_id = 644
+				province_id = 1841
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			95 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			249 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			248 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			644 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1841 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	ruins_of_arthedain = {
+		icon = mission_osgiliath
+		position = 9
+		required_missions = { control_the_lake }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 249
+				province_id = 251
+				province_id = 255
+				province_id = 266
+				province_id = 644
+				province_id = 1839
+				province_id = 1841
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			249 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			251 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			255 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			266 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			644 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1839 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1841 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	rebuild_arthedain = {
+		icon = mission_colonial
+		position = 10
+		required_missions = { past_relations ruins_of_arthedain }
+		provinces_to_highlight = {
+			region = arthedain_region
+			owned_by = ROOT
+			NOT = {
+				higher_development_than = 20
+				local_autonomy = 20
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				region = arthedain_region
+				higher_development_than = 20
+				local_autonomy = 20
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_02_series = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z06
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
 		}
 	}
-	dunedain_north_scouring_of_trollshaws = {
-		icon = mission_conquer_50_development
-		required_missions = {
-            dunedain_north_foothold_of_thorenhad
+
+	cantons_of_faerdor = {
+		icon = mission_eriador_01
+		position = 2
+		required_missions = { border_amon_sul }
+		provinces_to_highlight = {
+			OR = {
+				area = faerdor_area
+				area = west_faerdor_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
-		position = 4
 		trigger = {
-				385 = {
+			faerdor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_faerdor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	secure_western_tharbad = {
+		icon = mission_gondor_16
+		position = 3
+		required_missions = { cantons_of_faerdor }
+		provinces_to_highlight = {
+			province_id = 170
+			NOT = {
 				owned_by = ROOT
-				}
-				292 = {
+			}
+		}
+		trigger = {
+			170 = {
 				owned_by = ROOT
-				}
-				384 = {
-				owned_by = ROOT
-				}
-				293 = {
-				owned_by = ROOT
-				}
-				3446 = {
-				owned_by = ROOT
+			}
+		}
+		effect = { }
+	}
+	rebuild_tharbad_bridge = {
+		icon = mission_tharbad
+		position = 4
+		required_missions = { secure_eastern_tharbad secure_western_tharbad }
+		provinces_to_highlight = {
+			province_id = 170
+			NOT = {
+				has_great_project = {
+					type = tharbad_bridge_monument
+					tier = 1
 				}
 			}
+		}
+		trigger = {
+			170 = {
+				has_great_project = {
+					type = tharbad_bridge_monument
+					tier = 1
+				}
+			}
+		}
+		effect = { }
+	}
+	steer_trade_north = {
+		icon = mission_dominate_home_trade_node
+		position = 5
+		required_missions = { rebuild_tharbad_bridge }
+		provinces_to_highlight = {
+			province_id = 170
+			NOT = {
+				has_most_province_trade_power = ROOT
+			}
+		}
+		trigger = {
+			170 = {
+				has_most_province_trade_power = ROOT
+			}
+		}
+		effect = { }
+	}
+	rebuild_the_gates_of_fornost = {
+		icon = mission_dunedain_16
+		position = 6
+		required_missions = { reclaim_fornost }
+		provinces_to_highlight = {
+			province_id = 266
+			NOT = {
+				has_great_project = {
+					type = fornost_monument
+					tier = 2
+				}
+			}
+		}
+		trigger = {
+			266 = {
+				has_great_project = {
+					type = fornost_monument
+					tier = 2
+				}
+			}
+		}
+		effect = { }
+	}
+	the_green_way = {
+		icon = mission_dunedain_17
+		position = 7
+		required_missions = { protectors_of_eriador }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1833
+				province_id = 3210
+				province_id = 106
+				province_id = 4057
+			}
+			NOT = {
+				has_building = marketplace_building
+			}
+		}
+		trigger = {
+			1833 = {
+				has_building = marketplace_building
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3210 = {
+				has_building = marketplace_building
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4057 = {
+				has_building = marketplace_building
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			106 = {
+				has_building = marketplace_building
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	the_wights = {
+		icon = mission_secure_power
+		position = 8
+		required_missions = { the_green_way }
+		provinces_to_highlight = {
+			owned_by = V34
+		}
+		trigger = {
+			NOT = {
+				exists = V34
+			}
+		}
+		effect = { }
+	}
+	past_relations = {
+		icon = mission_gondor_relations
+		position = 9
+		required_missions = {  }
+		trigger = {
+			if = {
+				limit = {
+					exists = Y04
+				}
+				alliance_with =  Y04
+				Y04 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = Z42
+				}
+				alliance_with =  Z42
+				Z42 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		effect = { }
+	}
+	accept_the_arthedain = {
+		icon = mission_gondor_25
+		position = 10
+		required_missions = {  }
+		trigger = {
+			accepted_culture = culture_arthedain
+		}
+		effect = { }
+	}
+	mission_form_arthedain = {
+		icon = mission_dunedain_9
+		position = 11
+		required_missions = { rebuild_arthedain accept_the_arthedain }
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = W55
+							tag = W56
+						}
+					}
+				}
+				region = arthedain_region
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+			else = {
+				always = no
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						tag = W55
+						tag = W56
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 30
+					region = arthedain_region
+				}
+			}
+			else = {
+				tag = W54
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_03_series = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z06
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
+		}
+	}
+
+	ally_lindon = {
+		icon = mission_dunedain_12
+		position = 2
+		required_missions = { regain_strength }
+		trigger = {
+			if = {
+				limit = {
+					exists = Y81
+				}
+				alliance_with =  Y81
+				Y81 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		effect = { }
+	}
+	secure_eastern_tharbad = {
+		icon = mission_gondor_16
+		position = 3
+		required_missions = { reconquest_minas_melosse }
+		provinces_to_highlight = {
+			province_id = 677
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			677 = {
+				owned_by = ROOT
+			}
+		}
+		effect = { }
+	}
+	reclaim_ruins_of_cardolan = {
+		icon = mission_osgiliath
+		position = 4
+		required_missions = { secure_eastern_tharbad secure_western_tharbad }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1801
+				province_id = 1800
+				province_id = 156
+				province_id = 154
+				province_id = 153
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1801 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1800 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			156 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			154 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			153 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	defeat_orcs_of_cardolan = {
+		icon = mission_dunedain_5
+		position = 7
+		required_missions = { protectors_of_eriador reclaim_ruins_of_cardolan }
+		provinces_to_highlight = {
+			region = cardolan_region
+			culture_group = culture_group_orcs
+		}
+		trigger = {
+			cardolan_region = {
+				type = all
+				NOT  = {
+					culture_group = culture_group_orcs
+				}
+			}
+		}
+		effect = { }
+	}
+	accept_the_cardolani = {
+		icon = mission_gondor_25
+		position = 10
+		required_missions = { defeat_orcs_of_cardolan }
+		trigger = {
+			accepted_culture = culture_cardolani
+		}
+		effect = { }
+	}
+	mission_form_cardolan = {
+		icon = mission_dunedain_10
+		position = 11
+		required_missions = { accept_the_cardolani }
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = W54
+							tag = W56
+						}
+					}
+				}
+				region = cardolan_region
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+			else = {
+				always = no
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						tag = W54
+						tag = W56
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 35
+					region = cardolan_region
+				}
+			}
+			else = {
+				tag = W55
+			}
+		}
+		effect = { }
+	}
+	mission_form_arnor = {
+		icon = mission_gondor_12
+		position = 12
+		required_missions = { mission_form_arthedain mission_form_cardolan mission_form_rhudaur }
+		trigger = { }
 		effect = {
-			add_treasury = 100
+			change_tag = W57
+			W57 = {
+				set_capital = 644		
+			}
+			add_prestige = 50
 			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 7300				#20 years
+				name = "centralization_modifier"
+				duration = 3650
 			}
-			en_egladil_area = {
-				add_permanent_claim = ROOT
-			}
-			oiolad_area = {
-				add_permanent_claim = ROOT
-			}
-			nothva_rhaglaw_area = {
-				add_permanent_claim = ROOT
-			}
-			magillos_area = {
-				add_permanent_claim = ROOT
-			}
-			cameth_brin_area = {
-				add_permanent_claim = ROOT
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } 
 			}
 		}
 	}
 }
 
-####################
-# Slot 2 - Arthedain  #
-####################
-
-
-
-####################
-# Slot 3 - Cardolan  #
-####################
-
-
-
-####################
-# Slot 5 - Alliances  #
-####################
-Z06_alliances = {
-	slot = 5
+slot_04_series = {
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
-		tag = Z06
-		NOT = {
-			map_setup = map_setup_random
+		OR = {
+			tag = Z06
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
 		}
 	}
-	has_country_shield = yes
-	
-    dunedain_north_protectors_of_the_north = {
-		icon = mission_dunedain_1
+
+	regain_strength = {
+		icon = mission_dunedain_7
 		position = 1
+		required_missions = {  }
 		trigger = {
-		OR = {
+			army_size_percentage = 1.0
+			is_at_war = no
+		}
+		effect = { }
+	}
+	reconquest_minas_melosse = {
+		icon = mission_osgiliath
+		position = 2
+		required_missions = { regain_strength }
+		provinces_to_highlight = {
+			province_id = 1872
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			1872 = {
+				owned_by = ROOT
+			}
+		}
+		effect = { }
+	}
+	rebuild_minas_melosse = {
+		icon = mission_colonial
+		position = 3
+		required_missions = { reconquest_minas_melosse }
+		provinces_to_highlight = {
+			province_id = 1872
+			AND = {
+				owned_by = ROOT
+			}
+			NOT = {
+				development = 20
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+		trigger = {
+			1872 = {
+				owned_by = ROOT
+				development = 20
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+		effect = { }
+	}
+	the_troll_threat = {
+		icon = mission_dunedain_4
+		position = 5
+		required_missions = { securing_the_last_bridge }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 384
+				province_id = 292
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			292 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					culture = culture_troll
+				}
+			}
+			384 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					culture = culture_troll
+				}
+			}
+		}
+		effect = { }
+	}
+	protectors_of_eriador = {
+		icon = mission_dunedain_1
+		position = 6
+		required_missions = {  }
+		trigger = {
+			OR = {
 				AND = {
 					Y26 = {
 						has_opinion = {
@@ -192,8 +796,711 @@ Z06_alliances = {
 			}
 			add_country_modifier = {
 				name = "influential_diplomacy"
-				duration = 7300				#20 years
+				duration = 7300
 			}
 		}
 	}
+	border_sarn_ford = {
+		icon = mission_dunedain_2
+		position = 7
+		required_missions = { protectors_of_eriador }
+		provinces_to_highlight = {
+			OR = {
+				area = sarn_ford_area
+				area = metraith_area
+				area = west_faerdor_area
+				area = faerdor_area
+				area = lostiriand_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sarn_ford_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			metraith_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_faerdor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			faerdor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lostiriand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	the_threat_of_geiloth = {
+		icon = mission_goblin_1
+		position = 8
+		required_missions = { border_sarn_ford defeat_orcs_of_cardolan }
+		provinces_to_highlight = {
+			owned_by = Y29
+		}
+		trigger = {
+			NOT = {
+				exists = Y29
+			}
+		}
+		effect = { }
+	}
+	ally_carandor = {
+		icon = mission_gondor_relations
+		position = 9
+		required_missions = {  }
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					exists = V37
+				}
+				owned_by = V37
+			}
+			else = {
+				OR = {
+					area = pinnath_aiyring_area
+					area = carandor_area
+				}
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					exists = V37
+				}
+				overlord_of =  V37
+				V37 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else = {
+				pinnath_aiyring_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				carandor_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = { }
+	}
+	the_last_trolls_of_rhudaur = {
+		icon = mission_trolls_1
+		position = 10
+		required_missions = { ally_carandor secure_the_river }
+		provinces_to_highlight = {
+			region = rhudaur_region
+			OR = {
+				culture = culture_troll
+				owned_by = V32
+				owned_by = V31
+			}
+		}
+		trigger = {
+			rhudaur_region = {
+				type = all
+				NOT = {
+					culture = culture_troll
+				}
+				NOT = {
+					owned_by = V32
+				}
+				NOT = {
+					owned_by = V31
+				}
+			}
+		}
+		effect = { }
+	}
+	mission_form_rhudaur = {
+		icon = mission_dunedain_8
+		position = 11
+		required_missions = { the_last_trolls_of_rhudaur the_river_junctions }
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = W54
+							tag = W55
+						}
+					}
+				}
+				region = rhudaur_region
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+			else = {
+				always = no
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						tag = W54
+						tag = W55
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 30
+					region = rhudaur_region
+				}
+			}
+			else = {
+				tag = W56
+			}
+		}
+		effect = { }
+	}
 }
+
+slot_05_series = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z06
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
+		}
+	}
+
+	ally_rivendell = {
+		icon = mission_dunedain_12
+		position = 2
+		required_missions = { regain_strength }
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with =  Y80
+					Y80 = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+				NOT = {
+					exists = Y80
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = Y80
+				}
+				every_known_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+							tag = Y80
+						}
+						any_owned_province = {
+							OR = {
+								area = foreregion_area
+								area = hollin_ridge_area
+							}
+							is_core = Y80
+						}
+					}
+					reverse_add_casus_belli = {
+						target = ROOT
+						type = cb_return_rivendell_lands_dunedain
+					}
+				}
+			}
+			else = {
+				iant_methed_area = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	return_elven_lands = {
+		icon = mission_elves_2
+		position = 3
+		required_missions = { ally_rivendell }
+		provinces_to_highlight = {
+			OR = {
+				area = foreregion_area
+				area = hollin_ridge_area
+			}
+			NOT = {
+				owned_by = Y80
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					exists = Y80
+				}
+				OR = {
+					foreregion_area = {
+						type = all
+						owned_by = Y80
+					}
+					hollin_ridge_area = {
+						type = all
+						owned_by = Y80
+					}
+				}
+			}
+			else = {
+				iant_methed_area = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			291 = {
+				add_core = ROOT
+				change_religion = religion_dunedain
+				change_culture = culture_dunedain_of_arnor
+				remove_core = Y80
+			}
+		}
+	}
+	securing_the_last_bridge = {
+		icon = mission_dunedain_3
+		position = 4
+		required_missions = { return_elven_lands }
+		provinces_to_highlight = {
+			province_id = 291
+			NOT = {
+				has_building = fortress_1_building
+				has_building = fort_castle_building
+				has_building = fort_stronghold_building
+				has_building = fort_citidal_building
+			}
+		}
+		trigger = {
+			291 = {
+				has_building = fortress_1_building
+				OR = {
+					has_building = fort_castle_building
+					has_building = fort_stronghold_building
+					has_building = fort_citidal_building
+				}
+			}
+		}
+		effect = { }
+	}
+	expel_herub_gular = {
+		icon = mission_dunedain_5
+		position = 5
+		required_missions = { securing_the_last_bridge }
+		provinces_to_highlight = {
+			province_id = 293
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			293 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	handing_over_the_defense = {
+		icon = mission_dunedain_6
+		position = 6
+		required_missions = { the_troll_threat expel_herub_gular }
+		trigger = { }
+		effect = {
+			if = {
+				limit = {
+					Y80 = {
+						ai = YES
+					}
+				}
+				Y80 = {
+					every_owned_province = {
+						limit = {
+							region = rhudaur_region
+						}
+						add_core = ROOT
+						change_religion = religion_dunedain
+						change_culture = culture_dunedain_of_arnor
+						remove_core = Y80
+					}
+				}
+			}
+			else = {
+				Y80 = {
+					country_event = {
+						id = LOU_mission_dunedain_of_arnor.1
+					}
+				}
+			}
+		}
+	}
+	southern_hoarwell = {
+		icon = mission_river_01
+		position = 8
+		required_missions = { expel_herub_gular }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 294
+				province_id = 365
+				province_id = 368
+				province_id = 1859
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			294 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			365 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			368 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1859 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	secure_the_river = {
+		icon = mission_ne_palisades
+		position = 9
+		required_missions = { southern_hoarwell }
+		provinces_to_highlight = {
+			OR = {
+				area = cameth_brin_area
+				area = glin_a_rhua_area
+				area = cold_fells_area
+			}
+			area_for_scope_province = {
+				NOT = {
+					any_province_in_state = {
+						fort_level = 1
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 1
+				area = cameth_brin_area
+				fort_level = 1
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				area = glin_a_rhua_area
+				fort_level = 1
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				area = cold_fells_area
+				fort_level = 1
+			}
+		}
+		effect = { }
+	}
+	the_river_junctions = {
+		icon = mission_se_along_the_river
+		position = 10
+		required_missions = { secure_the_river }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 302
+				province_id = 674
+				province_id = 1821
+				province_id = 3451
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			302 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			674 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1821 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3451 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_01_arnor_series = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = W57
+	}
+
+	angmar_lowlands = {
+		icon = mission_build_up_to_force_limit
+		position = 15
+		required_missions = { defeat_the_mountain }
+		provinces_to_highlight = {
+			OR = {
+				area = morkai_area
+				area = shedun_area
+				area = angsul_area
+				area = phaluran_area
+			}
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			morkai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shedun_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			angsul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			phaluran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_02_arnor_series = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = W57
+	}
+
+	trade_centers_of_arnor = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = { mission_form_arnor }
+		provinces_to_highlight = {
+			OR = {
+				region = arthedain_region
+				region = cardolan_region
+				region = rhudaur_region
+			}
+
+			province_has_center_of_trade_of_level = 1
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					region = arthedain_region
+					region = cardolan_region
+					region = rhudaur_region
+				}
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = { }
+	}
+	mission_defeat_carn_dum = {
+		icon = mission_build_up_to_force_limit
+		position = 16
+		required_missions = { angmar_lowlands angmar_highlands }
+		provinces_to_highlight = {
+			area = carn_dum_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			carn_dum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_03_arnor_series = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = W57
+	}
+
+	remove_orcs_of_arnor = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = { mission_form_arnor }
+		provinces_to_highlight = {
+			OR = {
+				region = arthedain_region
+				region = cardolan_region
+				region = rhudaur_region
+			}
+			culture_group = culture_group_orcs
+		}
+		trigger = { 
+			arthedain_region = {
+				type = all
+				NOT  = {
+					culture_group = culture_group_orcs
+				}
+			}
+			cardolan_region = {
+				type = all
+				NOT  = {
+					culture_group = culture_group_orcs
+				}
+			}
+			rhudaur_region = {
+				type = all
+				NOT  = {
+					culture_group = culture_group_orcs
+				}
+			}
+		}
+		effect = { }
+	}
+	defeat_the_mountain = {
+		icon = mission_build_up_to_force_limit
+		position = 14
+		required_missions = { remove_orcs_of_arnor }
+		provinces_to_highlight = {
+			OR = {
+				area = gram_foothills_area
+				area = mount_gram_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			gram_foothills_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mount_gram_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	angmar_highlands = {
+		icon = mission_build_up_to_force_limit
+		position = 15
+		required_missions = { defeat_the_mountain }
+		provinces_to_highlight = {
+			area = nan_angmar_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			nan_angmar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_04_arnor_series = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = W57
+	}
+
+	mountains_of_angmar = {
+		icon = mission_build_up_to_force_limit
+		position = 15
+		required_missions = { defeat_the_mountain }
+		provinces_to_highlight = {
+			OR = {
+				area = angirith_area
+				area = rist_angsiril_area
+			}
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			angirith_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rist_angsiril_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	mission_defeat_gundabad = {
+		icon = mission_build_up_to_force_limit
+		position = 16
+		required_missions = { mountains_of_angmar }
+		provinces_to_highlight = {
+			area = gundabad_area
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			gundabad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+}
+
