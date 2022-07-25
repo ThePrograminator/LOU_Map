@@ -162,6 +162,11 @@ country_event = { #A Promising General
 			}
 			war_with = ROOT
 		}
+		check_date = {
+			YEAR = 2957
+			MONTH = 2
+			STARTED_BEFORE = 2958.1.1
+		}
 	}
 	mean_time_to_happen = {
 		months = 16 
@@ -177,7 +182,7 @@ country_event = { #A Promising General
 			manuever = 3 
 			siege = 1
 		}
-		set_country_flag = 	HAD_THORONGIL_GENERAL_FLAG
+		set_country_flag = 	X01_HAD_THORONGIL_FLAG
 	}
 }
 

@@ -41,7 +41,14 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			Q03 = {
+				add_country_modifier = {
+					name = subtject_lower_liberty_desire
+					duration = -1
+				}
+			}
+		}
 	}
 	rebuild_tower_of_amon_sul = {
 		icon = mission_dunedain_15
@@ -64,7 +71,18 @@ slot_01_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 10
+			300 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				center_of_trade = 1
+			}
+			emyn_sul_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	return_the_mountain = {
 		icon = mission_gondor_13
@@ -82,7 +100,17 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			emyn_sul_area = {
+				add_province_modifier = {
+					name = acceptance_of_take_over
+					duration = 3650
+				}
+			}
+			oiolad_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	the_oiolad_plains = {
 		icon = mission_sw_against_the_desert
@@ -100,7 +128,14 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			oiolad_area = {
+				add_province_modifier = {
+					name = dunedain_of_north_remove_population
+					duration = 7300
+				}
+			}
+		}
 	}
 	reclaim_fornost = {
 		icon = mission_dunedain_13
@@ -117,7 +152,17 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			fornost_erain_area = {
+				add_permanent_claim = ROOT
+			}
+			tyrn_formen_area = {
+				add_permanent_claim = ROOT
+			}
+			annuminas_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	the_former_capital_of_arnor = {
 		icon = mission_dunedain_14
@@ -134,7 +179,17 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			maegoth_area = {
+				add_permanent_claim = ROOT
+			}
+			emyn_uial_area = {
+				add_permanent_claim = ROOT
+			}
+			bareketta_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	control_the_lake = {
 		icon = mission_invade_island
@@ -169,7 +224,38 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			644 = {
+				add_province_modifier = {
+					name = dunedain_of_north_control_the_lake
+					duration = -1
+				}
+			}
+			1841 = {
+				add_province_modifier = {
+					name = dunedain_of_north_control_the_lake
+					duration = -1
+				}
+			}
+			248 = {
+				add_province_modifier = {
+					name = dunedain_of_north_control_the_lake
+					duration = -1
+				}
+			}
+			249 = {
+				add_province_modifier = {
+					name = dunedain_of_north_control_the_lake
+					duration = -1
+				}
+			}
+			95 = {
+				add_province_modifier = {
+					name = dunedain_of_north_control_the_lake
+					duration = -1
+				}
+			}
+		}
 	}
 	ruins_of_arthedain = {
 		icon = mission_osgiliath
@@ -212,7 +298,64 @@ slot_01_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			249 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+			251 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+			255 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+			266 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+			644 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+			1839 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+			1841 = {
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 10950
+				}
+				change_culture = culture_dunedain_of_arnor
+				change_religion = religion_dunedain
+			}
+		}
 	}
 	rebuild_arthedain = {
 		icon = mission_colonial
@@ -222,7 +365,7 @@ slot_01_series = {
 			region = arthedain_region
 			owned_by = ROOT
 			NOT = {
-				higher_development_than = 20
+				development = 20
 				local_autonomy = 20
 			}
 		}
@@ -230,11 +373,24 @@ slot_01_series = {
 			num_of_owned_provinces_with = {
 				value = 10
 				region = arthedain_region
-				higher_development_than = 20
+				development = 20
 				local_autonomy = 20
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			arthedain_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = dunedain_of_north_accept_arthedain
+					duration = 7300
+				}
+			}
+		}
 	}
 }
 
@@ -275,7 +431,11 @@ slot_02_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			tharbad_area = {
+				add_permanent_claim = ROOT
+			} 
+		}
 	}
 	secure_western_tharbad = {
 		icon = mission_gondor_16
@@ -436,7 +596,12 @@ slot_02_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = dunedain_of_north_old_allies
+				duration = 7300
+			}
+		}
 	}
 	accept_the_arthedain = {
 		icon = mission_gondor_25
@@ -445,7 +610,9 @@ slot_02_series = {
 		trigger = {
 			accepted_culture = culture_arthedain
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+		}
 	}
 	mission_form_arthedain = {
 		icon = mission_dunedain_9
