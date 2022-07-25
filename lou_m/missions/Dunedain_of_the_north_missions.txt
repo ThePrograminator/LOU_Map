@@ -42,10 +42,31 @@ slot_01_series = {
 			}
 		}
 		effect = { 
-			Q03 = {
-				add_country_modifier = {
-					name = subtject_lower_liberty_desire
-					duration = -1
+			if = {
+				limit = {
+					exists = Q03
+				}
+				Q03 = {
+					add_country_modifier = {
+						name = subtject_lower_liberty_desire
+						duration = -1
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+			}
+			if = {
+				limit = {
+					exists = Z20
+					Z20 = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					target = Z20
+					type = cb_vassalize_mission
 				}
 			}
 		}
@@ -432,7 +453,7 @@ slot_02_series = {
 			}
 		}
 		effect = { 
-			tharbad_area = {
+			170 = {
 				add_permanent_claim = ROOT
 			} 
 		}
@@ -452,7 +473,14 @@ slot_02_series = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			170 = {
+				add_province_modifier = {
+					name = dunedain_of_north_tharbad
+					duration = 18250
+				}
+			}
+		}
 	}
 	rebuild_tharbad_bridge = {
 		icon = mission_tharbad
@@ -475,7 +503,15 @@ slot_02_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 10
+			170 = {
+				add_center_of_trade_level = 1
+			}
+			677 = {
+				add_center_of_trade_level = 1
+			}
+		}
 	}
 	steer_trade_north = {
 		icon = mission_dominate_home_trade_node
@@ -492,7 +528,13 @@ slot_02_series = {
 				has_most_province_trade_power = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = dunedain_of_north_trade_from_south
+				duration = 7300
+			}
+			add_mercantilism = 5
+		}
 	}
 	rebuild_the_gates_of_fornost = {
 		icon = mission_dunedain_16
@@ -515,7 +557,12 @@ slot_02_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 200
+			add_prestige = 25
+			add_legitimacy = 25
+			add_patriarch_authority = 0.15
+		}
 	}
 	the_green_way = {
 		icon = mission_dunedain_17
@@ -550,7 +597,36 @@ slot_02_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			1833 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			3210 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			4057 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			106 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+		}
 	}
 	the_wights = {
 		icon = mission_secure_power
@@ -564,7 +640,10 @@ slot_02_series = {
 				exists = V34
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_patriarch_authority = 0.10
+		}
 	}
 	past_relations = {
 		icon = mission_gondor_relations
@@ -690,7 +769,12 @@ slot_03_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = {
+			add_country_modifier = {
+				name = dunedain_of_north_lindon_ally
+				duration = 18250
+			}
+		 }
 	}
 	secure_eastern_tharbad = {
 		icon = mission_gondor_16
@@ -742,7 +826,20 @@ slot_03_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			every_known_country = {
+				limit = {
+					culture_group = culture_group_orcs
+					capital_scope = {
+						region = cardolan_region
+					}
+				}
+				reverse_add_casus_belli = {
+					type = cb_annex
+					target = ROOT
+				}
+			}
+		}
 	}
 	defeat_orcs_of_cardolan = {
 		icon = mission_dunedain_5
@@ -760,7 +857,16 @@ slot_03_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.10
+			cardolan_region = {
+				limit = {
+					culture_group = culture_group_orcs
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+		}
 	}
 	accept_the_cardolani = {
 		icon = mission_gondor_25
@@ -769,7 +875,10 @@ slot_03_series = {
 		trigger = {
 			accepted_culture = culture_cardolani
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.05
+			add_stability = 1
+		}
 	}
 	mission_form_cardolan = {
 		icon = mission_dunedain_10
@@ -817,22 +926,14 @@ slot_03_series = {
 		icon = mission_gondor_12
 		position = 12
 		required_missions = { mission_form_arthedain mission_form_cardolan mission_form_rhudaur }
-		trigger = { }
+		trigger = { 
+			NOT = {
+				exists = W57
+			}
+		}
 		effect = {
-			change_tag = W57
-			W57 = {
-				set_capital = 644		
-			}
-			add_prestige = 50
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 3650
-			}
-			change_government = monarchy
-			add_government_reform = feudalism_reform
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } 
+			country_event = {
+				id = LOU_mission_dunedain_of_arnor.5
 			}
 		}
 	}
@@ -860,7 +961,10 @@ slot_04_series = {
 			army_size_percentage = 1.0
 			is_at_war = no
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 100
+			add_patriarch_authority = 0.1
+		}
 	}
 	reconquest_minas_melosse = {
 		icon = mission_osgiliath
@@ -877,7 +981,19 @@ slot_04_series = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			1872 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				add_province_modifier = {
+					name = dunedain_of_north_lower_development_cost
+					duration = 7300
+				}
+			}
+			677 = {
+				add_permanent_claim = ROOT
+			} 
+		}
 	}
 	rebuild_minas_melosse = {
 		icon = mission_colonial
@@ -902,7 +1018,12 @@ slot_04_series = {
 				religion = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 25
+			1872 = {
+				center_of_trade = 1
+			}
+		}
 	}
 	the_troll_threat = {
 		icon = mission_dunedain_4
@@ -931,7 +1052,24 @@ slot_04_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.05
+			if = {
+				limit = {
+					exists = Q05
+				}
+				Q05 = {
+					add_country_modifier = {
+						name = subtject_lower_liberty_desire
+						duration = -1
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+			}
+		}
 	}
 	protectors_of_eriador = {
 		icon = mission_dunedain_1
@@ -1005,7 +1143,23 @@ slot_04_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			if = {
+				limit = {
+					exists = Q04
+				}
+				Q04 = {
+					add_country_modifier = {
+						name = subtject_lower_liberty_desire
+						duration = -1
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+			}
+		}
 	}
 	the_threat_of_geiloth = {
 		icon = mission_goblin_1
@@ -1019,7 +1173,10 @@ slot_04_series = {
 				exists = Y29
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.1
+			add_stability = 1
+		}
 	}
 	ally_carandor = {
 		icon = mission_gondor_relations
@@ -1066,7 +1223,12 @@ slot_04_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 7300
+			}
+		}
 	}
 	the_last_trolls_of_rhudaur = {
 		icon = mission_trolls_1
@@ -1094,7 +1256,35 @@ slot_04_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_patriarch_authority = 0.05
+			if = {
+				limit = {
+					exists = V37
+				}
+				if = {
+					limit = {
+						V37 = {
+							ai = YES
+						}
+					}
+					vassalize = V37
+				}
+				else = {
+					V37 = {
+						country_event = {
+							id = LOU_mission_dunedain_of_arnor.3
+						}
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+			}
+		}
 	}
 	mission_form_rhudaur = {
 		icon = mission_dunedain_8
@@ -1274,7 +1464,23 @@ slot_05_series = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			291 = {
+				add_province_modifier = {
+					name = dunedain_of_north_the_last_bridge
+					duration = -1
+				}
+			}
+			293 = {
+				add_permanent_claim = ROOT
+			}
+			384 = {
+				add_permanent_claim = ROOT
+			}
+			292 = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	expel_herub_gular = {
 		icon = mission_dunedain_5
@@ -1291,7 +1497,28 @@ slot_05_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.05
+			293 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			if = {
+				limit = {
+					exists = Z08
+				}
+				Z08 = {
+					add_country_modifier = {
+						name = subtject_lower_liberty_desire
+						duration = -1
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+			}
+		}
 	}
 	handing_over_the_defense = {
 		icon = mission_dunedain_6
@@ -1355,7 +1582,17 @@ slot_05_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			cameth_brin_area = {
+				add_permanent_claim = ROOT
+			}
+			glin_a_rhua_area = {
+				add_permanent_claim = ROOT
+			}
+			cold_fells_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	secure_the_river = {
 		icon = mission_ne_palisades
@@ -1393,7 +1630,35 @@ slot_05_series = {
 				fort_level = 1
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = cameth_brin_area
+						area = glin_a_rhua_area
+						area = cold_fells_area
+					}
+					fort_level = 1
+				}
+				add_province_modifier = {
+					name = dunedain_of_north_fort_defenses
+					duration = -1
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = cameth_brin_area
+						area = glin_a_rhua_area
+						area = cold_fells_area
+					}
+				}
+				add_province_modifier = {
+					name = dunedain_of_north_secured_by_forts
+					duration = -1
+				}
+			}
+		}
 	}
 	the_river_junctions = {
 		icon = mission_se_along_the_river
@@ -1424,7 +1689,17 @@ slot_05_series = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			rhudaur_region = {
+				add_permanent_claim = ROOT
+			}
+			674 = {
+				center_of_trade = 1
+			}
+			1821 = {
+				add_center_of_trade_level = 1
+			}
+		}
 	}
 }
 
