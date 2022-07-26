@@ -129,6 +129,14 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
+	condition = {
+		tooltip = "TOOLTIP_CAN_COLONIZE"
+		potential = {
+		}
+		allow = {
+			region = cardolan_region
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
