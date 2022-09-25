@@ -1119,7 +1119,7 @@ mithril = {
 		discipline = 0.10
 	}
 	chance = {
-		factor = 5
+		factor = 0
 		modifier = {
 			factor = 0
 			AND = {	superregion = eriador_superregion }
@@ -1127,6 +1127,10 @@ mithril = {
 			AND = {	superregion = rohan_superregion }
 			AND = {	superregion = rhovanion_superregion }
 			AND = {	superregion = gondor_superregion }
+		}
+		modifier = {
+			factor = 0
+			NOT = {	has_terrain = mountain }
 		}
 	}
 }

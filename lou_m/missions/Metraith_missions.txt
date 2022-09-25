@@ -1,0 +1,264 @@
+slot_01 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		   tag = Q14
+		   tag = Z17
+		}
+	}
+
+	breeland_relations = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Z16
+				}
+				alliance_with =  Z16
+				Z16 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		effect = { }
+	}
+	bordering_bree = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { breeland_relations }
+		provinces_to_highlight = {
+			province_id = 168
+			OR = {
+				culture_group = culture_group_orcs
+				culture_group = culture_group_melkor
+			}
+			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			168 = {
+				owned_by = ROOT
+				NOT = {
+					culture_group = culture_group_orcs
+					culture_group = culture_group_melkor
+				}
+			}
+		}
+		effect = { }
+	}
+	annex_ceren = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bordering_bree settle_tiramarth }
+		provinces_to_highlight = {
+			area = pinnath_ceren_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pinnath_ceren_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_02 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		   tag = Q14
+		   tag = Z17
+		}
+	}
+
+	settle_tiramarth = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { stabilize_the_country }
+		provinces_to_highlight = {
+			province_id = 1505
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			1505 = {
+				owned_by = ROOT
+			}
+		}
+		effect = { }
+	}
+	restore_tinare = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { finish_the_feotari settle_tiramarth }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					owned_by = ROOT
+					OR = {
+						area = metraith_area
+						area = dol_tinereb_area
+					}
+					NOT = {
+						development = 20
+					}
+				}
+				AND = {
+					OR = {
+						area = metraith_area
+						area = dol_tinereb_area
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			
+		}
+		trigger = { 
+			metraith_area = {
+				type = all
+				owned_by = ROOT
+				development = 20
+			}
+			dol_tinereb_area = {
+				type = all
+				owned_by = ROOT
+				development = 20
+			}
+		}
+		effect = { }
+	}
+}
+
+slot_03 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		   tag = Q14
+		   tag = Z17
+		}
+	}
+
+	stabilize_the_country = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { 
+			stability = 1
+			legitimacy = 100
+			is_at_war = no
+			estate_loyalty = {
+				estate = estate_stewards
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		effect = { }
+	}
+	trade_across_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { restore_tinare }
+		trigger = { }
+		effect = { }
+	}
+	rebuilding_the_red_way = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { trade_across_cardolan }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_04 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		   tag = Q14
+		   tag = Z17
+		}
+	}
+
+	settle_west_faerdor = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { stabilize_the_country }
+		trigger = { }
+		effect = { }
+	}
+	finish_the_feotari = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { old_Alliance settle_west_faerdor }
+		trigger = { }
+		effect = { }
+	}
+	
+}
+
+slot_05 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		   tag = Q14
+		   tag = Z17
+		}
+	}
+
+	old_alliance = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { stabilize_the_country }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Z18
+				}
+				alliance_with =  Z18
+				Z18 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		effect = { }
+	}
+
+	call_our_brethren = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { finish_the_feotari old_alliance }
+		trigger = { }
+		effect = { }
+	}
+}
+

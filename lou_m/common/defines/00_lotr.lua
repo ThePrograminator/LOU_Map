@@ -33,7 +33,7 @@ NDefines.NFrontend.CAMERA_END_X = 1750.0
 NDefines.NFrontend.CAMERA_END_Z = 700.0
 NDefines.NFrontend.FRONTEND_POS_X = 1750.0
 NDefines.NFrontend.FRONTEND_POS_Z = 700.0
-
+NDefines.NAI.COLONY_BUDGET_FRACTION = 0.2 -- AI will spend a maximum of this amount of monthly ducats for colonies.
 
 --NDefines.NFrontend.SETTINGS_POS_X = 2787.0
 --NDefines.NFrontend.SETTINGS_POS_Z = 1228.0

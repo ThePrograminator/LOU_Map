@@ -81,3 +81,27 @@ natives_siberian = {
 		
 	}
 }
+
+natives_orcs = {
+	graphical_culture = lotr_orc_gfx
+	color = { 127 0  0 }
+	icon = 2
+	
+	unit = lotr_orc_snaga_stalkers_1
+	
+	provinces = {
+		1802 1808 1811 3195 3205 3441
+	}
+}
+
+natives_wights = {
+	graphical_culture = lotr_orc_gfx
+	color = { 192 192 192 }
+	icon = 3
+	
+	unit = lotr_wights_wight
+	
+	provinces = {
+		155 1026 1810
+	}
+}

@@ -1,0 +1,92 @@
+namespace = lou_colonization
+
+country_event = {
+	id = lou_colonization.1
+	title = "lou_colonization.1.t"
+	desc = "lou_colonization.1.d"
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = the_cardolan_posibilities
+		}
+		is_migratory_tribe = no
+		
+		any_owned_province = {
+			OR = {
+				AND = {
+					region = cardolan_region
+				}
+				AND = {
+					OR = {
+						region = eregion_region
+						area = ethir_gwathlo_area
+						area = cairg_erp_area
+						area = andhas_area
+						area = swanfleet_area
+						region = rhudaur_region
+						region = sirranwaith_region
+						area = dor_i_tinuviel_area
+					}
+					has_port = yes
+				}
+			}
+		}
+
+		cardolan_region = {
+			is_empty = yes
+		}
+	}
+	
+	option = {
+		name = "lou_colonization.1.a"
+		if = { limit = { has_global_flag = enable_event_logging } log = "Event - lou_colonization.1 - Option : lou_colonization.1.a" }
+		add_country_modifier = {
+			name = the_cardolan_posibilities
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = lou_colonization.2
+	title = "lou_colonization.2.t"
+	desc = "lou_colonization.2.d"
+	picture = OVEREXTENSION_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_modifier = the_cardolan_posibilities
+		is_migratory_tribe = no
+
+		NOT = {
+			any_owned_province = {
+				OR = {
+					AND = {
+						region = cardolan_region
+					}
+					AND = {
+						OR = {
+							region = eregion_region
+							area = ethir_gwathlo_area
+							area = cairg_erp_area
+							area = andhas_area
+							area = swanfleet_area
+							region = rhudaur_region
+							region = sirranwaith_region
+							area = dor_i_tinuviel_area
+						}
+						has_port = yes
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "lou_colonization.2.a"
+		if = { limit = { has_global_flag = enable_event_logging } log = "Event - lou_colonization.2 - Option : lou_colonization.2.a" }
+		remove_country_modifier = the_cardolan_posibilities
+	}
+}
