@@ -10,7 +10,7 @@ slot_01 = {
 	}
 
 	breeland_relations = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_alliances
 		position = 1
 		required_missions = {  }
 		trigger = { 
@@ -30,7 +30,7 @@ slot_01 = {
 		effect = { }
 	}
 	bordering_bree = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_bree_1
 		position = 2
 		required_missions = { breeland_relations }
 		provinces_to_highlight = {
@@ -56,7 +56,7 @@ slot_01 = {
 		effect = { }
 	}
 	annex_ceren = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_hills
 		position = 3
 		required_missions = { bordering_bree settle_tiramarth }
 		provinces_to_highlight = {
@@ -87,7 +87,7 @@ slot_02 = {
 	}
 
 	settle_tiramarth = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		position = 2
 		required_missions = { stabilize_the_country }
 		provinces_to_highlight = {
@@ -104,7 +104,7 @@ slot_02 = {
 		effect = { }
 	}
 	restore_tinare = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_empire
 		position = 4
 		required_missions = { finish_the_feotari settle_tiramarth }
 		provinces_to_highlight = {
@@ -142,6 +142,7 @@ slot_02 = {
 				owned_by = ROOT
 				development = 20
 			}
+			tag = Z17
 		}
 		effect = { }
 	}
@@ -159,7 +160,7 @@ slot_03 = {
 	}
 
 	stabilize_the_country = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_noble_council
 		position = 1
 		required_missions = {  }
 		trigger = { 
@@ -178,17 +179,114 @@ slot_03 = {
 		effect = { }
 	}
 	trade_across_cardolan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_home_trade_node
 		position = 5
 		required_missions = { restore_tinare }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				area = tharbad_area
+				province_id = 166
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tharbad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			166 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	rebuilding_the_red_way = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_17
 		position = 6
 		required_missions = { trade_across_cardolan }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 166
+				province_id = 169
+				province_id = 162
+				province_id = 3209
+				province_id = 170
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = marketplace_building
+					has_building = trade_depot_building
+					has_building = forum_building
+				}
+			}
+		}
+		trigger = { 
+			169 = { #Metraith
+				trade_share = {
+					country = ROOT
+					share = 30
+				}
+			}
+			166 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HAS_BUILDING_MARKET_PLACE
+					OR = {
+						has_building = marketplace_building
+						has_building = trade_depot_building
+						has_building = forum_building
+					}
+				}
+			}
+			169 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HAS_BUILDING_MARKET_PLACE
+					OR = {
+						has_building = marketplace_building
+						has_building = trade_depot_building
+						has_building = forum_building
+					}
+				}
+			}
+			162 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HAS_BUILDING_MARKET_PLACE
+					OR = {
+						has_building = marketplace_building
+						has_building = trade_depot_building
+						has_building = forum_building
+					}
+				}
+			}
+			3209 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HAS_BUILDING_MARKET_PLACE
+					OR = {
+						has_building = marketplace_building
+						has_building = trade_depot_building
+						has_building = forum_building
+					}
+				}
+				
+			}
+			170 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				custom_trigger_tooltip = {
+					tooltip = HAS_BUILDING_MARKET_PLACE
+					OR = {
+						has_building = marketplace_building
+						has_building = trade_depot_building
+						has_building = forum_building
+					}
+				}
+			}
+		}
 		effect = { }
 	}
 }
@@ -205,17 +303,47 @@ slot_04 = {
 	}
 
 	settle_west_faerdor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		position = 2
 		required_missions = { stabilize_the_country }
-		trigger = { }
+		provinces_to_highlight = {
+			area = west_faerdor_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				area = west_faerdor_area
+				owned_by = ROOT
+				value = 2
+			}
+		}
 		effect = { }
 	}
 	finish_the_feotari = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_steppe_warriors
 		position = 3
-		required_missions = { old_Alliance settle_west_faerdor }
-		trigger = { }
+		required_missions = { settle_west_faerdor }
+		provinces_to_highlight = {
+			OR = {
+				area = west_faerdor_area
+				area = faerdor_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			west_faerdor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			faerdor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	
@@ -233,7 +361,7 @@ slot_05 = {
 	}
 
 	old_alliance = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_alliances
 		position = 2
 		required_missions = { stabilize_the_country }
 		trigger = { 
@@ -254,11 +382,39 @@ slot_05 = {
 	}
 
 	call_our_brethren = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_horn
 		position = 4
-		required_missions = { finish_the_feotari old_alliance }
-		trigger = { }
+		required_missions = { old_alliance }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Z20
+					exists = Z18
+				}
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = Z20
+					attackers = Z18
+				}
+			}
+			else_if = {
+				limit = { 
+					exists = Z18
+					NOT = {
+						exists = Z20
+					}
+				}
+				has_won_war_against = {
+					who = Z20
+				}
+			}
+			else = {
+				is_in_war = {
+					attacker_leader = ROOT
+					war_score = 25
+				}
+			}
+		}
 		effect = { }
 	}
 }
-
