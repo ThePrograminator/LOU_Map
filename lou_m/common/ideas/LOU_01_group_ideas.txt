@@ -276,9 +276,9 @@ dunlending_ideas = {
 }
 
 #------------------------------------
-# Eriadorian
+# Forodrim
 #------------------------------------
-eriadorian_ideas = {
+forodrim_ideas = {
 	start = {
 		defensiveness = 0.15 
 		improve_relation_modifier = 0.20
@@ -291,6 +291,7 @@ eriadorian_ideas = {
 	trigger = {
 		is_human = yes
 		religion = religion_eriadorians
+		primary_culture = culture_forodrim
 	}
 	free = yes		
 	
@@ -316,6 +317,231 @@ eriadorian_ideas = {
 	}
 	to_live_in_peace = {
 		diplomatic_reputation = 1 
+	}
+}
+
+#------------------------------------
+# Arthedain
+#------------------------------------
+arthedain_ideas = {
+	start = {
+		army_tradition = 1
+		artillery_cost = -0.15
+	}
+
+	bonus = {
+		free_policy = 1
+	}
+	
+	trigger = {
+		is_human = yes
+		religion = religion_eriadorians
+		primary_culture = culture_arthedain
+	}
+	free = yes		
+	
+	scriptures_from_the_dunedain = {
+		technology_cost = -0.05
+	}
+	used_to_unstable_times = {
+		stability_cost_modifier = -0.15
+	}
+	effective_communication_network = {
+		governing_capacity_modifier = 0.1
+	}
+	trained_from_birth = {
+		drill_gain_modifier = 0.10
+		drill_decay_modifier = -0.10
+	}
+	settling_for_good = {
+		core_creation = -0.1
+	}
+	prepared_for_the_worst = {
+		land_maintenance_modifier = -0.10
+	}
+	once_dunedain = {
+		prestige = 1
+	}
+}
+
+#------------------------------------
+# Cardolani
+#------------------------------------
+cardolani_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		caravan_power = 0.1
+	}
+
+	bonus = {
+		administrative_efficiency = 0.15
+	}
+	
+	trigger = {
+		is_human = yes
+		religion = religion_eriadorians
+		primary_culture = culture_cardolani
+	}
+	free = yes		
+	
+	the_lands_of_cardolan = {
+		global_colonial_growth = 10
+		development_cost = -0.05
+	}
+	all_serve_to_guard = {
+		fort_maintenance_modifier = -0.10
+	}
+	the_cardolan_cavalry = {
+		leader_land_manuever = 1
+		cavalry_power = 0.10
+	}
+	thrusted_adminstration = {
+		all_estate_loyalty_equilibrium = 0.1
+	}
+	trade_flows_across_the_land = {
+		trade_steering = 0.2
+	}
+	acceptance_of_the_people = {
+		num_accepted_cultures = 1
+	}
+	foreign_aid_in_war = {
+		mercenary_discipline = 0.10
+	}
+}
+
+#------------------------------------
+# Feotari
+#------------------------------------
+feotari_ideas = {
+	start = {
+		global_unrest = -1
+		global_autonomy = -0.05
+	}
+
+	bonus = {
+		trade_efficiency = 0.1
+	}
+	
+	trigger = {
+		is_human = yes
+		religion = religion_eriadorians
+		primary_culture = culture_feotari
+	}
+	free = yes		
+	
+	educated_class = {
+		advisor_pool = 1
+		advisor_cost = -0.10
+	}
+	willing_local_officials = {
+		state_maintenance_modifier = -0.25
+	}
+	glory_to_the_rulers = {
+		republican_tradition = 1
+		legitimacy = 1
+	}
+	skirmish_warfare = {
+		fire_damage = 0.10
+		backrow_artillery_damage = 0.10
+	}
+	reservist_guard_our_forts = {
+		fort_maintenance_modifier = -0.20
+		garrison_size = 0.20
+	}
+	great_townships = {
+		global_allowed_num_of_buildings = 1
+	}
+	acceptance_of_our_rule = {
+		liberty_desire_from_subject_development = -0.25
+	}
+}
+
+#------------------------------------
+# Cerens
+#------------------------------------
+cerens_ideas = {
+	start = {
+		global_unrest = -1
+		global_autonomy = -0.05
+	}
+
+	bonus = {
+		trade_efficiency = 0.1
+	}
+	
+	trigger = {
+		is_human = yes
+		religion = religion_eriadorians
+		primary_culture = culture_cerens
+	}
+	free = yes		
+	
+	methods_for_building = {
+		build_cost = -0.1
+		build_time = -0.25
+	}
+	the_hills_provide = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	need_for_allies = {
+		diplomatic_upkeep = 1
+	}
+	hill_warfare = {
+		defensiveness = 0.15
+		shock_damage_received = -0.10
+	}
+	negotiating_the_mercenaries = {
+		merc_maintenance_modifier = -0.20
+	}
+	privileges_for_loyalty = {
+		all_estate_influence_modifier = -0.1
+	}
+	governing_the_outskirts = {
+		min_autonomy_in_territories = 0.2
+	}
+}
+
+#------------------------------------
+# Rivermen
+#------------------------------------
+rivermen_ideas = {
+	start = {
+		global_prosperity_growth = 0.1
+		dip_tech_cost_modifier = -0.1
+	}
+
+	bonus = {
+		advisor_cost = -0.25
+	}
+	
+	trigger = {
+		is_human = yes
+		religion = religion_eriadorians
+		culture_group = culture_group_rivermen
+	}
+	free = yes		
+	
+	construction_of_barges = {
+		global_ship_cost = -0.2
+		galley_power = 0.2
+	}
+	scattered_townships = {
+		global_tax_modifier = 0.1
+	}
+	building_harbors = {
+		development_cost = -0.1
+	}
+	tradesmen = {
+		trade_efficiency = 0.1
+	}
+	knowing_our_waters = {
+		own_coast_naval_combat_bonus = 1.0
+	}
+	controlling_the_rivers = {
+		core_creation = -0.1
+	}
+	knowing_our_trade_partners = {
+		diplomats = 1
 	}
 }
 
@@ -529,7 +755,7 @@ avaradan_ideas = {
     the_eastern_ocean = {
         naval_forcelimit_modifier = 0.2
     }
-    # Soelâsi Bu
+    # Soelï¿½si Bu
     soelasi_bu = {
         free_policy = 1
     }
@@ -541,7 +767,7 @@ avaradan_ideas = {
     illusionary_magic = {
         fire_damage = 0.1
     }
-    # Utumkôdur, Cult of the Dragon
+    # Utumkï¿½dur, Cult of the Dragon
     cult_of_the_dragon = {
         discipline = 0.1
     }
@@ -577,7 +803,7 @@ cuivac_ideas = {
     tribal_communities = {
         global_unrest = -2
     }
-    # Kûiwak Herbs
+    # Kï¿½iwak Herbs
     kuiwak_herbs = {
         land_morale = 0.1
     }
@@ -589,7 +815,7 @@ cuivac_ideas = {
     avatani_teachings = {
         free_dip_policy = 1
     }
-    # Wômaw Subjugation
+    # Wï¿½maw Subjugation
     womaw_subjugation = {
         advisor_cost = -0.1
     }
@@ -633,12 +859,12 @@ woodmen_of_the_far_east_ideas = {
     lessons_from_the_avari = {
         idea_cost = -0.1
     }
-    # Emissaries from Wômaw
+    # Emissaries from Wï¿½maw
     emissaries_from_womaw = {
         advisor_cost = -0.1
         advisor_pool = 1
     }
-    # Wômaw Integration
+    # Wï¿½maw Integration
     womaw_integration = {
         core_creation = -0.1
     }
@@ -679,7 +905,7 @@ eastern_lakemen_ideas = {
         cavalry_power = 0.1
         cavalry_cost = -0.1
     }
-    # Ráliani Merchants
+    # Rï¿½liani Merchants
     raliani_merchants = {
         trade_efficiency = 0.1
         merchants = 1
@@ -736,7 +962,7 @@ tyr_ideas = {
     cult_of_the_stars = {
         technology_cost = -0.05
     }
-    # Civility of Desdûrsya
+    # Civility of Desdï¿½rsya
     civility_of_desdursya = {
         governing_capacity_modifier = 0.25
     }
@@ -886,7 +1112,7 @@ ioriags_ideas = {
         missionaries = 1
         global_missionary_strength = 0.01
     }
-    # Ûvatha's Ring
+    # ï¿½vatha's Ring
     uvatha_ring = {
         prestige = 1
     }
