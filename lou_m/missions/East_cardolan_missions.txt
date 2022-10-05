@@ -1,0 +1,140 @@
+slot_01 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Q15
+			tag = Q16
+			tag = Q17
+		}
+	}
+
+	guard_the_greyflood = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { assembling_a_council }
+		trigger = { }
+		effect = { }
+	}
+	conquer_undanir = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { a_unified_people }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_02 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Q15
+			tag = Q16
+			tag = Q17
+		}
+	}
+
+	rebuild_argond_keep = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { a_unified_people }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_03 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Q15
+			tag = Q16
+			tag = Q17
+		}
+	}
+
+	assembling_a_council = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	dunedain_legacy = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { guard_the_greyflood grow_the_country }
+		trigger = { }
+		effect = { }
+	}
+	a_unified_people = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { dunedain_legacy }
+		trigger = { }
+		effect = { }
+	}
+	the_resurgance_of_the_dunedain = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { rebuild_argond_keep reclaim_argond conqure_undanir unite_undrond }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_04 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Q15
+			tag = Q16
+			tag = Q17
+		}
+	}
+
+	reclaim_argond = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { a_unified_people }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_05 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Q15
+			tag = Q16
+			tag = Q17
+		}
+	}
+
+	grow_the_country = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { assembling_a_council }
+		trigger = { }
+		effect = { }
+	}
+	conquer_undrond = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { a_unified_people }
+		trigger = { }
+		effect = { }
+	}
+}
+

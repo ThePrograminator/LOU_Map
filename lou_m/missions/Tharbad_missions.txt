@@ -1,0 +1,204 @@
+slot_01 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z21
+	}
+
+	develop_tharbad = {
+		icon = mission_hanseatic_city
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	upgrade_south_tharbad_harbour = {
+		icon = mission_early_game_buildings
+		position = 2
+		required_missions = { develop_tharbad }
+		trigger = { }
+		effect = { }
+	}
+	remove_the_competetion = {
+		icon = mission_dunland_2
+		position = 4
+		required_missions = { tharbad_control_the_trade }
+		trigger = { }
+		effect = { }
+	}
+	prepare_a_host = {
+		icon = mission_navy_01
+		position = 7
+		required_missions = { remove_the_competetion build_the_largest_barge }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_02 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z21
+	}
+
+	raise_an_army = {
+		icon = mission_eriador_02
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	secure_the_estuaries = {
+		icon = mission_fortify_1
+		position = 2
+		required_missions = { raise_an_army develop_tharbad }
+		trigger = { }
+		effect = { }
+	}
+	tharbad_control_the_trade = {
+		icon = mission_dominate_home_trade_node
+		position = 3
+		required_missions = { secure_the_estuaries upgrade_south_tharbad_harbour }
+		trigger = { }
+		effect = { }
+	}
+	produce_exotic_goods = {
+		icon = mission_have_manufactories
+		position = 5
+		required_missions = { tharbad_control_the_trade direct_trade_north }
+		trigger = { }
+		effect = { }
+	}
+	build_the_largest_barge = {
+		icon = mission_establish_high_seas_navy
+		position = 6
+		required_missions = { abolish_the_barge_lords_power }
+		trigger = { }
+		effect = { }
+	}
+	control_the_mouth = {
+		icon = mission_invade_island
+		position = 8
+		required_missions = { prepare_a_host }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_03 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z21
+	}
+
+	secure_the_court = {
+		icon = mission_gondor_relations
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	direct_trade_north = {
+		icon = mission_gondor_18
+		position = 4
+		required_missions = { tharbad_control_the_trade }
+		trigger = { }
+		effect = { }
+	}
+	rebuild_the_bridge = {
+		icon = mission_tharbad
+		position = 6
+		required_missions = { abolish_the_barge_lords_power }
+		trigger = { }
+		effect = { }
+	}
+	control_the_entire_greyflood = {
+		icon = mission_river_01
+		position = 9
+		required_missions = { control_the_mouth }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_04 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z21
+	}
+
+	stablize_the_country = {
+		icon = mission_high_income
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	secured_internally = {
+		icon = mission_noble_council
+		position = 2
+		required_missions = { stablize_the_country secure_the_court raise_an_army secure_funds }
+		trigger = { }
+		effect = { }
+	}
+	decide_tactic = {
+		icon = mission_alliances
+		position = 3
+		required_missions = { secured_internally }
+		trigger = { }
+		effect = { }
+	}
+	start_the_barge_strife = {
+		icon = mission_gondor_5
+		position = 4
+		required_missions = { decide_tactic }
+		trigger = { }
+		effect = { }
+	}
+	abolish_the_barge_lords_power = {
+		icon = mission_eriador_01
+		position = 5
+		required_missions = { start_the_barge_strife }
+		trigger = { }
+		effect = { }
+	}
+	pearl_of_eriador = {
+		icon = mission_gondor_16
+		position = 7
+		required_missions = { rebuild_the_bridge create_an_trade_empire }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_05 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z21
+	}
+
+	secure_funds = {
+		icon = mission_war_chest
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	create_an_trade_empire = {
+		icon = mission_dominate_home_trade_node
+		position = 6
+		required_missions = { abolish_the_barge_lords_power }
+		trigger = { }
+		effect = { }
+	}
+}
+

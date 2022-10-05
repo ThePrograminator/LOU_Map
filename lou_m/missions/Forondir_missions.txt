@@ -1,0 +1,113 @@
+slot_01 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z09
+	}
+
+	forondir_annon_barran = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { reinforce_the_navy }
+		trigger = { }
+		effect = { }
+	}
+	dominate_the_trade = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { forondir_annon_barran }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_02 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z09
+	}
+
+	reinforce_the_navy = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_03 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z09
+	}
+
+	rebuild_alliances = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { reinforce_the_navy prepare_the_army }
+		trigger = { }
+		effect = { }
+	}
+	the_deal_for_the_oyer = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { rebuild_alliances }
+		trigger = { }
+		effect = { }
+	}
+	forondir_ascendant = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { dominate_the_trade forondir_the_drughu_accord the_deal_for_the_oyer }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_04 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z09
+	}
+
+	prepare_the_army = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_05 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = Z09
+	}
+
+	the_forest_awaits = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { prepare_the_army }
+		trigger = { }
+		effect = { }
+	}
+	forondir_the_drughu_accord = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { the_forest_awaits }
+		trigger = { }
+		effect = { }
+	}
+}
+
