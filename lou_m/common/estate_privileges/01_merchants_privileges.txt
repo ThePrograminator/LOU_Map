@@ -617,3 +617,43 @@ estate_merchants_monopoly_of_exotic_goods = {
 		factor = 0
 	}
 }
+
+estate_merchants_tharbad_barge_lords_privileges = {
+	icon = privilege_legitimacy
+    
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.3
+    
+	is_valid = {
+		has_dlc = "Emperor"
+		tag = Z21
+	}
+	can_select = {
+        
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		
+	}
+	on_revoked = {
+		
+	}
+	on_invalid = {
+		
+	}
+	penalties = {
+		min_autonomy = 40
+	}
+	benefits = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+		can_give_agendas_without_interaction
+	}
+	ai_will_do = { #having the AI use these could lead to an unstoppable downwards spiral if it can't work out how to get rid of them
+		factor = 0
+	}
+}

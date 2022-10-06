@@ -10,28 +10,83 @@ slot_01 = {
 		icon = mission_hanseatic_city
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 170
+				province_id = 677
+			}
+			
+			owned_by = ROOT
+			NOT = {
+				development = 20
+			}
+		}
+		trigger = {
+			170 = {
+				development = 20
+			}
+			677 = {
+				development = 20
+			}
+		}
 		effect = { }
 	}
 	upgrade_south_tharbad_harbour = {
 		icon = mission_early_game_buildings
 		position = 2
 		required_missions = { develop_tharbad }
-		trigger = { }
+		provinces_to_highlight = {
+			province_id = 677
+			
+			owned_by = ROOT
+			NOT = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		trigger = { 
+			677 = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
 		effect = { }
 	}
 	remove_the_competetion = {
 		icon = mission_dunland_2
 		position = 4
 		required_missions = { tharbad_control_the_trade }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 169
+				province_id = 377
+				province_id = 1861
+			}
+			
+			NOT = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		trigger = { 
+			169 = {
+				owned_by = ROOT
+			}
+			377 = {
+				owned_by = ROOT
+			}
+			1861 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	prepare_a_host = {
 		icon = mission_navy_01
 		position = 7
 		required_missions = { remove_the_competetion build_the_largest_barge }
-		trigger = { }
+		trigger = { 
+			navy_size_percentage = 1.0
+			naval_forcelimit = 30
+		}
 		effect = { }
 	}
 }
@@ -48,42 +103,187 @@ slot_02 = {
 		icon = mission_eriador_02
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			army_size = 15
+		}
 		effect = { }
 	}
 	secure_the_estuaries = {
 		icon = mission_fortify_1
 		position = 2
 		required_missions = { raise_an_army develop_tharbad }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1502
+				province_id = 3442
+				province_id = 1800
+			}
+
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			1502 = {
+				owned_by = ROOT	
+			}
+			3442 = {
+				owned_by = ROOT
+			}
+			1800 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	tharbad_control_the_trade = {
 		icon = mission_dominate_home_trade_node
 		position = 3
 		required_missions = { secure_the_estuaries upgrade_south_tharbad_harbour }
-		trigger = { }
+		trigger = { 
+			170 = { #Tharbad
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
+			}
+		}
 		effect = { }
 	}
 	produce_exotic_goods = {
 		icon = mission_have_manufactories
 		position = 5
 		required_missions = { tharbad_control_the_trade direct_trade_north }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						trade_goods = fur
+						trade_goods = salt
+					}
+					NOT = {
+						owned_by = ROOT
+						ROOT = {
+							any_owned_province = {
+								OR = {
+									trade_goods = fur
+									trade_goods = salt
+								}
+							}
+						}
+					}
+				}
+
+				AND = {
+					OR = {
+						trade_goods = honey
+						trade_goods = fruit
+					}
+					NOT = {
+						owned_by = ROOT
+						ROOT = {
+							any_owned_province = {
+								OR = {
+									trade_goods = honey
+									trade_goods = fruit
+								}
+							}
+						}
+					}
+				}
+
+				AND = {
+					OR = {
+						trade_goods = paper
+						trade_goods = marble
+					}
+					NOT = {
+						owned_by = ROOT
+						ROOT = {
+							any_owned_province = {
+								OR = {
+									trade_goods = paper
+									trade_goods = marble
+								}
+							}
+						}
+					}
+				}
+
+				AND = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+					}
+					NOT = {
+						owned_by = ROOT
+						ROOT = {
+							any_owned_province = {
+								OR = {
+									trade_goods = copper
+									trade_goods = iron
+								}
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		trigger = { 
+			any_owned_province = {
+				OR = {
+					trade_goods = fur
+					trade_goods = salt
+				}
+			}
+			any_owned_province = {
+				OR = {
+					trade_goods = honey
+					trade_goods = fruit
+				}
+			}
+			any_owned_province = {
+				OR = {
+					trade_goods = paper
+					trade_goods = marble
+				}
+			}
+			any_owned_province = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+				}
+			}
+		}
 		effect = { }
 	}
 	build_the_largest_barge = {
 		icon = mission_establish_high_seas_navy
 		position = 6
 		required_missions = { abolish_the_barge_lords_power }
-		trigger = { }
+		trigger = { 
+			has_flagship = yes
+		}
 		effect = { }
 	}
 	control_the_mouth = {
 		icon = mission_invade_island
 		position = 8
 		required_missions = { prepare_a_host }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				area = lond_daer_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			lond_daer_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -100,28 +300,93 @@ slot_03 = {
 		icon = mission_gondor_relations
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
 		effect = { }
 	}
 	direct_trade_north = {
 		icon = mission_gondor_18
 		position = 4
 		required_missions = { tharbad_control_the_trade }
-		trigger = { }
+		trigger = { 
+			1861 = { #Tharbad
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		}
 		effect = { }
 	}
 	rebuild_the_bridge = {
 		icon = mission_tharbad
 		position = 6
 		required_missions = { abolish_the_barge_lords_power }
-		trigger = { }
+		provinces_to_highlight = {
+			province_id = 170
+			NOT = {
+				has_great_project = {
+					type = tharbad_bridge_monument
+					tier = 1
+				}
+			}
+		}
+		trigger = {
+			170 = {
+				has_great_project = {
+					type = tharbad_bridge_monument
+					tier = 1
+				}
+			}
+		}
 		effect = { }
 	}
 	control_the_entire_greyflood = {
 		icon = mission_river_01
 		position = 9
 		required_missions = { control_the_mouth }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				area = lond_daer_area
+				area = udandir_area
+				area = undrond_area
+				area = ethir_gwathlo_area
+				area = cairg_erp_area
+				area = andhas_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			lond_daer_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			udandir_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			undrond_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ethir_gwathlo_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cairg_erp_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			andhas_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -138,7 +403,10 @@ slot_04 = {
 		icon = mission_high_income
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			stability = 1
+			prestige = 15
+		}
 		effect = { }
 	}
 	secured_internally = {
@@ -173,7 +441,63 @@ slot_04 = {
 		icon = mission_gondor_16
 		position = 7
 		required_missions = { rebuild_the_bridge create_an_trade_empire }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 170
+					NOT = {
+						development = 30
+						has_building = capital_3_building
+						has_building = forum_building
+						OR = {
+							has_building = dockyard_building
+							has_building = grand_shipyard_building
+						}
+					}
+				}
+				AND = {
+					province_id = 677
+					NOT = {
+						development = 30
+						has_building = city_3_building
+						has_building = forum_building
+						OR = {
+							has_building = dockyard_building
+							has_building = grand_shipyard_building
+						}
+					}
+				}
+			}
+			
+		}
+		trigger = { 
+			170 = {
+				development = 30
+				has_building = capital_3_building
+				has_building = forum_building
+				OR = {
+					has_building = dockyard_building
+					has_building = grand_shipyard_building
+				}
+			}
+			677 = {
+				development = 30
+				has_building = city_3_building
+				has_building = forum_building
+				OR = {
+					has_building = dockyard_building
+					has_building = grand_shipyard_building
+				}
+			}
+			OR = {
+				170 = {
+					province_has_center_of_trade_of_level = 3
+				}
+				677 = {
+					province_has_center_of_trade_of_level = 3
+				}
+			}
+		}
 		effect = { }
 	}
 }
@@ -190,14 +514,24 @@ slot_05 = {
 		icon = mission_war_chest
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			treasury = 200
+		}
 		effect = { }
 	}
 	create_an_trade_empire = {
 		icon = mission_dominate_home_trade_node
 		position = 6
 		required_missions = { abolish_the_barge_lords_power }
-		trigger = { }
+		trigger = { 
+			is_trade_league_leader = yes
+			calc_true_if = {
+				all_country = {
+					is_in_trade_league_with = ROOT
+				}
+				amount = 3
+			}
+		}
 		effect = { }
 	}
 }
