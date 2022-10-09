@@ -1,0 +1,209 @@
+country_decisions = {
+	
+	tharbad_decide_tactic_betray = {
+	
+		potential = {
+			tag = Z21
+			mission_completed = tharbad_secured_internally
+
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+			NOT = { has_country_flag = tharbad_decide_tactic_ally_flag }
+		}
+		
+		allow = {
+			tag = Z21
+			mission_completed = tharbad_secured_internally
+
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+			NOT = { has_country_flag = tharbad_decide_tactic_ally_flag }
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_decide_tactic_betray_flag
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	tharbad_decide_tactic_ally = {
+	
+		potential = {
+			tag = Z21
+			mission_completed = tharbad_secured_internally
+
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+			NOT = { has_country_flag = tharbad_decide_tactic_ally_flag }
+		}
+		
+		allow = {
+			tag = Z21
+			mission_completed = tharbad_secured_internally
+
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+			NOT = { has_country_flag = tharbad_decide_tactic_ally_flag }
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_decide_tactic_ally_flag
+			
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	tharbad_ally_one = {
+	
+		potential = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_one_flag }
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+		}
+		
+		allow = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_one_flag }
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_ally_one_flag
+			country_event = {
+				id = LOU_mission_tharbad.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	tharbad_ally_two = {
+	
+		potential = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_two }
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+		}
+		
+		allow = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_two }
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_ally_two
+			country_event = {
+				id = LOU_mission_tharbad.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	tharbad_ally_three = {
+	
+		potential = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_three }
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+		}
+		
+		allow = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_three }
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_ally_three
+			country_event = {
+				id = LOU_mission_tharbad.3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	tharbad_ally_four = {
+	
+		potential = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_four }
+			NOT = { has_country_flag = tharbad_decide_tactic_betray_flag }
+		}
+		
+		allow = {
+			tag = Z21
+			mission_completed = decide_tactic
+
+			NOT = { has_country_flag = tharbad_ally_four }
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_ally_four
+			country_event = {
+				id = LOU_mission_tharbad.4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	tharbad_ally_four = {
+	
+		potential = {
+			tag = Z21
+			has_country_flag = tharbad_barge_strife_enabled_flag
+			NOT = {
+				has_spawned_rebels = pretender_rebels
+			}
+			NOT = {
+				has_country_flag = tharbad_barge_strife_ended_flag
+			}
+		}
+		
+		allow = {
+			tag = Z21
+			has_country_flag = tharbad_barge_strife_enabled_flag
+			NOT = {
+				has_spawned_rebels = pretender_rebels
+			}
+			NOT = {
+				has_country_flag = tharbad_barge_strife_ended_flag
+			}
+		}
+		
+		effect = {	
+			set_country_flag = tharbad_ally_four
+			country_event = {
+				id = LOU_mission_tharbad.4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+}

@@ -409,26 +409,86 @@ slot_04 = {
 		}
 		effect = { }
 	}
-	secured_internally = {
+	tharbad_secured_internally = {
 		icon = mission_noble_council
 		position = 2
 		required_missions = { stablize_the_country secure_the_court raise_an_army secure_funds }
-		trigger = { }
+		trigger = { 
+			170 = {
+				owned_by = ROOT
+			}
+			677 = {
+				owned_by = ROOT
+			}
+			is_at_war = no
+		}
 		effect = { }
 	}
 	decide_tactic = {
 		icon = mission_alliances
 		position = 3
-		required_missions = { secured_internally }
-		trigger = { }
+		required_missions = { tharbad_secured_internally }
+		trigger = { 
+			170 = {
+				owned_by = ROOT
+			}
+			677 = {
+				owned_by = ROOT
+			}
+			is_at_war = no
+			OR = { 
+				has_country_flag = tharbad_decide_tactic_betray_flag
+				has_country_flag = tharbad_decide_tactic_ally_flag 
+			}
+		}
 		effect = { }
 	}
 	start_the_barge_strife = {
 		icon = mission_gondor_5
 		position = 4
 		required_missions = { decide_tactic }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			170 = {
+				owned_by = ROOT
+			}
+			677 = {
+				owned_by = ROOT
+			}
+			is_at_war = no
+			OR = {
+				AND = {
+					has_country_flag = tharbad_decide_tactic_ally_flag 
+					has_country_flag = tharbad_decide_tactic_ally_1_flag
+					has_country_flag = tharbad_decide_tactic_ally_2_flag
+					has_country_flag = tharbad_decide_tactic_ally_3_flag
+					has_country_flag = tharbad_decide_tactic_ally_4_flag
+				}
+				AND = {
+					has_country_flag = tharbad_decide_tactic_betray_flag
+				}
+			}
+		}
+		effect = { 
+			set_country_flag = tharbad_barge_strife_enabled_flag
+			if = {
+				limit = {
+					has_country_flag = tharbad_decide_tactic_betray_flag 
+				}
+				country_event = {
+					id = LOU_mission_tharbad.7
+					days = 31
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = tharbad_decide_tactic_ally_flag
+				}
+				country_event = {
+					id = LOU_mission_tharbad.7
+					days = 31
+				}
+			}
+		}
 	}
 	abolish_the_barge_lords_power = {
 		icon = mission_eriador_01

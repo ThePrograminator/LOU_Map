@@ -1,0 +1,89 @@
+tharbad_barge_strife = {
+	potential = {
+		tag = Z21
+		NOT = {
+			mission_completed = abolish_the_barge_lords_power
+		}
+		NOT = { has_country_flag = tharbad_barge_strife_ended_flag }
+	}
+	
+	can_start = {
+		has_country_flag = tharbad_barge_strife_enabled_flag
+	}
+	
+	
+	can_stop = {
+		always = no
+	}
+	
+	progress = {
+		modifier = {
+			factor = 2
+			always = yes
+		}	
+		modifier = {
+			factor = 2
+		}	
+		modifier = {
+			factor = 1
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 3 }
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy = 50 }
+		} 
+		modifier = {
+			factor = 1
+			num_of_loans = 10
+		}	
+		modifier = {
+			factor = 2
+			is_bankrupt = yes
+		}		
+		modifier = {
+			factor = 0.5
+			overextension_percentage = 0.25
+			NOT = { 
+				overextension_percentage = 0.5
+			}
+		}
+		modifier = {
+			factor = 1.0
+			overextension_percentage = 0.5
+		}
+	}
+	
+	can_end = {
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
+	}
+	
+
+	modifier = {
+		global_unrest = 5
+		land_morale = -0.05
+		army_tradition = -1
+		global_tax_modifier = -0.15
+		production_efficiency = -0.15
+		stability_cost_modifier = 0.5
+	}	
+	
+	
+	on_start = LOU_mission_tharbad.8
+	on_end = disaster_rohan_grimas_influence.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+		}
+	}
+}
+

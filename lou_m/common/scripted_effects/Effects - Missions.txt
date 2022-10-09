@@ -1,0 +1,239 @@
+set_tharbad_city_modifier_effect = {
+	170 = {
+		add_province_modifier = {
+			name = $MODIFIER$
+			duration = 10950
+		}
+	}
+}
+
+set_random_tharbad_city_modifier_effect = {
+	if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 1 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 2 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_one_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 2 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 3 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_two_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 3 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 4 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_three_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 4 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 5 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_four_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 5 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 6 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_five_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 6 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 7 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_six_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 7 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 8 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_seven_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 8 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 9 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_eight_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 9 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 10 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_nine_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 10 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 11 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_ten_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 11 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 12 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_eleven_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 12 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 13 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_twelve_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 13 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 14 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_thirdteen_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 14 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 15 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_fourteen_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 15 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 16 } }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_fiveteen_modifier}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 16 }
+		}
+		set_tharbad_city_modifier_effect = { MODIFIER = tharbad_barge_lord_demand_sixteen_modifier}
+	}
+}
+
+set_random_tharbad_city_effect_effect = {
+	if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 1 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 2 } }
+		}
+		add_prestige = -50
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 2 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 3 } }
+		}
+		add_stability = -2
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 3 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 4 } }
+		}
+		add_adm_power = -200
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 4 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 5 } }
+		}
+		add_navy_tradition = -25
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 5 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 6 } }
+		}
+		add_army_tradition = -25
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 6 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 7 } }
+		}
+		add_treasury = -300
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 7 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 8 } }
+		}
+		add_dip_power = -200
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 8 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 9 } }
+		}
+		change_government_reform_progress = -100
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 9 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 10 } }
+		}
+		add_inflation = 5
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 10 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 11 } }
+		}
+		add_republican_tradition = -25
+		add_legitimacy = -25
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 11 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 12 } }
+		}
+		add_corruption = 5
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 12 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 13 } }
+		}
+		add_splendor = -200
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 13 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 14 } }
+		}
+		add_mercantilism = -5
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 14 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 15 } }
+		}
+		kill_advisor = random
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 15 }
+			NOT = { check_variable = { which = $VAR_NAME$ value = 16 } }
+		}
+		add_manpower = -4
+	}
+	else_if = {
+		limit = { 
+			check_variable = { which = $VAR_NAME$ value = 16 }
+		}
+		kill_leader = {
+			type = random
+		}
+	}
+}
