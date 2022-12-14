@@ -355,7 +355,6 @@ country_event = { #Start Barge Strife - Betray Barge Lords
 				size = 4
 				estate = estate_merchants
 				as_if_faction = yes
-				win = yes
 			}
 		}
 
@@ -407,31 +406,6 @@ country_event = { #Start Barge Strife - Ally Barge Lords
 	}
 }
 
-country_event = { #Start Barge Strife - Begin
-	id = LOU_mission_tharbad.7
-	title = LOU_mission_tharbad.7.t
-	desc = LOU_mission_tharbad.7.d
-	picture = ruined_eventpicture
-	
-	is_triggered_only = yes
-	
-	trigger = { 
-		tag = Z21
-	}
-
-	immediate = {
-		add_disaster_progress = {
-			disaster = tharbad_barge_strife
-			value = 100
-		}
-	}
-	
-	option = { #
-		name = LOU_mission_tharbad.6.a
-		
-	}
-}
-
 country_event = { #Start Barge Strife - Disaster Start
 	id = LOU_mission_tharbad.8
 	title = LOU_mission_tharbad.8.t
@@ -468,5 +442,150 @@ country_event = { #Start Barge Strife - Disaster Start
 	option = { #
 		name = LOU_mission_tharbad.8.a
 
+	}
+}
+
+country_event = { #Start Barge Strife - Disaster End
+	id = LOU_mission_tharbad.9
+	title = LOU_mission_tharbad.9.t
+	desc = LOU_mission_tharbad.9.d
+	picture = ruined_eventpicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z21
+	}
+
+	immediate = {
+		set_country_flag = tharbad_barge_strife_ended_flag
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = tharbad_barge_strife_lost_flag
+				}
+			}
+			clr_country_flag = tharbad_barge_strife_ended_flag
+			clr_country_flag = tharbad_barge_strife_lost_flag
+			country_event = {
+				id = LOU_mission_tharbad.10
+			}
+		}
+		else = {
+			clr_country_flag = tharbad_barge_strife_lost_flag
+			country_event = {
+				id = LOU_mission_tharbad.11
+			}
+		}
+	}
+	
+	option = { #
+		name = LOU_mission_tharbad.9.a
+
+	}
+}
+
+country_event = { #Start Barge Strife - Disaster End - won
+	id = LOU_mission_tharbad.10
+	title = LOU_mission_tharbad.10.t
+	desc = LOU_mission_tharbad.10.d
+	picture = ruined_eventpicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z21
+	}
+
+	immediate = {
+		clr_country_flag = tharbad_barge_strife_lost_flag
+		clr_country_flag = tharbad_barge_strife_enabled_flag
+	}
+	
+	option = { #
+		name = LOU_mission_tharbad.10.a
+		
+	}
+}
+
+country_event = { #Start Barge Strife - Disaster End - Lost
+	id = LOU_mission_tharbad.11
+	title = LOU_mission_tharbad.11.t
+	desc = LOU_mission_tharbad.11.d
+	picture = ruined_eventpicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z21
+	}
+
+	immediate = {
+		clr_country_flag = tharbad_barge_strife_ended_flag
+		clr_country_flag = tharbad_barge_strife_enabled_flag
+		clr_country_flag = tharbad_barge_strife_lost_flag
+	}
+	
+	option = { #
+		name = LOU_mission_tharbad.11.a
+		
+		
+	}
+}
+
+country_event = { #Start Barge Strife - Checking win condition
+	id = LOU_mission_tharbad.12
+	title = LOU_mission_tharbad.12.t
+	desc = LOU_mission_tharbad.12.d
+	picture = ruined_eventpicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = Z21
+		has_country_flag = tharbad_barge_strife_enabled_flag
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			any_owned_province = {
+				num_of_units_in_province = {
+					who = REB
+					type = pretender_rebels
+					amount = 1
+				}
+			}
+		}
+	}
+	
+	option = { #
+		name = LOU_mission_tharbad.12.a
+
+		country_event = {
+			id = LOU_mission_tharbad.9
+		}
+	}
+}
+
+country_event = { #Start Barge Strife - Debug
+	id = LOU_mission_tharbad.13
+	title = LOU_mission_tharbad.13.t
+	desc = LOU_mission_tharbad.13.d
+	picture = ruined_eventpicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z21
+		has_country_flag = tharbad_barge_strife_ended_flag
+		has_country_flag = tharbad_barge_strife_enabled_flag
+		has_country_flag = tharbad_barge_strife_lost_flag
+		has_country_flag = tharbad_decide_tactic_betray_flag
+		has_country_flag = tharbad_decide_tactic_ally_flag
+	}
+	
+	option = { #
+		name = LOU_mission_tharbad.13.a
+		
+		
 	}
 }

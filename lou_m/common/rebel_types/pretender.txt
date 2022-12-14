@@ -223,6 +223,13 @@ pretender_rebels = {
 	# Country Scope	
 	demands_enforced_effect = {
 		if = {
+			limit = { 
+				has_country_flag = tharbad_barge_strife_enabled_flag 
+			}
+			set_country_flag = tharbad_barge_strife_lost_flag
+			country_event = { id = LOU_mission_tharbad.9 }
+		}
+		if = {
 			limit = { has_disaster = civil_war }
 			add_prestige = -200
 			add_legitimacy = 25
@@ -246,5 +253,6 @@ pretender_rebels = {
 			country_event = { id = internal_conflicts.8 }
 			end_disaster = internal_conflicts
 		}
+		
 	}
 }

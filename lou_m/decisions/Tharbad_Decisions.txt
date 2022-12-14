@@ -1,7 +1,7 @@
 country_decisions = {
 	
 	tharbad_decide_tactic_betray = {
-	
+		major = yes
 		potential = {
 			tag = Z21
 			mission_completed = tharbad_secured_internally
@@ -28,7 +28,7 @@ country_decisions = {
 	}
 
 	tharbad_decide_tactic_ally = {
-	
+		major = yes
 		potential = {
 			tag = Z21
 			mission_completed = tharbad_secured_internally
@@ -56,7 +56,7 @@ country_decisions = {
 	}
 
 	tharbad_ally_one = {
-	
+		major = yes
 		potential = {
 			tag = Z21
 			mission_completed = decide_tactic
@@ -85,7 +85,7 @@ country_decisions = {
 	}
 
 	tharbad_ally_two = {
-	
+		major = yes
 		potential = {
 			tag = Z21
 			mission_completed = decide_tactic
@@ -114,7 +114,7 @@ country_decisions = {
 	}
 
 	tharbad_ally_three = {
-	
+		major = yes
 		potential = {
 			tag = Z21
 			mission_completed = decide_tactic
@@ -143,7 +143,7 @@ country_decisions = {
 	}
 
 	tharbad_ally_four = {
-	
+		major = yes
 		potential = {
 			tag = Z21
 			mission_completed = decide_tactic
@@ -171,34 +171,98 @@ country_decisions = {
 		}
 	}
 
-	tharbad_ally_four = {
-	
+	tharbad_start_barge_strife = {
+		major = yes
 		potential = {
 			tag = Z21
-			has_country_flag = tharbad_barge_strife_enabled_flag
+			170 = {
+				owned_by = ROOT
+			}
+			677 = {
+				owned_by = ROOT
+			}
+			is_at_war = no
+			mission_completed = decide_tactic
+			OR = {
+				AND = {
+					has_country_flag = tharbad_decide_tactic_ally_flag 
+					has_country_flag = tharbad_decide_tactic_ally_1_flag
+					has_country_flag = tharbad_decide_tactic_ally_2_flag
+					has_country_flag = tharbad_decide_tactic_ally_3_flag
+					has_country_flag = tharbad_decide_tactic_ally_4_flag
+				}
+				AND = {
+					has_country_flag = tharbad_decide_tactic_betray_flag
+				}
+			}
 			NOT = {
 				has_spawned_rebels = pretender_rebels
 			}
 			NOT = {
+				has_country_flag = tharbad_barge_strife_enabled_flag
 				has_country_flag = tharbad_barge_strife_ended_flag
 			}
 		}
 		
 		allow = {
 			tag = Z21
-			has_country_flag = tharbad_barge_strife_enabled_flag
+			170 = {
+				owned_by = ROOT
+			}
+			677 = {
+				owned_by = ROOT
+			}
+			is_at_war = no
+			OR = {
+				AND = {
+					has_country_flag = tharbad_decide_tactic_ally_flag 
+					has_country_flag = tharbad_decide_tactic_ally_1_flag
+					has_country_flag = tharbad_decide_tactic_ally_2_flag
+					has_country_flag = tharbad_decide_tactic_ally_3_flag
+					has_country_flag = tharbad_decide_tactic_ally_4_flag
+				}
+				AND = {
+					has_country_flag = tharbad_decide_tactic_betray_flag
+				}
+			}
 			NOT = {
 				has_spawned_rebels = pretender_rebels
 			}
 			NOT = {
+				has_country_flag = tharbad_barge_strife_enabled_flag
 				has_country_flag = tharbad_barge_strife_ended_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = liv_tried_to_get_rid_of_bishopric_tt
+				OR = {
+					NOT = { has_country_flag = tharbad_barge_strife_tried_flag }
+					had_country_flag = {
+						flag =  tharbad_barge_strife_tried_flag
+						days = 730
+					}
+				}
 			}
 		}
 		
 		effect = {	
-			set_country_flag = tharbad_ally_four
-			country_event = {
-				id = LOU_mission_tharbad.4
+			set_country_flag = tharbad_barge_strife_enabled_flag
+			clr_country_flag = tharbad_barge_strife_tried_flag
+			set_country_flag = tharbad_barge_strife_tried_flag
+			if = {
+				limit = {
+					has_country_flag = tharbad_decide_tactic_betray_flag 
+				}
+				country_event = {
+					id = LOU_mission_tharbad.8
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = tharbad_decide_tactic_ally_flag
+				}
+				country_event = {
+					id = LOU_mission_tharbad.8
+				}
 			}
 		}
 		

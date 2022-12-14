@@ -469,32 +469,16 @@ slot_04 = {
 			}
 		}
 		effect = { 
-			set_country_flag = tharbad_barge_strife_enabled_flag
-			if = {
-				limit = {
-					has_country_flag = tharbad_decide_tactic_betray_flag 
-				}
-				country_event = {
-					id = LOU_mission_tharbad.7
-					days = 31
-				}
-			}
-			else_if = {
-				limit = { 
-					has_country_flag = tharbad_decide_tactic_ally_flag
-				}
-				country_event = {
-					id = LOU_mission_tharbad.7
-					days = 31
-				}
-			}
+			
 		}
 	}
 	abolish_the_barge_lords_power = {
 		icon = mission_eriador_01
 		position = 5
 		required_missions = { start_the_barge_strife }
-		trigger = { }
+		trigger = { 
+			has_country_flag = tharbad_barge_strife_ended_flag
+		}
 		effect = { }
 	}
 	pearl_of_eriador = {
