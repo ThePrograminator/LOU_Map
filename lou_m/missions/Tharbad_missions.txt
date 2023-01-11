@@ -437,47 +437,56 @@ slot_04 = {
 			}
 			is_at_war = no
 			OR = { 
-				has_country_flag = tharbad_decide_tactic_betray_flag
-				has_country_flag = tharbad_decide_tactic_ally_flag 
+				custom_trigger_tooltip = {
+					tooltip = Z21_tharbad_decide_tactic_betray_tt
+					has_country_flag = tharbad_decide_tactic_betray_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = Z21_tharbad_decide_tactic_ally_tt
+					has_country_flag = tharbad_decide_tactic_ally_flag
+				}
 			}
 		}
 		effect = { }
 	}
-	start_the_barge_strife = {
-		icon = mission_gondor_5
-		position = 4
-		required_missions = { decide_tactic }
-		trigger = { 
-			170 = {
-				owned_by = ROOT
-			}
-			677 = {
-				owned_by = ROOT
-			}
-			is_at_war = no
-			OR = {
-				AND = {
-					has_country_flag = tharbad_decide_tactic_ally_flag 
-					has_country_flag = tharbad_decide_tactic_ally_1_flag
-					has_country_flag = tharbad_decide_tactic_ally_2_flag
-					has_country_flag = tharbad_decide_tactic_ally_3_flag
-					has_country_flag = tharbad_decide_tactic_ally_4_flag
-				}
-				AND = {
-					has_country_flag = tharbad_decide_tactic_betray_flag
-				}
-			}
-		}
-		effect = { 
-			
-		}
-	}
+	#start_the_barge_strife = {
+	#	icon = mission_gondor_5
+	#	position = 4
+	#	required_missions = { decide_tactic }
+	#	trigger = { 
+	#		170 = {
+	#			owned_by = ROOT
+	#		}
+	#		677 = {
+	#			owned_by = ROOT
+	#		}
+	#		is_at_war = no
+	#		OR = {
+	#			AND = {
+	#				has_country_flag = tharbad_decide_tactic_ally_flag 
+	#				has_country_flag = tharbad_decide_tactic_ally_1_flag
+	#				has_country_flag = tharbad_decide_tactic_ally_2_flag
+	#				has_country_flag = tharbad_decide_tactic_ally_3_flag
+	#				has_country_flag = tharbad_decide_tactic_ally_4_flag
+	#			}
+	#			AND = {
+	#				has_country_flag = tharbad_decide_tactic_betray_flag
+	#			}
+	#		}
+	#	}
+	#	effect = { 
+	#		
+	#	}
+	#}
 	abolish_the_barge_lords_power = {
 		icon = mission_eriador_01
 		position = 5
-		required_missions = { start_the_barge_strife }
+		required_missions = { decide_tactic }
 		trigger = { 
-			has_country_flag = tharbad_barge_strife_ended_flag
+			custom_trigger_tooltip = {
+				tooltip = Z21_tharbad_barge_strife_ended_flag_tt
+				has_country_flag = tharbad_barge_strife_ended_flag
+			}
 		}
 		effect = { }
 	}

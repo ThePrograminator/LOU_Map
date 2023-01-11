@@ -21,7 +21,7 @@
  raise_an_army_desc: ""
  secure_the_estuaries_title: "Secure The Estuaries"
  secure_the_estuaries_desc: ""
- tharbad_control_the_trade_title: "Tharbad Control The Trade"
+ tharbad_control_the_trade_title: "Control The Trade"
  tharbad_control_the_trade_desc: ""
  produce_exotic_goods_title: "Produce Exotic Goods"
  produce_exotic_goods_desc: ""
@@ -51,7 +51,7 @@
  stablize_the_country_desc: ""
  tharbad_secured_internally_title: "Secured Internally"
  tharbad_secured_internally_desc: ""
- decide_tactic_title: "Decide Tactic"
+ decide_tactic_title: "Planing Their Downfall"
  decide_tactic_desc: ""
  start_the_barge_strife_title: "Start The Barge Strife"
  start_the_barge_strife_desc: ""
@@ -75,23 +75,58 @@
  tharbad_decide_tactic_betray_title: "Betray The Barge Lords"
  tharbad_decide_tactic_betray_desc: ""
 
- tharbad_decide_tactic_ally_title: "Buy The Barge Lords"
+ tharbad_decide_tactic_ally_title: "Bribe The Barge Lords"
  tharbad_decide_tactic_ally_desc: ""
 
- tharbad_ally_one_title: "Buy First - Barge Lord"
+ tharbad_ally_one_title: "Bribe First - Barge Lord"
  tharbad_ally_one_desc: ""
 
- tharbad_ally_two_title: "Buy Second - Barge Lord"
+ tharbad_ally_two_title: "Bribe Second - Barge Lord"
  tharbad_ally_two_desc: ""
 
- tharbad_ally_three_title: "Buy Third - Barge Lord"
+ tharbad_ally_three_title: "Bribe Third - Barge Lord"
  tharbad_ally_three_desc: ""
 
- tharbad_ally_four_title: "Buy Forth - Barge Lord"
+ tharbad_ally_four_title: "Bribe Forth - Barge Lord"
  tharbad_ally_four_desc: ""
 
  tharbad_start_barge_strife_title: "Start Barge Strife"
  tharbad_start_barge_strife_desc: ""
+
+ #---------------------------------------------------------
+ # Tooltips
+ #---------------------------------------------------------
+ Z21_tharbad_decide_tactic_betray_tt: "Enacted Decision: §YBetray The Barge Lords§!"
+ Z21_tharbad_decide_tactic_ally_tt: "Enacted Decision: §YBribe The Barge Lords§!"
+
+ Z21_tharbad_ally_one_tt: "Enacted Decision: §YBribe First - Barge Lord§!"
+ Z21_tharbad_ally_two_tt: "Enacted Decision: §YBribe Second - Barge Lord§!"
+ Z21_tharbad_ally_three_tt: "Enacted Decision: §YBribe Third - Barge Lord§!"
+ Z21_tharbad_ally_four_tt: "Enacted Decision: §YBribe Forth - Barge Lord§!"
+
+ Z21_tharbad_barge_strife_tried_flag_tt: "Did not try to §YStart Barge Strife§! in the last §Y2 years§!."
+ Z21_tharbad_barge_strife_ended_flag_tt: "Defeated  §Ythe Barge Lords Pretender Rebels!§!."
+
+ #---------------------------------------------------------
+ # Modifiers
+ #---------------------------------------------------------
+ tharbad_barge_lord_demand_one_modifier: "Halt Infrastructure Projects"
+ tharbad_barge_lord_demand_two_modifier: "Lower Army Expenses"
+ tharbad_barge_lord_demand_three_modifier: "Decreased Fort Maintenance"
+ tharbad_barge_lord_demand_four_modifier: "Lower Naval Expenses"
+ tharbad_barge_lord_demand_five_modifier: "Buy Barge Lords Naval Supplies"
+ tharbad_barge_lord_demand_six_modifier: "Decrease State Spending"
+ tharbad_barge_lord_demand_seven_modifier: "Halt Grand Projects"
+ tharbad_barge_lord_demand_eight_modifier: "Subsidize Income To Barge Lords"
+ tharbad_barge_lord_demand_nine_modifier: "Share Development With Barge Lords"
+ tharbad_barge_lord_demand_ten_modifier: "Increase Autonomy of Tharbad"
+ tharbad_barge_lord_demand_eleven_modifier: "Passover Trade Earnings"
+ tharbad_barge_lord_demand_twelve_modifier: "Lower Amount of Ruled Lands"
+ tharbad_barge_lord_demand_thirdteen_modifier: "Disregard Army Supply Lines"
+ tharbad_barge_lord_demand_fourteen_modifier: "Lower Coastal Defence"
+ tharbad_barge_lord_demand_fiveteen_modifier: "Lower Guard Patrols"
+ tharbad_barge_lord_demand_sixteen_modifier: "Share Properous Growth"
+
 
  #---------------------------------------------------------
  # Events
@@ -99,31 +134,31 @@
 
  #Barge Strife
  LOU_mission_tharbad.1.t: "Ally One of The Barge Lords"
- LOU_mission_tharbad.1.d: ""
+ LOU_mission_tharbad.1.d: "As you meet with one of the Barge Lords, to discuss terms for their support. A proposal is given in which we either give them more Priviliges within the walls of Tharbad to earn grow economicaly. But if this offer doesn't appease os, then the Barge Lord has another proposal for incentives that can affect the whole country."
  LOU_mission_tharbad.1.a: "Increase City Priviliges"
  LOU_mission_tharbad.1.b: "Give in"
 
  LOU_mission_tharbad.2.t: "Ally One of The Barge Lords"
- LOU_mission_tharbad.2.d: ""
+ LOU_mission_tharbad.2.d: "As you meet with one of the Barge Lords, to discuss terms for their support. A proposal is given in which we either give them more Priviliges within the walls of Tharbad to earn grow economicaly. But if this offer doesn't appease os, then the Barge Lord has another proposal for incentives that can affect the whole country."
  LOU_mission_tharbad.2.a: "Increase City Priviliges"
  LOU_mission_tharbad.2.b: "Give in"
 
  LOU_mission_tharbad.3.t: "Ally One of The Barge Lords"
- LOU_mission_tharbad.3.d: ""
+ LOU_mission_tharbad.3.d: "As you meet with one of the Barge Lords, to discuss terms for their support. A proposal is given in which we either give them more Priviliges within the walls of Tharbad to earn grow economicaly. But if this offer doesn't appease os, then the Barge Lord has another proposal for incentives that can affect the whole country."
  LOU_mission_tharbad.3.a: "Increase City Priviliges"
  LOU_mission_tharbad.3.b: "Give in"
 
  LOU_mission_tharbad.4.t: "Ally One of The Barge Lords"
- LOU_mission_tharbad.4.d: ""
+ LOU_mission_tharbad.4.d: "As you meet with one of the Barge Lords, to discuss terms for their support. A proposal is given in which we either give them more Priviliges within the walls of Tharbad to earn grow economicaly. But if this offer doesn't appease os, then the Barge Lord has another proposal for incentives that can affect the whole country."
  LOU_mission_tharbad.4.a: "Increase City Priviliges"
  LOU_mission_tharbad.4.b: "Give in"
 
  LOU_mission_tharbad.5.t: "Betrayed Barge Lords"
- LOU_mission_tharbad.5.d: ""
+ LOU_mission_tharbad.5.d: "The Barge Lords have gotten word of our intenions, and have amassed their conscripts and mercenary armies to defeat our armies."
  LOU_mission_tharbad.5.a: "We Must Defeat Them"
 
  LOU_mission_tharbad.6.t: "Defeat Remaining Barge Lords"
- LOU_mission_tharbad.6.d: ""
+ LOU_mission_tharbad.6.d: "While some of the Barge Lords have agreed to be loyal to us, some of the remaining disloyal Barge Lords have gotten word of our intenions, and have amassed their conscripts and mercenary armies to defeat our armies."
  LOU_mission_tharbad.6.a: "We Must Defeat Them"
 
  LOU_mission_tharbad.7.t: "The Barge Strife"

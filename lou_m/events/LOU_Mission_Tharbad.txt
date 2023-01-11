@@ -4,7 +4,7 @@ country_event = { #Barge Lord Ally One
 	id = LOU_mission_tharbad.1
 	title = LOU_mission_tharbad.1.t
 	desc = LOU_mission_tharbad.1.d
-	picture = ruined_eventpicture
+	picture = COURT_eventPicture
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -14,56 +14,58 @@ country_event = { #Barge Lord Ally One
 	}
 
 	immediate = {
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadModifierOne
-					value = 1
+		hidden_effect = {
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadModifierOne
+						value = 1
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierOne
+						value = 2
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierOne
+						value = 3
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierOne
+						value = 4
+					}
 				}
 			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierOne
-					value = 2
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierOne
-					value = 3
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierOne
-					value = 4
-				}
-			}
-		}
 
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadEffectOne
-					value = 1
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadEffectOne
+						value = 1
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectOne
-					value = 2
+				25 = {
+					set_variable = {
+						which = tharbadEffectOne
+						value = 2
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectOne
-					value = 3
+				25 = {
+					set_variable = {
+						which = tharbadEffectOne
+						value = 3
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectOne
-					value = 4
+				25 = {
+					set_variable = {
+						which = tharbadEffectOne
+						value = 4
+					}
 				}
 			}
 		}
@@ -88,7 +90,7 @@ country_event = { #Barge Lord Ally Two
 	id = LOU_mission_tharbad.2
 	title = LOU_mission_tharbad.2.t
 	desc = LOU_mission_tharbad.2.d
-	picture = ruined_eventpicture
+	picture = COURT_eventPicture
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -98,56 +100,58 @@ country_event = { #Barge Lord Ally Two
 	}
 
 	immediate = {
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadModifierTwo
-					value = 5
+		hidden_effect = {
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadModifierTwo
+						value = 5
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierTwo
+						value = 6
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierTwo
+						value = 7
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierTwo
+						value = 8
+					}
 				}
 			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierTwo
-					value = 6
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierTwo
-					value = 7
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierTwo
-					value = 8
-				}
-			}
-		}
 
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadEffectTwo
-					value = 5
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadEffectTwo
+						value = 5
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectTwo
-					value = 6
+				25 = {
+					set_variable = {
+						which = tharbadEffectTwo
+						value = 6
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectTwo
-					value = 7
+				25 = {
+					set_variable = {
+						which = tharbadEffectTwo
+						value = 7
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectTwo
-					value = 8
+				25 = {
+					set_variable = {
+						which = tharbadEffectTwo
+						value = 8
+					}
 				}
 			}
 		}
@@ -172,7 +176,7 @@ country_event = { #Barge Lord Ally Three
 	id = LOU_mission_tharbad.3
 	title = LOU_mission_tharbad.3.t
 	desc = LOU_mission_tharbad.3.d
-	picture = ruined_eventpicture
+	picture = COURT_eventPicture
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -182,56 +186,58 @@ country_event = { #Barge Lord Ally Three
 	}
 
 	immediate = {
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadModifierThree
-					value = 9
+		hidden_effect = {
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadModifierThree
+						value = 9
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierThree
+						value = 10
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierThree
+						value = 11
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierThree
+						value = 12
+					}
 				}
 			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierThree
-					value = 10
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierThree
-					value = 11
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierThree
-					value = 12
-				}
-			}
-		}
 
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadEffectThree
-					value = 9
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadEffectThree
+						value = 9
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectThree
-					value = 10
+				25 = {
+					set_variable = {
+						which = tharbadEffectThree
+						value = 10
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectThree
-					value = 11
+				25 = {
+					set_variable = {
+						which = tharbadEffectThree
+						value = 11
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectThree
-					value = 12
+				25 = {
+					set_variable = {
+						which = tharbadEffectThree
+						value = 12
+					}
 				}
 			}
 		}
@@ -256,7 +262,7 @@ country_event = { #Barge Lord Ally Four
 	id = LOU_mission_tharbad.4
 	title = LOU_mission_tharbad.4.t
 	desc = LOU_mission_tharbad.4.d
-	picture = ruined_eventpicture
+	picture = COURT_eventPicture
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -266,56 +272,58 @@ country_event = { #Barge Lord Ally Four
 	}
 
 	immediate = {
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadModifierFour
-					value = 13
+		hidden_effect = {
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadModifierFour
+						value = 13
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierFour
+						value = 14
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierFour
+						value = 15
+					}
+				}
+				25 = {
+					set_variable = {
+						which = tharbadModifierFour
+						value = 16
+					}
 				}
 			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierFour
-					value = 14
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierFour
-					value = 15
-				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadModifierFour
-					value = 16
-				}
-			}
-		}
 
-		random_list = {
-			25 = {
-				set_variable = {
-					which = tharbadEffectFour
-					value = 13
+			random_list = {
+				25 = {
+					set_variable = {
+						which = tharbadEffectFour
+						value = 13
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectFour
-					value = 14
+				25 = {
+					set_variable = {
+						which = tharbadEffectFour
+						value = 14
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectFour
-					value = 15
+				25 = {
+					set_variable = {
+						which = tharbadEffectFour
+						value = 15
+					}
 				}
-			}
-			25 = {
-				set_variable = {
-					which = tharbadEffectFour
-					value = 16
+				25 = {
+					set_variable = {
+						which = tharbadEffectFour
+						value = 16
+					}
 				}
 			}
 		}
@@ -340,7 +348,7 @@ country_event = { #Start Barge Strife - Betray Barge Lords
 	id = LOU_mission_tharbad.5
 	title = LOU_mission_tharbad.5.t
 	desc = LOU_mission_tharbad.5.d
-	picture = ruined_eventpicture
+	picture = CIVIL_WAR_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -349,22 +357,24 @@ country_event = { #Start Barge Strife - Betray Barge Lords
 	}
 
 	immediate = {
-		170 = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 4
-				estate = estate_merchants
-				as_if_faction = yes
+		hidden_effect = {
+			170 = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 4
+					estate = estate_merchants
+					as_if_faction = yes
+				}
 			}
-		}
 
-		677 = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 4
-				estate = estate_merchants
-				as_if_faction = yes
-				win = yes
+			677 = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 4
+					estate = estate_merchants
+					as_if_faction = yes
+					win = yes
+				}
 			}
 		}
 	}
@@ -379,7 +389,7 @@ country_event = { #Start Barge Strife - Ally Barge Lords
 	id = LOU_mission_tharbad.6
 	title = LOU_mission_tharbad.6.t
 	desc = LOU_mission_tharbad.6.d
-	picture = ruined_eventpicture
+	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -389,15 +399,18 @@ country_event = { #Start Barge Strife - Ally Barge Lords
 	}
 
 	immediate = {
-		677 = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 4
-				estate = estate_merchants
-				as_if_faction = yes
-				win = yes
+		hidden_effect = {
+			677 = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 4
+					estate = estate_merchants
+					as_if_faction = yes
+					win = yes
+				}
 			}
 		}
+		
 	}
 	
 	option = { #
@@ -410,7 +423,7 @@ country_event = { #Start Barge Strife - Disaster Start
 	id = LOU_mission_tharbad.8
 	title = LOU_mission_tharbad.8.t
 	desc = LOU_mission_tharbad.8.d
-	picture = ruined_eventpicture
+	picture = CIVIL_WAR_eventPicture
 	
 	hidden = yes
 	is_triggered_only = yes
@@ -451,6 +464,7 @@ country_event = { #Start Barge Strife - Disaster End
 	desc = LOU_mission_tharbad.9.d
 	picture = ruined_eventpicture
 	
+	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = { 
@@ -489,7 +503,7 @@ country_event = { #Start Barge Strife - Disaster End - won
 	id = LOU_mission_tharbad.10
 	title = LOU_mission_tharbad.10.t
 	desc = LOU_mission_tharbad.10.d
-	picture = ruined_eventpicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -512,7 +526,7 @@ country_event = { #Start Barge Strife - Disaster End - Lost
 	id = LOU_mission_tharbad.11
 	title = LOU_mission_tharbad.11.t
 	desc = LOU_mission_tharbad.11.d
-	picture = ruined_eventpicture
+	picture = BANKRUPTCY_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -585,7 +599,6 @@ country_event = { #Start Barge Strife - Debug
 	
 	option = { #
 		name = LOU_mission_tharbad.13.a
-		
 		
 	}
 }
