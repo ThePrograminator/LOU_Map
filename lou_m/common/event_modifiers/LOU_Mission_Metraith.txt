@@ -1,0 +1,58 @@
+########################
+#Event Modifier
+#########################
+
+########################
+#Mission Effect Modifier
+#########################
+
+metraith_annex_ceren_modifier = {
+	local_build_cost = -0.1
+	local_production_efficiency = 0.25
+	local_unrest = -3
+}
+
+metraith_stabilize_the_country_modifier = {
+	global_colonial_growth = 15
+	can_colony_boost_development = yes
+}
+
+metraith_old_alliance_modifier = {
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+}
+
+metraith_call_our_brethren_modifier = {
+	land_morale = 0.10
+}
+
+metraith_trade_across_cardolan_modifier = {
+	merchants = 1
+	trade_steering = 0.15
+	caravan_power = 0.15
+}
+
+metraith_rebuilding_the_red_way_modifier = {
+	local_friendly_movement_speed = 0.25
+	local_hostile_movement_speed  = 0.25
+	local_state_maintenance_modifier = -0.25
+	trade_goods_size_modifier = 0.25
+}
+
+metraith_secure_northern_cardolan_modifier = {
+	global_colonial_growth = 15
+}
+
+metraith_finish_the_conquest_modifier = {
+	land_morale = 0.10
+	global_manpower_modifier = 0.10
+	manpower_recovery_speed = 0.10
+}
+
+metraith_finish_the_feotari_modifier = {
+	core_creation = -0.15
+}
+
+metraith_finish_the_feotari_province_modifier = {
+	local_unrest = -5
+}

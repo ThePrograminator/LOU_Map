@@ -27,7 +27,12 @@ slot_01 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 7300
+			}
+		}
 	}
 	bordering_bree = {
 		icon = mission_bree_1
@@ -52,7 +57,14 @@ slot_01 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			165 = {
+				add_permanent_claim = ROOT
+			}
+			166 = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	annex_ceren = {
 		icon = mission_hills
@@ -70,7 +82,15 @@ slot_01 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 15
+			262 = {
+				add_province_modifier = {
+					name = metraith_annex_ceren_modifier
+					duration = 730
+				}
+			}
+		}
 	}
 }
 
@@ -100,7 +120,14 @@ slot_02 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 10
+			1505 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
 	}
 	restore_tinare = {
 		icon = mission_empire
@@ -142,7 +169,19 @@ slot_02 = {
 			}
 			tag = Z17
 		}
-		effect = { }
+		effect = { 
+			add_legitimacy = 25
+			add_prestige = 50
+			tharbad_area = {
+				add_claim = ROOT
+			}
+			argond_area = {
+				add_claim = ROOT
+			}
+			undrond_area = {
+				add_claim = ROOT
+			}
+		}
 	}
 	secure_northern_cardolan = {
 		icon = mission_build_up_to_force_limit
@@ -178,7 +217,15 @@ slot_02 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			cardolan_region = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = metraith_finish_the_conquest_modifier
+				duration = -1
+			}
+		}
 	}
 	finish_the_conquest = {
 		icon = mission_build_up_to_force_limit
@@ -253,7 +300,12 @@ slot_02 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = metraith_finish_the_conquest_modifier
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -285,7 +337,15 @@ slot_03 = {
 				loyalty = 60
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = metraith_stabilize_the_country_modifier
+				duration = 7300
+			}
+		}
 	}
 	trade_across_cardolan = {
 		icon = mission_dominate_home_trade_node
@@ -309,7 +369,12 @@ slot_03 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = metraith_trade_across_cardolan_modifier
+				duration = -1
+			}
+		}
 	}
 	rebuilding_the_red_way = {
 		icon = mission_dunedain_17
@@ -395,7 +460,52 @@ slot_03 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			166 = {
+				add_province_modifier = {
+					name = metraith_rebuilding_the_red_way_modifier
+					duration = -1
+				}
+			}
+			169 = {
+				add_province_modifier = {
+					name = metraith_rebuilding_the_red_way_modifier
+					duration = -1
+				}
+			}
+			162 = {
+				add_province_modifier = {
+					name = metraith_rebuilding_the_red_way_modifier
+					duration = -1
+				}
+			}
+			3209 = {
+				add_province_modifier = {
+					name = metraith_rebuilding_the_red_way_modifier
+					duration = -1
+				}
+			}
+			170 = {
+				add_province_modifier = {
+					name = metraith_rebuilding_the_red_way_modifier
+					duration = -1
+				}
+			}
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					OR = {
+						province_id = 166
+						province_id = 169
+						province_id = 162
+						province_id = 3209
+						province_id = 170
+					}
+					
+				}
+				custom_tooltip = REDWAY_BUILT_DESC
+			}
+		}
 	}
 }
 
@@ -427,7 +537,19 @@ slot_04 = {
 				value = 2
 			}
 		}
-		effect = { }
+		effect = { 
+			west_faerdor_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			} 
+			faerdor_area = {
+				add_claim = ROOT
+			}
+		}
 	}
 	finish_the_feotari = {
 		icon = mission_steppe_warriors
@@ -452,7 +574,24 @@ slot_04 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = metraith_finish_the_feotari_modifier
+				duration = 7300
+			}
+			west_faerdor_area = {
+				add_province_modifier = {
+					name = metraith_finish_the_feotari_province_modifier
+					duration = 3650
+				}
+			}
+			faerdor_area = {
+				add_province_modifier = {
+					name = metraith_finish_the_feotari_province_modifier
+					duration = 3650
+				}
+			}
+		}
 	}
 }
 
@@ -485,7 +624,13 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 50
+			add_country_modifier = {
+				name = metraith_old_alliance_modifier
+				duration = 7300
+			}
+		}
 	}
 	call_our_brethren = {
 		icon = mission_horn
@@ -521,6 +666,12 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 25
+			add_country_modifier = {
+				name = metraith_call_our_brethren_modifier
+				duration = 3650
+			}
+		}
 	}
 }
