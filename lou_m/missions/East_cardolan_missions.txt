@@ -10,16 +10,16 @@ slot_01 = {
 		}
 	}
 
-	guard_the_greyflood = {
-		icon = mission_build_up_to_force_limit
+	allies_in_cardolan = {
+		icon = mission_alliances
 		position = 2
-		required_missions = { assembling_a_council }
+		required_missions = {  }
 		trigger = { }
 		effect = { }
 	}
-	conquer_undanir = {
-		icon = mission_build_up_to_force_limit
-		position = 5
+	expand_into_balost = {
+		icon = mission_colonial
+		position = 6
 		required_missions = { a_unified_people }
 		trigger = { }
 		effect = { }
@@ -38,11 +38,22 @@ slot_02 = {
 		}
 	}
 
-	rebuild_argond_keep = {
-		icon = mission_build_up_to_force_limit
-		position = 5
-		required_missions = { a_unified_people }
+	guard_the_greyflood = {
+		icon = mission_fortify_1
+		position = 2
+		required_missions = { assembling_a_council }
 		trigger = { }
+		effect = { }
+	}
+	conquer_undanir = {
+		icon = mission_invade_island
+		position = 4
+		required_missions = {  }
+		trigger = {
+			udandir_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -60,30 +71,54 @@ slot_03 = {
 	}
 
 	assembling_a_council = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_noble_council
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = {
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
 		effect = { }
 	}
-	dunedain_legacy = {
+	secured_position = {
 		icon = mission_build_up_to_force_limit
 		position = 3
-		required_missions = { guard_the_greyflood grow_the_country }
+		required_missions = { allies_in_cardolan guard_the_greyflood grow_the_country }
 		trigger = { }
 		effect = { }
 	}
 	a_unified_people = {
-		icon = mission_build_up_to_force_limit
-		position = 4
-		required_missions = { dunedain_legacy }
+		icon = mission_eriador_01
+		position = 5
+		required_missions = { conquer_undanir conquer_undrond rebuild_argond_keep secured_position }
+		trigger = { }
+		effect = { }
+	}
+	expand_into_pinnath_nimren = {
+		icon = mission_colonial
+		position = 6
+		required_missions = { a_unified_people }
+		trigger = { }
+		effect = { }
+	}
+	dunedain_legacy = {
+		icon = mission_dunedain_1
+		position = 7
+		required_missions = { expand_into_balost expand_into_caladir expand_into_pinnath_nimren }
 		trigger = { }
 		effect = { }
 	}
 	the_resurgance_of_the_dunedain = {
-		icon = mission_build_up_to_force_limit
-		position = 6
-		required_missions = { rebuild_argond_keep reclaim_argond conqure_undanir unite_undrond }
+		icon = mission_dunedain_10
+		position = 8
+		required_missions = { dunedain_legacy }
 		trigger = { }
 		effect = { }
 	}
@@ -101,11 +136,22 @@ slot_04 = {
 		}
 	}
 
-	reclaim_argond = {
-		icon = mission_build_up_to_force_limit
-		position = 5
-		required_missions = { a_unified_people }
+	grow_the_country = {
+		icon = mission_conquer_50_development
+		position = 2
+		required_missions = { assembling_a_council }
 		trigger = { }
+		effect = { }
+	}
+	conquer_undrond = {
+		icon = mission_invade_island
+		position = 4
+		required_missions = {  }
+		trigger = {
+			undrond_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -122,19 +168,29 @@ slot_05 = {
 		}
 	}
 
-	grow_the_country = {
-		icon = mission_build_up_to_force_limit
-		position = 2
-		required_missions = { assembling_a_council }
+	reclaim_argond = {
+		icon = mission_conquer_50_development
+		position = 3
+		required_missions = {  }
+		trigger = {
+			argond_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { }
+	}
+	rebuild_argond_keep = {
+		icon = mission_fortify_2
+		position = 4
+		required_missions = { reclaim_argond }
 		trigger = { }
 		effect = { }
 	}
-	conquer_undrond = {
-		icon = mission_build_up_to_force_limit
-		position = 5
+	expand_into_caladir = {
+		icon = mission_colonial
+		position = 6
 		required_missions = { a_unified_people }
 		trigger = { }
 		effect = { }
 	}
 }
-
