@@ -170,7 +170,7 @@ faerdor_peasants_republic_reform = {
 	allow_normal_conversion = yes
 	icon = "peasant_republic"
 	potential = {
-		have_had_reform = faerdor_peasants_republic
+		have_had_reform = faerdor_peasants_republic_reform
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
@@ -186,6 +186,91 @@ faerdor_peasants_republic_reform = {
 		enables_aristocratic_idea_group = no
 	}
 	duration = 4
+}
+
+tharbad_barge_lords_reform = {
+	icon = "merchant_ship"
+	potential = {
+		have_had_reform = tharbad_barge_lords_reform
+		NOT = {
+			has_country_flag = tharbad_barge_strife_won_flag
+		}
+	}
+	allow_normal_conversion = yes
+	lock_level_when_selected
+	duration = 4
+	legacy_equivalent = oligarchic_republic
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	fixed_rank = 1
+	modifiers = {
+		global_tax_modifier = -0.05
+		local_production_efficiency = -0.05
+		local_development_cost = -0.05
+	}
+	custom_attributes = {
+		allow_convert = no
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+}
+
+tharbad_reform = {
+	icon = "trading_city"
+	allow_normal_conversion = yes
+	modifiers = {
+		merchants = 2
+		global_ship_trade_power = 0.2
+		yearly_corruption = -0.1
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = oligarchic_republic
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = Z21
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = tharbad_barge_lords_reform
+			}
+		}
+	}
+	boost_income = yes
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		lottery_election = yes
+		election_on_death = yes
+		is_merchant_republic = yes
+		bonus_stats_for_elected_ruler = yes
+	}
+	has_term_election = no
 }
 
 #------------------------------

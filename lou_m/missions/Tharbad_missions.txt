@@ -29,7 +29,15 @@ slot_01 = {
 				development = 20
 			}
 		}
-		effect = { }
+		effect = { 
+			add_treasury = 50
+			163 = {
+				add_core = ROOT
+			}
+			1514 = {
+				add_claim = ROOT
+			}
+		}
 	}
 	upgrade_south_tharbad_harbour = {
 		icon = mission_early_game_buildings
@@ -48,7 +56,19 @@ slot_01 = {
 				province_has_center_of_trade_of_level = 2
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mercantilism = 5
+			677 = {
+				change_trade_goods = silk
+			}
+			add_country_modifier = {
+				name = tharbad_upgrade_south_tharbad_harbour_modifier
+				duration = 7300
+			}
+			1598 = {
+				add_core = ROOT
+			}
+		}
 	}
 	remove_the_competetion = {
 		icon = mission_dunland_2
@@ -77,7 +97,10 @@ slot_01 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_prestige = 25
+		}
 	}
 	prepare_a_host = {
 		icon = mission_navy_01
@@ -87,7 +110,15 @@ slot_01 = {
 			navy_size_percentage = 1.0
 			naval_forcelimit = 30
 		}
-		effect = { }
+		effect = { 
+			lond_daer_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = tharbad_prepare_a_host_modifier
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -106,7 +137,12 @@ slot_02 = {
 		trigger = { 
 			army_size = 15
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = tharbad_raise_an_army_modifier
+				duration = 3650
+			}
+		}
 	}
 	secure_the_estuaries = {
 		icon = mission_fortify_1
@@ -134,7 +170,21 @@ slot_02 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = tharbad_secure_the_estuaries_modifier
+				duration = 7300
+			}
+			andhas_area = {
+				add_permanent_claim = ROOT
+			}
+			undrond_area = {
+				add_permanent_claim = ROOT
+			}
+			udandir_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	tharbad_control_the_trade = {
 		icon = mission_dominate_home_trade_node
@@ -148,7 +198,21 @@ slot_02 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_years_of_income = 2
+			metraith_area = {
+				add_claim = ROOT
+			}
+			1861 = {
+				add_permanent_claim = ROOT
+			}
+			377 = {
+				add_permanent_claim = ROOT
+			}
+			169 = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	produce_exotic_goods = {
 		icon = mission_have_manufactories
@@ -256,7 +320,25 @@ slot_02 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mercantilism = 5
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					OR = {
+						trade_goods = fur
+						trade_goods = salt
+						trade_goods = honey
+						trade_goods = fruit
+						trade_goods = paper
+						trade_goods = marble
+						trade_goods = copper
+						trade_goods = iron
+					}
+				}
+				custom_tooltip = MONOPOLY_INCOME_EXOTIC_GOODS_DESC
+			}
+		}
 	}
 	build_the_largest_barge = {
 		icon = mission_establish_high_seas_navy
@@ -265,7 +347,16 @@ slot_02 = {
 		trigger = { 
 			has_flagship = yes
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = tharbad_build_the_largest_barge_modifier
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = tharbad_build_the_largest_barge_2_modifier
+				duration = -1
+			}
+		}
 	}
 	control_the_mouth = {
 		icon = mission_invade_island
@@ -284,7 +375,17 @@ slot_02 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			ethir_gwathlo_area = {
+				add_permanent_claim = ROOT
+			}
+			cairg_erp_area = {
+				add_permanent_claim = ROOT
+			}
+			cairg_erp_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 }
 
@@ -311,7 +412,12 @@ slot_03 = {
 				category = MIL
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = tharbad_secure_the_court_modifier
+				duration = 3650
+			}
+		}
 	}
 	direct_trade_north = {
 		icon = mission_gondor_18
@@ -325,7 +431,13 @@ slot_03 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mercantilism = 5
+			add_country_modifier = {
+				name = tharbad_direct_trade_north_modifier
+				duration = 730
+			}
+		}
 	}
 	rebuild_the_bridge = {
 		icon = mission_tharbad
@@ -348,7 +460,20 @@ slot_03 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			170 = {
+				add_province_modifier = {
+					name = tharbad_rebuild_the_bridge_modifier
+    				duration = -1  
+				}
+			}
+			677 = {
+				add_province_modifier = {
+					name = tharbad_rebuild_the_bridge_modifier
+    				duration = -1  
+				}
+			}
+		}
 	}
 	control_the_entire_greyflood = {
 		icon = mission_river_01
@@ -387,7 +512,24 @@ slot_03 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_years_of_income = 3
+			angrast_area = {
+				add_permanent_claim = ROOT
+			}
+			saralainn_area = {
+				add_permanent_claim = ROOT
+			}
+			Ilfin_area = {
+				add_permanent_claim = ROOT
+			}
+			linnuis_area = {
+				add_permanent_claim = ROOT
+			}
+			the_oyer_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 }
 
@@ -407,7 +549,11 @@ slot_04 = {
 			stability = 1
 			prestige = 15
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
 	}
 	tharbad_secured_internally = {
 		icon = mission_noble_council
@@ -422,7 +568,9 @@ slot_04 = {
 			}
 			is_at_war = no
 		}
-		effect = { }
+		effect = { 
+			add_republican_tradition = 15
+		}
 	}
 	decide_tactic = {
 		icon = mission_alliances
@@ -484,11 +632,14 @@ slot_04 = {
 		required_missions = { decide_tactic }
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = Z21_tharbad_barge_strife_ended_flag_tt
-				has_country_flag = tharbad_barge_strife_ended_flag
+				tooltip = Z21_tharbad_barge_strife_won_flag_tt
+				has_country_flag = tharbad_barge_strife_won_flag
 			}
 		}
-		effect = { }
+		effect = { 
+			remove_estate_privilege= estate_merchants_tharbad_barge_lords_privileges
+			add_government_reform = tharbad_reform
+		}
 	}
 	pearl_of_eriador = {
 		icon = mission_gondor_16
@@ -551,7 +702,15 @@ slot_04 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_years_of_income = 3
+			add_stability = 1
+			add_prestige = 50
+			add_country_modifier = {
+				name = tharbad_pearl_of_eriador_modifier
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -569,8 +728,11 @@ slot_05 = {
 		required_missions = {  }
 		trigger = { 
 			treasury = 200
+			num_of_loans = 0
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+		}
 	}
 	create_an_trade_empire = {
 		icon = mission_dominate_home_trade_node
@@ -585,7 +747,12 @@ slot_05 = {
 				amount = 3
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = tharbad_create_an_trade_empire_modifier
+				duration = -1
+			}
+		}
 	}
 }
 

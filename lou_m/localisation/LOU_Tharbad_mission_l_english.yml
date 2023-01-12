@@ -105,7 +105,9 @@
  Z21_tharbad_ally_four_tt: "Enacted Decision: §YBribe Forth - Barge Lord§!"
 
  Z21_tharbad_barge_strife_tried_flag_tt: "Did not try to §YStart Barge Strife§! in the last §Y2 years§!."
- Z21_tharbad_barge_strife_ended_flag_tt: "Defeated  §Ythe Barge Lords Pretender Rebels!§!."
+ Z21_tharbad_barge_strife_won_flag_tt: "Defeated  §Ythe Barge Lords Pretender Rebels!§!."
+
+ MONOPOLY_INCOME_EXOTIC_GOODS_DESC: "from exotic goods production."
 
  #---------------------------------------------------------
  # Modifiers
@@ -127,6 +129,17 @@
  tharbad_barge_lord_demand_fiveteen_modifier: "Lower Guard Patrols"
  tharbad_barge_lord_demand_sixteen_modifier: "Share Properous Growth"
 
+ tharbad_raise_an_army_modifier: "Organizing the Army"
+ tharbad_secure_the_court_modifier: "Court of Advisors"
+ tharbad_upgrade_south_tharbad_harbour_modifier: "South Tharbad Harbour"
+ tharbad_secure_the_estuaries_modifier: "The Estuaries Grant Possibilities"
+ tharbad_direct_trade_north_modifier: "Direct Trade to Tharbad"
+ tharbad_build_the_largest_barge_modifier: "Impressive Navy"
+ tharbad_build_the_largest_barge_2_modifier: "Naval Bombardment"
+ tharbad_create_an_trade_empire_modifier: "A Trade Empire"
+ tharbad_rebuild_the_bridge_modifier: "The Bridge of Tharbad"
+ tharbad_pearl_of_eriador_modifier: "Pearl of Eriador"
+ tharbad_prepare_a_host_modifier: "Skilled Naval Landings"
 
  #---------------------------------------------------------
  # Events
@@ -165,18 +178,18 @@
  LOU_mission_tharbad.7.d: ""
  LOU_mission_tharbad.7.a: "We Must Defeat Them"
 
- LOU_mission_tharbad.8.t: "The Barge Strife - Begins"
+ LOU_mission_tharbad.8.t: "The Barge Strife - Begins - hidden"
  LOU_mission_tharbad.8.d: ""
  LOU_mission_tharbad.8.a: "We Must Defeat Them"
 
- LOU_mission_tharbad.9.t: "The Barge Strife - Ends"
+ LOU_mission_tharbad.9.t: "The Barge Strife - Ends - hidden"
  LOU_mission_tharbad.9.d: ""
  LOU_mission_tharbad.9.a: "Lets See the Results"
 
  LOU_mission_tharbad.10.t: "The Barge Strife - Ended"
- LOU_mission_tharbad.10.d: ""
+ LOU_mission_tharbad.10.d: "The Barge Lords power over our realm is over. By centralizing the power of Tharbad to the ruler, the scheming and corruption that once plaqued our lands can be in the past. Now we must look towards the future, and secure the Greyflood and become a dominant force in the region."
  LOU_mission_tharbad.10.a: "I Reign"
 
  LOU_mission_tharbad.11.t: "The Barge Strife - Lost"
- LOU_mission_tharbad.11.d: ""
+ LOU_mission_tharbad.11.d: "Unfortunately, the will of the Barge Lords was greater than ours. If we are ever to be a dominant force in the region, we must end the scheming and corruption of the Barge Lords."
  LOU_mission_tharbad.11.a: "The Barge Lords Must Be Defeated"

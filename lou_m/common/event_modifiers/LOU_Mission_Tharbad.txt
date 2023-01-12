@@ -1,3 +1,7 @@
+########################
+#Event Modifier
+#########################
+
 tharbad_barge_lord_demand_one_modifier = {
 	local_friendly_movement_speed = -0.25
 	local_hostile_movement_speed = -0.25
@@ -73,4 +77,67 @@ tharbad_barge_lord_demand_fiveteen_modifier = {
 
 tharbad_barge_lord_demand_sixteen_modifier = {
 	local_prosperity_growth = -0.1
+}
+
+########################
+#Mission Effect Modifier
+#########################
+
+tharbad_raise_an_army_modifier = {
+	manpower_recovery_speed = 0.10
+	land_maintenance_modifier = -0.10
+}
+
+tharbad_secure_the_court_modifier = {
+	advisor_cost = -0.10
+	yearly_corruption = -0.1
+}
+
+tharbad_upgrade_south_tharbad_harbour_modifier = {
+	trade_efficiency = 0.1
+}
+
+tharbad_secure_the_estuaries_modifier = {
+	build_cost = -0.1
+	development_cost = -0.1
+}
+
+tharbad_direct_trade_north_modifier = {
+	global_trade_power = 0.05
+	trade_steering = 0.25
+	trade_range_modifier = 0.25
+}
+
+tharbad_build_the_largest_barge_modifier = {
+	naval_morale = 0.1
+	naval_maintenance_modifier = -0.25
+}
+
+tharbad_build_the_largest_barge_2_modifier = {
+	global_naval_barrage_cost = -0.5
+}
+
+tharbad_create_an_trade_empire_modifier = {
+	merchants = 1
+	global_trade_power = 0.1
+	diplomatic_reputation = 2
+}
+
+tharbad_rebuild_the_bridge_modifier = {
+	local_build_cost = -0.10
+	local_production_efficiency = 0.1
+	local_development_cost = -0.1
+	allowed_num_of_manufactories = 1
+	local_governing_cost = -0.10
+}
+
+tharbad_pearl_of_eriador_modifier = {
+	naval_morale = 0.1
+	global_sailors_modifier = 0.25
+	naval_forcelimit_modifier = 0.25
+}
+
+tharbad_prepare_a_host_modifier = {
+	landing_penalty = -1
+	regiment_disembark_speed = 0.5
 }
