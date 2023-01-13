@@ -29,7 +29,7 @@
 
  cantons_of_faerdor_title: "Cantons Of Faerdor"
  cantons_of_faerdor_desc: ""
- secure_western_tharbad_title: "Western Tharbad"
+ secure_western_tharbad_title: "North Tharbad"
  secure_western_tharbad_desc: ""
  rebuild_tharbad_bridge_title: "Rebuild Tharbad Bridge"
  rebuild_tharbad_bridge_desc: ""
@@ -54,7 +54,7 @@
 
  ally_lindon_title: "Ally Lindon"
  ally_lindon_desc: ""
- secure_eastern_tharbad_title: "Eastern Tharbad"
+ secure_eastern_tharbad_title: "South Tharbad"
  secure_eastern_tharbad_desc: ""
  reclaim_ruins_of_cardolan_title: "Reclaim Ruins Of Cardolan"
  reclaim_ruins_of_cardolan_desc: ""
@@ -149,9 +149,43 @@
  mission_defeat_gundabad_title: "Defeat Gundabad"
  mission_defeat_gundabad_desc: ""
 
-LOU_mission_dunedain_of_arnor.1.t: "Dúnedain of Arnor Requests Rhudaur"
-LOU_mission_dunedain_of_arnor.1.d: "The Dúnedain of Arnor has requested that since they have proven their capabilities of defending Eriador, that we should hand over our provinces in Rhudaur inorder for them to better protet the region."
-LOU_mission_dunedain_of_arnor.1.a: "They have the responsibility now"
-LOU_mission_dunedain_of_arnor.1.b: "We will not hand over elven territory"
+ #---------------------------------------------------------
+ # Decisions
+ #---------------------------------------------------------
 
-rivendell_rhudaur_relation: "Rivendell Refused to Handover Rhudaur"
+ #---------------------------------------------------------
+ # Tooltips
+ #---------------------------------------------------------
+
+ rivendell_rhudaur_relation: "Rivendell Refused to Handover Rhudaur"
+
+ #---------------------------------------------------------
+ # Modifiers
+ #---------------------------------------------------------
+
+ subtject_lower_liberty_desire: "Helped Our Subject"
+ acceptance_of_take_over: "Acceptance of Our Rule"
+ dunedain_of_north_remove_population: "Remove Population"
+ dunedain_of_north_lower_development_cost: "Rebuild Ruins"
+ dunedain_of_north_control_the_lake: "Controlling The Lake"
+ dunedain_of_north_old_allies: "Old Alliances"
+ dunedain_of_north_accept_arthedain: "Arthedain Acceptance of Our Rule"
+ dunedain_of_north_trade_from_south: "Trade from Tharbad"
+ dunedain_of_north_tharbad: "Importance of the Old Bridge"
+ dunedain_of_north_greenway: "The Greenway Road"
+ dunedain_of_north_the_last_bridge: "Defensives at the Bridge"
+ dunedain_of_north_fort_defenses: "Rhudaur Defences"
+ dunedain_of_north_secured_by_forts: "Protected Growth"
+ dunedain_of_north_lindon_ally: "Elven Allies"
+ dunedain_of_north_expelled_all_orcs: "Eliminated the Threat of Mount Gram"
+
+ #---------------------------------------------------------
+ # Events
+ #---------------------------------------------------------
+
+ LOU_mission_dunedain_of_arnor.1.t: "Dúnedain of Arnor Requests Rhudaur"
+ LOU_mission_dunedain_of_arnor.1.d: "The Dúnedain of Arnor has requested that since they have proven their capabilities of defending Eriador, that we should hand over our provinces in Rhudaur  inorder for them to better protet the region."
+ LOU_mission_dunedain_of_arnor.1.a: "They have the responsibility now"
+ LOU_mission_dunedain_of_arnor.1.b: "We will not hand over elven territory"
+
+ 

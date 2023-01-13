@@ -1,0 +1,56 @@
+namespace = LOU_mission_east_cardolan
+
+country_event = { #Form Cardolan
+	id = LOU_mission_east_cardolan.1
+	title = LOU_mission_east_cardolan.1.t
+	desc = LOU_mission_east_cardolan.1.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+	
+	trigger = { 
+		
+	}
+
+	option = { #
+		name = LOU_mission_east_cardolan.1.a
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_tharbad.4.a - [Root.tharbadModifierOne.GetName] [Root.tharbadModifierOne.GetValue]" }
+		
+		change_tag = W55
+		#W55 = {
+			#set_capital = 170
+		#}
+		change_religion = religion_dunedain
+		change_primary_culture = culture_dunedain_of_arnor
+		
+		add_prestige = 50
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+		
+		change_government = monarchy
+		add_government_reform = feudalism_reform
+		
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+
+		hidden_effect = {
+			every_owned_province = { 
+				limit = {
+					religion = religion_eriadorians
+				}
+				change_religion = religion_dunedain
+			}
+			every_owned_province = { 
+				limit = {
+					culture_group = culture_group_eriadorians
+				}
+				change_culture = culture_dunedain_of_arnor
+			}
+		}
+	}
+}

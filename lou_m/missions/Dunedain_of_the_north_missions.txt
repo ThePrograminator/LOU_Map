@@ -691,6 +691,7 @@ slot_02_series = {
 			accepted_culture = culture_arthedain
 		}
 		effect = { 
+			add_patriarch_authority = 0.05
 			add_stability = 1
 		}
 	}
@@ -792,7 +793,11 @@ slot_03_series = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			677 = {
+				add_center_of_trade_level = 1
+			}
+		}
 	}
 	reclaim_ruins_of_cardolan = {
 		icon = mission_osgiliath

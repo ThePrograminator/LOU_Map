@@ -507,6 +507,27 @@ slot_03 = {
 			}
 		}
 	}
+	metraith_the_resurgance_of_the_dunedain = {
+		icon = mission_dunedain_10
+		position = 8
+		required_missions = { finish_the_conquest }
+		trigger = { 
+			capital_scope = {
+				region = cardolan_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 35
+				region = cardolan_region
+			}
+			NOT = { exists = W55 }
+		}
+		effect = { 
+			country_event = {
+				id = LOU_mission_east_cardolan.1
+			}
+		}
+	}
 }
 
 slot_04 = {

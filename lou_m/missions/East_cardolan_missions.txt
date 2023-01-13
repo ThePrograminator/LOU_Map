@@ -14,14 +14,38 @@ slot_01 = {
 		icon = mission_alliances
 		position = 2
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					any_owned_province = {
+						region = cardolan_region
+					}
+				}
+				amount = 2
+			}
+		}
 		effect = { }
 	}
 	expand_into_balost = {
 		icon = mission_colonial
 		position = 6
 		required_missions = { a_unified_people }
-		trigger = { }
+		provinces_to_highlight = {
+			area = balost_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			balost_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -42,16 +66,72 @@ slot_02 = {
 		icon = mission_fortify_1
 		position = 2
 		required_missions = { assembling_a_council }
-		trigger = { }
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					udandir_area = {
+						owned_by = ROOT
+						NOT = {
+							has_building = fort_castle_building
+							has_building = fort_stronghold_building
+							has_building = fort_citidal_building
+						}
+					}
+				}
+				area = udandir_area
+			}
+			if = {
+				limit = {
+					undrond_area = {
+						owned_by = ROOT
+						NOT = {
+							has_building = fort_castle_building
+							has_building = fort_stronghold_building
+							has_building = fort_citidal_building
+						}
+					}
+				}
+				area = undrond_area
+			}
+		}
+		trigger = { 
+			any_owned_province = {
+				area = udandir_area
+				OR = {
+					has_building = fort_castle_building
+					has_building = fort_stronghold_building
+					has_building = fort_citidal_building
+				}
+			}
+			any_owned_province = {
+				area = undrond_area
+				OR = {
+					has_building = fort_castle_building
+					has_building = fort_stronghold_building
+					has_building = fort_citidal_building
+				}
+			}
+		}
 		effect = { }
 	}
 	conquer_undanir = {
 		icon = mission_invade_island
 		position = 4
 		required_missions = {  }
+		provinces_to_highlight = {
+			area = udandir_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			udandir_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
+			}
+			development_in_provinces = {
+				value = 50
+				area = udandir_area
 			}
 		}
 		effect = { }
@@ -91,36 +171,143 @@ slot_03 = {
 		icon = mission_build_up_to_force_limit
 		position = 3
 		required_missions = { allies_in_cardolan guard_the_greyflood grow_the_country }
-		trigger = { }
+		trigger = { 
+			army_size = 25
+			army_size_percentage = 1.0
+		}
 		effect = { }
 	}
 	a_unified_people = {
 		icon = mission_eriador_01
 		position = 5
 		required_missions = { conquer_undanir conquer_undrond rebuild_argond_keep secured_position }
-		trigger = { }
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = Q15
+					}
+				}
+				owned_by = Q16
+				owned_by = Q17
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = Q16
+					}
+				}
+				owned_by = Q15
+				owned_by = Q17
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = Q17
+					}
+				}
+				owned_by = Q15
+				owned_by = Q16
+			}
+		}
+		trigger = { 
+			if = {
+				limit = {
+					tag = Q15
+				}
+				NOT = {
+					exists = Q16
+					exists = Q17
+				}
+			}
+			if = {
+				limit = {
+					tag = Q16
+				}
+				NOT = {
+					exists = Q15
+					exists = Q17
+				}
+			}
+			if = {
+				limit = {
+					tag = Q17
+				}
+				NOT = {
+					exists = Q15
+					exists = Q16
+				}
+			}
+		}
 		effect = { }
 	}
 	expand_into_pinnath_nimren = {
 		icon = mission_colonial
 		position = 6
 		required_missions = { a_unified_people }
-		trigger = { }
+		provinces_to_highlight = {
+			area = pinnath_nimren_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pinnath_nimren_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	dunedain_legacy = {
 		icon = mission_dunedain_1
 		position = 7
 		required_missions = { expand_into_balost expand_into_caladir expand_into_pinnath_nimren }
-		trigger = { }
+		provinces_to_highlight = {
+			region = cardolan_region
+			has_terrain = unique_dunedain_ruin
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				AND = {
+					owned_by = ROOT
+					NOT  = {
+						development = 25
+					}
+				}
+			}
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				value = 7
+				region = cardolan_region
+				has_terrain = unique_dunedain_ruin
+				development = 25
+			}
+		}
 		effect = { }
 	}
-	the_resurgance_of_the_dunedain = {
+	east_cardolan_the_resurgance_of_the_dunedain = {
 		icon = mission_dunedain_10
 		position = 8
 		required_missions = { dunedain_legacy }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			capital_scope = {
+				region = cardolan_region
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 35
+				region = cardolan_region
+			}
+			NOT = { exists = W55 }
+		}
+		effect = { 
+			country_event = {
+				id = LOU_mission_east_cardolan.1
+			}
+		}
 	}
 }
 
@@ -140,16 +327,29 @@ slot_04 = {
 		icon = mission_conquer_50_development
 		position = 2
 		required_missions = { assembling_a_council }
-		trigger = { }
+		trigger = { 
+			grown_by_development = 25 
+		}
 		effect = { }
 	}
 	conquer_undrond = {
 		icon = mission_invade_island
 		position = 4
 		required_missions = {  }
+		provinces_to_highlight = {
+			area = undrond_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			undrond_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
+			}
+			development_in_provinces = {
+				value = 50
+				area = undrond_area
 			}
 		}
 		effect = { }
@@ -172,9 +372,20 @@ slot_05 = {
 		icon = mission_conquer_50_development
 		position = 3
 		required_missions = {  }
+		provinces_to_highlight = {
+			area = argond_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 			argond_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
+			}
+			development_in_provinces = {
+				value = 70
+				area = argond_area
 			}
 		}
 		effect = { }
@@ -183,14 +394,41 @@ slot_05 = {
 		icon = mission_fortify_2
 		position = 4
 		required_missions = { reclaim_argond }
-		trigger = { }
+		provinces_to_highlight = {
+			province_id = 161
+			NOT = {
+				has_great_project = {
+					type = argond_monument
+					tier = 1
+				}
+			}
+		}
+		trigger = {
+			161 = {
+				has_great_project = {
+					type = argond_monument
+					tier = 1
+				}
+			}
+		}
 		effect = { }
 	}
 	expand_into_caladir = {
 		icon = mission_colonial
 		position = 6
 		required_missions = { a_unified_people }
-		trigger = { }
+		provinces_to_highlight = {
+			area = caladir_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			caladir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }

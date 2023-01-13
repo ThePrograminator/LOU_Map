@@ -5,7 +5,11 @@ country_decisions = {
 	arnor_nation = {
 		major = yes
 		potential = {
-			always = no
+			#always = no
+			NOT = {
+				was_tag = Z06
+				tag = Z06
+			}
 			NOT = { 
 				exists = W57
 				tag = X01
