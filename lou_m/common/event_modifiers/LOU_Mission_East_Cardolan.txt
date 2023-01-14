@@ -20,5 +20,46 @@ east_cardolan_grow_the_country_modifier = {
 	global_tax_modifier = 0.1
 	production_efficiency = 0.1
 	global_prosperity_growth = 0.1
+}
+
+east_cardolan_reclaim_argond_modifier = {
 	great_project_upgrade_cost = -0.25
+}
+
+east_cardolan_guard_the_greyflood_modifier = {
+	local_defensiveness = 0.25
+	local_fort_maintenance_modifier = -0.50
+}
+
+east_cardolan_secured_position_modifier = {
+	land_maintenance_modifier = -0.10
+	manpower_recovery_speed = 0.10
+}
+
+east_cardolan_rebuild_argond_keep_modifier = {
+	development_cost = -0.1
+	global_tax_modifier = 0.1
+}
+
+east_cardolan_expand_into_cardolan_modifier = {
+	local_development_cost = -0.2
+	global_tax_modifier = 0.1
+	production_efficiency = 0.1
+}
+
+east_cardolan_dunedain_legacy_modifier = {
+	land_morale = 0.1
+	discipline = 0.1
+}
+
+east_cardolan_conquer_undrond_modifier = {
+	global_regiment_cost = -0.10
+	manpower_recovery_speed = 0.10
+	global_manpower_modifier = 0.10
+}
+
+east_cardolan_conquer_undanir_modifier = {
+	global_trade_goods_size_modifier = 0.1
+	global_trade_power = 0.1
+	trade_steering = 0.1
 }

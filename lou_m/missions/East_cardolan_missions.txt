@@ -51,7 +51,15 @@ slot_01 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 25
+			balost_area = {
+				add_province_modifier = {
+					name = east_cardolan_expand_into_cardolan_modifier
+					duration = 3650
+				}
+			}
+		}
 	}
 }
 
@@ -117,7 +125,26 @@ slot_02 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 50
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = udandir_area
+						area = undrond_area
+					}
+					OR = {
+						has_building = fort_castle_building
+						has_building = fort_stronghold_building
+						has_building = fort_citidal_building
+					}
+				}
+				add_province_modifier = {
+					name = east_cardolan_guard_the_greyflood_modifier
+					duration = 7300
+				}
+			}
+		}
 	}
 	conquer_undanir = {
 		icon = mission_invade_island
@@ -139,7 +166,13 @@ slot_02 = {
 				area = udandir_area
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 10
+			add_country_modifier = {
+				name = east_cardolan_conquer_undanir_modifier
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -186,7 +219,13 @@ slot_03 = {
 			army_size = 25
 			army_size_percentage = 1.0
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 50
+			add_country_modifier = {
+				name = east_cardolan_secured_position_modifier
+				duration = 3650
+			}
+		}
 	}
 	a_unified_people = {
 		icon = mission_eriador_01
@@ -251,6 +290,7 @@ slot_03 = {
 			}
 		}
 		effect = { 
+			add_stability = 1
 			add_estate_loyalty = {
 				estate = estate_stewards
 				loyalty = 15
@@ -277,7 +317,15 @@ slot_03 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 25
+			pinnath_nimren_area = {
+				add_province_modifier = {
+					name = east_cardolan_expand_into_cardolan_modifier
+					duration = 3650
+				}
+			}
+		}
 	}
 	dunedain_legacy = {
 		icon = mission_dunedain_1
@@ -306,7 +354,12 @@ slot_03 = {
 				development = 25
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = east_cardolan_dunedain_legacy_modifier
+				duration = 7300
+			}
+		}
 	}
 	east_cardolan_the_resurgance_of_the_dunedain = {
 		icon = mission_dunedain_10
@@ -377,7 +430,13 @@ slot_04 = {
 				area = undrond_area
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 10
+			add_country_modifier = {
+				name = east_cardolan_conquer_undrond_modifier
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -413,7 +472,13 @@ slot_05 = {
 				area = argond_area
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 10
+			add_country_modifier = {
+				name = east_cardolan_reclaim_argond_modifier
+				duration = 7300
+			}
+		}
 	}
 	rebuild_argond_keep = {
 		icon = mission_fortify_2
@@ -436,7 +501,14 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 50
+			add_prestige = 25
+			add_country_modifier = {
+				name = east_cardolan_rebuild_argond_keep_modifier
+				duration = 3650
+			}
+		}
 	}
 	expand_into_caladir = {
 		icon = mission_colonial
@@ -454,6 +526,14 @@ slot_05 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 25
+			caladir_area = {
+				add_province_modifier = {
+					name = east_cardolan_expand_into_cardolan_modifier
+					duration = 3650
+				}
+			}
+		}
 	}
 }
