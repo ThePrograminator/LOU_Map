@@ -117,7 +117,7 @@ pax_americana = {
 	}
 
 	modifier = {
-		trade_goods_size_modifier = 0.1
+		advisor_cost = -0.25
 	}
 
 	ai_chance = {
@@ -132,7 +132,7 @@ united_resistance = {
 		always = yes
 	}
 	modifier = {
-		hostile_attrition = 1
+		own_territory_dice_roll_bonus = 1
 	}
 
 	ai_chance = {
@@ -147,7 +147,7 @@ chartered_settlements = {
 		always = yes
 	}
 	modifier = {
-		settle_cost = -0.2
+		available_province_loot = 0.5
 	}
 
 	ai_chance = {
@@ -163,7 +163,7 @@ shared_knowledge = {
 		always = yes
 	}
 	modifier = {
-		global_institution_spread = 0.2
+		army_tradition_from_battle = 0.05
 	}
 
 	ai_chance = {
