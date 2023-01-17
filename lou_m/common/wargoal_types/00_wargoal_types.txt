@@ -1781,3 +1781,157 @@ superiority_reichskrieg = {
 	
 	war_name = REICHSKRIEG_WAR_NAME	
 }
+
+force_migration = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 2
+
+		allowed_provinces = {
+			is_capital = no
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		required_treaty_to_take_provinces = {
+			po_force_migration
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_force_migration
+			po_humiliate
+			po_gold
+		}
+		
+		deny_annex = yes
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			is_capital = no
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_humiliate
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}	
+	
+	war_name = FORCE_MIGRATION_WAR_NAME
+}
+
+take_native_american_land = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1	
+
+		allowed_provinces = {
+			is_capital = no
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_force_migration
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			is_capital = no
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}	
+	
+	war_name = TAKE_NATIVE_AMERICAN_LAND_WAR_NAME
+}
+
+push_back_colonizers = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		deny_annex = yes
+		
+		peace_options = {
+			po_force_out_colonizers
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = PUSH_BACK_COLONIZERS
+}
