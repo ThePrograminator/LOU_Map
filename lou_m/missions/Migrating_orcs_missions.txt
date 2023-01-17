@@ -1,0 +1,216 @@
+slot_01 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			technology_group = lotr_uruk_hai    
+			is_orc = yes
+			is_goblin = yes 
+		}
+		government = native
+		capital_scope = {
+			region = cardolan_region
+		}
+	}
+
+	expand_the_camp = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	war_council = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { expand_the_camp }
+		trigger = { }
+		effect = { }
+	}
+	raid_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { expand_our_land }
+		trigger = { }
+		effect = { }
+	}
+	raid_the_shire = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { raid_cardolan }
+		trigger = { }
+		effect = { }
+	}
+	ally_eregion = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_02 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			technology_group = lotr_uruk_hai    
+			is_orc = yes
+			is_goblin = yes 
+		}
+		government = native
+		capital_scope = {
+			region = cardolan_region
+		}
+	}
+
+	army_of_orcs = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	expand_our_land = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { army_of_orcs }
+		trigger = { }
+		effect = { }
+	}
+	unite_the_warpack = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { expand_our_land great_warpack }
+		trigger = { }
+		effect = { }
+	}
+	conquer_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { unite_the_warpack conquer_girithlin conquer_east_cardolan conquer_metriath }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_03 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			technology_group = lotr_uruk_hai    
+			is_orc = yes
+			is_goblin = yes 
+		}
+		government = native
+		capital_scope = {
+			region = cardolan_region
+		}
+	}
+
+	conquer_east_cardolan = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { triumpf_through_war }
+		trigger = { }
+		effect = { }
+	}
+	ally_dunleding = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	secured_position = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { ally_fornost ally_dunleding ally_eregion }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_04 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			technology_group = lotr_uruk_hai    
+			is_orc = yes
+			is_goblin = yes 
+		}
+		government = native
+		capital_scope = {
+			region = cardolan_region
+		}
+	}
+
+	warpack = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	great_warpack = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { warpack }
+		trigger = { }
+		effect = { }
+	}
+	triumpf_through_war = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { great_warpack }
+		trigger = { }
+		effect = { }
+	}
+	conquer_girithlin = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { triumpf_through_war }
+		trigger = { }
+		effect = { }
+	}
+}
+
+slot_05 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			technology_group = lotr_uruk_hai    
+			is_orc = yes
+			is_goblin = yes 
+		}
+		government = native
+		capital_scope = {
+			region = cardolan_region
+		}
+	}
+
+	conquer_metriath = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { triumpf_through_war }
+		trigger = { }
+		effect = { }
+	}
+	ally_fornost = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+}
+
