@@ -38,7 +38,8 @@ federal_constitution = {
 				}
 			}
 		}
-		
+		add_government_reform = lotr_orc_kingdom_reform
+
 		add_country_modifier = {
 			name = "centralization_modifier"
 			duration = 7300
@@ -47,6 +48,10 @@ federal_constitution = {
 
 		hidden_effect = {
 			disband_federation = yes
+			set_country_flag = formed_federation_nation_FLAG
+			country_event = {
+				id = lou_colonization.1
+			}
 		}
 	}
 
@@ -163,7 +168,7 @@ shared_knowledge = {
 		always = yes
 	}
 	modifier = {
-		army_tradition_from_battle = 0.05
+		army_tradition_from_battle = 0.50
 	}
 
 	ai_chance = {

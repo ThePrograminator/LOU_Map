@@ -196,6 +196,19 @@ country_event = {
             country_event = { 
                 id = LOU_races.13
             }
+            if = {
+                limit = {
+                    government = native
+                }
+                set_variable = {
+                    which = MigratingOrcShirelootedAmount_VAR
+                    value = 0
+                }
+                set_variable = {
+                    which = MigratingOrcCardolanlootedAmount_VAR
+                    value = 0
+                }
+            }
         }
         # Troll
         if = {

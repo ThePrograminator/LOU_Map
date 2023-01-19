@@ -195,6 +195,31 @@ on_siege_won_country = {
 			country_event = { id = LOU_fellowship_of_ring.29 }
 		}
 	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					region = cardolan_region
+					region = shire_region
+				}
+				
+				NOT = {
+					owned_by = ROOT
+				}
+			}
+			ROOT = {
+				OR = {
+					technology_group = lotr_uruk_hai    
+					is_orc = yes
+					is_goblin = yes 
+				}
+				government = native
+			}
+		}
+		ROOT = {
+			country_event = { id = LOU_mission_migrating_orcs.1 }
+		}
+	}
 }
 
 # country

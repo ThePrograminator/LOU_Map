@@ -15,38 +15,82 @@ slot_01 = {
 	}
 
 	expand_the_camp = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_camp
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			capital_scope = {
+				num_of_buildings_in_province = 3
+			}
+		}
 		effect = { }
 	}
 	war_council = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_war_council
 		position = 2
 		required_missions = { expand_the_camp }
-		trigger = { }
+		trigger = { 
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
 		effect = { }
 	}
 	raid_cardolan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_isengard_3
 		position = 3
 		required_missions = { expand_our_land }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			check_variable = {
+				which = MigratingOrcCardolanlootedAmount_VAR
+				value = 10
+			}
+		}
+		effect = { 
+			
+		}
 	}
 	raid_the_shire = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_shire_burning
 		position = 4
 		required_missions = { raid_cardolan }
-		trigger = { }
+		trigger = { 
+			check_variable = {
+				which = MigratingOrcShirelootedAmount_VAR
+				value = 10
+			}
+		}
 		effect = { }
 	}
 	ally_eregion = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_mordor_1
 		position = 6
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Y56
+				}
+				alliance_with = Y56
+				Y51 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else = {
+				285 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
 		effect = { }
 	}
 }
@@ -68,28 +112,147 @@ slot_02 = {
 	}
 
 	army_of_orcs = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_army
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			army_size_percentage = 1.0
+		}
 		effect = { }
 	}
 	expand_our_land = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_5
 		position = 2
 		required_missions = { army_of_orcs }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			#capital_scope = {
+			#	tribal_development = 30
+			#}
+			#num_of_owned_provinces_with = {
+			#	value = 3
+			#	region = cardolan_region
+			#}
+			#calc_true_if = {
+			#	cardolan_region = {
+			#		tribal_land_of = ROOT
+			#	}
+			#	amount = 3
+			#}
+			if = {
+				limit = { 
+					government = native
+				}
+				OR = {
+					minhiriath_area = {
+						tribal_land_of = ROOT
+					}
+					iarond_area = {
+						tribal_land_of = ROOT
+					}
+					balost_area = {
+						tribal_land_of = ROOT
+					}
+				}
+				OR = {
+					creb_durga_area = {
+						tribal_land_of = ROOT
+					}
+					argond_area = {
+						tribal_land_of = ROOT
+					}
+					pinnath_nimren_area = {
+						tribal_land_of = ROOT
+					}
+				}
+				OR = {
+					angoth_area = {
+						tribal_land_of = ROOT
+					}
+					dol_tinereb_area = {
+						tribal_land_of = ROOT
+					}
+					caladir_area = {
+						tribal_land_of = ROOT
+					}
+				}
+				OR = {
+					sarn_ford_area = {
+						tribal_land_of = ROOT
+					}
+					metraith_area = {
+						tribal_land_of = ROOT
+					}
+					west_faerdor_area = {
+						tribal_land_of = ROOT
+					}
+				}
+			}
+			else = {
+				OR = {
+					minhiriath_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					iarond_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					balost_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				OR = {
+					creb_durga_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					argond_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					pinnath_nimren_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				OR = {
+					angoth_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					dol_tinereb_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					caladir_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				OR = {
+					sarn_ford_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					metraith_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					west_faerdor_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			
+		}
+		effect = { 
+
+		}
 	}
 	unite_the_warpack = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_leader
 		position = 3
 		required_missions = { expand_our_land great_warpack }
-		trigger = { }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = migrating_orcs_unite_the_warpack_tt
+				has_country_flag = formed_federation_nation_FLAG
+			}
+		}
 		effect = { }
 	}
 	conquer_cardolan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_10
 		position = 5
 		required_missions = { unite_the_warpack conquer_girithlin conquer_east_cardolan conquer_metriath }
 		trigger = { }
@@ -114,21 +277,59 @@ slot_03 = {
 	}
 
 	conquer_east_cardolan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		position = 4
 		required_missions = { triumpf_through_war }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				area = argond_area
+				area = udandir_area
+				area = undrond_area
+			}
+			
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			argond_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			udandir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			undrond_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	ally_dunleding = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunland_2
 		position = 6
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					OR = {
+						primary_culture = culture_dunlendings
+						primary_culture = culture_clansmen
+					}
+				}
+				amount = 2
+			}
+		}
 		effect = { }
 	}
 	secured_position = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_isengard_industry
 		position = 7
 		required_missions = { ally_fornost ally_dunleding ally_eregion }
 		trigger = { }
@@ -153,31 +354,66 @@ slot_04 = {
 	}
 
 	warpack = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_industry
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			if = {
+				limit = {
+					government = native
+				}
+				custom_trigger_tooltip = {
+					tooltip = migrating_orcs_warpack_tt
+					federation_size = 2
+				}
+			}
+			else = {
+				has_reform = lotr_orc_kingdom_reform
+			}
+		}
 		effect = { }
 	}
 	great_warpack = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_army_2
 		position = 2
 		required_missions = { warpack }
-		trigger = { }
+		trigger = { 
+			if = {
+				limit = {
+					government = native
+				}
+				federation_size = 4
+				is_federation_leader = yes
+			}
+			else = {
+				has_reform = lotr_orc_kingdom_reform
+			}
+		}
 		effect = { }
 	}
 	triumpf_through_war = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_banner
 		position = 3
 		required_missions = { great_warpack }
 		trigger = { }
 		effect = { }
 	}
 	conquer_girithlin = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_early_game_buildings
 		position = 4
 		required_missions = { triumpf_through_war }
-		trigger = { }
+		provinces_to_highlight = {
+			area = girithlin_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			girithlin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -199,17 +435,46 @@ slot_05 = {
 	}
 
 	conquer_metriath = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_hills
 		position = 4
 		required_missions = { triumpf_through_war }
-		trigger = { }
+		provinces_to_highlight = {
+			area = metraith_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			metraith_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	ally_fornost = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_army_3
 		position = 6
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Y51
+				}
+				alliance_with = Y51
+				Y51 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else = {
+				266 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
 		effect = { }
 	}
 }

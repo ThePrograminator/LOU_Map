@@ -129,6 +129,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_advisor_lotr_orc_gfx_quartermaster"
+    	texturefile = "gfx//interface//advisors//orcs_quartermaster.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
 		name = "GFX_advisor_lotr_orc_gfx_recruitmaster"
     	texturefile = "gfx//interface//advisors//orcs_recruitmaster.dds"
 		noOfFrames = 1

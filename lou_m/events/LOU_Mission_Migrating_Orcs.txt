@@ -1,0 +1,49 @@
+namespace = LOU_mission_migrating_orcs
+
+country_event = { #Counting Loot
+	id = LOU_mission_migrating_orcs.1
+	title = LOU_mission_migrating_orcs.1.t
+	desc = LOU_mission_migrating_orcs.1.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { 
+		
+	}
+	
+	option = { #Oh no
+		name = LOU_mission_migrating_orcs.1.a
+		#test
+		change_variable  = {
+			which = MigratingOrcCardolanlootedAmount_VAR
+			value = 1
+		}
+		
+		if = {
+			limit = {
+				FROM = {
+					region = cardolan_region
+				}
+			}
+
+			change_variable  = {
+				which = MigratingOrcCardolanlootedAmount_VAR
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					region = shire_region
+				}
+			}
+
+			change_variable  = {
+				which = MigratingOrcShirelootedAmount_VAR
+				value = 1
+			}
+		}
+	}
+}
