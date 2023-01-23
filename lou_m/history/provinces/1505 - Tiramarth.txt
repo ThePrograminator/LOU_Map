@@ -10,18 +10,18 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-#is_city = yes
+is_city = yes
 
 base_tax = 6
 base_production = 4
 base_manpower = 3
 
-#add_core = Z17
-#owner = Z17
-#controller = Z17
+add_core = Q09
+owner = Q09
+controller = Q09
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_orkish
+religion = religion_orkish
 
 trade_goods = cloth
 
@@ -34,6 +34,8 @@ hre = no
 #temple_building=yes
 
 #work_camp_building=yes
+
+2758.1.1 = { tribal_owner = Q09 }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

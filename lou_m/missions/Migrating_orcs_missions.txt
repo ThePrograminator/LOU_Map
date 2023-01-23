@@ -23,7 +23,12 @@ slot_01 = {
 				num_of_buildings_in_province = 3
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_expand_the_camp_modifier
+				duration = 3650
+			}
+		}
 	}
 	war_council = {
 		icon = mission_orc_war_council
@@ -40,7 +45,12 @@ slot_01 = {
 				category = MIL
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_war_council_modifier
+				duration = 7300
+			}
+		}
 	}
 	raid_cardolan = {
 		icon = mission_isengard_3
@@ -53,7 +63,11 @@ slot_01 = {
 			}
 		}
 		effect = { 
-			
+			add_years_of_income = 5
+			add_country_modifier = {
+				name = migrating_orcs_raid_cardolan_modifier
+				duration = 3650
+			}
 		}
 	}
 	raid_the_shire = {
@@ -66,7 +80,13 @@ slot_01 = {
 				value = 10
 			}
 		}
-		effect = { }
+		effect = { 
+			add_years_of_income = 5
+			add_country_modifier = {
+				name = migrating_orcs_raid_the_shire_modifier
+				duration = 3650
+			}
+		}
 	}
 	ally_eregion = {
 		icon = mission_mordor_1
@@ -142,48 +162,60 @@ slot_02 = {
 				limit = { 
 					government = native
 				}
-				OR = {
-					minhiriath_area = {
-						tribal_land_of = ROOT
-					}
-					iarond_area = {
-						tribal_land_of = ROOT
-					}
-					balost_area = {
-						tribal_land_of = ROOT
-					}
-				}
-				OR = {
-					creb_durga_area = {
-						tribal_land_of = ROOT
-					}
-					argond_area = {
-						tribal_land_of = ROOT
-					}
-					pinnath_nimren_area = {
-						tribal_land_of = ROOT
+				custom_trigger_tooltip = {
+					tooltip = migrating_orcs_expand_our_land_1_tt
+					OR = {
+						minhiriath_area = {
+							tribal_land_of = ROOT
+						}
+						iarond_area = {
+							tribal_land_of = ROOT
+						}
+						balost_area = {
+							tribal_land_of = ROOT
+						}
 					}
 				}
-				OR = {
-					angoth_area = {
-						tribal_land_of = ROOT
-					}
-					dol_tinereb_area = {
-						tribal_land_of = ROOT
-					}
-					caladir_area = {
-						tribal_land_of = ROOT
+				custom_trigger_tooltip = {
+					tooltip = migrating_orcs_expand_our_land_2_tt
+					OR = {
+						creb_durga_area = {
+							tribal_land_of = ROOT
+						}
+						argond_area = {
+							tribal_land_of = ROOT
+						}
+						pinnath_nimren_area = {
+							tribal_land_of = ROOT
+						}
 					}
 				}
-				OR = {
-					sarn_ford_area = {
-						tribal_land_of = ROOT
+				custom_trigger_tooltip = {
+					tooltip = migrating_orcs_expand_our_land_3_tt
+					OR = {
+						angoth_area = {
+							tribal_land_of = ROOT
+						}
+						dol_tinereb_area = {
+							tribal_land_of = ROOT
+						}
+						caladir_area = {
+							tribal_land_of = ROOT
+						}
 					}
-					metraith_area = {
-						tribal_land_of = ROOT
-					}
-					west_faerdor_area = {
-						tribal_land_of = ROOT
+				}
+				custom_trigger_tooltip = {
+					tooltip = migrating_orcs_expand_our_land_4_tt
+					OR = {
+						sarn_ford_area = {
+							tribal_land_of = ROOT
+						}
+						metraith_area = {
+							tribal_land_of = ROOT
+						}
+						west_faerdor_area = {
+							tribal_land_of = ROOT
+						}
 					}
 				}
 			}
@@ -255,7 +287,12 @@ slot_02 = {
 		icon = mission_dunedain_10
 		position = 5
 		required_missions = { unite_the_warpack conquer_girithlin conquer_east_cardolan conquer_metriath }
-		trigger = { }
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				region = cardolan_region
+			}
+		}
 		effect = { }
 	}
 }
@@ -305,7 +342,11 @@ slot_03 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			lond_daer_area = {
+				add_claim = ROOT
+			}
+		}
 	}
 	ally_dunleding = {
 		icon = mission_dunland_2
@@ -323,7 +364,7 @@ slot_03 = {
 						primary_culture = culture_clansmen
 					}
 				}
-				amount = 2
+				amount = 1
 			}
 		}
 		effect = { }
@@ -395,7 +436,12 @@ slot_04 = {
 		icon = mission_orc_banner
 		position = 3
 		required_missions = { great_warpack }
-		trigger = { }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = migrating_orcs_won_war_tt
+				has_country_flag = MigratingOrcsWonWar_FLAG
+			}
+		}
 		effect = { }
 	}
 	conquer_girithlin = {
@@ -414,7 +460,14 @@ slot_04 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			the_oyer_area = {
+				add_claim = ROOT
+			}
+			annon_baran_area = {
+				add_claim = ROOT
+			}
+		}
 	}
 }
 
@@ -450,7 +503,14 @@ slot_05 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			sarn_ford_area = {
+				add_claim = ROOT
+			}
+			tyrn_gorthad_area = {
+				add_claim = ROOT
+			}
+		}
 	}
 	ally_fornost = {
 		icon = mission_orc_army_3

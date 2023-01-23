@@ -70,6 +70,11 @@
  #---------------------------------------------------------
  migrating_orcs_unite_the_warpack_tt: "Enacted Warpack Advancement: §YUnited Warpack§!"
  migrating_orcs_warpack_tt: "Joined or Leader of a §YWarpack§!"
+ migrating_orcs_won_war_tt: "Win a §YWar§! against a country in §YCardolan§! who is not of §YOrc§! or §YGoblin§! race"
+ migrating_orcs_expand_our_land_1_tt: "At least one province in either the areas of: §YMinhiriath§!, §YIarond§! or §YBalost§! is Tribal Land of [Root.GetName]"
+ migrating_orcs_expand_our_land_2_tt: "At least one province in either the areas of: §YCreb Durga§!, §YArgond§! or §YPinnath Nimren§! is Tribal Land of [Root.GetName]"
+ migrating_orcs_expand_our_land_3_tt: "At least one province in either the areas of: §YAngoth§!, §YDol Tinereb§! or §YCaladir§! is Tribal Land of [Root.GetName]"
+ migrating_orcs_expand_our_land_4_tt: "At least one province in either the areas of: §YSarn Ford§!, §YMetraith§! or §YWest Faerdor§! is Tribal Land of [Root.GetName]"
 
  #---------------------------------------------------------
  # Modifiers
@@ -79,3 +84,9 @@
  #---------------------------------------------------------
  # Events
  #---------------------------------------------------------
+
+ #---------------------------------------------------------
+ # Custom Variables
+ #---------------------------------------------------------
+ MigratingOrcCardolanlootedAmount_VAR: "Sieged Provinces in Cardolan"
+ MigratingOrcShirelootedAmount_VAR: "Sieged Provinces in The Shire"

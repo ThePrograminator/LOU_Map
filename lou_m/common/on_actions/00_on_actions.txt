@@ -69,7 +69,37 @@ on_peace_recipient = {
 # root = winning country, from = loser country
 on_war_won = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - winner : [Root.GetName] - loser : [From.GetName] - on_war_won" }
-	ROOT = { country_event = { id = LOU_dunedain.8 } }
+	ROOT = { 
+		country_event = { id = LOU_dunedain.8 } 
+		if = {
+			limit = {
+				ROOT = {
+					OR = {
+						technology_group = lotr_uruk_hai    
+						is_orc = yes
+						is_goblin = yes 
+					}
+					government = native
+					NOT = {
+						has_country_flag = MigratingOrcsWonWar_FLAG
+					}
+				}
+				FROM = {
+					NOT = {
+						OR = {
+							technology_group = lotr_uruk_hai    
+							is_orc = yes
+							is_goblin = yes 
+						}
+					}
+					capital_scope = {
+						region = cardolan_region
+					}
+				}
+			}
+			set_country_flag = MigratingOrcsWonWar_FLAG
+		}
+	}
     
     events = {
         LOU_empire_of_rhun.1
