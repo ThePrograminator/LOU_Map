@@ -111,7 +111,12 @@ slot_01 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_ally_eregion_modifier
+				duration = 3650
+			}
+		}
 	}
 }
 
@@ -138,7 +143,13 @@ slot_02 = {
 		trigger = { 
 			army_size_percentage = 1.0
 		}
-		effect = { }
+		effect = {
+			add_mil_power = 50 
+			add_country_modifier = {
+				name = migrating_orcs_army_of_orcs_modifier
+				duration = 7300
+			}
+		}
 	}
 	expand_our_land = {
 		icon = mission_dunedain_5
@@ -268,7 +279,8 @@ slot_02 = {
 			
 		}
 		effect = { 
-
+			add_prestige = 25
+			add_mil_power = 100
 		}
 	}
 	unite_the_warpack = {
@@ -281,7 +293,13 @@ slot_02 = {
 				has_country_flag = formed_federation_nation_FLAG
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_country_modifier = {
+				name = migrating_orcs_unite_the_warpack_modifier
+				duration = -1
+			}
+		}
 	}
 	conquer_cardolan = {
 		icon = mission_dunedain_10
@@ -293,7 +311,13 @@ slot_02 = {
 				region = cardolan_region
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 50
+			add_country_modifier = {
+				name = migrating_orcs_conquer_cardolan_modifier
+				duration = 3650
+			}
+		}
 	}
 }
 
@@ -367,14 +391,24 @@ slot_03 = {
 				amount = 1
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_ally_dunleding_modifier
+				duration = 3650
+			}
+		}
 	}
 	secured_position = {
 		icon = mission_isengard_industry
 		position = 7
 		required_missions = { ally_fornost ally_dunleding ally_eregion }
 		trigger = { }
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_secured_position_modifier
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -412,7 +446,12 @@ slot_04 = {
 				has_reform = lotr_orc_kingdom_reform
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_warpack_modifier
+				duration = 3650
+			}
+		}
 	}
 	great_warpack = {
 		icon = mission_orc_army_2
@@ -430,7 +469,12 @@ slot_04 = {
 				has_reform = lotr_orc_kingdom_reform
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_great_warpack_modifier
+				duration = 3650
+			}
+		}
 	}
 	triumpf_through_war = {
 		icon = mission_orc_banner
@@ -442,7 +486,12 @@ slot_04 = {
 				has_country_flag = MigratingOrcsWonWar_FLAG
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_triumpf_through_war_modifier
+				duration = 7300
+			}
+		}
 	}
 	conquer_girithlin = {
 		icon = mission_early_game_buildings
@@ -535,7 +584,12 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = migrating_orcs_ally_fornost_modifier
+				duration = 3650
+			}
+		}
 	}
 }
 

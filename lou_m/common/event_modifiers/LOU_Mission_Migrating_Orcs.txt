@@ -21,5 +21,50 @@ migrating_orcs_raid_cardolan_modifier = {
 }
 
 migrating_orcs_raid_the_shire_modifier = {
-	army_tradition = 1
+	loot_amount = 0.5
+}
+
+migrating_orcs_warpack_modifier = {
+	tribal_development_growth = 0.05
+}
+
+migrating_orcs_ally_eregion_modifier = {
+	country_admin_power = 1
+}
+
+migrating_orcs_ally_dunleding_modifier = {
+	country_diplomatic_power = 1
+}
+
+migrating_orcs_ally_fornost_modifier = {
+	country_military_power = 1
+}
+
+migrating_orcs_conquer_cardolan_modifier = {
+	global_unrest = -2
+	legitimacy = 1
+}
+
+migrating_orcs_great_warpack_modifier = {
+	monthly_federation_favor_growth = 0.05
+	ae_impact = -0.2
+}
+
+migrating_orcs_triumpf_through_war_modifier = {
+	land_morale = 0.10
+	discipline = 0.05
+}
+
+migrating_orcs_unite_the_warpack_modifier = {
+	infantry_power = 0.10
+	shock_damage = 0.10
+}
+
+migrating_orcs_army_of_orcs_modifier = {
+	manpower_in_own_culture_provinces = 0.25
+}
+
+migrating_orcs_secured_position_modifier = {
+	diplomatic_upkeep = 1
+	diplomatic_reputation = 2
 }
