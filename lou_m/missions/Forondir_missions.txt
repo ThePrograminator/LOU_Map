@@ -7,17 +7,35 @@ slot_01 = {
 	}
 
 	forondir_annon_barran = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		position = 2
 		required_missions = { reinforce_the_navy }
-		trigger = { }
+		provinces_to_highlight = {
+			area = annon_baran_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			annon_baran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	dominate_the_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_home_trade_node
 		position = 3
 		required_missions = { forondir_annon_barran }
-		trigger = { }
+		trigger = { 
+			97 = { #Tharbad
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
+			}
+		}
 		effect = { }
 	}
 }
@@ -31,10 +49,16 @@ slot_02 = {
 	}
 
 	reinforce_the_navy = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_establish_high_seas_navy
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			navy_size_percentage = 1.0
+			num_of_admirals = 1
+			employed_advisor = {
+				category = DIP
+			}
+		}
 		effect = { }
 	}
 }
@@ -82,7 +106,13 @@ slot_04 = {
 		icon = mission_build_up_to_force_limit
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			army_size_percentage = 1.0
+			num_of_generals = 1
+			employed_advisor = {
+				category = MIL
+			}
+		}
 		effect = { }
 	}
 }
@@ -96,17 +126,42 @@ slot_05 = {
 	}
 
 	the_forest_awaits = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_woses_8
 		position = 2
 		required_missions = { prepare_the_army }
-		trigger = { }
+		provinces_to_highlight = {
+			area = eryn_vorn_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			eryn_vorn_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	forondir_the_drughu_accord = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_woses_7
 		position = 3
 		required_missions = { the_forest_awaits }
-		trigger = { }
+		provinces_to_highlight = {
+			area = eryn_vorn_area
+			owned_by = ROOT
+
+			NOT = {
+				unrest = 0
+			}
+		}
+		trigger = { 
+			accepted_culture = culture_beffraen
+			eryn_vorn_area = {
+				type = all
+				unrest = 0
+			}
+		}
 		effect = { }
 	}
 }
