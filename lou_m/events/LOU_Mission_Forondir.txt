@@ -49,6 +49,31 @@ country_event = { #Send Deal
 			}
 		}
 
+		Z09 = {
+			country_event = {
+				id = LOU_mission_forondir.2
+				days = 3
+			}
+		}
+		add_treasury = 200
+		Z09 = {
+			add_opinion = {
+				who = ROOT
+				modifier = forondir_girithlin_accepted_deal_relation
+			}
+		}
+		
+		tooltip = {
+			the_oyer_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = Z09
+				cede_province = Z09
+				remove_core = ROOT
+			}
+		}
+
 		hidden_effect = {
 			Z09 = {
 				set_country_flag = forondir_declined_flag
@@ -74,6 +99,19 @@ country_event = { #Send Deal
 						value = 1
 					}
 				}
+			}
+		}
+
+		Z09 = {
+			country_event = {
+				id = LOU_mission_forondir.3
+				days = 3
+			}
+		}
+		Z09 = {
+			add_opinion = {
+				who = ROOT
+				modifier = forondir_girithlin_declined_deal_relation
 			}
 		}
 
@@ -97,76 +135,38 @@ country_event = { #Deal Accepted
 		tag = Z09
 		has_country_flag = forondir_accepted_deal_flag
 	}
+	
+	option = { #
+		name = LOU_mission_forondir.2.a
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.a -" }
 
-	immediate = {
-		if = {
+		add_treasury = -200
+		the_oyer_area = {
 			limit = {
-				ai = yes
+				owned_by = Z18
 			}
-			random_list = {
-				75 = {
-					set_variable = {
-						which = ForondirDealChance
-						value = 1
-					}
-				}
-				25 = {
-					set_variable = {
-						which = ForondirDealChance
-						value = 0
-					}
-				}
-			}
+			add_core = Z09
+			cede_province = Z09
+			remove_core = Z18
 		}
+	}
+}
+
+country_event = { #Deal Declined
+	id = LOU_mission_forondir.3
+	title = LOU_mission_forondir.3.t
+	desc = LOU_mission_forondir.3.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z09
+		has_country_flag = forondir_declined_flag
 	}
 	
 	option = { #
-		name = LOU_mission_forondir.1.a
+		name = LOU_mission_forondir.3.a
 		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.a -" }
-		trigger = {
-			if = {
-				limit = {
-					ai = yes
-				}
-				check_variable = {
-					which = ForondirDealChance
-					value = 1
-				}
-			}
-		}
-
-		hidden_effect = {
-			Z09 = {
-				set_country_flag = forondir_declined_flag
-			}
-		}
-	}
-
-	option = { #
-		name = LOU_mission_forondir.1.b
-		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.b -" }
-		trigger = {
-			if = {
-				limit = {
-					ai = yes
-				}
-				check_variable = {
-					which = ForondirDealChance
-					value = 0
-				}
-				NOT = {
-					check_variable = {
-						which = ForondirDealChance
-						value = 1
-					}
-				}
-			}
-		}
-
-		hidden_effect = {
-			Z09 = {
-				set_country_flag = forondir_accepted_deal_flag
-			}
-		}
 	}
 }

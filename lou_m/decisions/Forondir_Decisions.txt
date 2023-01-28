@@ -1,6 +1,6 @@
 country_decisions = {
 	
-	forondir_decide_tactic_betray = {
+	forondir_deal_of_the_oyer = {
 		major = yes
 		potential = {
 			tag = Z09
@@ -20,14 +20,14 @@ country_decisions = {
 					value = 25
 				}
 			}
-
+			treasury = 200
 			custom_trigger_tooltip = {
-				tooltip = forondir_declined_flag_flag_tt
+				tooltip = forondir_declined_flag_tt
 				OR = {
 					NOT = { has_country_flag = forondir_declined_flag }
 					had_country_flag = {
 						flag =  forondir_declined_flag
-						days = 730
+						days = 1825
 					}
 				}
 			}
@@ -43,6 +43,7 @@ country_decisions = {
 			Z18 = {
 				country_event = {
 					id = LOU_mission_forondir.1
+					days = 3
 				}
 			}
 		}
