@@ -20,6 +20,7 @@ grain = {
 				has_terrain = glacier
 				has_terrain = coastline
 				has_climate = arctic
+				has_terrain = unique_dunedain_ruin
 			}
 		}
 		modifier = {
@@ -105,6 +106,7 @@ wine = {
 		modifier = {
 			factor = 1.25
 			has_terrain = farmlands
+			has_terrain = unique_dunedain_ruin
 		}
 	}
 }
@@ -158,6 +160,7 @@ cloth = {
 		modifier = {
 			factor = 2.0
 			development = 22
+			has_terrain = unique_dunedain_ruin
 		}
 	}
 }
@@ -332,6 +335,11 @@ naval_supplies = {
 				has_terrain = jungle
 			}
 		}
+		modifier = {
+			factor = 0
+			has_terrain = unique_grasslands_desolate
+			has_terrain = grasslands
+		}
 	}
 }
 
@@ -354,6 +362,11 @@ copper = {
 				has_terrain = mountain
 				has_terrain = highlands
 			}
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = unique_grasslands_desolate
+			has_terrain = grasslands
 		}
 	}
 }
@@ -379,6 +392,8 @@ gold = {
 				has_terrain = coastline
 				has_terrain = coastal_desert
 				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
 			}
 		}
 		modifier = {
@@ -390,6 +405,11 @@ gold = {
 		modifier = {
 			factor = 1.5
 			normal_or_historical_nations = no
+		}
+		modifier = {
+			factor = 0
+			has_terrain = unique_grasslands_desolate
+			has_terrain = grasslands
 		}
 	}
 }
@@ -419,6 +439,11 @@ iron = {
 			has_terrain = mountain
 			continent = new_world #Always in RNW
 		}
+		modifier = {
+			factor = 0.5
+			has_terrain = unique_grasslands_desolate
+			has_terrain = grasslands
+		}
 	}
 }
 
@@ -440,10 +465,13 @@ slaves = {
 		}
 		modifier = {
 			factor = 0
-			NOT = {	superregion = eriador_superregion }
-			NOT = {	superregion = rohan_superregion }
-			NOT = {	superregion = rhovanion_superregion }
-			NOT = {	superregion = gondor_superregion }
+				OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -474,11 +502,13 @@ ivory = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+				OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -515,11 +545,13 @@ tea = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+				OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -546,11 +578,13 @@ chinaware = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -582,11 +616,13 @@ spices = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+				OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -622,11 +658,13 @@ coffee = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+				OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -666,11 +704,13 @@ cotton = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+				OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -702,11 +742,13 @@ sugar = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -739,6 +781,16 @@ tobacco = {
 				has_terrain = mountain
 				has_terrain = drylands
 				has_terrain = desert
+			}
+		}
+			modifier = {
+			factor = 0
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
 			}
 		}
 	}
@@ -777,11 +829,13 @@ cocoa = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -820,6 +874,16 @@ silk = {
 				has_winter = severe_winter
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
+		}
 	}
 }
 
@@ -846,6 +910,7 @@ dyes = {
 				has_winter = mild_winter
 				has_winter = normal_winter
 				has_winter = severe_winter
+				has_terrain = unique_grasslands_desolate
 			}
 		}
 	}
@@ -861,7 +926,16 @@ tropical_wood = {
 	}
 	chance = {
 		factor = 25
-		
+	modifier = {
+			factor = 0
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
+		}
 	}
 }
 
@@ -912,11 +986,13 @@ incense = {
 		}
 		modifier = {
 			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
+			OR = {
+				superregion = eriador_superregion 
+				superregion = mordor_superregion 
+				superregion = rohan_superregion 
+				superregion = rhovanion_superregion 
+				superregion = gondor_superregion 
+			}
 		}
 	}
 }
@@ -938,6 +1014,7 @@ glass = {
 		modifier = {
 			factor = 2.0
 			development = 22
+			has_terrain = unique_dunedain_ruin
 		}
 	}
 }
@@ -959,6 +1036,7 @@ paper = {
 		modifier = {
 			factor = 2.0
 			development = 22
+			has_terrain = unique_dunedain_ruin
 		}
 	}
 }
@@ -987,6 +1065,7 @@ gems = {
 				has_terrain = coastline
 				has_terrain = coastal_desert
 				has_terrain = marsh
+				has_terrain = unique_grasslands_desolate
 			}
 		}
 		modifier = {
@@ -1046,20 +1125,45 @@ unknown = {
 marble = {
 	color = { 0.933 0.933 0.933 }
 	modifier = {
+		build_time = -0.1
+		
+	}
+	province = {
 		development_cost = -0.1
 	}
 	chance = {
-		factor = 5
+		factor = 10
+		modifier = {
+			factor = 1.5
+			has_terrain = hills
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = unique_grasslands_desolate
+			has_terrain = grasslands
+		}
 	}
 }
 
 stone = {
 	color = { 0.501 0.501 0.501 }
 	modifier = {
-		build_cost = -0.1
+		fort_maintance_modifier = -0.1
+	}
+	province = {
+		build_cost = -0.2
 	}
 	chance = {
-		factor = 5
+		factor = 15
+		modifier = {
+			factor = 1.5
+			has_terrain = hills
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = unique_grasslands_desolate
+			has_terrain = grasslands
+		}
 	}
 }
 
@@ -1068,8 +1172,15 @@ honey = {
 	modifier = {
 		heir_chance = 0.5
 	}
+	province = {
+		local_monthly_devastation = -0.1
+	}
 	chance = {
-		factor = 5
+		factor = 10
+		modifier = {
+			factor = 1.5
+			has_terrain = forest
+		}
 	}
 }
 
@@ -1078,8 +1189,15 @@ herbs = {
 	modifier = {
 		war_exhaustion = -0.1
 	}
+	province = {
+		local_manpower_modifier = 0.1
+	}
 	chance = {
-		factor = 5
+		factor = 15
+		modifier = {
+			factor = 0
+			has_terrain = forest
+		}
 	}
 }
 
@@ -1088,8 +1206,11 @@ fruit = {
 	modifier = {
 		garrison_size = 0.25
 	}
+	province = {
+		local_prosperity_growth = 0.1
+	}
 	chance = {
-		factor = 5
+		factor = 30
 	}
 }
 
@@ -1098,8 +1219,11 @@ mushrooms = {
 	modifier = {
 		trade_steering = 0.25
 	}
+	province = {
+		province_trade_power_modifier = 0.1
+	}
 	chance = {
-		factor = 5
+		factor = 20
 	}
 }
 
@@ -1108,26 +1232,28 @@ silver = {
 	modifier = {
 		inflation_reduction = 0.05
 	}
+	province = {
+		local_tax_modifier = 0.1
+	}
 	chance = {
-		factor = 5
+		factor = 0
+	modifier = {
+			factor = 0
+			has_terrain = mountain
+		}
 	}
 }
 
 mithril = {
 	color = { 0.058 0.749 0.737 }
 	modifier = {
-		discipline = 0.10
+		discipline = 0.1
+	}
+	province = {
+		regiment_recruit_speed = 0.2
 	}
 	chance = {
 		factor = 0
-		modifier = {
-			factor = 0
-			AND = {	superregion = eriador_superregion }
-			AND = {	superregion = mordor_superregion }
-			AND = {	superregion = rohan_superregion }
-			AND = {	superregion = rhovanion_superregion }
-			AND = {	superregion = gondor_superregion }
-		}
 		modifier = {
 			factor = 0
 			NOT = {	has_terrain = mountain }

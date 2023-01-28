@@ -1743,7 +1743,7 @@ baraddur_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			core_creation = -0.05
+			core_creation = -0.1
 			country_admin_power = 1
 		}
 		on_upgraded = {
@@ -1762,7 +1762,7 @@ baraddur_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			core_creation = -0.1
+			core_creation = -0.15
 			country_admin_power = 1
 			country_diplomatic_power = 1
 		}
@@ -1783,7 +1783,7 @@ baraddur_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {		
-			core_creation = -0.2
+			core_creation = -0.25
 			country_admin_power = 1
 			country_diplomatic_power = 1
 			country_military_power = 1
@@ -3071,6 +3071,9 @@ dolguldur_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+		spy_offence = 0.1
+		global_spy_defence = 0.1
+		discovered_relations_impact = -0.1
 		}
 		on_upgraded = {
 		}
@@ -3088,6 +3091,9 @@ dolguldur_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+		spy_offence = 0.2
+		global_spy_defence = 0.2
+		discovered_relations_impact = -0.2
 		}
 		on_upgraded = {
 		}
@@ -3105,6 +3111,9 @@ dolguldur_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+		spy_offence = 0.3
+		global_spy_defence = 0.3
+		discovered_relations_impact = -0.3
 		}
 		on_upgraded = {
 		}
@@ -5337,8 +5346,29 @@ barrow_downs_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			all_power_cost = -0.05
+			monarch_admin_power = 1
 		}
 		on_upgraded = {
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 	tier_2 = {
@@ -5353,8 +5383,30 @@ barrow_downs_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			all_power_cost = -0.05
+			monarch_admin_power = 1
+			monarch_diplomatic_power = 1
 		}
 		on_upgraded = {
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 	tier_3 = {
@@ -5369,8 +5421,30 @@ barrow_downs_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			all_power_cost = -0.1
+			monarch_admin_power = 2
+			monarch_diplomatic_power = 1
 		}
 		on_upgraded = {
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 }
@@ -6782,8 +6856,28 @@ high_fells_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			all_power_cost = -0.05
 		}
 		on_upgraded = {
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 	tier_2 = {
@@ -6798,8 +6892,29 @@ high_fells_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			all_power_cost = -0.05
+			monarch_military_power = 1
 		}
 		on_upgraded = {
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 	tier_3 = {
@@ -6814,8 +6929,30 @@ high_fells_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			all_power_cost = -0.1
+			monarch_admin_power = 1
+			monarch_military_power = 2
 		}
 		on_upgraded = {
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 }
