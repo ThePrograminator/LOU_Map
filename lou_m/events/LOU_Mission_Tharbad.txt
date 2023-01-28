@@ -73,14 +73,14 @@ country_event = { #Barge Lord Ally One
 	
 	option = { #
 		name = LOU_mission_tharbad.1.a
-		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_tharbad.4.a - [Root.tharbadModifierOne.GetName] [Root.tharbadModifierOne.GetValue]" }
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_tharbad.4.a - tharbadEffectOne: [Root.tharbadEffectOne.GetName] , tharbadModifierOne: [Root.tharbadModifierOne.GetValue]" }
 		set_random_tharbad_city_modifier_effect = { VAR_NAME = tharbadModifierOne}
 		set_country_flag = tharbad_decide_tactic_ally_1_flag
 	}
 
 	option = { #
 		name = LOU_mission_tharbad.1.b
-		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_tharbad.4.a - [Root.tharbadModifierTwo.GetName] [Root.tharbadModifierTwo.GetValue]" }
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_tharbad.4.a - tharbadEffectOne: [Root.tharbadEffectOne.GetValue] , tharbadModifierOne: [Root.tharbadModifierTwo.GetValue]" }
 		set_random_tharbad_city_effect_effect = { VAR_NAME = tharbadEffectOne }
 		set_country_flag = tharbad_decide_tactic_ally_1_flag
 	}

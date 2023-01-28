@@ -1,0 +1,54 @@
+country_decisions = {
+	
+	forondir_decide_tactic_betray = {
+		major = yes
+		potential = {
+			tag = Z09
+			mission_completed = rebuild_alliances
+			alliance_with = Z18
+
+			NOT = { has_country_flag = forondir_accepted_deal_flag }
+			NOT = { mission_completed = the_deal_for_the_oyer }
+		}
+		
+		allow = {
+			mission_completed = rebuild_alliances
+			alliance_with = Z18
+			Z18 = {
+				owes_favors = {
+					who = ROOT
+					value = 25
+				}
+			}
+
+			custom_trigger_tooltip = {
+				tooltip = forondir_declined_flag_flag_tt
+				OR = {
+					NOT = { has_country_flag = forondir_declined_flag }
+					had_country_flag = {
+						flag =  forondir_declined_flag
+						days = 730
+					}
+				}
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = forondir_accepted_deal_flag }
+			}
+		}
+		
+		effect = {	
+			hidden_effect = {
+				clr_country_flag = forondir_declined_flag
+			}
+			Z18 = {
+				country_event = {
+					id = LOU_mission_forondir.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

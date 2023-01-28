@@ -219,7 +219,15 @@ set_random_tharbad_city_effect_effect = {
 			check_variable = { which = $VAR_NAME$ value = 14 }
 			NOT = { check_variable = { which = $VAR_NAME$ value = 15 } }
 		}
-		kill_advisor = random
+		if = {
+			limit = {
+				has_advisor = yes
+			}
+			kill_advisor = random
+		}
+		else = {
+			add_sailors = -2000
+		}
 	}
 	else_if = {
 		limit = { 
@@ -232,8 +240,20 @@ set_random_tharbad_city_effect_effect = {
 		limit = { 
 			check_variable = { which = $VAR_NAME$ value = 16 }
 		}
-		kill_leader = {
-			type = random
+		if = {
+			limit = {
+				OR = {
+					num_of_generals = 1
+					num_of_admirals = 1
+				}
+				
+			}
+			kill_leader = {
+				type = random
+			}
+		}
+		else = {
+			add_mil_power = -200
 		}
 	}
 }

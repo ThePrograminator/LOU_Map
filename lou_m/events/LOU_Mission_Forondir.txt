@@ -1,0 +1,172 @@
+namespace = LOU_mission_forondir
+
+country_event = { #Send Deal
+	id = LOU_mission_forondir.1
+	title = LOU_mission_forondir.1.t
+	desc = LOU_mission_forondir.1.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z18
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				ai = yes
+			}
+			random_list = {
+				75 = {
+					set_variable = {
+						which = ForondirDealChance
+						value = 1
+					}
+				}
+				25 = {
+					set_variable = {
+						which = ForondirDealChance
+						value = 0
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #
+		name = LOU_mission_forondir.1.a
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.a -" }
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				check_variable = {
+					which = ForondirDealChance
+					value = 1
+				}
+			}
+		}
+
+		hidden_effect = {
+			Z09 = {
+				set_country_flag = forondir_declined_flag
+			}
+		}
+	}
+
+	option = { #
+		name = LOU_mission_forondir.1.b
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.b -" }
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				check_variable = {
+					which = ForondirDealChance
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = ForondirDealChance
+						value = 1
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			Z09 = {
+				set_country_flag = forondir_accepted_deal_flag
+			}
+		}
+	}
+}
+
+country_event = { #Deal Accepted
+	id = LOU_mission_forondir.2
+	title = LOU_mission_forondir.2.t
+	desc = LOU_mission_forondir.2.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Z09
+		has_country_flag = forondir_accepted_deal_flag
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				ai = yes
+			}
+			random_list = {
+				75 = {
+					set_variable = {
+						which = ForondirDealChance
+						value = 1
+					}
+				}
+				25 = {
+					set_variable = {
+						which = ForondirDealChance
+						value = 0
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #
+		name = LOU_mission_forondir.1.a
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.a -" }
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				check_variable = {
+					which = ForondirDealChance
+					value = 1
+				}
+			}
+		}
+
+		hidden_effect = {
+			Z09 = {
+				set_country_flag = forondir_declined_flag
+			}
+		}
+	}
+
+	option = { #
+		name = LOU_mission_forondir.1.b
+		if = { limit = { has_global_flag = enable_event_logging } log = "LOU_mission_forondir.1.b -" }
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				check_variable = {
+					which = ForondirDealChance
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = ForondirDealChance
+						value = 1
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			Z09 = {
+				set_country_flag = forondir_accepted_deal_flag
+			}
+		}
+	}
+}
