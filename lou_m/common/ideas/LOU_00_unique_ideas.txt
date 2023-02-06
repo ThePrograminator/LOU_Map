@@ -925,42 +925,42 @@ tharbad_ideas = {
 #------------------------------------
 # Forondir
 #------------------------------------
-#forondir_ideas = {
-#	start = {
-#		center_of_trade_upgrade_cost = -0.25
-#		improve_relation_modifier = 0.2
-#	}
-#
-#	bonus = {
-#		all_power_cost = -0.1
-#	}
-#	
-#	trigger = {
-#		tag = Z21
-#	}
-#	free = yes		
-#	
-#	exploiting_the_river = {
-#		development_cost = -0.1
-#	}
-#	quick_transports = {
-#		movement_speed = 0.10
-#		movement_speed_onto_off_boat_modifier = 0.5
-#	}
-#	claim_to_trade = {
-#		ae_impact = -0.2
-#	}
-#	from_west_to_east = {
-#		merchants = 1
-#	}
-#	bridge_of_tharbad_guardsmen = {
-#		land_morale = 0.10
-#	}
-#	patrolling_the_river = {
-#		ship_power_propagation = 0.25
-#	}
-#	production_by_the_docks = {
-#		production_efficiency = 0.1
-#		global_trade_goods_size_modifier = 0.1
-#	}
-#}
+forondir_ideas = {
+	start = {
+		center_of_trade_upgrade_cost = -0.25
+		improve_relation_modifier = 0.2
+	}
+
+	bonus = {
+		all_estate_loyalty_equilibrium = 0.15
+	}
+	
+	trigger = {
+		tag = Z09
+	}
+	free = yes		
+	
+	traders_guild_idea = {
+		merchants = 1
+	}
+	renowned_calvary = {
+		cavalry_power = 0.10
+		cavalry_flanking = 0.10
+	}
+	trade_secures_stability = {
+		stability_cost_modifier = -0.25
+	}
+	effiencient_law_makers = {
+		free_policy = 1
+	}
+	well_protected_ships = {
+		light_ship_power = 0.20
+	}
+	stable_bank = {
+		interest = -0.5
+	}
+	acceptance_of_rulership = {
+		vassal_forcelimit_bonus = 0.30	
+		vassal_income = 0.30
+	}
+}

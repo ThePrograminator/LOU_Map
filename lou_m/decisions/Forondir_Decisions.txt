@@ -4,9 +4,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = Z09
-			mission_completed = rebuild_alliances
-			alliance_with = Z18
+			#mission_completed = rebuild_alliances
+			#alliance_with = Z18
 
+			NOT = { has_country_flag = forondir_clicked_decision_flag }
 			NOT = { has_country_flag = forondir_accepted_deal_flag }
 			NOT = { mission_completed = the_deal_for_the_oyer }
 		}
@@ -39,6 +40,7 @@ country_decisions = {
 		effect = {	
 			hidden_effect = {
 				clr_country_flag = forondir_declined_flag
+				set_country_flag = forondir_clicked_decision_flag
 			}
 			Z18 = {
 				country_event = {

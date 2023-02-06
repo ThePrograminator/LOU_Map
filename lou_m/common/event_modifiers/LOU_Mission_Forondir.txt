@@ -1,0 +1,41 @@
+########################
+#Event Modifier
+#########################
+
+########################
+#Mission Effect Modifier
+#########################
+
+forondir_the_drughu_accord_modifier = {
+	local_build_cost = -0.1
+	local_production_efficiency = 0.15
+}
+
+forondir_dominate_the_trade_modifier = {
+	trade_efficiency = 0.15
+}
+
+forondir_annon_barran_modifier = {
+	local_core_creation = -0.25
+	local_development_cost = -0.1
+}
+
+reinforce_the_navy_modifier = {
+	naval_maintenance_modifier = -0.15
+	navy_tradition = 1
+}
+
+reinforce_prepare_the_army_modifier = {
+	land_maintenance_modifier = -0.15
+	army_tradition = 1
+}
+
+rebuild_alliances_modifier = {
+	diplomatic_reputation = 2
+	monthly_favor_modifier = 0.1
+}
+
+the_forest_awaits_modifier = {
+	global_ship_cost = -0.2
+	global_trade_goods_size_modifier = 0.1
+}

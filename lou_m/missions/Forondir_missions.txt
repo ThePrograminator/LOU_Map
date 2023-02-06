@@ -22,7 +22,15 @@ slot_01_forondir = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 15
+			annon_baran_area = {
+				add_province_modifier = {
+					name = forondir_annon_barran_modifier
+					duration = 3650
+				}
+			}
+		}
 	}
 	dominate_the_trade = {
 		icon = mission_dominate_home_trade_node
@@ -36,7 +44,37 @@ slot_01_forondir = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			if = {
+				limit = {
+					1805 = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				1805 = {
+					change_trade_goods = cloth
+				}
+			}
+			
+			if = {
+				limit = {
+					97 = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				97 = {
+					change_trade_goods = cloth
+					add_center_of_trade_level = 1
+				}
+			}
+
+			add_country_modifier = {
+				name = forondir_dominate_the_trade_modifier
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -59,7 +97,13 @@ slot_02_forondir = {
 				category = DIP
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 50
+			add_country_modifier = {
+				name = reinforce_the_navy_modifier
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -84,7 +128,12 @@ slot_03_forondir = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = rebuild_alliances_modifier
+				duration = 7300
+			}
+		}
 	}
 	the_deal_for_the_oyer = {
 		icon = mission_noble_council
@@ -113,7 +162,17 @@ slot_03_forondir = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			linnuis_area = {
+				add_permanent_claim = ROOT
+			}
+			saralainn_area = {
+				add_permanent_claim = ROOT
+			}
+			Ilfin_area = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	forondir_ascendant = {
 		icon = mission_dunedain_10
@@ -121,12 +180,16 @@ slot_03_forondir = {
 		required_missions = { dominate_the_trade forondir_the_drughu_accord the_deal_for_the_oyer }
 		trigger = { 
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 25
 				region = cardolan_region
 				is_core = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			country_event = {
+				id = LOU_mission_east_cardolan.1
+			}
+		}
 	}
 }
 
@@ -149,7 +212,13 @@ slot_04_forondir = {
 				category = MIL
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 50
+			add_country_modifier = {
+				name = reinforce_prepare_the_army_modifier
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -177,7 +246,13 @@ slot_05_forondir = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_prestige = 15
+			add_country_modifier = {
+				name = the_forest_awaits_modifier
+				duration = -1
+			}
+		}
 	}
 	forondir_the_drughu_accord = {
 		icon = mission_woses_7
@@ -198,7 +273,15 @@ slot_05_forondir = {
 				unrest = 0
 			}
 		}
-		effect = { }
+		effect = { 
+			add_dip_power = 50
+			eryn_vorn_area = {
+				add_province_modifier = {
+					name = forondir_the_drughu_accord_modifier
+					duration = 7300
+				}
+			}
+		}
 	}
 }
 

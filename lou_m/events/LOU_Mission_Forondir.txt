@@ -18,17 +18,11 @@ country_event = { #Send Deal
 				ai = yes
 			}
 			random_list = {
-				75 = {
-					set_variable = {
-						which = ForondirDealChance
-						value = 1
-					}
+				90 = {
+					set_country_flag = girithlin_accept_oyer_deal
 				}
-				25 = {
-					set_variable = {
-						which = ForondirDealChance
-						value = 0
-					}
+				10 = {
+					set_country_flag = girithlin_decline_oyer_deal
 				}
 			}
 		}
@@ -42,10 +36,13 @@ country_event = { #Send Deal
 				limit = {
 					ai = yes
 				}
-				check_variable = {
-					which = ForondirDealChance
-					value = 1
-				}
+				has_country_flag = girithlin_accept_oyer_deal
+			}
+		}
+
+		hidden_effect = {
+			Z09 = {
+				set_country_flag = forondir_accepted_deal_flag
 			}
 		}
 
@@ -73,12 +70,6 @@ country_event = { #Send Deal
 				remove_core = ROOT
 			}
 		}
-
-		hidden_effect = {
-			Z09 = {
-				set_country_flag = forondir_declined_flag
-			}
-		}
 	}
 
 	option = { #
@@ -89,16 +80,14 @@ country_event = { #Send Deal
 				limit = {
 					ai = yes
 				}
-				check_variable = {
-					which = ForondirDealChance
-					value = 0
-				}
-				NOT = {
-					check_variable = {
-						which = ForondirDealChance
-						value = 1
-					}
-				}
+				has_country_flag = girithlin_decline_oyer_deal
+			}
+		}
+
+		hidden_effect = {
+			Z09 = {
+				set_country_flag = forondir_declined_flag
+				clr_country_flag = forondir_clicked_decision_flag
 			}
 		}
 
@@ -107,17 +96,12 @@ country_event = { #Send Deal
 				id = LOU_mission_forondir.3
 				days = 3
 			}
+			
 		}
 		Z09 = {
 			add_opinion = {
 				who = ROOT
 				modifier = forondir_girithlin_declined_deal_relation
-			}
-		}
-
-		hidden_effect = {
-			Z09 = {
-				set_country_flag = forondir_accepted_deal_flag
 			}
 		}
 	}
