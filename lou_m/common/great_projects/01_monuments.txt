@@ -4741,7 +4741,7 @@ goblintown_monument = {
 		manpower = 5
 		}
 		area_modifier = {
-		trade_goods_size_modifier = 0.25
+		trade_goods_size = 0.25
 		}
 		country_modifiers = {
 		}
@@ -4760,7 +4760,7 @@ goblintown_monument = {
 		manpower = 10
 		}
 		area_modifier = {
-		trade_goods_size_modifier = 0.5
+		trade_goods_size = 0.5
 		}
 		country_modifiers = {
 		}
@@ -4780,7 +4780,7 @@ goblintown_monument = {
 		manpower = 15
 		}
 		area_modifier = {
-		trade_goods_size_modifier = 0.75
+		trade_goods_size = 0.75
 		}
 		country_modifiers = {
 		}
@@ -4799,7 +4799,7 @@ goblintown_monument = {
 		manpower = 20
 		}
 		area_modifier = {
-		trade_goods_size_modifier = 1
+		trade_goods_size = 1
 		}
 		country_modifiers = {
 		}
@@ -6859,23 +6859,27 @@ high_fells_monument = {
 			all_power_cost = -0.05
 		}
 		on_upgraded = {
-			set_variable = { which = count value = 3 }
-				while = {
-				limit = {
-				check_variable = { which = count value = 1 }
-				}
-				subtract_variable = { which = count value = 1 }
-				random_province = {
+			custom_tooltip = {When upgraded up to three Tombs or Dunedain ruins within the Eriador Continent will suffer an outbreak of the Great Plague, turning it to Wights.}
+			hidden_effect = {
+				set_variable = { which = count value = 3 }
+					while = {
 					limit = {
-						OR = {
-							has_terrain = unique_tomb
-							has_terrain = unique_dunedain_ruin
-						}
-						superregion = eriador_superregion
-						NOT = { culture = culture_wight }
-						}
+					check_variable = { which = count value = 1 }
+					}
+					subtract_variable = { which = count value = 1 }
+					random_province = {
+						limit = {
+							OR = {
+								has_terrain = unique_tomb
+								has_terrain = unique_dunedain_ruin
+							}
+							superregion = eriador_superregion
+							NOT = { culture = culture_wight }
+							}
 					change_culture = culture_wight
 					change_religion = religion_wight
+					}
+					}
 				}
 			}
 		}
