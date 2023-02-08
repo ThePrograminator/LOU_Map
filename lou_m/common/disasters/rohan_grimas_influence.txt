@@ -4,7 +4,6 @@ rohan_grimas_influence = {
 		exists = V49
 		NOT = { has_country_flag = disaster_rohan_grimas_influence }
 		NOT = { has_country_flag = had_disaster_rohan_grimas_influence }
-		#is_year = 3010
 		check_date = {
 			YEAR = 3010
 			MONTH = 0
@@ -14,15 +13,10 @@ rohan_grimas_influence = {
 	
 	can_start = {
 		always = yes
-		#has_any_disaster = no
-		#is_year = 3010  
-		##average_home_autonomy = 30
-		#NOT = { legitimacy_or_horde_unity = 75 }
 	}
 	
 	
 	can_stop = {
-		#NOT = { prestige = 100 }
 		always = no
 	}
 	
@@ -70,10 +64,17 @@ rohan_grimas_influence = {
 	can_end = {
 		OR = {
 			AND = {
-				has_country_flag = disaster_rohan_force_removal_of_grima
+				#Force
+				custom_trigger_tooltip = {
+					tooltip = DISASTER_ROHAN_GRIMAS_INFLUENCE_FORCE
+					has_country_flag = disaster_rohan_force_removal_of_grima
+				}
+				
 				NOT = { num_of_rebel_controlled_provinces = 1 }
-				NOT = {
-					has_country_flag = disaster_rohan_force_removal_of_grima_lost
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = disaster_rohan_force_removal_of_grima_lost
+					}
 				}
 			}
 			AND = {
@@ -102,18 +103,18 @@ rohan_grimas_influence = {
 	}	
 	
 	
-	on_start = disaster_rohan_grimas_influence.1
-	on_end = disaster_rohan_grimas_influence.2
+	on_start = disaster_event_rohan_grimas_influence.1
+	on_end = disaster_event_rohan_grimas_influence.2
 	
 	on_monthly = {
 		events = {
 		}
 		random_events = { 
 			1000 = 0
-			75 = disaster_rohan_grimas_influence.4
-			75 = disaster_rohan_grimas_influence.5
-			75 = disaster_rohan_grimas_influence.6
-			75 = disaster_rohan_grimas_influence.7
+			100 = disaster_event_rohan_grimas_influence.4
+			100 = disaster_event_rohan_grimas_influence.5
+			100 = disaster_event_rohan_grimas_influence.6
+			100 = disaster_event_rohan_grimas_influence.7
 		}
 	}
 }

@@ -1,10 +1,10 @@
-namespace = disaster_rohan_grimas_influence
+namespace = disaster_event_rohan_grimas_influence
 
 # Grima Acts as regency
 country_event = {
-	id = disaster_rohan_grimas_influence.1
-	title = disaster_rohan_grimas_influence.1.t
-	desc = disaster_rohan_grimas_influence.1.d
+	id = disaster_event_rohan_grimas_influence.1
+	title = disaster_event_rohan_grimas_influence.1.t
+	desc = disaster_event_rohan_grimas_influence.1.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	major = yes
@@ -31,18 +31,17 @@ country_event = {
 	
 	
 	option = {
-		name = disaster_rohan_grimas_influence.1.a		# Crush them!
+		name = disaster_event_rohan_grimas_influence.1.a		# Crush them!
 		add_prestige = -30
 	}
 }
 
 # End of Grima
 country_event = {
-	id = disaster_rohan_grimas_influence.2
-	title = disaster_rohan_grimas_influence.2.t
-	desc = disaster_rohan_grimas_influence.2.d
+	id = disaster_event_rohan_grimas_influence.2
+	title = disaster_event_rohan_grimas_influence.2.t
+	desc = disaster_event_rohan_grimas_influence.2.d
 	picture = COURT_eventPicture
-	
 	
 	is_triggered_only = yes
 	
@@ -55,7 +54,7 @@ country_event = {
 	}
 	
 	option = {
-		name = disaster_rohan_grimas_influence.2.a
+		name = disaster_event_rohan_grimas_influence.2.a
 		clr_country_flag = civilwar_on_capital
 		add_legitimacy = 10
 		add_horde_unity = 10
@@ -73,9 +72,9 @@ country_event = {
 
 #Fight Grima
 country_event = {
-	id = disaster_rohan_grimas_influence.3
-	title = disaster_rohan_grimas_influence.3.t
-	desc = disaster_rohan_grimas_influence.3.d
+	id = disaster_event_rohan_grimas_influence.3
+	title = disaster_event_rohan_grimas_influence.3.t
+	desc = disaster_event_rohan_grimas_influence.3.d
 	picture = CIVIL_WAR_eventPicture
 	
 	major = yes
@@ -133,26 +132,36 @@ country_event = {
 	
 	
 	option = {
-		name = disaster_rohan_grimas_influence.3.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.3.a			# Crush them!
 	}
 }
 
 #Raiding
 country_event = {
-	id = disaster_rohan_grimas_influence.4
-	title = disaster_rohan_grimas_influence.4.t
-	desc = disaster_rohan_grimas_influence.4.d
+	id = disaster_event_rohan_grimas_influence.4
+	title = disaster_event_rohan_grimas_influence.4.t
+	desc = disaster_event_rohan_grimas_influence.4.d
 	picture = BORDER_TENSION_eventPicture
 	
 	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-		days = 1
+
+	trigger = {
+		NOT = {
+			has_country_flag = disaster_event_rohan_grimas_influence_raid_flag
+		}
 	}
 	
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	immediate = {
+		#clr_country_flag = disaster_event_rohan_grimas_influence_raid_flag
+		set_country_flag = disaster_event_rohan_grimas_influence_raid_flag
+	}
 	
 	option = {
-		name = disaster_rohan_grimas_influence.3.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.3.a			# Crush them!
 		random_owned_province = {
 			limit = {
 				is_core = ROOT 
@@ -175,9 +184,9 @@ country_event = {
 
 #Men Disbanded
 country_event = {
-	id = disaster_rohan_grimas_influence.5
-	title = disaster_rohan_grimas_influence.5.t
-	desc = disaster_rohan_grimas_influence.5.d
+	id = disaster_event_rohan_grimas_influence.5
+	title = disaster_event_rohan_grimas_influence.5.t
+	desc = disaster_event_rohan_grimas_influence.5.d
 	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
@@ -187,10 +196,13 @@ country_event = {
 		any_core_province = { 
 			units_in_province = 2
 		}
+		NOT = {
+			has_country_flag = disaster_event_rohan_grimas_influence_men_disband_flag
+		}
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 1825
 	}
 
 	immediate = {
@@ -203,11 +215,12 @@ country_event = {
 				amount = 2
 			}
 		}
+		#clr_country_flag = disaster_event_rohan_grimas_influence_men_disband_flag
+		set_country_flag = disaster_event_rohan_grimas_influence_men_disband_flag
 	}
 	
-	
 	option = {
-		name = disaster_rohan_grimas_influence.5.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.5.a			# Crush them!
 		add_prestige = -10
 		
 	}
@@ -215,55 +228,69 @@ country_event = {
 
 #Money gone
 country_event = {
-	id = disaster_rohan_grimas_influence.6
-	title = disaster_rohan_grimas_influence.6.t
-	desc = disaster_rohan_grimas_influence.6.d
+	id = disaster_event_rohan_grimas_influence.6
+	title = disaster_event_rohan_grimas_influence.6.t
+	desc = disaster_event_rohan_grimas_influence.6.d
 	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = disaster_event_rohan_grimas_influence_money_gone_flag
+		}
+	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 1825
 	}
 
 	immediate = {
-
+		#clr_country_flag = disaster_event_rohan_grimas_influence_money_gone_flag
+		set_country_flag = disaster_event_rohan_grimas_influence_money_gone_flag
 	}
 	
 	option = {
-		name = disaster_rohan_grimas_influence.6.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.6.a			# Crush them!
 		add_treasury = -100
 	}
 }
 
 #Army Reserves removed gone
 country_event = {
-	id = disaster_rohan_grimas_influence.7
-	title = disaster_rohan_grimas_influence.7.t
-	desc = disaster_rohan_grimas_influence.7.d
+	id = disaster_event_rohan_grimas_influence.7
+	title = disaster_event_rohan_grimas_influence.7.t
+	desc = disaster_event_rohan_grimas_influence.7.d
 	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = disaster_event_rohan_grimas_influence_army_reserves_flag
+		}
+	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 1825
 	}
 
 	immediate = {
-
+		#clr_country_flag = disaster_event_rohan_grimas_influence_army_reserves_flag
+		set_country_flag = disaster_event_rohan_grimas_influence_army_reserves_flag
 	}
 	
 	option = {
-		name = disaster_rohan_grimas_influence.7.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.7.a			# Crush them!
 		add_manpower = -1
 	}
 }
 
 #Gandalf
 country_event = {
-	id = disaster_rohan_grimas_influence.100
-	title = disaster_rohan_grimas_influence.100.t
-	desc = disaster_rohan_grimas_influence.100.d
+	id = disaster_event_rohan_grimas_influence.100
+	title = disaster_event_rohan_grimas_influence.100.t
+	desc = disaster_event_rohan_grimas_influence.100.d
 	picture = gandalf_events
 	fire_only_once = yes
 
@@ -281,16 +308,16 @@ country_event = {
 	}
 	
 	option = {
-		name = disaster_rohan_grimas_influence.100.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.100.a			# Crush them!
 		set_country_flag = disaster_rohan_grimas_influence_gandalf
 	}
 }
 
 #Test
 country_event = {
-	id = disaster_rohan_grimas_influence.101
-	title = disaster_rohan_grimas_influence.101.t
-	desc = disaster_rohan_grimas_influence.101.d
+	id = disaster_event_rohan_grimas_influence.101
+	title = disaster_event_rohan_grimas_influence.101.t
+	desc = disaster_event_rohan_grimas_influence.101.d
 	picture = gandalf_events
 	is_triggered_only = yes
 
@@ -318,7 +345,7 @@ country_event = {
 	}
 	
 	option = {
-		name = disaster_rohan_grimas_influence.101.a			# Crush them!
+		name = disaster_event_rohan_grimas_influence.101.a			# Crush them!
 		
 	}
 }

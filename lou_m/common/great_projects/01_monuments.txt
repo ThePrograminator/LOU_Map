@@ -5350,25 +5350,7 @@ barrow_downs_monument = {
 			monarch_admin_power = 1
 		}
 		on_upgraded = {
-			set_variable = { which = count value = 3 }
-				while = {
-				limit = {
-				check_variable = { which = count value = 1 }
-				}
-				subtract_variable = { which = count value = 1 }
-				random_province = {
-					limit = {
-						OR = {
-							has_terrain = unique_tomb
-							has_terrain = unique_dunedain_ruin
-						}
-						superregion = eriador_superregion
-						NOT = { culture = culture_wight }
-						}
-					change_culture = culture_wight
-					change_religion = religion_wight
-				}
-			}
+			set_barrow_downs_effect = yes
 		}
 	}
 	tier_2 = {
@@ -5388,25 +5370,7 @@ barrow_downs_monument = {
 			monarch_diplomatic_power = 1
 		}
 		on_upgraded = {
-			set_variable = { which = count value = 3 }
-				while = {
-				limit = {
-				check_variable = { which = count value = 1 }
-				}
-				subtract_variable = { which = count value = 1 }
-				random_province = {
-					limit = {
-						OR = {
-							has_terrain = unique_tomb
-							has_terrain = unique_dunedain_ruin
-						}
-						superregion = eriador_superregion
-						NOT = { culture = culture_wight }
-						}
-					change_culture = culture_wight
-					change_religion = religion_wight
-				}
-			}
+			set_barrow_downs_effect = yes
 		}
 	}
 	tier_3 = {
@@ -5426,25 +5390,7 @@ barrow_downs_monument = {
 			monarch_diplomatic_power = 1
 		}
 		on_upgraded = {
-			set_variable = { which = count value = 3 }
-				while = {
-				limit = {
-				check_variable = { which = count value = 1 }
-				}
-				subtract_variable = { which = count value = 1 }
-				random_province = {
-					limit = {
-						OR = {
-							has_terrain = unique_tomb
-							has_terrain = unique_dunedain_ruin
-						}
-						superregion = eriador_superregion
-						NOT = { culture = culture_wight }
-						}
-					change_culture = culture_wight
-					change_religion = religion_wight
-				}
-			}
+			set_barrow_downs_effect = yes
 		}
 	}
 }

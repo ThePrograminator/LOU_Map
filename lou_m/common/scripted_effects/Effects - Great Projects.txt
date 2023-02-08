@@ -1,0 +1,25 @@
+set_barrow_downs_effect = {
+	custom_tooltip = barrow_downs_monument_tt
+	hidden_effect = {
+		set_variable = { which = count value = 3 }
+		while = {
+			limit = {
+				check_variable = { which = count value = 1 }
+			}
+
+			subtract_variable = { which = count value = 1 }
+			random_province = {
+				limit = {
+					OR = {
+						has_terrain = unique_tomb
+						has_terrain = unique_dunedain_ruin
+					}
+					superregion = eriador_superregion
+					NOT = { culture = culture_wight }
+				}
+				change_culture = culture_wight
+				change_religion = religion_wight
+			}
+		}
+	}
+}
