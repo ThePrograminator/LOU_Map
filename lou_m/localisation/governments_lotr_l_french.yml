@@ -1,5 +1,5 @@
 ﻿l_french:
-#---------------------------------------------
+ #---------------------------------------------
  # Government Names
  #---------------------------------------------
  orc_gov: "Orc Government"
@@ -14,7 +14,7 @@
  melkor_gov: "Melkor Government"
  melkor_gov_desc: ""
  
- eru_gov: "Eru's Children Government"
+ eru_gov: "Eru’s Children Government"
  eru_gov_desc: ""
  
  #---------------------------------------------
@@ -24,7 +24,7 @@
  dwarf_gov_name: "Dwarf Government"
  elf_gov_name: "Elf Government"
  melkor_gov_name: "Melkor Government"
- eru_gov_name: "Eru's Children Government"
+ eru_gov_name: "Eru’s Children Government"
  
  #---------------------------------------------
  # Ranks
@@ -143,6 +143,7 @@
  TARB: "Tarb"
  AUTARB: "Autarb"
  NHAZADH: "Nhazadh"
+ GENERAL: "General"
  
  WARLORD: "Warlord"
  
@@ -221,7 +222,10 @@
  lotr_stewardship_legacy: "Stewardship"
  lotr_stewardship_legacy_desc: "A realm governed by a steward."
 
- 
+ rohan_kingship_reform: "Kingdom of Rohan"
+ rohan_kingship_reform_desc: "A realm governed by a King."
+ rohan_kingship_reform_legacy: "Kingdom of Rohan"
+ rohan_kingship_reform_legacy_desc: "A realm governed by a King."
  
  principality_reform: "Principality"
  principality_reform_desc: "A realm governed by a Prince or Princess."
@@ -353,6 +357,15 @@
  
  trading_city_reform: "Trading City"
  trading_city_reform_desc: "A tradiing city belonging to a maritime republic."
+
+ faerdor_peasants_republic_reform: "Federation of Cantons"
+ faerdor_peasants_republic_reform_desc: "The Federation of Cantons consisted of 17 villages. Each village governed its own affairs, electing officials and a council to govern mundane matters. A General was in charge of the united military and foreign affairs."
+
+ tharbad_barge_lords_reform: "Barge Lords Oligarchy"
+ tharbad_barge_lords_reform_desc: ""
+
+ tharbad_reform: "Republic of Tharbad"
+ tharbad_reform_desc: ""
  
  # Republican Virtues
  mixed_republic_reform: "Mixed Republic"
@@ -415,6 +428,16 @@
  lotr_clan_legacy: "Clan"
  lotr_clan_legacy_desc: "A realm ruled as a Chiefdom."
 
+ tribal_dunedain_arnor: "Dunedain of Arnor Tribe"
+ tribal_dunedain_arnor_desc: "A realm ruled as a Chiefdom."
+ tribal_dunedain_arnor_legacy: "Dunedain of Arnor Tribe"
+ tribal_dunedain_arnor_legacy_desc: "A realm ruled as a Chiefdom."
+
+ tribal_leader_of_the_dunedain_arnor: "Leader of The Dunedain of Arnor"
+ tribal_leader_of_the_dunedain_arnor_desc: "A realm ruled as a Chiefdom."
+ tribal_leader_of_the_dunedain_arnor_legacy: "Leader of The Dunedain of Arnor"
+ tribal_leader_of_the_dunedain_arnor_legacy_desc: "A realm ruled as a Chiefdom."
+
  tribal_rivermen: "Tribal Rivernmen"
  tribal_rivermen_desc: "A realm ruled as a Chiefdom."
  tribal_rivermen_legacy: "Tribal Rivernmen"
@@ -476,6 +499,9 @@
  #---------------------------------------------
  # Government Form (Orc)
  #---------------------------------------------
+ lotr_orc_migrating_clan_reform: "Migrating Orc Clan"
+ lotr_orc_migrating_clan_reform_desc: "A realm of orcs ruled as a chiefdom."
+
  lotr_orc_clan_reform: "Orc Clan"
  lotr_orc_clan_reform_desc: "A realm of orcs ruled as a chiefdom."
  lotr_orc_clan_legacy: "Orc Clan"

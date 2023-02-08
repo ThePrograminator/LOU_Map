@@ -5,7 +5,21 @@
  dummy.1.t: ""
  dummy.1.d: ""
  dummy.1.a: ""
- 
+
+ #----------------------------------
+ # Colonization
+ #----------------------------------
+ lou_colonization.1.t: "The Possibilities of Cardolan"
+ lou_colonization.1.d: "The region of Cardolan is within our reach. Most of the region is empty, however we should do what we can to seize these lands before others do so."
+ lou_colonization.1.a: "Great!"
+
+ lou_colonization.2.t: "Cardolan Out of Reach"
+ lou_colonization.2.d: "The region of Cardolan is no longer within our reach. Therefore, we must abandon any thought of seizing the empty lands it holds."
+ lou_colonization.2.a: "Damm!"
+
+ the_cardolan_posibilities: "The Cardolan Possibilities"
+ desc_the_cardolan_posibilities: "The region of Cardolan is within our reach. Most of the region is empty, however we should do what we can to seize these lands before others do so."
+
  #----------------------------------
  # Story
  #----------------------------------
@@ -124,6 +138,10 @@
  LOU_wights.2.d: "The Barrow-wights were shape-shifting beings of darkness, similar in circumstance to Wraiths, who dwelt in dark places of Eriador such as the Barrow-downs.\n\nWe have finally expelled them from the land."
  LOU_wights.2.a: "Finally we can start working the lands"
  
+ LOU_wights.4.t: "The Barrow Downs"
+ LOU_wights.4.d: "The Crypts of the Barrow Downs and magic surrounding it has grown. Wights trapped inside crypts around Eriador wake up from their sleep."
+ LOU_wights.4.a: "Terrorize the land!"
+ 
  #-----------------------------------------
  # Trolls
  #-----------------------------------------
@@ -175,7 +193,7 @@
  LOU_isengard.1.d: "Saruman the white has Occupied Isengard, you get to choose to switch to Isengard or continue playing your country."
  LOU_isengard.1.a: "i am ai"
  LOU_isengard.1.b: "Change to Isengard"
- LOU_isengard.1.b: "Keep Playing $COUNTRY$"
+ LOU_isengard.1.c: "Keep Playing $COUNTRY$"
 
  LOU_isengard.2.t: "The Treason of Isengard"
  LOU_isengard.2.d: "The time is now to decide which side of middle-earth we stand."
