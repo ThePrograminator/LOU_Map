@@ -151,12 +151,12 @@ religion_group_human = {
 		
 		has_patriarchs = yes		# Uses patriarch authority
 	
-		dunedain_icons = {
-			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
+		orthodox_icons = {
+			#	has to be Orthodox, doesn't work otherwise 
+			#	If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			icon_isildur = {
 				discipline = 0.05
-				prestige_decay = -0.1
 				diplomatic_reputation = -2
 				
 				allow = {
@@ -177,7 +177,6 @@ religion_group_human = {
 
 			icon_earnur = {
 				global_unrest = -3
-				army_tradition_decay = -0.01
 				global_autonomy = +0.05
 				
 				allow = {
@@ -210,7 +209,6 @@ religion_group_human = {
 
 			icon_romendacil_II = {
 				defensiveness = +0.25
-				build_cost = -0.1
 				trade_range_modifier = -0.25
 				
 				allow = {
@@ -222,7 +220,6 @@ religion_group_human = {
 			}
 	
 			icon_arvedui = {
-				improve_relation_modifier = 0.25
 				diplomatic_reputation = 2
 				ae_impact = 0.1
 				allow = {
@@ -235,7 +232,6 @@ religion_group_human = {
 
 			icon_atanatar = {
 				global_tax_modifier = 0.20
-				production_efficiency = 0.20
 				inflation_reduction = -0.2
 				allow = {
 					always = yes
