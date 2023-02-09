@@ -1178,7 +1178,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        
+        is_orc = yes
 		
 		exists = V17
 		
@@ -1294,7 +1294,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        
+        is_orc = yes
 
 		NOT = {
 			has_country_modifier = orc_offended_nation
@@ -1315,15 +1315,15 @@ country_event = {
 			}
 			OR ={
 				AND = {
-					
+					is_orc = yes
 					alliance_with = ROOT
 				}
 				AND = {
-					
+					is_orc = yes
 					is_neighbor_of = ROOT
 				}
 				AND = {
-					
+					is_orc = yes
 					is_subject_of = ROOT
 				}
 				AND = {
@@ -1363,22 +1363,22 @@ country_event = {
 				}
 				OR ={
 					AND = {
-						
+						is_orc = yes
 						alliance_with = ROOT
 					}
 					AND = {
-						
+						is_orc = yes
 						is_neighbor_of = ROOT
 					}
 					AND = {
-						
+						is_orc = yes
 						OR = {	
 							is_subject_of = ROOT
 							alliance_with = ROOT
 						}
 					}
 					AND = {
-						
+						is_orc = yes
 						NOT = {
 							alliance_with = ROOT
 							is_neighbor_of = ROOT
@@ -1412,7 +1412,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        
+        is_orc = yes
 		
 		has_advisor = yes
 		
@@ -1475,7 +1475,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-        
+        is_orc = yes
 		
 		NOT = {
 			has_country_flag = converted_province_recently
