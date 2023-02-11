@@ -1421,6 +1421,8 @@ henneth_annun_monument = {
 		}
 		area_modifier = {			
 			local_hostile_attrition = 1
+			local_friendly_movement_speed = 0.15
+			local_hostile_movement_speed = -0.15
 		}
 		country_modifiers = {
 		}
@@ -4124,101 +4126,101 @@ moria_monument = {
 	}
 }
 
-ost_in_edhil_monument = {
-	start = 285
-	date = 500.01.01
-	time = {
-		months = 3650
-	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 0
-	type = monument
-	build_trigger = {
-		AND = {
-			owner = {
-				is_elf = yes
-			}
-			has_owner_religion = yes
-		}			
-	}
-	on_built = {		
-	}
-	on_destroyed = {		
-	}
-	can_use_modifiers_trigger = {			
-	}
-	can_upgrade_trigger = {	
-		has_owner_religion = yes	
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 3650
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-}
+#ost_in_edhil_monument = {
+#	start = 285
+#	date = 500.01.01
+#	time = {
+#		months = 3650
+#	}
+#	build_cost = 0
+#	can_be_moved = no
+#	move_days_per_unit_distance = 10
+#	starting_tier = 0
+#	type = monument
+#	build_trigger = {
+#		AND = {
+#			owner = {
+#				is_elf = yes
+#			}
+#			has_owner_religion = yes
+#		}			
+#	}
+#	on_built = {		
+#	}
+#	on_destroyed = {		
+#	}
+#	can_use_modifiers_trigger = {			
+#	}
+#	can_upgrade_trigger = {	
+#		has_owner_religion = yes	
+#	}
+#	keep_trigger = {
+#	}
+#	tier_0 = {
+#		upgrade_time = {
+#			months = 3650
+#		}
+#		cost_to_upgrade = {
+#			factor = 0
+#		}
+#		province_modifiers = {
+#		}
+#		area_modifier = {
+#		}
+#		country_modifiers = {
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#	tier_1 = {
+#		upgrade_time = {
+#			months = 120
+#		}
+#		cost_to_upgrade = {
+#			factor = 1000
+#		}
+#		province_modifiers = {
+#		}
+#		area_modifier = {
+#		}
+#		country_modifiers = {
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#	tier_2 = {
+#		upgrade_time = {
+#			months = 240
+#		}
+#		cost_to_upgrade = {
+#			factor = 2500
+#		}
+#		province_modifiers = {
+#		}
+#		area_modifier = {
+#		}
+#		country_modifiers = {
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#	tier_3 = {
+#		upgrade_time = {
+#			months = 480
+#		}
+#		cost_to_upgrade = {
+#			factor = 5000
+#		}
+#		province_modifiers = {
+#		}
+#		area_modifier = {
+#		}
+#		country_modifiers = {
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#}
 
 entmoot_monument = {
 	start = 64
@@ -5350,7 +5352,25 @@ barrow_downs_monument = {
 			monarch_admin_power = 1
 		}
 		on_upgraded = {
-			set_barrow_downs_effect = yes
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 	tier_2 = {
@@ -5370,7 +5390,25 @@ barrow_downs_monument = {
 			monarch_diplomatic_power = 1
 		}
 		on_upgraded = {
-			set_barrow_downs_effect = yes
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 	tier_3 = {
@@ -5390,7 +5428,25 @@ barrow_downs_monument = {
 			monarch_diplomatic_power = 1
 		}
 		on_upgraded = {
-			set_barrow_downs_effect = yes
+			set_variable = { which = count value = 3 }
+				while = {
+				limit = {
+				check_variable = { which = count value = 1 }
+				}
+				subtract_variable = { which = count value = 1 }
+				random_province = {
+					limit = {
+						OR = {
+							has_terrain = unique_tomb
+							has_terrain = unique_dunedain_ruin
+						}
+						superregion = eriador_superregion
+						NOT = { culture = culture_wight }
+						}
+					change_culture = culture_wight
+					change_religion = religion_wight
+				}
+			}
 		}
 	}
 }
@@ -6225,6 +6281,7 @@ argond_monument = {
 			factor = 5000
 		}
 		province_modifiers = {
+		fort_level = 2
 		}
 		area_modifier = {
 		global_colonial_growth = 25
