@@ -268,6 +268,44 @@ dunland_kingdom_reform = {
 	}
 }
 
+arnorien_kingdom_reform = {
+	icon = "king"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
+		}
+		OR = {
+			has_reform = arnorien_kingdom_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = arnorien_kingdom_reform
+			}
+		}
+	}
+	legacy_equivalent = arnorien_kingdom_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+	modifiers = {
+		diplomatic_upkeep = 3
+		country_military_power = 1
+		core_creation = -0.15
+		discipline = 0.05
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 #------------------------------
 # Hereditary vs. Nobility
 #------------------------------

@@ -1062,20 +1062,43 @@ slot_04_dunedain_of_the_north_series = {
 				province_id = 292
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
 			}
 		}
 		trigger = {
 			292 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					culture = culture_troll
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+					NOT = {
+						culture = culture_troll
+					}
 				}
 			}
 			384 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					culture = culture_troll
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+					NOT = {
+						culture = culture_troll
+					}
 				}
 			}
 		}
@@ -1336,31 +1359,10 @@ slot_04_dunedain_of_the_north_series = {
 		effect = { 
 			add_stability = 1
 			add_patriarch_authority = 0.05
-			if = {
-				limit = {
-					exists = V37
-				}
-				if = {
-					limit = {
-						V37 = {
-							ai = YES
-						}
-					}
-					vassalize = V37
-				}
-				else = {
-					V37 = {
-						country_event = {
-							id = LOU_mission_dunedain_of_arnor.3
-						}
-					}
-				}
-			}
-			else = {
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-			}
+			
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
 		}
 	}
 	mission_form_rhudaur = {
@@ -1580,12 +1582,26 @@ slot_05_dunedain_of_the_north_series = {
 		provinces_to_highlight = {
 			province_id = 293
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
 			}
 		}
 		trigger = {
 			293 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = { 
@@ -1727,17 +1743,20 @@ slot_05_dunedain_of_the_north_series = {
 				limit = {
 					exists = V37
 				}
-				V37 = {
-					add_opinion = {
-						who = ROOT
-						modifier = dunedain_carandor_relation
+				if = {
+					limit = {
+						V37 = {
+							ai = YES
+						}
 					}
+					vassalize = V37
 				}
-				
-				add_casus_belli = {
-					target = V37
-					type = cb_vassalize_mission
-					months = 240
+				else = {
+					V37 = {
+						country_event = {
+							id = LOU_mission_dunedain_of_arnor.3
+						}
+					}
 				}
 			}
 			every_owned_province = {
@@ -1821,7 +1840,7 @@ slot_01_arnor_series = {
 	}
 
 	angmar_lowlands = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_lithlad
 		position = 15
 		required_missions = { defeat_the_mountain }
 		provinces_to_highlight = {
@@ -1870,7 +1889,7 @@ slot_02_arnor_series = {
 	}
 
 	trade_centers_of_arnor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_home_trade_node
 		position = 13
 		required_missions = { mission_form_arnor }
 		provinces_to_highlight = {
@@ -1900,7 +1919,7 @@ slot_02_arnor_series = {
 		}
 	}
 	mission_defeat_carn_dum = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_carn_dum
 		position = 16
 		required_missions = { angmar_lowlands angmar_highlands }
 		provinces_to_highlight = {
@@ -1933,7 +1952,7 @@ slot_03_arnor_series = {
 	}
 
 	remove_orcs_of_arnor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_5
 		position = 13
 		required_missions = { mission_form_arnor }
 		provinces_to_highlight = {
@@ -1978,7 +1997,7 @@ slot_03_arnor_series = {
 		}
 	}
 	defeat_the_mountain = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_mount_gram
 		position = 14
 		required_missions = { remove_orcs_of_arnor }
 		provinces_to_highlight = {
@@ -2010,7 +2029,7 @@ slot_03_arnor_series = {
 		}
 	}
 	angmar_highlands = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_hills
 		position = 15
 		required_missions = { defeat_the_mountain }
 		provinces_to_highlight = {
@@ -2041,7 +2060,7 @@ slot_04_arnor_series = {
 	}
 
 	mountains_of_angmar = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gondor_13
 		position = 15
 		required_missions = { defeat_the_mountain }
 		provinces_to_highlight = {
@@ -2071,7 +2090,7 @@ slot_04_arnor_series = {
 		}
 	}
 	mission_defeat_gundabad = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_leader
 		position = 16
 		required_missions = { mountains_of_angmar }
 		provinces_to_highlight = {
