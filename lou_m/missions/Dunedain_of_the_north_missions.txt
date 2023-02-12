@@ -861,12 +861,26 @@ slot_03_dunedain_of_the_north_series = {
 		provinces_to_highlight = {
 			region = cardolan_region
 			culture_group = culture_group_orcs
+			NOT = {
+				owner = {
+					alliance_with = ROOT
+				}
+			}
 		}
 		trigger = {
 			cardolan_region = {
 				type = all
-				NOT  = {
-					culture_group = culture_group_orcs
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					NOT  = {
+						culture_group = culture_group_orcs
+					}
 				}
 			}
 		}
@@ -1130,29 +1144,79 @@ slot_04_dunedain_of_the_north_series = {
 				area = lostiriand_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
 			}
 		}
 		trigger = {
 			sarn_ford_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			metraith_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			west_faerdor_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			faerdor_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			lostiriand_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owner = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = { 
@@ -1446,11 +1510,25 @@ slot_05_dunedain_of_the_north_series = {
 			}
 		}
 		effect = {
-			291 = {
-				add_core = ROOT
-				change_religion = religion_dunedain
-				change_culture = culture_dunedain_of_arnor
-				remove_core = Y80
+			if = {
+				limit = {
+					291 = {
+						owned_by = Y80
+					}
+				}
+				291 = {
+					add_core = ROOT
+					cede_province = ROOT
+					change_religion = religion_dunedain
+					change_culture = culture_dunedain_of_arnor
+					remove_core = Y80
+				}
+			}
+			else = {
+				291 = {
+					add_core = ROOT
+					remove_core = Y80
+				}
 			}
 		}
 	}
@@ -1551,6 +1629,7 @@ slot_05_dunedain_of_the_north_series = {
 							region = rhudaur_region
 						}
 						add_core = ROOT
+						cede_province = ROOT
 						change_religion = religion_dunedain
 						change_culture = culture_dunedain_of_arnor
 						remove_core = Y80
@@ -1591,7 +1670,7 @@ slot_05_dunedain_of_the_north_series = {
 			368 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1859 = {
+			1858 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
