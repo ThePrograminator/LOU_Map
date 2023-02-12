@@ -52,6 +52,7 @@ slot_01_dunedain_of_the_north_series = {
 						duration = -1
 					}
 				}
+				vassalize = Q03
 			}
 			else = {
 				add_adm_power = 100
@@ -442,6 +443,9 @@ slot_02_dunedain_of_the_north_series = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			NOT = {
+				is_empty = yes
+			}
 		}
 		trigger = {
 			faerdor_area = {
@@ -451,6 +455,9 @@ slot_02_dunedain_of_the_north_series = {
 			west_faerdor_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
 			}
 		}
 		effect = { 
@@ -1070,6 +1077,7 @@ slot_04_dunedain_of_the_north_series = {
 						duration = -1
 					}
 				}
+				vassalize = Q05
 			}
 			else = {
 				add_adm_power = 100
@@ -1100,10 +1108,8 @@ slot_04_dunedain_of_the_north_series = {
 			}
 		}
 		effect = {
-			capital_scope = {
-				province_event = {
-					id = LOU_gandalf.5
-				}
+			country_event = {
+				id = LOU_gandalf.5
 			}
 			add_country_modifier = {
 				name = "influential_diplomacy"
@@ -1160,6 +1166,7 @@ slot_04_dunedain_of_the_north_series = {
 						duration = -1
 					}
 				}
+				vassalize = Q04
 			}
 			else = {
 				add_adm_power = 100

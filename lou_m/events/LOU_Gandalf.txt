@@ -54,6 +54,8 @@ country_event = {
 	desc = "LOU_gandalf.2_d"
 	picture = gandalf_events4
 
+	fire_only_once = yes
+
 	trigger = {
 		primary_culture = culture_longbeard
 		
@@ -172,39 +174,47 @@ province_event = {
 }
 
 #Id must be unique per event, number is just incremented
-province_event = {
+country_event = {
 	id = LOU_gandalf.5
 	title = "LOU_gandalf.5_t"
 	desc = "LOU_gandalf.5_d"
 	picture = gandalf_events3
 
 	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = Z06
+			tag = W54
+			tag = W55
+			tag = W56
+			tag = W57
+		}
+	}
 	
 	option = {
 		name = "LOU_gandalf.5_a"
 
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.5 - Option : LOU_gandalf.5_a" }
-		owner = {
+		
 		add_adm_power = 50
-		}
 	}
 	option = {
 		name = "LOU_gandalf.5_b"
 
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.5 - Option : LOU_gandalf.5_b" }
-		owner = {
+
 		add_dip_power = 50
-		}
 	}
 	option = {
 		name = "LOU_gandalf.5_c"
 
 		#Make sure this log number is also correct to the id, and option name
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_gandalf.5 - Option : LOU_gandalf.5_c" }
-		owner = {
+
 		add_mil_power = 50
-		}
 	}
 }
