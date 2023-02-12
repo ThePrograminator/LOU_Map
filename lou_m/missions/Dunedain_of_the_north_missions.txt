@@ -1723,6 +1723,23 @@ slot_05_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
+			if = {
+				limit = {
+					exists = V37
+				}
+				V37 = {
+					add_opinion = {
+						who = ROOT
+						modifier = dunedain_carandor_relation
+					}
+				}
+				
+				add_casus_belli = {
+					target = V37
+					type = cb_vassalize_mission
+					months = 240
+				}
+			}
 			every_owned_province = {
 				limit = {
 					OR = {
