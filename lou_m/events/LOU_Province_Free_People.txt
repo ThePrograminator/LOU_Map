@@ -1,0 +1,91 @@
+namespace = LOU_Province_Free_People
+
+# Melkor Roam The Land"
+province_event = {
+	id = LOU_Province_Free_People.1
+	title = "LOU_Province_Free_People.1.t"
+	desc = "LOU_Province_Free_People.1.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = province_evil_debuff }
+        # Province
+        OR = {
+            culture_group =  culture_group_orcs
+            culture_group =  culture_group_melkor
+        }
+        # Owner
+        owner = {
+            is_free_peoples_opinion = yes
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_Province_Free_People.1.a"
+
+		add_province_modifier = {
+			name = "province_evil_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Melkor Expelled"
+province_event = {
+	id = LOU_Province_Free_People.2
+	title = "LOU_Province_Free_People.2.t"
+	desc = "LOU_Province_Free_People.2.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        has_province_modifier = province_evil_debuff
+        owner = {
+            is_free_peoples_opinion = yes
+        }
+        AND = {
+            NOT = { culture_group = culture_group_orcs }
+            NOT = { culture_group = culture_group_melkor }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_Province_Free_People.2.a"
+
+		remove_province_modifier = province_evil_debuff
+	}
+}
+
+# "Melkor Expelled" - Is Evil
+province_event = {
+	id = LOU_Province_Free_People.3
+    title = LOU_Province_Free_People.3.t
+	desc = LOU_Province_Free_People.3.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    
+	trigger = {
+        has_province_modifier = province_evil_debuff
+        owner = {
+			NOT = { is_free_peoples_opinion = yes }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+        name = "LOU_Province_Free_People.3.a"
+        
+		remove_province_modifier = province_evil_debuff
+	}
+}

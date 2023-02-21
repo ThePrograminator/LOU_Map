@@ -63,6 +63,28 @@ province_huorn_debuff = {
 	culture_conversion_cost = 0.1
 }
 
+province_free_people_debuff = {
+    min_local_autonomy = 70
+	local_tax_modifier = -0.70
+    local_production_efficiency = -0.70
+    province_trade_power_modifier = -0.70
+	local_development_cost = 1
+    
+	local_missionary_strength = 0.01
+	culture_conversion_cost = 0.1
+}
+
+province_evil_debuff = {
+    min_local_autonomy = 70
+	local_tax_modifier = -0.70
+    local_production_efficiency = -0.70
+    province_trade_power_modifier = -0.70
+	local_development_cost = 1
+    
+	local_missionary_strength = 0.01
+	culture_conversion_cost = 0.1
+}
+
 ruins_debuff = {
     min_local_autonomy = 50
 	local_tax_modifier = -0.5

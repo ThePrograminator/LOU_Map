@@ -1,0 +1,94 @@
+namespace = LOU_Province_Servant_Of_Evil
+
+# Free People Roam The Land"
+province_event = {
+	id = LOU_Province_Servant_Of_Evil.1
+	title = "LOU_Province_Servant_Of_Evil.1.t"
+	desc = "LOU_Province_Servant_Of_Evil.1.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = province_free_people_debuff }
+        # Province
+		is_free_peoples_opinion_province = yes
+        # Owner
+        owner = {
+			OR = {
+				culture_group = culture_group_orcs
+				culture_group = culture_group_melkor
+			}
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_Province_Servant_Of_Evil.1.a"
+
+		add_province_modifier = {
+			name = "province_free_people_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Free People Expelled"
+province_event = {
+	id = LOU_Province_Servant_Of_Evil.2
+	title = "LOU_Province_Servant_Of_Evil.2.t"
+	desc = "LOU_Province_Servant_Of_Evil.2.d"
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+        has_province_modifier = province_free_people_debuff
+        owner = {
+            OR = {
+				culture_group = culture_group_orcs
+				culture_group = culture_group_melkor
+			}
+        }
+        AND = {
+            NOT = { is_free_peoples_opinion_province = yes }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_Province_Servant_Of_Evil.2.a"
+
+		remove_province_modifier = province_free_people_debuff
+	}
+}
+
+# "Free People Expelled" - Is Good
+province_event = {
+	id = LOU_Province_Servant_Of_Evil.3
+    title = LOU_Province_Servant_Of_Evil.3.t
+	desc = LOU_Province_Servant_Of_Evil.3.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    
+	trigger = {
+        has_province_modifier = province_free_people_debuff
+        owner = {
+           	NOT = { culture_group = culture_group_orcs}
+			NOT = { culture_group = culture_group_melkor}
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+        name = "LOU_Province_Servant_Of_Evil.3.a"
+        
+		remove_province_modifier = province_free_people_debuff
+	}
+}
