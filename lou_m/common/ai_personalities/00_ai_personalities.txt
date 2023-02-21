@@ -59,7 +59,12 @@ ai_capitalist = {
 		modifier = {
 			factor = 2
 			has_government_attribute = is_merchant_republic
-		}	
+		}		
+		#LOU
+		modifier = {
+			factor = 10
+			is_dwarf = yes
+		}
 	}
 	icon = 2
 }
@@ -111,16 +116,22 @@ ai_diplomat = {
 			factor = 1.25
 			NOT = { total_development = 30 }
 		}	
+		#LOU
 		modifier = {
-			factor = 1.5
-			is_emperor = yes
-			total_development = 50
+			factor = 10
+			is_elf = yes
 		}
 		modifier = {
-			factor = 1.5
-			is_emperor = yes
-			total_development = 100
-		}	
+			factor = 100
+			is_hobbit = yes
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				is_ent = yes
+				is_erus_children = yes
+			}
+		}
 	}
 	icon = 3
 }
@@ -224,6 +235,27 @@ ai_militarist = {
 			factor = 0.5
 			num_of_loans = 7
 		}
+		#LOU
+		modifier = {
+			factor = 50
+			OR = {
+				is_orc = yes
+				is_goblin = yes
+				technology_group = lotr_troll
+				technology_group = lotr_wights
+				is_great_spider = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				culture_group = culture_group_haruzani
+				culture_group = culture_group_ioriags
+				culture_group = culture_group_daen_lintis
+				culture_group = culture_group_black_numenorean
+				culture_group = culture_group_ulgath
+			}
+		}
 	}
 	icon = 4
 }
@@ -262,11 +294,19 @@ ai_colonialist = {
 		modifier = {
 			factor = 1.1
 			trade_ideas = 1
-		}					
+		}			
+		modifier = {
+			factor = 1.1
+			exploration_ideas = 1
+		}			
 		modifier = {
 			factor = 1.1
 			maritime_ideas = 1
-		}	
+		}
+		modifier = {
+			factor = 1.1
+			expansion_ideas = 1
+		}		
 		modifier = {
 			factor = 0
 			NOT = { num_of_colonists = 1 }
@@ -331,6 +371,15 @@ ai_balanced = {
 			adm = 6
 			dip = 6
 			mil = 6
+		}
+		#LOU
+		modifier = {
+			factor = 10
+			is_human = yes
+		}
+		modifier = {
+			factor = 5
+			is_dwarf = yes
 		}
 	}
 	icon = 6

@@ -69,6 +69,7 @@ country_event = {
 	picture = WOUNDED_SOLDIERS_eventPicture
 
 	hidden = yes
+	fire_only_once = yes
 
 	trigger = {
 		384 = {
@@ -117,7 +118,7 @@ country_event = {
 		every_country = {
 			limit = {
 				ai = no
-				NOT = { tag = ROOT }
+				#NOT = { tag = ROOT }
 			}
 			country_event = { id = LOU_company_of_thorin.20 }
 		}
@@ -133,6 +134,7 @@ country_event = {
 	picture = WOUNDED_SOLDIERS_eventPicture
 
 	hidden = yes
+	fire_only_once = yes
 
 	trigger = {
 		558 = {
@@ -186,7 +188,7 @@ country_event = {
 		every_country = {
 			limit = {
 				ai = no
-				NOT = { tag = ROOT }
+				#NOT = { tag = ROOT }
 			}
 			country_event = { id = LOU_company_of_thorin.20 }
 		}
@@ -202,6 +204,7 @@ country_event = {
 	picture = WOUNDED_SOLDIERS_eventPicture
 
 	hidden = yes
+	fire_only_once = yes
 
 	trigger = {
 		526 = {
@@ -250,7 +253,7 @@ country_event = {
 		every_country = {
 			limit = {
 				ai = no
-				NOT = { tag = ROOT }
+				#NOT = { tag = ROOT }
 			}
 			country_event = { id = LOU_company_of_thorin.20 }
 		}
@@ -337,7 +340,7 @@ country_event = {
 		every_country = {
 			limit = {
 				ai = no
-				NOT = { tag = ROOT }
+				#NOT = { tag = ROOT }
 			}
 			country_event = { id = LOU_company_of_thorin.20 }
 		}
