@@ -72,9 +72,23 @@ country_event = {
             limit = {
                 NOT = {	has_country_modifier =  "human_buff" }
                 is_human = yes
+                NOT = {
+                    primary_culture = culture_beornings
+                }
             }
             country_event = { 
                 id = LOU_races.1
+            }
+        }
+        # Beorning
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "human_buff" }
+                is_human = yes
+                primary_culture = culture_beornings
+            }
+            country_event = { 
+                id = LOU_races.18
             }
         }
         # Dwarven

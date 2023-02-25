@@ -1,16 +1,27 @@
 # Human Buff/Debuff
 human_buff = {
-	infantry_power = 0.05 
 	global_tax_modifier = 0.1
+	build_time = -0.05
+}
+
+human_military_buff = {
+	infantry_power = 0.05 
 	land_morale = 0.05 
+	global_sailors_modifier = 0.10
 }
 
 dwarven_buff = {
-	land_forcelimit_modifier = -0.25
 	inflation_reduction = 0.05
 	production_efficiency = 0.15
-	defensiveness = 0.15
     monarch_lifespan = 2 # +200 years
+}
+
+dwarven_military_buff = {
+	drill_gain_modifier = 0.20
+	drill_decay_modifier = -0.10
+
+	land_forcelimit_modifier = -0.20
+	manpower_recovery_speed = -0.10
 }
 
 dragon_buff = {
@@ -23,11 +34,18 @@ dragon_buff = {
 }
 
 elven_buff = {
-	land_forcelimit_modifier = -0.5
-	global_manpower_modifier = -0.25
 	diplomatic_reputation = 1
 	advisor_cost = -0.1
+    monarch_lifespan = 10.0 # +1000 years (immortal)
+}
+
+elven_military_buff = {
 	discipline = 0.05
+	fire_damage = 0.10
+
+	land_forcelimit_modifier = -0.30
+	global_manpower_modifier = -0.25
+	manpower_recovery_speed = -0.20
     monarch_lifespan = 10.0 # +1000 years (immortal)
 }
 
@@ -50,12 +68,18 @@ erus_children_buff = {
 }
 
 goblin_buff = {
-	land_forcelimit_modifier = 0.33
-	infantry_power = -0.1
-	land_morale = -0.10
-	manpower_recovery_speed = 0.25
-	land_maintenance_modifier = -0.1
+	innovativeness_gain = 0.50
+	production_efficiency = 0.10
+
     monarch_lifespan = 1.0 # -50 years
+}
+
+goblin_military_buff = {
+	movement_speed = -0.10
+	land_morale = -0.10
+
+	land_forcelimit_modifier = 0.20
+	manpower_recovery_speed = 0.15
 }
 
 giant_buff = {
@@ -70,11 +94,18 @@ giant_buff = {
 
 # Spider Buff/Debuff
 great_spider_buff = {
-	land_forcelimit_modifier = -0.1
-	global_regiment_cost = 0.1
-	shock_damage = 0.10
-	fire_damage_received = 0.25
+	unjustified_demands = -0.25
+	spy_offence = 0.25
+
     monarch_lifespan = 1 # +100 years
+}
+
+great_military_spider_buff = {
+	shock_damage = 0.10
+	movement_speed = 0.10
+	fire_damage_received = 0.10
+
+	land_forcelimit_modifier = -0.1
 }
 
 half_dwarf_buff = {
@@ -86,12 +117,16 @@ half_dwarf_buff = {
 }
 
 hobbit_buff = {
-	land_forcelimit_modifier = -0.50
-	manpower_recovery_speed = -0.1
-	merc_maintenance_modifier = -0.25
-	tolerance_heretic = 1
 	trade_efficiency = 0.10
+	production_efficiency = 0.10
+	enemy_core_creation = 0.25
     monarch_lifespan = 0.25
+}
+
+hobbit_military_buff = {
+	land_forcelimit_modifier = -0.10
+	global_manpower_modifier = -0.25
+	manpower_recovery_speed = -0.10
 }
 
 half_orc_buff = {
@@ -104,30 +139,44 @@ half_orc_buff = {
 }
 
 orc_buff = {
-	land_forcelimit_modifier = 0.33
-	infantry_power = -0.1
-	tolerance_heathen = -1
-	tolerance_heretic = -1
-	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = -0.1
+	tolerance_heathen = -2
+	tolerance_heretic = -2
     monarch_lifespan = 1 # +100 years
+}
+
+orc_military_buff = {
+	land_morale = -0.05
+
+	land_forcelimit_modifier = 0.20
+	manpower_recovery_speed = 0.10
 }
 
 # Troll Buff/Debuff
 troll_buff = {
-	land_forcelimit_modifier = -0.5
-	infantry_power = 0.33
-	siege_ability = 0.25
-	manpower_recovery_speed = -0.1
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.03
+
     monarch_lifespan = 1 # +100 years
 }
 
+troll_military_buff = {
+	infantry_power = 0.30
+	siege_ability = 0.25
+
+	land_forcelimit_modifier = -0.5
+}
+
 uruk_hai_buff = {
-	discipline = 0.05
 	tolerance_heathen = -1
 	tolerance_heretic = -1
-	global_regiment_cost = 0.1
     monarch_lifespan = 1 # +100 years
+}
+
+uruk_hai_military_buff = {
+	discipline = 0.05
+	land_morale = 0.10
+	infantry_power = 0.10
+	global_regiment_cost = 0.10
 }
 
 wizard_buff = {
@@ -139,19 +188,28 @@ wizard_buff = {
 }
 
 wights_buff = {
-	land_forcelimit_modifier = -0.25
-	tolerance_heathen = -1
-	tolerance_heretic = -1
-	manpower_recovery_speed = -0.1
+	tolerance_heathen = -2
+	tolerance_heretic = -2
 	spy_offence = 0.5 
-	leader_land_manuever = 1
     monarch_lifespan = 10 # +1000 years (immortal)
 }
 
+wights_military_buff = {
+	leader_land_manuever = 2
+
+    land_forcelimit_modifier = -0.25
+	manpower_recovery_speed = -0.25
+}
+
 beornings_buff = {
-	land_forcelimit_modifier = -0.50
-	infantry_power = 0.15
-	tolerance_own = 1
-	hostile_attrition = 1
-	manpower_recovery_speed = -0.20
+	build_cost = 0.10
+	trade_range_modifier = -0.25
+}
+
+beornings_military_buff = {
+	infantry_power = 0.10
+	infantry_shock = 0.5
+	land_morale = 0.10
+
+	land_forcelimit_modifier = 0.10
 }

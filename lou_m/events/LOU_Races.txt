@@ -17,6 +17,11 @@ country_event = {
                 name = "human_buff"
                 duration = -1
             }
+
+			add_country_modifier = {
+                name = "human_military_buff"
+                duration = -1
+            }
         }
 	}
 }
@@ -35,6 +40,11 @@ country_event = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = "dwarven_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "dwarven_military_buff"
 				duration = -1
 			}
 		}	
@@ -77,6 +87,11 @@ country_event = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = "elven_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "elven_military_buff"
 				duration = -1
 			}
 		}
@@ -142,6 +157,11 @@ country_event = {
 				name = "goblin_buff"
 				duration = -1
 			}
+
+			add_country_modifier = {
+				name = "goblin_military_buff"
+				duration = -1
+			}
 		}	
 	}
 }
@@ -182,6 +202,11 @@ country_event = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = "great_spider_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "great_military_spider_buff"
 				duration = -1
 			}
 		}
@@ -226,6 +251,11 @@ country_event = {
 				name = "hobbit_buff"
 				duration = -1
 			}
+
+			add_country_modifier = {
+				name = "hobbit_military_buff"
+				duration = -1
+			}
 		}
 	}
 }
@@ -268,6 +298,11 @@ country_event = {
 				name = "orc_buff"
 				duration = -1
 			}
+
+			add_country_modifier = {
+				name = "orc_military_buff"
+				duration = -1
+			}
 		}
 	}
 }
@@ -287,6 +322,11 @@ country_event = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = "troll_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "troll_military_buff"
 				duration = -1
 			}
 		}
@@ -309,6 +349,11 @@ country_event = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = "uruk_hai_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "uruk_hai_military_buff"
 				duration = -1
 			}
 		}
@@ -346,10 +391,40 @@ country_event = {
 
 	option = {
 		name = LOU_races.17.a
-        
-		add_country_modifier = {
-			name = "wights_buff"
-			duration = -1
-        }
+        hidden_effect = {
+			add_country_modifier = {
+				name = "wights_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "wights_military_buff"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Beornings
+country_event = {
+	id = LOU_races.18
+	title = LOU_races.18.t
+	desc = LOU_races.18.d
+	picture = beorning_race
+	is_triggered_only = yes
+
+	option = {
+		name = LOU_races.18.a
+        hidden_effect = {
+			add_country_modifier = {
+				name = "beornings_buff"
+				duration = -1
+			}
+
+			add_country_modifier = {
+				name = "beornings_military_buff"
+				duration = -1
+			}
+		}
 	}
 }
