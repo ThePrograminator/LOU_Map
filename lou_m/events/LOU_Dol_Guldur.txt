@@ -288,10 +288,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			spawn_mordor_territory_effect = yes
+			spawn_mordor_province_setup_effect = yes
 			spawn_mordor_vassal_effect = {VASSAL = V18}
 			spawn_mordor_vassal_effect = {VASSAL = V19}
+			spawn_mordor_vassal_effect = {VASSAL = V20}
 
 			spawn_morder_transfer_tech = yes
+			spawn_mordor_casus_beli_effect = yes
 		}
 	}
 	

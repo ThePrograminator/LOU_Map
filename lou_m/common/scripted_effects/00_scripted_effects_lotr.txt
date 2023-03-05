@@ -833,9 +833,8 @@ spawn_mordor_territory_effect = {
 		set_capital = 639
 	}
 
-	#country_event = {
-	#	id = lotr_general.45
-	#}
+	add_truce_with = X01
+	add_truce_with = X16
 }
 
 spawn_mordor_province_setup_effect = {	
@@ -845,10 +844,16 @@ spawn_mordor_province_setup_effect = {
 
 	327 = {
 		change_trade_goods = copper
+		add_building = encampment_1_orc_building
+		add_building = meat_depot_orc_building
+		add_building = enforcer_camp_orc_building
 	}
 
 	151 = {
 		change_trade_goods = iron
+		add_building = fortress_1_orc_building
+		add_building = fort_pallisade_orc_building
+		add_building = enforcer_camp_orc_building
 	}
 	
 	3034 = {
@@ -861,14 +866,24 @@ spawn_mordor_province_setup_effect = {
 	
 	1633 = {
 		change_trade_goods = iron
+		add_building = camp_orc_building
 	}
 	
 	580 = {
 		change_trade_goods = gems
+		add_building = encampment_2_orc_building
+		add_building = enforcer_camp_orc_building
+		add_building = metal_works_orc_building
+		add_building = orc_pit_orc_building
 	}
 	
 	1634 = {
 		change_trade_goods = gold
+		add_building = fortress_2_orc_building
+		add_building = orc_pit_orc_building
+		add_building = fort_wooden_walls_orc_building
+		add_building = workshop_orc_building
+		add_building = large_arena_building
 	}
 	
 	3042 = {
@@ -877,10 +892,14 @@ spawn_mordor_province_setup_effect = {
 	
 	326 = {
 		change_trade_goods = slaves
+		add_building = encampment_1_orc_building
+		add_building = small_arena_building
 	}
 	
 	1005 = {
 		change_trade_goods = iron
+		add_building = encampment_1_orc_building
+		add_building = small_arena_building
 	}
 	
 	3041 = {
@@ -897,6 +916,7 @@ spawn_mordor_province_setup_effect = {
 
 	1004 = {
 		change_trade_goods = copper
+		add_building = fortress_1_orc_building
 	}
 
 	977 = {
@@ -929,9 +949,11 @@ spawn_mordor_province_setup_effect = {
 
 	3225 = {
 		change_trade_goods = silver
+		add_building = fortress_1_orc_building
+		add_building = fort_pallisade_orc_building
 	}
-
-	3227 = {
+    #check
+	3027 = {
 		change_trade_goods = fur
 	}
 
@@ -1002,19 +1024,21 @@ spawn_mordor_province_setup_effect = {
 
 	149 = {
 		change_trade_goods = iron
+		add_building = camp_orc_building
 	}
 
 	71 = {
 		change_trade_goods = coal
+		add_building = encampment_1_orc_building
+		add_building = orc_pit_orc_building
+		add_building = blacksmith_orc_building
 	}
 
 	675 = {
 		change_trade_goods = iron
 
-		add_province_modifier = {
-			name = ruins_debuff 
-			duration = 1095
-		}
+		add_building = fortress_1_orc_building
+		add_building = fort_wooden_walls_orc_building
 	}
 }
 
@@ -1041,6 +1065,30 @@ spawn_mordor_vassal_effect = {
 
 	V17 = {
 		vassalize = $VASSAL$
+	}
+}
+
+spawn_mordor_casus_beli_effect = {
+	every_known_country = {
+		limit = {
+			NOT = {
+				tag = ROOT
+				tag = V23
+				num_of_cities = 21
+				vassal_of = ROOT
+			}
+			culture_group = culture_group_orcs
+			any_owned_province = {
+				OR = {
+					region = nurn_region
+					region = rhovanion_region
+				}
+			}
+		}
+		reverse_add_casus_belli = {
+			target = V17
+			type = cb_vassalize_mission
+		}
 	}
 }
 
@@ -1104,7 +1152,10 @@ spawn_morder_transfer_tech = {
 	#	add_adm_tech = adm_tech_var
 	#	add_dip_tech = dip_tech_var
 	#	add_mil_tech = mil_tech_var
-		add_treasury = 300
+		country_event = {
+			id = LOU_mordor.34
+			days = 3
+		}
 	}
 }
 
@@ -1115,6 +1166,37 @@ spawn_mordor_refused_effect = {
 			modifier = servant_of_mordor_refused
 			years = 100
 		}
+	}
+}
+
+spawn_mordor_army_effect = {
+	custom_tooltip = mordor_spawn_army_tt
+	hidden_effect = {
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		infantry = ROOT
+		cavalry = ROOT
+		cavalry = ROOT
+		cavalry = ROOT
+		cavalry = ROOT
+		cavalry = ROOT
+		artillery = ROOT
+		artillery = ROOT
+		artillery = ROOT
+		artillery = ROOT
+		artillery = ROOT
 	}
 }
 
