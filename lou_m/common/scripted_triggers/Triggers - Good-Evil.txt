@@ -40,6 +40,33 @@ is_free_peoples_opinion = {
 	}
 }
 
+is_free_peoples_opinion_province = {
+	OR = {
+		culture_group = culture_group_children_of_iluvatar
+
+		culture_group = culture_group_hobbits
+
+		culture_group = culture_group_avari
+		culture_group = culture_group_nandor
+		culture_group = culture_group_noldor
+		culture_group = culture_group_sindar
+
+		culture_group = culture_group_dwarves
+
+		culture_group = culture_group_numenorean
+		culture_group = culture_group_zori
+		culture_group = culture_group_eriadorians
+		culture_group = culture_group_rivermen
+		culture_group = culture_group_daen_of_gondor
+		culture_group = culture_group_eotheod
+		culture_group = culture_group_ulthiuda
+		culture_group = culture_group_nenedain
+		culture_group = culture_group_donath
+		culture_group = culture_group_aivathiuda
+		culture_group = culture_group_beijabar
+	}
+}
+
 #is_neutral_race_opinion = {
 #	OR = {
 #		tag = V13
@@ -88,5 +115,34 @@ is_servants_of_evil_opinion = {
 		#Acaana
 		tag = Z85
 		primary_culture = culture_logath
+	}
+}
+
+is_servants_of_evil_opinion_province = {
+	OR = {
+		culture_group = culture_group_orcs
+		culture_group = culture_group_melkor
+
+		culture = culture_dunlendings
+		culture_group = culture_group_ioriags
+		culture_group = culture_group_black_numenorean
+		culture_group = culture_group_haruzani
+		culture_group = culture_group_apysani
+		culture_group = culture_group_sea_people
+		culture_group = culture_group_mornedain
+		culture_group = culture_group_chailuza
+		culture_group = culture_group_ulgath
+		culture_group = culture_group_surk
+		culture_group = culture_group_monhunrim
+		culture_group = culture_group_womaw
+		culture_group = culture_group_borians
+		culture = culture_wolim
+		culture = culture_dyrians
+		culture = culture_dirians
+		culture = culture_desdursy
+		culture = culture_urdar
+	}
+	NOT = {
+		culture = culture_logath
 	}
 }

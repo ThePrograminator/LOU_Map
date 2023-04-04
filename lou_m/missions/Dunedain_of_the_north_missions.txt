@@ -584,24 +584,24 @@ slot_02_dunedain_of_the_north_series = {
 				province_id = 4057
 			}
 			NOT = {
-				has_building = marketplace_building
+				province_human_has_trade_building_tier_2 = yes
 			}
 		}
 		trigger = {
 			1833 = {
-				has_building = marketplace_building
+				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			3210 = {
-				has_building = marketplace_building
+				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			4057 = {
-				has_building = marketplace_building
+				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			106 = {
-				has_building = marketplace_building
+				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -742,7 +742,9 @@ slot_02_dunedain_of_the_north_series = {
 				tag = W54
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.10
+		}
 	}
 }
 
@@ -947,7 +949,9 @@ slot_03_dunedain_of_the_north_series = {
 				tag = W55
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.10
+		}
 	}
 	mission_form_arnor = {
 		icon = mission_gondor_12
@@ -1405,7 +1409,9 @@ slot_04_dunedain_of_the_north_series = {
 				tag = W56
 			}
 		}
-		effect = { }
+		effect = { 
+			add_patriarch_authority = 0.10
+		}
 	}
 }
 
@@ -1664,7 +1670,7 @@ slot_05_dunedain_of_the_north_series = {
 	southern_hoarwell = {
 		icon = mission_river_01
 		position = 8
-		required_missions = { expel_herub_gular }
+		required_missions = { handing_over_the_defense }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 294

@@ -20,6 +20,9 @@ historical_rival = Y22
 historical_rival = Y80
 historical_rival = Y81
 
+add_treasury = 10000
+add_stability = 3
+
 2942.1.1 = {
 	monarch = {
 		name = "Spirit of Sauron"
@@ -34,6 +37,7 @@ historical_rival = Y81
 	set_ruler_flag = set_immortality
 	mordor_vassal_modifier_effect = {VASSAL = V18}
 	mordor_vassal_modifier_effect = {VASSAL = V19}
+	mordor_vassal_modifier_effect = {VASSAL = V20}
 }
 
 2951.1.1 = {

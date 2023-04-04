@@ -562,3 +562,14 @@ province_orc_has_capital_buildings = { #Province Scope
 		has_building = capital_3_orc_building
 	}
 }
+
+province_human_has_trade_building_tier_2 = { #Province Scope
+	custom_trigger_tooltip = {
+		tooltip = HAS_MARKETPLACE_TOOLTIP
+		OR = {
+			has_building = marketplace_building
+			has_building = trade_depot_building
+			has_building = forum_building
+		}
+	}
+}

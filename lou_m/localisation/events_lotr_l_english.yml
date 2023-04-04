@@ -112,9 +112,9 @@
  LOU_races.17.d: "The Barrow-wights were evil spirits, although their true nature is unknown; it is not known if they were perverted Maiar (Úmaiar) or spirits of Orcs, fallen Avari, or evil Men. The Witch-king of Angmar sent them to the Barrow-downs, in order to prevent a resurrection of the destroyed Dúnedain kingdom of Cardolan. The spirits stirred the dead bones in the mounds and haunted them."
  LOU_races.17.a: "Understood!"
  
- # LOTR_BEORNINGS.1t: "Beornings"
- # LOTR_BEORNINGS.1d: "Beornings also known as Skin-changers were a race of large Men. The origins of Beornings are not known, save that they dwelt in the Vales of Anduin between Mirkwood and the Great River in the late Third Age. Unlike other Men, they had the ability to change into bears. They were named after Beorn, their patriarch."
- # LOTR_BEORNINGS.1a: "Understood!"
+ LOU_races.18.t: "Beornings"
+ LOU_races.18.d: "Beornings also known as Skin-changers were a race of large Men. The origins of Beornings are not known, save that they dwelt in the Vales of Anduin between Mirkwood and the Great River in the late Third Age. Unlike other Men, they had the ability to change into bears. They were named after Beorn, their patriarch."
+ LOU_races.18.a: "Understood!"
  
  #-----------------------------------------
  # Wilderness
@@ -152,6 +152,28 @@
  LOU_trolls.2.t: "Trolls Expelled"
  LOU_trolls.2.d: "Trolls are strong and vicious, but generally dim-witted and stupid at best. Some were described as being able to speak, while others appear to be as irrational as animals. \n\nWe have finally expelled them from the land."
  LOU_trolls.2.b: "Finally we can start working the lands"
+
+ #-----------------------------------------
+ # Province Free People
+ #-----------------------------------------
+ LOU_Province_Free_People.1.t: "Roaming Creatures of Melkor"
+ LOU_Province_Free_People.1.d: "To rid these or your lands, you must change the religion and culture."
+ LOU_Province_Free_People.1.a: "They will cause trouble!"
+ 
+ LOU_Province_Free_People.2.t: "Creatures of Melkor Expelled"
+ LOU_Province_Free_People.2.d: "."
+ LOU_Province_Free_People.2.b: "Finally we can start working the lands"
+
+ #-----------------------------------------
+ # Province Servant of Evil
+ #-----------------------------------------
+ LOU_Province_Servant_Of_Evil.1.t: "Roaming Free Peoples of Middle-Earth"
+ LOU_Province_Servant_Of_Evil.1.d: "To rid these or your lands, you must change the religion and culture."
+ LOU_Province_Servant_Of_Evil.1.a: "They will cause trouble!"
+ 
+ LOU_Province_Servant_Of_Evil.2.t: "Free Peoples of Middle-Earth Expelled"
+ LOU_Province_Servant_Of_Evil.2.d: "."
+ LOU_Province_Servant_Of_Evil.2.b: "Finally we can start working the lands"
  
  #-----------------------------------------
  # Huorn
@@ -642,6 +664,17 @@
  LOU_mordor.33.t: "The White Tree Burns"
  LOU_mordor.33.d: "The White tree of Gondor is burning! The shadows of Mordor grows ever stronger. Soon all of Middle-earth will be under the control of Sauron the Great"
  LOU_mordor.33.a: "Praise the Dark Lord!"
+
+ LOU_mordor.34.t: "The Power of the Dark Lord"
+ LOU_mordor.34.d: "The Dark lord has returned, the orcs in Mordor muster together forming armies and the prepared wealth is collected and brought to Barad-Dûr"
+ LOU_mordor.34.a: "Praise the Dark Lord!"
+
+ mordor_spawn_army_tt: "15 §YInfantry§!, 5 §YCavalry§!, 5 §YArtillery§! will arrive in [FROM.GetName]"
+
+ LOU_mordor.35.t: "Seeds of Darkness"
+ LOU_mordor.35.d: "Long have our influence affected the Men south of our borders. A good portion of the men of Nûrn is prepared to join forces with the Dark Lord"
+ LOU_mordor.35.a: "Start the Coup!"
+ LOU_mordor.35.b: "We don't need the help of men!"
  
  #----------------------------------
  # Gondor
