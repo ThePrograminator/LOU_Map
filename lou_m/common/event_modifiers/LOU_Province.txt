@@ -135,3 +135,18 @@ market_of_linhir = {
 elfs_forest_defence_roll = {
 	own_territory_dice_roll_bonus = 1
 }
+
+dead_marshes_modifier = {
+	development_cost = 1000
+	local_build_cost = 1000
+	local_build_time = 1000
+	local_tax_modifier = -100
+	local_production_efficiency = -100
+	province_trade_power_modifier = -100
+	allowed_num_of_buildings = -15
+	attrition = 10
+	local_warscore_cost_modifier = 0.5
+	local_governing_cost = -1.0
+	local_unrest = -100
+	local_years_of_nationalism = -100
+}

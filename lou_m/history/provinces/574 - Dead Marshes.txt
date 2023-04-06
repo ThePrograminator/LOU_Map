@@ -20,8 +20,8 @@ add_core = X99
 owner = X99
 controller = X99
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_wight
+religion = religion_wight
 
 trade_goods = herbs
 
@@ -29,6 +29,11 @@ hre = no
 
 add_province_modifier = {
 	name = wilderness_debuff
+	duration = -1
+}
+
+add_province_modifier = {
+	name = dead_marshes_modifier
 	duration = -1
 }
 
