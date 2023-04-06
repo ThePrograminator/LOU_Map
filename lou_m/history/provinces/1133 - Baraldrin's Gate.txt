@@ -9,16 +9,29 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = Y90
 owner = Y90
 controller = Y90
+
 culture = culture_ymirsfolk
 religion = religion_nenedain
+
 trade_goods = fur
-add_core = Y90
+
+hre = no
+
+settlement_building=yes
+
+outpost_building=yes
+
+#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -68,5 +81,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-settlement_building = yes
-outpost_building = yes
+
