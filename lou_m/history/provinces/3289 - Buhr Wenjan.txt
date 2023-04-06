@@ -9,53 +9,35 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 3
 base_manpower = 1
-
-add_core = Y94
 owner = Y94
 controller = Y94
-
 culture = culture_bardings
 religion = religion_nenedain
-
 trade_goods = iron
-
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-work_camp_building=yes
-
 2758.9.15 = {
 	add_core = Y94
 	controller = Y94
 	owner = Y94
 }
-
 2770.1.1 = {
 	add_core = V51
 	controller = V51
 	owner = V51
 }
-
 2941.11.23 = {
 	add_core = Y94
 	owner = Y94
 	controller = Y94
 }
-
 2960.1.1 = {
-	temple_building=yes
+	temple_building = yes
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y94
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -105,4 +87,6 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+settlement_building = yes
+outpost_building = yes
+work_camp_building = yes

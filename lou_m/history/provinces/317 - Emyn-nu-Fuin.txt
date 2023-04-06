@@ -9,33 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 6
-
-add_core = V41
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = V41
 controller = V41
-
 culture = culture_spider
 religion = religion_spider
-
 trade_goods = iron
-
-hre = no
-
-fortress_1_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-large_arena_building=yes
-
-blacksmith_orc_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = V41
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -85,4 +68,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_1_orc_building = yes
+orc_fissure_orc_building = yes
+large_arena_building = yes
+blacksmith_orc_building = yes

@@ -9,49 +9,29 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 6
-base_production = 6
-base_manpower = 10
-
-add_core = V27
+base_production = 4
+base_manpower = 8
 owner = V27
 controller = V27
-
 culture = culture_eothraim
 religion = religion_aivathuida
-
 trade_goods = grain
-
-hre = no
-
-fortress_2_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
-forge_building=yes
-
 center_of_trade = 1
-
 2758.9.15 = {
 	add_core = V30
 	owner = V30
 	controller = V30
 }
-
 2759.8.20 = {
 	add_core = X99
 	owner = X99
 	controller = X99
 	culture = culture_sagath
 	religion = religion_ulgath
-	barracks_building=yes
+	barracks_building = yes
 }
-
 2799.3.10 = {
 	add_core = V27
 	owner = V27
@@ -59,17 +39,16 @@ center_of_trade = 1
 	culture = culture_eothraim
 	religion = religion_aivathuida
 }
-
 2999.1.1 = {
 	add_core = X99
 	owner = X99
 	controller = X99
-	barracks_building=yes
+	barracks_building = yes
 	culture = culture_sagath
 	religion = religion_ulgath
 }
-
 #Rhovanion Superregion Discovery
+add_core = V27
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -119,4 +98,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_2_building = yes
+fort_castle_building = yes
+army_camp_building = yes
+forge_building = yes

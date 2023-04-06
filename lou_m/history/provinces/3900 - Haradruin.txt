@@ -9,29 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = W82
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = W82
 controller = W82
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = stone
-
-hre = no
-
-camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = W82
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -81,4 +68,5 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+camp_orc_building = yes
+orc_pit_orc_building = yes

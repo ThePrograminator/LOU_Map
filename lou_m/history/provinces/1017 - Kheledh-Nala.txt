@@ -9,36 +9,15 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 9
-base_manpower = 11
-
-add_core = Y18
+base_tax = 4
+base_production = 5
+base_manpower = 3
 owner = Y18
 controller = Y18
-
 culture = culture_ironfist
 religion = religion_mahal
-
 trade_goods = gold
-
-hre = no
-
-hold_3_dwarf_building=yes
-
-forge_dwarf_building=yes
-
-smithies_guild_building=yes
-
-hall_of_warriors_dwarf_building=yes
-
-fort_mountain_fortress_dwarf_building=yes
-
-narrow_bridge_dwarf_building=yes
-
 2802.1.1 = {
 	add_core = Y48
 	owner = Y48
@@ -46,8 +25,8 @@ narrow_bridge_dwarf_building=yes
 	culture = culture_goblin
 	religion = religion_goblin
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y18
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -97,4 +76,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+hold_3_dwarf_building = yes
+forge_dwarf_building = yes
+smithies_guild_building = yes
+hall_of_warriors_dwarf_building = yes
+fort_mountain_fortress_dwarf_building = yes
+narrow_bridge_dwarf_building = yes

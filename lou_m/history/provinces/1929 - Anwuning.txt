@@ -9,29 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = Y98
+base_tax = 5
+base_production = 3
+base_manpower = 4
 owner = Y98
 controller = Y98
-
 culture = culture_gadrauhts
 religion = religion_aivathuida
-
 trade_goods = grain
-
-hre = no
-
-city_1_building=yes
-
-workshop_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Y98
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -81,4 +68,5 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+city_1_building = yes
+workshop_building = yes

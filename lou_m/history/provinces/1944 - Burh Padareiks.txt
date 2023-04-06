@@ -9,35 +9,22 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
+base_tax = 5
 base_production = 4
-base_manpower = 7
-
-add_core = V29
+base_manpower = 6
 owner = V29
 controller = V29
-
 culture = culture_eothraim
 religion = religion_aivathuida
-
 trade_goods = grain
-
-hre = no
-
-fortress_1_building=yes
-
-fort_pallisade_building=yes
-
 2953.1.1 = {
 	add_core = X90
 	owner = X90
 	controller = X90
 }
-
 #Rhovanion Superregion Discovery
+add_core = V29
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -87,4 +74,5 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_1_building = yes
+fort_pallisade_building = yes

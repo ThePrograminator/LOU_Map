@@ -9,49 +9,23 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 11
-base_production = 11
-base_manpower = 11
-
-add_core = Y23
+base_tax = 8
+base_production = 14
+base_manpower = 8
 owner = Y23
 controller = Y23
-
 culture = culture_longbeard
 religion = religion_mahal
-
 trade_goods = gold
-
-hre = no
-
-capital_2_dwarf_building=yes
-
-great_market_dwarf_building=yes
-
-arsenal_dwarf_building=yes
-
-research_office_dwarf_building=yes
-
-hall_of_warriors_dwarf_building=yes
-
-materials_depot_building=yes
-
-fort_mountain_fortress_dwarf_building=yes
-
-narrow_bridge_dwarf_building=yes
-
 center_of_trade = 2
-
 2989.4.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y23
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -101,4 +75,11 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_2_dwarf_building = yes
+great_market_dwarf_building = yes
+arsenal_dwarf_building = yes
+research_office_dwarf_building = yes
+hall_of_warriors_dwarf_building = yes
+materials_depot_building = yes
+fort_mountain_fortress_dwarf_building = yes
+narrow_bridge_dwarf_building = yes
