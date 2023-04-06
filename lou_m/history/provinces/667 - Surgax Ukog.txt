@@ -9,35 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 4
-
-add_core = Y34
+base_tax = 3
+base_production = 4
+base_manpower = 2
 owner = Y34
 controller = Y34
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = grain
-
-hre = no
-
-encampment_1_orc_building=yes
-
-blacksmith_orc_building=yes
-
-warg_pit_orc_building=yes
-
-small_arena_building=yes
-
 center_of_trade = 1
-
 #Rhovanion Superregion Discovery
+add_core = Y34
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -87,4 +70,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+encampment_1_orc_building = yes
+blacksmith_orc_building = yes
+warg_pit_orc_building = yes
+small_arena_building = yes
