@@ -9,29 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
-add_core = Y68
+base_tax = 1
+base_production = 1
+base_manpower = 4
 owner = Y68
 controller = Y68
-
 culture = culture_galadhrim
 religion = religion_umanyar
-
 trade_goods = fish
-
-hre = no
-
-town_1_elf_building=yes
-
-temple_elf_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Y68
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -81,4 +68,5 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+town_1_elf_building = yes
+temple_elf_building = yes
