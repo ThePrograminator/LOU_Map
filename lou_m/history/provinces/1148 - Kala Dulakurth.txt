@@ -9,43 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 7
-base_manpower = 8
-
-add_core = Y31
+base_tax = 4
+base_production = 5
+base_manpower = 3
 owner = Y31
 controller = Y31
-
 culture = culture_ice_orkish
 religion = religion_orkish
-
 trade_goods = salt
-
-hre = no
-
-capital_2_orc_building=yes
-
-meat_depot_orc_building=yes
-
-overseer_station_orc_building=yes
-
-metal_works_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_pit_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-large_arena_building=yes
-
-prisoner_cage_orc_building=yes
-
-#Forodwaith Superregion Discovery
+add_core = Y31
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -93,4 +66,12 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_2_orc_building = yes
+meat_depot_orc_building = yes
+overseer_station_orc_building = yes
+metal_works_orc_building = yes
+orc_fissure_orc_building = yes
+warg_pit_orc_building = yes
+fort_wooden_walls_orc_building = yes
+large_arena_building = yes
+prisoner_cage_orc_building = yes

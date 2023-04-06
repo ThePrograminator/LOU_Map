@@ -1,248 +1,83 @@
 # A region can only belong to one super region.
-
-gondor_superregion= {
-	gondor_region
-	ithilien_region
-	lebennin_region
-	belfalas_region
-	anfalas_region
-	lamedon_region
-	erech_region
-	pinnath_gelin_region
-	andrast_region
-	old_pukel_land_region
+gondor_superregion = {
+	gondor_region ithilien_region lebennin_region belfalas_region anfalas_region lamedon_region erech_region pinnath_gelin_region andrast_region old_pukel_land_region
 }
-
-rohan_superregion= {
-	rohan_region
+rohan_superregion = {
+	rohan_region 
 }
-
-mordor_superregion= {
-	mordor_region
-	nurn_region
+mordor_superregion = {
+	mordor_region nurn_region 
 }
-
-rhovanion_superregion= {
-	rhovanion_region
-	mirkwood_region
-	vales_of_anduin_region
-	dale_region
-	grey_mountains_region
-	erebor_ironhills_region
+rhovanion_superregion = {
+	rhovanion_region mirkwood_region vales_of_anduin_region dale_region erebor_ironhills_region 
 }
-
-misty_mountains_superregion= {
-	misty_mountains_region
+misty_mountains_superregion = {
+	misty_mountains_region 
 }
-
-old_pukel_land_superregion= {
-	
+old_pukel_land_superregion = {
 }
-
-eriador_superregion= {
-	shire_region
-	enedhwaith_region
-	eregion_region
-	cardolan_region
-	arthedain_region
-	rhudaur_region
-	sirranwaith_region
-	tumnogoth_iaur_region
-	numeriador_region
-	dunland_region
-	forlindon_region
-	harlindon_region
-	lindon_region
-	tol_fuin_region
-	lothlann_region
-	ered_luin_region
+eriador_superregion = {
+	shire_region enedhwaith_region eregion_region cardolan_region arthedain_region rhudaur_region sirranwaith_region tumnogoth_iaur_region numeriador_region dunland_region
+	forlindon_region harlindon_region lindon_region tol_fuin_region lothlann_region ered_luin_region 
 }
-
-forodwaith_superregion= {
-	forodwaith_region
-	forochel_region
-	angmar_region
-	northern_waste_region
+forodwaith_superregion = {
+	forodwaith_region forochel_region angmar_region northern_waste_region grey_mountains_region 
 }
-
-dyria_superregion= {
-	barl_syrnac_region
-	azjan_region
-	ukal_sej_region
-	ered_engrin_region
-	yalg_kusir_region
-	zyeth_hyd_region
-	olyavud_region
-	dyr_region
-	mur_brya_region
-	mur_fostisyr_region
+dyria_superregion = {
+	barl_syrnac_region azjan_region ukal_sej_region ered_engrin_region yalg_kusir_region zyeth_hyd_region olyavud_region dyr_region mur_brya_region mur_fostisyr_region
 }
-
-western_middle_earth_sea_superregion= {
-	anduin_river_region
-	angren_river_region
-	gwathlo_river_region
-	baranduin_river_region
-	sea_of_rhun_region
-	sea_of_belegaer_region
+western_middle_earth_sea_superregion = {
+	anduin_river_region angren_river_region gwathlo_river_region baranduin_river_region sea_of_rhun_region sea_of_belegaer_region 
 }
-
-near_harad_superregion= {
-	harondor_region
-	harnendor_region
-	chelkar_region
-	pezarsan_region
-	lurmsakun_region
-	haruzan_region
-	arysis_region
-	nen_umbar_region
-	urdwaith_region
+near_harad_superregion = {
+	harondor_region harnendor_region chelkar_region pezarsan_region lurmsakun_region haruzan_region arysis_region nen_umbar_region urdwaith_region 
 }
-
-far_harad_superregion= {
-	raj_region
-	sud_sicanna_region
-	tulwang_region
-	thani_hazad_region
+far_harad_superregion = {
+	raj_region sud_sicanna_region tulwang_region thani_hazad_region 
 }
-
-haradwaith_superregion= {
-	bellakar_region
+haradwaith_superregion = {
+	bellakar_region 
 }
-
-chy_superregion= {
-	clyan_region
-	chy_region
-	lodenuly_region
-	bulchyades_region
-	siakan_region
+chy_superregion = {
+	clyan_region chy_region lodenuly_region bulchyades_region siakan_region 
 }
-
-rhun_superregion= {
-	khand_region
-	rhun_region
-	logathavuld_region
-	nurad_region
-	relmether_region
-	kykurian_region
-	lotan_region
+rhun_superregion = {
+	khand_region rhun_region logathavuld_region nurad_region relmether_region kykurian_region lotan_region 
 }
-
-palisor_superregion= {
-	dalpygis_region
-	rycolis_region
-	daldunair_region
-	y_lusturanysur_region
-	idurak_region
-	orgothraath_region
-	kargagis_ahar_region
-	alduryaknar_region
-	burskadekdar_region
-	lygar_kraw_region
-	uster_kryl_region
-	chey_sart_region
-	heb_aaraan_region
-	jendiar_region
-	ubain_region
-	lurs_vorganis_region
-	helcarth_region
-	rubor_region
-	gaathgykarkan_region
-	kendarca_region
-	ralian_region
-	ibav_region
-	taur_engrin_region
-	baraztum_mountains_region
-	ered_pontym_region
+palisor_superregion = {
+	dalpygis_region rycolis_region daldunair_region y_lusturanysur_region idurak_region orgothraath_region kargagis_ahar_region alduryaknar_region burskadekdar_region lygar_kraw_region
+	uster_kryl_region chey_sart_region heb_aaraan_region jendiar_region ubain_region lurs_vorganis_region helcarth_region rubor_region gaathgykarkan_region kendarca_region
+	ralian_region ibav_region taur_engrin_region baraztum_mountains_region ered_pontym_region 
 }
-
-harshandatt_superregion= {
-	harshandatt_region
+harshandatt_superregion = {
+	harshandatt_region 
 }
-
-mumakan_superregion= {
-	ardor_region
-	tur_betark_region
+mumakan_superregion = {
+	ardor_region tur_betark_region 
 }
-
-sirayn_superregion= {
-	sirayn_region
+sirayn_superregion = {
+	sirayn_region 
 }
-
-urd_superregion= {
-	urd_region
-	mitheryn_region
-	desdursyton_region
-	lu_tyr_su_region
-	kubor_sed_region
-	luindor_region
-	angclax_region
-	sharthax_region
-	uul_region
-	eryn_illuin_region
-	aigvalg_region
-	urcheldor_region
-	myr_region
+urd_superregion = {
+	urd_region mitheryn_region desdursyton_region lu_tyr_su_region kubor_sed_region luindor_region angclax_region sharthax_region uul_region eryn_illuin_region
+	aigvalg_region urcheldor_region myr_region 
 }
-
-balizar_superregion= {
-	olyas_kriis_region
-	anarike_region
-	codya_region
-	lomithani_region
-	jojojopo_region
-	balkuloni_region
-	lomeanor_region
-	acaana_region
-	waarwugan_region
-	lyneria_region
+balizar_superregion = {
+	olyas_kriis_region anarike_region codya_region lomithani_region jojojopo_region balkuloni_region lomeanor_region acaana_region waarwugan_region lyneria_region
 }
-
-ered_harmal_superregion= {
-	ered_harmal_region
+ered_harmal_superregion = {
+	ered_harmal_region 
 }
-
-lochan_daer_superregion= {
-	zurghor_region
-	sakal_an_khar_region
-	vulm_shryac_region
-	shay_region
-	unvirnay_region
-	horl_region
-	ruartar_region
-	ruuriik_region
-	orosuli_region
-	vshrang_region
-	arg_simorig_region
-	tana_region
-	kaish_region
-	menars_region
-	brod_region
-	lokhas_region
-	drod_region
-	wol_region
-	tarsa_region
-	waw_region
-	southern_isles_region
+lochan_daer_superregion = {
+	zurghor_region sakal_an_khar_region vulm_shryac_region shay_region unvirnay_region horl_region ruartar_region ruuriik_region orosuli_region vshrang_region
+	arg_simorig_region tana_region kaish_region menars_region brod_region lokhas_region drod_region wol_region tarsa_region waw_region
+	southern_isles_region 
 }
-
-womarin_realms_superregion= {
-	karn_ord_region
-	aegan_region
-	helcar_sael_region
-	thuriac_codya_region
-	womawas_drus_region
-	kael_region
-	orocarni_region
-	haen_region
+womarin_realms_superregion = {
+	karn_ord_region aegan_region helcar_sael_region thuriac_codya_region womawas_drus_region kael_region orocarni_region haen_region 
 }
-
-islands_of_helkaer_superregion= {
-	uiven_region
-	kosth_leer_region
-	rolfandas_region
-	urtlagga_region
+islands_of_helkaer_superregion = {
+	uiven_region kosth_leer_region rolfandas_region urtlagga_region 
 }
-
-new_world_superregion ={
+new_world_superregion = {
 }

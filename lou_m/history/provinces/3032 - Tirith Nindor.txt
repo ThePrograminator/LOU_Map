@@ -28,7 +28,10 @@ trade_goods = mushrooms
 
 hre = no
 
-settlement_building=yes
+add_province_modifier = {
+	name = dead_marshes_modifier
+	duration = -1
+}
 
 2758.9.15 = {
 	add_core = X99

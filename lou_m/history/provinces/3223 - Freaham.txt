@@ -9,28 +9,15 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 2
 base_production = 3
 base_manpower = 1
-
-add_core = X16
 owner = X16
 controller = X16
-
 culture = culture_west_march
 religion = religion_eorlingas
-
 trade_goods = grain
-
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
-
 2758.1.1 = {
 	add_core = V95
 	owner = V95
@@ -38,19 +25,16 @@ temple_building=yes
 	culture = culture_dunlendings
 	religion = religion_daen
 }
-
 2759.8.20 = {
 	add_core = X16
 	owner = X16
 	controller = X16
 }
-
 2851.1.20 = {
 	add_core = V95
 	owner = V95
 	controller = V95
 }
-
 2870.6.1 = {
 	add_core = X16
 	owner = X16
@@ -59,12 +43,11 @@ temple_building=yes
 	culture = culture_west_march
 	religion = religion_eorlingas
 }
-
 3018.4.1 = {
 	controller = V49
 }
-
 #Rohan Superregion Discovery
+add_core = X16
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -110,4 +93,5 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+settlement_building = yes
+temple_building = yes
