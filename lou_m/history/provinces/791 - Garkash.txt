@@ -9,16 +9,35 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
-base_production = 3
-base_manpower = 8
+base_production = 1
+base_manpower = 1
+
+add_core = Y44
 owner = Y44
 controller = Y44
+
 culture = culture_goblin
 religion = religion_goblin
+
 trade_goods = iron
-add_core = Y44
+
+fortress_2_orc_building=yes
+
+overseer_station_orc_building=yes
+
+metal_works_orc_building=yes
+
+orc_fissure_orc_building=yes
+
+fort_wooden_walls_orc_building=yes
+
+large_arena_building=yes
+
+#Misty Mountains Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,9 +83,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-fortress_2_orc_building = yes
-overseer_station_orc_building = yes
-metal_works_orc_building = yes
-orc_fissure_orc_building = yes
-fort_wooden_walls_orc_building = yes
-large_arena_building = yes
+
