@@ -10,8 +10,8 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 is_city = yes
-base_tax = 6
-base_production = 7
+base_tax = 3
+base_production = 4
 base_manpower = 8
 owner = V19
 controller = V19
@@ -21,6 +21,10 @@ trade_goods = iron
 center_of_trade = 1
 add_province_modifier = {
 	name = ruins_debuff
+	duration = -1
+}
+add_province_modifier = {
+	name = dol_guldur_necromancer
 	duration = -1
 }
 2770.1.1 = {
@@ -62,6 +66,7 @@ add_province_modifier = {
 	add_base_production = 1
 }
 2941.10.13 = {
+	remove_province_modifier = dol_guldur_necromancer
 	add_province_modifier = {
 		name = ruins_debuff
 		duration = -1
