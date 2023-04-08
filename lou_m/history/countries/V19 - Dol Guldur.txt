@@ -1,7 +1,8 @@
 government = orc_gov
 add_government_reform = lotr_nazgul_reform
 primary_culture = culture_orkish
-add_accepted_culture = culture_spider
+add_accepted_culture = culture_wight
+add_accepted_culture = culture_maiar
 religion = religion_orkish
 technology_group = lotr_orc_rhovanion
 unit_type = lotr_orc
@@ -38,24 +39,34 @@ historical_rival = V26
 
 2750.1.1 = {
 	monarch = {
+		name = "The Necromancer'"
+		dynasty = "Shadow of Dul Guldur"
+		birth_date = 2718.1.1
+		adm = 6
+		dip = 5
+		mil = 6
+		culture = culture_maiar
+	}
+	add_ruler_personality = immortal_personality
+	heir = {
 		name = "Maubag"
 		dynasty = "Gazthak"
 		birth_date = 2714.1.1
-		adm = 3
-		dip = 5
-		mil = 2
-	}
-	heir = {
-		monarch_name = "Lagrat"
-		name = "Lagrat"
-		dynasty = "Gazthak"
-		birth_date = 2702.1.1
-		death_date = 2730.1.1
-		adm = 0
-		dip = 1
+		adm = 4
+		dip = 3
 		mil = 5
-		claim = 100
 	}
+	#heir = {
+	#	monarch_name = "Lagrat"
+	#	name = "Lagrat"
+	#	dynasty = "Gazthak"
+	#	birth_date = 2702.1.1
+	#	death_date = 2730.1.1
+	#	adm = 0
+	#	dip = 1
+	#	mil = 5
+	#	claim = 100
+	#}
 }
 
 2800.1.1 = {
