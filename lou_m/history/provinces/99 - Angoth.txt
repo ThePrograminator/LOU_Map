@@ -10,15 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-#is_city = yes
-
-base_tax = 3
-base_production = 4
-base_manpower = 5
-
-#add_core = Z18
-#owner = Z18
-#controller = Z18
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 culture = culture_wilderness
 religion = religion_wilderness
@@ -27,11 +21,9 @@ trade_goods = iron
 
 hre = no
 
-#fortress_1_building=yes
-
-#army_camp_building=yes
-
-2758.1.1 = { tribal_owner = Q09 }
+2758.1.1 = {
+	tribal_owner = Q09
+}
 
 2951.1.1 = {
 	add_core = Y50
