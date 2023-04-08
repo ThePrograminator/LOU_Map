@@ -9,38 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 11
-base_manpower = 7
-
-add_core = Y94
+base_tax = 2
+base_production = 3
+base_manpower = 1
 owner = Y94
 controller = Y94
-
 culture = culture_bardings
 religion = religion_nenedain
-
 trade_goods = fish
-
-hre = no
-
-city_2_building=yes
-
-trade_depot_building=yes
-
-tax_office_building=yes
-
-warehouse_building=yes
-
-outpost_building=yes
-
-seaport_building=yes
-
 center_of_trade = 1
-
 2770.1.1 = {
 	add_core = V51
 	controller = V51
@@ -49,7 +27,6 @@ center_of_trade = 1
 	add_base_production = -5
 	add_base_manpower = -5
 }
-
 2941.11.23 = {
 	add_core = Y94
 	controller = Y94
@@ -57,14 +34,13 @@ center_of_trade = 1
 	culture = culture_bardings
 	religion = religion_nenedain
 }
-
 2944.2.23 = {
 	add_base_tax = 5
 	add_base_production = 5
 	add_base_manpower = 5
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y94
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -114,4 +90,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+city_2_building = yes
+trade_depot_building = yes
+tax_office_building = yes
+warehouse_building = yes
+outpost_building = yes
+seaport_building = yes

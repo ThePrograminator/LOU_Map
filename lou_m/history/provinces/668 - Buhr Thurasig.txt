@@ -9,49 +9,35 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 5
-
-add_core = Y22
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = Y22
 controller = Y22
-
-add_core = Y90
 culture = culture_ymirsfolk
 religion = religion_nenedain
-
 trade_goods = iron
-
-hre = no
-
-settlement_1_dwarf_building=yes
-
-mine_shaft_dwarf_building=yes
-
 2770.1.1 = {
 	owner = Y90
 	controller = Y90
-	settlement_building=yes
-	work_camp_building=yes
+	settlement_building = yes
+	work_camp_building = yes
 }
-
 2941.11.23 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 	culture = culture_longbeard
 	religion = religion_mahal
-	settlement_1_dwarf_building=yes
-	armoury_dwarf_building=yes
-	mine_shaft_dwarf_building=yes
-	fort_castle_dwarf_building=yes
+	settlement_1_dwarf_building = yes
+	armoury_dwarf_building = yes
+	mine_shaft_dwarf_building = yes
+	fort_castle_dwarf_building = yes
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y22
+add_core = Y90
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -101,4 +87,5 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+settlement_1_dwarf_building = yes
+mine_shaft_dwarf_building = yes

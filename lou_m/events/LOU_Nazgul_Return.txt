@@ -1,0 +1,38 @@
+# Nazgul Return from the Wraith-World"
+country_event = {
+	id = LOU_Nazgul_Return.1
+	title = "LOU_Nazgul_Return.1.t"
+	desc = "LOU_Nazgul_Return.1.d"
+	picture = nazgul_returns_eventpicture
+	
+	trigger = {
+		tag = V18
+		NOT = {
+			has_ruler = "Witch-King"
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 90
+	}
+    
+	option = {
+		name = "LOU_Nazgul_Return.1.a"
+
+		define_ruler = {
+			name = "Witch-King"
+			dynasty = "Lord of the Nazgul"
+			adm = 5
+			dip = 3
+			mil = 6
+			age = 20
+			claim = 100
+		}
+		define_ruler_to_general = {
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 5
+		}
+	}
+}

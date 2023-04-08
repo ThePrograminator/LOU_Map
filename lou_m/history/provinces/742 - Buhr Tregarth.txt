@@ -9,31 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = Z04
+base_tax = 5
+base_production = 6
+base_manpower = 4
 owner = Z04
 controller = Z04
-
 culture = culture_woodmen
 religion = religion_ullthiuda
-
 trade_goods = honey
-
-hre = no
-
-fortress_1_building=yes
-
-fort_pallisade_building=yes
-
-work_camp_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Z04
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -83,4 +68,6 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_1_building = yes
+fort_pallisade_building = yes
+work_camp_building = yes

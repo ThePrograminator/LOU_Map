@@ -9,40 +9,19 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 11
-base_manpower = 9
-
-add_core = Z02
+base_tax = 6
+base_production = 4
+base_manpower = 5
 owner = Z02
 controller = Z02
-
-add_core = W73
 culture = culture_gargath
 religion = religion_daen
-
 trade_goods = dyes
-
-hre = no
-
-capital_2_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-trade_depot_building=yes
-
-workshop_building=yes
-
-provincial_office_building=yes
-
 center_of_trade = 2
-
 #Rhovanion Superregion Discovery
+add_core = Z02
+add_core = W73
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -92,4 +71,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_2_building = yes
+fort_castle_building = yes
+barracks_building = yes
+trade_depot_building = yes
+workshop_building = yes
+provincial_office_building = yes

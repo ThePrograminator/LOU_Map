@@ -9,31 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
+base_tax = 2
 base_production = 1
-base_manpower = 1
-
-add_core = Z01
+base_manpower = 3
 owner = Z01
 controller = Z01
-
 culture = culture_beornings
 religion = religion_nenedain
-
 trade_goods = honey
-
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-work_camp_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Z01
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -83,4 +68,6 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+settlement_building = yes
+outpost_building = yes
+work_camp_building = yes

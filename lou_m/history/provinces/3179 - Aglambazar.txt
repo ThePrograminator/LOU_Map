@@ -9,33 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = Y08
+base_tax = 3
+base_production = 4
+base_manpower = 2
 owner = Y08
 controller = Y08
-
 culture = culture_longbeard
 religion = religion_mahal
-
 trade_goods = iron
-
-hre = no
-
-hold_1_dwarf_building=yes
-
-mustering_hall_dwarf_building=yes
-
-mine_shaft_dwarf_building=yes
-
-armoury_dwarf_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Y08
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -85,4 +68,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+hold_1_dwarf_building = yes
+mustering_hall_dwarf_building = yes
+mine_shaft_dwarf_building = yes
+armoury_dwarf_building = yes

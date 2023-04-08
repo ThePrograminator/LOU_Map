@@ -147,8 +147,18 @@ dead_marshes_modifier = {
 	attrition = 10
 	local_friendly_movement_speed = -10
 	local_hostile_movement_speed = -10
-	local_warscore_cost_modifier = -1.0
+	local_warscore_cost_modifier = -0.9
 	local_governing_cost = -1.0
 	local_unrest = -100
 	local_years_of_nationalism = -100
 }
+
+dol_guldur_necromancer = {
+	fort_level = 1
+	local_hostile_attrition = 2
+	local_defensiveness = 0.15
+	supply_limit_modifier = 0.25
+	local_unrest = -10
+	local_production_efficiency = 0.10
+}
+

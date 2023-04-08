@@ -1,6 +1,7 @@
 government = orc_gov
 add_government_reform = lotr_nazgul_reform
 primary_culture = culture_orkish
+add_accepted_culture = culture_wight
 religion = religion_orkish
 technology_group = lotr_orc_gondor
 unit_type = lotr_orc
@@ -15,12 +16,21 @@ historical_rival = X16
 
 2758.1.1 = {
 	monarch = {
-		name = "Witch-king"
-		dynasty = "Lord of the Nazgul"
+		name = "Witch-King"
+		dynasty = "Lord of the Nazgûl"
 		adm = 5
 		dip = 3
 		mil = 6
 		birth_date = 2730.1.1
+		culture = culture_wight
+		leader = {
+			name = "Witch-King Lord of the Nazgûl"	# Name of the leader
+			type = general							# Type of leader: general, admiral, explorer, conquistidor
+			fire = 4   					 			# Fire value of the leader
+			shock = 6     							# Shock value of the leader
+			manuever = 4    						# Manuever value of the leader
+			siege = 5       						# Siege value of the leader
+		}
 	}
     add_ruler_personality = immortal_personality
 }

@@ -9,35 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 7
-base_manpower = 8
-
-add_core = Y67
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = Y67
 controller = Y67
-
 culture = culture_silvan
 religion = religion_umanyar
-
 trade_goods = glass
-
-hre = no
-
-town_2_elf_building=yes
-
-green_pastures_elf_building=yes
-
-moat_elf_building=yes
-
-theatre_elf_building=yes
-
-elven_forge_elf_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Y67
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -87,4 +68,8 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+town_2_elf_building = yes
+green_pastures_elf_building = yes
+moat_elf_building = yes
+theatre_elf_building = yes
+elven_forge_elf_building = yes

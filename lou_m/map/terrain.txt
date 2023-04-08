@@ -3217,6 +3217,7 @@ categories =  {
 		defence = 1
 		supply_limit = 5
 		local_development_cost = 0.2
+		local_defensiveness = 0.10
 		nation_designer_cost_multiplier = 0.9
 		
 		terrain_override = {
@@ -3821,7 +3822,7 @@ categories =  {
 	}
 	
 	unique_angmar_town = {
-		color = { 200 80 0 }
+		color = { 150 0 0 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3869,7 +3870,7 @@ categories =  {
 	}
 	
 	unique_dunedain_ruin = {
-		color = { 192 192 192 }
+		color = { 0 25 125 }
 		sound_type = plains
 		
 		movement_cost = 0.95
@@ -4164,7 +4165,7 @@ categories =  {
 	}
 	
 	unique_eregion_ruin = {
-		color = { 192 192 192 }
+		color = { 0 200 200 }
 		sound_type = plains
 		
 		movement_cost = 0.95

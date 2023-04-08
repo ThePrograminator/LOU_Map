@@ -9,38 +9,17 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 11
-base_production = 10
-base_manpower = 10
-
-add_core = Z03
+base_tax = 5
+base_production = 7
+base_manpower = 6
 owner = Z03
 controller = Z03
-
-add_core = W67
 culture = culture_dorwinrim
 religion = religion_daen
-
 trade_goods = naval_supplies
-
-hre = no
-
-capital_3_building=yes
-
-bank_building=yes
-
-garrison_building=yes
-
-fort_stronghold_building=yes
-
-grand_shipyard_building=yes
-
-forum_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Z03
+add_core = W67
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -90,4 +69,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_3_building = yes
+bank_building = yes
+garrison_building = yes
+fort_stronghold_building = yes
+grand_shipyard_building = yes
+forum_building = yes
