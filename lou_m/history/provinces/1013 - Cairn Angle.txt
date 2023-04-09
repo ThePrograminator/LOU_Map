@@ -9,27 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = Z05
+base_production = 3
+base_manpower = 2
 owner = Z05
 controller = Z05
-
 culture = culture_ibnothiuda
 religion = religion_eastern_northmen
-
 trade_goods = stone
-
-hre = no
-
-settlement_building=yes
-
-#Rhovanion Superregion Discovery
+add_core = Z05
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -79,4 +68,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+settlement_building = yes

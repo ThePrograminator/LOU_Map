@@ -9,35 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 6
-base_manpower = 10
-
-add_core = X27
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X27
 controller = X27
-
 culture = culture_umbareans
 religion = religion_black_numenorean
-
 trade_goods = copper
-
-hre = no
-
-fortress_2_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-drydock_building=yes
-
-tax_office_building=yes
-
-#Near Harad Superregion Discovery
+add_core = X27
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -103,4 +84,8 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+fortress_2_building = yes
+fort_castle_building = yes
+barracks_building = yes
+drydock_building = yes
+tax_office_building = yes

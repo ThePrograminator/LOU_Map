@@ -9,26 +9,17 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 3
 base_manpower = 1
-
-add_core = Y69
 owner = Y69
 controller = Y69
-
-add_core = Y01
 culture = culture_uialrim
 religion = religion_umanyar
-
 trade_goods = tropical_wood
-
-hre = no
-
-#Rhun Superregion Discovery
+add_core = Y69
+add_core = Y01
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -104,4 +95,3 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-

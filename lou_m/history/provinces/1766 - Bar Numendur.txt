@@ -9,33 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = X26
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X26
 controller = X26
-
 culture = culture_haruze
 religion = religion_haruzani
-
 trade_goods = marble
-
-hre = no
-
-city_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-army_camp_building=yes
-
-#Near Harad Superregion Discovery
+add_core = X26
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -101,4 +84,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+city_1_building = yes
+trade_outpost_building = yes
+temple_building = yes
+army_camp_building = yes

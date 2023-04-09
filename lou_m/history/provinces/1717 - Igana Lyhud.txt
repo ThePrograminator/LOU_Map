@@ -9,35 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = Y02
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = Y02
 controller = Y02
-
 culture = culture_urgath
 religion = religion_ulgath
-
 trade_goods = cloth
-
-hre = no
-
-city_1_building=yes
-
-outpost_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-work_camp_building=yes
-
-#Rhun Superregion Discovery
+add_core = Y02
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -113,4 +94,8 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+city_1_building = yes
+outpost_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+work_camp_building = yes

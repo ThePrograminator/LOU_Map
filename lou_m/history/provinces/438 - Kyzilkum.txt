@@ -9,41 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 10
-base_manpower = 11
-
-add_core = X79
+base_tax = 6
+base_production = 4
+base_manpower = 8
 owner = X79
 controller = X79
-
 culture = culture_variags
 religion = religion_ioriags
-
 trade_goods = silk
-
-hre = no
-
-capital_2_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-forge_building=yes
-
-warehouse_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
 center_of_trade = 2
-
 #Rhun Superregion Discovery
+add_core = X79
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -119,4 +96,10 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+trade_depot_building = yes
+provincial_office_building = yes
+forge_building = yes
+warehouse_building = yes
+fort_castle_building = yes
+barracks_building = yes

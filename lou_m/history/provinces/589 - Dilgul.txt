@@ -9,36 +9,17 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 8
-base_manpower = 8
-
-add_core = V39
+base_tax = 4
+base_production = 5
+base_manpower = 6
 owner = V39
 controller = V39
-
-add_core = W64
 culture = culture_igath
 religion = religion_ulgath
-
 trade_goods = iron
-
-hre = no
-
-fortress_2_building=yes
-
-barracks_building=yes
-
-fort_castle_building=yes
-
-forge_building=yes
-
-temple_building=yes
-
-#Rhun Superregion Discovery
+add_core = V39
+add_core = W64
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -114,4 +95,8 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+fortress_2_building = yes
+barracks_building = yes
+fort_castle_building = yes
+forge_building = yes
+temple_building = yes

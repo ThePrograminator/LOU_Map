@@ -9,39 +9,18 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 8
-base_manpower = 9
-
-add_core = X89
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = X89
 controller = X89
-
 culture = culture_kykurians
 religion = religion_ioriags
-
 trade_goods = dyes
-
-hre = no
-
-fortress_3_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
 center_of_trade = 2
-
 #Rhun Superregion Discovery
+add_core = X89
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -117,4 +96,9 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+fortress_3_building = yes
+marketplace_building = yes
+tax_office_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes

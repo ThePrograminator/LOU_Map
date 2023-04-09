@@ -9,41 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 11
-base_production = 11
-base_manpower = 13
-
-add_core = X19
+base_production = 9
+base_manpower = 10
 owner = X19
 controller = X19
-
 culture = culture_haruze
 religion = religion_haruzani
-
 trade_goods = ivory
-
-hre = no
-
-capital_3_building=yes
-
-fort_stronghold_building=yes
-
-garrison_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-foundry_building=yes
-
-stockpile_building=yes
-
 center_of_trade = 2
-
 #Near Harad Superregion Discovery
+add_core = X19
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -109,4 +86,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+capital_3_building = yes
+fort_stronghold_building = yes
+garrison_building = yes
+forum_building = yes
+bank_building = yes
+foundry_building = yes
+stockpile_building = yes

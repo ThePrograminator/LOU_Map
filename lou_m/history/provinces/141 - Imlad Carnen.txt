@@ -9,39 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 10
-base_manpower = 8
-
-add_core = V12
+base_tax = 6
+base_production = 5
+base_manpower = 7
 owner = V12
 controller = V12
-
 culture = culture_donan
 religion = religion_daen
-
 trade_goods = glass
-
-hre = no
-
-capital_2_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-workshop_building=yes
-
-tax_office_building=yes
-
-marketplace_building=yes
-
 center_of_trade = 1
-
 #Near Harad Superregion Discovery
+add_core = V12
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -107,4 +86,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+workshop_building = yes
+tax_office_building = yes
+marketplace_building = yes

@@ -9,39 +9,16 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 9
-base_production = 10
-base_manpower = 10
-
-add_core = X22
+base_tax = 6
+base_production = 7
+base_manpower = 5
 owner = X22
 controller = X22
-
 culture = culture_siaken
 religion = religion_haruzani
-
 trade_goods = silk
-
-hre = no
-
-capital_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-foundry_building=yes
-
-stockpile_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
-#Chy Superregion Discovery
+add_core = X22
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -82,4 +59,10 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+foundry_building = yes
+stockpile_building = yes
+fort_castle_building = yes
+garrison_building = yes

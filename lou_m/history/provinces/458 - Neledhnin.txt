@@ -9,31 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 6
-base_manpower = 5
-
-add_core = X24
+base_tax = 1
+base_production = 3
+base_manpower = 2
 owner = X24
 controller = X24
-
 culture = culture_donaen
 religion = religion_daen
-
 trade_goods = cloth
-
-hre = no
-
-city_1_building=yes
-
-work_camp_building=yes
-
-trade_outpost_building=yes
-
-#Near Harad Superregion Discovery
+add_core = X24
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -99,4 +84,6 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+city_1_building = yes
+work_camp_building = yes
+trade_outpost_building = yes

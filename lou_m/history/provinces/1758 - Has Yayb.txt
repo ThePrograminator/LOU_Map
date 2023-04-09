@@ -9,33 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 6
-base_manpower = 4
-
-add_core = X25
+base_tax = 2
+base_production = 4
+base_manpower = 3
 owner = X25
 controller = X25
-
 culture = culture_sakalai
 religion = religion_haruzani
-
 trade_goods = dyes
-
-hre = no
-
-city_1_building=yes
-
-dock_building=yes
-
-army_camp_building=yes
-
-trade_outpost_building=yes
-
-#Near Harad Superregion Discovery
+add_core = X25
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -101,4 +84,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+city_1_building = yes
+dock_building = yes
+army_camp_building = yes
+trade_outpost_building = yes
