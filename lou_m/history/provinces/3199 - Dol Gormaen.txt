@@ -10,15 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
-add_core = V01
-owner = V01
-controller = V01
 
 culture = culture_orkish
 religion = religion_orkish
@@ -27,13 +21,13 @@ trade_goods = copper
 
 hre = no
 
-fortress_1_orc_building=yes
+native_size = 40
+native_ferocity = 6
+native_hostileness = 6
 
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-small_arena_building=yes
+2758.1.1 = {
+	tribal_owner = V01
+}
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

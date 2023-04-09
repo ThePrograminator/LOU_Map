@@ -9,16 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
-owner = Z33
-controller = Z33
-culture = culture_arthedain
-religion = religion_eriadorians
+
+culture = culture_wilderness
+religion = religion_wilderness
+
 trade_goods = iron
-add_core = Z33
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,8 +64,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-fortress_2_building = yes
-marketplace_building = yes
-forge_building = yes
-fort_castle_building = yes
-barracks_building = yes
