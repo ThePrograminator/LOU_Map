@@ -9,34 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 8
-base_manpower = 5
-
-add_core = Y57
+base_tax = 1
+base_production = 3
+base_manpower = 2
 owner = Y57
 controller = Y57
-
 culture = culture_goblin
 religion = religion_goblin
-
 trade_goods = silver
-
-hre = no
-
-encampment_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
 2793.1.1 = {
 	add_core = V52
 }
-
 2989.1.1 = {
 	add_core = V53
 	controller = V53
@@ -44,7 +28,6 @@ orc_pit_orc_building=yes
 	culture = culture_longbeard
 	religion = religion_mahal
 }
-
 2994.1.1 = {
 	add_core = Y57
 	controller = Y57
@@ -52,8 +35,8 @@ orc_pit_orc_building=yes
 	culture = culture_goblin
 	religion = religion_goblin
 }
-
 #Misty Mountains Superregion Discovery
+add_core = Y57
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -99,4 +82,6 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+encampment_1_orc_building = yes
+enforcer_camp_orc_building = yes
+orc_pit_orc_building = yes

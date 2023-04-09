@@ -9,37 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = X97
+base_tax = 3
+base_production = 5
+base_manpower = 4
 owner = X97
 controller = X97
-
 culture = culture_sagath
 religion = religion_ulgath
-
 trade_goods = livestock
-
-hre = no
-
-capital_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-port_building=yes
-
-#Rhun Superregion Discovery
+add_core = X97
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -115,4 +94,9 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+capital_1_building = yes
+trade_outpost_building = yes
+temple_building = yes
+work_camp_building = yes
+outpost_building = yes
+port_building = yes
