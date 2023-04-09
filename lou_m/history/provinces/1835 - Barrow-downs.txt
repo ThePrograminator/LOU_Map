@@ -9,30 +9,21 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
 base_production = 1
-base_manpower = 1
-
-add_core = V34
+base_manpower = 10
 owner = V34
 controller = V34
-
 culture = culture_wight
 religion = religion_wight
-
 trade_goods = stone
-
-hre = no
-
 add_province_modifier = {
 	name = province_wight_debuff
 	duration = -1
 }
-
 #Eriador Superregion Discovery
+add_core = V34
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -46,7 +37,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -79,4 +69,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

@@ -9,46 +9,26 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = Z45
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = Z45
 controller = Z45
-
 culture = culture_clansmen
 religion = religion_daen
-
 trade_goods = herbs
-
-hre = no
-
-capital_1_building=yes
-
-fort_pallisade_building=yes
-
-outpost_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
 2771.1.1 = {
 	add_core = Z50
 	owner = Z50
 	controller = Z50
 }
-
 2800.1.1 = {
 	culture = culture_dunlendings
 	religion = religion_daen
 }
-
 #Eriador Superregion Discovery
+add_core = Z45
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -62,7 +42,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -95,4 +74,8 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_building = yes
+fort_pallisade_building = yes
+outpost_building = yes
+temple_building = yes
+work_camp_building = yes
