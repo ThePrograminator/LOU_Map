@@ -9,31 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 3
 base_manpower = 1
-
-add_core = Y26
 owner = Y26
 controller = Y26
-
 culture = culture_shirefolk
 religion = religion_perian
-
 trade_goods = wool
-
-hre = no
-
-city_1_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-#Eriador Superregion Discovery
+add_core = Y26
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -47,7 +32,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -80,4 +64,6 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+city_1_building = yes
+tax_office_building = yes
+workshop_building = yes

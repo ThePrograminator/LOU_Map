@@ -9,43 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 9
-base_manpower = 8
-
-add_core = Y04
+base_tax = 6
+base_production = 8
+base_manpower = 4
 owner = Y04
 controller = Y04
-
 culture = culture_broadbeam
 religion = religion_mahal
-
 trade_goods = gold
-
-hre = no
-
-capital_2_dwarf_building=yes
-
-great_market_dwarf_building=yes
-
-arsenal_dwarf_building=yes
-
-acadamy_dwarf_building=yes
-
-hall_of_warriors_dwarf_building=yes
-
-fort_mountain_fortress_dwarf_building=yes
-
-narrow_bridge_dwarf_building=yes
-
-ballista_towers_dwarf_building=yes
-
 center_of_trade = 2
-
 #Eriador Superregion Discovery
+add_core = Y04
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -59,7 +34,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -92,4 +66,11 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_2_dwarf_building = yes
+great_market_dwarf_building = yes
+arsenal_dwarf_building = yes
+acadamy_dwarf_building = yes
+hall_of_warriors_dwarf_building = yes
+fort_mountain_fortress_dwarf_building = yes
+narrow_bridge_dwarf_building = yes
+ballista_towers_dwarf_building = yes

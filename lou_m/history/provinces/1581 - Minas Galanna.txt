@@ -9,34 +9,15 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 7
-
-add_core = Z29
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = Z29
 controller = Z29
-
 culture = culture_arthedain
 religion = religion_eriadorians
-
 trade_goods = fur
-
-hre = no
-
-fortress_1_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
-workshop_building=yes
-
-temple_building=yes
-
 2845.6.1 = {
 	add_core = Z29
 	owner = Z29
@@ -44,8 +25,8 @@ temple_building=yes
 	culture = culture_orkish
 	religion = religion_orkish
 }
-
 #Eriador Superregion Discovery
+add_core = Z29
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -59,7 +40,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -92,4 +72,8 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+fortress_1_building = yes
+fort_castle_building = yes
+army_camp_building = yes
+workshop_building = yes
+temple_building = yes

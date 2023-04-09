@@ -9,47 +9,18 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 6
-base_manpower = 6
-
-add_core = Y72
+base_tax = 5
+base_production = 7
+base_manpower = 3
 owner = Y72
 controller = Y72
-
 culture = culture_mithrim
 religion = religion_calaquendi
-
 trade_goods = cloth
-
-hre = no
-
-capital_2_elf_building=yes
-
-craftsmen_plaza_elf_building=yes
-
-theatre_elf_building=yes
-
-elven_forge_elf_building=yes
-
-heros_shrine_building=yes
-
-grand_stables_elf_building=yes
-
-seaport_elf_building=yes
-
-haven_elf_building=yes
-
-fort_low_walls_elf_building=yes
-
-wall_bastions_elf_building=yes
-
 center_of_trade = 2
-
 #Eriador Superregion Discovery
+add_core = Y72
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -63,7 +34,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -96,4 +66,13 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_2_elf_building = yes
+craftsmen_plaza_elf_building = yes
+theatre_elf_building = yes
+elven_forge_elf_building = yes
+heros_shrine_building = yes
+grand_stables_elf_building = yes
+seaport_elf_building = yes
+haven_elf_building = yes
+fort_low_walls_elf_building = yes
+wall_bastions_elf_building = yes
