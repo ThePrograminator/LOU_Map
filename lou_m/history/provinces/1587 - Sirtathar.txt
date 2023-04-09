@@ -9,38 +9,17 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = V38
+base_tax = 2
+base_production = 4
+base_manpower = 3
 owner = V38
 controller = V38
-
-add_core = Y80
 culture = culture_feotari
 religion = religion_eriadorians
-
 trade_goods = cloth
-
-hre = no
-
-capital_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-outpost_building=yes
-
-#Eriador Superregion Discovery
+add_core = V38
+add_core = Y80
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -54,7 +33,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -87,4 +65,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_building = yes
+trade_outpost_building = yes
+temple_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+outpost_building = yes
