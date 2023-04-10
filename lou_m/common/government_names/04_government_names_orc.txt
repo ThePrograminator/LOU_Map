@@ -110,6 +110,40 @@ gov_lotr_nazgul = {
 	}
 }
 
+gov_lotr_necromancer = {
+	rank = {
+		1 = NECROMANCER_DOMAIN
+		2 = NECROMANCER_DOMAIN
+		3 = NECROMANCER_DOMAIN
+	}
+
+	ruler_male = {
+		1 = NECROMANCER
+		2 = NECROMANCER
+		3 = NECROMANCER
+	}
+
+	ruler_female = {
+		1 = NECROMANCER
+		2 = NECROMANCER
+		3 = NECROMANCER
+	}
+	heir_male = {
+		1 = NAZGUL
+		2 = NAZGUL
+		3 = NAZGUL
+	}
+	heir_female = {
+		1 = NAZGUL
+		2 = NAZGUL
+		3 = NAZGUL
+	}
+	
+	trigger = {
+		has_reform = lotr_necromancer_reform
+	}
+}
+
 gov_lotr_isengard = {
 	rank = {
 		1 = ISENGARD

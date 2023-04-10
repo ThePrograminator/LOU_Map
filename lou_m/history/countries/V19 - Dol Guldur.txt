@@ -1,5 +1,5 @@
 government = orc_gov
-add_government_reform = lotr_nazgul_reform
+add_government_reform = lotr_necromancer_reform
 primary_culture = culture_orkish
 add_accepted_culture = culture_wight
 add_accepted_culture = culture_maiar
@@ -41,24 +41,24 @@ historical_rival = V26
 	monarch = {
 		name = "The Necromancer"
 		dynasty = "Shadow of Dol Guldur"
-		birth_date = 2718.1.1
+		birth_date = 2700.1.1
 		adm = 6
 		dip = 3
 		mil = 6
 		culture = culture_maiar
 	}
-	add_ruler_personality = immortal_personality
 	heir = {
-		male = yes
 		name = "Khamul"
-		dynasty = "Shadow of the East"
-		birth_date = 2728.1.1
+		monarch_name = "Khamul"
+		dynasty = "Shadow of Dol Guldur"
+		birth_date = 2730.1.1
 		adm = 5
 		dip = 3
 		mil = 5
 		culture = culture_wight
 		claim = 100
 	}
+	add_ruler_personality = immortal_personality
 	add_heir_personality = immortal_personality
 }
 
