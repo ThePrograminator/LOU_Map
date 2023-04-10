@@ -9,29 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = V42
+base_production = 3
+base_manpower = 2
 owner = V42
 controller = V42
-
 culture = culture_kargarim
 religion = religion_ahar
-
 trade_goods = fruit
-
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-#Palisor Superregion Discovery
+add_core = V42
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -78,4 +65,5 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+settlement_building = yes
+outpost_building = yes
