@@ -9,27 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
-base_production = 1
+base_production = 4
 base_manpower = 1
-
-add_core = X37
 owner = X37
 controller = X37
-
 culture = culture_covshek-pust
 religion = religion_apysani_beduins
-
 trade_goods = silk
-
-hre = no
-
 center_of_trade = 1
-
 #Near Harad Superregion Discovery
+add_core = X37
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -95,4 +86,3 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-

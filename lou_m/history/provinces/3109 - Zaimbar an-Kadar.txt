@@ -9,39 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 8
-base_manpower = 10
-
-add_core = X48
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X48
 controller = X48
-
 culture = culture_etulians
 religion = religion_sea_peoples
-
 trade_goods = spices
-
-hre = no
-
-fortress_3_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
-grand_shipyard_building=yes
-
-#Far Harad Superregion Discovery
+add_core = X48
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -68,4 +45,10 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+fortress_3_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes
+grand_shipyard_building = yes

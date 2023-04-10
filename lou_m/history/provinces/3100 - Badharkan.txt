@@ -9,35 +9,16 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 8
-
-add_core = X43
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X43
 controller = X43
-
 culture = culture_bellakarani
 religion = religion_black_numenorean
-
 trade_goods = naval_supplies
-
-hre = no
-
-fortress_1_building=yes
-
-trade_outpost_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-dock_building=yes
-
-#Haradwaith Superregion Discovery
+add_core = X43
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -68,4 +49,8 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-
+fortress_1_building = yes
+trade_outpost_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+dock_building = yes

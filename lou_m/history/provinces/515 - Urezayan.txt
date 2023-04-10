@@ -9,45 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 11
-base_production = 12
-base_manpower = 15
-
-add_core = X44
+base_tax = 5
+base_production = 4
+base_manpower = 6
 owner = X44
 controller = X44
-
 culture = culture_bellakarani
 religion = religion_black_numenorean
-
 trade_goods = naval_supplies
-
-hre = no
-
-capital_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-foundry_building=yes
-
-fort_stronghold_building=yes
-
-garrison_building=yes
-
-dockyard_building=yes
-
-grand_shipyard_building=yes
-
 center_of_trade = 2
-
 #Haradwaith Superregion Discovery
+add_core = X44
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -78,4 +51,12 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+foundry_building = yes
+fort_stronghold_building = yes
+garrison_building = yes
+dockyard_building = yes
+grand_shipyard_building = yes

@@ -9,39 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 8
-
-add_core = X49
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X49
 controller = X49
-
 culture = culture_sorijans
 religion = religion_sea_peoples
-
 trade_goods = fish
-
-hre = no
-
-city_3_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-stockpile_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-dockyard_building=yes
-
-#Far Harad Superregion Discovery
+add_core = X49
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -68,4 +45,10 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+city_3_building = yes
+trade_depot_building = yes
+provincial_office_building = yes
+stockpile_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+dockyard_building = yes

@@ -10,7 +10,6 @@ lotr_orc_migrating_clan_reform = {
 	allow_migration = yes
 	native_mechanic = yes
 	lock_level_when_selected = yes
-	heir = no
 	
 	potential = {
 		OR = {
@@ -39,7 +38,6 @@ lotr_orc_clan_reform = {
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_orc_clan_legacy
 	fixed_rank = 2
-	heir = no
 	
 	potential = {
 		OR = {
@@ -62,7 +60,6 @@ lotr_orc_federation_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_orc_clan_federation_legacy
-	heir = no
 	
 	potential = {
 		OR = {
@@ -87,7 +84,6 @@ lotr_orc_kingdom_reform = {
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_orc_kingdom_legacy
 	fixed_rank = 2
-	heir = no
 	
 	potential = {
 		OR = {
