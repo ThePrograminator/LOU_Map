@@ -9,41 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 8
-base_manpower = 7
-
-add_core = Y73
+base_tax = 5
+base_production = 7
+base_manpower = 3
 owner = Y73
 controller = Y73
-
 culture = culture_kinn-lai
 religion = religion_moriquendi
-
 trade_goods = wine
-
-hre = no
-
-capital_2_elf_building=yes
-
-craftsmen_plaza_elf_building=yes
-
-theatre_elf_building=yes
-
-elven_forge_elf_building=yes
-
-heros_shrine_building=yes
-
-grand_stables_elf_building=yes
-
-fort_high_walls_elf_building=yes
-
-wall_bastions_elf_building=yes
-
-#Mumakan Superregion Discovery
+add_core = Y73
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -73,4 +48,11 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_2_elf_building = yes
+craftsmen_plaza_elf_building = yes
+theatre_elf_building = yes
+elven_forge_elf_building = yes
+heros_shrine_building = yes
+grand_stables_elf_building = yes
+fort_high_walls_elf_building = yes
+wall_bastions_elf_building = yes

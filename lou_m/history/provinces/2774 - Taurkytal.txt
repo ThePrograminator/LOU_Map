@@ -9,25 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 6
-
-add_core = V86
+base_tax = 3
+base_production = 4
+base_manpower = 2
 owner = V86
 controller = V86
-
 culture = culture_wight
 religion = religion_wight
-
 trade_goods = stone
-
-hre = no
-
-#Dyria Superregion Discovery
+add_core = V86
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -64,4 +55,3 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-

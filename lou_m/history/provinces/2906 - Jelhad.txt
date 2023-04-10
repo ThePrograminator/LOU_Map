@@ -9,35 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 6
-base_manpower = 6
-
-add_core = X74
+base_tax = 5
+base_production = 4
+base_manpower = 3
 owner = X74
 controller = X74
-
 culture = culture_denuly
 religion = religion_chyans
-
 trade_goods = cloth
-
-hre = no
-
-city_2_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Chy Superregion Discovery
+add_core = X74
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -78,4 +59,8 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+city_2_building = yes
+marketplace_building = yes
+tax_office_building = yes
+workshop_building = yes
+army_camp_building = yes

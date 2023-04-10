@@ -9,37 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 7
-base_manpower = 7
-
-add_core = Y15
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = Y15
 controller = Y15
-
 culture = culture_blacklock
 religion = religion_mahal
-
 trade_goods = iron
-
-hre = no
-
-hold_1_dwarf_building=yes
-
-armoury_dwarf_building=yes
-
-libary_dwarf_building=yes
-
-training_hall_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-rune_door_dwarf_building=yes
-
-#Mumakan Superregion Discovery
+add_core = Y15
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -69,4 +48,9 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+hold_1_dwarf_building = yes
+armoury_dwarf_building = yes
+libary_dwarf_building = yes
+training_hall_dwarf_building = yes
+mining_network_dwarf_building = yes
+rune_door_dwarf_building = yes

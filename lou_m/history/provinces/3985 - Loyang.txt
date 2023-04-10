@@ -9,41 +9,18 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 9
-base_production = 8
-base_manpower = 8
-
-add_core = V97
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = V97
 controller = V97
-
 culture = culture_wom
 religion = religion_avaradan
-
 trade_goods = grain
-
-hre = no
-
-city_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-dockyard_building=yes
-
 center_of_trade = 3
-
 #Womarin Realms Superregion Discovery
+add_core = V97
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -76,4 +53,10 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+city_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+dockyard_building = yes

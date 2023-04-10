@@ -9,49 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 11
-base_production = 11
-base_manpower = 13
-
-add_core = Y36
+base_tax = 2
+base_production = 4
+base_manpower = 6
 owner = Y36
 controller = Y36
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = iron
-
-hre = no
-
-capital_3_orc_building=yes
-
-stockpile_orc_building=yes
-
-overseer_tower_orc_building=yes
-
-dark_iron_forge_orc_building=yes
-
-army_garrison_orc_building=yes
-
-troll_cage_orc_building=yes
-
-great_siege_works_orc_building=yes
-
-fort_orc_stronghold_orc_building=yes
-
-large_arena_building=yes
-
-prisoner_cage_orc_building=yes
-
-tortur_chambers_orc_building=yes
-
 center_of_trade = 2
-
 #Dyria Superregion Discovery
+add_core = Y36
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -88,4 +57,14 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_3_orc_building = yes
+stockpile_orc_building = yes
+overseer_tower_orc_building = yes
+dark_iron_forge_orc_building = yes
+army_garrison_orc_building = yes
+troll_cage_orc_building = yes
+great_siege_works_orc_building = yes
+fort_orc_stronghold_orc_building = yes
+large_arena_building = yes
+prisoner_cage_orc_building = yes
+tortur_chambers_orc_building = yes

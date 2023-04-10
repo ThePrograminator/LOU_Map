@@ -9,37 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 6
-base_manpower = 6
-
-add_core = W38
+base_tax = 3
+base_production = 4
+base_manpower = 2
 owner = W38
 controller = W38
-
 culture = culture_stonefoot
 religion = religion_mahal
-
 trade_goods = iron
-
-hre = no
-
-settlement_2_dwarf_building=yes
-
-fairground_dwarf_building=yes
-
-armoury_dwarf_building=yes
-
-libary_dwarf_building=yes
-
-hall_of_warriors_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-#Urd Superregion Discovery
+add_core = W38
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -80,4 +59,9 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+settlement_2_dwarf_building = yes
+fairground_dwarf_building = yes
+armoury_dwarf_building = yes
+libary_dwarf_building = yes
+hall_of_warriors_dwarf_building = yes
+mining_network_dwarf_building = yes

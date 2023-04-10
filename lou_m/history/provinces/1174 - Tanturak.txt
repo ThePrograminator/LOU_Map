@@ -9,41 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 9
-base_production = 8
-base_manpower = 10
-
-add_core = X45
+base_tax = 6
+base_production = 5
+base_manpower = 7
 owner = X45
 controller = X45
-
 culture = culture_tarturaki
 religion = religion_black_numenorean
-
 trade_goods = silk
-
-hre = no
-
-capital_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-foundry_building=yes
-
-fort_citidal_building=yes
-
-garrison_building=yes
-
 center_of_trade = 2
-
 #Mumakan Superregion Discovery
+add_core = X45
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -73,4 +50,10 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+foundry_building = yes
+fort_citidal_building = yes
+garrison_building = yes

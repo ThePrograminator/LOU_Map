@@ -9,37 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 7
-base_manpower = 5
-
-add_core = Z72
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = Z72
 controller = Z72
-
 culture = culture_makurians
 religion = religion_kir
-
 trade_goods = slaves
-
-hre = no
-
-city_2_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-dock_building=yes
-
-#Sirayn Superregion Discovery
+add_core = Z72
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
@@ -70,4 +49,9 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+city_2_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+workshop_building = yes
+army_camp_building = yes
+dock_building = yes

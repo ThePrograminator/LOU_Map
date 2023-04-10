@@ -9,39 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 8
-base_manpower = 6
-
-add_core = X73
+base_tax = 3
+base_production = 4
+base_manpower = 2
 owner = X73
 controller = X73
-
 culture = culture_chy
 religion = religion_chyans
-
 trade_goods = spices
-
-hre = no
-
-city_2_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
 center_of_trade = 1
-
 #Harshandatt Superregion Discovery
+add_core = X73
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -80,4 +59,9 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+city_2_building = yes
+trade_depot_building = yes
+provincial_office_building = yes
+warehouse_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

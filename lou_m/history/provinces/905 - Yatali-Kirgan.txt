@@ -9,37 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 7
+base_tax = 5
+base_production = 4
 base_manpower = 6
-
-add_core = Y88
 owner = Y88
 controller = Y88
-
 culture = culture_yatali-gan
 religion = religion_drughu
-
 trade_goods = cocoa
-
-hre = no
-
-capital_2_building=yes
-
-tax_office_building=yes
-
-warehouse_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
 center_of_trade = 1
-
 #Sirayn Superregion Discovery
+add_core = Y88
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
@@ -70,4 +51,8 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_2_building = yes
+tax_office_building = yes
+warehouse_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

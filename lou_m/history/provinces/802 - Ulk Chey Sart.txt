@@ -9,31 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
-add_core = X77
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X77
 controller = X77
-
 culture = culture_cheyans
 religion = religion_chailuza
-
 trade_goods = gold
-
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
-
-outpost_building=yes
-
-#Palisor Superregion Discovery
+add_core = X77
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -80,4 +65,6 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+settlement_building = yes
+temple_building = yes
+outpost_building = yes

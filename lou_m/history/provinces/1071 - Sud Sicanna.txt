@@ -9,41 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 6
 base_production = 7
-base_manpower = 9
-
-add_core = X38
+base_manpower = 5
 owner = X38
 controller = X38
-
 culture = culture_gusar
 religion = religion_apysani_beduins
-
 trade_goods = glass
-
-hre = no
-
-capital_3_building=yes
-
-forum_building=yes
-
-stockpile_building=yes
-
-bank_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
 center_of_trade = 2
-
 #Far Harad Superregion Discovery
+add_core = X38
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -70,4 +47,10 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_3_building = yes
+forum_building = yes
+stockpile_building = yes
+bank_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes
