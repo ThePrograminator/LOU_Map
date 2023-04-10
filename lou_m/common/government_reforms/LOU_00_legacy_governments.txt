@@ -719,9 +719,11 @@ lotr_nazgul_legacy = {
 	
 	monarchy = yes
 	allow_convert = no
-	heir = no
+	heir = yes
 	queen = no
 	royal_marriage = no
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
 	
 	modifiers = {
     	governing_capacity = 100
@@ -745,7 +747,7 @@ lotr_isengard_legacy = {
 	
 	monarchy = yes
 	allow_convert = no
-	heir = no
+	heir = yes
 	queen = no
 	royal_marriage = no
 	
@@ -771,7 +773,7 @@ lotr_mordor_legacy = {
 	
 	monarchy = yes
 	allow_convert = no
-	heir = no
+	heir = yes
 	queen = no
 	royal_marriage = no
 	

@@ -39,7 +39,7 @@ historical_rival = V26
 
 2750.1.1 = {
 	monarch = {
-		name = "'The Necromancer'"
+		name = "The Necromancer"
 		dynasty = "Shadow of Dol Guldur"
 		birth_date = 2718.1.1
 		adm = 6
@@ -49,13 +49,15 @@ historical_rival = V26
 	}
 	add_ruler_personality = immortal_personality
 	heir = {
-		name = "Khamûl"
+		male = yes
+		name = "Khamul"
 		dynasty = "Shadow of the East"
-		birth_date = 2918.1.1
+		birth_date = 2728.1.1
 		adm = 5
 		dip = 3
 		mil = 5
 		culture = culture_wight
+		claim = 100
 	}
 	add_heir_personality = immortal_personality
 }
@@ -74,7 +76,7 @@ historical_rival = V26
 
 2941.10.13 = {
 	monarch = {
-		name = "Khamûl"
+		name = "Khamul"
 		dynasty = "the Shadow of the East"
 		birth_date = 2918.1.1
 		adm = 5
