@@ -460,6 +460,22 @@ slaves = {
 	chance = {
 		factor = 15
 		modifier = {
+			factor = 20
+			OR = {
+				has_terrain = unique_harad_town
+				has_terrain = unique_desert_towns
+				has_terrain = unique_numenorean_port
+				has_terrain = unique_numenorean_town
+				has_terrain = unique_far_south_town
+				has_terrain = unique_orc_fortress
+				has_terrain = unique_harshandatt_town
+				has_terrain = unique_easterling_town
+				has_terrain = unique_angmar_town
+				has_terrain = unique_chyan_town
+				has_terrain = unique_womaw_settlement
+			}
+		}
+		modifier = {
 			factor = 0
 			island = yes
 		}
