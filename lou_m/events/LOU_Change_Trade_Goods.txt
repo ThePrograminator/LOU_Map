@@ -34,7 +34,8 @@ province_event = {
     
 	option = {
 		name = "LOU_Change_Trade_Goods.1.a"
-
+		ai_chance = { factor = 1000 }
+		
 		trigger = {
 			development = 15
 		}
@@ -44,14 +45,17 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.b"
+		ai_chance = { factor = 33 }
 
 		trigger = {
-			has_terrain = hills
-			has_terrain = highlands
-			has_terrain = mountain
-			has_terrain = unique_mirkwood_mountains
-			has_terrain = unique_pinnath_gelin
-			has_terrain = unique_gondor_hills
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+				has_terrain = unique_mirkwood_mountains
+				has_terrain = unique_pinnath_gelin
+				has_terrain = unique_gondor_hills
+			}
 		}
 
 		change_trade_goods = iron
@@ -59,14 +63,17 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.c"
+		ai_chance = { factor = 33 }
 
 		trigger = {
-			has_terrain = hills
-			has_terrain = highlands
-			has_terrain = mountain
-			has_terrain = unique_mirkwood_mountains
-			has_terrain = unique_pinnath_gelin
-			has_terrain = unique_gondor_hills
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+				has_terrain = unique_mirkwood_mountains
+				has_terrain = unique_pinnath_gelin
+				has_terrain = unique_gondor_hills
+			}
 		}
 
 		change_trade_goods = copper
@@ -74,14 +81,17 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.i"
+		ai_chance = { factor = 33 }
 
 		trigger = {
-			has_terrain = hills
-			has_terrain = highlands
-			has_terrain = mountain
-			has_terrain = unique_mirkwood_mountains
-			has_terrain = unique_pinnath_gelin
-			has_terrain = unique_gondor_hills
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+				has_terrain = unique_mirkwood_mountains
+				has_terrain = unique_pinnath_gelin
+				has_terrain = unique_gondor_hills
+			}
 		}
 
 		change_trade_goods = stone
@@ -89,15 +99,18 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.e"
+		ai_chance = { factor = 50 }
 
 		trigger = {
-			has_terrain = forest
-			has_terrain = woods
-			has_terrain = jungle
-			has_terrain = unique_mirkwood
-			has_terrain = unique_mirkwood_mild
-			has_terrain = unique_mirkwood_west
-			has_terrain = unique_old_forest
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = jungle
+				has_terrain = unique_mirkwood
+				has_terrain = unique_mirkwood_mild
+				has_terrain = unique_mirkwood_west
+				has_terrain = unique_old_forest
+			}
 		}
 
 		change_trade_goods = fur
@@ -105,15 +118,18 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.f"
+		ai_chance = { factor = 50 }
 
 		trigger = {
-			has_terrain = forest
-			has_terrain = woods
-			has_terrain = jungle
-			has_terrain = unique_mirkwood
-			has_terrain = unique_mirkwood_mild
-			has_terrain = unique_mirkwood_west
-			has_terrain = unique_old_forest
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = jungle
+				has_terrain = unique_mirkwood
+				has_terrain = unique_mirkwood_mild
+				has_terrain = unique_mirkwood_west
+				has_terrain = unique_old_forest
+			}
 		}
 
 		change_trade_goods = tropical_wood
@@ -121,6 +137,7 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.g"
+		ai_chance = { factor = 1 }	
 
 		trigger = {
 
@@ -131,12 +148,32 @@ province_event = {
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.h"
+		ai_chance = { factor = 1 }
 
 		trigger = {
 
 		}
 
 		change_trade_goods = livestock
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.j"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			OR = {
+				has_terrain = unique_mordor
+				has_terrain = unique_mordor_gorgoroth
+				has_terrain = farmlands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = drylands
+			}
+		}
+
+		change_trade_goods = great_beasts
 
 	}
 }

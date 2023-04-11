@@ -1276,3 +1276,37 @@ mithril = {
 		}
 	}
 }
+
+mumakil = {
+	color = { 0.490 0.490 0.490 }
+	modifier = {
+		shock_damage = 0.15
+	}
+	province = {
+		trade_goods_size_modifier = 0.25
+	}
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 0
+			NOT = {	has_terrain = mountain }
+		}
+	}
+}
+
+great_beasts = {
+	color = { 0.490 0.490 0.490 }
+	modifier = {
+		siege_ability = 0.15
+	}
+	province = {
+		local_development_cost = -0.15
+	}
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 0
+			NOT = {	has_terrain = mountain }
+		}
+	}
+}
