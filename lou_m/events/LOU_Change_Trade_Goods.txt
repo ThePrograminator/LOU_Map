@@ -32,7 +32,7 @@ province_event = {
 		ai_chance = { factor = 1000 }
 		
 		trigger = {
-			development = 15
+			development = 18
 		}
 
 		change_trade_goods = slaves
@@ -169,6 +169,20 @@ province_event = {
 		}
 
 		change_trade_goods = great_beasts
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.k"
+		ai_chance = { factor = 75 }
+
+		trigger = {
+			trade_goods = wine
+			trade_goods = fruit
+			trade_goods = sugar
+			trade_goods = honey
+		}
+
+		change_trade_goods = orc_draught
 
 	}
 }
