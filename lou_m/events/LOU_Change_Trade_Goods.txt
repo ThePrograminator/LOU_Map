@@ -1,0 +1,127 @@
+# Change Racially Incompatible Trade Goods "
+province_event = {
+	id = LOU_Change_Trade_Goods.1
+	title = "LOU_Change_Trade_Goods.1.t"
+	desc = "LOU_Change_Trade_Goods.1.d"
+	picture = nazgul_returns_eventpicture
+	
+	trigger = {
+		OR = {
+			trade_goods = grain
+			trade_goods = wine
+			trade_goods = tea
+			trade_goods = fruit
+			trade_goods = tobacco
+			trade_goods = sugar
+			trade_goods = cocoa
+			trade_goods = honey
+			trade_goods = fruit
+			trade_goods = mushrooms			
+			trade_goods = silk
+			trade_goods = cloth
+			trade_goods = wool
+			trade_goods = cotton
+		}
+		OR = {
+			culture_group = culture_group_melkor
+			culture_group = culture_group_orcs
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 30
+	}
+    
+	option = {
+		name = "LOU_Change_Trade_Goods.1.a"
+
+		trigger = {
+			development = 12
+		}
+
+		change_trade_goods = slaves
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.b"
+
+		trigger = {
+			has_terrain = hills
+			has_terrain = highlands
+			has_terrain = mountain
+			has_terrain = unique_mirkwood_mountains
+			has_terrain = unique_pinnath_gelin
+			has_terrain = unique_gondor_hills
+		}
+
+		change_trade_goods = iron
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.c"
+
+		trigger = {
+			has_terrain = hills
+			has_terrain = highlands
+			has_terrain = mountain
+			has_terrain = unique_mirkwood_mountains
+			has_terrain = unique_pinnath_gelin
+			has_terrain = unique_gondor_hills
+		}
+
+		change_trade_goods = copper
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.d"
+
+		trigger = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = jungle
+			has_terrain = unique_mirkwood
+			has_terrain = unique_mirkwood_mild
+			has_terrain = unique_mirkwood_west
+			has_terrain = unique_old_forest
+		}
+
+		change_trade_goods = fur
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.e"
+
+		trigger = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = jungle
+			has_terrain = unique_mirkwood
+			has_terrain = unique_mirkwood_mild
+			has_terrain = unique_mirkwood_west
+			has_terrain = unique_old_forest
+		}
+
+		change_trade_goods = tropical_wood
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.f"
+
+		trigger = {
+
+		}
+
+		change_trade_goods = herbs
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.g"
+
+		trigger = {
+
+		}
+
+		change_trade_goods = livestock
+
+	}
+}
