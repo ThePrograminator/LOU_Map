@@ -113,7 +113,7 @@ categories =  {
 			2926 2925 943 937 1509 1277 2832 3560 2833
 			1709 3536 3570 3569 2886 2140 2143 2135 2136
 			2152 2000 3577 2001 1999 2109 2068 2058 3502 1408 926
-			921 3009 1290 1983 3022 3264 874 2945 3493 415 414
+			921 3009 1290 1983 3022 874 2945 3493 415 414
 			838 1414 374 3197 1047 1811 1802 3374 3368 1075 3377
 			3150 3934 594 3401 2827 984 2138 1546 1729 2899
 			1266 254 2780 2043 2069 345 3504 3229 3297 1751
@@ -291,7 +291,7 @@ categories =  {
 			475 1182 3257 3343 3256 3332 3273
 			3254 3303 1219 3298 1216 3244 1215 3228
 			134 1754 3235 3274 3247 3305 3251 3306
-			451 3260 460 3328 1764 480 482
+			3260 460 3328 1764 480 482
 			484 1779 500 487 477 443 1347 485 1380
 			479 1275 1293 1279 435 1292 1289 3294 1187
 			3104 3275 1186 3295 476 3267 3292 517 3100
@@ -305,8 +305,8 @@ categories =  {
 			1172 1240 1399 1334 891 887
 			1613 763 3302 455 4034 4032 4031
 			764 762 2969 2970 2984 1256 1257 2940 
-			434 1291 1221 437 438 447 541 464 449 448
-			450 3269 3307 453 1763 454 3263 540 1217
+			434 1291 1221 437 438 464 449
+			450 453 454 3263 540 1217
 			3265 1483 3268 3262 140 142 3253 1220
 			3252 139 3255 1785 3232 3270 458 3234 
 			459 1211 141 3250 3233 3246 137 3248 132
@@ -327,7 +327,7 @@ categories =  {
 	}
 
 	highlands = {
-		color = { 176 129 21 }
+		color = { 125 160 0 }
 
 		type = hills
 		sound_type = mountains
@@ -570,7 +570,7 @@ categories =  {
 	}
 	
 	unique_gondor_town = {
-		color = { 200 80 0 }
+		color = { 55 90 225 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -1235,7 +1235,7 @@ categories =  {
 	}
 	
 	unique_mordor_fortress = {
-		color = { 85 0 0 }
+		color = { 125 0 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.85
@@ -1272,7 +1272,7 @@ categories =  {
 	##################
 	
 	unique_helmsdeep = {
-		color = { 255 255 0 }
+		color = { 150 75 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.75
@@ -1659,7 +1659,7 @@ categories =  {
 	}
 	
 	unique_harad_town = {
-		color = { 200 80 0 }
+		color = { 200 0 0 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -1675,7 +1675,7 @@ categories =  {
 	}
 	
 	unique_desert_towns = {
-		color = { 200 80 0 }
+		color = { 255 100 0 }
 		sound_type = desert
 		
 		movement_cost = 0.85
@@ -1761,7 +1761,7 @@ categories =  {
 	##################
 	
 	unique_orc_mine = {
-		color = { 190 190 190 }
+		color = { 75 0 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.90
@@ -1780,7 +1780,7 @@ categories =  {
 	}
 	
 	unique_abandoned_mine = {
-		color = { 160 160 160 }
+		color = { 0 150 150 }
 		sound_type = mountains
 		
 		movement_cost = 1.20
@@ -1850,7 +1850,7 @@ categories =  {
 	}
 	
 	unique_dwarf_hold = {
-		color = { 220 220 20 }
+		color = { 125 175 255 }
 		sound_type = mountains
 		
 		movement_cost = 1.0
@@ -2137,7 +2137,7 @@ categories =  {
 	}
 	
 	unique_rhudaur_highlands = {
-		color = { 176 129 21 }
+		color = { 125 160 0 }
 		type = hills
 		sound_type = mountains
 		
@@ -3741,7 +3741,7 @@ categories =  {
 	}
 	
 	unique_codya_settlement = {
-		color = { 200 80 0 }
+		color = { 225 225 225 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3838,7 +3838,7 @@ categories =  {
 	}
 	
 	unique_dunland_town = {
-		color = { 200 80 0 }
+		color = { 115 70 0 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3854,7 +3854,7 @@ categories =  {
 	}
 	
 	unique_hillmen_town = {
-		color = { 200 80 0 }
+		color = { 150 50 0 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3885,7 +3885,7 @@ categories =  {
 	}
 	
 	unique_forodwaith_town = {
-		color = { 200 80 0 }
+		color = { 150 200 255 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3901,7 +3901,7 @@ categories =  {
 	}
 	
 	unique_easterling_town = {
-		color = { 200 80 0 }
+		color = { 200 125 0 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3918,7 +3918,7 @@ categories =  {
 	}
 	
 	unique_numenorean_port = {
-		color = { 200 80 0 }
+		color = { 0 0 0 }
 		sound_type = sea
 		
 		movement_cost = 0.85
@@ -3935,7 +3935,7 @@ categories =  {
 	}
 	
 	unique_numenorean_town = {
-		color = { 200 80 0 }
+		color = { 30 30 30 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3951,7 +3951,7 @@ categories =  {
 	}
 	
 	unique_far_south_town = {
-		color = { 200 80 0 }
+		color = { 75 0 100 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3967,7 +3967,7 @@ categories =  {
 	}
 	
 	unique_nomad_settlement = {
-		color = { 200 80 0 }
+		color = { 200 255 125 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3983,7 +3983,7 @@ categories =  {
 	}
 	
 	unique_high_elven_town = {
-		color = { 200 80 0 }
+		color = { 150 150 255 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -3999,7 +3999,7 @@ categories =  {
 	}
 	
 	unique_wood_elven_town = {
-		color = { 200 80 0 }
+		color = { 150 255 150 }
 		sound_type = forest
 		
 		movement_cost = 0.85
@@ -4015,7 +4015,7 @@ categories =  {
 	}
 	
 	unique_orc_fortress = {
-		color = { 128 128 128 }
+		color = { 125 0 0 }
 		sound_type = mountains
 		
 		movement_cost = 0.85
@@ -4032,7 +4032,7 @@ categories =  {
 	}
 	
 	unique_volcano = {
-		color = { 125 0 0 }
+		color = { 255 75 0 }
 		type = mountains
 		sound_type = mountains
 		
@@ -4064,7 +4064,7 @@ categories =  {
 	}
 	
 	unique_chyan_town = {
-		color = { 200 80 0 }
+		color = { 255 210 90 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -4097,7 +4097,7 @@ categories =  {
 	}
 	
 	unique_harshandatt_town = {
-		color = { 200 80 0 }
+		color = { 155 120 10 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -4180,7 +4180,7 @@ categories =  {
 	}
 	
 	unique_rhovanion_town = {
-		color = { 200 80 0 }
+		color = { 150 25 100 }
 		sound_type = plains
 		
 		movement_cost = 0.85
@@ -4308,7 +4308,7 @@ categories =  {
 	}
 	
 	unique_womaw_settlement = {
-		color = { 200 80 0 }
+		color = { 190 135 20 }
 		type = grasslands
 		sound_type = grasslands
 		
