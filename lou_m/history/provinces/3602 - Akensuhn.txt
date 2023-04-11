@@ -9,29 +9,15 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = W51
+base_tax = 5
+base_production = 6
+base_manpower = 7
 owner = W51
 controller = W51
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = iron
-
-hre = no
-
-capital_1_orc_building=yes
-
-orc_pit_orc_building=yes
-
-small_arena_building=yes
-
-#Lochan Daer Superregion Discovery
+add_core = W51
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -69,4 +55,7 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+capital_1_orc_building = yes
+orc_pit_orc_building = yes
+small_arena_building = yes
+is_city = no

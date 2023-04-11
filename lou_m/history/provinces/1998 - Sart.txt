@@ -9,49 +9,18 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 10
-base_manpower = 11
-
-add_core = Y64
+base_tax = 4
+base_production = 6
+base_manpower = 5
 owner = Y64
 controller = Y64
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = gold
-
-hre = no
-
-capital_3_orc_building=yes
-
-stockpile_orc_building=yes
-
-overseer_tower_orc_building=yes
-
-dark_iron_forge_orc_building=yes
-
-army_garrison_orc_building=yes
-
-troll_cage_orc_building=yes
-
-great_siege_works_orc_building=yes
-
-fort_orc_stronghold_orc_building=yes
-
-large_arena_building=yes
-
-prisoner_cage_orc_building=yes
-
-tortur_chambers_orc_building=yes
-
 center_of_trade = 2
-
 #Lochan Daer Superregion Discovery
+add_core = Y64
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -89,4 +58,14 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+capital_3_orc_building = yes
+stockpile_orc_building = yes
+overseer_tower_orc_building = yes
+dark_iron_forge_orc_building = yes
+army_garrison_orc_building = yes
+troll_cage_orc_building = yes
+great_siege_works_orc_building = yes
+fort_orc_stronghold_orc_building = yes
+large_arena_building = yes
+prisoner_cage_orc_building = yes
+tortur_chambers_orc_building = yes

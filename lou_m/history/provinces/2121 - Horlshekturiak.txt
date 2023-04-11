@@ -9,37 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = W12
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = W12
 controller = W12
-
 culture = culture_horl
 religion = religion_linerim
-
 trade_goods = wool
-
-hre = no
-
-fortress_2_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-#Lochan Daer Superregion Discovery
+add_core = W12
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -77,4 +56,9 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+fortress_2_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+forge_building = yes
+fort_castle_building = yes
+barracks_building = yes
