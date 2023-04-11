@@ -146,7 +146,14 @@ province_event = {
 		ai_chance = { factor = 1 }
 
 		trigger = {
-
+			NOT = {
+				OR = {
+					trade_goods = wine
+					trade_goods = fruit
+					trade_goods = sugar
+					trade_goods = honey
+				}
+			}
 		}
 
 		change_trade_goods = livestock
@@ -176,10 +183,12 @@ province_event = {
 		ai_chance = { factor = 75 }
 
 		trigger = {
-			trade_goods = wine
-			trade_goods = fruit
-			trade_goods = sugar
-			trade_goods = honey
+			OR = {
+				trade_goods = wine
+				trade_goods = fruit
+				trade_goods = sugar
+				trade_goods = honey
+			}
 		}
 
 		change_trade_goods = orc_draught
