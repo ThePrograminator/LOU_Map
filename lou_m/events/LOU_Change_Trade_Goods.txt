@@ -36,7 +36,7 @@ province_event = {
 		name = "LOU_Change_Trade_Goods.1.a"
 
 		trigger = {
-			development = 12
+			development = 15
 		}
 
 		change_trade_goods = slaves
@@ -76,16 +76,15 @@ province_event = {
 		name = "LOU_Change_Trade_Goods.1.d"
 
 		trigger = {
-			has_terrain = forest
-			has_terrain = woods
-			has_terrain = jungle
-			has_terrain = unique_mirkwood
-			has_terrain = unique_mirkwood_mild
-			has_terrain = unique_mirkwood_west
-			has_terrain = unique_old_forest
+			has_terrain = hills
+			has_terrain = highlands
+			has_terrain = mountain
+			has_terrain = unique_mirkwood_mountains
+			has_terrain = unique_pinnath_gelin
+			has_terrain = unique_gondor_hills
 		}
 
-		change_trade_goods = fur
+		change_trade_goods = stone
 
 	}
 	option = {
@@ -101,11 +100,27 @@ province_event = {
 			has_terrain = unique_old_forest
 		}
 
-		change_trade_goods = tropical_wood
+		change_trade_goods = fur
 
 	}
 	option = {
 		name = "LOU_Change_Trade_Goods.1.f"
+
+		trigger = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = jungle
+			has_terrain = unique_mirkwood
+			has_terrain = unique_mirkwood_mild
+			has_terrain = unique_mirkwood_west
+			has_terrain = unique_old_forest
+		}
+
+		change_trade_goods = tropical_wood
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.g"
 
 		trigger = {
 
@@ -115,7 +130,7 @@ province_event = {
 
 	}
 	option = {
-		name = "LOU_Change_Trade_Goods.1.g"
+		name = "LOU_Change_Trade_Goods.1.h"
 
 		trigger = {
 
