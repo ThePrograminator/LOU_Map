@@ -1280,33 +1280,29 @@ mithril = {
 mumakil = {
 	color = { 0.490 0.490 0.490 }
 	modifier = {
-		shock_damage = 0.15
+		cavalry_shock = 1
 	}
 	province = {
 		trade_goods_size_modifier = 0.25
-	}
-	chance = {
-		factor = 0
-		modifier = {
-			factor = 0
-			NOT = {	has_terrain = mountain }
-		}
 	}
 }
 
 great_beasts = {
 	color = { 0.490 0.490 0.490 }
 	modifier = {
-		siege_ability = 0.15
+		siege_ability = 0.10
 	}
 	province = {
-		local_development_cost = -0.15
+		local_development_cost = -0.10
 	}
-	chance = {
-		factor = 0
-		modifier = {
-			factor = 0
-			NOT = {	has_terrain = mountain }
-		}
+}
+
+orc_draught = {
+	color = { 0.352 0.000 0.000 }
+	modifier = {
+		land_morale = 0.05
+	}
+	province = {
+		local_unrest = -1
 	}
 }
