@@ -9,33 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-add_core = V67
+base_tax = 2
+base_production = 3
+base_manpower = 4
 owner = V67
 controller = V67
-
 culture = culture_angcla
 religion = religion_eastern_snowmen
-
 trade_goods = livestock
-
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Urd Superregion Discovery
+add_core = V67
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -76,4 +59,7 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+settlement_building = yes
+temple_building = yes
+work_camp_building = yes
+outpost_building = yes
