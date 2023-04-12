@@ -3,23 +3,51 @@ province_event = {
 	id = LOU_Change_Trade_Goods.1
 	title = "LOU_Change_Trade_Goods.1.t"
 	desc = "LOU_Change_Trade_Goods.1.d"
-	picture = nazgul_returns_eventpicture
+	picture = TRADEGOODS_eventpicture
 	
 	trigger = {
 		OR = {
-			trade_goods = grain
-			trade_goods = wine
-			trade_goods = tea
-			trade_goods = fruit
-			trade_goods = sugar
-			trade_goods = cocoa
-			trade_goods = honey		
-			trade_goods = silk
-			trade_goods = cotton
-		}
-		OR = {
-			culture_group = culture_group_melkor
-			culture_group = culture_group_orcs
+			AND = {
+				OR = {
+					trade_goods = grain
+					trade_goods = wine
+					trade_goods = tea
+					trade_goods = fruit
+					trade_goods = sugar
+					trade_goods = cocoa
+					trade_goods = honey		
+					trade_goods = silk
+					trade_goods = cotton
+					trade_goods = miruvor
+				}
+				OR = {
+					culture_group = culture_group_melkor
+					culture_group = culture_group_orcs
+					culture_group = culture_group_maiar			#Sauron
+				}
+			}
+			AND = {
+				OR = {
+					trade_goods = wine
+					trade_goods = orc_draught
+				}
+				OR = {
+					culture_group = culture_group_sindar
+					culture_group = culture_group_noldor
+					culture_group = culture_group_nandor
+					culture_group = culture_group_avari
+				}
+			}
+			AND = {
+				trade_goods = orc_draught
+				NOT = {
+					OR = {
+						culture_group = culture_group_melkor
+						culture_group = culture_group_orcs
+						culture_group = culture_group_maiar			#Sauron
+					}	
+				}	
+			}
 		}
 	}
 	
@@ -32,6 +60,11 @@ province_event = {
 		ai_chance = { factor = 1000 }
 		
 		trigger = {
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 			development = 18
 		}
 
@@ -51,6 +84,11 @@ province_event = {
 				has_terrain = unique_pinnath_gelin
 				has_terrain = unique_gondor_hills
 			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 		}
 
 		change_trade_goods = iron
@@ -69,6 +107,11 @@ province_event = {
 				has_terrain = unique_pinnath_gelin
 				has_terrain = unique_gondor_hills
 			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 		}
 
 		change_trade_goods = copper
@@ -86,6 +129,11 @@ province_event = {
 				has_terrain = unique_mirkwood_mountains
 				has_terrain = unique_pinnath_gelin
 				has_terrain = unique_gondor_hills
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
 			}
 		}
 
@@ -106,6 +154,11 @@ province_event = {
 				has_terrain = unique_mirkwood_west
 				has_terrain = unique_old_forest
 			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 		}
 
 		change_trade_goods = fur
@@ -125,6 +178,11 @@ province_event = {
 				has_terrain = unique_mirkwood_west
 				has_terrain = unique_old_forest
 			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 		}
 
 		change_trade_goods = tropical_wood
@@ -135,7 +193,11 @@ province_event = {
 		ai_chance = { factor = 1 }	
 
 		trigger = {
-
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 		}
 
 		change_trade_goods = herbs
@@ -153,6 +215,11 @@ province_event = {
 					trade_goods = sugar
 					trade_goods = honey
 				}
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
 			}
 		}
 
@@ -173,6 +240,18 @@ province_event = {
 				has_terrain = steppe
 				has_terrain = drylands
 			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}			
+			OR = {
+				superregion = mordor_superregion
+				superregion = near_harad_superregion
+				superregion = far_harad_superregion
+				superregion = rhun_superregion
+				superregion = haradwaith_superregion
+			}
 		}
 
 		change_trade_goods = great_beasts
@@ -189,9 +268,53 @@ province_event = {
 				trade_goods = sugar
 				trade_goods = honey
 			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture_group = culture_group_maiar			#Sauron
+			}
 		}
 
 		change_trade_goods = orc_draught
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.l"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			OR = {
+				trade_goods = orc_draught
+				trade_goods = wine
+			}
+			OR = {
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+			}			
+			development = 18
+		}
+
+		change_trade_goods = miruvor
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.m"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			trade_goods = orc_draught
+			NOT = {
+				OR = {
+					culture_group = culture_group_melkor
+					culture_group = culture_group_orcs
+					culture_group = culture_group_maiar			#Sauron
+				}	
+			}	
+		}
+
+		change_trade_goods = wine
 
 	}
 }
