@@ -7,7 +7,7 @@ province_event = {
 	
 	trigger = {
 		OR = {
-			AND = {
+			AND = {													#Monster basic trade good removals
 				OR = {
 					trade_goods = grain
 					trade_goods = wine
@@ -23,13 +23,13 @@ province_event = {
 				OR = {
 					culture_group = culture_group_melkor
 					culture_group = culture_group_orcs
-					culture_group = culture_group_maiar			#Sauron
+					culture_group = culture_group_maiar				#Sauron
 				}
 			}
-			AND = {
+			AND = {													#Elves Upgrading to Miruvor
 				OR = {
-					trade_goods = wine
-					trade_goods = orc_draught
+					trade_goods = sugar
+					trade_goods = honey
 				}
 				OR = {
 					culture_group = culture_group_sindar
@@ -37,8 +37,9 @@ province_event = {
 					culture_group = culture_group_nandor
 					culture_group = culture_group_avari
 				}
+				development = 24
 			}
-			AND = {
+			AND = {													#Non-monsters removing orc-draught
 				trade_goods = orc_draught
 				NOT = {
 					OR = {
@@ -251,6 +252,10 @@ province_event = {
 				superregion = far_harad_superregion
 				superregion = rhun_superregion
 				superregion = haradwaith_superregion
+				superregion = chy_superregion
+				superregion = harshandatt_superregion
+				superregion = sirayn_superregion
+				superregion = mumakan_superregion
 			}
 		}
 
@@ -284,8 +289,8 @@ province_event = {
 
 		trigger = {
 			OR = {
-				trade_goods = orc_draught
-				trade_goods = wine
+				trade_goods = sugar
+				trade_goods = honey
 			}
 			OR = {
 				culture_group = culture_group_sindar
@@ -293,7 +298,7 @@ province_event = {
 				culture_group = culture_group_nandor
 				culture_group = culture_group_avari
 			}			
-			development = 18
+			development = 24
 		}
 
 		change_trade_goods = miruvor
