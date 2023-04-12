@@ -6,6 +6,7 @@ province_event = {
 	picture = TRADEGOODS_eventpicture
 	
 	trigger = {
+		is_colony = no
 		OR = {
 			AND = {													#Monster basic trade good removals
 				OR = {

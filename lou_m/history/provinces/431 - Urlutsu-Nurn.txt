@@ -9,33 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 6
-base_manpower = 8
-
-add_core = X86
+base_tax = 6
+base_production = 5
+base_manpower = 7
 owner = X86
 controller = X86
-
 culture = culture_nurniags
 religion = religion_ioriags
-
 trade_goods = slaves
-
-hre = no
-
-capital_2_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
 center_of_trade = 2
-
 #Mordor Superregion Discovery
+add_core = X86
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -104,4 +89,6 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+temple_building = yes
+work_camp_building = yes

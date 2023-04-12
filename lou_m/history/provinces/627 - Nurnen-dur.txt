@@ -9,35 +9,22 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 5
 base_production = 4
 base_manpower = 6
-
-add_core = V24
 owner = V24
 controller = V24
-
 culture = culture_variags
 religion = religion_ioriags
-
 trade_goods = salt
-
-hre = no
-
-capital_1_building=yes
-
-outpost_building=yes
-
 3000.1.1 = {
 	add_core = V23
 	owner = V23
 	controller = V23
 }
-
 #Mordor Superregion Discovery
+add_core = V24
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -106,4 +93,5 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+capital_1_building = yes
+outpost_building = yes

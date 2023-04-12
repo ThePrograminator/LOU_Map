@@ -201,8 +201,13 @@ dunedain_ideas = {
 	}
 	
 	trigger = {
-		is_human = yes
-		primary_culture = culture_dunedain_of_arnor
+		OR = {
+			AND = {
+				is_human = yes
+				primary_culture = culture_dunedain_of_arnor
+			}
+			tag = W57
+		}
 	}
 	free = yes		
 	
@@ -334,9 +339,14 @@ arthedain_ideas = {
 	}
 	
 	trigger = {
-		is_human = yes
-		religion = religion_eriadorians
-		primary_culture = culture_arthedain
+		OR = {
+			AND = {
+				is_human = yes
+				religion = religion_eriadorians
+				primary_culture = culture_arthedain
+			}
+			tag = W54
+		}
 	}
 	free = yes		
 	
@@ -378,9 +388,16 @@ cardolani_ideas = {
 	}
 	
 	trigger = {
-		is_human = yes
-		religion = religion_eriadorians
-		primary_culture = culture_cardolani
+		OR = {
+			AND = {
+				is_human = yes
+				religion = religion_eriadorians
+				primary_culture = culture_cardolani
+			}
+			tag = W55
+			tag = Z19
+			tag = Z17
+		}
 	}
 	free = yes		
 	
