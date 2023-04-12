@@ -327,4 +327,26 @@ province_event = {
 		change_trade_goods = wine
 
 	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.n"
+		ai_chance = { factor = 75 }
+
+		trigger = {
+			trade_goods = miruvor
+			NOT = {
+				OR = {
+					culture_group = culture_group_melkor
+					culture_group = culture_group_orcs
+					culture_group = culture_group_maiar			#Sauron
+					culture_group = culture_group_sindar
+					culture_group = culture_group_noldor
+					culture_group = culture_group_nandor
+					culture_group = culture_group_avari
+				}	
+			}	
+		}
+
+		change_trade_goods = honey
+
+	}
 }
