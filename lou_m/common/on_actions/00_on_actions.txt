@@ -1335,7 +1335,7 @@ on_province_owner_change = {
 		limit = {
 			NOT = {
 				owner = {
-					has_country_modifier = the_cardolan_posibilities
+					has_country_modifier = the_eriadorian_posibilities
 				}
 			}
 			
@@ -1369,7 +1369,7 @@ on_province_owner_change = {
 	if = {
 		limit = {
 			owner = {
-				has_country_modifier = the_cardolan_posibilities
+				has_country_modifier = the_eriadorian_posibilities
 			}
 			OR = {
 				AND = {
