@@ -68,10 +68,10 @@ country_event = {
 		name = "LOU_Nazgul_Return.1.b"
 
 		trigger = {
+			tag = V19			
 			NOT = {
 				exists = V17
 			}
-			tag = V19
 			has_ruler = "Lord"
 			NOT = {
 				has_heir = "Khamul"
@@ -103,8 +103,8 @@ country_event = {
 		name = "LOU_Nazgul_Return.1.c"
 
 		trigger = {
-			exists = V17
 			tag = V19
+			exists = V17
 			NOT = {
 				has_ruler = "Khamul"
 			}
