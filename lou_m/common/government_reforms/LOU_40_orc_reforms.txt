@@ -131,7 +131,7 @@ lotr_nazgul_reform = {
 }
 lotr_necromancer_reform = {
 	icon = "necromancer_domain"
-	valid_for_nation_designer = yes
+	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_necromancer_legacy
 	lock_level_when_selected = yes
@@ -141,20 +141,16 @@ lotr_necromancer_reform = {
 	heirs_can_be_generals = yes
 	
 	potential = {
-		OR = {
-			tag = V19
-			tag = V63
-			tag = Z80
+		tag = V19
 		}
 	}
 	
 	modifiers = {		
-		discipline = 0.05
 		global_unrest = -3
 		war_exhaustion = -0.15
 
-		tolerance_own = 3
-		tolerance_heretic = -3
+		tolerance_own = 5
+		tolerance_heretic = -5
 	}
 	
 	custom_attributes = {

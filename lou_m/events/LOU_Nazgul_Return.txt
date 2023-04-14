@@ -45,9 +45,11 @@ country_event = {
 		}
 
 		add_stability = 1
+
 		define_ruler = {
 			name = "Witch-King"
 			dynasty = "Lord of the Nazgûl"
+			male = yes
 			adm = 5
 			dip = 3
 			mil = 6
@@ -55,7 +57,9 @@ country_event = {
 			claim = 100
 			culture = culture_wight
 		}
+
 		add_ruler_personality = immortal_personality
+
 		define_ruler_to_general = {
 			fire = 4
 			shock = 6
@@ -79,10 +83,11 @@ country_event = {
 		}
 
 		add_stability = 1
+
 		define_heir = {
-			male = yes
 			name = "Khamul"
 			dynasty = "Shadow of the East"
+			male = yes
 			adm = 5
 			dip = 3
 			mil = 6
@@ -90,7 +95,9 @@ country_event = {
 			claim = 100
 			culture = culture_wight
 		}
+
 		add_heir_personality = immortal_personality
+
 		define_heir_to_general = {
 			fire = 3
 			shock = 5
@@ -111,10 +118,11 @@ country_event = {
 		}
 
 		add_stability = 1
+
 		define_heir = {
-			male = yes
 			name = "Khamul"
 			dynasty = "Shadow of the East"
+			male = yes
 			adm = 5
 			dip = 3
 			mil = 6
@@ -122,7 +130,9 @@ country_event = {
 			claim = 100
 			culture = culture_wight
 		}
+
 		add_heir_personality = immortal_personality
+		
 		define_heir_to_general = {
 			fire = 3
 			shock = 5
