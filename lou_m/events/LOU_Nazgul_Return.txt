@@ -14,10 +14,20 @@ country_event = {
 				}
 			}
 			AND = {
+				NOT = {
+					exists = V17
+				}
 				tag = V19
 				has_ruler = "The Necromancer"
 				NOT = {
 					has_heir = "Khamul"
+				}
+			}
+			AND = {
+				exists = V17
+				tag = V19
+				NOT = {
+					has_ruler = "Khamul"
 				}
 			}
 		}
@@ -57,7 +67,14 @@ country_event = {
 		name = "LOU_Nazgul_Return.1.b"
 
 		trigger = {
+			NOT = {
+				exists = V17
+			}
 			tag = V19
+			has_ruler = "The Necromancer"
+			NOT = {
+				has_heir = "Khamul"
+			}
 		}
 
 		add_stability = 1

@@ -77,6 +77,29 @@ country_event = {
 			304 = {
 				remove_province_modifier = dol_guldur_necromancer
 			}
+			V19 = {
+				remove_government_reform = lotr_necromancer_reform
+				add_government_reform = lotr_nazgul_reform
+				kill_ruler = yes
+				define_ruler = {
+					male = yes
+					name = "Khamul"
+					dynasty = "Shadow of the East"
+					adm = 5
+					dip = 3
+					mil = 6
+					age = 20
+					claim = 100
+					culture = culture_wight
+				}
+				add_ruler_personality = immortal_personality
+				define_ruler_to_general = {
+					fire = 3
+					shock = 5
+					manuever = 3
+					siege = 4
+				}
+			}
 		}
 	}
 
