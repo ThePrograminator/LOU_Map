@@ -6,31 +6,29 @@ country_event = {
 	picture = nazgul_returns_eventpicture
 	
 	trigger = {
-		OR = {
+#		OR = {
 			AND = {
 				tag = V18
 				NOT = {
 					has_ruler = "Witch-King"
 				}
 			}
-			AND = {
-				tag = V19
-				NOT = {
-					exists = V17
-				}
-				has_ruler = "Lord"
-				NOT = {
-					has_heir = "Khamul"
-				}
-			}
-			AND = {
-				tag = V19
-				exists = V17
-				NOT = {
-					has_ruler = "Khamul"
-				}
-			}
-		}
+#			AND = {
+#				tag = V19
+#				has_reform = lotr_necromancer_reform
+#				has_ruler = "Lord"
+#				NOT = {
+#					has_heir = "Khamul"
+#				}
+#			}
+#			AND = {
+#				tag = V19
+#				has_reform = lotr_nazgul_reform
+#				NOT = {
+#					has_ruler = "Khamul"
+#				}
+#			}
+#		}
 	}
 	
     mean_time_to_happen = {
@@ -42,6 +40,9 @@ country_event = {
 
 		trigger = {
 			tag = V18
+			NOT = {
+				has_ruler = "Witch-King"
+			}
 		}
 
 		add_stability = 1
@@ -68,76 +69,73 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = "LOU_Nazgul_Return.1.b"
+	# option = {
+	# 	name = "LOU_Nazgul_Return.1.b"
 
-		trigger = {
-			tag = V19			
-			NOT = {
-				exists = V17
-			}
-			has_ruler = "Lord"
-			NOT = {
-				has_heir = "Khamul"
-			}
-		}
+	# 	trigger = {
+	# 		tag = V19
+	# 		has_reform = lotr_necromancer_reform
+	# 		NOT = {
+	# 			has_heir = "Khamul"
+	# 		}
+	# 	}
 
-		add_stability = 1
+	# 	add_stability = 1
 
-		define_heir = {
-			name = "Khamul"
-			dynasty = "Shadow of the East"
-			male = yes
-			adm = 5
-			dip = 3
-			mil = 6
-			age = 20
-			claim = 100
-			culture = culture_wight
-		}
+	# 	define_heir = {
+	# 		name = "Khamul"
+	# 		dynasty = "Shadow of the East"
+	# 		male = yes
+	# 		adm = 5
+	# 		dip = 3
+	# 		mil = 6
+	# 		age = 20
+	# 		claim = 100
+	# 		culture = culture_wight
+	# 	}
 
-		add_heir_personality = immortal_personality
+	# 	add_heir_personality = immortal_personality
 
-		define_heir_to_general = {
-			fire = 3
-			shock = 5
-			manuever = 3
-			siege = 4
-		}
-	}
+	# 	define_heir_to_general = {
+	# 		fire = 3
+	# 		shock = 5
+	# 		manuever = 3
+	# 		siege = 4
+	# 	}
+	# }
 
-	option = {
-		name = "LOU_Nazgul_Return.1.c"
+	# option = {
+	# 	name = "LOU_Nazgul_Return.1.c"
 
-		trigger = {
-			tag = V19
-			exists = V17
-			NOT = {
-				has_ruler = "Khamul"
-			}
-		}
+	# 	trigger = {
+	# 		tag = V19
+	# 		has_reform = lotr_nazgul_reform
+	# 		NOT = {
+	# 			has_ruler = "Khamul"
+	# 		}
+	# 	}
 
-		add_stability = 1
+	# 	add_stability = 1
 
-		define_heir = {
-			name = "Khamul"
-			dynasty = "Shadow of the East"
-			male = yes
-			adm = 5
-			dip = 3
-			mil = 6
-			age = 20
-			claim = 100
-			culture = culture_wight
-		}
+	# 	define_ruler = {
+	# 		name = "Khamul"
+	# 		dynasty = "Shadow of the East"
+	# 		male = yes
+	# 		adm = 5
+	# 		dip = 3
+	# 		mil = 6
+	# 		age = 20
+	# 		claim = 100
+	# 		culture = culture_wight
+	# 	}
 
-		add_heir_personality = immortal_personality
+	# 	add_heir_personality = immortal_personality
 		
-		define_heir_to_general = {
-			fire = 3
-			shock = 5
-			manuever = 3
-			siege = 4
-		}
-	}
+	# 	define_ruler_to_general = {
+	# 		fire = 3
+	# 		shock = 5
+	# 		manuever = 3
+	# 		siege = 4
+	# 	}
+	# }
 }
