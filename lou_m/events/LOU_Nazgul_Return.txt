@@ -18,7 +18,7 @@ country_event = {
 					exists = V17
 				}
 				tag = V19
-				has_ruler = "The Necromancer"
+				has_ruler = "Lord"
 				NOT = {
 					has_heir = "Khamul"
 				}
@@ -34,7 +34,7 @@ country_event = {
 	}
 	
     mean_time_to_happen = {
-		days = 90
+		days = 30
 	}
     
 	option = {
@@ -63,6 +63,7 @@ country_event = {
 			siege = 5
 		}
 	}
+
 	option = {
 		name = "LOU_Nazgul_Return.1.b"
 
@@ -71,9 +72,41 @@ country_event = {
 				exists = V17
 			}
 			tag = V19
-			has_ruler = "The Necromancer"
+			has_ruler = "Lord"
 			NOT = {
 				has_heir = "Khamul"
+			}
+		}
+
+		add_stability = 1
+		define_heir = {
+			male = yes
+			name = "Khamul"
+			dynasty = "Shadow of the East"
+			adm = 5
+			dip = 3
+			mil = 6
+			age = 20
+			claim = 100
+			culture = culture_wight
+		}
+		add_heir_personality = immortal_personality
+		define_heir_to_general = {
+			fire = 3
+			shock = 5
+			manuever = 3
+			siege = 4
+		}
+	}
+
+	option = {
+		name = "LOU_Nazgul_Return.1.c"
+
+		trigger = {
+			exists = V17
+			tag = V19
+			NOT = {
+				has_ruler = "Khamul"
 			}
 		}
 
