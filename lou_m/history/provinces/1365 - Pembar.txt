@@ -16,9 +16,9 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-add_core = Y56
-owner = Y56
-controller = Y56
+add_core = Q20
+owner = Q20
+controller = Q20
 
 culture = culture_orkish
 religion = religion_orkish
@@ -26,11 +26,6 @@ religion = religion_orkish
 trade_goods = cloth
 
 hre = no
-
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

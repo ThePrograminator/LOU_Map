@@ -9,33 +9,56 @@ country_event = {
 	
 	trigger = {
 		NOT = {
-			has_country_modifier = the_cardolan_posibilities
+			has_country_modifier = the_eriadorian_posibilities
 		}
 		is_migratory_tribe = no
 		
 		any_owned_province = {
 			OR = {
 				AND = {
-					region = cardolan_region
+					OR = {
+						area = phaluran_area
+						area = shedun_area	
+						area = en_udanoriath_area	
+						area = bhainnan_area	
+						area = nan_laeglin_area	
+						area = mindil_kepich_area
+						area = forochel_area
+
+						region = cardolan_region
+						region = eregion_region
+						region = arthedain_region
+						region = rhudaur_region
+						region = numeriador_region
+					}
 				}
 				AND = {
 					OR = {
-						region = eregion_region
+						#region = eregion_region
 						area = ethir_gwathlo_area
 						area = cairg_erp_area
 						area = andhas_area
 						area = swanfleet_area
-						region = rhudaur_region
-						region = sirranwaith_region
 						area = dor_i_tinuviel_area
+						#region = rhudaur_region
+						region = sirranwaith_region
+						region = shire_region
 					}
 					has_port = yes
 				}
 			}
 		}
 
-		cardolan_region = {
-			is_empty = yes
+		OR = {
+			cardolan_region = {
+				is_empty = yes
+			}
+			eregion_region = {
+				is_empty = yes
+			}
+			arthedain_region = {
+				is_empty = yes
+			}
 		}
 	}
 	
@@ -43,7 +66,7 @@ country_event = {
 		name = "lou_colonization.1.a"
 		if = { limit = { has_global_flag = enable_event_logging } log = "Event - lou_colonization.1 - Option : lou_colonization.1.a" }
 		add_country_modifier = {
-			name = the_cardolan_posibilities
+			name = the_eriadorian_posibilities
 			duration = -1
 		}
 	}
@@ -57,7 +80,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_country_modifier = the_cardolan_posibilities
+		has_country_modifier = the_eriadorian_posibilities
 		is_migratory_tribe = no
 
 		NOT = {
@@ -87,6 +110,6 @@ country_event = {
 	option = {
 		name = "lou_colonization.2.a"
 		if = { limit = { has_global_flag = enable_event_logging } log = "Event - lou_colonization.2 - Option : lou_colonization.2.a" }
-		remove_country_modifier = the_cardolan_posibilities
+		remove_country_modifier = the_eriadorian_posibilities
 	}
 }
