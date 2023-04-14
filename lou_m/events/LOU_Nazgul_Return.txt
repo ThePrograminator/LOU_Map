@@ -14,18 +14,18 @@ country_event = {
 				}
 			}
 			AND = {
+				tag = V19
 				NOT = {
 					exists = V17
 				}
-				tag = V19
 				has_ruler = "Lord"
 				NOT = {
 					has_heir = "Khamul"
 				}
 			}
 			AND = {
-				exists = V17
 				tag = V19
+				exists = V17
 				NOT = {
 					has_ruler = "Khamul"
 				}
