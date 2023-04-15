@@ -123,8 +123,9 @@ lotr_nazgul_reform = {
 		global_unrest = -3
 		war_exhaustion = -0.15
 
-		tolerance_own = 2
-		tolerance_heretic = -2
+		tolerance_own = 3
+		tolerance_heretic = -3
+		tolerance_heathen = -3
 	}
 	
 	custom_attributes = {
@@ -153,6 +154,7 @@ lotr_necromancer_reform = {
 
 		tolerance_own = 5
 		tolerance_heretic = -5
+		tolerance_heathen = -5
 	}
 	
 	custom_attributes = {
@@ -177,8 +179,9 @@ lotr_isengard_reform = {
 		discipline = 0.10
 		mercenary_cost = -0.15
 
-		tolerance_own = 2
-		tolerance_heretic = -2
+		tolerance_own = 3
+		tolerance_heretic = -3
+		tolerance_heathen = -3
 	}
 	
 	custom_attributes = {
@@ -202,8 +205,9 @@ lotr_mordor_reform = {
 		ae_impact = -0.10
 		diplomatic_upkeep = 3
 
-		tolerance_own = 2
-		tolerance_heretic = -2
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
 	}
 	
 	custom_attributes = {

@@ -249,3 +249,23 @@ settling_our_people = {
 smaug_breached_walls = {
 	local_defensiveness = -0.5
 }
+
+isengard_good = {
+	block_introduce_heir = yes
+	legitimacy = 1
+	technology_cost = -0.1
+	administrative_efficiency = 0.05
+	improve_relation_modifier = 0.25 
+	diplomatic_upkeep = 2
+	stability_cost_to_declare_war = 1
+}
+
+isengard_evil = {
+	block_introduce_heir = yes
+	legitimacy = 1
+	all_power_cost = -0.5	
+	innovativeness_gain = 0.25
+	vassal_forcelimit_bonus = 0.25
+	spy_offence = 0.15
+	yearly_corruption = 0.15
+}
