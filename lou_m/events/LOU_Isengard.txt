@@ -75,10 +75,10 @@ country_event = {
 				
 		223 = {
 			add_devastation = -25
-			add_base_tax = 3
-			add_base_production = 3
-			add_base_manpower = 6
-			center_of_trade = 1
+			add_base_tax = 6
+			add_base_production = 6
+			add_base_manpower = 9
+			center_of_trade = 2
 			add_building = capital_2_building
 			add_building = fort_stronghold_building
 			add_building = army_camp_building
@@ -107,7 +107,8 @@ country_event = {
 		add_ruler_personality = immortal_personality
 		set_ruler_flag = set_immortality
 
-		
+		add_treasury = 250
+
 		add_truce_with = V95
 		add_truce_with = Z48
 		create_alliance = X01
@@ -161,7 +162,7 @@ country_event = {
 			add_ruler_personality = immortal_personality
 			set_ruler_flag = set_immortality
 
-			
+			add_treasury = 250
 			
 			add_truce_with = V95
 			add_truce_with = Z48
@@ -169,23 +170,34 @@ country_event = {
 			create_alliance = X16
 		}
 
+		capital_scope = {
+			infantry = PREV
+			infantry = PREV
+			infantry = PREV
+			infantry = PREV
+			infantry = PREV
+			infantry = PREV
+		}
+
 		223 = {
 			add_devastation = -25
-			add_base_tax = 3
-			add_base_production = 3
-			add_base_manpower = 6
-			center_of_trade = 1
+			add_base_tax = 6
+			add_base_production = 6
+			add_base_manpower = 12
+			center_of_trade = 2
 			add_building = capital_2_building
 			add_building = fort_stronghold_building
 			add_building = army_camp_building
 			add_building = trade_outpost_building
+			add_building = work_camp_building
 		}
 
 		744 = {
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
 			add_building = settlement_building
+			add_building = work_camp_building
 		}
 	}
 }
