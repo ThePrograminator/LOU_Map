@@ -327,3 +327,39 @@ gov_empire_of_rhun = {
 		has_reform = empire_of_rhun_reform
 	}
 }
+
+gov_isengard_white_council = {
+	rank = {
+		1 = ISENGARD_WHITE_COUNCIL
+		2 = ISENGARD_WHITE_COUNCIL
+		3 = ISENGARD_WHITE_COUNCIL
+	}
+	
+	ruler_male = {
+		1 = ISENGARD_ISTARI
+		2 = ISENGARD_ISTARI
+		3 = ISENGARD_ISTARI
+	}
+	
+	ruler_female = {
+		1 = ISENGARD_ISTARI
+		2 = ISENGARD_ISTARI
+		3 = ISENGARD_ISTARI
+	}
+	
+	heir_male = {
+		1 = ISENGARD_GUARD
+		2 = ISENGARD_GUARD
+		3 = ISENGARD_GUARD
+	}
+
+	heir_female = {
+		1 = ISENGARD_GUARD
+		2 = ISENGARD_GUARD
+		3 = ISENGARD_GUARD
+	}
+
+	trigger = {
+		has_reform = lotr_isengard_white_council_reform
+	}
+}

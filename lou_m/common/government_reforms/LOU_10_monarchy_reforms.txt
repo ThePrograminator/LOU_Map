@@ -305,6 +305,32 @@ arnorien_kingdom_reform = {
 		locked_government_type = yes
 	}
 }
+lotr_isengard_white_council_reform = {
+	icon = "istari"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_isengard_white_council_legacy
+	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	potential = {
+		tag = W53
+	}
+	
+	modifiers = {
+		land_morale = 0.15
+		diplomatic_reputation = 2
+
+		tolerance_own = 5
+		tolerance_heretic = 5
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
 
 #------------------------------
 # Hereditary vs. Nobility
