@@ -95,14 +95,14 @@ gov_lotr_nazgul = {
 		3 = NAZGUL
 	}
 	heir_male = {
-		1 = NAZGUL
-		2 = NAZGUL
-		3 = NAZGUL
+		1 = NAZGUL_HEIR
+		2 = NAZGUL_HEIR
+		3 = NAZGUL_HEIR
 	}
 	heir_female = {
-		1 = NAZGUL
-		2 = NAZGUL
-		3 = NAZGUL
+		1 = NAZGUL_HEIR
+		2 = NAZGUL_HEIR
+		3 = NAZGUL_HEIR
 	}
 	
 	trigger = {
@@ -144,11 +144,11 @@ gov_lotr_necromancer = {
 	}
 }
 
-gov_lotr_isengard = {
+gov_lotr_isengard_evil = {
 	rank = {
-		1 = ISENGARD
-		2 = ISENGARD
-		3 = ISENGARD
+		1 = ISENGARD_EVIL
+		2 = ISENGARD_EVIL
+		3 = ISENGARD_EVIL
 	}
 
 	ruler_male = {
@@ -161,6 +161,18 @@ gov_lotr_isengard = {
 		1 = ISENGARD_RULER
 		2 = ISENGARD_RULER
 		3 = ISENGARD_RULER
+	}
+
+	heir_male = {
+		1 = ISENGARD_HEIR
+		2 = ISENGARD_HEIR
+		3 = ISENGARD_HEIR
+	}
+
+	heir_female = {
+		1 = ISENGARD_HEIR
+		2 = ISENGARD_HEIR
+		3 = ISENGARD_HEIR
 	}
 	
 	trigger = {
@@ -185,6 +197,18 @@ gov_lotr_mordor = {
 		1 = MORDOR_RULER
 		2 = MORDOR_RULER
 		3 = MORDOR_RULER
+	}
+
+	heir_male = {
+		1 = MORDOR_COMMANDER
+		2 = MORDOR_COMMANDER
+		3 = MORDOR_COMMANDER
+	}
+
+	heir_female = {
+		1 = MORDOR_COMMANDER
+		2 = MORDOR_COMMANDER
+		3 = MORDOR_COMMANDER
 	}
 	
 	trigger = {
