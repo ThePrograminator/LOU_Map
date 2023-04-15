@@ -267,16 +267,15 @@ religion_group_human = {
 		color = { 0.11 0.50 0.41 }
 		
 		country = {
-			stability_cost_modifier = -0.1
+			stability_cost_modifier = -0.2
 			tolerance_own = 1
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			stability_cost_modifier = -0.1
 		}
 		heretic = { ERIADORIANS_HERETIC }
 		
-		fervor = yes
+		fetishist_cult = yes
 	}
 	
 	religion_nenedain = {
@@ -1222,7 +1221,7 @@ religion_group_elf = {
 
 		heretic = { MORIQUENDI_HERETIC }
 		
-		uses_karma = yes
+		uses_piety = yes
 	}
 	
 	religion_umanyar = {
@@ -1240,7 +1239,7 @@ religion_group_elf = {
 
 		heretic = { UMANYAR_HERETIC }
 		
-		uses_karma = yes
+		uses_piety = yes
 	}
 	
 	religion_calaquendi = {
@@ -1258,7 +1257,7 @@ religion_group_elf = {
 
 		heretic = { CALAQUENDI_HERETIC }
 		
-		uses_karma = yes
+		uses_piety = yes
 	}
     
 	crusade_name = HOLY_WAR
@@ -1445,17 +1444,17 @@ religion_group_melkor = {
 		color = { 0.72 0.0 0.0 }
 		
 		country = {
-			war_exhaustion = -0.25
-			reinforce_cost_modifier = -0.50
+			war_exhaustion = -0.10
+			reinforce_cost_modifier = -0.25
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			reinforce_cost_modifier = -0.1
 		}
 
 		heretic = { ORKISH_HERETIC }
 		
-		uses_piety = yes
+		uses_karma = yes
+		
 	}
 	
 	religion_goblin = {
@@ -1467,13 +1466,12 @@ religion_group_melkor = {
 			land_attrition = -0.25
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			land_attrition = -0.1
 		}
 
 		heretic = { GOBLIN_HERETIC }
 		
-		fervor = yes
+		uses_karma = yes
 	}
 	
 	religion_uruk = {
@@ -1485,8 +1483,7 @@ religion_group_melkor = {
 			province_warscore_cost = -0.25
 		}
 		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
+			province_warscore_cost = -0.1
 		}
 
 		heretic = { URUK_HERETIC }

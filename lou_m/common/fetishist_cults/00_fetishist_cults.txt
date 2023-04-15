@@ -2,7 +2,14 @@ ulgath_cult =
 {
 	global_unrest = -0.5
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = ulgath_cult
 			religion = religion_ulgath
@@ -21,12 +28,20 @@ ulgath_cult =
 		}
 	}
 }
+}
 
 ioriags_cult =
 {
 	cavalry_power = 0.05
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = ioriags_cult
 			religion = religion_ioriags
@@ -45,12 +60,20 @@ ioriags_cult =
 		}
 	}
 }
+}
 
 avari_cult =
 {
 	trade_efficiency = 0.1
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = avari_cult
 			any_neighbor_country = { 
@@ -68,12 +91,20 @@ avari_cult =
 		}
 	}
 }
+}
 
 dwarven_cult =
 {
 	build_cost = -0.1
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = dwarven_cult
 			any_neighbor_country = { 
@@ -91,12 +122,20 @@ dwarven_cult =
 		}
 	}
 }
+}
 
 orc_cult =
 {
 	army_tradition = 0.5
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = orc_cult
 			any_neighbor_country = { 
@@ -114,12 +153,20 @@ orc_cult =
 		}
 	}
 }
+}
 
 goblin_cult =
 {
 	mil_tech_cost_modifier = -0.05
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = goblin_cult
 			any_neighbor_country = { 
@@ -137,12 +184,20 @@ goblin_cult =
 		}
 	}
 }
+}
 
 ahar_cult =
 {
 	movement_speed = 0.1
 
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = ahar_cult
 			any_neighbor_country = { 
@@ -160,12 +215,19 @@ ahar_cult =
 		}
 	}
 }
+}
 
 nenedain_cult =
 {
 	core_creation = -0.1
-
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = nenedain_cult
 			any_neighbor_country = { 
@@ -183,12 +245,19 @@ nenedain_cult =
 		}
 	}
 }
+}
 
 donath_cult =
 {
 	num_accepted_cultures = 1
-
-	allow = {
+allow = {
+	AND = {
+		religion = {
+			OR = {
+				religion_ioriags
+				religion_ulgath
+				}
+			}
 		OR = {
 			has_unlocked_cult = donath_cult
 			any_neighbor_country = { 
@@ -202,6 +271,200 @@ donath_cult =
 		factor = 1
 		modifier = {
 			personality = ai_diplomat
+			factor = 2
+		}
+	}
+}
+}
+
+arthedain_cult =
+{
+	country_diplomatic_power = 1
+	diplomatic_reputation = 1
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_arthedain
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_diplomat
+			factor = 2
+		}
+	}
+}
+cardolani_cult =
+{
+	country_admin_power = 1
+	global_missionary_strength = 0.02
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_cardolani
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			personality = ai_balanced
+			factor = 2
+		}
+	}
+}
+rhudaurians_cult =
+{
+	land_morale = 0.10
+	discipline = 0.05
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_rhudaurians
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+breelanders_cult =
+{
+	defensiveness = 0.10
+	merc_maintenance_modifier = -0.10
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_breelanders
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+forodrim_cult =
+{
+	manpower_recovery_speed = 0.10
+	garrison_size = 0.20
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_forodrim
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+eglain_cult =
+{
+	movement_speed = 0.10
+	land_attrition = -0.10
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_eglain
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+feotari_cult =
+{
+	global_autonomy = -0.05
+	local_build_cost = -0.10
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_feotari
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 2
+		}
+	}
+}
+cerens_cult =
+{
+	production_efficiency = 0.1
+	development_cost = -0.1
+allow = {
+	AND = {
+		religion = {
+			religion_eriadorians
+			}
+		accepted_culture = {
+			culture_cerens
+			}
+		}
+	}
+		sprite = 1
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
 			factor = 2
 		}
 	}
