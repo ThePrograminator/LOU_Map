@@ -1,18 +1,24 @@
 government = monarchy
 add_government_reform = feudalism_reform
 
-primary_culture = culture_istari
+primary_culture = culture_dunlendings
+add_accepted_culture = culture_istari
 religion = religion_daen
 technology_group = lotr_wizard
 unit_type = lotr_wizard
 capital = 223
+
+historical_friend = X01
+historical_friend = X16
+
 
 2759.5.1 = {
 	create_alliance = X01
 	create_alliance = X16
 
 	monarch = {
-		name = "Saruman the White"
+		name = "Saruman"
+		dynasty = "the White"
 		adm = 6
 		dip = 5
 		mil = 6
