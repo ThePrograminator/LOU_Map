@@ -146,6 +146,9 @@ country_event = {
 				#controller = Y22
 				change_culture = root
 				change_religion	= root
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 			}
 			3227 = {
 				add_core = Y22
@@ -156,6 +159,7 @@ country_event = {
 			}
 			Y22 = {
 				set_capital = 559
+				add_stability = -1
 			}
 			
 		}
