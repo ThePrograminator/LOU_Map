@@ -19,13 +19,17 @@ historical_rival = W36
 
 2750.1.1 = {
 	monarch = {
-		name = "Pêrakos"
-		dynasty = "Sevag"
-		birth_date = 2707.1.1
+		name = "Dendra"
+		dynasty = "Dwar"
+		birth_date = 2720.1.1
 		adm = 4
-		dip = 0
-		mil = 3
+		dip = 2
+		mil = 6
+		culture = culture_wight
 	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+
 	heir = {
 		monarch_name = "Hranoush"
 		name = "Hranoush"
