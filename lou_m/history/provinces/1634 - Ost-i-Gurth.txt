@@ -14,7 +14,7 @@ base_production = 5
 base_manpower = 7
 culture = culture_wilderness
 religion = religion_wilderness
-trade_goods = gold
+trade_goods = orc_draught
 native_size = 100
 native_ferocity = 10
 native_hostileness = 10
@@ -43,6 +43,7 @@ native_hostileness = 10
 	tortur_chambers_orc_building = yes
 }
 #Mordor Superregion Discovery
+is_city = no
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -111,4 +112,3 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-is_city = no

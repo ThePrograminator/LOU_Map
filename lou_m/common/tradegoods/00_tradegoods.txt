@@ -78,7 +78,7 @@ wine = {
 		global_unrest = -1
 	}
 	province = {
-		local_unrest = -1
+		local_unrest = -2
 	}
 	chance = {
 		factor = 5
@@ -1293,17 +1293,17 @@ great_beasts = {
 		siege_ability = 0.10
 	}
 	province = {
-		local_development_cost = -0.10
+		local_development_cost = -0.20
 	}
 }
 
 orc_draught = {
 	color = { 0.352 0.000 0.000 }
 	modifier = {
-		land_morale = 0.05
+		land_morale = 0.10
 	}
 	province = {
-		local_unrest = -1
+		local_unrest = -2
 	}
 }
 

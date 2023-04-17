@@ -9,18 +9,12 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
 culture = culture_wilderness
 religion = religion_wilderness
-
-trade_goods = cloth
-
-hre = no
-
+trade_goods = orc_draught
 2942.1.1 = {
 	add_core = V17
 	owner = V17
@@ -28,7 +22,6 @@ hre = no
 	culture = culture_orkish
 	religion = religion_orkish
 }
-
 #Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
@@ -98,4 +91,4 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+is_city = no
