@@ -28,6 +28,9 @@ trade_goods = iron
 	controller = Y22
 	culture = culture_longbeard
 	religion = religion_mahal
+	add_base_tax = 1
+	add_base_production = 4
+	add_base_manpower = 1
 	hold_1_dwarf_building = yes
 	fort_small_gatehouse_dwarf_building = yes
 	armoury_dwarf_building = yes
@@ -38,6 +41,9 @@ trade_goods = iron
 	add_core = Y16
 	owner = Y16
 	controller = Y16
+	add_base_tax = -1
+	add_base_production = -4
+	add_base_manpower = -1
 }
 #Misty Mountains Superregion Discovery
 discovered_by = lotr_human

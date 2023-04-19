@@ -1320,10 +1320,19 @@ miruvor = {
 corsairs = {
 	color = { 0.294 0.098 0.000 }
 	modifier = {
-		capture_ship_chance = 0.20
+		galley_power = 0.20
 	}
 	province = {
 		local_ship_cost = -0.25
 	}
 }
 
+swan_ships = {
+	color = { 0.294 0.098 0.000 }
+	modifier = {
+		heavy_ship_power = 0.20
+	}
+	province = {
+		local_ship_cost = -0.25
+	}
+}

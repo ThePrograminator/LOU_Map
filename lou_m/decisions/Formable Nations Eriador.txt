@@ -331,11 +331,7 @@ country_decisions = {
 			culture_group = culture_group_eriadorians
 
 			any_owned_province = {
-				OR = {
-					area = argond_area
-					area = udandir_area
-					area = undrond_area
-				}
+				region = cardolan_region
 			}
 			OR = {
 				ai = no
@@ -417,11 +413,7 @@ country_decisions = {
 			culture_group = culture_group_eriadorians
 
 			any_owned_province = {
-				OR = {
-					area = dol_tinereb_area
-					area = metraith_area
-					area = west_faerdor_area
-				}
+				region = cardolan_region
 			}
 
 			OR = {

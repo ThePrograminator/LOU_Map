@@ -22,7 +22,11 @@ center_of_trade = 1
 	controller = Y22
 	is_city = yes
 	culture = culture_longbeard
-	religion = religion_mahal
+	religion = religion_mahal	
+	set_capital = Y22
+	add_base_tax = 6
+	add_base_production = 12
+	add_base_manpower = 6
 	capital_2_dwarf_building = yes
 	fairground_dwarf_building = yes
 	forge_dwarf_building = yes
@@ -37,6 +41,7 @@ center_of_trade = 1
 	add_core = Y13
 	owner = Y13
 	controller = Y13
+	set_capital = Y13
 	capital_2_dwarf_building = yes
 }
 #Eriador Superregion Discovery
