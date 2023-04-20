@@ -1336,3 +1336,13 @@ carracks = {
 		local_ship_cost = -0.25
 	}
 }
+
+raid_stash = {
+	color = { 0.831 0.686 0.211 }
+	modifier = {
+		global_prosperity_growth = 0.15
+	}
+	province = {
+		province_trade_power_modifier = 0.15
+	}
+}
