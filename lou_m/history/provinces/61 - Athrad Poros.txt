@@ -36,6 +36,13 @@ outpost_building=yes
 
 center_of_trade = 1
 
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
+
 2886.1.1 = {
 	add_core = V18
 	owner = V18

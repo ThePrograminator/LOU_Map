@@ -19,6 +19,12 @@ culture = culture_rivermen_of_baranduin
 religion = religion_eriadorians
 trade_goods = livestock
 add_core = Z22
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

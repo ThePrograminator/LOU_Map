@@ -27,6 +27,13 @@ trade_goods = grain
 
 hre = no
 
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
+
 #Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan

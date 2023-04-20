@@ -22,6 +22,12 @@ trade_goods = copper
 native_size = 40
 native_ferocity = 8
 native_hostileness = 8
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 #fortress_2_building=yes
 #fort_castle_building=yes
 #barracks_building=yes

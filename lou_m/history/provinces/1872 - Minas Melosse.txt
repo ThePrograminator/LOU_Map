@@ -18,8 +18,15 @@ controller = Q19
 culture = culture_orkish
 religion = religion_orkish
 trade_goods = copper
+hre = no 
 add_core = Q19
 add_core = Z06
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

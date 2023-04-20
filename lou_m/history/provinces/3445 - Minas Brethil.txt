@@ -19,6 +19,13 @@ culture = culture_dunedain_of_arnor
 religion = religion_dunedain
 trade_goods = herbs
 add_core = Z06
+hre = no
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
