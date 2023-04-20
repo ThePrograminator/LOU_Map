@@ -3,22 +3,28 @@
 # Province RGB : (104, 103, 202)
 # Province Area : Forethir
 # Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 4
 base_manpower = 3
+
+add_core = X25
 owner = X25
 controller = X25
+
 culture = culture_sakalai
 religion = religion_haruzani
+
 trade_goods = naval_supplies
-add_core = X25
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,5 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_1_building = yes
-dock_building = yes
+

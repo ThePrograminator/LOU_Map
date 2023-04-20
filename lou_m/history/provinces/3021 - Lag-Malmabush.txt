@@ -3,28 +3,34 @@
 # Province RGB : (85, 5, 84)
 # Province Area : Emyn Gonngaran
 # Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 3
 base_manpower = 2
+
+add_core = V40
 owner = V40
 controller = V40
+
 culture = culture_orkish
 religion = religion_orkish
+
 trade_goods = iron
+
 3000.1.1 = {
 	add_core = V17
 	owner = V17
 	controller = V17
 }
-#Near Harad Superregion Discovery
-add_core = V40
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -90,7 +96,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-fortress_1_orc_building = yes
-enforcer_camp_orc_building = yes
-orc_pit_orc_building = yes
-warg_pit_orc_building = yes
+

@@ -3,27 +3,33 @@
 # Province RGB : (83, 45, 33)
 # Province Area : Angrast
 # Province Region : Enedhwaith
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lond Angren
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Z46
 owner = Z46
 controller = Z46
+
 culture = culture_clansmen
 religion = religion_daen
+
 trade_goods = naval_supplies
+
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
-#Eriador Superregion Discovery
-add_core = Z46
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -69,6 +75,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-city_1_building = yes
-port_building = yes
-outpost_building = yes
+

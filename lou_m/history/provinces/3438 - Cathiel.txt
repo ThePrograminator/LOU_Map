@@ -3,28 +3,34 @@
 # Province RGB : (100, 40, 58)
 # Province Area : Lond Daer
 # Province Region : Cardolan
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lond Daer
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Z11
 owner = Z11
 controller = Z11
+
 culture = culture_gwathlo_bargemen
 religion = religion_eriadorians
+
 trade_goods = grain
+
 2912.9.10 = {
 	add_core = Z43
 	owner = Z43
 	controller = Z43
 }
-#Eriador Superregion Discovery
-add_core = Z11
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -70,9 +76,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-city_1_building = yes
-trade_outpost_building = yes
-tax_office_building = yes
-workshop_building = yes
-army_camp_building = yes
-dock_building = yes
+

@@ -3,22 +3,28 @@
 # Province RGB : (137, 144, 78)
 # Province Area : Nordinbad
 # Province Region : The Grey Mountains
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Dáin's Halls
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Y06
 owner = Y06
 controller = Y06
+
 culture = culture_firebeard
 religion = religion_mahal
+
 trade_goods = copper
-add_core = Y06
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -68,8 +74,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-hold_1_dwarf_building = yes
-armoury_dwarf_building = yes
-mustering_hall_dwarf_building = yes
-mine_shaft_dwarf_building = yes
-rune_door_dwarf_building = yes
+

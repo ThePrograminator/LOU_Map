@@ -3,22 +3,28 @@
 # Province RGB : (64, 70, 152)
 # Province Area : Kârna
 # Province Region : Urdwaith
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Umbar
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 1
 base_manpower = 3
+
+add_core = X30
 owner = X30
 controller = X30
+
 culture = culture_urdwan_nomads
 religion = religion_haruzani
+
 trade_goods = cloth
-add_core = X30
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,7 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_1_building = yes
-temple_building = yes
-work_camp_building = yes
-outpost_building = yes
+

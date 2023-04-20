@@ -3,22 +3,28 @@
 # Province RGB : (43, 17, 8)
 # Province Area : Emyn Annûn
 # Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X25
 owner = X25
 controller = X25
+
 culture = culture_sakalai
 religion = religion_haruzani
+
 trade_goods = salt
-add_core = X25
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,5 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-fortress_1_building = yes
-army_camp_building = yes
+

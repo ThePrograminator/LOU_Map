@@ -3,22 +3,28 @@
 # Province RGB : (125, 139, 3)
 # Province Area : Nebûrkha
 # Province Region : Khand
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Mistrand
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X88
 owner = X88
 controller = X88
+
 culture = culture_magriags
 religion = religion_ioriags
+
 trade_goods = grain
-add_core = X88
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -94,7 +100,4 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-city_1_building = yes
-workshop_building = yes
-outpost_building = yes
-trade_outpost_building = yes
+

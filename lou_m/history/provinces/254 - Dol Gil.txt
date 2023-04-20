@@ -3,28 +3,34 @@
 # Province RGB : (189, 111, 232)
 # Province Area : Magillos
 # Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Fornost
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = Z37
 owner = Z37
 controller = Z37
+
 culture = culture_angmarrim
 religion = religion_baradhrim
+
 trade_goods = copper
+
 2799.1.1 = {
 	add_core = Z62
 	owner = Z62
 	controller = Z62
 }
-#Eriador Superregion Discovery
-add_core = Z37
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -70,8 +76,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-encampment_1_orc_building = yes
-orc_pit_orc_building = yes
-warg_pit_orc_building = yes
-enforcer_camp_orc_building = yes
-blacksmith_orc_building = yes
+

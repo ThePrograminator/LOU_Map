@@ -3,22 +3,28 @@
 # Province RGB : (172, 183, 101)
 # Province Area : Minas Malloth
 # Province Region : Cardolan
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Bree
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Z16
 owner = Z16
 controller = Z16
+
 culture = culture_breelanders
 religion = religion_eriadorians
+
 trade_goods = tobacco
-add_core = Z16
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,6 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-settlement_building = yes
-work_camp_building = yes
-temple_building = yes
+

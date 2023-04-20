@@ -9,16 +9,22 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = X65
 owner = X65
 controller = X65
+
 culture = culture_muranians
 religion = religion_sirani
+
 trade_goods = copper
-add_core = X65
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -57,5 +63,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-settlement_building = yes
-work_camp_building = yes
+

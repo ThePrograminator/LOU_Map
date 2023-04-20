@@ -3,7 +3,7 @@
 # Province RGB : (182, 188, 71)
 # Province Area : Eredtir
 # Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -27,17 +27,12 @@ trade_goods = salt
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
 2741.1.1 = {
 	add_core = X24
 	owner = X24
 	controller = X24
 }
 
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

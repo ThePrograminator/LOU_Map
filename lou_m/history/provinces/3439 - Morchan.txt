@@ -3,28 +3,34 @@
 # Province RGB : (100, 40, 59)
 # Province Area : Ethir Gwathló
 # Province Region : Enedhwaith
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lond Daer
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = V15
 owner = V15
 controller = V15
+
 culture = culture_clansmen
 religion = religion_daen
+
 trade_goods = fruit
+
 2759.1.1 = {
 	add_core = Z45
 	owner = Z45
 	controller = Z45
 }
-#Eriador Superregion Discovery
-add_core = V15
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -70,5 +76,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-settlement_building = yes
-outpost_building = yes
+

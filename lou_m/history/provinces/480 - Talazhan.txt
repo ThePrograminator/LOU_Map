@@ -3,24 +3,30 @@
 # Province RGB : (132, 55, 55)
 # Province Area : Enmahadah
 # Province Region : Pezarsan
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Talazhan
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 4
 base_manpower = 5
+
+add_core = X18
 owner = X18
 controller = X18
+
 culture = culture_haruze
 religion = religion_haruzani
+
 trade_goods = ivory
+
 center_of_trade = 2
-#Near Harad Superregion Discovery
-add_core = X18
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -86,8 +92,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_3_building = yes
-trade_depot_building = yes
-bank_building = yes
-stockpile_building = yes
-army_camp_building = yes
+

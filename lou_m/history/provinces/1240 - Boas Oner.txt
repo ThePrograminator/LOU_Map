@@ -3,22 +3,28 @@
 # Province RGB : (248, 17, 228)
 # Province Area : Tuktan
 # Province Region : Ardor
-# Province Super Region : Múmakan
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Tantûrak
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = X62
 owner = X62
 controller = X62
+
 culture = culture_kirani
 religion = religion_kir
+
 trade_goods = stone
-add_core = X62
+
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -48,5 +54,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-settlement_building = yes
-work_camp_building = yes
+

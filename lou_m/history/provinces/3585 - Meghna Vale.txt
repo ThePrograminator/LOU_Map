@@ -3,7 +3,7 @@
 # Province RGB : (66, 234, 220)
 # Province Area : Nejhen
 # Province Region : Unvirnay
-# Province Super Region : Lochan Daer
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Helak Nay
 # Province Climate : null
@@ -27,10 +27,6 @@ trade_goods = cloth
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
 2798.3.1 = {
 	add_core = Y45
 	owner = Y45
@@ -39,7 +35,6 @@ work_camp_building=yes
 	religion = religion_orkish
 }
 
-#Lochan Daer Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

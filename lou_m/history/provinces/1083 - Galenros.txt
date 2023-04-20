@@ -3,22 +3,28 @@
 # Province RGB : (45, 44, 18)
 # Province Area : Dor Lelvin
 # Province Region : Lindon
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Grey Havens
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 4
 base_manpower = 2
+
+add_core = Y65
 owner = Y65
 controller = Y65
+
 culture = culture_noldor
 religion = religion_calaquendi
+
 trade_goods = glass
-add_core = Y65
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,8 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-capital_1_elf_building = yes
-elven_fairground_elf_building = yes
-workshop_elf_building = yes
-warriors_gallery_building = yes
-green_pastures_elf_building = yes
+

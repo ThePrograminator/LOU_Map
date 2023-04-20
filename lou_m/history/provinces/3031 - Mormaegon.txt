@@ -3,7 +3,7 @@
 # Province RGB : (4, 103, 13)
 # Province Area : Forithilien
 # Province Region : Ithilien
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Minas Tirith
 # Province Climate : null
@@ -27,13 +27,10 @@ trade_goods = stone
 
 hre = no
 
-camp_orc_building=yes
-
 3000.1.1 = {
 	orc_pit_orc_building=yes
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

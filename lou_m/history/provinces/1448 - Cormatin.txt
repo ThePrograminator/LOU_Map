@@ -3,21 +3,28 @@
 # Province RGB : (177, 56, 179)
 # Province Area : Caladach
 # Province Region : Enedhwaith
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Gap of Rohan
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = V08
 owner = V08
 controller = V08
+
 culture = culture_clansmen
 religion = religion_daen
+
 trade_goods = fish
+
 3000.1.1 = {
 	add_core = V49
 	owner = V49
@@ -25,8 +32,7 @@ trade_goods = fish
 	add_base_manpower = 2
 	camp_orc_building = yes
 }
-#Eriador Superregion Discovery
-add_core = V08
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -72,4 +78,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-settlement_building = yes
+

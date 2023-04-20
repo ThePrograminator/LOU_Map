@@ -3,22 +3,28 @@
 # Province RGB : (138, 81, 91)
 # Province Area : Harethir
 # Province Region : Harnendor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 4
 base_manpower = 3
+
+add_core = X26
 owner = X26
 controller = X26
+
 culture = culture_haruze
 religion = religion_haruzani
+
 trade_goods = spices
-add_core = X26
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,9 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_2_building = yes
-seaport_building = yes
-barracks_building = yes
-warehouse_building = yes
-tax_office_building = yes
-marketplace_building = yes
+

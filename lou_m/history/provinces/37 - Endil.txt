@@ -3,7 +3,7 @@
 # Province RGB : (0, 86, 103)
 # Province Area : Methrast
 # Province Region : Belfalas
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -28,23 +28,12 @@ trade_goods = grain
 
 hre = no
 
-city_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-outpost_building=yes
-
-port_building=yes
-
 2900.1.1 = {
 	army_camp_building=yes
 	workshop_building=yes
 	dock_building=yes
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

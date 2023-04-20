@@ -3,22 +3,28 @@
 # Province RGB : (102, 226, 183)
 # Province Area : Buzdûm-Mazar
 # Province Region : Ered Luin
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Nan-i-Naugrim
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Y04
 owner = Y04
 controller = Y04
+
 culture = culture_broadbeam
 religion = religion_mahal
+
 trade_goods = gems
-add_core = Y04
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,6 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-hold_1_dwarf_building = yes
-mining_network_dwarf_building = yes
-forge_dwarf_building = yes
+

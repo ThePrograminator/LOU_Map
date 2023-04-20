@@ -3,7 +3,7 @@
 # Province RGB : (98, 120, 98)
 # Province Area : Taurdal
 # Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Cameth Brin
 # Province Climate : Normal_winter
@@ -27,10 +27,6 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
 2758.1.1 = {
 	add_core = Q05
 	owner = Q05
@@ -47,7 +43,6 @@ outpost_building=yes
 	religion = religion_daen
 }
 
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

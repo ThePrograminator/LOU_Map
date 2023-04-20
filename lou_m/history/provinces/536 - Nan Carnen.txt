@@ -3,28 +3,34 @@
 # Province RGB : (38, 104, 70)
 # Province Area : Gramavuld
 # Province Region : Dale
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Azanulimbar-Dûm
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = Y23
 owner = Y23
 controller = Y23
+
 culture = culture_longbeard
 religion = religion_mahal
+
 trade_goods = stone
+
 2989.4.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 }
-#Rhovanion Superregion Discovery
-add_core = Y23
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -74,5 +80,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-colony_outpost_dwarf_building = yes
-mine_shaft_dwarf_building = yes
+

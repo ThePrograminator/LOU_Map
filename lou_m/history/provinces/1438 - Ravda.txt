@@ -3,22 +3,28 @@
 # Province RGB : (28, 104, 226)
 # Province Area : Nan Angmar
 # Province Region : Angmar
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Carn Dûm
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = Y52
 owner = Y52
 controller = Y52
+
 culture = culture_angmarrim
 religion = religion_orkish
+
 trade_goods = fur
-add_core = Y52
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -66,8 +72,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-encampment_1_orc_building = yes
-meat_depot_orc_building = yes
-enforcer_camp_orc_building = yes
-blacksmith_orc_building = yes
-orc_pit_orc_building = yes
+

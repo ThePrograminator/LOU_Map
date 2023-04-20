@@ -9,16 +9,22 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 5
 base_manpower = 4
+
+add_core = X37
 owner = X37
 controller = X37
+
 culture = culture_covshek-pust
 religion = religion_apysani_beduins
+
 trade_goods = stone
-add_core = X37
+
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -49,4 +55,4 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-settlement_building = yes
+

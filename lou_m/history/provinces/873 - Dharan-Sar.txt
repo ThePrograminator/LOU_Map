@@ -3,22 +3,28 @@
 # Province RGB : (126, 60, 234)
 # Province Area : Sudu Cull
 # Province Region : Arysis
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Maresh
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 4
 base_production = 5
 base_manpower = 3
+
+add_core = X28
 owner = X28
 controller = X28
+
 culture = culture_jelut_nomads
 religion = religion_haruzani
+
 trade_goods = mumakil
-add_core = X28
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,7 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_1_building = yes
-workshop_building = yes
-army_camp_building = yes
-trade_outpost_building = yes
+
