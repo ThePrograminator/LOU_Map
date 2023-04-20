@@ -3,7 +3,7 @@
 # Province RGB : (64, 56, 198)
 # Province Area : Sturlurtsa Nurn
 # Province Region : Nûrn
-# Province Super Region : Mordor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sturlurtsa-Núrn
 # Province Climate : null
@@ -27,15 +27,12 @@ trade_goods = fur
 
 hre = no
 
-city_1_building=yes
-
 3000.1.1 = {
 	add_core = V23
 	owner = V23
 	controller = V23
 }
 
-#Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

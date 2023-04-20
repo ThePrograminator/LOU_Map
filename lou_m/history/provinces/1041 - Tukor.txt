@@ -3,22 +3,28 @@
 # Province RGB : (164, 252, 198)
 # Province Area : Rôlfandas
 # Province Region : Rôlfandas
-# Province Super Region : Islands of Helkeäar Sea
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Tatamâc Pîvân
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = V83
 owner = V83
 controller = V83
+
 culture = culture_rolfandan
 religion = religion_avaradan
+
 trade_goods = fur
-add_core = V83
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -47,8 +53,4 @@ discovered_by = lotr_orc_dyria
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_womarin_realms
-city_2_building = yes
-temple_building = yes
-workshop_building = yes
-army_camp_building = yes
-seaport_building = yes
+

@@ -3,7 +3,7 @@
 # Province RGB : (35, 106, 173)
 # Province Area : Anfalas
 # Province Region : Anfalas
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Annúlond
 # Province Climate : null
@@ -28,14 +28,6 @@ trade_goods = cloth
 
 hre = no
 
-city_1_building=yes
-
-tax_office_building=yes
-
-outpost_building=yes
-
-port_building=yes
-
 2758.9.15 = {
 	controller = X27
 	add_devastation = 75
@@ -46,7 +38,6 @@ port_building=yes
 	add_devastation = -75
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

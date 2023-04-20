@@ -3,22 +3,28 @@
 # Province RGB : (62, 52, 67)
 # Province Area : Lugdruong
 # Province Region : Ered Engrin
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Yjuvit
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 2
 base_manpower = 3
+
+add_core = Y36
 owner = Y36
 controller = Y36
+
 culture = culture_ice_orkish
 religion = religion_orkish
+
 trade_goods = gems
-add_core = Y36
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -55,8 +61,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-encampment_1_orc_building = yes
-blacksmith_orc_building = yes
-orc_pit_orc_building = yes
-workshop_orc_building = yes
-prisoner_cage_orc_building = yes
+

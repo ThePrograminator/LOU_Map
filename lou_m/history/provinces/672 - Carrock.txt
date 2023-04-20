@@ -3,27 +3,33 @@
 # Province RGB : (202, 125, 115)
 # Province Area : Carrock Vale
 # Province Region : Vales of Anduin
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Maethelburg
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 1
 base_manpower = 3
+
+add_core = Z01
 owner = Z01
 controller = Z01
+
 culture = culture_beornings
 religion = religion_nenedain
+
 trade_goods = marble
+
 add_province_modifier = {
 	name = wilderness_debuff
 	duration = -1
 }
-#Rhovanion Superregion Discovery
-add_core = Z01
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -73,5 +79,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-settlement_building = yes
-outpost_building = yes
+

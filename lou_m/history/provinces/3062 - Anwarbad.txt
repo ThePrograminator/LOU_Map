@@ -3,7 +3,7 @@
 # Province RGB : (19, 251, 133)
 # Province Area : Harithilien
 # Province Region : Ithilien
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Pelargir
 # Province Climate : null
@@ -28,8 +28,6 @@ trade_goods = dyes
 
 hre = no
 
-settlement_building=yes
-
 2901.1.1 = {
 	add_core = V18
 	owner = V18
@@ -49,7 +47,6 @@ settlement_building=yes
 	remove_core = V18
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

@@ -3,7 +3,7 @@
 # Province RGB : (207, 133, 158)
 # Province Area : Glinfalas
 # Province Region : Harnendor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -27,17 +27,12 @@ trade_goods = slaves
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
 2852.6.1 = {
 	add_core = X27
 	owner = X27
 	controller = X27
 }
 
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

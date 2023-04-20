@@ -3,23 +3,29 @@
 # Province RGB : (63, 191, 118)
 # Province Area : Gazar Narkad
 # Province Region : Logathavuld
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Azanulimbar-Dûm
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 5
 base_manpower = 4
+
+add_core = X96
 owner = X96
 controller = X96
+
+add_core = W69
 culture = culture_sagath
 religion = religion_ulgath
+
 trade_goods = wool
-add_core = X96
-add_core = W69
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -95,7 +101,4 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-capital_1_building = yes
-trade_outpost_building = yes
-workshop_building = yes
-army_camp_building = yes
+

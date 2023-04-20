@@ -3,23 +3,29 @@
 # Province RGB : (163, 111, 111)
 # Province Area : Gathod
 # Province Region : Rhûn
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Mistrand
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 3
 base_manpower = 2
+
+add_core = X87
 owner = X87
 controller = X87
+
+add_core = Y03
 culture = culture_asdriags
 religion = religion_ioriags
+
 trade_goods = livestock
-add_core = X87
-add_core = Y03
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -95,7 +101,4 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-settlement_building = yes
-trade_outpost_building = yes
-work_camp_building = yes
-outpost_building = yes
+

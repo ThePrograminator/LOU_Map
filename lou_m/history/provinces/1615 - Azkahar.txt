@@ -9,16 +9,22 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X54
 owner = X54
 controller = X54
+
 culture = culture_bellakaze
 religion = religion_sea_peoples
+
 trade_goods = salt
-add_core = X54
+
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -49,6 +55,4 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-fortress_1_building = yes
-temple_building = yes
-army_camp_building = yes
+

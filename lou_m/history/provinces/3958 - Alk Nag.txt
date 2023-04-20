@@ -3,22 +3,28 @@
 # Province RGB : (58, 58, 68)
 # Province Area : Góak
 # Province Region : Wômawas Drûs
-# Province Super Region : Womarin Realms
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Alk Góak
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 4
+
+add_core = V97
 owner = V97
 controller = V97
+
 culture = culture_wom
 religion = religion_avaradan
+
 trade_goods = iron
-add_core = V97
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -51,8 +57,4 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-city_2_building = yes
-marketplace_building = yes
-tax_office_building = yes
-workshop_building = yes
-outpost_building = yes
+

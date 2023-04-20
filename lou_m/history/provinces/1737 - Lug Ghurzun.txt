@@ -3,7 +3,7 @@
 # Province RGB : (236, 25, 83)
 # Province Area : Lithlad
 # Province Region : Nûrn
-# Province Super Region : Mordor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sturlurtsa-Núrn
 # Province Climate : null
@@ -27,15 +27,12 @@ trade_goods = wool
 
 hre = no
 
-camp_orc_building=yes
-
 3000.1.1 = {
 	add_core = V17
 	owner = V17
 	controller = V17
 }
 
-#Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

@@ -3,22 +3,28 @@
 # Province RGB : (108, 163, 96)
 # Province Area : West Bight
 # Province Region : Vales of Anduin
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Woodsmen-Town
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 4
 base_manpower = 2
+
+add_core = V21
 owner = V21
 controller = V21
+
 culture = culture_beornings
 religion = religion_nenedain
+
 trade_goods = grain
-add_core = V21
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -68,5 +74,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-settlement_building = yes
-outpost_building = yes
+

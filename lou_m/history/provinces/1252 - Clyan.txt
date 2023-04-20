@@ -3,22 +3,28 @@
 # Province RGB : (210, 125, 22)
 # Province Area : Clyan
 # Province Region : Clyan
-# Province Super Region : Chy
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Ankruz
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X75
 owner = X75
 controller = X75
+
 culture = culture_cly
 religion = religion_chyans
+
 trade_goods = copper
-add_core = X75
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -59,5 +65,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-settlement_building = yes
-outpost_building = yes
+

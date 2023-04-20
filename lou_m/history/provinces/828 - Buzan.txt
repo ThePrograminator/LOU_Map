@@ -3,21 +3,28 @@
 # Province RGB : (193, 119, 61)
 # Province Area : Buzan
 # Province Region : Zyeth Hýd
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Olyavud
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
+is_city = no
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Y11
 owner = Y11
 controller = Y11
+
 culture = culture_stiffbeard
 religion = religion_mahal
+
 trade_goods = copper
-add_core = Y11
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -54,10 +61,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-settlement_1_dwarf_building = yes
-material_exchance_dwarf_building = yes
-armoury_dwarf_building = yes
-training_hall_dwarf_building = yes
-mine_shaft_dwarf_building = yes
-rune_door_dwarf_building = yes
-is_city = no
+

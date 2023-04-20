@@ -3,22 +3,28 @@
 # Province RGB : (152, 195, 181)
 # Province Area : Oiolad
 # Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Fennas Drunin
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 4
+
+add_core = V06
 owner = V06
 controller = V06
+
 culture = culture_orkish
 religion = religion_orkish
+
 trade_goods = livestock
-add_core = V06
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,5 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-camp_orc_building = yes
-orc_pit_orc_building = yes
+

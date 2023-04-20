@@ -3,22 +3,28 @@
 # Province RGB : (121, 21, 41)
 # Province Area : Bozisha-Miraz
 # Province Region : Raj
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Bozisha-Dar
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 3
 base_manpower = 2
+
+add_core = X51
 owner = X51
 controller = X51
+
 culture = culture_bozishnarod
 religion = religion_sea_peoples
+
 trade_goods = fish
-add_core = X51
+
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -45,6 +51,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-city_1_building = yes
-outpost_building = yes
-dock_building = yes
+

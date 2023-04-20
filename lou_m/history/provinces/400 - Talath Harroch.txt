@@ -3,23 +3,29 @@
 # Province RGB : (175, 150, 82)
 # Province Area : Talath Harroch
 # Province Region : Rhovanion
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Rómenost
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X99
 owner = X99
 controller = X99
+
+add_core = W72
 culture = culture_sagath
 religion = religion_ulgath
+
 trade_goods = livestock
-add_core = X99
-add_core = W72
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -69,7 +75,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-settlement_building = yes
-trade_outpost_building = yes
-work_camp_building = yes
-outpost_building = yes
+

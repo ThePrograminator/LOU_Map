@@ -3,24 +3,30 @@
 # Province RGB : (226, 176, 139)
 # Province Area : West Farthing
 # Province Region : The Shire
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 4
 base_production = 5
 base_manpower = 3
+
+add_core = Y26
 owner = Y26
 controller = Y26
+
 culture = culture_shirefolk
 religion = religion_perian
+
 trade_goods = glass
+
 center_of_trade = 2
-#Eriador Superregion Discovery
-add_core = Y26
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -66,8 +72,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-capital_2_building = yes
-marketplace_building = yes
-provincial_office_building = yes
-warehouse_building = yes
-army_camp_building = yes
+

@@ -3,22 +3,28 @@
 # Province RGB : (131, 119, 61)
 # Province Area : Marös
 # Province Region : Nen Umbar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Umbar
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 4
 base_manpower = 3
+
+add_core = X27
 owner = X27
 controller = X27
+
 culture = culture_umbareans
 religion = religion_black_numenorean
+
 trade_goods = silk
-add_core = X27
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,5 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_1_building = yes
-temple_building = yes
+

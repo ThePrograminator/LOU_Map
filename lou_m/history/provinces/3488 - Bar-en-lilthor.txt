@@ -3,22 +3,28 @@
 # Province RGB : (147, 33, 133)
 # Province Area : Lildardhon
 # Province Region : Harlindon
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Annon Baran
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 5
 base_manpower = 1
+
+add_core = Y83
 owner = Y83
 controller = Y83
+
 culture = culture_falathrim
 religion = religion_calaquendi
+
 trade_goods = salt
-add_core = Y83
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,10 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-town_1_elf_building = yes
-elven_fairground_elf_building = yes
-temple_elf_building = yes
-workshop_elf_building = yes
-warriors_gallery_building = yes
-green_pastures_elf_building = yes
-port_elf_building = yes
+

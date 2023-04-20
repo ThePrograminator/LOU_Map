@@ -3,27 +3,33 @@
 # Province RGB : (224, 198, 35)
 # Province Area : Lothlórien
 # Province Region : Vales of Anduin
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Caras Galadhon
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 5
 base_manpower = 1
+
+add_core = Y68
 owner = Y68
 controller = Y68
+
 culture = culture_galadhrim
 religion = religion_umanyar
+
 trade_goods = tropical_wood
+
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
-#Rhovanion Superregion Discovery
-add_core = Y68
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -73,6 +79,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-town_1_elf_building = yes
-port_elf_building = yes
-elven_fairground_elf_building = yes
+

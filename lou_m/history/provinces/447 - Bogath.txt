@@ -3,22 +3,28 @@
 # Province RGB : (81, 39, 24)
 # Province Area : Auchel
 # Province Region : Chelkar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Amrun
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 3
 base_manpower = 2
+
+add_core = X17
 owner = X17
 controller = X17
+
 culture = culture_haruze
 religion = religion_haruzani
+
 trade_goods = copper
-add_core = X17
+
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -84,6 +90,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-city_1_building = yes
-work_camp_building = yes
-outpost_building = yes
+

@@ -3,22 +3,28 @@
 # Province RGB : (159, 198, 83)
 # Province Area : Undrond
 # Province Region : Cardolan
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Tharbad
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Q15
 owner = Q15
 controller = Q15
+
 culture = culture_cardolani
 religion = religion_eriadorians
+
 trade_goods = fish
-add_core = Q15
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,5 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-city_1_building = yes
-tax_office_building = yes
+

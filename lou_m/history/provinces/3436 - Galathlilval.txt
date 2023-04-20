@@ -3,22 +3,28 @@
 # Province RGB : (100, 40, 56)
 # Province Area : Linnuis
 # Province Region : Cardolan
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lond Daer
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 2
 base_production = 3
 base_manpower = 1
+
+add_core = Z43
 owner = Z43
 controller = Z43
+
 culture = culture_clansmen
 religion = religion_daen
+
 trade_goods = salt
-add_core = Z43
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -64,7 +70,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-city_1_building = yes
-dock_building = yes
-army_camp_building = yes
-temple_building = yes
+
