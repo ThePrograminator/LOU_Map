@@ -1,0 +1,72 @@
+country_decisions = {
+	rivendell_pay_beorning_toll = {
+		major = yes
+		potential = {
+			tag = Y80
+			1875 = {
+				owned_by = Z01
+			}
+			NOT = {
+				mission_completed = pay_the_beorning_tolls
+				has_country_flag = rivendell_pay_beorning_toll_flag
+				has_country_flag = rivendell_pay_beorning_toll_accepted_flag
+				has_country_flag = rivendell_pay_beorning_toll_denied_flag
+			}
+		}
+		
+		allow = {
+			tag = Y80
+			1875 = {
+				owned_by = Z01
+			}
+			is_at_war = no
+		}
+		
+		effect = {	
+			country_event = {
+				id = LOU_mission_rivendell.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	rivendell_cancelling_pay_beorning_toll = {
+		major = yes
+		potential = {
+			tag = Y80
+			1875 = {
+				owned_by = Z01
+			}
+			Z01 = {
+				has_country_modifier = rivendell_paying_high_pass_beorning_modifier
+			}
+			has_country_flag = rivendell_pay_beorning_toll_flag
+			has_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+		}
+		
+		allow = {
+			tag = Y80
+			1875 = {
+				owned_by = Z01
+			}
+			is_at_war = no
+			has_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+			Z01 = {
+				has_country_modifier = rivendell_paying_high_pass_beorning_modifier
+			}
+		}
+		
+		effect = {	
+			country_event = {
+				id = LOU_mission_rivendell.7
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

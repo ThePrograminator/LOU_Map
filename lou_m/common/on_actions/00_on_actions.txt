@@ -1397,6 +1397,26 @@ on_province_owner_change = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			ROOT = {
+				province_id = 1875
+			}
+			owner = {
+				NOT = {
+					tag = Z01
+				}
+			}
+			Y80 = {
+				exists = yes
+			}
+		}
+		Y80 = {
+			country_event = {
+				id = LOU_mission_rivendell.5
+			}
+		}
+	}
 }
 
 # country

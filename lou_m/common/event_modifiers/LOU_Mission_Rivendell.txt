@@ -1,0 +1,20 @@
+########################
+#Event Modifier
+#########################
+
+rivendell_paying_high_pass_beorning_modifier = {
+	global_tax_income = 1
+}
+
+rivendell_paying_high_pass_fort_expenses_modifier = {
+	global_tax_income = -1
+}
+
+########################
+#Mission Effect Modifier
+#########################
+
+forondir_the_drughu_accord_modifier = {
+	local_build_cost = -0.1
+	local_production_efficiency = 0.15
+}
