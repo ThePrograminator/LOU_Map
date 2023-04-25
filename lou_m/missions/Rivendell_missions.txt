@@ -10,7 +10,14 @@ slot_01 = {
 		icon = mission_build_up_to_force_limit
 		position = 2
 		required_missions = { foster_the_heirs_of_isildur }
-		trigger = { }
+		trigger = { 
+			1587 = {
+				owned_by = ROOT
+			}
+			1590 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	settle_the_wilderness = {
@@ -41,7 +48,25 @@ slot_02 = {
 		icon = mission_build_up_to_force_limit
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Z06
+				}
+				alliance_with =  Z06
+				Z06 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else = {
+				1818 = {
+					owned_by = ROOT
+				}
+			}
+		}
 		effect = { }
 	}
 	retake_hollin_ridge = {
