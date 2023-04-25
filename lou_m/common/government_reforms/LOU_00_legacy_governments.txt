@@ -164,6 +164,52 @@ empire_of_rhun_legacy = {
 	}
 }
 
+dol_amroth_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.1
+		stability_cost_modifier = -0.2
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+umbar_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.1
+		stability_cost_modifier = -0.2
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+
+
 #-----------------------------------------
 # Republic
 #-----------------------------------------

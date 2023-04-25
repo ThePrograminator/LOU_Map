@@ -12,7 +12,10 @@ gondor_ideas = {
 	}
 	
 	trigger = {
-		tag = X01
+		OR = {
+			tag = X01
+			tag = X11
+		}
 	}
 	free = yes		
 	

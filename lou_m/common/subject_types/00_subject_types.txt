@@ -305,15 +305,15 @@ daimyo_vassal = {
 	enforce_culture = no
 	seize_territory = no
 	#(enable)
-	force_seppuku = yes
+	force_seppuku = no
 	contribute_to_capital = yes
-	force_isolation = yes
+	force_isolation = no
 	return_land = yes
 	conscript_general = yes
 	#(special)
-	sword_hunt = yes
-	sankin_kotai = yes
-	expel_ronin = yes
+	sword_hunt = no
+	sankin_kotai = no
+	expel_ronin = no
 	
 	# Modifiers
 	
@@ -702,9 +702,14 @@ dol_amroth_principality = {
 	can_be_integrated = no
 	can_be_annexed = no
 	takes_diplo_slot = no
-	can_release_in_peace = yes
+	can_release_in_peace = no
 	overlord_protects_external = yes
 	can_fight_independence_war = no
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
 	has_power_projection = yes
 	gets_help_with_rebels = yes
 	share_rebel_popup = yes
@@ -734,6 +739,9 @@ dol_amroth_principality = {
 	conscript_general = yes
 	block_settlement_growth = no
 	enforce_religion = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
 
 
 	# Modifiers:
