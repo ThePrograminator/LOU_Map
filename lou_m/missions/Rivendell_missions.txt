@@ -7,10 +7,26 @@ slot_01 = {
 	}
 
 	expel_wulfseggeas = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_1
 		position = 2
 		required_missions = { foster_the_heirs_of_isildur }
-		trigger = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1587
+				province_id = 1590
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			1587 = {
+				owned_by = ROOT
+			}
+			1590 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	settle_the_wilderness = {
@@ -38,31 +54,90 @@ slot_02 = {
 	}
 
 	foster_the_heirs_of_isildur = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dunedain_12
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			if = {
+				limit = {
+					exists = Z06
+				}
+				alliance_with =  Z06
+				Z06 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else = {
+				1818 = {
+					owned_by = ROOT
+				}
+			}
+		}
 		effect = { }
 	}
 	retake_hollin_ridge = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_hills
 		position = 2
 		required_missions = { foster_the_heirs_of_isildur }
-		trigger = { }
+		provinces_to_highlight = {
+			area = hollin_ridge_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			hollin_ridge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	border_amon_lind = {
 		icon = mission_build_up_to_force_limit
 		position = 3
 		required_missions = { expel_wulfseggeas retake_hollin_ridge }
-		trigger = { }
+		provinces_to_highlight = {
+			OR ={
+				province_id = 1365
+				province_id = 1368
+				province_id = 1866
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = { 
+			1365 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1368 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1866 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 	reclaim_ost_in_edhil = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_3
 		position = 4
 		required_missions = { border_amon_lind }
-		trigger = { }
+		provinces_to_highlight = {
+			province_id = 285
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = { 
+			285 = {
+				owned_by = ROOT
+			}
+		}
 		effect = { }
 	}
 	gwaith_i_mirdain = {
@@ -104,7 +179,7 @@ slot_03 = {
 		effect = { }
 	}
 	house_of_healing = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rivendell
 		position = 3
 		required_missions = { place_of_learning }
 		trigger = { }
