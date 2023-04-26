@@ -288,17 +288,28 @@ gov_great_khaganate_of_nurn = {
 	}
 	
 	ruler_male = {
-		1 = KHAGANATE_RULER
-		2 = KHAGANATE_RULER
-		3 = KHAGANATE_RULER
+		1 = KHAGAN
+		2 = KHAGAN
+		3 = KHAGAN
 	}
 	
 	ruler_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
 	}
-	
+		
+	heir_male = {
+		1 = KHANZADEH 
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
+	}
 	trigger = {
 		has_reform = great_khaganate_of_nurn_reform
 	}
