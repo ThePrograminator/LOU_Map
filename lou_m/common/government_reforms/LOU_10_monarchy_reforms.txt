@@ -323,8 +323,46 @@ isengard_white_council_reform = {
 	}
 	
 	modifiers = {
-		land_morale = 0.15
+		land_morale = 0.10
+		development_cost = -0.10
+		improve_relation_modifier = 0.25
 		diplomatic_reputation = 2
+		diplomatic_upkeep = 2
+		administrative_efficiency = 0.05
+		stability_cost_to_declare_war = 1
+
+		tolerance_own = 3
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+radagast_reform = {
+	icon = "istari"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = radagast_legacy
+	lock_level_when_selected = yes
+	heir = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	potential = {
+		tag = W27
+	}
+	
+	modifiers = {
+		movement_speed = 0.15		
+		improve_relation_modifier = 0.25
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 2
+		can_bypass_forts = yes
+		build_cost = -0.25
+		stability_cost_to_declare_war = 1
 
 		tolerance_own = 3
 		tolerance_heretic = 3

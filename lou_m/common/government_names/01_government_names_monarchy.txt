@@ -375,6 +375,29 @@ gov_isengard_white_council = {
 	}
 }
 
+gov_radagast = {
+	rank = {
+		1 = RADAGAST_RHOSGOBEL
+		2 = RADAGAST_RHOSGOBEL
+		3 = RADAGAST_RHOSGOBEL
+	}
+	
+	ruler_male = {
+		1 = RADAGAST_RULER
+		2 = RADAGAST_RULER
+		3 = RADAGAST_RULER
+	}
+	
+	ruler_female = {
+		1 = RADAGAST_RULER
+		2 = RADAGAST_RULER
+		3 = RADAGAST_RULER
+	}
+
+	trigger = {
+		has_reform = radagast_reform
+	}
+}
 gov_dol_amroth = {
 	rank = {
 		1 = DOL_AMROTH

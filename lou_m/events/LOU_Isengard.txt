@@ -106,6 +106,8 @@ country_event = {
 
 			create_alliance = X01
 			#create_alliance = X16
+			create_alliance = Y80
+			create_alliance = Y68
 
 			add_trust = {
 				who = X01
@@ -201,6 +203,8 @@ country_event = {
 
 		create_alliance = X01
 		#create_alliance = X16
+		create_alliance = Y80
+		create_alliance = Y68
 
 		add_trust = {
 			who = X01
@@ -287,12 +291,15 @@ country_event = {
 			}	
 
 			add_treasury = 250
-			
+
 			add_truce_with = V95
 			add_truce_with = Z48
+	
 			create_alliance = X01
 			#create_alliance = X16
-
+			create_alliance = Y80
+			create_alliance = Y68
+	
 			add_trust = {
 				who = X01
 				value = 50

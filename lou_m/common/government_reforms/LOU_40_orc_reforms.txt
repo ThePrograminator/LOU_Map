@@ -120,8 +120,10 @@ lotr_nazgul_reform = {
 	}
 	
 	modifiers = {
-		global_unrest = -3
+		discipline = 0.10
 		war_exhaustion = -0.15
+		diplomatic_reputation = -2
+		land_forcelimit_modifier = 0.25
 
 		tolerance_own = 3
 		tolerance_heretic = -3
@@ -151,6 +153,9 @@ lotr_necromancer_reform = {
 		discipline = 0.10
 		global_unrest = -3
 		war_exhaustion = -0.15
+		diplomatic_reputation = -2
+		land_forcelimit_modifier = 0.25
+		all_power_cost = -0.03
 
 		tolerance_own = 5
 		tolerance_heretic = -5
@@ -176,8 +181,11 @@ lotr_isengard_reform = {
 	}
 	
 	modifiers = {
-		discipline = 0.10
-		mercenary_cost = -0.15
+		discipline = 0.10		
+		development_cost = -0.15
+		mercenary_cost = -0.25
+		land_forcelimit_modifier = 0.25
+		local_production_efficiency = 0.15
 
 		tolerance_own = 3
 		tolerance_heretic = -3
@@ -202,8 +210,12 @@ lotr_mordor_reform = {
 	
 	modifiers = {
 		manpower_recovery_speed = 0.20
-		ae_impact = -0.10
+		ae_impact = -0.15
 		diplomatic_upkeep = 3
+		discipline = 0.10
+		diplomatic_reputation = -2
+		land_forcelimit_modifier = 0.25
+		all_power_cost = -0.05
 
 		tolerance_own = 5
 		tolerance_heretic = -5
