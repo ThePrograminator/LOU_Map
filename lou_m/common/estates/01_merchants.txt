@@ -26,6 +26,12 @@ estate_merchants = {
 			is_hobbit = yes
 		}
 	}
+    custom_name = {
+		desc = estate_merchants_orc
+		trigger = {
+			is_orc = yes
+		}
+	}
     
 	# ----- Conditions -----
 	trigger = {
@@ -42,10 +48,6 @@ estate_merchants = {
         NOT = { has_reform = lotr_orc_clan_reform }
         NOT = { has_reform = lotr_orc_federation_reform }
         NOT = { has_reform = lotr_orc_kingdom_reform }
-        NOT = { has_reform = lotr_nazgul_reform }
-        NOT = { has_reform = lotr_isengard_reform }
-        NOT = { has_reform = lotr_mordor_reform }
-		NOT = { has_reform = lotr_necromancer_reform }
         NOT = { has_reform = lotr_troll_clan_reform }
         NOT = { has_reform = lotr_wight_government_reform }
         NOT = { has_reform = lotr_spider_government_reform }
