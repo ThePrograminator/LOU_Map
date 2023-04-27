@@ -1283,7 +1283,7 @@ mumakil = {
 		cavalry_shock = 1
 	}
 	province = {
-		trade_goods_size_modifier = 0.25
+		province_trade_power_modifier = 0.15
 	}
 }
 
@@ -1303,7 +1303,7 @@ orc_draught = {
 		land_morale = 0.10
 	}
 	province = {
-		local_unrest = -2
+		local_manpower_modifier = 0.25
 	}
 }
 
@@ -1323,7 +1323,7 @@ corsairs = {
 		galley_power = 0.20
 	}
 	province = {
-		local_ship_cost = -0.25
+		local_ship_cost = -0.20
 	}
 }
 
@@ -1333,7 +1333,7 @@ carracks = {
 		heavy_ship_power = 0.20
 	}
 	province = {
-		local_ship_cost = -0.25
+		local_ship_cost = -0.20
 	}
 }
 
