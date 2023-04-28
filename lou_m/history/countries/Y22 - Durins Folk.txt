@@ -58,7 +58,7 @@ historical_rival = Z36
 2589.1.1 = {
 	monarch = {
 		name = "Thror"
-		dynasty = "Durin's House"
+		dynasty = "House of Durin"
 		adm = 6
 		dip = 2
 		mil = 5
@@ -66,6 +66,23 @@ historical_rival = Z36
 	}
 	add_ruler_personality = immortal_personality
 	set_ruler_flag = set_immortality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = greedy_personality
+}
+
+2644.2.1 = {
+	heir = {
+		name = "Thráin II"
+		dynasty = "House of Durin"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 2644.1.1
+	}
+	add_heir_personality = immortal_personality
+	set_heir_flag = set_immortality
+	add_heir_personality = lawgiver_personality
+	add_heir_personality = righteous_personality
 }
 
 2770.1.1 = {
@@ -80,6 +97,18 @@ historical_rival = Z36
 		dip = 3
 		mil = 6
 		birth_date = 2644.1.1
+	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = righteous_personality
+	heir = {
+		name = "Thorin II Oakenshield"
+		dynasty = "Durin's House"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 2746.1.1
 	}
 	add_ruler_personality = immortal_personality
 	set_ruler_flag = set_immortality
