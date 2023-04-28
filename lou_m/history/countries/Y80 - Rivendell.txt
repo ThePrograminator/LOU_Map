@@ -53,6 +53,15 @@ add_opinion = {
 	set_ruler_flag = set_immortality
 	add_ruler_personality = just_personality
 	add_ruler_personality = scholar_personality
-	add_ruler_personality = calm_personality
 	add_ruler_personality = inspiring_leader_personality
+	add_trust = {
+		who = Y68
+		value = 50
+		mutual = yes
+	}
+	add_trust = {
+		who = Y81
+		value = 50
+		mutual = yes
+	}
 }
