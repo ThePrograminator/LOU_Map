@@ -257,7 +257,7 @@ march = {
 	}
 }
 
-daimyo_vassal = {
+daimyo_vassal = {																			# Is used as 'Khaganate' in Khand
 	copy_from = vassal
 	count = vassal
 	
@@ -268,12 +268,21 @@ daimyo_vassal = {
 	gets_help_with_rebels = no
 	separatists_become_subjects = yes
 	allows_taking_land_without_independence = yes
-	can_use_claims = no
+	can_use_claims = yes
 	can_concentrate_development = no
+	can_be_integrated = no
+	can_be_annexed = no
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = yes
+	overlord_can_attack = yes
+	can_have_subjects_of_other_types = yes
+	has_power_projection = yes
+	share_rebel_popup = no
 
 	trust_on_start = 0
 	
-	base_liberty_desire = 10.0
+	base_liberty_desire = 15.0
 	military_focus = 1.2
 
 	relative_power_class = 1

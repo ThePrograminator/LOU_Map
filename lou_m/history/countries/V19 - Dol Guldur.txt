@@ -8,6 +8,8 @@ technology_group = lotr_orc_rhovanion
 unit_type = lotr_orc
 capital = 304
 
+add_treasury = 200
+
 historical_friend = V17
 historical_friend = V18
 historical_friend = V20
@@ -40,6 +42,7 @@ historical_rival = V26
 2750.1.1 = {
 	monarch = {
 		name = "The Necromancer"
+		dynasty = "Morgul Sorcerer"
 		birth_date = 2700.1.1
 		adm = 6
 		dip = 3
