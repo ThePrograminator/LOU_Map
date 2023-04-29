@@ -141,7 +141,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = war_of_the_dwarves_and_orcs
-		tag = Y16
+		tag = Y22
 		exists = Y57
 		NOT = { 
 			exists = V53 
@@ -201,6 +201,7 @@ country_event = {
 	}			
 }
 
+#Win War
 country_event = {
 	id = LOU_wdo.5
 	title = "LOU_wdo.5.t"
@@ -213,23 +214,26 @@ country_event = {
 	trigger = {
 		has_country_flag = war_of_the_dwarves_and_orcs_starts
 		tag = Y22
-		#truce_with = Y57
+		truce_with = Y57
 		OR = {
 			281 = {
-				owned_by = ROOT
+				owned_by = Y22
 			}
 			739 = {
-				owned_by = ROOT
+				owned_by = Y22
 			}
 			740 = {
-				owned_by = ROOT
+				owned_by = Y22
 			}
 		}
+		
 		#had_recent_war = 0.1
+
+		has_global_flag = war_of_the_dwarves_and_orcs
 		NOT = { 
 			exists = V53 	
-			has_global_flag = war_of_the_dwarves_and_orcs_wins
-			has_global_flag = war_of_the_dwarves_and_orcs_lost
+			has_country_flag = war_of_the_dwarves_and_orcs_wins
+			has_country_flag = war_of_the_dwarves_and_orcs_lost
 		}
 	}
 
@@ -266,7 +270,22 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		has_country_flag = war_of_the_dwarves_and_orcs_starts
 		tag = Y22
+		truce_with = Y57
+		NOT = {
+			OR = {
+				281 = {
+					owned_by = Y22
+				}
+				739 = {
+					owned_by = Y22
+				}
+				740 = {
+					owned_by = Y22
+				}
+			}
+		}
 
 		check_date = {
 			YEAR = 2793
@@ -274,10 +293,10 @@ country_event = {
 			STARTED_BEFORE = 2793.1.1
 		}
 
-		has_global_flag = war_of_the_dwarves_and_orcs_starts
+		has_global_flag = war_of_the_dwarves_and_orcs
 		NOT = {  	
-			has_global_flag = war_of_the_dwarves_and_orcs_lost
-			has_global_flag = war_of_the_dwarves_and_orcs_wins	
+			has_country_flag = war_of_the_dwarves_and_orcs_lost
+			has_country_flag = war_of_the_dwarves_and_orcs_wins	
 		}
 	}
 
