@@ -7,9 +7,12 @@ eorl_the_young_ancestor =
 	ae_impact = -0.05
 	core_creation = -0.10
 	
-	allow = { religion = religion_eorlingas }
+	potential = { religion = religion_eorlingas }
+	trigger = {}
 	sprite = 1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -29,9 +32,12 @@ brego_ancestor =
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.20
 	
-	allow = { religion = religion_eorlingas }
+	potential = { religion = religion_eorlingas }
+	trigger = {}
 	sprite = 2
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -51,9 +57,12 @@ aldor_the_old_ancestor =
 	global_tax_modifier = 0.10
 	trade_efficiency = 0.10
 	
-	allow = { religion = religion_eorlingas }
+	potential = { religion = religion_eorlingas }
+	trigger = {}
 	sprite = 3
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -73,9 +82,12 @@ helm_hammerhand_ancestor =
 	siege_ability = 0.05
 	discipline = 0.05
 	
-	allow = { religion = religion_eorlingas }
+	potential = { religion = religion_eorlingas }
+	trigger = {}
 	sprite = 4
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -95,9 +107,12 @@ folcwine_ancestor =
 	interest = -0.25
 	build_cost = -0.10
 	
-	allow = { religion = religion_eorlingas }
+	potential = { religion = religion_eorlingas }
+	trigger = {}
 	sprite = 5
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {

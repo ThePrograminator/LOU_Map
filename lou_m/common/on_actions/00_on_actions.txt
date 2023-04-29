@@ -107,6 +107,22 @@ on_war_won = {
 }
 
 # country
+# root = winning country, from = loser country
+on_main_war_won = {
+	on_main_war_won_effect = yes
+	events = {
+		#native_americans.7
+		#flavor_kor.15
+	}
+}
+
+# country
+# root = winning country, from = loser country
+on_separate_war_won = {
+	
+}
+
+# country
 # root = loser country, from = winner country
 on_war_lost = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - winner : [From.GetName] - loser : [Root.GetName] - on_war_lost" }
@@ -131,6 +147,14 @@ on_war_lost = {
     events = {
         LOU_empire_of_rhun.2
     }
+}
+on_main_war_lost = {
+	events = {
+		flavor_kor.15
+		flavor_tur.300 #Defeat of the Ottomans
+	}
+}
+on_separate_war_lost = {
 }
 
 # country
@@ -277,6 +301,13 @@ on_abandon_colony = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - province : [Root.GetName] - country : [From.GetName] - on_abandon_colony" }
 }
 
+# province
+# root = location, from = country that owns it
+# Fired right after the great project is constructed
+on_great_project_constructed = {
+	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - province : [Root.GetName] - country : [From.GetName] - on_great_project_constructed" }
+}
+
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
 # country
 on_new_monarch = {
@@ -341,6 +372,11 @@ on_monarch_death = {
 # country
 on_regent = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_regent" }
+}
+
+# country
+on_extend_regency = {
+	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_extend_regency" }
 }
 
 # country
@@ -414,6 +450,75 @@ on_heir_needed_theocracy = {
 # Emperor from same dynasty
 on_successive_emperor = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_successive_emperor" }
+}
+
+# Called whenever a new emperor is elected
+# FROM = Previous Emperor
+# ROOT = New Emperor 
+on_emperor_elected = {
+	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_emperor_elected" }
+	every_elector = {
+		if = {
+			limit = {
+				preferred_emperor = root
+			}
+			change_variable = {
+				which = supported_successive_emperors
+				value = 1
+			}
+		}
+		else = {
+			set_variable = {
+				which = supported_successive_emperors
+				value = 0
+			}
+		}
+	}
+
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = { has_country_flag = got_promised_holstein_to_the_empire }
+		clr_country_flag = got_promised_holstein_to_the_empire
+	}
+	FROM = {
+		if = {
+			limit = { has_country_modifier = diet_occupied }
+			remove_country_modifier = diet_occupied
+			ROOT = {
+				add_country_modifier = { name = diet_occupied duration = -1 }
+			}
+		}
+		if = {
+			limit = {
+				any_country = {
+					reverse_has_opinion_modifier = {
+						modifier = opinion_imperial_diplomacy
+						who = prev
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						modifier = opinion_imperial_diplomacy
+						who = prev
+					}
+				}
+				reverse_remove_opinion = {
+					modifier = opinion_imperial_diplomacy
+					who = prev
+				}
+				ROOT = {
+					add_opinion = {
+						modifier = opinion_imperial_diplomacy
+						who = prev
+					}
+				}
+			}
+		}
+	}
 }
 
 # HRE Prince released by the emperor
@@ -570,6 +675,10 @@ on_mandate_of_heaven_lost = {
     }
 }
 
+on_embrace_revolution = {
+	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_embrace_revolution" }
+}
+
 on_dismantle_revolution = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_dismantle_revolution" }
 }
@@ -612,6 +721,21 @@ on_colonial_pulse = {
 
 on_siberian_pulse = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_siberian_pulse" }
+}
+
+# country random events
+on_monthly_pulse = {
+}
+on_yearly_pulse = {
+	
+}
+on_yearly_pulse_2 = {
+}
+on_yearly_pulse_3 = {
+}
+on_yearly_pulse_4 = {
+}
+on_yearly_pulse_5 = {
 }
 
 # country random events
@@ -1314,9 +1438,18 @@ on_province_religion_converted = {
     on_province_religion_converted_estate_privileges_effect = yes
 }
 
+on_province_religion_changed = {
+	on_province_religion_changed_effect = yes
+}
+
 # province
 on_province_culture_converted = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - province : [Root.GetName] - country : [From.GetName] - on_province_culture_converted" }
+}
+
+# province, general conversion through effects
+on_province_culture_changed = {
+
 }
 
 # THIS = Province, FROM = Country who Propogated
@@ -1397,6 +1530,21 @@ on_province_owner_change = {
 			}
 		}
 	}
+}
+
+# country
+on_parliament_debate_reset = {
+	on_parliament_debate_reset_effect = yes
+}
+
+#province
+on_parliament_seat_given = {
+	on_parliament_seat_given_effect = yes
+}
+
+#province
+on_parliament_seat_lost = {
+	on_parliament_seat_lost_effect = yes
 }
 
 # country
@@ -1523,6 +1671,78 @@ on_remove_pasha = {
 on_janissaries_raised = {
 }
 
+on_cawa_raised = {
+}
+
+on_carolean_raised = {
+}
+
+on_hussars_raised = {
+}
+
+on_revolutionary_guard_raised = {
+}
+
+on_banner_raised = {
+	owner = { 
+		if = { 
+			limit = { has_country_flag = refund_partial_corruption_on_banner_recruited_flag }
+			add_corruption = -0.1
+		}
+	}
+}
+
+on_cossack_raised = {
+}
+
+on_marine_raised = {
+}
+
+on_rajput_raised = {
+}
+
+on_streltsy_raised = {
+}
+
+on_tercio_raised = {
+}
+
+on_musketeer_raised = {
+}
+
+on_samurai_raised = {
+}
+
+on_geobukseon_raised = {
+}
+
+on_man_of_war_raised = {
+}
+
+on_galleon_raised = {
+}
+
+on_galleass_raised = {
+}
+
+on_caravel_raised = {
+}
+
+on_voc_indiamen_raised = {
+}
+
+on_hre_reform_passed = {
+}
+
+on_mandate_reform_passed = {
+	if = {
+		limit = { has_country_flag = qng_passing_decree_reduces_autonomy_everywhere_by_5_flag } 
+		every_owned_province = {
+			add_local_autonomy = -10
+		}
+	}
+}
+
 on_reform_enacted = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_reform_enacted" }
 }
@@ -1545,6 +1765,13 @@ on_center_of_trade_downgrade = {
 
 on_culture_promoted = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_culture_promoted" }
+}
+
+on_culture_demoted = {
+	on_culture_demoted_effect = yes
+}
+
+on_primary_culture_changed = {
 }
 
 # FROM = Previous Country, ROOT = Province
@@ -1765,6 +1992,15 @@ on_estate_removed = {
 
 }
 
+##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
+on_colony_established = {
+}
+
+#scope = new country, FROM = parent country
+on_colonial_nation_established = {
+}
+
+##scope = colony province, FROM = owner country or province if there's a minority expulsion source
 on_colonist_boosting_colony = {
 	
 }

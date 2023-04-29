@@ -16,7 +16,8 @@ third_age = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
 		war_exhaustion = -1
 	}
 
@@ -68,29 +69,21 @@ third_age = {
 
 	abilities = {
          ab_third_age_lay_of_the_land = {
-            rule = {
-                attack_bonus_in_capital_terrain = yes
+            modifier = {
+                attack_bonus_in_capital_terrain = 1
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         ab_third_age_local_administators = {
-            rule = {
+            modifier = {
                 ignore_coring_distance = yes
             }
             ai_will_do = {
 				factor = 100
 			}
         }
-        #ab_third_age_secret_trails = {
-        #    rule = {
-        #        can_bypass_forts = yes
-        #    }
-        #    ai_will_do = {
-		#		factor = 100
-		#	}
-        #}
 		ab_third_age_integrated_sappers = {
             modifier = {
                 artillery_bonus_vs_fort = 1
@@ -195,7 +188,8 @@ fourth_age = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
 		war_exhaustion = -1
 	}
     
@@ -247,15 +241,15 @@ fourth_age = {
 
 	abilities = {
          ab_fourth_age_lay_of_the_land = {
-            rule = {
-                attack_bonus_in_capital_terrain = yes
+            modifier = {
+                attack_bonus_in_capital_terrain = 1
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         ab_fourth_age_local_administators = {
-            rule = {
+            modifier = {
                 ignore_coring_distance = yes
             }
             ai_will_do = {
@@ -263,7 +257,7 @@ fourth_age = {
 			}
         }
         ab_fourth_age_secret_trails = {
-            rule = {
+            modifier = {
                 can_bypass_forts = yes
             }
             ai_will_do = {

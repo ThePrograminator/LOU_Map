@@ -6,6 +6,7 @@ set_against_race_opinions_effect = {
 		every_country = {
 			limit = {
 				is_servants_of_evil_opinion = yes
+				NOT = { TAG = ROOT}
 				PREV = {
 					NOT = {
 						has_opinion_modifier = {
@@ -41,6 +42,7 @@ set_free_peoples_opinions_effect = {
 		every_country = {
 			limit = {
 				is_free_peoples_opinion = yes
+				NOT = { TAG = ROOT}
 				PREV = {
 					NOT = {
 						has_opinion_modifier = {
@@ -71,6 +73,7 @@ set_servants_of_darkness_opinions_effect = {
 		every_country = {
 			limit = {
 				is_servants_of_evil_opinion = yes
+				NOT = { TAG = ROOT}
 				PREV = {
 					NOT = {
 						has_opinion_modifier = {
