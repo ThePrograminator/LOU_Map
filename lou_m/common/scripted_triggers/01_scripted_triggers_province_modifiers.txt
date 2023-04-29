@@ -19,3 +19,18 @@ has_no_river_estuary_trigger = {
 		}
 	}
 }
+
+
+#Province with special production modifier:
+province_with_special_goods_produced_trigger = {
+	always = no
+}
+
+#Province without special production modifier:
+province_without_special_goods_produced_trigger = {
+	always = no
+}
+
+is_religious_center_province = {
+	always = no
+}

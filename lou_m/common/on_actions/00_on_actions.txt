@@ -1834,3 +1834,82 @@ on_raze = {
 }
 on_concentrate_development = {
 }
+
+on_slacken_start = {
+	
+}
+on_slacken_stop = {
+	
+}
+
+on_colony_finished = { #ROOT - Province
+	
+}
+
+on_advisor_hired = { #ROOT - Country
+
+}
+
+on_adm_advisor_hired = { #ROOT - Country, executed after on_advisor_hired!
+
+}
+
+on_dip_advisor_hired = { #ROOT - Country, executed after on_advisor_hired!
+
+}
+
+on_mil_advisor_hired = { #ROOT - Country, executed after on_advisor_hired!
+
+}
+
+on_core = { #ROOT - Province, #FROM - Country that gets the core
+
+}
+
+on_tech_taken = { #ROOT - Country
+
+}
+
+on_adm_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+
+}
+
+on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+
+}
+
+on_mil_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+
+} 
+
+on_barrage = { #ROOT - barraging country, FROM - barraged province 
+
+}
+
+on_naval_barrage = { #ROOT - barraging country, FROM - barraged province 
+
+}
+
+on_scorch_earth  = { #ROOT - scorching country, FROM - scorched province
+
+}
+
+on_war_ended = { #ROOT - Winer FROM - Loser
+	
+}
+
+on_alliance_broken = { #ROOT - Original alliance creator, FROM - Alliance accepter
+	
+}
+
+on_royal_marriage_broken = { #ROOT - Original marriage creator, FROM - Marriage accepter
+
+}
+
+on_alliance_created = { #ROOT - Alliance sender, FROM - Alliance accepter
+
+}
+
+on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
+
+}

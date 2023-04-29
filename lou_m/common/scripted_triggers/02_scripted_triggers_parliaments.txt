@@ -1,0 +1,198 @@
+num_of_issues_passed = {
+	if = {
+		limit = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+			has_parliament = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = num_of_issues_passed_$amount$
+			check_variable = {
+				which = issues_passed
+				value = $amount$
+			}
+		}
+	}
+	else = {
+		[[alternative_trigger]$alternative_trigger$]
+	}
+}
+
+#List of arguments of elements which should be not be used for generating the bribes
+
+has_not_bribe_blocking_debate_active_adm = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_dip = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_mil = {
+	always = yes
+}
+has_not_bribe_blocking_debate_active_estate = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_corruption = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_inflation = {
+	always = yes
+}
+has_not_bribe_blocking_debate_active_war_exhaustion = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_army_tradition = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_navy_tradition = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_imperial_authority = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_mandate = {
+	always = yes
+}
+has_not_bribe_blocking_debate_active_manpower = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_sailors = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_mercantilism = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_prestige = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_treasury = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_army_professionalism = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_crownland = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_government_currency = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_government_reform_progress = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_government_power = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_religious_currency = {
+	always = yes
+}
+has_not_bribe_blocking_debate_active_stability = {
+	always = no
+}
+has_not_bribe_blocking_debate_active_advisor = {
+	always = no
+}
+
+#The idea is that an issue which gives a resource should not generate bribes where said resource is paid.
+##########################################################################################################
+# adm
+# dip
+# mil
+# estate
+# corruption
+# inflation
+# war_exhaustion
+# army_tradition
+# navy_tradition
+# imperial_authority
+# mandate
+# manpower
+# sailors
+# mercantilism
+# prestige
+# treasury
+# army_professionalism
+# crownland
+# government_currency
+# government_reform_progress
+# government_power
+# religious_currency
+# stability
+# advisor
+has_not_bribe_blocking_debate_active = {
+	has_not_bribe_blocking_debate_active_$type$ = yes
+}
+
+#Tooltip example: "Has passed at least §Y6§! issues in the parliament (§Y[Root.GetNumOfIssuesPassed]§!/§Y6§!)."
+num_of_issues_passed_with_custom_tooltip = {
+	if = {
+		limit = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+			has_parliament = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = $tooltip$
+			check_variable = {
+				which = issues_passed
+				value = $amount$
+			}
+		}
+	}
+	else = {
+		[[alternative_trigger]$alternative_trigger$]
+	}
+}
+
+halved_parliament_bribes = {
+	OR = {
+		has_country_flag = halved_parliament_bribe_costs
+	}
+}
+
+has_expensive_debate = {
+	always = no
+}
+
+has_issue_unlocked = {
+	has_country_flag = unlocked_issue_$issue$
+}
+
+#Supports the following parliament issues
+###########################################
+# english_french_act_of_union
+# english_scottish_act_of_union
+has_issue_unlocked_tooltip = {
+	custom_trigger_tooltip = {
+		tooltip = unlocked_issue_$issue$_tt
+		has_country_flag = unlocked_issue_$issue$
+	}
+}
+
+has_not_enacted_parliament_action = {
+	NOT = { has_country_flag = $parliament_action$_flag }
+}
+
+#Supports the following parliament actions
+###########################################
+# french_english_reconciliation_act
+# crush_french_nobles
+# the_bank_charter_act
+has_enacted_parliament_action = {
+	custom_trigger_tooltip = {
+		tooltip = has_enacted_$parliament_action$_tt
+		has_country_flag = $parliament_action$_flag
+	}
+}
+
+has_reached_seat_threshold = {
+	current_size_of_parliament = 40
+}
+
+has_passed_all_acts_of_crown_parliamentary_issues = {
+	always = no
+}
