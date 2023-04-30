@@ -471,7 +471,7 @@ slaves = {
 		global_tariffs = 0.25
 	}
 	province = {
-		local_missionary_strength = 0.01
+		local_production_efficiency = 0.15
 	}
 	chance = {
 		factor = 15
@@ -550,7 +550,7 @@ ivory = {
 tea = {
 	color = { 0.07 0.33 0.09 }
 	modifier = {
-		advisor_cost = -0.10
+		advisor_cost = -0.15
 	}
 	province = {
 		garrison_growth = 0.25
@@ -1209,7 +1209,7 @@ marble = {
 		
 	}
 	province = {
-		local_development_cost = -0.1
+		local_development_cost = -0.15
 	}
 	chance = {
 		factor = 10
@@ -1424,5 +1424,6 @@ plunder = {
 	}
 	province = {
 		province_trade_power_modifier = 0.15
+		local_production_efficiency = -0.50
 	}
 }
