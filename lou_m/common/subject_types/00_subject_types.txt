@@ -39,6 +39,7 @@ colony = {}
 tributary_state = {}
 dol_amroth_principality = {}
 grey_haven = {}
+nazgul_kingdom = {}
 
 default = {
 	# Graphics:
@@ -732,9 +733,9 @@ dol_amroth_principality = {
 	base_liberty_desire = -1000.0
 	
 
-	max_government_rank = 2
+	#max_government_rank = 2
 
-	liberty_desire_development_ratio = 0.0
+	liberty_desire_development_ratio = -1
 	liberty_desire_same_dynasty = -25.0
 	pays_overlord = 0.5
 	forcelimit_bonus = 1.0
@@ -826,7 +827,7 @@ grey_haven = {
 
 	max_government_rank = 2
 
-	liberty_desire_development_ratio = 0.0
+	liberty_desire_development_ratio = -1
 	liberty_desire_same_dynasty = -25.0
 	pays_overlord = 1.0
 	forcelimit_bonus = 1.0
@@ -866,6 +867,87 @@ grey_haven = {
 
 	overlord_opinion_modifier = in_union
 	subject_opinion_modifier = in_union
+}
+
+nazgul_kingdom = {
+	copy_from = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+
+	# Properties:
+	can_be_integrated = no
+	can_be_annexed = no	
+	takes_diplo_slot = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = no
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	has_power_projection = yes
+	share_rebel_popup = yes
+	trust_on_start = 100
+	base_liberty_desire = -10000.0
+	
+
+	#max_government_rank = 2
+
+	liberty_desire_development_ratio = 0.0
+	pays_overlord = 0.5
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.25
+
+	relative_power_class = 2
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	placate_rulers = yes
+	enforce_culture = no
+	siphon_income = no
+	support_loyalists = yes
+	send_officers = yes
+	divert_trade = no
+	seize_territory = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	fortify_march = yes
+	conscript_general = yes
+	block_settlement_growth = no
+	enforce_religion = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
+
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = vassal_nation
+	}
+	modifier_overlord = {
+		modifier = vassal_subject
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = nazgul_kingdom
+	}
 }
 
 # Completely scripted subject type (no code used). Add any number of these. Check common/new_diplomatic_actions for how to make visible in game.

@@ -34,32 +34,13 @@ country_event = {
 		spawn_mordor_province_setup_effect = yes
 		spawn_mordor_vassal_effect = { VASSAL = V18 }
 		spawn_mordor_vassal_effect = { VASSAL = V19 }
-		spawn_mordor_vassal_effect = { VASSAL = V20 }
+		#spawn_mordor_vassal_effect = { VASSAL = V20 }
 
 		spawn_mordor_casus_beli_effect = yes
 
 		hidden_effect = {
-			every_province = {
-				limit = {
-					owned_by = V18
-					NOT = {
-						is_in_capital_area = yes
-					}
-				}
-				
+			mordor_region = {
 				remove_core = V18
-				add_core = V17
-				cede_province = V17
-			}
-			every_province = {
-				limit = {
-					owned_by = V19
-					NOT = {
-						is_in_capital_area = yes
-					}
-				}
-				
-				remove_core = V19
 				add_core = V17
 				cede_province = V17
 			}
@@ -71,35 +52,77 @@ country_event = {
 				}
 				country_event = {
 					id = LOU_mordor.34
-					days = 3
+					days = 1
 				}
 			}
-			304 = {
-				remove_province_modifier = dol_guldur_necromancer
-			}
-			V19 = {
-				remove_government_reform = lotr_necromancer_reform
-				add_government_reform = lotr_nazgul_reform
-				kill_ruler = yes
-				define_ruler = {
-					male = yes
-					name = "Khamul"
-					dynasty = "Shadow of the East"
-					adm = 5
-					dip = 3
-					mil = 6
-					age = 20
-					claim = 100
-					culture = culture_wight
-				}
-				add_ruler_personality = immortal_personality
-				define_ruler_to_general = {
-					fire = 3
-					shock = 5
-					manuever = 3
-					siege = 4
-				}
-			}
+			# 304 = {
+			# 	remove_province_modifier = dol_guldur_necromancer
+			# }
+			# V19 = {
+			# 	kill_ruler = yes
+			# 	remove_government_reform = lotr_necromancer_reform
+			# 	add_government_reform = lotr_nazgul_reform
+			# 	kill_ruler = yes
+			# 	define_ruler = {
+			# 		male = yes
+			# 		name = "Khamul"
+			# 		dynasty = "Shadow of the East"
+			# 		adm = 5
+			# 		dip = 3
+			# 		mil = 6
+			# 		age = 20
+			# 		claim = 100
+			# 		culture = culture_wight
+			# 	}
+			# 	add_ruler_personality = immortal_personality
+			# 	set_ruler_flag = set_immortality
+			# 	define_ruler_to_general = {
+			# 		fire = 3
+			# 		shock = 5
+			# 		manuever = 3
+			# 		siege = 4
+			# 	}
+			# 	kill_heir = yes
+			# }
+			# V17 = {
+			# 	define_ruler = {
+			# 		male = yes
+			# 		name = "Spirit of Sauron"
+			# 		dynasty = "Lord of Darkness"
+			# 		adm = 6
+			# 		dip = 4
+			# 		mil = 6
+			# 		age = 20
+			# 		claim = 100
+			# 		culture = culture_maiar
+			# 	}
+			# 	add_ruler_personality = immortal_personality
+			# 	set_ruler_flag = set_immortality
+			# 	define_heir = {
+			# 		male = yes
+			# 		name = "Gothmog"
+			# 		dynasty = "Lieutenant of Morgul"
+			# 		adm = 5
+			# 		dip = 2
+			# 		mil = 6
+			# 		age = 20
+			# 		claim = 100
+			# 		culture = culture_orkish
+			# 	}
+			# 	add_heir_personality = immortal_personality
+			# 	set_heir_flag = set_immortality
+			# 	define_heir_to_general = {
+			# 		fire = 3
+			# 		shock = 4
+			# 		manuever = 3
+			# 		siege = 4
+			# 	}
+			# 	add_idea_group = defensive_ideas
+			# 	add_idea_group = subjugation_ideas
+			# 	add_adm_tech = 1
+			# 	add_dip_tech = 1
+			# 	add_mil_tech = 1
+			# }
 		}
 	}
 
@@ -2347,6 +2370,97 @@ country_event = {
 		add_stability = 3
 		add_treasury = 10000
 		add_manpower = 45
+		hidden_effect = {
+			304 = {
+				remove_province_modifier = dol_guldur_necromancer
+			}
+			V19 = {
+				kill_ruler = yes
+				remove_government_reform = lotr_necromancer_reform
+				add_government_reform = lotr_nazgul_reform
+				kill_ruler = yes
+				define_ruler = {
+					male = yes
+					name = "Khamul"
+					dynasty = "Shadow of the East"
+					adm = 5
+					dip = 3
+					mil = 6
+					age = 20
+					claim = 100
+					culture = culture_wight
+				}
+				add_ruler_personality = immortal_personality
+				set_ruler_flag = set_immortality
+				define_ruler_to_general = {
+					fire = 3
+					shock = 5
+					manuever = 3
+					siege = 4
+				}
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			male = yes
+			name = "Spirit of Sauron"
+			dynasty = "Lord of Darkness"
+			adm = 6
+			dip = 4
+			mil = 6
+			age = 20
+			claim = 100
+			culture = culture_maiar
+		}
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+		define_heir = {
+			male = yes
+			name = "The Mouth"
+			dynasty = "of Sauron"
+			adm = 5
+			dip = 6
+			mil = 2
+			age = 20
+			claim = 100
+			culture = culture_umbareans
+		}
+		add_heir_personality = immortal_personality
+		set_heir_flag = set_immortality
+
+		create_subject = {
+			subject_type = nazgul_kingdom
+			subject = V18
+		}
+
+		create_subject = {
+			subject_type = nazgul_kingdom
+			subject = V19
+		}
+		
+		hidden_effect = {
+			V17 = {
+				add_idea_group = defensive_ideas
+				add_idea = battlefield_commisions
+				add_idea = military_drill
+				add_idea = improved_manuever
+				add_idea = regimental_system
+				add_idea = defensive_mentality
+				add_idea = supply_trains
+				add_idea = improved_foraging
+				add_idea_group = subjugation_ideas
+				add_idea = relentless_conquest
+				add_idea = intimidation
+				add_idea = incorrigible_disputes
+				add_idea = military_envoys
+				add_idea = subjugated_vassals
+				add_idea = make_haste
+				add_idea = squeeze_them_dry
+				add_adm_tech = 2
+				add_dip_tech = 2
+				add_mil_tech = 2
+			}
+		}
 		639 = {
 			spawn_mordor_army_effect = yes
 		}

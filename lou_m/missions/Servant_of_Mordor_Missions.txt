@@ -135,13 +135,22 @@ servant_of_mordor_region_mirkwood = {
 			}
 		}
 		trigger = {
-			mirkwood_region = {
-				type = all
-				owned_by = ROOT
+			OR = {
+				mirkwood_region = {
+					type = all
+					owned_by = ROOT
+				}
+				mirkwood_region = {
+					type = all
+					owner = {
+						religion_group = religion_group_melkor
+
+					}
+				}
 			}
 		}
 		effect = {
-			add_prestige = 5
+			add_prestige = 25
 			add_adm_power = 50
 			add_dip_power = 50
 			add_mil_power = 50
@@ -150,6 +159,10 @@ servant_of_mordor_region_mirkwood = {
 				duration = 9125				#25 years
 			}
 			set_country_flag = servant_of_mordor_first
+			mirkwood_region = {
+				add_core = V19
+				cede_province = V19
+			}
 		}
 	}
 }
@@ -229,15 +242,15 @@ servant_of_mordor_reserves = {
 		}
 		position = 7
 		trigger = {
-			adm_power = 750
-			dip_power = 750
-			mil_power = 750
+			adm_power = 500
+			dip_power = 500
+			mil_power = 500
 		}
 		effect = {
 			add_prestige = 5
-			add_adm_power = -750
-			add_dip_power = -750
-			add_mil_power = -750
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
 			add_manpower = 5
 			set_country_flag = servant_of_mordor_second
 		}

@@ -1,17 +1,19 @@
 # Battle of Middle Earth
 
 # Mordor and Minas Morgul
-march = {
+dependency = {
+	subject_type = nazgul_kingdom
 	first = V17
 	second = V18
 	start_date = 2942.1.1
 	end_date = 3500.1.1
 }
 # Mordor and Dol Guldur
-march = {
+dependency = {
+	subject_type = nazgul_kingdom
 	first = V17
 	second = V19
-	start_date = 2941.10.13
+	start_date = 2942.1.1
 	end_date = 3500.1.1
 }
 # Mordor and Nurnoth
@@ -29,10 +31,10 @@ vassal = {
 	end_date = 3500.1.1
 }
 # Mordor and Uruk-Ghashgigak
-vassal = {
+march = {
 	first = V17
 	second = V28
-	start_date = 2951.1.1
+	start_date = 2942.1.1
 	end_date = 3500.1.1
 }
 # Mordor and Uruk-Marzgûram

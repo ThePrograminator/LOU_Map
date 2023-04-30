@@ -69,6 +69,14 @@ grain = {
 			factor = 1.5
 			has_terrain = farmlands
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -107,6 +115,14 @@ wine = {
 			factor = 1.25
 			has_terrain = farmlands
 			has_terrain = unique_dunedain_ruin
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
 		}
 	}
 }
@@ -569,6 +585,14 @@ tea = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -638,6 +662,14 @@ spices = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -728,6 +760,14 @@ cotton = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -764,6 +804,14 @@ sugar = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -853,6 +901,14 @@ cocoa = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -898,6 +954,14 @@ silk = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -1197,6 +1261,14 @@ honey = {
 			factor = 1.5
 			has_terrain = forest
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -1227,6 +1299,14 @@ fruit = {
 	}
 	chance = {
 		factor = 30
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
