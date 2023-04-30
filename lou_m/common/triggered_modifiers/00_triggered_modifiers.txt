@@ -3,8 +3,10 @@
 #
 # Effects are fully scriptable here.
 
-# Do not remove
-submission_to_emperor = {
+###########################################
+# Discovery of the East Indian trade route.
+###########################################
+east_indian_trade_route = {
 	potential = {
 		always = no
 	}
@@ -12,5 +14,505 @@ submission_to_emperor = {
 	trigger = {
 		always = no
 	}
+
+	trade_efficiency = 0.05	
 }
 
+######################################
+# Custodian of the Two Holy Mosques
+######################################
+custodian_of_the_two_holy_mosques = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	legitimacy = 0.5
+	missionaries = 1
+}
+
+######################################
+# Catholic control of Rome.
+######################################
+
+papal_subjugation = {
+	potential = {
+		always = no
+	}
+
+	trigger = {	
+		always = no
+	}
+
+	diplomatic_reputation = -2
+	#icon = 9
+}
+
+
+rapid_collapse_of_society = {
+	potential = {
+		always = no
+		
+	}
+	trigger = {
+		always = no
+	}
+	
+	all_power_cost = 0.33
+	discipline = -0.1
+	land_morale = -0.2
+	
+}
+
+######################################
+# Italian - Submission to Emperor
+######################################
+submission_to_emperor = {
+	potential = {
+		# AI will avoid joining HRE when this modifier is potential:
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	global_unrest = 3
+	stability_cost_modifier = 0.1
+	prestige = -1
+}
+
+
+
+######################################
+# Counter Revolution
+######################################
+counter_revolution = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	prestige = -5
+	stability_cost_modifier = 0.3
+	global_unrest = 5
+}
+
+
+
+######################################
+# Reaction
+######################################
+reaction = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	prestige = 10
+	stability_cost_modifier = -0.1
+	global_unrest = -10
+}
+
+######################################
+# Crusader
+######################################
+crusader = {
+	potential = {
+		religion = religion_haruzani
+		crusade_target = {
+			exists = yes
+		}
+	}
+
+	trigger = {
+		crusade_target = {
+			war_with = ROOT
+			any_province = {
+				controlled_by = root
+			}
+		}  
+		land_maintenance = 1.0
+	}
+
+	global_manpower_modifier = 0.3
+	global_tax_modifier = 0.1
+	land_morale = 0.10
+	prestige = 1
+	papal_influence = 1
+	devotion = 0.25
+	#icon = 9
+}
+
+######################################
+# Excommunication
+######################################
+excommunication = {
+	potential = {
+		religion = religion_haruzani	
+	}
+
+	trigger = {
+		is_excommunicated = yes
+	}
+
+	prestige = -2
+	tolerance_own = -3
+	devotion = -5
+	papal_influence = -10
+	#icon = 10
+}
+
+##################################################
+# The Pentarchy
+##################################################
+pentarchy_mod = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+}
+
+##################################################
+# China modifiers
+##################################################
+the_mandate_of_heaven = {
+	potential = {
+		has_reform = celestial_empire
+		NOT = { has_dlc = "Mandate of Heaven" }
+		always = no
+	}
+	
+	trigger = {	
+		always = no
+	}
+
+	stability_cost_modifier = -0.10
+	global_unrest = -5
+}
+
+the_mandate_of_heaven_lost = {
+	potential = {
+		has_reform = celestial_empire
+		NOT = { has_dlc = "Mandate of Heaven" }
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	discipline = -0.1
+	stability_cost_modifier = 0.5
+	global_unrest = 10
+}
+
+ai_wants_chinese_capitals = {
+	potential = {
+		ai = yes
+		has_dlc = "Mandate of Heaven"
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+
+	ai_weight = {
+		factor = 100 # Makes AI try to conquer the cities
+	}
+}
+
+lost_control_of_beijing = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	ai_weight = {
+		factor = -1000 # Do what you can to avoid this modifier
+	}
+
+	imperial_mandate = -0.05
+}
+
+lost_control_of_nanjing = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	ai_weight = {
+		factor = -1000 # Do what you can to avoid this modifier
+	}
+
+	imperial_mandate = -0.05
+}
+
+lost_control_of_canton = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	ai_weight = {
+		factor = -1000 # Do what you can to avoid this modifier
+	}
+
+	imperial_mandate = -0.05
+}
+
+waging_war_for_china = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+		always = no
+	}
+
+	trigger = {
+		is_in_war = {
+			attacker_leader = root
+			casus_belli = cb_chinese_unification
+		}
+	}
+	
+	imperial_mandate = 0.05
+}
+
+##################################################
+# HRE modifiers
+##################################################
+hre_dominant_catholic = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+		hre_religion_locked = yes
+	}
+	
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_protestant = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+		hre_religion_locked = yes
+	}
+	
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_reformed = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+	
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+######################################
+# Robot parts
+######################################
+
+synthetic_remnants = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	technology_cost = -0.25
+}
+
+######################################
+# The Golden Age of Piracy
+######################################
+
+golden_age_of_piracy = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	privateer_efficiency = 0.2
+}
+
+######################################
+# The Great Peasants' War
+######################################
+
+great_peasants_war_triggered_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	global_unrest = 6
+}
+
+great_peasants_war_concessions_triggered_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	global_tax_modifier = -0.05
+}
+
+######################################
+# Pope is in the empire
+######################################
+
+pope_in_hre_triggered_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	prestige = -0.5
+}
+
+######################################
+# The Italian Wars
+######################################
+
+italian_wars_triggered_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	mercenary_cost = -0.10
+	mercenary_discipline = 0.05
+}
+
+######################################
+# Defense of the Empire
+######################################
+
+defense_of_the_empire_modifier = {
+	potential = {
+		has_dlc = "Emperor"
+		always = no
+	}
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			NOT = { is_part_of_hre = yes }
+		}
+	}
+	war_taxes_cost_modifier = -1.0
+}
+
+######################################
+# Judaism Defensive Aspect
+######################################
+
+judaism_yom_kippur_aspect_war_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		is_at_war = yes
+	}
+	manpower_recovery_speed = 0.20
+	church_power_modifier = 0.25
+}
+
+judaism_yom_kippur_aspect_defensive_war_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		is_at_war = yes
+		is_in_war = {
+			defenders = ROOT
+		}
+	}
+	manpower_recovery_speed = 0.20
+	church_power_modifier = 0.25
+}
+
+######################################
+# Government Reform Specific
+######################################
+
+ahmudan_system_attacker = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		is_at_war = yes
+	}
+	global_regiment_cost = -0.1
+	manpower_recovery_speed = 0.2
+}
+
+ahmudan_system_defender = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		is_in_war = {
+			defenders = ROOT
+		}
+	}
+	land_morale = 0.075
+	defensiveness = 0.15
+	manpower_recovery_speed = 0.1
+}
