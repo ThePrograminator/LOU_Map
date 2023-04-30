@@ -424,9 +424,9 @@ V17_expand_into_nurn = {
 				province_id = 542
 				province_id = 1003
 			}
-			NOT = {
-				owns_or_non_sovereign_subject_of = ROOT
-			}
+			# NOT = {
+			# 	owns_or_non_sovereign_subject_of = ROOT
+			# }
 		}
 		trigger = {
 			542 = {
