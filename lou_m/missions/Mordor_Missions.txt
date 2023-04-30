@@ -258,20 +258,20 @@ V17_fall_of_gondor = {
 			area = nindalf_area
 			province_id = 418
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			ithilien_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			nindalf_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			418 = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -306,19 +306,19 @@ V17_fall_of_gondor = {
 			area = cair_andros_area
 			area = osgiliath_area
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			minas_tirith_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			419 = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			7 = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -341,13 +341,13 @@ V17_fall_of_gondor = {
 		provinces_to_highlight = {
 			superregion = gondor_superregion
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			gondor_superregion = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -380,13 +380,13 @@ V17_fall_of_rohan = {
 		provinces_to_highlight = {
 			region = rohan_region
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			rohan_region = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -425,7 +425,7 @@ V17_expand_into_nurn = {
 				province_id = 1003
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
@@ -521,13 +521,13 @@ V17_expand_into_nurn = {
 		provinces_to_highlight = {
 			superregion = mordor_superregion
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			mordor_superregion = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -571,13 +571,13 @@ V17_necromancer_of_dol_guldur = {
 				area = dol_guldur_area
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			dol_guldur_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -616,29 +616,29 @@ V17_necromancer_of_dol_guldur = {
 				area = men_i_naugrim_area
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			ceber_fanuin_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			narrows_of_mirkwood_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			angalaladh_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			emyn_nu_fuin_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			men_i_naugrim_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -663,21 +663,21 @@ V17_necromancer_of_dol_guldur = {
 				area = thranduils_realm_area
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			annon_edhel_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			caras_amarth_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			thranduils_realm_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -712,13 +712,13 @@ V17_destroy_elves = {
 				area = lothlorien_area
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			lothlorien_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -741,13 +741,13 @@ V17_destroy_elves = {
 				area = rivendell_area
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			rivendell_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -769,13 +769,13 @@ V17_destroy_elves = {
 				region = shire_region
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			shire_region = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -800,21 +800,21 @@ V17_destroy_elves = {
                 region = harlindon_region
 			}
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			lindon_region = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			forlindon_region = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 			harlindon_region = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {
@@ -853,13 +853,12 @@ V17_control_minas_morgul = {
 		provinces_to_highlight = {
 			area = minas_ithil_area
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			minas_ithil_area = {
-				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -927,13 +926,13 @@ V17_conquer_erebor = {
 		provinces_to_highlight = {
 			area = the_lonely_mountain_area
 			NOT = {
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		trigger = {
 			the_lonely_mountain_area = {
 				type = all
-				owned_by = ROOT
+				owns_or_non_sovereign_subject_of = ROOT
 			}
 		}
 		effect = {

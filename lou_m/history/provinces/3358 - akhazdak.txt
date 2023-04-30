@@ -3,7 +3,7 @@
 # Province RGB : (193, 193, 136)
 # Province Area : Baraz-Iagil
 # Province Region : Orocarni
-# Province Super Region : Womarin Realms
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Baraz-Iagil
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W31
 owner = W31
@@ -27,15 +27,6 @@ trade_goods = iron
 
 hre = no
 
-hold_1_dwarf_building=yes
-
-armoury_dwarf_building=yes
-
-mustering_hall_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-#Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

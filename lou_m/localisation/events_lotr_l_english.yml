@@ -9,16 +9,16 @@
  #----------------------------------
  # Colonization
  #----------------------------------
- lou_colonization.1.t: "The Possibilities of Cardolan"
- lou_colonization.1.d: "The region of Cardolan is within our reach. Most of the region is empty, however we should do what we can to seize these lands before others do so."
+ lou_colonization.1.t: "The Possibilities of Eriadorian"
+ lou_colonization.1.d: "The lands of Eriador is within our reach. Much of it's regions are empty, however we should do what we can to seize these lands before others do so."
  lou_colonization.1.a: "Great!"
 
- lou_colonization.2.t: "Cardolan Out of Reach"
- lou_colonization.2.d: "The region of Cardolan is no longer within our reach. Therefore, we must abandon any thought of seizing the empty lands it holds."
+ lou_colonization.2.t: "Eriador Out of Reach"
+ lou_colonization.2.d: "The regions of Eriador is no longer within our reach. Therefore, we must abandon any thought of seizing the empty lands it holds."
  lou_colonization.2.a: "Damm!"
 
- the_cardolan_posibilities: "The Cardolan Possibilities"
- desc_the_cardolan_posibilities: "The region of Cardolan is within our reach. Most of the region is empty, however we should do what we can to seize these lands before others do so."
+ the_eriadorian_posibilities: "The Eriadorian Possibilities"
+ desc_the_eriadorian_posibilities: "The lands of Eriador is within our reach. Much of it's regions are empty, however we should do what we can to seize these lands before others do so."
 
  #----------------------------------
  # Story
@@ -212,7 +212,7 @@
  # Isengard
  #-----------------------------------------
  LOU_isengard.1.t: "Saruman Occupies Isengard"
- LOU_isengard.1.d: "Saruman the white has Occupied Isengard, you get to choose to switch to Isengard or continue playing your country."
+ LOU_isengard.1.d: "The Dunlendings who have occupied Isengard have suffered considerable losses during the Long Winter and have starved themselves out of occupation of Isengard. Helm Hammerhand's nephew, Fréaláf, has seized the tower of Orthanc during a quick assault. In a fortunate turn of timing, Saruman the White has come back from his travels in the East and is proposing to take up residence in the citadel. He offers to fortify the tower and assist the West against further threats, be they orc or man. Both Steward Beren of Gondor and the King of Rohan are relieved at this offer and eagerly accept - turning the Key of Orthanc over to Saruman. In T.A. 2759 the valley in which Isengard resided soon became known as 'Nan Curunír', the 'Valley of Saruman' or the 'Wizard's Vale'. Optimistic locals are pouring into the area to open trade routes, help with construction, and provide investments for expansion. A formal 'Guard of Orthanc' has been established and is recruiting champions from Dunland, Adornland and Rohan to fill its ranks. The Elves of Rivendell and Lothlorien have also invited the Istari to join the White Council, attaching their interests to his. Saruman the White has occupied Isengard - you get to choose to switch to Isengard or continue playing your country."
  LOU_isengard.1.a: "i am ai"
  LOU_isengard.1.b: "Change to Isengard"
  LOU_isengard.1.c: "Keep Playing $COUNTRY$"
@@ -255,9 +255,9 @@
  LOU_desolation_of_smaug.6.d: "Thranduil has honoured his alliance with us and has lended us aid which have arrived in Dale"
  LOU_desolation_of_smaug.6.a: "Just in time!"
  
- LOU_desolation_of_smaug.7.t: "Thranduil has abbandon us"
+ LOU_desolation_of_smaug.7.t: "Thranduil has abandoned us"
  LOU_desolation_of_smaug.7.d: "Thranduil has dishonoured his alliance with us and left our city to burn by the fires of the dragon!"
- LOU_desolation_of_smaug.7.a: "Never thrust an Elf!"
+ LOU_desolation_of_smaug.7.a: "Never trust an Elf!"
  
  #-----------------------------------------
  # War of the Dwarves and Orcs (WDO)
@@ -1539,3 +1539,50 @@
  LOU_mission_dunland.4.t: "Counting Loot"
  LOU_mission_dunland.4.d: "[Root.W94lootedAmount_VAR.GetName] [Root.W94lootedAmount_VAR.GetValue]"
  LOU_mission_dunland.4.a: "Sounds Good"
+
+ #---------------------------------------
+ # Elfs Forest Defence Roll
+ #---------------------------------------
+ LOU_elven.2.t: "Defense of the Forest"
+ LOU_elven.2.d: "Elves are only seen when they desire to be. They move invisibly and silently through their oft-wooded realms and will always have the upper hand on invaders."
+ LOU_elven.2.a: "This wooded province has extra protection from the elves"
+
+ #---------------------------------------
+ # Nazgul Return
+ #---------------------------------------
+LOU_Nazgul_Return.1.t: "Your Nazgûl Returns"
+LOU_Nazgul_Return.1.d: "Your Nazgûl has returned from its temporary existence in the wraith world. Having 'died' in mortal form, this creature has wandered through the realm of the Unseen back to your capital. They are ready to serve once more."
+LOU_Nazgul_Return.1.a: "Khamûl returns to his master's side at Dol Guldur"
+LOU_Nazgul_Return.1.b: "Khamûl returns to his position as Lord of Dol Guldur"
+
+LOU_Witch_King_Return.1.t: "Your Nazgûl Returns"
+LOU_Witch_King_Return.1.d: "Your Nazgûl has returned from its temporary existence in the wraith world. Having 'died' in mortal form, this creature has wandered through the realm of the Unseen back to your capital. They are ready to serve once more."
+LOU_Witch_King_Return.1.a: "'Hinder me? Thou fool. No living man may hinder me!' The Witch King is risen."
+
+ #---------------------------------------
+ # Change Trade Goods
+ #---------------------------------------
+LOU_Change_Trade_Goods.1.t: "Species Trade Good Dilemma"
+LOU_Change_Trade_Goods.1.d: "The species occupying this province cannot utilize the trade goods here. We can produce something else based on the current trade good, terrain type, and development level."
+LOU_Change_Trade_Goods.1.a: "Due to the high population a slave trade may be established here"
+LOU_Change_Trade_Goods.1.b: "There's an Iron vein to exploit"
+LOU_Change_Trade_Goods.1.c: "Let's mine the Copper"
+LOU_Change_Trade_Goods.1.i: "Dig up Stone for fortifications"
+LOU_Change_Trade_Goods.1.e: "We need leathers, skins and Furs"
+LOU_Change_Trade_Goods.1.f: "Chop down Timber to fuel our fires"
+LOU_Change_Trade_Goods.1.g: "Seek out local poisons for our blades and arrow tips"
+LOU_Change_Trade_Goods.1.h: "'Looks like meat's back on the menu boys!'"
+LOU_Change_Trade_Goods.1.j: "There is suitable grazing here for Great Beasts"
+LOU_Change_Trade_Goods.1.k: "We can ferment the local resources into Orc-Draught!"
+LOU_Change_Trade_Goods.1.l: "The burgeoning elvish population will now produce Miruvor"
+LOU_Change_Trade_Goods.1.m: "Orc-Drought?! Better to make our own Wine instead"
+LOU_Change_Trade_Goods.1.n: "There are Honey bees here, let's build some apiaries"
+LOU_Change_Trade_Goods.1.o: "The former slaves here are talented artisans willing to sell their fine silks"
+LOU_Change_Trade_Goods.1.p: "The former slaves here are skilled weavers willing to sell their woven cloth"
+
+ #---------------------------------------
+ # Guard of Orthanc
+ #---------------------------------------
+LOU_Isengard_Guard_Orthanc.1.t: "The Guard of Orthanc"
+LOU_Isengard_Guard_Orthanc.1.d: "A worthy champion from the local Dunlending population has presented himself to be the Guard of Orthanc. He will lead our garrisons into battle and maintain the safety of Isengard's borders."
+LOU_Isengard_Guard_Orthanc.1.a: "The new Guard of Orthanc is declared!"

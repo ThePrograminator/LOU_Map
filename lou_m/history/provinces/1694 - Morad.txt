@@ -3,7 +3,7 @@
 # Province RGB : (127, 135, 44)
 # Province Area : Morad
 # Province Region : Rhûn
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Mistrand
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y02
 owner = Y02
@@ -27,11 +27,6 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

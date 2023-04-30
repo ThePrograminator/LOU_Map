@@ -3,7 +3,7 @@
 # Province RGB : (30, 24, 63)
 # Province Area : So-Fala
 # Province Region : Codya
-# Province Super Region : Balizar
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Nâlashatûr
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 6
-base_manpower = 7
+base_tax = 3
+base_production = 4
+base_manpower = 5
 
 add_core = Y41
 owner = Y41
@@ -25,23 +25,6 @@ religion = religion_orkish
 
 trade_goods = fur
 
-hre = no
-
-encampment_3_orc_building=yes
-
-treasure_trove_orc_building=yes
-
-overseer_tower_orc_building=yes
-
-dark_iron_forge_orc_building=yes
-
-orc_pit_orc_building=yes
-
-warg_pit_orc_building=yes
-
-large_arena_building=yes
-
-#Balizar Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

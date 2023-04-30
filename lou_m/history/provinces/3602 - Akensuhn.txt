@@ -3,16 +3,18 @@
 # Province RGB : (205, 80, 25)
 # Province Area : Maaken
 # Province Region : Unvirnay
-# Province Super Region : Lochan Daer
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Helak Nay
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 4
-base_production = 5
-base_manpower = 5
+is_city = no
+
+base_tax = 5
+base_production = 6
+base_manpower = 7
 
 add_core = W51
 owner = W51
@@ -23,15 +25,6 @@ religion = religion_orkish
 
 trade_goods = iron
 
-hre = no
-
-capital_1_orc_building=yes
-
-orc_pit_orc_building=yes
-
-small_arena_building=yes
-
-#Lochan Daer Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

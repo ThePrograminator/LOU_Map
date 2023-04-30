@@ -3,7 +3,7 @@
 # Province RGB : (195, 50, 40)
 # Province Area : Phaluran
 # Province Region : Angmar
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Carn Dûm
 # Province Climate : Severe_winter
@@ -12,24 +12,19 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V05
 owner = V05
 controller = V05
 
-culture = culture_baradhrim
-religion = religion_baradhrim
+culture = culture_orkish
+religion = religion_orkish
 
 trade_goods = grain
 
-hre = no
-
-settlement_building=yes
-
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

@@ -9,41 +9,17 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-base_tax = 7
-base_production = 7
-base_manpower = 8
-
-add_core = X98
+base_tax = 4
+base_production = 5
+base_manpower = 3
 owner = X98
 controller = X98
-
 culture = culture_lothrags
 religion = religion_ulgath
-
 trade_goods = fish
-
-hre = no
-
-capital_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-dock_building=yes
-
 center_of_trade = 2
-
 #Rhun Superregion Discovery
+add_core = X98
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -119,4 +95,12 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+marketplace_building = yes
+provincial_office_building = yes
+warehouse_building = yes
+forge_building = yes
+fort_castle_building = yes
+barracks_building = yes
+dock_building = yes
+is_city = no

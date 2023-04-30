@@ -13,6 +13,8 @@ add_accepted_culture = culture_eastemnet
 add_accepted_culture = culture_westemnet
 add_accepted_culture = culture_wold
 
+add_treasury = 200
+
 historical_friend = X01
 historical_friend = X02
 historical_friend = X11
@@ -256,6 +258,14 @@ historical_rival = V49
 		dip = 5
 		mil = 6
 		birth_date = 2691.1.1		# 182
+		leader = {
+			name = Helm Hammerhand
+			type = general
+			fire = 4
+			shock = 5
+			manuever = 4
+			siege = 3
+		}
 	}
 	set_ruler_flag = HELM_IS_RULER_FLAG
 }

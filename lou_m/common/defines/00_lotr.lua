@@ -41,6 +41,8 @@ NDefines.NFrontend.FRONTEND_POS_Z = 700.0
 
 NDefines.NAI.COLONY_BUDGET_FRACTION = 0.2 -- AI will spend a maximum of this amount of monthly ducats for colonies.
 
+NDefines.NEconomy.TRADED_FRACTION_FOR_BONUS = 0.01
+
 --NDefines.NFrontend.SETTINGS_POS_X = 2787.0
 --NDefines.NFrontend.SETTINGS_POS_Z = 1228.0
 --NDefines.NFrontend.SETTINGS_LOOK_X = 2787.0
@@ -66,3 +68,6 @@ NDefines.NAI.COLONY_BUDGET_FRACTION = 0.2 -- AI will spend a maximum of this amo
 
 --NDefines.NCountry.ESTATE_PROVINCE_POWER = 3.0
 --NDefines.NCountry.ESTATE_PROVINCE_POWER_MAX = 50
+
+NDefines.NCountry.MAX_EXTRA_PERSONALITIES = 3
+NDefines.NCountry.YEARS_PER_EXTRA_PERSONALITY = 10

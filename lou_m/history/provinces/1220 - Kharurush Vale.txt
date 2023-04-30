@@ -9,25 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
+base_tax = 1
 base_production = 3
-base_manpower = 3
-
-add_core = X23
+base_manpower = 2
 owner = X23
 controller = X23
-
 culture = culture_haruze
 religion = religion_haruzani
-
 trade_goods = grain
-
-hre = no
-
-#Near Harad Superregion Discovery
+add_core = X23
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -93,4 +84,3 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-

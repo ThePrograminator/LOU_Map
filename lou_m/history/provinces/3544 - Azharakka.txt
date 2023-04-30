@@ -3,7 +3,7 @@
 # Province RGB : (46, 100, 155)
 # Province Area : Rist Angsiril
 # Province Region : Angmar
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Gundabad
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 5
+base_tax = 1
+base_production = 4
+base_manpower = 1
 
 add_core = Y63
 owner = Y63
@@ -25,21 +25,6 @@ religion = religion_orkish
 
 trade_goods = iron
 
-hre = no
-
-encampment_1_orc_building=yes
-
-blacksmith_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-warg_pit_orc_building=yes
-
-prisoner_cage_orc_building=yes
-
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

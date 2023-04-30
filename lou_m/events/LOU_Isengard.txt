@@ -27,7 +27,14 @@ country_event = {
 			STARTED_BEFORE = 2759.1.1
 		}
 		223 = {
-			owned_by = ROOT
+			controlled_by = ROOT
+			OR = {
+				controlled_by = X16
+				controlled_by = X01
+				controlled_by = X11
+				controlled_by = X02
+				controlled_by = V30
+			}
 		}
 	}
 
@@ -47,6 +54,81 @@ country_event = {
 			cede_province = W53
 		}
 		set_global_flag = isengard_spawned
+
+		add_stability = 1
+				
+		223 = {
+			add_devastation = -25
+			add_base_tax = 6
+			add_base_production = 6
+			add_base_manpower = 9
+			center_of_trade = 2
+			add_building = capital_2_building
+			add_building = fort_stronghold_building
+			add_building = army_camp_building
+			add_building = trade_outpost_building
+			add_building = work_camp_building
+		}
+
+		744 = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+			add_building = settlement_building
+			add_building = work_camp_building
+		}
+		
+		W53 = {
+			define_ruler = {
+				name = "Saruman"
+				dynasty = "the White"
+				male = yes
+				adm = 6
+				dip = 5
+				mil = 6
+				age = 30
+				claim = 100
+				culture = culture_istari
+			}
+
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
+
+			add_country_modifier = {
+				name = isengard_good
+				duration = -1
+			}
+
+			add_treasury = 250
+
+			add_truce_with = V95
+			add_truce_with = Z48
+
+			create_alliance = X01
+			#create_alliance = X16
+			create_alliance = Y80
+			create_alliance = Y68
+
+			add_trust = {
+				who = X01
+				value = 50
+				mutual = yes
+			}
+
+			add_trust = {
+				who = X16
+				value = 50
+				mutual = yes
+			}
+		}
+		
+		X01 = {
+			create_guarantee = W53
+		}
+
+		X16 = {
+			create_guarantee = W53
+		}
 	}
 
 	#Switch Tag
@@ -70,6 +152,79 @@ country_event = {
 
 		switch_tag = W53
 		set_global_flag = isengard_spawned
+
+		add_stability = 1
+				
+		223 = {
+			add_devastation = -25
+			add_base_tax = 6
+			add_base_production = 6
+			add_base_manpower = 9
+			center_of_trade = 2
+			add_building = capital_2_building
+			add_building = fort_stronghold_building
+			add_building = army_camp_building
+			add_building = trade_outpost_building
+			add_building = work_camp_building
+		}
+
+		744 = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+			add_building = settlement_building
+			add_building = work_camp_building
+		}
+
+		define_ruler = {
+			name = "Saruman"
+			dynasty = "the White"
+			male = yes
+			adm = 6
+			dip = 5
+			mil = 6
+			age = 30
+			claim = 100
+			culture = culture_istari
+		}
+
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+
+		add_country_modifier = {
+			name = isengard_good
+			duration = -1
+		}
+
+		add_treasury = 250
+
+		add_truce_with = V95
+		add_truce_with = Z48
+
+		create_alliance = X01
+		#create_alliance = X16
+		create_alliance = Y80
+		create_alliance = Y68
+
+		add_trust = {
+			who = X01
+			value = 50
+			mutual = yes
+		}
+
+		add_trust = {
+			who = X16
+			value = 50
+			mutual = yes
+		}
+
+		X01 = {
+			create_guarantee = W53
+		}
+
+		X16 = {
+			create_guarantee = W53
+		}
 	}
 
 	#Not Switch Tag
@@ -88,7 +243,83 @@ country_event = {
 			add_core = W53
 			cede_province = W53
 		}
+		
 		set_global_flag = isengard_spawned
+
+		W53 = {
+			add_stability = 1
+				
+			223 = {
+				add_devastation = -25
+				add_base_tax = 6
+				add_base_production = 6
+				add_base_manpower = 9
+				center_of_trade = 2
+				add_building = capital_2_building
+				add_building = fort_stronghold_building
+				add_building = army_camp_building
+				add_building = trade_outpost_building
+				add_building = work_camp_building
+			}
+	
+			744 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				add_building = settlement_building
+				add_building = work_camp_building
+			}
+
+			define_ruler = {
+				name = "Saruman"
+				dynasty = "the White"
+				male = yes
+				adm = 6
+				dip = 5
+				mil = 6
+				age = 30
+				claim = 100
+				culture = culture_istari
+			}
+
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality	
+
+			add_country_modifier = {
+				name = isengard_good
+				duration = -1
+			}	
+
+			add_treasury = 250
+
+			add_truce_with = V95
+			add_truce_with = Z48
+	
+			create_alliance = X01
+			#create_alliance = X16
+			create_alliance = Y80
+			create_alliance = Y68
+	
+			add_trust = {
+				who = X01
+				value = 50
+				mutual = yes
+			}
+	
+			add_trust = {
+				who = X16
+				value = 50
+				mutual = yes
+			}
+		}
+
+		X01 = {
+			create_guarantee = W53
+		}
+
+		X16 = {
+			create_guarantee = W53
+		}
 	}
 }
 
@@ -150,6 +381,31 @@ country_event = {
 			change_unit_type = lotr_uruk_hai
 			set_global_flag = isengard_turned_uruk_hai
 		}
+
+		add_stability = 1
+
+		define_ruler = {
+			name = "Saruman"
+			dynasty = "of Many Colors"
+			male = yes
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 30
+			claim = 100
+			culture = culture_istari
+		}
+
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+
+		remove_country_modifier = isengard_good
+		
+		add_country_modifier = {
+			name = isengard_evil
+			duration = -1
+		}
+
 	}
 
 	option = { 
@@ -189,6 +445,31 @@ country_event = {
 			change_unit_type = lotr_uruk_hai
 			set_global_flag = isengard_turned_uruk_hai
 		}
+		
+		add_stability = 1
+
+		define_ruler = {
+			name = "Saruman"
+			dynasty = "of Many Colors"
+			male = yes
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 30
+			claim = 100
+			culture = culture_istari
+		}
+		
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+
+		remove_country_modifier = isengard_good
+
+		add_country_modifier = {
+			name = isengard_evil
+			duration = -1
+		}
+
 	}
 
 	option = { 

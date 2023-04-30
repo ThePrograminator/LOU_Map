@@ -3,7 +3,7 @@
 # Province RGB : (45, 39, 136)
 # Province Area : Tife Lenian
 # Province Region : Ralian
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Rúdge
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W21
 owner = W21
@@ -27,9 +27,6 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

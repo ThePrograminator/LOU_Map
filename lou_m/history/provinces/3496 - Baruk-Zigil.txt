@@ -3,7 +3,7 @@
 # Province RGB : (112, 55, 45)
 # Province Area : Khazad-Zahar
 # Province Region : Ered Luin
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Khazad-Zahar
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
+base_tax = 3
 base_production = 4
-base_manpower = 4
+base_manpower = 2
 
 add_core = Y05
 owner = Y05
@@ -25,17 +25,6 @@ religion = religion_mahal
 
 trade_goods = silver
 
-hre = no
-
-hold_1_dwarf_building=yes
-
-armoury_dwarf_building=yes
-
-mustering_hall_dwarf_building=yes
-
-rune_door_dwarf_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -49,7 +38,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion

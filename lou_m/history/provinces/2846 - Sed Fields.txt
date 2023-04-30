@@ -3,7 +3,7 @@
 # Province RGB : (194, 206, 55)
 # Province Area : Kûbor Sêd
 # Province Region : Kûbor Sêd
-# Province Super Region : Urd
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ezra
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 4
+base_production = 3
+base_manpower = 5
 
 add_core = V61
 owner = V61
@@ -25,17 +25,6 @@ religion = religion_eastern_snowmen
 
 trade_goods = salt
 
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Urd Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

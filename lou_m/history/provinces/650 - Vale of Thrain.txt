@@ -3,7 +3,7 @@
 # Province RGB : (79, 128, 181)
 # Province Area : Thorin's Halls
 # Province Region : Ered Luin
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Nan-i-Naugrim
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y13
 owner = Y13
@@ -26,10 +26,6 @@ religion = religion_mahal
 trade_goods = iron
 
 hre = no
-
-settlement_1_dwarf_building=yes
-
-material_exchance_dwarf_building=yes
 
 2758.1.1 = {
 	add_core = Z12
@@ -55,7 +51,6 @@ material_exchance_dwarf_building=yes
 	controller = Y13
 }
 
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

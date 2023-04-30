@@ -9,39 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 5
+base_tax = 3
+base_production = 4
 base_manpower = 5
-
-add_core = V88
 owner = V88
 controller = V88
-
 culture = culture_fustir
 religion = religion_chegra
-
 trade_goods = fish
-
-hre = no
-
-capital_1_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-port_building=yes
-
-#Dyria Superregion Discovery
+add_core = V88
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -78,4 +55,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_1_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+port_building = yes

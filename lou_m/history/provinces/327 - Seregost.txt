@@ -9,18 +9,15 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-base_tax = 6
-base_production = 10
-base_manpower = 9
-
+base_tax = 2
+base_production = 4
+base_manpower = 6
 culture = culture_wilderness
 religion = religion_wilderness
-
 trade_goods = copper
-
-hre = no
-
+native_size = 100
+native_ferocity = 10
+native_hostileness = 10
 2942.1.1 = {
 	is_city = yes
 	add_core = V17
@@ -28,21 +25,19 @@ hre = no
 	controller = V17
 	culture = culture_orkish
 	religion = religion_orkish
-	encampment_1_orc_building=yes
-	meat_depot_orc_building=yes
-	enforcer_camp_orc_building=yes
+	encampment_1_orc_building = yes
+	meat_depot_orc_building = yes
+	enforcer_camp_orc_building = yes
 }
-
 2953.7.1 = {
-	encampment_2_orc_building=yes
-	orc_pit_orc_building=yes
-	warg_pit_orc_building=yes
-	workshop_orc_building=yes
-	fort_pallisade_orc_building=yes
-	large_arena_building=yes
-	prisoner_cage_orc_building=yes
+	encampment_2_orc_building = yes
+	orc_pit_orc_building = yes
+	warg_pit_orc_building = yes
+	workshop_orc_building = yes
+	fort_pallisade_orc_building = yes
+	large_arena_building = yes
+	prisoner_cage_orc_building = yes
 }
-
 #Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
@@ -112,4 +107,4 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+is_city = no

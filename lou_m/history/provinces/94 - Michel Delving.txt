@@ -3,7 +3,7 @@
 # Province RGB : (226, 176, 139)
 # Province Area : West Farthing
 # Province Region : The Shire
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : Mild_winter
@@ -12,7 +12,7 @@
 
 is_city = yes
 
-base_tax = 5
+base_tax = 4
 base_production = 5
 base_manpower = 3
 
@@ -25,21 +25,8 @@ religion = religion_perian
 
 trade_goods = glass
 
-hre = no
-
-capital_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-army_camp_building=yes
-
 center_of_trade = 2
 
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -53,7 +40,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion

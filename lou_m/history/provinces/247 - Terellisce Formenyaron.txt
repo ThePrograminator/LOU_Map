@@ -10,30 +10,16 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-base_tax = 4
-base_production = 3
-base_manpower = 3
-
-add_core = Z31
-owner = Z31
-controller = Z31
-
-culture = culture_forodrim
-religion = religion_eriadorians
+culture = culture_wilderness
+religion = religion_wilderness
 
 trade_goods = wool
 
 hre = no
-
-city_1_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

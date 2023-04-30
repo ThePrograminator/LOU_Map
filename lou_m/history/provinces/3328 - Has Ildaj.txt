@@ -3,7 +3,7 @@
 # Province RGB : (80, 141, 33)
 # Province Area : Korondaj
 # Province Region : Pezarsan
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Talazhan
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
+base_tax = 1
 base_production = 3
-base_manpower = 3
+base_manpower = 2
 
 add_core = X18
 owner = X18
@@ -25,15 +25,6 @@ religion = religion_haruzani
 
 trade_goods = fur
 
-hre = no
-
-city_1_building=yes
-
-temple_building=yes
-
-outpost_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

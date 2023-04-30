@@ -3,7 +3,7 @@
 # Province RGB : (139, 46, 125)
 # Province Area : Lebenninivet
 # Province Region : Lebennin
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Pelargir
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 6
-base_manpower = 3
+base_tax = 3
+base_production = 4
+base_manpower = 2
 
 add_core = X01
 owner = X01
@@ -28,11 +28,6 @@ trade_goods = glass
 
 hre = no
 
-city_1_building=yes
-
-port_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

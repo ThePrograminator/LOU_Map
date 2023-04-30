@@ -9,48 +9,26 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 5
-base_manpower = 4
-
-add_core = Z38
+base_tax = 3
+base_production = 4
+base_manpower = 2
 owner = Z38
 controller = Z38
-
 culture = culture_lossoth
 religion = religion_forodwaith
-
 trade_goods = fur
-
-hre = no
-
-city_1_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
 2911.12.15 = {
 	add_core = Y36
 	owner = Y36
 	controller = Y36
 }
-
 2951.1.1 = {
 	culture = culture_ice_orkish
 	religion = religion_orkish
 }
-
 #Dyria Superregion Discovery
+add_core = Z38
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -87,4 +65,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+city_1_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

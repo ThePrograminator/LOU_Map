@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = X01
 owner = X01
@@ -38,10 +38,12 @@ dock_building=yes
 
 2758.9.15 = {
 	controller = X27
+	add_devastation = 75
 }
 
 2759.8.20 = {
 	controller = X01
+	add_devastation = -75
 }
 
 #Gondor Superregion Discovery

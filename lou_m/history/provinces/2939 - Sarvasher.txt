@@ -3,7 +3,7 @@
 # Province RGB : (123, 167, 217)
 # Province Area : Bulchyades
 # Province Region : Bulchyades
-# Province Super Region : Chy
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Samarth
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X74
 owner = X74
@@ -28,17 +28,6 @@ trade_goods = incense
 
 hre = no
 
-city_2_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Chy Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar

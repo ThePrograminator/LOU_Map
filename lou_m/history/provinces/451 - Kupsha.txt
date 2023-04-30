@@ -3,7 +3,7 @@
 # Province RGB : (75, 55, 48)
 # Province Area : Ode Kupsha
 # Province Region : Chelkar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Amrun
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X17
 owner = X17
@@ -27,13 +27,6 @@ trade_goods = iron
 
 hre = no
 
-city_1_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

@@ -3,7 +3,7 @@
 # Province RGB : (100, 196, 93)
 # Province Area : Oroi Moródom
 # Province Region : Mitheryn
-# Province Super Region : Urd
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Mitheryn
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 6
-base_manpower = 6
+base_tax = 3
+base_production = 4
+base_manpower = 2
 
 add_core = W38
 owner = W38
@@ -25,21 +25,6 @@ religion = religion_mahal
 
 trade_goods = iron
 
-hre = no
-
-settlement_2_dwarf_building=yes
-
-fairground_dwarf_building=yes
-
-armoury_dwarf_building=yes
-
-libary_dwarf_building=yes
-
-hall_of_warriors_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-#Urd Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

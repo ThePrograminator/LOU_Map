@@ -9,23 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
+base_tax = 1
 base_production = 3
 base_manpower = 2
-
-add_core = Y53
 owner = Y53
 controller = Y53
-
-culture = culture_baradhrim
-religion = religion_baradhrim
-
+culture = culture_angmarrim
+religion = religion_orkish
 trade_goods = grain
-
-hre = no
+add_core = Y53
 
 #Forodwaith Superregion Discovery
 discovered_by = lotr_human
@@ -75,4 +68,5 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
+
 

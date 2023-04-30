@@ -3,7 +3,7 @@
 # Province RGB : (133, 81, 90)
 # Province Area : Erädas
 # Province Region : Nen Umbar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Umbar
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 5
-base_manpower = 5
+base_tax = 2
+base_production = 4
+base_manpower = 3
 
 add_core = X27
 owner = X27
@@ -25,15 +25,6 @@ religion = religion_black_numenorean
 
 trade_goods = wine
 
-hre = no
-
-city_2_building=yes
-
-warehouse_building=yes
-
-tax_office_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

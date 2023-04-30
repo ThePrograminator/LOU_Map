@@ -1,7 +1,8 @@
 # Battle of Middle Earth
 
 # Gondor and Dol Amroth
-union = {
+dependency = {
+	subject_type = "dol_amroth_principality"
 	first = X01
 	second = X11
 	start_date = 2758.1.1
@@ -845,3 +846,32 @@ alliance = {
 	start_date = 2758.1.1
 	end_date = 9651.1.1
 }
+# Isengard and Gondor
+alliance = {
+	first = W53
+	second = X01
+	start_date = 2759.5.1
+	end_date = 9651.1.1
+}
+# Isengard and Rohan
+alliance = {
+	first = W53
+	second = X16
+	start_date = 2759.5.1
+	end_date = 9651.1.1
+}
+# Isengard and Rivendell
+alliance = {
+	first = W53
+	second = Y80
+	start_date = 2759.5.1
+	end_date = 9651.1.1
+}
+# Isengard and Lothlorien
+alliance = {
+	first = W53
+	second = Y68
+	start_date = 2759.5.1
+	end_date = 9651.1.1
+}
+

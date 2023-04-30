@@ -9,45 +9,18 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 9
-base_manpower = 9
-
-add_core = Z43
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = Z43
 controller = Z43
-
 culture = culture_clansmen
 religion = religion_daen
-
 trade_goods = glass
-
-hre = no
-
-capital_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
-dockyard_building=yes
-
-grand_shipyard_building=yes
-
 center_of_trade = 1
-
 #Eriador Superregion Discovery
+add_core = Z43
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -61,7 +34,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -94,4 +66,12 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes
+dockyard_building = yes
+grand_shipyard_building = yes

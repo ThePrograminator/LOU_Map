@@ -3,7 +3,7 @@
 # Province RGB : (170, 185, 222)
 # Province Area : Kargagis Ahar
 # Province Region : Kargagis Ahar
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Delik Kizil
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V10
 owner = V10
@@ -27,11 +27,6 @@ trade_goods = livestock
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

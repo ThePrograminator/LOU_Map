@@ -9,45 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = Y53
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = Y53
 controller = Y53
-
-culture = culture_orkish
+culture = culture_angmarrim
 religion = religion_orkish
-
 trade_goods = copper
-
-hre = no
-
-capital_2_orc_building=yes
-
-treasure_trove_orc_building=yes
-
-overseer_station_orc_building=yes
-
-metal_works_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_arena_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-large_arena_building=yes
-
-prisoner_cage_orc_building=yes
-
 center_of_trade = 1
-
 #Forodwaith Superregion Discovery
+add_core = Y53
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -95,4 +68,12 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_2_orc_building = yes
+treasure_trove_orc_building = yes
+overseer_station_orc_building = yes
+metal_works_orc_building = yes
+orc_fissure_orc_building = yes
+warg_arena_orc_building = yes
+fort_wooden_walls_orc_building = yes
+large_arena_building = yes
+prisoner_cage_orc_building = yes

@@ -3,7 +3,7 @@
 # Province RGB : (192, 166, 21)
 # Province Area : Lamedon
 # Province Region : Lamedon
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Calembel
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 9
-base_production = 6
-base_manpower = 5
+base_tax = 5
+base_production = 4
+base_manpower = 6
 
 add_core = X01
 owner = X01
@@ -24,23 +24,12 @@ add_core = X07
 culture = culture_gondor_middlemen_lamedon
 religion = religion_daen
 
-trade_goods = livestock
+trade_goods = silk
 
 hre = no
 
-city_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
 center_of_trade = 1
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 6
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 4
 
 add_core = X01
 owner = X01
@@ -24,13 +24,17 @@ add_core = X06
 culture = culture_dunedain_of_ithilien
 religion = religion_dunedain
 
-trade_goods = silk
+trade_goods = cloth
 
 hre = no
 
-city_1_building=yes
+settlement_building=yes
 
-marketplace_building=yes
+fort_pallisade_building=yes
+
+outpost_building=yes
+
+center_of_trade = 1
 
 #Gondor Superregion Discovery
 discovered_by = lotr_human

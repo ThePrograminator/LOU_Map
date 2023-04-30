@@ -9,41 +9,24 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 5
-base_manpower = 6
-
-add_core = V02
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = V02
 controller = V02
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = iron
-
-hre = no
-
-capital_1_orc_building=yes
-
-meat_depot_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-warg_pit_orc_building=yes
-
-fort_pallisade_orc_building=yes
-
-small_arena_building=yes
-
 center_of_trade = 1
-
 #Eriador Superregion Discovery
+add_core = V02
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -57,7 +40,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -90,4 +72,10 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_orc_building = yes
+meat_depot_orc_building = yes
+enforcer_camp_orc_building = yes
+orc_pit_orc_building = yes
+warg_pit_orc_building = yes
+fort_pallisade_orc_building = yes
+small_arena_building = yes

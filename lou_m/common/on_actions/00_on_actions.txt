@@ -1335,7 +1335,7 @@ on_province_owner_change = {
 		limit = {
 			NOT = {
 				owner = {
-					has_country_modifier = the_cardolan_posibilities
+					has_country_modifier = the_eriadorian_posibilities
 				}
 			}
 			
@@ -1369,7 +1369,7 @@ on_province_owner_change = {
 	if = {
 		limit = {
 			owner = {
-				has_country_modifier = the_cardolan_posibilities
+				has_country_modifier = the_eriadorian_posibilities
 			}
 			OR = {
 				AND = {
@@ -1394,6 +1394,26 @@ on_province_owner_change = {
 		FROM = {
 			country_event = {
 				id = lou_colonization.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				province_id = 1875
+			}
+			owner = {
+				NOT = {
+					tag = Z01
+				}
+			}
+			Y80 = {
+				exists = yes
+			}
+		}
+		Y80 = {
+			country_event = {
+				id = LOU_mission_rivendell.5
 			}
 		}
 	}

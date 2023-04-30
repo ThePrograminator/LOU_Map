@@ -57,104 +57,53 @@ historical_rival = Z36
 
 2750.1.1 = {
 	monarch = {
-		name = "Guthrík"
-		dynasty = "Hamall"
-		birth_date = 2707.1.1
-		adm = 3
-		dip = 5
-		mil = 0
-	}
-	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
-}
-
-2800.1.1 = {
-	monarch = {
-		name = "Cecilia"
-		dynasty = "Hamall"
-		birth_date = 2753.1.1
+		name = "Grór"
+		dynasty = "House of Durin"
+		birth_date = 2563.1.1
+		death_date = 2805.1.1
 		adm = 5
-		dip = 1
-		mil = 4
-		female = yes
-	}
-	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
-}
-
-2850.1.1 = {
-	monarch = {
-		name = "Frigg"
-		dynasty = "Hamall"
-		birth_date = 2781.1.1
-		adm = 2
-		dip = 2
-		mil = 5
-		female = yes
-	}
-	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
-}
-
-2900.1.1 = {
-	monarch = {
-		name = "Hefti"
-		dynasty = "Hamall"
-		birth_date = 2854.1.1
-		adm = 1
-		dip = 2
-		mil = 1
-	}
-	heir = {
-		monarch_name = "Birgitta"
-		name = "Birgitta"
-		dynasty = "Hamall"
-		birth_date = 2830.1.1
-		death_date = 2889.1.1
-		adm = 2
-		dip = 3
-		mil = 3
-		claim = 100
-	}
-	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
-}
-
-2950.1.1 = {
-	monarch = {
-		name = "Embla"
-		dynasty = "Hamall"
-		birth_date = 2889.1.1
-		adm = 4
-		dip = 5
-		mil = 1
-		female = yes
-	}
-	heir = {
-		monarch_name = "Cecilia"
-		name = "Cecilia"
-		dynasty = "Hamall"
-		birth_date = 2921.1.1
-		death_date = 2967.1.1
-		adm = 3
 		dip = 4
-		mil = 5
-		claim = 100
+		mil = 6
+	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality	
+	add_ruler_personality = lawgiver_personality
+	heir = {
+		name = "Náin"
+		dynasty = "House of Durin"
+		birth_date = 2665.1.1
+		death_date = 2779.12.31
+		adm = 5
+		dip = 3
+		mil = 4
 	}
 	add_ruler_personality = immortal_personality
 	set_ruler_flag = set_immortality
+	add_ruler_personality = lawgiver_personality
 }
 
-3000.1.1 = {
+2805.1.1 = {
 	monarch = {
-		name = "Níthi"
-		dynasty = "Hamall"
-		birth_date = 2960.1.1
-		adm = 3
-		dip = 0
-		mil = 3
+		name = "Dáin II Ironfoot"
+		dynasty = "House of Durin"
+		birth_date = 2767.1.1
+		adm = 6
+		dip = 4
+		mil = 6
 	}
 	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
+	set_ruler_flag = set_immortality	
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = strict_personality
+	define_ruler_to_general = {
+		fire = 4
+		shock = 5
+		manuever = 3
+		siege = 4
+		trait = master_of_arms_personality
+		trait = goal_oriented_personality
+		trait = hardy_warrior_personality
+	}
 }
 

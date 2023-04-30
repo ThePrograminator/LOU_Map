@@ -1,0 +1,525 @@
+# Change Racially Incompatible Trade Goods "
+namespace = LOU_Change_Trade_Goods
+
+province_event = {
+	id = LOU_Change_Trade_Goods.1
+	title = "LOU_Change_Trade_Goods.1.t"
+	desc = "LOU_Change_Trade_Goods.1.d"
+	picture = TRADEGOODS_eventPicture
+	
+	trigger = {
+		is_colony = no
+		OR = {
+			AND = {													#Monster basic trade good removals
+				OR = {
+					trade_goods = grain
+					trade_goods = wine
+					trade_goods = tea
+					trade_goods = spices
+					trade_goods = cotton
+					trade_goods = sugar
+					trade_goods = cocoa	
+					trade_goods = silk
+					trade_goods = honey	
+					trade_goods = fruit
+					trade_goods = miruvor
+				}
+				OR = {
+					culture_group = culture_group_melkor
+					culture_group = culture_group_orcs
+					culture = culture_maiar							#Sauron
+				}
+			}
+			AND = {													#Elves Upgrading to Miruvor
+				OR = {
+					trade_goods = sugar
+					trade_goods = honey
+					trade_goods = spices
+				}
+				OR = {
+					culture_group = culture_group_sindar
+					culture_group = culture_group_noldor
+					culture_group = culture_group_nandor
+					culture_group = culture_group_avari
+				}
+				development = 24
+			}
+			AND = {													#Non-monsters removing orc-draught
+				trade_goods = orc_draught
+				NOT = {
+					OR = {
+						culture_group = culture_group_melkor
+						culture_group = culture_group_orcs
+						culture = culture_maiar							#Sauron
+					}	
+				}	
+			}
+			AND = {													#Elves Upgrading to Miruvor
+				trade_goods = slaves
+				OR = {
+					culture_group = culture_group_sindar
+					culture_group = culture_group_noldor
+					culture_group = culture_group_nandor
+					culture_group = culture_group_avari
+					culture_group = culture_group_aivathiuda
+					culture_group = culture_group_children_of_iluvatar
+					culture_group = culture_group_daen_of_gondor
+					culture_group = culture_group_dwarves
+					culture_group = culture_group_eotheod
+					culture_group = culture_group_hobbits
+					culture_group = culture_group_eriadorians
+					culture_group = culture_group_numenorean
+				}	
+			}
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 30
+	}
+    
+	option = {
+		name = "LOU_Change_Trade_Goods.1.a"
+		ai_chance = { factor = 1000 }
+		
+		trigger = {
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+			development = 18
+		}
+
+		change_trade_goods = slaves
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.b"
+		ai_chance = { factor = 33 }
+
+		trigger = {
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+				has_terrain = unique_mirkwood_mountains
+				has_terrain = unique_pinnath_gelin
+				has_terrain = unique_gondor_hills
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}
+		}
+
+		change_trade_goods = iron
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.c"
+		ai_chance = { factor = 33 }
+
+		trigger = {
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+				has_terrain = unique_mirkwood_mountains
+				has_terrain = unique_pinnath_gelin
+				has_terrain = unique_gondor_hills
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}
+		}
+
+		change_trade_goods = copper
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.i"
+		ai_chance = { factor = 33 }
+
+		trigger = {
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+				has_terrain = unique_mirkwood_mountains
+				has_terrain = unique_pinnath_gelin
+				has_terrain = unique_gondor_hills
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}
+		}
+
+		change_trade_goods = stone
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.e"
+		ai_chance = { factor = 50 }
+
+		trigger = {
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = jungle
+				has_terrain = unique_mirkwood
+				has_terrain = unique_mirkwood_mild
+				has_terrain = unique_mirkwood_west
+				has_terrain = unique_old_forest
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}
+		}
+
+		change_trade_goods = fur
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.f"
+		ai_chance = { factor = 50 }
+
+		trigger = {
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = jungle
+				has_terrain = unique_mirkwood
+				has_terrain = unique_mirkwood_mild
+				has_terrain = unique_mirkwood_west
+				has_terrain = unique_old_forest
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}
+		}
+
+		change_trade_goods = tropical_wood
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.g"
+		ai_chance = { factor = 1 }	
+
+		trigger = {
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
+
+		change_trade_goods = herbs
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.h"
+		ai_chance = { factor = 1 }
+
+		trigger = {
+			OR = {
+				AND = {
+					NOT = {
+						OR = {
+							trade_goods = wine
+							trade_goods = fruit
+							trade_goods = sugar
+							trade_goods = honey
+							trade_goods = miruvor
+						}
+					}
+					OR = {
+						culture_group = culture_group_melkor
+						culture_group = culture_group_orcs
+						culture = culture_maiar							#Sauron
+					}
+				}
+				AND = {
+					trade_goods = slaves
+					OR = {
+						culture_group = culture_group_sindar
+						culture_group = culture_group_noldor
+						culture_group = culture_group_nandor
+						culture_group = culture_group_avari
+						culture_group = culture_group_aivathiuda
+						culture_group = culture_group_children_of_iluvatar
+						culture_group = culture_group_daen_of_gondor
+						culture_group = culture_group_dwarves
+						culture_group = culture_group_eotheod
+						culture_group = culture_group_hobbits
+						culture_group = culture_group_eriadorians
+						culture_group = culture_group_numenorean
+					}	
+				}
+			}
+		}
+
+		change_trade_goods = livestock
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.j"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			OR = {
+				has_terrain = unique_mordor
+				has_terrain = unique_mordor_gorgoroth
+				has_terrain = farmlands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = drylands
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}			
+			OR = {
+				superregion = mordor_superregion
+				superregion = near_harad_superregion
+				superregion = far_harad_superregion
+				superregion = rhun_superregion
+				superregion = haradwaith_superregion
+				superregion = chy_superregion
+				superregion = harshandatt_superregion
+				superregion = sirayn_superregion
+				superregion = mumakan_superregion
+			}
+		}
+
+		change_trade_goods = great_beasts
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.k"
+		ai_chance = { factor = 75 }
+
+		trigger = {
+			OR = {
+				trade_goods = wine
+				trade_goods = fruit
+				trade_goods = sugar
+				trade_goods = honey				
+				trade_goods = miruvor
+			}
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
+
+		change_trade_goods = orc_draught
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.l"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			OR = {
+				trade_goods = sugar
+				trade_goods = honey
+				trade_goods = spices
+			}
+			OR = {
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+			}			
+			development = 24
+		}
+
+		change_trade_goods = miruvor
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.m"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			trade_goods = orc_draught
+			NOT = {
+				OR = {
+					culture_group = culture_group_melkor
+					culture_group = culture_group_orcs
+					culture = culture_maiar							#Sauron
+				}	
+			}	
+		}
+
+		change_trade_goods = wine
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.n"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			OR = {
+				AND = {
+					trade_goods = miruvor
+					NOT = {
+						OR = {
+							culture_group = culture_group_sindar
+							culture_group = culture_group_noldor
+							culture_group = culture_group_nandor
+							culture_group = culture_group_avari
+						}	
+					}	
+				}
+				AND = {
+					trade_goods = slaves
+					OR = {
+						culture_group = culture_group_sindar
+						culture_group = culture_group_noldor
+						culture_group = culture_group_nandor
+						culture_group = culture_group_avari
+						culture_group = culture_group_aivathiuda
+						culture_group = culture_group_children_of_iluvatar
+						culture_group = culture_group_daen_of_gondor
+						culture_group = culture_group_dwarves
+						culture_group = culture_group_eotheod
+						culture_group = culture_group_hobbits
+						culture_group = culture_group_eriadorians
+						culture_group = culture_group_numenorean
+					}
+				}
+			}
+		}
+
+		change_trade_goods = honey
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.o"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			trade_goods = slaves
+			development = 18
+			OR = {
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}	
+		}
+
+		change_trade_goods = silk
+
+	}
+	option = {
+		name = "LOU_Change_Trade_Goods.1.p"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			trade_goods = slaves
+			NOT = { 
+				development = 18
+			}
+			OR = {
+				culture_group = culture_group_sindar
+				culture_group = culture_group_noldor
+				culture_group = culture_group_nandor
+				culture_group = culture_group_avari
+				culture_group = culture_group_aivathiuda
+				culture_group = culture_group_children_of_iluvatar
+				culture_group = culture_group_daen_of_gondor
+				culture_group = culture_group_dwarves
+				culture_group = culture_group_eotheod
+				culture_group = culture_group_hobbits
+				culture_group = culture_group_eriadorians
+				culture_group = culture_group_numenorean
+			}	
+		}
+
+		change_trade_goods = cloth
+
+	}
+}

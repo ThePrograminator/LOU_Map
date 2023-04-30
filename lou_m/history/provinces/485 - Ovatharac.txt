@@ -9,39 +9,16 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 9
-base_manpower = 11
-
-add_core = X83
+base_tax = 6
+base_production = 7
+base_manpower = 5
 owner = X83
 controller = X83
-
 culture = culture_variags
 religion = religion_ioriags
-
 trade_goods = spices
-
-hre = no
-
-capital_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-forge_building=yes
-
-warehouse_building=yes
-
-fort_stronghold_building=yes
-
-barracks_building=yes
-
-#Near Harad Superregion Discovery
+add_core = X83
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -107,4 +84,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+marketplace_building = yes
+provincial_office_building = yes
+forge_building = yes
+warehouse_building = yes
+fort_stronghold_building = yes
+barracks_building = yes

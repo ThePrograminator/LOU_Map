@@ -9,24 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
-base_production = 4
-base_manpower = 2
-
-add_core = Y70
+base_tax = 2
+base_production = 3
+base_manpower = 1
 owner = Y70
 controller = Y70
-
+add_core = Y70
 culture = culture_hwenti
 religion = religion_moriquendi
-
 trade_goods = wine
-
-hre = no
-
 2760.1.1 = {
 	add_core = Y48
 	owner = Y48
@@ -34,7 +26,6 @@ hre = no
 	culture = culture_goblin
 	religion = religion_goblin
 }
-
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
@@ -85,4 +76,3 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-

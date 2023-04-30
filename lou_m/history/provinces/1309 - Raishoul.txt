@@ -3,7 +3,7 @@
 # Province RGB : (199, 181, 2)
 # Province Area : Raishoul
 # Province Region : Tulwang
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Khorsâj
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X49
 owner = X49
@@ -27,13 +27,6 @@ trade_goods = wool
 
 hre = no
 
-city_1_building=yes
-
-dock_building=yes
-
-army_camp_building=yes
-
-#Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt

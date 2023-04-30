@@ -1238,18 +1238,28 @@ desolation_of_smaug_lost_effect = {
 			name = ruins_debuff
 			duration = -1
 		}
+		add_base_tax = -10
+		add_base_production = -10
+		add_base_manpower = -10
+		center_of_trade = 1
 	}
 
 	1903 = {
 		cede_province = ---
 		change_culture = culture_wilderness
 		change_religion = religion_wilderness
+		set_base_tax = 1
+		set_base_production = 1
+		set_base_manpower = 1
 	}
 
 	1951 = {
 		cede_province = ---
 		change_culture = culture_wilderness
 		change_religion = religion_wilderness
+		set_base_tax = 1
+		set_base_production = 1
+		set_base_manpower = 1
 	}
 
 	527 = {
@@ -1260,6 +1270,28 @@ desolation_of_smaug_lost_effect = {
 			name = ruins_debuff
 			duration = -1
 		}
+		add_base_tax = -6
+		add_base_production = -6
+		add_base_manpower = -6
+	}
+
+	529 = {
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+	}
+
+	534 = {
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+	}
+
+	528 = {
+		add_base_tax = 5
+		add_base_production = 4
+		add_base_manpower = 9
+		center_of_trade = 2
 	}
 
 	3175 = {

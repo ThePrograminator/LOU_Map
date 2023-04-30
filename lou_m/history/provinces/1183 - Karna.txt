@@ -9,41 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 6
-base_manpower = 4
-
-add_core = X30
+base_tax = 6
+base_production = 7
+base_manpower = 5
 owner = X30
 controller = X30
-
 culture = culture_urdwan_nomads
 religion = religion_haruzani
-
 trade_goods = glass
-
-hre = no
-
-capital_2_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-forge_building=yes
-
-warehouse_building=yes
-
-fort_pallisade_building=yes
-
-barracks_building=yes
-
 center_of_trade = 1
-
 #Near Harad Superregion Discovery
+add_core = X30
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -109,4 +86,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+forge_building = yes
+warehouse_building = yes
+fort_pallisade_building = yes
+barracks_building = yes

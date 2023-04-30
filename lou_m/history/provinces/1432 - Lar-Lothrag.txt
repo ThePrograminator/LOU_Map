@@ -3,7 +3,7 @@
 # Province RGB : (254, 61, 247)
 # Province Area : Lótan
 # Province Region : Lotan
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Elyamû
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X98
 owner = X98
@@ -27,15 +27,6 @@ trade_goods = cloth
 
 hre = no
 
-settlement_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

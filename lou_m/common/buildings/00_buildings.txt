@@ -40,6 +40,8 @@ wharf = {
 		naval_supplies
 		fish
 		salt
+		corsairs
+		carracks
 	}
 	onmap = yes
 	
@@ -77,7 +79,7 @@ weapons = {
 	manufactory = {
 		copper
 		iron
-        stone
+		mithril
 	}
 	onmap = yes	
 	
@@ -141,6 +143,10 @@ farm_estate = {
         herbs
         fruit
         mushrooms
+		mumakil
+		great_beasts
+		orc_draught
+		miruvor
 	}
 	onmap = yes
 	
@@ -155,7 +161,8 @@ mills = {
 		gems
 		tropical_wood
 		glass
-		chinaware
+		chinaware		
+        stone
 	}
 	onmap = yes
 	

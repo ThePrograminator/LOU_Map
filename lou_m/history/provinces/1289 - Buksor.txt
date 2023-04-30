@@ -3,7 +3,7 @@
 # Province RGB : (111, 7, 232)
 # Province Area : Gap of Khand
 # Province Region : Khand
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Obamarl
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
+base_tax = 2
 base_production = 3
-base_manpower = 5
+base_manpower = 1
 
 add_core = X78
 owner = X78
@@ -25,13 +25,6 @@ religion = religion_ioriags
 
 trade_goods = stone
 
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

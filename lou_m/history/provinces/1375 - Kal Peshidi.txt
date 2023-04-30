@@ -9,33 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 4
-base_manpower = 6
-
-add_core = X64
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X64
 controller = X64
-
 culture = culture_muranians
 religion = religion_sirani
-
 trade_goods = livestock
-
-hre = no
-
-fortress_1_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-work_camp_building=yes
-
-#Harshandatt Superregion Discovery
+add_core = X64
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -74,4 +57,7 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+fortress_1_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+work_camp_building = yes

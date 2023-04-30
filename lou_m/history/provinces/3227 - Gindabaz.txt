@@ -9,44 +9,42 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 base_tax = 5
-base_production = 5
-base_manpower = 5
-
+base_production = 7
+base_manpower = 3
 culture = culture_longbeard
 religion = religion_mahal
-
 trade_goods = iron
-
-hre = no
-
 center_of_trade = 1
-
 2770.1.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
-	hold_2_dwarf_building=yes
-	fort_small_gatehouse_dwarf_building=yes
-	rune_door_dwarf_building=yes
-	mining_network_dwarf_building=yes
-	libary_dwarf_building=yes
-	armoury_dwarf_building=yes
+	set_capital = Y22
+	add_base_tax = 2
+	add_base_production = 5
+	add_base_manpower = 2
+	hold_2_dwarf_building = yes
+	fort_small_gatehouse_dwarf_building = yes
+	rune_door_dwarf_building = yes
+	mining_network_dwarf_building = yes
+	libary_dwarf_building = yes
+	armoury_dwarf_building = yes
 }
-
 2802.3.1 = {
 	add_core = Y16
 	owner = Y16
 	controller = Y16
-	capital_2_dwarf_building=yes
-	fort_small_gatehouse_dwarf_building=yes
-	rune_door_dwarf_building=yes
-	mining_network_dwarf_building=yes
-	libary_dwarf_building=yes
-	armoury_dwarf_building=yes
+	add_base_tax = -3
+	add_base_production = -6
+	add_base_manpower = -3
+	capital_2_dwarf_building = yes
+	fort_small_gatehouse_dwarf_building = yes
+	rune_door_dwarf_building = yes
+	mining_network_dwarf_building = yes
+	libary_dwarf_building = yes
+	armoury_dwarf_building = yes
 }
-
 #Misty Mountains Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
@@ -93,4 +91,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+is_city = no

@@ -3,7 +3,7 @@
 # Province RGB : (156, 122, 140)
 # Province Area : Zhaneen
 # Province Region : Arysis
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Maresh
 # Province Climate : Arid
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X21
 owner = X21
@@ -27,11 +27,6 @@ trade_goods = livestock
 
 hre = no
 
-settlement_building=yes
-
-trade_outpost_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

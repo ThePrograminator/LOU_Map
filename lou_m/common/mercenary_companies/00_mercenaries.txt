@@ -341,3 +341,18 @@ merc_sons_of_cirlond = {
         }
 	}
 }
+
+merc_beorning_protectors = {
+    regiments_per_development = 0.020
+    cavalry_weight = 0.0
+    artillery_weight = 0.1
+    cavalry_cap = 0
+    cost_modifier = 0.3
+    home_province = 1875
+    trigger = {
+        has_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+	}
+    modifier = {                            
+        shock_damage = 0.15
+    }
+}

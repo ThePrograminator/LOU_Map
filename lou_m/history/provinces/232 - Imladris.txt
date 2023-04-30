@@ -9,49 +9,18 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 14
-base_production = 14
-base_manpower = 17
-
-add_core = Y80
+base_tax = 5
+base_production = 7
+base_manpower = 9
 owner = Y80
 controller = Y80
-
 culture = culture_noldor
 religion = religion_calaquendi
-
-trade_goods = silk
-
-hre = no
-
-capital_3_elf_building=yes
-
-fort_high_walls_elf_building=yes
-
-wall_bastions_elf_building=yes
-
-heros_shrine_building=yes
-
-grand_stables_elf_building=yes
-
-grand_forge_elf_building=yes
-
-amphitheatre_elf_building=yes
-
-exotic_wares_market_elf_building=yes
-
-statue_of_the_elders_elf_building=yes
-
-mirror_fountain_elf_building=yes
-
-star_of_earendil_shrine_elf_building=yes
-
+trade_goods = miruvor
 center_of_trade = 2
-
 #Eriador Superregion Discovery
+add_core = Y80
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -65,7 +34,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -98,4 +66,14 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_3_elf_building = yes
+fort_high_walls_elf_building = yes
+wall_bastions_elf_building = yes
+heros_shrine_building = yes
+grand_stables_elf_building = yes
+grand_forge_elf_building = yes
+amphitheatre_elf_building = yes
+exotic_wares_market_elf_building = yes
+statue_of_the_elders_elf_building = yes
+mirror_fountain_elf_building = yes
+star_of_earendil_shrine_elf_building = yes

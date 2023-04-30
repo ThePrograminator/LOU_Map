@@ -55,7 +55,9 @@ principality_reform = {
 	}
 	
 	modifiers = {
-		global_unrest = -1
+    	governing_capacity = 100
+		global_tax_modifier = 0.1
+		stability_cost_modifier = -0.2
 	}
 	
 	custom_attributes = {
@@ -301,6 +303,128 @@ arnorien_kingdom_reform = {
 		discipline = 0.05
 	}
 
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+isengard_white_council_reform = {
+	icon = "istari"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_isengard_white_council_legacy
+	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	potential = {
+		tag = W53
+	}
+	
+	modifiers = {
+		land_morale = 0.10
+		development_cost = -0.10
+		improve_relation_modifier = 0.25
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 2
+		administrative_efficiency = 0.05
+		stability_cost_to_declare_war = 1
+
+		tolerance_own = 3
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+radagast_reform = {
+	icon = "istari"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = radagast_legacy
+	lock_level_when_selected = yes
+	heir = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	potential = {
+		tag = W27
+	}
+	
+	modifiers = {
+		movement_speed = 0.15		
+		improve_relation_modifier = 0.25
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 2
+		can_bypass_forts = yes
+		build_cost = -0.25
+		stability_cost_to_declare_war = 1
+
+		tolerance_own = 3
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+dol_amroth_reform = {
+	icon = "naval_battle"
+	allow_normal_conversion = yes
+	legacy_equivalent = dol_amroth_legacy
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	
+	potential = {
+		tag = X11
+	}
+	
+	modifiers = {
+		own_coast_naval_combat_bonus = 1
+		allowed_marine_fraction = 0.25
+		naval_tradition_from_trade = 0.25
+		naval_forcelimit_modifier = 0.25
+		global_ship_trade_power = 0.15
+		ship_durability = 0.1
+		naval_morale = 0.1
+		cb_on_overseas = yes
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+umbar_reform = {
+	icon = "corsairs"
+	allow_normal_conversion = yes
+	legacy_equivalent = umbar_legacy
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	
+	potential = {
+		tag = X27
+	}
+	
+	modifiers = {
+		may_perform_slave_raid = yes
+		allowed_marine_fraction = 0.25
+		naval_tradition_from_battle = 0.25
+		capture_ship_chance = 0.15
+		privateer_efficiency = 0.25
+		movement_speed_in_fleet_modifier = 1
+		naval_morale = 0.1
+		cb_on_overseas = yes
+	}
+	
 	custom_attributes = {
 		locked_government_type = yes
 	}

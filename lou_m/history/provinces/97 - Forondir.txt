@@ -9,51 +9,23 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 5
 base_production = 6
-base_manpower = 6
-
-add_core = Z09
+base_manpower = 4
 owner = Z09
 controller = Z09
-
 culture = culture_cardolani
 religion = religion_eriadorians
-
 trade_goods = naval_supplies
-
-hre = no
-
-capital_2_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-forge_building=yes
-
-fort_pallisade_building=yes
-
-barracks_building=yes
-
-seaport_building=yes
-
-drydock_building=yes
-
 center_of_trade = 1
-
 2912.9.10 = {
 	add_core = Z43
 	owner = Z43
 	controller = Z43
 }
-
 #Eriador Superregion Discovery
+add_core = Z09
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -67,7 +39,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -100,4 +71,12 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_2_building = yes
+trade_depot_building = yes
+provincial_office_building = yes
+warehouse_building = yes
+forge_building = yes
+fort_pallisade_building = yes
+barracks_building = yes
+seaport_building = yes
+drydock_building = yes

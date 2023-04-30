@@ -9,39 +9,18 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 7
-base_manpower = 7
-
-add_core = X54
+base_tax = 5
+base_production = 6
+base_manpower = 4
 owner = X54
 controller = X54
-
 culture = culture_bellakaze
 religion = religion_sea_peoples
-
 trade_goods = silver
-
-hre = no
-
-fortress_3_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
 center_of_trade = 1
-
 #Haradwaith Superregion Discovery
+add_core = X54
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -72,4 +51,9 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-
+fortress_3_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes

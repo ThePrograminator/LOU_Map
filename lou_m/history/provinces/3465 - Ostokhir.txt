@@ -3,7 +3,7 @@
 # Province RGB : (116, 120, 120)
 # Province Area : Cirvegil
 # Province Region : Sakal an-Khâr
-# Province Super Region : Lochan Daer
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ostophor
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 7
-base_manpower = 6
+base_tax = 3
+base_production = 5
+base_manpower = 4
 
 add_core = X42
 owner = X42
@@ -25,21 +25,6 @@ religion = religion_black_numenorean
 
 trade_goods = paper
 
-hre = no
-
-city_1_building=yes
-
-dock_building=yes
-
-outpost_building=yes
-
-workshop_building=yes
-
-temple_building=yes
-
-trade_outpost_building=yes
-
-#Lochan Daer Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

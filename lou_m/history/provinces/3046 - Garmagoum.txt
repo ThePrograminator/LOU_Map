@@ -3,7 +3,7 @@
 # Province RGB : (3, 120, 5)
 # Province Area : Cirith Nurn
 # Province Region : Nûrn
-# Province Super Region : Mordor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Den Nurn
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 7
+base_tax = 5
+base_production = 7
+base_manpower = 9
 
 add_core = V40
 owner = V40
@@ -27,19 +27,12 @@ trade_goods = iron
 
 hre = no
 
-capital_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-blacksmith_orc_building=yes
-
 3000.1.1 = {
 	add_core = V17
 	owner = V17
 	controller = V17
 }
 
-#Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

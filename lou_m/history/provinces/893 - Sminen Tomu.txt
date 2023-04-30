@@ -3,7 +3,7 @@
 # Province RGB : (176, 151, 196)
 # Province Area : Järvimaa
 # Province Region : Northern Waste
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z41
 owner = Z41
@@ -26,10 +26,6 @@ religion = religion_forodwaith
 trade_goods = wool
 
 hre = no
-
-settlement_building=yes
-
-work_camp_building=yes
 
 2911.12.15 = {
 	add_core = Y47
@@ -43,7 +39,6 @@ work_camp_building=yes
 	controller = Z40
 }
 
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

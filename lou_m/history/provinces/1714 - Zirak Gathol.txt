@@ -3,7 +3,7 @@
 # Province RGB : (227, 108, 88)
 # Province Area : Rakhâs-dîm
 # Province Region : Orosúli
-# Province Super Region : Lochan Daer
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Mindo Clytac
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = Y64
 owner = Y64
@@ -25,17 +25,6 @@ religion = religion_goblin
 
 trade_goods = iron
 
-hre = no
-
-encampment_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_pit_orc_building=yes
-
-#Lochan Daer Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

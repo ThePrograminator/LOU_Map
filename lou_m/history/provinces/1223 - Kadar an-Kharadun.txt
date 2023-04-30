@@ -9,37 +9,16 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 10
-base_manpower = 10
-
-add_core = X39
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = X39
 controller = X39
-
 culture = culture_anbalukkhorian
 religion = religion_black_numenorean
-
 trade_goods = silk
-
-hre = no
-
-city_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-#Far Harad Superregion Discovery
+add_core = X39
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -66,4 +45,9 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+city_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

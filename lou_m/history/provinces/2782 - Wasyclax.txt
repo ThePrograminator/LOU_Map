@@ -3,7 +3,7 @@
 # Province RGB : (164, 157, 213)
 # Province Area : Ukal Sêj
 # Province Region : Ukal Sêj
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Kheledkhizdin
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V88
 owner = V88
@@ -27,15 +27,6 @@ trade_goods = mushrooms
 
 hre = no
 
-fortress_1_building=yes
-
-outpost_building=yes
-
-port_building=yes
-
-work_camp_building=yes
-
-#Dyria Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd

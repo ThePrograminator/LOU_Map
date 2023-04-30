@@ -3,7 +3,7 @@
 # Province RGB : (145, 99, 112)
 # Province Area : Kheledkhizdín
 # Province Region : Ered Engrin
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Kheledkhizdin
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y11
 owner = Y11
@@ -27,13 +27,6 @@ trade_goods = gems
 
 hre = no
 
-hold_1_dwarf_building=yes
-
-mustering_hall_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-#Dyria Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd

@@ -3,7 +3,7 @@
 # Province RGB : (255, 180, 150)
 # Province Area : Lebenninivet
 # Province Region : Lebennin
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Linhir
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 7
-base_manpower = 3
+base_tax = 3
+base_production = 4
+base_manpower = 2
 
 add_core = X01
 owner = X01
@@ -28,16 +28,11 @@ trade_goods = cloth
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

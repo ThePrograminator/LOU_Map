@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 11
-base_production = 10
-base_manpower = 13
+base_tax = 10
+base_production = 8
+base_manpower = 12
 
 add_core = X01
 owner = X11
@@ -24,17 +24,21 @@ add_core = X11
 culture = culture_dunedain_of_belfalas
 religion = religion_dunedain
 
-trade_goods = naval_supplies
+trade_goods = carracks
 
 hre = no
 
 capital_1_building=yes
+
+fort_stronghold_building=yes
 
 army_camp_building=yes
 
 dock_building=yes
 
 marketplace_building=yes
+
+temple_building=yes
 
 center_of_trade = 2
 

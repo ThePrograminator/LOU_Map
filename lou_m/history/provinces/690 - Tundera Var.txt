@@ -9,33 +9,15 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-base_tax = 5
-base_production = 4
-base_manpower = 4
-
-add_core = X95
+base_tax = 1
+base_production = 3
+base_manpower = 2
 owner = X95
 controller = X95
-
 culture = culture_logath
 religion = religion_ulgath
-
 trade_goods = wool
-
-hre = no
-
-city_1_building=yes
-
-port_building=yes
-
-outpost_building=yes
-
-fort_pallisade_building=yes
-
-work_camp_building=yes
-
-#Rhun Superregion Discovery
+add_core = X95
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -111,4 +93,9 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+city_1_building = yes
+port_building = yes
+outpost_building = yes
+fort_pallisade_building = yes
+work_camp_building = yes
+is_city = no

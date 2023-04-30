@@ -9,39 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 10
-base_production = 10
-base_manpower = 9
-
-add_core = X21
+base_tax = 6
+base_production = 7
+base_manpower = 5
 owner = X21
 controller = X21
-
 culture = culture_haludji
 religion = religion_haruzani
-
-trade_goods = silk
-
-hre = no
-
-capital_3_building=yes
-
-forum_building=yes
-
-bank_building=yes
-
-stockpile_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
+trade_goods = mumakil
 center_of_trade = 2
-
 #Near Harad Superregion Discovery
+add_core = X21
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -107,4 +86,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+fort_castle_building = yes
+army_camp_building = yes

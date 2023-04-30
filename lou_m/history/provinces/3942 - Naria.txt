@@ -9,33 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 7
-base_manpower = 8
-
-add_core = X68
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X68
 controller = X68
-
 culture = culture_chennacatti
 religion = religion_sirani
-
 trade_goods = gems
-
-hre = no
-
-fortress_2_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-forge_building=yes
-
-#Mumakan Superregion Discovery
+add_core = X68
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -65,4 +48,7 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+fortress_2_building = yes
+fort_castle_building = yes
+barracks_building = yes
+forge_building = yes

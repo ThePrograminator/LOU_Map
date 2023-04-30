@@ -1,11 +1,14 @@
 government = orc_gov
-add_government_reform = lotr_nazgul_reform
+add_government_reform = lotr_necromancer_reform
 primary_culture = culture_orkish
-add_accepted_culture = culture_spider
+add_accepted_culture = culture_wight
+add_accepted_culture = culture_maiar
 religion = religion_orkish
 technology_group = lotr_orc_rhovanion
 unit_type = lotr_orc
 capital = 304
+
+add_treasury = 200
 
 historical_friend = V17
 historical_friend = V18
@@ -38,35 +41,29 @@ historical_rival = V26
 
 2750.1.1 = {
 	monarch = {
-		name = "Maubag"
-		dynasty = "Gazthak"
-		birth_date = 2714.1.1
-		adm = 3
-		dip = 5
-		mil = 2
+		name = "The Necromancer"
+		dynasty = "Morgul Sorcerer"
+		birth_date = 2700.1.1
+		adm = 6
+		dip = 3
+		mil = 6
+		culture = culture_maiar
 	}
 	heir = {
-		monarch_name = "Lagrat"
-		name = "Lagrat"
-		dynasty = "Gazthak"
-		birth_date = 2702.1.1
-		death_date = 2730.1.1
-		adm = 0
-		dip = 1
+		name = "Khamul"
+		monarch_name = "Khamul"
+		dynasty = "Shadow of the East"
+		birth_date = 2730.1.1
+		adm = 5
+		dip = 3
 		mil = 5
+		culture = culture_wight
 		claim = 100
 	}
-}
-
-2800.1.1 = {
-	monarch = {
-		name = "Shagduf"
-		dynasty = "Gazthak"
-		birth_date = 2774.1.1
-		adm = 1
-		dip = 4
-		mil = 2
-	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+	add_heir_personality = immortal_personality
+	set_heir_flag = set_immortality
 }
 
 2845.1.1 = {
@@ -79,81 +76,31 @@ historical_rival = V26
 2850.1.1 = {    
     set_country_flag = dol_guldur_discovred
 	remove_country_modifier = dol_guldur_shrouded_mystery
-    
-	monarch = {
-		name = "Lûnshag"
-		dynasty = "Gazthak"
-		birth_date = 2810.1.1
-		adm = 1
-		dip = 3
-		mil = 2
-		female = yes
-	}
 }
 
-2900.1.1 = {
+2941.10.13 = {
+	remove_government_reform = lotr_necromancer_reform
+	add_government_reform = lotr_nazgul_reform
 	monarch = {
-		name = "Lûnûl"
-		dynasty = "Gazthak"
-		birth_date = 2818.1.1
+		name = "Khamul"
+		dynasty = "the Shadow of the East"
+		birth_date = 2918.1.1
 		adm = 5
 		dip = 3
 		mil = 5
+		culture = culture_wight
 	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
 	heir = {
-		monarch_name = "Nagug"
-		name = "Nagug"
+		name = "Maubag"
 		dynasty = "Gazthak"
-		birth_date = 2871.1.1
-		death_date = 2932.1.1
-		adm = 2
+		birth_date = 2918.1.1
+		adm = 4
 		dip = 3
-		mil = 4
-		claim = 100
+		mil = 5
 	}
 }
 
-2950.1.1 = {
-	monarch = {
-		name = "Gorduf"
-		dynasty = "Gazthak"
-		birth_date = 2895.1.1
-		adm = 2
-		dip = 3
-		mil = 3
-	}
-	heir = {
-		monarch_name = "Shagthak"
-		name = "Shagthak"
-		dynasty = "Gazthak"
-		birth_date = 2881.1.1
-		death_date = 2909.1.1
-		adm = 1
-		dip = 4
-		mil = 5
-		claim = 100
-	}
-}
 
-3000.1.1 = {
-	monarch = {
-		name = "Lûnzag"
-		dynasty = "Gazthak"
-		birth_date = 2968.1.1
-		adm = 0
-		dip = 1
-		mil = 0
-	}
-	heir = {
-		monarch_name = "Maubug"
-		name = "Maubug"
-		dynasty = "Gazthak"
-		birth_date = 2954.1.1
-		death_date = 3038.1.1
-		adm = 5
-		dip = 5
-		mil = 5
-		claim = 100
-	}
-}
 

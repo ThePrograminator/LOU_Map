@@ -9,36 +9,17 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = X87
+base_tax = 2
+base_production = 4
+base_manpower = 3
 owner = X87
 controller = X87
-
-add_core = Y03
 culture = culture_asdriags
 religion = religion_ioriags
-
 trade_goods = cloth
-
-hre = no
-
-fortress_2_building=yes
-
-trade_outpost_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-#Rhun Superregion Discovery
+add_core = X87
+add_core = Y03
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -114,4 +95,8 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+fortress_2_building = yes
+trade_outpost_building = yes
+forge_building = yes
+fort_castle_building = yes
+barracks_building = yes

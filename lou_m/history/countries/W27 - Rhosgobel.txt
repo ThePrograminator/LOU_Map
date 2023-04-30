@@ -1,7 +1,8 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = radagast_reform
 
 primary_culture = culture_istari
+add_accepted_culture = culture_woodmen
 religion = religion_ullthiuda
 technology_group = lotr_wizard_rhovanion
 unit_type = lotr_wizard_rhovanion
@@ -39,123 +40,20 @@ historical_rival = Y30
 
 2750.1.1 = {
 	monarch = {
-		name = "Ciryandil"
-		dynasty = "Eädur"
+		name = "Radagast"
+		dynasty = "the Brown"
 		birth_date = 2728.1.1
 		adm = 5
-		dip = 3
+		dip = 6
 		mil = 3
 	}
-	heir = {
-		monarch_name = "Borowen"
-		name = "Borowen"
-		dynasty = "Eädur"
-		birth_date = 2686.1.1
-		death_date = 2710.1.1
-		adm = 0
-		dip = 4
-		mil = 2
-		claim = 100
-	}
+
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+	add_ruler_personality = just_personality
+	add_ruler_personality = secretive_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = kind_hearted_personality
 }
 
-2800.1.1 = {
-	monarch = {
-		name = "Sangahyando"
-		dynasty = "Eädur"
-		birth_date = 2725.1.1
-		adm = 2
-		dip = 5
-		mil = 0
-	}
-	heir = {
-		monarch_name = "Selerwen"
-		name = "Selerwen"
-		dynasty = "Eädur"
-		birth_date = 2722.1.1
-		death_date = 2760.1.1
-		adm = 1
-		dip = 4
-		mil = 4
-		claim = 100
-	}
-}
-
-2850.1.1 = {
-	monarch = {
-		name = "Belecthor"
-		dynasty = "Eädur"
-		birth_date = 2798.1.1
-		adm = 3
-		dip = 2
-		mil = 1
-	}
-	heir = {
-		monarch_name = "Lalwen"
-		name = "Lalwen"
-		dynasty = "Eädur"
-		birth_date = 2804.1.1
-		death_date = 2836.1.1
-		adm = 2
-		dip = 5
-		mil = 3
-		claim = 100
-	}
-}
-
-2900.1.1 = {
-	monarch = {
-		name = "Alphros"
-		dynasty = "Eädur"
-		birth_date = 2868.1.1
-		adm = 1
-		dip = 1
-		mil = 3
-	}
-	heir = {
-		monarch_name = "Vanimeldë"
-		name = "Vanimeldë"
-		dynasty = "Eädur"
-		birth_date = 2814.1.1
-		death_date = 2884.1.1
-		adm = 4
-		dip = 4
-		mil = 4
-		claim = 100
-	}
-}
-
-2950.1.1 = {
-	monarch = {
-		name = "Erucolindo"
-		dynasty = "Eädur"
-		birth_date = 2887.1.1
-		adm = 2
-		dip = 3
-		mil = 3
-	}
-}
-
-3000.1.1 = {
-	monarch = {
-		name = "Emerwen"
-		dynasty = "Eädur"
-		birth_date = 2935.1.1
-		adm = 2
-		dip = 0
-		mil = 1
-		female = yes
-	}
-	heir = {
-		monarch_name = "Aurel"
-		name = "Aurel"
-		dynasty = "Eädur"
-		birth_date = 2935.1.1
-		death_date = 2981.1.1
-		adm = 3
-		dip = 4
-		mil = 1
-		claim = 100
-	}
-}
 

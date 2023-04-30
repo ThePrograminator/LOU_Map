@@ -57,17 +57,29 @@ gov_khaganate = {
 	}
 	
 	ruler_male = {
-		1 = LORD
-		2 = LORD
-		3 = LORD
+		1 = KHAGAN
+		2 = KHAGAN
+		3 = KHAGAN
 	}
 	
 	ruler_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
 	}
-	
+			
+	heir_male = {
+		1 = KHANZADEH 
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
+	}
+
 	trigger = {
 		has_reform = khaganate_reform
 	}
@@ -75,21 +87,33 @@ gov_khaganate = {
 
 gov_independent_khaganate = {
 	rank = {
-		1 = INDEPENDENT_KHAGANATE
-		2 = GRAND_INDEPENDENT_KHAGANATE
-		3 = GREAT_INDEPENDENT_KHAGANATE
+		1 = KHAGANATE
+		2 = KHAGANATE
+		3 = KHAGANATE
 	}
 	
 	ruler_male = {
-		1 = LORD
-		2 = LORD
-		3 = LORD
+		1 = KHAGAN
+		2 = KHAGAN
+		3 = KHAGAN
 	}
 	
 	ruler_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
+	}
+			
+	heir_male = {
+		1 = KHANZADEH 
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
 	}
 	
 	trigger = {
@@ -99,21 +123,33 @@ gov_independent_khaganate = {
 
 gov_khaganate_ruler = {
 	rank = {
-		1 = KHAGANATE_RULER
-		2 = KHAGANATE_RULER
-		3 = KHAGANATE_RULER
+		1 = KHAGANATE
+		2 = KHAGANATE
+		3 = KHAGANATE
 	}
-
+	
 	ruler_male = {
-		1 = LORD
-		2 = LORD
-		3 = LORD
+		1 = KHAGAN
+		2 = KHAGAN
+		3 = KHAGAN
 	}
 	
 	ruler_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
+	}
+			
+	heir_male = {
+		1 = KHANZADEH 
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
 	}
 	
 	trigger = {

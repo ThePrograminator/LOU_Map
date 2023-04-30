@@ -1,0 +1,54 @@
+#Witch King returns fom the Wraith-World"
+namespace = LOU_Isengard_Guard_Orthanc
+
+country_event = {
+	id = LOU_Isengard_Guard_Orthanc.1
+	title = "LOU_Isengard_Guard_Orthanc.1.t"
+	desc = "LOU_Isengard_Guard_Orthanc.1.d"
+	picture = DAEN_event
+	
+	trigger = {
+		tag = W53
+		NOT = {
+			heir_culture = culture_dunlendings
+			heir_adm = 2
+			heir_dip = 2
+			heir_mil = 6
+			heir_claim = 75
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "LOU_Isengard_Guard_Orthanc.1.a"
+
+		add_stability = 1
+
+		define_heir = {
+			dynasty = "of Dunland"
+			male = yes
+			age = 30
+			#adm = 2
+			max_random_adm = 4
+			#dip = 2
+			max_random_dip = 4
+			mil = 6
+			claim = 100
+			culture = culture_dunlendings
+		}
+
+		add_heir_personality = inspiring_leader_personality
+		add_heir_personality = master_of_arms_personality
+
+		define_heir_to_general = {
+			fire = 4
+			shock = 3
+			manuever = 5
+			siege = 2
+		}
+	}
+}
+	

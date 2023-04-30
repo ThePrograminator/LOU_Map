@@ -2,10 +2,12 @@
 government = orc_gov
 add_government_reform = lotr_orc_kingdom_reform
 primary_culture = culture_orkish
+add_accepted_culture = culture_baradhrim
 religion = religion_orkish
 technology_group = lotr_orc_forodwaith
 unit_type = lotr_orc
 capital = 610
+
 
 historical_friend = V05
 historical_friend = V35
@@ -49,4 +51,19 @@ historical_rival = Z42
 		birth_date = 2518.1.1
 	}
 	add_ruler_personality = immortal_personality
+	phaluran_area = {
+		add_permanent_claim = Y52
+	}
+	shedun_area = {
+		add_permanent_claim = Y52
+	}
+	angsul_area = {
+		add_permanent_claim = Y52
+	}
+	morkai_area = {
+		add_permanent_claim = Y52
+	}
+	nan_angmar_area = {
+		add_permanent_claim = Y52
+	}
 }

@@ -1,9 +1,9 @@
 # Province ID : 2157
 # Province Name : Daenost
 # Province RGB : (139, 45, 125)
-# Province Area : Cold Fells
+# Province Area : Pinnath Aiyring
 # Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Cameth Brin
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V37
 owner = V37
@@ -27,11 +27,6 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

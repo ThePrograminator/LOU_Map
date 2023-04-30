@@ -3,7 +3,7 @@
 # Province RGB : (85, 97, 116)
 # Province Area : Nan Turnath
 # Province Region : Arthedain
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Fornost
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 3
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z28
 owner = Z28
@@ -27,17 +27,6 @@ trade_goods = paper
 
 hre = no
 
-city_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

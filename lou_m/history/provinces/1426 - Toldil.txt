@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
+base_tax = 2
+base_production = 1
 base_manpower = 3
 
 add_core = X01
@@ -30,10 +30,12 @@ hre = no
 
 2758.9.15 = {
 	controller = X27
+	add_devastation = 75
 }
 
 2759.8.20 = {
 	controller = X11
+	add_devastation = -75
 }
 
 #Gondor Superregion Discovery

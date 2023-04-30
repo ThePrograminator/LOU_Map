@@ -3,7 +3,7 @@
 # Province RGB : (90, 76, 82)
 # Province Area : Morkai
 # Province Region : Angmar
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Carn Dûm
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y52
 owner = Y52
@@ -27,13 +27,6 @@ trade_goods = iron
 
 hre = no
 
-camp_orc_building=yes
-
-warg_pit_orc_building=yes
-
-orc_pit_orc_building=yes
-
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

@@ -3,7 +3,7 @@
 # Province RGB : (148, 27, 138)
 # Province Area : Parth Laur
 # Province Region : Old Pukel Land
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lond Angren
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = X15
 owner = X15
@@ -27,15 +27,6 @@ trade_goods = grain
 
 hre = no
 
-city_1_building=yes
-
-outpost_building=yes
-
-port_building=yes
-
-work_camp_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

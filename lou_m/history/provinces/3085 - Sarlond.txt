@@ -3,7 +3,7 @@
 # Province RGB : (191, 109, 49)
 # Province Area : Belfalas
 # Province Region : Belfalas
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 5
-base_production = 5
-base_manpower = 5
+base_production = 4
+base_manpower = 6
 
 add_core = X01
 owner = X11
@@ -24,25 +24,12 @@ add_core = X11
 culture = culture_dunedain_of_belfalas
 religion = religion_dunedain
 
-trade_goods = naval_supplies
+trade_goods = carracks
 
 hre = no
 
-city_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-seaport_building=yes
-
 center_of_trade = 1
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

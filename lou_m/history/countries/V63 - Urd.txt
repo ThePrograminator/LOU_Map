@@ -22,13 +22,17 @@ historical_rival = V99
 
 2750.1.1 = {
 	monarch = {
-		name = "Aleksandr"
-		dynasty = "Irbis"
-		birth_date = 2670.1.1
-		adm = 2
-		dip = 1
-		mil = 2
+		name = "Hôarmûrath"
+		dynasty = "of Dír"
+		birth_date = 2720.1.1
+		adm = 4
+		dip = 2
+		mil = 6
+		culture = culture_wight
 	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+
 }
 
 2800.1.1 = {

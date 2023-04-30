@@ -1,0 +1,57 @@
+bookmark =
+{
+    # Good Factions - 2758
+	name = "LOTR_16_NAME"
+	desc = "LOTR_16_DESC"
+	date = 2758.9.15
+    
+    center = 1818
+	country = Y81
+	easy_country = Y81
+	country = Y26 
+    country = Z06 
+	country = Y80 
+	country = Y68
+	country = Y67 
+	country = Y22
+	country = Y23
+	country = Y94 
+	country = Z03
+	
+	default = yes
+    
+    effect = {
+        X16 = {
+			add_stability = -1
+			add_prestige = -25
+			add_manpower = -10
+		}
+		X01 = {
+			add_prestige = -20
+			add_manpower = -25
+		}
+		Z50 = {
+			add_stability = 1
+			add_prestige = 25
+			add_manpower = 10
+		}
+		X27 = {
+			add_stability = 1
+			add_prestige = 20
+			add_manpower = 8
+		}
+		X23 = {
+			add_stability = 1
+			add_manpower = 3
+			add_prestige = 10
+		}
+		X99 = {
+			add_manpower = 3
+		}
+		V95 = {
+			add_stability = 1
+			add_prestige = 25
+			add_manpower = 5
+		}
+    }
+}

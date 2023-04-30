@@ -3,16 +3,16 @@
 # Province RGB : (181, 129, 165)
 # Province Area : Jamna
 # Province Region : Wôl
-# Province Super Region : Lochan Daer
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Âlk Wôl
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 3
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W90
 owner = W90
@@ -25,11 +25,6 @@ trade_goods = copper
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-#Lochan Daer Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

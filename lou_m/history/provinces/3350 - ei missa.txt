@@ -3,7 +3,7 @@
 # Province RGB : (52, 52, 185)
 # Province Area : Sud Sicanna
 # Province Region : Sud Sicanna
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Sud Sicanna
 # Province Climate : Arid
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X38
 owner = X38
@@ -27,15 +27,6 @@ trade_goods = spices
 
 hre = no
 
-settlement_building=yes
-
-trade_outpost_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt

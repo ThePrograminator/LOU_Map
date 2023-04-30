@@ -3,7 +3,7 @@
 # Province RGB : (145, 99, 107)
 # Province Area : Emyn-nu-Fuin
 # Province Region : Mirkwood
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lake-Town
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
+base_tax = 2
 base_production = 4
-base_manpower = 4
+base_manpower = 3
 
 add_core = Y49
 owner = Y49
@@ -25,13 +25,6 @@ religion = religion_orkish
 
 trade_goods = iron
 
-hre = no
-
-camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

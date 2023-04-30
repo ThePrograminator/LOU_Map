@@ -9,38 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 5
-base_manpower = 7
-
-add_core = Y30
+base_tax = 1
+base_production = 4
+base_manpower = 1
 owner = Y30
 controller = Y30
-
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = silver
-
-hre = no
-
-fortress_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-warg_pit_orc_building=yes
-
-workshop_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-prisoner_cage_orc_building=yes
-
+add_core = Y30
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
@@ -91,4 +69,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_1_orc_building = yes
+enforcer_camp_orc_building = yes
+orc_pit_orc_building = yes
+warg_pit_orc_building = yes
+workshop_orc_building = yes
+fort_wooden_walls_orc_building = yes
+prisoner_cage_orc_building = yes

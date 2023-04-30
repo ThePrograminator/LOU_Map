@@ -3,7 +3,7 @@
 # Province RGB : (76, 18, 121)
 # Province Area : Bishra
 # Province Region : Tulwang
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Khorsâj
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = X47
 owner = X47
@@ -25,17 +25,6 @@ religion = religion_sea_peoples
 
 trade_goods = fish
 
-hre = no
-
-city_1_building=yes
-
-outpost_building=yes
-
-dock_building=yes
-
-work_camp_building=yes
-
-#Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt

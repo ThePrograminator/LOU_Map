@@ -9,36 +9,19 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 #is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 7
-
-add_core = Q12
+base_tax = 3
+base_production = 3
+base_manpower = 6
 owner = Q12
 controller = Q12
-
 #culture = culture_cardolani
 culture = culture_orkish
 religion = religion_orkish
 #religion = religion_eriadorians
-
 trade_goods = wine
-
-hre = no
-
-#fortress_2_building=yes
-
-#barracks_building=yes
-
-#fort_castle_building=yes
-
-#forge_building=yes
-
-
-#Eriador Superregion Discovery
+is_city = no
+add_core = Q12
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -52,7 +35,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -85,4 +67,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

@@ -8,7 +8,7 @@ grain = {
 }
 
 wine = {
-	base_price = 2.5
+	base_price = 3
 }
 
 wool = {
@@ -47,14 +47,15 @@ gold = {
 }
 
 iron = {
-	base_price = 3
+	base_price = 2.5
 }
 
 
 # African Resources
 slaves = {
-	base_price = 2
+	base_price = 4
 }
+
 ivory = {
 	base_price = 4 
 }
@@ -62,7 +63,7 @@ ivory = {
 
 # Eastern Resources
 tea = {
-	base_price = 2
+	base_price = 3
 }
 
 chinaware = {
@@ -116,7 +117,7 @@ livestock = {
 }
 
 incense = {
-	base_price = 2.5
+	base_price = 3
 }
 
 glass = {
@@ -124,7 +125,7 @@ glass = {
 }
 
 gems = {
-	base_price = 4
+	base_price = 5
 }
 
 paper = {
@@ -132,7 +133,7 @@ paper = {
 }
 
 coal = {
-	base_price = 10
+	base_price = 5
 }
 
 unknown = {
@@ -164,9 +165,38 @@ mushrooms = {
 }
 
 silver = {
-	base_price = 4
+	base_price = 5
 }
 
 mithril = {
 	base_price = 10
+}
+
+mumakil = {
+	base_price = 6
+}
+
+great_beasts = {
+	base_price = 6
+}
+
+orc_draught = {
+	base_price = 2.5
+}
+
+miruvor = {
+	base_price = 7
+}
+
+corsairs = {
+	base_price = 6
+}
+
+carracks = {
+	base_price = 6
+}
+
+plunder = {
+	base_price = 6
+	#goldtype = yes
 }

@@ -16,6 +16,10 @@ monarchy = {
                 empire_of_rhun_reform
                 dunland_kingdom_reform
                 arnorien_kingdom_reform
+                isengard_white_council_reform
+                radagast_reform
+                dol_amroth_reform
+                umbar_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -123,11 +127,19 @@ monarchy = {
         empire_of_rhun_legacy
         dunland_kingdom_legacy
         arnorien_kingdom_legacy
+        isengard_white_council_legacy
+        radagast_legacy
+        dol_amroth_legacy
+        umbar_legacy
 	}
 	
 	exclusive_reforms = {
 		stewardship_reform
-		gondor_kingship_reform
+		gondor_kingship_reform        
+        isengard_white_council_reform
+        radagast_reform
+        dol_amroth_reform
+        umbar_reform
 	}
 }
 
@@ -390,6 +402,7 @@ orc_gov = {
                 lotr_nazgul_reform
                 lotr_isengard_reform
                 lotr_mordor_reform
+                lotr_necromancer_reform
 			}
 		}
 		orc_tribe_decision = {
@@ -423,6 +436,7 @@ orc_gov = {
 		lotr_nazgul_legacy
 		lotr_isengard_legacy
 		lotr_mordor_legacy
+        lotr_necromancer_legacy
     }
 	
 	exclusive_reforms = {
@@ -430,6 +444,7 @@ orc_gov = {
 		lotr_nazgul_reform
 		lotr_isengard_reform
 		lotr_mordor_reform
+        lotr_necromancer_reform
 	}
 }
 

@@ -9,41 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
+base_tax = 4
 base_production = 5
-base_manpower = 5
-
-add_core = Z91
+base_manpower = 3
 owner = Z91
 controller = Z91
-
 culture = culture_fustir
 religion = religion_chegra
-
 trade_goods = fish
-
-hre = no
-
-capital_1_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-dock_building=yes
-
 center_of_trade = 1
-
 #Dyria Superregion Discovery
+add_core = Z91
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -80,4 +57,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_1_building = yes
+marketplace_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+dock_building = yes

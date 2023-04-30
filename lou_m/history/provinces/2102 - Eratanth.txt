@@ -9,43 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 8
-base_manpower = 7
-
-add_core = Y76
+base_tax = 4
+base_production = 6
+base_manpower = 2
 owner = Y76
 controller = Y76
-
 culture = culture_awartasi
 religion = religion_moriquendi
-
 trade_goods = dyes
-
-hre = no
-
-capital_2_elf_building=yes
-
-craftsmen_plaza_elf_building=yes
-
-theatre_elf_building=yes
-
-elven_forge_elf_building=yes
-
-heros_shrine_building=yes
-
-grand_stables_elf_building=yes
-
-fort_high_walls_elf_building=yes
-
-wall_bastions_elf_building=yes
-
 center_of_trade = 2
-
 #Palisor Superregion Discovery
+add_core = Y76
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -92,4 +67,11 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+capital_2_elf_building = yes
+craftsmen_plaza_elf_building = yes
+theatre_elf_building = yes
+elven_forge_elf_building = yes
+heros_shrine_building = yes
+grand_stables_elf_building = yes
+fort_high_walls_elf_building = yes
+wall_bastions_elf_building = yes

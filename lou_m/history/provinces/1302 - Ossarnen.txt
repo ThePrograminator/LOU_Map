@@ -3,7 +3,7 @@
 # Province RGB : (168, 115, 189)
 # Province Area : Tarlang
 # Province Region : Erech
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Calembel
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X01
 owner = X01
@@ -28,11 +28,6 @@ trade_goods = gold
 
 hre = no
 
-settlement_building=yes
-
-temple_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

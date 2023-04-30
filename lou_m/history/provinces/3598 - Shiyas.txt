@@ -3,7 +3,7 @@
 # Province RGB : (220, 113, 45)
 # Province Area : Thûrlornar
 # Province Region : Desdursyton
-# Province Super Region : Urd
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Mitheryn
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W48
 owner = W48
@@ -27,19 +27,6 @@ trade_goods = naval_supplies
 
 hre = no
 
-city_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-dock_building=yes
-
-#Urd Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

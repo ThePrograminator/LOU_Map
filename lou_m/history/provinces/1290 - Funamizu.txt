@@ -3,7 +3,7 @@
 # Province RGB : (149, 98, 204)
 # Province Area : Yowajima
 # Province Region : Thuriac Codya
-# Province Super Region : Womarin Realms
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Thuriac Codya
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 3
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V85
 owner = V85
@@ -27,13 +27,6 @@ trade_goods = copper
 
 hre = no
 
-city_1_building=yes
-
-temple_building=yes
-
-workshop_building=yes
-
-#Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

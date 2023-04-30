@@ -9,41 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
+base_tax = 3
 base_production = 4
-base_manpower = 6
-
-add_core = Z37
+base_manpower = 5
 owner = Z37
 controller = Z37
-
 culture = culture_angmarrim
 religion = religion_baradhrim
-
 trade_goods = fur
-
-hre = no
-
-capital_1_orc_building=yes
-
-meat_depot_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_pit_orc_building=yes
-
-warg_pit_orc_building=yes
-
-fort_pallisade_orc_building=yes
-
-small_arena_building=yes
-
-#Eriador Superregion Discovery
+add_core = Z37
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -57,7 +32,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -90,4 +64,11 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_orc_building = yes
+meat_depot_orc_building = yes
+enforcer_camp_orc_building = yes
+blacksmith_orc_building = yes
+orc_pit_orc_building = yes
+warg_pit_orc_building = yes
+fort_pallisade_orc_building = yes
+small_arena_building = yes

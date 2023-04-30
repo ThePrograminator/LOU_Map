@@ -3,7 +3,7 @@
 # Province RGB : (35, 138, 253)
 # Province Area : Kirithâni
 # Province Region : Nen Umbar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Adûnalkar
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 2
+base_production = 4
+base_manpower = 3
 
 add_core = X27
 owner = X27
@@ -25,15 +25,8 @@ religion = religion_black_numenorean
 
 trade_goods = naval_supplies
 
-hre = no
-
-city_1_building=yes
-
-dock_building=yes
-
 center_of_trade = 1
 
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

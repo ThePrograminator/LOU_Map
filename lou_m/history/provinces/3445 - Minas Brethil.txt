@@ -9,33 +9,23 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 4
-base_manpower = 10
-
-add_core = Z06
+base_tax = 3
+base_production = 3
+base_manpower = 6
 owner = Z06
 controller = Z06
-
 culture = culture_dunedain_of_arnor
 religion = religion_dunedain
-
 trade_goods = herbs
-
+add_core = Z06
 hre = no
-
-fortress_2_building=yes
-
-fort_pallisade_building=yes
-
-barracks_building=yes
-
-forge_building=yes
-
-#Eriador Superregion Discovery
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -49,7 +39,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -82,4 +71,7 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+fortress_2_building = yes
+fort_pallisade_building = yes
+barracks_building = yes
+forge_building = yes

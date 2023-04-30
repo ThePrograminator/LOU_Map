@@ -69,6 +69,14 @@ grain = {
 			factor = 1.5
 			has_terrain = farmlands
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -78,7 +86,7 @@ wine = {
 		global_unrest = -1
 	}
 	province = {
-		local_unrest = -1
+		local_unrest = -2
 	}
 	chance = {
 		factor = 5
@@ -107,6 +115,14 @@ wine = {
 			factor = 1.25
 			has_terrain = farmlands
 			has_terrain = unique_dunedain_ruin
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
 		}
 	}
 }
@@ -460,6 +476,22 @@ slaves = {
 	chance = {
 		factor = 15
 		modifier = {
+			factor = 1.2
+			OR = {
+				has_terrain = unique_harad_town
+				has_terrain = unique_desert_towns
+				has_terrain = unique_numenorean_port
+				has_terrain = unique_numenorean_town
+				has_terrain = unique_far_south_town
+				has_terrain = unique_orc_fortress
+				has_terrain = unique_harshandatt_town
+				has_terrain = unique_easterling_town
+				has_terrain = unique_angmar_town
+				has_terrain = unique_chyan_town
+				has_terrain = unique_womaw_settlement
+			}
+		}
+		modifier = {
 			factor = 0
 			island = yes
 		}
@@ -553,6 +585,14 @@ tea = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -622,6 +662,14 @@ spices = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -712,6 +760,14 @@ cotton = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -748,6 +804,14 @@ sugar = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -837,6 +901,14 @@ cocoa = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -882,6 +954,14 @@ silk = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -1181,6 +1261,14 @@ honey = {
 			factor = 1.5
 			has_terrain = forest
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -1211,6 +1299,14 @@ fruit = {
 	}
 	chance = {
 		factor = 30
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -1258,5 +1354,75 @@ mithril = {
 			factor = 0
 			NOT = {	has_terrain = mountain }
 		}
+	}
+}
+
+mumakil = {
+	color = { 0.588 0.000 0.000 }
+	modifier = {
+		cavalry_shock = 1
+	}
+	province = {
+		province_trade_power_modifier = 0.15
+	}
+}
+
+great_beasts = {
+	color = { 0.235 0.235 0.235 }
+	modifier = {
+		siege_ability = 0.10
+	}
+	province = {
+		local_development_cost = -0.20
+	}
+}
+
+orc_draught = {
+	color = { 0.352 0.000 0.000 }
+	modifier = {
+		land_morale = 0.10
+	}
+	province = {
+		local_manpower_modifier = 0.25
+	}
+}
+
+miruvor = {
+	color = { 1.000 1.000 0.800 }
+	modifier = {
+		war_exhaustion = -0.10
+	}
+	province = {
+		local_prosperity_growth = 0.25
+	}
+}
+
+corsairs = {
+	color = { 0.294 0.098 0.000 }
+	modifier = {
+		galley_power = 0.20
+	}
+	province = {
+		local_ship_cost = -0.20
+	}
+}
+
+carracks = {
+	color = { 0.294 0.098 0.000 }
+	modifier = {
+		heavy_ship_power = 0.20
+	}
+	province = {
+		local_ship_cost = -0.20
+	}
+}
+
+plunder = {
+	color = { 0.831 0.686 0.211 }
+	modifier = {
+		global_prosperity_growth = 0.15
+	}
+	province = {
+		province_trade_power_modifier = 0.15
 	}
 }

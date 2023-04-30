@@ -953,6 +953,25 @@ country_event = {
 				name = ruins_debuff
 				duration = -1
 			}
+			add_base_tax = 4
+			add_base_production = 8
+			add_base_manpower = 4
+		}
+
+		560 = {
+			add_base_tax = -1
+			add_base_production = -4
+			add_base_manpower = -1
+		}
+		562 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		537 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
 		}
 
 		1951 = {

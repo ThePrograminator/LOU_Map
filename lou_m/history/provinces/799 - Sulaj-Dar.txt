@@ -9,39 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 9
-base_production = 9
-base_manpower = 8
-
-add_core = X55
+base_tax = 2
+base_production = 3
+base_manpower = 1
 owner = X55
 controller = X55
-
 culture = culture_bellakaze
 religion = religion_sea_peoples
-
 trade_goods = naval_supplies
-
-hre = no
-
-city_3_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-stockpile_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-dockyard_building=yes
-
-#Haradwaith Superregion Discovery
+add_core = X55
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -72,4 +49,10 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-
+city_3_building = yes
+trade_depot_building = yes
+provincial_office_building = yes
+stockpile_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+dockyard_building = yes

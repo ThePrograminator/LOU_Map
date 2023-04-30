@@ -134,7 +134,13 @@ can_colonize_province = {
 		potential = {
 		}
 		allow = {
-			region = cardolan_region
+			OR = {
+				region = cardolan_region
+				region = eregion_region
+				region = arthedain_region
+				region = numeriador_region
+				region = enedhwaith_region
+			}
 		}
 	}
 }

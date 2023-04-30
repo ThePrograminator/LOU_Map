@@ -1,7 +1,7 @@
 # Province ID : 1872
 # Province Name : Minas Melossë
 # Province RGB : (176, 181, 52)
-# Province Area : Hareregion
+# Province Area : Minas Melossë
 # Province Region : Eregion
 # Province Super Region : Eriador
 # Province Continent : Middle Earth
@@ -9,36 +9,24 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
-base_production = 2
+base_tax = 2
+base_production = 3
 base_manpower = 4
-
-add_core = Y56
-owner = Y56
-controller = Y56
-
-add_core = Z06
+owner = Q19
+controller = Q19
 culture = culture_orkish
 religion = religion_orkish
-
 trade_goods = copper
-
-hre = no
-
-fortress_1_orc_building=yes
-
-fort_pallisade_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_pit_orc_building=yes
-
-warg_pit_orc_building=yes
-
-#Eriador Superregion Discovery
+hre = no 
+add_core = Q19
+add_core = Z06
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -52,7 +40,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -85,4 +72,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

@@ -9,33 +9,15 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-#is_city = yes
-
 base_tax = 3
-base_production = 4
-base_manpower = 4
-
-add_core = Q13
+base_production = 3
+base_manpower = 6
 owner = Q13
 controller = Q13
-
-#culture = culture_dunedain_of_arnor
 culture = culture_orkish
 religion = religion_orkish
-#religion = religion_dunedain
-
 trade_goods = copper
-
-hre = no
-
-#city_1_building=yes
-
-#workshop_building=yes
-
-#outpost_building=yes
-
-#Eriador Superregion Discovery
+add_core = Q13
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -49,7 +31,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -82,4 +63,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+is_city = no

@@ -9,39 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 7
-base_manpower = 6
-
-add_core = X32
+base_tax = 5
+base_production = 6
+base_manpower = 4
 owner = X32
 controller = X32
-
 culture = culture_quarsag
 religion = religion_apysani_beduins
-
-trade_goods = glass
-
-hre = no
-
-capital_1_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
+trade_goods = mumakil
 center_of_trade = 1
-
 #Haradwaith Superregion Discovery
+add_core = X32
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -72,4 +51,9 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-
+capital_1_building = yes
+marketplace_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
