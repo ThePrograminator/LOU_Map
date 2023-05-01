@@ -1183,7 +1183,7 @@ trade_protectorate = {
 }
 
 dol_amroth_principality = {
-	copy_from = vassal
+	copy_from = default
 	
 	# Graphics:
 	sprite = GFX_icon_march
@@ -1240,14 +1240,12 @@ dol_amroth_principality = {
 
 	# Modifiers:
 	modifier_subject = {
-		modifier = vassal_nation
 	}
 	modifier_overlord = {
-		modifier = vassal_subject
 	}
 
-	overlord_opinion_modifier = is_vassal
-	subject_opinion_modifier = is_vassal
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
 
 	can_fight = {
 		independent_nations = yes
@@ -1344,7 +1342,7 @@ grey_haven = {
 }
 
 nazgul_kingdom = {
-	copy_from = vassal
+	copy_from = default
 	
 	# Graphics:
 	sprite = GFX_icon_march
@@ -1401,14 +1399,12 @@ nazgul_kingdom = {
 
 	# Modifiers:
 	modifier_subject = {
-		modifier = vassal_nation
 	}
 	modifier_overlord = {
-		modifier = vassal_subject
 	}
 
-	overlord_opinion_modifier = is_vassal
-	subject_opinion_modifier = is_vassal
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
 
 	can_fight = {
 		independent_nations = yes

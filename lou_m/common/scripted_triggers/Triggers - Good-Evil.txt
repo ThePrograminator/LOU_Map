@@ -6,6 +6,8 @@ is_free_peoples_opinion = {
 		is_elf = yes
 		is_dwarf = yes
 		is_hobbit = yes
+		#Isengard - White Council (Good)
+		tag = W53
 		#Anarike
 		tag = X41
 		#Lynerian League
@@ -64,6 +66,12 @@ is_free_peoples_opinion_province = {
 		culture_group = culture_group_donath
 		culture_group = culture_group_aivathiuda
 		culture_group = culture_group_beijabar
+		AND = {
+			culture = culture_istari
+			NOT = {
+				owned_by = V49
+			}
+		}
 	}
 }
 
@@ -94,6 +102,8 @@ is_servants_of_evil_opinion = {
 		primary_culture = culture_dirians
 		primary_culture = culture_desdursy
 		primary_culture = culture_urdar
+		#Isengard - White Hand (Evil)
+		tag = V49
 		# Waw
 		tag = Z80
 		# Saralainn
@@ -141,6 +151,10 @@ is_servants_of_evil_opinion_province = {
 		culture = culture_dirians
 		culture = culture_desdursy
 		culture = culture_urdar
+		AND = {
+			culture = culture_istari
+			owned_by = V49
+		}
 	}
 	NOT = {
 		culture = culture_logath
