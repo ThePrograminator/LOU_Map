@@ -299,3 +299,41 @@ country_event = {
 		}
     }  
 }
+
+# Test is_free_peoples_opinion
+country_event = {
+	id = LOU_setup.4
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+	is_triggered_only = yes
+
+    trigger = {
+        test_only_is_free_peoples_opinion_test_only = yes
+    }
+
+    option = {
+        name = "LOU_setup.4.a"
+        
+    }  
+}
+
+# Test is_servants_of_evil_opinion
+country_event = {
+	id = LOU_setup.5
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+	is_triggered_only = yes
+
+    trigger = {
+        test_only_is_servants_of_evil_opinion_test_only = yes
+    }
+
+    option = {
+        name = "LOU_setup.4.a"
+        
+    }  
+}
