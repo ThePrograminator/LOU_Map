@@ -17,6 +17,12 @@ V17_evil_men = {
 	mordor_easterlings_of_rhun = {
 		icon = mission_easterlings
 		position = 1
+		provinces_to_highlight = {
+			superregion = rhun_superregion
+			NOT = {
+				owns_or_non_sovereign_subject_of = ROOT
+			}
+		}
 		trigger = {
 			OR = {
 				AND = {
@@ -50,6 +56,12 @@ V17_evil_men = {
             mordor_easterlings_of_rhun
 		}
 		position = 2
+		provinces_to_highlight = {
+			superregion = near_harad_superregion
+			NOT = {
+				owns_or_non_sovereign_subject_of = ROOT
+			}
+		}
 		trigger = {
 			OR = {
 				AND = {
@@ -144,6 +156,12 @@ V17_cosairs = {
             mordor_easterlings_of_rhun
 		}
 		position = 2
+		provinces_to_highlight = {
+			province_id = 421
+			NOT = {
+				owns_or_non_sovereign_subject_of = ROOT
+			}
+		}
 		trigger = {
 			OR = {
 				AND = {
@@ -152,6 +170,17 @@ V17_cosairs = {
 						has_opinion = {
 							who = ROOT
 							value = 175
+						}
+					}
+				}
+				AND = {
+					421 = {
+						owner = {
+							alliance_with = V17
+							has_opinion = {
+								who = ROOT
+								value = 175
+							}
 						}
 					}
 				}
@@ -254,9 +283,11 @@ V17_fall_of_gondor = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			area = ithilien_area
-			area = nindalf_area
-			province_id = 418
+			OR = {
+				area = ithilien_area
+				area = nindalf_area
+				province_id = 418
+			}
 			NOT = {
 				owns_or_non_sovereign_subject_of = ROOT
 			}
@@ -264,14 +295,14 @@ V17_fall_of_gondor = {
 		trigger = {
 			ithilien_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			nindalf_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			418 = {
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -302,9 +333,11 @@ V17_fall_of_gondor = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			area = minas_tirith_area
-			area = cair_andros_area
-			area = osgiliath_area
+			OR = {
+				area = minas_tirith_area
+				area = cair_andros_area
+				area = osgiliath_area
+			}
 			NOT = {
 				owns_or_non_sovereign_subject_of = ROOT
 			}
@@ -312,13 +345,13 @@ V17_fall_of_gondor = {
 		trigger = {
 			minas_tirith_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			419 = {
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			7 = {
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -347,7 +380,7 @@ V17_fall_of_gondor = {
 		trigger = {
 			gondor_superregion = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -386,7 +419,7 @@ V17_fall_of_rohan = {
 		trigger = {
 			rohan_region = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -420,13 +453,13 @@ V17_expand_into_nurn = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				province_id = 542
 				province_id = 1003
 			}
-			# NOT = {
-			# 	owns_or_non_sovereign_subject_of = ROOT
-			# }
+			NOT = {
+				owns_or_non_sovereign_subject_of = ROOT
+			}
 		}
 		trigger = {
 			542 = {
@@ -459,7 +492,7 @@ V17_expand_into_nurn = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				area = cirith_nurn_area
 				area = lithlad_area
 			}
@@ -527,7 +560,7 @@ V17_expand_into_nurn = {
 		trigger = {
 			mordor_superregion = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -567,9 +600,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			AND = {
-				area = dol_guldur_area
-			}
+			area = dol_guldur_area
 			NOT = {
 				owns_or_non_sovereign_subject_of = ROOT
 			}
@@ -577,7 +608,7 @@ V17_necromancer_of_dol_guldur = {
 		trigger = {
 			dol_guldur_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -608,7 +639,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 		position = 6
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				area = ceber_fanuin_area
 				area = narrows_of_mirkwood_area
 				area = angalaladh_area
@@ -622,23 +653,23 @@ V17_necromancer_of_dol_guldur = {
 		trigger = {
 			ceber_fanuin_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			narrows_of_mirkwood_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			angalaladh_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			emyn_nu_fuin_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			men_i_naugrim_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -657,7 +688,7 @@ V17_necromancer_of_dol_guldur = {
 		}
 		position = 7
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				area = annon_edhel_area
 				area = caras_amarth_area
 				area = thranduils_realm_area
@@ -669,15 +700,15 @@ V17_necromancer_of_dol_guldur = {
 		trigger = {
 			annon_edhel_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			caras_amarth_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			thranduils_realm_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -708,9 +739,7 @@ V17_destroy_elves = {
 		}
 		position = 7
 		provinces_to_highlight = {
-			AND = {
-				area = lothlorien_area
-			}
+			area = lothlorien_area
 			NOT = {
 				owns_or_non_sovereign_subject_of = ROOT
 			}
@@ -718,7 +747,7 @@ V17_destroy_elves = {
 		trigger = {
 			lothlorien_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -737,9 +766,7 @@ V17_destroy_elves = {
 		}
 		position = 8
 		provinces_to_highlight = {
-			AND = {
-				area = rivendell_area
-			}
+			area = rivendell_area
 			NOT = {
 				owns_or_non_sovereign_subject_of = ROOT
 			}
@@ -747,7 +774,7 @@ V17_destroy_elves = {
 		trigger = {
 			rivendell_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -765,9 +792,7 @@ V17_destroy_elves = {
 		}
 		position = 9
 		provinces_to_highlight = {
-			AND = {
-				region = shire_region
-			}
+			region = shire_region
 			NOT = {
 				owns_or_non_sovereign_subject_of = ROOT
 			}
@@ -775,7 +800,7 @@ V17_destroy_elves = {
 		trigger = {
 			shire_region = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -794,7 +819,7 @@ V17_destroy_elves = {
 		}
 		position = 10
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				region = lindon_region
 				region = forlindon_region
                 region = harlindon_region
@@ -806,15 +831,15 @@ V17_destroy_elves = {
 		trigger = {
 			lindon_region = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			forlindon_region = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			harlindon_region = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -932,7 +957,7 @@ V17_conquer_erebor = {
 		trigger = {
 			the_lonely_mountain_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
