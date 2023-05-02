@@ -23,7 +23,12 @@ controller = Y68
 culture = culture_galadhrim
 religion = religion_umanyar
 
-trade_goods = dyes
+trade_goods = tropical_wood
+
+add_province_modifier = {
+	name = telain_defenses
+	duration = -1
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan

@@ -3,24 +3,28 @@ minas_tirith = {
 	local_defensiveness = 1
 	fort_level = 5
 	supply_limit_modifier = 0.5
+	allowed_num_of_manufactories = 1
 }
 
 barad_dur = {
 	local_defensiveness = 1
 	fort_level = 5
 	supply_limit_modifier = 0.5
+	allowed_num_of_manufactories = 1
 }
 
 osgiliath = {
 	local_defensiveness = 1
 	fort_level = 5
 	supply_limit_modifier = 0.5
+	allowed_num_of_manufactories = 1
 }
 
 helmsdeep = {
 	local_defensiveness = 1
 	fort_level = 5
 	supply_limit_modifier = 0.5
+	allowed_num_of_manufactories = 1
 }
 
 wilderness_debuff = {
@@ -109,10 +113,11 @@ ancient_capital_of_the_tarlai = {
 walls_of_pelargir = {
 	 local_hostile_attrition = 2
 	 fort_level = 2
-	 local_defensiveness = 0.1
+	 local_defensiveness = 0.15
 	 garrison_growth = 0.05
 	 local_manpower_modifier = 0.2
 	 supply_limit_modifier = 0.50
+	 allowed_num_of_manufactories = 1
 }
 
 docks_of_pelargir = {
@@ -127,9 +132,10 @@ docks_of_pelargir = {
 
 rammas_echor = {
 	local_hostile_attrition = 1
-	local_defensiveness = 0.05
+	local_defensiveness = 0.25
 	fort_level = 1
 	supply_limit_modifier = 0.50
+	allowed_num_of_manufactories = 1
 }
 
 market_of_linhir = {
@@ -159,13 +165,14 @@ dead_marshes_modifier = {
 	local_years_of_nationalism = -100
 }
 
-dol_guldur_necromancer = {
-	fort_level = 2
+dol_guldur = {
+	fort_level = 3
 	local_hostile_attrition = 2
 	local_defensiveness = 0.25
 	supply_limit_modifier = 0.50
 	local_unrest = -10
 	local_production_efficiency = 0.15
+	allowed_num_of_manufactories = 1
 }
 
 harad_trade_route = {
@@ -179,6 +186,7 @@ isengard = {
 	fort_level = 3
 	local_defensiveness = 1
 	supply_limit_modifier = 0.50
+	allowed_num_of_manufactories = 1
 }
 
 rhosgobel = {
@@ -188,5 +196,42 @@ rhosgobel = {
 	supply_limit_modifier = 0.50
 	local_unrest = -10
 	local_hostile_movement_speed = 0.50
+	allowed_num_of_manufactories = 1
 }
 
+henneth_annun = {
+	fort_level = 2
+	local_defensiveness = 1
+	supply_limit_modifier = 0.5
+	local_hostile_attrition = 3
+	allowed_num_of_manufactories = 1
+}
+
+telain_defenses = {
+	fort_level = 1
+	local_defensiveness = 0.25
+	local_hostile_attrition = 3
+	local_garrison_size = 0.50
+}
+
+cerin_amroth = {
+	fort_level = 3
+	local_defensiveness = 0.5
+	supply_limit_modifier = 0.5
+	local_hostile_attrition = 2
+	allowed_num_of_manufactories = 1
+}
+
+caras_galadhon = {
+	fort_level = 5
+	local_defensiveness = 1
+	supply_limit_modifier = 0.5
+	local_hostile_attrition = 4
+	allowed_num_of_manufactories = 1
+}
+
+fangorn_forest = {
+	attrition = 5
+	local_friendly_movement_speed = -3
+	local_hostile_movement_speed = 3
+}

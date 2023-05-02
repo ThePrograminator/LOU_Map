@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 6
-base_manpower = 2
+base_tax = 3
+base_production = 5
+base_manpower = 1
 
 add_core = Y68
 owner = Y68
@@ -24,6 +24,16 @@ culture = culture_galadhrim
 religion = religion_umanyar
 
 trade_goods = miruvor
+
+add_province_modifier = {
+	name = telain_defenses
+	duration = -1
+}
+
+add_province_modifier = {
+	name = cerin_amroth
+	duration = -1
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
