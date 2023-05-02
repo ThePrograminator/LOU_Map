@@ -4430,7 +4430,8 @@ cerin_amroth_monument = {
 		country_modifiers = {
 		improve_relation_modifier = 0.1
 		stability_cost_to_declare_war = 1
-		possible_condottieri = 1.5
+		spy_offence = 0.1
+		global_spy_defence = 0.1
 		}
 		on_upgraded = {
 		}
@@ -4449,7 +4450,8 @@ cerin_amroth_monument = {
 		country_modifiers = {
 		improve_relation_modifier = 0.2
 		stability_cost_to_declare_war = 1
-		possible_condottieri = 2
+		spy_offence = 0.2
+		global_spy_defence = 0.2
 		}
 		on_upgraded = {
 		}
@@ -4468,7 +4470,8 @@ cerin_amroth_monument = {
 		country_modifiers = {
 		improve_relation_modifier = 0.3
 		stability_cost_to_declare_war = 1
-		possible_condottieri = 2.5
+		spy_offence = 0.3
+		global_spy_defence = 0.3
 		}
 		on_upgraded = {
 		}
