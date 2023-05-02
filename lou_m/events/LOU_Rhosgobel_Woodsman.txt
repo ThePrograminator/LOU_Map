@@ -1,0 +1,56 @@
+#Huntsman Heir for Rhosgobel"
+namespace = LOU_Rhosgobel_Woodsman
+
+country_event = {
+	id = LOU_Rhosgobel_Woodsman.1
+	title = "LOU_Rhosgobel_Woodsman.1.t"
+	desc = "LOU_Rhosgobel_Woodsman.1.d"
+	picture = DAEN_event
+	
+	trigger = {
+		tag = W27
+		NOT = {
+			heir_culture = culture_woodmen
+			heir_adm = 2
+			heir_dip = 2
+			heir_mil = 6
+			heir_claim = 50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "LOU_Rhosgobel_Woodsman.1.a"
+
+		add_stability = 1
+
+		define_heir = {
+			dynasty = "of Rhosgobel"
+			male = yes
+			age = 20
+			#adm = 2
+			max_random_adm = 5
+			#dip = 2
+			max_random_dip = 5
+			mil = 6
+			claim = 100
+			culture = culture_woodmen
+		}
+
+		
+		add_heir_personality = battlefield_medic_personality
+		add_heir_personality = defensive_planner_personality
+		add_heir_personality = hardy_warrior_personality
+
+		define_heir_to_general = {
+			fire = 4
+			shock = 3
+			manuever = 5
+			siege = 2
+		}
+	}
+}
+	
