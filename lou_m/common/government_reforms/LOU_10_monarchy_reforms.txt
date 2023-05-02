@@ -329,7 +329,8 @@ isengard_white_council_reform = {
 		diplomatic_reputation = 2
 		diplomatic_upkeep = 2
 		administrative_efficiency = 0.05
-		stability_cost_to_declare_war = 1
+		can_not_declare_war = yes
+		accept_vassalization_reasons = 25
 
 		tolerance_own = 3
 		tolerance_heretic = 3
@@ -362,7 +363,8 @@ radagast_reform = {
 		diplomatic_upkeep = 2
 		can_bypass_forts = yes
 		build_cost = -0.25
-		stability_cost_to_declare_war = 1
+		can_not_declare_war = yes
+		accept_vassalization_reasons = 25
 
 		tolerance_own = 3
 		tolerance_heretic = 3

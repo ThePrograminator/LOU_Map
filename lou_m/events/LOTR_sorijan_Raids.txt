@@ -8,6 +8,7 @@ province_event = {
 
 	trigger = {
 		AND = {
+			exists = X48
 			has_port = yes
 			OR = { 
 				region = tulwang_region
@@ -18,13 +19,14 @@ province_event = {
 		owner = {
 			NOT = {
 				tag = X48
+				tag = X27
 				has_country_flag = gondorian_spawn_umbar_raider_timer
 			}
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 360
 	}
 	
 	option = {
