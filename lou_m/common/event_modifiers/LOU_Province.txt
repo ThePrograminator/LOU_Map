@@ -233,11 +233,11 @@ caras_galadhon = {
 mallorn_trees = {
 	local_build_cost = -0.25
 	local_build_time = -0.25
-	local_prosperity_growth = -0.25
+	local_prosperity_growth = 0.50
 }
 
 fangorn_forest = {
-	attrition = 5
+	local_hostile_attrition = 5
 	local_friendly_movement_speed = -3
 	local_hostile_movement_speed = 3
 }

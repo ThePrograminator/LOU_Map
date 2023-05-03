@@ -733,13 +733,13 @@ trade_depot_building = {
 	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
+		province_human_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
+		province_human_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -788,13 +788,13 @@ forum_building = {
 	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_4 = yes
+		province_human_has_main_building_tier_4 = yes
 	}
 	
 	keep_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_4 = yes
+		province_human_has_main_building_tier_4 = yes
 	}
 
 	modifier = {
@@ -952,13 +952,13 @@ provincial_office_building = {
 	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
+		province_human_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_3 = yes
+		province_human_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -1008,13 +1008,13 @@ bank_building = {
 	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_4 = yes
+		province_human_has_main_building_tier_4 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_4 = yes
+		province_human_has_main_building_tier_4 = yes
 	}
 	
 	modifier = {

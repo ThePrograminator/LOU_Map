@@ -8,11 +8,12 @@ country_event = {
 	picture = DAEN_event
 	
 	trigger = {
-		tag = W53
+		OR = {
+			tag = W53
+			tag = V49
+		}
 		NOT = {
 			heir_culture = culture_dunlendings
-			heir_adm = 2
-			heir_dip = 2
 			heir_mil = 6
 			heir_claim = 50
 		}
@@ -31,9 +32,7 @@ country_event = {
 			dynasty = "of Dunland"
 			male = yes
 			age = 30
-			#adm = 2
 			max_random_adm = 4
-			#dip = 2
 			max_random_dip = 4
 			mil = 6
 			claim = 100
