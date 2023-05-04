@@ -1,0 +1,23 @@
+name = "War For the Harnen River Junction"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 140 # Romenor
+}
+
+2750.1.1 = {
+	add_attacker = X23
+	add_attacker = X25
+	add_defender = X19
+	add_defender = Q21
+	add_defender = Q22
+}
+
+# Truce because neither side can gain the upperhand, But Harnendor Got Foropende and Kharurush Vale
+2757.3.15 = {
+	rem_attacker = X23
+	rem_attacker = X25
+	rem_attacker = X19
+	rem_defender = Q21
+	rem_defender = Q22
+}
