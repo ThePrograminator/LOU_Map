@@ -32,6 +32,12 @@ estate_nobles = {
 			is_orc = yes
 		}
 	}
+	custom_name = {
+		desc = estate_nobles_haruzani
+		trigger = {
+			religion = religion_haruzani
+		}
+	}
     
 	# ----- Conditions -----
 	trigger = {

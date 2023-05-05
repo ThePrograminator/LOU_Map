@@ -55,13 +55,34 @@ principality_reform = {
 	}
 	
 	modifiers = {
-    	governing_capacity = 100
 		global_tax_modifier = 0.1
 		stability_cost_modifier = -0.2
 	}
 	
 	custom_attributes = {
 		locked_government_type = yes
+	}
+}
+marcrize_reform = {
+	icon = "feudal_theocracy"
+	allow_normal_conversion = yes
+	legacy_equivalent = lotr_marcrize_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	fixed_rank = 1
+	
+	potential = {
+		OR = {
+			primary_culture = culture_donaen
+			primary_culture = culture_sakalai
+			primary_culture = culture_donan
+		}
+	}
+	
+	modifiers = {
+		army_tradition = 1
+		defensiveness = 0.25
+		fort_maintenance_modifier = -0.35
 	}
 }
 stewardship_reform = {

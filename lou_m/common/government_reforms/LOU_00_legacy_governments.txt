@@ -101,9 +101,30 @@ lotr_principality_legacy = {
 	allow_convert = no
 
 	modifiers = {
-    	governing_capacity = 100
 		global_tax_modifier = 0.1
 		stability_cost_modifier = -0.2
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+lotr_marcrize_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+
+	modifiers = {
+    	army_tradition = 1
+		defensiveness = 0.25
+		fort_maintenance_modifier = -0.25
 	}
 	
 	ai = {

@@ -156,7 +156,7 @@ gov_lotr_haradrim_monarchy = {
 	}
 
 	ruler_male = {
-		1 = DUKE
+		1 = TASKRAL
 		2 = AUTARB
 		3 = EMPEROR
 	}
@@ -277,6 +277,45 @@ gov_lotr_harshandatt_monarchy = {
 			has_reform = autocracy_reform
 		}
 		tag = X64
+	}
+}
+
+gov_lotr_marcrize_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GENERAL
+		2 = GENERAL
+		3 = GENERAL
+	}
+
+	ruler_female = {
+		1 = GENERAL
+		2 = GENERAL
+		3 = GENERAL
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			has_reform = marcrize_reform
+		}
 	}
 }
 
