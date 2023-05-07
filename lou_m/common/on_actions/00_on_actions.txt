@@ -1546,6 +1546,102 @@ on_province_owner_change = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_1_building
+		}
+		remove_building = capital_1_building
+		add_building = city_1_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_2_building
+		}
+		remove_building = capital_2_building
+		add_building = city_2_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_3_building
+		}
+		remove_building = capital_3_building
+		add_building = city_3_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_1_dwarf_building
+		}
+		remove_building = capital_1_dwarf_building
+		add_building = hold_1_dwarf_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_2_dwarf_building
+		}
+		remove_building = capital_2_dwarf_building
+		add_building = hold_2_dwarf_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_3_dwarf_building
+		}
+		remove_building = capital_3_dwarf_building
+		add_building = hold_3_dwarf_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_1_elf_building
+		}
+		remove_building = capital_1_elf_building
+		add_building = town_1_elf_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_2_elf_building
+		}
+		remove_building = capital_2_elf_building
+		add_building = town_2_elf_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_3_elf_building
+		}
+		remove_building = capital_3_elf_building
+		add_building = town_3_elf_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_1_orc_building
+		}
+		remove_building = capital_1_orc_building
+		add_building = encampment_1_orc_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_2_orc_building
+		}
+		remove_building = capital_2_orc_building
+		add_building = encampment_3_orc_building
+	}
+	if = {
+		limit = {
+			is_capital = no
+			has_building = capital_3_orc_building
+		}
+		remove_building = capital_3_orc_building
+		add_building = encampment_3_orc_building
+	}
 }
 
 # country
