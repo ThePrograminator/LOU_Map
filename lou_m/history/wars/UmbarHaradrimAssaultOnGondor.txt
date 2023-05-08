@@ -6,15 +6,21 @@ war_goal = {
 }
 
 2758.9.15 = {
-	add_attacker = X27
-	add_attacker = V48
-	add_attacker = V14
-	add_attacker = X25
-	add_attacker = X23
-	add_attacker = X26
-	add_defender = X01
-	add_defender = X11
-	add_defender = X02
+	add_attacker = X27						# Umbar
+	add_attacker = V48						# Sakal an-Khar
+	add_attacker = V14						# Methir
+	add_attacker = X25						# Gobel Mirlond
+	add_attacker = X23						# Harnendor
+	add_attacker = X26						# League of Abarloni
+	add_attacker = X24						# Harondor
+	add_attacker = V12						# Harmaka
+	add_attacker = X19						# Haruzan
+	#add_attacker = Q23						# Caradhram
+	#add_attacker = X17						# Chelkar
+	#add_attacker = V13						# Aegthelion
+	add_defender = X01						# Gondor
+	add_defender = X11						# Dol Amroth
+	add_defender = X02						# Andrast
 }
 
 # 
@@ -25,7 +31,13 @@ war_goal = {
 	rem_attacker = X25
 	rem_attacker = X23
 	rem_attacker = X26
-	rem_defender = X01
+	rem_attacker = X24
+	rem_attacker = V12
+	rem_attacker = X19
+	#rem_attacker = Q23						# Caradhram
+	#rem_attacker = X17						# Chelkar
+	#rem_attacker = V13						# Aegthelion
+	rem_defender = X01	
 	rem_defender = X11
 	rem_defender = X02
 }
