@@ -1,0 +1,31 @@
+name = "Umbar and Haradrim Assault on Gondor"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 360 # Gobel Tolfalas
+}
+
+2758.9.15 = {
+	add_attacker = X27
+	add_attacker = V48
+	add_attacker = V14
+	add_attacker = X25
+	add_attacker = X23
+	add_attacker = X26
+	add_defender = X01
+	add_defender = X11
+	add_defender = X02
+}
+
+# 
+2759.8.20 = {
+	rem_attacker = X27
+	rem_attacker = V48
+	rem_attacker = V14
+	rem_attacker = X25
+	rem_attacker = X23
+	rem_attacker = X26
+	rem_defender = X01
+	rem_defender = X11
+	rem_defender = X02
+}
