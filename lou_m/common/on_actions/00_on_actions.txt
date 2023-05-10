@@ -21,6 +21,65 @@ on_startup = {
 		LOU_story.3 # Company of Thorin
 		LOU_story.6 # Fellowship of the Ring
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {			
+			has_climate = mild_winter
+			# NOT = {
+			# 	superregion = gondor_superregion
+			# }
+			add_province_modifier = {
+				name = long_winter_mild
+				duration = 152
+				desc = long_winter_mild_tooltip
+			}
+		}
+	}
+		
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {
+			# OR = {
+				has_climate = normal_winter
+			# 	superregion = gondor_superregion
+			# }
+			add_province_modifier = {
+				name = long_winter_normal
+				duration = 152
+				desc = long_winter_normal_tooltip
+			}
+		}
+	}
+			
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {
+			limit = {				
+				has_climate = severe_winter
+			}
+			add_province_modifier = {
+				name = long_winter_severe
+				duration = 152
+				desc = long_winter_severe_tooltip
+			}
+		}
+	}
 }
 
 # country
