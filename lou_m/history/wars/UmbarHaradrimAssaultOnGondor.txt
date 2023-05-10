@@ -5,7 +5,12 @@ war_goal = {
 	province = 360 # Gobel Tolfalas
 }
 
+2758.9.14 = {
+	add_attacker = X16						#Rohan addition for no-join-ally Truce
+}
+
 2758.9.15 = {
+	rem_attacker = X16						#Rohan removal for no-join-ally Truce
 	add_attacker = X27						# Umbar
 	add_attacker = V48						# Sakal an-Khar
 	add_attacker = V14						# Methir
