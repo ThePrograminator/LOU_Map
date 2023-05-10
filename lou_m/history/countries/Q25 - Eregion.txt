@@ -1,0 +1,67 @@
+
+government = elf_gov
+add_government_reform = lordship_elf_reform
+primary_culture = culture_noldor
+religion = religion_calaquendi
+technology_group = lotr_elven
+unit_type = lotr_elven
+capital = 232
+
+historical_friend = Z06
+historical_friend = Z08
+historical_friend = Z01
+historical_friend = V37
+historical_friend = Y84
+historical_friend = Y81
+historical_friend = Y83
+historical_friend = Y82
+historical_friend = Y68
+historical_friend = Y67
+historical_rival = V19
+historical_rival = Y57
+historical_rival = Y56
+historical_rival = Y44
+historical_rival = V36
+historical_rival = Z62
+historical_rival = V31
+historical_rival = V32
+historical_rival = V33
+historical_rival = Y60
+historical_rival = Y43
+historical_rival = Y61
+historical_rival = Y52
+historical_rival = Y63
+historical_rival = V06
+historical_rival = Z37
+historical_rival = Y58
+
+add_opinion = {
+	who = Z06
+	modifier = dunedain_rivendell_relation
+}
+
+2758.1.1 = {
+	monarch = {
+		name = "Elrond"
+		dynasty = "Peredhel"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 2718.1.1
+	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+	add_ruler_personality = just_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_trust = {
+		who = Y68
+		value = 50
+		mutual = yes
+	}
+	add_trust = {
+		who = Y81
+		value = 50
+		mutual = yes
+	}
+}

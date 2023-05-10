@@ -30,18 +30,43 @@ slot_01 = {
 		effect = { }
 	}
 	settle_the_wilderness = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		position = 3
 		required_missions = { expel_wulfseggeas }
-		trigger = { }
+		trigger = { 
+			foreregion_area = {
+				type = all
+				NOT  = {
+					culture =  culture_wilderness
+				}
+			}
+
+			daergil_area = {
+				type = all
+				NOT  = {
+					culture =  culture_wilderness
+				}
+			}
+		}
 		effect = { }
 	}
 	rivendell_drive_out_orcs = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_1
 		position = 5
 		required_missions = { reclaim_ost_in_edhil }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			eregion_region = {
+				type = all
+				NOT = {
+					owner = {
+						culture_group = culture_group_orcs
+					}
+				}
+			}
+		}
+		effect = { 
+			
+		}
 	}
 }
 
@@ -97,7 +122,7 @@ slot_02 = {
 		effect = { }
 	}
 	border_amon_lind = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		position = 3
 		required_missions = { expel_wulfseggeas retake_hollin_ridge }
 		provinces_to_highlight = {
@@ -148,10 +173,15 @@ slot_02 = {
 		effect = { }
 	}
 	restore_eregion = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_eregion
 		position = 6
 		required_missions = { rivendell_drive_out_orcs gwaith_i_mirdain trade_with_the_dwarves }
-		trigger = { }
+		trigger = { 
+			eregion_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = { }
 	}
 }
@@ -165,28 +195,50 @@ slot_03 = {
 	}
 
 	improve_rivendell = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			num_of_owned_provinces_with = {
+				value = 2
+				region = eregion_region
+				has_building = craftsmen_plaza_elf_building
+			}
+			num_of_owned_provinces_with = {
+				value = 2
+				region = eregion_region
+				has_building = theatre_elf_building
+			}
+		}
 		effect = { }
 	}
 	place_of_learning = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_asian_trader
 		position = 2
 		required_missions = { improve_rivendell }
-		trigger = { }
+		trigger = { 
+			232 = {
+				development = 40
+			}
+		}
 		effect = { }
 	}
 	house_of_healing = {
 		icon = mission_rivendell
 		position = 3
 		required_missions = { place_of_learning }
-		trigger = { }
+		trigger = { 
+			232 = {
+				has_great_project = {
+					type = rivendell_monument
+					tier = 3
+				}
+			}
+		}
 		effect = { }
 	}
 	trade_with_the_dwarves = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_home_trade_node
 		position = 5
 		required_missions = { reclaim_ost_in_edhil aid_the_dwarves }
 		trigger = { }
@@ -225,7 +277,7 @@ slot_03 = {
 		}
 	}
 	the_threat_of_goblintown = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_goblin_1
 		position = 8
 		required_missions = { pay_the_beorning_tolls }
 		trigger = { }
@@ -249,7 +301,7 @@ slot_04 = {
 		effect = { }
 	}
 	Hatred_of_the_orcs = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_orc_army_3
 		position = 9
 		required_missions = { aid_the_dwarves the_threat_of_goblintown }
 		trigger = { }
@@ -266,39 +318,105 @@ slot_05 = {
 	}
 
 	noldor_allies = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_7
 		position = 1
 		required_missions = {  }
-		trigger = { }
+		trigger = { 
+			alliance_with =  Y81
+			Y81 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
 		effect = { }
 	}
 	kin_of_galadriel = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_6
 		position = 2
 		required_missions = { noldor_allies }
-		trigger = { }
+		trigger = { 
+			alliance_with =  Y68
+			Y68 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
 		effect = { }
 	}
 	friends_of_the_dwarves = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_4
 		position = 3
 		required_missions = { kin_of_galadriel }
-		trigger = { }
+		trigger = { 
+			alliance_with =  Y22
+			Y22 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
 		effect = { }
 	}
+
 	the_white_council = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_5
 		position = 5
 		required_missions = { friends_of_the_dwarves }
-		trigger = { }
+		trigger = { 
+			alliance_with =  Y81
+			alliance_with =  Y68
+			alliance_with =  Y22
+			if = {
+				limit = {
+					exists = Z06
+				}
+				alliance_with =  Z06
+			}
+			else_if = {
+				limit = {
+					exists = W57
+				}
+				alliance_with =  W57
+			}
+			else_if = {
+				limit = {
+					OR = {
+						exists = W55
+						exists = W54
+						exists = W56
+					}
+				}
+				OR = {
+					alliance_with =  W54
+					alliance_with =  W55
+					alliance_with =  W56
+				}
+			}
+			alliance_with =  X01
+		}
 		effect = { }
 	}
+
 	high_king_of_the_noldor = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_lindon
 		position = 6
 		required_missions = { the_white_council }
-		trigger = { }
+		trigger = { 
+			is_great_power = yes
+			Y81 = {
+				trust = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
 		effect = { }
 	}
+
 }
 
