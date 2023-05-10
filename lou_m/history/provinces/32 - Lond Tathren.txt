@@ -9,25 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 3
 base_production = 4
 base_manpower = 2
-
-add_core = X01
 owner = X01
 controller = X01
-
-add_core = X08
 culture = culture_dunedain_of_lebennin
 religion = religion_dunedain
-
 trade_goods = naval_supplies
-
-hre = no
-
+add_core = X01
+add_core = X08
+add_claim = X27
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -76,4 +69,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

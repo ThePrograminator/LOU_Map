@@ -9,31 +9,22 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 3
 base_production = 2
 base_manpower = 4
-
-add_core = X01
 owner = X11
 controller = X11
-
-add_core = X11
 culture = culture_dunedain_of_belfalas
 religion = religion_dunedain
-
 trade_goods = grain
-
-hre = no
-
 2900.1.1 = {
-	army_camp_building=yes
-	workshop_building=yes
-	dock_building=yes
+	army_camp_building = yes
+	workshop_building = yes
+	dock_building = yes
 }
-
+add_core = X11
+add_claim = X27
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -82,4 +73,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

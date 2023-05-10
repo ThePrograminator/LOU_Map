@@ -9,47 +9,26 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 7
 base_production = 6
 base_manpower = 8
-
-add_core = X01
 owner = X01
 controller = X01
-
-add_core = X03
 culture = culture_gondor_middlemen_anfalas
 religion = religion_dunedain
-
 trade_goods = carracks
-
-hre = no
-
 center_of_trade = 1
-
-city_2_building=yes
-
-marketplace_building=yes
-
-dock_building=yes
-
-tax_office_building=yes
-
-army_camp_building=yes
-
-fort_pallisade_building=yes
-
 2820.1.1 = {
 	city_3_building = yes
 	trade_depot_building = yes
 	seaport_building = yes
-	bank_building=yes
+	bank_building = yes
 }
-
 #Gondor Superregion Discovery
+add_core = X01
+add_core = X03
+add_claim = X27
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -98,4 +77,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+city_2_building = yes
+marketplace_building = yes
+dock_building = yes
+tax_office_building = yes
+army_camp_building = yes
+fort_pallisade_building = yes

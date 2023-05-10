@@ -9,25 +9,15 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
-add_core = X01
 owner = X01
 controller = X01
-
-add_core = X06
 culture = culture_dunedain_of_ithilien
 religion = religion_dunedain
-
 trade_goods = naval_supplies
-
-hre = no
-
 2901.1.1 = {
 	add_core = V18
 	owner = V18
@@ -39,15 +29,15 @@ hre = no
 		duration = -1
 	}
 }
-
 2942.1.1 = {
 	add_core = V17
 	owner = V17
 	controller = V17
 	remove_core = V18
 }
-
 #Gondor Superregion Discovery
+add_core = X01
+add_core = X06
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -96,4 +86,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
