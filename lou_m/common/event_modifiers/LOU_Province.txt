@@ -243,7 +243,7 @@ fangorn_forest = {
 }
 
 long_winter_mild = {
-	add_devastation = 1
+	local_monthly_devastation = 2
 	attrition = 1
 	local_development_cost = 2.0
 	local_friendly_movement_speed = -0.2
@@ -255,7 +255,7 @@ long_winter_mild = {
 }
 
 long_winter_normal = {
-	add_devastation = 2
+	local_monthly_devastation = 3
 	attrition = 2
 	local_development_cost = 2.5
 	local_friendly_movement_speed = -0.3
@@ -267,7 +267,7 @@ long_winter_normal = {
 }
 
 long_winter_severe = {
-	add_devastation = 3
+	local_monthly_devastation = 4
 	attrition = 3
 	local_development_cost = 3.0
 	local_friendly_movement_speed = -0.4
@@ -281,12 +281,16 @@ long_winter_severe = {
 days_of_dearth = {
 	local_manpower_modifier = -0.25
 	supply_limit_modifier = -0.25
+	trade_goods_size_modifier = -0.15
+	local_production_efficiency = -0.15
+	local_unrest = 10
+	min_local_autonomy = 15
 }
 
 drughu_wildmen = {
 	local_development_cost = -0.20
-	local_prosperity_growth = -0.15
+	local_build_cost = -0.15
+	supply_limit_modifier = 0.25
 	local_defensiveness = 0.15
 	local_defender_dice_roll_bonus = 1
-	supply_limit_modifier = 0.25
 }

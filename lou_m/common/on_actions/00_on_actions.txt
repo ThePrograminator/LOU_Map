@@ -31,8 +31,7 @@ on_startup = {
 
 		middle_earth = {			
 			limit = {				
-				#has_climate = mild_winter
-				region = anduin_river_region
+				region = vales_of_anduin_region
 				NOT = {					
 					area = lothlorien_area
 				}
@@ -54,7 +53,6 @@ on_startup = {
 
 		middle_earth = {
 			limit = {				
-				#has_climate = normal_winter
 				superregion = eriador_superregion
 				NOT = {
 					region = enedhwaith_region
@@ -83,7 +81,6 @@ on_startup = {
 
 		middle_earth = {
 			limit = {				
-				#has_climate = severe_winter
 				OR = {
 					superregion = rohan_superregion
 					region = enedhwaith_region
@@ -100,7 +97,7 @@ on_startup = {
 	}
 
 	if = {
-		any_province = {
+		every_province = {
 			limit = {
 				culture_group = culture_group_drughu
 				OR = {

@@ -1,0 +1,56 @@
+#Days of Dearth applied until spring of 2160
+namespace = LOU_Days_of_Dearth
+
+country_event = {
+	id = LOU_Days_of_Dearth.1
+	title = "LOU_Days_of_Dearth.1.t"
+	desc = "LOU_Days_of_Dearth.1.d"
+	picture = FAMINE_eventpicture
+	
+	trigger = {
+		NOT = {
+			has_country_flag = days_of_dearth_begins
+		}
+		is_year = 2759
+		is_month = 2
+		OR = {
+			tag = Y26
+			tag = Y27
+			tag = V50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "LOU_Days_of_Dearth.1.a"
+
+		capital_scope = {
+			add_province_modifier = {
+				name = days_of_dearth
+				duration = 360
+				desc = days_of_dearth_tooltip
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = days_of_dearth_begins
+			every_owned_province = {
+				limit = {
+					NOT = {
+						is_capital = yes
+					}
+					region = shire_region
+				}
+				add_province_modifier = {
+					name = days_of_dearth
+					duration = 360
+					desc = days_of_dearth_tooltip
+				}
+			}
+		}
+
+	}
+}
