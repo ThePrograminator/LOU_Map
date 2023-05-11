@@ -30,10 +30,13 @@ on_startup = {
 		}
 
 		middle_earth = {			
-			has_climate = mild_winter
-			# NOT = {
-			# 	superregion = gondor_superregion
-			# }
+			limit = {				
+				#has_climate = mild_winter
+				region = anduin_river_region
+				NOT = {					
+					area = lothlorien_area
+				}
+			}
 			add_province_modifier = {
 				name = long_winter_mild
 				duration = 152
@@ -50,10 +53,19 @@ on_startup = {
 		}
 
 		middle_earth = {
-			# OR = {
-				has_climate = normal_winter
-			# 	superregion = gondor_superregion
-			# }
+			limit = {				
+				#has_climate = normal_winter
+				superregion = eriador_superregion
+				NOT = {
+					region = enedhwaith_region
+					region = dunland_region
+					region = lindon_region
+					region = forlindon_region
+					region = harlindon_region
+					area = mindolhendi_area
+					province_id = 232
+				}
+			}
 			add_province_modifier = {
 				name = long_winter_normal
 				duration = 152
@@ -71,12 +83,42 @@ on_startup = {
 
 		middle_earth = {
 			limit = {				
-				has_climate = severe_winter
+				#has_climate = severe_winter
+				OR = {
+					superregion = rohan_superregion
+					region = enedhwaith_region
+					region = dunland_region
+					region = old_pukel_land_region
+				}
 			}
 			add_province_modifier = {
 				name = long_winter_severe
 				duration = 152
 				desc = long_winter_severe_tooltip
+			}
+		}
+	}
+
+	if = {
+		any_province = {
+			limit = {
+				culture_group = culture_group_drughu
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = unique_old_forest
+					has_terrain = jungle
+					has_terrain = marsh
+					has_terrain = hills
+					has_terrain = mountain
+					has_terrain = highlands
+				}
+			}
+
+			add_province_modifier = {
+				name = drughu_wildmen
+				duration = -1
+				desc = drughu_wildmen_tooltip
 			}
 		}
 	}
