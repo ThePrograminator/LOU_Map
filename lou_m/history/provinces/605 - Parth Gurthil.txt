@@ -1,16 +1,33 @@
-# Province ID : 2400
-# Province Name : Sea of Himling
-# Province RGB : (0, 160, 160)
-# Province Area : Sea of Eriador
-# Province Region : Sea of Belegaer
-# Province Super Region : Western Middle Earth Ocean
+# Province ID : 605
+# Province Name : Parth Gurthil
+# Province RGB : (10, 9, 10)
+# Province Area : Nan Angmar
+# Province Region : Angmar
+# Province Super Region : Forodwaith
 # Province Continent : Middle Earth
-# Province Tradenode : Londolas
-# Province Climate : null
+# Province Tradenode : Carn Dûm
+# Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-#Eriador Seas Discovery
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+add_core = Y53
+owner = Y53
+controller = Y53
+
+culture = culture_orkish
+religion = religion_orkish
+
+trade_goods = copper
+
+hre = no
+
+#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -18,13 +35,13 @@ discovered_by = lotr_human_rhovanion
 discovered_by = lotr_human_misty_mountains
 discovered_by = lotr_human_eriador
 discovered_by = lotr_human_forodwaith
-discovered_by = lotr_human_near_harad
 discovered_by = lotr_human_rhun
+discovered_by = lotr_human_dyria
 discovered_by = lotr_dwarven
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
 discovered_by = lotr_dwarven_eriador
+discovered_by = lotr_dwarven_dyria
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -45,16 +62,17 @@ discovered_by = lotr_hobbit_rhovanion
 discovered_by = lotr_orc
 discovered_by = lotr_orc_rohan
 discovered_by = lotr_orc_gondor
+discovered_by = lotr_orc_rhovanion
 discovered_by = lotr_orc_misty_mountains
 discovered_by = lotr_orc_eriador
 discovered_by = lotr_orc_forodwaith
-discovered_by = lotr_orc_rhovanion
-discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
+discovered_by = lotr_orc_dyria
 discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
+discovered_by = lotr_wights_dyria
 

@@ -119,6 +119,19 @@ on_startup = {
 			}
 		}
 	}
+	
+	if = {
+		every_province = {
+			limit = {
+				culture = culture_spider
+			}
+
+			add_province_modifier = {
+				name = spider_webs
+				duration = -1
+			}
+		}
+	}
 }
 
 # country
