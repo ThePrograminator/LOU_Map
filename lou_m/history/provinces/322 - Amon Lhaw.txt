@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 5
+base_manpower = 4
 
 add_core = Y95
 owner = Y95
@@ -26,6 +26,12 @@ religion = religion_nenedain
 trade_goods = tropical_wood
 
 hre = no
+
+capital_1_building = yes
+fort_pallisade_building = yes
+outpost_building = yes
+work_camp_building = yes
+temple_building = yes
 
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human

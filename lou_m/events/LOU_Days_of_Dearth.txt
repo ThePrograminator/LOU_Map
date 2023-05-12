@@ -33,7 +33,7 @@ country_event = {
 			add_province_modifier = {
 				name = days_of_dearth
 				duration = 360
-				desc = days_of_dearth_tooltip
+				#desc = days_of_dearth_tooltip
 			}
 		}
 
@@ -49,9 +49,51 @@ country_event = {
 				add_province_modifier = {
 					name = days_of_dearth
 					duration = 360
-					desc = days_of_dearth_tooltip
+					#desc = days_of_dearth_tooltip
 				}
 			}
+		}
+
+	}
+}
+
+country_event = {
+	id = LOU_Days_of_Dearth.2
+	title = "LOU_Days_of_Dearth.2.t"
+	desc = "LOU_Days_of_Dearth.2.d"
+	picture = FAMINE_eventpicture
+	
+	trigger = {
+		has_country_flag = days_of_dearth_begins
+		NOT = {
+			has_country_flag = days_of_dearth_ends
+		}
+		OR = {
+			tag = Y26
+			tag = Y27
+			tag = V50
+		}
+		capital_scope = {
+			NOT = {
+				has_province_modifier = days_of_dearth
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "LOU_Days_of_Dearth.2.a"
+
+		add_stability = 1
+		add_inflation = -3
+		add_treasury = 50
+		add_manpower = 5
+
+		hidden_effect = {
+			set_country_flag = days_of_dearth_ends
 		}
 
 	}
