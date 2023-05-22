@@ -1715,101 +1715,63 @@ on_province_owner_change = {
 			}
 		}
 	}
+
 	if = {
 		limit = {
 			is_capital = no
-			has_building = capital_1_building
+			province_human_has_capital_buildings = yes
 		}
 		remove_building = capital_1_building
-		add_building = city_1_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_2_building
-		}
 		remove_building = capital_2_building
-		add_building = city_2_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_3_building
-		}
 		remove_building = capital_3_building
-		add_building = city_3_building
+
+		add_latest_human_building = {
+			city = yes
+			builder = ROOT
+		}
 	}
 	if = {
 		limit = {
 			is_capital = no
-			has_building = capital_1_dwarf_building
+			province_dwarf_has_capital_buildings = yes
 		}
 		remove_building = capital_1_dwarf_building
-		add_building = hold_1_dwarf_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_2_dwarf_building
-		}
 		remove_building = capital_2_dwarf_building
-		add_building = hold_2_dwarf_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_3_dwarf_building
-		}
 		remove_building = capital_3_dwarf_building
-		add_building = hold_3_dwarf_building
+
+		add_latest_dwarf_building = {
+			fortress = yes
+			builder = ROOT
+		}
 	}
 	if = {
 		limit = {
 			is_capital = no
-			has_building = capital_1_elf_building
+			province_elf_has_capital_buildings = yes
 		}
 		remove_building = capital_1_elf_building
-		add_building = town_1_elf_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_2_elf_building
-		}
 		remove_building = capital_2_elf_building
-		add_building = town_2_elf_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_3_elf_building
-		}
 		remove_building = capital_3_elf_building
-		add_building = town_3_elf_building
+
+		add_latest_elf_building = {
+			city = yes
+			builder = ROOT
+		}
 	}
+
 	if = {
 		limit = {
 			is_capital = no
-			has_building = capital_1_orc_building
+			province_orc_has_capital_buildings = yes
 		}
 		remove_building = capital_1_orc_building
-		add_building = encampment_1_orc_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_2_orc_building
-		}
 		remove_building = capital_2_orc_building
-		add_building = encampment_3_orc_building
-	}
-	if = {
-		limit = {
-			is_capital = no
-			has_building = capital_3_orc_building
-		}
 		remove_building = capital_3_orc_building
-		add_building = encampment_3_orc_building
+
+		add_latest_orc_building = {
+			city = yes
+			builder = ROOT
+		}
 	}
 }
 
@@ -2308,7 +2270,27 @@ on_force_conversion = {
 
 on_institution_embracement = {}
 on_national_focus_change = {}
-on_capital_moved = {}
+on_capital_moved = {
+	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - province : [Root.GetName] - owner : [Owner.GetName] - old owner : [From.GetName] - on_capital_moved" }
+
+	FROM = {
+		remove_building = capital_1_building
+		remove_building = capital_2_building
+		remove_building = capital_3_building
+
+		remove_building = capital_1_dwarf_building
+		remove_building = capital_2_dwarf_building
+		remove_building = capital_3_dwarf_building
+
+		remove_building = capital_1_elf_building
+		remove_building = capital_2_elf_building
+		remove_building = capital_3_elf_building
+
+		remove_building = capital_1_orc_building
+		remove_building = capital_2_orc_building
+		remove_building = capital_3_orc_building
+	}
+}
 
 #ROOT = province that was expanded in, FROM = country that did it
 on_expanded_infrastructure = {

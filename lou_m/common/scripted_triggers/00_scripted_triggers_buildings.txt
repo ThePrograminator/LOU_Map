@@ -86,6 +86,25 @@ province_human_has_main_building_tier_2 = { #Province Scope
 	}
 }
 
+province_human_has_main_building_tier_3 = { #Province Scope
+	OR = {
+		has_building = city_2_building
+		has_building = city_3_building
+		has_building = fortress_2_building
+		has_building = fortress_3_building
+		has_building = capital_2_building
+		has_building = capital_3_building
+	}
+}
+
+province_human_has_main_building_tier_4 = { #Province Scope
+	OR = {
+		has_building = city_3_building
+		has_building = fortress_3_building
+		has_building = capital_3_building
+	}
+}
+
 province_human_has_fortress_building_tier_3 = { #Province Scope
 	OR = {
 		has_building = fortress_2_building
@@ -570,6 +589,138 @@ province_human_has_trade_building_tier_2 = { #Province Scope
 			has_building = marketplace_building
 			has_building = trade_depot_building
 			has_building = forum_building
+		}
+	}
+}
+
+province_has_current_tech_human_capital_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = province_has_current_tech_capital_trigger_tt
+		if = {
+			limit = {
+				owner = {
+					NOT = { adm_tech = 7 }
+				}
+			}
+			has_building = capital_1_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					AND = {
+						adm_tech = 7
+						NOT = { adm_tech = 15 }
+					}
+				}
+			}
+			has_building = capital_2_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					adm_tech = 15
+				}
+			}
+			has_building = capital_3_building
+		}
+	}
+}
+
+province_has_current_tech_dwarf_capital_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = province_has_current_tech_capital_trigger_tt
+		if = {
+			limit = {
+				owner = {
+					NOT = { adm_tech = 7 }
+				}
+			}
+			has_building = capital_1_dwarf_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					AND = {
+						adm_tech = 7
+						NOT = { adm_tech = 15 }
+					}
+				}
+			}
+			has_building = capital_2_dwarf_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					dip_tech = 15
+				}
+			}
+			has_building = capital_3_dwarf_building
+		}
+	}
+}
+
+province_has_current_tech_elf_capital_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = province_has_current_tech_capital_trigger_tt
+		if = {
+			limit = {
+				owner = {
+					NOT = { adm_tech = 7 }
+				}
+			}
+			has_building = capital_1_elf_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					AND = {
+						adm_tech = 7
+						NOT = { adm_tech = 15 }
+					}
+				}
+			}
+			has_building = capital_2_elf_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					dip_tech = 15
+				}
+			}
+			has_building = capital_3_elf_building
+		}
+	}
+}
+
+province_has_current_tech_orc_capital_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = province_has_current_tech_capital_trigger_tt
+		if = {
+			limit = {
+				owner = {
+					NOT = { adm_tech = 7 }
+				}
+			}
+			has_building = capital_1_orc_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					AND = {
+						adm_tech = 7
+						NOT = { adm_tech = 15 }
+					}
+				}
+			}
+			has_building = capital_2_orc_building
+		}
+		else_if = {
+			limit = {
+				owner = {
+					dip_tech = 15
+				}
+			}
+			has_building = capital_3_orc_building
 		}
 	}
 }
