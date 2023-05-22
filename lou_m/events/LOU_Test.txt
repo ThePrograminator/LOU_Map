@@ -1,0 +1,95 @@
+namespace = LOU_test
+
+# Add global start-up stuff here
+province_event = {
+	id = LOU_test.1
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    is_triggered_only = yes
+
+    trigger = {
+        
+    }
+
+    option = {
+        name = "LOU_test.1.a"
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global LOU_test" }
+        add_latest_human_building = {
+        city = yes
+        builder = ROOT
+      }
+    }  
+
+    option = {
+        name = "LOU_test.2.b"
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global LOU_test" }
+        add_latest_human_building = {
+        tax = yes
+        builder = ROOT
+      }
+    }
+
+    option = {
+        name = "LOU_test.2.c"
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global LOU_test" }
+        add_latest_human_building = {
+        trade = yes
+        builder = ROOT
+      }
+    }
+
+    option = {
+        name = "LOU_test.2.d"
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global LOU_test" }
+        add_latest_human_building = {
+        fort = yes
+        builder = ROOT
+      }
+    }
+}
+
+# Add global start-up stuff here
+country_event = {
+	id = LOU_test.2
+    title = dummy.2.t
+	desc = dummy.2.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    is_triggered_only = yes
+
+    trigger = {
+      any_owned_province = {
+        OR = {
+          province_human_has_capital_buildings = yes
+          province_dwarf_has_capital_buildings = yes
+          province_elf_has_capital_buildings = yes
+          province_orc_has_capital_buildings = yes
+        }
+      }
+    }
+
+    option = {
+        name = "LOU_test.2.a"
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global LOU_test" }
+
+      every_owned_province = {
+        remove_building = capital_1_building
+        remove_building = capital_2_building
+        remove_building = capital_3_building
+    
+        remove_building = capital_1_dwarf_building
+        remove_building = capital_2_dwarf_building
+        remove_building = capital_3_dwarf_building
+    
+        remove_building = capital_1_elf_building
+        remove_building = capital_2_elf_building
+        remove_building = capital_3_elf_building
+    
+        remove_building = capital_1_orc_building
+        remove_building = capital_2_orc_building
+        remove_building = capital_3_orc_building
+      }
+    }  
+}
