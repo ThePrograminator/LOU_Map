@@ -21,6 +21,175 @@ on_startup = {
 		LOU_story.3 # Company of Thorin
 		LOU_story.6 # Fellowship of the Ring
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {			
+			limit = {				
+				region = vales_of_anduin_region
+				NOT = {					
+					area = lothlorien_area
+				}
+			}
+			add_province_modifier = {
+				name = long_winter_mild
+				duration = 152
+				desc = long_winter_mild_tooltip
+			}
+		}
+	}
+		
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {
+			limit = {				
+				superregion = eriador_superregion
+				NOT = {
+					region = enedhwaith_region
+					region = dunland_region
+					region = lindon_region
+					region = forlindon_region
+					region = harlindon_region
+					area = mindolhendi_area
+					province_id = 232
+				}
+			}
+			add_province_modifier = {
+				name = long_winter_normal
+				duration = 152
+				desc = long_winter_normal_tooltip
+			}
+		}
+	}
+			
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {
+			limit = {				
+				OR = {
+					superregion = rohan_superregion
+					region = enedhwaith_region
+					region = dunland_region
+					region = old_pukel_land_region
+				}
+			}
+			add_province_modifier = {
+				name = long_winter_severe
+				duration = 152
+				desc = long_winter_severe_tooltip
+			}
+		}
+	}
+
+	if = {
+		every_province = {
+			limit = {
+				culture_group = culture_group_drughu
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = unique_old_forest
+					has_terrain = unique_fangorn
+					has_terrain = unique_lothloria
+					has_terrain = unique_tom_bombadil
+					has_terrain = unique_nan_nimrodel
+					has_terrain = unique_cerin_amroth
+					has_terrain = unique_caras_galadhon
+					has_terrain = unique_egladil
+					has_terrain = jungle
+					has_terrain = unique_mirkwood
+					has_terrain = unique_mirkwood_mild
+					has_terrain = unique_mirkwood_west
+					has_terrain = unique_mirkwood_mountains
+					has_terrain = unique_mirkwood_settlement
+					has_terrain = unique_gulduin
+					has_terrain = unique_thalls
+					has_terrain = unique_celebannon
+					has_terrain = unique_wood_elven_town
+					has_terrain = unique_halifirien
+					has_terrain = unique_ithilien_north
+					has_terrain = marsh
+					has_terrain = hills
+					has_terrain = mountain
+					has_terrain = highlands
+				}
+			}
+
+			add_province_modifier = {
+				name = drughu_wildmen
+				duration = -1
+				desc = drughu_wildmen_tooltip
+			}
+		}
+	}
+	
+	if = {
+		every_province = {
+			limit = {
+				culture = culture_spider
+			}
+
+			add_province_modifier = {
+				name = spider_webs
+				duration = -1
+			}
+		}
+	}
+		
+	if = {
+		every_province = {
+			limit = {
+				OR = {
+					culture = culture_ents
+					culture = culture_huorn
+				}
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = unique_old_forest
+					has_terrain = unique_fangorn
+					has_terrain = unique_lothloria
+					has_terrain = unique_tom_bombadil
+					has_terrain = unique_nan_nimrodel
+					has_terrain = unique_cerin_amroth
+					has_terrain = unique_caras_galadhon
+					has_terrain = unique_egladil
+					has_terrain = jungle
+					has_terrain = unique_mirkwood
+					has_terrain = unique_mirkwood_mild
+					has_terrain = unique_mirkwood_west
+					has_terrain = unique_mirkwood_mountains
+					has_terrain = unique_mirkwood_settlement
+					has_terrain = unique_gulduin
+					has_terrain = unique_thalls
+					has_terrain = unique_celebannon
+					has_terrain = unique_wood_elven_town
+					has_terrain = unique_halifirien
+					has_terrain = unique_ithilien_north
+				}
+			}
+
+			add_province_modifier = {
+				name = forest_huorns
+				duration = -1
+			}
+		}
+	}
 }
 
 # country

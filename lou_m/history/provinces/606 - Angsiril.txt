@@ -1,29 +1,29 @@
-# Province ID : 245
-# Province Name : Dol Gormaen
-# Province RGB : (73, 95, 20)
-# Province Area : null
-# Province Area : null
-# Province Super Region : null
+# Province ID : 606
+# Province Name : Angsiril
+# Province RGB : (100, 85, 91)
+# Province Area : Nan Angmar
+# Province Region : Angmar
+# Province Super Region : Forodwaith
 # Province Continent : Middle Earth
-# Province Tradenode : null
-# Province Climate : null
+# Province Tradenode : Carn Dûm
+# Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
 is_city = yes
 
-base_tax = 1
+base_tax = 2
 base_production = 3
-base_manpower = 2
+base_manpower = 4
 
-add_core = V04
-owner = V04
-controller = V04
+add_core = Y53
+owner = Y53
+controller = Y53
 
-culture = culture_ice_orkish
+culture = culture_angmarrim
 religion = religion_orkish
 
-trade_goods = livestock
+trade_goods = stone
 
 hre = no
 
@@ -75,5 +75,4 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
 

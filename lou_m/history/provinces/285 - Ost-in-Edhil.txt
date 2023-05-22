@@ -21,6 +21,10 @@ trade_goods = plunder
 center_of_trade = 1
 #Eriador Superregion Discovery
 add_core = Y56
+add_province_modifier = {
+	name = ruins_debuff
+	duration = -1
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

@@ -1,0 +1,35 @@
+#The Long Winter Notification (modifiers applied on_startup)
+namespace = LOU_Long_Winter
+
+country_event = {
+	id = LOU_Long_Winter.1
+	title = "LOU_Long_Winter.1.t"
+	desc = "LOU_Long_Winter.1.d"
+	picture = fellowship_caradhras_eventpicture
+	
+	trigger = {
+		NOT = {
+			has_country_flag = long_winter_notified
+		}
+		any_owned_province = {
+			OR = {
+				has_province_modifier = long_winter_mild
+				has_province_modifier = long_winter_normal
+				has_province_modifier = long_winter_severe
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "LOU_Long_Winter.1.a"
+
+		hidden_effect = {
+			set_country_flag = long_winter_notified
+		}
+	}
+}
+	

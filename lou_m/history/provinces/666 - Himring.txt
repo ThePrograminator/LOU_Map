@@ -1,33 +1,32 @@
-# Province ID : 606
-# Province Name : Parth Gurthil
-# Province RGB : (100, 85, 91)
-# Province Area : Nan Angmar
-# Province Region : Angmar
-# Province Super Region : Forodwaith
+# Province ID : 666
+# Province Name : Himring
+# Province RGB : (145, 198, 108)
+# Province Area : Himring
+# Province Region : Tol Fuin
+# Province Super Region : Eriador
 # Province Continent : Middle Earth
-# Province Tradenode : Carn Dûm
-# Province Climate : Severe_winter
+# Province Tradenode : Londolas
+# Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
-add_core = Y53
-owner = Y53
-controller = Y53
-
-culture = culture_orkish
-religion = religion_orkish
-
-trade_goods = stone
-
-hre = no
-
-#Forodwaith Superregion Discovery
+owner = Y72
+controller = Y72
+culture = culture_wilderness
+religion = religion_wilderness
+trade_goods = naval_supplies
+add_core = Y72
+add_province_modifier = {
+	name = ruins_debuff
+	duration = -1
+}
+add_province_modifier = {
+	name = himring_fortress_ruins
+	duration = -1
+}
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -35,13 +34,12 @@ discovered_by = lotr_human_rhovanion
 discovered_by = lotr_human_misty_mountains
 discovered_by = lotr_human_eriador
 discovered_by = lotr_human_forodwaith
+discovered_by = lotr_human_near_harad
 discovered_by = lotr_human_rhun
-discovered_by = lotr_human_dyria
 discovered_by = lotr_dwarven
+discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
-discovered_by = lotr_dwarven_dyria
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -62,17 +60,23 @@ discovered_by = lotr_hobbit_rhovanion
 discovered_by = lotr_orc
 discovered_by = lotr_orc_rohan
 discovered_by = lotr_orc_gondor
-discovered_by = lotr_orc_rhovanion
 discovered_by = lotr_orc_misty_mountains
 discovered_by = lotr_orc_eriador
 discovered_by = lotr_orc_forodwaith
+discovered_by = lotr_orc_rhovanion
+discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
-discovered_by = lotr_orc_dyria
 discovered_by = lotr_troll
 discovered_by = lotr_uruk_hai
 discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-discovered_by = lotr_wights_dyria
-
+fort_2_elf_building = yes
+temple_elf_building = yes
+workshop_elf_building = yes
+warriors_gallery_building = yes
+green_pastures_elf_building = yes
+fort_high_walls_elf_building = yes
+wall_bastions_elf_building = yes
+haven_elf_building = yes

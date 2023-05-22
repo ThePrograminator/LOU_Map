@@ -59,10 +59,12 @@ country_event = {
 				
 		223 = {
 			add_devastation = -25
-			add_base_tax = 6
-			add_base_production = 6
-			add_base_manpower = 9
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 7
 			center_of_trade = 2
+			remove_building = settlement_building
+			remove_building = fort_pallisade_building
 			add_building = capital_2_building
 			add_building = fort_stronghold_building
 			add_building = army_camp_building
@@ -162,10 +164,12 @@ country_event = {
 				
 		223 = {
 			add_devastation = -25
-			add_base_tax = 6
-			add_base_production = 6
-			add_base_manpower = 9
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 7
 			center_of_trade = 2
+			remove_building = settlement_building
+			remove_building = fort_pallisade_building
 			add_building = capital_2_building
 			add_building = fort_stronghold_building
 			add_building = army_camp_building
@@ -256,10 +260,12 @@ country_event = {
 				
 			223 = {
 				add_devastation = -25
-				add_base_tax = 6
-				add_base_production = 6
-				add_base_manpower = 9
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 7
 				center_of_trade = 2
+				remove_building = settlement_building
+				remove_building = fort_pallisade_building
 				add_building = capital_2_building
 				add_building = fort_stronghold_building
 				add_building = army_camp_building
@@ -268,9 +274,9 @@ country_event = {
 			}
 	
 			744 = {
-				add_base_tax = 3
-				add_base_production = 3
-				add_base_manpower = 3
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
 				add_building = settlement_building
 				add_building = work_camp_building
 			}
