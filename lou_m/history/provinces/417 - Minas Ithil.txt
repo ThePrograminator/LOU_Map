@@ -40,6 +40,11 @@ large_arena_building=yes
 prisoner_cage_orc_building=yes
 tortur_chambers_orc_building=yes
 
+add_province_modifier = {
+	name = minas_morgul
+	duration = -1
+}
+
 #Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor

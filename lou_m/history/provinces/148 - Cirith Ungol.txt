@@ -49,6 +49,11 @@ tortur_chambers_orc_building=yes
 
 center_of_trade = 1
 
+add_province_modifier = {
+	name = cirith_ungol
+	duration = -1
+}
+
 2942.1.1 = {
 	add_core = V17
 	owner = V17

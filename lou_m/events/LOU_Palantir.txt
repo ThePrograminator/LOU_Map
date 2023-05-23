@@ -1,0 +1,47 @@
+#Palantir Events
+namespace = LOU_Palantir
+
+province_event = {
+	id = LOU_Palantir.1
+	title = "LOU_Palantir.1.t"
+	desc = "LOU_Palantir.1.d"
+	picture = LOOKING_IN_THE_PALANTIR_eventPicture
+
+	trigger = {
+		NOT = {
+			has_country_flag = palantir_owner
+		}
+		any_owned_province = {
+			OR = {
+				has_province_modifier = osgiliath_stone
+				has_province_modifier = amon_sul_stone
+				has_province_modifier = annuminas_stone
+				has_province_modifier = ithil_stone
+				has_province_modifier = anor_stone
+				has_province_modifier = orthanc_stone
+				has_province_modifier = elostirion_stone
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "LOU_Palantir.1.a"
+        
+		add_stability = 1
+		# add_adm_power = 100
+		# add_prestige = 50
+
+		# add_country_modifier = {
+		# 	name = palantir_unlearned
+		# 	duration = -1
+		# }
+
+		hidden_effect = {
+			set_country_flag = palantir_owner
+		}
+	}
+}

@@ -2,41 +2,55 @@
 minas_tirith = {
 	local_defensiveness = 1
 	local_hostile_attrition = 3
-	local_manpower_modifier = 0.25
+	local_manpower_modifier = 0.50
 	fort_level = 5
 	supply_limit_modifier = 1
 	province_trade_power_value = 1
-	trade_goods_size_modifier = 0.25
-	trade_value_modifier = 0.15
+	trade_value_modifier = 0.20
 	local_tax_modifier = 0.15
+	local_production_efficiency = 0.10
 	allowed_num_of_manufactories = 2
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
 }
 
 barad_dur = {
 	local_defensiveness = 1
 	local_hostile_attrition = 5
-	local_manpower_modifier = 0.25
+	local_manpower_modifier = 0.50
 	fort_level = 5
 	supply_limit_modifier = 1
 	province_trade_power_value = 1
 	local_production_efficiency = 0.25
 	local_build_time = -0.25
 	allowed_num_of_manufactories = 2
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
 }
 
 osgiliath = {
 	local_defensiveness = 1
+	local_manpower_modifier = 1
 	fort_level = 5
-	supply_limit_modifier = 0.5
-	allowed_num_of_manufactories = 1
+	supply_limit_modifier = 1
+	province_trade_power_value = 1
+	trade_goods_size_modifier = 0.25
+	trade_value_modifier = 0.25
+	local_tax_modifier = 0.25
+	local_production_efficiency = 0.15
+	allowed_num_of_manufactories = 2
 }
 
-helmsdeep = {
+ruined_osgiliath = {
+	local_defensiveness = 0.15
+}
+
+helms_deep = {
 	local_defensiveness = 1
-	local_hostile_attrition = 3
+	local_hostile_attrition = 5
 	fort_level = 5
 	supply_limit_modifier = 0.5
-	allowed_num_of_manufactories = 1
+	allowed_num_of_manufactories = 2
 }
 
 wilderness_debuff = {
@@ -127,7 +141,7 @@ walls_of_pelargir = {
 	 fort_level = 2
 	 local_defensiveness = 0.15
 	 garrison_growth = 0.05
-	 local_manpower_modifier = 0.2
+	 local_manpower_modifier = 0.25
 	 supply_limit_modifier = 0.50
 	 allowed_num_of_manufactories = 1
 }
@@ -183,8 +197,10 @@ dol_guldur = {
 	local_defensiveness = 0.25
 	supply_limit_modifier = 0.50
 	local_unrest = -10
-	local_production_efficiency = 0.15
+	local_production_efficiency = 0.10
 	allowed_num_of_manufactories = 1
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
 }
 
 harad_trade_route = {
@@ -197,9 +213,12 @@ harad_trade_route = {
 isengard = {
 	fort_level = 3
 	local_defensiveness = 1
-	supply_limit_modifier = 0.50
+	supply_limit_modifier = 1
+	local_manpower_modifier = 0.50
 	local_production_efficiency = 0.15
-	allowed_num_of_manufactories = 1
+	allowed_num_of_manufactories = 2
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
 }
 
 rhosgobel = {
@@ -209,7 +228,7 @@ rhosgobel = {
 	supply_limit_modifier = 0.50
 	local_unrest = -10
 	local_hostile_movement_speed = 0.50
-	allowed_num_of_manufactories = 1
+	allowed_num_of_manufactories = 2
 }
 
 henneth_annun = {
@@ -231,7 +250,7 @@ cerin_amroth = {
 	fort_level = 3
 	local_defensiveness = 0.5
 	supply_limit_modifier = 0.5
-	local_hostile_attrition = 2
+	local_hostile_attrition = 3
 	allowed_num_of_manufactories = 1
 }
 
@@ -239,8 +258,10 @@ caras_galadhon = {
 	fort_level = 5
 	local_defensiveness = 1
 	supply_limit_modifier = 0.5
-	local_hostile_attrition = 4
-	allowed_num_of_manufactories = 1
+	local_hostile_attrition = 5
+	allowed_num_of_manufactories = 2
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
 }
 
 mallorn_trees = {
@@ -311,14 +332,14 @@ drughu_wildmen = {
 
 himring_fortress_ruins = {
 	fort_level = 1
-	local_defensiveness = 0.15
+	local_defensiveness = 0.25
 	local_build_cost = 0.25
 	local_build_time = 0.25
 }
 
 spider_webs = {
 	local_hostile_movement_speed = -0.25
-	local_hostile_attrition = 2
+	local_hostile_attrition = 3
 	local_defender_dice_roll_bonus = 1
 	local_manpower_modifier = -0.15
 }
@@ -334,18 +355,58 @@ imladris = {
 	fort_level = 5
 	local_defensiveness = 1
 	supply_limit_modifier = 0.5
+	local_hostile_attrition = 5
+	allowed_num_of_manufactories = 2
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
+}
+
+cair_andros = {
+	fort_level = 3
+	local_defensiveness = 0.25
+	supply_limit_modifier = 0.25
 	local_hostile_attrition = 3
+	local_manpower_modifier = 0.25
 	allowed_num_of_manufactories = 1
 }
 
 minas_morgul = {
-
+	local_defensiveness = 1
+	local_hostile_attrition = 5
+	local_manpower_modifier = 0.50
+	fort_level = 5
+	supply_limit_modifier = 1
+	province_trade_power_value = 1
+	local_production_efficiency = 0.15
+	allowed_num_of_manufactories = 2
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
 }
 
 cirith_ungol = {
-	
+	fort_level = 3
+	local_defensiveness = 0.25
+	supply_limit_modifier = 0.25
+	local_hostile_attrition = 3
+	local_manpower_modifier = 0.25
+	allowed_num_of_manufactories = 1
 }
 
-cair_andros = {
-
+shelobs_lair = {
+	local_hostile_attrition = 8
+	local_hostile_movement_speed = -0.9
+	local_attacker_dice_roll_bonus = -3
+	local_manpower_modifier = -0.85
+	supply_limit_modifier = -0.50
+	local_tax_modifier = -1
+	local_production_efficiency = -1
+	local_governing_cost = -0.95
+	local_development_cost = 5
+	local_build_cost = 5
+	local_build_time = 5
+	local_culture_conversion_cost = 5
+	min_local_autonomy = 1
+	local_autonomy = 5
+	local_unrest = -15
+	local_missionary_strength = 5
 }

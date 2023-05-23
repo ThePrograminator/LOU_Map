@@ -1,32 +1,56 @@
-#Palantir Event Modifiers - Country and Province
-palantir_country_modifier = {
-}
-
+#Palantir Event - Province Modifiers
 osgiliath_stone= {
-
+	local_development_cost = -0.1
 }
 
 amon_sul_stone = {
-
+	local_development_cost = -0.1
 }
 
 annuminas_stone = {
-
+	local_development_cost = -0.1
 }
 
 ithil_stone = {
-
+	local_development_cost = -0.1
 }
 
 anor_stone = {
-
+	local_development_cost = -0.1
 }
 
 orthanc_stone = {
-
+	local_development_cost = -0.1
 }
 
 elostirion_stone = {
-
+	local_development_cost = -0.1
 }
 
+#Palantir Event - Country Modifiers
+
+palantir_unlearned = {
+	prestige = 0.25
+	global_spy_defence = -0.25
+	global_unrest = 2
+}
+
+palantir_novice = {
+	prestige = 0.50
+	global_spy_defence = -0.10
+	spy_offence = 0.10
+}
+
+palantir_student = {
+	prestige = 0.75
+	global_spy_defence = 0.15
+	spy_offence = 0.25
+	legitimacy = 0.5
+}
+
+palantir_master = {
+	prestige = 1
+	global_spy_defence = 0.25
+	spy_offence = 0.50
+	legitimacy = 1
+}

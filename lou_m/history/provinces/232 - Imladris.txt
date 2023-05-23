@@ -19,6 +19,10 @@ culture = culture_noldor
 religion = religion_calaquendi
 trade_goods = miruvor
 center_of_trade = 2
+add_province_modifier = {
+	name = imladris
+	duration = -1
+}
 #Eriador Superregion Discovery
 add_core = Y80
 discovered_by = lotr_human
@@ -66,14 +70,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-capital_3_elf_building = yes
-fort_high_walls_elf_building = yes
-wall_bastions_elf_building = yes
-heros_shrine_building = yes
-grand_stables_elf_building = yes
-grand_forge_elf_building = yes
-amphitheatre_elf_building = yes
-exotic_wares_market_elf_building = yes
-statue_of_the_elders_elf_building = yes
-mirror_fountain_elf_building = yes
-star_of_earendil_shrine_elf_building = yes
