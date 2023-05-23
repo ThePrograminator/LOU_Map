@@ -30,6 +30,7 @@ barad_dur = {
 
 osgiliath = {
 	local_defensiveness = 1
+	local_hostile_attrition = 3
 	local_manpower_modifier = 1
 	fort_level = 5
 	supply_limit_modifier = 1
@@ -42,7 +43,8 @@ osgiliath = {
 }
 
 ruined_osgiliath = {
-	local_defensiveness = 0.15
+	local_defensiveness = 0.25
+	local_defender_dice_roll_bonus = 2
 }
 
 helms_deep = {
@@ -139,7 +141,7 @@ ancient_capital_of_the_tarlai = {
 walls_of_pelargir = {
 	 local_hostile_attrition = 2
 	 fort_level = 2
-	 local_defensiveness = 0.15
+	 local_defensiveness = 0.25
 	 garrison_growth = 0.05
 	 local_manpower_modifier = 0.25
 	 supply_limit_modifier = 0.50
@@ -194,7 +196,7 @@ dead_marshes_modifier = {
 dol_guldur = {
 	fort_level = 3
 	local_hostile_attrition = 2
-	local_defensiveness = 0.25
+	local_defensiveness = 0.50
 	supply_limit_modifier = 0.50
 	local_unrest = -10
 	local_production_efficiency = 0.10
@@ -211,7 +213,7 @@ harad_trade_route = {
 }
 
 isengard = {
-	fort_level = 3
+	fort_level = 5
 	local_defensiveness = 1
 	supply_limit_modifier = 1
 	local_manpower_modifier = 0.50
@@ -232,8 +234,8 @@ rhosgobel = {
 }
 
 henneth_annun = {
-	fort_level = 2
-	local_defensiveness = 1
+	fort_level = 3
+	local_defensiveness = 0.5
 	supply_limit_modifier = 0.5
 	local_hostile_attrition = 3
 	allowed_num_of_manufactories = 1
@@ -248,7 +250,7 @@ telain_defenses = {
 
 cerin_amroth = {
 	fort_level = 3
-	local_defensiveness = 0.5
+	local_defensiveness = 0.25
 	supply_limit_modifier = 0.5
 	local_hostile_attrition = 3
 	allowed_num_of_manufactories = 1
@@ -332,13 +334,22 @@ drughu_wildmen = {
 
 himring_fortress_ruins = {
 	fort_level = 1
-	local_defensiveness = 0.25
+	local_defensiveness = 0.15
 	local_build_cost = 0.25
 	local_build_time = 0.25
+	local_unrest = -5
+}
+
+himring_fortress_rebuilt = {
+	fort_level = 3
+	local_defensiveness = 1
+	supply_limit_modifier = 1
+	allowed_num_of_manufactories = 2
+	local_development_cost = -0.25
 }
 
 spider_webs = {
-	local_hostile_movement_speed = -0.25
+	local_hostile_movement_speed = -0.50
 	local_hostile_attrition = 3
 	local_defender_dice_roll_bonus = 1
 	local_manpower_modifier = -0.15
@@ -395,6 +406,7 @@ cirith_ungol = {
 shelobs_lair = {
 	local_hostile_attrition = 8
 	local_hostile_movement_speed = -0.9
+	local_friendly_movement_speed = -0.9
 	local_attacker_dice_roll_bonus = -3
 	local_manpower_modifier = -0.85
 	supply_limit_modifier = -0.50
@@ -405,8 +417,11 @@ shelobs_lair = {
 	local_build_cost = 5
 	local_build_time = 5
 	local_culture_conversion_cost = 5
-	min_local_autonomy = 1
-	local_autonomy = 5
+	min_local_autonomy = 95
 	local_unrest = -15
-	local_missionary_strength = 5
+	local_missionary_strength = -5
+}
+
+edoras = {
+
 }

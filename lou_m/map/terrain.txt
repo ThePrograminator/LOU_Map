@@ -202,7 +202,7 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
-			3382 2941 1778 3212 1773 3291
+			3382 2941 1778 3212 1773 3291 3352
 		}
 	}	
 	
@@ -3938,7 +3938,7 @@ categories =  {
 		local_defensiveness = 0.10
 		
 		terrain_override = {
-			1328 507 1223 1224 3331 1174 1549 1553 508 476
+			1328 507 1223 1224 3331 1174 1549 1553 508 476 890
 		}
 	}
 	
@@ -4314,6 +4314,25 @@ categories =  {
 		terrain_override = {
 			3954 2877 3958 3953 3957 3970 3976 3962 3978 3973 3972 3971 3985 3986 3996 4010 4009 2118 2059 2035 2027 
 			2037 4048 4039 2901 2883 4021 3999 4006 953 952 3609 923 924 3281 913 917 3007 2999 3010 925 951
+		}
+	}
+
+	unique_himring = {
+		color = { 255 255 0 }
+		type = mountains
+		sound_type = mountains
+		
+		movement_cost = 0.75
+		local_development_cost = -0.10
+		allowed_num_of_buildings = 1
+		nation_designer_cost_multiplier = 1.25
+		defence = 2
+		supply_limit = 10
+		
+		local_defensiveness = 0.15
+		
+		terrain_override = {
+			666
 		}
 	}
 }

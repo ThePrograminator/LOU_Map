@@ -1,7 +1,7 @@
 #Palantir Events
 namespace = LOU_Palantir
 
-province_event = {
+country_event = {
 	id = LOU_Palantir.1
 	title = "LOU_Palantir.1.t"
 	desc = "LOU_Palantir.1.d"
@@ -31,14 +31,12 @@ province_event = {
 	option = {
 		name = "LOU_Palantir.1.a"
         
-		add_stability = 1
-		# add_adm_power = 100
-		# add_prestige = 50
+		add_prestige = 25
 
-		# add_country_modifier = {
-		# 	name = palantir_unlearned
-		# 	duration = -1
-		# }
+		add_country_modifier = {
+			name = palantir_unlearned
+			duration = -1
+		}
 
 		hidden_effect = {
 			set_country_flag = palantir_owner
