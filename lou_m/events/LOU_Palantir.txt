@@ -33,10 +33,10 @@ country_event = {
         
 		add_prestige = 50
 
-		# add_country_modifier = {								#Palantir Education System not yet implemented, so do not use palantir_unlearned
-		# 	name = palantir_unlearned
-		# 	duration = -1
-		# }
+		add_country_modifier = {								#Palantir Education System not yet implemented, this is t4 of 4 ranks
+			name = palantir_master
+			duration = -1
+		}
 
 		hidden_effect = {
 			set_country_flag = palantir_owner

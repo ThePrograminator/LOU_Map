@@ -18,10 +18,15 @@ controller = X01
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 trade_goods = stone
+add_permanent_province_modifier = {
+	name = the_causeway_road
+	duration = -1
+}
 add_province_modifier = {
 	name = ruins_debuff
 	duration = -1
 }
+
 #Gondor Superregion Discovery
 add_core = X01
 discovered_by = lotr_human
