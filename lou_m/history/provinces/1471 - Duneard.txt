@@ -18,6 +18,10 @@ controller = Z50
 culture = culture_dunlendings
 religion = religion_daen
 trade_goods = paper
+add_permanent_province_modifier = {
+	name = south_road
+	duration = -1
+}
 add_core = Z50
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
