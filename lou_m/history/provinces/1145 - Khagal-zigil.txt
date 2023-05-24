@@ -1,9 +1,9 @@
-# Province ID : 866
-# Province Name : Irerock
-# Province RGB : (181, 199, 72)
-# Province Area : Anvilmount
+# Province ID : 1145
+# Province Name : Thyrn Sûl
+# Province RGB : (9, 69, 66)
+# Province Area : Uthrael Béoac
 # Province Region : The Grey Mountains
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Dáin's Halls
 # Province Climate : Severe_winter
@@ -13,7 +13,7 @@
 is_city = yes
 
 base_tax = 1
-base_production = 1
+base_production = 4
 base_manpower = 1
 
 add_core = Y30
@@ -23,11 +23,17 @@ controller = Y30
 culture = culture_orkish
 religion = religion_orkish
 
-trade_goods = iron
+trade_goods = silver
 
 hre = no
 
-#Rhovanion Superregion Discovery
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

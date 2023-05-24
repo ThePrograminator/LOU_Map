@@ -31,12 +31,12 @@ country_event = {
 	option = {
 		name = "LOU_Palantir.1.a"
         
-		add_prestige = 25
+		add_prestige = 50
 
-		add_country_modifier = {
-			name = palantir_unlearned
-			duration = -1
-		}
+		# add_country_modifier = {								#Palantir Education System not yet implemented, so do not use palantir_unlearned
+		# 	name = palantir_unlearned
+		# 	duration = -1
+		# }
 
 		hidden_effect = {
 			set_country_flag = palantir_owner

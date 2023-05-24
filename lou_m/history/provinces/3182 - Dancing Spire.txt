@@ -1,9 +1,9 @@
-# Province ID : 410
-# Province Name : Zeleg-Ubraz
-# Province RGB : (137, 144, 78)
-# Province Area : Nordinbad
+# Province ID : 3182
+# Province Name : Khagal-zigil
+# Province RGB : (31, 61, 136)
+# Province Area : Gondmaeglorn
 # Province Region : The Grey Mountains
-# Province Super Region : null
+# Province Super Region : Rhovanion
 # Province Continent : Middle Earth
 # Province Tradenode : Dáin's Halls
 # Province Climate : Severe_winter
@@ -12,19 +12,22 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 1
+base_tax = 1
+base_production = 1
+base_manpower = 4
 
-add_core = Y06
-owner = Y06
-controller = Y06
+add_core = Y30
+owner = Y30
+controller = Y30
 
-culture = culture_firebeard
-religion = religion_mahal
+culture = culture_dragons
+religion = religion_dragons
 
-trade_goods = copper
+trade_goods = stone
 
+hre = no
+
+#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

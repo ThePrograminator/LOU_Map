@@ -77,6 +77,17 @@ province_wight_debuff = {
 	culture_conversion_cost = 0.10
 }
 
+province_dragon_debuff = {
+    min_local_autonomy = 95
+	local_tax_modifier = -0.95
+    local_production_efficiency = -0.95
+    province_trade_power_modifier = -0.95
+	local_development_cost = 1
+    
+	local_missionary_strength = -0.03
+	culture_conversion_cost = 0.30
+}
+
 province_troll_debuff = {
     min_local_autonomy = 95
 	local_tax_modifier = -0.95

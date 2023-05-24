@@ -1,9 +1,9 @@
-# Province ID : 1145
-# Province Name : Thyrn Sûl
-# Province RGB : (9, 69, 66)
-# Province Area : Uthrael Béoac
-# Province Region : The Grey Mountains
-# Province Super Region : null
+# Province ID : 3184
+# Province Name : Urus-Fenjar
+# Province RGB : (31, 202, 131)
+# Province Area : Talath Oiohelka
+# Province Region : Forodwaith
+# Province Super Region : Forodwaith
 # Province Continent : Middle Earth
 # Province Tradenode : Dáin's Halls
 # Province Climate : Severe_winter
@@ -16,17 +16,18 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-add_core = Y30
-owner = Y30
-controller = Y30
+add_core = Y31
+owner = Y31
+controller = Y31
 
-culture = culture_orkish
-religion = religion_orkish
+culture = culture_dragons
+religion = religion_dragons
 
-trade_goods = stone
+trade_goods = copper
 
 hre = no
 
+#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -34,13 +35,12 @@ discovered_by = lotr_human_rhovanion
 discovered_by = lotr_human_misty_mountains
 discovered_by = lotr_human_eriador
 discovered_by = lotr_human_forodwaith
-discovered_by = lotr_human_near_harad
 discovered_by = lotr_human_rhun
 discovered_by = lotr_human_dyria
 discovered_by = lotr_dwarven
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
+discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_dyria
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
@@ -66,7 +66,6 @@ discovered_by = lotr_orc_rhovanion
 discovered_by = lotr_orc_misty_mountains
 discovered_by = lotr_orc_eriador
 discovered_by = lotr_orc_forodwaith
-discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_orc_dyria
 discovered_by = lotr_troll

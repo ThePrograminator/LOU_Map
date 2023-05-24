@@ -1,11 +1,11 @@
-# Province ID : 3182
-# Province Name : Khagal-zigil
-# Province RGB : (31, 61, 136)
-# Province Area : Gondmaeglorn
+# Province ID : 3180
+# Province Name : Ghar-Umnûz
+# Province RGB : (186, 160, 172)
+# Province Area : Norr-Dûm
 # Province Region : The Grey Mountains
 # Province Super Region : Rhovanion
 # Province Continent : Middle Earth
-# Province Tradenode : Dáin's Halls
+# Province Tradenode : Erebor
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -14,18 +14,25 @@ is_city = yes
 
 base_tax = 1
 base_production = 1
-base_manpower = 1
+base_manpower = 4
 
 add_core = Y30
 owner = Y30
 controller = Y30
 
-culture = culture_orkish
-religion = religion_orkish
+culture = culture_dragons
+religion = religion_dragons
 
-trade_goods = iron
+trade_goods = silver
 
 hre = no
+
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human
