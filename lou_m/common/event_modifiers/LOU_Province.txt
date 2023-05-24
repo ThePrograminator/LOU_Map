@@ -86,6 +86,7 @@ province_dragon_debuff = {
     
 	local_missionary_strength = -0.03
 	culture_conversion_cost = 0.30
+	local_unrest = -5
 }
 
 province_troll_debuff = {
@@ -220,7 +221,7 @@ harad_trade_route = {
 	province_trade_power_value = 10
 	trade_goods_size_modifier = 0.25
 	trade_value_modifier = 0.15
-	local_friendly_movement_speed = 0.15
+	local_friendly_movement_speed = 0.25
 }
 
 isengard = {
@@ -343,6 +344,15 @@ drughu_wildmen = {
 	local_defender_dice_roll_bonus = 1
 }
 
+half_trollmen = {
+	local_development_cost = -0.25
+	local_build_cost = -0.20
+	supply_limit_modifier = 0.50
+	local_defensiveness = 0.25
+	local_manpower_modifier = 0.15
+	local_hostile_attrition = 3
+}
+
 himring_fortress_ruins = {
 	fort_level = 1
 	local_defensiveness = 0.15
@@ -435,4 +445,22 @@ shelobs_lair = {
 
 edoras = {
 
+}
+
+north_road = {
+	local_friendly_movement_speed = 0.25
+	local_hostile_movement_speed = 0.25
+	province_trade_power_value = 1
+}
+
+south_road = {
+	local_friendly_movement_speed = 0.25
+	local_hostile_movement_speed = 0.25
+	province_trade_power_value = 1
+}
+
+east_road = {
+	local_friendly_movement_speed = 0.25
+	local_hostile_movement_speed = 0.25
+	province_trade_power_value = 1
 }
