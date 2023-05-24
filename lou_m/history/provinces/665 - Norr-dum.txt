@@ -22,6 +22,12 @@ center_of_trade = 1
 #Rhovanion Superregion Discovery
 add_core = Y30
 add_core = Y22
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
