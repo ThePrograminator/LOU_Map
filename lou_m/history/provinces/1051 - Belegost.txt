@@ -10,16 +10,20 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 is_city = yes
-base_tax = 6
-base_production = 8
-base_manpower = 10
+base_tax = 4
+base_production = 6
+base_manpower = 8
 owner = Y38
 controller = Y38
 culture = culture_goblin
 religion = religion_goblin
 trade_goods = gems
+# add_permanent_province_modifier = {				#Not working....
+# 	name = trade_post_modifier
+# 	duration = -1
+# }
 add_permanent_province_modifier = {
-	name = trade_post_modifier
+	name = east_road
 	duration = -1
 }
 #Eriador Superregion Discovery

@@ -401,91 +401,131 @@ slot_03_metraith = {
 			169 = { 
 				trade_share = {
 					country = ROOT
-					share = 30
+					share = 25
 				}
 			}
 			166 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				custom_trigger_tooltip = {
-					tooltip = HAS_BUILDING_MARKET_PLACE
-					OR = {
-						has_building = marketplace_building
-						has_building = trade_depot_building
-						has_building = forum_building
+				OR = {
+					owner = {
+						alliance_with = ROOT
+					}
+					AND = {
+						country_or_non_sovereign_subject_holds = ROOT
+						custom_trigger_tooltip = {
+							tooltip = HAS_BUILDING_MARKET_PLACE
+							OR = {
+								has_building = marketplace_building
+								has_building = trade_depot_building
+								has_building = forum_building
+							}
+						}
 					}
 				}
 			}
-			169 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				custom_trigger_tooltip = {
-					tooltip = HAS_BUILDING_MARKET_PLACE
-					OR = {
-						has_building = marketplace_building
-						has_building = trade_depot_building
-						has_building = forum_building
+			78 = {
+				OR = {
+					owner = {
+						alliance_with = ROOT
+					}
+					AND = {
+						country_or_non_sovereign_subject_holds = ROOT
+						custom_trigger_tooltip = {
+							tooltip = HAS_BUILDING_MARKET_PLACE
+							OR = {
+								has_building = marketplace_building
+								has_building = trade_depot_building
+								has_building = forum_building
+							}
+						}
 					}
 				}
 			}
-			162 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				custom_trigger_tooltip = {
-					tooltip = HAS_BUILDING_MARKET_PLACE
-					OR = {
-						has_building = marketplace_building
-						has_building = trade_depot_building
-						has_building = forum_building
+			80 = {
+				OR = {
+					owner = {
+						alliance_with = ROOT
+					}
+					AND = {
+						country_or_non_sovereign_subject_holds = ROOT
+						custom_trigger_tooltip = {
+							tooltip = HAS_BUILDING_MARKET_PLACE
+							OR = {
+								has_building = marketplace_building
+								has_building = trade_depot_building
+								has_building = forum_building
+							}
+						}
 					}
 				}
 			}
-			3209 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				custom_trigger_tooltip = {
-					tooltip = HAS_BUILDING_MARKET_PLACE
-					OR = {
-						has_building = marketplace_building
-						has_building = trade_depot_building
-						has_building = forum_building
+			81 = {
+				OR = {
+					owner = {
+						alliance_with = ROOT
+					}
+					AND = {
+						country_or_non_sovereign_subject_holds = ROOT
+						custom_trigger_tooltip = {
+							tooltip = HAS_BUILDING_MARKET_PLACE
+							OR = {
+								has_building = marketplace_building
+								has_building = trade_depot_building
+								has_building = forum_building
+							}
+						}
 					}
 				}
 			}
-			170 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				custom_trigger_tooltip = {
-					tooltip = HAS_BUILDING_MARKET_PLACE
-					OR = {
-						has_building = marketplace_building
-						has_building = trade_depot_building
-						has_building = forum_building
+			82 = {
+				OR = {
+					owner = {
+						alliance_with = ROOT
+					}
+					AND = {
+						country_or_non_sovereign_subject_holds = ROOT
+						custom_trigger_tooltip = {
+							tooltip = HAS_BUILDING_MARKET_PLACE
+							OR = {
+								has_building = marketplace_building
+								has_building = trade_depot_building
+								has_building = forum_building
+							}
+						}
 					}
 				}
 			}
 		}
 		effect = { 
 			166 = {
+				remove_province_modifier = redway_road_old
 				add_province_modifier = {
 					name = metraith_rebuilding_the_red_way_modifier
 					duration = -1
 				}
 			}
-			169 = {
+			78 = {
+				remove_province_modifier = redway_road_old
 				add_province_modifier = {
 					name = metraith_rebuilding_the_red_way_modifier
 					duration = -1
 				}
 			}
-			162 = {
+			80 = {
+				remove_province_modifier = redway_road_old
 				add_province_modifier = {
 					name = metraith_rebuilding_the_red_way_modifier
 					duration = -1
 				}
 			}
-			3209 = {
+			81 = {
+				remove_province_modifier = redway_road_old
 				add_province_modifier = {
 					name = metraith_rebuilding_the_red_way_modifier
 					duration = -1
 				}
 			}
-			170 = {
+			82 = {
+				remove_province_modifier = redway_road_old
 				add_province_modifier = {
 					name = metraith_rebuilding_the_red_way_modifier
 					duration = -1
