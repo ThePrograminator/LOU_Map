@@ -18,6 +18,10 @@ controller = X01
 culture = culture_gondor_middlemen_anfalas
 religion = religion_dunedain
 trade_goods = cloth
+add_permanent_province_modifier = {
+	name = rathon_gondor
+	duration = -1
+}
 2758.9.15 = {
 	controller = X27
 	add_devastation = 75
