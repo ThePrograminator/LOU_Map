@@ -335,6 +335,7 @@ drughu_wildmen = {
 	supply_limit_modifier = 0.25
 	local_defensiveness = 0.15
 	local_defender_dice_roll_bonus = 1
+	local_autonomy = 0.10
 }
 
 half_trollmen = {
@@ -344,6 +345,7 @@ half_trollmen = {
 	local_defensiveness = 0.25
 	local_manpower_modifier = 0.15
 	local_hostile_attrition = 3
+	local_autonomy = 0.15
 }
 
 himring_fortress_ruins = {
@@ -438,15 +440,6 @@ shelobs_lair = {
 
 edoras = {
 
-}
-
-kek_yanan = {
-	local_friendly_movement_speed = 0.35
-	local_hostile_movement_speed = 0.35
-	province_trade_power_value = 5
-	trade_goods_size_modifier = 0.25
-	trade_value_modifier = 0.15
-	picture = "kek_yanan"
 }
 
 north_road = {
@@ -548,6 +541,13 @@ high_road = {
 	picture = "north_south_road"
 }
 
+highway_of_old = {
+	local_friendly_movement_speed = 0.35
+	local_hostile_movement_speed = 0.35
+	province_trade_power_value = 1
+	picture = "north_south_road"
+}
+
 men_harondor = {
 	local_friendly_movement_speed = 0.35
 	local_hostile_movement_speed = 0.35
@@ -560,5 +560,35 @@ men_harnen = {
 	local_hostile_movement_speed = 0.35
 	province_trade_power_value = 1
 	picture = "north_south_road"
+}
+
+rathon_gondor = {
+	local_friendly_movement_speed = 0.35
+	local_hostile_movement_speed = 0.35
+	province_trade_power_value = 1
+	picture = "north_south_road"
+}
+
+rathon_arat = {
+	local_friendly_movement_speed = 0.35
+	local_hostile_movement_speed = 0.35
+	province_trade_power_value = 1
+	picture = "north_south_road"
+}
+
+kek_yanan = {
+	local_friendly_movement_speed = 0.35
+	local_hostile_movement_speed = 0.35
+	province_trade_power_value = 2
+	trade_value_modifier = 0.15
+	picture = "kek_yanan"
+}
+
+yol_cennacatt = {
+	local_friendly_movement_speed = 0.35
+	local_hostile_movement_speed = 0.35
+	province_trade_power_value = 2
+	trade_value_modifier = 0.15
+	picture = "kek_yanan"
 }
 

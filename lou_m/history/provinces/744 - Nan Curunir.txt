@@ -27,6 +27,11 @@ trade_goods = grain
 
 hre = no
 
+add_permanent_province_modifier = {
+	name = highway_of_old
+	duration = -1
+}
+
 2750.5.1 = {
 	add_devastation = 50
 }
