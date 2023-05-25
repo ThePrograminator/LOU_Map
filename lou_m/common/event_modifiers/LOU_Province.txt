@@ -446,6 +446,7 @@ north_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -453,6 +454,7 @@ old_south_road = {											#Arnor's South Road through Enedwaith
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -460,6 +462,7 @@ east_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -467,6 +470,7 @@ west_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -474,6 +478,7 @@ redway_road_old = {
 	local_friendly_movement_speed = 0.50
 	local_hostile_movement_speed = 0.50
 	province_trade_power_value = 0.5
+	supply_limit_modifier = 0.15
 	picture = "north_south_road"
 }
 
@@ -481,6 +486,7 @@ redway_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -488,6 +494,7 @@ men_naugrim = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -495,6 +502,7 @@ len_caraug = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -503,6 +511,7 @@ the_causeway_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -510,6 +519,7 @@ south_road = {											#Gondor's South Road
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -517,6 +527,7 @@ morgul_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "morgul_road"
 }
 
@@ -524,13 +535,15 @@ men_ithilien = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
-hyarmentie_road = {
+hyarmentie = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -538,6 +551,7 @@ high_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -545,6 +559,7 @@ highway_of_old = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -552,6 +567,7 @@ men_harondor = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -559,6 +575,7 @@ men_harnen = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -566,6 +583,7 @@ rathon_gondor = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -573,6 +591,7 @@ rathon_arat = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -580,6 +599,7 @@ men_falas = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -587,6 +607,7 @@ men_drun = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -594,6 +615,7 @@ men_annui = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
 	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
 	picture = "north_south_road"
 }
 
@@ -616,16 +638,16 @@ yol_cennacatt = {
 saurons_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
-	province_trade_power_value = 2
-	trade_value_modifier = 0.15
+	province_trade_power_value = 1
+	local_production_efficiency = 0.1
 	picture = "saurons_road"
 }
 
 moroth_road = {
 	local_friendly_movement_speed = 1
 	local_hostile_movement_speed = 1
-	province_trade_power_value = 2
-	trade_value_modifier = 0.15
+	province_trade_power_value = 1
+	local_production_efficiency = 0.1
 	picture = "morgul_road"
 }
 
