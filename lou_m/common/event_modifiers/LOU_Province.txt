@@ -651,3 +651,26 @@ moroth_road = {
 	picture = "morgul_road"
 }
 
+ud_uruk = {
+	local_friendly_movement_speed = 1
+	local_hostile_movement_speed = 1
+	province_trade_power_value = 1
+	local_production_efficiency = 0.1
+	picture = "morgul_road"
+}
+
+ud_burzum = {
+	local_friendly_movement_speed = 1
+	local_hostile_movement_speed = 1
+	province_trade_power_value = 1
+	local_production_efficiency = 0.1
+	picture = "morgul_road"
+}
+
+rad_angalaladh = {
+	local_friendly_movement_speed = 0.50
+	local_hostile_movement_speed = 0.50
+	province_trade_power_value = 0.5
+	supply_limit_modifier = 0.15
+	picture = "rad_angalaladh"
+}
