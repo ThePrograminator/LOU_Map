@@ -635,7 +635,7 @@ yol_cennacatt = {
 	picture = "kek_yanan"
 }
 
-saurons_road = {
+doom_road = {
 	local_friendly_movement_speed = 2
 	local_hostile_movement_speed = 2
 	province_trade_power_value = 1
@@ -668,16 +668,16 @@ ud_burzum = {
 }
 
 rad_angalaladh = {
-	local_friendly_movement_speed = 0.50
-	local_hostile_movement_speed = 0.50
+	local_friendly_movement_speed = 1
+	local_hostile_movement_speed = 1
 	province_trade_power_value = 0.5
 	supply_limit_modifier = 0.15
 	picture = "rad_angalaladh"
 }
 
 rad_annon = {
-	local_friendly_movement_speed = 0.50
-	local_hostile_movement_speed = 0.50
+	local_friendly_movement_speed = 1
+	local_hostile_movement_speed = 1
 	province_trade_power_value = 0.5
 	supply_limit_modifier = 0.15
 	picture = "rad_angalaladh"
@@ -723,6 +723,14 @@ men_dorwinion = {
 	picture = "north_south_road"
 }
 
+men_mithrin = {
+	local_friendly_movement_speed = 2
+	local_hostile_movement_speed = 2
+	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
+	picture = "north_south_road"
+}
+
 rath_khand = {															#Runs from Korb Taskral to Ammu Khand
 	local_friendly_movement_speed = 2
 	local_hostile_movement_speed = 2
@@ -744,10 +752,26 @@ men_rhunen = {
 	local_hostile_movement_speed = 2
 	province_trade_power_value = 1
 	supply_limit_modifier = 0.25
-	picture = "kek_yanan"
+	picture = "men_rhunen"
 }
 
 men_rhuven = {
+	local_friendly_movement_speed = 2
+	local_hostile_movement_speed = 2
+	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
+	picture = "kek_yanan"
+}
+
+mere_walk = {
+	local_friendly_movement_speed = 1
+	local_hostile_movement_speed = 1
+	province_trade_power_value = 0.5
+	supply_limit_modifier = 0.15
+	picture = "rad_angalaladh"
+}
+
+nurn_road = {
 	local_friendly_movement_speed = 2
 	local_hostile_movement_speed = 2
 	province_trade_power_value = 1
