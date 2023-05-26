@@ -10,22 +10,21 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 is_city = yes
-base_tax = 4
-base_production = 5
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 7
 owner = Y70
 controller = Y70
-culture = culture_hwenti
-religion = religion_moriquendi
-trade_goods = wine
-center_of_trade = 1
-2760.1.1 = {
-	add_core = Y48
-	owner = Y48
-	controller = Y48
-	culture = culture_goblin
-	religion = religion_goblin
-}
+culture = culture_wight
+religion = religion_wight
+trade_goods = stone
+# 2760.1.1 = {
+# 	add_core = Y48
+# 	owner = Y48
+# 	controller = Y48
+# 	culture = culture_goblin
+# 	religion = religion_goblin
+# }
 #Rhovanion Superregion Discovery
 add_core = Y70
 discovered_by = lotr_human

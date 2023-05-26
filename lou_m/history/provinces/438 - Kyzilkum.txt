@@ -18,7 +18,11 @@ controller = X79
 culture = culture_variags
 religion = religion_ioriags
 trade_goods = silk
-center_of_trade = 2
+center_of_trade = 1
+add_permanent_province_modifier = {
+	name = khand_road
+	duration = -1
+}
 #Rhun Superregion Discovery
 add_core = X79
 discovered_by = lotr_human

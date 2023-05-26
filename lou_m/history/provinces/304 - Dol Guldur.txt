@@ -23,10 +23,10 @@ hre = no
 
 center_of_trade = 1
 
-# capital_1_orc_building = yes
-# fort_wooden_walls_orc_building = yes
-# small_arena_building = yes
-# orc_fissure_orc_building = yes
+add_permanent_province_modifier = {
+	name = ud_uruk
+	duration = -1
+}
 
 add_province_modifier = {
 	name = ruins_debuff
@@ -36,6 +36,14 @@ add_province_modifier = {
 	name = dol_guldur_necromancer
 	duration = -1
 }
+
+
+# capital_1_orc_building = yes
+# fort_wooden_walls_orc_building = yes
+# small_arena_building = yes
+# orc_fissure_orc_building = yes
+
+
 2770.1.1 = {
 	remove_province_modifier = ruins_debuff
 	capital_2_orc_building = yes
