@@ -1008,7 +1008,7 @@ categories =  {
 		color = { 255 255 0 }
 		sound_type = mountains
 		
-		movement_cost = 1.5
+		movement_cost = 0.90
 		local_development_cost = -0.15
 		allowed_num_of_buildings = 2
 		nation_designer_cost_multiplier = 1.40
@@ -1026,7 +1026,7 @@ categories =  {
 		color = { 60 60 60 }
 		sound_type = plains
 		
-		movement_cost = 0.80
+		movement_cost = 1.25
 		local_development_cost = 0.10
 		nation_designer_cost_multiplier = 0.90
 		defence = 0
@@ -1045,7 +1045,7 @@ categories =  {
 		color = { 255 255 0 }
 		sound_type = mountains
 		
-		movement_cost = 0.75
+		movement_cost = 0.90
 		local_development_cost = -0.05
 		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1.15
@@ -1065,7 +1065,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 1.25
+		movement_cost = 1.5
 		defence = 2
 		local_defensiveness = 0.25
 		local_development_cost = 0.5
@@ -1099,7 +1099,7 @@ categories =  {
 		color = { 255 255 0 }
 		sound_type = desert
 		
-		movement_cost = 0.90
+		movement_cost = 1.25
 		local_development_cost = -0.1
 		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1
@@ -1117,7 +1117,7 @@ categories =  {
 		color = { 80 80 80 }
 		sound_type = desert
 		
-		movement_cost = 0.90
+		movement_cost = 1.25
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 1
 		defence = 0
@@ -1135,7 +1135,7 @@ categories =  {
 		color = { 30 30 30 }
 		sound_type = desert
 		
-		movement_cost = 0.90
+		movement_cost = 1.25
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 1
 		defence = 0
@@ -1171,7 +1171,7 @@ categories =  {
 		color = { 255 255 0 }
 		sound_type = mountains
 		
-		movement_cost = 1.30
+		movement_cost = 2
 		local_development_cost = 0.5
 		nation_designer_cost_multiplier = 0.65
 		defence = 1
@@ -3097,7 +3097,7 @@ categories =  {
 		nation_designer_cost_multiplier = 1
 		
 		terrain_override = {
-			705 3415 618 1890 3416 396 3185 3170 1876 407 1886 3412 3413 3169 787 3160 1891 3171 3414
+			705 3415 618 1890 3416 396 3185 3170 1876 407 1886 3412 3413 3169 787 3160 3171 3414 1891
 		}
 	}
 	
@@ -3249,7 +3249,7 @@ categories =  {
 		type = forest
 		sound_type = forest
 		
-		movement_cost = 1.0
+		movement_cost = 2
 		defence = 1
 		supply_limit = 5
 		local_development_cost = 0.2
@@ -3266,7 +3266,7 @@ categories =  {
 		type = forest
 		sound_type = forest
 		
-		movement_cost = 1.0
+		movement_cost = 2
 		defence = 1
 		supply_limit = 5
 		local_development_cost = 0.2
@@ -3282,7 +3282,7 @@ categories =  {
 		type = forest
 		sound_type = forest
 		
-		movement_cost = 1.0
+		movement_cost = 2
 		defence = 1
 		supply_limit = 5
 		local_development_cost = 0.2
@@ -3298,7 +3298,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 1.25
+		movement_cost = 2
 		defence = 2
 		local_defensiveness = 0.25
 		local_development_cost = 0.5
@@ -3314,7 +3314,7 @@ categories =  {
 		color = { 150 255 150 }
 		sound_type = forest
 		
-		movement_cost = 0.85
+		movement_cost = 1
 		local_development_cost = -0.1
 		supply_limit = 8
 		allowed_num_of_buildings = 2
