@@ -581,7 +581,7 @@ type={
 	scale=0.200000
 	time_duration=300.000000
 	object={
-		name="Seagulls_english_channel"
+		name="brown_bear_isle_bears"
 		hidden_on_start=no
 		position={
 			1794.000 0.100 1579.000 
@@ -591,7 +591,7 @@ type={
 		}
 	}
 	object={
-		name="Seagulls_english_channel"
+		name="brown_bear_beorns_halls"
 		hidden_on_start=no
 		position={
 			1815.000 0.100 1557.000 
@@ -645,6 +645,16 @@ type={
 		rotation={
 			0.000 -60.000 0.000 
 		}
+	}	
+	object={
+		name="crocodile_raj"
+		hidden_on_start=no
+		position={
+			1949.000 -0.500 277.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
 	}
 }
 type={
@@ -691,13 +701,22 @@ type={
 		rotation={
 			0.000 -60.000 0.000 
 		}
-	}
-	
+	}	
 	object={
-		name="camel_khand"
+		name="seagulls_somewhere"
 		hidden_on_start=no
 		position={
 			2395.000 0.100 867.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}		
+	object={
+		name="seagulls_gobel_tolfalas"
+		hidden_on_start=no
+		position={
+			1550.000 0.100 925.000 
 		}
 		rotation={
 			0.000 30.000 0.000 
@@ -822,7 +841,7 @@ type={
 	scale=0.800000
 	time_duration=300.000000
 	object={
-		name="Seagulls_english_channel"
+		name="whale_forochel"
 		hidden_on_start=no
 		position={
 			1246.000 0.100 1923.000 
@@ -1054,6 +1073,70 @@ type={
 		hidden_on_start=no
 		position={
 			2040.000 0.000 922.000 
+		}
+		rotation={
+			0.000 -45.000 0.000 
+		}
+	}
+}
+type={
+	type="elephant_AO"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="elephant_khand"
+		hidden_on_start=no
+		position={
+			2398.000 0.100 856.000
+		}
+		rotation={
+			0.000 -140.000 0.000 
+		}
+	}
+}
+# type={
+# 	type="elephant_indian"
+# 	use_animation=yes
+# 	scale=0.200000
+# 	time_duration=300.000000
+# 	object={
+# 		name="Seagulls_english_channel"
+# 		hidden_on_start=no
+# 		position={
+# 			2432.000 0.100 301.000 
+# 		}
+# 		rotation={
+# 			0.000 -60.000 0.000 
+# 		}
+# 	}
+# }
+type={
+	type="zebra"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="zebra_khand"
+		hidden_on_start=no
+		position={
+			2385.000 0.100 854.000 
+		}
+		rotation={
+			0.000 125.000 0.000 
+		}
+	}
+}
+type={
+	type="giraffe"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="giraffe_khand"
+		hidden_on_start=no
+		position={
+			2404.000 0.100 865.000 
 		}
 		rotation={
 			0.000 -45.000 0.000 
