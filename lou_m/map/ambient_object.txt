@@ -453,7 +453,7 @@ type={
 	scale=0.300000
 	time_duration=300.000000
 	object={
-		name="French_windmill"
+		name="windmill_hobbiton"
 		hidden_on_start=no
 		position={
 			1157.000 0.100 1521.000 
@@ -463,13 +463,23 @@ type={
 		}
 	}
 	object={
-		name="French_windmill"
+		name="windmill_michel_delving"
 		hidden_on_start=no
 		position={
 			1126.000 0.100 1495.000 
 		}
 		rotation={
 			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="windmill_michel_delving"
+		hidden_on_start=no
+		position={
+			1171.000 0.100 1479.000 
+		}
+		rotation={
+			0.000 15.000 0.000 
 		}
 	}
 }
@@ -913,22 +923,32 @@ type={
 	scale=0.180000
 	time_duration=300.000000
 	object={
-		name="stonehenge"
+		name="barrow_downs"
 		hidden_on_start=no
 		position={
-			1223.000 -0.500 1491.000 
+			1223.000 -0.750 1491.000 
 		}
 		rotation={
 			0.000 -0.800 0.000 
 		}
 	}
 	object={
-		name="stonehenge"
+		name="barrow_downs"
 		hidden_on_start=no
 		position={
 			1221.000 -0.500 1484.000 
 		}
 		rotation={
+			0.000 120 0.000 
+		}
+	}
+	object={
+		name="barrow_downs"
+		hidden_on_start=no
+		position={
+			1217.000 -0.650 1500.000 
+		}
+		rotation={
 			0.000 -0.800 0.000 
 		}
 	}
@@ -936,42 +956,82 @@ type={
 		name="stonehenge"
 		hidden_on_start=no
 		position={
-			1217.000 -0.500 1500.000 
+			1218.000 -1.15 1511.000 
 		}
 		rotation={
 			0.000 -0.800 0.000 
 		}
 	}
-	# object={
-	# 	name="stonehenge"
-	# 	hidden_on_start=no
-	# 	position={
-	# 		1217.000 -0.500 1500.000 
-	# 	}
-	# 	rotation={
-	# 		0.000 -0.800 0.000 
-	# 	}
-	# }
-	# object={
-	# 	name="stonehenge"
-	# 	hidden_on_start=no
-	# 	position={
-	# 		1217.000 -0.500 1500.000 
-	# 	}
-	# 	rotation={
-	# 		0.000 -0.800 0.000 
-	# 	}
-	# }
-	# object={
-	# 	name="stonehenge"
-	# 	hidden_on_start=no
-	# 	position={
-	# 		1217.000 -0.500 1500.000 
-	# 	}
-	# 	rotation={
-	# 		0.000 -0.800 0.000 
-	# 	}
-	# }
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1222.000 -0.750 1496.000 
+		}
+		rotation={
+			0.000 -0.800 0.000 
+		}
+	}
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1213.000 -0.600 1485.000 
+		}
+		rotation={
+			0.000 -0.800 0.000 
+		}
+	}
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1229.000 -0.500 1485.000 
+		}
+		rotation={
+			0.000 -0.800 0.000 
+		}
+	}
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1232.000 -1.15 1491.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1223.000 -0.60 1479.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1215.000 -0.85 1494.000 
+		}
+		rotation={
+			0.000 -90 0.000 
+		}
+	}
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			1226.000 -1.00 1473.000 
+		}
+		rotation={
+			0.000 -12 0.000 
+		}
+	}
 }
 type={
 	type="nammi2_parthenon_entity"
