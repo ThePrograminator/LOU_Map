@@ -96,6 +96,34 @@ on_startup = {
 		}
 	}
 
+
+	if = {
+		every_province = {
+			limit = {
+				culture_group = culture_group_hobbits
+				OR = {
+					has_terrain = unique_shire
+					has_terrain = unique_east_farthing
+					has_terrain = unique_michel_delving
+					has_terrain = unique_bywater
+					has_terrain = unique_hobbitton
+					has_terrain = unique_waymeet
+					has_terrain = unique_green_hill_country
+					has_terrain = unique_nan_turnath
+					has_terrain = unique_gladden_fields
+					has_terrain = farmlands
+					has_terrain = grasslands
+				}
+			}
+
+			add_province_modifier = {
+				name = halfling_farmers
+				duration = -1
+				desc = halfling_farmers_tooltip
+			}
+		}
+	}
+
 	if = {
 		every_province = {
 			limit = {
@@ -141,7 +169,7 @@ on_startup = {
 	if = {
 		every_province = {
 			limit = {
-				culture_group = culture_half_trolls
+				culture = culture_half_trolls
 				OR = {
 					has_terrain = desert					
 					has_terrain = savannah

@@ -124,11 +124,17 @@ slot_01_dunedain_of_the_north_series = {
 		trigger = {
 			emyn_sul_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 		}
 		effect = { 
 			emyn_sul_area = {
+				cede_province = Z06
 				add_province_modifier = {
 					name = acceptance_of_take_over
 					duration = 3650
@@ -209,7 +215,7 @@ slot_01_dunedain_of_the_north_series = {
 			}
 		}
 		effect = {
-			set_capital = 118
+			set_capital = 644
 			add_stability = 1
 			118 = {
 				add_base_tax = 3
@@ -588,56 +594,92 @@ slot_02_dunedain_of_the_north_series = {
 		required_missions = { protectors_of_eriador }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1833
-				province_id = 3210
-				province_id = 106
-				province_id = 4057
+				province_id = 1839
+				province_id = 644
+				province_id = 3422
+				province_id = 379
+				province_id = 89
+				province_id = 77
+				province_id = 88
 			}
 			NOT = {
 				province_human_has_trade_building_tier_2 = yes
 			}
 		}
 		trigger = {
-			1833 = {
+			1839 = {
 				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			3210 = {
+			644 = {
 				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			4057 = {
+			3422 = {
 				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			106 = {
+			379 = {
+				province_human_has_trade_building_tier_2 = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			89 = {
+				province_human_has_trade_building_tier_2 = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			77 = {
+				province_human_has_trade_building_tier_2 = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			88 = {
 				province_human_has_trade_building_tier_2 = yes
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = { 
-			1833 = {
+			1839 = {
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
 					duration = -1
 				}
 			}
-			3210 = {
+			644 = {
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
 					duration = -1
 				}
 			}
-			4057 = {
+			3422 = {
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
 					duration = -1
 				}
 			}
-			106 = {
+			379 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			89 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			77 = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			88 = {
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
