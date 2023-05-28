@@ -3508,6 +3508,7 @@ laketown_monument = {
 		}			
 	}
 	on_built = {
+		# show_ambient_object = lake_town_tier_one
 	}
 	on_destroyed = {
 	}
@@ -3571,6 +3572,8 @@ laketown_monument = {
 		yearly_corruption = 0.05
 		}
 		on_upgraded = {
+			# hide_ambient_object = lake_town_tier_one
+			# show_ambient_object = lake_town_tier_two
 		}
 	}
 

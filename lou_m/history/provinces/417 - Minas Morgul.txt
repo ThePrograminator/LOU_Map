@@ -20,7 +20,7 @@ add_core = V18
 owner = V18
 controller = V18
 
-culture = culture_orkish
+culture = culture_uruks
 religion = religion_orkish
 
 trade_goods = silver
@@ -29,6 +29,12 @@ hre = no
 
 add_permanent_province_modifier = {
 	name = morgul_road
+	duration = -1
+}
+
+
+add_province_modifier = {
+	name = minas_morgul
 	duration = -1
 }
 

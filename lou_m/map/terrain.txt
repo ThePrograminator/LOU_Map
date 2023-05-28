@@ -2155,6 +2155,23 @@ categories =  {
 			83
 		}
 	}
+
+	unique_michel_delving = {
+		color = { 255 255 0 }
+		sound_type = plains
+		
+		movement_cost = 0.70
+		local_development_cost = -0.20
+		allowed_num_of_buildings = 2
+		nation_designer_cost_multiplier = 1.15
+		supply_limit = 12
+		
+		local_defensiveness = 0.10
+		
+		terrain_override = {
+			94
+		}
+	}
 	
 	unique_bywater = {
 		color = { 255 255 0 }
@@ -3997,7 +4014,7 @@ categories =  {
 		local_defensiveness = 0.10
 		
 		terrain_override = {
-			939 1698 1746 2102 834 2813 2815 2814 3015 3487 2851
+			939 1698 1746 2102 834 2813 2815 2814 3015 3487 2851 1637
 		}
 	}
 	
