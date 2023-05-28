@@ -608,12 +608,13 @@ gondor_missions_4 = {
 			add_years_of_income = 0.25
 		}
 	}
-	gondor_reclaim_numenroean_colonies = {
+	gondor_reclaim_numenorean_colonies = {
 		icon = mission_gondor_12
 		position = 5
 		required_missions = { gondor_umbardacil }
 		provinces_to_highlight = {
 			province_id = 3611
+
 			
 			NOT = {
 				owned_by = ROOT
@@ -624,6 +625,14 @@ gondor_missions_4 = {
 			3611 = {
 				owned_by = ROOT
 				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				OR = {
+					has_terrain = unique_numenorean_port
+					has_terrain = unique_numenorean_town
+					has_terrain = unique_dunedain_ruin
+				}
 			}
 		}
 		effect = { 
@@ -795,6 +804,8 @@ gondor_missions_5 = {
 			OR = {
 				AND = {
 					area = laergaladrin_area
+					area = sirbad_area
+					area = emyn_laer_area
 			
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
@@ -803,10 +814,8 @@ gondor_missions_5 = {
 				AND = {
 					OR = {
 						province_id = 123
-						province_id = 1786
-						province_id = 1751
-						province_id = 3235
-						province_id = 3297
+						province_id = 127
+						province_id = 132
 					}
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
@@ -819,11 +828,17 @@ gondor_missions_5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			sirbad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			emyn_laer_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			owns = 123
-			owns = 1786
-			owns = 1751
-			owns = 3235
-			owns = 3297
+			owns = 127
+			owns = 132
 		}
 		effect = {
 			harondor_region = {
@@ -843,7 +858,7 @@ gondor_missions_5 = {
 		required_missions = { gondor_the_southern_lands }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1755
+				province_id = 128
 				province_id = 468
 				province_id = 1751
 				province_id = 130
@@ -854,7 +869,7 @@ gondor_missions_5 = {
 			}
 		}
 		trigger = {
-			1755 = { country_or_non_sovereign_subject_holds = ROOT }
+			128 = { country_or_non_sovereign_subject_holds = ROOT }
 			468 = { country_or_non_sovereign_subject_holds = ROOT }
 			130 = { country_or_non_sovereign_subject_holds = ROOT }
 			751 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -863,10 +878,10 @@ gondor_missions_5 = {
 			}
 		}
 		effect = {
-			751 = { change_trade_goods = gems }
+			# 751 = { change_trade_goods = gems }
 			468 = { change_trade_goods = gems }
 			130 = { change_trade_goods = gems }
-			1755 = { change_trade_goods = gems }
+			128 = { change_trade_goods = gems }
 			country_event = { id = LOU_mission_gondor.10 }
 		}
 	}
@@ -914,7 +929,7 @@ gondor_missions_5 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 15
+				value = 25
 				region = harondor_region
 			}
 			1754 = { country_or_non_sovereign_subject_holds = ROOT }

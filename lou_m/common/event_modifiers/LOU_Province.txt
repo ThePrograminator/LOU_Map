@@ -263,13 +263,13 @@ rhosgobel = {
 	allowed_num_of_manufactories = 2
 }
 
-henneth_annun = {
-	fort_level = 3
-	local_defensiveness = 0.5
-	supply_limit_modifier = 0.5
-	local_hostile_attrition = 3
-	allowed_num_of_manufactories = 1
-}
+# henneth_annun = {									# Moved to Gondor Mission rewards and renamed for their quests
+# 	fort_level = 3
+# 	local_defensiveness = 0.5
+# 	supply_limit_modifier = 0.5
+# 	local_hostile_attrition = 3
+# 	allowed_num_of_manufactories = 1
+# }
 
 telain_defenses = {
 	fort_level = 1
@@ -288,7 +288,7 @@ cerin_amroth = {
 
 caras_galadhon = {
 	fort_level = 5
-	local_defensiveness = 1
+	local_defensiveness = 2
 	supply_limit_modifier = 1
 	local_hostile_attrition = 5
 	allowed_num_of_manufactories = 2
@@ -405,7 +405,7 @@ forest_huorns = {
 
 imladris = {
 	fort_level = 5
-	local_defensiveness = 1
+	local_defensiveness = 2
 	supply_limit_modifier = 1
 	local_hostile_attrition = 5
 	allowed_num_of_manufactories = 2

@@ -1,6 +1,6 @@
 osgiliath_rebuilt = {
 	prestige = 1
-	legitimacy = 0.8
+	legitimacy = 0.5
 	land_morale = 0.10
 }
 
@@ -141,9 +141,13 @@ gondor_usurper_modifier = {
 gondor_blood_of_numenor_modifier = {
 	monarch_lifespan = 0.50
 }
+
 gondor_henneth_annun_modifier = {
-	local_hostile_attrition = 2
-	local_defensiveness = 0.25
+	fort_level = 3
+	local_defensiveness = 0.5
+	supply_limit_modifier = 0.5
+	local_hostile_attrition = 3
+	allowed_num_of_manufactories = 1
 }
 
 gondor_fortify_anduin_modifier = {
@@ -208,4 +212,6 @@ gondor_breeland_shire_independent_modifier = {
 
 gondor_reclaim_old_numenorean_colonies_modifier = {
 	legitimacy = 1
+	prestige = 0.25
+	diplomatic_reputation = 1
 }

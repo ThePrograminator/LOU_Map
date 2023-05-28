@@ -25,7 +25,7 @@ servant_of_mordor_region_nurn = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
-		position = 7
+		position = 1
 		provinces_to_highlight = {
 			servant_of_mordor_region_nurn = yes
 			NOT = { 
@@ -71,7 +71,7 @@ servant_of_mordor_region_rhovanion = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
-		position = 7
+		position = 1
 		provinces_to_highlight = {
 			rhovanion_region = {
 				type = all
@@ -123,7 +123,7 @@ servant_of_mordor_region_mirkwood = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
-		position = 7
+		position = 1
 		provinces_to_highlight = {
 			mirkwood_region = {
 				type = all
@@ -188,7 +188,7 @@ servant_of_mordor_region_ithilien = {
 		icon = mission_unite_home_region
 		required_missions = {
 		}
-		position = 7
+		position = 1
 		provinces_to_highlight = {
 			servant_of_mordor_region_ithilien = yes
 			NOT = { 
@@ -240,7 +240,7 @@ servant_of_mordor_reserves = {
 		icon = mission_orc_army
 		required_missions = {
 		}
-		position = 7
+		position = 1
 		trigger = {
 			adm_power = 500
 			dip_power = 500
@@ -284,7 +284,7 @@ servant_of_mordor_tech = {
 		icon = mission_secure_power
 		required_missions = {
 		}
-		position = 7
+		position = 1
 		trigger = {
 			total_development = 200
 			adm_tech = 10
@@ -327,7 +327,7 @@ servant_of_mordor_spawn_mordor_nurn = {
 			servant_of_mordor_build_tech
 			servant_of_mordor_nurn_region
 		}
-		position = 8
+		position = 2
 		trigger = {
 			#custom_trigger_tooltip = {
 			#	tooltip = dol_guldur_completed_ritual
@@ -380,7 +380,7 @@ servant_of_mordor_spawn_mordor_uruk_marzguram = {
 			servant_of_mordor_build_tech
 			servant_of_mordor_rhovanion_region
 		}
-		position = 8
+		position = 2
 		trigger = {
 			#custom_trigger_tooltip = {
 			#	tooltip = dol_guldur_completed_ritual
@@ -435,7 +435,7 @@ servant_of_mordor_spawn_mordor_dol_guldur = {
 			servant_of_mordor_build_tech
 			servant_of_mordor_mirkwood_region
 		}
-		position = 8
+		position = 2
 		trigger = {
 			#custom_trigger_tooltip = {
 			#	tooltip = dol_guldur_completed_ritual
@@ -490,7 +490,7 @@ servant_of_mordor_spawn_mordor_minas_morgul = {
 			servant_of_mordor_build_tech
 			servant_of_mordor_ithilien_region
 		}
-		position = 8
+		position = 2
 		trigger = {
 			#custom_trigger_tooltip = {
 			#	tooltip = dol_guldur_completed_ritual
