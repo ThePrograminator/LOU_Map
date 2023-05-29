@@ -158,7 +158,12 @@ slot_01_dunedain_of_the_north_series = {
 		trigger = {
 			oiolad_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 		}
 		effect = { 
@@ -182,7 +187,12 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			266 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 		}
 		effect = { 
@@ -209,19 +219,23 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			644 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				development = 20
-				stability = 1
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
+				development = 30
 			}
 		}
 		effect = {
 			set_capital = 644
 			add_stability = 1
-			118 = {
+			644 = {
 				add_base_tax = 3
 				add_base_production = 3
 				add_base_manpower = 3
-				add_center_of_trade_level = 2
+				add_center_of_trade_level = 3
 			}
 			maegoth_area = {
 				add_permanent_claim = ROOT
@@ -252,19 +266,44 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			95 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			249 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			248 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			644 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			1841 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 		}
 		effect = { 
@@ -320,25 +359,60 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			249 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			251 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			255 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			266 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			644 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			1839 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 			1841 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 		}
 		effect = { 
@@ -423,9 +497,10 @@ slot_01_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			add_adm_power = 100
-			add_dip_power = 100
-			add_mil_power = 100
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			add_stability = 3
 			arthedain_region = {
 				limit = {
 					owned_by = ROOT
