@@ -43,8 +43,11 @@ dunedain_of_north_tharbad = {
 }
 
 dunedain_of_north_greenway = {
-	local_state_maintenance_modifier = -0.25
-	local_friendly_movement_speed = 0.25
+	local_friendly_movement_speed = 2
+	local_hostile_movement_speed = 2
+	province_trade_power_value = 1
+	supply_limit_modifier = 0.25
+	picture = "north_south_road"
 }
 
 dunedain_of_north_the_last_bridge = {
