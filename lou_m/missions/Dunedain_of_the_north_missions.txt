@@ -762,6 +762,9 @@ slot_02_dunedain_of_the_north_series = {
 				province_id = 89
 				province_id = 77
 				province_id = 88
+				province_id = 239
+				province_id = 244
+				province_id = 1846
 			}
 			NOT = {
 				OR = {
@@ -829,6 +832,30 @@ slot_02_dunedain_of_the_north_series = {
 					}
 				}
 			}
+			239 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
+			}
+			244 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
+			}
+			1846 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
+			}
 		}
 		effect = { 
 			1839 = {
@@ -880,6 +907,30 @@ slot_02_dunedain_of_the_north_series = {
 				}
 			}
 			88 = {
+				cede_province = Z06
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			239 = {
+				cede_province = Z06
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			244 = {
+				cede_province = Z06
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			1846 = {
 				cede_province = Z06
 				add_base_production = 2
 				add_province_modifier = {
@@ -1331,17 +1382,20 @@ slot_04_dunedain_of_the_north_series = {
 		required_missions = { regain_strength }
 		provinces_to_highlight = {
 			province_id = 1872
-			NOT = {
-				owned_by = ROOT
-			}
 		}
 		trigger = {
 			1872 = {
-				owned_by = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner ={
+						alliance_with = Z06
+					}
+				}
 			}
 		}
 		effect = { 
 			1872 = {
+				cede_province = Z06
 				change_culture = ROOT
 				change_religion = ROOT
 				add_province_modifier = {
