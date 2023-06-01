@@ -5019,13 +5019,14 @@ fornost_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.2
+			fort_level = 1
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
+			local_unrest = -1
 		}
 		country_modifiers = {
-		
+			yearly_army_professionalism = 0.01
 		}
 		on_upgraded = {
 		}
@@ -5039,13 +5040,14 @@ fornost_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.2
+		fort_level = 2
+		local_defensiveness = 0.20
 		}
 		area_modifier = {
-		local_unrest = -1
+		local_unrest = -2
 		}
 		country_modifiers = {
+			yearly_army_professionalism = 0.03
 		}
 		on_upgraded = {
 
@@ -5060,15 +5062,14 @@ fornost_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.2
+		fort_level = 3
+		local_defensiveness = 0.25
 		}
 		area_modifier = {
-		local_unrest = -2
+		local_unrest = -3
 		}
 		country_modifiers = {
-		global_unrest = -1
-		prestige_decay = -0.01
+			yearly_army_professionalism = 0.05
 		}
 		on_upgraded = {
 		}
@@ -5129,12 +5130,14 @@ greyhavens_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		local_ship_repair = 0.1
-		ship_recruit_speed = -0.15
+			local_ship_repair = 0.15
+			ship_recruit_speed = -0.15
+			own_coast_naval_combat_bonus = 1.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			navy_tradition_decay = -0.01
 		}
 		on_upgraded = {
 		}
@@ -5147,12 +5150,14 @@ greyhavens_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		local_ship_repair = 0.2
-		ship_recruit_speed = -0.30
+			local_ship_repair = 0.20
+			ship_recruit_speed = -0.20
+			own_coast_naval_combat_bonus = 2.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			navy_tradition_decay = -0.03
 		}
 		on_upgraded = {
 		}
@@ -5165,13 +5170,14 @@ greyhavens_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		local_ship_repair = 0.30
-		ship_recruit_speed = -0.50
+			local_ship_repair = 0.25
+			ship_recruit_speed = -0.25
+			own_coast_naval_combat_bonus = 3.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		prestige_decay = -0.01
+			navy_tradition_decay = -0.05
 		}
 		on_upgraded = {
 		}
@@ -5244,12 +5250,12 @@ bree_monument = {
 			factor = 0
 		}
 		province_modifiers = {
-		local_unrest = 1
+			trade_goods_size_modifier = 0.05
 		}
 		area_modifier = {
+			local_unrest = 1
 		}
 		country_modifiers = {
-		spy_offence = 0.1
 		}
 		on_upgraded = {
 		}
@@ -5262,12 +5268,14 @@ bree_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		local_unrest = -1
+			trade_goods_size_modifier = 0.15
 		}
 		area_modifier = {
+			local_unrest = -1
 		}
 		country_modifiers = {
-		spy_offence = 0.1
+			spy_offence = 0.05
+			num_accepted_cultures = 1
 		}
 		on_upgraded = {
 		}
@@ -5280,13 +5288,14 @@ bree_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		local_unrest = -1
+			trade_goods_size_modifier = 0.20
 		}
 		area_modifier = {
-		local_unrest = -1
+			local_unrest = -2
 		}
 		country_modifiers = {
-		spy_offence = 0.15
+			spy_offence = 0.010
+			num_accepted_cultures = 2
 		}
 		on_upgraded = {
 		}
@@ -5300,13 +5309,14 @@ bree_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		local_unrest = -1
+			trade_goods_size_modifier = 0.25
 		}
 		area_modifier = {
-		local_unrest = -2
+			local_unrest = -3
 		}
 		country_modifiers = {
-		spy_offence = 0.2
+			spy_offence = 0.15
+			num_accepted_cultures = 3
 		}
 		on_upgraded = {
 		}
@@ -5371,7 +5381,8 @@ barrow_downs_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
+			all_power_cost = -0.01
+			prestige_decay = -0.01
 			monarch_admin_power = 1
 		}
 		on_upgraded = {
@@ -5411,7 +5422,8 @@ barrow_downs_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
+			all_power_cost = -0.03
+			prestige_decay = -0.03
 			monarch_admin_power = 1
 			monarch_diplomatic_power = 1
 		}
@@ -5452,9 +5464,11 @@ barrow_downs_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.1
-			monarch_admin_power = 2
+			all_power_cost = -0.05
+			prestige_decay = -0.05
+			monarch_admin_power = 1
 			monarch_diplomatic_power = 1
+			monarch_military_power = 1
 		}
 		on_upgraded = {
 			custom_tooltip = barrow_downs_monument_tt
@@ -5519,6 +5533,7 @@ carndum_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
+			production_efficiency = 0.05
 		}
 		country_modifiers = {
 		}
@@ -5533,14 +5548,15 @@ carndum_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.25
+			fort_level = 1
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
+			production_efficiency = 0.10
 		}
 		country_modifiers = {
-		diplomatic_upkeep = 1
-		relation_with_same_culture_group = 10
+			diplomatic_upkeep = 1
+			relation_with_same_culture_group = 10
 		}
 		on_upgraded = {
 		}
@@ -5553,14 +5569,15 @@ carndum_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.50
+			fort_level = 2
+			local_defensiveness = 0.20
 		}
 		area_modifier = {
+			production_efficiency = 0.15
 		}
-		country_modifiers = {
-		diplomatic_upkeep = 2
-		relation_with_same_culture_group = 25
+			country_modifiers = {
+			diplomatic_upkeep = 2
+			relation_with_same_culture_group = 25
 		}
 		on_upgraded = {
 		}
@@ -5573,14 +5590,14 @@ carndum_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 3
-		local_defensiveness = 0.5
+			fort_level = 3
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		diplomatic_upkeep = 3
-		relation_with_same_culture_group = 50
+			diplomatic_upkeep = 3
+			relation_with_same_culture_group = 50
 		}
 		on_upgraded = {
 		}
@@ -5650,10 +5667,13 @@ amon_sul_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_friendly_movement_speed = 0.1
-		fort_level = 1
+			local_friendly_movement_speed = 0.15
+			fort_level = 1
+			local_hostile_attrition = 1
 		}
 		country_modifiers = {
+			caravan_power = 0.15
+			global_spy_defence = 0.05
 		}
 		on_upgraded = {
 		}
@@ -5668,11 +5688,13 @@ amon_sul_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_friendly_movement_speed = 0.2
-		fort_level = 2
+			local_friendly_movement_speed = 0.2
+			fort_level = 2
+			local_hostile_attrition = 2
 		}
 		country_modifiers = {
-		caravan_power = 0.1
+			caravan_power = 0.20
+			global_spy_defence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -5687,11 +5709,13 @@ amon_sul_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_friendly_movement_speed = 0.25
-		fort_level = 3
+			local_friendly_movement_speed = 0.25
+			fort_level = 3		
+			local_hostile_attrition = 3
 		}
 		country_modifiers = {
-		caravan_power = 0.25
+			caravan_power = 0.25
+			global_spy_defence = 0.15
 		}
 		on_upgraded = {
 		}
