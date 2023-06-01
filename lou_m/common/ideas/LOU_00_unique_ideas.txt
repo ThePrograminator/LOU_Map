@@ -464,7 +464,13 @@ shire_ideas = {
 	}
 	
 	trigger = {
-		tag = Y26
+		OR = {
+			tag = Y26							#The Shire
+			tag = V50							#Tookland
+			tag = Y27							#Buckland
+			tag = Y25							#Gladden-Stoors
+			tag = W88							#Banakan
+		}
 	}
 	free = yes		
 	
