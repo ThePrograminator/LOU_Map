@@ -1625,6 +1625,31 @@ clear_consort_personalities = {
 	}
 }
 
+cede_ally_provinces_mission_effect = {
+	if = {
+		limit = {
+			$province_scope$ = {
+				owner = {
+					alliance_with = ROOT
+				}
+			}
+		}
+		custom_tooltip = cede_ally_provinces_mission_effect_tooltip
+		hidden_effect = {
+			$province_scope$ = {
+				limit = {
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+				remove_core = $COUNTRY$
+				cede_province = ROOT
+			}
+		}
+	}
+}
+
+
 #Province effect
 add_latest_human_building = {
 	[[trade]
@@ -1651,7 +1676,7 @@ add_latest_human_building = {
 			}
 			add_building = marketplace_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				province_is_buildable = yes
 				province_human_has_main_building_tier_1 = yes
@@ -1699,7 +1724,7 @@ add_latest_human_building = {
 			}
 			add_building = workshop_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				province_is_buildable = yes
 				province_human_has_main_building_tier_1 = yes
@@ -1731,7 +1756,7 @@ add_latest_human_building = {
 			}
 			add_building = tax_office_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				province_is_buildable = yes
 				province_human_has_main_building_tier_1 = yes
@@ -1763,7 +1788,7 @@ add_latest_human_building = {
 			}
 			add_building = army_camp_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				province_is_buildable = yes
 				province_human_has_main_building_tier_1 = yes
@@ -1816,7 +1841,7 @@ add_latest_human_building = {
 			}
 			add_building = dock_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				has_port = yes
 				province_is_buildable = yes
@@ -1849,7 +1874,7 @@ add_latest_human_building = {
 			}
 			add_building = fort_castle_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				province_is_buildable = yes
 				province_human_has_main_building_tier_1 = yes
@@ -1881,7 +1906,7 @@ add_latest_human_building = {
 			}
 			add_building = capital_2_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				is_capital = yes
 				development = 5
@@ -1915,7 +1940,7 @@ add_latest_human_building = {
 			}
 			add_building = city_2_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -1951,7 +1976,7 @@ add_latest_human_building = {
 			}
 			add_building = fortress_2_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -1987,7 +2012,7 @@ add_latest_dwarf_building = {
 			}
 			add_building = capital_2_dwarf_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				is_capital = yes
 				development = 5
@@ -2036,7 +2061,7 @@ add_latest_dwarf_building = {
 			}
 			add_building = settlement_2_dwarf_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -2081,7 +2106,7 @@ add_latest_dwarf_building = {
 			}
 			add_building = hold_2_dwarf_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -2120,7 +2145,7 @@ add_latest_elf_building = {
 			}
 			add_building = capital_2_elf_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = yes
@@ -2154,7 +2179,7 @@ add_latest_elf_building = {
 			}
 			add_building = town_2_elf_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -2188,7 +2213,7 @@ add_latest_elf_building = {
 			}
 			add_building = fort_2_elf_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -2226,7 +2251,7 @@ add_latest_orc_building = {
 			}
 			add_building = capital_2_orc_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = yes
@@ -2260,7 +2285,7 @@ add_latest_orc_building = {
 			}
 			add_building = encampment_2_orc_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no
@@ -2294,7 +2319,7 @@ add_latest_orc_building = {
 			}
 			add_building = fortress_2_orc_building
 		}
-		else = {
+		else_if = {
 			limit = {
 				development = 5
 				is_capital = no

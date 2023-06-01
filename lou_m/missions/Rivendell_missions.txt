@@ -33,6 +33,13 @@ slot_01 = {
 		icon = mission_colonial
 		position = 3
 		required_missions = { expel_wulfseggeas }
+		provinces_to_highlight = {
+			OR = {
+				area = foreregion_area
+				area = daergil_area
+			}
+			culture =  culture_wilderness
+		}
 		trigger = { 
 			foreregion_area = {
 				type = all
@@ -54,6 +61,12 @@ slot_01 = {
 		icon = mission_elves_1
 		position = 5
 		required_missions = { reclaim_ost_in_edhil }
+		provinces_to_highlight = {
+			region = eregion_region
+			owner = {
+				culture_group = culture_group_orcs
+			}
+		}
 		trigger = { 
 			eregion_region = {
 				type = all
@@ -166,16 +179,33 @@ slot_02 = {
 		effect = { }
 	}
 	gwaith_i_mirdain = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_elves_forge
 		position = 5
 		required_missions = { reclaim_ost_in_edhil }
-		trigger = { }
+		provinces_to_highlight = {
+			province_id = 285
+		}
+		trigger = { 
+			285 = {
+				has_great_project = {
+					type = ost_in_edhil_monument
+					tier = 1
+				}
+			}
+			
+		}
 		effect = { }
 	}
 	restore_eregion = {
 		icon = mission_elves_eregion
 		position = 6
-		required_missions = { rivendell_drive_out_orcs gwaith_i_mirdain trade_with_the_dwarves }
+		required_missions = { rivendell_drive_out_orcs gwaith_i_mirdain }
+		provinces_to_highlight = {
+			region = eregion_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = { 
 			eregion_region = {
 				type = all
@@ -198,6 +228,16 @@ slot_03 = {
 		icon = mission_colonial
 		position = 1
 		required_missions = {  }
+		provinces_to_highlight = {
+			region = eregion_region
+			owned_by = ROOT
+			NOT = {
+				OR = {
+					has_building = craftsmen_plaza_elf_building
+					has_building = theatre_elf_building
+				}
+			}
+		}
 		trigger = { 
 			num_of_owned_provinces_with = {
 				value = 2
@@ -216,6 +256,9 @@ slot_03 = {
 		icon = mission_asian_trader
 		position = 2
 		required_missions = { improve_rivendell }
+		provinces_to_highlight = {
+			province_id = 232
+		}
 		trigger = { 
 			232 = {
 				development = 40
@@ -227,6 +270,9 @@ slot_03 = {
 		icon = mission_rivendell
 		position = 3
 		required_missions = { place_of_learning }
+		provinces_to_highlight = {
+			province_id = 232
+		}
 		trigger = { 
 			232 = {
 				has_great_project = {
@@ -241,11 +287,63 @@ slot_03 = {
 		icon = mission_dominate_home_trade_node
 		position = 5
 		required_missions = { reclaim_ost_in_edhil aid_the_dwarves }
-		trigger = { }
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				AND = {
+					province_id = 1365
+					NOT = {
+						province_has_center_of_trade_of_level = 2
+					}
+				}
+				OR = {
+					area = ost_in_edhil_area
+					area = minas_melosse_area
+					area = mirobel_area
+				}
+			}
+			NOT = {
+				has_building = exotic_wares_market_elf_building
+			}
+		}
+		trigger = { 
+			if = {
+				limit = {
+					1365 = {
+						owned_by = ROOT
+					}
+				}
+				OR = {
+					1365 = {
+						province_has_center_of_trade_of_level = 2
+					}
+					num_of_owned_provinces_with = {
+						value = 2
+						OR = {
+							area = ost_in_edhil_area
+							area = minas_melosse_area
+							area = mirobel_area
+						}
+						has_building = exotic_wares_market_elf_building
+					}
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 2
+					OR = {
+						area = ost_in_edhil_area
+						area = minas_melosse_area
+						area = mirobel_area
+					}
+					has_building = exotic_wares_market_elf_building
+				}
+			}
+		}
 		effect = { }
 	}
 	pay_the_beorning_tolls = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_beornings
 		position = 7
 		required_missions = {  }
 		trigger = { 
@@ -280,7 +378,28 @@ slot_03 = {
 		icon = mission_goblin_1
 		position = 8
 		required_missions = { pay_the_beorning_tolls }
-		trigger = { }
+		provinces_to_highlight = {
+			area = goblin_gate_area
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		trigger = { 
+			goblin_gate_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
 		effect = { }
 	}
 }
@@ -297,14 +416,50 @@ slot_04 = {
 		icon = mission_build_up_to_force_limit
 		position = 4
 		required_missions = { friends_of_the_dwarves }
-		trigger = { }
+		provinces_to_highlight = {
+			area = khazad_dum_area
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		trigger = { 
+			khazad_dum_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
 		effect = { }
 	}
 	Hatred_of_the_orcs = {
 		icon = mission_orc_army_3
 		position = 9
 		required_missions = { aid_the_dwarves the_threat_of_goblintown }
-		trigger = { }
+		provinces_to_highlight = {
+			region = misty_mountains_region
+			owner = {
+				culture_group = culture_group_orcs
+			}
+		}
+		trigger = { 
+			misty_mountains_region = {
+				type = all
+				NOT = {
+					owner = {
+						culture_group = culture_group_orcs
+					}
+				}
+			}
+		}
 		effect = { }
 	}
 }
