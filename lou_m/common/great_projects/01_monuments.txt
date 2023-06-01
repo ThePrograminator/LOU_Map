@@ -363,12 +363,11 @@ amon_hen_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-			local_defensiveness = 0.1
-			local_hostile_attrition = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			spy_offence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -381,12 +380,11 @@ amon_hen_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			spy_offence = 0.20
 		}
 		on_upgraded = {
 		}
@@ -399,13 +397,11 @@ amon_hen_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 2
-			fort_level = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			spy_offence = 0.30
 		}
 		on_upgraded = {
 		}
@@ -483,7 +479,8 @@ amon_lhaw_monument = {
 		}
 		area_modifier = {
 		}
-		country_modifiers = {
+		country_modifiers = {			
+			global_spy_defence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -496,12 +493,11 @@ amon_lhaw_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_spy_defence = 0.20
 		}
 		on_upgraded = {
 		}
@@ -515,9 +511,6 @@ amon_lhaw_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 1
-			fort_level = 1
 		}
 		area_modifier = {
 		}
@@ -535,9 +528,7 @@ amon_lhaw_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 2
-			fort_level = 1
+			global_spy_defence = 0.30
 		}
 		area_modifier = {
 		}
@@ -4314,9 +4305,10 @@ entmoot_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_prosperity_growth = 0.1
+		local_prosperity_growth = 0.10
 		}
 		country_modifiers = {
+			shock_damage = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4331,9 +4323,10 @@ entmoot_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_prosperity_growth = 0.15
+		local_prosperity_growth = 0.25
 		}
 		country_modifiers = {
+			shock_damage = 0.10
 		}
 		on_upgraded = {
 		}
@@ -4348,9 +4341,10 @@ entmoot_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_prosperity_growth = 0.25
+		local_prosperity_growth = 0.50
 		}
 		country_modifiers = {
+			shock_damage = 0.15
 		}
 		on_upgraded = {
 		}
@@ -4542,11 +4536,13 @@ thalls_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_unrest = -1
+			local_unrest = -1
+			defensiveness = 0.05
+			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
-		war_exhaustion = -0.1
-		infantry_fire = 0.25
+			war_exhaustion = -0.05
+			fire_damage = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4561,11 +4557,13 @@ thalls_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_unrest = -2
+			local_unrest = -2
+			defensiveness = 0.15
+			local_defender_dice_roll_bonus = 2
 		}
 		country_modifiers = {
-		war_exhaustion = -0.1
-		infantry_fire = 0.5
+			war_exhaustion = -0.1
+			fire_damage = 0.10
 		}
 		on_upgraded = {
 		}
@@ -4578,14 +4576,15 @@ thalls_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		local_unrest = -3
+			local_unrest = -3
+			defensiveness = 0.25
+			local_defender_dice_roll_bonus = 3
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		war_exhaustion = -0.2
-		infantry_fire = 0.75
-		infantry_shock = 0.25
+			war_exhaustion = -0.15
+			fire_damage = 0.15
 		}
 		on_upgraded = {
 		}
@@ -4639,7 +4638,7 @@ gundabad_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.10
+			local_manpower_modifier = 0.10
 		}
 		country_modifiers = {
 		}
@@ -4655,13 +4654,16 @@ gundabad_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_manpower = 5
+			fort_level = 1
+			local_manpower = 5
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.25
+			local_manpower_modifier = 0.25
 		}
 		country_modifiers = {
+			army_tradition_decay = -0.01
+			discipline = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4674,14 +4676,16 @@ gundabad_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_manpower = 10
+			fort_level = 2
+			local_manpower = 10
+			local_defensiveness = 0.20
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.50
+			local_manpower_modifier = 0.50
 		}
 		country_modifiers = {
-		discipline = 0.025
+			army_tradition_decay = -0.02
+			discipline = 0.10
 		}
 		on_upgraded = {
 		}
@@ -4695,17 +4699,17 @@ gundabad_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_manpower = 15
-		local_defensiveness = 0.2
+			fort_level = 3
+			local_manpower = 15
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.50
-		local_manpower = 5
+			local_manpower_modifier = 0.50
+			local_manpower = 5
 		}
 		country_modifiers = {
-		army_tradition_decay = -0.01
-		discipline = 0.05
+			army_tradition_decay = -0.03
+			discipline = 0.15
 		}
 		on_upgraded = {
 		}
@@ -4760,7 +4764,7 @@ goblintown_monument = {
 			local_manpower = 5
 		}
 		area_modifier = {
-		trade_goods_size = 0.25
+			trade_goods_size = 0.25
 		}
 		country_modifiers = {
 		}
@@ -4779,7 +4783,7 @@ goblintown_monument = {
 			local_manpower = 10
 		}
 		area_modifier = {
-		trade_goods_size = 0.5
+			trade_goods_size = 0.5
 		}
 		country_modifiers = {
 		}
@@ -4887,13 +4891,13 @@ framsburg_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.1
-		
+			fort_level = 1
+			local_defensiveness = 0.15		
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			shock_damage_received = -0.05
 		}
 		on_upgraded = {
 		add_center_of_trade_level = 1
@@ -4908,12 +4912,13 @@ framsburg_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.2
+			fort_level = 2
+			local_defensiveness = 0.20
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			shock_damage_received = -0.10
 		}
 		on_upgraded = {
 		add_center_of_trade_level = 1
@@ -4928,12 +4933,13 @@ framsburg_monument = {
 			factor = 750
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.2
+			fort_level = 3
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
-		country_modifiers = {
+		country_modifiers = {			
+			shock_damage_received = -0.15
 		}
 		on_upgraded = {
 		add_center_of_trade_level = 1
@@ -6159,9 +6165,9 @@ nordinbad_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.1
-		trade_goods_size = 1
+			fort_level = 1
+			local_defensiveness = 0.15
+			production_efficiency = 0.05
 		}
 		area_modifier = {
 		}
@@ -6178,9 +6184,9 @@ nordinbad_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.2
-		trade_goods_size = 2
+			fort_level = 2
+			local_defensiveness = 0.20
+			production_efficiency = 0.15
 		}
 		area_modifier = {
 		}
@@ -6197,9 +6203,9 @@ nordinbad_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 3
-		local_defensiveness = 0.3
-		trade_goods_size = 3
+			fort_level = 3
+			local_defensiveness = 0.25
+			production_efficiency = 0.25
 		}
 		area_modifier = {
 		}
