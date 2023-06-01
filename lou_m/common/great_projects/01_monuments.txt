@@ -90,6 +90,8 @@ minas_tirith_monument = {
 		country_modifiers = {
 			yearly_patriarch_authority = 0.005
 			prestige_decay = -0.01
+			land_morale = 0.05
+			legitimacy = 0.5
 		}
 		on_upgraded = {
 			owner = {
@@ -109,9 +111,10 @@ minas_tirith_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_patriarch_authority = 0.01
-			prestige_decay = -0.01
-			legitimacy = 0.5
+			yearly_patriarch_authority = 0.010
+			prestige_decay = -0.02
+			land_morale = 0.10
+			legitimacy = 0.1
 		}
 		on_upgraded = {
 			owner = {
@@ -132,8 +135,9 @@ minas_tirith_monument = {
 		}
 		country_modifiers = {
 			yearly_patriarch_authority = 0.015
-			prestige_decay = -0.02
-			legitimacy = 1
+			prestige_decay = -0.03
+			land_morale = 0.15
+			legitimacy = 1.5
 		}
 		on_upgraded = {
 			owner = {
