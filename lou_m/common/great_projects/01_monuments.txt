@@ -4135,101 +4135,101 @@ moria_monument = {
 	}
 }
 
-#ost_in_edhil_monument = {
-#	start = 285
-#	date = 500.01.01
-#	time = {
-#		months = 3650
-#	}
-#	build_cost = 0
-#	can_be_moved = no
-#	move_days_per_unit_distance = 10
-#	starting_tier = 0
-#	type = monument
-#	build_trigger = {
-#		AND = {
-#			owner = {
-#				is_elf = yes
-#			}
-#			has_owner_religion = yes
-#		}			
-#	}
-#	on_built = {		
-#	}
-#	on_destroyed = {		
-#	}
-#	can_use_modifiers_trigger = {			
-#	}
-#	can_upgrade_trigger = {	
-#		has_owner_religion = yes	
-#	}
-#	keep_trigger = {
-#	}
-#	tier_0 = {
-#		upgrade_time = {
-#			months = 3650
-#		}
-#		cost_to_upgrade = {
-#			factor = 0
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#	tier_1 = {
-#		upgrade_time = {
-#			months = 120
-#		}
-#		cost_to_upgrade = {
-#			factor = 200
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#	tier_2 = {
-#		upgrade_time = {
-#			months = 240
-#		}
-#		cost_to_upgrade = {
-#			factor = 500
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#	tier_3 = {
-#		upgrade_time = {
-#			months = 480
-#		}
-#		cost_to_upgrade = {
-#			factor = 1000
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#}
+ost_in_edhil_monument = {
+	start = 285
+	date = 500.01.01
+	time = {
+		months = 3650
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				is_elf = yes
+			}
+			has_owner_religion = yes
+		}			
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}
+	can_use_modifiers_trigger = {			
+	}
+	can_upgrade_trigger = {	
+		has_owner_religion = yes	
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 3650
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+}
 
 entmoot_monument = {
 	start = 64
