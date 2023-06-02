@@ -307,25 +307,22 @@ country_decisions = {
 		}
 		ai_importance = 100
 	}
-}
 
 	#-------------------------
     # ANGMAR
     #-------------------------
-    angmar_nation = {
+	angmar_nation = {
 		major = yes
 		potential = {
-			AND = {
-				num_of_owned_provinces_with = {
-					value = 1
-					region = angmar_region
-				}
-				NOT = { exists = ANG }
-				OR = {
-					culture_group = culture_group_orcs
-					culture_group = culture_group_borians
-					culture_group = culture_group_black_numenorean
-				}
+
+			NOT = { 
+				exists = ANG
+			}
+
+			culture_group = culture_group_orcs
+
+			any_owned_province = {
+				region = angmar_region
 			}
 			OR = {
 				ai = no
@@ -336,14 +333,16 @@ country_decisions = {
 			}
 		}
         provinces_to_highlight = {
-            province_id = 610
-            province_id = 401
-            province_id = 611
-            province_id = 613
-            province_id = 1958
-            province_id = 1957
-            province_id = 606
-            province_id = 1956
+			OR = {
+				province_id = 610
+				province_id = 401
+				province_id = 611
+				province_id = 613
+				province_id = 1958
+				province_id = 1957
+				province_id = 606
+				province_id = 1956
+			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				is_city = no
