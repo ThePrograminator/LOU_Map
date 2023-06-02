@@ -973,3 +973,49 @@ forondir_ideas = {
 		vassal_income = 0.30
 	}
 }
+
+#------------------------------------
+# Angmar
+#------------------------------------
+
+angmar_ideas = {
+	start = {
+		infantry_cost = -0.1 
+		global_manpower_modifier = 0.33
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	
+	trigger = {
+		tag = ANG
+	}
+	free = yes		
+	
+	regiments_of_mordor = {
+		land_forcelimit_modifier = 0.33
+	}
+	allies_of_the_dark_lord = {
+		diplomatic_upkeep = 1
+		vassal_income = 0.20
+	}
+	working_trolls = {
+		build_cost = -0.15
+	}
+	emmisaries_of_mordor = {
+		accept_vassalization_reasons = 25
+		diplomatic_upkeep = 1
+	}
+	harsh_training = {
+		manpower_in_true_faith_provinces = 0.15
+		army_tradition = 0.5
+	}
+	the_whip = {
+		global_unrest = -2
+	}
+	the_battle_for_middle_earth = {
+		province_warscore_cost = -0.1 
+		administrative_efficiency = 0.05 
+	}
+}

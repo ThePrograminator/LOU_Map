@@ -10,7 +10,11 @@ country_decisions = {
 				exists = ANG
 			}
 
-			culture_group = culture_group_orcs
+			OR = {
+				culture_group = culture_group_orcs
+				culture_group = culture_group_borians
+				culture_group = culture_group_black_numenorean
+			}
 
 			any_owned_province = {
 				region = angmar_region
@@ -62,6 +66,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ANG
+
 			ANG = {
 				set_capital = 610		# Carn Dûm
 			}
