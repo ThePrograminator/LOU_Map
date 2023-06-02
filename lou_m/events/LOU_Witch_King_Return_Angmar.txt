@@ -1,0 +1,49 @@
+#Witch King returns fom the Wraith-World"
+namespace = LOU_Witch_King_Return_Angmar
+
+country_event = {
+	id = LOU_Witch_King_Return_Angmar.1
+	title = "LOU_Witch_King_Return_Angmar.1.t"
+	desc = "LOU_Witch_King_Return_Angmar.1.d"
+	picture = nazgul_returns_eventpicture
+	
+	trigger = {
+		tag = ANG
+		NOT = {
+			has_ruler = "Witch-King"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	option = {
+		name = "LOU_Witch_King_Return_Angmar.1.a"
+
+		add_stability = 1
+
+		define_ruler = {
+			name = "Witch-King"
+			dynasty = "of Angmar"
+			male = yes
+			adm = 5
+			dip = 3
+			mil = 6
+			age = 20
+			claim = 100
+			culture = culture_wight
+		}
+
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+
+		define_ruler_to_general = {
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 5
+		}
+	}
+}
+	
