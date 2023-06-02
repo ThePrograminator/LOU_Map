@@ -251,3 +251,39 @@ gov_lotr_carn_dum = {
 		has_reform = lotr_carn_dum_reform
 	}
 }
+
+gov_lotr_angmar = {
+	rank = {
+		1 = ANGMAR
+		2 = ANGMAR
+		3 = ANGMAR
+	}
+
+	ruler_male = {
+		1 = ANGMAR_RULER
+		2 = ANGMAR_RULER
+		3 = ANGMAR_RULER
+	}
+
+	ruler_female = {
+		1 = ANGMAR_RULER
+		2 = ANGMAR_RULER
+		3 = ANGMAR_RULER
+	}
+
+	heir_male = {
+		1 = ANGMAR_COMMANDER
+		2 = ANGMAR_COMMANDER
+		3 = ANGMAR_COMMANDER
+	}
+
+	heir_female = {
+		1 = ANGMAR_COMMANDER
+		2 = ANGMAR_COMMANDER
+		3 = ANGMAR_COMMANDER
+	}
+	
+	trigger = {
+		has_reform = lotr_angmar_reform
+	}
+}

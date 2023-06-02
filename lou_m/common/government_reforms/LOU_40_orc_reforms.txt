@@ -241,7 +241,7 @@ lotr_mordor_reform = {
 	}
 }
 lotr_carn_dum_reform = {
-	icon = "mordor"
+	icon = "carn_dum"
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_carn_dum_legacy
@@ -274,7 +274,7 @@ lotr_carn_dum_reform = {
 	}
 }
 lotr_angmar_reform = {
-	icon = "nazgul_domain"
+	icon = "carn_dum"
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_carn_dum_legacy
@@ -284,7 +284,7 @@ lotr_angmar_reform = {
 	heirs_can_be_generals = yes
 	
 	potential = {
-		tag = Y52
+		tag = ANG
 	}
 	
 	modifiers = {
