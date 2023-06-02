@@ -10,6 +10,10 @@ country_decisions = {
 				exists = ANG
 			}
 
+			NOT = {
+				tag = Y63												#Exclude Gundabad for their own path/formable/missions
+			}
+
 			OR = {
 				culture_group = culture_group_orcs
 				culture_group = culture_group_borians

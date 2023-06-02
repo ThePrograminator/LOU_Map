@@ -1,0 +1,35 @@
+####################
+# Angmar Missions  #
+####################
+angmar_slot_3 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = Y52
+			tag = ANG
+		}
+	}
+
+	secure_carn_dum = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			area = carn_dum_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			carn_dum_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_stability = 1
+		}
+	}
+}
