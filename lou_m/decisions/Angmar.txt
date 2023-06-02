@@ -71,28 +71,6 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-
-			hidden_effect = {
-				V18 = {
-					kill_ruler = yes
-					set_global_flag = witch_king_angmar_flag
-					define_ruler = {
-						name = "Jí Indûr"
-						dynasty = "Dawndeath"
-						male = yes
-						adm = 4
-						dip = 3
-						mil = 6
-						age = 20
-						claim = 100
-						culture = culture_wight
-					}
-				}
-				V18 = {
-					add_ruler_personality = immortal_personality
-					set_ruler_flag = set_immortality
-				}
-			}
             
             if = {
 				limit = { has_custom_ideas = no }
