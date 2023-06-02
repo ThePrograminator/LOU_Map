@@ -943,6 +943,33 @@ lotr_mordor_legacy = {
 		factor = 1
 	}
 }
+lotr_carn_dum_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	monarchy = yes
+	allow_convert = no
+	heir = yes
+	queen = no
+	royal_marriage = no
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+    	governing_capacity = 100
+		tolerance_own = 2
+		tolerance_heretic = -2
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
 
 lotr_orc_clan_legacy = {
 	# government mechanics flags go here

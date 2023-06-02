@@ -215,3 +215,39 @@ gov_lotr_mordor = {
 		has_reform = lotr_mordor_reform
 	}
 }
+
+gov_lotr_carn_dum = {
+	rank = {
+		1 = CARN_DUM
+		2 = CARN_DUM
+		3 = CARN_DUM
+	}
+
+	ruler_male = {
+		1 = CARN_DUM_RULER
+		2 = CARN_DUM_RULER
+		3 = CARN_DUM_RULER
+	}
+
+	ruler_female = {
+		1 = CARN_DUM_RULER
+		2 = CARN_DUM_RULER
+		3 = CARN_DUM_RULER
+	}
+
+	heir_male = {
+		1 = CARN_DUM_COMMANDER
+		2 = CARN_DUM_COMMANDER
+		3 = CARN_DUM_COMMANDER
+	}
+
+	heir_female = {
+		1 = CARN_DUM_COMMANDER
+		2 = CARN_DUM_COMMANDER
+		3 = CARN_DUM_COMMANDER
+	}
+	
+	trigger = {
+		has_reform = lotr_carn_dum_reform
+	}
+}
