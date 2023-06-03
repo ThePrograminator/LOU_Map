@@ -216,7 +216,10 @@ angmar_slot_3 = {
 			}
 		}
 		effect = { 
-			
+			add_country_modifier = {
+				name = legacy_of_king_golfimbul
+				duration = -1
+			}
 		}
 	}
 }
