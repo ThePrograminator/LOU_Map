@@ -1,7 +1,7 @@
 ####################
 # Angmar Missions  #
 ####################
-angmar_slot_3 = {
+angmar_formable_slot_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -52,6 +52,10 @@ angmar_slot_3 = {
 			is_at_war = no
             NOT = { exists = ANG }
 			
+			stability = 1
+
+			manpower_percentage = 0.75
+
 			num_of_owned_provinces_with = {
 				value = 20
 				region = angmar_region
@@ -67,7 +71,155 @@ angmar_slot_3 = {
 		}
 		effect = { 
 			change_tag = ANG
+			set_capital = 610
 			add_stability = 1
+			carn_dum_area = {
+				add_permanent_claim = ANG
+			}
+			phaluran_area = {
+				add_permanent_claim = ANG
+			}
+			angsul_area = {
+				add_permanent_claim = ANG
+			}
+			morkai_area = {
+				add_permanent_claim = ANG
+			}
+			shedun_area = {
+				add_permanent_claim = ANG
+			}
+			nan_angmar_area = {
+				add_permanent_claim = ANG
+			}
+		}
+	}
+}
+
+angmar_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ANG
+	}
+	angmarim_servitude = {
+		icon = mission_carn_dum
+		position = 2
+		required_missions = { reformation_of_angmar }
+		provinces_to_highlight = {
+			has_terrain = unique_angmar_town
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 7
+				has_owner_accepted_culture = yes
+				has_culture = culture_angmarrim
+				development = 15
+			}
+		}
+		effect = { 
+			add_karma = 10
+			every_owned_province = {
+				limit = {
+					has_terrain = unique_angmar_town
+				}
+				add_permanent_province_modifier = { 
+					name = servants_of_angmar
+					duration = -1  
+				}
+			}
+		}
+	}
+	restore_ancient_borders = {
+		icon = mission_carn_dum
+		position = 3
+		required_missions = { angmarim_servitude }
+		provinces_to_highlight = {
+			area = carn_dum_area
+			area = phaluran_area
+			area = angsul_area
+			area = morkai_area
+			area = shedun_area
+			area = nan_angmar_area
+		}
+		trigger = {
+			carn_dum_area = {
+				owned_by = ROOT
+			}
+			phaluran_area = {
+				owned_by = ROOT
+			}
+			angsul_area = {
+				owned_by = ROOT
+			}
+			morkai_area = {
+				owned_by = ROOT
+			}
+			shedun_area = {
+				owned_by = ROOT
+			}
+			nan_angmar_area = {
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			
+		}
+	}
+}
+
+angmar_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ANG
+	}
+
+	west_to_forochel = {
+		icon = mission_carn_dum
+		position = 2
+		required_missions = { reformation_of_angmar }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 610
+				province_id = 401
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+		}
+		effect = { 
+		}
+	}
+}
+
+angmar_slot_4 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ANG
+	}
+
+	south_to_rhudaur = {
+		icon = mission_carn_dum
+		position = 2
+		required_missions = { reformation_of_angmar }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 610
+				province_id = 401
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+		}
+		effect = { 
 		}
 	}
 }
