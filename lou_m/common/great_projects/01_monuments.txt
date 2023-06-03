@@ -7614,7 +7614,6 @@ tharbad_bridge_monument = {
 					is_hobbit = yes
 				}
 			}
-			has_owner_religion = yes
 		}			
 	}
 	on_built = {	
@@ -7624,8 +7623,7 @@ tharbad_bridge_monument = {
 	}
 	can_use_modifiers_trigger = {			
 	}
-	can_upgrade_trigger = {	
-		has_owner_religion = yes	
+	can_upgrade_trigger = {		
 	}
 	keep_trigger = {
 	}
