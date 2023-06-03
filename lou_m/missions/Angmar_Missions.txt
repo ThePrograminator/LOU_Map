@@ -2,33 +2,71 @@
 # Angmar Missions  #
 ####################
 angmar_slot_3 = {
-	slot = 1
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { 
+			exists = ANG
+		}
+
+		NOT = {
+			tag = Y63												#Exclude Gundabad for their own path/formable/missions
+		}
+
 		OR = {
-			tag = Y52
-			tag = ANG
+			culture_group = culture_group_orcs
+			culture_group = culture_group_borians
+			culture_group = culture_group_black_numenorean
+		}
+
+		any_owned_province = {
+			region = angmar_region
 		}
 	}
 
 	reformation_of_angmar = {
-		icon = mission_unite_home_region
+		icon = mission_carn_dum
 		position = 1
 		required_missions = { }
 		provinces_to_highlight = {
-			area = carn_dum_area
+			OR = {
+				province_id = 610
+				province_id = 401
+				province_id = 611
+				province_id = 613
+				province_id = 1958
+				province_id = 1957
+				province_id = 606
+				province_id = 1956
+			}
 			NOT = {
 				owned_by = ROOT
 			}
 		}
 		trigger = {
-			carn_dum_area = {
-				type = all
-				owned_by = ROOT
+			adm_tech = 6
+            
+			is_subject = no
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            NOT = { exists = ANG }
+			
+			num_of_owned_provinces_with = {
+				value = 20
+				region = angmar_region
 			}
+			owns_core_province = 610 	# Carn Dûm
+			owns_core_province = 401 	# Phaluran
+			owns_core_province = 611 	# Angsûl
+			owns_core_province = 613 	# Cargash
+			owns_core_province = 1958 	# Morkai
+			owns_core_province = 1957 	# Shedûn
+			owns_core_province = 606 	# Angsiril
+			owns_core_province = 1956 	# Litash 
 		}
 		effect = { 
+			change_tag = ANG
 			add_stability = 1
 		}
 	}
