@@ -6,22 +6,27 @@ angmar_formable_slot_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		NOT = { 
-			exists = ANG
-		}
+		OR ={
+			tag = ANG
+			AND = {
+				NOT = { 
+					exists = ANG
+				}
 
-		NOT = {
-			tag = Y63												#Exclude Gundabad for their own path/formable/missions
-		}
+				NOT = {
+					tag = Y63												#Exclude Gundabad for their own path/formable/missions
+				}
 
-		OR = {
-			culture_group = culture_group_orcs
-			culture_group = culture_group_borians
-			culture_group = culture_group_black_numenorean
-		}
+				OR = {
+					culture_group = culture_group_orcs
+					culture_group = culture_group_borians
+					culture_group = culture_group_black_numenorean
+				}
 
-		any_owned_province = {
-			region = angmar_region
+				any_owned_province = {
+					region = angmar_region
+				}
+			}
 		}
 	}
 
@@ -163,7 +168,20 @@ angmar_slot_3 = {
 			}
 		}
 		effect = { 
-			
+			add_prestige = 50
+			add_karma = 10
+			mount_gram_area = {
+				add_permanent_claim = ANG
+			}
+			angirith_area = {
+				add_permanent_claim = ANG
+			}
+			rist_angsiril_area = {
+				add_permanent_claim = ANG
+			}
+			gram_foothills_area = {
+				add_permanent_claim = ANG
+			}
 		}
 	}
 }
@@ -197,7 +215,7 @@ angmar_slot_2 = {
 }
 
 angmar_slot_4 = {
-	slot = 2
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -206,8 +224,8 @@ angmar_slot_4 = {
 
 	south_to_rhudaur = {
 		icon = mission_carn_dum
-		position = 2
-		required_missions = { reformation_of_angmar }
+		position = 3
+		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 610
