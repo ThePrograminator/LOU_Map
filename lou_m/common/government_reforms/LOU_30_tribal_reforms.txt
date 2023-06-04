@@ -56,6 +56,7 @@ tribal_dunedain_arnor = {
 		diplomatic_reputation = 1
 		reduced_liberty_desire = 10
 		land_maintenance_modifier = -0.20
+		global_spy_defence = 0.15
 	}
 }
 tribal_leader_of_the_dunedain_arnor = {
@@ -76,8 +77,10 @@ tribal_leader_of_the_dunedain_arnor = {
 
 	modifiers = {
 		diplomatic_upkeep = 3
+		improve_relation_modifier = 0.20
 		country_diplomatic_power = 1
 		army_tradition = 1
+		global_spy_defence = 0.15
 	}
 }
 tribal_rivermen = {

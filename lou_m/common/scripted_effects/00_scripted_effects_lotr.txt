@@ -1630,7 +1630,10 @@ cede_ally_provinces_mission_effect = {
 		limit = {
 			$province_scope$ = {
 				owner = {
+					OR = {
 					alliance_with = ROOT
+					is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -1639,7 +1642,10 @@ cede_ally_provinces_mission_effect = {
 			$province_scope$ = {
 				limit = {
 					owner = {
+						OR = {
 						alliance_with = ROOT
+						is_subject_of = ROOT
+						}
 					}
 				}
 				remove_core = $COUNTRY$

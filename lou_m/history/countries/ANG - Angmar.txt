@@ -1,0 +1,65 @@
+government = orc_gov
+add_government_reform = lotr_angmar_reform
+primary_culture = culture_uruks
+add_accepted_culture = culture_wight
+add_accepted_culture = culture_orkish
+add_accepted_culture = culture_angmarrim
+religion = religion_orkish
+technology_group = lotr_orc_forodwaith
+unit_type = lotr_orc
+capital = 610
+
+
+historical_friend = V05
+historical_friend = V35
+historical_friend = Y43
+historical_friend = Y63
+historical_friend = Y51
+historical_friend = Z96
+historical_rival = Z19
+historical_rival = Z17
+historical_rival = Z18
+historical_rival = Z06
+historical_rival = Z10
+historical_rival = Z22
+historical_rival = Y26
+historical_rival = Z21
+historical_rival = Z16
+historical_rival = Y27
+historical_rival = Z29
+historical_rival = Z28
+historical_rival = Z24
+historical_rival = Z23
+historical_rival = Y81
+historical_rival = Z07
+historical_rival = Z34
+historical_rival = Z25
+historical_rival = Z33
+historical_rival = Z32
+historical_rival = Z27
+historical_rival = Z30
+historical_rival = Z31
+historical_rival = Y80
+historical_rival = Z42
+
+2758.1.1 = {
+	monarch = {
+		name = "The Witch-King"
+		dynasty = "of Angmar"
+		adm = 5
+		dip = 4
+		mil = 6
+		birth_date = 2718.1.1
+		culture = culture_wight
+		leader = {
+			name = "The Witch-King"					# Name of the leader
+			type = general							# Type of leader: general, admiral, explorer, conquistidor
+			fire = 4   					 			# Fire value of the leader
+			shock = 6     							# Shock value of the leader
+			manuever = 4    						# Manuever value of the leader
+			siege = 5       						# Siege value of the leader
+		}
+	}
+    add_ruler_personality = immortal_personality	
+	set_ruler_flag = set_immortality
+}

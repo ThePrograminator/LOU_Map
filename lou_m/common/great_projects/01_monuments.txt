@@ -7602,7 +7602,7 @@ tharbad_bridge_monument = {
 	can_be_moved = no
 	move_days_per_unit_distance = 10
 	starting_tier = 0
-	type = monument
+	type = canal
 	build_trigger = {
 		AND = {
 			owner = {
@@ -7614,17 +7614,16 @@ tharbad_bridge_monument = {
 					is_hobbit = yes
 				}
 			}
-			has_owner_religion = yes
 		}			
 	}
-	on_built = {		
+	on_built = {	
 	}
-	on_destroyed = {		
+	on_destroyed = {
+		remove_canal = tharbad_bridge_monument	
 	}
 	can_use_modifiers_trigger = {			
 	}
-	can_upgrade_trigger = {	
-		has_owner_religion = yes	
+	can_upgrade_trigger = {		
 	}
 	keep_trigger = {
 	}
@@ -7636,11 +7635,11 @@ tharbad_bridge_monument = {
 			factor = 0
 		}
 		province_modifiers = {
-		province_trade_power_value = 5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			prestige = 0.15
 		}
 		on_upgraded = {
 		}
@@ -7653,14 +7652,17 @@ tharbad_bridge_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		province_trade_power_value = 10
+			province_trade_power_value = 5
 		}
 		area_modifier = {
+			province_trade_power_modifier = 0.05
 		}
 		country_modifiers = {
-		caravan_power = 0.1
+			prestige = 0.25
+			caravan_power = 0.05
 		}
 		on_upgraded = {
+			add_canal = tharbad_bridge_monument	
 		}
 	}
 	tier_2 = {
@@ -7671,13 +7673,14 @@ tharbad_bridge_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		province_trade_power_value = 20
+			province_trade_power_value = 15
 		}
 		area_modifier = {
-		province_trade_power_modifier = 0.1
+			province_trade_power_modifier = 0.15
 		}
 		country_modifiers = {
-		caravan_power = 0.25
+			prestige = 0.50
+			caravan_power = 0.15
 		}
 		on_upgraded = {
 		}
@@ -7687,16 +7690,17 @@ tharbad_bridge_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 200
+			factor = 1000
 		}
 		province_modifiers = {
-		province_trade_power_value = 30
+			province_trade_power_value = 25
 		}
 		area_modifier = {
-		province_trade_power_modifier = 0.25
+			province_trade_power_modifier = 0.25
 		}
 		country_modifiers = {
-		caravan_power = 0.40
+			prestige = 1
+			caravan_power = 0.25
 		}
 		on_upgraded = {
 

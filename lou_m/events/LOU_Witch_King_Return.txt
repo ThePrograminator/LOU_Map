@@ -1,4 +1,4 @@
-#Witch King returns fom the Wraith-World"
+#Witch King returns fom the Wraith-World - Jí Indûr Dawndeath revives instead if Witch-King is in Angmar
 namespace = LOU_Witch_King_Return
 
 country_event = {
@@ -9,8 +9,21 @@ country_event = {
 	
 	trigger = {
 		tag = V18
-		NOT = {
-			has_ruler = "Witch-King"
+		OR = {
+			AND = {
+				NOT = {
+					exists = ANG
+				}
+				NOT = {
+					has_ruler = "Witch-King"
+				}
+			}
+			AND = {
+				exists = ANG
+				NOT = {
+					has_ruler = "Jí Indûr"
+				}
+			}
 		}
 	}
 	
@@ -21,13 +34,59 @@ country_event = {
 	option = {
 		name = "LOU_Witch_King_Return.1.a"
 
+		trigger = {
+			tag = V18
+			NOT = {
+				exists = ANG
+			}
+			NOT = {
+				has_ruler = "Witch-King"
+			}
+		}
+
 		add_stability = 1
 
 		define_ruler = {
 			name = "Witch-King"
-			dynasty = "Lord of the Nazgul"
+			dynasty = "of Angmar"
 			male = yes
 			adm = 5
+			dip = 3
+			mil = 6
+			age = 20
+			claim = 100
+			culture = culture_wight
+		}
+
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+
+		define_ruler_to_general = {
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 5
+		}
+	}
+
+	option = {
+		name = "LOU_Witch_King_Return.1.b"
+
+		trigger = {
+			tag = V18
+			exists = ANG
+			NOT = {
+				has_ruler = "Jí Indûr"
+			}
+		}
+
+		add_stability = 1
+
+		define_ruler = {
+			name = "Jí Indûr"
+			dynasty = "Dawndeath"
+			male = yes
+			adm = 4
 			dip = 3
 			mil = 6
 			age = 20

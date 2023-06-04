@@ -1326,7 +1326,6 @@ slot_03_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			inherit = Z16
 			add_patriarch_authority = 0.15
 		}
 	}
@@ -1340,6 +1339,7 @@ slot_03_dunedain_of_the_north_series = {
 			}
 		}
 		effect = {
+			inherit = Z16
 			country_event = {
 				id = LOU_mission_dunedain_of_arnor.5
 			}

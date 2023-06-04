@@ -102,9 +102,6 @@ country_event = {
 				culture = culture_istari
 			}
 
-			add_ruler_personality = immortal_personality
-			set_ruler_flag = set_immortality
-
 			add_country_modifier = {
 				name = isengard_good
 				duration = -1
@@ -131,6 +128,11 @@ country_event = {
 				value = 50
 				mutual = yes
 			}
+		}
+
+		W53 = {
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
 		}
 		
 		X01 = {
@@ -209,9 +211,6 @@ country_event = {
 			culture = culture_istari
 		}
 
-		add_ruler_personality = immortal_personality
-		set_ruler_flag = set_immortality
-
 		add_country_modifier = {
 			name = isengard_good
 			duration = -1
@@ -237,6 +236,11 @@ country_event = {
 			who = X16
 			value = 50
 			mutual = yes
+		}
+		
+		W53 = {
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
 		}
 
 		X01 = {
@@ -313,9 +317,6 @@ country_event = {
 				culture = culture_istari
 			}
 
-			add_ruler_personality = immortal_personality
-			set_ruler_flag = set_immortality	
-
 			add_country_modifier = {
 				name = isengard_good
 				duration = -1
@@ -342,6 +343,11 @@ country_event = {
 				value = 50
 				mutual = yes
 			}
+		}
+		
+		W53 = {
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
 		}
 
 		X01 = {
@@ -427,14 +433,16 @@ country_event = {
 			culture = culture_istari
 		}
 
-		add_ruler_personality = immortal_personality
-		set_ruler_flag = set_immortality
-
 		remove_country_modifier = isengard_good
 		
 		add_country_modifier = {
 			name = isengard_evil
 			duration = -1
+		}
+		
+		W53 = {
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
 		}
 
 	}
@@ -490,15 +498,17 @@ country_event = {
 			claim = 100
 			culture = culture_istari
 		}
-		
-		add_ruler_personality = immortal_personality
-		set_ruler_flag = set_immortality
 
 		remove_country_modifier = isengard_good
 
 		add_country_modifier = {
 			name = isengard_evil
 			duration = -1
+		}
+		
+		W53 = {
+			add_ruler_personality = immortal_personality
+			set_ruler_flag = set_immortality
 		}
 
 	}
