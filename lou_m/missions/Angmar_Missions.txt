@@ -148,8 +148,8 @@ angmar_slot_3 = {
 			}
 		}
 	}
-	restore_ancient_borders = {
-		icon = mission_restore_ancient_borders
+	restore_old_borders = {
+		icon = mission_restore_old_borders
 		position = 3
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
@@ -206,7 +206,7 @@ angmar_slot_3 = {
 	subjugate_mount_gram = {
 		icon = mission_mount_gram
 		position = 4
-		required_missions = { restore_ancient_borders }
+		required_missions = { restore_old_borders }
 		provinces_to_highlight = {
 			province_id = 687
 		}
@@ -265,6 +265,43 @@ angmar_slot_2 = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
+			}
+			forochel_region = {
+				add_permanent_claim = ANG
+			}
+		}
+	}
+
+	the_ice_bay_thralls = {
+		icon = mission_west_to_forochel
+		position = 3
+		required_missions = { west_to_forochel }
+		provinces_to_highlight = {
+			region = forochel_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				region = forochel_region
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_terrain = unique_forodwaith_town
+			}
+		}
+		effect = { 
+			every_owned_province = {
+				limit = {
+					has_terrain = unique_forodwaith_town
+				}
+				change_culture = culture_angmarrim
+				change_religion = religion_orkish
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
 			}
 			forochel_region = {
 				add_permanent_claim = ANG
