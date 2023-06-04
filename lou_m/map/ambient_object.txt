@@ -324,23 +324,6 @@ type={
 	}
 }
 type={
-	type="erebor_monument"
-	use_animation=no
-	scale=0.900000
-	time_duration=300.000000
-	always_visible=yes
-	visible_in_all_map_modes=yes
-	object={
-		name="erebor_monument"
-		hidden_on_start=no
-		position={
-			1998.600 0.300 1628.800 
-		}
-		rotation={
-			0.000 125.000 90.000 
-		}
-	}
-type={
 	type="helms_deep"
 	use_animation=no
 	scale=0.900000
@@ -1237,7 +1220,7 @@ type={
 type={
 	type="amon_amarth"
 	use_animation=no
-	scale=2.3500000
+	scale=2.350000
 	time_duration=300.000000
 	max_visible=1
 	always_visible=yes
@@ -1250,6 +1233,25 @@ type={
 		}
 		rotation={
 			45.000 180.000 0.000 
+		}
+	}
+}
+type={
+	type="erebor_monument"
+	use_animation=no
+	scale=0.900000
+	time_duration=300.000000
+	max_visible=1
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="erebor_monument"
+		hidden_on_start=no
+		position={
+			1998.600 0.300 1628.800 
+		}
+		rotation={
+			0.000 125.000 90.000 
 		}
 	}
 }
