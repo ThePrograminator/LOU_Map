@@ -1,0 +1,162 @@
+government = monarchy
+add_government_reform = feudalism_reform
+
+primary_culture = culture_haruze
+religion = religion_haruzani
+technology_group = lotr_human_near_harad
+capital = 1762
+
+add_treasury = 100
+
+historical_friend = X23
+historical_friend = X28
+historical_friend = X31
+historical_friend = V11
+historical_friend = X24
+historical_friend = X20
+historical_friend = Q21
+historical_friend = Q22
+historical_rival = X18
+historical_rival = X17
+historical_rival = X80
+
+2750.1.1 = {
+	monarch = {
+		name = "Waiz"
+		dynasty = "Amrûn"
+		birth_date = 2705.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		monarch_name = "Mawiyah"
+		name = "Mawiyah"
+		dynasty = "Amrûn"
+		birth_date = 2705.1.1
+		death_date = 2743.1.1
+		adm = 1
+		dip = 5
+		mil = 4
+		claim = 100
+	}
+	add_country_modifier = {
+		name = royal_ancestry
+		duration = -1
+	}
+	add_country_modifier = {
+		name = loyal_people
+		duration = -1
+	}
+}
+
+2800.1.1 = {
+	monarch = {
+		name = "Aashif"
+		dynasty = "Amrûn"
+		birth_date = 2732.1.1
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Nusaybah"
+		name = "Nusaybah"
+		dynasty = "Amrûn"
+		birth_date = 2727.1.1
+		death_date = 2774.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+		claim = 100
+	}
+}
+
+2850.1.1 = {
+	monarch = {
+		name = "Zaigham"
+		dynasty = "Amrûn"
+		birth_date = 2797.1.1
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+	heir = {
+		monarch_name = "May"
+		name = "May"
+		dynasty = "Amrûn"
+		birth_date = 2827.1.1
+		death_date = 2857.1.1
+		adm = 0
+		dip = 0
+		mil = 3
+		claim = 100
+	}
+}
+
+2900.1.1 = {
+	monarch = {
+		name = "Wakalat"
+		dynasty = "Amrûn"
+		birth_date = 2825.1.1
+		adm = 3
+		dip = 4
+		mil = 0
+	}
+	heir = {
+		monarch_name = "Khawlah"
+		name = "Khawlah"
+		dynasty = "Amrûn"
+		birth_date = 2868.1.1
+		death_date = 2954.1.1
+		adm = 2
+		dip = 1
+		mil = 4
+		claim = 100
+	}
+}
+
+2950.1.1 = {
+	monarch = {
+		name = "Nabil"
+		dynasty = "Amrûn"
+		birth_date = 2892.1.1
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+	heir = {
+		monarch_name = "Rumaylah"
+		name = "Rumaylah"
+		dynasty = "Amrûn"
+		birth_date = 2928.1.1
+		death_date = 2982.1.1
+		adm = 1
+		dip = 0
+		mil = 5
+		claim = 100
+	}
+}
+
+3000.1.1 = {
+	monarch = {
+		name = "Ibaad"
+		dynasty = "Amrûn"
+		birth_date = 2978.1.1
+		adm = 5
+		dip = 0
+		mil = 5
+	}
+	heir = {
+		monarch_name = "Khawlah"
+		name = "Khawlah"
+		dynasty = "Amrûn"
+		birth_date = 2979.1.1
+		death_date = 3004.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+		claim = 100
+	}
+}
+
