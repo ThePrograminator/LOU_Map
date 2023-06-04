@@ -46,12 +46,24 @@ slot_01 = {
 				NOT  = {
 					culture =  culture_wilderness
 				}
+				custom_trigger_tooltip = {
+					tooltip = RESETTLEMENT_TT
+					NOT = { 
+						has_province_modifier = ruins_debuff
+					}
+				}
 			}
 
 			daergil_area = {
 				type = all
 				NOT  = {
 					culture =  culture_wilderness
+				}
+				custom_trigger_tooltip = {
+					tooltip = RESETTLEMENT_TT
+					NOT = { 
+						has_province_modifier = ruins_debuff
+					}
 				}
 			}
 		}
@@ -400,7 +412,10 @@ slot_03 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_dip_power = 100
+		}
 	}
 }
 

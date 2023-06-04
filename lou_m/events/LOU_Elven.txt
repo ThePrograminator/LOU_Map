@@ -114,8 +114,10 @@ province_event = {
 	picture = COLONIZATION_eventPicture
 
 	#hidden = yes
+	is_triggered_only = yes
 
 	trigger = {
+		always = no
 		NOT  = {
 			has_province_modifier = elfs_forest_defence_roll
 		}
