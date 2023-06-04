@@ -38,7 +38,7 @@ osgiliath = {
 	province_trade_power_value = 1
 	trade_goods_size_modifier = 0.25
 	trade_value_modifier = 0.25
-	local_tax_modifier = 0.25
+	local_tax_modifier = 0.15
 	local_production_efficiency = 0.15
 	allowed_num_of_manufactories = 2
 }
@@ -229,6 +229,7 @@ dol_guldur = {
 isengard = {
 	fort_level = 5
 	local_defensiveness = 1
+	local_hostile_attrition = 2
 	supply_limit_modifier = 1
 	local_manpower_modifier = 0.50
 	local_production_efficiency = 0.15
@@ -480,7 +481,12 @@ shelobs_lair = {
 	local_missionary_strength = -5
 }
 
-# amon_sul = {									#Moved to Dunedain of the North mission modifier file
+ruined_amon_sul = {
+	local_defensiveness = 0.15
+	local_defender_dice_roll_bonus = 1
+}
+
+# amon_sul = {									#Moved to Dunedain of the North mission modifier file - is rebuilt
 # 	fort_level = 3
 # 	local_defensiveness = 0.25
 # 	local_hostile_attrition = 3
@@ -491,7 +497,16 @@ shelobs_lair = {
 # }
 
  carn_dum = {
-
+	fort_level = 5
+	local_defensiveness = 1
+	local_hostile_attrition = 5
+	local_manpower_modifier = 0.50
+	supply_limit_modifier = 0.5
+	province_trade_power_value = 0.5
+	local_production_efficiency = 0.15
+	allowed_num_of_manufactories = 1
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
  }
 
  gundabad = {
@@ -499,7 +514,14 @@ shelobs_lair = {
  }
 
  mount_gram = {
-	
+	fort_level = 3
+	local_defensiveness = 0.5
+	local_hostile_attrition = 3
+	supply_limit_modifier = 0.5
+	local_manpower_modifier = 0.25
+	allowed_num_of_manufactories = 1
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
  }
  
  goblin_town = {
@@ -507,5 +529,48 @@ shelobs_lair = {
  }
 
  ruined_fornost_erain = {
-	
+	fort_level = 1
+	local_defensiveness = 0.25
+	local_defender_dice_roll_bonus = 1
+ }
+
+ fornost_erain = {
+
+ }
+
+ ruined_annuminas = {
+	local_defensiveness = 0.15
+	local_build_cost = -0.15
+	local_build_time = -0.15 
+ }
+
+ annuminas = {
+	fort_level = 5
+	local_defensiveness = 1
+	local_hostile_attrition = 3
+	local_manpower_modifier = 1
+	supply_limit_modifier = 1
+	province_trade_power_value = 0.5
+	trade_goods_size_modifier = 0.15
+	trade_value_modifier = 0.15
+	local_tax_modifier = 0.10
+	local_production_efficiency = 0.10
+	allowed_num_of_manufactories = 2 
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
+	local_build_cost = -0.25
+	local_build_time = -0.25         
+ }
+
+ bree = {
+	fort_level = 1
+	local_defensiveness = 0.25
+	local_hostile_attrition = 1
+	local_manpower_modifier = 0.50
+	supply_limit_modifier = 0.50
+	province_trade_power_value = 0.5
+	trade_value_modifier = 0.15
+	trade_goods_size_modifier = 0.15
+	local_tax_modifier = 0.10
+	allowed_num_of_manufactories = 1
  }

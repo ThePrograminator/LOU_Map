@@ -6922,7 +6922,8 @@ high_fells_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
+			all_power_cost = -0.01
+			monarch_military_power = 1
 		}
 		on_upgraded = {
 			custom_tooltip = high_fells_monument_tt
@@ -6961,8 +6962,8 @@ high_fells_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
-			monarch_military_power = 1
+			all_power_cost = -0.03
+			monarch_military_power = 2
 		}
 		on_upgraded = {
 			custom_tooltip = high_fells_monument_tt
@@ -7001,9 +7002,8 @@ high_fells_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.1
-			monarch_admin_power = 1
-			monarch_military_power = 2
+			all_power_cost = -0.05
+			monarch_military_power = 3
 		}
 		on_upgraded = {
 			custom_tooltip = high_fells_monument_tt
