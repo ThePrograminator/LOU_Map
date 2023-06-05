@@ -486,7 +486,7 @@ ruined_amon_sul = {
 	local_defender_dice_roll_bonus = 1
 }
 
-# amon_sul = {									#Moved to Dunedain of the North mission modifier file - is rebuilt
+# amon_sul = {									#Moved to Dunedain of the North mission modifier file
 # 	fort_level = 3
 # 	local_defensiveness = 0.25
 # 	local_hostile_attrition = 3
@@ -501,8 +501,8 @@ ruined_amon_sul = {
 	local_defensiveness = 1
 	local_hostile_attrition = 5
 	local_manpower_modifier = 0.50
-	supply_limit_modifier = 0.5
-	province_trade_power_value = 0.5
+	supply_limit_modifier = 1
+	province_trade_power_value = 0.50
 	local_production_efficiency = 0.15
 	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.25
@@ -510,14 +510,23 @@ ruined_amon_sul = {
  }
 
  gundabad = {
-	
+	fort_level = 5
+	local_defensiveness = 1
+	local_hostile_attrition = 5
+	local_manpower_modifier = 0.50
+	supply_limit_modifier = 1
+	province_trade_power_value = 0.50
+	local_production_efficiency = 0.15
+	allowed_num_of_manufactories = 1
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
  }
 
  mount_gram = {
 	fort_level = 3
-	local_defensiveness = 0.5
+	local_defensiveness = 0.50
 	local_hostile_attrition = 3
-	supply_limit_modifier = 0.5
+	supply_limit_modifier = 0.50
 	local_manpower_modifier = 0.25
 	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.25
@@ -525,7 +534,17 @@ ruined_amon_sul = {
  }
  
  goblin_town = {
-	
+	fort_level = 3
+	local_hostile_attrition = 3
+	local_defensiveness = 0.50
+	supply_limit_modifier = 0.50
+	local_unrest = -5
+	allowed_num_of_manufactories = 1
+	province_trade_power_value = 0.50
+	trade_goods_size_modifier = 0.25
+	local_tax_modifier = 0.15
+	local_build_cost = -0.15
+	local_build_time = -0.15   
  }
 
  ruined_fornost_erain = {
@@ -535,32 +554,40 @@ ruined_amon_sul = {
  }
 
  fornost_erain = {
-
- }
-
- ruined_annuminas = {
-	local_defensiveness = 0.15
-	local_build_cost = -0.15
-	local_build_time = -0.15 
- }
-
- annuminas = {
 	fort_level = 5
 	local_defensiveness = 1
-	local_hostile_attrition = 3
+	local_hostile_attrition = 5
 	local_manpower_modifier = 1
 	supply_limit_modifier = 1
-	province_trade_power_value = 0.5
-	trade_goods_size_modifier = 0.15
-	trade_value_modifier = 0.15
-	local_tax_modifier = 0.10
-	local_production_efficiency = 0.10
-	allowed_num_of_manufactories = 2 
+	province_trade_power_value = 0.50
+	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.25
 	local_regiment_cost = -0.25
-	local_build_cost = -0.25
-	local_build_time = -0.25         
  }
+
+#  ruined_annuminas = {									#Moved to Dunedain of the North mission modifier file
+# 	local_defensiveness = 0.15
+# 	local_build_cost = -0.15
+# 	local_build_time = -0.15 
+#  }
+
+#  annuminas = {										#Moved to Dunedain of the North mission modifier file
+# 	fort_level = 5
+# 	local_defensiveness = 1
+# 	local_hostile_attrition = 3
+# 	local_manpower_modifier = 1
+# 	supply_limit_modifier = 1
+# 	province_trade_power_value = 0.5
+# 	trade_goods_size_modifier = 0.15
+# 	trade_value_modifier = 0.15
+# 	local_tax_modifier = 0.10
+# 	local_production_efficiency = 0.10
+# 	allowed_num_of_manufactories = 2 
+# 	regiment_recruit_speed = -0.25
+# 	local_regiment_cost = -0.25
+# 	local_build_cost = -0.25
+# 	local_build_time = -0.25         
+#  }
 
  bree = {
 	fort_level = 1
@@ -573,4 +600,34 @@ ruined_amon_sul = {
 	trade_goods_size_modifier = 0.15
 	local_tax_modifier = 0.10
 	allowed_num_of_manufactories = 1
+ }
+
+ tharbad = {
+	fort_level = 1
+	local_defensiveness = 0.25	
+	hostile_fleet_attrition = 1
+	local_manpower_modifier = 0.25
+	local_sailors_modifier = 0.25
+	supply_limit_modifier = 0.50
+	province_trade_power_value = 0.25
+	local_tax_modifier = 0.15
+	allowed_num_of_manufactories = 1
+	local_ship_cost = -0.15
+	ship_recruit_speed = -0.15
+ }
+
+ khazad_dum = {
+
+ }
+
+ ruined_ost_in_edhil = {
+	fort_level = 1
+	local_defensiveness = 0.15
+	local_defender_dice_roll_bonus = 1
+	statewide_governing_cost = -0.25
+	local_monthly_devastation = -0.15
+ }
+
+ ost_in_edhil = {
+
  }
