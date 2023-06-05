@@ -27,6 +27,11 @@ trade_goods = grain
 
 hre = no
 
+add_province_modifier = {
+	name = wilderness_debuff
+	duration = -1
+}
+
 #Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
