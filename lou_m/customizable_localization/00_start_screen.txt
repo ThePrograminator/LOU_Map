@@ -76,6 +76,14 @@ defined_text = {
 			tag = V19
 		}
     }
+
+    #Dunedain of Arnor
+	text = {
+        localisation_key = string_start_title_dunedain_of_arnor
+        trigger = {
+			tag = Z06
+		}
+    }
 	
 	#Generic:
 	text = {
@@ -292,6 +300,13 @@ defined_text = {
         localisation_key = string_start_dol_guldur
         trigger = {
 			tag = V19
+        }
+    }
+
+    text = { #Dunedain of Arnor
+        localisation_key = string_start_dunedain_of_arnor
+        trigger = {
+			tag = Z06
         }
     }
 
