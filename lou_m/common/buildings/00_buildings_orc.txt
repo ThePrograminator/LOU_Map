@@ -2056,7 +2056,8 @@ small_arena_building = {
 	}
 	
 	modifier = {
-		local_unrest = -1
+		local_unrest = -2
+		local_autonomy = -0.025
 	}
 	
 	ai_will_do = {
@@ -2122,7 +2123,8 @@ large_arena_building = {
 	}
 	
 	modifier = {
-		local_unrest = -2
+		local_unrest = -4
+		local_autonomy = -0.05
 	}
 	
 	ai_will_do = {
