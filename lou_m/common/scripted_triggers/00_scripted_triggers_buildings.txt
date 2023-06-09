@@ -593,6 +593,16 @@ province_human_has_trade_building_tier_2 = { #Province Scope
 	}
 }
 
+province_elf_has_fort_building = { #Province Scope
+	custom_trigger_tooltip = {
+		tooltip = ELF_HAS_FORT_TOOLTIP
+		OR = {
+			has_building = fort_low_walls_elf_building
+			has_building = fort_high_walls_elf_building
+		}
+	}
+}
+
 province_has_current_tech_human_capital_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = province_has_current_tech_capital_trigger_tt

@@ -4,12 +4,10 @@
  # Slot 01
  #---------------------------------------------------------
 
- expel_wulfseggeas_title: "Expel Wulfseggeas"
- expel_wulfseggeas_desc: ""
- settle_the_wilderness_title: "Settle The Wilderness"
- settle_the_wilderness_desc: ""
- rivendell_drive_out_orcs_title: "Rivendell Drive Out Orcs"
- rivendell_drive_out_orcs_desc: ""
+ the_defence_situation_title: "The Defence Situation"
+ the_defence_situation_desc: "The power of the Elves are fading, and our people become fewer for each year. If we aid the Dúnedain in retaking lands in Rhudaur, then we could consider giving up our provinces in Rhudaur and let the blood of man be spilled defending the soil. Then we could concentrate our defences in Eregion."
+ defence_of_athrad_bruinen_title: "Defence Of Athrad Bruinen"
+ defence_of_athrad_bruinen_desc: ""
 
  #---------------------------------------------------------
  # Slot 02
@@ -17,6 +15,19 @@
 
  foster_the_heirs_of_isildur_title: "The Heirs Of Isildur"
  foster_the_heirs_of_isildur_desc: ""
+ expel_wulfseggeas_title: "Expel Wulfseggeas"
+ expel_wulfseggeas_desc: ""
+ settle_the_wilderness_title: "Settle The Wilderness"
+ settle_the_wilderness_desc: ""
+ barad_niniel_title: "Fort of Niniel"
+ barad_niniel_desc: ""
+ rivendell_drive_out_orcs_title: "Rivendell Drive Out Orcs"
+ rivendell_drive_out_orcs_desc: ""
+
+ #---------------------------------------------------------
+ # Slot 03
+ #---------------------------------------------------------
+
  retake_hollin_ridge_title: "Retake Hollin Ridge"
  retake_hollin_ridge_desc: ""
  border_amon_lind_title: "Border Amon Lind"
@@ -29,7 +40,7 @@
  restore_eregion_desc: ""
 
  #---------------------------------------------------------
- # Slot 03
+ # Slot 04 Top
  #---------------------------------------------------------
 
  improve_rivendell_title: "Improve Rivendell"
@@ -38,21 +49,21 @@
  place_of_learning_desc: ""
  house_of_healing_title: "House Of Healing"
  house_of_healing_desc: ""
+
+ #---------------------------------------------------------
+ # Slot 04
+ #---------------------------------------------------------
+
+ the_white_council_title: "The White Council"
+ the_white_council_desc: ""
+ high_king_of_the_noldor_title: "High King Of The Noldor"
+ high_king_of_the_noldor_desc: ""
  trade_with_the_dwarves_title: "Trade With The Dwarves"
  trade_with_the_dwarves_desc: ""
  pay_the_beorning_tolls_title: "Pay The Beorning Tolls"
  pay_the_beorning_tolls_desc: ""
  the_threat_of_goblintown_title: "The Threat Of Goblintown"
  the_threat_of_goblintown_desc: ""
-
- #---------------------------------------------------------
- # Slot 04
- #---------------------------------------------------------
-
- aid_the_dwarves_title: "Aid The Dwarves"
- aid_the_dwarves_desc: ""
- Hatred_of_the_orcs_title: "Hatred Of The Orcs"
- Hatred_of_the_orcs_desc: ""
 
  #---------------------------------------------------------
  # Slot 05
@@ -64,11 +75,11 @@
  kin_of_galadriel_desc: ""
  friends_of_the_dwarves_title: "Friends Of The Dwarves"
  friends_of_the_dwarves_desc: ""
- the_white_council_title: "The White Council"
- the_white_council_desc: ""
- high_king_of_the_noldor_title: "High King Of The Noldor"
- high_king_of_the_noldor_desc: ""
-
+ aid_the_dwarves_title: "Aid The Dwarves"
+ aid_the_dwarves_desc: ""
+ Hatred_of_the_orcs_title: "Hatred Of The Orcs"
+ Hatred_of_the_orcs_desc: ""
+ 
 #---------------------------------------------------------
  # Decisions
  #---------------------------------------------------------
@@ -85,6 +96,7 @@
  #---------------------------------------------------------
  rivendell_beornings_accepted_toll_proposal_tt: "§YBeornings of Anduin Vales§! Accepted Toll Proposal - Decision"
  rivendell_beornings_toll_bonus_tt: "Recruit §YBeorning Protectors§! Mercenaries"
+ rivendell_defence_situation_tt: "Rivendell has had event §YDúnedain of Arnor Requests Rhudaur§!"
 
  #---------------------------------------------------------
  # Modifiers
