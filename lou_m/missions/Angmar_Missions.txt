@@ -212,7 +212,7 @@ angmar_slot_3 = {
 		}
 	}
 	return_of_the_witch_king = {
-		icon = mission_mount_gram
+		icon = mission_return_of_the_witch_king
 		position = 4
 		required_missions = { restore_old_borders }
 		provinces_to_highlight = {
@@ -224,7 +224,14 @@ angmar_slot_3 = {
 			}
 		}
 		effect = { 
-			
+			remove_government_reform = lotr_carn_dum_reform
+			add_government_reform = lotr_angmar_reform
+			country_event = {
+				id = LOU_Angmar.1
+			}
+			hidden_effect = {
+				set_global_flag = witch_king_heads_north
+			}
 		}
 	}
 	subjugate_mount_gram = {
