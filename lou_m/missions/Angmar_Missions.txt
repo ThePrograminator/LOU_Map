@@ -62,7 +62,7 @@ angmar_formable_slot_3 = {
 			manpower_percentage = 0.75
 
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 15
 				region = angmar_region
 			}
 			owns_core_province = 610 	# Carn Dûm
@@ -96,6 +96,12 @@ angmar_formable_slot_3 = {
 			}
 			nan_angmar_area = {
 				add_permanent_claim = ANG
+			}
+			hidden_effect = {
+				add_accepted_culture = culture_wight
+				add_accepted_culture = culture_orkish
+				add_accepted_culture = culture_angmarrim
+				add_accepted_culture = culture_cave_troll
 			}
 		}
 	}
@@ -153,12 +159,14 @@ angmar_slot_3 = {
 		position = 3
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
-			area = carn_dum_area
-			area = phaluran_area
-			area = angsul_area
-			area = morkai_area
-			area = shedun_area
-			area = nan_angmar_area
+			OR = {
+				area = carn_dum_area
+				area = phaluran_area
+				area = angsul_area
+				area = morkai_area
+				area = shedun_area
+				area = nan_angmar_area
+			}
 		}
 		trigger = {
 			carn_dum_area = {
@@ -203,10 +211,26 @@ angmar_slot_3 = {
 			}
 		}
 	}
-	subjugate_mount_gram = {
+	return_of_the_witch_king = {
 		icon = mission_mount_gram
 		position = 4
 		required_missions = { restore_old_borders }
+		provinces_to_highlight = {
+			province_id = 610
+		}
+		trigger = {
+			610 = {
+				development = 30
+			}
+		}
+		effect = { 
+			
+		}
+	}
+	subjugate_mount_gram = {
+		icon = mission_mount_gram
+		position = 5
+		required_missions = { return_of_the_witch_king }
 		provinces_to_highlight = {
 			province_id = 687
 		}
@@ -262,9 +286,10 @@ angmar_slot_2 = {
 					has_religion = religion_orkish
 				}
 				change_culture = culture_angmarrim
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_building = camp_orc_building
 			}
 			forochel_region = {
 				add_permanent_claim = ANG
@@ -272,9 +297,9 @@ angmar_slot_2 = {
 		}
 	}
 
-	the_ice_bay_thralls = {
-		icon = mission_west_to_forochel
-		position = 3
+	ice_bay_thralls = {
+		icon = mission_ice_bay_thralls
+		position = 4
 		required_missions = { west_to_forochel }
 		provinces_to_highlight = {
 			region = forochel_region
@@ -284,7 +309,7 @@ angmar_slot_2 = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 15
+				value = 10
 				region = forochel_region
 			}
 			num_of_owned_provinces_with = {
@@ -296,15 +321,143 @@ angmar_slot_2 = {
 			every_owned_province = {
 				limit = {
 					has_terrain = unique_forodwaith_town
+					region = forochel_region
 				}
 				change_culture = culture_angmarrim
 				change_religion = religion_orkish
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
+				add_building = camp_orc_building
+				add_permanent_province_modifier = { 
+					name = servants_of_angmar
+					duration = -1  
+				}
+				forochel_region = {
+					add_permanent_claim = ANG
+				}
 			}
-			forochel_region = {
+		}
+	}
+
+	the_naval_north = {
+		icon = mission_the_naval_north
+		position = 5
+		required_missions = { ice_bay_thralls }
+		provinces_to_highlight = {
+			OR = {				
+				province_id = 358
+				province_id = 652
+				province_id = 1963
+			}
+		}
+		trigger = {
+			358 = {
+				development = 15
+				NOT = {
+					local_autonomy = 50
+				}
+			}
+			652 = {
+				development = 15
+				NOT = {
+					local_autonomy = 50
+				}
+			}
+			1963 = {
+				development = 15
+				NOT = {
+					local_autonomy = 50
+				}
+			}		
+		}
+		effect = { 
+			add_sailors = 3000
+			358 = {
+				add_base_production = 1
+				add_base_manpower = 2
+				add_permanent_province_modifier = { 
+					name = forochel_port
+					duration = -1  
+				}
+			}
+			652 = {
+				add_base_production = 1
+				add_base_manpower = 2
+				add_permanent_province_modifier = { 
+					name = forochel_port
+					duration = -1  
+				}
+			}
+			1963 = {
+				add_base_production = 1
+				add_base_manpower = 2
+				add_permanent_province_modifier = { 
+					name = forochel_port
+					duration = -1  
+				}
+			}
+			jarvamaa_area = {
 				add_permanent_claim = ANG
+			}
+			narladwen_area = {
+				add_permanent_claim = ANG
+			}
+			rast_lornaeth_area = {
+				add_permanent_claim = ANG
+			}
+			minheldolath_area = {
+				add_permanent_claim = ANG
+			}
+			234 = {
+				add_permanent_claim = ANG				
+			}
+		}
+	}
+	
+	a_frozen_fleet = {
+		icon = mission_navy_01
+		position = 6
+		required_missions = { the_naval_north }
+		provinces_to_highlight = {
+			area = sea_of_forodwaith_area
+		}
+		trigger = {
+			naval_forcelimit = 30                               
+		}
+		effect = { 
+			add_country_modifier = {
+				name = angmar_at_sea
+				duration = -1
+			}
+		}
+	}
+
+	ice_floes_of_forochel = {
+		icon = mission_ice_floes_of_forochel
+		position = 7
+		required_missions = { a_frozen_fleet }
+		provinces_to_highlight = {
+			area = sea_of_forodwaith_area
+		}
+		trigger = {
+			region = forochel_region
+			has_port = yes
+		}
+		effect = { 
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						region = forochel_region
+						region = northern_waste_region
+						province_id = 234
+					}
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = ice_floes
+				duration = -1  
 			}
 		}
 	}
@@ -329,19 +482,39 @@ angmar_slot_4 = {
 			}
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 15
-				region = rhudaur_region
-			}
-			num_of_owned_provinces_with = {
-				value = 4
-				has_terrain = unique_hillmen_town
-				has_culture = culture_hillmen_of_rhudaur
-				development = 15
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 4
+					has_terrain = unique_hillmen_town
+					has_culture = culture_hillmen_of_rhudaur
+					region = rhudaur_region
+				}
+				AND = {
+					alliance_with = Z62
+					Z62 = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+					trust = { 
+						who = Z62 
+						value = 75
+					}
+				}
 			}
 		}
 		effect = { 
+			create_subject = {
+				subject_type = angmar_march
+				subject = Z62
+			}
 			rhudaur_region = {
+				limit = {
+					NOT = {
+						owned_by = Z62
+					}
+				}
 				add_permanent_claim = ANG
 			}			
 			every_owned_province = {

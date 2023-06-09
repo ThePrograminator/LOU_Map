@@ -32,135 +32,14 @@ historical_rival = Z22
 
 2750.1.1 = {
 	monarch = {
-		name = "Radbag"
-		dynasty = "Gazgash"
+		name = "Mablung"
+		dynasty = "The Dark"
 		birth_date = 2662.1.1
-		adm = 0
-		dip = 3
-		mil = 0
-	}
-	heir = {
-		monarch_name = "Garghira"
-		name = "Garghira"
-		dynasty = "Gazgash"
-		birth_date = 2726.1.1
-		death_date = 2812.1.1
-		adm = 5
-		dip = 1
-		mil = 3
-		claim = 100
-	}
-}
-
-2800.1.1 = {
-	monarch = {
-		name = "Obirta"
-		dynasty = "Gazgash"
-		birth_date = 2716.1.1
-		adm = 0
-		dip = 3
-		mil = 4
-		female = yes
-	}
-	heir = {
-		monarch_name = "Muzratta"
-		name = "Muzratta"
-		dynasty = "Gazgash"
-		birth_date = 2750.1.1
-		death_date = 2806.1.1
-		adm = 2
-		dip = 5
-		mil = 2
-		claim = 100
-	}
-}
-
-2850.1.1 = {
-	monarch = {
-		name = "Shagrad"
-		dynasty = "Gazgash"
-		birth_date = 2776.1.1
-		adm = 1
-		dip = 1
-		mil = 2
-	}
-	heir = {
-		monarch_name = "Ugbet"
-		name = "Ugbet"
-		dynasty = "Gazgash"
-		birth_date = 2830.1.1
-		death_date = 2883.1.1
-		adm = 0
-		dip = 3
-		mil = 0
-		claim = 100
-	}
-}
-
-2900.1.1 = {
-	monarch = {
-		name = "Gazlún"
-		dynasty = "Gazgash"
-		birth_date = 2826.1.1
 		adm = 3
-		dip = 2
-		mil = 4
-	}
-	heir = {
-		monarch_name = "Lugthakki"
-		name = "Lugthakki"
-		dynasty = "Gazgash"
-		birth_date = 2813.1.1
-		death_date = 2832.1.1
-		adm = 0
-		dip = 3
-		mil = 1
-		claim = 100
-	}
-}
-
-2950.1.1 = {
-	monarch = {
-		name = "Lúnduf"
-		dynasty = "Gazgash"
-		birth_date = 2929.1.1
-		adm = 4
-		dip = 1
-		mil = 4
-	}
-	heir = {
-		monarch_name = "Shagmoghi"
-		name = "Shagmoghi"
-		dynasty = "Gazgash"
-		birth_date = 2874.1.1
-		death_date = 2923.1.1
-		adm = 5
 		dip = 1
 		mil = 5
-		claim = 100
 	}
-}
-
-3000.1.1 = {
-	monarch = {
-		name = "Zagbet"
-		dynasty = "Gazgash"
-		birth_date = 2935.1.1
-		adm = 2
-		dip = 2
-		mil = 1
-		female = yes
-	}
-	heir = {
-		monarch_name = "Ubrutta"
-		name = "Ubrutta"
-		dynasty = "Gazgash"
-		birth_date = 2921.1.1
-		death_date = 2945.1.1
-		adm = 4
-		dip = 1
-		mil = 0
-		claim = 100
-	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
 }
 

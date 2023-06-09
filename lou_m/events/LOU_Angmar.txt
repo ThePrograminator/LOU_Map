@@ -9,6 +9,7 @@ country_event = {
 	
 	trigger = {
 		tag = ANG
+		has_global_flag = witch_king_heads_north
 		NOT = {
 			has_global_flag = witch_king_angmar_announcement
 		}
