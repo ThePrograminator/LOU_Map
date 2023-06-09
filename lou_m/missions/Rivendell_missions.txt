@@ -67,7 +67,20 @@ slot_01 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			daergil_area = {
+				add_province_modifier = {
+					name = rivendell_settle_the_wilderness_province_modifier
+					duration = 3650
+				}
+			}
+			foreregion_area = {
+				add_province_modifier = {
+					name = rivendell_settle_the_wilderness_province_modifier
+					duration = 3650
+				}
+			}
+		}
 	}
 	rivendell_drive_out_orcs = {
 		icon = mission_elves_1
@@ -126,7 +139,12 @@ slot_02 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = rivendell_foster_heirs_modifier
+				duration = -1
+			}
+		}
 	}
 	retake_hollin_ridge = {
 		icon = mission_hills
@@ -262,7 +280,18 @@ slot_03 = {
 				has_building = theatre_elf_building
 			}
 		}
-		effect = { }
+		effect = { 
+			every_owned_province = {
+				limit = {
+					region = eregion_region
+				}
+
+				add_province_modifier = {
+					name = rivendell_improve_rivendell_province_modifier
+					duration = 7300
+				}
+			}
+		}
 	}
 	place_of_learning = {
 		icon = mission_asian_trader
@@ -276,7 +305,15 @@ slot_03 = {
 				development = 40
 			}
 		}
-		effect = { }
+		effect = { 
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = rivendell_place_of_learning_modifier
+				duration = -1
+			}
+		}
 	}
 	house_of_healing = {
 		icon = mission_rivendell
@@ -293,7 +330,13 @@ slot_03 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_legitimacy = 15
+			add_country_modifier = {
+				name = rivendell_house_of_healing_modifier
+				duration = -1
+			}
+		}
 	}
 	trade_with_the_dwarves = {
 		icon = mission_dominate_home_trade_node
@@ -500,7 +543,12 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_country_modifier = {
+				name = rivendell_noldor_ally_modifier
+				duration = 3650
+			}
+		}
 	}
 	kin_of_galadriel = {
 		icon = mission_elves_6
