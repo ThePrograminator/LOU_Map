@@ -76,6 +76,13 @@ angmar_formable_slot_3 = {
 		}
 		effect = { 
 			change_tag = ANG
+			hidden_effect = {
+				set_variable = {
+					which = scorchedDunedainCitiesAmount_VAR
+					value = 0
+				}
+			}
+			
 			set_capital = 610
 			add_core = 610
 			add_stability = 1
@@ -251,6 +258,21 @@ angmar_slot_3 = {
 				name = legacy_of_king_golfimbul
 				duration = -1
 			}
+		}
+	}
+	destroying_dunedain_cities = {
+		icon = mission_shire_burning
+		position = 6
+		required_missions = {  }
+		trigger = { 
+			#10 Dunedain ruins Provinces were Angmar has scorched earth
+			check_variable = {
+				which = scorchedDunedainCitiesAmount_VAR
+				value = 10
+			}
+		}
+		effect = { 
+			
 		}
 	}
 }
