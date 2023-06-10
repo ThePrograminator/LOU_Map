@@ -610,16 +610,16 @@ angmar_slot_4 = {
 		position = 5
 		required_missions = { return_of_the_witch_king }
 		provinces_to_highlight = {
-			province_id = 687
+			province_id = 1892
 		}
 		trigger = {
-			687 = {
+			1892 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = { 
 			add_country_modifier = {
-				name = legacy_of_king_golfimbul
+				name = high_fells_haunted
 				duration = -1
 			}
 		}
@@ -727,7 +727,7 @@ angmar_slot_5 = {
 		effect = { 
 			add_country_modifier = {
 				name = misty_mountain_allies
-				duration = 7300
+				duration = -1
 			}
 		}
 	}

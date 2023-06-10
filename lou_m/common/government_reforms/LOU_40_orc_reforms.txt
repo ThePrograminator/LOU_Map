@@ -251,8 +251,10 @@ lotr_carn_dum_reform = {
 	heirs_can_be_generals = yes
 	
 	potential = {
-		tag = Y52
-		tag = ANG
+		OR = {
+			tag = Y52
+			tag = ANG
+		}
 	}
 	
 	modifiers = {

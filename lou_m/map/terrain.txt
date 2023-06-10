@@ -95,7 +95,7 @@ categories =  {
 		type = hills
 		sound_type = mountains
 
-		movement_cost = 1.40
+		movement_cost = 1.25
 		defence = 1
 		local_defensiveness = 0.1
 		local_development_cost = 0.25
@@ -1889,7 +1889,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 1.25
+		movement_cost = 1.50
 		defence = 2
 		local_defensiveness = 0.25
 		local_development_cost = 0.5
@@ -3821,7 +3821,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 1.25
+		movement_cost = 1.50
 		defence = 2
 		local_defensiveness = 0.25
 		local_development_cost = 0.5
@@ -4130,7 +4130,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 1.25
+		movement_cost = 1.50
 		defence = 2
 		local_defensiveness = 0.25
 		local_development_cost = 0.5
@@ -4148,7 +4148,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 1.25
+		movement_cost = 1.50
 		defence = 2
 		local_defensiveness = 0.25
 		local_development_cost = 0.5
@@ -4316,7 +4316,7 @@ categories =  {
 		terrain_override = {
 			3947 1034 1035 1033 1040 1039 1041 2862 1028 2840 2788 2789 2324
 			1638 1601 1600 1574 784 2779 785 824 840 777 783 835 2783 902 2771 2781
-			780 2782 2776 782 2774 2772 860 2758 1575 102 1356 1387 1344 1063
+			780 2782 2776 782 2774 2772 860 2758 1575 102 1356 1387 1063
 			2796 2795
 		}
 	}
@@ -4344,7 +4344,7 @@ categories =  {
 		type = mountains
 		sound_type = mountains
 		
-		movement_cost = 0.75
+		movement_cost = 1.25
 		local_development_cost = -0.10
 		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1.25
@@ -4355,6 +4355,23 @@ categories =  {
 		
 		terrain_override = {
 			666
+		}
+	}
+
+	unique_tol_morwen = {
+		color = { 150 100 200 }
+		type = mountains
+		sound_type = mountains
+
+		movement_cost = 1.25
+		defence = 1
+		local_defensiveness = 0.1
+		local_development_cost = 0.25
+		nation_designer_cost_multiplier = 0.85
+		supply_limit = 5
+		
+		terrain_override = {
+			1344
 		}
 	}
 
