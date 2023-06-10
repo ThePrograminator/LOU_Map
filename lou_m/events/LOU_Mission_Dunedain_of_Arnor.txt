@@ -28,6 +28,7 @@ country_event = { #Dunedain Claiming Rhudaur
 			change_culture = culture_dunedain_of_arnor
 			remove_core = Z06
 		}
+		set_country_flag = rivendell_accepted_handover_flag
 	}
 	
 	option = { 
@@ -45,6 +46,7 @@ country_event = { #Dunedain Claiming Rhudaur
 				}
 			}
 		}
+		set_country_flag = rivendell_declined_handover_flag
 	}
 }
 

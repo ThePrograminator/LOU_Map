@@ -1,0 +1,29 @@
+namespace = LOU_mission_angmar
+
+province_event = { #Counting on_scorch_earth
+	id = LOU_mission_angmar.1
+	title = LOU_mission_angmar.1.t
+	desc = LOU_mission_angmar.1.d
+	picture = ruined_eventpicture
+
+	#Remove comment to hide event, it is shown now for testing purposes
+	#hidden = yes
+	is_triggered_only = yes
+	
+	trigger = { 
+		superregion = eriador_superregion
+
+		has_terrain = unique_dunedain_ruin
+	}
+	
+	option = { #Oh no
+		name = LOU_mission_angmar.1.a
+		
+		ANG = {
+			change_variable  = {
+				which = scorchedDunedainCitiesAmount_VAR
+				value = 1
+			}
+		}
+	}
+}

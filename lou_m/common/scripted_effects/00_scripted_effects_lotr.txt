@@ -1630,9 +1630,10 @@ cede_ally_provinces_mission_effect = {
 		limit = {
 			$province_scope$ = {
 				owner = {
+					ai = yes
 					OR = {
-					alliance_with = ROOT
-					is_subject_of = ROOT
+						alliance_with = ROOT
+						is_subject_of_type_with_overlord = { who = ROOT type = dunedain_protectorate }
 					}
 				}
 			}
@@ -1642,9 +1643,10 @@ cede_ally_provinces_mission_effect = {
 			$province_scope$ = {
 				limit = {
 					owner = {
+						ai = yes
 						OR = {
-						alliance_with = ROOT
-						is_subject_of = ROOT
+							alliance_with = ROOT
+							is_subject_of_type_with_overlord = { who = ROOT type = dunedain_protectorate }
 						}
 					}
 				}

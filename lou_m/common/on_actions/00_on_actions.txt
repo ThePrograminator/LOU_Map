@@ -2455,7 +2455,22 @@ on_naval_barrage = { #ROOT - barraging country, FROM - barraged province
 }
 
 on_scorch_earth  = { #ROOT - scorching country, FROM - scorched province
-
+	if = { 
+		limit = {
+			ROOT = {
+				tag = ANG
+			}
+			FROM = {
+				superregion = eriador_superregion
+				has_terrain = unique_dunedain_ruin
+			}
+		}
+		FROM = {
+			province_event = {
+				id = LOU_mission_angmar.1
+			}
+		}
+	}
 }
 
 on_war_ended = { #ROOT - Winer FROM - Loser
