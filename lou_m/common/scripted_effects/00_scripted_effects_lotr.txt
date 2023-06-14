@@ -1638,7 +1638,9 @@ cede_ally_provinces_mission_effect = {
 				}
 			}
 		}
-		custom_tooltip = cede_ally_provinces_mission_effect_tooltip
+		$province_scope$ = {
+			custom_tooltip = cede_ally_provinces_mission_effect_tooltip
+		}
 		hidden_effect = {
 			$province_scope$ = {
 				limit = {

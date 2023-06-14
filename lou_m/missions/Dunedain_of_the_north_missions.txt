@@ -67,18 +67,11 @@ slot_01_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			1496 = {
-				cede_ally_provinces_mission_effect = { province_scope = 1496 COUNTRY = owner }
-			}
-			4056 = {
-				cede_ally_provinces_mission_effect = { province_scope = 4056 COUNTRY = owner }
-			}
-			1442 = {
-				cede_ally_provinces_mission_effect = { province_scope = 1442 COUNTRY = owner }
-			}
-			4057 = {
-				cede_ally_provinces_mission_effect = { province_scope = 4057 COUNTRY = owner }
-			}
+			cede_ally_provinces_mission_effect = { province_scope = 1496 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 4056 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 1442 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 4057 COUNTRY = owner }
+
 			if = {
 				limit = {
 					exists = Q03
@@ -235,9 +228,8 @@ slot_01_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			266 = {
-				cede_ally_provinces_mission_effect = { province_scope = 266 COUNTRY = owner }
-			}
+			cede_ally_provinces_mission_effect = { province_scope = 266 COUNTRY = owner }
+
 			fornost_erain_area = {
 				add_permanent_claim = ROOT
 			}
@@ -630,12 +622,8 @@ slot_02_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			faerdor_area = {
-				cede_ally_provinces_mission_effect = { province_scope = faerdor_area COUNTRY = owner }
-			}
-			west_faerdor_area ={
-				cede_ally_provinces_mission_effect = { province_scope = west_faerdor_area COUNTRY = owner }
-			}
+			cede_ally_provinces_mission_effect = { province_scope = faerdor_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = west_faerdor_area COUNTRY = owner }
 			170 = {
 				add_permanent_claim = ROOT
 			} 
@@ -1194,21 +1182,11 @@ slot_03_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			1801 = {
-				cede_ally_provinces_mission_effect = { province_scope = 1801 COUNTRY = owner }
-			}
-			1800 = {
-				cede_ally_provinces_mission_effect = { province_scope = 1800 COUNTRY = owner }
-			}
-			156 = {
-				cede_ally_provinces_mission_effect = { province_scope = 156 COUNTRY = owner }
-			}
-			154 = {
-				cede_ally_provinces_mission_effect = { province_scope = 154 COUNTRY = owner }
-			}
-			153 = {
-				cede_ally_provinces_mission_effect = { province_scope = 153 COUNTRY = owner }
-			}
+			cede_ally_provinces_mission_effect = { province_scope = 1801 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 1800 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 156 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 154 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 153 COUNTRY = owner }
 			every_known_country = {
 				limit = {
 					culture_group = culture_group_orcs
@@ -1608,21 +1586,11 @@ slot_04_dunedain_of_the_north_series = {
 				add_adm_power = 100
 				add_dip_power = 100
 			}			
-			sarn_ford_area = {
-				cede_ally_provinces_mission_effect = { province_scope = sarn_ford_area COUNTRY = owner }
-			}
-			metraith_area = {
-				cede_ally_provinces_mission_effect = { province_scope = metraith_area COUNTRY = owner }
-			}
-			west_faerdor_area = {
-				cede_ally_provinces_mission_effect = { province_scope = west_faerdor_area COUNTRY = owner }
-			}
-			faerdor_area = {
-				cede_ally_provinces_mission_effect = { province_scope = faerdor_area COUNTRY = owner }
-			}
-			lostiriand_area = {
-				cede_ally_provinces_mission_effect = { province_scope = lostiriand_area COUNTRY = owner }
-			}
+			cede_ally_provinces_mission_effect = { province_scope = sarn_ford_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = metraith_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = west_faerdor_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = faerdor_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = lostiriand_area COUNTRY = owner }
 		}
 	}
 	the_threat_of_geiloth = {
@@ -2071,15 +2039,10 @@ slot_05_dunedain_of_the_north_series = {
 			}
 		}
 		effect = {
-			cameth_brin_area = {
-				cede_ally_provinces_mission_effect = { province_scope = cameth_brin_area COUNTRY = owner }
-			}
-			glin_a_rhua_area = {
-				cede_ally_provinces_mission_effect = { province_scope = glin_a_rhua_area COUNTRY = owner }
-			}
-			cold_fells_area = {
-				cede_ally_provinces_mission_effect = { province_scope = cold_fells_area COUNTRY = owner }
-			}
+			cede_ally_provinces_mission_effect = { province_scope = cameth_brin_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = glin_a_rhua_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = cold_fells_area COUNTRY = owner }
+
 			morva_tarth_area = {
 				add_permanent_claim = ROOT
 			}
@@ -2229,26 +2192,20 @@ slot_05_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			302 = {
-				cede_ally_provinces_mission_effect = { province_scope = 302 COUNTRY = owner }
-			}
-			674 = {
+			cede_ally_provinces_mission_effect = { province_scope = 302 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 3451 COUNTRY = owner }
+
+			674 = {				
 				cede_ally_provinces_mission_effect = { province_scope = 674 COUNTRY = owner }
+				add_center_of_trade_level = 1
 			}
 			1821 = {
 				cede_ally_provinces_mission_effect = { province_scope = 1821 COUNTRY = owner }
+				add_center_of_trade_level = 1
 			}
-			3451 = {
-				cede_ally_provinces_mission_effect = { province_scope = 3451 COUNTRY = owner }
-			}
+
 			rhudaur_region = {
 				add_permanent_claim = ROOT
-			}
-			674 = {				
-				add_center_of_trade_level = 1
-			}
-			1821 = {
-				add_center_of_trade_level = 1
 			}
 		}
 	}
