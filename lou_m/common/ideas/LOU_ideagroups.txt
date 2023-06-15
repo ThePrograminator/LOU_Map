@@ -145,44 +145,143 @@ innovativeness_ideas = {
 }
 
 
-religious_ideas = {
+# religious_ideas = {
+# 	category = ADM
+
+# 	bonus = {
+# 		monarch_lifespan = 0.25
+# 	}
+
+# 	missionary_schools = {
+# 		missionaries = 1
+# 	}
+# 	church_attendance_duty = {
+# 		stability_cost_modifier = -0.25
+# 	}
+# 	divine_supremacy = {
+# 		global_missionary_strength = 0.03
+# 	}
+# 	devoutness = {
+# 		tolerance_own = 2
+# 		papal_influence = 2
+# 		devotion = 0.5
+# 		monthly_fervor_increase = 0.25
+# 		church_power_modifier = 0.1
+# 	}
+# 	religious_tradition = {
+# 		prestige = 1
+# 	}
+# 	inquisition = {
+# 		missionary_maintenance_cost = -0.5
+# 	}
+# 	deus_vult = {
+# 		cb_on_religious_enemies = yes
+# 	}
+
+# 	ai_will_do = {
+# 		factor = 0.9
+# 		modifier = {
+# 			factor = 0
+# 			has_idea_group = humanist_ideas
+# 		}
+# 	}
+# }
+
+
+shadow_of_melkor_ideas = {
 	category = ADM
 
-	bonus = {
-		monarch_lifespan = 0.25
+	trigger = {
+		is_servants_of_evil_opinion = yes
 	}
 
-	missionary_schools = {
-		missionaries = 1
+	bonus = {
+		war_exhaustion = -0.15
 	}
-	church_attendance_duty = {
-		stability_cost_modifier = -0.25
-	}
-	divine_supremacy = {
-		global_missionary_strength = 0.03
-	}
-	devoutness = {
-		tolerance_own = 2
-		papal_influence = 2
-		devotion = 0.5
-		monthly_fervor_increase = 0.25
-		church_power_modifier = 0.1
-	}
-	religious_tradition = {
-		prestige = 1
-	}
-	inquisition = {
-		missionary_maintenance_cost = -0.5
-	}
-	deus_vult = {
+
+	shadow_of_melkor_ideas_1 = {		
 		cb_on_religious_enemies = yes
+		tolerance_own = 2
+	}
+	shadow_of_melkor_ideas_2 = {
+		ae_impact = -0.15	
+	}
+	shadow_of_melkor_ideas_3 = {			
+		global_missionary_strength = 0.03
+		missionary_maintenance_cost = -0.25
+	}
+	shadow_of_melkor_ideas_4 = {
+		culture_conversion_cost = -0.15
+		relation_with_same_culture_group = 15
+	}
+	shadow_of_melkor_ideas_5 = {	
+		army_tradition = 1
+		land_morale = 0.10
+	}
+	shadow_of_melkor_ideas_6 = {
+		missionaries = 1
+		stewards_loyalty_modifier = 0.1
+	}
+	shadow_of_melkor_ideas_7 = {
+		max_absolutism = 20
+		yearly_absolutism = 0.15
 	}
 
 	ai_will_do = {
-		factor = 0.9
+		factor = 100
 		modifier = {
 			factor = 0
-			has_idea_group = humanist_ideas
+			has_idea_group = light_of_eru_ideas
+		}
+	}
+}
+
+
+light_of_eru_ideas = {
+	category = ADM
+
+	trigger = {
+		is_free_peoples_opinion = yes
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.10
+	}
+
+	light_of_eru_ideas_1 = {			
+		cb_on_religious_enemies = yes
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	light_of_eru_ideas_2 = {
+		diplomatic_reputation = 2	
+	}
+	light_of_eru_ideas_3 = {			
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.50
+	}
+	light_of_eru_ideas_4 = {			
+		culture_conversion_cost = -0.15
+		relation_with_accepted_culture = 15
+	}
+	light_of_eru_ideas_5 = {	
+		army_tradition = 1
+		land_morale = 0.10
+	}
+	light_of_eru_ideas_6 = {
+		missionaries = 1
+		stewards_loyalty_modifier = 0.1
+	}
+	light_of_eru_ideas_7 = {
+		innovativeness_gain = 0.5
+		yearly_innovativeness = 0.25
+	}
+
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			has_idea_group = shadow_of_melkor_ideas
 		}
 	}
 }
@@ -209,7 +308,7 @@ spy_ideas = {
 	}
 
 	state_propaganda = {
-		ae_impact = -0.2
+		ae_impact = -0.15
 	}
 	
 	claim_fabrication = {

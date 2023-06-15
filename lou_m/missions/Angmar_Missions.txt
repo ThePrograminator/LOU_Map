@@ -12,7 +12,7 @@ angmar_slot_1 = {
 	
 	ice_bay_thralls = {
 		icon = mission_ice_bay_thralls
-		position = 4
+		position = 6
 		required_missions = { west_to_forochel }
 		provinces_to_highlight = {
 			region = forochel_region
@@ -55,7 +55,7 @@ angmar_slot_1 = {
 
 	the_naval_north = {
 		icon = mission_the_naval_north
-		position = 5
+		position = 7
 		required_missions = { ice_bay_thralls }
 		provinces_to_highlight = {
 			OR = {				
@@ -130,7 +130,7 @@ angmar_slot_1 = {
 	
 	a_frozen_fleet = {
 		icon = mission_navy_01
-		position = 6
+		position = 8
 		required_missions = { the_naval_north }
 		provinces_to_highlight = {
 			area = sea_of_forodwaith_area
@@ -148,7 +148,7 @@ angmar_slot_1 = {
 
 	ice_floes_of_forochel = {
 		icon = mission_ice_floes_of_forochel
-		position = 7
+		position = 9
 		required_missions = { a_frozen_fleet }
 		provinces_to_highlight = {
 			area = sea_of_forodwaith_area
@@ -186,7 +186,7 @@ angmar_slot_2 = {
 
 	west_to_forochel = {
 		icon = mission_west_to_forochel
-		position = 3
+		position = 5
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
 			region = forochel_region
@@ -257,7 +257,7 @@ angmar_formable_slot_3 = {
 
 	reformation_of_angmar = {
 		icon = mission_carn_dum
-		position = 1
+		position = 3
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
@@ -342,7 +342,7 @@ angmar_slot_3 = {
 	}
 	angmarim_servitude = {
 		icon = mission_angmarim_servitude
-		position = 2
+		position = 4
 		required_missions = { reformation_of_angmar }
 		provinces_to_highlight = {
 			has_terrain = unique_angmar_town
@@ -382,7 +382,7 @@ angmar_slot_3 = {
 	}
 	restore_old_borders = {
 		icon = mission_restore_old_borders
-		position = 3
+		position = 5
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
 			OR = {
@@ -439,7 +439,7 @@ angmar_slot_3 = {
 	}
 	return_of_the_witch_king = {
 		icon = mission_return_of_the_witch_king
-		position = 4
+		position = 6
 		required_missions = { restore_old_borders }
 		provinces_to_highlight = {
 			OR = {
@@ -497,7 +497,7 @@ angmar_slot_3 = {
 	}
 	subjugate_mount_gram = {
 		icon = mission_mount_gram
-		position = 5
+		position = 7
 		required_missions = { return_of_the_witch_king }
 		provinces_to_highlight = {
 			province_id = 687
@@ -516,7 +516,7 @@ angmar_slot_3 = {
 	}
 	morgul_sorcery = {
 		icon = mission_morgul_sorcery
-		position = 6
+		position = 8
 		required_missions = { 
 			subjugate_mount_gram 
 			the_high_fells 
@@ -550,7 +550,7 @@ angmar_slot_4 = {
 
 	south_to_rhudaur = {
 		icon = mission_south_to_rhudaur
-		position = 3
+		position = 5
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
 			region = rhudaur_region
@@ -607,7 +607,7 @@ angmar_slot_4 = {
 	}	
 	the_high_fells = {
 		icon = mission_the_high_fells
-		position = 5
+		position = 7
 		required_missions = { return_of_the_witch_king }
 		provinces_to_highlight = {
 			province_id = 1892
@@ -636,7 +636,7 @@ angmar_slot_5 = {
 
 	wall_of_mist_and_stone = {
 		icon = mission_wall_of_mist_and_stone
-		position = 4
+		position = 6
 		required_missions = { south_to_rhudaur }
 		provinces_to_highlight = {
 			region = misty_mountains_region
@@ -733,7 +733,7 @@ angmar_slot_5 = {
 	}
 	prepare_troll_troops = {
 		icon = mission_trolls_1
-		position = 5
+		position = 7
 		required_missions = { wall_of_mist_and_stone }
 		provinces_to_highlight = {
 			OR = {
