@@ -254,11 +254,51 @@ angmar_formable_slot_3 = {
 			}
 		}
 	}
+	
+	an_old_power_rises = {
+		icon = mission_carn_dum
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			army_size_percentage = 0.50
+			manpower_percentage = 0.75
+			is_monarch_leader = yes
+		}
+		effect = { 
+			add_country_modifier = {
+				name = rising_power
+				duration = 5340
+			}
+		}
+	}
+	
+	capital_at_carn_dum = {
+		icon = mission_carn_dum
+		position = 2
+		required_missions = { an_old_power_rises }
+		provinces_to_highlight = {
+			province_id = 610
+		}
+		trigger = {
+			610 = {
+				development = 25
+				is_capital = yes
+				stability = 1
+			}
+		}
+		effect = { 
+			add_center_of_trade_level = 1
+			add_prestige = 25
+			add_adm_power = 100
+		}
+	}
 
 	reformation_of_angmar = {
 		icon = mission_carn_dum
 		position = 3
-		required_missions = { }
+		required_missions = { control_carn_dum }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 610

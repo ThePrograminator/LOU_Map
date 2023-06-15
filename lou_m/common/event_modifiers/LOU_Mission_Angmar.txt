@@ -1,23 +1,29 @@
-servants_of_angmar = {										#Province Modifier
+rising_power = {											#Country Modifier - Temporary
+	development_cost = -0.10
+	stability_cost_modifier = -0.15
+	manpower_recovery_speed = 0.15
+}
+
+servants_of_angmar = {										#Province Modifier - Permanent
 	local_governing_cost = -0.25
 	local_tax_modifier = 0.10
 	local_manpower_modifier = 0.15
 }
 
-legacy_of_king_golfimbul = {								#Country Modifier
+legacy_of_king_golfimbul = {								#Country Modifier - Permanent
 	prestige = 0.25
 	cavalry_power = 0.10
 	shock_damage = 0.05
 }
 
-forochel_port = {											#Province Modifier
+forochel_port = {											#Province Modifier - Permanent
 	local_sailors_modifier = 2
 	local_ship_cost = -0.25
 	ship_recruit_speed = -0.25
 	local_ship_repair = 0.50
 }
 
-angmar_at_sea = {											#Country Modifier
+angmar_at_sea = {											#Country Modifier - Permanent
 	may_perform_slave_raid_on_same_religion = yes
 	coast_raid_range = 5
 	leader_naval_shock = 2
@@ -25,22 +31,22 @@ angmar_at_sea = {											#Country Modifier
 	global_sailors_modifier = 0.25
 }
 
-ice_floes = {												#Province Modifier
+ice_floes = {												#Province Modifier - Permanent
 	hostile_disembark_speed = 0.75
 	hostile_fleet_attrition = 5
 	local_defender_dice_roll_bonus = 1
 }
 
-misty_mountain_allies = {									#Country Modifier
+misty_mountain_allies = {									#Country Modifier - Permanent
 	diplomatic_upkeep = 2
 	diplomats = 2								
 	manpower_recovery_speed = 0.15
 }
 
-high_fells_haunted = {										#Province Modifier
+high_fells_haunted = {										#Province Modifier - Permanent
 	diplomatic_reputation = 1
 }
 
-morgul_sorcerers = {										#Country Modifier
+morgul_sorcerers = {										#Country Modifier - Permanent
 	
 }
