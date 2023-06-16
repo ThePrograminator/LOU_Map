@@ -59,8 +59,12 @@ misty_mountain_allies = {									#Country Modifier - Permanent
 
 high_fells_haunted = {										#Province Modifier - Permanent
 	diplomatic_reputation = 1
+	liberty_desire = -0.15
+	yearly_corruption = -0.05
 }
 
 morgul_sorcerers = {										#Country Modifier - Permanent
-	
+	innovativeness_gain = 0.5
+	free_policy = 1
+	morale_damage = 0.05
 }
