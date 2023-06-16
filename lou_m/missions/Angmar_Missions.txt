@@ -176,6 +176,63 @@ angmar_slot_1 = {
 	}
 }
 
+angmar_formable_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = ANG
+			AND = {
+				NOT = { 
+					exists = ANG
+				}
+
+				NOT = {
+					tag = Y63												#Excluding Gundabad for their own path/formable/missions
+				}
+
+				OR = {
+					culture_group = culture_group_orcs
+					culture_group = culture_group_borians
+					culture_group = culture_group_black_numenorean
+				}
+
+				any_owned_province = {
+					region = angmar_region
+				}
+			}
+		}
+	}
+	
+	the_lower_cities = {
+		icon = mission_carn_dum
+		position = 2
+		required_missions = { an_old_power_rises }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 401
+				province_id = 1957
+				province_id = 1958
+			}
+		}
+		trigger = {
+			401 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1957 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1958 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			add_dip_power = 100
+		}
+	}
+}
+
 angmar_slot_2 = {
 	slot = 2
 	generic = no
@@ -256,7 +313,7 @@ angmar_formable_slot_3 = {
 	}
 	
 	an_old_power_rises = {
-		icon = mission_carn_dum
+		icon = mission_carn_dum_snow
 		position = 1
 		required_missions = { }
 		provinces_to_highlight = {
@@ -265,11 +322,30 @@ angmar_formable_slot_3 = {
 			army_size_percentage = 0.50
 			manpower_percentage = 0.75
 			is_monarch_leader = yes
+			stability = 1
 		}
 		effect = { 
 			add_country_modifier = {
 				name = rising_power
 				duration = 5340
+			}
+			carn_dum_area = {
+				add_permanent_claim = ANG
+			}
+			phaluran_area = {
+				add_permanent_claim = ANG
+			}
+			angsul_area = {
+				add_permanent_claim = ANG
+			}
+			morkai_area = {
+				add_permanent_claim = ANG
+			}
+			shedun_area = {
+				add_permanent_claim = ANG
+			}
+			nan_angmar_area = {
+				add_permanent_claim = ANG
 			}
 		}
 	}
@@ -283,22 +359,25 @@ angmar_formable_slot_3 = {
 		}
 		trigger = {
 			610 = {
-				development = 25
-				is_capital = yes
-				stability = 1
+				development = 30
+				is_capital = yes			
 			}
 		}
 		effect = { 
 			add_center_of_trade_level = 1
 			add_prestige = 25
-			add_adm_power = 100
+			add_adm_power = 150
 		}
 	}
 
 	reformation_of_angmar = {
 		icon = mission_carn_dum
 		position = 3
-		required_missions = { control_carn_dum }
+		required_missions = { 
+			capital_at_carn_dum
+			the_lower_cities
+			vale_of_nan_angmar
+		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 610
@@ -315,7 +394,7 @@ angmar_formable_slot_3 = {
 			}
 		}
 		trigger = {
-			adm_tech = 6
+			adm_tech = 3
             
 			is_subject = no
             is_free_or_tributary_trigger = yes
@@ -344,24 +423,6 @@ angmar_formable_slot_3 = {
 			set_capital = 610
 			add_core = 610
 			add_stability = 1
-			carn_dum_area = {
-				add_permanent_claim = ANG
-			}
-			phaluran_area = {
-				add_permanent_claim = ANG
-			}
-			angsul_area = {
-				add_permanent_claim = ANG
-			}
-			morkai_area = {
-				add_permanent_claim = ANG
-			}
-			shedun_area = {
-				add_permanent_claim = ANG
-			}
-			nan_angmar_area = {
-				add_permanent_claim = ANG
-			}
 			hidden_effect = {
 				add_government_reform = lotr_carn_dum_reform
 				add_accepted_culture = culture_wight
@@ -576,6 +637,63 @@ angmar_slot_3 = {
 				name = morgul_sorcerers
 				duration = -1
 			}
+		}
+	}
+}
+
+angmar_formable_slot_4 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR ={
+			tag = ANG
+			AND = {
+				NOT = { 
+					exists = ANG
+				}
+
+				NOT = {
+					tag = Y63												#Excluding Gundabad for their own path/formable/missions
+				}
+
+				OR = {
+					culture_group = culture_group_orcs
+					culture_group = culture_group_borians
+					culture_group = culture_group_black_numenorean
+				}
+
+				any_owned_province = {
+					region = angmar_region
+				}
+			}
+		}
+	}
+	
+	vale_of_nan_angmar = {
+		icon = mission_carn_dum
+		position = 2
+		required_missions = { an_old_power_rises }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 401
+				province_id = 1957
+				province_id = 1958
+			}
+		}
+		trigger = {
+			401 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1957 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1958 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			add_dip_power = 150
 		}
 	}
 }
