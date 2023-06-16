@@ -136,41 +136,12 @@ angmar_slot_1 = {
 			area = sea_of_forodwaith_area
 		}
 		trigger = {
-			naval_forcelimit = 30                               
+			naval_forcelimit = 50                               
 		}
 		effect = { 
 			add_country_modifier = {
 				name = angmar_at_sea
 				duration = -1
-			}
-		}
-	}
-
-	ice_floes_of_forochel = {
-		icon = mission_ice_floes_of_forochel
-		position = 9
-		required_missions = { a_frozen_fleet }
-		provinces_to_highlight = {
-			area = sea_of_forodwaith_area
-		}
-		trigger = {
-			region = forochel_region
-			has_port = yes
-		}
-		effect = { 
-			every_owned_province = {
-				limit = {
-					has_port = yes
-					OR = {
-						region = forochel_region
-						region = northern_waste_region
-						province_id = 234
-					}
-				}
-			}
-			add_permanent_province_modifier = { 
-				name = ice_floes
-				duration = -1  
 			}
 		}
 	}
@@ -338,6 +309,41 @@ angmar_slot_2 = {
 			}
 			forochel_region = {
 				add_permanent_claim = ANG
+			}
+		}
+	}
+
+	
+	ice_floes_of_forochel = {
+		icon = mission_ice_floes_of_forochel
+		position = 9
+		required_missions = { 
+			a_frozen_fleet
+			morgul_sorcery
+		}
+		provinces_to_highlight = {
+			area = sea_of_forodwaith_area
+		}
+		trigger = {
+			stability = 2
+			legitimacy = 100
+			has_idea_group = shadow_of_melkor_ideas
+			has_idea_group = defensive_ideas
+		}
+		effect = { 
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						region = forochel_region
+						region = northern_waste_region
+						province_id = 234
+					}
+				}
+			}
+			add_permanent_province_modifier = { 
+				name = ice_floes
+				duration = -1  
 			}
 		}
 	}
