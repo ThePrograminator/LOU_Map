@@ -206,7 +206,7 @@ angmar_formable_slot_2 = {
 	}
 	
 	the_lower_cities = {
-		icon = mission_carn_dum
+		icon = mission_the_lower_cities
 		position = 2
 		required_missions = { an_old_power_rises }
 		provinces_to_highlight = {
@@ -223,7 +223,9 @@ angmar_formable_slot_2 = {
 				OR = {
 					exists = no
 					vassal_of = ROOT
-					tag = Y54
+					ROOT = {
+						tag = Y54
+					}
 				}
 			}
 			Y55 = {
@@ -242,18 +244,43 @@ angmar_formable_slot_2 = {
 			}
 			1958 = {
 				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = capital_1_orc_building
+					has_building = encampment_1_orc_building
+					has_building = fortress_1_orc_building
+				}
 			}
 			1957 = {
 				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = capital_1_orc_building
+					has_building = encampment_1_orc_building
+					has_building = fortress_1_orc_building
+				}
 			}
 			613 = {
 				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = capital_1_orc_building
+					has_building = encampment_1_orc_building
+					has_building = fortress_1_orc_building
+				}
 			}
 			611 = {
 				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = capital_1_orc_building
+					has_building = encampment_1_orc_building
+					has_building = fortress_1_orc_building
+				}
 			}
 			401 = {
 				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = capital_1_orc_building
+					has_building = encampment_1_orc_building
+					has_building = fortress_1_orc_building
+				}
 			}
 		}
 		effect = { 
@@ -396,24 +423,23 @@ angmar_formable_slot_3 = {
 			}
 		}
 		effect = { 
-			610 = {
-				add_center_of_trade_level = 1
-			}
-			add_prestige = 25
-			add_adm_power = 150
 			add_great_project_tier = {
 				type = carndum_monument
 				tier = 2
 			}
+			610 = {
+				add_center_of_trade_level = 1
+			}
+			add_adm_power = 150
 		}
 	}
 
 	reformation_of_angmar = {
-		icon = mission_carn_dum
+		icon = mission_reformation_of_angmar
 		position = 3
 		required_missions = { 
-			capital_at_carn_dum
 			the_lower_cities
+			capital_at_carn_dum
 			vale_of_nan_angmar
 		}
 		provinces_to_highlight = {
@@ -460,7 +486,9 @@ angmar_formable_slot_3 = {
 			change_tag = ANG
 			set_capital = 610
 			add_core = 610
-			add_stability = 1
+			add_stability = 3			
+			add_prestige = 75
+			add_splendor = 500
 			hidden_effect = {
 				add_government_reform = lotr_carn_dum_reform
 				add_accepted_culture = culture_wight
@@ -709,11 +737,10 @@ angmar_formable_slot_4 = {
 	}
 	
 	vale_of_nan_angmar = {
-		icon = mission_carn_dum
+		icon = mission_vale_of_nan_angmar
 		position = 2
 		required_missions = { an_old_power_rises }
 		provinces_to_highlight = {
-			area = nan_angmar_area
 			province_id = 1956
 		}
 		trigger = {
@@ -723,6 +750,7 @@ angmar_formable_slot_4 = {
 				OR = {
 					has_building = capital_2_orc_building
 					has_building = encampment_2_orc_building
+					has_building = fortress_2_orc_building
 				}
 				has_building = orc_fissure_orc_building
 			}

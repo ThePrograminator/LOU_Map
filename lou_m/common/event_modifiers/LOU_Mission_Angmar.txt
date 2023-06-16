@@ -7,11 +7,13 @@ rising_power = {											#Country Modifier - Temporary
 
 orcish_influx = {											#Country Modifier - Temporary
 	army_tradition = 1
-	global_regiment_cost = -0.25
+	global_regiment_cost = -0.50
+	global_regiment_recruit_speed = -0.50
 }
 
 lower_cities_subjugated = {									#Country Modifier - Temporary
-	diplomatic_reputation = 1
+	diplomatic_reputation = 2
+	liberty_desire = -25
 	diplomatic_annexation_cost = -0.25
 	annexation_relations_impact = -0.75
 }
