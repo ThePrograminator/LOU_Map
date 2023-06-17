@@ -431,7 +431,7 @@ angmar_formable_slot_3 = {
 		effect = { 
 			add_great_project_tier = {
 				type = carndum_monument
-				tier = 2
+				tier = 1
 			}
 			610 = {
 				add_center_of_trade_level = 1
@@ -698,7 +698,7 @@ angmar_slot_3 = {
 			province_id = 610
 		}
 		trigger = {
-			stability = 3
+			stability = 2
 			legitimacy = 95
 			NOT = {
 				average_unrest = 5
@@ -708,6 +708,22 @@ angmar_slot_3 = {
 			add_country_modifier = {
 				name = morgul_sorcerers
 				duration = -1
+			}
+		}
+	}
+	wight_power = {
+		icon = mission_wight_power
+		position = 9
+		required_missions = { morgul_sorcery }
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_idea = shadow_of_melkor_ideas_5
+		}
+		effect = { 
+			country_event = {
+				id = LOU_mission_angmar.1
 			}
 		}
 	}
@@ -857,9 +873,19 @@ angmar_slot_4 = {
 			}
 		}
 		effect = { 
-			add_country_modifier = {
+			1892 = {
+				add_base_manpower = 9
+				add_devastation = 25
+				add_local_autonomy = 25
+				change_culture = culture_wight
+			}
+			add_great_project_tier = {
+				type = high_fells_monument
+				tier = 1
+			}
+			add_province_modifier = {
 				name = high_fells_haunted
-				duration = -1
+				duration = 5475			# 15 year modifier
 			}
 		}
 	}
