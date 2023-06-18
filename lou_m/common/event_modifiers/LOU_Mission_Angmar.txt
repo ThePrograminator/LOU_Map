@@ -27,7 +27,6 @@ servants_of_angmar = {										#Province Modifier - Permanent
 legacy_of_king_golfimbul = {								#Country Modifier - Permanent
 	prestige = 0.25
 	cavalry_power = 0.10
-	shock_damage = 0.05
 }
 
 forochel_port = {											#Province Modifier - Permanent
@@ -66,7 +65,7 @@ high_fells_haunted = {										#Province Modifier - Temporary
 }
 
 morgul_sorcerers = {										#Country Modifier - Permanent
-	innovativeness_gain = 0.5
+	yearly_innovativeness = 0.25
 	prestige_decay = -0.25
 	morale_damage = 0.0025
 }
@@ -75,4 +74,9 @@ wights_arisen = {											#Country Modifier - Permanent
 	diplomatic_reputation = 1
 	liberty_desire = -0.15
 	yearly_corruption = -0.05
+}
+
+olog_hai_vanguard = {										#Country Modifier - Permanent
+	infantry_shock = 2
+	fire_damage_received = -0.10
 }

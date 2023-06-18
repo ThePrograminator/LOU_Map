@@ -1838,6 +1838,44 @@ on_province_owner_change = {
 			builder = ROOT
 		}
 	}
+
+	if = {
+		limit = {
+			province_id = 1679
+			owner = {
+				NOT = {
+					OR = {
+						primary_culture_group = culture_group_noldor
+						primary_culture_group = culture_group_sindar
+						primary_culture_group = culture_group_nandor
+						primary_culture_group = culture_group_nandor
+					}
+				}
+			}
+		}
+		remove_province_modifier = ford_of_bruinen
+	}
+	
+	if = {
+		limit = {
+			province_id = 1679
+			owner = {
+				NOT = {
+					has_province_modifier = ford_of_bruinen
+				}
+				OR = {
+					primary_culture_group = culture_group_noldor
+					primary_culture_group = culture_group_sindar
+					primary_culture_group = culture_group_nandor
+					primary_culture_group = culture_group_nandor
+				}
+			}
+		}
+		add_permanent_province_modifier = { 
+			name = ford_of_bruinen
+			duration = -1  
+		}
+	}
 }
 
 # country

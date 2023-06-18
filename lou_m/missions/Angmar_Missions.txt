@@ -331,7 +331,7 @@ angmar_slot_2 = {
 			has_idea_group = defensive_ideas
 		}
 		effect = { 
-			every_owned_province = {
+			every_province = {
 				limit = {
 					has_port = yes
 					OR = {
@@ -719,7 +719,8 @@ angmar_slot_3 = {
 			
 		}
 		trigger = {
-			has_idea = shadow_of_melkor_ideas_5
+			has_idea_group = shadow_of_melkor_ideas
+			has_idea = armies_of_the_eye
 		}
 		effect = { 
 			country_event = {
@@ -1001,6 +1002,7 @@ angmar_slot_5 = {
 		position = 7
 		required_missions = { wall_of_mist_and_stone }
 		provinces_to_highlight = {
+			province_id = 375
 			OR = {
 				AND = {
 					region = rhudaur_region
@@ -1016,11 +1018,18 @@ angmar_slot_5 = {
 			}
 		}
 		trigger = {
-			accepted_culture = culture_troll
-			accepted_culture = culture_cave_troll
-			num_of_owned_provinces_with = {
-				value = 5
-				development = 10
+			OR = {
+				accepted_culture = culture_troll
+				accepted_culture = culture_cave_troll
+			}
+			has_idea_group = offensive_ideas
+			has_idea = glorious_arms
+			375 = {				
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			development_in_provinces = {
+				value = 50
+				country_or_non_sovereign_subject_holds = ROOT
 				OR = {
 					culture = culture_troll
 					culture = culture_cave_troll
@@ -1029,7 +1038,33 @@ angmar_slot_5 = {
 			}
 		}
 		effect = {
-
+			add_accepted_culture = culture_olog_hai
+			rhudaur_region = {
+				limit = {
+					has_culture = culture_troll
+				}
+				add_core = ANG
+				cede_province = ANG
+			}
+			375 = {
+				change_culture = culture_olog_hai
+				add_base_production = 2
+				add_base_manpower = 4
+			}
+			3456 = {
+				change_culture = culture_olog_hai
+				add_base_production = 2
+				add_base_manpower = 4
+			}
+			610 = {
+				add_base_production = 2
+				add_base_manpower = 4
+				add_building = troll_cage_orc_building
+			}
+			add_country_modifier = {
+				name = olog_hai_vanguard
+				duration = -1				
+			}
 		}
 	}
 }
