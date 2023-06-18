@@ -310,6 +310,10 @@ naval_supplies = {
 		factor = 15
 		modifier = {
 			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = {
+			factor = 0
 			OR = {
 				has_terrain = glacier
 				has_terrain = desert
@@ -399,6 +403,24 @@ copper = {
 				has_terrain = unique_grasslands_desolate
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
+		}
 	}
 }
 
@@ -429,15 +451,33 @@ gold = {
 			}
 		}
 		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
+		}
+		modifier = {
 			factor = 1.5
 			is_random_new_world = yes
 			has_terrain = mountain
 			continent = new_world #Always in RNW
 		}
-		modifier = {
-			factor = 1.5
-			normal_or_historical_nations = no
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	normal_or_historical_nations = no
+		# }
 	}
 }
 
@@ -470,6 +510,24 @@ iron = {
 			factor = 0
 			is_random_new_world = yes
 			continent = new_world
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
+		}
+		modifier = {
+			factor = 0
 			OR = {
 				has_terrain = forest
 				has_terrain = woods
@@ -1169,20 +1227,30 @@ gems = {
 				has_terrain = unique_grasslands_desolate
 				has_terrain = savannah
 				has_terrain = steppe
+				has_terrain = jungle
 				has_terrain = coastline
 				has_terrain = coastal_desert
 				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
 				has_terrain = unique_grasslands_desolate
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0
 			OR = {
-				has_terrain = mountain
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
 				has_terrain = jungle
-				has_terrain = hills
-				has_terrain = highlands
-				has_terrain = coastline #Pearls
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
 			}
 		}
 		modifier = {
@@ -1191,10 +1259,10 @@ gems = {
 			has_terrain = mountain
 			continent = new_world #Always in RNW
 		}
-		modifier = {
-			factor = 1.5
-			normal_or_historical_nations = no
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	normal_or_historical_nations = no
+		# }
 	}
 }
 
@@ -1246,8 +1314,21 @@ marble = {
 		}
 		modifier = {
 			factor = 0
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
 		}
 	}
 }
@@ -1268,8 +1349,21 @@ stone = {
 		}
 		modifier = {
 			factor = 0
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
 		}
 	}
 }
@@ -1359,11 +1453,55 @@ silver = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 0
+		factor = 5
 		modifier = {
 			factor = 0
-			NOT = {	has_terrain = mountain }
+			is_random_new_world = yes
+			continent = new_world
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_random_new_world = yes
+			has_terrain = mountain
+			continent = new_world #Always in RNW
+		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	normal_or_historical_nations = no
+		# }
 	}
 }
 
@@ -1407,6 +1545,9 @@ great_beasts = {
 	}
 	chance = {
 		factor = 0
+		NOT = {
+			superregion = mordor_superregion
+		}
 	}
 }
 
@@ -1420,6 +1561,9 @@ orc_draught = {
 	}
 	chance = {
 		factor = 0
+		NOT = {
+			culture_group = culture_group_orcs
+		}
 	}
 }
 
