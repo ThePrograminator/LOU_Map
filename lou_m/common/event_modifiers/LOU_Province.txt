@@ -72,7 +72,7 @@ wilderness_debuff = {
 	local_development_cost = 1
 	
 	local_missionary_strength = 0.08
-	local_local_culture_conversion_cost = -0.25
+	local_culture_conversion_cost = -0.25
 }
 
 province_wight_debuff = {
@@ -486,7 +486,7 @@ shelobs_lair = {
 	local_development_cost = 5
 	local_build_cost = 5
 	local_build_time = 5
-	local_local_local_culture_conversion_cost = 5
+	local_culture_conversion_cost = 5
 	min_local_autonomy = 95
 	local_unrest = -15
 	local_missionary_strength = -5
