@@ -1845,10 +1845,10 @@ on_province_owner_change = {
 			owner = {
 				NOT = {
 					OR = {
-						primary_culture_group = culture_group_noldor
-						primary_culture_group = culture_group_sindar
-						primary_culture_group = culture_group_nandor
-						primary_culture_group = culture_group_nandor
+						culture_group = culture_group_noldor
+						culture_group = culture_group_sindar
+						culture_group = culture_group_nandor
+						culture_group = culture_group_nandor
 					}
 				}
 			}
@@ -1864,10 +1864,10 @@ on_province_owner_change = {
 					has_province_modifier = ford_of_bruinen
 				}
 				OR = {
-					primary_culture_group = culture_group_noldor
-					primary_culture_group = culture_group_sindar
-					primary_culture_group = culture_group_nandor
-					primary_culture_group = culture_group_nandor
+					culture_group = culture_group_noldor
+					culture_group = culture_group_sindar
+					culture_group = culture_group_nandor
+					culture_group = culture_group_nandor
 				}
 			}
 		}

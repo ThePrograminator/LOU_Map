@@ -1544,9 +1544,12 @@ great_beasts = {
 		local_development_cost = -0.20
 	}
 	chance = {
-		factor = 0
-		NOT = {
-			superregion = mordor_superregion
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				superregion = mordor_superregion
+			}
 		}
 	}
 }
@@ -1560,9 +1563,12 @@ orc_draught = {
 		local_manpower_modifier = 0.25
 	}
 	chance = {
-		factor = 0
-		NOT = {
-			culture_group = culture_group_orcs
+		factor = 15
+		modifier = {
+			factor = 0
+			NOT = {
+				culture_group = culture_group_orcs
+			}
 		}
 	}
 }
