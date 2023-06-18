@@ -179,7 +179,7 @@ angmar_formable_slot_2 = {
 	the_lower_cities = {
 		icon = mission_the_lower_cities
 		position = 2
-		required_missions = { an_old_power_rises }
+		required_missions = { an_old_power_is_rising }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1958
@@ -378,7 +378,7 @@ angmar_formable_slot_3 = {
 		}
 	}
 	
-	an_old_power_rises = {
+	an_old_power_is_rising = {
 		icon = mission_carn_dum_snow
 		position = 1
 		required_missions = { }
@@ -418,13 +418,13 @@ angmar_formable_slot_3 = {
 	capital_at_carn_dum = {
 		icon = mission_carn_dum
 		position = 2
-		required_missions = { an_old_power_rises }
+		required_missions = { an_old_power_is_rising }
 		provinces_to_highlight = {
 			province_id = 610
 		}
 		trigger = {
 			610 = {
-				development = 30
+				development = 25
 				is_capital = yes		
 			}
 		}
@@ -721,6 +721,12 @@ angmar_slot_3 = {
 		trigger = {
 			has_idea_group = shadow_of_melkor_ideas
 			has_idea = armies_of_the_eye
+			1892 = {
+				has_great_project = {
+					type = high_fells_monument
+					tier = 2
+				}
+			}
 		}
 		effect = { 
 			country_event = {
@@ -762,7 +768,7 @@ angmar_formable_slot_4 = {
 	vale_of_nan_angmar = {
 		icon = mission_vale_of_nan_angmar
 		position = 2
-		required_missions = { an_old_power_rises }
+		required_missions = { an_old_an_old_power_is_risingpower_rises }
 		provinces_to_highlight = {
 			province_id = 1956
 		}
@@ -998,7 +1004,7 @@ angmar_slot_5 = {
 		}
 	}
 	prepare_troll_troops = {
-		icon = mission_trolls_1
+		icon = mission_prepare_troll_troops
 		position = 7
 		required_missions = { wall_of_mist_and_stone }
 		provinces_to_highlight = {
@@ -1068,7 +1074,7 @@ angmar_slot_5 = {
 		}
 	}
 	forward_defenses = {
-		icon = mission_the_high_fells
+		icon = mission_forward_defenses
 		position = 8
 		required_missions = { prepare_troll_troops }
 		provinces_to_highlight = {

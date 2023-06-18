@@ -1310,7 +1310,7 @@ herbs = {
 	chance = {
 		factor = 15
 		modifier = {
-			factor = 0
+			factor = 0.5
 			has_terrain = forest
 		}
 	}
@@ -1360,9 +1360,9 @@ silver = {
 	}
 	chance = {
 		factor = 0
-	modifier = {
+		modifier = {
 			factor = 0
-			has_terrain = mountain
+			NOT = {	has_terrain = mountain }
 		}
 	}
 }
@@ -1392,6 +1392,9 @@ mumakil = {
 	province = {
 		province_trade_power_modifier = 0.15
 	}
+	chance = {
+		factor = 0
+	}
 }
 
 great_beasts = {
@@ -1401,6 +1404,9 @@ great_beasts = {
 	}
 	province = {
 		local_development_cost = -0.20
+	}
+	chance = {
+		factor = 0
 	}
 }
 
@@ -1412,6 +1418,9 @@ orc_draught = {
 	province = {
 		local_manpower_modifier = 0.25
 	}
+	chance = {
+		factor = 0
+	}
 }
 
 miruvor = {
@@ -1421,6 +1430,9 @@ miruvor = {
 	}
 	province = {
 		local_prosperity_growth = 0.25
+	}
+	chance = {
+		factor = 0
 	}
 }
 
@@ -1432,6 +1444,9 @@ corsairs = {
 	province = {
 		local_ship_cost = -0.20
 	}
+	chance = {
+		factor = 0
+	}
 }
 
 carracks = {
@@ -1441,6 +1456,9 @@ carracks = {
 	}
 	province = {
 		local_ship_cost = -0.20
+	}
+	chance = {
+		factor = 0
 	}
 }
 
@@ -1452,5 +1470,8 @@ plunder = {
 	province = {
 		province_trade_power_modifier = 0.15
 		local_production_efficiency = -0.50
+	}
+	chance = {
+		factor = 0
 	}
 }
