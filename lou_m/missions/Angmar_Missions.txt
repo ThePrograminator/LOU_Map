@@ -886,7 +886,7 @@ angmar_slot_4 = {
 			}
 			add_province_modifier = {
 				name = high_fells_haunted
-				duration = 5475			# 15 year modifier
+				duration = 9125			# 25 year modifier
 			}
 		}
 	}
@@ -1064,6 +1064,58 @@ angmar_slot_5 = {
 			add_country_modifier = {
 				name = olog_hai_vanguard
 				duration = -1				
+			}
+		}
+	}
+	forward_defenses = {
+		icon = mission_the_high_fells
+		position = 8
+		required_missions = { prepare_troll_troops }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 293
+				province_id = 384
+				province_id = 292
+			}
+		}
+		trigger = {
+			293 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = fort_wooden_walls_orc_building
+			}
+			384 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = fort_wooden_walls_orc_building
+			}
+			292 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = fort_wooden_walls_orc_building
+			}
+		}
+		effect = { 
+			293 = {
+				add_base_manpower = 3
+				change_culture = culture_troll
+				add_permanent_province_modifier = {
+					name = troll_fort
+					duration = -1
+				}
+			} 
+			293 = {
+				add_base_manpower = 3
+				change_culture = culture_troll
+				add_permanent_province_modifier = {
+					name = troll_fort
+					duration = -1
+				}
+			} 
+			293 = {
+				add_base_manpower = 3
+				change_culture = culture_troll
+				add_permanent_province_modifier = {
+					name = troll_fort
+					duration = -1
+				}
 			}
 		}
 	}
