@@ -197,6 +197,7 @@ shadow_of_melkor_ideas = {
 
 	bonus = {
 		stewards_loyalty_modifier = 0.1
+		religious_unity = 0.25
 	}
 
 	domain_of_darkness = {		
@@ -219,7 +220,6 @@ shadow_of_melkor_ideas = {
 	}
 	roaming_slavers = {
 		missionaries = 1
-		religious_unity = 0.25
 	}
 	supreme_authority = {
 		max_absolutism = 20
@@ -245,6 +245,7 @@ light_of_eru_ideas = {
 
 	bonus = {
 		stewards_loyalty_modifier = 0.1
+		religious_unity = 0.25
 	}
 
 	realm_of_radiance = {			
@@ -268,7 +269,6 @@ light_of_eru_ideas = {
 	}
 	unified_purpose = {
 		missionaries = 1
-		religious_unity = 0.25
 	}
 	istari_guidance = {
 		innovativeness_gain = 0.5
@@ -674,7 +674,7 @@ administrative_ideas = {
 	}
 
 	organised_mercenary_payment = {
-		mercenary_cost = -0.10
+		mercenary_cost = -0.15
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -689,7 +689,7 @@ administrative_ideas = {
 		mercenary_manpower = 0.25
 	}
 	administrative_efficiency_idea = {
-		advisor_pool = 1
+		administrative_efficiency = 0.2
 	}
 	civil_servants = {
 		adm_tech_cost_modifier = -0.1
