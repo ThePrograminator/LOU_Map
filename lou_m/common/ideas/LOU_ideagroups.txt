@@ -196,7 +196,7 @@ shadow_of_melkor_ideas = {
 	}
 
 	bonus = {
-		war_exhaustion = -0.15
+		stewards_loyalty_modifier = 0.1
 	}
 
 	domain_of_darkness = {		
@@ -215,12 +215,11 @@ shadow_of_melkor_ideas = {
 		relation_with_same_culture_group = 15
 	}
 	armies_of_the_eye = {	
-		army_tradition = 1
-		land_morale = 0.10
+		discipline = 0.05
 	}
 	roaming_slavers = {
 		missionaries = 1
-		stewards_loyalty_modifier = 0.1
+		religious_unity = 0.25
 	}
 	supreme_authority = {
 		max_absolutism = 20
@@ -245,34 +244,33 @@ light_of_eru_ideas = {
 	}
 
 	bonus = {
-		manpower_recovery_speed = 0.10
+		stewards_loyalty_modifier = 0.1
 	}
 
-	light_of_eru_ideas_1 = {			
+	realm_of_radiance = {			
 		cb_on_religious_enemies = yes
 		tolerance_heretic = 2
 		tolerance_heathen = 2
 	}
-	light_of_eru_ideas_2 = {
+	natural_negotiators = {
 		diplomatic_reputation = 2	
 	}
-	light_of_eru_ideas_3 = {			
+	enlightened_ideals = {			
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.50
 	}
-	light_of_eru_ideas_4 = {			
+	cultural_diffusion = {			
 		culture_conversion_cost = -0.15
 		relation_with_accepted_culture = 15
 	}
-	light_of_eru_ideas_5 = {	
-		yearly_army_professionalism = 1
-		discipline = 0.10
+	hope_remains = {	
+		land_morale = 0.10
 	}
-	light_of_eru_ideas_6 = {
+	unified_purpose = {
 		missionaries = 1
-		stewards_loyalty_modifier = 0.1
+		religious_unity = 0.25
 	}
-	light_of_eru_ideas_7 = {
+	istari_guidance = {
 		innovativeness_gain = 0.5
 		yearly_innovativeness = 0.25
 	}
@@ -702,42 +700,125 @@ administrative_ideas = {
 	}
 }
 
-humanist_ideas = {
+# humanist_ideas = {
+# 	category = ADM
+
+# 	trigger = {
+# 		is_free_peoples_opinion = yes
+# 	}
+
+# 	bonus = {
+# 		idea_cost = -0.1
+# 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+# 	}
+
+# 	tolerance_idea = {
+# 		religious_unity = 0.25
+# 	}
+# 	local_traditions = {
+# 		global_unrest = -2
+# 	}
+# 	ecumenism = {
+# 		tolerance_heretic = 2
+# 	}
+# 	indirect_rule = {
+# 		years_of_nationalism = -10
+# 	}
+# 	cultural_ties = {
+# 		num_accepted_cultures = 2
+# 	}
+# 	benevolence = {
+# 		improve_relation_modifier = 0.3
+# 	}
+# 	humanist_tolerance = {
+# 		tolerance_heathen = 2
+# 	}
+
+# 	ai_will_do = {
+# 		factor = 50
+# 	}
+# }
+
+fellowship_ideas = {
 	category = ADM
 
-	bonus = {
-		idea_cost = -0.1
-		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+	trigger = {
+		is_free_peoples_opinion = yes
 	}
 
-	tolerance_idea = {
-		religious_unity = 0.25
+	bonus = {
+		commoners_loyalty_modifier = 0.1
 	}
-	local_traditions = {
+
+	unity_ideas_1 = {
+		advisor_pool = 1
+		advisor_cost = -0.15
+	}
+	unity_ideas_2 = {
 		global_unrest = -2
 	}
-	ecumenism = {
-		tolerance_heretic = 2
+	unity_ideas_3 = {
+		num_accepted_cultures = 5
+		promote_culture_cost = -0.25
 	}
-	indirect_rule = {
-		years_of_nationalism = -10
+	unity_ideas_4 = {
+		tolerance_own = 1
+		tolerance_heathen = 1
+		tolerance_heretic = 1
 	}
-	cultural_ties = {
-		num_accepted_cultures = 2
+	unity_ideas_5 = {
+		trade_efficiency = 0.15
 	}
-	benevolence = {
-		improve_relation_modifier = 0.3
+	unity_ideas_6 = {
+		leader_land_manuever = 1
 	}
-	humanist_tolerance = {
-		tolerance_heathen = 2
+	unity_ideas_7 = {
+		vassal_income = 0.20
 	}
 
 	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = religious_ideas
-		}
+		factor = 50
+	}
+}
+
+oppression_ideas = {
+	category = ADM
+
+	trigger = {
+		is_servants_of_evil_opinion = yes
+	}
+
+	bonus = {
+		nobility_loyalty_modifier = 0.1
+	}
+
+	supremacy_ideas_1 = {
+		advisor_pool = 1
+		same_culture_advisor_cost = -0.10
+		same_religion_advisor_cost = -0.10
+	}
+	supremacy_ideas_2 = {
+		years_of_nationalism = -10
+	}
+	supremacy_ideas_3 = {
+		num_accepted_cultures = 3
+		culture_conversion_time = -0.50
+	}
+	supremacy_ideas_4 = {
+		tolerance_own = 2
+	}
+	supremacy_ideas_5 = {
+		production_efficiency = 0.10
+	}
+	supremacy_ideas_6 = {
+		leader_land_shock = 1
+	}
+	supremacy_ideas_7 = {
+		vassal_manpower_bonus = 0.20
+	}
+
+	ai_will_do = {
+		factor = 50
 	}
 }
 
@@ -861,7 +942,7 @@ assimilation_ideas = {
     
     # Cultural Doctrine
     cultural_doctrine = {
-        culture_conversion_cost = -0.25
+        culture_conversion_cost = -0.20
     }
     # Mixed Courts
     mixed_courts = {
