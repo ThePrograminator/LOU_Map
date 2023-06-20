@@ -89,7 +89,7 @@ wine = {
 		local_unrest = -2
 	}
 	chance = {
-		factor = 5
+		factor = 7
 		modifier = {
 			factor = 0
 			OR = {
@@ -276,7 +276,7 @@ salt = {
 		local_defensiveness = 0.15
 	}
 	chance = {
-		factor = 5
+		factor = 10
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = desert }
@@ -429,7 +429,7 @@ gold = {
 	#no modifiers
 	
 	chance = {
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -490,7 +490,7 @@ iron = {
 		local_build_time = -0.2
 	}
 	chance = {
-		factor = 10
+		factor = 15
 		modifier = {
 			factor = 1.2
 			normal_or_historical_nations = no
@@ -1214,7 +1214,7 @@ gems = {
 		local_tax_modifier = 0.15
 	}
 	chance = {
-		factor = 5
+		factor = 4
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -1307,7 +1307,7 @@ marble = {
 		local_development_cost = -0.15
 	}
 	chance = {
-		factor = 10
+		factor = 5
 		modifier = {
 			factor = 1.5
 			has_terrain = hills
@@ -1342,7 +1342,7 @@ stone = {
 		local_build_cost = -0.2
 	}
 	chance = {
-		factor = 15
+		factor = 20
 		modifier = {
 			factor = 1.5
 			has_terrain = hills
@@ -1377,7 +1377,7 @@ honey = {
 		local_monthly_devastation = -0.1
 	}
 	chance = {
-		factor = 10
+		factor = 7
 		modifier = {
 			factor = 1.5
 			has_terrain = forest
@@ -1419,7 +1419,7 @@ fruit = {
 		local_prosperity_growth = 0.1
 	}
 	chance = {
-		factor = 30
+		factor = 20
 		modifier = {
 			factor = 0
 			OR = {
@@ -1453,7 +1453,7 @@ silver = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 5
+		factor = 4
 		modifier = {
 			factor = 0
 			is_random_new_world = yes

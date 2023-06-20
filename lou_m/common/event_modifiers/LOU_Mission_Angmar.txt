@@ -95,3 +95,27 @@ troll_fort = {												#Province Modifier - Permanent
 	allowed_num_of_buildings = 1	
 	allowed_num_of_manufactories = 1
 }
+
+ruined_imladris = {											#Province Modifier - Permanent
+	fort_level = 1
+	local_defensiveness = 0.15
+	local_development_cost = 5
+	local_build_cost = 5
+	local_build_time = 5
+	local_tax_modifier = -0.75
+	local_production_efficiency = -0.75
+	province_trade_power_modifier = -0.75
+	allowed_num_of_buildings = -5
+	attrition = 5
+	max_attrition = 5
+	local_friendly_movement_speed = -0.25
+	local_hostile_movement_speed = -0.25
+	local_warscore_cost_modifier = -0.5
+	local_governing_cost = -0.75
+}
+
+looming_destruction = {										#Country Modifier - Permanent (Applies to all Dunedain of Eriador tags)
+	prestige_decay =  0.25
+	legitimacy = -1
+	land_morale = -0.05
+}

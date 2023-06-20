@@ -729,8 +729,60 @@ angmar_slot_3 = {
 			}
 		}
 		effect = { 
+			add_permanent_claim = {
+				region = arthedain_region
+			}
 			country_event = {
 				id = LOU_mission_angmar.1
+			}
+		}
+	}
+	into_arthedain = {
+		icon = mission_wight_power
+		position = 10
+		required_missions = { 
+			wight_power
+			forward_defenses
+		}
+		provinces_to_highlight = {
+			province_id = 266
+		}
+		trigger = {
+			266 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			644 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			266 = {
+				add_devastation = 25
+				change_culture = culture_troll
+				change_religion = religion_orkish
+				add_permanent_province_modifier = {
+					name = troll_fort
+					duration = -1  
+				}
+				add_base_production = 2
+				add_base_manpower = 4
+			}
+			644 = {
+				add_devastation = 25
+				change_culture = culture_orkish
+				change_religion = religion_orkish
+			}
+			every_country = { 
+				limit = {
+					OR = {	
+						primary_culture = culture_dunedain_of_arnor
+						primary_culture = culture_arnorian
+					}
+				}
+				add_country_modifier = {
+					name = looming_destruction
+					duration = -1
+				}
 			}
 		}
 	}
@@ -1005,7 +1057,7 @@ angmar_slot_5 = {
 	}
 	prepare_troll_troops = {
 		icon = mission_prepare_troll_troops
-		position = 7
+		position = 8
 		required_missions = { wall_of_mist_and_stone }
 		provinces_to_highlight = {
 			province_id = 375
@@ -1075,7 +1127,7 @@ angmar_slot_5 = {
 	}
 	forward_defenses = {
 		icon = mission_forward_defenses
-		position = 8
+		position = 9
 		required_missions = { prepare_troll_troops }
 		provinces_to_highlight = {
 			OR = {
@@ -1122,6 +1174,60 @@ angmar_slot_5 = {
 					name = troll_fort
 					duration = -1
 				}
+			}
+		}
+	}
+	destroy_rivendell = {
+		icon = mission_destroy_rivendell
+		position = 11
+		required_missions = { forward_defenses }
+		provinces_to_highlight = {
+			province_id = 232
+		}
+		trigger = {
+			232 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			232 = {
+				add_devastation = 100
+				add_base_tax = -8
+				add_base_production = -8
+				add_base_manpower = -8
+				set_base_tax = 1
+				set_base_production = 1
+				set_base_manpower = 1
+				change_culture = culture_wight
+				change_religion = religion_orkish
+				change_trade_goods = stone
+				add_center_of_trade_level = -3
+				remove_province_modifier = imladris
+				add_permanent_province_modifier = {
+					name = ruined_imladris
+					duration = -1  
+				}
+				add_province_modifier = {
+					name = ruins_debuff
+					duration = -1  
+				}
+			}
+			610 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+			687 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_center_of_trade_level = 1
+			}
+			365 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_center_of_trade_level = 1
 			}
 		}
 	}
