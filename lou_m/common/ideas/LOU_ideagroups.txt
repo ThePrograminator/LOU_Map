@@ -545,7 +545,7 @@ spy_ideas = {
 	
 	privateers = {
 		capture_ship_chance = 0.25
-		privateer_efficiency = 0.33
+		privateer_efficiency = 0.25
 	}
 	
 	blackmailing = {
@@ -1743,27 +1743,27 @@ trade_ideas = {
 		merchants_loyalty_modifier = 0.1
 	}
 
-	trade_ideas_1 = {
+	caravan_networks = {
 		caravan_power = 0.25
   	}
-  	trade_ideas_2 = {
+  	master_of_markets = {
   		merchants = 1
   	}
-	trade_ideas_3 = {
+	baggage_trains = {
 		land_attrition = -0.10
 		reserves_organisation = 0.10
 	}
-	trade_ideas_4 = {
+	experienced_caraveneers = {
 		trade_efficiency = 0.1
 		merc_leader_army_tradition = 0.5
 	}
-	trade_ideas_5 = {
+	caravan_guards = {
 		mercenary_discipline = 0.10
 	}
-	trade_ideas_6 = {
+	liquefied_loot = {
 		loot_amount = 0.20
 	}
-	trade_ideas_7 = {
+	distant_roads = {
 		global_trade_power = 0.1
 	}
 
@@ -1817,28 +1817,28 @@ maritime_ideas = {
 		merchants = 1
 	}
 
-	maritime_ideas_1 = {
+	cargo_ships = {
 		global_ship_trade_power = 0.30
 	}
-	maritime_ideas_2 = {
+	harbormaster = {
 		merchants = 1
 	}
-	maritime_ideas_3 = {
+	sea_supplies = {
 		naval_attrition = -0.15
 		reserves_organisation = 0.10
 	}
-	maritime_ideas_4 = {
+	merchant_admiralty = {
 		trade_efficiency = 0.1
 		naval_tradition_from_trade = 1
 	}
-	maritime_ideas_5 = {
-		light_ship_power = 0.15
-		light_ship_number_of_cannons_modifier = 0.1
+	trade_armada = {
+		light_ship_power = 0.25
+		light_ship_number_of_cannons_modifier = 0.15
 	}
-	maritime_ideas_6 = {
-		privateer_efficiency = 0.2
+	less_than_legitimate_trade = {
+		privateer_efficiency = 0.25
 	}
-	maritime_ideas_7 = {
+	faraway_ports = {
 		global_trade_power = 0.1
 	}
 
