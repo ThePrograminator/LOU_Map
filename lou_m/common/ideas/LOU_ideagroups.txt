@@ -775,71 +775,71 @@ defensive_ideas = {
 }
 
 
-trade_ideas = {
-	category = DIP
+# trade_ideas = {
+# 	category = DIP
 
-	bonus = {
-		merchants = 1
-		merchants_loyalty_modifier = 0.1
-	}
+# 	bonus = {
+# 		merchants = 1
+# 		merchants_loyalty_modifier = 0.1
+# 	}
 
-	shrewd_commerce_practise = {
- 		global_trade_power = 0.2
-  	}
-  	free_trade = {
-  		merchants = 1
-  	}
-	merchant_adventures = {
-		trade_range_modifier = 0.25
-	}
-	national_trade_policy = {
-		trade_efficiency = 0.1
-		mercantilism_cost = -0.25
-	}
-	overseas_merchants = {
-		placed_merchant_power = 15
-	}
-	trade_manipulation = {
-		trade_steering = 0.25
-	}
-	fast_negotiations = {
-		caravan_power = 0.25
-	}
+# 	shrewd_commerce_practise = {
+#  		global_trade_power = 0.2
+#   	}
+#   	free_trade = {
+#   		merchants = 1
+#   	}
+# 	merchant_adventures = {
+# 		trade_range_modifier = 0.25
+# 	}
+# 	national_trade_policy = {
+# 		trade_efficiency = 0.1
+# 		mercantilism_cost = -0.25
+# 	}
+# 	overseas_merchants = {
+# 		placed_merchant_power = 15
+# 	}
+# 	trade_manipulation = {
+# 		trade_steering = 0.25
+# 	}
+# 	fast_negotiations = {
+# 		caravan_power = 0.25
+# 	}
 
-	ai_will_do = {
-		factor = 0.4
-		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 6 }
-			NOT = { has_government_attribute = is_merchant_republic }
-		}
-		modifier = {
-			factor = 2
-			has_government_attribute = is_merchant_republic
-		}
-		modifier = {
-			factor = 1.25
-			personality = ai_capitalist 
-			trade_income_percentage = 0.35
-		}
-		modifier = {
-			factor = 1.25
-			home_trade_node = {
-				trade_share = {
-					country = ROOT 
-					share = 0.4
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_idea_group = infrastructure_ideas
-				has_idea_group = economic_ideas
-			}
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.4
+# 		modifier = {
+# 			factor = 0
+# 			NOT = { num_of_cities = 6 }
+# 			NOT = { has_government_attribute = is_merchant_republic }
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			has_government_attribute = is_merchant_republic
+# 		}
+# 		modifier = {
+# 			factor = 1.25
+# 			personality = ai_capitalist 
+# 			trade_income_percentage = 0.35
+# 		}
+# 		modifier = {
+# 			factor = 1.25
+# 			home_trade_node = {
+# 				trade_share = {
+# 					country = ROOT 
+# 					share = 0.4
+# 				}
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 1.25
+# 			OR = {
+# 				has_idea_group = infrastructure_ideas
+# 				has_idea_group = economic_ideas
+# 			}
+# 		}
+# 	}
+# }
 
 economic_ideas = {
 	category = ADM
@@ -916,99 +916,99 @@ economic_ideas = {
 	}
 }
 
-maritime_ideas = {
-	category = DIP
+# maritime_ideas = {
+# 	category = DIP
 
-	trigger = {
-		primitives = no
-	}
+# 	trigger = {
+# 		primitives = no
+# 	}
 
-	bonus = {
-		sea_repair = yes
-		movement_speed_in_fleet_modifier = 1 
-	}
+# 	bonus = {
+# 		sea_repair = yes
+# 		movement_speed_in_fleet_modifier = 1 
+# 	}
 
-	merchant_traditions = {
-		naval_tradition_from_trade = 1.0
-		trade_range_modifier = 0.25
-	}
-	merchant_marine = {
-		global_sailors_modifier = 0.5
-		allowed_marine_fraction = 0.25
-	}
-	sheltered_ports = {
-		global_ship_repair = 0.1
-		sailor_maintenance_modifer = -0.1
-	}
-	grand_navy = {
-		naval_forcelimit_modifier = 0.5
-		ship_power_propagation = 0.25
-	}
-	ships_penny = {
-		global_ship_cost = -0.1
-	}
-	sea_hawks = {
-		global_naval_engagement_modifier = 0.1
-		admiral_cost = -0.25
-	}
-	naval_fighting_instruction = {
-		blockade_efficiency = 0.5
-		privateer_efficiency = 0.25
-	}
+# 	merchant_traditions = {
+# 		naval_tradition_from_trade = 1.0
+# 		trade_range_modifier = 0.25
+# 	}
+# 	merchant_marine = {
+# 		global_sailors_modifier = 0.5
+# 		allowed_marine_fraction = 0.25
+# 	}
+# 	sheltered_ports = {
+# 		global_ship_repair = 0.1
+# 		sailor_maintenance_modifer = -0.1
+# 	}
+# 	grand_navy = {
+# 		naval_forcelimit_modifier = 0.5
+# 		ship_power_propagation = 0.25
+# 	}
+# 	ships_penny = {
+# 		global_ship_cost = -0.1
+# 	}
+# 	sea_hawks = {
+# 		global_naval_engagement_modifier = 0.1
+# 		admiral_cost = -0.25
+# 	}
+# 	naval_fighting_instruction = {
+# 		blockade_efficiency = 0.5
+# 		privateer_efficiency = 0.25
+# 	}
 
-	ai_will_do = {
-		factor = 0.55
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 0.25
-			NOT = { num_of_ports = 10 }
-		}
-		modifier = {
-			factor = 0.25
-			NOT = { num_of_ports = 20 }
-		}
-		modifier = {
-			factor = 0.25
-			NOT = { num_of_ports = 30 }
-		}
-		modifier = {
-			factor = 0.25
-			NOT = { num_of_ports = 40 }
-		}
-		modifier = {
-			factor = 0.35
-			NOT = { num_of_ports = 15 }
-		}
-		modifier = {
-			factor = 1.5 
-			capital_scope = {
-				is_island = yes 
-			}
-		}
-		modifier = {
-			factor = 1.5
-			has_global_modifier_value = {
-				which = naval_forcelimit_modifier 
-				value = 0.25
-			}
-		}
-		modifier = {
-			factor = 1.15
-			light_ship_fraction = 0.25
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0.55
+# 		modifier = {
+# 			factor = 0
+# 			is_tribal = yes
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			primitives = yes
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			NOT = { num_of_ports = 1 }
+# 		}
+# 		modifier = {
+# 			factor = 0.25
+# 			NOT = { num_of_ports = 10 }
+# 		}
+# 		modifier = {
+# 			factor = 0.25
+# 			NOT = { num_of_ports = 20 }
+# 		}
+# 		modifier = {
+# 			factor = 0.25
+# 			NOT = { num_of_ports = 30 }
+# 		}
+# 		modifier = {
+# 			factor = 0.25
+# 			NOT = { num_of_ports = 40 }
+# 		}
+# 		modifier = {
+# 			factor = 0.35
+# 			NOT = { num_of_ports = 15 }
+# 		}
+# 		modifier = {
+# 			factor = 1.5 
+# 			capital_scope = {
+# 				is_island = yes 
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 1.5
+# 			has_global_modifier_value = {
+# 				which = naval_forcelimit_modifier 
+# 				value = 0.25
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 1.15
+# 			light_ship_fraction = 0.25
+# 		}
+# 	}
+# }
 
 
 quality_ideas = {
@@ -1592,7 +1592,7 @@ court_ideas = {
 		power_projection_from_insults = 1
 	}
 	recognize_hierarchy = {
-		all_estate_loyalty_equilibrium = 0.1
+		all_estate_loyalty_equilibrium = 0.05
 		loyalty_change_on_revoked = 0.05
 	}
 	welcoming_ceremonies = {
@@ -1724,6 +1724,272 @@ infrastructure_ideas = {
 				has_idea_group = trade_ideas
 				has_idea_group = naval_ideas
 			}
+		}
+	}
+}
+
+trade_ideas = {
+	category = DIP
+
+	trigger = {
+		primitives = no
+		NOT = {
+			has_idea_group = maritime_ideas
+		}
+	}
+
+	bonus = {
+		merchants = 1
+		merchants_loyalty_modifier = 0.1
+	}
+
+	trade_ideas_1 = {
+		caravan_power = 0.25
+  	}
+  	trade_ideas_2 = {
+  		merchants = 1
+  	}
+	trade_ideas_3 = {
+		land_attrition = -0.10
+		reserves_organisation = 0.10
+	}
+	trade_ideas_4 = {
+		trade_efficiency = 0.1
+		merc_leader_army_tradition = 0.5
+	}
+	trade_ideas_5 = {
+		mercenary_discipline = 0.10
+	}
+	trade_ideas_6 = {
+		loot_amount = 0.20
+	}
+	trade_ideas_7 = {
+		global_trade_power = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.4
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 6 }
+			NOT = { has_government_attribute = is_merchant_republic }
+		}
+		modifier = {
+			factor = 2
+			has_government_attribute = is_merchant_republic
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_capitalist 
+			trade_income_percentage = 0.35
+		}
+		modifier = {
+			factor = 1.25
+			home_trade_node = {
+				trade_share = {
+					country = ROOT 
+					share = 0.4
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_idea_group = infrastructure_ideas
+				has_idea_group = economic_ideas
+			}
+		}
+	}
+}
+
+maritime_ideas = {
+	category = DIP
+
+	trigger = {
+		primitives = no
+		NOT = {
+			has_idea_group = land_trade_ideas
+		}
+	}
+
+	bonus = {
+		merchants_loyalty_modifier = 0.1
+		merchants = 1
+	}
+
+	maritime_ideas_1 = {
+		global_ship_trade_power = 0.30
+	}
+	maritime_ideas_2 = {
+		merchants = 1
+	}
+	maritime_ideas_3 = {
+		naval_attrition = -0.15
+		reserves_organisation = 0.10
+	}
+	maritime_ideas_4 = {
+		trade_efficiency = 0.1
+		naval_tradition_from_trade = 1
+	}
+	maritime_ideas_5 = {
+		light_ship_power = 0.15
+		light_ship_number_of_cannons_modifier = 0.1
+	}
+	maritime_ideas_6 = {
+		privateer_efficiency = 0.2
+	}
+	maritime_ideas_7 = {
+		global_trade_power = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.55
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 20 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 30 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 40 }
+		}
+		modifier = {
+			factor = 0.35
+			NOT = { num_of_ports = 15 }
+		}
+		modifier = {
+			factor = 1.5 
+			capital_scope = {
+				is_island = yes 
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = naval_forcelimit_modifier 
+				value = 0.25
+			}
+		}
+		modifier = {
+			factor = 1.15
+			light_ship_fraction = 0.25
+		}
+	}
+}
+
+mercantilism_ideas = {
+	category = DIP
+
+	trigger = {
+		primitives = no
+		NOT = {
+			has_idea_group = global_market_ideas
+		}
+	}
+
+	bonus = {
+		merchants = 1
+	}
+
+	mercantilism_ideas_1 = {
+		global_own_trade_power = 0.1
+	}
+	mercantilism_ideas_2 = {
+		merchants = 1
+	}
+	mercantilism_ideas_3 = {
+		mercantilism_cost = -0.25
+	}
+	mercantilism_ideas_4 = {
+		production_efficiency = 0.10
+	}
+	mercantilism_ideas_5 = {
+		placed_merchant_power_modifier = 0.25
+	}
+	mercantilism_ideas_6 = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	mercantilism_ideas_7 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 3.75
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+	}
+}
+
+global_market_ideas = {
+	category = DIP
+
+	trigger = {
+		primitives = no
+		NOT = {
+			has_idea_group = mercantilism_ideas
+		}
+	}
+
+	bonus = {
+		merchants = 1
+	}
+
+	global_market_ideas_1 = {
+		global_foreign_trade_power = 0.15
+	}
+	global_market_ideas_2 = {
+		merchants = 1
+	}
+	global_market_ideas_3 = {
+		trade_range_modifier = 0.25
+	}
+	global_market_ideas_4 = {
+		trade_steering = 0.25
+	}
+	global_market_ideas_5 = {
+		placed_merchant_power_modifier = 0.25
+	}
+	global_market_ideas_6 = {
+		global_trade_power = 0.10
+	}
+	global_market_ideas_7 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 3.75
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
 		}
 	}
 }
