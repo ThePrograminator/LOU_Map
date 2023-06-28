@@ -3458,17 +3458,18 @@ categories =  {
 	}
 	
 	unique_anglad = {
-		color = { 130 255 47 }
-		type = plains
+		color = { 13 189 130 }
+		type = marsh
 		sound_type = plains
 		
-		movement_cost = 0.75
-		supply_limit = 8
-		allowed_num_of_buildings = 1
-		nation_designer_cost_multiplier = 1
+		movement_cost = 2.0
+		defence = 1
+		local_development_cost = 0.15
+		nation_designer_cost_multiplier = 0.85
+		supply_limit = 5
 		
 		terrain_override = {
-			1951 1953 3175
+			1951 1953 3175 538
 		}
 	}
 	
@@ -4271,7 +4272,7 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
-			664 3177 1990 614 706 3178 538
+			664 3177 1990 614 706 3178
 		}
 	}
 	
