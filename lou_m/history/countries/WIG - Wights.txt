@@ -1,0 +1,45 @@
+government = melkor_gov
+add_government_reform = lotr_wight_government_reform
+primary_culture = culture_wight
+religion = religion_wight
+technology_group = lotr_wights
+unit_type = lotr_wights
+capital = 574
+
+historical_friend = V35
+historical_friend = Y43
+historical_friend = Y52
+historical_friend = Y51
+historical_friend = Z96
+historical_friend = Y50
+historical_friend = Y63
+historical_friend = ANG
+historical_rival = Z06
+historical_rival = Z17
+historical_rival = Z20
+historical_rival = Z35
+historical_rival = Z29
+historical_rival = Z16
+historical_rival = Z28
+historical_rival = Y27
+historical_rival = Z15
+historical_rival = Y26
+historical_rival = V50
+historical_rival = Z19
+historical_rival = Z18
+historical_rival = Z21
+historical_rival = Z22
+
+2750.1.1 = {
+	monarch = {
+		name = "Dírhael"
+		dynasty = "Wiseblood"
+		birth_date = 2662.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+}
+
