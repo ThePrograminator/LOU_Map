@@ -25,17 +25,15 @@ philosopher = {
 		factor = 1
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
-		}
+			owner = { accepted_culture = ROOT }
+		}	
 		modifier = {
 			factor = 0
-			OR = {
-				culture_group = culture_group_melkor
-				culture_group = culture_group_orcs
-			}
+			owner = { culture_group = culture_group_melkor }
+		}		
+		modifier = {
+			factor = 0
+			owner = { culture_group = culture_group_orcs }
 		}
 	}
 	
@@ -57,17 +55,15 @@ natural_scientist = {
 		factor = 1
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				culture_group = culture_group_melkor
-				culture_group = culture_group_orcs
-			}
+			owner = { culture_group = culture_group_melkor }
+		}		
+		modifier = {
+			factor = 0
+			owner = { culture_group = culture_group_orcs }
 		}
 	}
 	
@@ -89,17 +85,15 @@ artist = {
 		factor = 1
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				culture_group = culture_group_melkor
-				culture_group = culture_group_orcs
-			}
+			owner = { culture_group = culture_group_melkor }
+		}		
+		modifier = {
+			factor = 0
+			owner = { culture_group = culture_group_orcs }
 		}
 	}
 	
@@ -121,10 +115,7 @@ treasurer = {
 		factor = 1
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -146,12 +137,8 @@ theologian = {
 		factor = 1
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
-
 	}
 	
 	ai_will_do = {
@@ -172,10 +159,7 @@ master_of_mint = {
 		factor = 1
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -201,10 +185,7 @@ inquisitor = {
 		}		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -231,17 +212,15 @@ statesman = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 		modifier = {
-			factor = 0
-			OR = {
-				culture_group = culture_group_melkor
-				culture_group = culture_group_orcs
-			}
+			factor = 0.15
+			owner = { culture_group = culture_group_melkor }
+		}		
+		modifier = {
+			factor = 0.15
+			owner = { culture_group = culture_group_orcs }
 		}
 	}
 	
@@ -262,13 +241,6 @@ naval_reformer = {
 
 	chance = {
 		factor = 1		
-		modifier = {
-			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
-		}
 		modifier = {
 			factor = 0
 			has_port = no
@@ -297,10 +269,7 @@ trader = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -322,10 +291,7 @@ spymaster = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -355,10 +321,7 @@ colonial_governor = {
 		}		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -380,17 +343,15 @@ diplomat = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 		modifier = {
-			factor = 0
-			OR = {
-				culture_group = culture_group_melkor
-				culture_group = culture_group_orcs
-			}
+			factor = 0.15
+			owner = { culture_group = culture_group_melkor }
+		}		
+		modifier = {
+			factor = 0.15
+			owner = { culture_group = culture_group_orcs }
 		}
 	}
 	
@@ -416,10 +377,7 @@ navigator = {
 		}		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -446,10 +404,7 @@ army_reformer = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -471,10 +426,7 @@ army_organiser = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -496,10 +448,7 @@ commandant = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -521,10 +470,7 @@ quartermaster = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -550,10 +496,7 @@ recruitmaster = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -579,10 +522,7 @@ fortification_expert = {
 		factor = 1				
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	
@@ -604,10 +544,7 @@ grand_captain = {
 		factor = 1		
 		modifier = {
 			factor = 0
-			OR = {
-				has_owner_culture = no
-				has_owner_accepted_culture = no
-			}
+			owner = { accepted_culture = ROOT }
 		}
 	}
 	

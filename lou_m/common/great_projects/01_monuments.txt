@@ -4034,13 +4034,11 @@ moria_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				OR = {
-					is_dwarf = yes
-					technology_group = lotr_half_dwarf
-				}
+				is_dwarf = yes
+				religion = religion_mahal
 			}
 			has_owner_religion = yes
-		}			
+		}		
 	}
 	on_built = {		
 	}
@@ -4050,13 +4048,12 @@ moria_monument = {
 	}
 	can_upgrade_trigger = {	
 		AND = {
-			OR = {
-				has_owner_religion = yes
-				owner = {
-					is_dwarf = yes
-				}
+			owner = {
+				is_dwarf = yes
+				religion = religion_mahal
 			}
-		}	
+			has_owner_religion = yes
+		}		
 	}
 	keep_trigger = {
 	}
@@ -5513,8 +5510,13 @@ carndum_monument = {
 	starting_tier = 1
 	type = monument
 	build_trigger = {
-		is_owner_racial_group_melkor = yes		
-		has_owner_religion = yes		
+		AND = {
+			owner = {
+				is_owner_racial_group_melkor = yes	
+				religion = religion_orkish
+			}
+			has_owner_religion = yes
+		}		
 	}
 	on_built = {		
 	}
@@ -5523,7 +5525,13 @@ carndum_monument = {
 	can_use_modifiers_trigger = {			
 	}
 	can_upgrade_trigger = {	
-		has_owner_religion = yes	
+		AND = {
+			owner = {
+				is_owner_racial_group_melkor = yes	
+				religion = religion_orkish
+			}
+			has_owner_religion = yes
+		}
 	}
 	keep_trigger = {
 	}
@@ -5535,9 +5543,10 @@ carndum_monument = {
 			factor = 0
 		}
 		province_modifiers = {
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
-			production_efficiency = 0.05
+			local_unrest = -2
 		}
 		country_modifiers = {
 		}
@@ -5556,7 +5565,8 @@ carndum_monument = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-			production_efficiency = 0.10
+			production_efficiency = 0.05
+			local_unrest = -3
 		}
 		country_modifiers = {
 			diplomatic_upkeep = 1
@@ -5577,7 +5587,8 @@ carndum_monument = {
 			local_defensiveness = 0.20
 		}
 		area_modifier = {
-			production_efficiency = 0.15
+			production_efficiency = 0.10
+			local_unrest = -4
 		}
 			country_modifiers = {
 			diplomatic_upkeep = 2
@@ -5598,6 +5609,8 @@ carndum_monument = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = {
+			production_efficiency = 0.15
+			local_unrest = -5
 		}
 		country_modifiers = {
 			diplomatic_upkeep = 3
@@ -7093,7 +7106,7 @@ mount_gram_monument = {
 		local_unrest = 1
 		}
 		country_modifiers = {
-		liberty_desire = -5
+			cavalry_shock = 0.05
 		}
 		on_upgraded = {
 		}
@@ -7113,7 +7126,7 @@ mount_gram_monument = {
 		local_unrest = 1.5
 		}
 		country_modifiers = {
-		liberty_desire = -15
+			cavalry_shock = 0.10
 		}
 		on_upgraded = {
 		}
@@ -7133,7 +7146,7 @@ mount_gram_monument = {
 		local_unrest = 2
 		}
 		country_modifiers = {
-		liberty_desire = -25
+			cavalry_shock = 0.15
 		}
 		on_upgraded = {
 		}
@@ -7548,8 +7561,8 @@ pukelman_staue_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		hostile_attrition = 1
-		max_hostile_attrition = 2
+			hostile_attrition = 1
+			max_hostile_attrition = 2
 		}
 		on_upgraded = {
 		}
@@ -7566,8 +7579,8 @@ pukelman_staue_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		hostile_attrition = 1.5
-		max_hostile_attrition = 3
+			hostile_attrition = 1.5
+			max_hostile_attrition = 3
 		}
 		on_upgraded = {
 		}
@@ -7584,8 +7597,8 @@ pukelman_staue_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		hostile_attrition = 2
-		max_hostile_attrition = 3
+			hostile_attrition = 2
+			max_hostile_attrition = 3
 		}
 		on_upgraded = {
 		}
@@ -7704,6 +7717,290 @@ tharbad_bridge_monument = {
 		}
 		on_upgraded = {
 
+		}
+	}
+}
+
+fortress_of_maedhros_monument = {
+	start = 666
+	date = 537.01.01
+	time = {
+		months = 3650
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+				OR = {
+					has_accepted_culture = culture_mithrim
+					has_accepted_culture = culture_falathrim
+					has_accepted_culture = culture_noldor
+				}
+			}
+		}			
+	}
+	on_built = {	
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {	
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+				OR = {
+					has_accepted_culture = culture_mithrim
+					has_accepted_culture = culture_falathrim
+					has_accepted_culture = culture_noldor
+				}
+			}
+		}	
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 3650
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+			fort_level = 1
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = {
+			local_defensiveness = 0.05
+			local_unrest = -1
+		}
+		country_modifiers = {
+			prestige = 0.25
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			fort_level = 2
+			local_defender_dice_roll_bonus = 2
+		}
+		area_modifier = {
+			local_defensiveness = 0.15
+			local_unrest = -2
+		}
+		country_modifiers = {
+			prestige = 0.35
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			fort_level = 3
+			local_defender_dice_roll_bonus = 3
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+			local_unrest = -3
+		}
+		country_modifiers = {
+			prestige = 0.50
+		}
+		on_upgraded = {
+			remove_province_modifier = himring_fortress_ruins
+			add_permanent_province_modifier = {
+				name = himring_fortress_rebuilt
+				duration = -1
+			}
+		}
+	}
+}
+
+annuminas_monument = {
+	start = 644
+	date = 537.01.01
+	time = {
+		months = 3650
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+		}		
+	}
+	on_built = {	
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {			
+	}
+	can_upgrade_trigger = {	
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 3650
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			local_development_cost = 0.50
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.25
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+			local_governing_cost = -0.10
+		}
+		area_modifier = {
+			state_maintenance_modifier = -0.10
+		}
+		country_modifiers = {
+			all_estate_loyalty_equilibrium = 0.03
+			administrative_efficiency = 0.05
+			legitimacy = 0.25
+		}
+		on_upgraded = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			local_governing_cost = -0.15
+		}
+		area_modifier = {
+			state_maintenance_modifier = -0.15
+		}
+		country_modifiers = {
+			all_estate_loyalty_equilibrium = 0.05
+			administrative_efficiency = 0.10
+			legitimacy = 0.5
+		}
+		on_upgraded = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_governing_cost = -0.25
+		}
+		area_modifier = {
+			state_maintenance_modifier = -0.25
+		}
+		country_modifiers = {
+			all_estate_loyalty_equilibrium = 0.10
+			administrative_efficiency = 0.15
+			legitimacy = 1
+		}
+		on_upgraded = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3			
+			remove_province_modifier = ruined_annuminas
+			add_permanent_province_modifier = {
+				name = rebuilt_annuminas
+				duration = -1
+			}
 		}
 	}
 }

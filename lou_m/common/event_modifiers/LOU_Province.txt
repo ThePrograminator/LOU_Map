@@ -227,6 +227,10 @@ dol_guldur = {
 	local_regiment_cost = -0.25
 }
 
+dol_guldur_necromancer = {
+	
+}
+
 isengard = {
 	fort_level = 5
 	local_defensiveness = 1
@@ -403,7 +407,9 @@ himring_fortress_rebuilt = {
 }
 
 stone_of_the_hapless = {
-	
+	local_unrest = -5
+	prestige = 0.50
+	monthly_splendor = 1
 }
 
 spider_webs = {
@@ -575,30 +581,6 @@ ruined_amon_sul = {
 	regiment_recruit_speed = -0.25
 	local_regiment_cost = -0.25
  }
-
-#  ruined_annuminas = {									#Moved to Dunedain of the North mission modifier file
-# 	local_defensiveness = 0.15
-# 	local_build_cost = -0.15
-# 	local_build_time = -0.15 
-#  }
-
-#  annuminas = {										#Moved to Dunedain of the North mission modifier file
-# 	fort_level = 5
-# 	local_defensiveness = 1
-# 	local_hostile_attrition = 3
-# 	local_manpower_modifier = 1
-# 	supply_limit_modifier = 1
-# 	province_trade_power_value = 0.5
-# 	trade_goods_size_modifier = 0.15
-# 	trade_value_modifier = 0.15
-# 	local_tax_modifier = 0.10
-# 	local_production_efficiency = 0.10
-# 	allowed_num_of_manufactories = 2 
-# 	regiment_recruit_speed = -0.25
-# 	local_regiment_cost = -0.25
-# 	local_build_cost = -0.25
-# 	local_build_time = -0.25         
-#  }
 
  bree = {
 	fort_level = 1

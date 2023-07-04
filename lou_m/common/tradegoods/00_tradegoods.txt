@@ -113,8 +113,10 @@ wine = {
 		}
 		modifier = {
 			factor = 1.25
-			has_terrain = farmlands
-			has_terrain = unique_dunedain_ruin
+			OR = {
+				has_terrain = farmlands
+				has_terrain = unique_dunedain_ruin
+			}
 		}
 		modifier = {
 			factor = 0
@@ -175,7 +177,7 @@ cloth = {
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			development = 12
 			has_terrain = unique_dunedain_ruin
 		}
 	}
@@ -578,6 +580,12 @@ slaves = {
 		modifier = {
 			factor = 0
 			island = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				development = 15
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1173,11 +1181,11 @@ glass = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { development = 18 }
+			NOT = { development = 12 }
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			development = 12
 			has_terrain = unique_dunedain_ruin
 		}
 	}
@@ -1195,12 +1203,26 @@ paper = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { development = 18 }
+			NOT = { 
+				development = 12
+		}
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			development = 12
 			has_terrain = unique_dunedain_ruin
+		}
+		modifier = {
+			factor = 0
+			NOT = { 
+				any_neighbor_province = {
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+						has_terrain = unique_old_forest
+					}
+				}
+			}
 		}
 	}
 }
@@ -1428,6 +1450,17 @@ fruit = {
 				culture = culture_maiar							#Sauron
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = mountains
+				has_terrain = hills
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = unique_grasslands_desolate
+		}
 	}
 }
 
@@ -1441,6 +1474,13 @@ mushrooms = {
 	}
 	chance = {
 		factor = 20
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_terrain = mountains
+				has_terrain = hills
+			}
+		}
 	}
 }
 

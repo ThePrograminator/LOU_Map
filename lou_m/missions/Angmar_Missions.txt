@@ -295,16 +295,16 @@ angmar_slot_2 = {
 			}
 		}
 		effect = { 
-			any_owned_province = {
+			random_owned_province = {
 				limit = {
 					has_terrain = unique_forodwaith_town
 					culture = culture_lossoth
 					religion = religion_orkish
 				}
 				change_culture = culture_angmarrim
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 				add_building = camp_orc_building
 			}
 			forochel_region = {
@@ -841,8 +841,9 @@ angmar_formable_slot_4 = {
 				name = orcish_influx
 				duration = 5475			# 15 year modifier
 			}
-			1956 = {
+			every_owned_province = {
 				limit = {
+					province_id = 1956
 					NOT = {
 						has_building = fort_wooden_walls_orc_building
 					}
