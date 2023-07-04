@@ -3526,8 +3526,8 @@ laketown_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 100
-		yearly_corruption = 0.15
+			governing_capacity = 100
+			yearly_corruption = 0.15
 		}
 		on_upgraded = {
 		}
@@ -3544,8 +3544,8 @@ laketown_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 150
-		yearly_corruption = 0.10
+			governing_capacity = 150
+			yearly_corruption = 0.10
 		}
 		on_upgraded = {
 		}
@@ -3563,8 +3563,8 @@ laketown_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 200
-		yearly_corruption = 0.05
+			governing_capacity = 200
+			yearly_corruption = 0.05
 		}
 		on_upgraded = {
 			# hide_ambient_object = lake_town_tier_one
@@ -3585,7 +3585,7 @@ laketown_monument = {
 		}
 		country_modifiers = {
 		governing_capacity = 300
-		yearly_corruption = -0.2
+		yearly_corruption = -0.15
 		}
 		on_upgraded = {
 		}
@@ -7103,7 +7103,7 @@ mount_gram_monument = {
 		trade_goods_size = 0.25
 		}
 		area_modifier = {
-		local_unrest = 1
+		local_unrest = -1
 		}
 		country_modifiers = {
 			cavalry_shock = 0.05
@@ -7123,7 +7123,7 @@ mount_gram_monument = {
 		trade_goods_size = 0.5
 		}
 		area_modifier = {
-		local_unrest = 1.5
+		local_unrest = -1.5
 		}
 		country_modifiers = {
 			cavalry_shock = 0.10
@@ -7143,7 +7143,7 @@ mount_gram_monument = {
 		trade_goods_size = 1
 		}
 		area_modifier = {
-		local_unrest = 2
+		local_unrest = -2
 		}
 		country_modifiers = {
 			cavalry_shock = 0.15
@@ -7627,6 +7627,7 @@ tharbad_bridge_monument = {
 					is_hobbit = yes
 				}
 			}
+			has_owner_religion = yes
 		}			
 	}
 	on_built = {	
@@ -7636,7 +7637,19 @@ tharbad_bridge_monument = {
 	}
 	can_use_modifiers_trigger = {			
 	}
-	can_upgrade_trigger = {		
+	can_upgrade_trigger = {
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}		
 	}
 	keep_trigger = {
 	}
@@ -7742,12 +7755,8 @@ fortress_of_maedhros_monument = {
 					technology_group = lotr_half_dwarf
 					is_hobbit = yes
 				}
-				OR = {
-					has_accepted_culture = culture_mithrim
-					has_accepted_culture = culture_falathrim
-					has_accepted_culture = culture_noldor
-				}
 			}
+			has_owner_religion = yes
 		}			
 	}
 	on_built = {	
@@ -7766,13 +7775,9 @@ fortress_of_maedhros_monument = {
 					technology_group = lotr_half_dwarf
 					is_hobbit = yes
 				}
-				OR = {
-					has_accepted_culture = culture_mithrim
-					has_accepted_culture = culture_falathrim
-					has_accepted_culture = culture_noldor
-				}
 			}
-		}	
+			has_owner_religion = yes
+		}
 	}
 	keep_trigger = {
 	}
@@ -7791,6 +7796,7 @@ fortress_of_maedhros_monument = {
 			prestige = 0.15
 		}
 		on_upgraded = {
+			add_base_manpower = 2
 		}
 	}
 	tier_1 = {
@@ -7812,6 +7818,7 @@ fortress_of_maedhros_monument = {
 			prestige = 0.25
 		}
 		on_upgraded = {
+			add_base_manpower = 4
 		}
 	}
 	tier_2 = {
@@ -7833,6 +7840,7 @@ fortress_of_maedhros_monument = {
 			prestige = 0.35
 		}
 		on_upgraded = {
+			add_base_manpower = 6
 		}
 	}
 	tier_3 = {
@@ -7885,6 +7893,7 @@ annuminas_monument = {
 					is_hobbit = yes
 				}
 			}
+			has_owner_religion = yes
 		}		
 	}
 	on_built = {	
@@ -7904,6 +7913,7 @@ annuminas_monument = {
 					is_hobbit = yes
 				}
 			}
+			has_owner_religion = yes
 		}
 	}
 	keep_trigger = {
