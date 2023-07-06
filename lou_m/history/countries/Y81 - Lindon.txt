@@ -38,7 +38,7 @@ historical_rival = Z43
 2758.1.1 = {
 	monarch = {
 		name = "Cirdan"
-		dynasty = "Nowe"
+		dynasty = "Lord of the Havens"
 		adm = 6
 		dip = 6
 		mil = 3
@@ -46,4 +46,12 @@ historical_rival = Z43
 	}
 	add_ruler_personality = immortal_personality
 	set_ruler_flag = set_immortality
+	define_advisor = {
+		type = diplomat
+		name = "Galdor"
+		skill = 3
+		culture = culture_falathrim
+		religion = religion_calaquendi
+		discount = yes
+	}
 }
