@@ -916,7 +916,7 @@ economic_ideas = {
 	}
 }
 
-# maritime_ideas = {
+# maritime_ideas = {											REPLACED BY NEW VERSION/CONCEPT
 # 	category = DIP
 
 # 	trigger = {
@@ -1438,6 +1438,7 @@ naval_ideas = {
 	}
 	improved_rams = {
 		galley_power = 0.25
+		hull_size_modifier = 0.10
 	}
 	naval_cadets = {
 		leader_naval_fire = 1
