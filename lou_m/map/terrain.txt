@@ -42,7 +42,7 @@ categories =  {
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
-			1570
+			
 		}
 	}
 
@@ -3623,8 +3623,6 @@ categories =  {
 		attrition = 2
 		
 		terrain_override = {
-			707 708 847 704 2766 2765 1150 849 680 682 681 1964 1965 2759 1167 1156 2760 893 3311 892 896 3310 1155 
-			1151 3312 879 877 2761 862 3313 2763 859
 		}
 	}
 	
@@ -4323,6 +4321,25 @@ categories =  {
 			1638 1601 1600 1574 784 2779 824 840 777 835 2783 902 2771 2781
 			780 2782 2776 2774 2772 860 2758 1575 102 1387
 			2796 2795 823
+		}
+	}
+
+		
+	unique_northern_forest = {
+		color = { 235 235 235 }
+		type = forest
+		sound_type = forest
+		
+		movement_cost = 1.2
+		defence = 1
+		local_defensiveness = 0.2
+		local_development_cost = 0.35
+		nation_designer_cost_multiplier = 0.45
+		supply_limit = 3
+		
+		terrain_override = {			
+			707 708 847 704 2766 2765 1150 849 680 682 681 1964 1965 2759 1167 1156 2760 893 3311 892 896 3310 1155 
+			1151 3312 879 877 2761 862 3313 2763 859
 		}
 	}
 	
