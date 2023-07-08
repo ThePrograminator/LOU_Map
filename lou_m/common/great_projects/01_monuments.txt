@@ -7729,7 +7729,9 @@ tharbad_bridge_monument = {
 			caravan_power = 0.25
 		}
 		on_upgraded = {
-
+			677 = {
+				add_center_of_trade_level = 1
+			}
 		}
 	}
 }

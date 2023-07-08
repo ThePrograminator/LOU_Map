@@ -19,14 +19,14 @@ country_event = {
 				tag = V19
 				has_reform = lotr_necromancer_reform
 				NOT = {
-					has_heir = "Khamûl"
+					has_heir = "Khamul"
 				}
 			}
 			AND = {
 				tag = V19
 				has_reform = lotr_nazgul_reform
 				NOT = {
-					has_ruler = "Khamûl"
+					has_ruler = "Khamul"
 				}
 			}
 		}
@@ -43,14 +43,14 @@ country_event = {
 			tag = V19
 			has_reform = lotr_necromancer_reform
 			NOT = {
-				has_heir = "Khamûl"
+				has_heir = "Khamul"
 			}
 		}
 
 		add_stability = 1
 
 		define_heir = {
-			name = "Khamûl"
+			name = "Khamul"
 			dynasty = "Shadow of the East"
 			male = yes
 			adm = 5
@@ -79,14 +79,14 @@ country_event = {
 			tag = V19
 			has_reform = lotr_nazgul_reform
 			NOT = {
-				has_ruler = "Khamûl"
+				has_ruler = "Khamul"
 			}
 		}
 
 		add_stability = 1
 
 		define_ruler = {
-			name = "Khamûl"
+			name = "Khamul"
 			dynasty = "Shadow of the East"
 			male = yes
 			adm = 5

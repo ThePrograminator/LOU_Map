@@ -145,9 +145,18 @@ gondor_blood_of_numenor_modifier = {
 henneth_annun = {
 	fort_level = 3
 	local_defensiveness = 0.5
+	local_defender_dice_roll_bonus = 1
 	supply_limit_modifier = 0.5
 	local_hostile_attrition = 3
 	allowed_num_of_manufactories = 1
+}
+
+rangers_of_ithilien = {	
+	local_hostile_attrition = 3
+	local_attacker_dice_roll_bonus = -1
+	local_hostile_movement_speed = -0.15
+	local_manpower_modifier = 0.25
+	supply_limit_modifier = 0.25
 }
 
 gondor_fortify_anduin_modifier = {

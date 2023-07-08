@@ -3627,7 +3627,7 @@ categories =  {
 	}
 	
 	unique_arctic_flats = {
-		color = { 235 235 235 }
+		color = { 245 245 245 }
 		sound_type = desert
 		
 		defence = 1
@@ -3638,7 +3638,7 @@ categories =  {
 		attrition = 2
 		
 		terrain_override = {
-			2818 2798 829 825 599
+			2818 2798 829 825 877
 		}
 	}
 	
@@ -4306,7 +4306,7 @@ categories =  {
 	}
 	
 	unique_northern_coastline = {
-		color = { 235 235 235 }
+		color = { 215 255 255 }
 		type = coastline
 		sound_type = coastline
 		
@@ -4327,7 +4327,7 @@ categories =  {
 
 		
 	unique_northern_forest = {
-		color = { 235 235 235 }
+		color = { 215 255 215 }
 		type = forest
 		sound_type = forest
 		
@@ -4340,7 +4340,7 @@ categories =  {
 		
 		terrain_override = {			
 			707 708 847 704 2766 2765 1150 849 680 682 681 1964 1965 2759 1167 1156 2760 893 3311 892 896 3310 1155 
-			1151 3312 879 877 2761 862 3313 2763 859
+			1151 3312 879 2761 862 3313 2763 859 599
 		}
 	}
 	
