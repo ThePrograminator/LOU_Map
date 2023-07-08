@@ -37,19 +37,20 @@ historical_rival = Y30
 		name = "Beorn"
 		dynasty = "the First"
 		birth_date = 2678.1.1
-		adm = 3
+		adm = 5
 		dip = 3
-		mil = 1
-		female = yes
+		mil = 6
 	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
 	heir = {
 		monarch_name = "Grimbeorn"
 		name = "Grimbeorn"
 		dynasty = "Beorningas"
-		birth_date = 2666.1.1
-		death_date = 2730.1.1
-		adm = 3
-		dip = 3
+		birth_date = 2960.1.1
+		death_date = 3050.1.1
+		adm = 5
+		dip = 4
 		mil = 5
 		claim = 100
 	}
@@ -61,10 +62,9 @@ historical_rival = Y30
 		name = "Grimbeorn"
 		dynasty = "Beorningas"
 		birth_date = 2960.1.1
-		adm = 2
-		dip = 3
-		mil = 4
-		female = yes
+		adm = 5
+		dip = 4
+		mil = 5
 	}
 }
 
