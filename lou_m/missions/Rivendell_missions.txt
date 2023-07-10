@@ -19,7 +19,9 @@ slot_01 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_mil_power = 100
+		}
 	}
 	defence_of_athrad_bruinen = {
 		icon = mission_fortify_1
@@ -36,7 +38,14 @@ slot_01 = {
 				province_elf_has_fort_building = yes
 			}
 		}
-		effect = { }
+		effect = { 
+			1679 = {
+				add_province_modifier = {
+					name = rivendell_defence_of_athrad_bruinen_province_modifier
+					duration = -1
+				}
+			}
+		}
 	}
 }
 
@@ -99,7 +108,13 @@ slot_02 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			add_legitimacy = 15
+			add_country_modifier = {
+				name = rivendell_expel_wulfseggeas_modifier
+				duration = 7300
+			}
+		}
 	}
 	settle_the_wilderness = {
 		icon = mission_colonial
@@ -168,7 +183,23 @@ slot_02 = {
 				province_elf_has_fort_building = yes
 			}
 		}
-		effect = { }
+		effect = { 
+			1591 = {
+				add_province_modifier = {
+					name = rivendell_barad_niniel_province_modifier
+					duration = 7300
+				}
+				every_neighbor_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_province_modifier = {
+						name = rivendell_barad_niniel_area_effect_province_modifier
+						duration = -1
+					}
+				}
+			}
+		}
 	}
 	rivendell_drive_out_orcs = {
 		icon = mission_elves_1
@@ -190,7 +221,17 @@ slot_02 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			eregion_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_drive_out_orcs_province_modifier
+					duration = 7300
+				}
+			}
+		}
 	}
 }
 
@@ -276,7 +317,11 @@ slot_03 = {
 				owned_by = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			eregion_region = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	gwaith_i_mirdain = {
 		icon = mission_elves_forge
@@ -293,7 +338,18 @@ slot_03 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			285 = {
+				add_province_modifier = {
+					name = rivendell_gwaith_i_mirdain_province_modifier
+					duration = 10950
+				}
+			}
+			add_country_modifier = {
+				name = rivendell_gwaith_i_mirdain_modifier
+				duration = 7300
+			}
+		}
 	}
 	restore_eregion = {
 		icon = mission_elves_eregion
@@ -311,7 +367,11 @@ slot_03 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		effect = { }
+		effect = { 
+			country_event = {
+				id = LOU_mission_rivendell.10
+			}
+		}
 	}
 }
 
@@ -453,7 +513,13 @@ slot_04 = {
 			}
 			alliance_with =  X01
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_country_modifier = {
+				name = rivendell_the_white_council_modifier
+				duration = -1
+			}
+		}
 	}
 	high_king_of_the_noldor = {
 		icon = mission_elves_lindon
@@ -461,14 +527,36 @@ slot_04 = {
 		required_missions = { the_white_council }
 		trigger = {
 			is_great_power = yes
-			Y81 = {
-				trust = {
-					who = ROOT
-					value = 100
+			if = {
+				limit = { 
+					exists = Y81
+				}
+				Y81 = {
+					trust = {
+						who = ROOT
+						value = 100
+					}
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			if = {
+				limit = {
+					exists = Y81
+					Y81 = {
+						ai = no
+					}
+				}
+				Y81 = {
+					create_union = ROOT
+				}
+			}
+			else = {
+				add_adm_power = 150
+				add_dip_power = 150
+				add_mil_power = 150
+			}
+		}
 	}
 	trade_with_the_dwarves = {
 		icon = mission_dominate_home_trade_node
@@ -527,7 +615,37 @@ slot_04 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			ost_in_edhil_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_trade_with_the_dwarves_province_modifier
+					duration = 7300
+				}
+			}
+
+			minas_melosse_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_trade_with_the_dwarves_province_modifier
+					duration = 7300
+				}
+			}
+
+			mirobel_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_trade_with_the_dwarves_province_modifier
+					duration = 7300
+				}
+			}
+		}
 	}
 	pay_the_beorning_tolls = {
 		icon = mission_beornings
@@ -620,6 +738,21 @@ slot_05 = {
 				name = rivendell_noldor_ally_modifier
 				duration = 3650
 			}
+			every_known_country = {
+				limit = {
+					is_elf = yes
+					capital_scope = {
+						OR = {
+							superregion = eriador_superregion
+							superregion = forodwaith_superregion
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_noldor_relation
+				}
+			}
 		}
 	}
 	kin_of_galadriel = {
@@ -635,7 +768,27 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			every_known_country = {
+				limit = {
+					is_elf = yes
+					capital_scope = {
+						OR = {
+							superregion = rhovanion_superregion
+							superregion = rohan_superregion
+							superregion = gondor_superregion
+							superregion = rhun_superregion
+							superregion = mordor_superregion
+							superregion = near_harad_superregion
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_silvan_relation
+				}
+			}
+		}
 	}
 	friends_of_the_dwarves = {
 		icon = mission_elves_4
@@ -650,7 +803,17 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			every_known_country = {
+				limit = {
+					is_dwarf = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_dwarf_relation
+				}
+			}
+		}
 	}
 	aid_the_dwarves = {
 		icon = mission_build_up_to_force_limit
@@ -670,15 +833,21 @@ slot_05 = {
 		trigger = {
 			khazad_dum_area = {
 				type = all
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = {
-						alliance_with = ROOT
-					}
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+		}
+		effect = { 
+			khazad_dum_area = {
+				add_core = Y22
+				cede_province = Y22
+			}
+			Y22 = {
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_aid_the_dwarves_relation
 				}
 			}
 		}
-		effect = { }
 	}
 	Hatred_of_the_orcs = {
 		icon = mission_orc_army_3
