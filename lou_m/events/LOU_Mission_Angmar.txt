@@ -1,9 +1,35 @@
 namespace = LOU_mission_angmar
 
-province_event = { #Counting on_scorch_earth
+country_event = { #Counting on_scorch_earth
 	id = LOU_mission_angmar.1
 	title = LOU_mission_angmar.1.t
 	desc = LOU_mission_angmar.1.d
+	picture = ruined_eventpicture
+
+	#Remove comment to hide event, it is shown now for testing purposes
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = { 
+
+	}
+	
+	option = { #Oh no
+		name = LOU_mission_angmar.1.a
+		
+		ANG = {
+			set_variable  = {
+				which = scorchedDunedainCitiesAmount_VAR
+				value = 0
+			}
+		}
+	}
+}
+
+province_event = { #Counting on_scorch_earth
+	id = LOU_mission_angmar.2
+	title = LOU_mission_angmar.2.t
+	desc = LOU_mission_angmar.2.d
 	picture = ruined_eventpicture
 
 	#Remove comment to hide event, it is shown now for testing purposes
@@ -17,13 +43,64 @@ province_event = { #Counting on_scorch_earth
 	}
 	
 	option = { #Oh no
-		name = LOU_mission_angmar.1.a
+		name = LOU_mission_angmar.2.a
 		
 		ANG = {
 			change_variable  = {
 				which = scorchedDunedainCitiesAmount_VAR
 				value = 1
 			}
+		}
+	}
+}
+
+country_event = { #Counting on_scorch_earth
+	id = LOU_mission_angmar.2
+	title = LOU_mission_angmar.2.t
+	desc = LOU_mission_angmar.2.d
+	picture = ruined_eventpicture
+
+	#Remove comment to hide event, it is shown now for testing purposes
+	#hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	trigger = { 
+
+	}
+	
+	option = { #Oh no
+		name = LOU_mission_angmar.2.a
+		
+		change_tag = ANG
+		ANG = {
+			set_capital = 610		
+		}
+
+		add_core = 610
+		add_stability = 3			
+		add_prestige = 75
+		add_splendor = 500
+
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+
+		set_government_rank = 3
+		#if = {
+		#	limit = { has_custom_ideas = no }
+		#	country_event = { id = ideagroups.1 } 
+		#}
+
+		swap_non_generic_missions = yes
+
+		hidden_effect = {
+			add_government_reform = lotr_carn_dum_reform
+			add_accepted_culture = culture_wight
+			add_accepted_culture = culture_orkish
+			add_accepted_culture = culture_angmarrim
+			add_accepted_culture = culture_cave_troll
 		}
 	}
 }

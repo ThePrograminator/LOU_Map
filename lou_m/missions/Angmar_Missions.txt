@@ -27,15 +27,12 @@ angmar_slot_1 = {
 			}
 			num_of_owned_provinces_with = {
 				value = 5
-				has_terrain = unique_forodwaith_town
+				has_terrain = unique_snowmen_town
 			}
 		}
 		effect = { 
-			every_owned_province = {
-				limit = {
-					has_terrain = unique_forodwaith_town
-					region = forochel_region
-				}
+			custom_tooltip = angmar_ice_bay_thralls_tt
+			tooltip = {
 				change_culture = culture_angmarrim
 				change_religion = religion_orkish
 				add_base_tax = 1
@@ -46,8 +43,23 @@ angmar_slot_1 = {
 					name = servants_of_angmar
 					duration = -1  
 				}
-				forochel_region = {
-					add_permanent_claim = ANG
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_terrain = unique_snowmen_town
+						region = forochel_region
+					}
+					change_culture = culture_angmarrim
+					change_religion = religion_orkish
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+					add_building = camp_orc_building
+					add_permanent_province_modifier = { 
+						name = servants_of_angmar
+						duration = -1  
+					}
 				}
 			}
 		}
@@ -62,6 +74,12 @@ angmar_slot_1 = {
 				province_id = 358
 				province_id = 652
 				province_id = 1963
+			}
+			NOT = {
+				development = 15
+				AND = {
+					local_autonomy = 50
+				}
 			}
 		}
 		trigger = {
@@ -132,9 +150,6 @@ angmar_slot_1 = {
 		icon = mission_navy_01
 		position = 8
 		required_missions = { the_naval_north }
-		provinces_to_highlight = {
-			area = sea_of_forodwaith_area
-		}
 		trigger = {
 			naval_forcelimit = 50                               
 		}
@@ -188,31 +203,94 @@ angmar_formable_slot_2 = {
 				province_id = 611
 				province_id = 401
 			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = capital_1_orc_building
+					has_building = encampment_1_orc_building
+					has_building = fortress_1_orc_building
+				}
+			}
 		}
 		trigger = {
-			Y54 = {
-				OR = {
-					exists = no
-					vassal_of = ROOT
-					ROOT = {
-						tag = Y54
+			if = {
+				limit = {
+					tag = Y54
+				}
+
+				Y55 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+				V05 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
 					}
 				}
 			}
-			Y55 = {
-				OR = {
-					exists = no
-					vassal_of = ROOT
+			else_if = {
+				limit = { 
 					tag = Y55
 				}
-			}
-			V05 = {
-				OR = {
-					exists = no
-					vassal_of = ROOT
-					tag = V05
+
+				Y54 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+
+				V05 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
 				}
 			}
+			else_if = {
+				limit = { 
+					tag = V05
+				}
+
+				Y54 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+
+				Y55 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+			}
+			else = {
+				Y54 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+	
+				Y55 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+				V05 = {
+					OR = {
+						exists = no
+						vassal_of = ROOT
+					}
+				}
+			}
+
 			1958 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				OR = {
@@ -289,7 +367,7 @@ angmar_slot_2 = {
 			}
 			num_of_owned_provinces_with = {
 				value = 1
-				has_terrain = unique_forodwaith_town
+				has_terrain = unique_snowmen_town
 				culture = culture_lossoth
 				religion = religion_orkish
 			}
@@ -297,7 +375,7 @@ angmar_slot_2 = {
 		effect = { 
 			random_owned_province = {
 				limit = {
-					has_terrain = unique_forodwaith_town
+					has_terrain = unique_snowmen_town
 					culture = culture_lossoth
 					religion = religion_orkish
 				}
@@ -321,9 +399,6 @@ angmar_slot_2 = {
 			a_frozen_fleet
 			morgul_sorcery
 		}
-		provinces_to_highlight = {
-			area = sea_of_forodwaith_area
-		}
 		trigger = {
 			stability = 2
 			legitimacy = 100
@@ -331,19 +406,28 @@ angmar_slot_2 = {
 			has_idea_group = defensive_ideas
 		}
 		effect = { 
-			every_province = {
-				limit = {
-					has_port = yes
-					OR = {
-						region = forochel_region
-						region = northern_waste_region
-						province_id = 234
-					}
+			custom_tooltip = angmar_ice_floes_of_forochel_tt
+			tooltip = {
+				add_permanent_province_modifier = { 
+					name = ice_floes
+					duration = -1  
 				}
 			}
-			add_permanent_province_modifier = { 
-				name = ice_floes
-				duration = -1  
+			hidden_effect = {
+				every_province = {
+					limit = {
+						has_port = yes
+						OR = {
+							region = forochel_region
+							region = northern_waste_region
+							province_id = 234
+						}
+					}
+					add_permanent_province_modifier = { 
+						name = ice_floes
+						duration = -1  
+					}
+				}
 			}
 		}
 	}
@@ -382,8 +466,6 @@ angmar_formable_slot_3 = {
 		icon = mission_carn_dum_snow
 		position = 1
 		required_missions = { }
-		provinces_to_highlight = {
-		}
 		trigger = {
 			army_size_percentage = 0.65
 			manpower_percentage = 0.75
@@ -421,6 +503,9 @@ angmar_formable_slot_3 = {
 		required_missions = { an_old_power_is_rising }
 		provinces_to_highlight = {
 			province_id = 610
+			NOT = {
+				development = 25
+			}
 		}
 		trigger = {
 			610 = {
@@ -429,12 +514,12 @@ angmar_formable_slot_3 = {
 			}
 		}
 		effect = { 
-			add_great_project_tier = {
-				type = carndum_monument
-				tier = 1
-			}
 			610 = {
 				add_center_of_trade_level = 1
+				add_great_project_tier = {
+					type = carndum_monument
+					tier = 1
+				}
 			}
 			add_adm_power = 150
 		}
@@ -489,18 +574,8 @@ angmar_formable_slot_3 = {
 			owns_core_province = 1956 	# Litash 
 		}
 		effect = { 
-			change_tag = ANG
-			set_capital = 610
-			add_core = 610
-			add_stability = 3			
-			add_prestige = 75
-			add_splendor = 500
-			hidden_effect = {
-				add_government_reform = lotr_carn_dum_reform
-				add_accepted_culture = culture_wight
-				add_accepted_culture = culture_orkish
-				add_accepted_culture = culture_angmarrim
-				add_accepted_culture = culture_cave_troll
+			country_event = {
+				id = LOU_mission_angmar.2
 			}
 		}
 	}
@@ -519,6 +594,13 @@ angmar_slot_3 = {
 		required_missions = { reformation_of_angmar }
 		provinces_to_highlight = {
 			has_terrain = unique_angmar_town
+			NOT = {
+				OR = {
+					has_owner_accepted_culture = yes
+					culture = culture_angmarrim
+					development = 15
+				}
+			}
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -542,13 +624,22 @@ angmar_slot_3 = {
 			morva_tarth_area = {
 				add_permanent_claim = ANG
 			}
-			every_owned_province = {
-				limit = {
-					has_terrain = unique_angmar_town
-				}
+			custom_tooltip = angmar_angmarim_servitude_tt
+			tooltip = {
 				add_permanent_province_modifier = { 
 					name = servants_of_angmar
 					duration = -1  
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_terrain = unique_angmar_town
+					}
+					add_permanent_province_modifier = { 
+						name = servants_of_angmar
+						duration = -1  
+					}
 				}
 			}
 		}
@@ -565,6 +656,9 @@ angmar_slot_3 = {
 				area = morkai_area
 				area = shedun_area
 				area = nan_angmar_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
@@ -614,18 +708,6 @@ angmar_slot_3 = {
 		icon = mission_return_of_the_witch_king
 		position = 6
 		required_missions = { restore_old_borders }
-		provinces_to_highlight = {
-			OR = {
-				region = mordor_region
-				region = mirkwood_region
-				region = ithilien_region
-			}
-			OR = {
-				owned_by = V17
-				owned_by = V18
-				owned_by = V19
-			}
-		}
 		trigger = {
 			OR = {
 				AND = {
@@ -674,6 +756,10 @@ angmar_slot_3 = {
 		required_missions = { return_of_the_witch_king }
 		provinces_to_highlight = {
 			province_id = 687
+
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			687 = {
@@ -694,9 +780,6 @@ angmar_slot_3 = {
 			subjugate_mount_gram 
 			the_high_fells 
 		}
-		provinces_to_highlight = {
-			province_id = 610
-		}
 		trigger = {
 			stability = 2
 			legitimacy = 95
@@ -716,7 +799,14 @@ angmar_slot_3 = {
 		position = 9
 		required_missions = { morgul_sorcery }
 		provinces_to_highlight = {
+			province_id = 1892
 			
+			NOT = {
+				has_great_project = {
+					type = high_fells_monument
+					tier = 2
+				}
+			}
 		}
 		trigger = {
 			has_idea_group = shadow_of_melkor_ideas
@@ -729,11 +819,16 @@ angmar_slot_3 = {
 			}
 		}
 		effect = { 
-			add_permanent_claim = {
-				region = arthedain_region
+			266 = {
+				add_permanent_claim = ROOT
 			}
-			country_event = {
-				id = LOU_mission_angmar.1
+			644 = {
+				add_permanent_claim = ROOT
+			}
+			hidden_effect = {
+				country_event = {
+					id = LOU_mission_angmar.1
+				}
 			}
 		}
 	}
@@ -745,7 +840,14 @@ angmar_slot_3 = {
 			forward_defenses
 		}
 		provinces_to_highlight = {
-			province_id = 266
+			OR = {
+				province_id = 266
+				province_id = 644
+			}
+
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			266 = {
@@ -820,9 +922,20 @@ angmar_formable_slot_4 = {
 	vale_of_nan_angmar = {
 		icon = mission_vale_of_nan_angmar
 		position = 2
-		required_missions = { an_old_an_old_power_is_risingpower_rises }
+		required_missions = { an_old_power_is_rising }
 		provinces_to_highlight = {
 			province_id = 1956
+
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_manpower = 10
+				OR = {
+					has_building = capital_2_orc_building
+					has_building = encampment_2_orc_building
+					has_building = fortress_2_orc_building
+				}
+				has_building = orc_fissure_orc_building
+			}
 		}
 		trigger = {
 			1956 = {
@@ -841,15 +954,21 @@ angmar_formable_slot_4 = {
 				name = orcish_influx
 				duration = 5475			# 15 year modifier
 			}
-			every_owned_province = {
+			if = {
 				limit = {
-					province_id = 1956
-					NOT = {
-						has_building = fort_wooden_walls_orc_building
+					1956 = {
+						NOT = {
+							has_building = fort_wooden_walls_orc_building
+							has_building = fort_orc_stronghold_orc_building
+							has_building = fort_large_orc_stronghold_orc_building
+						}
 					}
 				}
-				add_building = fort_wooden_walls_orc_building
+				1956 = {
+					add_building = fort_wooden_walls_orc_building
+				}
 			}
+			
 			add_mil_power = 150
 		}
 	}
@@ -926,6 +1045,9 @@ angmar_slot_4 = {
 		required_missions = { return_of_the_witch_king }
 		provinces_to_highlight = {
 			province_id = 1892
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			1892 = {
@@ -938,14 +1060,15 @@ angmar_slot_4 = {
 				add_devastation = 25
 				add_local_autonomy = 25
 				change_culture = culture_wight
-			}
-			add_great_project_tier = {
-				type = high_fells_monument
-				tier = 1
-			}
-			add_province_modifier = {
-				name = high_fells_haunted
-				duration = 9125			# 25 year modifier
+
+				add_great_project_tier = {
+					type = high_fells_monument
+					tier = 1
+				}
+				add_province_modifier = {
+					name = high_fells_haunted
+					duration = 9125			# 25 year modifier
+				}
 			}
 		}
 	}
@@ -963,9 +1086,6 @@ angmar_slot_5 = {
 		icon = mission_wall_of_mist_and_stone
 		position = 6
 		required_missions = { south_to_rhudaur }
-		provinces_to_highlight = {
-			region = misty_mountains_region
-		}
 		trigger = {
 			if = {
 				limit = {
@@ -1077,18 +1197,19 @@ angmar_slot_5 = {
 			}
 		}
 		trigger = {
+			has_idea_group = offensive_ideas
+			has_idea = glorious_arms
+
 			OR = {
 				accepted_culture = culture_troll
 				accepted_culture = culture_cave_troll
 			}
-			has_idea_group = offensive_ideas
-			has_idea = glorious_arms
+
 			375 = {				
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			development_in_provinces = {
 				value = 50
-				country_or_non_sovereign_subject_holds = ROOT
 				OR = {
 					culture = culture_troll
 					culture = culture_cave_troll
@@ -1140,15 +1261,15 @@ angmar_slot_5 = {
 		trigger = {
 			293 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_building = fort_wooden_walls_orc_building
+				province_orc_has_fort_building_tier_2 = yes
 			}
 			384 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_building = fort_wooden_walls_orc_building
+				province_orc_has_fort_building_tier_2 = yes
 			}
 			292 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_building = fort_wooden_walls_orc_building
+				province_orc_has_fort_building_tier_2 = yes
 			}
 		}
 		effect = { 
@@ -1202,7 +1323,7 @@ angmar_slot_5 = {
 				change_culture = culture_wight
 				change_religion = religion_orkish
 				change_trade_goods = stone
-				add_center_of_trade_level = -3
+				add_center_of_trade_level = -2
 				remove_province_modifier = imladris
 				add_permanent_province_modifier = {
 					name = ruined_imladris

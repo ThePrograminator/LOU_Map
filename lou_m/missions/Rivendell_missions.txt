@@ -816,7 +816,7 @@ slot_05 = {
 		}
 	}
 	aid_the_dwarves = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dwarves_1
 		position = 5
 		required_missions = { friends_of_the_dwarves }
 		provinces_to_highlight = {
@@ -877,6 +877,12 @@ slot_05 = {
 				}
 			}
 		}
-		effect = { }
+		effect = { 
+			add_stability = 1
+			add_country_modifier = {
+				name = rivendell_Hatred_of_the_orcs_modifier
+				duration = -1
+			}
+		}
 	}
 }

@@ -320,10 +320,5 @@ country_event = { #form Eregion
 		}
 		add_government_reform = eregion_elf_reform
 		set_government_rank = 3
-		#if = {
-		#	limit = { has_custom_ideas = no }
-		#	country_event = { id = ideagroups.1 } 
-		#}
-		swap_non_generic_missions = yes
 	}
 }
