@@ -292,3 +292,38 @@ country_event = {
 		remove_country_modifier = rivendell_paying_high_pass_beorning_modifier
 	}
 }
+
+country_event = { #form Eregion
+	id = LOU_mission_rivendell.10
+	title = LOU_mission_rivendell.10.t
+	desc = LOU_mission_rivendell.10.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	trigger = { 
+		
+	}
+	
+	option = {
+		name = LOU_mission_rivendell.10.a
+
+		change_tag = Q25
+		Q25 = {
+			set_capital = 232		
+		}
+		add_prestige = 50
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+		add_government_reform = eregion_elf_reform
+		set_government_rank = 3
+		#if = {
+		#	limit = { has_custom_ideas = no }
+		#	country_event = { id = ideagroups.1 } 
+		#}
+		swap_non_generic_missions = yes
+	}
+}
