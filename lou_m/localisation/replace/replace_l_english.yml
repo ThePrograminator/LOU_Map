@@ -867,29 +867,29 @@
  #desc_icon_climacus:1 "The Author of 'The Ladder of Divine Ascent', St. John Climacus has inspired generations of Orthodox Christians by describing how to strive towards the divine through asceticism and a pious life."
  
  #--------------------------------------------------
- # Piety (Control)
+ # Piety (Elven Legacy)
  #--------------------------------------------------
- positive_piety:1 "Order"
- negative_piety:1 "Chaos"
+ positive_piety:1 "Firstborn Pride"
+ negative_piety:1 "Valinor's Call"
  
- MODIFIER_MONTHLY_PIETY: "Monthly Control"
- ADD_PIETY: "$DIRECTION$ $VALUE$ Control"
+ MODIFIER_MONTHLY_PIETY: "Monthly Legacy"
+ ADD_PIETY: "$DIRECTION$ $VALUE$ Legacy"
  
- CURRENT_PIETY: "Current Control"
- CURRENT_PIETY_IS: "Our current Control is $VALUE$"
+ CURRENT_PIETY: "Current Legacy"
+ CURRENT_PIETY_IS: "Our current Legacy is $VALUE$"
  
- USES_PIETY: "$COUNTRY|Y$ uses Control."
- USES_NOT_PIETY: "$COUNTRY|Y$ does NOT use Control."
+ USES_PIETY: "$COUNTRY|Y$ uses Legacy."
+ USES_NOT_PIETY: "$COUNTRY|Y$ does NOT use Legacy."
  
- GAIN_PIETY: "Move $VALUE|Y$ towards Order"
- LOSE_PIETY: "Move $VALUE|Y$ towards Chaos"
+ GAIN_PIETY: "Move $VALUE|Y$ towards Firstborn Pride"
+ LOSE_PIETY: "Move $VALUE|Y$ towards Valinor's Call"
  
  PIETY_BAD_WAR_EFF:2 "Declaring war on a fellow $REL$ will move us away from Order by §Y$VAL$§!."
  PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Order by §Y$VAL$§!."
  
- converted_to_islam: "Joined the Orcs"
+ converted_to_islam: "Embraced Elven Legacy"
  
- PIETY_DESCRIPTION:1 "Control represents the control a ruler has over the masses of Orcs within our borders. \n\nIt is measured on a scale between -100 (§YChaos§!) and 100 (§YOrder§!).\n\nChaos is gained via:\n- Declaring war against other Orcs\n\nOrder is gained via:\n- Declaring war against other races\n- Purifying provinces"
+ PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YChaos§!) and 100 (§YOrder§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other races\n- Purifying provinces"
  PIETY_DESCRIPTION_ESTATES:1 "\n"
  
  PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Corruption§!' we need to be at least $NEED|Y$ towards Order. This would impact corruption by $CORRUPTION$."
