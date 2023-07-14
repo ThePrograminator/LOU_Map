@@ -54,14 +54,12 @@ province_event = { #Counting on_scorch_earth
 	}
 }
 
-country_event = { #Counting on_scorch_earth
-	id = LOU_mission_angmar.2
-	title = LOU_mission_angmar.2.t
-	desc = LOU_mission_angmar.2.d
-	picture = ruined_eventpicture
+country_event = { #Form Angmar
+	id = LOU_mission_angmar.3
+	title = LOU_mission_angmar.3.t
+	desc = LOU_mission_angmar.3.d
+	picture = agandaur
 
-	#Remove comment to hide event, it is shown now for testing purposes
-	#hidden = yes
 	is_triggered_only = yes
 	fire_only_once = yes 
 	
@@ -70,17 +68,18 @@ country_event = { #Counting on_scorch_earth
 	}
 	
 	option = { #Oh no
-		name = LOU_mission_angmar.2.a
+		name = LOU_mission_angmar.3.a
 		
+		add_core = 610
+
 		change_tag = ANG
 		ANG = {
 			set_capital = 610		
 		}
 
-		add_core = 610
-		add_stability = 3			
-		add_prestige = 75
-		add_splendor = 500
+		add_stability = 1			
+		add_prestige = 50
+		add_splendor = 250
 
 		add_country_modifier = {
 			name = "centralization_modifier"
