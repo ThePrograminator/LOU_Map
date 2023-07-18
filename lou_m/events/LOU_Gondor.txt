@@ -704,6 +704,12 @@ country_event = {
 		  dip = 5
 		  mil = 6
 		}
+
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+		add_ruler_personality = just_personality
+		add_ruler_personality = righteous_personality
+		add_ruler_personality = benevolent_personality
 		
 		add_stability = 1
 		add_legitimacy = 50

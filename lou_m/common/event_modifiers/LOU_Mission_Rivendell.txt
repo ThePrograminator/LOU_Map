@@ -32,6 +32,27 @@ rivendell_noldor_ally_modifier = {
 	diplomatic_upkeep = 1
 }
 
+rivendell_expel_wulfseggeas_modifier = {
+	core_creation = -0.15
+}
+
+rivendell_gwaith_i_mirdain_modifier = {
+	legitimacy = 1
+	prestige = 1
+}
+
+rivendell_the_white_council_modifier = {
+	spy_offence = 0.25
+	global_spy_defence = 0.25
+}
+
+rivendell_Hatred_of_the_orcs_modifier = {
+	land_morale = 0.10
+	war_exhaustion = -0.10
+}
+
+
+
 #################################
 #Mission Effect Province Modifier
 #################################
@@ -46,4 +67,35 @@ rivendell_settle_the_wilderness_province_modifier = {
 	local_build_cost = -0.15
 	local_build_time = -0.15
 	local_prosperity_growth = 0.1
+}
+
+rivendell_defence_of_athrad_bruinen_province_modifier = {
+	local_defensiveness = 0.10
+	local_fort_maintenance_modifier = -0.5
+}
+
+rivendell_barad_niniel_province_modifier = {
+	local_defensiveness = 0.10
+	local_fort_maintenance_modifier = -0.5
+}
+
+rivendell_barad_niniel_area_effect_province_modifier = {
+	local_manpower_modifier = 0.15
+}
+
+rivendell_drive_out_orcs_province_modifier = {
+	local_prosperity_growth = 0.1
+	local_monthly_devastation = -0.1
+	local_development_cost = -0.1
+}
+
+rivendell_gwaith_i_mirdain_province_modifier = {
+	local_great_project_upgrade_cost = -0.25
+	local_production_efficiency = 0.1
+}
+
+rivendell_trade_with_the_dwarves_province_modifier = {
+	province_trade_power_modifier = 0.1
+	trade_goods_size_modifier = 0.1
+	trade_value_modifier = 0.1
 }

@@ -198,8 +198,8 @@ ai_militarist = {
 			quantity_ideas = 1
 		}			
 		modifier = {
-			factor = 1.1
-			religious_ideas = 1
+			factor = 1.5
+			shadow_of_melkor_ideas = 1
 		}		
 		modifier = {
 			factor = 1.25
@@ -295,18 +295,18 @@ ai_colonialist = {
 			factor = 1.1
 			trade_ideas = 1
 		}			
-		modifier = {
-			factor = 1.1
-			exploration_ideas = 1
-		}			
+		# modifier = {
+		# 	factor = 1.1
+		# 	exploration_ideas = 1
+		# }			
 		modifier = {
 			factor = 1.1
 			maritime_ideas = 1
 		}
-		modifier = {
-			factor = 1.1
-			expansion_ideas = 1
-		}		
+		# modifier = {
+		# 	factor = 1.1
+		# 	expansion_ideas = 1
+		# }		
 		modifier = {
 			factor = 0
 			NOT = { num_of_colonists = 1 }

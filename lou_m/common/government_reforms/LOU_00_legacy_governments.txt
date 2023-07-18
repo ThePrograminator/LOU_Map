@@ -1270,6 +1270,29 @@ lotr_kingdom_elf_legacy = {
 	}
 }
 
+lotr_eregion_elf_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+	
+	modifiers = {
+    	max_absolutism = 10
+		discipline = 0.1
+		prestige_decay = -0.1
+		yearly_corruption = -0.1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
 lotr_principality_elf_legacy = {
 	# government mechanics flags go here
 	icon = "crown"

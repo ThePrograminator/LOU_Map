@@ -12,20 +12,27 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y79
 owner = Y79
 controller = Y79
 
-culture = culture_lossidil
-religion = religion_umanyar
+culture = culture_wilderness
+religion = religion_wilderness
 
-trade_goods = naval_supplies
+trade_goods = ivory
 
 hre = no
+
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan

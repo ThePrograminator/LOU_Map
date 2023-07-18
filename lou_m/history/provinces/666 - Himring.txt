@@ -17,13 +17,13 @@ owner = Y72
 controller = Y72
 culture = culture_wilderness
 religion = religion_wilderness
-trade_goods = naval_supplies
+trade_goods = herbs
 add_core = Y72
 add_province_modifier = {
 	name = ruins_debuff
 	duration = -1
 }
-add_province_modifier = {
+add_permanent_province_modifier = {
 	name = himring_fortress_ruins
 	duration = -1
 }
