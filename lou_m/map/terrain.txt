@@ -370,15 +370,24 @@ categories =  {
 	unique_minas_tirith = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.75
-		local_development_cost = -0.2
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.20
+
 		defence = 3
-		supply_limit = 10
+		supply_limit = 15
+		movement_cost = 0.75
 		
-		local_defensiveness = 0.20
+		fort_level = 3
+		local_defensiveness = 0.50
+		province_trade_power_value = 0.25
+		trade_value_modifier = 0.10
+		trade_goods_size_modifier = 0.05
+		local_tax_modifier = 0.05
+		local_production_efficiency = 0.05
+		local_regiment_cost = -0.10
+		allowed_num_of_manufactories = 2
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.2
 		
 		terrain_override = {
 			413
@@ -388,14 +397,23 @@ categories =  {
 	unique_osgilliath = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.85
-		local_development_cost = -0.10
+
 		nation_designer_cost_multiplier = 1.10
+		
 		defence = 1
 		supply_limit = 7
-		
-		local_defensiveness = 0.1
+		movement_cost = 0.85
+
+		fort_level = 1
+		local_defensiveness = 0.10
+		province_trade_power_value = 0.25
+		trade_value_modifier = 0.10
+		trade_goods_size_modifier = 0.05
+		local_tax_modifier = 0.05
+		local_production_efficiency = 0.05
+		local_regiment_cost = -0.10
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.1
 		
 		terrain_override = {
 			419 418
@@ -451,15 +469,23 @@ categories =  {
 	unique_minasmorgul = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.75
-		local_development_cost = -0.1
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.20
+
 		defence = 2
 		supply_limit = 10
-		
+		movement_cost = 0.75
+
+		fort_level = 2
 		local_defensiveness = 0.25
+		local_hostile_attrition = 3
+		local_manpower_modifier = 0.30
+		province_trade_power_value = 0.5
+		local_production_efficiency = 0.10
+		local_regiment_cost = -0.25
+		allowed_num_of_buildings = 2
+		allowed_num_of_manufactories = 2
+		local_development_cost = -0.1
 		
 		terrain_override = {
 			417
@@ -989,15 +1015,17 @@ categories =  {
 	unique_blackgate = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.75
-		local_development_cost = -0.10
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 1.20
+
 		defence = 2
 		supply_limit = 8
+		movement_cost = 0.75
 		
-		local_defensiveness = 0.25
+		fort_level = 2
+		local_defensiveness = 0.30
+		local_development_cost = -0.10
+		
 		
 		terrain_override = {
 			675
@@ -1007,15 +1035,24 @@ categories =  {
 	unique_baraddur = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.90
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.40
+
 		defence = 3
 		supply_limit = 15
+		movement_cost = 0.90
 		
-		local_defensiveness = 0.30
+		fort_level = 3
+		local_defensiveness = 0.50
+		province_trade_power_value = 0.25
+		trade_value_modifier = 0.10
+		trade_goods_size_modifier = 0.05
+		local_tax_modifier = 0.05
+		local_production_efficiency = 0.05
+		local_regiment_cost = -0.10
+		allowed_num_of_manufactories = 2
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			639
@@ -1044,16 +1081,18 @@ categories =  {
 	unique_cirithungol = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 1
-		local_development_cost = -0.05
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 1.15
+
 		defence = 1
-		#attrition = 1
 		supply_limit = 4
-		
+		movement_cost = 1
+
+		fort_level = 1
 		local_defensiveness = 0.35
+		local_manpower_modifier = 0.15
+		allowed_num_of_buildings = 1
+		local_development_cost = -0.05
 		
 		terrain_override = {
 			148
@@ -1170,15 +1209,24 @@ categories =  {
 	unique_shelob_lair = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 2
-		local_development_cost = 0.5
+
 		nation_designer_cost_multiplier = 0.65
+
 		defence = 1
-		attrition = 1
 		supply_limit = 2
-		
+		movement_cost = 2
+		attrition = 1
+
 		local_defensiveness = 0.20
+		max_attrition = 10
+		local_manpower_modifier = -0.85
+		local_tax_modifier = -1
+		local_production_efficiency = -1
+		local_governing_cost = -0.95
+		local_development_cost = 5
+		local_build_cost = 5
+		local_build_time = 5
+		local_development_cost = 0.5
 		
 		terrain_override = {
 			1000
@@ -1258,15 +1306,16 @@ categories =  {
 	unique_helmsdeep = {
 		color = { 150 75 0 }
 		sound_type = mountains
-		
-		movement_cost = 0.75
-		local_development_cost = -0.10
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 1.25
+		
 		defence = 2
 		supply_limit = 10
-		
-		local_defensiveness = 0.15
+		movement_cost = 0.75
+
+		fort_level = 2
+		local_defensiveness = 0.30
+		local_development_cost = 0.10
 		
 		terrain_override = {
 			121
@@ -1309,15 +1358,22 @@ categories =  {
 	unique_edoras = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.75
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.15
+
 		defence = 1
 		supply_limit = 10
-		
-		local_defensiveness = 0.2
+		movement_cost = 0.75
+
+		fort_level = 1
+		local_defensiveness = 0.10
+		province_trade_power_value = 0.50
+		trade_value_modifier = 0.10
+		trade_goods_size_modifier = 0.05
+		local_tax_modifier = 0.05
+		local_production_efficiency = 0.05
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			114
@@ -1345,15 +1401,19 @@ categories =  {
 	unique_isengard = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.70
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.25
+
 		defence = 2
 		supply_limit = 10
-		
-		local_defensiveness = 0.20
+		movement_cost = 0.70
+
+		fort_level = 1
+		local_defensiveness = 0.15
+		local_manpower_modifier = 0.15
+		local_production_efficiency = 0.05
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			223
@@ -2029,15 +2089,17 @@ categories =  {
 	unique_rivendell = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.75
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 1.30
+
 		defence = 2
 		supply_limit = 12
-		
+		movement_cost = 0.75
+
+		fort_level = 1
 		local_defensiveness = 0.20
+		allowed_num_of_buildings = 1
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			232
@@ -2047,12 +2109,16 @@ categories =  {
 	unique_fords_of_bruinen = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 1.50
-		defence = 3
-		local_defensiveness = 0.25
-		local_development_cost = 0.25
+
 		nation_designer_cost_multiplier = 0.75
+		
+		defence = 3
+		movement_cost = 1.50
+		
+		fort_level = 1
+		local_defensiveness = 0.25
+		local_hostile_movement_speed = -0.75
+		local_development_cost = 0.25
 		
 		terrain_override = {
 			1679
@@ -2525,13 +2591,16 @@ categories =  {
 	unique_caras_galadhon = {
 		color = { 150 100 200 }
 		sound_type = forest
-		
-		movement_cost = 0.85
-		defence = 2
-		local_development_cost = -0.10
+
 		nation_designer_cost_multiplier = 0.9
+		
+		defence = 2
 		supply_limit = 8
+		movement_cost = 0.85
+		
+		fort_level = 1
 		local_defensiveness = 0.20
+		local_development_cost = -0.10
 		
 		terrain_override = {
 			233
@@ -2541,13 +2610,16 @@ categories =  {
 	unique_cerin_amroth = {
 		color = { 150 100 200 }
 		sound_type = forest
-		
-		movement_cost = 0.85
-		defence = 1
-		local_development_cost = -0.10
+
 		nation_designer_cost_multiplier = 0.9
+
+		defence = 1
 		supply_limit = 8
+		movement_cost = 0.85
+		
+		fort_level = 1
 		local_defensiveness = 0.20
+		local_development_cost = -0.10
 		
 		terrain_override = {
 			1877
@@ -2590,14 +2662,20 @@ categories =  {
 	unique_gundabad = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.85
-		defence = 2
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 0.9
+
+		defence = 2
 		supply_limit = 10
+		movement_cost = 0.85
+		
+		fort_level = 1
 		local_defensiveness = 0.20
+		province_trade_power_value = 0.25
+		local_production_efficiency = 0.05
+		local_regiment_cost = -0.25
+		allowed_num_of_buildings = 1
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			628
@@ -2607,14 +2685,20 @@ categories =  {
 	unique_goblintown = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.85
-		defence = 2
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 0.9
+
+		defence = 2
 		supply_limit = 8
+		movement_cost = 0.85
+
+		fort_level = 1
 		local_defensiveness = 0.20
+		province_trade_power_value = 0.25
+		trade_goods_size_modifier = 0.10
+		local_tax_modifier = 0.05
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			558
@@ -2724,14 +2808,20 @@ categories =  {
 	unique_fornost = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.85
-		local_development_cost = -0.15
-		supply_limit = 10
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 1.05
-		local_defensiveness = 0.15
+
 		defence = 1
+		supply_limit = 10
+		movement_cost = 0.85
+		
+		fort_level = 1
+		local_defensiveness = 0.15
+		local_manpower_modifier = 0.15
+		province_trade_power_value = 0.25
+		local_regiment_cost = -0.25
+		allowed_num_of_buildings = 1
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			266
@@ -2805,14 +2895,22 @@ categories =  {
 	unique_bree = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.85
-		local_development_cost = -0.15
-		supply_limit = 10
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.05
-		local_defensiveness = 0.10
+
 		defence = 1
+		supply_limit = 10
+		movement_cost = 0.85
+
+		fort_level = 1
+		local_defensiveness = 0.10
+		local_manpower_modifier = 0.1
+		province_trade_power_value = 0.25
+		trade_value_modifier = 0.10
+		trade_goods_size_modifier = 0.10
+		local_tax_modifier = 0.05
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			263
@@ -2905,13 +3003,22 @@ categories =  {
 	unique_tharbad = {
 		color = { 150 100 200 }
 		sound_type = plains
-		
-		movement_cost = 0.85
-		local_development_cost = -0.15
-		supply_limit = 10
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.05
+		
+		supply_limit = 10
+		movement_cost = 0.85
+		
+		fort_level = 1
 		local_defensiveness = 0.15
+		hostile_fleet_attrition = 1
+		local_manpower_modifier = 0.05
+		local_sailors_modifier = 0.15
+		province_trade_power_value = 0.15
+		local_tax_modifier = 0.05
+		local_ship_cost = -0.15
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
 		
 		terrain_override = {
 			677 170
@@ -2921,14 +3028,20 @@ categories =  {
 	unique_carndum = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.85
-		local_development_cost = -0.10
-		supply_limit = 8
-		allowed_num_of_buildings = 1
+
 		nation_designer_cost_multiplier = 1.05
-		local_defensiveness = 0.15
+
 		defence = 1
+		supply_limit = 8
+		movement_cost = 0.85
+		
+		fort_level = 1
+		local_defensiveness = 0.15
+		province_trade_power_value = 0.25
+		local_production_efficiency = 0.05
+		allowed_num_of_buildings = 1
+		local_development_cost = -0.10
+		
 		
 		terrain_override = {
 			610
@@ -3212,13 +3325,18 @@ categories =  {
 		color = { 150 100 200 }
 		type = forest
 		sound_type = forest
-		
-		movement_cost = 1.0
+
+		nation_designer_cost_multiplier = 0.9
+
 		defence = 1
 		supply_limit = 5
-		local_development_cost = 0.2
+		movement_cost = 1.0
+		
+		fort_level = 1
 		local_defensiveness = 0.10
-		nation_designer_cost_multiplier = 0.9
+		local_hostile_movement_speed = 0.50
+		local_development_cost = 0.2
+		
 		
 		terrain_override = {
 			318
@@ -3563,14 +3681,20 @@ categories =  {
 	unique_mount_gram = {
 		color = { 150 100 200 }
 		sound_type = mountains
-		
-		movement_cost = 0.85
-		local_development_cost = -0.15
-		supply_limit = 8
-		allowed_num_of_buildings = 2
+
 		nation_designer_cost_multiplier = 1.05
-		local_defensiveness = 0.2
+
 		defence = 1
+		supply_limit = 8
+		movement_cost = 0.85
+
+		fort_level = 1
+		local_defensiveness = 0.2
+		local_manpower_modifier = 0.15
+		local_regiment_cost = -0.25
+		allowed_num_of_buildings = 2
+		local_development_cost = -0.15
+		
 		
 		terrain_override = {
 			687
@@ -4247,13 +4371,15 @@ categories =  {
 		color = { 113 176 151 }
 		type = hills
 		sound_type = mountains
-		
-		movement_cost = 1.15
+
+		nation_designer_cost_multiplier = 0.85
+
 		defence = 1
+		supply_limit = 6
+		movement_cost = 1.15
+		
 		local_defensiveness = 0.1
 		local_development_cost = 0.25
-		nation_designer_cost_multiplier = 0.85
-		supply_limit = 6
 		
 		terrain_override = {
 			3417 1130 688 620

@@ -206,8 +206,7 @@ country_event = { #The Throne of Gondor
 			age = 47
 			claim = 100
 		}
-		kill_heir = yes
-		#remove_government_reform = stewardship_reform
+		
 		add_government_reform = gondor_kingship_reform
 		custom_tooltip = X01_BLOOD_OF_NUMENOR
 		hidden_effect = {
@@ -215,6 +214,7 @@ country_event = { #The Throne of Gondor
 				name = gondor_blood_of_numenor_modifier 
 				duration = -1
 			}
+			kill_heir = { allow_new_heir = no }
 		}
 	}
 	option = {

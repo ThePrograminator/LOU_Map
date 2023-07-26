@@ -46,7 +46,7 @@ country_event = {
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - war_of_the_dwarves_and_orcs.1 - Option : LOU_wdo.1.a" }
 
 		custom_tooltip = war_of_the_dwarves_and_orcs_text_1
-		kill_heir = yes
+		kill_heir = { allow_new_heir = no }
 		define_heir = {
 			male = yes
 			claim = 100

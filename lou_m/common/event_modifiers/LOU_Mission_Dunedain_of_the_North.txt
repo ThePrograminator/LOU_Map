@@ -75,11 +75,11 @@ dunedain_of_north_expelled_all_orcs = {
 }
 
 dunedain_of_north_amon_sul = {
-	fort_level = 3
-	local_defensiveness = 0.25
+	fort_level = 1
+	local_defensiveness = 0.15
 	local_hostile_attrition = 3
 	supply_limit_modifier = 0.25
-	province_trade_power_modifier = 1
+	province_trade_power_modifier = 0.25
 	local_manpower_modifier = 0.25
 	allowed_num_of_manufactories = 1
 }

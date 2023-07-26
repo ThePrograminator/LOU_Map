@@ -28,6 +28,11 @@ trade_goods = grain
 
 hre = no
 
+add_province_modifier = {
+	name = wilderness_debuff
+	duration = -1
+}
+
 2954.1.1 = {
 	culture = culture_wilderness
 	religion = religion_wilderness

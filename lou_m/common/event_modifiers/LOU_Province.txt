@@ -1,67 +1,8 @@
 # Provinces
-minas_tirith = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 3
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 1
-	province_trade_power_value = 1
-	trade_value_modifier = 0.20
-	trade_goods_size_modifier = 0.15
-	local_tax_modifier = 0.15
-	local_production_efficiency = 0.10
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
-}
-
-barad_dur = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 1
-	province_trade_power_value = 1
-	local_production_efficiency = 0.25
-	local_build_time = -0.25
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
-}
-
-osgiliath = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 3
-	local_manpower_modifier = 1
-	supply_limit_modifier = 1
-	province_trade_power_value = 1
-	trade_goods_size_modifier = 0.25
-	trade_value_modifier = 0.25
-	local_tax_modifier = 0.15
-	local_production_efficiency = 0.15
-	allowed_num_of_manufactories = 2
-}
 
 ruined_osgiliath = {
 	local_defensiveness = 0.25
 	local_defender_dice_roll_bonus = 2
-}
-
-helms_deep = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	supply_limit_modifier = 0.5
-	allowed_num_of_manufactories = 2
-}
-
-black_gate = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	supply_limit_modifier = 0.5
-	allowed_num_of_manufactories = 2
 }
 
 wilderness_debuff = {
@@ -161,8 +102,8 @@ ancient_capital_of_the_tarlai = {
 
 walls_of_pelargir = {
 	 local_hostile_attrition = 2
-	 fort_level = 2
-	 local_defensiveness = 0.25
+	 fort_level = 1
+	 local_defensiveness = 0.15
 	 garrison_growth = 0.05
 	 local_manpower_modifier = 0.25
 	 supply_limit_modifier = 0.50
@@ -216,12 +157,12 @@ dead_marshes_modifier = {
 }
 
 dol_guldur = {
-	fort_level = 3
+	fort_level = 1
 	local_hostile_attrition = 2
-	local_defensiveness = 0.50
+	local_defensiveness = 0.20
 	supply_limit_modifier = 0.50
 	local_unrest = -10
-	local_production_efficiency = 0.10
+	local_production_efficiency = 0.05
 	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.25
 	local_regiment_cost = -0.25
@@ -232,76 +173,12 @@ necromancers_capital = {
 	local_garrison_damage = 1.00
 }
 
-isengard = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 2
-	supply_limit_modifier = 1
-	local_manpower_modifier = 0.50
-	local_production_efficiency = 0.15
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
-}
-
-edoras = {
-	fort_level = 3
-	local_defensiveness = 1
-	local_hostile_attrition = 1
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 1
-	province_trade_power_value = 1
-	trade_value_modifier = 0.15
-	trade_goods_size_modifier = 0.10
-	local_tax_modifier = 0.10
-	local_production_efficiency = 0.05
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
-}
-
-rhosgobel = {
-	fort_level = 1
-	local_hostile_attrition = 1
-	local_defensiveness = 0.15
-	supply_limit_modifier = 0.50
-	local_unrest = -10
-	local_hostile_movement_speed = 0.50
-	allowed_num_of_manufactories = 2
-}
-
-# henneth_annun = {									# Moved to Gondor Mission rewards and renamed for their quests
-# 	fort_level = 3
-# 	local_defensiveness = 0.5
-# 	supply_limit_modifier = 0.5
-# 	local_hostile_attrition = 3
-# 	allowed_num_of_manufactories = 1
-# }
-
 telain_defenses = {
 	fort_level = 1
-	local_defensiveness = 0.25
+	local_defensiveness = 0.10
 	local_hostile_attrition = 3
 	max_attrition = 10
 	local_garrison_size = 0.50
-}
-
-cerin_amroth = {
-	fort_level = 3
-	local_defensiveness = 0.25
-	supply_limit_modifier = 0.5
-	local_hostile_attrition = 3
-	allowed_num_of_manufactories = 1
-}
-
-caras_galadhon = {
-	fort_level = 5
-	local_defensiveness = 2
-	supply_limit_modifier = 1
-	local_hostile_attrition = 5
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
 }
 
 mallorn_trees = {
@@ -429,74 +306,13 @@ forest_huorns = {
 	state_maintenance_modifier = -0.50
 }
 
-imladris = {
-	fort_level = 5
-	local_defensiveness = 2
-	supply_limit_modifier = 1
-	local_hostile_attrition = 5
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
-}
-
-ford_of_bruinen = {
-	fort_level = 1
-	local_defensiveness = 0.5
-	local_hostile_attrition = 10
-	max_attrition = 10
-	local_attacker_dice_roll_bonus = -3
-	local_hostile_movement_speed = -0.75
-}
-
 cair_andros = {
-	fort_level = 3
+	fort_level = 2
 	local_defensiveness = 0.25
 	supply_limit_modifier = 0.25
 	local_hostile_attrition = 3
 	local_manpower_modifier = 0.25
 	allowed_num_of_manufactories = 1
-}
-
-minas_morgul = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 1
-	province_trade_power_value = 1
-	local_production_efficiency = 0.25
-	allowed_num_of_manufactories = 2
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
-}
-
-cirith_ungol = {
-	fort_level = 3
-	local_defensiveness = 0.25
-	supply_limit_modifier = 0.25
-	local_hostile_attrition = 3
-	local_manpower_modifier = 0.25
-	allowed_num_of_manufactories = 1
-}
-
-shelobs_lair = {
-	local_hostile_attrition = 8
-	max_attrition = 10
-	local_hostile_movement_speed = -0.9
-	local_friendly_movement_speed = -0.9
-	local_attacker_dice_roll_bonus = -3
-	local_manpower_modifier = -0.85
-	supply_limit_modifier = -0.50
-	local_tax_modifier = -1
-	local_production_efficiency = -1
-	local_governing_cost = -0.95
-	local_development_cost = 5
-	local_build_cost = 5
-	local_build_time = 5
-	local_culture_conversion_cost = 5
-	min_local_autonomy = 95
-	local_unrest = -15
-	local_missionary_strength = -5
 }
 
 ruined_amon_sul = {
@@ -504,110 +320,10 @@ ruined_amon_sul = {
 	local_defender_dice_roll_bonus = 1
 }
 
-# amon_sul = {									#Moved to Dunedain of the North mission modifier file
-# 	fort_level = 3
-# 	local_defensiveness = 0.25
-# 	local_hostile_attrition = 3
-# 	supply_limit_modifier = 0.25
-# 	province_trade_power_modifier = 1
-# 	local_manpower_modifier = 0.25
-# 	allowed_num_of_manufactories = 1
-# }
-
- carn_dum = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 1
-	province_trade_power_value = 0.50
-	local_production_efficiency = 0.15
-	allowed_num_of_manufactories = 1
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
- }
-
- gundabad = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 1
-	province_trade_power_value = 0.50
-	local_production_efficiency = 0.15
-	allowed_num_of_manufactories = 1
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
- }
-
- mount_gram = {
-	fort_level = 3
-	local_defensiveness = 0.50
-	local_hostile_attrition = 3
-	supply_limit_modifier = 0.50
-	local_manpower_modifier = 0.25
-	allowed_num_of_manufactories = 1
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
- }
- 
- goblin_town = {
-	fort_level = 3
-	local_hostile_attrition = 3
-	local_defensiveness = 0.50
-	supply_limit_modifier = 0.50
-	local_unrest = -5
-	allowed_num_of_manufactories = 1
-	province_trade_power_value = 0.50
-	trade_goods_size_modifier = 0.25
-	local_tax_modifier = 0.15
-	local_build_cost = -0.15
-	local_build_time = -0.15   
- }
-
  ruined_fornost_erain = {
 	fort_level = 1
 	local_defensiveness = 0.25
 	local_defender_dice_roll_bonus = 1
- }
-
- fornost_erain = {
-	fort_level = 5
-	local_defensiveness = 1
-	local_hostile_attrition = 5
-	local_manpower_modifier = 1
-	supply_limit_modifier = 1
-	province_trade_power_value = 0.50
-	allowed_num_of_manufactories = 1
-	regiment_recruit_speed = -0.25
-	local_regiment_cost = -0.25
- }
-
- bree = {
-	fort_level = 1
-	local_defensiveness = 0.25
-	local_hostile_attrition = 1
-	local_manpower_modifier = 0.50
-	supply_limit_modifier = 0.50
-	province_trade_power_value = 0.5
-	trade_value_modifier = 0.15
-	trade_goods_size_modifier = 0.15
-	local_tax_modifier = 0.10
-	allowed_num_of_manufactories = 1
- }
-
- tharbad = {
-	fort_level = 1
-	local_defensiveness = 0.25	
-	hostile_fleet_attrition = 1
-	local_manpower_modifier = 0.25
-	local_sailors_modifier = 0.25
-	supply_limit_modifier = 0.50
-	province_trade_power_value = 0.25
-	local_tax_modifier = 0.15
-	allowed_num_of_manufactories = 1
-	local_ship_cost = -0.15
-	ship_recruit_speed = -0.15
  }
 
  ruined_ost_in_edhil = {
@@ -616,16 +332,4 @@ ruined_amon_sul = {
 	local_defender_dice_roll_bonus = 1
 	statewide_governing_cost = -0.25
 	local_monthly_devastation = -0.15
- }
-
- ost_in_edhil = {
-
- }
-
- moria = {
-
- }
- 
- khazad_dum = {
-
  }
