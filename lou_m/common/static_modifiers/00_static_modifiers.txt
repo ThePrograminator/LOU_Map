@@ -820,18 +820,16 @@ navy_tradition = {
 	allowed_galleass_fraction = 0.5
 }
 
-#Pride of the First Born (former Order)
+#Firstborn Pride (former Order)
 positive_piety = { #As of 1.23 Legalism
-	diplomatic_reputation = -3
 	garrison_size = 0.5
 	land_morale = 0.10
 }
 
 #For convenience, its multiplied by negative piety in code.
-#Call of Valinor (former Chaos)
+#Valinor's Call (former Chaos)
 negative_piety = { #As of 1.23 Mysticism
-	diplomatic_reputation = 3
-	manpower_recovery_speed = -0.1
+	diplomatic_reputation = 2
 	improve_relation_modifier = 0.2
 }
 
