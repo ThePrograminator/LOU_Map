@@ -10,16 +10,27 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 8
-base_production = 3
-base_manpower = 4
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+add_core = Y80
+owner = Y80
+controller = Y80
 
 culture = culture_wilderness
 religion = religion_wilderness
 
-trade_goods = gold
+trade_goods = stone
 
 hre = no
+
+add_province_modifier = {
+	name = wilderness_debuff
+	duration = -1
+}
 
 discovered_by = lotr_human
 discovered_by = lotr_erus_children

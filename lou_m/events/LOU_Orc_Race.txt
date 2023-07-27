@@ -33,9 +33,10 @@ country_event = {
 		
 		add_karma = 0.10
 		add_yearly_manpower = -0.5
-		add_country_modifier
+		add_country_modifier = {
 			name = orc_religion_fuel_of_industry
 			duration = 3650
+		}
 	}
 	
 	#Reward The Victors
@@ -152,17 +153,18 @@ country_event = {
 		}
 	}
 }
+
 # feeding the flames
 country_event = {
-	id =
-	title =
-	desc =
-	picture =
+	id = LOU_orc_race.10
+	title = LOU_orc_race.10.t
+	desc = LOU_orc_race.10.d
+	picture = NATIVES_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
-	AND = {
+		AND = {
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -173,27 +175,33 @@ country_event = {
 			}
 			religion = religion_orkish
 		}
-	AND = {
-		Karma = -33
-		NOT = {Karma = 33}
+		AND = {
+			Karma = -33
+			NOT = {Karma = 33}
+		}
 	}
 	#feed the flames of Industry
 	option = {
-		name = 
+		name = LOU_orc_race.10.a
 		
 		add_karma = 10
 		add_country_modifier = {
 			name = orc_religion_fuel_of_industry
 			duration = 3650
+		}
+	}
 		
 	#feed the flames of war
 	option = {
-		name =
+		name = LOU_orc_race.10.b
 		
 		add_karma = -10
 		add_country_modifier = {
 			name = orc_religion_fuel_of_war
 			duration = 3650
+		}
+	}
+}
 
 # calls for war
 country_event = {
@@ -239,6 +247,7 @@ country_event = {
 		add_country_modifier = {
 			name = orc_religion_purpose_of_war
 			duration = 3650
+		}
 		
 		hidden_effect = {
 			country_event = {
@@ -835,9 +844,11 @@ country_event = {
 	option = {
 		name = "LOU_orc_race.14.a"
 		trigger = {
-			NOT = 
+			NOT = {
 				Karma = -33
 			}
+		}
+
 		random_owned_province = {
 			limit = {
 				has_owner_culture = yes
@@ -848,18 +859,18 @@ country_event = {
 			
 			add_base_production = 1
 		}
-		
+
 		add_country_modifier = {
-            name = orc_religion_fuel_of_industry
+			name = orc_religion_fuel_of_industry
 			duration = 1095
 		}
-    }
+   	}
 	#Hunt for our meat
 	option = {
 		name = "LOU_orc_race.14.b"
 		trigger = {
 			Karma = 33
-			}
+		}
 		random_owned_province = {
 			limit = {
 				has_owner_culture = yes

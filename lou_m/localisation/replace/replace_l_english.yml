@@ -46,7 +46,7 @@
  HAVE_MISSIONARY_IN_LOCATION: "§Y$NATION$§! have a Purification Regiment in this location."
  HERETIC_RELIGION_NOT_AVAILABLE: "No other race available."
  HERETIC_RELIGION_AVAILABLE: "Another race is available."
- MISSIONARIESMAINTENANCE: "Purification Regiment Maintenance"
+ MISSIONARIESMAINTENANCE: "Purifier Maintenance"
  YEARLY_MISSIONARIES: "Purification Regiments"
  AGGRESSIVE_EXPANSION_PENALTY_SAMERELIGION: "Target has the same race"
  AGGRESSIVE_EXPANSION_PENALTY_INFIDEL: "Target has a different race group than conqueror"
@@ -884,23 +884,23 @@
  GAIN_PIETY: "Move $VALUE|Y$ towards Firstborn Pride"
  LOSE_PIETY: "Move $VALUE|Y$ towards Valinor's Call"
  
- PIETY_BAD_WAR_EFF:2 "Declaring war on a fellow $REL$ will move us away from Order by §Y$VAL$§!."
- PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Order by §Y$VAL$§!."
+ PIETY_BAD_WAR_EFF:2 "Declaring war on a fellow $REL$ will move us away from Firstborn Pride by §Y$VAL$§!."
+ PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Firstborn Pride by §Y$VAL$§!."
  
  converted_to_islam: "Embraced Elven Legacy"
  
- PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YChaos§!) and 100 (§YOrder§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other races\n- Purifying provinces"
+ PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YValinor's Call§!) and 100 (§YFirstborn Pride§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other races\n- Purifying provinces"
  PIETY_DESCRIPTION_ESTATES:1 "\n"
  
- PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Corruption§!' we need to be at least $NEED|Y$ towards Order. This would impact corruption by $CORRUPTION$."
- PIETY_LEGALISM_BONUS:1 "Our tradition of Order is a great advantage. §YReduce Coruption§! will move us by $COST|Y$ towards Chaos but impact corruption by $CORRUPTION$."
- PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YMuster Warriors§!' we need to be at least $NEED|Y$ towards Chaos. This would gives us the following impact:\n$GAIN$"
- PIETY_MYSTICISM_BONUS:1 "Our tradition of Chaos is a great advantage. §YMuster Warriors§! will move us by $COST|Y$ towards Order but offer us $GAIN$"
+ PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Corruption§!' we need to be at least $NEED|Y$ towards Firstborn Pride. This would impact corruption by $CORRUPTION$."
+ PIETY_LEGALISM_BONUS:1 "Our tradition of Firstborn Pride is a great advantage. §YReduce Coruption§! will move us by $COST|Y$ towards Valinor's Call but impact corruption by $CORRUPTION$."
+ PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YMuster Warriors§!' we need to be at least $NEED|Y$ towards Valinor's Call. This would gives us the following impact:\n$GAIN$"
+ PIETY_MYSTICISM_BONUS:1 "Our tradition of Valinor's Call is a great advantage. §YMuster Warriors§! will move us by $COST|Y$ towards Firstborn Pride but offer us $GAIN$"
  PIETY_MYSTICISM_COOLDOWN: "You can only '§YMuster Warriors§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
  PIETY_LEGALISM_COOLDOWN: "You can only '§YReduce Corruption§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
  
  LEGALISM_TITLE: "Reduce Corruption!"
- LEGALISM_SETUP: "When we have used our strong order to remove corruption within our ranks."
+ LEGALISM_SETUP: "When we have used our strong Firstborn Pride to remove corruption within our ranks."
  LEGALISM_HEADER: "$MESSENGER$"
  LEGALISM_1: "Corruption Reduced!"
  LEGALISM_2: ""
@@ -914,7 +914,7 @@
  LEGALISM_BTN3: "Go to"
  LEGALISM_MAP: ""
  MYSTICISM_TITLE: "Muster Warriors!"
- MYSTICISM_SETUP: "When we have used the chaos within our borders to call upon more warriors."
+ MYSTICISM_SETUP: "When we have used the Valinor's Call within our borders to call upon more warriors."
  MYSTICISM_HEADER: "$MESSENGER$"
  MYSTICISM_1: "Muster Warriors!"
  MYSTICISM_2: ""
@@ -1494,5 +1494,63 @@
  plunder: "Plunder"
  plunderDESC: "The locals here do not produce many goods, but instead launch organized raids on their neighbors to procure all kinds of valuables that can be traded and sold. Caches of plunder are typically full of random weapons, mismatched pieces of armor, silverware, fine linens and clothing, all manner of jewelry, prized gems, family heirlooms and the occasional mysterious foreign trinket. Goblins are the most notorious pillagers in Middle-Earth, though all orc types and trolls are known for building up piles of plunder. Angmarrim, Rhudaurian, Dunlander, Southron, Easterling and Black Numenorean peoples are all raiders by tradition as well. On the rare occasion a dragon may go sit on someone else's stockpiled wealth and declare it their own plunder. It is also rumored that untouched Numenorean tombs may be full of various treasures that could also be plundered, though other surprises may await those who go seeking them. *Plunder operates the same as gold but is half as productive.*"
 
+ #-------------------------------------
+ # Idea Groups
+ #-------------------------------------
+ KARMA_FOR_CTA:0 "We would gain $KARMA$ karma, since this is the right thing to do."
+
+ karma_just_right:0 "Neutral Karma"
+ karma_too_high:0 "High Karma"
+ karma_too_low:0 "Low Karma"
+
+ KARMA_JUST_RIGHT_DESC:0 "Karma between $LOW$ and $HIGH$"
+ KARMA_TOO_HIGH_DESC:0 "Karma $HIGH$ or higher"
+ KARMA_TOO_LOW_DESC:0 "Karma $LOW$ or lower"
+
+ KARMA_DESC2:0 "Karma represents the divinity of your past actions in the eyes of the Buddhist faith and will rise or fall depending on the morality of actions you take. A ruler with too extreme Karma will become detached from the world. Too high Karma means losing the trust of the common soldier while too low Karma will make you ineffective on the diplomatic arena. Countries with Karma do not pay any diplomatic power cost for returning cores and releasing countries and vassals in peace deals."
+ KARMA_DESC:0 "Karma increases from:\n- §YHonoring alliances§!\n- §YReleasing vassals§!\n- §YReleasing nations in peace deals§!\n- §YReturning cores§!\n- §YConverting Provinces§!\n\nKarma decreases from:\n- §YStarting wars§!\n- §YTaking provinces in peace deals§!"
  
-  
+ MODIFIER_YEARLY_KARMA_DECAY:0 "Yearly Karma Decay"
+
+ MODIFIER_MONTHLY_KARMA:0 "Monthly Karma"
+ KARMA_FROM_CONV:1 "This increases our Karma by §G+$VAL$§!."
+ KARMA_FROM_CONV_CONFIRM:0 "Converting this province will increase our Karma by §G+$VAL$§!."
+
+ KARMA_OFFENSIVE_WAR_EFF:0 "Declaring war is an inherently immoral action, and it will decrease our karma by §Y$VAL$§!. "
+ KARMA_INCREASE:0 "This will give us §Y$VAL$§! karma."
+ KARMA_DECREASE:0 "This will cost us §Y$VAL$§! karma."
+ KARMA_INCREASE_FOR_COUNTRY:0 "This will give $COUNTRY$ §Y$VAL$§! karma."
+ KARMA_DECREASE_FOR_COUNTRY:0 "This will cost $COUNTRY$ §Y$VAL$§! karma."
+
+ USES_KARMA:0 "$COUNTRY|Y$ uses Karma."
+ USES_NOT_KARMA:0 "$COUNTRY|Y$ does NOT use Karma."
+ 
+ CURRENT_KARMA:0 "Current Karma"
+
+ KARMA_EFFECT:0 "§YEffects from Karma:§W"
+ NEGATIVE_KARMA_EFFECT:0 "§YEffects from negative Karma:§W"
+ POSITIVE_KARMA_EFFECT:0 "§YEffects from positive Karma:§W"
+
+ karma:0 "Karma"
+ positive_karma:0 "Positive Karma"
+ negative_karma:0 "Negative Karma"
+
+ mechanic_clergy_estate_agendas_gives_karma_yes:1 "Completed Agendas of the §YClergy§! grants §Y+10§! Karma"
+ mechanic_seizing_land_takes_karma_yes:2 "Seizing Land adds §Y-10§! Karma"
+ mechanic_buffed_monastic_temples_yes:0 "The Estate Privilege '§YMonastic Temples§!' now grants or removes §Y5 Karma§! instead of 3\nAdditionally, it now also gives §G+0.03§! Yearly Karma Decay no longer increases influence and no longer decreases Max Absolutism"
+ mechanic_enable_karma_decision_yes:1 "Enable a decision which allows to adjust Karma every §Y20§! years"
+
+ string_karma_info:1 "\n\n£DLC_cs §YBuddhist§! countries have a §YKarma§! value, that will confer different bonuses when it is high, low, or balanced. Karma can be increased by event choices, honoring military alliances, returning cores, converting provinces, being declared war upon, or releasing nations. Karma can be decreased through event choices, declaring wars, and conquering land.\n"
+ string_karma_info_no:0 "\n"
+ string_start_religion_buddhist_theravada:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nTheravada is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YMahayana§! and §YVajrayana§!, as well as §YConfucianism§! and §YShinto§!."
+ string_start_religion_buddhist_mahayana:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nMahayana is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YTheravada§! and §YVajrayana§!, as well as §YConfucianism§! and §YShinto§!."
+ string_start_religion_buddhist_vajrayana:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nVajrayana is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YTheravada§! and §YMahayana§!, as well as §YConfucianism§! and §YShinto§!."
+
+ ADD_KARMA_EFFECT:0 "$DIRECTION$ $VALUE$ Karma.\n"
+ SET_KARMA_EFFECT:0 "Karma set to $VALUE$.\n"
+
+ MODIFIER_MONTHLY_KARMA_ACCELERATOR:0 "Monthly Karma Accelerator"
+ KARMA_ACCELERATOR_DESC:0 "Karma accelerator effects - move Karma away from zero by $VAL|Y$ per month due to:"
+
+ KARMA_LESS_THAN:0 "Karma is less than §Y$VAL$§!.\n"
+ KARMA_AT_LEAST:0 "Karma is at least §Y$VAL$§!.\n"
