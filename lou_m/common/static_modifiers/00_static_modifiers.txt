@@ -1537,8 +1537,7 @@ divert_trade = {
 #Restless Flames
 karma_just_right =
 {
-	global_supply_limit_modifier = 0.1
-	production_efficiency = 0.1
+	advisor_cost = 0.25
 	global_unrest = 2
 }
 
@@ -1546,7 +1545,6 @@ karma_just_right =
 karma_too_high =
 {
 	production_efficiency = 0.2
-	global_own_trade_power = 0.1
 	global_manpower_modifier = -0.1
 }
 
@@ -1554,7 +1552,6 @@ karma_too_high =
 karma_too_low =
 {
 	global_supply_limit_modifier = 0.2
-	reinforce_speed = 0.10
 	caravan_power = -0.1
 }
 

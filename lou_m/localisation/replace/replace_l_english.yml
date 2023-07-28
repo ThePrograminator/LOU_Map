@@ -892,6 +892,7 @@
  PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YValinor's Call§!) and 100 (§YFirstborn Pride§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other races\n- Purifying provinces"
  PIETY_DESCRIPTION_ESTATES:1 "\n"
  
+<<<<<<< Updated upstream
  PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Corruption§!' we need to be at least $NEED|Y$ towards Firstborn Pride. This would impact corruption by $CORRUPTION$."
  PIETY_LEGALISM_BONUS:1 "Our tradition of Firstborn Pride is a great advantage. §YReduce Coruption§! will move us by $COST|Y$ towards Valinor's Call but impact corruption by $CORRUPTION$."
  PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YMuster Warriors§!' we need to be at least $NEED|Y$ towards Valinor's Call. This would gives us the following impact:\n$GAIN$"
@@ -901,6 +902,17 @@
  
  LEGALISM_TITLE: "Reduce Corruption!"
  LEGALISM_SETUP: "When we have used our strong Firstborn Pride to remove corruption within our ranks."
+=======
+ PIETY_TOO_LOW_FOR_LEGALISM:1 "If we were to become too pride full we could stop this by '§YReducing Pride§!' we need to be at least $NEED|Y$ towards Firstborn Pride before we should consider this. This would impact our nation by $CORRUPTION$."
+ PIETY_LEGALISM_BONUS:1 "Our people have become too pridefull, should this continue we might suffer permanent penalties. §YReducing Pride§! will weaken our Pride by $COST|Y$ but impact corruption by $CORRUPTION$."
+ PIETY_TOO_HI_FOR_MYSTICISM:1 "Should the Call of Valinor be too strong for our people we could send a '§YConvoy to Valinor§!' in order to avoid permenant penalties. we need to be at least $NEED|Y$ towards Call Of Valinor. This would gives us the following impact:\n$GAIN$"
+ PIETY_MYSTICISM_BONUS:1 "The call of Valinor is becoming strong amoungst our people, we should send §YConvoy to Valinor§! too avoid permenant penalties. this will move us by $COST|Y$ towards Pride of the firstborn and cost us $GAIN$"
+ PIETY_MYSTICISM_COOLDOWN: "You can only '§YConvoy to valinor§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_LEGALISM_COOLDOWN: "You can only '§YReduce Corruption§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ 
+ LEGALISM_TITLE: "Bring Down The Prideful!"
+ LEGALISM_SETUP: "We have removed those most prideful from our administration, however our administration will suffer for a while due to this."
+>>>>>>> Stashed changes
  LEGALISM_HEADER: "$MESSENGER$"
  LEGALISM_1: "Corruption Reduced!"
  LEGALISM_2: ""
@@ -913,8 +925,13 @@
  LEGALISM_BTN2: "OK"
  LEGALISM_BTN3: "Go to"
  LEGALISM_MAP: ""
+<<<<<<< Updated upstream
  MYSTICISM_TITLE: "Muster Warriors!"
  MYSTICISM_SETUP: "When we have used the Valinor's Call within our borders to call upon more warriors."
+=======
+ MYSTICISM_TITLE: "a Convoy to Valinor"
+ MYSTICISM_SETUP: "We have send a convoy to Valinor, although we will feel the loss of manpower this is a better alternative then a mass exodus."
+>>>>>>> Stashed changes
  MYSTICISM_HEADER: "$MESSENGER$"
  MYSTICISM_1: "Muster Warriors!"
  MYSTICISM_2: ""
