@@ -1497,60 +1497,60 @@
  #-------------------------------------
  # Idea Groups
  #-------------------------------------
- KARMA_FOR_CTA:0 "We would gain $KARMA$ karma, since this is the right thing to do."
+ KARMA_FOR_CTA:0 "We would gain $KARMA$ Servant Flame, since this is the right thing to do."
 
- karma_just_right:0 "Neutral Karma"
- karma_too_high:0 "High Karma"
- karma_too_low:0 "Low Karma"
+ karma_just_right:0 "Neutral Servant Flame"
+ karma_too_high:0 "High Servant Flame"
+ karma_too_low:0 "Low Servant Flame"
 
- KARMA_JUST_RIGHT_DESC:0 "Karma between $LOW$ and $HIGH$"
- KARMA_TOO_HIGH_DESC:0 "Karma $HIGH$ or higher"
- KARMA_TOO_LOW_DESC:0 "Karma $LOW$ or lower"
+ KARMA_JUST_RIGHT_DESC:0 "Servant Flame between $LOW$ and $HIGH$"
+ KARMA_TOO_HIGH_DESC:0 "Servant Flame $HIGH$ or higher"
+ KARMA_TOO_LOW_DESC:0 "Servant Flame $LOW$ or lower"
 
- KARMA_DESC2:0 "Karma represents the divinity of your past actions in the eyes of the Buddhist faith and will rise or fall depending on the morality of actions you take. A ruler with too extreme Karma will become detached from the world. Too high Karma means losing the trust of the common soldier while too low Karma will make you ineffective on the diplomatic arena. Countries with Karma do not pay any diplomatic power cost for returning cores and releasing countries and vassals in peace deals."
- KARMA_DESC:0 "Karma increases from:\n- §YHonoring alliances§!\n- §YReleasing vassals§!\n- §YReleasing nations in peace deals§!\n- §YReturning cores§!\n- §YConverting Provinces§!\n\nKarma decreases from:\n- §YStarting wars§!\n- §YTaking provinces in peace deals§!"
+ KARMA_DESC2:0 "Servant Flame represents the focus of your nation in terms of aiding the evil of either Melkor or Sauron and will rise or fall depending on the actions you take. Too high Servant Flame means losing the trust of the common soldier while too low Servant Flame will make you ineffective with industry. Countries with Servant Flame do not pay any diplomatic power cost for returning cores and releasing countries and vassals in peace deals."
+ KARMA_DESC:0 "Servant Flame increases from:\n- §YHonoring alliances§!\n- §YReleasing vassals§!\n- §YReleasing nations in peace deals§!\n- §YReturning cores§!\n- §YConverting Provinces§!\n\nServant Flame decreases from:\n- §YStarting wars§!\n- §YTaking provinces in peace deals§!"
  
- MODIFIER_YEARLY_KARMA_DECAY:0 "Yearly Karma Decay"
+ MODIFIER_YEARLY_KARMA_DECAY:0 "Yearly Servant Flame Decay"
 
- MODIFIER_MONTHLY_KARMA:0 "Monthly Karma"
- KARMA_FROM_CONV:1 "This increases our Karma by §G+$VAL$§!."
- KARMA_FROM_CONV_CONFIRM:0 "Converting this province will increase our Karma by §G+$VAL$§!."
+ MODIFIER_MONTHLY_KARMA:0 "Monthly Servant Flame"
+ KARMA_FROM_CONV:1 "This increases our Servant Flame by §G+$VAL$§!."
+ KARMA_FROM_CONV_CONFIRM:0 "Converting this province will increase our Servant Flame by §G+$VAL$§!."
 
- KARMA_OFFENSIVE_WAR_EFF:0 "Declaring war is an inherently immoral action, and it will decrease our karma by §Y$VAL$§!. "
- KARMA_INCREASE:0 "This will give us §Y$VAL$§! karma."
- KARMA_DECREASE:0 "This will cost us §Y$VAL$§! karma."
- KARMA_INCREASE_FOR_COUNTRY:0 "This will give $COUNTRY$ §Y$VAL$§! karma."
- KARMA_DECREASE_FOR_COUNTRY:0 "This will cost $COUNTRY$ §Y$VAL$§! karma."
+ KARMA_OFFENSIVE_WAR_EFF:0 "Declaring war is an inherently immoral action, and it will decrease our Servant Flame by §Y$VAL$§!. "
+ KARMA_INCREASE:0 "This will give us §Y$VAL$§! Servant Flame."
+ KARMA_DECREASE:0 "This will cost us §Y$VAL$§! Servant Flame."
+ KARMA_INCREASE_FOR_COUNTRY:0 "This will give $COUNTRY$ §Y$VAL$§! Servant Flame."
+ KARMA_DECREASE_FOR_COUNTRY:0 "This will cost $COUNTRY$ §Y$VAL$§! Servant Flame."
 
- USES_KARMA:0 "$COUNTRY|Y$ uses Karma."
- USES_NOT_KARMA:0 "$COUNTRY|Y$ does NOT use Karma."
+ USES_KARMA:0 "$COUNTRY|Y$ uses Servant Flame."
+ USES_NOT_KARMA:0 "$COUNTRY|Y$ does NOT use Servant Flame."
  
- CURRENT_KARMA:0 "Current Karma"
+ CURRENT_KARMA:0 "Current Servant Flame"
 
- KARMA_EFFECT:0 "§YEffects from Karma:§W"
- NEGATIVE_KARMA_EFFECT:0 "§YEffects from negative Karma:§W"
- POSITIVE_KARMA_EFFECT:0 "§YEffects from positive Karma:§W"
+ KARMA_EFFECT:0 "§YEffects from Servant Flame:§W"
+ NEGATIVE_KARMA_EFFECT:0 "§YEffects from negative Servant Flame:§W"
+ POSITIVE_KARMA_EFFECT:0 "§YEffects from positive Servant Flame:§W"
 
- karma:0 "Karma"
- positive_karma:0 "Positive Karma"
- negative_karma:0 "Negative Karma"
+ karma:0 "Servant Flame"
+ positive_karma:0 "Positive Servant Flame"
+ negative_karma:0 "Negative Servant Flame"
 
- mechanic_clergy_estate_agendas_gives_karma_yes:1 "Completed Agendas of the §YClergy§! grants §Y+10§! Karma"
- mechanic_seizing_land_takes_karma_yes:2 "Seizing Land adds §Y-10§! Karma"
- mechanic_buffed_monastic_temples_yes:0 "The Estate Privilege '§YMonastic Temples§!' now grants or removes §Y5 Karma§! instead of 3\nAdditionally, it now also gives §G+0.03§! Yearly Karma Decay no longer increases influence and no longer decreases Max Absolutism"
- mechanic_enable_karma_decision_yes:1 "Enable a decision which allows to adjust Karma every §Y20§! years"
+ mechanic_clergy_estate_agendas_gives_karma_yes:1 "Completed Agendas of the §YClergy§! grants §Y+10§! Servant Flame"
+ mechanic_seizing_land_takes_karma_yes:2 "Seizing Land adds §Y-10§! Servant Flame"
+ mechanic_buffed_monastic_temples_yes:0 "The Estate Privilege '§YMonastic Temples§!' now grants or removes §Y5 Servant Flame§! instead of 3\nAdditionally, it now also gives §G+0.03§! Yearly Servant Flame Decay no longer increases influence and no longer decreases Max Absolutism"
+ mechanic_enable_karma_decision_yes:1 "Enable a decision which allows to adjust Servant Flame every §Y20§! years"
 
- string_karma_info:1 "\n\n£DLC_cs §YBuddhist§! countries have a §YKarma§! value, that will confer different bonuses when it is high, low, or balanced. Karma can be increased by event choices, honoring military alliances, returning cores, converting provinces, being declared war upon, or releasing nations. Karma can be decreased through event choices, declaring wars, and conquering land.\n"
+ string_karma_info:1 "\n\n£DLC_cs §YBuddhist§! countries have a §YServant Flame§! value, that will confer different bonuses when it is high, low, or balanced. Servant Flame can be increased by event choices, honoring military alliances, returning cores, converting provinces, being declared war upon, or releasing nations. Servant Flame can be decreased through event choices, declaring wars, and conquering land.\n"
  string_karma_info_no:0 "\n"
  string_start_religion_buddhist_theravada:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nTheravada is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YMahayana§! and §YVajrayana§!, as well as §YConfucianism§! and §YShinto§!."
  string_start_religion_buddhist_mahayana:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nMahayana is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YTheravada§! and §YVajrayana§!, as well as §YConfucianism§! and §YShinto§!."
  string_start_religion_buddhist_vajrayana:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nVajrayana is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YTheravada§! and §YMahayana§!, as well as §YConfucianism§! and §YShinto§!."
 
- ADD_KARMA_EFFECT:0 "$DIRECTION$ $VALUE$ Karma.\n"
- SET_KARMA_EFFECT:0 "Karma set to $VALUE$.\n"
+ ADD_KARMA_EFFECT:0 "$DIRECTION$ $VALUE$ Servant Flame.\n"
+ SET_KARMA_EFFECT:0 "Servant Flame set to $VALUE$.\n"
 
- MODIFIER_MONTHLY_KARMA_ACCELERATOR:0 "Monthly Karma Accelerator"
- KARMA_ACCELERATOR_DESC:0 "Karma accelerator effects - move Karma away from zero by $VAL|Y$ per month due to:"
+ MODIFIER_MONTHLY_KARMA_ACCELERATOR:0 "Monthly Servant Flame Accelerator"
+ KARMA_ACCELERATOR_DESC:0 "Servant Flame accelerator effects - move Servant Flame away from zero by $VAL|Y$ per month due to:"
 
- KARMA_LESS_THAN:0 "Karma is less than §Y$VAL$§!.\n"
- KARMA_AT_LEAST:0 "Karma is at least §Y$VAL$§!.\n"
+ KARMA_LESS_THAN:0 "Servant Flame is less than §Y$VAL$§!.\n"
+ KARMA_AT_LEAST:0 "Servant Flame is at least §Y$VAL$§!.\n"
