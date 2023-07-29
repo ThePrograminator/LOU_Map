@@ -447,7 +447,18 @@ angmar_slot_2 = {
 			}
 		}
 		effect = { 
-			
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					has_terrain = unique_dunedain_ruin
+				}
+				custom_tooltip = MONOPOLY_INCOME_CLOTH_DESC
+			}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
 		}
 	}
 
@@ -484,7 +495,24 @@ angmar_slot_2 = {
 			}
 		}
 		effect = { 
-			
+			tooltip = {
+				custom_tooltip = angmar_defeat_the_shire_tt
+				add_province_modifier = {
+					name = angmar_defeat_the_shire_province_modifier
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = culture_group_hobbits
+					}
+					add_province_modifier = {
+						name = angmar_defeat_the_shire_province_modifier
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 }
@@ -971,7 +999,9 @@ angmar_slot_3 = {
 			}
 		}
 		effect = { 
-			
+			add_prestige = 25
+			add_legitimacy = 25
+			add_mil_power = 100
 		}
 	}
 }
@@ -1175,7 +1205,37 @@ angmar_slot_4 = {
 			}
 		}
 		effect = { 
-			
+			add_army_tradition = 10
+			add_mil_power = 100
+
+			642 = {
+				add_province_modifier = {
+					name = ruins_debuff
+					duration = -1
+				}
+			}
+
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+
+			custom_tooltip = angmar_removing_the_elves_escape_tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						capital_scope = {
+							continent = middle_earth
+						}
+						is_elf = yes
+					}
+					add_country_modifier = {
+						name = angmar_elves_dispair
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 }
@@ -1440,9 +1500,9 @@ angmar_slot_5 = {
 				}
 			}
 			610 = {
-				add_base_tax = 4
-				add_base_production = 4
-				add_base_manpower = 4
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 			}
 			687 = {
 				add_base_tax = 2

@@ -25,6 +25,10 @@ country_event = {
 			Karma = -33
 			NOT = {Karma = 33}
 		}
+		NOT = {
+			has_country_modifier = orc_religion_fuel_of_industry
+			has_country_modifier = orc_religion_reward_victors
+		}
 	}
 	
 	#Punish The Survivers
@@ -198,7 +202,7 @@ country_event = {
 			NOT = {
 				had_recent_war = 5
 				has_country_modifier = orc_religion_purpose_of_war
-				has_country_modifier = orc_religion_unguide_flames
+				has_country_modifier = orc_religion_unguided_flames
 			}
 		}
 	}
@@ -246,7 +250,7 @@ country_event = {
 			is_at_war = no
 		}
 		NOT = {
-			has_country_modifier = orc_religion_unguide_flames
+			has_country_modifier = orc_religion_unguided_flames
 		}
 	}
 	
@@ -261,7 +265,7 @@ country_event = {
 		add_stability = -1
 
 		add_country_modifier = {
-			name = orc_religion_unguide_flames
+			name = orc_religion_unguided_flames
 			duration = 3650
 		}
 	}
@@ -295,7 +299,7 @@ country_event = {
 			}
 			
 			NOT = {
-				has_country_modifier = orc_religion_unguide_flames
+				has_country_modifier = orc_religion_unguided_flames
 			}
 		}
 	
@@ -441,7 +445,7 @@ country_event = {
 		add_manpower = -2
 		
 		add_country_modifier = {
-			name = orc_religion_unguide_flames
+			name = orc_religion_unguided_flames
 			duration = 3650
 		}
 	}
@@ -795,7 +799,7 @@ country_event = {
 		}
 		NOT = {
 			has_country_modifier = orc_religion_goal_of_industry
-			has_country_modifier = orc_religion_unguide_flames
+			has_country_modifier = orc_religion_unguided_flames
 		}
 	}
 	
@@ -824,7 +828,7 @@ country_event = {
 		add_stability = 1
 		
 		add_country_modifier = {
-			name = orc_religion_unguide_flames
+			name = orc_religion_unguided_flames
 			duration = 3650
 		}
 	}
@@ -902,7 +906,7 @@ country_event = {
 				controlled_by = ROOT
 				trade_goods = fur
 			}
-			custom_tooltip = MONOPOLY_INCOME_CLOTH_DESC
+			custom_tooltip = LOU_orc_race.14.tt
 		}
 		
 		add_country_modifier = {

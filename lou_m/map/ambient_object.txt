@@ -292,11 +292,10 @@ type={
 	use_animation=no
 	scale=0.900000
 	time_duration=300.000000
-	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
 		name="barad_dur_monument"
-		hidden_on_start=no
+		hidden_on_start= yes
 		position={
 			2010.000 3.000 1188.000 
 		}

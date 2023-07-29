@@ -25,7 +25,7 @@
  west_to_forochel_desc: "Forochel was never conquered by Angmar of old, which left Carn Dûm free to be marched upon from its westward front. We will rectify this vulnerability and begin securing territory in this region. It would be wise to first capture and coerce some local Lossoth into our service. As they scout the region, we can begin begin moving Angmarim into the territory and setting up a proper warcamp for further expansion."
  ice_floes_of_forochel_title: "Ice Floes of Forochel"
  ice_floes_of_forochel_desc: "The Ice Bay is named for its neverending ice floes that come off the glaciers of the Northern Wastes. They are notoriously difficult to navigate and require adept seafaring scouts to determine sailing routes. \n\nWith the return of the Witch-King the winters here have become increasingly harsh and are lasting longer too. It is clear that the power of His morgul-sorcery is beginning to affect the environment permanently. The ice floes are the heaviest they've ever been and the shorelines are now protected by sharp, floating shards year-round. The ever-changing nature of the floes will take a hard toll on foreign fleets who do dare travel through the area, making naval invasions an absolute nightmare. Only the seasoned sailors who grew up in the region will know how to safely navigate these coasts. We dare Círdan and his elf-fleet to attempt a landing this far north again..."
- scorch_dunedain_cities_title: "Scorch Remnants of Arnor"
+ scorch_dunedain_cities_title: "Scorch Arnor's Past"
  scorch_dunedain_cities_desc: ""
  angmar_defeat_the_shire_title: "Destroy The Halflings"
  angmar_defeat_the_shire_desc: ""
@@ -103,6 +103,10 @@
  angmar_ice_floes_of_forochel_tt: "Every Coastal Province of the §YForodwaith§! subcontinent gets modifier: "
  angmar_ice_bay_thralls_tt: "Every owned §YSnowmen Town§! Province in §YForochel§! gets the following effects: "
  angmar_angmarim_servitude_tt: "Every owned §YAngmar Town§! Province gets the following effects: "
+ angmar_defeat_the_shire_tt: "Every owned §YHobbit§! Province gets the following effects: "
+ angmar_scorch_dunedain_cities_tt: "Production from §YDúnedain Ruins§!"
+ angmar_removing_the_elves_escape_tt: "Every §YElven§! country in §YMiddle Earth§! gets the following effects:\nMorale of Armies: §R-10.0%§!\nDiscipline: §R-10.0%§!""
+
 
  #---------------------------------------------------------
  # Modifiers
@@ -124,6 +128,9 @@
 
  ruined_imladris: "Rivendell Destroyed"
  desc_ruined_imladris: ""
+
+ angmar_defeat_the_shire_province_modifier: "Enslaved Halflings"
+ desc_angmar_defeat_the_shire_province_modifier: ""
 
  #
 
@@ -159,6 +166,9 @@
 
  looming_destruction: "Looming Destruction"
  desc_looming_destruction: ""
+
+ angmar_elves_dispair: "Escape To Valinor Destroyed"
+ desc_angmar_elves_dispair: ""
 
  #---------------------------------------------------------
  # Opinion Modifiers
