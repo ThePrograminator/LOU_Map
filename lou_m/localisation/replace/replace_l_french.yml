@@ -11,13 +11,13 @@
  # Missionary Stuff
  #-------------------------------------
  EXPENSEMIS: "Purification Regiments"
- PATRIARCH_DESCRIPTION: "Devotion represents the level devotion the inhabitants of your realm exercise. In provinces matching your realm devotion, high devotion will decrease revolt risk and increase the number of willing soldiers."
+ PATRIARCH_DESCRIPTION: "Hope represents the level hope the inhabitants of your realm exercise. In provinces matching your realm hope, high hope will decrease revolt risk and increase the number of willing soldiers."
  CONFIRMDOF: "Claim the title Racial Leader!"
  CONFIRMDOFDESC: "Are you sure you want to claim the title Racial Leader?"
  MAPMODE_RELIGION_DESC: "Displays the race groups on the map. Stripes indicate provinces with a different race than their realm's race."
  MAPMODE_MISSIONARY_DESC: "Colors the provinces according to whether they can be converted into the realm's race."
  CANCEL_MISSIONARY: "Cancel Purification Regiment."
- CURRENT_PATRIARCH_AUTHORITY: "Current Devotion"
+ CURRENT_PATRIARCH_AUTHORITY: "Current Hope"
  alert_can_convert_province_instant: "§YYou can convert provinces to your race!§W"
  alert_can_convert_province_delayed: "There are provinces in your country that can be converted to your realm's race by sending one of your enforcers."
  IS_NOT_IN_RELIGION_GROUP: "Is NOT in $RELIGION_GROUP$ race group"
@@ -46,7 +46,7 @@
  HAVE_MISSIONARY_IN_LOCATION: "§Y$NATION$§! have a Purification Regiment in this location."
  HERETIC_RELIGION_NOT_AVAILABLE: "No other race available."
  HERETIC_RELIGION_AVAILABLE: "Another race is available."
- MISSIONARIESMAINTENANCE: "Purification Regiment Maintenance"
+ MISSIONARIESMAINTENANCE: "Purifier Maintenance"
  YEARLY_MISSIONARIES: "Purification Regiments"
  AGGRESSIVE_EXPANSION_PENALTY_SAMERELIGION: "Target has the same race"
  AGGRESSIVE_EXPANSION_PENALTY_INFIDEL: "Target has a different race group than conqueror"
@@ -867,40 +867,40 @@
  #desc_icon_climacus:1 "The Author of 'The Ladder of Divine Ascent', St. John Climacus has inspired generations of Orthodox Christians by describing how to strive towards the divine through asceticism and a pious life."
  
  #--------------------------------------------------
- # Piety (Control)
+ # Piety (Elven Legacy)
  #--------------------------------------------------
- positive_piety:1 "Order"
- negative_piety:1 "Chaos"
+ positive_piety:1 "Firstborn Pride"
+ negative_piety:1 "Valinor's Call"
  
- MODIFIER_MONTHLY_PIETY: "Monthly Control"
- ADD_PIETY: "$DIRECTION$ $VALUE$ Control"
+ MODIFIER_MONTHLY_PIETY: "Monthly Legacy"
+ ADD_PIETY: "$DIRECTION$ $VALUE$ Legacy"
  
- CURRENT_PIETY: "Current Control"
- CURRENT_PIETY_IS: "Our current Control is $VALUE$"
+ CURRENT_PIETY: "Current Legacy"
+ CURRENT_PIETY_IS: "Our current Legacy is $VALUE$"
  
- USES_PIETY: "$COUNTRY|Y$ uses Control."
- USES_NOT_PIETY: "$COUNTRY|Y$ does NOT use Control."
+ USES_PIETY: "$COUNTRY|Y$ uses Legacy."
+ USES_NOT_PIETY: "$COUNTRY|Y$ does NOT use Legacy."
  
- GAIN_PIETY: "Move $VALUE|Y$ towards Order"
- LOSE_PIETY: "Move $VALUE|Y$ towards Chaos"
+ GAIN_PIETY: "Move $VALUE|Y$ towards Firstborn Pride"
+ LOSE_PIETY: "Move $VALUE|Y$ towards Valinor's Call"
  
- PIETY_BAD_WAR_EFF:2 "Declaring war on a fellow $REL$ will move us away from Order by §Y$VAL$§!."
- PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Order by §Y$VAL$§!."
+ PIETY_BAD_WAR_EFF:2 "Declaring war on a fellow $REL$ will move us away from Firstborn Pride by §Y$VAL$§!."
+ PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Firstborn Pride by §Y$VAL$§!."
  
- converted_to_islam: "Joined the Orcs"
+ converted_to_islam: "Embraced Elven Legacy"
  
- PIETY_DESCRIPTION:1 "Control represents the control a ruler has over the masses of Orcs within our borders. \n\nIt is measured on a scale between -100 (§YChaos§!) and 100 (§YOrder§!).\n\nChaos is gained via:\n- Declaring war against other Orcs\n\nOrder is gained via:\n- Declaring war against other races\n- Purifying provinces"
+ PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YValinor's Call§!) and 100 (§YFirstborn Pride§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other races\n- Purifying provinces"
  PIETY_DESCRIPTION_ESTATES:1 "\n"
  
- PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YReduce Corruption§!' we need to be at least $NEED|Y$ towards Order. This would impact corruption by $CORRUPTION$."
- PIETY_LEGALISM_BONUS:1 "Our tradition of Order is a great advantage. §YReduce Coruption§! will move us by $COST|Y$ towards Chaos but impact corruption by $CORRUPTION$."
- PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YMuster Warriors§!' we need to be at least $NEED|Y$ towards Chaos. This would gives us the following impact:\n$GAIN$"
- PIETY_MYSTICISM_BONUS:1 "Our tradition of Chaos is a great advantage. §YMuster Warriors§! will move us by $COST|Y$ towards Order but offer us $GAIN$"
- PIETY_MYSTICISM_COOLDOWN: "You can only '§YMuster Warriors§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_TOO_LOW_FOR_LEGALISM:1 "If we were to become too pride full we could stop this by '§YReducing Pride§!' we need to be at least $NEED|Y$ towards Firstborn Pride before we should consider this. This would impact our nation by $CORRUPTION$."
+ PIETY_LEGALISM_BONUS:1 "Our people have become too pridefull, should this continue we might suffer permanent penalties. §YReducing Pride§! will weaken our Pride by $COST|Y$ but impact corruption by $CORRUPTION$."
+ PIETY_TOO_HI_FOR_MYSTICISM:1 "Should the Call of Valinor be too strong for our people we could send a '§YConvoy to Valinor§!' in order to avoid permenant penalties. we need to be at least $NEED|Y$ towards Call Of Valinor. This would gives us the following impact:\n$GAIN$"
+ PIETY_MYSTICISM_BONUS:1 "The call of Valinor is becoming strong amoungst our people, we should send §YConvoy to Valinor§! too avoid permenant penalties. this will move us by $COST|Y$ towards Pride of the firstborn and cost us $GAIN$"
+ PIETY_MYSTICISM_COOLDOWN: "You can only '§YConvoy to valinor§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
  PIETY_LEGALISM_COOLDOWN: "You can only '§YReduce Corruption§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
  
- LEGALISM_TITLE: "Reduce Corruption!"
- LEGALISM_SETUP: "When we have used our strong order to remove corruption within our ranks."
+ LEGALISM_TITLE: "Bring Down The Prideful!"
+ LEGALISM_SETUP: "We have removed those most prideful from our administration, however our administration will suffer for a while due to this."
  LEGALISM_HEADER: "$MESSENGER$"
  LEGALISM_1: "Corruption Reduced!"
  LEGALISM_2: ""
@@ -913,8 +913,8 @@
  LEGALISM_BTN2: "OK"
  LEGALISM_BTN3: "Go to"
  LEGALISM_MAP: ""
- MYSTICISM_TITLE: "Muster Warriors!"
- MYSTICISM_SETUP: "When we have used the chaos within our borders to call upon more warriors."
+ MYSTICISM_TITLE: "a Convoy to Valinor"
+ MYSTICISM_SETUP: "We have send a convoy to Valinor, although we will feel the loss of manpower this is a better alternative then a mass exodus."
  MYSTICISM_HEADER: "$MESSENGER$"
  MYSTICISM_1: "Muster Warriors!"
  MYSTICISM_2: ""
@@ -1083,7 +1083,7 @@
  RV_PICK_CULT:0 "Select Teaching"
  CHANGE_CULT_EFFECT:0 "Change Teaching to $CULTNAME|Y$"
  UNLOCK_CULT_EFFECT:0 "Unlock Teaching $CULTNAME|Y$"
- CULT_HELP_DESC:0 "New Teachings can be gained by bordering other nations based on their race and culture."
+ CULT_HELP_DESC:0 "(Ioriags or Ulgath) - New Teachings can be gained by bordering other nations based on their race and culture.\n\n(Eriadorian) - New Teachings can be gained by accepting Eriadorian cultures."
 
  #------------------------------------------------------
  # Native Buildings
@@ -1296,3 +1296,261 @@
  federation_cohesion_maxed_out_instant:0 "§YWarpack Cohesion has reached maximum value.§!"
  federation_cohesion_maxed_out_delayed:0 "Click to view your Warpack and any possible advancements that can be made."
  sitting_in_my_friends_tribal_land_opinion:0 "Grazing in my Warpack Friend's Tribal Land"
+
+ #-------------------------------------
+ # Daimyo (Khaganates)
+ #-------------------------------------
+ daimyo_subject:0 "Khaganate Subject"
+ achievement_cherrypicking_tooltip:0 "Took a 3 star leader from a Khaganate Subject"
+ NO_WAR_ON_FOREIGN_STATES:0 "A Khaganate may only declare war on another Khaganate under the same liege, or upon his liege."
+ daimyo:0 "Khaganate"
+ daimyo_desc:0 "A powerful territorial vassal Khagan in Khand, ruling their hereditary lands under the Grand Khaganate.\n§MA country can take over the Khaganate, and become the overlord of all Khaganate Subjects, by taking the province of Sturlurtsa Khand.§!"
+ daimyo_legacy:0 "Khaganate"
+ daimyo_legacy_desc:0 "A powerful territorial vassal Khagan in Khand, ruling their hereditary lands under the Grand Khaganate.\n§MA country can take over the Khaganate, and become the overlord of all Khaganate Subjects, by taking the province of Sturlurtsa Khand.§!"
+ daimyo_ruler:0 "Khagan"
+ daimyo_ruler_female:0 "Khaganum"
+ shogunate_desc:0 "The Khaganate was a hereditary military dictatorship and the de facto ruler of Khand.\n§MA country can take over the Khaganate, and become the overlord of all Khaganate Subjects, by taking the province of Sturlurtsa Khand.§!"
+ shogunate_legacy_desc:0 "The Khaganate was a hereditary military dictatorship and the de facto ruler of Khand.\n§MA country can take over the Khaganate, and become the overlord of all Khaganate Subjects, by taking the province of Sturlurtsa Khand.§!"
+ indep_daimyo:0 "Independent Khaganate"
+ indep_daimyo_desc:0 "A powerful Khagan in Khand, ruling their hereditary lands without acknowledging any other Khaganate.\n§MA country can take over the Khaganate, and become the overlord of all Khaganate Subjects, by taking the province of Sturlurtsa Khand.§!"
+ indep_daimyo_legacy:0 "Independent Khagan"
+ indep_daimyo_legacy_desc:0 "A powerful Khagan in Khand, ruling their hereditary lands without acknowledging any other Khaganate.\n§MA country can take over the Khaganate, and become the overlord of all Khaganate Subjects, by taking the province of Sturlurtsa Khand.§!"
+ indep_daimyo_ruler:0 "Khagan"
+ indep_daimyo_ruler_female:0 "Khaganum"
+ cb_daimyo_annex:0 "War of the Khaganates"
+ cb_daimyo_annex_desc:1 "We should unite Khand under our banner! By conquering the capital of Sturlurtsa Khand we will take over the reins of the Khaganate."
+ cb_independent_daimyo_annex:0 "War for the Grand Khaganate"
+ cb_independent_daimyo_annex_desc:1 "We should unite Khand under our banner! By conquering the capital of Sturlurtsa Khand we will take over the reins of the Khaganate."
+ cb_shogun_annex:0 "Annex Khaganate"
+ claiming_the_shogunate_tooltip:0 "[new_shogunate.GetName] will be the leader of the new Khaganate.\nAll Khagan's loyal to the Khaganate will be transferred to [new_shogunate.GetName]."
+
+ daimyo_vassal_title:0 "Khaganate"
+ daimyo_vassal_title_plural:0 "Khaganates"
+ daimyo_vassal_long_desc:0 "A Khaganate subject cannot make certain diplomatic actions and will pay a fraction of his income to his overlord. Khaganate subjects can also fight each other."
+ daimyo_vassal_is_our:0 "$NAME|Y$ is our Khaganate Vassal."
+
+
+ #-------------------------------------
+ # Idea Groups
+ #-------------------------------------
+ 
+ aristocracy_ideas: "Aristocracy"
+ plutocracy_ideas: "Plutocracy"
+ innovativeness_ideas: "Innovation"
+ spy_ideas: "Espionage"
+ diplomatic_ideas: "Diplomacy"
+ offensive_ideas: "Offense"
+ defensive_ideas: "Defense"
+ economic_ideas: "Economy"
+ quality_ideas: "Quality"
+ quantity_ideas: "Quantity"
+ administrative_ideas: "Administration"
+ humanist_ideas: "Humanism"
+ influence_ideas: "Influence"
+ naval_ideas: "Navy"
+
+ trade_ideas: "Land Trade"
+ trade_ideas_desc: "EXCLUSIVE - Prevents Maritime Trade selection"
+
+ maritime_ideas: "Maritime Trade"
+ maritime_ideas_desc: "EXCLUSIVE - Prevents Land Trade selection"
+
+ #-------------------------------------
+ # Trade Goods                                            (IF LEFT IN ITS OWN FILE NOT ALL VANILLA GOODS WILL REPLACE TEXT, GOODS MUST BE IN REPLACE_L_ENGLISH.YML)
+ #-------------------------------------
+
+ chinaware:0 "Porcelain"
+ chinawareDESC:0 "Made from local clays and sands, porcelain in Middle-Earth is a a luxurious, refined good. It is typically produced by those with an inclination for high culture and artisinal dining. The type of porcelain produced varies based on the region of its origin. Household porcelain is common amongst upper classes and more particular folk like Hobbits and Elves. You will not find dwarves drinking out of porcelain, as it is wholly unsuited to the labor of being intoxicated."
+
+ cloth:0 "Cloth"
+ clothDESC:0 "Cloth represents the various fabrics and clothing made from flax linen, spun from flax yarn. It is produced mostly in the more populated northern regions of Middle-Earth where ground is more fertile, allowing for regular cultivation of the flax plant. "
+
+ coffee:0 "Coffee"
+ coffeeDESC:0 "Coffee grows in the temperate and tropical regions of Middle-Earth's southern Harad. It will only grow along the wet, green and fertile regions along the Haradric rivers or in the clustered jungles and oases of Far Harad."
+
+ copper:0 "Copper"
+ copperDESC:0 "Copper has a wide variety of uses in the Third Age. While Iron is responsible for most arms and armor production, copper and brass has taken the role of more utilitarian use. It is durable enough for making work tools like axes, adzes and chisels, and can be shaped small enough to make excellent surgical instruments like needles and tweezers. Its availability globally makes it a viable metal for currency between most cultures. Copperware like pots, pans and bowls are another popular product, as are are the reliable and malleable pipes used for irrigation and sewage in more civilized regions. Aristocrat and commoner alike can also be found wearing copper or brass jewelry."
+
+ cotton:0 "Cotton"
+ cottonDESC:0 "Cotton originated from Central Asia but was not widely used in Europe until it was introduced to the American colonies and used as a cheap but good complement or substitute for wool in the clothing industry of the late 18th century"
+
+ fish:0 "Fish"
+ fishDESC:0 "Fish are one of the most plentiful foods along the rivers and coasts of Middle-Earth. The fishermen who make the catch are also valuable additions to their community, as they also provide the basic recruiting pool of sailors for the merchant and military navies."
+
+ fur:0 "Fur"
+ furDESC:0 "Furs are a valuable means of keeping warm in the colder northern climates of Middle-Earth. It is only possible to trade them where there are large wild herds capable of replenishing their numbers between hunts. Furs make for excellent clothing, bedding and insulation. The further south one travels the more furs are reserved for the wealthy and elite classes, while wools and flax cloth "
+
+ gold:0 "Gold"
+ goldDESC:0 "Gold is a rare but very valuable resource in Middle-Earth; most reserves of it are found deep beneath large and ancient mountain ranges. The dwarves excel above all others at finding and tapping these veins, though all races are able to mine it. Its primary purpose is serving as high-value currency, but is also largely utilized as decoration and adornment in aristocratic courts, palaces and warcamps. It is not uncommon to see the warriors of Harad and their Oliphaunts adorned in pieces of gold jewelry. Dwarven halls, weapons and armors are commonly inlaid with gold. The warriors of Rhun often smelt a fine layer of gold leaf into their armors in imitation of gold-covered dragon scales."
+
+ grain:0 "Grain"
+ grainDESC:0 "Grain represents any type of cultivated grass that produces a variety of cereal crops. These often constitute the primary diet for most humans and animals that have access to them. The most commonly grown grains in Middle-Earth are wheat, barley, corn, oats, and rye."
+
+ iron:0 "Iron"
+ ironDESC:0 "Iron represents not just iron, but other ferrous metals and the production of alloys such as steel. Iron forms the cornerstone of the military metallurgical industry and is used extensively in the production of weapons and armors for all races. Iron horseshoes can be found on every horse in Middle-Earth, and iron tools can be found in nearly every town. Arguably every fortress gate in use is made of iron, including the massive Black Gate of Mordor."
+
+ ivory:0 "Ivory"
+ ivoryDESC:0 "Ivory can be found in two places in Middle-Earth - on Oliphaunts from Harad or Walruses from Forochel. It is considered a valuable good by locals and foreigners alike. It is most commonly used as a medium for exquisite carvings or painting, and is often crafted into exquisite ornamentation or personal jewelry. The ivory of the Oliphaunts are large enough to carve a lifesize human statue out of a single tusk; an expensive but impressive endeavor."
+
+ naval_supplies:0 "Naval Supplies"
+ naval_suppliesDESC:0 "Naval Supplies represent everything needed in ship construction, from basic wood to tar, ropes, linen, sails, and various other materials. Forests and coasts make for the best locations to produce these goods. No merchant or military naval force is fully prepared for the seas without the production or trade of these crucial items."
+
+ salt:0 "Salt"
+ saltDESC:0 "Salt is essential for all animals to survive in Arda. It is also extremely useful for preserving food for the long winter months, or for the upcoming war-march. Its mineral form is mined from most of the many mountain ranges across Middle-Earth, though it is a semi-rare resource compared to iron and copper. The natural form of salt occurs from salt marsh production via evaporation along sunny coastlines, making the coasts another reliable place for obtaining this crucial resource."
+
+ slaves:0 "Slaves"
+ slavesDESC:0 "Slavery was most commonly practiced in orc society and by those who closely followed the teachings of Melkor. Orcs would enslave anyone they conquered, including other orcs or goblins. The Black Númenóreans, the Haradrim, the Variags of Khand, and the Wainriders and Balchoth of Rhûn were all active practitioners of slavery. In Middle-Earth, once captured and sold into slavery it was very unlikely you would ever return to your faraway home lands or be freed. Many elves, dwarves and humans have died in the pits of Angband and Mordor while in metalled chains."
+
+ spices:0 "Spices"
+ spicesDESC:0 ""
+
+ sugar:0 "Sugarcane"
+ sugarDESC:0 "Sugarcane is a perennial grass grown mostly for its juice from which sugar is processed. The sugar product is often further manipulated to create molasses and rum. Sugarcane grows best in tropical and subtropical regions that have soils with a healthy mixture of sand, silt clay, and organic material. Most of the sugarcane is grown in the wet river zones of Sîrayn and Harshandatt."
+
+ tea:0 "Tea"
+ teaDESC:0 ""
+
+ tobacco:0 "Pipe-weed"
+ tobaccoDESC:0 "Pipe-weed is a variety of tobacco said to have come from Númenor, being brought to the main continent by the Númenóreans in the Second Age. It was not actively cultivated however, and grew as a wild weed throughout Gondor; known only for its fragrance. It was not until T.A. 2670 that a hobbit named Tobold Hornblower realized its potential for smoking and began planting it himself. The hobby of smoking this uniqiue leaf grew quickly and spread south from Bree to Gondor, where they also began cultivating it."
+
+ wine:0 "Wine"
+ wineDESC:0 ""
+
+ wool:0 "Wool"
+ woolDESC:0 ""
+
+ cocoa:0 "Cocoa"
+ cocoaDESC:0 ""
+
+ dyes:0 "Dyes"
+ dyesDESC:0 "There are many colors in Middle-Earth; it is likely the Firstborn of Eru were the first to figure out how to create dyes with which they could imbue their clothing and paints with color. Whether it be for war banners or festival attire, all races of Arda can put dyes to use."
+
+ silk:0 "Silk"
+ silkDESC:0 ""
+
+ incense:0 "Incense"
+ incenseDESC:0 "Frankincense, Myhrr, Bdellium, Agarwood and Sandalwood are the most common tree resins used in the making of incense and perfumes. These resins are harvested only in specific regions large enough to generate a demand for its usage, in locales capable of growing the unique woods that produce these resins. Incense makes for a unique commodity that many cultural and religious ceremonies call for across Middle-Earth, from elven processions to Haradric snake rituals."
+
+ livestock:0 "Livestock"
+ livestockDESC:0 "The domestication of animals is a pursuit that elves, humans, dwarves, hobbits, and even orcs have all tried and succeeded at. Cattle, pigs, sheep and chickens are the most common edible livestock and are raised based on the local climate. Humans have also mastered raising horses anywhere wild grass grows."
+
+ glass:0 "Glass"
+ glassDESC:0 ""
+
+ paper:0 "Paper"
+ paperDESC:0 "Paper is a rarer commodity in Middle-Earth, as a majority of most peoples do not know how to read or write. Used mostly for books, paper's only other real presence in common life might be in maps used by travellers or merchants. It is much more common to see paper used amongst scholars, administrators, wizards and elves. The only places that accrue books are typically places of high government like Minas Tirith, or places of old knowledge and learning like Rivendell or Isengard. Many secrets, prophecies, and items of historical lore have been recorded on paper throughout the ages. Sometimes a single piece of parchment will hold a secret to an entire destiny; such is the true value of paper in Middle-Earth."
+
+ gems:0 "Gems"
+ gemsDESC:0 "The gems of Middle-Earth are buried deep under tall mountains, but for those who go digging they may find topaz, amethysts, jade, rubies, sapphires, emeralds and diamonds. It would be fair to say the majority of gemstones in circulation in northern Middle-Earth were mined and traded by dwarves, who seek these stones with more skill and greed than any other race."
+
+ coal:0 "Coal"
+ coalDESC:0 "Coal has a long history as a source of fuel, but it is not until the invention and dissemination of the practical Steam Engine that demand would take off. As the Industrial Revolution swept across Europe, the use and export or import of coal would become a major business and an integral part of a modern economy."
+
+ marble: "Marble"
+ marbleDESC: "Marble is one of the more precious rock types in Middle-Earth. Wherever it was found it was mined for decorative use, primarily throughout the halls of Numenorean lords and nobles along the coastal kingdoms. The Tower Hall of Minas Tirith had towering monoliths of black marble with a white marble canopy shaped like a crowned helm over the throne."
+
+ stone: "Stone"
+ stoneDESC: "Stone is the most valuable construction material in Middle-Earth, as it is durable and plentiful. From Angband, Barad-Dur and Dol Guldur to Isengard, Caer Andros and Minas Tirith, stone was used to build the most enduring citadels and cities known to legend. It also played a crucial role in the consruction of the Numenorean roads."
+
+ honey: "Honey"
+ honeyDESC: "Honey serves both as great food and a short-term antibiotic. The leftover beeswax from harvest can be fashioned into candles while the pollen and propolis provide various health benefits."
+
+ herbs: "Herbs"
+ herbsDESC: "There are many herbs in middle-earth; some are used for healing while others make for deadly poisons. Athelas, also called 'Kingsfoil', was the most famous and powerful of these helpful plants. It could cure wounds, act as an antidote to poisons and even delay the 'Black Breath' of Morgul weaponry. Orcs and goblins on the other hand utilize various poisonous herbs for warfare, creating toxins that could be applied to both arrow-tip and blade-edge."
+
+ fruit: "Fruit"
+ fruitDESC: "Middle-Earth is as varied a realm as any when it comes to fruit and its' diversity. Colder weather crops like apples, peaches, plums, cherries, strawberries, blueberries and grapes are common anywhere north of Harondor. As one enters Harad and further south they can expect to find dates, figs, pomegranates, lemons, oranges, clementines, guava and papaya."
+
+ mushrooms: "Mushrooms"
+ mushroomsDESC: "'Mushrooms!' - Pippin. Mushrooms are common in Middle-Earth, both wild and cultivated, though not every race is as fond of them as others. It is said that Hobbits have a passion for mushrooms that surpasses all others. Radagast is also quite fond of their more magical properties."
+
+ silver: "Silver"
+ silverDESC: "Silver can be found in a variety of places in Middle Earth society. Most commonly it is used as weighted currency reliable across cultures and rare enough to maintain value worldwide. Some households have silver utensils, plates and food containers due to the material's natural anti-bacterial properties. Silver is especially common in elven and dwarven jewellery, artisanry and weaponry."
+
+ mithril: "Mithril"
+ mithrilDESC: "'Mithril! All folk desired it. It could be beaten like copper, and polished like glass; and the Dwarves could make of it a metal, light and yet harder than tempered steel. Its beauty was like to that of common silver, but the beauty of mithril did not tarnish or grow dim.' - Gandalf"
+
+ tropical_wood: "Timber"
+ tropical_woodDESC: "Forests are plentiful, famous, and the source of many rumors and stories in Middle Earth. Timber chopped from these forests is most useful in construction yet still plays valuable roles in nearly every other aspect of society. The Great Mirkwood, mysterious Lothlorien, shadowy Fangorn, and the curious Old Forest of the Shire are some of the most renowned forests full of Timber."
+
+ mumakil: "Mumakil"
+ mumakilDESC: "Called Mumakil in Southron and Oliphaunt in Westron. These incredibly massive creatures had legs like trees, bodies larger than a house, a hide thicker than most spear tips, enormous sail-like ears, a long snout like a huge serpent, and two terrifying long white tusks protruding from its cheeks. Existing only in rumor to the peoples of the West, in the South they were tamed, cultivated and trained to be war machines. The southerners who mastered these beasts, the Mahud, placed large war towers on the backs of Mumakil, filled them with Haradric archers, and rode the beasts to the frontlines of war. It was incredibly difficult to kill, let alone stop, a Mumakil in full rampage."
+
+ great_beasts: "Great Beasts"
+ great_beastsDESC: "Great Beasts were powerful, large creatures with long horns protruding from their foreheads. Found only in Mordor and the South, they are excellent at pulling wagons and siege engines."
+
+ orc_draught: "Orc-Draught"
+ orc_draughtDESC: "Orc-Draught, also called orc liquor or Grog, was an invigorating burning liquid that filled the body with a hot, fierce glow. Upon drinking it one's pain would evaporate, even if one was not an orc."
+
+ miruvor: "Miruvor"
+ miruvorDESC: "Elven Miruvor was a type of reviving cordial, or liquer, with reviving effects and the power to grant renewed vigour and strength. It was warm and fragrant and lifted drowsiness upon ingestion. Gandalf was given a vial of Miruvor upon leaving Rivendell with the Fellowship of the Ring - He gave one sip to each member during their attempt to cross Caradhras in an effort to keep them moving against the cursed snows."
+
+ corsairs: "Corsairs"
+ corsairsDESC: "The Corsairs were a large, organized fleet of pirates based primarily out of the Bay of Umbar. Being of Black Numenorean heritage meant Umbareans were competent ship-builders and sailors. Their navy was built of some of the finest ships constructed outside Gondor. Though not as large as Gondor's carracks, their ships' smaller size and sleeker design made them faster and more maneuverable, allowing them to evade pursuers and inflict devastating damage whilst raiding enemy coasts. It was bragged they could sink even Dol Amroth's prestigious Carracks - under the right admiralty and assault tactics."
+
+ carracks: "Numenorean Carracks"
+ carracksDESC: "The Numenorean Carracks of Gondor and Dol Amroth are built in the same fashion as those of ancient Numenor during its golden era. Though there are far fewer these days, a few major ports of the Dunedain still build and harbor fleets of these Grand Carracks. The Dunedain favored the large hulls and multiple-decks of these ships as large numbers of sailors, troops and supplies could be put to sea on long-term voyages or deployed in assault on foreign harbors. Lengthy sea patrols were also possible to protect shores from invaders before they neared Gondor's vulnerable trade lanes and exposed coasts. While many ships in Middle-Earth were capable of raiding their neighbors, only the Numenorean Carracks could truly dominate the high seas."
+
+ plunder: "Plunder"
+ plunderDESC: "The locals here do not produce many goods, but instead launch organized raids on their neighbors to procure all kinds of valuables that can be traded and sold. Caches of plunder are typically full of random weapons, mismatched pieces of armor, silverware, fine linens and clothing, all manner of jewelry, prized gems, family heirlooms and the occasional mysterious foreign trinket. Goblins are the most notorious pillagers in Middle-Earth, though all orc types and trolls are known for building up piles of plunder. Angmarrim, Rhudaurian, Dunlander, Southron, Easterling and Black Numenorean peoples are all raiders by tradition as well. On the rare occasion a dragon may go sit on someone else's stockpiled wealth and declare it their own plunder. It is also rumored that untouched Numenorean tombs may be full of various treasures that could also be plundered, though other surprises may await those who go seeking them. *Plunder operates the same as gold but is half as productive.*"
+
+ #-------------------------------------
+ # Idea Groups
+ #-------------------------------------
+ KARMA_FOR_CTA:0 "We would gain $KARMA$ Servant Flame, since this is the right thing to do."
+
+ karma_just_right:0 "Neutral Servant Flame"
+ karma_too_high:0 "High Servant Flame"
+ karma_too_low:0 "Low Servant Flame"
+
+ KARMA_JUST_RIGHT_DESC:0 "Servant Flame between $LOW$ and $HIGH$"
+ KARMA_TOO_HIGH_DESC:0 "Servant Flame $HIGH$ or higher"
+ KARMA_TOO_LOW_DESC:0 "Servant Flame $LOW$ or lower"
+
+ KARMA_DESC2:0 "Servant Flame represents the focus of your nation in terms of aiding the evil of either Melkor or Sauron and will rise or fall depending on the actions you take. Too high Servant Flame means losing the trust of the common soldier while too low Servant Flame will make you ineffective with industry. Countries with Servant Flame do not pay any diplomatic power cost for returning cores and releasing countries and vassals in peace deals."
+ KARMA_DESC:0 "Servant Flame increases from:\n- §YHonoring alliances§!\n- §YReleasing vassals§!\n- §YReleasing nations in peace deals§!\n- §YReturning cores§!\n- §YConverting Provinces§!\n\nServant Flame decreases from:\n- §YStarting wars§!\n- §YTaking provinces in peace deals§!"
+ 
+ MODIFIER_YEARLY_KARMA_DECAY:0 "Yearly Servant Flame Decay"
+
+ MODIFIER_MONTHLY_KARMA:0 "Monthly Servant Flame"
+ KARMA_FROM_CONV:1 "This increases our Servant Flame by §G+$VAL$§!."
+ KARMA_FROM_CONV_CONFIRM:0 "Converting this province will increase our Servant Flame by §G+$VAL$§!."
+
+ KARMA_OFFENSIVE_WAR_EFF:0 "Declaring war is an inherently immoral action, and it will decrease our Servant Flame by §Y$VAL$§!. "
+ KARMA_INCREASE:0 "This will give us §Y$VAL$§! Servant Flame."
+ KARMA_DECREASE:0 "This will cost us §Y$VAL$§! Servant Flame."
+ KARMA_INCREASE_FOR_COUNTRY:0 "This will give $COUNTRY$ §Y$VAL$§! Servant Flame."
+ KARMA_DECREASE_FOR_COUNTRY:0 "This will cost $COUNTRY$ §Y$VAL$§! Servant Flame."
+
+ USES_KARMA:0 "$COUNTRY|Y$ uses Servant Flame."
+ USES_NOT_KARMA:0 "$COUNTRY|Y$ does NOT use Servant Flame."
+ 
+ CURRENT_KARMA:0 "Current Servant Flame"
+
+ KARMA_EFFECT:0 "§YEffects from Servant Flame:§W"
+ NEGATIVE_KARMA_EFFECT:0 "§YEffects from negative Servant Flame:§W"
+ POSITIVE_KARMA_EFFECT:0 "§YEffects from positive Servant Flame:§W"
+
+ karma:0 "Servant Flame"
+ positive_karma:0 "Positive Servant Flame"
+ negative_karma:0 "Negative Servant Flame"
+
+ mechanic_clergy_estate_agendas_gives_karma_yes:1 "Completed Agendas of the §YClergy§! grants §Y+10§! Servant Flame"
+ mechanic_seizing_land_takes_karma_yes:2 "Seizing Land adds §Y-10§! Servant Flame"
+ mechanic_buffed_monastic_temples_yes:0 "The Estate Privilege '§YMonastic Temples§!' now grants or removes §Y5 Servant Flame§! instead of 3\nAdditionally, it now also gives §G+0.03§! Yearly Servant Flame Decay no longer increases influence and no longer decreases Max Absolutism"
+ mechanic_enable_karma_decision_yes:1 "Enable a decision which allows to adjust Servant Flame every §Y20§! years"
+
+ string_karma_info:1 "\n\n£DLC_cs §YBuddhist§! countries have a §YServant Flame§! value, that will confer different bonuses when it is high, low, or balanced. Servant Flame can be increased by event choices, honoring military alliances, returning cores, converting provinces, being declared war upon, or releasing nations. Servant Flame can be decreased through event choices, declaring wars, and conquering land.\n"
+ string_karma_info_no:0 "\n"
+ string_start_religion_buddhist_theravada:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nTheravada is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YMahayana§! and §YVajrayana§!, as well as §YConfucianism§! and §YShinto§!."
+ string_start_religion_buddhist_mahayana:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nMahayana is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YTheravada§! and §YVajrayana§!, as well as §YConfucianism§! and §YShinto§!."
+ string_start_religion_buddhist_vajrayana:0 "[Root.start_religion_intro][Root.start_buddhist_karma]\nVajrayana is in the §YEastern§! Religion Group, together with the two other Buddhist faiths, §YTheravada§! and §YMahayana§!, as well as §YConfucianism§! and §YShinto§!."
+
+ ADD_KARMA_EFFECT:0 "$DIRECTION$ $VALUE$ Servant Flame.\n"
+ SET_KARMA_EFFECT:0 "Servant Flame set to $VALUE$.\n"
+
+ MODIFIER_MONTHLY_KARMA_ACCELERATOR:0 "Monthly Servant Flame Accelerator"
+ KARMA_ACCELERATOR_DESC:0 "Servant Flame accelerator effects - move Servant Flame away from zero by $VAL|Y$ per month due to:"
+
+ KARMA_LESS_THAN:0 "Servant Flame is less than §Y$VAL$§!.\n"
+ KARMA_AT_LEAST:0 "Servant Flame is at least §Y$VAL$§!.\n"
