@@ -58,10 +58,9 @@
  GREAT_GUILD_ARISTOCRACY: "Guild Aristocracy"
  
  KHAGANATE: "Khaganate"
- INDEPENDENT_KHAGANATE: "Independent Khaganate"
- GRAND_INDEPENDENT_KHAGANATE: "Grand Independent Khaganate"
- GREAT_INDEPENDENT_KHAGANATE: "Great Independent Khaganate"
- KHAGANATE_RULER: "Khaganate"
+ INDEPENDENT_KHAGANATE: "Khaganate"
+ GRAND_INDEPENDENT_KHAGANATE: "Grand Khaganate"
+ GREAT_INDEPENDENT_KHAGANATE: "Great Khaganate"
  
  ORC_TRIBE: "Orc Tribe"
  ORC_CLAN: "Orc Clan"
@@ -89,16 +88,30 @@
  NAZGUL_OUTPOST: "Nazgûl Outpost"
  NAZGUL_DOMAIN: "Nazgûl Domain"
  NAZGUL_KINGDOM: "Nazgûl Kingdom"
+
+ NECROMANCER_DOMAIN: "Domain of the Necromancer"
  
- ISENGARD: "Isengard Kingdom"
+ ISENGARD_EVIL: "Dominion of Saruman"
  
- MORDOR: "Mordor Kingdom"
+ MORDOR: "Mordor"
+
+ CARN_DUM: "Carn Dûm"
+
+ ANGMAR: "Witch-Kingdom of Angmar"
  
  ENTMOOT: "Entmoot Council"
  GRAND_ENTMOOT: "Grand Entmoot Council"
  GREAT_ENTMOOT: "Great Entmoot Council"
  
  EMPIRE_OF_RHUN: "Empire of Rhûn"
+
+ ISENGARD_WHITE_COUNCIL: "Protectorate of Saruman"
+
+ RADAGAST_RHOSGOBEL: "Protectorate of Radagast"
+
+ DOL_AMROTH: "Principality of Dol Amroth"
+
+ UMBAR_CORSAIRS: "Corsairs of Umbar"
 
  #---------------------------------------------
  # Ruler Titles
@@ -130,10 +143,34 @@
  SPIDER_FEMALE_RULER: "Queen"
  
  NAZGUL: "Nazgûl"
+
+ NAZGUL_HEIR: "Overseer"
+
+ NECROMANCER: "Lord of Dol Goldur"
  
- ISENGARD_RULER: "Ruler"
+ ISENGARD_ISTARI: "Lord of Isengard"
+
+ ISENGARD_GUARD: "Guard of Orthanc"
+
+ ISENGARD_WHITEHAND: "The White Hand"
+
+ ISENGARD_OVERSEER: "Overseer"
+
+ RADAGAST_RULER: "Beast Friend"
+
+ RADAGAST_WOODSMAN: "Rhosgobel Woodsman"
   
- MORDOR_RULER: "Ruler"
+ MORDOR_RULER: "The Eye"
+
+ MORDOR_COMMANDER: "Lieutenant of Barad-dûr"
+
+ CARN_DUM_RULER: "Lord of Carn Dûm"
+
+ CARN_DUM_COMMANDER: "Commander of Carn Dûm"
+
+ ANGMAR_RULER: "Lord of Carn Dûm"
+ 
+ ANGMAR_COMMANDER: "Commander of Angmar"
  
  EAGLE_KING: "King"
  EAGLE_QUEEN: "Queen"
@@ -141,11 +178,24 @@
  GIANT_CHIEF: "Chief"
  
  TARB: "Tarb"
+ TASKRAL: "Taskral"
  AUTARB: "Autarb"
  NHAZADH: "Nhazadh"
  GENERAL: "General"
  
  WARLORD: "Warlord"
+
+ DOL_AMROTH_PRINCE: "Prince of Dol Amroth"
+ DOL_AMROTH_PRINCESS: "Princess of Dol Amroth"
+ DOL_AMROTH_SWAN_COMMANDER: "Commander of the Swan Knights"
+
+ CORSAIR_KING: "Corsair-King of Umbar"
+ CORSAIR_QUEEN: "Corsair-Queen of Umbar"
+ UMBAR_CAPTAIN: "Captain of the Haven"
+
+ KHAGAN: "Khagan"
+ KHATUN: "Khatun"
+ KHANZADEH: "Khanzadeh"
  
  #---------------------------------------------
  # Government Tiers
@@ -231,6 +281,12 @@
  principality_reform_desc: "A realm governed by a Prince or Princess."
  lotr_principality_legacy: "Principality"
  lotr_principality_legacy_desc: "A realm governed by a Prince or Princess."
+
+ 
+ marcrize_reform: "Marcrîze"
+ marcrize_reform_desc: "A realm governed by a General."
+ lotr_marcrize_legacy: "Marcrîze"
+ lotr_marcrize_legacy_desc: "A realm governed by a General."
  
  easterling_clan_reform: "Easterling Clan"
  easterling_clan_reform_desc: "A realm governed by a Cheif."
@@ -251,6 +307,26 @@
  arnorien_kingdom_reform_desc: "A realm governed by a king."
  arnorien_kingdom_reform_legacy: "Arnorien Kingdom"
  arnorien_kingdom_reform_legacy_desc: "A realm governed by a king."
+
+ isengard_white_council_reform: "Seat of Saruman"
+ isengard_white_council_reform_desc: "The safeguarded domain of Saruman, Head of the White Council."
+ isengard_white_council_legacy: "Seat of Saruman"
+ isengard_white_council_legacy_desc: "The safeguarded domain of Saruman, Head of the White Council."
+
+ radagast_reform: "Settlement of Radagast"
+ radagast_reform_desc: "The safeguarded domain of Radagast, Wizard of Rhosgobel."
+ radagast_legacy: "Settlement of Radagast"
+ radagast_legacy_desc: "The safeguarded domain of Radagast, Wizard of Rhosgobel."
+
+ dol_amroth_reform: "Principality of Dol Amroth"
+ dol_amroth_reform_desc: "The Principality of Dol Amroth was a semi-independent vassal of Gondor most famous for its large, elite navy of swan-prowed Carracks as well as its heavy plated Swan Knights that would attend their Prince in battle. The first settlers of Belfalas were elves, though before the Downfall a family of Numenorean heritage settled also in the area. Elendil offered the title of 'Prince' to the leader of this family and named the region 'Dor-en-Ernil' in Sindarin, which translates to 'Land of the Prince'. In T.A. 1981 the elven King of Lorien, Amroth, drowned in the Bay of Belfalas and the nearby hill was named the Hill of Amroth in his honor. The elves soon departed and the Numenorean Prince who ruled, Galador, assumed control of the rest of the region and founded the 'Principality of Dol Amroth'. These men maintained their Numenorean legacy by building massive Carracks to defend the shores of Gondor, many of them with swan-prows in memory of the elves' own ships. No other fleet could quite match the strength of Dol Amroth's own navy, or meet the morale of their sailors when defending their homes."
+ dol_amroth_legacy: "Principality of Dol Amroth"
+ dol_amroth_legacy_desc: "The Principality of Dol Amroth was a semi-independent vassal of Gondor most famous for its large, elite navy of swan-prowed Carracks as well as its heavy plated Swan Knights that would attend their Prince in battle. The first settlers of Belfalas were elves, though before the Downfall a family of Numenorean heritage settled also in the area. Elendil offered the title of 'Prince' to the leader of this family and named the region 'Dor-en-Ernil' in Sindarin, which translates to 'Land of the Prince'. In T.A. 1981 the elven King of Lorien, Amroth, drowned in the Bay of Belfalas and the nearby hill was named the Hill of Amroth in his honor. The elves soon departed and the Numenorean Prince who ruled, Galador, assumed control of the rest of the region and founded the 'Principality of Dol Amroth'. These men maintained their Numenorean legacy by building massive Carracks to defend the shores of Gondor, many of them with swan-prows in memory of the elves' own ships. No other fleet could quite match the strength of Dol Amroth's own navy, or meet the morale of their sailors when defending their homes."
+
+ umbar_reform: "Corsairs of Umbar"
+ umbar_reform_desc: "The Corsairs of Umbar are the most renowned pirates and savage sailors in Middle Earth. In T.A. 1448, at the end of the Kin-Strife, the Sons of Castamir fled Pelargir and established an independent kingdom of 'Black Numenoreans' in the Havens of Umbar. Their naval heritage and sailing traditions went South with them and they quickly turned into effective raiders and slavers of the region. The Corsairs are known for appearing unexpectedly, raiding and pillaging a province, then quickly disappearing to the seas with their fresh booty."
+ umbar_legacy: "Corsairs of Umbar"
+ umbar_legacy_desc: "The Corsairs of Umbar are the most renowned pirates and savage sailors in Middle Earth. In T.A. 1448, at the end of the Kin-Strife, the Sons of Castamir fled Pelargir and established an independent kingdom of 'Black Numenoreans' in the Havens of Umbar. Their naval heritage and sailing traditions went South with them and they quickly turned into effective raiders and slavers of the region. The Corsairs are known for appearing unexpectedly, raiding and pillaging a province, then quickly disappearing to the seas with their fresh booty."
  
  # Hereditary vs. Nobility
  enforce_naval_privileges_reform: "Enforce Naval Privileges"
@@ -476,10 +552,10 @@
  lotr_independent_khaganate_legacy: "Independent Khaganate"
  lotr_independent_khaganate_legacy_desc: "A realm governed by a Lord."
  
- khaganate_ruler_reform: "Khaganate Ruler"
- khaganate_ruler_reform_desc: "A realm governed by a Lord."
- lotr_khaganate_ruler_legacy: "Khaganate Ruler"
- lotr_khaganate_ruler_legacy_desc: "A realm governed by a Lord."
+ khaganate_ruler_reform: "Grand Khaganate"
+ khaganate_ruler_reform_desc: "A realm governed by a Grand Khagan."
+ lotr_khaganate_ruler_legacy: "Grand Khaganate"
+ lotr_khaganate_ruler_legacy_desc: "A realm governed by a Grand Khagan."
  
  # Tribal Cultural Values
  village_raids_reform: "Village Raids"
@@ -522,20 +598,35 @@
  lotr_orc_kingdom_legacy: "Orc Kingdom"
  lotr_orc_kingdom_legacy_desc: "A realm of orcs ruled under a king."
 
- lotr_nazgul_reform: "Nazgûl Kingdom"
+ lotr_nazgul_reform: "Nazgûl Domain"
  lotr_nazgul_reform_desc: "This land is ruled by an overseering Nazgûl who reports to Sauron of Mordor."
- lotr_nazgul_legacy: "Nazgûl Kingdom"
+ lotr_nazgul_legacy: "Nazgûl Domain"
  lotr_nazgul_legacy_desc: "This land is ruled by an overseering Nazgûl who reports to Sauron of Mordor."
+
+ lotr_necromancer_reform: "Domain of the Necromancer"
+ lotr_necromancer_reform_desc: "This land is ruled by a mysterious and shadowy figure known only as 'The Necromancer'."
+ lotr_necromancer_legacy: "Domain of the Necromancer"
+ lotr_necromancer_legacy_desc: "This land is ruled by a mysterious and shadowy figure known only as 'The Necromancer'."
  
  lotr_isengard_reform: "Saruman"
  lotr_isengard_reform_desc: "This land is ruled by Saruman."
  lotr_isengard_legacy: "Saruman"
  lotr_isengard_legacy_desc: "This land is ruled by Saruman."
  
- lotr_mordor_reform: "Sauron"
+ lotr_mordor_reform: "Domain of Sauron"
  lotr_mordor_reform_desc: "This land is ruled by Sauron."
- lotr_mordor_legacy: "Sauron"
+ lotr_mordor_legacy: "Domain of Sauron"
  lotr_mordor_legacy_desc: "This land is ruled by Sauron."
+ 
+ lotr_carn_dum_reform: "Carn Dûm"
+ lotr_carn_dum_reform_desc: "This land is ruled by the orcs of Carn Dûm."
+ lotr_carn_dum_legacy: "Carn Dûm"
+ lotr_carn_dum_legacy_desc: "This land is ruled by the orcs of Carn Dûm."
+
+ lotr_angmar_reform: "Angmar"
+ lotr_angmar_reform_desc: "This land is ruled by the Witch-King of Angmar."
+ lotr_angmar_legacy: "Angmar"
+ lotr_angmar_legacy_desc: "This land is ruled by the Witch-King of Angmar."
  
  # Concentration of Production
  food_production_reform: "Food Production Focus"
@@ -603,6 +694,11 @@
  kingdom_elf_reform_desc: "A realm governed by a King."
  lotr_kingdom_elf_legacy: "Kingdom"
  lotr_kingdom_elf_legacy_desc: "A realm governed by a King."
+
+ eregion_elf_reform: "Kingdom of Eregion"
+ eregion_elf_reform_desc: "A realm governed by a King."
+ lotr_eregion_elf_legacy: "Kingdom of Eregion"
+ lotr_eregion_elf_legacy_desc: "A realm governed by a King."
  
  principality_elf_reform: "Principality"
  principality_elf_reform_desc: "A realm governed by a Prince or Princess."

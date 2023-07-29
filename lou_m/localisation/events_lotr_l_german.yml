@@ -9,16 +9,16 @@
  #----------------------------------
  # Colonization
  #----------------------------------
- lou_colonization.1.t: "The Possibilities of Cardolan"
- lou_colonization.1.d: "The region of Cardolan is within our reach. Most of the region is empty, however we should do what we can to seize these lands before others do so."
+ lou_colonization.1.t: "The Possibilities of Eriadorian"
+ lou_colonization.1.d: "The lands of Eriador is within our reach. Much of it's regions are empty, however we should do what we can to seize these lands before others do so."
  lou_colonization.1.a: "Great!"
 
- lou_colonization.2.t: "Cardolan Out of Reach"
- lou_colonization.2.d: "The region of Cardolan is no longer within our reach. Therefore, we must abandon any thought of seizing the empty lands it holds."
+ lou_colonization.2.t: "Eriador Out of Reach"
+ lou_colonization.2.d: "The regions of Eriador is no longer within our reach. Therefore, we must abandon any thought of seizing the empty lands it holds."
  lou_colonization.2.a: "Damm!"
 
- the_eriadorian_posibilities: "The Cardolan Possibilities"
- desc_the_eriadorian_posibilities: "The region of Cardolan is within our reach. Most of the region is empty, however we should do what we can to seize these lands before others do so."
+ the_eriadorian_posibilities: "The Eriadorian Possibilities"
+ desc_the_eriadorian_posibilities: "The lands of Eriador is within our reach. Much of it's regions are empty, however we should do what we can to seize these lands before others do so."
 
  #----------------------------------
  # Story
@@ -112,9 +112,9 @@
  LOU_races.17.d: "The Barrow-wights were evil spirits, although their true nature is unknown; it is not known if they were perverted Maiar (Úmaiar) or spirits of Orcs, fallen Avari, or evil Men. The Witch-king of Angmar sent them to the Barrow-downs, in order to prevent a resurrection of the destroyed Dúnedain kingdom of Cardolan. The spirits stirred the dead bones in the mounds and haunted them."
  LOU_races.17.a: "Understood!"
  
- # LOTR_BEORNINGS.1t: "Beornings"
- # LOTR_BEORNINGS.1d: "Beornings also known as Skin-changers were a race of large Men. The origins of Beornings are not known, save that they dwelt in the Vales of Anduin between Mirkwood and the Great River in the late Third Age. Unlike other Men, they had the ability to change into bears. They were named after Beorn, their patriarch."
- # LOTR_BEORNINGS.1a: "Understood!"
+ LOU_races.18.t: "Beornings"
+ LOU_races.18.d: "Beornings also known as Skin-changers were a race of large Men. The origins of Beornings are not known, save that they dwelt in the Vales of Anduin between Mirkwood and the Great River in the late Third Age. Unlike other Men, they had the ability to change into bears. They were named after Beorn, their patriarch."
+ LOU_races.18.a: "Understood!"
  
  #-----------------------------------------
  # Wilderness
@@ -124,7 +124,7 @@
  LOU_wilderness.1.a: "We have lots of people in need of a home"
  
  LOU_wilderness.2.t: "Wilderness Tamed"
- LOU_wilderness.2.d: "These lands have been considere wilderness for eons. Despite our nominal ownership of this land, we will have to settle it first.\n\nThis land is now considered settled."
+ LOU_wilderness.2.d: "These lands have been considered wilderness for eons. Despite our nominal ownership of this land, we will have to settle it first.\n\nThis land is now considered settled."
  LOU_wilderness.2.a: "Finally we can start working the lands"
  
  #-----------------------------------------
@@ -143,6 +143,17 @@
  LOU_wights.4.a: "Terrorize the land!"
  
  #-----------------------------------------
+ # Dragons
+ #-----------------------------------------
+ LOU_dragons.1.t: "Dragon!"
+ LOU_dragons.1.d: "These lands are terrorized by a cave-dwelling wyrm. The majority of living 'drakes' in the Third Age are wingless and unable to breathe fire but are extremely serious threats nonetheless. It is only the rare occasion a flying, fire-breathing monstrosity is seen. It will be a challenge to hunt this creature down. \n\nTo successfully hunt and remove the dragon here you must change the religion and culture.""
+ LOU_dragons.1.a: "This wyrm may desire our gold..."
+ 
+ LOU_dragons.2.t: "Dragon Hunted"
+ LOU_dragons.2.d: "The wyrm who made its lair here has been successfully tracked, trapped, and killed. The dragon-hunters who undertook the task are bruised and battered, yet are proud of their victory nonetheless. The battle was not without losses, however, and the dragon-hunters are asking you to replenish their numbers. \n\nOur Dragon Hunt has come to an end and these lands are now safe to settle."
+ LOU_dragons.2.a: "We found the Dragon's treasure hoard!"
+
+ #-----------------------------------------
  # Trolls
  #-----------------------------------------
  LOU_trolls.1.t: "Roaming Trolls"
@@ -152,6 +163,28 @@
  LOU_trolls.2.t: "Trolls Expelled"
  LOU_trolls.2.d: "Trolls are strong and vicious, but generally dim-witted and stupid at best. Some were described as being able to speak, while others appear to be as irrational as animals. \n\nWe have finally expelled them from the land."
  LOU_trolls.2.b: "Finally we can start working the lands"
+
+ #-----------------------------------------
+ # Province Free People
+ #-----------------------------------------
+ LOU_Province_Free_People.1.t: "Roaming Creatures of Melkor"
+ LOU_Province_Free_People.1.d: "To rid these or your lands, you must change the religion and culture."
+ LOU_Province_Free_People.1.a: "They will cause trouble!"
+ 
+ LOU_Province_Free_People.2.t: "Creatures of Melkor Expelled"
+ LOU_Province_Free_People.2.d: "."
+ LOU_Province_Free_People.2.b: "Finally we can start working the lands"
+
+ #-----------------------------------------
+ # Province Servant of Evil
+ #-----------------------------------------
+ LOU_Province_Servant_Of_Evil.1.t: "Roaming Free Peoples of Middle-Earth"
+ LOU_Province_Servant_Of_Evil.1.d: "To rid these or your lands, you must change the religion and culture."
+ LOU_Province_Servant_Of_Evil.1.a: "They will cause trouble!"
+ 
+ LOU_Province_Servant_Of_Evil.2.t: "Free Peoples of Middle-Earth Expelled"
+ LOU_Province_Servant_Of_Evil.2.d: "."
+ LOU_Province_Servant_Of_Evil.2.b: "Finally we can start working the lands"
  
  #-----------------------------------------
  # Huorn
@@ -190,7 +223,7 @@
  # Isengard
  #-----------------------------------------
  LOU_isengard.1.t: "Saruman Occupies Isengard"
- LOU_isengard.1.d: "Saruman the white has Occupied Isengard, you get to choose to switch to Isengard or continue playing your country."
+ LOU_isengard.1.d: "The Dunlendings who have occupied Isengard have suffered considerable losses during the Long Winter and have starved themselves out of occupation of Isengard. Helm Hammerhand's nephew, Fréaláf, has seized the tower of Orthanc during a quick assault. In a fortunate turn of timing, Saruman the White has come back from his travels in the East and is proposing to take up residence in the citadel. He offers to fortify the tower and assist the West against further threats, be they orc or man. Both Steward Beren of Gondor and the King of Rohan are relieved at this offer and eagerly accept - turning the Key of Orthanc over to Saruman. In T.A. 2759 the valley in which Isengard resided soon became known as 'Nan Curunír', the 'Valley of Saruman' or the 'Wizard's Vale'. Optimistic locals are pouring into the area to open trade routes, help with construction, and provide investments for expansion. A formal 'Guard of Orthanc' has been established and is recruiting champions from Dunland, Adornland and Rohan to fill its ranks. The Elves of Rivendell and Lothlorien have also invited the Istari to join the White Council, attaching their interests to his. Saruman the White has occupied Isengard - you get to choose to switch to Isengard or continue playing your country."
  LOU_isengard.1.a: "i am ai"
  LOU_isengard.1.b: "Change to Isengard"
  LOU_isengard.1.c: "Keep Playing $COUNTRY$"
@@ -233,9 +266,9 @@
  LOU_desolation_of_smaug.6.d: "Thranduil has honoured his alliance with us and has lended us aid which have arrived in Dale"
  LOU_desolation_of_smaug.6.a: "Just in time!"
  
- LOU_desolation_of_smaug.7.t: "Thranduil has abbandon us"
+ LOU_desolation_of_smaug.7.t: "Thranduil has abandoned us"
  LOU_desolation_of_smaug.7.d: "Thranduil has dishonoured his alliance with us and left our city to burn by the fires of the dragon!"
- LOU_desolation_of_smaug.7.a: "Never thrust an Elf!"
+ LOU_desolation_of_smaug.7.a: "Never trust an Elf!"
  
  #-----------------------------------------
  # War of the Dwarves and Orcs (WDO)
@@ -642,6 +675,17 @@
  LOU_mordor.33.t: "The White Tree Burns"
  LOU_mordor.33.d: "The White tree of Gondor is burning! The shadows of Mordor grows ever stronger. Soon all of Middle-earth will be under the control of Sauron the Great"
  LOU_mordor.33.a: "Praise the Dark Lord!"
+
+ LOU_mordor.34.t: "The Power of the Dark Lord"
+ LOU_mordor.34.d: "The Dark lord has returned, the orcs in Mordor muster together forming armies and the prepared wealth is collected and brought to Barad-Dûr"
+ LOU_mordor.34.a: "Praise the Dark Lord!"
+
+ mordor_spawn_army_tt: "15 §YInfantry§!, 5 §YCavalry§!, 5 §YArtillery§! will arrive in [FROM.GetName]"
+
+ LOU_mordor.35.t: "Seeds of Darkness"
+ LOU_mordor.35.d: "Long have our influence affected the Men south of our borders. A good portion of the men of Nûrn is prepared to join forces with the Dark Lord"
+ LOU_mordor.35.a: "Start the Coup!"
+ LOU_mordor.35.b: "We don't need the help of men!"
  
  #----------------------------------
  # Gondor
@@ -920,40 +964,40 @@
  # Orc Race
  #----------------------------------
  LOU_orc_race.1.t: "Infighting!"
- LOU_orc_race.1.d: "Who knows how it started, but a group of orcs started a fight and it quickly spread amongst the orcs in the area. How shall we respond to this? What ever we do it will send a signal to the others."
- LOU_orc_race.1.a: "Punish The Survivers"
- LOU_orc_race.1.b: "Reward The Victors"
+ LOU_orc_race.1.d: "Who knows how it started, but a fight broke out amongst our workforce disrupting our industrial efforts. The victors however have proven themselves good fighters capable of fighting together, if rewarded this would cause others to dedicate more to their own discipline."
+ LOU_orc_race.1.a: "Punish the survivers."
+ LOU_orc_race.1.b: "Reward the victors."
  
- LOU_orc_race.2.t: "Workers Refuse To Work"
- LOU_orc_race.2.d: "Lately our production has gone down, it seems that our orc workers are tired of work with no great reward, like meat. They demand meat for work!"
- LOU_orc_race.2.a: "Give Them Maggoty Bread"
- LOU_orc_race.2.b: "Buy The Meat"
+ LOU_orc_race.2.t: "Complains about food"
+ LOU_orc_race.2.d: "Lately our production has gone down, it seems that our men are tired of work with no great reward. but we currently don't have the goods to feed everyone. That is unless we find another source of food."
+ LOU_orc_race.2.a: "Promise them all a war so they can feast on manflesh"
+ LOU_orc_race.2.b: "Reward the most productive workers."
  
  LOU_orc_race.3.t: "The Warriors Are Badly Trained"
- LOU_orc_race.3.d: "The Orcs have not cared for training for a long time or at all. We could force them to do their training, but in so anger them."
- LOU_orc_race.3.a: "Force Training"
- LOU_orc_race.3.b: "Loose Formation Is Also Good"
+ LOU_orc_race.3.d: "According to warbosses our troops are in need of extra training, however the conscription gangs say that reducing the training will make it easier to find more bodies for the army."
+ LOU_orc_race.3.a: "Listen to the Warbosses, and increase training."
+ LOU_orc_race.3.b: "Hear out the Conscriptors, more troops will never hurt."
  
- LOU_orc_race.4.t: "Warmongering amongst The Orcs"
- LOU_orc_race.4.d: "The Orcs hunger for the thrill of battle and spilling of blood. They want you to lead them into a war as soon as possible."
+ LOU_orc_race.4.t: "Calls for War"
+ LOU_orc_race.4.d: "The troops are hungering for a real fight, to crush their enemies before them, to hear the lamentations of the enemies. We should deal with their demands soon before they get rowdy."
  LOU_orc_race.4.a: "We Are Preparing"
- LOU_orc_race.4.b: "Promise To Start War"
+ LOU_orc_race.4.b: "Promise to start a war"
  
  LOU_orc_race.5.t: "Promised War But Didn't"
- LOU_orc_race.5.d: "The Orcs chanted your name when you promised that you would follow them into war. But you haven't delivered your promises and now the Orcs think your words are empty."
+ LOU_orc_race.5.d: "The Troops chanted your name when you promised that you would lead them into war. But you still haven't delivered your promises and now they think your words are empty."
  LOU_orc_race.5.a: "I Decide When We Wage War"
  
- LOU_orc_race.6.t: "Rogue Orcs Gone Raiding"
- LOU_orc_race.6.d: "A large group of Orcs have gone rogue and is on the way to a border province to wage raid and kill. We can turn a blind eye to the situation, but it can affect our neighbors opion of us and also loosen the general grip we have over the orcs."
- LOU_orc_race.6.a: "Let Them Raid"
- LOU_orc_race.6.b: "Stop Them!"
+ LOU_orc_race.6.t: "Raiders gone rogue!"
+ LOU_orc_race.6.d: "A large group of our workforce have gone rogue and are on their way to a border province to raid and kill. Already they are being hailed as war heroes. We could turn a blind eye to the situation in order to encourage a more war like stance in our followers, or we could denounce their actions, however this will not go over well with the populance."
+ LOU_orc_race.6.a: "Let them raid!"
+ LOU_orc_race.6.b: "We haven't ordered a raid!"
  
  LOU_orc_race.7.t: "Province Being Raided!"
  LOU_orc_race.7.d: "A bordering Orc Nation has has raided one of our provinces!"
  LOU_orc_race.7.a: "Oh no!"
  
  LOU_orc_race.8.t: "Attack on Merchants and Emmisaries"
- LOU_orc_race.8.d: "Merchants and emmisaries sometimes travel to our borders to sell their goods or engage in diplomatic talks. But this day, some of our orcs without thought attacked a group of merchants and emmisaries. This can badly reduce our relations with them."
+ LOU_orc_race.8.d: "Merchants and emmisaries sometimes travel to our borders to sell their goods or engage in diplomatic talks. But this day, some of our troops have without thought attacked a group of merchants and emmisaries. This could badly reduce our relations with them."
  LOU_orc_race.8.a: "Compensate"
  LOU_orc_race.8.b: "Don't Compensate"
  
@@ -961,37 +1005,40 @@
  LOU_orc_race.9.d: "Our Merchants and Emmisaries have been attack by a group of Orcs."
  LOU_orc_race.9.a: "Oh no!"
  
- LOU_orc_race.10.t: "Orc Uprising!"
- LOU_orc_race.10.d: "With your lack of control, a group of orcs have started a rebellion to despose you and take over."
- LOU_orc_race.10.a: "Bash Their Skulls"
+ LOU_orc_race.10.t: "Feeding the flames!"
+ LOU_orc_race.10.d: "Currently our country lacks a direction, our men are but kindling waiting for the right Blaze to start a fire, the choice we face is what type of Fire."
+ LOU_orc_race.10.a: "We should feed the Flames of Industry!"
+ LOU_orc_race.10.b: "Prepare our armies to Bring forth the Flames of War!"
  
  LOU_orc_race.11.t: "Enlist Overseers"
- LOU_orc_race.11.d: "To keep the ranks in line, we need orcs with higher status to be the masters of the whip. If we do not keep the orcs controlled, the situation might turn chaotic."
- LOU_orc_race.11.a: "Where There Is a Whip There Is a Way"
- LOU_orc_race.11.b: "Leave Them Be"
+ LOU_orc_race.11.d: "To keep the population in line, we need Overseers with higher status to be the masters of the whip. But we only have so many good whips to go around, thus we will have to chose where to place our overseers. Normally these would go to the mines and workshops, but one of the recently promoted Overseers has come up with a marching song that would help us keep the troops in line."
+ LOU_orc_race.11.a: "Where There Is a Whip There Is a Way!"
+ LOU_orc_race.11.b: "Keep the overseers in the Factories."
  
- LOU_orc_race.12.t: "Many Orcs To Control"
- LOU_orc_race.12.d: "Our Army is grand and strong, but keeping a large host of orcs demands great control over the masses. If we do not keep the order, the orcs may get out of control."
- LOU_orc_race.12.a: "Keep The Grip"
- LOU_orc_race.12.b: "Loosen The Grip"
+ LOU_orc_race.12.t: "Too many troops to Control"
+ LOU_orc_race.12.d: "Our industrial might beyond compare, but keeping a large host of creatures from embracing their inner need for violence requires great control over the masses. We have currently reached a tipping point and will need to make a decision."
+ LOU_orc_race.12.a: "Keep our control, and get them back to work."
+ LOU_orc_race.12.b: "Loosen the our grip on the populance."
  
  LOU_orc_race.13.t: "Orcs are Deserting"
  LOU_orc_race.13.d: "A large group of orcs and many more are leaving our armies, seeking raides and war without our harsh control over their every move."
  LOU_orc_race.13.a: "They Were Controlled Too Much"
  
- LOU_orc_race.14.t: "Big Meaty Catch"
- LOU_orc_race.14.d: "Orc hunters recently returned from a great hunt, bringing home plenty of meat for our people to feed on."
- LOU_orc_race.14.a: "Looks like meat is back on the menu boys!"
+ LOU_orc_race.14.t: "Need for Meat"
+ LOU_orc_race.14.d: "the larger our country grows the more food we require. Normally we would simply go and hunt for it, but maybe we could grow some of it our selves?"
+ LOU_orc_race.14.a: "We should grow it ourselves."
+ LOU_orc_race.14.b: "We should hunt for it."
+ LOU_orc_race.14.tt: "From Hunting Wild Animals"
  
  LOU_orc_race.15.t: "Warg Scouts"
- LOU_orc_race.15.d: "Shall we deploy the Warg Scouts and keep our enermies in check?"
- LOU_orc_race.15.a: "Send Scouts"
- LOU_orc_race.15.b: "Don't Send Scouts"
+ LOU_orc_race.15.d: "We have found ourselves with a small surplus of warg scouts, we could send them out to gather information for an invasion, or we could use them to fortify our hold on our own nation."
+ LOU_orc_race.15.a: "Send them out to for War."
+ LOU_orc_race.15.b: "Make them secure our hold internally."
  
  LOU_orc_race.16.t: "Abundance Of Wood"
- LOU_orc_race.16.d: "We have come across an abundance of wood and can't decide what to use it for."
- LOU_orc_race.16.a: "Industry"
- LOU_orc_race.16.b: "To The War Camps"
+ LOU_orc_race.16.d: "We have had a larger than usual amount of wood come in from our sawmills, and now we have a choice. Either we give them to the industry like usual, or we could use them to build siege engines."
+ LOU_orc_race.16.a: "Keep feeding the Industry."
+ LOU_orc_race.16.b: "Some siege engines are always welcome."
  
  LOU_orc_race.17.t: "Pay Tribute To Mordor"
  LOU_orc_race.17.d: "A Emmisary from Mordor has arrived at our borders asking for a tribute in exchange for good relations. How do we respond?"
@@ -1047,7 +1094,7 @@
  LOU_gandalf.2_a: "One of the dwarven rings have been lost!?"
  
  LOU_gandalf.3_t: "Gandalf aids the hobbits of the Shire"
- LOU_gandalf.3_d: "Gandalf the Grey have come to aid the hobbits during this winter known as The Long Winter."
+ LOU_gandalf.3_d: "Gandalf the Grey has come to aid the hobbits during the Long Winter. He is offering oversight on rationing policies and is happy to assist with small government affairs. A sign of hope for the smallfolk!"
  LOU_gandalf.3_a: "It is good to have a friend like Gandalf"
  
  LOU_gandalf.4_t: "Gandalf aids the hobbits of the Shire"
@@ -1506,3 +1553,93 @@
  LOU_mission_dunland.4.t: "Counting Loot"
  LOU_mission_dunland.4.d: "[Root.W94lootedAmount_VAR.GetName] [Root.W94lootedAmount_VAR.GetValue]"
  LOU_mission_dunland.4.a: "Sounds Good"
+
+ #---------------------------------------
+ # Elfs Forest Defence Roll
+ #---------------------------------------
+ LOU_elven.2.t: "Defense of the Forest"
+ LOU_elven.2.d: "Elves are only seen when they desire to be. They move invisibly and silently through their oft-wooded realms and will always have the upper hand on invaders."
+ LOU_elven.2.a: "This wooded province has extra protection from the elves"
+
+ #---------------------------------------
+ # Nazgul Return
+ #---------------------------------------
+LOU_Nazgul_Return.1.t: "Your Nazgûl Returns"
+LOU_Nazgul_Return.1.d: "Your Nazgûl has returned from its temporary existence in the wraith world. Having 'died' in mortal form, this creature has wandered through the realm of the Unseen back to your capital. They are ready to serve once more."
+LOU_Nazgul_Return.1.a: "Khamûl returns to his master's side at Dol Guldur"
+LOU_Nazgul_Return.1.b: "Khamûl returns to his position as Lord of Dol Guldur"
+
+LOU_Witch_King_Return.1.t: "Your Nazgûl Returns"
+LOU_Witch_King_Return.1.d: "Your Nazgûl has returned from its temporary existence in the wraith world. Having 'died' in mortal form, this creature has wandered through the realm of the Unseen back to your capital. They are ready to serve once more."
+LOU_Witch_King_Return.1.a: "'Hinder me? Thou fool. No living man may hinder me!' The Witch King is risen."
+
+LOU_Witch_King_Return_Angmar.1.t: "Your Nazgûl Returns"
+LOU_Witch_King_Return_Angmar.1.d: "Your Nazgûl has returned from its temporary existence in the wraith world. Having 'died' in mortal form, this creature has wandered through the realm of the Unseen back to your capital. They are ready to serve once more."
+LOU_Witch_King_Return_Angmar.1.a: "'Hinder me? Thou fool. No living man may hinder me!' The Witch King is risen."
+
+ #---------------------------------------
+ # Change Trade Goods
+ #---------------------------------------
+LOU_Change_Trade_Goods.1.t: "Species Trade Good Dilemma"
+LOU_Change_Trade_Goods.1.d: "The species occupying this province cannot utilize the trade goods here. We can produce something else based on the current trade good, terrain type, and development level."
+LOU_Change_Trade_Goods.1.a: "Due to the high population a slave trade may be established here"
+LOU_Change_Trade_Goods.1.b: "There's an Iron vein to exploit"
+LOU_Change_Trade_Goods.1.c: "Let's mine the Copper"
+LOU_Change_Trade_Goods.1.i: "Dig up Stone for fortifications"
+LOU_Change_Trade_Goods.1.e: "We need Furs, Skins and Leathers"
+LOU_Change_Trade_Goods.1.f: "Chop down Timber to fuel our fires"
+LOU_Change_Trade_Goods.1.g: "Seek out local poisons for our blades and arrow tips"
+LOU_Change_Trade_Goods.1.h: "'Looks like meat's back on the menu boys!'"
+LOU_Change_Trade_Goods.1.j: "There is suitable grazing here for Great Beasts"
+LOU_Change_Trade_Goods.1.k: "We can ferment the local resources into Orc-Draught!"
+LOU_Change_Trade_Goods.1.l: "The burgeoning elvish population will now produce Miruvor"
+LOU_Change_Trade_Goods.1.m: "Orc-Drought?! Better to make our own Wine instead"
+LOU_Change_Trade_Goods.1.n: "There are Honey bees here, let's build some apiaries"
+LOU_Change_Trade_Goods.1.o: "The former slaves here are talented artisans willing to sell their fine silks"
+LOU_Change_Trade_Goods.1.p: "The former slaves here are skilled weavers willing to sell their woven cloth"
+
+ #---------------------------------------
+ # Guard of Orthanc
+ #---------------------------------------
+LOU_Isengard_Guard_Orthanc.1.t: "The Guard of Orthanc"
+LOU_Isengard_Guard_Orthanc.1.d: "A worthy champion from the local Dunlending population has presented himself to be the Guard of Orthanc. He will lead our garrisons into battle and maintain the safety of Isengard's borders."
+LOU_Isengard_Guard_Orthanc.1.a: "The new Guard of Orthanc is declared!"
+
+ #---------------------------------------
+ # Huntsman of Rhosgobel
+ #---------------------------------------
+LOU_Rhosgobel_Woodsman.1.t: "A Woodsman for Rhosgobel"
+LOU_Rhosgobel_Woodsman.1.d: "A talented forester from a nearby village has presented himself to be the Woodsman of Rhosgobel. He will lead our scout patrols through the wildlands and ensure the safety of local settlements. He will also actively protect local flora and fauna, ensuring they are able to spread naturally without the impediment of man or orc."
+LOU_Rhosgobel_Woodsman.1.a: "The Woodsman of Rhosgobel begins his watch."
+
+ #---------------------------------------
+ # The Long Winter (Notification Event Only)
+ #---------------------------------------
+LOU_Long_Winter.1.t: "The Long Winter"
+LOU_Long_Winter.1.d: "A terrible winter storm coming from the northern and eastern mountain ranges has arrived. It appears winter has set in early. Already people are reporting winter-crop failures and livestock deaths. In addition, the frozen rivers are no longer traversible by boat and the frozen ground has become nigh impossible to dig in. Regular snowstorms are delaying troops and caravans are getting lost on the highways. We must store up the granaries, begin rationing, and spread out the garrisons. \n\nLong Winter province modifiers are active based on climate"
+LOU_Long_Winter.1.a: "Spring will come if we endure!"
+
+ #---------------------------------------
+ # Days of Dearth
+ #---------------------------------------
+LOU_Days_of_Dearth.1.t: "The Days of Dearth"
+LOU_Days_of_Dearth.1.d: "Famine is here. The Long Winter has been especially hard on the hobbits of the Shire and left its mark. Not only did we lose last Autumn's final harvest, but many food stores were exhausted with the five-month Winter we've endured. Worse, the massive amount of snowfall has begun melting and the resulting floods are destroying our fields and natural crops. The difficulties with spring-planting will again mean much lower crop yields. Wild game are becoming sparse looking for their own food to eat and livestock are starving from not enough feed. The region is now battling widespread food shortages that threaten life, trade, production, manpower, and overall availability of supplies. Rapidly rising food prices are beginning to cause inflation. Hobbits are starting to starve, and a general outcry has begun. Our Shirriffs have established some degree of autonomy to help mitigate problems locally on their own. Gandalf is moving about the region doing what he can to help, but even he is just one simple old wizard. We estimate it will take roughly one year to stabilize our trade, repair fields, replant crops, and import extra provisions from nearby Bree and Lindon. We fear that by that time thousands of hobbits will have died..."
+LOU_Days_of_Dearth.1.a: "Bleak times for the Shire"
+
+LOU_Days_of_Dearth.2.t: "The End of the Days of Dearth"
+LOU_Days_of_Dearth.2.d: "It has been a horrible year and a half for the Shire. First the Long Winter followed by a year of famine, resulting in the deaths of thousands of Shire hobbits. However, hope is truly on the horizon. Regular rains are filling our reservoirs, fertile soils are being tilled for planting, and sunny days are luring seeds into their leafy lives above. Prices have begun stabilizing with regular access to goods and the elves have even sent some gold as a gift to stabilize our economy. Mercenary from Bree and even a few Dunedain captains have offered to join our militias until our numbers recuperate as well. Furthermore, rumor is that Gandalf will be sticking around for a while - some say he is overtly fond of our pipeweed. We are happy for his presence; he warms the communities he visits - epecially with his fireworks! It shall be a fat and happy summer with many festivals and parties. Life is returning to normal 'round these parts."
+LOU_Days_of_Dearth.2.a: "We can have Second Breakfast again!"
+
+ #---------------------------------------
+ # Palantir
+ #---------------------------------------
+LOU_Palantir.1.t: "Possession of a Palantír"
+LOU_Palantir.1.d: "We have in our possession a Palantír from the golden era of Gondor. Likely constructed by Fëanor, the Eldar offered these as a gift of hope to King Amandil, just as the Shadow began to fall upon Númenor. When Elendil later fled Númenor he took seven with him - three went to Arnor and four went south to Gondor. These 'Seeing-Stones' utilized the silvan magic of ósanwë to allow mental communication between long distances and offered vision of the surrounding areas to those trained in their use. Surely if we look into it we will get us a glimpse of something..."
+LOU_Palantir.1.a: "This will be of great help to us... we think?"
+
+ #---------------------------------------
+ # Angmar
+ #---------------------------------------
+LOU_Angmar.1.t: "Re-Formation of the Kingdom of Angmar"
+LOU_Angmar.1.d: "We have secured the Angmarim borders of old. It is time to declare ourselves once more as the Kingdom of Angmar. The Witch-King will honor our achievement by returning to His throne at Carn Dûm and assuming command of our forces. With a Nazgûl once more leading our nation, surely the Dúnedain of Arnor will be extinguished for good."
+LOU_Angmar.1.a: "The North will tremble once more."
