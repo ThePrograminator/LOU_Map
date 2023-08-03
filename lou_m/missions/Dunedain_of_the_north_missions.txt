@@ -24,24 +24,29 @@ slot_01_dunedain_of_the_north_series = {
 				province_id = 1442
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			1496 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			4056 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			1442 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			4057 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
+			cede_ally_provinces_mission_effect = { province_scope = 1496 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 4056 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 1442 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 4057 COUNTRY = owner }
+
 			if = {
 				limit = {
 					exists = Q03
@@ -101,6 +106,11 @@ slot_01_dunedain_of_the_north_series = {
 				add_base_production = 1
 				add_base_manpower = 1
 				center_of_trade = 1
+				remove_province_modifier = ruined_amon_sul
+				add_permanent_province_modifier = {
+					name = dunedain_of_north_amon_sul
+					duration = -1
+				}
 			}
 			emyn_sul_area = {
 				add_permanent_claim = ROOT
@@ -120,11 +130,12 @@ slot_01_dunedain_of_the_north_series = {
 		trigger = {
 			emyn_sul_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			emyn_sul_area = {
+				cede_ally_provinces_mission_effect = { province_scope = emyn_sul_area COUNTRY = owner }
 				add_province_modifier = {
 					name = acceptance_of_take_over
 					duration = 3650
@@ -148,11 +159,12 @@ slot_01_dunedain_of_the_north_series = {
 		trigger = {
 			oiolad_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			oiolad_area = {
+				cede_ally_provinces_mission_effect = { province_scope = oiolad_area COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_remove_population
 					duration = 7300
@@ -172,10 +184,16 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			266 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
+			266 = {
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			cede_ally_provinces_mission_effect = { province_scope = 266 COUNTRY = owner }
+
 			fornost_erain_area = {
 				add_permanent_claim = ROOT
 			}
@@ -199,10 +217,29 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			644 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
+				development = 30
+				has_great_project = {
+					type = annuminas_monument
+					tier = 1
+				}
 			}
 		}
-		effect = { 
+		effect = {
+			set_capital = 644
+			add_stability = 1
+			644 = {
+				cede_ally_provinces_mission_effect = { province_scope = 644 COUNTRY = owner }
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				add_center_of_trade_level = 2
+				remove_province_modifier = ruined_annuminas
+				add_permanent_province_modifier = {
+					name = rebuilt_annuminas
+					duration = -1
+				}
+			}
 			maegoth_area = {
 				add_permanent_claim = ROOT
 			}
@@ -232,47 +269,52 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			95 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			249 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			248 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			644 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			1841 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			644 = {
+				cede_ally_provinces_mission_effect = { province_scope = 644 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_control_the_lake
 					duration = -1
 				}
 			}
 			1841 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1841 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_control_the_lake
 					duration = -1
 				}
 			}
 			248 = {
+				cede_ally_provinces_mission_effect = { province_scope = 248 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_control_the_lake
 					duration = -1
 				}
 			}
 			249 = {
+				cede_ally_provinces_mission_effect = { province_scope = 249 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_control_the_lake
 					duration = -1
 				}
 			}
 			95 = {
+				cede_ally_provinces_mission_effect = { province_scope = 95 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_control_the_lake
 					duration = -1
@@ -300,29 +342,30 @@ slot_01_dunedain_of_the_north_series = {
 		}
 		trigger = {
 			249 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			251 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			255 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			266 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			644 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			1839 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			1841 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			249 = {
+				cede_ally_provinces_mission_effect = { province_scope = 249 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -331,6 +374,7 @@ slot_01_dunedain_of_the_north_series = {
 				change_religion = religion_dunedain
 			}
 			251 = {
+				cede_ally_provinces_mission_effect = { province_scope = 251 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -339,6 +383,7 @@ slot_01_dunedain_of_the_north_series = {
 				change_religion = religion_dunedain
 			}
 			255 = {
+				cede_ally_provinces_mission_effect = { province_scope = 255 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -347,6 +392,7 @@ slot_01_dunedain_of_the_north_series = {
 				change_religion = religion_dunedain
 			}
 			266 = {
+				cede_ally_provinces_mission_effect = { province_scope = 266 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -355,6 +401,7 @@ slot_01_dunedain_of_the_north_series = {
 				change_religion = religion_dunedain
 			}
 			644 = {
+				cede_ally_provinces_mission_effect = { province_scope = 644 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -363,6 +410,7 @@ slot_01_dunedain_of_the_north_series = {
 				change_religion = religion_dunedain
 			}
 			1839 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1839 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -371,6 +419,7 @@ slot_01_dunedain_of_the_north_series = {
 				change_religion = religion_dunedain
 			}
 			1841 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1841 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_lower_development_cost
 					duration = 10950
@@ -397,13 +446,16 @@ slot_01_dunedain_of_the_north_series = {
 				value = 10
 				region = arthedain_region
 				development = 20
-				local_autonomy = 20
+				NOT = { 
+					local_autonomy = 20
+				}
 			}
 		}
 		effect = { 
-			add_adm_power = 100
-			add_dip_power = 100
-			add_mil_power = 100
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			add_stability = 3
 			arthedain_region = {
 				limit = {
 					owned_by = ROOT
@@ -441,26 +493,25 @@ slot_02_dunedain_of_the_north_series = {
 				area = west_faerdor_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			NOT = {
-				is_empty = yes
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			faerdor_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			west_faerdor_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 				NOT = {
 					is_empty = yes
 				}
 			}
 		}
 		effect = { 
+			cede_ally_provinces_mission_effect = { province_scope = faerdor_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = west_faerdor_area COUNTRY = owner }
 			170 = {
 				add_permanent_claim = ROOT
 			} 
@@ -473,16 +524,17 @@ slot_02_dunedain_of_the_north_series = {
 		provinces_to_highlight = {
 			province_id = 170
 			NOT = {
-				owned_by = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			170 = {
-				owned_by = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			170 = {
+				cede_ally_provinces_mission_effect = { province_scope = 170 COUNTRY = owner }
 				add_province_modifier = {
 					name = dunedain_of_north_tharbad
 					duration = 18250
@@ -496,12 +548,6 @@ slot_02_dunedain_of_the_north_series = {
 		required_missions = { secure_eastern_tharbad secure_western_tharbad }
 		provinces_to_highlight = {
 			province_id = 170
-			NOT = {
-				has_great_project = {
-					type = tharbad_bridge_monument
-					tier = 1
-				}
-			}
 		}
 		trigger = {
 			170 = {
@@ -575,59 +621,131 @@ slot_02_dunedain_of_the_north_series = {
 	the_green_way = {
 		icon = mission_dunedain_17
 		position = 7
-		required_missions = { protectors_of_eriador }
+		required_missions = { protectors_of_eriador the_former_capital_of_arnor }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1833
-				province_id = 3210
-				province_id = 106
-				province_id = 4057
+				province_id = 1839
+				province_id = 644
+				province_id = 3422
+				province_id = 379
+				province_id = 89
+				province_id = 77
+				province_id = 88
+				province_id = 239
+				province_id = 244
+				province_id = 1846
 			}
 			NOT = {
-				province_human_has_trade_building_tier_2 = yes
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
-			1833 = {
-				province_human_has_trade_building_tier_2 = yes
-				country_or_non_sovereign_subject_holds = ROOT
+			1839 = {
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
-			3210 = {
-				province_human_has_trade_building_tier_2 = yes
-				country_or_non_sovereign_subject_holds = ROOT
+			644 = {
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
-			4057 = {
-				province_human_has_trade_building_tier_2 = yes
-				country_or_non_sovereign_subject_holds = ROOT
+			3422 = {
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
-			106 = {
-				province_human_has_trade_building_tier_2 = yes
-				country_or_non_sovereign_subject_holds = ROOT
+			379 = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+			89 = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+			77 = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+			88 = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+			239 = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+			244 = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+			1846 = {
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
-			1833 = {
+			1839 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1839 COUNTRY = owner }
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
 					duration = -1
 				}
 			}
-			3210 = {
+			644 = {
+				cede_ally_provinces_mission_effect = { province_scope = 644 COUNTRY = owner }
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
 					duration = -1
 				}
 			}
-			4057 = {
+			3422 = {
+				cede_ally_provinces_mission_effect = { province_scope = 3422 COUNTRY = owner }
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
 					duration = -1
 				}
 			}
-			106 = {
+			379 = {
+				cede_ally_provinces_mission_effect = { province_scope = 379 COUNTRY = owner }
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			89 = {
+				cede_ally_provinces_mission_effect = { province_scope = 89 COUNTRY = owner }
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			77 = {
+				cede_ally_provinces_mission_effect = { province_scope = 77 COUNTRY = owner }
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			88 = {
+				cede_ally_provinces_mission_effect = { province_scope = 88 COUNTRY = owner }
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			239 = {
+				cede_ally_provinces_mission_effect = { province_scope = 239 COUNTRY = owner }
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			244 = {
+				cede_ally_provinces_mission_effect = { province_scope = 244 COUNTRY = owner }
+				add_base_production = 2
+				add_province_modifier = {
+					name = dunedain_of_north_greenway
+					duration = -1
+				}
+			}
+			1846 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1846 COUNTRY = owner }
 				add_base_production = 2
 				add_province_modifier = {
 					name = dunedain_of_north_greenway
@@ -694,6 +812,10 @@ slot_02_dunedain_of_the_north_series = {
 		icon = mission_gondor_25
 		position = 10
 		required_missions = {  }
+		provinces_to_highlight = {
+			region = arthedain_region
+			culture = culture_arthedain
+		}
 		trigger = {
 			accepted_culture = culture_arthedain
 		}
@@ -743,7 +865,7 @@ slot_02_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			add_patriarch_authority = 0.10
+			add_patriarch_authority = 0.15
 		}
 	}
 }
@@ -794,16 +916,17 @@ slot_03_dunedain_of_the_north_series = {
 		provinces_to_highlight = {
 			province_id = 677
 			NOT = {
-				owned_by = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			677 = {
-				owned_by = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			677 = {
+				cede_ally_provinces_mission_effect = { province_scope = 677 COUNTRY = owner }
 				add_center_of_trade_level = 1
 			}
 		}
@@ -821,27 +944,32 @@ slot_03_dunedain_of_the_north_series = {
 				province_id = 153
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			1801 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			1800 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			156 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			154 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			153 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
+			cede_ally_provinces_mission_effect = { province_scope = 1801 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 1800 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 156 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 154 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 153 COUNTRY = owner }
 			every_known_country = {
 				limit = {
 					culture_group = culture_group_orcs
@@ -872,18 +1000,23 @@ slot_03_dunedain_of_the_north_series = {
 		trigger = {
 			cardolan_region = {
 				type = all
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					NOT  = {
-						culture_group = culture_group_orcs
+				owner = {
+					NOT = {
+						primary_culture = culture_orkish
 					}
 				}
+				# if = {
+				# 	limit = {
+				# 		NOT = {
+				# 			owner = {
+				# 				alliance_with = ROOT
+				# 			}
+				# 		}
+				# 	}
+				# 	NOT  = {
+				# 		culture_group = culture_group_orcs
+				# 	}
+				# }
 			}
 		}
 		effect = { 
@@ -901,6 +1034,10 @@ slot_03_dunedain_of_the_north_series = {
 		icon = mission_gondor_25
 		position = 10
 		required_missions = { defeat_orcs_of_cardolan }
+		provinces_to_highlight = {
+			region = cardolan_region
+			culture = culture_cardolani
+		}
 		trigger = {
 			accepted_culture = culture_cardolani
 		}
@@ -944,13 +1081,19 @@ slot_03_dunedain_of_the_north_series = {
 					value = 35
 					region = cardolan_region
 				}
+				Z16 = {
+					has_opinion = {
+						who = ROOT
+						value = 200
+					}
+				}
 			}
 			else = {
 				tag = W55
 			}
 		}
 		effect = { 
-			add_patriarch_authority = 0.10
+			add_patriarch_authority = 0.15
 		}
 	}
 	mission_form_arnor = {
@@ -963,6 +1106,7 @@ slot_03_dunedain_of_the_north_series = {
 			}
 		}
 		effect = {
+			inherit = Z16
 			country_event = {
 				id = LOU_mission_dunedain_of_arnor.5
 			}
@@ -989,7 +1133,8 @@ slot_04_dunedain_of_the_north_series = {
 		position = 1
 		required_missions = {  }
 		trigger = {
-			army_size_percentage = 1.0
+			army_size_percentage = 0.75
+			manpower_percentage = 0.75
 			is_at_war = no
 		}
 		effect = { 
@@ -1003,17 +1148,15 @@ slot_04_dunedain_of_the_north_series = {
 		required_missions = { regain_strength }
 		provinces_to_highlight = {
 			province_id = 1872
-			NOT = {
-				owned_by = ROOT
-			}
 		}
 		trigger = {
 			1872 = {
-				owned_by = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			1872 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1872 COUNTRY = owner }
 				change_culture = ROOT
 				change_religion = ROOT
 				add_province_modifier = {
@@ -1032,14 +1175,6 @@ slot_04_dunedain_of_the_north_series = {
 		required_missions = { reconquest_minas_melosse }
 		provinces_to_highlight = {
 			province_id = 1872
-			AND = {
-				owned_by = ROOT
-			}
-			NOT = {
-				development = 20
-				culture = ROOT
-				religion = ROOT
-			}
 		}
 		trigger = {
 			1872 = {
@@ -1066,44 +1201,12 @@ slot_04_dunedain_of_the_north_series = {
 				province_id = 292
 			}
 			NOT = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = {
-						alliance_with = ROOT
-					}
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
-			292 = {
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-					NOT = {
-						culture = culture_troll
-					}
-				}
-			}
-			384 = {
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-					NOT = {
-						culture = culture_troll
-					}
-				}
+			NOT = {
+				exists = V32
 			}
 		}
 		effect = { 
@@ -1130,6 +1233,12 @@ slot_04_dunedain_of_the_north_series = {
 		icon = mission_dunedain_1
 		position = 6
 		required_missions = {  }
+		provinces_to_highlight = {			
+			OR = {
+				owned_by = Y26
+				owned_by = Z16
+			}
+		}
 		trigger = {
 			OR = {
 				AND = {
@@ -1156,6 +1265,14 @@ slot_04_dunedain_of_the_north_series = {
 				name = "influential_diplomacy"
 				duration = 7300
 			}
+			create_subject = {
+				subject_type = dunedain_protectorate
+				subject = Y26
+			}
+			create_subject = {
+				subject_type = dunedain_protectorate
+				subject = Z16
+			}
 		}
 	}
 	border_sarn_ford = {
@@ -1171,82 +1288,31 @@ slot_04_dunedain_of_the_north_series = {
 				area = lostiriand_area
 			}
 			NOT = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = {
-						alliance_with = ROOT
-					}
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			sarn_ford_area = {
-				type = all
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			metraith_area = {
 				type = all
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			west_faerdor_area = {
 				type = all
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			faerdor_area = {
 				type = all
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			lostiriand_area = {
 				type = all
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
-		effect = { 
+		effect = {
 			if = {
 				limit = {
 					exists = Q04
@@ -1262,7 +1328,12 @@ slot_04_dunedain_of_the_north_series = {
 			else = {
 				add_adm_power = 100
 				add_dip_power = 100
-			}
+			}			
+			cede_ally_provinces_mission_effect = { province_scope = sarn_ford_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = metraith_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = west_faerdor_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = faerdor_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = lostiriand_area COUNTRY = owner }
 		}
 	}
 	the_threat_of_geiloth = {
@@ -1319,11 +1390,21 @@ slot_04_dunedain_of_the_north_series = {
 			else = {
 				pinnath_aiyring_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						owner = {
+							alliance_with = ROOT
+						}
+					}
 				}
 				carandor_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						owner = {
+							alliance_with = ROOT
+						}
+					}
 				}
 			}
 		}
@@ -1341,23 +1422,14 @@ slot_04_dunedain_of_the_north_series = {
 		provinces_to_highlight = {
 			region = rhudaur_region
 			OR = {
-				culture = culture_troll
 				owned_by = V32
 				owned_by = V31
 			}
 		}
 		trigger = {
-			rhudaur_region = {
-				type = all
-				NOT = {
-					culture = culture_troll
-				}
-				NOT = {
-					owned_by = V32
-				}
-				NOT = {
-					owned_by = V31
-				}
+			NOT = {
+				exists = V32
+				exists = V31
 			}
 		}
 		effect = { 
@@ -1410,7 +1482,7 @@ slot_04_dunedain_of_the_north_series = {
 			}
 		}
 		effect = { 
-			add_patriarch_authority = 0.10
+			add_patriarch_authority = 0.15
 		}
 	}
 }
@@ -1588,31 +1660,18 @@ slot_05_dunedain_of_the_north_series = {
 		provinces_to_highlight = {
 			province_id = 293
 			NOT = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					owner = {
-						alliance_with = ROOT
-					}
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			293 = {
-				if = {
-					limit = {
-						NOT = {
-							owner = {
-								alliance_with = ROOT
-							}
-						}
-					}
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
 			add_patriarch_authority = 0.05
 			293 = {
+				cede_ally_provinces_mission_effect = { province_scope = 293 COUNTRY = owner }
 				change_culture = ROOT
 				change_religion = ROOT
 			}
@@ -1673,37 +1732,34 @@ slot_05_dunedain_of_the_north_series = {
 		required_missions = { handing_over_the_defense }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 294
-				province_id = 365
-				province_id = 368
-				province_id = 1858
+				area = cameth_brin_area
+				area = glin_a_rhua_area
+				area = cold_fells_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
-			294 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			365 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			368 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1858 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = { 
 			cameth_brin_area = {
-				add_permanent_claim = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			glin_a_rhua_area = {
-				add_permanent_claim = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			cold_fells_area = {
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+		}
+		effect = {
+			cede_ally_provinces_mission_effect = { province_scope = cameth_brin_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = glin_a_rhua_area COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = cold_fells_area COUNTRY = owner }
+
+			morva_tarth_area = {
+				add_permanent_claim = ROOT
+			}
+			nothva_rhaglaw_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1806,32 +1862,38 @@ slot_05_dunedain_of_the_north_series = {
 				province_id = 3451
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = {
 			302 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			674 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			1821 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			3451 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
-			rhudaur_region = {
-				add_permanent_claim = ROOT
-			}
-			674 = {
-				center_of_trade = 1
+			cede_ally_provinces_mission_effect = { province_scope = 302 COUNTRY = owner }
+			cede_ally_provinces_mission_effect = { province_scope = 3451 COUNTRY = owner }
+
+			674 = {				
+				cede_ally_provinces_mission_effect = { province_scope = 674 COUNTRY = owner }
+				add_center_of_trade_level = 1
 			}
 			1821 = {
+				cede_ally_provinces_mission_effect = { province_scope = 1821 COUNTRY = owner }
 				add_center_of_trade_level = 1
+			}
+
+			rhudaur_region = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1855,33 +1917,32 @@ slot_01_arnor_series = {
 				area = shedun_area
 				area = angsul_area
 				area = phaluran_area
-			}
-			
+			}			
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = { 
 			morkai_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			shedun_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			angsul_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			phaluran_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
-			add_patriarch_authority = 0.10
-			add_mil_power = 50
+			add_patriarch_authority = 0.15
+			add_mil_power = 100
 		}
 	}
 }
@@ -1921,7 +1982,7 @@ slot_02_arnor_series = {
 		}
 		effect = { 
 			add_years_of_income = 2
-			add_mercantilism = 5
+			add_mercantilism = 10
 		}
 	}
 	mission_defeat_carn_dum = {
@@ -1931,13 +1992,13 @@ slot_02_arnor_series = {
 		provinces_to_highlight = {
 			area = carn_dum_area
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = { 
 			carn_dum_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		effect = { 
@@ -1989,11 +2050,7 @@ slot_03_arnor_series = {
 				}
 			}
 		}
-		effect = { 
-			add_country_modifier = {
-				name = dunedain_of_north_expelled_all_orcs
-				duration = -1
-			}
+		effect = {
 			gram_foothills_area = {
 				add_permanent_claim = ROOT
 			}
@@ -2012,20 +2069,24 @@ slot_03_arnor_series = {
 				area = mount_gram_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
 		trigger = { 
 			gram_foothills_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 			mount_gram_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_ally_or_non_sovereign_subject_holds = yes
 			}
 		}
-		effect = { 
+		effect = {  
+			add_country_modifier = {
+				name = dunedain_of_north_expelled_all_orcs
+				duration = -1
+			}
 			shedun_area = {
 				add_permanent_claim = ROOT
 			}

@@ -3,7 +3,7 @@
 # Province RGB : (12, 16, 20)
 # Province Area : Tulwang
 # Province Region : Tulwang
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Zadan an-Adûn
 # Province Climate : Arid
@@ -12,32 +12,21 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X46
 owner = X46
 controller = X46
 
-culture = culture_tulwani
-religion = religion_mornedain
+culture = culture_half_troll
+religion = religion_olog
 
-trade_goods = copper
+trade_goods = stone
 
 hre = no
 
-city_2_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt

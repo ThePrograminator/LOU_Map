@@ -3,7 +3,7 @@
 # Province RGB : (46, 88, 168)
 # Province Area : Kyvinâr
 # Province Region : Ukal Sêj
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Yjuvit
 # Province Climate : Severe_winter
@@ -12,24 +12,21 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z90
 owner = Z90
 controller = Z90
 
-culture = culture_ky_taari
-religion = religion_chegra
+culture = culture_snow_troll
+religion = religion_olog
 
 trade_goods = copper
 
 hre = no
 
-settlement_building=yes
-
-#Dyria Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd

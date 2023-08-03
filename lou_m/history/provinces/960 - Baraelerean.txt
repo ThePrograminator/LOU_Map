@@ -3,7 +3,7 @@
 # Province RGB : (214, 242, 237)
 # Province Area : Címóníemor
 # Province Region : Wâw
-# Province Super Region : Lochan Daer
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Âlk Wâw
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W36
 owner = W36
@@ -27,9 +27,6 @@ trade_goods = naval_supplies
 
 hre = no
 
-noble_residence_elf_building=yes
-
-#Lochan Daer Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

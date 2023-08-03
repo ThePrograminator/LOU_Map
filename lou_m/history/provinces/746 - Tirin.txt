@@ -9,37 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 5
-base_production = 6
-base_manpower = 5
-
-add_core = Y07
+base_production = 7
+base_manpower = 6
 owner = Y07
 controller = Y07
-
 culture = culture_broadbeam
 religion = religion_mahal
-
 trade_goods = silver
-
-hre = no
-
-hold_1_dwarf_building=yes
-
-fort_small_gatehouse_dwarf_building=yes
-
-rune_door_dwarf_building=yes
-
-training_hall_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
 center_of_trade = 1
-
 #Misty Mountains Superregion Discovery
+add_core = Y07
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -85,4 +66,12 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_2_dwarf_building = yes
+fairground_dwarf_building = yes
+arsenal_dwarf_building = yes
+smithies_guild_building = yes
+acadamy_dwarf_building = yes
+warriors_guild_dwarf_building = yes
+mining_network_dwarf_building = yes
+fort_mountain_fortress_dwarf_building = yes
+moat_dwarf_building = yes

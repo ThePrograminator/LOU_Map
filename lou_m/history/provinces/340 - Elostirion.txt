@@ -9,35 +9,32 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 8
-base_manpower = 7
-
-add_core = Y81
+base_tax = 4
+base_production = 6
+base_manpower = 2
 owner = Y81
 controller = Y81
-
 culture = culture_falathrim
 religion = religion_calaquendi
+trade_goods = miruvor
+add_core = Y81
+fort_2_elf_building = yes
+warriors_gallery_building = yes
+green_pastures_elf_building = yes
+fort_low_walls_elf_building = yes
+moat_elf_building = yes
 
-trade_goods = silver
+add_province_modifier = {
+	name = elostirion_stone
+	duration = -1
+}
 
-hre = no
+add_permanent_province_modifier = {
+	name = east_road
+	duration = -1
+}
 
-fort_2_elf_building=yes
-
-warriors_gallery_building=yes
-
-green_pastures_elf_building=yes
-
-fort_low_walls_elf_building=yes
-
-moat_elf_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -51,7 +48,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion

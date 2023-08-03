@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 17
-base_production = 15
-base_manpower = 14
+base_tax = 14
+base_production = 10
+base_manpower = 16
 
 add_core = X01
 owner = X01
@@ -23,9 +23,14 @@ controller = X01
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 
-trade_goods = silk
+trade_goods = marble
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = south_road
+	duration = -1
+}
 
 capital_3_building=yes
 
@@ -40,6 +45,11 @@ fort_citidal_building=yes
 garrison_building=yes
 
 center_of_trade = 2
+
+add_province_modifier = {
+	name = anor_stone
+	duration = -1
+}
 
 2820.1.1 = {
 	stockpile_building=yes

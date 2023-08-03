@@ -9,41 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
-add_core = W49
+base_tax = 4
+base_production = 6
+base_manpower = 2
 owner = W49
 controller = W49
-
 culture = culture_luindrim
 religion = religion_moriquendi
-
-trade_goods = glass
-
-hre = no
-
-capital_2_elf_building=yes
-
-elven_fairground_elf_building=yes
-
-temple_elf_building=yes
-
-elven_forge_elf_building=yes
-
-warriors_gallery_building=yes
-
-green_pastures_elf_building=yes
-
-fort_low_walls_elf_building=yes
-
-moat_elf_building=yes
-
-#Urd Superregion Discovery
+trade_goods = wine
+add_core = W49
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -84,4 +59,11 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+capital_2_elf_building = yes
+elven_fairground_elf_building = yes
+temple_elf_building = yes
+elven_forge_elf_building = yes
+warriors_gallery_building = yes
+green_pastures_elf_building = yes
+fort_low_walls_elf_building = yes
+moat_elf_building = yes

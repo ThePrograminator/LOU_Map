@@ -9,41 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = W32
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = W32
 controller = W32
-
-culture = culture_orkish
+culture = culture_cave_troll
 religion = religion_orkish
-
-trade_goods = gems
-
-hre = no
-
-fortress_2_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_pit_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_pit_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-small_arena_building=yes
-
-prisoner_cage_orc_building=yes
-
-#Womarin Realms Superregion Discovery
+trade_goods = stone
+add_core = W32
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -76,4 +51,11 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+fortress_2_orc_building = yes
+blacksmith_orc_building = yes
+orc_pit_orc_building = yes
+orc_fissure_orc_building = yes
+warg_pit_orc_building = yes
+fort_wooden_walls_orc_building = yes
+small_arena_building = yes
+prisoner_cage_orc_building = yes

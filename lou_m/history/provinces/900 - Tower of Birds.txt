@@ -3,7 +3,7 @@
 # Province RGB : (94, 129, 244)
 # Province Area : Suza Sumar
 # Province Region : Raj
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Bozisha-Dar
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
+base_tax = 2
 base_production = 3
-base_manpower = 5
+base_manpower = 1
 
 add_core = Y87
 owner = Y87
@@ -23,15 +23,8 @@ controller = Y87
 culture = culture_honnin
 religion = religion_drughu
 
-trade_goods = fruit
+trade_goods = honey
 
-hre = no
-
-fortress_1_building=yes
-
-army_camp_building=yes
-
-#Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt

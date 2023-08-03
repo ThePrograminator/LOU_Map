@@ -9,39 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 7
-base_manpower = 8
-
-add_core = Y87
+base_tax = 5
+base_production = 4
+base_manpower = 6
 owner = Y87
 controller = Y87
-
 culture = culture_honnin
 religion = religion_drughu
-
-trade_goods = ivory
-
-hre = no
-
-capital_3_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-stockpile_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
-#Far Harad Superregion Discovery
+trade_goods = cocoa
+add_core = Y87
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -68,4 +45,10 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_3_building = yes
+marketplace_building = yes
+provincial_office_building = yes
+stockpile_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes

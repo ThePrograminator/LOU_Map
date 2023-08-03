@@ -3,7 +3,7 @@
 # Province RGB : (120, 121, 84)
 # Province Area : Tyrn Gorthad
 # Province Region : Cardolan
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Bree
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Q03
 owner = Q03
@@ -27,18 +27,11 @@ trade_goods = iron
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
 add_province_modifier = {
 	name = province_wight_debuff
 	duration = -1
 }
 
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

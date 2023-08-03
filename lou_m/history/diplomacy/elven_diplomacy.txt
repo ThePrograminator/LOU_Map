@@ -16,7 +16,8 @@ alliance = {
 }
 
 # Lindon and Forlindon
-union = {
+dependency = {
+	subject_type = grey_haven
 	first = Y81
 	second = Y82
 	start_date = 2758.1.1
@@ -24,7 +25,8 @@ union = {
 }
 
 # Lindon and Harlindon
-union = {
+dependency = {
+	subject_type = grey_haven
 	first = Y81
 	second = Y83
 	start_date = 2758.1.1
@@ -53,6 +55,7 @@ march = {
 	start_date = 2758.1.1
 	end_date = 9651.1.1
 }
+
 # Rivendell and Dunedain of the north
 alliance = {
 	first = Y80
@@ -60,10 +63,19 @@ alliance = {
 	start_date = 2758.1.1
 	end_date = 9651.1.1
 }
+
 # Rivendell and Lothlorien
 alliance = {
 	first = Y80
 	second = Y68
+	start_date = 2758.1.1
+	end_date = 9651.1.1
+}
+
+# Rivendell and Lindon
+alliance = {
+	first = Y80
+	second = Y81
 	start_date = 2758.1.1
 	end_date = 9651.1.1
 }
@@ -75,6 +87,15 @@ alliance = {
 	start_date = 2758.1.1
 	end_date = 9651.1.1
 }
+
+# Lothlorien and Fangorn
+alliance = {
+	first = Y68
+	second = Z93
+	start_date = 2758.1.1
+	end_date = 9651.1.1
+}
+
 # Woodland Realm and Erebor
 alliance = {
 	first = Y67

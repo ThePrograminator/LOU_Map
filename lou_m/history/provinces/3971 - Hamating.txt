@@ -3,7 +3,7 @@
 # Province RGB : (179, 118, 11)
 # Province Area : Cuivac Wômaw
 # Province Region : Wômawas Drûs
-# Province Super Region : Womarin Realms
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Wômacûon
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 2
+base_production = 3
+base_manpower = 4
 
 add_core = V97
 owner = V97
@@ -25,21 +25,6 @@ religion = religion_avaradan
 
 trade_goods = naval_supplies
 
-hre = no
-
-city_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-army_camp_building=yes
-
-dock_building=yes
-
-#Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 1
-base_production = 7
-base_manpower = 1
+base_tax = 2
+base_production = 1
+base_manpower = 2
 
 add_core = X01
 owner = X01
@@ -23,9 +23,14 @@ controller = X01
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 
-trade_goods = paper
+trade_goods = iron
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = west_road
+	duration = -1
+}
 
 #Gondor Superregion Discovery
 discovered_by = lotr_human

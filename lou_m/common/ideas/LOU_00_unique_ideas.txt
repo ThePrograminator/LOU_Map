@@ -12,7 +12,10 @@ gondor_ideas = {
 	}
 	
 	trigger = {
-		tag = X01
+		OR = {
+			tag = X01
+			tag = X11
+		}
 	}
 	free = yes		
 	
@@ -461,7 +464,13 @@ shire_ideas = {
 	}
 	
 	trigger = {
-		tag = Y26
+		OR = {
+			tag = Y26							#The Shire
+			tag = V50							#Tookland
+			tag = Y27							#Buckland
+			tag = Y25							#Gladden-Stoors
+			tag = W88							#Banakan
+		}
 	}
 	free = yes		
 	
@@ -962,5 +971,50 @@ forondir_ideas = {
 	acceptance_of_rulership = {
 		vassal_forcelimit_bonus = 0.30	
 		vassal_income = 0.30
+	}
+}
+
+#------------------------------------
+# Angmar
+#------------------------------------
+
+angmar_ideas = {
+	start = {
+		manpower_recovery_speed = 0.10
+		global_manpower_modifier = 0.15
+	}
+
+	bonus = {
+		war_exhaustion = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			tag = Y52
+			tag = ANG
+		}
+	}
+	free = yes		
+	
+	northern_fortresses = {
+		defensiveness = 0.15
+	}
+	iron_grip = {
+		reduced_liberty_desire = 15
+	}
+	angmarim = {
+		infantry_power = 0.10
+	}
+	shadows_of_trade = {
+		global_trade_power = 0.15
+	}
+	whispers_of_espionage = {
+		spy_offence = 0.25
+	}
+	dreaded_wargs = {
+		cavalry_shock = 1
+	}
+	sorcery_of_darkness = {
+		prestige = 1
 	}
 }

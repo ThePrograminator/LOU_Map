@@ -10,10 +10,7 @@ province_event = {
 	trigger = {
         NOT = { has_province_modifier = province_troll_debuff }
         # Province
-        OR = {
-            culture = culture_troll
-            religion = religion_olog
-        }
+        culture = culture_troll
         # Owner
         NOT = {
             owner = {
@@ -21,6 +18,8 @@ province_event = {
                     primary_culture = culture_troll
                     primary_culture = culture_orkish
                     primary_culture = culture_goblin
+                    primary_culture = culture_uruks
+                    primary_culture = culture_wights
                 }
                 OR = {
                     religion = religion_olog

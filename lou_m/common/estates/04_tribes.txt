@@ -79,6 +79,9 @@ estate_tribes = {
             has_reform = lotr_nazgul_reform
             has_reform = lotr_isengard_reform
             has_reform = lotr_mordor_reform
+			has_reform = lotr_necromancer_reform
+			has_reform = lotr_carn_dum_reform
+			has_reform = lotr_angmar_reform
             has_reform = lotr_troll_clan_reform
             has_reform = lotr_wight_government_reform
             has_reform = lotr_spider_government_reform
@@ -178,7 +181,7 @@ estate_tribes = {
 
     # ----- Agendas -----
 	agendas = {
-		estate_tribes_raze_a_province
+		#estate_tribes_raze_a_province
 		estate_tribes_develop_x
 		estate_tribes_restore_horde_unity
 		estate_tribes_befriend_rival_of_rival

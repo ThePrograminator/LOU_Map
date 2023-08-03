@@ -3,7 +3,7 @@
 # Province RGB : (52, 63, 52)
 # Province Area : Ered Muil
 # Province Region : Northern Waste
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 5
-base_manpower = 5
+base_tax = 1
+base_production = 4
+base_manpower = 1
 
 add_core = Y47
 owner = Y47
@@ -27,17 +27,6 @@ trade_goods = gems
 
 hre = no
 
-encampment_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_pit_orc_building=yes
-
-small_arena_building=yes
-
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

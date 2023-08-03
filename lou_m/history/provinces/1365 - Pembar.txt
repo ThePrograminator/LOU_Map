@@ -1,7 +1,7 @@
 # Province ID : 1365
 # Province Name : Pembar
 # Province RGB : (135, 92, 153)
-# Province Area : Ost-in-Edhil
+# Province Area : Hareregion
 # Province Region : Eregion
 # Province Super Region : Eriador
 # Province Continent : Middle Earth
@@ -9,30 +9,21 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
+base_tax = 2
+base_production = 3
 base_manpower = 4
-
-add_core = Y56
-owner = Y56
-controller = Y56
-
+owner = Q20
+controller = Q20
 culture = culture_orkish
 religion = religion_orkish
-
-trade_goods = cloth
-
-hre = no
-
+trade_goods = orc_draught
+center_of_trade = 1
 add_province_modifier = {
 	name = ruins_debuff
 	duration = -1
 }
-
-#Eriador Superregion Discovery
+add_core = Q20
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -46,7 +37,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -79,4 +69,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

@@ -3,7 +3,7 @@
 # Province RGB : (107, 101, 115)
 # Province Area : Dacranamel
 # Province Region : Rhûn
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Mistrand
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 6
-base_manpower = 5
+base_tax = 2
+base_production = 4
+base_manpower = 3
 
 add_core = V39
 owner = V39
@@ -24,21 +24,13 @@ add_core = Z05
 culture = culture_igath
 religion = religion_ulgath
 
-trade_goods = paper
+trade_goods = tobacco
 
-hre = no
+add_permanent_province_modifier = {
+	name = men_rhuven
+	duration = -1
+}
 
-city_2_building=yes
-
-army_camp_building=yes
-
-workshop_building=yes
-
-provincial_office_building=yes
-
-marketplace_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

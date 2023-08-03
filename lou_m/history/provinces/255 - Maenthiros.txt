@@ -9,37 +9,17 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 5
-base_manpower = 8
-
-add_core = Z31
+base_tax = 3
+base_production = 2
+base_manpower = 4
 owner = Z31
 controller = Z31
-
 culture = culture_forodrim
 religion = religion_eriadorians
-
 trade_goods = livestock
-
-hre = no
-
-capital_2_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-forge_building=yes
-
-marketplace_building=yes
-
-workshop_building=yes
-
-#Eriador Superregion Discovery
+center_of_trade = 1
+add_core = Z31
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -53,7 +33,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -86,4 +65,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_2_building = yes
+fort_castle_building = yes
+barracks_building = yes
+forge_building = yes
+marketplace_building = yes
+workshop_building = yes

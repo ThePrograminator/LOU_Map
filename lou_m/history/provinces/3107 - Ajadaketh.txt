@@ -9,35 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 6
-
-add_core = X46
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X46
 controller = X46
-
 culture = culture_tulwani
 religion = religion_mornedain
-
-trade_goods = iron
-
-hre = no
-
-fortress_3_building=yes
-
-foundry_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
-tax_office_building=yes
-
-#Far Harad Superregion Discovery
+trade_goods = mushrooms
+add_core = X46
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -64,4 +45,8 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+fortress_3_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes
+tax_office_building = yes

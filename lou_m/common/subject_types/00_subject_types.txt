@@ -41,6 +41,12 @@ crown_colony = {}
 private_enterprise = {}
 self_governing_colony = {}
 tributary_state = {}
+dol_amroth_principality = {}
+grey_haven = {}
+nazgul_kingdom = {}
+dunedain_protectorate = {}
+free_land = {}
+angmar_march = {}
 eyalet = {}
 core_eyalet = {}
 commercial_enterprise = {}
@@ -63,13 +69,13 @@ default = {
 	transfer_trade_if_merchant_republic = no
 	joins_overlords_wars = yes
 	can_be_co_belligerented =  no    #Enemies can force this subject to join its overlord into the defense war. Only used when the subject has the "joins_overlords_wars = no". By default it's "no".
-	can_be_called_to_wars =  no    #Overlord can ask subject to join wars like it could ask allies to join. You would require favors  to call them to wars. Only used when the subject has the "joins_overlords_wars = no". By default it's "no"
+	must_accept_cta_from_overlord =  no    #Overlord can ask subject to join wars like it could ask allies to join. You would require favors  to call them to wars. Only used when the subject has the "joins_overlords_wars = no". By default it's "no"
 	favors_cost_to_join_offensive_wars = 0   #Defines how much favors the overlord need to invest to call the subject into an offensive war
 	favors_cost_to_join_defensive_wars = 0   #Defines how much favors the overlord need to invest to call the subject into a defensive war
 	opinion_cost_to_join_offensive_wars = 0   #Defines how much opinion the subject loses of the overlord to call the subject into an offensive war. Applied if you do not have Leviathan
 	opinion_cost_to_join_defensive_wars = 0   #Defines how much opinion the subject loses of the overlord to call the subject into a defensive war. Applied if you do not have Leviathan
 	opinion_cost_instead_of_favors_cost = no   #Determines if the subject requires favors or opinion to join a the war. If set "yes" then it requires the aforementioned opinion costs - regardless if Leviathan is active or not. "No" is the default setting
-	opinion_on_subject_integration = -30 #Determines how much opinion they actually lose when a fellow subject gets integrated.
+	opinion_on_subject_integration = 30 #Determines how much opinion they actually lose when a fellow subject gets integrated.
 	joins_colonial_wars = no
 	can_be_integrated = no
 	can_release_and_play = no							# "Release Colony" in SubjectView
@@ -178,6 +184,9 @@ default = {
 	allow_settlement_growth = yes
 	change_colonial_type = no
 	upgrade_subject_type = no
+	seize_court_resources = no
+	request_extra_levies = no
+	grant_administrative_autonomy = no
 
 	# (special)
 	sword_hunt = no
@@ -254,15 +263,6 @@ vassal = {
 			}
 		}
 	}
-	modifier_subject = {
-		modifier = same_religion_subject_bonus_mod
-		trigger = {
-			overlord = {
-				has_government_attribute = same_religion_subject_bonus
-				religion = PREV
-			}
-		}
-	}
 
 	overlord_opinion_modifier = is_vassal
 	subject_opinion_modifier = is_vassal
@@ -319,18 +319,9 @@ march = {
 			}
 		}
 	}
-	modifier_subject = {
-		modifier = same_religion_subject_bonus_mod
-		trigger = {
-			overlord = {
-				has_government_attribute = same_religion_subject_bonus
-				religion = PREV
-			}
-		}
-	}
 }
 
-daimyo_vassal = {
+daimyo_vassal = {																			# Is used as 'Khaganate' in Khand
 	copy_from = vassal
 	count = vassal
 	
@@ -341,17 +332,29 @@ daimyo_vassal = {
 	gets_help_with_rebels = no
 	separatists_become_subjects = yes
 	allows_taking_land_without_independence = yes
-	can_use_claims = no
+	can_use_claims = yes
 	forms_trade_companies = no
 	can_concentrate_development = no
+	can_be_integrated = no
+	can_be_annexed = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = yes
+	overlord_can_attack = yes
+	can_have_subjects_of_other_types = yes
+	has_power_projection = yes
+	share_rebel_popup = no
 
 	trust_on_start = 0
 	
-	base_liberty_desire = 10.0
+	base_liberty_desire = 25.0
 	military_focus = 1.2
+	
+	liberty_desire_development_ratio = 0.5
+	liberty_desire_same_dynasty = -25.0
 
 	relative_power_class = 1
-	should_quit_wars_on_activation = yes
+	should_quit_wars_on_activation = no
 
 	can_fight = {
 		independent_nations = yes
@@ -364,7 +367,9 @@ daimyo_vassal = {
 		other_overlord = all
 	}
 	can_ally = {
+		independent_nations = yes
 		same_overlord = daimyo_vassal
+		other_overlord = all
 	}
 	can_marry = {
 		independent_nations = yes
@@ -382,15 +387,15 @@ daimyo_vassal = {
 	enforce_culture = no
 	seize_territory = no
 	#(enable)
-	force_seppuku = yes
+	force_seppuku = no
 	contribute_to_capital = yes
 	conscript_general = yes
-	force_isolation = yes
+	force_isolation = no
 	return_land = yes
 	#(special)
-	sword_hunt = yes
-	sankin_kotai = yes
-	expel_ronin = yes
+	sword_hunt = no
+	sankin_kotai = no
+	expel_ronin = no
 	
 	# Modifiers
 	
@@ -876,7 +881,7 @@ eyalet = {
 	forms_trade_companies = no
 	takes_diplo_slot = no
 	can_be_co_belligerented = yes
-	can_be_called_to_wars = yes
+	must_accept_cta_from_overlord = yes
 	extend_trading_range = yes
 	opinion_cost_instead_of_favors_cost = yes
 	opinion_cost_to_join_offensive_wars = 40
@@ -914,15 +919,6 @@ eyalet = {
 		trigger = {
 			overlord = {
 				has_government_attribute = subject_tax_modifier_25
-			}
-		}
-	}
-	modifier_subject = {
-		modifier = same_religion_subject_bonus_mod
-		trigger = {
-			overlord = {
-				has_government_attribute = same_religion_subject_bonus
-				religion = PREV
 			}
 		}
 	}
@@ -967,15 +963,6 @@ core_eyalet = {
 		trigger = {
 			overlord = {
 				has_government_attribute = subject_tax_modifier_25
-			}
-		}
-	}
-	modifier_subject = {
-		modifier = same_religion_subject_bonus_mod
-		trigger = {
-			overlord = {
-				has_government_attribute = same_religion_subject_bonus
-				religion = PREV
 			}
 		}
 	}
@@ -1118,9 +1105,9 @@ trade_protectorate = {
 	joins_overlords_wars = no
 	joins_colonial_wars = no
 	can_be_co_belligerented = yes    #Enemies can force this subject to join its overlord into the defense war. Only used when the subject has the "joins_overlords_wars = no". By default it's "no".
-	can_be_called_to_wars = yes    #Overlord can ask subject to join wars like it could ask allies to join. You would require favors  to call them to wars. Only used when the subject has the "joins_overlords_wars = no". By default it's "no"
-	opinion_cost_to_join_offensive_wars = 50   #Defines how much opinion the subject loses of the overlord to call the subject into an offensive war. Applied if you do not have Leviathan
-	opinion_cost_to_join_defensive_wars = 20   #Defines how much opinion the subject loses of the overlord to call the subject into a defensive war. Applied if you do not have Leviathan
+	must_accept_cta_from_overlord = yes    #Overlord can ask subject to join wars like it could ask allies to join. You would require favors  to call them to wars. Only used when the subject has the "joins_overlords_wars = no". By default it's "no"
+	opinion_cost_to_join_offensive_wars = 100   #Defines how much opinion the subject loses of the overlord to call the subject into an offensive war. Applied if you do not have Leviathan
+	opinion_cost_to_join_defensive_wars = 50   #Defines how much opinion the subject loses of the overlord to call the subject into a defensive war. Applied if you do not have Leviathan
 	opinion_cost_instead_of_favors_cost = yes   #Determines if the subject requires favors or opinion to join a the war. If set "yes" then it requires the aforementioned opinion costs - regardless if Leviathan is active or not. "No" is the default setting
 	opinion_on_subject_integration = 0 #Determines how much opinion they actually lose when a fellow subject gets integrated.
 	overlord_can_attack = yes
@@ -1198,6 +1185,417 @@ trade_protectorate = {
 				has_country_modifier = gbr_emperor_of_india
 			}
 		}
+	}
+}
+
+dol_amroth_principality = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+
+	# Properties:
+	can_be_integrated = no
+	can_be_annexed = no
+	takes_diplo_slot = no
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = no
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	has_power_projection = yes
+	share_rebel_popup = yes
+	trust_on_start = 50
+	base_liberty_desire = -1000.0
+	
+
+	#max_government_rank = 2
+
+	liberty_desire_development_ratio = -1.0
+	liberty_desire_same_dynasty = -25.0
+	pays_overlord = 0.5
+	forcelimit_to_overlord = 0.1
+
+	relative_power_class = 0
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	placate_rulers = yes
+	enforce_culture = no
+	siphon_income = no
+	support_loyalists = yes
+	send_officers = yes
+	divert_trade = no
+	seize_territory = no
+	bestow_gifts = yes
+	send_additional_troops = yes
+	fortify_march = yes
+	conscript_general = yes
+	block_settlement_growth = no
+	enforce_religion = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
+
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_subject = {
+		modifier = march_bonus
+	}
+
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = vassal
+		other_overlord = all
+	}
+	can_marry = {
+		independent_nations = yes
+		same_overlord = vassal
+		other_overlord = all
+	}
+}
+
+grey_haven = {
+	copy_from = personal_union
+
+	# Graphics:
+	sprite = GFX_court_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+	diplomacy_subject_sprite = GFX_diplomacy_inunion
+
+	# Properties:
+	has_overlords_ruler = yes
+	can_be_integrated = no
+	overlord_can_attack = no
+	has_power_projection = no
+	gets_help_with_rebels = yes
+	can_have_subjects_of_other_types = no
+	can_union_break = no
+	transfer_subjects_when_made = yes
+	can_concentrate_development = no
+	can_be_annexed = no
+	takes_diplo_slot = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = no
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	share_rebel_popup = yes
+	trust_on_start = 50
+	base_liberty_desire = -1000.0
+	
+
+	max_government_rank = 2
+
+	liberty_desire_development_ratio = -1
+	liberty_desire_same_dynasty = -25.0
+	pays_overlord = 1.0
+	forcelimit_to_overlord = 0.1
+
+	relative_power_class = 0
+
+	liberty_desire_negative_prestige = 1.0
+	military_focus = 0.66
+
+	restoration_cb = cb_restore_personal_union
+	
+	# Subject Interactions:
+	placate_rulers = yes
+	enforce_culture = no
+	siphon_income = no
+	support_loyalists = yes
+	send_officers = yes
+	divert_trade = no
+	seize_territory = no
+	bestow_gifts = yes
+	send_additional_troops = yes
+	fortify_march = yes
+	conscript_general = yes
+	block_settlement_growth = no
+	enforce_religion = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
+
+	# Modifiers:
+	modifier_overlord = {
+		modifier = union_subject
+	}
+
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
+}
+
+nazgul_kingdom = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+
+	# Properties:
+	can_be_integrated = no
+	can_be_annexed = no	
+	takes_diplo_slot = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = no
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	has_power_projection = yes
+	share_rebel_popup = yes
+	trust_on_start = 100
+	base_liberty_desire = -10000.0
+	
+
+	#max_government_rank = 2
+
+	liberty_desire_development_ratio = -1.0
+	pays_overlord = 0.5
+	forcelimit_to_overlord = 0.25
+
+	relative_power_class = 0
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	placate_rulers = yes
+	enforce_culture = no
+	siphon_income = no
+	support_loyalists = yes
+	send_officers = yes
+	divert_trade = no
+	seize_territory = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	fortify_march = yes
+	conscript_general = yes
+	block_settlement_growth = no
+	enforce_religion = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
+
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_subject = {
+		modifier = march_bonus
+	}
+
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = nazgul_kingdom
+	}
+}
+
+dunedain_protectorate = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = gfx_icon_protectorate
+	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorates
+	diplomacy_subject_sprite = GFX_diplomacy_inprotectorate
+
+	# Properties:
+	joins_overlords_wars = no
+	can_be_integrated = no
+	can_be_annexed = no
+	takes_diplo_slot = no
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = no
+	allows_taking_land_without_independence = yes
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	has_power_projection = yes
+	share_rebel_popup = yes
+	trust_on_start = 50
+	base_liberty_desire = -1000.0
+
+	#max_government_rank = 2
+
+	liberty_desire_development_ratio = -1.0
+	liberty_desire_same_dynasty = -25.0
+	pays_overlord = 0.0	
+	forcelimit_to_overlord = 0.0
+	military_focus = 0.66
+
+	relative_power_class = 0
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	placate_rulers = yes
+	enforce_culture = no
+	siphon_income = no
+	support_loyalists = yes
+	send_officers = yes
+	divert_trade = no
+	seize_territory = no
+	bestow_gifts = yes
+	send_additional_troops = yes
+	fortify_march = yes
+	conscript_general = yes
+	block_settlement_growth = no
+	enforce_religion = no
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
+
+
+	# Modifiers:
+	modifier_subject = {
+	}
+	modifier_overlord = {
+		modifier = union_subject
+	}
+
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		same_overlord = dunedain_protectorate
+	}
+	can_marry = {
+	}
+}
+
+free_land = {
+
+}
+
+angmar_march = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = gfx_icon_protectorate
+	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorates
+	diplomacy_subject_sprite = GFX_diplomacy_inprotectorate
+
+	# Properties:
+	joins_overlords_wars = yes
+	can_be_integrated = yes
+	can_be_annexed = yes
+	takes_diplo_slot = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	can_fight_independence_war = yes
+	allows_taking_land_without_independence = no
+	can_use_claims = yes
+	gets_help_with_rebels = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = no
+	has_power_projection = yes
+	share_rebel_popup = yes
+	trust_on_start = 50
+	base_liberty_desire = -25
+	
+	max_government_rank = 2
+
+	liberty_desire_development_ratio = -0.75
+	liberty_desire_same_dynasty = -25.0
+	pays_overlord = 0.5
+	forcelimit_to_overlord = 0.25
+	forms_trade_companies = no
+
+	relative_power_class = 0	
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	placate_rulers = yes
+	enforce_culture = no
+	siphon_income = yes
+	support_loyalists = yes
+	send_officers = yes
+	divert_trade = yes
+	seize_territory = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	fortify_march = yes
+	conscript_general = yes
+	block_settlement_growth = no
+	enforce_religion = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	scutage = no
+
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_subject = {
+		modifier = march_bonus
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
 	}
 }
 

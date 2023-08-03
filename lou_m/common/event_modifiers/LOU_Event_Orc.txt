@@ -30,18 +30,6 @@ orc_offended_nation = {
 	diplomatic_reputation = -2
 }
 
-mordor_nurn_subject = {
-	liberty_desire = -25
-}
-
-mordor_orc_servant_subject = {
-	liberty_desire = -1000
-}
-
-mordor_nurnoth_subject = {
-	liberty_desire = -75
-}
-
 orc_religion_punish_survivers = {
 	tolerance_own = -1
 	discipline = 0.05
@@ -146,6 +134,52 @@ orc_religion_loosen_the_grip = {
 orc_religion_deserted_orcs = {
 	tolerance_own = -1
 	global_manpower_modifier = -0.25
+}
+
+orc_religion_fuel_of_war = {
+	manpower_recovery_speed = 0.1
+}
+
+orc_religion_spark_of_war = {
+	discipline = 0.05
+}
+	
+orc_religion_purpose_of_war = {
+	warscore_cost_vs_other_religion = -0.20
+}
+	
+orc_religion_fuel_of_industry = {
+	global_trade_goods_size_modifier = 0.1
+}
+
+orc_religion_spark_of_industry = {
+	global_own_trade_power = 0.1
+}
+
+orc_religion_purpose_of_industry = {
+	great_project_upgrade_cost = -0.20
+	development_cost_in_primary_culture = -0.1
+}
+
+orc_religion_unguided_flames = {
+	yearly_karma_decay = -0.01
+	global_unrest = 5
+}
+
+orc_religion_tempered_flames = {
+	yearly_karma_decay = 0.01
+}
+
+mordor_nurn_subject = {
+	liberty_desire = -25
+}
+
+mordor_orc_servant_subject = {
+	liberty_desire = -1000
+}
+
+mordor_nurnoth_subject = {
+	liberty_desire = -75
 }
 
 mordor_sent_nazgul = {

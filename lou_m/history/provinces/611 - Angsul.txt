@@ -9,37 +9,21 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
-add_core = Y54
+base_tax = 2
+base_production = 3
+base_manpower = 4
 owner = Y54
 controller = Y54
-
-culture = culture_orkish
+culture = culture_angmarrim
 religion = religion_orkish
-
 trade_goods = slaves
-
-hre = no
-
-fortress_2_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_arena_orc_building=yes
-
-siege_works_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-tortur_chambers_orc_building=yes
-
-#Forodwaith Superregion Discovery
+add_permanent_province_modifier = {
+	name = angmar_road
+	duration = -1
+}
+add_core = Y54
+camp_orc_building=yes
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

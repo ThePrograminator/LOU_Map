@@ -3,7 +3,7 @@
 # Province RGB : (15, 4, 14)
 # Province Area : Sakal-an-Dalajaf
 # Province Region : Nen Umbar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Dûsalan
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 6
-base_manpower = 4
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = X27
 owner = X27
@@ -25,13 +25,11 @@ religion = religion_black_numenorean
 
 trade_goods = salt
 
-hre = no
+add_permanent_province_modifier = {
+	name = hyarmentie
+	duration = -1
+}
 
-fortress_1_building=yes
-
-army_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

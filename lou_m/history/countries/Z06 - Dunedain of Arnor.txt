@@ -22,6 +22,9 @@ historical_friend = Y81
 historical_friend = Y83
 historical_friend = Y82
 historical_friend = V37
+historical_friend = Q03
+historical_friend = Q04
+historical_friend = Q05
 historical_rival = Y57
 historical_rival = Y56
 historical_rival = Z21
@@ -61,6 +64,7 @@ historical_rival = V01
 historical_rival = Z97
 historical_rival = V06
 historical_rival = Y44
+historical_rival = ANG
 
 add_opinion = {
 	who = Y80
@@ -126,4 +130,8 @@ add_opinion = {
 		mil = 6
 		birth_date = 2931.3.1
 	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = righteous_personality
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = conqueror_personality
 }

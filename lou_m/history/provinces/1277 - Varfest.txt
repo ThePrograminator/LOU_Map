@@ -9,35 +9,20 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 7
-base_manpower = 7
-
-add_core = X87
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = X87
 controller = X87
-
 culture = culture_asdriags
 religion = religion_ioriags
-
 trade_goods = iron
-
-hre = no
-
-fortress_2_building=yes
-
-trade_outpost_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-#Rhun Superregion Discovery
+add_permanent_province_modifier = {
+	name = men_rhuven
+	duration = -1
+}
+add_core = X87
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -113,4 +98,8 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+fortress_2_building = yes
+trade_outpost_building = yes
+forge_building = yes
+fort_castle_building = yes
+barracks_building = yes

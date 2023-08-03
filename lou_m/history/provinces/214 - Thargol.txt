@@ -3,7 +3,7 @@
 # Province RGB : (175, 164, 104)
 # Province Area : Pinnath Gelin
 # Province Region : Pinnath Gelin
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Calembel
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
+base_tax = 2
 base_production = 3
-base_manpower = 3
+base_manpower = 1
 
 add_core = X01
 owner = X01
@@ -24,17 +24,15 @@ add_core = X03
 culture = culture_gondor_middlemen_anfalas
 religion = religion_daen
 
-trade_goods = wool
+trade_goods = wine
 
 hre = no
 
-city_1_building=yes
+add_permanent_province_modifier = {
+	name = rathon_gondor
+	duration = -1
+}
 
-temple_building=yes
-
-workshop_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

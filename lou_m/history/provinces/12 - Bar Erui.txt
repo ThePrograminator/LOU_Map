@@ -3,7 +3,7 @@
 # Province RGB : (129, 212, 255)
 # Province Area : Lossarnach
 # Province Region : Anoríen
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Minas Tirith
 # Province Climate : null
@@ -12,7 +12,7 @@
 
 is_city = yes
 
-base_tax = 5
+base_tax = 3
 base_production = 4
 base_manpower = 2
 
@@ -23,15 +23,15 @@ controller = X01
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
 
-trade_goods = wine
+trade_goods = grain
 
 hre = no
 
-settlement_building=yes
+add_permanent_province_modifier = {
+	name = south_road
+	duration = -1
+}
 
-trade_outpost_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

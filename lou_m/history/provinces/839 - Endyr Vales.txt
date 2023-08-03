@@ -3,7 +3,7 @@
 # Province RGB : (98, 144, 198)
 # Province Area : Endyr
 # Province Region : Dyr
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Dyr
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z92
 owner = Z92
@@ -23,17 +23,10 @@ controller = Z92
 culture = culture_dyrians
 religion = religion_tyr
 
-trade_goods = wool
+trade_goods = stone
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Dyria Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd

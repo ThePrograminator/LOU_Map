@@ -3,7 +3,7 @@
 # Province RGB : (13, 13, 63)
 # Province Area : Thendo
 # Province Region : Thuriac Codya
-# Province Super Region : Womarin Realms
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Thuriac Codya
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 6
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V85
 owner = V85
@@ -25,19 +25,6 @@ religion = religion_cuivac
 
 trade_goods = iron
 
-hre = no
-
-city_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-army_camp_building=yes
-
-#Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

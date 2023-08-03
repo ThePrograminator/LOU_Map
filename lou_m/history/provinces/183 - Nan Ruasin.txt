@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 2
-base_production = 4
-base_manpower = 2
+base_production = 3
+base_manpower = 1
 
 add_core = X15
 owner = X15
@@ -23,9 +23,14 @@ controller = X15
 culture = culture_druedain
 religion = religion_drughu
 
-trade_goods = herbs
+trade_goods = grain
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = men_drun
+	duration = -1
+}
 
 #Gondor Superregion Discovery
 discovered_by = lotr_human

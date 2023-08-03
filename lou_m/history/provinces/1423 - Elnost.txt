@@ -9,33 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 4
-base_manpower = 7
-
-add_core = V37
+base_tax = 1
+base_production = 1
+base_manpower = 4
 owner = V37
 controller = V37
-
 culture = culture_dunedain_of_arnor
 religion = religion_dunedain
-
-trade_goods = copper
-
-hre = no
-
-fortress_1_building=yes
-
-fort_castle_building=yes
-
-work_camp_building=yes
-
-army_camp_building=yes
-
-#Eriador Superregion Discovery
+trade_goods = salt
+add_core = V37
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -49,7 +32,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -82,4 +64,7 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+fortress_1_building = yes
+fort_castle_building = yes
+work_camp_building = yes
+army_camp_building = yes

@@ -9,39 +9,18 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 4
 base_production = 5
-base_manpower = 4
-
-add_core = Y66
+base_manpower = 3
 owner = Y66
 controller = Y66
-
 culture = culture_hvettir
 religion = religion_moriquendi
-
-trade_goods = paper
-
-hre = no
-
-capital_1_elf_building=yes
-
-workshop_elf_building=yes
-
-warriors_gallery_building=yes
-
-green_pastures_elf_building=yes
-
-fort_low_walls_elf_building=yes
-
-moat_elf_building=yes
-
+trade_goods = wine
 center_of_trade = 1
-
 #Eriador Superregion Discovery
+add_core = Y66
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -55,7 +34,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -88,4 +66,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_elf_building = yes
+workshop_elf_building = yes
+warriors_gallery_building = yes
+green_pastures_elf_building = yes
+fort_low_walls_elf_building = yes
+moat_elf_building = yes

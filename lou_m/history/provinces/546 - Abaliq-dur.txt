@@ -3,7 +3,7 @@
 # Province RGB : (223, 159, 136)
 # Province Area : Núrnen
 # Province Region : Nûrn
-# Province Super Region : Mordor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sturlurtsa-Núrn
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 6
-base_manpower = 6
+base_tax = 2
+base_production = 1
+base_manpower = 3
 
 add_core = X86
 owner = X86
@@ -23,13 +23,8 @@ controller = X86
 culture = culture_nurniags
 religion = religion_ioriags
 
-trade_goods = copper
+trade_goods = grain
 
-hre = no
-
-settlement_building=yes
-
-#Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

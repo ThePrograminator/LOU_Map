@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 3
-base_production = 3
-base_manpower = 5
+base_production = 4
+base_manpower = 2
 
 add_core = X01
 owner = X01
@@ -24,7 +24,7 @@ add_core = X08
 culture = culture_dunedain_of_lebennin
 religion = religion_dunedain
 
-trade_goods = paper
+trade_goods = tobacco
 
 hre = no
 
@@ -34,10 +34,12 @@ fort_castle_building=yes
 
 2758.9.15 = {
 	controller = X27
+	add_devastation = 75
 }
 
 2759.8.20 = {
-	controller = X01
+	controller = X01	
+	add_devastation = -75
 }
 
 #Gondor Superregion Discovery

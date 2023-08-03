@@ -3,7 +3,7 @@
 # Province RGB : (19, 251, 133)
 # Province Area : Harithilien
 # Province Region : Ithilien
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Pelargir
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X01
 owner = X01
@@ -24,11 +24,14 @@ add_core = X06
 culture = culture_dunedain_of_ithilien
 religion = religion_dunedain
 
-trade_goods = dyes
+trade_goods = honey
 
 hre = no
 
-settlement_building=yes
+add_permanent_province_modifier = {
+	name = men_ithilien
+	duration = -1
+}
 
 2901.1.1 = {
 	add_core = V18
@@ -43,13 +46,12 @@ settlement_building=yes
 }
 
 2942.1.1 = {
-	add_core = V17
-	owner = V17
-	controller = V17
-	remove_core = V18
+	# add_core = V17
+	# owner = V17
+	# controller = V17
+	# remove_core = V18
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

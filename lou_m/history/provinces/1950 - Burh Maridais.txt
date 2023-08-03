@@ -9,45 +9,29 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 6
-base_manpower = 8
-
-add_core = Y94
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = Y94
 controller = Y94
-
 culture = culture_bardings
 religion = religion_nenedain
-
 trade_goods = fish
-
-hre = no
-
-fortress_1_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-trade_outpost_building=yes
-
 center_of_trade = 1
-
+add_permanent_province_modifier = {
+	name = men_celduin
+	duration = -1
+}
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
-
 2770.1.1 = {
 	add_core = V51
 	controller = V51
 	owner = V51
 }
-
 2941.11.23 = {
 	add_core = Y94
 	controller = Y94
@@ -59,12 +43,11 @@ add_permanent_province_modifier = {
 		duration = -1
 	}
 }
-
 2960.1.1 = {
 	remove_province_modifier = ruins_debuff
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y94
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -114,4 +97,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_1_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+trade_outpost_building = yes

@@ -3,7 +3,7 @@
 # Province RGB : (18, 161, 17)
 # Province Area : Sula
 # Province Region : Northern Waste
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Hyvät Kalat
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y24
 owner = Y24
@@ -27,11 +27,6 @@ trade_goods = fish
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

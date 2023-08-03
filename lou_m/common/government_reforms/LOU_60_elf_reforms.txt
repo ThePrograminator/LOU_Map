@@ -8,6 +8,8 @@ lordship_elf_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	fixed_rank = 2
+	queen = yes
+	heir = yes
 	
 	potential = {
 		is_elf = yes
@@ -24,6 +26,8 @@ kingdom_elf_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	fixed_rank = 2
+	queen = yes
+	heir = yes
 	
 	potential = {
 		is_elf = yes
@@ -33,6 +37,32 @@ kingdom_elf_reform = {
 		stability_cost_modifier = -0.25
 	}
 }
+
+eregion_elf_reform = {
+	icon = "eregion"
+	valid_for_new_country = no
+	allow_convert = no
+	allow_normal_conversion = no
+	legacy_equivalent = lotr_eregion_elf_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	fixed_rank = 3
+	queen = yes
+	heir = yes
+	lock_level_when_selected = yes
+	
+	potential = {
+		is_elf = yes
+	}
+	
+	modifiers = {
+		max_absolutism = 10
+		discipline = 0.1
+		prestige_decay = -0.1
+		yearly_corruption = -0.1
+	}
+}
+
 principality_elf_reform = {
 	icon = "elf_prince"
 	allow_normal_conversion = yes
@@ -40,6 +70,8 @@ principality_elf_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	fixed_rank = 2
+	queen = yes
+	heir = yes
 	
 	potential = {
 		is_elf = yes

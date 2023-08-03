@@ -839,33 +839,33 @@ spawn_mordor_territory_effect = {
 
 spawn_mordor_province_setup_effect = {	
 	3030 = {
-		change_trade_goods = wool
+		change_trade_goods = stone
 	}
 
 	327 = {
-		change_trade_goods = copper
+		change_trade_goods = iron
 		add_building = encampment_1_orc_building
 		add_building = meat_depot_orc_building
 		add_building = enforcer_camp_orc_building
 	}
 
 	151 = {
-		change_trade_goods = iron
+		change_trade_goods = copper
 		add_building = fortress_1_orc_building
 		add_building = fort_pallisade_orc_building
 		add_building = enforcer_camp_orc_building
 	}
 	
 	3034 = {
-		change_trade_goods = copper
+		change_trade_goods = iron
 	}
 
 	108 = {
-		change_trade_goods = silk
+		change_trade_goods = fur
 	}
 	
 	1633 = {
-		change_trade_goods = iron
+		change_trade_goods = great_beasts
 		add_building = camp_orc_building
 	}
 	
@@ -878,7 +878,7 @@ spawn_mordor_province_setup_effect = {
 	}
 	
 	1634 = {
-		change_trade_goods = gold
+		change_trade_goods = slaves
 		add_building = fortress_2_orc_building
 		add_building = orc_pit_orc_building
 		add_building = fort_wooden_walls_orc_building
@@ -887,44 +887,44 @@ spawn_mordor_province_setup_effect = {
 	}
 	
 	3042 = {
-		change_trade_goods = fur
+		change_trade_goods = wool
 	}
 	
 	326 = {
-		change_trade_goods = slaves
+		change_trade_goods = stone
 		add_building = encampment_1_orc_building
 		add_building = small_arena_building
 	}
 	
 	1005 = {
-		change_trade_goods = iron
+		change_trade_goods = wool
 		add_building = encampment_1_orc_building
 		add_building = small_arena_building
 	}
 	
 	3041 = {
-		change_trade_goods = wool
+		change_trade_goods = fur
 	}
 
 	325 = {
-		change_trade_goods = silk
+		change_trade_goods = cloth
 	}
 
 	1007 = {
-		change_trade_goods = silk
+		change_trade_goods = orc_draught
 	}
 
 	1004 = {
-		change_trade_goods = copper
+		change_trade_goods = great_beasts
 		add_building = fortress_1_orc_building
 	}
 
 	977 = {
-		change_trade_goods = stone
+		change_trade_goods = wool
 	}
 
 	3045 = {
-		change_trade_goods = iron
+		change_trade_goods = silver
 	}
 
 	3038 = {
@@ -932,7 +932,7 @@ spawn_mordor_province_setup_effect = {
 	}
 
 	3037 = {
-		change_trade_goods = copper
+		change_trade_goods = iron
 	}
 
 	3044 = {
@@ -940,7 +940,7 @@ spawn_mordor_province_setup_effect = {
 	}
 
 	231 = {
-		change_trade_goods = stone
+		change_trade_goods = orc_draught
 	}
 
 	1020 = {
@@ -948,7 +948,7 @@ spawn_mordor_province_setup_effect = {
 	}
 
 	3225 = {
-		change_trade_goods = silver
+		change_trade_goods = copper
 		add_building = fortress_1_orc_building
 		add_building = fort_pallisade_orc_building
 	}
@@ -958,19 +958,19 @@ spawn_mordor_province_setup_effect = {
 	}
 
 	148 = {
-		change_trade_goods = copper
+		change_trade_goods = slaves
 	}
 
 	3033 = {
-		change_trade_goods = paper
+		change_trade_goods = wool
 	}
 
 	146 = {
-		change_trade_goods = salt
+		change_trade_goods = orc_draught
 	}
 
 	3048 = {
-		change_trade_goods = gold
+		change_trade_goods = stone
 	}
 
 	3049 = {
@@ -982,11 +982,11 @@ spawn_mordor_province_setup_effect = {
 	}
 
 	647 = {
-		change_trade_goods = iron
+		change_trade_goods = plunder
 	}
 
 	639 = {
-		change_trade_goods = iron
+		change_trade_goods = great_beasts
 		
 		add_province_modifier = {
 			name = ruins_debuff 
@@ -999,23 +999,23 @@ spawn_mordor_province_setup_effect = {
 	}
 		
 	1021 = {
-		change_trade_goods = coal
+		change_trade_goods = great_beasts
 	}
 
 	147 = {
-		change_trade_goods = stone
+		change_trade_goods = dyes
 	}
 
 	3040 = {
-		change_trade_goods = silk
+		change_trade_goods = orc_draught
 	}
 
 	150 = {
-		change_trade_goods = livestock
+		change_trade_goods = great_beasts
 	}
 
 	3029 = {
-		change_trade_goods = stone
+		change_trade_goods = iron
 	}
 
 	3039 = {
@@ -1028,14 +1028,14 @@ spawn_mordor_province_setup_effect = {
 	}
 
 	71 = {
-		change_trade_goods = coal
+		change_trade_goods = orc_draught
 		add_building = encampment_1_orc_building
 		add_building = orc_pit_orc_building
 		add_building = blacksmith_orc_building
 	}
 
 	675 = {
-		change_trade_goods = iron
+		change_trade_goods = slaves
 
 		add_building = fortress_1_orc_building
 		add_building = fort_wooden_walls_orc_building
@@ -1238,18 +1238,28 @@ desolation_of_smaug_lost_effect = {
 			name = ruins_debuff
 			duration = -1
 		}
+		add_base_tax = -10
+		add_base_production = -10
+		add_base_manpower = -10
+		center_of_trade = 1
 	}
 
 	1903 = {
 		cede_province = ---
 		change_culture = culture_wilderness
 		change_religion = religion_wilderness
+		set_base_tax = 1
+		set_base_production = 1
+		set_base_manpower = 1
 	}
 
 	1951 = {
 		cede_province = ---
 		change_culture = culture_wilderness
 		change_religion = religion_wilderness
+		set_base_tax = 1
+		set_base_production = 1
+		set_base_manpower = 1
 	}
 
 	527 = {
@@ -1260,6 +1270,28 @@ desolation_of_smaug_lost_effect = {
 			name = ruins_debuff
 			duration = -1
 		}
+		add_base_tax = -6
+		add_base_production = -6
+		add_base_manpower = -6
+	}
+
+	529 = {
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+	}
+
+	534 = {
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+	}
+
+	528 = {
+		add_base_tax = 5
+		add_base_production = 4
+		add_base_manpower = 9
+		center_of_trade = 2
 	}
 
 	3175 = {
@@ -1591,4 +1623,721 @@ clear_consort_personalities = {
 		remove_queen_personality = malevolent_personality
 		remove_queen_personality = immortal_personality
 	}
+}
+
+cede_ally_provinces_mission_effect = {
+	if = {
+		limit = {
+			$province_scope$ = {
+				owner = {
+					ai = yes
+					OR = {
+						alliance_with = ROOT
+						is_subject_of_type_with_overlord = { who = ROOT type = dunedain_protectorate }
+					}
+				}
+			}
+		}
+		$province_scope$ = {
+			custom_tooltip = cede_ally_provinces_mission_effect_tooltip
+		}
+		hidden_effect = {
+			$province_scope$ = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							alliance_with = ROOT
+							is_subject_of_type_with_overlord = { who = ROOT type = dunedain_protectorate }
+						}
+					}
+				}
+				remove_core = $COUNTRY$
+				cede_province = ROOT
+			}
+		}
+	}
+}
+
+
+#Province effect
+add_latest_human_building = {
+	[[trade]
+		if = {
+			limit = { 
+				$builder$ = { dip_tech = 15 } 
+				province_is_buildable = yes
+				province_human_has_main_building_tier_4 = yes
+			}
+			add_building = forum_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 7 } 
+				province_is_buildable = yes
+				province_human_has_city_building_tier_3 = yes
+			}
+			add_building = trade_depot_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_2 = yes
+			}
+			add_building = marketplace_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_1 = yes
+			}
+			add_building = trade_outpost_building
+		}
+	]
+	[[production]
+		if = {
+			limit = { 
+				$builder$ = { dip_tech = 15 } 
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_4 = yes
+			}
+			add_building = stockpile_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 15 } 
+				province_is_buildable = yes
+				province_human_has_city_building_tier_4 = yes
+			}
+			add_building = foundry_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 7 } 
+				province_is_buildable = yes
+				province_human_has_city_building_tier_3 = yes
+			}
+			add_building = warehouse_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 7 } 
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_3 = yes
+			}
+			add_building = forge_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_2 = yes
+			}
+			add_building = workshop_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_1 = yes
+			}
+			add_building = work_camp_building
+		}
+	]
+	[[tax]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				province_is_buildable = yes
+				province_human_has_main_building_tier_4 = yes
+			}
+			add_building = bank_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				province_is_buildable = yes
+				province_human_has_city_building_tier_3 = yes
+			}
+			add_building = provincial_office_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_2 = yes
+			}
+			add_building = tax_office_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_1 = yes
+			}
+			add_building = temple_building
+		}
+	]
+	[[army]
+		if = {
+			limit = { 
+				$builder$ = { mil_tech = 15 } 
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_4 = yes
+			}
+			add_building = garrison_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { mil_tech = 7 } 
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_3 = yes
+			}
+			add_building = barracks_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_2 = yes
+			}
+			add_building = army_camp_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_1 = yes
+			}
+			add_building = outpost_building
+		}
+	]
+	[[navy]
+		if = {
+			limit = { 
+				$builder$ = { dip_tech = 15 } 
+				has_port = yes
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_4 = yes
+			}
+			add_building = grand_shipyard_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 15 } 
+				has_port = yes
+				province_is_buildable = yes
+				province_human_has_city_building_tier_4 = yes
+			}
+			add_building = dockyard_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 7 } 
+				has_port = yes
+				province_is_buildable = yes
+				province_human_has_city_building_tier_3 = yes
+			}
+			add_building = seaport_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { dip_tech = 7 } 
+				has_port = yes
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_3 = yes
+			}
+			add_building = drydock_building
+		}
+		else_if = {
+			limit = {
+				has_port = yes
+				province_is_buildable = yes
+				province_human_has_main_building_tier_2 = yes
+			}
+			add_building = dock_building
+		}
+		else_if = {
+			limit = {
+				has_port = yes
+				province_is_buildable = yes
+				province_human_has_main_building_tier_1 = yes
+			}
+			add_building = port_building
+		}
+	]
+	[[fort]
+		if = {
+			limit = { 
+				$builder$ = { mil_tech = 15 } 
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_4 = yes
+			}
+			add_building = fort_citidal_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { mil_tech = 7 } 
+				province_is_buildable = yes
+				province_human_has_fortress_building_tier_3 = yes
+			}
+			add_building = fort_stronghold_building
+		}
+		else_if = {
+			limit = { 
+				province_is_buildable = yes
+				province_human_has_main_building_tier_2 = yes 
+			}
+			add_building = fort_castle_building
+		}
+		else_if = {
+			limit = {
+				province_is_buildable = yes
+				province_human_has_main_building_tier_1 = yes
+			}
+			add_building = fort_pallisade_building
+		}
+	]
+	[[capital]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				is_capital = yes
+				development = 15
+				province_owner_is_human_race = yes
+				province_is_buildable = yes
+				province_human_has_city_buildings = no
+				province_human_has_fortress_buildings = no
+			}
+			add_building = capital_3_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				is_capital = yes
+				development = 10
+				province_is_buildable = yes
+				province_human_has_city_buildings = no
+				province_human_has_fortress_buildings = no
+			}
+			add_building = capital_2_building
+		}
+		else_if = {
+			limit = {
+				is_capital = yes
+				development = 5
+				province_is_buildable = yes
+				province_human_has_city_buildings = no
+				province_human_has_fortress_buildings = no
+			}
+			add_building = capital_1_building
+		}
+	]
+	[[city]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_is_buildable = yes
+				province_human_has_fortress_buildings = no
+				province_human_has_capital_buildings = no
+			}
+			add_building = city_3_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_is_buildable = yes
+				province_human_has_fortress_buildings = no
+				province_human_has_capital_buildings = no
+			}
+			add_building = city_2_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_human_has_fortress_buildings = no
+				province_human_has_capital_buildings = no
+			}
+			add_building = city_1_building
+		}
+	]
+	[[fortress]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_owner_is_human_race = yes
+				province_is_buildable = yes
+				province_human_has_city_buildings = no
+				province_human_has_capital_buildings = no
+			}
+			add_building = fortress_3_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_owner_is_human_race = yes
+				province_is_buildable = yes
+				province_human_has_city_buildings = no
+				province_human_has_capital_buildings = no
+			}
+			add_building = fortress_2_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_human_has_city_buildings = no
+				province_human_has_capital_buildings = no
+			}
+			add_building = fortress_1_building
+		}
+	]
+}
+
+#Province effect
+add_latest_dwarf_building = {
+	[[capital]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				is_capital = yes
+				development = 15
+				province_dwarf_has_city_buildings = no
+				province_dwarf_has_fortress_buildings = no
+			}
+			add_building = capital_3_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				is_capital = yes
+				development = 10
+				province_dwarf_has_city_buildings = no
+				province_dwarf_has_fortress_buildings = no
+			}
+			add_building = capital_2_dwarf_building
+		}
+		else_if = {
+			limit = {
+				is_capital = yes
+				development = 5
+				province_dwarf_has_city_buildings = no
+				province_dwarf_has_fortress_buildings = no
+			}
+			add_building = capital_1_dwarf_building
+		}
+	]
+	[[city]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_dwarf_has_fortress_buildings = no
+				province_dwarf_has_capital_buildings = no
+				OR = {
+					AND = {
+						province_dwarf_has_mountains_terrain = no
+						culture_group = culture_group_dwarves
+					}
+					NOT = {
+						culture_group = culture_group_dwarves
+					}
+				}
+			}
+			add_building = settlement_3_dwarf_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_dwarf_has_fortress_buildings = no
+				province_dwarf_has_capital_buildings = no
+				OR = {
+					AND = {
+						province_dwarf_has_mountains_terrain = no
+						culture_group = culture_group_dwarves
+					}
+					NOT = {
+						culture_group = culture_group_dwarves
+					}
+				}
+			}
+			add_building = settlement_2_dwarf_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_dwarf_has_fortress_buildings = no
+				province_dwarf_has_capital_buildings = no
+				OR = {
+					AND = {
+						province_dwarf_has_mountains_terrain = no
+						culture_group = culture_group_dwarves
+					}
+					NOT = {
+						culture_group = culture_group_dwarves
+					}
+				}
+			}
+			add_building = settlement_1_dwarf_building
+		}
+	]
+	[[fortress]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_dwarf_has_city_buildings = no
+				province_dwarf_has_capital_buildings = no
+				province_dwarf_has_mountains_terrain = yes
+				culture_group = culture_group_dwarves
+			}
+			add_building = hold_3_dwarf_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_dwarf_has_city_buildings = no
+				province_dwarf_has_capital_buildings = no
+				province_dwarf_has_mountains_terrain = yes
+				culture_group = culture_group_dwarves
+			}
+			add_building = hold_2_dwarf_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_dwarf_has_city_buildings = no
+				province_dwarf_has_capital_buildings = no
+				province_dwarf_has_mountains_terrain = yes
+				culture_group = culture_group_dwarves
+			}
+			add_building = hold_1_dwarf_building
+		}
+	]
+}
+
+#Province effect
+add_latest_elf_building = {
+	[[capital]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = yes
+				province_is_buildable = yes
+				province_elf_has_city_buildings = no
+				province_elf_has_fortress_buildings = no
+			}
+			add_building = capital_3_elf_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = yes
+				province_is_buildable = yes
+				province_elf_has_city_buildings = no
+				province_elf_has_fortress_buildings = no
+			}
+			add_building = capital_2_elf_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = yes
+				province_is_buildable = yes
+				province_elf_has_city_buildings = no
+				province_elf_has_fortress_buildings = no
+			}
+			add_building = capital_1_elf_building
+		}
+	]
+	[[city]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_is_buildable = yes
+				province_elf_has_fortress_buildings = no
+				province_elf_has_capital_buildings = no
+			}
+			add_building = town_3_elf_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_is_buildable = yes
+				province_elf_has_fortress_buildings = no
+				province_elf_has_capital_buildings = no
+			}
+			add_building = town_2_elf_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_elf_has_fortress_buildings = no
+				province_elf_has_capital_buildings = no
+			}
+			add_building = town_1_elf_building
+		}
+	]
+	[[fortress]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_is_buildable = yes
+				province_elf_has_city_buildings = no
+				province_elf_has_capital_buildings = no
+			}
+			add_building = fort_3_elf_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_is_buildable = yes
+				province_elf_has_city_buildings = no
+				province_elf_has_capital_buildings = no
+			}
+			add_building = fort_2_elf_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_elf_has_city_buildings = no
+				province_elf_has_capital_buildings = no
+			}
+			add_building = fort_1_elf_building
+		}
+	]
+}
+
+#Province effect
+add_latest_orc_building = {
+	[[capital]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = yes
+				province_is_buildable = yes
+				province_orc_has_city_buildings = no
+				province_orc_has_fortress_buildings = no
+			}
+			add_building = capital_3_orc_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = yes
+				province_is_buildable = yes
+				province_orc_has_city_buildings = no
+				province_orc_has_fortress_buildings = no
+			}
+			add_building = capital_2_orc_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = yes
+				province_is_buildable = yes
+				province_orc_has_city_buildings = no
+				province_orc_has_fortress_buildings = no
+			}
+			add_building = capital_1_orc_building
+		}
+	]
+	[[city]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_is_buildable = yes
+				province_orc_has_fortress_buildings = no
+				province_orc_has_capital_buildings = no
+			}
+			add_building = encampment_3_orc_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_is_buildable = yes
+				province_orc_has_fortress_buildings = no
+				province_orc_has_capital_buildings = no
+			}
+			add_building = encampment_2_orc_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_orc_has_fortress_buildings = no
+				province_orc_has_capital_buildings = no
+			}
+			add_building = encampment_1_orc_building
+		}
+	]
+	[[fortress]
+		if = {
+			limit = { 
+				$builder$ = { adm_tech = 15 } 
+				development = 15
+				is_capital = no
+				province_is_buildable = yes
+				province_orc_has_city_buildings = no
+				province_orc_has_capital_buildings = no
+			}
+			add_building = fortress_3_orc_building
+		}
+		else_if = {
+			limit = { 
+				$builder$ = { adm_tech = 7 } 
+				development = 10
+				is_capital = no
+				province_is_buildable = yes
+				province_orc_has_city_buildings = no
+				province_orc_has_capital_buildings = no
+			}
+			add_building = fortress_2_orc_building
+		}
+		else_if = {
+			limit = {
+				development = 5
+				is_capital = no
+				province_is_buildable = yes
+				province_orc_has_city_buildings = no
+				province_orc_has_capital_buildings = no
+			}
+			add_building = fortress_1_orc_building
+		}
+	]
 }

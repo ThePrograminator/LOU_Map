@@ -3,7 +3,7 @@
 # Province RGB : (138, 81, 91)
 # Province Area : Harethir
 # Province Region : Harnendor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -12,34 +12,24 @@
 
 is_city = yes
 
-base_tax = 8
-base_production = 9
-base_manpower = 7
+base_tax = 2
+base_production = 4
+base_manpower = 3
 
 add_core = X26
 owner = X26
 controller = X26
 
-culture = culture_haruze
+culture = culture_harnendrim
 religion = religion_haruzani
 
 trade_goods = spices
 
-hre = no
+add_permanent_province_modifier = {
+	name = hyarmentie
+	duration = -1
+}
 
-city_2_building=yes
-
-seaport_building=yes
-
-barracks_building=yes
-
-warehouse_building=yes
-
-tax_office_building=yes
-
-marketplace_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

@@ -3,16 +3,16 @@
 # Province RGB : (45, 10, 92)
 # Province Area : Aldhad
 # Province Region : Ibav
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ibav
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 4
-base_production = 4
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W85
 owner = W85
@@ -25,13 +25,6 @@ trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

@@ -9,26 +9,20 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
+base_tax = 3
 base_production = 4
 base_manpower = 2
-
-add_core = X01
 owner = X11
 controller = X11
-
-add_core = X11
 culture = culture_dunedain_of_belfalas
 religion = religion_dunedain
-
-trade_goods = fish
-
-hre = no
-
-#Gondor Superregion Discovery
+trade_goods = wine
+add_permanent_province_modifier = {
+	name = rathon_gondor
+	duration = -1
+}
+add_core = X11
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -77,4 +71,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

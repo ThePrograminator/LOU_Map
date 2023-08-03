@@ -9,44 +9,21 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 7
-base_manpower = 7
-
-add_core = Y01
+base_tax = 4
+base_production = 5
+base_manpower = 6
 owner = Y01
 controller = Y01
-
 culture = culture_kugath
 religion = religion_ulgath
-
 trade_goods = paper
-
-hre = no
-
-city_3_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-stockpile_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-seaport_building=yes
-
 add_permanent_province_modifier = {
 	name = trade_post_modifier
 	duration = -1
 }
-
 #Rhun Superregion Discovery
+add_core = Y01
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -122,4 +99,10 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+city_3_building = yes
+trade_depot_building = yes
+provincial_office_building = yes
+stockpile_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+seaport_building = yes

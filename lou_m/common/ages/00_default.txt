@@ -70,7 +70,7 @@ third_age = {
 	abilities = {
          ab_third_age_lay_of_the_land = {
             modifier = {
-                attack_bonus_in_capital_terrain = 1
+                global_defender_dice_roll_bonus = 1
             }
             ai_will_do = {
 				factor = 100
@@ -78,6 +78,7 @@ third_age = {
         }
         ab_third_age_local_administators = {
             modifier = {
+                governing_capacity_modifier = 0.25
                 ignore_coring_distance = yes
             }
             ai_will_do = {
@@ -86,7 +87,7 @@ third_age = {
         }
 		ab_third_age_integrated_sappers = {
             modifier = {
-                artillery_bonus_vs_fort = 1
+                siege_ability = 0.15
             }
             ai_will_do = {
 				factor = 100
@@ -266,7 +267,7 @@ fourth_age = {
         }
 		ab_fourth_age_integrated_sappers = {
             modifier = {
-                artillery_bonus_vs_fort = 3
+                artillery_levels_available_vs_fort = 3
             }
             ai_will_do = {
 				factor = 100

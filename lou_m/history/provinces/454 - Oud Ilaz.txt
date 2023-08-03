@@ -3,7 +3,7 @@
 # Province RGB : (199, 252, 92)
 # Province Area : Ode Kupsha
 # Province Region : Chelkar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Amrun
 # Province Climate : null
@@ -12,32 +12,26 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 4
-base_manpower = 4
+base_tax = 4
+base_production = 3
+base_manpower = 5
 
 add_core = X17
 owner = X17
 controller = X17
 
-culture = culture_haruze
+add_core = Q29
+
+culture = culture_chelkarim
 religion = religion_haruzani
 
 trade_goods = glass
 
-hre = no
+add_permanent_province_modifier = {
+	name = khand_road
+	duration = -1
+}
 
-city_2_building=yes
-
-marketplace_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-army_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

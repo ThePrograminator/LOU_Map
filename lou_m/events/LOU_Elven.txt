@@ -105,3 +105,54 @@ province_event = {
 		}
 	}
 }
+
+# "Wilderness"
+province_event = {
+	id = LOU_elven.2
+	title = "LOU_elven.2.t"
+	desc = "LOU_elven.2.d"
+	picture = COLONIZATION_eventPicture
+
+	#hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+		NOT  = {
+			has_province_modifier = elfs_forest_defence_roll
+		}
+		OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = jungle
+			has_terrain = unique_mirkwood
+			has_terrain = unique_mirkwood_mild
+			has_terrain = unique_mirkwood_settlement
+			has_terrain = unique_mirkwood_west
+			has_terrain = unique_old_forest
+			has_terrain = unique_fangorn
+			has_terrain = unique_lothloria
+			has_terrain = unique_egladil
+			has_terrain = unique_nan_nimrodel
+			has_terrain = unique_cerin_amroth
+			has_terrain = unique_trollshaws
+			has_terrain = unique_pinnath_tereg
+		}
+        owner = {
+			is_racial_group_eldar = yes
+		}
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_elven.2.a"
+
+		add_province_modifier = {
+			name = "elfs_forest_defence_roll"
+			duration = -1
+		}
+	}
+}

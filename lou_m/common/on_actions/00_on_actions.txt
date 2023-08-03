@@ -21,6 +21,240 @@ on_startup = {
 		LOU_story.3 # Company of Thorin
 		LOU_story.6 # Fellowship of the Ring
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {			
+			limit = {				
+				region = vales_of_anduin_region
+				NOT = {					
+					area = lothlorien_area
+				}
+			}
+			add_province_modifier = {
+				name = long_winter_mild
+				duration = 152
+				desc = long_winter_mild_tooltip
+			}
+		}
+	}
+		
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {
+			limit = {				
+				superregion = eriador_superregion
+				NOT = {
+					region = enedhwaith_region
+					region = dunland_region
+					region = lindon_region
+					region = forlindon_region
+					region = harlindon_region
+					area = mindolhendi_area
+					province_id = 232
+				}
+			}
+			add_province_modifier = {
+				name = long_winter_normal
+				duration = 152
+				desc = long_winter_normal_tooltip
+			}
+		}
+	}
+			
+	if = {
+		limit = {
+			NOT = {
+				is_year = 2759
+			}
+		}
+
+		middle_earth = {
+			limit = {				
+				OR = {
+					superregion = rohan_superregion
+					region = enedhwaith_region
+					region = dunland_region
+					region = old_pukel_land_region
+				}
+			}
+			add_province_modifier = {
+				name = long_winter_severe
+				duration = 152
+				desc = long_winter_severe_tooltip
+			}
+		}
+	}
+
+
+	if = {
+		every_province = {
+			limit = {
+				culture_group = culture_group_hobbits
+				OR = {
+					has_terrain = unique_shire
+					has_terrain = unique_east_farthing
+					has_terrain = unique_michel_delving
+					has_terrain = unique_bywater
+					has_terrain = unique_hobbitton
+					has_terrain = unique_waymeet
+					has_terrain = unique_green_hill_country
+					has_terrain = unique_nan_turnath
+					has_terrain = unique_gladden_fields
+					has_terrain = farmlands
+					has_terrain = grasslands
+				}
+			}
+
+			add_province_modifier = {
+				name = halfling_farmers
+				duration = -1
+				desc = halfling_farmers_tooltip
+			}
+		}
+	}
+
+	if = {
+		every_province = {
+			limit = {
+				culture_group = culture_group_drughu
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = unique_old_forest
+					has_terrain = unique_fangorn
+					has_terrain = unique_lothloria
+					has_terrain = unique_tom_bombadil
+					has_terrain = unique_nan_nimrodel
+					has_terrain = unique_cerin_amroth
+					has_terrain = unique_caras_galadhon
+					has_terrain = unique_egladil
+					has_terrain = jungle
+					has_terrain = unique_mirkwood
+					has_terrain = unique_mirkwood_mild
+					has_terrain = unique_mirkwood_west
+					has_terrain = unique_mirkwood_mountains
+					has_terrain = unique_mirkwood_settlement
+					has_terrain = unique_gulduin
+					has_terrain = unique_thalls
+					has_terrain = unique_celebannon
+					has_terrain = unique_wood_elven_town
+					has_terrain = unique_halifirien
+					has_terrain = unique_ithilien_north
+					has_terrain = marsh
+					has_terrain = hills
+					has_terrain = mountain
+					has_terrain = highlands
+				}
+			}
+
+			add_province_modifier = {
+				name = drughu_wildmen
+				duration = -1
+				desc = drughu_wildmen_tooltip
+			}
+		}
+	}
+
+	#if = {
+	#	every_province = {
+	#		limit = {
+	#			culture = culture_half_trolls
+	#			OR = {
+	#				has_terrain = desert					
+	#				has_terrain = savannah
+	#				has_terrain = drylands				
+	#				has_terrain = unique_harad_river
+	#				has_terrain = unique_harnen_river					
+	#				has_terrain = unique_dune_sea					
+	#				has_terrain = unique_grasslands_desolate					
+	#				has_terrain = unique_forodwaith
+	#				has_terrain = unique_ice_cave
+	#				has_terrain = unique_cave
+	#				has_terrain = unique_tunnels
+	#				has_terrain = unique_angmar_town
+	#				has_terrain = unique_rhudaur
+	#				has_terrain = unique_rhudaur_highlands
+	#				has_terrain = unique_etten_vale
+	#				has_terrain = hills
+	#				has_terrain = highlands
+	#				has_terrain = unique_orc_fortress
+	#			}
+	#		}
+	#
+	#		add_province_modifier = {
+	#			name = half_trollmen_desert_nomads
+	#			duration = -1
+	#			desc = half_trollmen_desert_nomads_tooltip
+	#		}
+	#	}
+	#}
+
+	if = {
+		every_province = {
+			limit = {
+				culture = culture_spider
+			}
+
+			add_province_modifier = {
+				name = spider_webs
+				duration = -1
+			}
+		}
+	}
+		
+	if = {
+		every_province = {
+			limit = {
+				OR = {
+					culture = culture_ents
+					culture = culture_huorn
+				}
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = unique_ice_cave
+					has_terrain = unique_cave
+					has_terrain = unique_tunnels
+					has_terrain = unique_old_forest
+					has_terrain = unique_fangorn
+					has_terrain = unique_lothloria
+					has_terrain = unique_tom_bombadil
+					has_terrain = unique_nan_nimrodel
+					has_terrain = unique_cerin_amroth
+					has_terrain = unique_caras_galadhon
+					has_terrain = unique_egladil
+					has_terrain = jungle
+					has_terrain = unique_mirkwood
+					has_terrain = unique_mirkwood_mild
+					has_terrain = unique_mirkwood_west
+					has_terrain = unique_mirkwood_mountains
+					has_terrain = unique_mirkwood_settlement
+					has_terrain = unique_gulduin
+					has_terrain = unique_thalls
+					has_terrain = unique_celebannon
+					has_terrain = unique_wood_elven_town
+					has_terrain = unique_halifirien
+					has_terrain = unique_ithilien_north
+				}
+			}
+
+			add_province_modifier = {
+				name = forest_huorns
+				duration = -1
+			}
+		}
+	}
 }
 
 # country
@@ -149,10 +383,6 @@ on_war_lost = {
     }
 }
 on_main_war_lost = {
-	events = {
-		flavor_kor.15
-		flavor_tur.300 #Defeat of the Ottomans
-	}
 }
 on_separate_war_lost = {
 }
@@ -743,7 +973,6 @@ on_bi_yearly_pulse = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_bi_yearly_pulse" }
 
 	random_events = {
-		100 = 3051
 		100 = 5008
 		100 = 5014
 		100 = 5015
@@ -1303,7 +1532,6 @@ on_five_year_pulse_2 = {
 		100 = nobles_estate_events.6
 		100 = nobles_estate_events.7
 		400 = nobles_estate_events.8 #Disloyal
-		400 = nobles_estate_events.9 #Disloyal
 		50 = nobles_estate_events.10
 		100 = nobles_estate_events.11 #Bonus
 		# Tribes
@@ -1468,7 +1696,7 @@ on_province_owner_change = {
 		limit = {
 			NOT = {
 				owner = {
-					has_country_modifier = the_cardolan_posibilities
+					has_country_modifier = the_eriadorian_posibilities
 				}
 			}
 			
@@ -1502,7 +1730,7 @@ on_province_owner_change = {
 	if = {
 		limit = {
 			owner = {
-				has_country_modifier = the_cardolan_posibilities
+				has_country_modifier = the_eriadorian_posibilities
 			}
 			OR = {
 				AND = {
@@ -1528,6 +1756,84 @@ on_province_owner_change = {
 			country_event = {
 				id = lou_colonization.2
 			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				province_id = 1875
+			}
+			owner = {
+				NOT = {
+					tag = Z01
+				}
+			}
+			Y80 = {
+				exists = yes
+			}
+		}
+		Y80 = {
+			country_event = {
+				id = LOU_mission_rivendell.5
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			is_capital = no
+			province_human_has_capital_buildings = yes
+		}
+		remove_building = capital_1_building
+		remove_building = capital_2_building
+		remove_building = capital_3_building
+
+		add_latest_human_building = {
+			city = yes
+			builder = ROOT
+		}
+	}
+	if = {
+		limit = {
+			is_capital = no
+			province_dwarf_has_capital_buildings = yes
+		}
+		remove_building = capital_1_dwarf_building
+		remove_building = capital_2_dwarf_building
+		remove_building = capital_3_dwarf_building
+
+		add_latest_dwarf_building = {
+			fortress = yes
+			builder = ROOT
+		}
+	}
+	if = {
+		limit = {
+			is_capital = no
+			province_elf_has_capital_buildings = yes
+		}
+		remove_building = capital_1_elf_building
+		remove_building = capital_2_elf_building
+		remove_building = capital_3_elf_building
+
+		add_latest_elf_building = {
+			city = yes
+			builder = ROOT
+		}
+	}
+
+	if = {
+		limit = {
+			is_capital = no
+			province_orc_has_capital_buildings = yes
+		}
+		remove_building = capital_1_orc_building
+		remove_building = capital_2_orc_building
+		remove_building = capital_3_orc_building
+
+		add_latest_orc_building = {
+			city = yes
+			builder = ROOT
 		}
 	}
 }
@@ -2027,7 +2333,27 @@ on_force_conversion = {
 
 on_institution_embracement = {}
 on_national_focus_change = {}
-on_capital_moved = {}
+on_capital_moved = {
+	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - province : [Root.GetName] - owner : [Owner.GetName] - old owner : [From.GetName] - on_capital_moved" }
+
+	FROM = {
+		remove_building = capital_1_building
+		remove_building = capital_2_building
+		remove_building = capital_3_building
+
+		remove_building = capital_1_dwarf_building
+		remove_building = capital_2_dwarf_building
+		remove_building = capital_3_dwarf_building
+
+		remove_building = capital_1_elf_building
+		remove_building = capital_2_elf_building
+		remove_building = capital_3_elf_building
+
+		remove_building = capital_1_orc_building
+		remove_building = capital_2_orc_building
+		remove_building = capital_3_orc_building
+	}
+}
 
 #ROOT = province that was expanded in, FROM = country that did it
 on_expanded_infrastructure = {
@@ -2127,7 +2453,22 @@ on_naval_barrage = { #ROOT - barraging country, FROM - barraged province
 }
 
 on_scorch_earth  = { #ROOT - scorching country, FROM - scorched province
-
+	if = { 
+		limit = {
+			ROOT = {
+				tag = ANG
+			}
+			FROM = {
+				superregion = eriador_superregion
+				has_terrain = unique_dunedain_ruin
+			}
+		}
+		FROM = {
+			province_event = {
+				id = LOU_mission_angmar.2
+			}
+		}
+	}
 }
 
 on_war_ended = { #ROOT - Winer FROM - Loser
@@ -2148,4 +2489,8 @@ on_alliance_created = { #ROOT - Alliance sender, FROM - Alliance accepter
 
 on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
 
+}
+
+on_heir_disinherited = {
+	
 }

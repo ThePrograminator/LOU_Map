@@ -3,37 +3,22 @@
 # Province RGB : (142, 40, 8)
 # Province Area : Minas Tirith
 # Province Region : Anoríen
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Minas Tirith
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
-base_manpower = 3
-
-add_core = X01
+base_tax = 3
+base_production = 3
+base_manpower = 6
 owner = X01
 controller = X01
-
 culture = culture_dunedain_of_gondor
 religion = religion_dunedain
-
-trade_goods = naval_supplies
-
-hre = no
-
-city_1_building=yes
-
-trade_outpost_building=yes
-
-port_building=yes
-
-#Gondor Superregion Discovery
+trade_goods = carracks
+add_core = X01
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -82,4 +67,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

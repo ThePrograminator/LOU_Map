@@ -9,41 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 8
-base_manpower = 9
-
-add_core = X69
+base_tax = 5
+base_production = 6
+base_manpower = 4
 owner = X69
 controller = X69
-
 culture = culture_tyari
 religion = religion_sirani
-
 trade_goods = silk
-
-hre = no
-
-capital_3_building=yes
-
-trade_depot_building=yes
-
-bank_building=yes
-
-warehouse_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-garrison_building=yes
-
 center_of_trade = 1
-
 #Sirayn Superregion Discovery
+add_core = X69
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
@@ -74,4 +51,10 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+capital_3_building = yes
+trade_depot_building = yes
+bank_building = yes
+warehouse_building = yes
+forge_building = yes
+fort_castle_building = yes
+garrison_building = yes

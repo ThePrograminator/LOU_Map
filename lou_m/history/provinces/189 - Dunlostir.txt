@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
+base_tax = 4
+base_production = 3
 base_manpower = 5
 
 add_core = X16
@@ -24,7 +24,7 @@ add_core = W95
 culture = culture_westemnet
 religion = religion_eorlingas
 
-trade_goods = grain
+trade_goods = cloth
 
 hre = no
 
@@ -32,7 +32,9 @@ fortress_1_building=yes
 
 fort_pallisade_building=yes
 
-temple_building=yes
+work_camp_building=yes
+
+army_camp_building=yes
 
 #Rohan Superregion Discovery
 discovered_by = lotr_human

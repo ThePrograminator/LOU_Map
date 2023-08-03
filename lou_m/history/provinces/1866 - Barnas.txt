@@ -1,9 +1,9 @@
 # Province ID : 1866
 # Province Name : Barnas
 # Province RGB : (111, 119, 47)
-# Province Area : Ost-in-Edhil
+# Province Area : Hareregion
 # Province Region : Eregion
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Moria
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 3
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y57
 owner = Y57
@@ -27,15 +27,11 @@ trade_goods = iron
 
 hre = no
 
-encampment_1_orc_building=yes
+add_permanent_province_modifier = {
+	name = len_caraug
+	duration = -1
+}
 
-warg_arena_orc_building=yes
-
-overseer_station_orc_building=yes
-
-blacksmith_orc_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

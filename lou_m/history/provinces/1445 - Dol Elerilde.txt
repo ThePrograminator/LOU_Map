@@ -1,9 +1,9 @@
 # Province ID : 1445
 # Province Name : Dol Elerilde
 # Province RGB : (117, 77, 21)
-# Province Area : Nothva Rhaglaw
+# Province Area : Brildil
 # Province Region : Rhudaur
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Cameth Brin
 # Province Climate : Normal_winter
@@ -12,28 +12,21 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z62
 owner = Z62
 controller = Z62
 
-culture = culture_hillmen_of_rhudaur
-religion = religion_daen
+culture = culture_wilderness
+religion = religion_wilderness
 
 trade_goods = fur
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

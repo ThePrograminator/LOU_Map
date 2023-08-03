@@ -9,41 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 9
-base_production = 9
-base_manpower = 9
-
-add_core = Z18
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = Z18
 controller = Z18
-
 culture = culture_cardolani
 religion = religion_eriadorians
-
 trade_goods = iron
-
-hre = no
-
-capital_2_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-seaport_building=yes
-
-#Eriador Superregion Discovery
+add_core = Z18
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -57,7 +32,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -90,4 +64,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_building = yes
+marketplace_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

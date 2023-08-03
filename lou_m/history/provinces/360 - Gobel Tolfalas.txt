@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 7
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 4
 
 add_core = X01
 owner = X11
@@ -22,27 +22,29 @@ controller = X11
 
 add_core = X11
 add_core = X10
-culture = culture_dunedain_of_tol_falas
-religion = religion_dunedain
+add_core = X27
+add_core = X23
+culture = culture_umbareans
+religion = religion_black_numenorean
 
-trade_goods = naval_supplies
+trade_goods = carracks
 
 hre = no
-
-city_1_building=yes
-
-dock_building=yes
-
-work_camp_building=yes
 
 center_of_trade = 1
 
 2758.9.15 = {
 	controller = X27
+	add_devastation = 75
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
 }
 
 2759.8.20 = {
-	controller = X11
+	controller = X11	
+	add_devastation = -75
 }
 
 2820.1.1 = {

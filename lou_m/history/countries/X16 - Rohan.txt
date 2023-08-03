@@ -13,6 +13,8 @@ add_accepted_culture = culture_eastemnet
 add_accepted_culture = culture_westemnet
 add_accepted_culture = culture_wold
 
+add_treasury = 50
+
 historical_friend = X01
 historical_friend = X02
 historical_friend = X11
@@ -111,8 +113,8 @@ historical_rival = V49
 
 2570.1.1 = {
 	heir = {
-		name = "Fréa"
-		monarch_name = "Fréa"
+		name = "Frï¿½a"
+		monarch_name = "Frï¿½a"
 		dynasty = "House of Eorl"
 		birth_date = 2570.1.1		# 182
 		death_date = 2659.1.1 
@@ -125,8 +127,8 @@ historical_rival = V49
 
 2594.1.1 = {
 	heir = {
-		name = "Frëawine"
-		monarch_name = "Frëawine"
+		name = "Frï¿½awine"
+		monarch_name = "Frï¿½awine"
 		dynasty = "House of Eorl"
 		birth_date = 2594.1.1		# 182
 		death_date = 2680.1.1 
@@ -153,8 +155,8 @@ historical_rival = V49
 
 2644.1.1 = {
 	heir = {
-		name = "Déor"
-		monarch_name = "Déor"
+		name = "Dï¿½or"
+		monarch_name = "Dï¿½or"
 		dynasty = "House of Eorl"
 		birth_date = 2644.1.1		# 182
 		death_date = 2718.1.1 
@@ -167,7 +169,7 @@ historical_rival = V49
 
 2645.1.1 = {
 	monarch = {
-		name = "Fréa"
+		name = "Frï¿½a"
 		dynasty = "House of Eorl"
 		adm = 2
 		dip = 2
@@ -178,7 +180,7 @@ historical_rival = V49
 
 2659.1.1 = {
 	monarch = {
-		name = "Frëawine"
+		name = "Frï¿½awine"
 		dynasty = "House of Eorl"
 		adm = 2
 		dip = 5
@@ -228,7 +230,7 @@ historical_rival = V49
 
 2699.1.1 = {
 	monarch = {
-		name = "Déor"
+		name = "Dï¿½or"
 		dynasty = "House of Eorl"
 		adm = 3
 		dip = 4
@@ -256,14 +258,22 @@ historical_rival = V49
 		dip = 5
 		mil = 6
 		birth_date = 2691.1.1		# 182
+		leader = {
+			name = "Helm Hammerhand"
+			type = general
+			fire = 4
+			shock = 5
+			manuever = 4
+			siege = 3
+		}
 	}
 	set_ruler_flag = HELM_IS_RULER_FLAG
 }
 
 2752.1.1 = {
 	heir = {
-		name = "Brytta Léofa"
-		monarch_name = "Brytta Léofa"
+		name = "Brytta Lï¿½ofa"
+		monarch_name = "Brytta Lï¿½ofa"
 		dynasty = "House of Hildeson"
 		birth_date = 2752.1.1		# 182
 		death_date = 2842.1.1 
@@ -276,7 +286,7 @@ historical_rival = V49
 
 2759.1.1 = {
 	monarch = {
-		name = "Fréaláf Hildeson"
+		name = "Frï¿½alï¿½f Hildeson"
 		dynasty = "House of Hildeson"
 		adm = 3
 		dip = 3
@@ -302,7 +312,7 @@ historical_rival = V49
 
 2798.1.1 = {
 	monarch = {
-		name = "Brytta Léofa"
+		name = "Brytta Lï¿½ofa"
 		dynasty = "House of Hildeson"
 		adm = 2
 		dip = 6
@@ -413,8 +423,8 @@ historical_rival = V49
 
 2948.1.1 = {
 	heir = {
-		name = "Théoden"
-		monarch_name = "Théoden"
+		name = "Thï¿½oden"
+		monarch_name = "Thï¿½oden"
 		dynasty = "House of Hildeson"
 		birth_date = 2948.1.1		# 182
 		death_date = 3019.3.1 
@@ -438,7 +448,7 @@ historical_rival = V49
 
 2980.1.1 = {
 	monarch = {
-		name = "Théoden"
+		name = "Thï¿½oden"
 		dynasty = "House of Hildeson"
 		adm = 4
 		dip = 3

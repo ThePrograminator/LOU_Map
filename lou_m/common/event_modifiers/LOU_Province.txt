@@ -1,22 +1,8 @@
 # Provinces
-minas_tirith = {
-	local_defensiveness = 1
-	fort_level = 5
-}
 
-barad_dur = {
-	local_defensiveness = 1
-	fort_level = 5
-}
-
-osgiliath = {
-	local_defensiveness = 1
-	fort_level = 5
-}
-
-helmsdeep = {
-	local_defensiveness = 1
-	fort_level = 5
+ruined_osgiliath = {
+	local_defensiveness = 0.25
+	local_defender_dice_roll_bonus = 2
 }
 
 wilderness_debuff = {
@@ -38,7 +24,19 @@ province_wight_debuff = {
 	local_development_cost = 1
     
 	local_missionary_strength = 0.02
-	culture_conversion_cost = 0.10
+	local_culture_conversion_cost = 0.10
+}
+
+province_dragon_debuff = {
+    min_local_autonomy = 95
+	local_tax_modifier = -0.95
+    local_production_efficiency = -0.95
+    province_trade_power_modifier = -0.95
+	local_development_cost = 1
+    
+	local_missionary_strength = -0.03
+	local_culture_conversion_cost = 0.30
+	local_unrest = 5
 }
 
 province_troll_debuff = {
@@ -49,7 +47,7 @@ province_troll_debuff = {
 	local_development_cost = 1
     
 	local_missionary_strength = 0.01
-	culture_conversion_cost = 0.1
+	local_culture_conversion_cost = 0.1
 }
 
 province_huorn_debuff = {
@@ -60,7 +58,7 @@ province_huorn_debuff = {
 	local_development_cost = 1
     
 	local_missionary_strength = 0.01
-	culture_conversion_cost = 0.1
+	local_culture_conversion_cost = 0.1
 }
 
 province_free_people_debuff = {
@@ -99,15 +97,17 @@ constructing_capital_debuff = {
 ancient_capital_of_the_tarlai = {
 	local_tax_modifier = 0.15
 	local_production_efficiency = 0.10
-	culture_conversion_cost = 0.15
+	local_culture_conversion_cost = 0.15
 }
 
 walls_of_pelargir = {
 	 local_hostile_attrition = 2
-	 fort_level = 2
-	 local_defensiveness = 0.1
+	 fort_level = 1
+	 local_defensiveness = 0.15
 	 garrison_growth = 0.05
-	 local_manpower_modifier = 0.2
+	 local_manpower_modifier = 0.25
+	 supply_limit_modifier = 0.50
+	 allowed_num_of_manufactories = 1
 }
 
 docks_of_pelargir = {
@@ -122,8 +122,10 @@ docks_of_pelargir = {
 
 rammas_echor = {
 	local_hostile_attrition = 1
-	local_defensiveness = 0.05
+	local_defensiveness = 0.25
 	fort_level = 1
+	supply_limit_modifier = 0.50
+	allowed_num_of_manufactories = 1
 }
 
 market_of_linhir = {
@@ -131,3 +133,203 @@ market_of_linhir = {
 	local_production_efficiency = 0.1
 	local_tax_modifier = 0.1
 }
+
+elfs_forest_defence_roll = {
+	own_territory_dice_roll_bonus = 1
+}
+
+dead_marshes_modifier = {
+	local_development_cost = 1000
+	local_build_cost = 1000
+	local_build_time = 1000
+	local_tax_modifier = -100
+	local_production_efficiency = -100
+	province_trade_power_modifier = -100
+	allowed_num_of_buildings = -5
+	attrition = 10
+	max_attrition = 10
+	local_friendly_movement_speed = -0.9
+	local_hostile_movement_speed = -0.9
+	local_warscore_cost_modifier = -0.9
+	local_governing_cost = -1.0
+	local_unrest = -100
+	local_years_of_nationalism = -100
+}
+
+dol_guldur = {
+	fort_level = 1
+	local_hostile_attrition = 2
+	local_defensiveness = 0.20
+	supply_limit_modifier = 0.50
+	local_unrest = -10
+	local_production_efficiency = 0.05
+	allowed_num_of_manufactories = 1
+	regiment_recruit_speed = -0.25
+	local_regiment_cost = -0.25
+}
+
+necromancers_capital = {
+	local_development_cost = -0.15
+	local_garrison_damage = 1.00
+}
+
+telain_defenses = {
+	fort_level = 1
+	local_defensiveness = 0.10
+	local_hostile_attrition = 3
+	max_attrition = 10
+	local_garrison_size = 0.50
+}
+
+mallorn_trees = {
+	local_build_cost = -0.25
+	local_build_time = -0.25
+	local_prosperity_growth = 0.50
+}
+
+fangorn_forest = {
+	local_hostile_attrition = 5
+	max_attrition = 10
+	local_hostile_movement_speed = -0.25
+}
+
+long_winter_mild = {
+	local_monthly_devastation = 2
+	attrition = 1
+	local_development_cost = 2.0
+	local_friendly_movement_speed = -0.2
+	local_hostile_movement_speed = 0.2
+	local_manpower_modifier = -0.10
+	supply_limit_modifier = -0.10
+	local_build_cost = 0.30
+	trade_goods_size_modifier = -0.20
+}
+
+long_winter_normal = {
+	local_monthly_devastation = 3
+	attrition = 2
+	local_development_cost = 2.5
+	local_friendly_movement_speed = -0.3
+	local_hostile_movement_speed = 0.3
+	local_manpower_modifier = -0.15
+	supply_limit_modifier = -0.15
+	local_build_cost = 0.40
+	trade_goods_size_modifier = -0.25
+}
+
+long_winter_severe = {
+	local_monthly_devastation = 4
+	attrition = 3
+	local_development_cost = 3.0
+	local_friendly_movement_speed = -0.4
+	local_hostile_movement_speed = 0.4
+	local_manpower_modifier = -0.20
+	supply_limit_modifier = -0.20
+	local_build_cost = 0.50
+	trade_goods_size_modifier = -0.30
+}
+
+days_of_dearth = {
+	local_manpower_modifier = -0.75
+	local_garrison_size = -0.50
+	supply_limit_modifier = -0.50
+	trade_goods_size_modifier = -0.25
+	local_production_efficiency = -0.25
+	local_unrest = 10
+	min_local_autonomy = 15
+	inflation_reduction_local = -5
+}
+
+drughu_wildmen = {
+	local_defensiveness = 0.15
+	local_development_cost = -0.20
+	local_build_cost = -0.15
+	supply_limit_modifier = 0.25
+	local_defender_dice_roll_bonus = 1
+	min_local_autonomy = 10
+}
+
+half_trollmen_desert_nomads = {
+	local_hostile_attrition = 3
+	local_development_cost = -0.25
+	local_build_cost = -0.25
+	supply_limit_modifier = 0.50
+	local_defensiveness = 0.25
+	local_manpower_modifier = 0.40
+	min_local_autonomy = 15
+}
+
+halfling_farmers = {
+	trade_goods_size_modifier = 0.35
+	local_state_maintenance_modifier = -0.50
+	local_governing_cost = -0.25
+	local_unrest = -3
+	local_manpower_modifier = -0.15
+	min_local_autonomy = 10
+}
+
+himring_fortress_ruins = {
+	fort_level = 1
+	local_defensiveness = 0.15
+	local_build_cost = 0.25
+	local_build_time = 0.25
+	local_unrest = -5
+}
+
+himring_fortress_rebuilt = {
+	fort_level = 3
+	local_defensiveness = 1
+	supply_limit_modifier = 1
+	allowed_num_of_manufactories = 2
+	local_development_cost = -0.25
+}
+
+stone_of_the_hapless = {
+	local_unrest = -5
+	prestige = 0.50
+	monthly_splendor = 1
+}
+
+spider_webs = {
+	local_hostile_movement_speed = -0.50
+	local_hostile_attrition = 3
+	max_attrition = 5
+	local_defender_dice_roll_bonus = 1
+	local_manpower_modifier = -0.15
+}
+
+forest_huorns = {
+	local_hostile_movement_speed = -0.25
+	local_hostile_attrition = 5
+	max_attrition = 5
+	local_defensiveness = 0.25
+	state_maintenance_modifier = -0.50
+}
+
+cair_andros = {
+	fort_level = 2
+	local_defensiveness = 0.25
+	supply_limit_modifier = 0.25
+	local_hostile_attrition = 3
+	local_manpower_modifier = 0.25
+	allowed_num_of_manufactories = 1
+}
+
+ruined_amon_sul = {
+	local_defensiveness = 0.15
+	local_defender_dice_roll_bonus = 1
+}
+
+ ruined_fornost_erain = {
+	fort_level = 1
+	local_defensiveness = 0.25
+	local_defender_dice_roll_bonus = 1
+ }
+
+ ruined_ost_in_edhil = {
+	fort_level = 1
+	local_defensiveness = 0.15
+	local_defender_dice_roll_bonus = 1
+	statewide_governing_cost = -0.25
+	local_monthly_devastation = -0.15
+ }

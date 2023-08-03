@@ -3,7 +3,7 @@
 # Province RGB : (154, 177, 250)
 # Province Area : Umbar
 # Province Region : Nen Umbar
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Umbar
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 6
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X27
 owner = X27
@@ -27,11 +27,6 @@ trade_goods = iron
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

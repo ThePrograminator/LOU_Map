@@ -3,7 +3,7 @@
 # Province RGB : (85, 157, 55)
 # Province Area : Kilwa
 # Province Region : Codya
-# Province Super Region : Balizar
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Cilyar
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z73
 owner = Z73
@@ -27,19 +27,6 @@ trade_goods = cloth
 
 hre = no
 
-city_2_building=yes
-
-trade_depot_building=yes
-
-provincial_office_building=yes
-
-warehouse_building=yes
-
-army_camp_building=yes
-
-seaport_building=yes
-
-#Balizar Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

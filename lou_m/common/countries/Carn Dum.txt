@@ -1,19 +1,24 @@
 #Country Name: Please see filename.
 graphical_culture = lotr_orc_gfx
 
-color = { 170 25 25 }
+color = { 166 19 19 }
 
 revolutionary_colors = { 13 14 0 }
 
 historical_idea_groups = {
-	offensive_ideas
-	diplomatic_ideas
-	defensive_ideas
-	innovativeness_ideas
-	administrative_ideas
-	quantity_ideas
-	economic_ideas
-	aristocracy_ideas
+	defensive_ideas				#Mil
+	subjugation_ideas			#Dip
+	shadow_of_melkor_ideas		#Adm
+	offensive_ideas				#Mil
+	spy_ideas					#Dip
+	assimilation_ideas			#Adm
+	quantity_ideas				#Mil
+	influence_ideas				#Dip
+	innovativeness_ideas		#Adm
+	quality_ideas				#Mil
+	trade_ideas					#Dip
+	administrative_ideas		#Adm
+
 }
 
 historical_units = {

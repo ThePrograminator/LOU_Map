@@ -3,7 +3,7 @@
 # Province RGB : (30, 143, 136)
 # Province Area : Realm of Dale
 # Province Region : Dale
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Erebor
 # Province Climate : Severe_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
+base_tax = 2
 base_production = 3
-base_manpower = 5
+base_manpower = 1
 
 add_core = Y94
 owner = Y94
@@ -25,11 +25,10 @@ religion = religion_nenedain
 
 trade_goods = wool
 
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
+add_permanent_province_modifier = {
+	name = men_naugrim
+	duration = -1
+}
 
 2770.1.1 = {
 	add_core = V51
@@ -43,17 +42,16 @@ outpost_building=yes
 	owner = Y94
 	culture = culture_bardings
 	religion = religion_nenedain
-	settlement_building=yes
-	outpost_building=yes
+	settlement_building = yes
+	outpost_building = yes
 }
 
 2944.1.1 = {
-	fortress_1_building=yes
-	army_camp_building=yes
-	work_camp_building=yes
+	fortress_1_building = yes
+	army_camp_building = yes
+	work_camp_building = yes
 }
 
-#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

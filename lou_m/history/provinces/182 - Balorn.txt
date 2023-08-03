@@ -23,9 +23,14 @@ controller = X15
 culture = culture_druedain
 religion = religion_drughu
 
-trade_goods = mushrooms
+trade_goods = honey
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = men_drun
+	duration = -1
+}
 
 capital_1_building=yes
 

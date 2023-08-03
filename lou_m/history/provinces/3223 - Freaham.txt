@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 6
+base_tax = 2
 base_production = 3
-base_manpower = 4
+base_manpower = 1
 
 add_core = X16
 owner = X16
@@ -24,12 +24,6 @@ culture = culture_west_march
 religion = religion_eorlingas
 
 trade_goods = grain
-
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
 
 2758.1.1 = {
 	add_core = V95
@@ -64,7 +58,6 @@ temple_building=yes
 	controller = V49
 }
 
-#Rohan Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

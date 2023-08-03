@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 8
-base_manpower = 5
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = Y57
 owner = Y57
@@ -24,14 +24,6 @@ culture = culture_goblin
 religion = religion_goblin
 
 trade_goods = silver
-
-hre = no
-
-encampment_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
 
 2793.1.1 = {
 	add_core = V52
@@ -53,7 +45,6 @@ orc_pit_orc_building=yes
 	religion = religion_goblin
 }
 
-#Misty Mountains Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

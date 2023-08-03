@@ -3,7 +3,7 @@
 # Province RGB : (193, 193, 134)
 # Province Area : Esgalabar
 # Province Region : Rhovanion
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Burh Waldmarh
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V25
 owner = V25
@@ -23,13 +23,10 @@ controller = V25
 culture = culture_eothraim
 religion = religion_aivathuida
 
-trade_goods = fruit
+trade_goods = wool
 
 hre = no
 
-settlement_building=yes
-
-#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

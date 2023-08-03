@@ -9,37 +9,21 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 5
-base_production = 3
-base_manpower = 9
-
-add_core = X01
+base_production = 4
+base_manpower = 6
 owner = X11
 controller = X11
-
-add_core = X11
 culture = culture_dunedain_of_belfalas
 religion = religion_dunedain
-
-trade_goods = stone
-
-hre = no
-
-fortress_2_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
+trade_goods = silver
 2820.1.1 = {
 	fortress_2_building = yes
 	fort_stronghold_building = yes
 }
-
 #Gondor Superregion Discovery
+add_core = X11
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -88,4 +72,6 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+fortress_2_building = yes
+fort_castle_building = yes
+army_camp_building = yes

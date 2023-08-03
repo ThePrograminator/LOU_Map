@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y80
 owner = Y80
@@ -26,6 +26,11 @@ religion = religion_wilderness
 trade_goods = grain
 
 hre = no
+
+add_province_modifier = {
+	name = wilderness_debuff
+	duration = -1
+}
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

@@ -1,0 +1,94 @@
+# country_decisions = {
+# 	#-------------------------
+#     # ANGMAR - Changed to Missions for angmar_region capital scope tags
+#     #-------------------------
+# 	angmar_nation = {
+# 		major = yes
+# 		potential = {
+
+# 			NOT = { 
+# 				exists = ANG
+# 			}
+
+# 			NOT = {
+# 				tag = Y63												#Exclude Gundabad for their own path/formable/missions
+# 			}
+
+# 			OR = {
+# 				culture_group = culture_group_orcs
+# 				culture_group = culture_group_borians
+# 				culture_group = culture_group_black_numenorean
+# 			}
+
+# 			any_owned_province = {
+# 				region = angmar_region
+# 			}
+# 			OR = {
+# 				ai = no
+# 				AND = {
+# 					ai = yes
+# 					num_of_cities = 1
+# 				}
+# 			}
+# 		}
+#         provinces_to_highlight = {
+# 			OR = {
+# 				province_id = 610
+# 				province_id = 401
+# 				province_id = 611
+# 				province_id = 613
+# 				province_id = 1958
+# 				province_id = 1957
+# 				province_id = 606
+# 				province_id = 1956
+# 			}
+# 			OR = {
+# 				NOT = { owned_by = ROOT }
+# 				is_city = no
+# 			}
+# 		}
+# 		allow = {
+# 			adm_tech = 6
+            
+# 			is_subject = no
+#             is_free_or_tributary_trigger = yes
+# 			is_at_war = no
+#             NOT = { exists = ANG }
+			
+# 			num_of_owned_provinces_with = {
+# 				value = 20
+# 				region = angmar_region
+# 			}
+# 			owns_core_province = 610 	# Carn Dûm
+# 			owns_core_province = 401 	# Phaluran
+# 			owns_core_province = 611 	# Angsûl
+# 			owns_core_province = 613 	# Cargash
+# 			owns_core_province = 1958 	# Morkai
+# 			owns_core_province = 1957 	# Shedûn
+# 			owns_core_province = 606 	# Angsiril
+# 			owns_core_province = 1956 	# Litash 
+# 		}
+# 		effect = {
+# 			change_tag = ANG
+
+# 			ANG = {
+# 				set_capital = 610		# Carn Dûm
+# 			}
+            
+# 			add_prestige = 50
+# 			add_country_modifier = {
+# 				name = "centralization_modifier"
+# 				duration = 3650
+# 			}
+            
+#             if = {
+# 				limit = { has_custom_ideas = no }
+# 				country_event = { id = ideagroups.1 } #Swap Ideas
+# 			}
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 		}
+# 		ai_importance = 100
+# 	}
+# }

@@ -9,40 +9,16 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
-base_production = 4
-base_manpower = 3
-
-add_core = W79
+base_tax = 4
+base_production = 6
+base_manpower = 5
 owner = W79
 controller = W79
-
 culture = culture_dorwinrim
 religion = religion_daen
-
-trade_goods = wine
-
-hre = no
-
-capital_2_building=yes
-
-trade_depot_building=yes
-
-tax_office_building=yes
-
-warehouse_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
-seaport_building=yes
-
-drydock_building=yes
-
+trade_goods = salt
+center_of_trade = 1
 2770.12.1 = {
 	add_core = Y48
 	owner = Y48
@@ -50,8 +26,8 @@ drydock_building=yes
 	culture = culture_goblin
 	religion = religion_goblin
 }
-
 #Rhovanion Superregion Discovery
+add_core = W79
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -101,4 +77,11 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_2_building = yes
+trade_depot_building = yes
+tax_office_building = yes
+warehouse_building = yes
+fort_castle_building = yes
+army_camp_building = yes
+seaport_building = yes
+drydock_building = yes

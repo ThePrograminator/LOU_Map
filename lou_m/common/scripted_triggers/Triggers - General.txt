@@ -493,3 +493,15 @@ ruler_has_max_personalities = {
 		amount = 3
 	}
 }
+
+country_ally_or_non_sovereign_subject_holds = {
+	custom_trigger_tooltip = {
+		tooltip = country_ally_or_non_sovereign_subject_holds_tt
+		OR = {
+			country_or_non_sovereign_subject_holds = ROOT
+			owner ={
+				alliance_with = ROOT
+			}
+		}
+	}
+}

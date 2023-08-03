@@ -3,7 +3,7 @@
 # Province RGB : (55, 36, 62)
 # Province Area : Ûster Kryl
 # Province Region : Ûster Kryl
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Linimér
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W01
 owner = W01
@@ -23,23 +23,10 @@ controller = W01
 culture = culture_stiffbeard
 religion = religion_mahal
 
-trade_goods = gems
+trade_goods = copper
 
 hre = no
 
-settlement_1_dwarf_building=yes
-
-forge_dwarf_building=yes
-
-libary_dwarf_building=yes
-
-training_hall_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-rune_door_dwarf_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

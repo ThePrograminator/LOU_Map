@@ -9,25 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 3
-base_manpower = 4
-
-add_core = Y20
+base_tax = 2
+base_production = 2
+base_manpower = 5
 owner = Y20
 controller = Y20
-
 culture = culture_spider
 religion = religion_spider
-
-trade_goods = iron
-
-hre = no
-
-#Ered Harmal Superregion Discovery
+trade_goods = gems
+add_core = Y20
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -80,4 +71,3 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-

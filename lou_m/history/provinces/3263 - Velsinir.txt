@@ -9,31 +9,17 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
-base_production = 4
-base_manpower = 6
-
-add_core = X17
+base_tax = 1
+base_production = 3
+base_manpower = 2
 owner = X17
 controller = X17
-
-culture = culture_haruze
+culture = culture_chelkarim
 religion = religion_haruzani
-
-trade_goods = livestock
-
-hre = no
-
-fortress_1_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-#Near Harad Superregion Discovery
+trade_goods = wine
+add_core = X17
+add_core = Q29
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -99,4 +85,6 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+fortress_1_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

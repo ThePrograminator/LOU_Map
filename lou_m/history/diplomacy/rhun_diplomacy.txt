@@ -4,6 +4,7 @@
 2758.9.14 = { celestial_emperor = V39 } # Igath
 
 # Tributaries
+#Igath and Sagath
 dependency = {
 	subject_type = "tributary_state"
 	first = V39
@@ -11,6 +12,7 @@ dependency = {
 	start_date = 2750.1.1
 	end_date = 3500.1.1
 }
+#Igath and Asdriags
 dependency = {
 	subject_type = "tributary_state"
 	first = V39 
@@ -18,6 +20,7 @@ dependency = {
 	start_date = 2750.1.1
 	end_date = 3500.1.1
 }
+#Igath and Magriags
 dependency = {
 	subject_type = "tributary_state"
 	first = V39 
@@ -25,6 +28,7 @@ dependency = {
 	start_date = 2750.1.1
 	end_date = 3500.1.1
 }
+#Igath and Odhriags
 dependency = {
 	subject_type = "tributary_state"
 	first = V39 
@@ -32,6 +36,7 @@ dependency = {
 	start_date = 2750.1.1
 	end_date = 3500.1.1
 }
+#Igath and Urgath
 dependency = {
 	subject_type = "tributary_state"
 	first = V39 
@@ -39,10 +44,19 @@ dependency = {
 	start_date = 2750.1.1
 	end_date = 3500.1.1
 }
+#Igath and Kugath
 dependency = {
 	subject_type = "tributary_state"
 	first = V39 
 	second = Y01
+	start_date = 2750.1.1
+	end_date = 3500.1.1
+}
+#Igath and Gathmarig
+dependency = {
+	subject_type = "tributary_state"
+	first = V39 
+	second = W64
 	start_date = 2750.1.1
 	end_date = 3500.1.1
 }

@@ -15,6 +15,7 @@ historical_friend = Y84
 historical_friend = Y81
 historical_friend = Y82
 historical_friend = Y83
+historical_friend = Y68
 historical_rival = V19
 historical_rival = V17
 historical_rival = Y57
@@ -27,12 +28,35 @@ historical_rival = V20
 2758.1.1 = {
 	monarch = {
 		name = "Galadriel"
-		dynasty = "Finarfinion"
+		dynasty = "Finarfiniel"
 		female = yes
 		adm = 6
 		dip = 6
-		mil = 5
-		birth_date = 2718.1.1
+		mil = 6
+		birth_date = 10.1.1
 	}
 	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+	add_ruler_personality = just_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = calm_personality
+	add_trust = {
+		who = Z93
+		value = 25
+		mutual = yes
+	}
+	queen = {
+		name = "Celeborn"
+		dynasty = "Galadhonion"
+		female = no
+		culture = culture_galadhrim
+		country_of_origin = Y68
+		adm = 5
+		dip = 6
+		mil = 4
+		birth_date = 10.1.1
+		death_date = 4000.1.1
+	}
+	add_queen_personality = immortal_personality
+	set_consort_flag = set_immortality
 }

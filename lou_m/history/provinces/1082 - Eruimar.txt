@@ -9,37 +9,20 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 6
-base_manpower = 6
-
-add_core = Z13
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = Z13
 controller = Z13
-
 culture = culture_rivermen_of_lhun
 religion = religion_eriadorians
-
 trade_goods = dyes
-
-hre = no
-
-capital_1_building=yes
-
-fort_pallisade_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-army_camp_building=yes
-
-workshop_building=yes
-
-#Eriador Superregion Discovery
+add_permanent_province_modifier = {
+	name = east_road
+	duration = -1
+}
+add_core = Z13
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -53,7 +36,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -86,4 +68,9 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_1_building = yes
+fort_pallisade_building = yes
+marketplace_building = yes
+tax_office_building = yes
+army_camp_building = yes
+workshop_building = yes

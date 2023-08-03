@@ -3,15 +3,17 @@
 # Province RGB : (75, 93, 40)
 # Province Area : Gazar Barak
 # Province Region : Logathavuld
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sadvar
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
+is_city = no
+
 base_tax = 2
-base_production = 3
+base_production = 4
 base_manpower = 3
 
 add_core = X91
@@ -24,15 +26,6 @@ religion = religion_ulgath
 
 trade_goods = wool
 
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-work_camp_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

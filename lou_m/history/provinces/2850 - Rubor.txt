@@ -3,7 +3,7 @@
 # Province RGB : (85, 227, 22)
 # Province Area : Rûbor
 # Province Region : Rûbor
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ezra
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V60
 owner = V60
@@ -23,15 +23,10 @@ controller = V60
 culture = culture_rubor
 religion = religion_eastern_snowmen
 
-trade_goods = wool
+trade_goods = cotton
 
 hre = no
 
-settlement_building=yes
-
-temple_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

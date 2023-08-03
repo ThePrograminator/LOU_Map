@@ -1,0 +1,888 @@
+slot_01 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = Y80
+	}
+
+	the_defence_situation = {
+		icon = mission_dunedain_6
+		position = 3
+		required_missions = { expel_wulfseggeas }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = rivendell_defence_situation_tt
+				OR = {
+					has_country_flag = rivendell_accepted_handover_flag
+					has_country_flag = rivendell_declined_handover_flag
+				}
+			}
+		}
+		effect = { 
+			add_mil_power = 100
+		}
+	}
+	defence_of_athrad_bruinen = {
+		icon = mission_fortify_1
+		position = 4
+		required_missions = { the_defence_situation }
+		provinces_to_highlight = {
+			province_id = 1679
+			NOT = {
+				province_elf_has_fort_building = yes
+			}
+		}
+		trigger = { 
+			1679 = {
+				province_elf_has_fort_building = yes
+			}
+		}
+		effect = { 
+			1679 = {
+				add_province_modifier = {
+					name = rivendell_defence_of_athrad_bruinen_province_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+slot_02 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = Y80
+	}
+
+	foster_the_heirs_of_isildur = {
+		icon = mission_dunedain_12
+		position = 1
+		required_missions = {  }
+		trigger = {
+			if = {
+				limit = {
+					exists = Z06
+				}
+				alliance_with =  Z06
+				Z06 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else = {
+				1818 = {
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = rivendell_foster_heirs_modifier
+				duration = -1
+			}
+		}
+	}
+	expel_wulfseggeas = {
+		icon = mission_elves_1
+		position = 2
+		required_missions = { foster_the_heirs_of_isildur }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1587
+				province_id = 1590
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			1587 = {
+				owned_by = ROOT
+			}
+			1590 = {
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_legitimacy = 15
+			add_country_modifier = {
+				name = rivendell_expel_wulfseggeas_modifier
+				duration = 7300
+			}
+		}
+	}
+	settle_the_wilderness = {
+		icon = mission_colonial
+		position = 3
+		required_missions = { expel_wulfseggeas }
+		provinces_to_highlight = {
+			OR = {
+				area = foreregion_area
+				area = daergil_area
+			}
+			culture =  culture_wilderness
+		}
+		trigger = {
+			foreregion_area = {
+				type = all
+				NOT  = {
+					culture =  culture_wilderness
+				}
+				custom_trigger_tooltip = {
+					tooltip = RESETTLEMENT_TT
+					NOT = {
+						has_province_modifier = ruins_debuff
+					}
+				}
+			}
+			daergil_area = {
+				type = all
+				NOT  = {
+					culture =  culture_wilderness
+				}
+				custom_trigger_tooltip = {
+					tooltip = RESETTLEMENT_TT
+					NOT = {
+						has_province_modifier = ruins_debuff
+					}
+				}
+			}
+		}
+		effect = {
+			daergil_area = {
+				add_province_modifier = {
+					name = rivendell_settle_the_wilderness_province_modifier
+					duration = 3650
+				}
+			}
+			foreregion_area = {
+				add_province_modifier = {
+					name = rivendell_settle_the_wilderness_province_modifier
+					duration = 3650
+				}
+			}
+		}
+	}
+	barad_niniel = {
+		icon = mission_fortify_2
+		position = 4
+		required_missions = { settle_the_wilderness }
+		provinces_to_highlight = {
+			province_id = 1591
+			NOT = {
+				province_elf_has_fort_building = yes
+			}
+		}
+		trigger = { 
+			1591 = {
+				province_elf_has_fort_building = yes
+			}
+		}
+		effect = { 
+			1591 = {
+				add_province_modifier = {
+					name = rivendell_barad_niniel_province_modifier
+					duration = 7300
+				}
+				every_neighbor_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_province_modifier = {
+						name = rivendell_barad_niniel_area_effect_province_modifier
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	rivendell_drive_out_orcs = {
+		icon = mission_elves_1
+		position = 6
+		required_missions = { reclaim_ost_in_edhil }
+		provinces_to_highlight = {
+			region = eregion_region
+			owner = {
+				culture_group = culture_group_orcs
+			}
+		}
+		trigger = {
+			eregion_region = {
+				type = all
+				NOT = {
+					owner = {
+						culture_group = culture_group_orcs
+					}
+				}
+			}
+		}
+		effect = { 
+			eregion_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_drive_out_orcs_province_modifier
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+
+slot_03 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = Y80
+	}
+
+	retake_hollin_ridge = {
+		icon = mission_hills
+		position = 2
+		required_missions = { foster_the_heirs_of_isildur }
+		provinces_to_highlight = {
+			area = hollin_ridge_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			hollin_ridge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			1365 = {
+				add_claim = ROOT
+			}
+			1368 = {
+				add_claim = ROOT
+			}
+			1866 = {
+				add_claim = ROOT
+			}
+		}
+	}
+	border_amon_lind = {
+		icon = mission_conquer_50_development
+		position = 3
+		required_missions = { expel_wulfseggeas retake_hollin_ridge }
+		provinces_to_highlight = {
+			OR ={
+				province_id = 1365
+				province_id = 1368
+				province_id = 1866
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1365 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1368 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1866 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			285 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	reclaim_ost_in_edhil = {
+		icon = mission_elves_3
+		position = 5
+		required_missions = { border_amon_lind }
+		provinces_to_highlight = {
+			province_id = 285
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			285 = {
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			eregion_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	gwaith_i_mirdain = {
+		icon = mission_elves_forge
+		position = 6
+		required_missions = { reclaim_ost_in_edhil }
+		provinces_to_highlight = {
+			province_id = 285
+		}
+		trigger = {
+			285 = {
+				has_great_project = {
+					type = ost_in_edhil_monument
+					tier = 1
+				}
+			}
+		}
+		effect = { 
+			285 = {
+				add_province_modifier = {
+					name = rivendell_gwaith_i_mirdain_province_modifier
+					duration = 10950
+				}
+			}
+			add_country_modifier = {
+				name = rivendell_gwaith_i_mirdain_modifier
+				duration = 7300
+			}
+		}
+	}
+	restore_eregion = {
+		icon = mission_elves_eregion
+		position = 7
+		required_missions = { rivendell_drive_out_orcs gwaith_i_mirdain }
+		provinces_to_highlight = {
+			region = eregion_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			eregion_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = { 
+			country_event = {
+				id = LOU_mission_rivendell.10
+			}
+		}
+	}
+}
+
+slot_04_top = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = Y80
+	}
+
+	improve_rivendell = {
+		icon = mission_colonial
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			region = eregion_region
+			owned_by = ROOT
+			NOT = {
+				OR = {
+					has_building = craftsmen_plaza_elf_building
+					has_building = theatre_elf_building
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				region = eregion_region
+				has_building = craftsmen_plaza_elf_building
+			}
+			num_of_owned_provinces_with = {
+				value = 2
+				region = eregion_region
+				has_building = theatre_elf_building
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = eregion_region
+				}
+				add_province_modifier = {
+					name = rivendell_improve_rivendell_province_modifier
+					duration = 7300
+				}
+			}
+		}
+	}
+	place_of_learning = {
+		icon = mission_asian_trader
+		position = 2
+		required_missions = { improve_rivendell }
+		provinces_to_highlight = {
+			province_id = 232
+		}
+		trigger = {
+			232 = {
+				development = 40
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = rivendell_place_of_learning_modifier
+				duration = -1
+			}
+		}
+	}
+	house_of_healing = {
+		icon = mission_rivendell
+		position = 3
+		required_missions = { place_of_learning }
+		provinces_to_highlight = {
+			province_id = 232
+		}
+		trigger = {
+			232 = {
+				has_great_project = {
+					type = rivendell_monument
+					tier = 3
+				}
+			}
+		}
+		effect = {
+			add_legitimacy = 15
+			add_country_modifier = {
+				name = rivendell_house_of_healing_modifier
+				duration = -1
+			}
+		}
+	}
+}
+
+
+slot_04 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = Y80
+	}
+
+	the_white_council = {
+		icon = mission_elves_5
+		position = 4
+		required_missions = { friends_of_the_dwarves }
+		trigger = {
+			alliance_with =  Y81
+			alliance_with =  Y68
+			alliance_with =  Y22
+			if = {
+				limit = {
+					exists = Z06
+				}
+				alliance_with =  Z06
+			}
+			else_if = {
+				limit = {
+					exists = W57
+				}
+				alliance_with =  W57
+			}
+			else_if = {
+				limit = {
+					OR = {
+						exists = W55
+						exists = W54
+						exists = W56
+					}
+				}
+				OR = {
+					alliance_with =  W54
+					alliance_with =  W55
+					alliance_with =  W56
+				}
+			}
+			alliance_with =  X01
+		}
+		effect = { 
+			add_stability = 1
+			add_country_modifier = {
+				name = rivendell_the_white_council_modifier
+				duration = -1
+			}
+		}
+	}
+	high_king_of_the_noldor = {
+		icon = mission_elves_lindon
+		position = 5
+		required_missions = { the_white_council }
+		trigger = {
+			is_great_power = yes
+			if = {
+				limit = { 
+					exists = Y81
+				}
+				Y81 = {
+					trust = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		effect = { 
+			if = {
+				limit = {
+					exists = Y81
+					Y81 = {
+						ai = no
+					}
+				}
+				Y81 = {
+					create_union = ROOT
+				}
+			}
+			else = {
+				add_adm_power = 150
+				add_dip_power = 150
+				add_mil_power = 150
+			}
+		}
+	}
+	trade_with_the_dwarves = {
+		icon = mission_dominate_home_trade_node
+		position = 6
+		required_missions = { reclaim_ost_in_edhil aid_the_dwarves }
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				AND = {
+					province_id = 1365
+					NOT = {
+						province_has_center_of_trade_of_level = 2
+					}
+				}
+				OR = {
+					area = ost_in_edhil_area
+					area = minas_melosse_area
+					area = mirobel_area
+				}
+			}
+			NOT = {
+				has_building = exotic_wares_market_elf_building
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					1365 = {
+						owned_by = ROOT
+					}
+				}
+				OR = {
+					1365 = {
+						province_has_center_of_trade_of_level = 2
+					}
+					num_of_owned_provinces_with = {
+						value = 2
+						OR = {
+							area = ost_in_edhil_area
+							area = minas_melosse_area
+							area = mirobel_area
+						}
+						has_building = exotic_wares_market_elf_building
+					}
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 2
+					OR = {
+						area = ost_in_edhil_area
+						area = minas_melosse_area
+						area = mirobel_area
+					}
+					has_building = exotic_wares_market_elf_building
+				}
+			}
+		}
+		effect = { 
+			ost_in_edhil_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_trade_with_the_dwarves_province_modifier
+					duration = 7300
+				}
+			}
+
+			minas_melosse_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_trade_with_the_dwarves_province_modifier
+					duration = 7300
+				}
+			}
+
+			mirobel_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = rivendell_trade_with_the_dwarves_province_modifier
+					duration = 7300
+				}
+			}
+		}
+	}
+	pay_the_beorning_tolls = {
+		icon = mission_beornings
+		position = 7
+		required_missions = {  }
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = rivendell_pay_beorning_toll_denied_flag
+				}
+				1875 = {
+					owned_by = ROOT
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = rivendell_beornings_accepted_toll_proposal_tt
+					has_country_flag = rivendell_pay_beorning_toll_accepted_flag
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = rivendell_pay_beorning_toll_denied_flag
+				}
+				add_prestige = 15
+			}
+			else = {
+				custom_tooltip = rivendell_beornings_toll_bonus_tt
+			}
+		}
+	}
+	the_threat_of_goblintown = {
+		icon = mission_goblin_1
+		position = 8
+		required_missions = { pay_the_beorning_tolls }
+		provinces_to_highlight = {
+			area = goblin_gate_area
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			goblin_gate_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_dip_power = 100
+		}
+	}
+}
+
+slot_05 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = Y80
+	}
+
+	noldor_allies = {
+		icon = mission_elves_7
+		position = 1
+		required_missions = {  }
+		trigger = {
+			alliance_with =  Y81
+			Y81 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = rivendell_noldor_ally_modifier
+				duration = 3650
+			}
+			every_known_country = {
+				limit = {
+					is_elf = yes
+					capital_scope = {
+						OR = {
+							superregion = eriador_superregion
+							superregion = forodwaith_superregion
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_noldor_relation
+				}
+			}
+		}
+	}
+	kin_of_galadriel = {
+		icon = mission_elves_6
+		position = 2
+		required_missions = { noldor_allies }
+		trigger = {
+			alliance_with =  Y68
+			Y68 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+		effect = { 
+			every_known_country = {
+				limit = {
+					is_elf = yes
+					capital_scope = {
+						OR = {
+							superregion = rhovanion_superregion
+							superregion = rohan_superregion
+							superregion = gondor_superregion
+							superregion = rhun_superregion
+							superregion = mordor_superregion
+							superregion = near_harad_superregion
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_silvan_relation
+				}
+			}
+		}
+	}
+	friends_of_the_dwarves = {
+		icon = mission_elves_4
+		position = 3
+		required_missions = { kin_of_galadriel }
+		trigger = {
+			alliance_with =  Y22
+			Y22 = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+		effect = { 
+			every_known_country = {
+				limit = {
+					is_dwarf = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_dwarf_relation
+				}
+			}
+		}
+	}
+	aid_the_dwarves = {
+		icon = mission_dwarves_1
+		position = 5
+		required_missions = { friends_of_the_dwarves }
+		provinces_to_highlight = {
+			area = khazad_dum_area
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			khazad_dum_area = {
+				type = all
+				country_ally_or_non_sovereign_subject_holds = yes
+			}
+		}
+		effect = { 
+			khazad_dum_area = {
+				add_core = Y22
+				cede_province = Y22
+			}
+			Y22 = {
+				add_opinion = {
+					who = ROOT
+					modifier = rivendell_aid_the_dwarves_relation
+				}
+			}
+		}
+	}
+	Hatred_of_the_orcs = {
+		icon = mission_orc_army_3
+		position = 9
+		required_missions = { the_threat_of_goblintown aid_the_dwarves }
+		provinces_to_highlight = {
+			region = misty_mountains_region
+			owner = {
+				culture_group = culture_group_orcs
+			}
+			NOT = {
+				area = methedras_area
+			}
+		}
+		trigger = {
+			misty_mountains_region = {
+				type = all
+				NOT = {
+					owner = {
+						culture_group = culture_group_orcs
+					}
+				}
+				hidden_trigger = {
+					NOT = {
+						area = methedras_area
+					}
+				}
+			}
+		}
+		effect = { 
+			add_stability = 1
+			add_country_modifier = {
+				name = rivendell_Hatred_of_the_orcs_modifier
+				duration = -1
+			}
+		}
+	}
+}

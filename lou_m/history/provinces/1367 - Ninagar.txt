@@ -10,15 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-add_core = Y56
-owner = Y56
-controller = Y56
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 culture = culture_orkish
 religion = religion_orkish
@@ -31,6 +25,10 @@ add_province_modifier = {
 	name = ruins_debuff
 	duration = -1
 }
+
+native_size = 40
+native_ferocity = 6
+native_hostileness = 6
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

@@ -3,7 +3,7 @@
 # Province RGB : (44, 157, 148)
 # Province Area : Ibav
 # Province Region : Ibav
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ibav
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V76
 owner = V76
@@ -27,15 +27,6 @@ trade_goods = wool
 
 hre = no
 
-city_1_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

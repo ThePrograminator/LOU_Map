@@ -9,25 +9,20 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 4
-base_manpower = 5
-
-add_core = V14
+base_tax = 1
+base_production = 3
+base_manpower = 2
 owner = V14
 controller = V14
-
 culture = culture_sakalai
 religion = religion_daen
-
 trade_goods = naval_supplies
-
-hre = no
-
-#Near Harad Superregion Discovery
+add_permanent_province_modifier = {
+	name = men_falas
+	duration = -1
+}
+add_core = V14
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -93,4 +88,3 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-

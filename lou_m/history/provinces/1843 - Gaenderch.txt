@@ -10,32 +10,16 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-base_tax = 4
-base_production = 5
-base_manpower = 5
-
-add_core = Z30
-owner = Z30
-controller = Z30
-
-culture = culture_forodrim
-religion = religion_eriadorians
+culture = culture_wilderness
+religion = religion_wilderness
 
 trade_goods = grain
 
 hre = no
-
-city_1_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
 
 2989.1.1 = {
 	add_core = Z27

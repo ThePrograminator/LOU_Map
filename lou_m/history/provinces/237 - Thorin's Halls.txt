@@ -9,45 +9,41 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-base_tax = 9
-base_production = 9
-base_manpower = 9
-
+base_tax = 1
+base_production = 1
+base_manpower = 1
 culture = culture_wilderness
 religion = religion_wilderness
-
 trade_goods = silver
-
-hre = no
-
 center_of_trade = 1
-
 2802.3.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 	is_city = yes
 	culture = culture_longbeard
-	religion = religion_mahal
-	capital_2_dwarf_building=yes
-	fairground_dwarf_building=yes
-	forge_dwarf_building=yes
-	research_office_dwarf_building=yes
-	training_hall_dwarf_building=yes
-	mining_network_dwarf_building=yes
-	fort_mountain_fortress_dwarf_building=yes
-	narrow_bridge_dwarf_building=yes
-	moat_dwarf_building=yes
+	religion = religion_mahal	
+	set_capital = Y22
+	add_base_tax = 6
+	add_base_production = 12
+	add_base_manpower = 6
+	capital_2_dwarf_building = yes
+	fairground_dwarf_building = yes
+	forge_dwarf_building = yes
+	research_office_dwarf_building = yes
+	training_hall_dwarf_building = yes
+	mining_network_dwarf_building = yes
+	fort_mountain_fortress_dwarf_building = yes
+	narrow_bridge_dwarf_building = yes
+	moat_dwarf_building = yes
 }
-
 2941.11.23 = {
 	add_core = Y13
 	owner = Y13
 	controller = Y13
-	capital_2_dwarf_building=yes
+	set_capital = Y13
+	capital_2_dwarf_building = yes
 }
-
 #Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
@@ -62,7 +58,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -95,4 +90,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+is_city = no

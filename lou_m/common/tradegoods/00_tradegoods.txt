@@ -24,7 +24,7 @@ grain = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0
 			OR = {
 				has_terrain = mountain
 				has_terrain = coastal_desert
@@ -35,14 +35,14 @@ grain = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.15
 			OR = {
 				has_terrain = highlands
 				has_terrain = marsh
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.15
 			OR = {
 				has_climate = arid
 				has_climate = tropical
@@ -69,6 +69,14 @@ grain = {
 			factor = 1.5
 			has_terrain = farmlands
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -78,10 +86,10 @@ wine = {
 		global_unrest = -1
 	}
 	province = {
-		local_unrest = -1
+		local_unrest = -2
 	}
 	chance = {
-		factor = 5
+		factor = 7
 		modifier = {
 			factor = 0
 			OR = {
@@ -105,8 +113,18 @@ wine = {
 		}
 		modifier = {
 			factor = 1.25
-			has_terrain = farmlands
-			has_terrain = unique_dunedain_ruin
+			OR = {
+				has_terrain = farmlands
+				has_terrain = unique_dunedain_ruin
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
 		}
 	}
 }
@@ -155,11 +173,11 @@ cloth = {
 		factor = 10
 		modifier = {
 			factor = 0
-			NOT = { development = 18 }
+			NOT = { development = 12 }
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			development = 12
 			has_terrain = unique_dunedain_ruin
 		}
 	}
@@ -260,7 +278,7 @@ salt = {
 		local_defensiveness = 0.15
 	}
 	chance = {
-		factor = 5
+		factor = 10
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = desert }
@@ -292,6 +310,10 @@ naval_supplies = {
 
 	chance = {
 		factor = 15
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -364,9 +386,42 @@ copper = {
 			}
 		}
 		modifier = {
-			factor = 0.5
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
+			factor = 0
+			is_random_new_world = yes
+			continent = new_world
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
 		}
 	}
 }
@@ -376,7 +431,7 @@ gold = {
 	#no modifiers
 	
 	chance = {
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -386,6 +441,7 @@ gold = {
 				has_terrain = woods
 				has_terrain = drylands
 				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
 				has_terrain = savannah
 				has_terrain = steppe
 				has_terrain = jungle
@@ -393,7 +449,25 @@ gold = {
 				has_terrain = coastal_desert
 				has_terrain = marsh
 				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
 				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
 			}
 		}
 		modifier = {
@@ -402,15 +476,10 @@ gold = {
 			has_terrain = mountain
 			continent = new_world #Always in RNW
 		}
-		modifier = {
-			factor = 1.5
-			normal_or_historical_nations = no
-		}
-		modifier = {
-			factor = 0
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	normal_or_historical_nations = no
+		# }
 	}
 }
 
@@ -423,7 +492,7 @@ iron = {
 		local_build_time = -0.2
 	}
 	chance = {
-		factor = 10
+		factor = 15
 		modifier = {
 			factor = 1.2
 			normal_or_historical_nations = no
@@ -440,9 +509,42 @@ iron = {
 			continent = new_world #Always in RNW
 		}
 		modifier = {
-			factor = 0.5
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
+			factor = 0
+			is_random_new_world = yes
+			continent = new_world
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
 		}
 	}
 }
@@ -455,13 +557,35 @@ slaves = {
 		global_tariffs = 0.25
 	}
 	province = {
-		local_missionary_strength = 0.01
+		local_production_efficiency = 0.15
 	}
 	chance = {
 		factor = 15
 		modifier = {
+			factor = 1.2
+			OR = {
+				has_terrain = unique_harad_town
+				has_terrain = unique_desert_towns
+				has_terrain = unique_numenorean_port
+				has_terrain = unique_numenorean_town
+				has_terrain = unique_far_south_town
+				has_terrain = unique_orc_fortress
+				has_terrain = unique_harshandatt_town
+				has_terrain = unique_easterling_town
+				has_terrain = unique_angmar_town
+				has_terrain = unique_chyan_town
+				has_terrain = unique_womaw_settlement
+			}
+		}
+		modifier = {
 			factor = 0
 			island = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				development = 15
+			}
 		}
 		modifier = {
 			factor = 0
@@ -518,7 +642,7 @@ ivory = {
 tea = {
 	color = { 0.07 0.33 0.09 }
 	modifier = {
-		advisor_cost = -0.10
+		advisor_cost = -0.15
 	}
 	province = {
 		garrison_growth = 0.25
@@ -551,6 +675,14 @@ tea = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -622,6 +754,14 @@ spices = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -712,6 +852,14 @@ cotton = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -748,6 +896,14 @@ sugar = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -837,6 +993,14 @@ cocoa = {
 				superregion = gondor_superregion 
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
 	}
 }
 
@@ -882,6 +1046,14 @@ silk = {
 				superregion = rohan_superregion 
 				superregion = rhovanion_superregion 
 				superregion = gondor_superregion 
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
 			}
 		}
 	}
@@ -1009,11 +1181,11 @@ glass = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { development = 18 }
+			NOT = { development = 12 }
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			development = 12
 			has_terrain = unique_dunedain_ruin
 		}
 	}
@@ -1031,12 +1203,26 @@ paper = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { development = 18 }
+			NOT = { 
+				development = 12
+		}
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			development = 12
 			has_terrain = unique_dunedain_ruin
+		}
+		modifier = {
+			factor = 0
+			NOT = { 
+				any_neighbor_province = {
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+						has_terrain = unique_old_forest
+					}
+				}
+			}
 		}
 	}
 }
@@ -1050,7 +1236,7 @@ gems = {
 		local_tax_modifier = 0.15
 	}
 	chance = {
-		factor = 5
+		factor = 4
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -1060,22 +1246,33 @@ gems = {
 				has_terrain = woods
 				has_terrain = drylands
 				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
 				has_terrain = savannah
 				has_terrain = steppe
+				has_terrain = jungle
 				has_terrain = coastline
 				has_terrain = coastal_desert
 				has_terrain = marsh
-				has_terrain = unique_grasslands_desolate
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0
 			OR = {
-				has_terrain = mountain
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
 				has_terrain = jungle
-				has_terrain = hills
-				has_terrain = highlands
-				has_terrain = coastline #Pearls
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
 			}
 		}
 		modifier = {
@@ -1084,10 +1281,10 @@ gems = {
 			has_terrain = mountain
 			continent = new_world #Always in RNW
 		}
-		modifier = {
-			factor = 1.5
-			normal_or_historical_nations = no
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	normal_or_historical_nations = no
+		# }
 	}
 }
 
@@ -1129,40 +1326,66 @@ marble = {
 		
 	}
 	province = {
-		local_development_cost = -0.1
+		local_development_cost = -0.15
 	}
 	chance = {
-		factor = 10
+		factor = 5
 		modifier = {
 			factor = 1.5
 			has_terrain = hills
 		}
 		modifier = {
-			factor = 0.5
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
 		}
 	}
 }
 
 stone = {
-	color = { 0.501 0.501 0.501 }
+	color = { 0.750 0.750 0.750 }
 	modifier = {
-		fort_maintance_modifier = -0.1
+		fort_maintenance_modifier = -0.1
 	}
 	province = {
 		local_build_cost = -0.2
 	}
 	chance = {
-		factor = 15
+		factor = 20
 		modifier = {
 			factor = 1.5
 			has_terrain = hills
 		}
 		modifier = {
-			factor = 0.5
-			has_terrain = unique_grasslands_desolate
-			has_terrain = grasslands
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_eregion_ruin
+			}
 		}
 	}
 }
@@ -1176,10 +1399,18 @@ honey = {
 		local_monthly_devastation = -0.1
 	}
 	chance = {
-		factor = 10
+		factor = 7
 		modifier = {
 			factor = 1.5
 			has_terrain = forest
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
 		}
 	}
 }
@@ -1195,7 +1426,7 @@ herbs = {
 	chance = {
 		factor = 15
 		modifier = {
-			factor = 0
+			factor = 0.5
 			has_terrain = forest
 		}
 	}
@@ -1210,7 +1441,26 @@ fruit = {
 		local_prosperity_growth = 0.1
 	}
 	chance = {
-		factor = 30
+		factor = 20
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = culture_group_melkor
+				culture_group = culture_group_orcs
+				culture = culture_maiar							#Sauron
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = mountains
+				has_terrain = hills
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = unique_grasslands_desolate
+		}
 	}
 }
 
@@ -1224,6 +1474,13 @@ mushrooms = {
 	}
 	chance = {
 		factor = 20
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_terrain = mountains
+				has_terrain = hills
+			}
+		}
 	}
 }
 
@@ -1236,11 +1493,55 @@ silver = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 0
-	modifier = {
+		factor = 4
+		modifier = {
 			factor = 0
-			has_terrain = mountain
+			is_random_new_world = yes
+			continent = new_world
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = unique_grasslands_desolate
+				has_terrain = savannah
+				has_terrain = steppe
+				has_terrain = jungle
+				has_terrain = coastline
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = unique_dunedain_ruin
+				has_terrain = unique_grasslands_desolate
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_random_new_world = yes
+			has_terrain = mountain
+			continent = new_world #Always in RNW
+		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	normal_or_historical_nations = no
+		# }
 	}
 }
 
@@ -1258,5 +1559,109 @@ mithril = {
 			factor = 0
 			NOT = {	has_terrain = mountain }
 		}
+	}
+}
+
+mumakil = {
+	color = { 0.588 0.000 0.000 }
+	modifier = {
+		cavalry_shock = 1
+	}
+	province = {
+		province_trade_power_modifier = 0.15
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+great_beasts = {
+	color = { 0.235 0.235 0.235 }
+	modifier = {
+		siege_ability = 0.10
+	}
+	province = {
+		local_development_cost = -0.15
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				superregion = mordor_superregion
+			}
+		}
+	}
+}
+
+orc_draught = {
+	color = { 0.352 0.000 0.000 }
+	modifier = {
+		land_morale = 0.10
+	}
+	province = {
+		local_manpower_modifier = 0.25
+	}
+	chance = {
+		factor = 15
+		modifier = {
+			factor = 0
+			NOT = {
+				culture_group = culture_group_orcs
+			}
+		}
+	}
+}
+
+miruvor = {
+	color = { 1.000 1.000 0.800 }
+	modifier = {
+		war_exhaustion = -0.10
+	}
+	province = {
+		local_prosperity_growth = 0.25
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+corsairs = {
+	color = { 0.294 0.098 0.000 }
+	modifier = {
+		galley_power = 0.20
+	}
+	province = {
+		local_ship_cost = -0.20
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+carracks = {
+	color = { 0.294 0.098 0.000 }
+	modifier = {
+		heavy_ship_power = 0.20
+	}
+	province = {
+		local_ship_cost = -0.20
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+plunder = {
+	color = { 0.831 0.686 0.211 }
+	modifier = {
+		global_prosperity_growth = 0.15
+	}
+	province = {
+		province_trade_power_modifier = 0.15
+		local_production_efficiency = -0.50
+	}
+	chance = {
+		factor = 0
 	}
 }

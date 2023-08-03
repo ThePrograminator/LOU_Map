@@ -3,7 +3,7 @@
 # Province RGB : (146, 109, 234)
 # Province Area : Chey Rill
 # Province Region : Chey Sart
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ulk Jey Ama
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 2
+base_production = 3
+base_manpower = 1
 
 add_core = V42
 owner = V42
@@ -25,13 +25,6 @@ religion = religion_ahar
 
 trade_goods = fruit
 
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

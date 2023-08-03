@@ -9,37 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 5
-base_manpower = 6
-
-add_core = V46
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = V46
 controller = V46
-
 culture = culture_relmetherin
 religion = religion_ahar
-
-trade_goods = grain
-
-hre = no
-
-city_2_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-#Rhun Superregion Discovery
+trade_goods = silk
+add_core = V46
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -115,4 +94,9 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+city_2_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

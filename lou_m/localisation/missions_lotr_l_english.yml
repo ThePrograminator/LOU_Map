@@ -339,8 +339,8 @@
  conquer_chelkar_nurn_title: "Conquer Chelkar"
  conquer_chelkar_nurn_desc: "By securing the southern pass, we can now expand our nation further south, which we later can use to control the trade flowing west."
 
- conquer_amrun_trade_node_nurn_title: "Secure trade of Amrûn"
- conquer_amrun_trade_node_nurn_desc: "By controling the trade flowing west, we will then have a greater say in the politics in the region of Harad."
+ conquer_amrun_trade_node_urlurtsa_nurn_title: "Secure trade of Amrûn"
+ conquer_amrun_trade_node_urlurtsa_nurn_desc: "By controling the trade flowing west, we will then have a greater say in the politics in the region of Harad."
 
  great_khaganate_of_nurn_title: "Khaganate of Nûrn"
  great_khaganate_of_nurn_desc: "Our people once slaves of Mordor, now control the whole region of Nûrn and proven ourself worthy of the title Great Khaganate of Nûrn."
@@ -357,8 +357,8 @@
  conquer_khand_title: "Conquer Khand"
  conquer_khand_desc: "With the way secured south, we can continue our conquest of Khand and once and for all destroy the threat of Khand."
 
- obamarl_trade_node_nurn_title: "Secure trade of Obamarl"
- obamarl_trade_node_nurn_desc: "By securing the trade of Obamarl, we can secure goods and relations in the east."
+ obamarl_trade_node_urlurtsa_nurn_title: "Secure trade of Obamarl"
+ obamarl_trade_node_urlurtsa_nurn_desc: "By securing the trade of Obamarl, we can secure goods and relations in the east."
 
  conquer_sturlutsa_nurn_title: "Conquer Sturlutsa-Nûrn"
  conquer_sturlutsa_nurn_desc: "These lands once ours have been conquered by the Variag Invaders, we must take them back."
@@ -381,7 +381,14 @@
  destroy_nurnoth_nurn_title: "Destroy the Traitors"
  destroy_nurnoth_nurn_desc: "The Traitors of Núrnoth have been twisted by the dark promises of Sauron and turned against us. We destroy the traitors."
 
+
+ #---------------------------------------------------------
+ # Auxiliary
+ #---------------------------------------------------------
+
  build_farm_estate_mission_tooltip:0 " provinces owned by §Y[Root.GetName]§! have a Farm Estate Manufactory."
 
  expanded_library_of_minas_tirith_title: "Expanded Library of Minas Tirith"
  expanded_library_of_minas_tirith_desc: ""
+
+ cede_ally_provinces_mission_effect_tooltip:0 "Provinces owned by allies will hand over the ownership to §Y[Root.GetName]§!."

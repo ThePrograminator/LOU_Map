@@ -9,33 +9,20 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
+base_tax = 6
 base_production = 5
-base_manpower = 6
-
-add_core = X17
-owner = X17
-controller = X17
-
-culture = culture_haruze
+base_manpower = 4
+owner = Q24
+controller = Q24
+culture = culture_kajbahi
 religion = religion_haruzani
-
-trade_goods = copper
-
-hre = no
-
-fortress_2_building=yes
-
-fort_castle_building=yes
-
-barracks_building=yes
-
-work_camp_building=yes
-
-#Near Harad Superregion Discovery
+trade_goods = dyes
+add_permanent_province_modifier = {
+	name = khand_road
+	duration = -1
+}
+add_core = Q24
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -101,4 +88,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+fortress_2_building = yes
+fort_castle_building = yes
+barracks_building = yes
+work_camp_building = yes

@@ -3,16 +3,18 @@
 # Province RGB : (108, 244, 226)
 # Province Area : Urcheldor
 # Province Region : Urcheldor
-# Province Super Region : Urd
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Elyamû
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 5
-base_production = 5
-base_manpower = 7
+is_city = no
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = W80
 owner = W80
@@ -21,21 +23,8 @@ controller = W80
 culture = culture_half_orc
 religion = religion_orkish
 
-trade_goods = wool
+trade_goods = fish
 
-hre = no
-
-encampment_1_orc_building=yes
-
-meat_depot_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-orc_pit_orc_building=yes
-
-small_arena_building=yes
-
-#Urd Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

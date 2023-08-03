@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 10
-base_manpower = 5
+base_tax = 5
+base_production = 4
+base_manpower = 6
 
 add_core = X01
 owner = X01
@@ -24,9 +24,14 @@ add_core = X03
 culture = culture_gondor_middlemen_anfalas
 religion = religion_dunedain
 
-trade_goods = naval_supplies
+trade_goods = cloth
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = rathon_gondor
+	duration = -1
+}
 
 city_2_building=yes
 

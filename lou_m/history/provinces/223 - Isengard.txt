@@ -12,20 +12,38 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 4
 
 add_core = Z48
 owner = Z48
 controller = Z48
 
 culture = culture_dunlendings
-religion = religion_daen
+religion = religion_calaquendi
 
 trade_goods = iron
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = highway_of_old
+	duration = -1
+}
+
+settlement_building=yes
+
+fort_pallisade_building=yes
+
+# add_province_modifier = {
+# 	name = orthanc_stone
+# 	duration = -1
+# }
+
+2750.5.1 = {
+	add_devastation = 50
+}
 
 2759.5.1 = {
 	culture = culture_istari
@@ -34,6 +52,15 @@ hre = no
 	remove_core = Z48
 	owner = W53
 	controller = W53
+	add_base_tax = 6
+	add_base_production = 6
+	add_base_manpower = 9
+	center_of_trade = 2
+	add_building = capital_2_building
+	add_building = fort_stronghold_building
+	add_building = army_camp_building
+	add_building = trade_outpost_building
+	add_building = work_camp_building
 }
 
 2953.1.1 = {

@@ -9,33 +9,20 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 8
-base_production = 8
-base_manpower = 12
-
-add_core = Z02
+base_tax = 4
+base_production = 3
+base_manpower = 5
 owner = Z02
 controller = Z02
-
 culture = culture_gargath
 religion = religion_daen
-
 trade_goods = glass
-
-hre = no
-
-fortress_2_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
-forge_building=yes
-
-#Rhovanion Superregion Discovery
+add_permanent_province_modifier = {
+	name = men_araw
+	duration = -1
+}
+add_core = Z02
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -85,4 +72,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_2_building = yes
+fort_castle_building = yes
+army_camp_building = yes
+forge_building = yes

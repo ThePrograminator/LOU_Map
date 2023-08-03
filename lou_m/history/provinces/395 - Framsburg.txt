@@ -9,42 +9,22 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 5
 base_production = 6
 base_manpower = 7
-
-add_core = Y91
 owner = Y91
 controller = Y91
-
 culture = culture_estaravi
 religion = religion_nenedain
-
 trade_goods = paper
-
-hre = no
-
-capital_1_building=yes
-
-trade_outpost_building=yes
-
-work_camp_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-center_of_trade = 1
-
+center_of_trade = 2
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y91
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -94,4 +74,8 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_1_building = yes
+trade_outpost_building = yes
+work_camp_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes

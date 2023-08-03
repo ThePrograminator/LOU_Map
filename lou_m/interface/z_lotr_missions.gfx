@@ -2,6 +2,10 @@
 # Missions
 #-----------------------------------
 spriteTypes = {
+	spriteType = {
+		name = "mission_beornings"
+		texturefile = "gfx//interface//missions//mission_beornings.dds"
+	}
     spriteType = {
 		name = "mission_conquer_dale"
 		texturefile = "gfx//interface//missions//mission_conquer_dale.dds"
@@ -106,6 +110,22 @@ spriteTypes = {
 		name = "mission_easterlings_2"
 		texturefile = "gfx//interface//missions//mission_easterlings_2.dds"
 	}
+	spriteType = {
+		name = "mission_rivendell"
+		texturefile = "gfx//interface//missions//mission_rivendell.dds"
+	}
+	spriteType = {
+		name = "mission_elves_lindon"
+		texturefile = "gfx//interface//missions//mission_elves_lindon.dds"
+	}
+	spriteType = {
+		name = "mission_elves_eregion"
+		texturefile = "gfx//interface//missions//mission_elves_eregion.dds"
+	}
+	spriteType = {
+		name = "mission_elves_forge"
+		texturefile = "gfx//interface//missions//mission_elves_forge.dds"
+	}
     spriteType = {
 		name = "mission_elves_1"
 		texturefile = "gfx//interface//missions//mission_elves_1.dds"
@@ -113,6 +133,26 @@ spriteTypes = {
 	spriteType = {
 		name = "mission_elves_2"
 		texturefile = "gfx//interface//missions//mission_elves_2.dds"
+	}
+	spriteType = {
+		name = "mission_elves_3"
+		texturefile = "gfx//interface//missions//mission_elves_3.dds"
+	}
+	spriteType = {
+		name = "mission_elves_4"
+		texturefile = "gfx//interface//missions//mission_elves_4.dds"
+	}
+	spriteType = {
+		name = "mission_elves_5"
+		texturefile = "gfx//interface//missions//mission_elves_5.dds"
+	}
+	spriteType = {
+		name = "mission_elves_6"
+		texturefile = "gfx//interface//missions//mission_elves_6.dds"
+	}
+	spriteType = {
+		name = "mission_elves_7"
+		texturefile = "gfx//interface//missions//mission_elves_7.dds"
 	}
     spriteType = {
 		name = "mission_eorl"
@@ -129,6 +169,10 @@ spriteTypes = {
     spriteType = {
 		name = "mission_farm"
 		texturefile = "gfx//interface//missions//mission_farm.dds"
+	}
+	spriteType = {
+		name = "mission_grey_havens"
+		texturefile = "gfx//interface//missions//mission_grey_havens.dds"
 	}
     spriteType = {
 		name = "mission_gondor_1"
@@ -533,5 +577,81 @@ spriteTypes = {
 	spriteType = {
 		name = "mission_carn_dum"
 		texturefile = "gfx//interface//missions//mission_carn_dum.dds"
+	}
+	spriteType = {
+		name = "mission_angmarim_servitude"
+		texturefile = "gfx//interface//missions//mission_angmarim_servitude.dds"
+	}
+	spriteType = {
+		name = "mission_restore_old_borders"
+		texturefile = "gfx//interface//missions//mission_restore_old_borders.dds"
+	}
+	spriteType = {
+		name = "mission_west_to_forochel"
+		texturefile = "gfx//interface//missions//mission_west_to_forochel.dds"
+	}
+	spriteType = {
+		name = "mission_south_to_rhudaur"
+		texturefile = "gfx//interface//missions//mission_south_to_rhudaur.dds"
+	}
+	spriteType = {
+		name = "mission_the_naval_north"
+		texturefile = "gfx//interface//missions//mission_the_naval_north.dds"
+	}
+	spriteType = {
+		name = "mission_ice_floes_of_forochel"
+		texturefile = "gfx//interface//missions//mission_ice_floes_of_forochel.dds"
+	}
+	spriteType = {
+		name = "mission_ice_bay_thralls"
+		texturefile = "gfx//interface//missions//mission_ice_bay_thralls.dds"
+	}
+	spriteType = {
+		name = "mission_return_of_the_witch_king"
+		texturefile = "gfx//interface//missions//mission_return_of_the_witch_king.dds"
+	}
+	spriteType = {
+		name = "mission_the_high_fells"
+		texturefile = "gfx//interface//missions//mission_the_high_fells.dds"
+	}
+	spriteType = {
+		name = "mission_morgul_sorcery"
+		texturefile = "gfx//interface//missions//mission_morgul_sorcery.dds"
+	}
+	spriteType = {
+		name = "mission_wall_of_mist_and_stone"
+		texturefile = "gfx//interface//missions//mission_wall_of_mist_and_stone.dds"
+	}
+	spriteType = {
+		name = "mission_carn_dum_snow"
+		texturefile = "gfx//interface//missions//mission_carn_dum_snow.dds"
+	}
+	spriteType = {
+		name = "mission_the_lower_cities"
+		texturefile = "gfx//interface//missions//mission_the_lower_cities.dds"
+	}
+	spriteType = {
+		name = "mission_vale_of_nan_angmar"
+		texturefile = "gfx//interface//missions//mission_vale_of_nan_angmar.dds"
+	}
+	spriteType = {
+		name = "mission_reformation_of_angmar"
+		texturefile = "gfx//interface//missions//mission_reformation_of_angmar.dds"
+	}
+	spriteType = {
+		name = "mission_wight_power"
+		texturefile = "gfx//interface//missions//mission_wight_power.dds"
+	}
+	spriteType = {
+		name = "mission_prepare_troll_troops"
+		texturefile = "gfx//interface//missions//mission_prepare_troll_troops.dds"
+	}
+	spriteType = {
+		name = "mission_forward_defenses"
+		texturefile = "gfx//interface//missions//mission_forward_defenses.dds"
+	}
+	spriteType = {
+		name = "mission_destroy_rivendell"
+		texturefile = "gfx//interface//missions//mission_destroy_rivendell.dds"
 	}
 }

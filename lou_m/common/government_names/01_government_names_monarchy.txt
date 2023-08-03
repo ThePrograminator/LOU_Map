@@ -156,7 +156,7 @@ gov_lotr_haradrim_monarchy = {
 	}
 
 	ruler_male = {
-		1 = DUKE
+		1 = TASKRAL
 		2 = AUTARB
 		3 = EMPEROR
 	}
@@ -280,6 +280,45 @@ gov_lotr_harshandatt_monarchy = {
 	}
 }
 
+gov_lotr_marcrize_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GENERAL
+		2 = GENERAL
+		3 = GENERAL
+	}
+
+	ruler_female = {
+		1 = GENERAL
+		2 = GENERAL
+		3 = GENERAL
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			has_reform = marcrize_reform
+		}
+	}
+}
+
 gov_great_khaganate_of_nurn = {
 	rank = {
 		1 = KHAGANATE
@@ -288,17 +327,28 @@ gov_great_khaganate_of_nurn = {
 	}
 	
 	ruler_male = {
-		1 = KHAGANATE_RULER
-		2 = KHAGANATE_RULER
-		3 = KHAGANATE_RULER
+		1 = KHAGAN
+		2 = KHAGAN
+		3 = KHAGAN
 	}
 	
 	ruler_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
 	}
-	
+		
+	heir_male = {
+		1 = KHANZADEH 
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHATUN
+		2 = KHATUN
+		3 = KHATUN
+	}
 	trigger = {
 		has_reform = great_khaganate_of_nurn_reform
 	}
@@ -325,5 +375,148 @@ gov_empire_of_rhun = {
 	
 	trigger = {
 		has_reform = empire_of_rhun_reform
+	}
+}
+
+gov_isengard_white_council = {
+	rank = {
+		1 = ISENGARD_WHITE_COUNCIL
+		2 = ISENGARD_WHITE_COUNCIL
+		3 = ISENGARD_WHITE_COUNCIL
+	}
+	
+	ruler_male = {
+		1 = ISENGARD_ISTARI
+		2 = ISENGARD_ISTARI
+		3 = ISENGARD_ISTARI
+	}
+	
+	ruler_female = {
+		1 = ISENGARD_ISTARI
+		2 = ISENGARD_ISTARI
+		3 = ISENGARD_ISTARI
+	}
+	
+	heir_male = {
+		1 = ISENGARD_GUARD
+		2 = ISENGARD_GUARD
+		3 = ISENGARD_GUARD
+	}
+
+	heir_female = {
+		1 = ISENGARD_GUARD
+		2 = ISENGARD_GUARD
+		3 = ISENGARD_GUARD
+	}
+
+	trigger = {
+		has_reform = isengard_white_council_reform
+	}
+}
+
+gov_radagast = {
+	rank = {
+		1 = RADAGAST_RHOSGOBEL
+		2 = RADAGAST_RHOSGOBEL
+		3 = RADAGAST_RHOSGOBEL
+	}
+	
+	ruler_male = {
+		1 = RADAGAST_RULER
+		2 = RADAGAST_RULER
+		3 = RADAGAST_RULER
+	}
+	
+	ruler_female = {
+		1 = RADAGAST_RULER
+		2 = RADAGAST_RULER
+		3 = RADAGAST_RULER
+	}
+		
+	heir_male = {
+		1 = RADAGAST_WOODSMAN
+		2 = RADAGAST_WOODSMAN
+		3 = RADAGAST_WOODSMAN
+	}
+
+	heir_female = {
+		1 = RADAGAST_WOODSMAN
+		2 = RADAGAST_WOODSMAN
+		3 = RADAGAST_WOODSMAN
+	}
+
+	trigger = {
+		has_reform = radagast_reform
+	}
+}
+gov_dol_amroth = {
+	rank = {
+		1 = DOL_AMROTH
+		2 = DOL_AMROTH
+		3 = DOL_AMROTH
+	}
+	
+	ruler_male = {
+		1 = DOL_AMROTH_PRINCE
+		2 = DOL_AMROTH_PRINCE
+		3 = DOL_AMROTH_PRINCE
+	}
+	
+	ruler_female = {
+		1 = DOL_AMROTH_PRINCESS
+		2 = DOL_AMROTH_PRINCESS
+		3 = DOL_AMROTH_PRINCESS
+	}
+	
+	heir_male = {
+		1 = DOL_AMROTH_SWAN_COMMANDER
+		2 = DOL_AMROTH_SWAN_COMMANDER
+		3 = DOL_AMROTH_SWAN_COMMANDER
+	}
+
+	heir_female = {
+		1 = DOL_AMROTH_SWAN_COMMANDER
+		2 = DOL_AMROTH_SWAN_COMMANDER
+		3 = DOL_AMROTH_SWAN_COMMANDER
+	}
+
+	trigger = {
+		has_reform = dol_amroth_reform
+	}
+}
+
+gov_umbar = {
+	rank = {
+		1 = UMBAR_CORSAIRS
+		2 = UMBAR_CORSAIRS
+		3 = UMBAR_CORSAIRS
+	}
+	
+	ruler_male = {
+		1 = CORSAIR_KING
+		2 = CORSAIR_KING
+		3 = CORSAIR_KING
+	}
+	
+	ruler_female = {
+		1 = CORSAIR_QUEEN
+		2 = CORSAIR_QUEEN
+		3 = CORSAIR_QUEEN
+	}
+	
+	heir_male = {
+		1 = UMBAR_CAPTAIN
+		2 = UMBAR_CAPTAIN
+		3 = UMBAR_CAPTAIN
+	}
+
+	heir_female = {
+		1 = UMBAR_CAPTAIN
+		2 = UMBAR_CAPTAIN
+		3 = UMBAR_CAPTAIN
+	}
+
+	trigger = {
+		has_reform = umbar_reform
 	}
 }

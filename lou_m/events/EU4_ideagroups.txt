@@ -1577,43 +1577,6 @@ country_event = {
 	}
 }
 
-# Conservative Backlash
-country_event = {
-	id = ideagroups.408
-	title = "EVTNAME6161"
-	desc = "EVTDESC6161"
-	picture = DEBATE_REPUBLICAN_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea = divine_supremacy
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "EVTOPTA6161"
-		add_stability = -1
-	}
-
-	option = {
-		name = "EVTOPTB6161"
-		add_piety = 0.2
-		random_owned_province = {
-			limit = {
-				religion = ROOT
-			}
-			spawn_rebels = {
-				type = religious_rebels
-				size = 1
-			}
-		}
-	} 
-}
-
 # People feel safe
 country_event = {
 	id = ideagroups.409

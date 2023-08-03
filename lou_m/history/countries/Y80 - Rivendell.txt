@@ -34,6 +34,7 @@ historical_rival = Y63
 historical_rival = V06
 historical_rival = Z37
 historical_rival = Y58
+historical_rival = ANG
 
 add_opinion = {
 	who = Z06
@@ -45,9 +46,75 @@ add_opinion = {
 		name = "Elrond"
 		dynasty = "Peredhel"
 		adm = 6
-		dip = 6
+		dip = 5
 		mil = 6
-		birth_date = 2718.1.1
+		birth_date = 10.1.1
 	}
 	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+	add_ruler_personality = just_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_trust = {
+		who = Y68
+		value = 50
+		mutual = yes
+	}
+	add_trust = {
+		who = Y81
+		value = 50
+		mutual = yes
+	}
+	queen = {
+		name = "Celebrían"
+		dynasty = "Celeborniel"
+		female = yes
+		culture = culture_galadhrim
+		country_of_origin = Y68
+		adm = 4
+		dip = 5
+		mil = 3
+		birth_date = 10.1.1
+		death_date = 2510.1.1
+	}
+	add_queen_personality = immortal_personality
+	set_consort_flag = set_immortality
+	heir = {
+		name = "Elladan"
+		monarch_name = "Elladan"
+		dynasty = "Peredhel"
+		culture = culture_noldor
+		claim = 100
+		adm = 5
+		dip = 5
+		mil = 6
+		birth_date = 130.1.1
+		death_date = 4000.1.1
+	}
+	add_heir_personality = immortal_personality
+	set_heir_flag = set_immortality
+	define_advisor = {
+		type = army_reformer
+		name = "Elrohir"
+		skill = 3
+		culture = culture_noldor
+		religion = religion_calaquendi
+		discount = yes
+	}
+	define_advisor = {
+		type = statesman
+		name = "Erestor"
+		skill = 3
+		culture = culture_noldor
+		religion = religion_calaquendi
+		discount = yes
+	}
+	define_advisor = {
+		type = philosopher
+		name = "Glorfindel"
+		skill = 3
+		culture = culture_noldor
+		religion = religion_calaquendi
+		discount = yes
+	}
 }

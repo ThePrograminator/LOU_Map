@@ -3,7 +3,7 @@
 # Province RGB : (176, 63, 26)
 # Province Area : Ehwathrumavuld
 # Province Region : Rhovanion
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Burh Waldmarh
 # Province Climate : Mild_winter
@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 4
-base_production = 5
-base_manpower = 4
+base_production = 2
+base_manpower = 3
 
 add_core = Y98
 owner = Y98
@@ -25,13 +25,6 @@ religion = religion_aivathuida
 
 trade_goods = grain
 
-hre = no
-
-city_1_building=yes
-
-workshop_building=yes
-
-#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

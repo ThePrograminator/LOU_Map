@@ -9,53 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 13
-base_production = 14
-base_manpower = 14
-
-add_core = Y11
+base_tax = 5
+base_production = 7
+base_manpower = 3
 owner = Y11
 controller = Y11
-
 culture = culture_stiffbeard
 religion = religion_mahal
-
-trade_goods = silver
-
-hre = no
-
-capital_3_dwarf_building=yes
-
-great_market_dwarf_building=yes
-
-traders_guild_building=yes
-
-arsenal_dwarf_building=yes
-
-smithies_guild_building=yes
-
-acadamy_dwarf_building=yes
-
-advisor_guild_dwarf_building=yes
-
-hall_of_warriors_dwarf_building=yes
-
-warriors_guild_dwarf_building=yes
-
-materials_depot_building=yes
-
-miners_guild_dwarf_building=yes
-
-fort_mountain_citidal_dwarf_building=yes
-
-ballista_towers_dwarf_building=yes
-
+trade_goods = gems
 center_of_trade = 2
-
 #Dyria Superregion Discovery
+add_core = Y11
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd
@@ -92,4 +57,16 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_3_dwarf_building = yes
+great_market_dwarf_building = yes
+traders_guild_building = yes
+arsenal_dwarf_building = yes
+smithies_guild_building = yes
+acadamy_dwarf_building = yes
+advisor_guild_dwarf_building = yes
+hall_of_warriors_dwarf_building = yes
+warriors_guild_dwarf_building = yes
+materials_depot_building = yes
+miners_guild_dwarf_building = yes
+fort_mountain_citidal_dwarf_building = yes
+ballista_towers_dwarf_building = yes

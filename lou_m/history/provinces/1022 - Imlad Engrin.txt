@@ -9,40 +9,27 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 7
-base_manpower = 4
-
-add_core = Y33
+base_tax = 2
+base_production = 3
+base_manpower = 1
 owner = Y23
 controller = Y23
-
-add_core = Y23
-add_core = W70
 culture = culture_longbeard
 religion = religion_mahal
-
-trade_goods = iron
-
-hre = no
-
+trade_goods = stone
 2770.1.1 = {
 	owner = Y33
 	controller = Y33
 	culture = culture_orkish
 	religion = religion_orkish
-	camp_orc_building=yes
-	orc_pit_orc_building=yes
+	camp_orc_building = yes
+	orc_pit_orc_building = yes
 }
-
 2941.1.1 = {
 	owner = Y23
 	controller = Y23
 }
-
 2989.4.1 = {
 	add_core = Y22
 	owner = Y22
@@ -50,8 +37,10 @@ hre = no
 	culture = culture_longbeard
 	religion = religion_mahal
 }
-
 #Rhovanion Superregion Discovery
+add_core = Y33
+add_core = Y23
+add_core = W70
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -101,4 +90,3 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-

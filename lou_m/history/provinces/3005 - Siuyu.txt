@@ -3,7 +3,7 @@
 # Province RGB : (117, 227, 187)
 # Province Area : East Codya
 # Province Region : Codya
-# Province Super Region : Balizar
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Cilyar
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z95
 owner = Z95
@@ -27,17 +27,6 @@ trade_goods = copper
 
 hre = no
 
-city_1_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-army_camp_building=yes
-
-#Balizar Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

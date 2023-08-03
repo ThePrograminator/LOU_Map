@@ -2,6 +2,7 @@
 government = orc_gov
 add_government_reform = lotr_orc_kingdom_reform
 primary_culture = culture_goblin
+add_accepted_culture = culture_cave_troll
 religion = religion_goblin
 technology_group = lotr_goblin
 unit_type = lotr_goblin
@@ -23,6 +24,7 @@ historical_friend = Y63
 historical_friend = Y32
 historical_friend = Y30
 historical_friend = Y52
+historical_friend = ANG
 historical_rival = Y68
 historical_rival = W27
 historical_rival = Z04
@@ -51,8 +53,8 @@ historical_rival = Y84
 		name = "Nagduf"
 		dynasty = "Gorzag"
 		birth_date = 2728.1.1
-		adm = 1
-		dip = 1
+		adm = 4
+		dip = 3
 		mil = 5
 	}
 	heir = {
@@ -61,9 +63,9 @@ historical_rival = Y84
 		dynasty = "Gorzag"
 		birth_date = 2720.1.1
 		death_date = 2745.1.1
-		adm = 2
+		adm = 3
 		dip = 2
-		mil = 2
+		mil = 4
 		claim = 100
 	}
 }

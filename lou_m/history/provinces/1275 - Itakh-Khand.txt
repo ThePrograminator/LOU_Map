@@ -3,7 +3,7 @@
 # Province RGB : (159, 219, 25)
 # Province Area : Lower Khand
 # Province Region : Khand
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sturlurtsa Khand
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 5
+base_tax = 1
+base_production = 3
+base_manpower = 2
 
 add_core = X80
 owner = X80
@@ -23,15 +23,8 @@ controller = X80
 culture = culture_variags
 religion = religion_ioriags
 
-trade_goods = livestock
+trade_goods = wine
 
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

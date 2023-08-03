@@ -3,7 +3,7 @@
 # Province RGB : (254, 228, 193)
 # Province Area : Bareketta
 # Province Region : Arthedain
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Annúminas
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z27
 owner = Z27
@@ -27,13 +27,6 @@ trade_goods = fur
 
 hre = no
 
-city_1_building=yes
-
-workshop_building=yes
-
-outpost_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

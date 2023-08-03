@@ -9,45 +9,26 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 4
-base_production = 8
-base_manpower = 6
-
-add_core = V40
+base_tax = 3
+base_production = 4
+base_manpower = 5
 owner = V40
 controller = V40
-
 culture = culture_orkish
 religion = religion_orkish
-
-trade_goods = copper
-
-hre = no
-
-encampment_1_orc_building=yes
-
-fort_pallisade_orc_building=yes
-
-orc_pit_orc_building=yes
-
-meat_depot_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
+trade_goods = plunder
 3000.1.1 = {
 	add_core = V17
 	owner = V17
 	controller = V17
-	encampment_2_orc_building=yes
-	small_arena_building=yes
-	blacksmith_orc_building=yes
-	overseer_station_orc_building=yes
+	encampment_2_orc_building = yes
+	small_arena_building = yes
+	blacksmith_orc_building = yes
+	overseer_station_orc_building = yes
 }
-
 #Mordor Superregion Discovery
+add_core = V40
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd
@@ -116,4 +97,8 @@ discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
-
+encampment_1_orc_building = yes
+fort_pallisade_orc_building = yes
+orc_pit_orc_building = yes
+meat_depot_orc_building = yes
+enforcer_camp_orc_building = yes

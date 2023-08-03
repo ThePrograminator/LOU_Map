@@ -9,41 +9,16 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 6
-base_production = 7
+base_tax = 3
+base_production = 3
 base_manpower = 9
-
-add_core = V94
 owner = V94
 controller = V94
-
 culture = culture_wight
 religion = religion_wight
-
-trade_goods = gems
-
-hre = no
-
-capital_2_orc_building=yes
-
-overseer_station_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_arena_orc_building=yes
-
-siege_works_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-tortur_chambers_orc_building=yes
-
-#Ered Harmal Superregion Discovery
+trade_goods = plunder
+add_core = V94
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -96,4 +71,11 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+capital_2_orc_building = yes
+overseer_station_orc_building = yes
+blacksmith_orc_building = yes
+orc_fissure_orc_building = yes
+warg_arena_orc_building = yes
+siege_works_orc_building = yes
+fort_wooden_walls_orc_building = yes
+tortur_chambers_orc_building = yes

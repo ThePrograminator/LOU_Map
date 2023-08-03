@@ -81,7 +81,7 @@ minas_tirith_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -90,9 +90,13 @@ minas_tirith_monument = {
 		country_modifiers = {
 			yearly_patriarch_authority = 0.005
 			prestige_decay = -0.01
+			land_morale = 0.05
+			legitimacy = 0.5
 		}
 		on_upgraded = {
-			add_prestige = 5
+			owner = {
+				add_prestige = 5
+			}
 		}
 	}
 	tier_2 = {
@@ -107,12 +111,15 @@ minas_tirith_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_patriarch_authority = 0.01
-			prestige_decay = -0.01
-			legitimacy = 0.5
+			yearly_patriarch_authority = 0.010
+			prestige_decay = -0.02
+			land_morale = 0.10
+			legitimacy = 0.1
 		}
 		on_upgraded = {
-			add_prestige = 15
+			owner = {
+				add_prestige = 15
+			}
 		}
 	}
 	tier_3 = {
@@ -128,11 +135,14 @@ minas_tirith_monument = {
 		}
 		country_modifiers = {
 			yearly_patriarch_authority = 0.015
-			prestige_decay = -0.02
-			legitimacy = 1
+			prestige_decay = -0.03
+			land_morale = 0.15
+			legitimacy = 1.5
 		}
 		on_upgraded = {
-			add_prestige = 25
+			owner = {
+				add_prestige = 25
+			}
 		}
 	}
 }
@@ -218,7 +228,7 @@ library_of_minas_tirith_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -237,7 +247,7 @@ library_of_minas_tirith_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -256,7 +266,7 @@ library_of_minas_tirith_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -354,15 +364,14 @@ amon_hen_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-			local_defensiveness = 0.1
-			local_hostile_attrition = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			spy_offence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -372,15 +381,14 @@ amon_hen_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			spy_offence = 0.20
 		}
 		on_upgraded = {
 		}
@@ -390,16 +398,14 @@ amon_hen_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 2
-			fort_level = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			spy_offence = 0.30
 		}
 		on_upgraded = {
 		}
@@ -477,7 +483,8 @@ amon_lhaw_monument = {
 		}
 		area_modifier = {
 		}
-		country_modifiers = {
+		country_modifiers = {			
+			global_spy_defence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -487,15 +494,14 @@ amon_lhaw_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_spy_defence = 0.20
 		}
 		on_upgraded = {
 		}
@@ -506,12 +512,9 @@ amon_lhaw_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 1
-			fort_level = 1
 		}
 		area_modifier = {
 		}
@@ -526,12 +529,10 @@ amon_lhaw_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-			local_defensiveness = 0.25
-			local_hostile_attrition = 2
-			fort_level = 1
+			global_spy_defence = 0.30
 		}
 		area_modifier = {
 		}
@@ -593,7 +594,7 @@ dol_amroth_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			local_defensiveness = 0.20
@@ -613,7 +614,7 @@ dol_amroth_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.20
@@ -633,7 +634,7 @@ dol_amroth_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.20
@@ -703,7 +704,7 @@ minas_morgul_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			local_manpower = 10
@@ -723,7 +724,7 @@ minas_morgul_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			local_manpower = 20
@@ -743,7 +744,7 @@ minas_morgul_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			local_manpower = 25
@@ -841,7 +842,7 @@ minas_ithil_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
@@ -860,7 +861,7 @@ minas_ithil_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
@@ -879,7 +880,7 @@ minas_ithil_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
@@ -952,7 +953,7 @@ edhellond_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			province_trade_power_value = 5
@@ -969,7 +970,7 @@ edhellond_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			province_trade_power_value = 15
@@ -987,7 +988,7 @@ edhellond_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			province_trade_power_value = 25
@@ -1054,7 +1055,7 @@ gobel_tolfalas_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			fort_level = 1
@@ -1072,7 +1073,7 @@ gobel_tolfalas_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			fort_level = 1
@@ -1091,7 +1092,7 @@ gobel_tolfalas_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			fort_level = 1
@@ -1164,7 +1165,7 @@ imloth_melui_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			local_manpower = 5
@@ -1182,7 +1183,7 @@ imloth_melui_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			local_manpower = 5
@@ -1200,7 +1201,7 @@ imloth_melui_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			local_manpower = 5
@@ -1289,7 +1290,7 @@ argonath_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			province_trade_power_value = 5
@@ -1307,7 +1308,7 @@ argonath_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			province_trade_power_value = 10
@@ -1325,7 +1326,7 @@ argonath_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			province_trade_power_value = 15
@@ -1397,7 +1398,7 @@ henneth_annun_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -1415,7 +1416,7 @@ henneth_annun_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -1435,7 +1436,7 @@ henneth_annun_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -1509,7 +1510,7 @@ calembel_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			local_defensiveness = 0.10
@@ -1528,7 +1529,7 @@ calembel_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.10
@@ -1548,7 +1549,7 @@ calembel_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.10
@@ -1625,7 +1626,7 @@ blackgate_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
@@ -1643,7 +1644,7 @@ blackgate_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -1662,7 +1663,7 @@ blackgate_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.3
@@ -1738,7 +1739,7 @@ baraddur_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -1757,7 +1758,7 @@ baraddur_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -1778,7 +1779,7 @@ baraddur_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -1848,7 +1849,7 @@ cirithungol_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -1867,7 +1868,7 @@ cirithungol_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -1887,7 +1888,7 @@ cirithungol_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -1953,7 +1954,7 @@ durthang_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -1972,7 +1973,7 @@ durthang_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -1993,7 +1994,7 @@ durthang_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -2068,7 +2069,7 @@ ostigurth_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -2086,7 +2087,7 @@ ostigurth_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -2106,7 +2107,7 @@ ostigurth_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -2180,7 +2181,7 @@ helmsdeep_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		local_fort_maintenance_modifier = -0.25
@@ -2201,7 +2202,7 @@ helmsdeep_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		local_fort_maintenance_modifier = -0.5
@@ -2222,7 +2223,7 @@ helmsdeep_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		local_fort_maintenance_modifier = -1
@@ -2296,7 +2297,7 @@ edoras_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -2315,7 +2316,7 @@ edoras_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -2335,7 +2336,7 @@ edoras_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -2399,7 +2400,7 @@ isengard_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -2415,7 +2416,7 @@ isengard_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -2432,7 +2433,7 @@ isengard_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -2507,7 +2508,7 @@ amrun_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		tax_income = 6
@@ -2527,7 +2528,7 @@ amrun_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		tax_income = 12
@@ -2547,7 +2548,7 @@ amrun_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		tax_income = 24
@@ -2620,7 +2621,7 @@ umbar_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		province_trade_power_modifier = 0.2
@@ -2640,7 +2641,7 @@ umbar_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		province_trade_power_modifier = 0.35
@@ -2660,7 +2661,7 @@ umbar_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		province_trade_power_modifier = 0.5
@@ -2737,7 +2738,7 @@ pillar_of_umbar_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -2753,7 +2754,7 @@ pillar_of_umbar_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -2770,7 +2771,7 @@ pillar_of_umbar_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -2842,7 +2843,7 @@ gobel_ancalimon_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -2860,7 +2861,7 @@ gobel_ancalimon_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -2880,7 +2881,7 @@ gobel_ancalimon_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -2953,7 +2954,7 @@ gobel_mirlond_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		province_trade_power_value = 10
@@ -2972,7 +2973,7 @@ gobel_mirlond_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		province_trade_power_value = 25
@@ -2992,7 +2993,7 @@ gobel_mirlond_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		province_trade_power_value = 50
@@ -3066,7 +3067,7 @@ dolguldur_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -3086,7 +3087,7 @@ dolguldur_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -3106,7 +3107,7 @@ dolguldur_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -3152,10 +3153,10 @@ dains_halls_monument = {
 	}
 	can_upgrade_trigger = {	
 		AND = {
-			owner = {
-				OR ={
+			OR = {
+				has_owner_religion = yes
+				owner = {
 					is_dwarf = yes
-			has_owner_religion = yes
 				}
 			}
 		}
@@ -3184,16 +3185,17 @@ dains_halls_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.1
-		gold_depletion_chance_modifier = -0.25
+			fort_level = 2
+			local_defensiveness = 0.1
+			
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			gold_depletion_chance_modifier = -0.25
 		}
 		on_upgraded = {
 		}
@@ -3204,16 +3206,16 @@ dains_halls_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 3
-		local_defensiveness = 0.25
-		gold_depletion_chance_modifier = -0.50
+			fort_level = 3
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			gold_depletion_chance_modifier = -0.50
 		}
 		on_upgraded = {
 
@@ -3225,16 +3227,16 @@ dains_halls_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 3
-		local_defensiveness = 0.5
-		gold_depletion_chance_modifier = -1
+			fort_level = 3
+			local_defensiveness = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			gold_depletion_chance_modifier = -1
 		}
 		on_upgraded = {
 		}
@@ -3271,10 +3273,10 @@ erebor_monument = {
 	}
 	can_upgrade_trigger = {	
 		AND = {
-			owner = {
-				OR ={
+			OR = {
+				has_owner_religion = yes
+				owner = {
 					is_dwarf = yes
-			has_owner_religion = yes
 				}
 			}
 		}	
@@ -3302,16 +3304,17 @@ erebor_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		gold_depletion_chance_modifier = -0.50
+		
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		monthly_gold_inflation_modifier = -0.1
-		prestige_decay = -0.01
+			monthly_gold_inflation_modifier = -0.1
+			gold_depletion_chance_modifier = -0.50
+			prestige_decay = -0.01
 		}
 		on_upgraded = {
 		}
@@ -3322,16 +3325,17 @@ erebor_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		gold_depletion_chance_modifier = -0.75
+		
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		monthly_gold_inflation_modifier = -0.25
-		prestige_decay = -0.01
+			monthly_gold_inflation_modifier = -0.25
+			prestige_decay = -0.01
+			gold_depletion_chance_modifier = -0.75
 		}
 		on_upgraded = {
 		}
@@ -3342,16 +3346,17 @@ erebor_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		gold_depletion_chance_modifier = -1
+		
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		monthly_gold_inflation_modifier = -0.5
-		prestige_decay = -0.01
+			monthly_gold_inflation_modifier = -0.5
+			prestige_decay = -0.01
+			gold_depletion_chance_modifier = -1
 		}
 		on_upgraded = {
 		}
@@ -3416,7 +3421,7 @@ dale_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -3435,7 +3440,7 @@ dale_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -3455,7 +3460,7 @@ dale_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -3498,6 +3503,7 @@ laketown_monument = {
 		}			
 	}
 	on_built = {
+		# show_ambient_object = lake_town_tier_one
 	}
 	on_destroyed = {
 	}
@@ -3520,8 +3526,8 @@ laketown_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 100
-		yearly_corruption = 0.25
+			governing_capacity = 100
+			yearly_corruption = 0.10
 		}
 		on_upgraded = {
 		}
@@ -3531,15 +3537,15 @@ laketown_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 100
-		yearly_corruption = 0.1
+			governing_capacity = 150
+			yearly_corruption = 0.05
 		}
 		on_upgraded = {
 		}
@@ -3550,16 +3556,19 @@ laketown_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 150
+			governing_capacity = 200
+			yearly_corruption = -0.05
 		}
 		on_upgraded = {
+			# hide_ambient_object = lake_town_tier_one
+			# show_ambient_object = lake_town_tier_two
 		}
 	}
 
@@ -3568,15 +3577,15 @@ laketown_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		governing_capacity = 200
-		yearly_corruption = -0.2
+		governing_capacity = 300
+		yearly_corruption = -0.10
 		}
 		on_upgraded = {
 		}
@@ -3635,7 +3644,7 @@ rivendell_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			province_trade_power_value = 0.5
@@ -3654,7 +3663,7 @@ rivendell_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			province_trade_power_value = 1.0
@@ -3673,7 +3682,7 @@ rivendell_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			province_trade_power_value = 1.5
@@ -3750,7 +3759,7 @@ michel_delving_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			trade_goods_size = 0.5
@@ -3767,7 +3776,7 @@ michel_delving_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			trade_goods_size = 1
@@ -3785,7 +3794,7 @@ michel_delving_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			trade_goods_size = 2
@@ -3821,7 +3830,7 @@ hobbiton_factory_monument = {
 	can_use_modifiers_trigger = {
 		is_owner_racial_group_melkor = yes
 		any_neighbor_province = {
-			culture_group = culture_group_hotbbits
+			culture_group = culture_group_hobbits
 		}
 	}
 	can_upgrade_trigger = {	
@@ -3851,7 +3860,7 @@ hobbiton_factory_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -3869,7 +3878,7 @@ hobbiton_factory_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -3887,7 +3896,7 @@ hobbiton_factory_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -3959,7 +3968,7 @@ sarn_ford_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		province_trade_power_value = 5
@@ -3978,7 +3987,7 @@ sarn_ford_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		province_trade_power_value = 5
@@ -3996,7 +4005,7 @@ sarn_ford_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		province_trade_power_value = 5
@@ -4025,13 +4034,11 @@ moria_monument = {
 	build_trigger = {
 		AND = {
 			owner = {
-				OR = {
-					is_dwarf = yes
-					technology_group = lotr_half_dwarf
-				}
+				is_dwarf = yes
+				religion = religion_mahal
 			}
 			has_owner_religion = yes
-		}			
+		}		
 	}
 	on_built = {		
 	}
@@ -4042,12 +4049,11 @@ moria_monument = {
 	can_upgrade_trigger = {	
 		AND = {
 			owner = {
-				OR ={
-					is_dwarf = yes
-			has_owner_religion = yes
-				}
+				is_dwarf = yes
+				religion = religion_mahal
 			}
-		}	
+			has_owner_religion = yes
+		}		
 	}
 	keep_trigger = {
 	}
@@ -4074,7 +4080,7 @@ moria_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			development_cost = -0.75
@@ -4092,7 +4098,7 @@ moria_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			development_cost = -1.50
@@ -4110,7 +4116,7 @@ moria_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			development_cost = -2
@@ -4126,101 +4132,101 @@ moria_monument = {
 	}
 }
 
-#ost_in_edhil_monument = {
-#	start = 285
-#	date = 500.01.01
-#	time = {
-#		months = 3650
-#	}
-#	build_cost = 0
-#	can_be_moved = no
-#	move_days_per_unit_distance = 10
-#	starting_tier = 0
-#	type = monument
-#	build_trigger = {
-#		AND = {
-#			owner = {
-#				is_elf = yes
-#			}
-#			has_owner_religion = yes
-#		}			
-#	}
-#	on_built = {		
-#	}
-#	on_destroyed = {		
-#	}
-#	can_use_modifiers_trigger = {			
-#	}
-#	can_upgrade_trigger = {	
-#		has_owner_religion = yes	
-#	}
-#	keep_trigger = {
-#	}
-#	tier_0 = {
-#		upgrade_time = {
-#			months = 3650
-#		}
-#		cost_to_upgrade = {
-#			factor = 0
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#	tier_1 = {
-#		upgrade_time = {
-#			months = 120
-#		}
-#		cost_to_upgrade = {
-#			factor = 1000
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#	tier_2 = {
-#		upgrade_time = {
-#			months = 240
-#		}
-#		cost_to_upgrade = {
-#			factor = 2500
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#	tier_3 = {
-#		upgrade_time = {
-#			months = 480
-#		}
-#		cost_to_upgrade = {
-#			factor = 5000
-#		}
-#		province_modifiers = {
-#		}
-#		area_modifier = {
-#		}
-#		country_modifiers = {
-#		}
-#		on_upgraded = {
-#		}
-#	}
-#}
+ost_in_edhil_monument = {
+	start = 285
+	date = 500.01.01
+	time = {
+		months = 3650
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				is_elf = yes
+			}
+			has_owner_religion = yes
+		}			
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}
+	can_use_modifiers_trigger = {			
+	}
+	can_upgrade_trigger = {	
+		has_owner_religion = yes	
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 3650
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+}
 
 entmoot_monument = {
 	start = 64
@@ -4295,14 +4301,15 @@ entmoot_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_prosperity_growth = 0.1
+		local_prosperity_growth = 0.10
 		}
 		country_modifiers = {
+			shock_damage = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4312,14 +4319,15 @@ entmoot_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_prosperity_growth = 0.15
+		local_prosperity_growth = 0.25
 		}
 		country_modifiers = {
+			shock_damage = 0.10
 		}
 		on_upgraded = {
 		}
@@ -4329,14 +4337,15 @@ entmoot_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_prosperity_growth = 0.25
+		local_prosperity_growth = 0.50
 		}
 		country_modifiers = {
+			shock_damage = 0.15
 		}
 		on_upgraded = {
 		}
@@ -4410,7 +4419,7 @@ cerin_amroth_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -4419,7 +4428,8 @@ cerin_amroth_monument = {
 		country_modifiers = {
 		improve_relation_modifier = 0.1
 		stability_cost_to_declare_war = 1
-		possible_condottieri = 1.5
+		spy_offence = 0.1
+		global_spy_defence = 0.1
 		}
 		on_upgraded = {
 		}
@@ -4429,7 +4439,7 @@ cerin_amroth_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -4438,7 +4448,8 @@ cerin_amroth_monument = {
 		country_modifiers = {
 		improve_relation_modifier = 0.2
 		stability_cost_to_declare_war = 1
-		possible_condottieri = 2
+		spy_offence = 0.2
+		global_spy_defence = 0.2
 		}
 		on_upgraded = {
 		}
@@ -4448,7 +4459,7 @@ cerin_amroth_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -4457,7 +4468,8 @@ cerin_amroth_monument = {
 		country_modifiers = {
 		improve_relation_modifier = 0.3
 		stability_cost_to_declare_war = 1
-		possible_condottieri = 2.5
+		spy_offence = 0.3
+		global_spy_defence = 0.3
 		}
 		on_upgraded = {
 		}
@@ -4520,16 +4532,18 @@ thalls_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_unrest = -1
+			local_unrest = -1
+			defensiveness = 0.05
+			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
-		war_exhaustion = -0.1
-		infantry_fire = 0.25
+			war_exhaustion = -0.05
+			fire_damage = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4539,16 +4553,18 @@ thalls_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_unrest = -2
+			local_unrest = -2
+			defensiveness = 0.15
+			local_defender_dice_roll_bonus = 2
 		}
 		country_modifiers = {
-		war_exhaustion = -0.1
-		infantry_fire = 0.5
+			war_exhaustion = -0.1
+			fire_damage = 0.10
 		}
 		on_upgraded = {
 		}
@@ -4558,17 +4574,18 @@ thalls_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		local_unrest = -3
+			local_unrest = -3
+			defensiveness = 0.25
+			local_defender_dice_roll_bonus = 3
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		war_exhaustion = -0.2
-		infantry_fire = 0.75
-		infantry_shock = 0.25
+			war_exhaustion = -0.15
+			fire_damage = 0.15
 		}
 		on_upgraded = {
 		}
@@ -4622,7 +4639,7 @@ gundabad_monument = {
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.10
+			local_manpower_modifier = 0.10
 		}
 		country_modifiers = {
 		}
@@ -4635,16 +4652,19 @@ gundabad_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_manpower = 5
+			fort_level = 1
+			local_manpower = 5
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.25
+			local_manpower_modifier = 0.25
 		}
 		country_modifiers = {
+			army_tradition_decay = -0.01
+			discipline = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4654,17 +4674,19 @@ gundabad_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_manpower = 10
+			fort_level = 2
+			local_manpower = 10
+			local_defensiveness = 0.20
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.50
+			local_manpower_modifier = 0.50
 		}
 		country_modifiers = {
-		discipline = 0.025
+			army_tradition_decay = -0.02
+			discipline = 0.10
 		}
 		on_upgraded = {
 		}
@@ -4675,20 +4697,20 @@ gundabad_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_manpower = 15
-		local_defensiveness = 0.2
+			fort_level = 3
+			local_manpower = 15
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
-		local_manpower_modifier = 0.50
-		local_manpower = 5
+			local_manpower_modifier = 0.50
+			local_manpower = 5
 		}
 		country_modifiers = {
-		army_tradition_decay = -0.01
-		discipline = 0.05
+			army_tradition_decay = -0.03
+			discipline = 0.15
 		}
 		on_upgraded = {
 		}
@@ -4743,7 +4765,7 @@ goblintown_monument = {
 			local_manpower = 5
 		}
 		area_modifier = {
-		trade_goods_size = 0.25
+			trade_goods_size = 0.25
 		}
 		country_modifiers = {
 		}
@@ -4755,14 +4777,14 @@ goblintown_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 			development_cost = -0.5
 			local_manpower = 10
 		}
 		area_modifier = {
-		trade_goods_size = 0.5
+			trade_goods_size = 0.5
 		}
 		country_modifiers = {
 		}
@@ -4775,7 +4797,7 @@ goblintown_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 			development_cost = -0.75
@@ -4794,7 +4816,7 @@ goblintown_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 			development_cost = -1
@@ -4870,13 +4892,13 @@ framsburg_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.1
-		
+			fort_level = 1
+			local_defensiveness = 0.15		
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			shock_damage_received = -0.05
 		}
 		on_upgraded = {
 		add_center_of_trade_level = 1
@@ -4891,12 +4913,13 @@ framsburg_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.2
+			fort_level = 2
+			local_defensiveness = 0.20
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			shock_damage_received = -0.10
 		}
 		on_upgraded = {
 		add_center_of_trade_level = 1
@@ -4911,12 +4934,13 @@ framsburg_monument = {
 			factor = 750
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.2
+			fort_level = 3
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
-		country_modifiers = {
+		country_modifiers = {			
+			shock_damage_received = -0.15
 		}
 		on_upgraded = {
 		add_center_of_trade_level = 1
@@ -4993,16 +5017,17 @@ fornost_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.2
+			fort_level = 1
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
+			local_unrest = -1
 		}
 		country_modifiers = {
-		
+			yearly_army_professionalism = 0.01
 		}
 		on_upgraded = {
 		}
@@ -5013,16 +5038,17 @@ fornost_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.2
+		fort_level = 2
+		local_defensiveness = 0.20
 		}
 		area_modifier = {
-		local_unrest = -1
+		local_unrest = -2
 		}
 		country_modifiers = {
+			yearly_army_professionalism = 0.03
 		}
 		on_upgraded = {
 
@@ -5034,18 +5060,17 @@ fornost_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.2
+		fort_level = 3
+		local_defensiveness = 0.25
 		}
 		area_modifier = {
-		local_unrest = -2
+		local_unrest = -3
 		}
 		country_modifiers = {
-		global_unrest = -1
-		prestige_decay = -0.01
+			yearly_army_professionalism = 0.05
 		}
 		on_upgraded = {
 		}
@@ -5103,15 +5128,17 @@ greyhavens_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		local_ship_repair = 0.1
-		ship_recruit_speed = -0.15
+			local_ship_repair = 0.15
+			ship_recruit_speed = -0.15
+			own_coast_naval_combat_bonus = 1.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			navy_tradition_decay = -0.01
 		}
 		on_upgraded = {
 		}
@@ -5121,15 +5148,17 @@ greyhavens_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		local_ship_repair = 0.2
-		ship_recruit_speed = -0.30
+			local_ship_repair = 0.20
+			ship_recruit_speed = -0.20
+			own_coast_naval_combat_bonus = 2.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			navy_tradition_decay = -0.03
 		}
 		on_upgraded = {
 		}
@@ -5139,16 +5168,17 @@ greyhavens_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		local_ship_repair = 0.30
-		ship_recruit_speed = -0.50
+			local_ship_repair = 0.25
+			ship_recruit_speed = -0.25
+			own_coast_naval_combat_bonus = 3.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		prestige_decay = -0.01
+			navy_tradition_decay = -0.05
 		}
 		on_upgraded = {
 		}
@@ -5221,12 +5251,12 @@ bree_monument = {
 			factor = 0
 		}
 		province_modifiers = {
-		local_unrest = 1
+			trade_goods_size_modifier = 0.05
 		}
 		area_modifier = {
+			local_unrest = 1
 		}
 		country_modifiers = {
-		spy_offence = 0.1
 		}
 		on_upgraded = {
 		}
@@ -5236,15 +5266,17 @@ bree_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		local_unrest = -1
+			trade_goods_size_modifier = 0.15
 		}
 		area_modifier = {
+			local_unrest = -1
 		}
 		country_modifiers = {
-		spy_offence = 0.1
+			spy_offence = 0.05
+			num_accepted_cultures = 1
 		}
 		on_upgraded = {
 		}
@@ -5254,16 +5286,17 @@ bree_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		local_unrest = -1
+			trade_goods_size_modifier = 0.20
 		}
 		area_modifier = {
-		local_unrest = -1
+			local_unrest = -2
 		}
 		country_modifiers = {
-		spy_offence = 0.15
+			spy_offence = 0.010
+			num_accepted_cultures = 2
 		}
 		on_upgraded = {
 		}
@@ -5274,16 +5307,17 @@ bree_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		local_unrest = -1
+			trade_goods_size_modifier = 0.25
 		}
 		area_modifier = {
-		local_unrest = -2
+			local_unrest = -3
 		}
 		country_modifiers = {
-		spy_offence = 0.2
+			spy_offence = 0.15
+			num_accepted_cultures = 3
 		}
 		on_upgraded = {
 		}
@@ -5341,14 +5375,15 @@ barrow_downs_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
+			all_power_cost = -0.01
+			prestige_decay = -0.01
 			monarch_admin_power = 1
 		}
 		on_upgraded = {
@@ -5381,14 +5416,15 @@ barrow_downs_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
+			all_power_cost = -0.03
+			prestige_decay = -0.03
 			monarch_admin_power = 1
 			monarch_diplomatic_power = 1
 		}
@@ -5422,16 +5458,18 @@ barrow_downs_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.1
-			monarch_admin_power = 2
+			all_power_cost = -0.05
+			prestige_decay = -0.05
+			monarch_admin_power = 1
 			monarch_diplomatic_power = 1
+			monarch_military_power = 1
 		}
 		on_upgraded = {
 			custom_tooltip = barrow_downs_monument_tt
@@ -5469,11 +5507,16 @@ carndum_monument = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 2
+	starting_tier = 1
 	type = monument
 	build_trigger = {
-		is_owner_racial_group_melkor = yes		
-		has_owner_religion = yes		
+		AND = {
+			owner = {
+				is_owner_racial_group_melkor = yes	
+				religion = religion_orkish
+			}
+			has_owner_religion = yes
+		}		
 	}
 	on_built = {		
 	}
@@ -5482,7 +5525,13 @@ carndum_monument = {
 	can_use_modifiers_trigger = {			
 	}
 	can_upgrade_trigger = {	
-		has_owner_religion = yes	
+		AND = {
+			owner = {
+				is_owner_racial_group_melkor = yes	
+				religion = religion_orkish
+			}
+			has_owner_religion = yes
+		}
 	}
 	keep_trigger = {
 	}
@@ -5494,8 +5543,10 @@ carndum_monument = {
 			factor = 0
 		}
 		province_modifiers = {
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
+			local_unrest = -2
 		}
 		country_modifiers = {
 		}
@@ -5507,17 +5558,19 @@ carndum_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.25
+			fort_level = 1
+			local_defensiveness = 0.15
 		}
 		area_modifier = {
+			production_efficiency = 0.05
+			local_unrest = -3
 		}
 		country_modifiers = {
-		diplomatic_upkeep = 1
-		relation_with_same_culture_group = 10
+			diplomatic_upkeep = 1
+			relation_with_same_culture_group = 10
 		}
 		on_upgraded = {
 		}
@@ -5527,17 +5580,19 @@ carndum_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.50
+			fort_level = 2
+			local_defensiveness = 0.20
 		}
 		area_modifier = {
+			production_efficiency = 0.10
+			local_unrest = -4
 		}
-		country_modifiers = {
-		diplomatic_upkeep = 2
-		relation_with_same_culture_group = 25
+			country_modifiers = {
+			diplomatic_upkeep = 2
+			relation_with_same_culture_group = 25
 		}
 		on_upgraded = {
 		}
@@ -5547,17 +5602,19 @@ carndum_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 3
-		local_defensiveness = 0.5
+			fort_level = 3
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
+			production_efficiency = 0.15
+			local_unrest = -5
 		}
 		country_modifiers = {
-		diplomatic_upkeep = 3
-		relation_with_same_culture_group = 50
+			diplomatic_upkeep = 3
+			relation_with_same_culture_group = 50
 		}
 		on_upgraded = {
 		}
@@ -5622,14 +5679,18 @@ amon_sul_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_friendly_movement_speed = 0.1
+			local_friendly_movement_speed = 0.15
+			fort_level = 1
+			local_hostile_attrition = 1
 		}
 		country_modifiers = {
+			caravan_power = 0.15
+			global_spy_defence = 0.05
 		}
 		on_upgraded = {
 		}
@@ -5639,15 +5700,18 @@ amon_sul_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_friendly_movement_speed = 0.2
+			local_friendly_movement_speed = 0.2
+			fort_level = 2
+			local_hostile_attrition = 2
 		}
 		country_modifiers = {
-		caravan_power = 0.1
+			caravan_power = 0.20
+			global_spy_defence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -5657,15 +5721,18 @@ amon_sul_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
-		local_friendly_movement_speed = 0.25
+			local_friendly_movement_speed = 0.25
+			fort_level = 3		
+			local_hostile_attrition = 3
 		}
 		country_modifiers = {
-		caravan_power = 0.25
+			caravan_power = 0.25
+			global_spy_defence = 0.15
 		}
 		on_upgraded = {
 		}
@@ -5730,7 +5797,7 @@ relerindu_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -5747,7 +5814,7 @@ relerindu_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -5764,7 +5831,7 @@ relerindu_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -5786,7 +5853,7 @@ arentaurr_monument = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 2
+	starting_tier = 1
 	type = monument
 	build_trigger = {
 		AND = {
@@ -5828,7 +5895,7 @@ arentaurr_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -5844,7 +5911,7 @@ arentaurr_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -5861,7 +5928,7 @@ arentaurr_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -5931,7 +5998,7 @@ bozisha_dar_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -5947,7 +6014,7 @@ bozisha_dar_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -5963,7 +6030,7 @@ bozisha_dar_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6034,7 +6101,7 @@ niluloni_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -6050,7 +6117,7 @@ niluloni_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -6066,7 +6133,7 @@ niluloni_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6136,12 +6203,12 @@ nordinbad_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		fort_level = 1
-		local_defensiveness = 0.1
-		trade_goods_size = 1
+			fort_level = 1
+			local_defensiveness = 0.15
+			production_efficiency = 0.05
 		}
 		area_modifier = {
 		}
@@ -6155,12 +6222,12 @@ nordinbad_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		fort_level = 2
-		local_defensiveness = 0.2
-		trade_goods_size = 2
+			fort_level = 2
+			local_defensiveness = 0.20
+			production_efficiency = 0.15
 		}
 		area_modifier = {
 		}
@@ -6174,12 +6241,12 @@ nordinbad_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		fort_level = 3
-		local_defensiveness = 0.3
-		trade_goods_size = 3
+			fort_level = 3
+			local_defensiveness = 0.25
+			production_efficiency = 0.25
 		}
 		area_modifier = {
 		}
@@ -6247,7 +6314,7 @@ argond_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -6266,7 +6333,7 @@ argond_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -6287,7 +6354,7 @@ argond_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -6362,7 +6429,7 @@ druins_tower_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -6378,7 +6445,7 @@ druins_tower_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -6394,7 +6461,7 @@ druins_tower_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6465,7 +6532,7 @@ xyunai_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -6481,7 +6548,7 @@ xyunai_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -6497,7 +6564,7 @@ xyunai_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6567,7 +6634,7 @@ chaiapun_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -6583,7 +6650,7 @@ chaiapun_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -6599,7 +6666,7 @@ chaiapun_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6663,7 +6730,7 @@ elostirion_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -6679,7 +6746,7 @@ elostirion_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -6695,7 +6762,7 @@ elostirion_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6765,7 +6832,7 @@ ekhalshar_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -6781,7 +6848,7 @@ ekhalshar_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -6797,7 +6864,7 @@ ekhalshar_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -6819,7 +6886,7 @@ high_fells_monument = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 	build_trigger = {
 		is_owner_racial_group_melkor = yes		
@@ -6861,14 +6928,15 @@ high_fells_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
+			all_power_cost = -0.01
+			monarch_military_power = 1
 		}
 		on_upgraded = {
 			custom_tooltip = high_fells_monument_tt
@@ -6900,15 +6968,15 @@ high_fells_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.05
-			monarch_military_power = 1
+			all_power_cost = -0.03
+			monarch_military_power = 2
 		}
 		on_upgraded = {
 			custom_tooltip = high_fells_monument_tt
@@ -6940,16 +7008,15 @@ high_fells_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			all_power_cost = -0.1
-			monarch_admin_power = 1
-			monarch_military_power = 2
+			all_power_cost = -0.05
+			monarch_military_power = 3
 		}
 		on_upgraded = {
 			custom_tooltip = high_fells_monument_tt
@@ -7029,17 +7096,17 @@ mount_gram_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
 		trade_goods_size = 0.25
 		}
 		area_modifier = {
-		local_unrest = 1
+		local_unrest = -1
 		}
 		country_modifiers = {
-		liberty_desire = -5
+			cavalry_shock = 0.05
 		}
 		on_upgraded = {
 		}
@@ -7049,17 +7116,17 @@ mount_gram_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 2
 		trade_goods_size = 0.5
 		}
 		area_modifier = {
-		local_unrest = 1.5
+		local_unrest = -1.5
 		}
 		country_modifiers = {
-		liberty_desire = -15
+			cavalry_shock = 0.10
 		}
 		on_upgraded = {
 		}
@@ -7069,17 +7136,17 @@ mount_gram_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 2
 		trade_goods_size = 1
 		}
 		area_modifier = {
-		local_unrest = 2
+		local_unrest = -2
 		}
 		country_modifiers = {
-		liberty_desire = -25
+			cavalry_shock = 0.15
 		}
 		on_upgraded = {
 		}
@@ -7144,7 +7211,7 @@ mistrand_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		fort_level = 1
@@ -7162,7 +7229,7 @@ mistrand_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		fort_level = 2
@@ -7182,7 +7249,7 @@ mistrand_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		fort_level = 3
@@ -7257,7 +7324,7 @@ hyvat_kalat_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
@@ -7274,7 +7341,7 @@ hyvat_kalat_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -7290,7 +7357,7 @@ hyvat_kalat_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
@@ -7361,7 +7428,7 @@ dun_larach_hall_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		local_defensiveness = 0.1
@@ -7380,7 +7447,7 @@ dun_larach_hall_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		local_defensiveness = 0.15
@@ -7400,7 +7467,7 @@ dun_larach_hall_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		local_defensiveness = 0.2
@@ -7487,15 +7554,15 @@ pukelman_staue_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		hostile_attrition = 1
-		max_hostile_attrition = 2
+			hostile_attrition = 1
+			max_hostile_attrition = 2
 		}
 		on_upgraded = {
 		}
@@ -7505,15 +7572,15 @@ pukelman_staue_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		hostile_attrition = 1.5
-		max_hostile_attrition = 3
+			hostile_attrition = 1.5
+			max_hostile_attrition = 3
 		}
 		on_upgraded = {
 		}
@@ -7523,15 +7590,15 @@ pukelman_staue_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		hostile_attrition = 2
-		max_hostile_attrition = 3
+			hostile_attrition = 2
+			max_hostile_attrition = 3
 		}
 		on_upgraded = {
 		}
@@ -7540,6 +7607,137 @@ pukelman_staue_monument = {
 
 tharbad_bridge_monument = {
 	start = 170
+	date = 537.01.01
+	time = {
+		months = 3650
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = canal
+	build_trigger = {
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}			
+	}
+	on_built = {	
+	}
+	on_destroyed = {
+		remove_canal = tharbad_bridge_monument	
+	}
+	can_use_modifiers_trigger = {			
+	}
+	can_upgrade_trigger = {
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}		
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 3650
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+			province_trade_power_value = 5
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.05
+		}
+		country_modifiers = {
+			prestige = 0.25
+			caravan_power = 0.05
+		}
+		on_upgraded = {
+			add_canal = tharbad_bridge_monument	
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			province_trade_power_value = 15
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.15
+		}
+		country_modifiers = {
+			prestige = 0.50
+			caravan_power = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			province_trade_power_value = 25
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.25
+		}
+		country_modifiers = {
+			prestige = 1
+			caravan_power = 0.25
+		}
+		on_upgraded = {
+			677 = {
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+}
+
+fortress_of_maedhros_monument = {
+	start = 666
 	date = 537.01.01
 	time = {
 		months = 3650
@@ -7563,14 +7761,25 @@ tharbad_bridge_monument = {
 			has_owner_religion = yes
 		}			
 	}
-	on_built = {		
+	on_built = {	
 	}
-	on_destroyed = {		
+	on_destroyed = {
 	}
-	can_use_modifiers_trigger = {			
+	can_use_modifiers_trigger = {
 	}
 	can_upgrade_trigger = {	
-		has_owner_religion = yes	
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}
 	}
 	keep_trigger = {
 	}
@@ -7582,11 +7791,149 @@ tharbad_bridge_monument = {
 			factor = 0
 		}
 		province_modifiers = {
-		province_trade_power_value = 5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			prestige = 0.15
+		}
+		on_upgraded = {
+			add_base_manpower = 2
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+			fort_level = 1
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = {
+			local_defensiveness = 0.05
+			local_unrest = -1
+		}
+		country_modifiers = {
+			prestige = 0.25
+		}
+		on_upgraded = {
+			add_base_manpower = 4
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			fort_level = 2
+			local_defender_dice_roll_bonus = 2
+		}
+		area_modifier = {
+			local_defensiveness = 0.15
+			local_unrest = -2
+		}
+		country_modifiers = {
+			prestige = 0.35
+		}
+		on_upgraded = {
+			add_base_manpower = 6
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			fort_level = 3
+			local_defender_dice_roll_bonus = 3
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+			local_unrest = -3
+		}
+		country_modifiers = {
+			prestige = 0.50
+		}
+		on_upgraded = {
+			remove_province_modifier = himring_fortress_ruins
+			add_permanent_province_modifier = {
+				name = himring_fortress_rebuilt
+				duration = -1
+			}
+		}
+	}
+}
+
+annuminas_monument = {
+	start = 644
+	date = 537.01.01
+	time = {
+		months = 3650
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}		
+	}
+	on_built = {	
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {			
+	}
+	can_upgrade_trigger = {	
+		AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 3650
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			local_development_cost = 0.50
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.25
 		}
 		on_upgraded = {
 		}
@@ -7596,17 +7943,23 @@ tharbad_bridge_monument = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 200
 		}
 		province_modifiers = {
-		province_trade_power_value = 10
+			local_governing_cost = -0.10
 		}
 		area_modifier = {
+			state_maintenance_modifier = -0.10
 		}
 		country_modifiers = {
-		caravan_power = 0.1
+			all_estate_loyalty_equilibrium = 0.03
+			administrative_efficiency = 0.05
+			legitimacy = 0.25
 		}
 		on_upgraded = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
 	}
 	tier_2 = {
@@ -7614,18 +7967,23 @@ tharbad_bridge_monument = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 500
 		}
 		province_modifiers = {
-		province_trade_power_value = 20
+			local_governing_cost = -0.15
 		}
 		area_modifier = {
-		province_trade_power_modifier = 0.1
+			state_maintenance_modifier = -0.15
 		}
 		country_modifiers = {
-		caravan_power = 0.25
+			all_estate_loyalty_equilibrium = 0.05
+			administrative_efficiency = 0.10
+			legitimacy = 0.5
 		}
 		on_upgraded = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
 		}
 	}
 	tier_3 = {
@@ -7633,19 +7991,28 @@ tharbad_bridge_monument = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 1000
 		}
 		province_modifiers = {
-		province_trade_power_value = 30
+			local_governing_cost = -0.25
 		}
 		area_modifier = {
-		province_trade_power_modifier = 0.25
+			state_maintenance_modifier = -0.25
 		}
 		country_modifiers = {
-		caravan_power = 0.40
+			all_estate_loyalty_equilibrium = 0.10
+			administrative_efficiency = 0.15
+			legitimacy = 1
 		}
 		on_upgraded = {
-
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3			
+			remove_province_modifier = ruined_annuminas
+			add_permanent_province_modifier = {
+				name = rebuilt_annuminas
+				duration = -1
+			}
 		}
 	}
 }

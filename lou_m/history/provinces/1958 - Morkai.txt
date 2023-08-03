@@ -12,40 +12,32 @@
 
 is_city = yes
 
-base_tax = 6
-base_production = 6
-base_manpower = 7
+base_tax = 3
+base_production = 4
+base_manpower = 5
 
 add_core = Y54
 owner = Y54
 controller = Y54
 
-culture = culture_orkish
+culture = culture_angmarrim
 religion = religion_orkish
 
-trade_goods = livestock
+trade_goods = orc_draught
 
 hre = no
 
-capital_2_orc_building=yes
+add_permanent_province_modifier = {
+	name = angmar_road
+	duration = -1
+}
 
-treasure_trove_orc_building=yes
-
-overseer_station_orc_building=yes
-
-metal_works_orc_building=yes
-
-large_arena_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_arena_orc_building=yes
-
-siege_works_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-tortur_chambers_orc_building=yes
+capital_1_orc_building=yes
+meat_depot_orc_building=yes
+enforcer_camp_orc_building=yes
+blacksmith_orc_building=yes
+fort_pallisade_orc_building=yes
+orc_pit_orc_building=yes
 
 #Forodwaith Superregion Discovery
 discovered_by = lotr_human

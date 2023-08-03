@@ -3,7 +3,7 @@
 # Province RGB : (25, 78, 128)
 # Province Area : Nan Lefnui
 # Province Region : Pinnath Gelin
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Annúlond
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
+base_tax = 5
 base_production = 4
-base_manpower = 3
+base_manpower = 6
 
 add_core = X13
 owner = X13
@@ -23,15 +23,10 @@ controller = X13
 culture = culture_orodhbedrim
 religion = religion_daen
 
-trade_goods = grain
+trade_goods = iron
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

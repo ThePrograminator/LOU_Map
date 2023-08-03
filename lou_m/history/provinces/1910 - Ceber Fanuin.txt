@@ -3,7 +3,7 @@
 # Province RGB : (193, 87, 31)
 # Province Area : Ceber Fanuin
 # Province Region : Mirkwood
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 6
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = V19
 owner = V19
@@ -27,14 +27,6 @@ trade_goods = iron
 
 hre = no
 
-fortress_1_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-blacksmith_orc_building=yes
-
-workshop_orc_building=yes
-
 2941.12.1 = {
 	owner = V20
 	controller = V20
@@ -45,7 +37,6 @@ workshop_orc_building=yes
 	controller = V19
 }
 
-#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

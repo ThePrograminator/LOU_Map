@@ -12,13 +12,13 @@
 
 is_city = yes
 
-base_tax = 5
+base_tax = 3
 base_production = 4
-base_manpower = 5
+base_manpower = 2
 
-add_core = Z58
-owner = Z58
-controller = Z58
+add_core = Z61
+owner = Z61
+controller = Z61
 
 culture = culture_dunlendings
 religion = religion_daen
@@ -27,11 +27,11 @@ trade_goods = grain
 
 hre = no
 
-fortress_1_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
+capital_1_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+work_camp_building = yes
+temple_building = yes
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

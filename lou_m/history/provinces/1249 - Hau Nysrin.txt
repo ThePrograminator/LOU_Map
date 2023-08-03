@@ -9,49 +9,18 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
+base_tax = 5
 base_production = 4
-base_manpower = 9
-
-add_core = Y78
+base_manpower = 6
 owner = Y78
 controller = Y78
-
 culture = culture_hwanin
 religion = religion_umanyar
-
-trade_goods = tropical_wood
-
-hre = no
-
-capital_3_elf_building=yes
-
-craftsmen_plaza_elf_building=yes
-
-theatre_elf_building=yes
-
-elven_forge_elf_building=yes
-
-heros_shrine_building=yes
-
-grand_stables_elf_building=yes
-
-fort_high_walls_elf_building=yes
-
-moat_elf_building=yes
-
-mallorn_tree_elf_building=yes
-
-statue_of_the_elders_elf_building=yes
-
-mirror_fountain_elf_building=yes
-
+trade_goods = wine
 center_of_trade = 1
-
 #Haradwaith Superregion Discovery
+add_core = Y78
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -82,4 +51,14 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-
+capital_3_elf_building = yes
+craftsmen_plaza_elf_building = yes
+theatre_elf_building = yes
+elven_forge_elf_building = yes
+heros_shrine_building = yes
+grand_stables_elf_building = yes
+fort_high_walls_elf_building = yes
+moat_elf_building = yes
+mallorn_tree_elf_building = yes
+statue_of_the_elders_elf_building = yes
+mirror_fountain_elf_building = yes

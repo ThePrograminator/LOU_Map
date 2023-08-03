@@ -12,20 +12,25 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z37
 owner = Z37
 controller = Z37
 
-culture = culture_hillmen_of_rhudaur
-religion = religion_daen
+culture = culture_wilderness
+religion = religion_wilderness
 
 trade_goods = livestock
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = angmar_road
+	duration = -1
+}
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

@@ -3,7 +3,7 @@
 # Province RGB : (126, 192, 11)
 # Province Area : Enmahadah
 # Province Region : Pezarsan
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Talazhan
 # Province Climate : Arid
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 6
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X20
 owner = X20
@@ -23,17 +23,8 @@ controller = X20
 culture = culture_haruze
 religion = religion_haruzani
 
-trade_goods = livestock
+trade_goods = stone
 
-hre = no
-
-fortress_1_building=yes
-
-army_camp_building=yes
-
-work_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

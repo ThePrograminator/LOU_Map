@@ -461,7 +461,6 @@ capital_1_orc_building = {
 
 	keep_trigger = {
 		development = 5
-		is_capital = yes
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
 		province_orc_has_city_buildings = no
@@ -531,7 +530,6 @@ capital_2_orc_building = {
 
 	keep_trigger = {
 		development = 10
-		is_capital = yes
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
 		province_orc_has_city_buildings = no
@@ -601,7 +599,6 @@ capital_3_orc_building = {
 
 	keep_trigger = {
 		development = 15
-		is_capital = yes
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
 		province_orc_has_city_buildings = no
@@ -727,13 +724,13 @@ treasure_trove_orc_building = {
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_city_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_city_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -908,13 +905,13 @@ overseer_station_orc_building = {
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_city_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_city_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -1085,13 +1082,13 @@ metal_works_orc_building = {
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_city_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_city_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -1262,13 +1259,13 @@ orc_fissure_orc_building = {
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_fortress_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_fortress_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -1442,13 +1439,13 @@ warg_arena_orc_building = {
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_fortress_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_fortress_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -1622,13 +1619,13 @@ siege_works_orc_building = {
 	build_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_fortress_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		province_owner_is_melkor_race = yes
 		province_is_buildable = yes
-		province_orc_has_fortress_building_tier_3 = yes
+		province_orc_has_main_building_tier_3 = yes
 	}
 	
 	modifier = {
@@ -2059,7 +2056,8 @@ small_arena_building = {
 	}
 	
 	modifier = {
-		local_unrest = -1
+		local_unrest = -2
+		local_autonomy = -0.025
 	}
 	
 	ai_will_do = {
@@ -2125,7 +2123,8 @@ large_arena_building = {
 	}
 	
 	modifier = {
-		local_unrest = -2
+		local_unrest = -4
+		local_autonomy = -0.05
 	}
 	
 	ai_will_do = {

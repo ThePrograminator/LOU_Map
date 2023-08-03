@@ -436,7 +436,6 @@ capital_1_building = {
 	}
 
 	keep_trigger = {
-		is_capital = yes
 		development = 5
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -506,7 +505,6 @@ capital_2_building = {
 	}
 
 	keep_trigger = {
-		is_capital = yes
 		development = 10
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -568,7 +566,6 @@ capital_3_building = {
 	}
 
 	keep_trigger = {
-		is_capital = yes
 		development = 15
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
@@ -788,13 +785,13 @@ forum_building = {
 	build_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_4 = yes
+		province_human_has_main_building_tier_4 = yes
 	}
 	
 	keep_trigger = {
 		province_owner_is_human_race = yes
 		province_is_buildable = yes
-		province_human_has_city_building_tier_4 = yes
+		province_human_has_main_building_tier_4 = yes
 	}
 
 	modifier = {

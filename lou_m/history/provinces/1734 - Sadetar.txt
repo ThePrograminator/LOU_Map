@@ -3,7 +3,7 @@
 # Province RGB : (85, 198, 133)
 # Province Area : Sturlurtsa Nurn
 # Province Region : Nûrn
-# Province Super Region : Mordor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sturlurtsa-Núrn
 # Province Climate : null
@@ -12,8 +12,8 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 8
+base_tax = 2
+base_production = 1
 base_manpower = 3
 
 add_core = V24
@@ -25,9 +25,10 @@ religion = religion_ioriags
 
 trade_goods = grain
 
-hre = no
-
-city_1_building=yes
+add_permanent_province_modifier = {
+	name = nurn_road
+	duration = -1
+}
 
 3000.1.1 = {
 	add_core = V17
@@ -35,7 +36,6 @@ city_1_building=yes
 	controller = V17
 }
 
-#Mordor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

@@ -9,18 +9,12 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
+base_tax = 1
+base_production = 1
+base_manpower = 1
 culture = culture_longbeard
 religion = religion_mahal
-
 trade_goods = iron
-
-hre = no
-
 2758.1.1 = {
 	add_core = W25
 	owner = W25
@@ -28,26 +22,29 @@ hre = no
 	culture = culture_wilderness
 	religion = religion_wilderness
 }
-
 2770.1.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 	culture = culture_longbeard
 	religion = religion_mahal
-	hold_1_dwarf_building=yes
-	fort_small_gatehouse_dwarf_building=yes
-	armoury_dwarf_building=yes
-	mustering_hall_dwarf_building=yes
-	mining_network_dwarf_building=yes
+	add_base_tax = 1
+	add_base_production = 4
+	add_base_manpower = 1
+	hold_1_dwarf_building = yes
+	fort_small_gatehouse_dwarf_building = yes
+	armoury_dwarf_building = yes
+	mustering_hall_dwarf_building = yes
+	mining_network_dwarf_building = yes
 }
-
 2802.3.1 = {
 	add_core = Y16
 	owner = Y16
 	controller = Y16
+	add_base_tax = -1
+	add_base_production = -4
+	add_base_manpower = -1
 }
-
 #Misty Mountains Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
@@ -94,4 +91,4 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+is_city = no

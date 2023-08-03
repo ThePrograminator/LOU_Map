@@ -3,7 +3,7 @@
 # Province RGB : (17, 166, 89)
 # Province Area : Linhir
 # Province Region : Lebennin
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Linhir
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
+base_tax = 3
 base_production = 4
-base_manpower = 3
+base_manpower = 2
 
 add_core = X01
 owner = X01
@@ -24,19 +24,10 @@ add_core = X08
 culture = culture_dunedain_of_lebennin
 religion = religion_dunedain
 
-trade_goods = paper
+trade_goods = tobacco
 
 hre = no
 
-city_1_building=yes
-
-workshop_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

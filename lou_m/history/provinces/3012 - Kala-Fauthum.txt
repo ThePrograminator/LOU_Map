@@ -9,39 +9,16 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 7
-base_manpower = 8
-
-add_core = Y46
+base_tax = 4
+base_production = 5
+base_manpower = 6
 owner = Y46
 controller = Y46
-
 culture = culture_desert_orkish
 religion = religion_orkish
-
-trade_goods = gold
-
-hre = no
-
-fortress_2_orc_building=yes
-
-enforcer_camp_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_pit_orc_building=yes
-
-fort_pallisade_orc_building=yes
-
-prisoner_cage_orc_building=yes
-
-#Harshandatt Superregion Discovery
+trade_goods = iron
+add_core = Y46
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -80,4 +57,10 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-
+fortress_2_orc_building = yes
+enforcer_camp_orc_building = yes
+blacksmith_orc_building = yes
+orc_fissure_orc_building = yes
+warg_pit_orc_building = yes
+fort_pallisade_orc_building = yes
+prisoner_cage_orc_building = yes

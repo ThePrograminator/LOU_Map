@@ -9,50 +9,24 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 13
-base_production = 14
-base_manpower = 15
-
-add_core = Y57
+base_tax = 8
+base_production = 12
+base_manpower = 16
 owner = Y57
 controller = Y57
-
 culture = culture_goblin
 religion = religion_goblin
-
 trade_goods = gold
-
-hre = no
-
-capital_3_orc_building=yes
-
-stockpile_orc_building=yes
-
-overseer_tower_orc_building=yes
-
-dark_iron_forge_orc_building=yes
-
-army_garrison_orc_building=yes
-
-troll_cage_orc_building=yes
-
-siege_works_orc_building=yes
-
-fort_large_orc_stronghold_orc_building=yes
-
-large_arena_building=yes
-
-tortur_chambers_orc_building=yes
-
 center_of_trade = 2
-
+add_permanent_province_modifier = {
+	name = len_caraug
+	duration = -1
+}
 2793.1.1 = {
 	add_core = V52
+	add_core = Y22
 }
-
 2989.1.1 = {
 	add_core = V53
 	controller = V53
@@ -60,7 +34,6 @@ center_of_trade = 2
 	culture = culture_longbeard
 	religion = religion_mahal
 }
-
 2994.1.1 = {
 	add_core = Y57
 	controller = Y57
@@ -68,8 +41,8 @@ center_of_trade = 2
 	culture = culture_goblin
 	religion = religion_goblin
 }
-
 #Misty Mountains Superregion Discovery
+add_core = Y57
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -115,4 +88,13 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+capital_3_orc_building = yes
+stockpile_orc_building = yes
+overseer_tower_orc_building = yes
+dark_iron_forge_orc_building = yes
+army_garrison_orc_building = yes
+troll_cage_orc_building = yes
+siege_works_orc_building = yes
+fort_large_orc_stronghold_orc_building = yes
+large_arena_building = yes
+tortur_chambers_orc_building = yes

@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y22
 owner = Y22
@@ -23,9 +23,14 @@ controller = Y22
 culture = culture_longbeard
 religion = religion_mahal
 
-trade_goods = iron
+trade_goods = livestock
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = men_mithrin
+	duration = -1
+}
 
 2758.1.1 = {
 	add_core = Y22

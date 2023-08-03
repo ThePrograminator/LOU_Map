@@ -9,45 +9,18 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 4
-base_manpower = 4
-
-add_core = V90
+base_tax = 4
+base_production = 6
+base_manpower = 2
 owner = V90
 controller = V90
-
 culture = culture_hwendi
 religion = religion_moriquendi
-
 trade_goods = glass
-
-hre = no
-
-capital_1_elf_building=yes
-
-temple_elf_building=yes
-
-workshop_elf_building=yes
-
-warriors_gallery_building=yes
-
-green_pastures_elf_building=yes
-
-port_elf_building=yes
-
-harbour_elf_building=yes
-
-fort_low_walls_elf_building=yes
-
-moat_elf_building=yes
-
 center_of_trade = 1
-
 #Urd Superregion Discovery
+add_core = V90
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -88,4 +61,12 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-
+capital_1_elf_building = yes
+temple_elf_building = yes
+workshop_elf_building = yes
+warriors_gallery_building = yes
+green_pastures_elf_building = yes
+port_elf_building = yes
+harbour_elf_building = yes
+fort_low_walls_elf_building = yes
+moat_elf_building = yes

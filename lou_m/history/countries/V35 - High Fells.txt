@@ -13,6 +13,7 @@ historical_friend = Y51
 historical_friend = Z96
 historical_friend = Y50
 historical_friend = Y63
+historical_friend = ANG
 historical_rival = Z06
 historical_rival = V37
 historical_rival = Y80
@@ -22,135 +23,13 @@ historical_rival = Y07
 
 2750.1.1 = {
 	monarch = {
-		name = "Barbrutta"
-		dynasty = "Gazug"
+		name = "Ohtar"
+		dynasty = "the Ancient"
 		birth_date = 2677.1.1
 		adm = 3
-		dip = 5
-		mil = 2
-		female = yes
-	}
-	heir = {
-		monarch_name = "Fimbet"
-		name = "Fimbet"
-		dynasty = "Gazug"
-		birth_date = 2700.1.1
-		death_date = 2718.1.1
-		adm = 3
-		dip = 2
-		mil = 4
-		claim = 100
-	}
-}
-
-2800.1.1 = {
-	monarch = {
-		name = "Ufzag"
-		dynasty = "Gazug"
-		birth_date = 2733.1.1
-		adm = 5
-		dip = 0
-		mil = 2
-	}
-	heir = {
-		monarch_name = "Nagbed"
-		name = "Nagbed"
-		dynasty = "Gazug"
-		birth_date = 2773.1.1
-		death_date = 2846.1.1
-		adm = 3
-		dip = 4
-		mil = 3
-		claim = 100
-	}
-}
-
-2850.1.1 = {
-	monarch = {
-		name = "Yagúl"
-		dynasty = "Gazug"
-		birth_date = 2823.1.1
-		adm = 4
 		dip = 1
-		mil = 2
-	}
-	heir = {
-		monarch_name = "Ungoliel"
-		name = "Ungoliel"
-		dynasty = "Gazug"
-		birth_date = 2825.1.1
-		death_date = 2911.1.1
-		adm = 1
-		dip = 2
-		mil = 4
-		claim = 100
-	}
-}
-
-2900.1.1 = {
-	monarch = {
-		name = "Yagug"
-		dynasty = "Gazug"
-		birth_date = 2832.1.1
-		adm = 5
-		dip = 3
 		mil = 5
 	}
-	heir = {
-		monarch_name = "Lúnbet"
-		name = "Lúnbet"
-		dynasty = "Gazug"
-		birth_date = 2830.1.1
-		death_date = 2912.1.1
-		adm = 5
-		dip = 1
-		mil = 0
-		claim = 100
-	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
 }
-
-2950.1.1 = {
-	monarch = {
-		name = "Ufbet"
-		dynasty = "Gazug"
-		birth_date = 2891.1.1
-		adm = 2
-		dip = 1
-		mil = 1
-		female = yes
-	}
-	heir = {
-		monarch_name = "Kibdurilla"
-		name = "Kibdurilla"
-		dynasty = "Gazug"
-		birth_date = 2896.1.1
-		death_date = 2970.1.1
-		adm = 0
-		dip = 3
-		mil = 2
-		claim = 100
-	}
-}
-
-3000.1.1 = {
-	monarch = {
-		name = "Zagmuz"
-		dynasty = "Gazug"
-		birth_date = 2912.1.1
-		adm = 5
-		dip = 2
-		mil = 5
-	}
-	heir = {
-		monarch_name = "Maugashha"
-		name = "Maugashha"
-		dynasty = "Gazug"
-		birth_date = 2953.1.1
-		death_date = 3004.1.1
-		adm = 4
-		dip = 1
-		mil = 4
-		claim = 100
-	}
-}
-

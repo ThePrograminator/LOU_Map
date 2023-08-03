@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X64
 owner = X64
@@ -23,17 +23,10 @@ controller = X64
 culture = culture_muranians
 religion = religion_sirani
 
-trade_goods = spices
+trade_goods = salt
 
 hre = no
 
-city_1_building=yes
-
-trade_outpost_building=yes
-
-outpost_building=yes
-
-#Harshandatt Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar

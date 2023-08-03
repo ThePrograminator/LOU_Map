@@ -201,8 +201,13 @@ dunedain_ideas = {
 	}
 	
 	trigger = {
-		is_human = yes
-		primary_culture = culture_dunedain_of_arnor
+		OR = {
+			AND = {
+				is_human = yes
+				primary_culture = culture_dunedain_of_arnor
+			}
+			tag = W57
+		}
 	}
 	free = yes		
 	
@@ -227,7 +232,7 @@ dunedain_ideas = {
 		build_cost = -0.1
 	}
 	reunited_in_the_forth_age = {
-		monarch_diplomatic_power = 1
+		diplomatic_reputation = 2
 	}
 }
 
@@ -334,9 +339,14 @@ arthedain_ideas = {
 	}
 	
 	trigger = {
-		is_human = yes
-		religion = religion_eriadorians
-		primary_culture = culture_arthedain
+		OR = {
+			AND = {
+				is_human = yes
+				religion = religion_eriadorians
+				primary_culture = culture_arthedain
+			}
+			tag = W54
+		}
 	}
 	free = yes		
 	
@@ -378,9 +388,16 @@ cardolani_ideas = {
 	}
 	
 	trigger = {
-		is_human = yes
-		religion = religion_eriadorians
-		primary_culture = culture_cardolani
+		OR = {
+			AND = {
+				is_human = yes
+				religion = religion_eriadorians
+				primary_culture = culture_cardolani
+			}
+			tag = W55
+			tag = Z19
+			tag = Z17
+		}
 	}
 	free = yes		
 	
@@ -1217,6 +1234,62 @@ clansmen_ideas = {
     # Caravan Guards # 
     caravan_guards = {
 		land_forcelimit_modifier = 0.1
+    }
+}
+
+
+#------------------------------------
+# Beorning
+#------------------------------------
+
+beorning_ideas = {
+	start = {
+		monarch_lifespan = 0.25
+		enemy_core_creation = 0.50
+	}
+
+	bonus = {
+		extra_manpower_at_religious_war = yes
+	}
+	
+	trigger = {
+		culture = culture_beornings
+	}
+	free = yes		
+	
+
+    # Nature's Friends
+    natures_friends = {
+		diplomatic_reputation = 1
+    }
+    # orc_and_wolf_hunters
+    orc_and_wolf_hunters = {
+		army_tradition = 0.5
+		fire_damage = 0.05
+    }
+    # Regional Tollmen
+    regional_tollmen = {
+		global_tax_modifier = 0.10
+		trade_efficiency = 0.05
+    }
+    # Honey-Cake Bakers
+    honey_cake_bakers = {
+		recover_army_morale_speed = 0.10
+		war_exhaustion = -0.05
+    }
+	#  Aid of the Eagles
+    aid_of_the_eagles = {
+		movement_speed = 0.15
+		envoy_travel_time = -0.50
+    }
+    # Beorn's Legacy
+    beorns_legacy = {
+		legitimacy = 1
+		leader_land_shock = 1
+    }
+    #  Skin-Changers
+    skin_changers = {
+		shock_damage = 0.10
     }
 }
 	

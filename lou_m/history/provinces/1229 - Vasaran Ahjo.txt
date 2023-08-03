@@ -9,39 +9,16 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 4
 base_production = 5
-base_manpower = 4
-
-add_core = Y24
+base_manpower = 3
 owner = Y24
 controller = Y24
-
 culture = culture_umli
 religion = religion_umli
-
 trade_goods = fur
-
-hre = no
-
-capital_1_building=yes
-
-trade_outpost_building=yes
-
-temple_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
-
-port_building=yes
-
-#Forodwaith Superregion Discovery
+add_core = Y24
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -89,4 +66,10 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+capital_1_building = yes
+trade_outpost_building = yes
+temple_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+port_building = yes

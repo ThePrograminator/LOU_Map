@@ -3,7 +3,7 @@
 # Province RGB : (43, 200, 55)
 # Province Area : Uklalaskâd
 # Province Region : Ered Engrin
-# Province Super Region : Dyria
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Kheledkhizdin
 # Province Climate : Severe_winter
@@ -12,40 +12,19 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 7
-base_manpower = 7
+base_tax = 1
+base_production = 1
+base_manpower = 4
 
 add_core = Y36
 owner = Y36
 controller = Y36
 
-culture = culture_goblin
-religion = religion_goblin
+culture = culture_snow_troll
+religion = religion_olog
 
 trade_goods = iron
 
-hre = no
-
-encampment_2_orc_building=yes
-
-meat_depot_orc_building=yes
-
-overseer_station_orc_building=yes
-
-metal_works_orc_building=yes
-
-orc_fissure_orc_building=yes
-
-warg_arena_orc_building=yes
-
-workshop_orc_building=yes
-
-large_arena_building=yes
-
-prisoner_cage_orc_building=yes
-
-#Dyria Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_islands_of_helkaer
 discovered_by = lotr_human_urd

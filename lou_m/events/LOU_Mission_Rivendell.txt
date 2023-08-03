@@ -1,0 +1,324 @@
+namespace = LOU_mission_rivendell
+
+#Rivendell
+country_event = { 
+	id = LOU_mission_rivendell.1
+	title = LOU_mission_rivendell.1.t
+	desc = LOU_mission_rivendell.1.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Y80
+	}
+	
+	option = {
+		name = LOU_mission_rivendell.1.a
+		Z01 = {
+			country_event = {
+				id = LOU_mission_rivendell.2
+				days = 3
+			}
+		}
+		set_country_flag = rivendell_pay_beorning_toll_flag
+		tooltip = {
+			Z01 = {
+				add_country_modifier = {
+					name = rivendell_paying_high_pass_beorning_modifier
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = rivendell_paying_high_pass_fort_expenses_modifier
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = LOU_mission_rivendell.1.b
+		trigger = {
+			ai = no
+		}
+		#do nothing
+	}
+}
+#Beornings of Anduin Vale
+country_event = { 
+	id = LOU_mission_rivendell.2
+	title = LOU_mission_rivendell.2.t
+	desc = LOU_mission_rivendell.2.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = Z01
+	}
+	
+	#yes
+	option = {
+		name = LOU_mission_rivendell.2.a
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0
+				is_rival = Y80
+			}
+		}
+		tooltip = {
+			add_country_modifier = {
+				name = rivendell_paying_high_pass_beorning_modifier
+				duration = -1
+			}
+			Y80 = {
+				add_country_modifier = {
+					name = rivendell_paying_high_pass_fort_expenses_modifier
+					duration = -1
+				}
+			}
+		}
+		Y80 = {
+			country_event = {
+				id = LOU_mission_rivendell.3
+				days = 3
+			}
+		}
+	}
+
+	#no
+	option = {
+		name = LOU_mission_rivendell.2.b
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0
+				alliance_with = Y80
+			}
+		}
+		Y80 = {
+			country_event = {
+				id = LOU_mission_rivendell.4
+				days = 3
+			}
+		}
+	}
+}
+#Confirmed
+country_event = { 
+	id = LOU_mission_rivendell.3
+	title = LOU_mission_rivendell.3.t
+	desc = LOU_mission_rivendell.3.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Y80
+	}
+	
+	#accepted
+	option = {
+		name = LOU_mission_rivendell.3.a
+		add_country_modifier = {
+			name = rivendell_paying_high_pass_fort_expenses_modifier
+			duration = -1
+		}
+		Z01 = {
+			add_country_modifier = {
+				name = rivendell_paying_high_pass_beorning_modifier
+				duration = -1
+			}
+		}
+		set_country_flag = rivendell_pay_beorning_toll_accepted_flag
+	}
+}
+#Denied
+country_event = { 
+	id = LOU_mission_rivendell.4
+	title = LOU_mission_rivendell.4.t
+	desc = LOU_mission_rivendell.4.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Y80
+	}
+	
+	#denied
+	option = {
+		name = LOU_mission_rivendell.4.a
+		set_country_flag = rivendell_pay_beorning_toll_denied_flag
+	}
+}
+#Beornings lost Province
+country_event = { 
+	id = LOU_mission_rivendell.5
+	title = LOU_mission_rivendell.5.t
+	desc = LOU_mission_rivendell.5.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		1875 = {
+			NOT = {
+				owned_by = Z01
+			}
+		}
+	}
+	
+	#denied
+	option = {
+		name = LOU_mission_rivendell.5.a
+
+		remove_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+		Z01 = {
+			remove_country_modifier = rivendell_paying_high_pass_beorning_modifier
+		}
+	}
+}
+#At war with beornings while paying for fort
+country_event = { 
+	id = LOU_mission_rivendell.6
+	title = LOU_mission_rivendell.6.t
+	desc = LOU_mission_rivendell.6.d
+	picture = ruined_eventpicture
+
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = Y80
+		war_with = Z01
+		has_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+	}
+	
+	#denied
+	option = {
+		name = LOU_mission_rivendell.6.a
+		remove_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+		Z01 = {
+			remove_country_modifier = rivendell_paying_high_pass_beorning_modifier
+		}
+	}
+}
+
+#Rivendell has cancelled deal
+country_event = { 
+	id = LOU_mission_rivendell.7
+	title = LOU_mission_rivendell.7.t
+	desc = LOU_mission_rivendell.7.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		tag = Y80
+	}
+	
+	#Cancel
+	option = {
+		name = LOU_mission_rivendell.7.a
+		trigger = {
+			ai = no
+		}
+		
+		remove_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+		Z01 = {
+			remove_country_modifier = rivendell_paying_high_pass_beorning_modifier
+			country_event = {
+				id = LOU_mission_rivendell.8
+				days = 3
+			}
+		}
+	}
+
+	#do nothing
+	option = {
+		name = LOU_mission_rivendell.7.b
+	}
+}
+
+#Beornings - Rivendell has cancelled deal
+country_event = { 
+	id = LOU_mission_rivendell.8
+	title = LOU_mission_rivendell.8.t
+	desc = LOU_mission_rivendell.8.d
+	picture = ruined_eventpicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = Z01
+	}
+	
+	#denied
+	option = {
+		name = LOU_mission_rivendell.8.a
+		tooltip = {
+			remove_country_modifier = rivendell_paying_high_pass_beorning_modifier
+			Y80 = {
+				remove_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
+			}
+		}
+	}
+}
+
+#Rivendell doesnt exist
+country_event = { 
+	id = LOU_mission_rivendell.9
+	title = LOU_mission_rivendell.9.t
+	desc = LOU_mission_rivendell.9.d
+	picture = ruined_eventpicture
+
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = Z01
+		Y80 = {
+			exists = no
+		}
+		has_country_modifier = rivendell_paying_high_pass_beorning_modifier
+	}
+	
+	#denied
+	option = {
+		name = LOU_mission_rivendell.9.a
+		remove_country_modifier = rivendell_paying_high_pass_beorning_modifier
+	}
+}
+
+country_event = { #form Eregion
+	id = LOU_mission_rivendell.10
+	title = LOU_mission_rivendell.10.t
+	desc = LOU_mission_rivendell.10.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	trigger = { 
+		
+	}
+	
+	option = {
+		name = LOU_mission_rivendell.10.a
+
+		change_tag = Q25
+		Q25 = {
+			set_capital = 232		
+		}
+		add_prestige = 50
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+		add_government_reform = eregion_elf_reform
+		set_government_rank = 3
+	}
+}

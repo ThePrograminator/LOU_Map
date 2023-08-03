@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 6
-base_manpower = 5
+base_tax = 5
+base_production = 7
+base_manpower = 6
 
 add_core = X35
 owner = X35
@@ -23,21 +23,15 @@ controller = X35
 culture = culture_aukuag
 religion = religion_apysani_beduins
 
-trade_goods = spices
+trade_goods = mumakil
 
-hre = no
+center_of_trade = 1
 
-capital_1_building=yes
+add_permanent_province_modifier = {
+	name = kek_yanan
+	duration = -1
+}
 
-marketplace_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
-
-#Harshandatt Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar

@@ -3,7 +3,7 @@
 # Province RGB : (13, 61, 49)
 # Province Area : Lódenûly
 # Province Region : Lôdenûly
-# Province Super Region : Chy
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Chaiapûn
 # Province Climate : null
@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 4
-base_production = 4
-base_manpower = 4
+base_production = 3
+base_manpower = 2
 
 add_core = X74
 owner = X74
@@ -24,21 +24,8 @@ add_core = W40
 culture = culture_lodenuly
 religion = religion_chyans
 
-trade_goods = cloth
+trade_goods = silk
 
-hre = no
-
-city_1_building=yes
-
-marketplace_building=yes
-
-temple_building=yes
-
-workshop_building=yes
-
-outpost_building=yes
-
-#Chy Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar

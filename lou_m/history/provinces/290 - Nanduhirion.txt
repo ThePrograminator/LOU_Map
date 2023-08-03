@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 6
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y57
 owner = Y57
@@ -25,11 +25,10 @@ religion = religion_goblin
 
 trade_goods = copper
 
-hre = no
-
-camp_orc_building=yes
-
-orc_pit_orc_building=yes
+add_permanent_province_modifier = {
+	name = men_naugrim
+	duration = -1
+}
 
 2793.1.1 = {
 	add_core = V52
@@ -51,7 +50,6 @@ orc_pit_orc_building=yes
 	religion = religion_goblin
 }
 
-#Misty Mountains Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

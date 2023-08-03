@@ -54,11 +54,12 @@ historical_rival = Y38
 historical_rival = Y43
 historical_rival = Y52
 historical_rival = Z36
+historical_rival = ANG
 
 2589.1.1 = {
 	monarch = {
 		name = "Thror"
-		dynasty = "Durin's House"
+		dynasty = "House of Durin"
 		adm = 6
 		dip = 2
 		mil = 5
@@ -66,6 +67,29 @@ historical_rival = Z36
 	}
 	add_ruler_personality = immortal_personality
 	set_ruler_flag = set_immortality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = greedy_personality
+}
+
+2644.1.1 = {
+	heir = {
+		name = "Thráin II"
+		monarch_name = "Thráin II"
+		dynasty = "House of Durin"
+		claim = 100
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 2644.1.1
+	}
+	add_heir_personality = immortal_personality
+	set_heir_flag = set_immortality
+	add_heir_personality = lawgiver_personality
+	add_heir_personality = righteous_personality
+}
+
+2770.1.1 = {
+	capital = 3227
 }
 
 2790.12.1 = {
@@ -79,6 +103,23 @@ historical_rival = Z36
 	}
 	add_ruler_personality = immortal_personality
 	set_ruler_flag = set_immortality
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = righteous_personality
+	heir = {
+		name = "Thorin II Oakenshield"
+		monarch_name = "Thorin II Oakenshield"
+		dynasty = "Durin's House"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 2746.1.1
+	}
+	add_ruler_personality = immortal_personality
+	set_ruler_flag = set_immortality
+}
+
+2802.3.1 = {
+	capital = 237
 }
 
 2850.1.1 = {
@@ -99,12 +140,25 @@ historical_rival = Z36
 		name = "Dain II Ironfoot"
 		dynasty = "Durin's House"
 		adm = 6
-		dip = 5
+		dip = 4
 		mil = 6
 		birth_date = 2767.1.1
 	}
 	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
+	set_ruler_flag = set_immortality	
+	add_ruler_personality = just_personality
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = strict_personality
+	define_ruler_to_general = {
+		fire = 4
+		shock = 5
+		manuever = 3
+		siege = 4
+		trait = master_of_arms_personality
+		trait = goal_oriented_personality
+		trait = hardy_warrior_personality
+	}
+	capital = 287
 }
 
 3019.3.15 = {

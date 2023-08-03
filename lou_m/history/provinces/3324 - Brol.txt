@@ -9,37 +9,27 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
-base_production = 3
-base_manpower = 2
-
-add_core = V15
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = V15
 controller = V15
-
 culture = culture_clansmen
 religion = religion_daen
-
-trade_goods = salt
-
-hre = no
-
+trade_goods = fruit
 2759.1.1 = {
 	add_core = Z11
 	owner = Z11
 	controller = Z11
 }
-
 2912.9.10 = {
 	add_core = Z43
 	owner = Z43
 	controller = Z43
 }
-
 #Eriador Superregion Discovery
+add_core = V15
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -53,7 +43,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -86,4 +75,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

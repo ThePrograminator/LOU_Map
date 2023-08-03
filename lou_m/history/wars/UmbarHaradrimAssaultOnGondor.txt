@@ -1,0 +1,48 @@
+name = "Umbar and Haradrim Assault on Gondor"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 360 # Gobel Tolfalas
+}
+
+2758.9.14 = {
+	add_attacker = X16						#Rohan addition for no-join-ally Truce
+}
+
+2758.9.15 = {
+	rem_attacker = X16						#Rohan removal for no-join-ally Truce
+	add_attacker = X27						# Umbar
+	add_attacker = V48						# Sakal an-Khar
+	add_attacker = V14						# Methir
+	add_attacker = X25						# Gobel Mirlond
+	add_attacker = X23						# Harnendor
+	add_attacker = X26						# League of Abarloni
+	add_attacker = X24						# Harondor
+	add_attacker = V12						# Harmaka
+	add_attacker = X19						# Haruzan
+	#add_attacker = Q23						# Caradhram
+	#add_attacker = X17						# Chelkar
+	#add_attacker = V13						# Aegthelion
+	add_defender = X01						# Gondor
+	add_defender = X11						# Dol Amroth
+	add_defender = X02						# Andrast
+}
+
+# 
+2759.8.20 = {
+	rem_attacker = X27
+	rem_attacker = V48
+	rem_attacker = V14
+	rem_attacker = X25
+	rem_attacker = X23
+	rem_attacker = X26
+	rem_attacker = X24
+	rem_attacker = V12
+	rem_attacker = X19
+	#rem_attacker = Q23						# Caradhram
+	#rem_attacker = X17						# Chelkar
+	#rem_attacker = V13						# Aegthelion
+	rem_defender = X01	
+	rem_defender = X11
+	rem_defender = X02
+}

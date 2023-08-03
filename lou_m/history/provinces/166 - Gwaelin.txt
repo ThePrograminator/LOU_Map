@@ -10,15 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-#is_city = yes
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-#add_core = Q04
-#owner = Q04
-#controller = Q04
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 culture = culture_dunedain_of_arnor
 religion = religion_dunedain
@@ -27,13 +21,14 @@ trade_goods = livestock
 
 hre = no
 
-#city_1_building=yes
+add_province_modifier = {
+	name = redway_road_old
+	duration = -1
+}
 
-#tax_office_building=yes
-
-#workshop_building=yes
-
-2758.1.1 = { tribal_owner = Q13 }
+2758.1.1 = {
+	tribal_owner = Q13
+}
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

@@ -106,8 +106,11 @@ lotr_nazgul_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_nazgul_legacy
+	#fixed_rank = 2
 	lock_level_when_selected = yes
-	fixed_rank = 2
+	heir = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
 	
 	potential = {
 		OR = {
@@ -117,11 +120,52 @@ lotr_nazgul_reform = {
 	}
 	
 	modifiers = {
+		discipline = 0.10
+		morale_damage = 0.05
+		war_exhaustion = -0.15
+		diplomatic_reputation = -2	
+		num_accepted_cultures = 3		
+		land_forcelimit_modifier = 0.25	
+		administrative_efficiency = 0.10
+
+		tolerance_own = 3
+		tolerance_heretic = -3
+		tolerance_heathen = -3
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+lotr_necromancer_reform = {
+	icon = "necromancer_domain"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_necromancer_legacy
+	fixed_rank = 2
+	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	potential = {
+		tag = V19
+	}
+	
+	modifiers = {		
+		discipline = 0.10
+		morale_damage = 0.05
 		global_unrest = -3
 		war_exhaustion = -0.15
+		diplomatic_reputation = -2
+		num_accepted_cultures = 3
+		land_forcelimit_modifier = 0.25
+		all_power_cost = -0.03
+		administrative_efficiency = 0.10
 
-		tolerance_own = 2
-		tolerance_heretic = -2
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
 	}
 	
 	custom_attributes = {
@@ -129,11 +173,14 @@ lotr_nazgul_reform = {
 	}
 }
 lotr_isengard_reform = {
-	icon = "isengard"
-	valid_for_nation_designer = yes
+	icon = "saruman_colors"
+	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_isengard_legacy
 	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
 	
 	potential = {
 		tag = V49
@@ -141,10 +188,17 @@ lotr_isengard_reform = {
 	
 	modifiers = {
 		discipline = 0.10
-		mercenary_cost = -0.15
+		morale_damage = 0.05		
+		development_cost = -0.10
+		mercenary_cost = -0.25
+		diplomatic_reputation = -2	
+		land_forcelimit_modifier = 0.25
+		production_efficiency = 0.10
+		administrative_efficiency = 0.10
 
-		tolerance_own = 2
-		tolerance_heretic = -2
+		tolerance_own = 3
+		tolerance_heretic = -3
+		tolerance_heathen = -3
 	}
 	
 	custom_attributes = {
@@ -157,6 +211,9 @@ lotr_mordor_reform = {
 	nation_designer_cost = 0
 	legacy_equivalent = lotr_mordor_legacy
 	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
 	
 	potential = {
 		tag = V17
@@ -164,11 +221,88 @@ lotr_mordor_reform = {
 	
 	modifiers = {
 		manpower_recovery_speed = 0.20
-		ae_impact = -0.10
+		ae_impact = -0.15
 		diplomatic_upkeep = 3
+		discipline = 0.10
+		morale_damage = 0.05
+		diplomatic_reputation = -2		
+		num_accepted_cultures = 5
+		land_forcelimit_modifier = 0.25
+		all_power_cost = -0.05
+		administrative_efficiency = 0.15
 
-		tolerance_own = 2
-		tolerance_heretic = -2
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+lotr_carn_dum_reform = {
+	icon = "carn_dum"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_carn_dum_legacy
+	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	potential = {
+		OR = {
+			tag = Y52
+			tag = ANG
+		}
+	}
+	
+	modifiers = {
+		discipline = 0.05
+		morale_damage = 0.03
+		land_attrition = -0.05
+		hostile_attrition = 1
+		diplomatic_reputation = -1
+		num_accepted_cultures = 2
+		land_forcelimit_modifier = 0.15
+		administrative_efficiency = 0.05
+
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+lotr_angmar_reform = {
+	icon = "carn_dum"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = lotr_carn_dum_legacy
+	lock_level_when_selected = yes
+	heir = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	potential = {
+		tag = ANG
+	}
+	
+	modifiers = {
+		discipline = 0.10
+		morale_damage = 0.05
+		land_attrition = -0.10
+		hostile_attrition = 2
+		diplomatic_reputation = -2
+		num_accepted_cultures = 3
+		land_forcelimit_modifier = 0.25
+		administrative_efficiency = 0.10
+
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
 	}
 	
 	custom_attributes = {

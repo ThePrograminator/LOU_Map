@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 5
+base_tax = 2
+base_production = 3
+base_manpower = 1
 
 add_core = X16
 owner = X16
@@ -27,6 +27,11 @@ religion = religion_eorlingas
 trade_goods = grain
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = west_road
+	duration = -1
+}
 
 #Rohan Superregion Discovery
 discovered_by = lotr_human

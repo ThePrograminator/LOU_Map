@@ -12,20 +12,25 @@
 
 is_city = yes
 
-base_tax = 10
-base_production = 10
-base_manpower = 12
+base_tax = 6
+base_production = 7
+base_manpower = 8
 
 add_core = Y52
 owner = Y52
 controller = Y52
 
-culture = culture_orkish
+culture = culture_uruks
 religion = religion_orkish
 
 trade_goods = silver
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = angmar_road
+	duration = -1
+}
 
 capital_3_orc_building=yes
 

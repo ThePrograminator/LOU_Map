@@ -3,7 +3,7 @@
 # Province RGB : (196, 199, 212)
 # Province Area : Helcarth
 # Province Region : Helcarth
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Moinarlin
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 5
+base_tax = 2
+base_production = 2
+base_manpower = 2
 
 add_core = V59
 owner = V59
@@ -23,15 +23,8 @@ controller = V59
 culture = culture_hisildi
 religion = religion_moriquendi
 
-trade_goods = herbs
+trade_goods = stone
 
-hre = no
-
-town_1_elf_building=yes
-
-temple_elf_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

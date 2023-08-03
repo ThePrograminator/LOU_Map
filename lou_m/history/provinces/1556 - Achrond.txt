@@ -3,7 +3,7 @@
 # Province RGB : (149, 13, 66)
 # Province Area : Minheldolath
 # Province Region : Northern Waste
-# Province Super Region : Forodwaith
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : Severe_winter
@@ -12,36 +12,28 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y79
 owner = Y79
 controller = Y79
 
-culture = culture_lossidil
-religion = religion_umanyar
+culture = culture_wilderness
+religion = religion_wilderness
 
-trade_goods = naval_supplies
+trade_goods = ivory
 
 hre = no
 
-town_2_elf_building=yes
+2750.1.1 = {
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+}
 
-elven_fairground_elf_building=yes
-
-temple_elf_building=yes
-
-elven_forge_elf_building=yes
-
-warriors_gallery_building=yes
-
-seaport_elf_building=yes
-
-wall_bastions_elf_building=yes
-
-#Forodwaith Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

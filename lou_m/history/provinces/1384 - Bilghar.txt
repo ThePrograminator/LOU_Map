@@ -9,33 +9,16 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 4
-base_manpower = 11
-
-add_core = X20
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = X20
 controller = X20
-
 culture = culture_haruze
 religion = religion_haruzani
-
-trade_goods = wool
-
-hre = no
-
-fortress_1_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
-work_camp_building=yes
-
-#Near Harad Superregion Discovery
+trade_goods = stone
+add_core = X20
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -101,4 +84,7 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+fortress_1_building = yes
+fort_castle_building = yes
+army_camp_building = yes
+work_camp_building = yes

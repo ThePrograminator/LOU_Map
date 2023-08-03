@@ -13,8 +13,6 @@ difficulty_very_easy_player = {
 	manpower_recovery_speed = 0.50
 	land_forcelimit_modifier = 0.5
 	naval_forcelimit_modifier = 0.5
-	production_efficiency = 0.5
-	global_tax_income = 60
 	global_regiment_cost = -0.33
 	global_ship_cost = -0.33
 	inflation_reduction = 0.05
@@ -105,17 +103,17 @@ city = {
 }
 
 port = {
-	local_institution_spread = 0.10
+	#local_#institution_spread 0.10
 	local_has_geobukseon = yes
 	local_has_voc_indiamen = yes
 }
 
 in_state = {
-	local_institution_spread = 0.10
+	#local_#institution_spread 0.10
 }
 
 in_capital_state = {
-	local_institution_spread = 0.05
+	#local_#institution_spread 0.05
 	local_state_maintenance_modifier = -0.5
 	local_governing_cost = -1.0
 }
@@ -243,7 +241,7 @@ provincial_tax_income = {
 	regiment_recruit_speed = -0.02
 	local_great_project_upgrade_time = -0.01
 	local_build_time = -0.01
-	local_institution_spread = 0.02
+	#local_#institution_spread 0.02
 }
 
 provincial_production_size = {
@@ -261,6 +259,11 @@ cardinals_spread_institution = {
 
 manpower = {
 	garrison_growth = 0.01					#1% increase from manpower.
+}
+
+# Caps at 600
+horde_development = {
+	horde_unity = -3
 }
 
 province_razed = {
@@ -344,7 +347,7 @@ colonial_core = {
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
 	min_local_autonomy = 50
-	local_governing_cost = -0.5
+	local_governing_cost = -0.25
 }
 
 territory_core = {
@@ -432,7 +435,7 @@ occupied = {
 	province_trade_power_modifier = -0.5
 	local_manpower_modifier = -0.5
 	local_sailors_modifier = -0.5
-	local_institution_spread = -0.1
+	#local_#institution_spread -0.1
 
 	local_monthly_devastation = 0.2
 }
@@ -440,7 +443,7 @@ occupied = {
 under_siege = {
 	trade_goods_size_modifier = -0.25
 	province_trade_power_modifier = -0.25
-	local_institution_spread = -0.1
+	#local_#institution_spread -0.1
 
 	local_monthly_devastation = 0.1
 }
@@ -449,7 +452,7 @@ under_siege = {
 devastation = {
 	trade_goods_size_modifier = -2
 	supply_limit_modifier = -0.5
-	local_institution_spread = -2.0
+	#local_#institution_spread -2.0
 	local_development_cost = 0.2
 	local_manpower_modifier = -2.0
 	local_sailors_modifier = -2.0
@@ -530,7 +533,7 @@ friendly_regiments = {
 
 active_missionary = {
 	local_unrest = 6					# 6% revolt risk!
-	local_institution_spread = -0.10
+	#local_#institution_spread -0.10
 }
 
 # Core province of the owner's culture group, while fighting a defensive war
@@ -548,7 +551,7 @@ in_trade_company = {
 	province_trade_power_modifier = 1
 	naval_forcelimit = 0.5
 	local_missionary_strength = -0.2
-	local_institution_spread = 0.10
+	#local_#institution_spread 0.10
 	local_governing_cost = 0.25
 }
 
@@ -559,7 +562,6 @@ left_trade_company = {
 
 scorched_earth = {
 	local_hostile_movement_speed = -0.50
-	local_monthly_devastation = 0.25
 }
 
 ##########################################################################
@@ -592,7 +594,7 @@ base_values = {
 	governing_capacity = 200
 	num_accepted_cultures = 2
 	monthly_splendor = 1
-	artillery_levels_available_vs_fort = 5
+	#artillery_bonus_vs_fort = 5
 	cav_to_inf_ratio = 0.5
 	merc_maintenance_modifier = 0.1
 	monthly_heir_claim_increase = 0.208
@@ -630,7 +632,7 @@ positive_stability = {
 	monthly_fervor_increase = 1
 	devotion = 0.5
 	yearly_corruption = -0.02
-	global_institution_spread = 0.05
+	#global_#institution_spread 0.05
 	yearly_harmony = 0.25
 }
 
@@ -645,7 +647,6 @@ negative_stability = {
 	migration_cost = 0.1
 	devotion = 1
 	caravan_power = 0.05
-	yearly_harmony = 0.25
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -720,7 +721,7 @@ bankruptcy = {
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
 	global_autonomy = 0.05
-	global_institution_spread = -0.50
+	#global_#institution_spread -0.50
 	monthly_militarized_society = -0.5
 	yearly_absolutism = -2.0
 	technology_cost = 0.5
@@ -738,13 +739,13 @@ peace = {
 	war_exhaustion = -0.1
 	monthly_fervor_increase = 1
 	global_autonomy = -0.1
-	global_institution_spread = 0.1
+	#global_#institution_spread 0.1
 }
 
 unconditional_surrender = {
 	war_exhaustion = -0.1
 	global_autonomy = -0.1
-	global_institution_spread = 0.1
+	#global_#institution_spread 0.1
 }
 
 call_for_peace = {
@@ -819,21 +820,17 @@ navy_tradition = {
 	allowed_galleass_fraction = 0.5
 }
 
-#Order
+#Firstborn Pride (former Order)
 positive_piety = { #As of 1.23 Legalism
-	tolerance_own = 2	
-	production_efficiency = 0.15
-	discipline = -0.10
-	tribes_loyalty_modifier = -0.1
+	garrison_size = 0.5
+	land_morale = 0.10
 }
 
 #For convenience, its multiplied by negative piety in code.
-#Chaos
+#Valinor's Call (former Chaos)
 negative_piety = { #As of 1.23 Mysticism
-	land_morale = 0.10
-	ae_impact = -0.15
-	tolerance_own = -2
-	tribes_loyalty_modifier = 0.1
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.2
 }
 
 defender_of_faith = {
@@ -842,8 +839,6 @@ defender_of_faith = {
 	technology_cost = 0.05
 	war_exhaustion = -0.025					#quicker recovery
 	papal_influence = 1
-	church_power_modifier = 0.1
-	monthly_fervor_increase = 1
 	prestige = 1							#1% extra prestige yearly
 	missionaries = 1
 	devotion = 0.5
@@ -953,31 +948,22 @@ legitimacy = {
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
-	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
+	#tribes_loyalty_modifier = 0.05	#New Change
 }
+
 
 # Multiplied by current Devotion - 50
 devotion = {
 	papal_influence = 2
-	monthly_fervor_increase = 2
-	church_power_modifier = 0.5
-	harmonization_speed = 0.5
-	monthly_piety_accelerator = 0.01
-	yearly_authority = 0.5
-	yearly_patriarch_authority = 0.01
-	yearly_doom_reduction = 0.5
-	yearly_karma_decay = 0.1
 	prestige = 2
 	global_tax_modifier = 0.50
 	commoners_loyalty_modifier = 0.05
-	reform_progress_growth = 0.5
 }
 
 # Multiplied by current meritocracy - 50
 meritocracy = {
 	global_spy_defence = 1.0
 	advisor_cost = -0.5
-	reform_progress_growth = 0.5
 }
 
 # Multiplied by 50 - meritocracy
@@ -1019,12 +1005,13 @@ luck = {
 	#core
 	global_missionary_strength = 0.01
 	stability_cost_modifier = -0.10
-	global_institution_spread = 0.1
+	#global_#institution_spread 0.1
 	monthly_splendor = 1
 
 	#economy
 	mercenary_cost = -0.2
 	embracement_cost = -0.2
+	advisor_cost = -0.2
 	interest = -1
 	missionary_maintenance_cost = -0.1
 
@@ -1043,7 +1030,6 @@ luck = {
 	legitimacy = 1
 	ae_impact = -0.25
 	governing_capacity_modifier = 0.25
-
 }
 
 over_extension = {
@@ -1120,7 +1106,6 @@ religious_unity = {
 inverse_religious_unity = {
 	stability_cost_modifier = 1.0		#more expensive to recover stability
 	global_unrest = 3
-	church_power_modifier = -1
 	devotion = -1
 	yearly_corruption = 0.1
 }
@@ -1131,8 +1116,6 @@ total_occupation = {
 
 total_blockaded = {
 	war_exhaustion = 0.10					#increases exhaustion.
-	global_trade_power = -0.75
-	trade_steering = -0.75
 }
 
 uncontested_cores = {
@@ -1185,7 +1168,7 @@ tributary_state_behind_overlord_tech_mil = {
 }
 
 trade_protectorate_subject_modifier = {
-	global_institution_spread = 0.25
+	#global_#institution_spread 0.25
 	production_efficiency = 0.2
 	diplomatic_upkeep = -1
 }
@@ -1287,16 +1270,6 @@ power_projection_25 = {
 	free_leader_pool = 1
 }
 
-#100 Land Forcelimit = 1
-land_forcelimit = {
-    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
-}
-
-#100 Naval Forcelimit = 1
-naval_forcelimit = {
-    free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
-}
-
 trade_company_strong = {
 	merchants = 1
 }
@@ -1318,24 +1291,18 @@ gbr_colonial_investment = {
 }
 
 crown_colony_overlord = {
-	merchants = 1
-	global_trade_power = 0.05
 }
 
 private_enterprise_overlord = {
-	merchants = 1
-	global_trade_power = 0.05
 	global_tariffs = -0.05
 }
 
 self_governing_colony_overlord = {
-	merchants = 1
-	global_trade_power = 0.05
 	global_tariffs = -0.10
 }
 
 crown_colony_subject = {
-	global_autonomy = -0.1
+	global_autonomy = -0.05
 	global_colonial_growth = 10
 }
 
@@ -1386,7 +1353,7 @@ subject_nation = {
 }
 
 vassal_nation = {
-	development_cost = 0.5
+	development_cost = 0.25
 }
 
 primitive_nation = {
@@ -1463,13 +1430,13 @@ autonomy_decreased = {
 revolution_target = {
 	global_manpower_modifier = 0.10
 	land_morale = 0.10
-	naval_morale = 0.1
 	war_exhaustion = -0.15
 	unjustified_demands = -0.5
 	land_maintenance_modifier = -0.15
 	naval_maintenance_modifier = -0.15
-	manpower_recovery_speed = 0.25
-	sailors_recovery_speed = 0.25
+	land_forcelimit_modifier = 0.4
+	naval_forcelimit_modifier = 0.4
+	papal_influence = -100
 }
 
 dishonoured_alliance =  {
@@ -1567,17 +1534,25 @@ divert_trade = {
 # Karma
 ########################################
 
-karma_just_right = {
-	diplomatic_reputation = 2
+#Restless Flames
+karma_just_right =
+{
+	advisor_cost = 0.25
+	global_unrest = 2
+}
+
+#Fires of Industry
+karma_too_high =
+{
+	production_efficiency = 0.2
+	global_manpower_modifier = -0.1
+}
+
+#Fires of War
+karma_too_low =
+{
 	discipline = 0.05
-}
-
-karma_too_high = {
-	diplomatic_reputation = 1
-}
-
-karma_too_low = {
-	discipline = 0.025
+	caravan_power = -0.1
 }
 
 ########################################
@@ -1622,20 +1597,13 @@ native_policy_hostile = {
 ########################################
 
 high_harmony = {
-	tolerance_own = 3
-	development_cost = -0.1
-	meritocracy = 1
-	legitimacy = 0.5
-	devotion = 1
-	harmonization_speed = 0.5
-	yearly_corruption = -0.5
+	tolerance_own = 1
 }
 
 low_harmony = {
-	yearly_corruption = 1
-	stability_cost_modifier = 0.2
+	tolerance_own = -3
+	development_cost = 0.25
 	legitimacy = -1
-	devotion = -2
 	meritocracy = -2
 }
 
@@ -1973,7 +1941,6 @@ revolutionary_guard_regiment = {
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
 	drill_gain_modifier = 1.0
-	drill_decay_modifier = -0.5
 }
 
 innovativeness = {
@@ -2022,6 +1989,7 @@ over_governing_capacity_modifier = {
 	stability_cost_modifier = 1.0
 	ae_impact = 0.5
 	improve_relation_modifier = -0.5
+	core_creation = 0.2
 	advisor_cost = 1.0
 	monthly_militarized_society = -1
 	administrative_efficiency = -0.5
@@ -2064,8 +2032,8 @@ expanded_infrastructure = {
 }
 
 centralize_state = {
-	statewide_governing_cost = -0.2
-	local_prosperity_growth = 0.25
+	statewide_governing_cost = -0.25
+	local_prosperity_growth = 0.1
 	local_state_maintenance_modifier = -0.2
 	picture = "centralize_state"
 }
@@ -2074,6 +2042,7 @@ centralize_state = {
 guru_teaching = {
 	global_missionary_strength = -0.01
 }
+
 
 diplomatic_reputation = {
 }

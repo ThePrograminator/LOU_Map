@@ -3,7 +3,7 @@
 # Province RGB : (203, 145, 82)
 # Province Area : Nebûrkha
 # Province Region : Khand
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Relerindú
 # Province Climate : null
@@ -13,8 +13,8 @@
 is_city = yes
 
 base_tax = 2
-base_production = 4
-base_manpower = 2
+base_production = 3
+base_manpower = 1
 
 add_core = X85
 owner = X85
@@ -25,15 +25,10 @@ religion = religion_ioriags
 
 trade_goods = wool
 
-hre = no
-
-settlement_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-outpost_building=yes
+add_permanent_province_modifier = {
+	name = khand_road
+	duration = -1
+}
 
 2922.5.10 = {
 	add_core = X78
@@ -45,7 +40,6 @@ outpost_building=yes
 	culture = culture_variags
 }
 
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

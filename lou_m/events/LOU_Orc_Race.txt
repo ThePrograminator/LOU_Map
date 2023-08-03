@@ -21,15 +21,12 @@ country_event = {
 		
 		religion = religion_orkish
 		
-		uses_piety = yes
-		
-		OR = {
-			piety > -0.50
-			piety < 0.50
+		AND = {
+			Karma = -33
+			NOT = {Karma = 33}
 		}
-		
 		NOT = {
-			has_country_modifier = orc_religion_punish_survivers
+			has_country_modifier = orc_religion_fuel_of_industry
 			has_country_modifier = orc_religion_reward_victors
 		}
 	}
@@ -37,12 +34,12 @@ country_event = {
 	#Punish The Survivers
 	option = { 
 		name = LOU_orc_race.1.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.1 - Option : LOU_orc_race.1.a" }
 		
-		add_piety = 0.10
+		add_karma = 0.10
+		add_yearly_manpower = -0.5
 		add_country_modifier = {
-			name = orc_religion_punish_survivers
+			name = orc_religion_fuel_of_industry
 			duration = 3650
 		}
 	}
@@ -50,11 +47,10 @@ country_event = {
 	#Reward The Victors
 	option = { 
 		name = LOU_orc_race.1.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.1 - Option : LOU_orc_race.1.b" }
 
-		add_piety = -0.10
-	
+		add_karma = -0.10
+		add_prestige = -10
 		add_country_modifier = {
 			name = orc_religion_reward_victors
 			duration = 3650
@@ -62,7 +58,7 @@ country_event = {
 	}
 }
 
-# Workers refuse to work without meat
+# Complains about food
 country_event = {
 	id = LOU_orc_race.2
 	title = LOU_orc_race.2.t
@@ -82,45 +78,38 @@ country_event = {
 		}
 		religion = religion_orkish
 		
-		uses_piety = yes
-		
-		OR = {
-			piety > -0.50
-			piety < 0.50
+		AND = {
+			Karma = -33
+			NOT = {Karma = 33}
 		}
-		
+
 		NOT = {
-			has_country_modifier = orc_religion_dont_give_meat
-			has_country_modifier = orc_religion_give_meat
+			has_country_modifier = orc_religion_purpose_of_war
+			has_country_modifier = orc_religion_spark_of_industry
 		}
 	}
 	
-	#give them maggoty bread
+	#promise manflesh
 	option = { 
 		name = LOU_orc_race.2.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.2 - Option : LOU_orc_race.2.a" }
 		
-		add_piety = 0.05
 		
+		add_karma = -10
 		add_country_modifier = {
-			name = orc_religion_dont_give_meat
+			name = orc_religion_purpose_of_war
 			duration = 3650
 		}
 	}
 	
-	#buy the meat
+	#reward the hardest workers
 	option = { 
 		name = LOU_orc_race.2.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.2 - Option : LOU_orc_race.2.b" }
 		
-		add_piety = -0.05
-
-		add_treasury = -200
-		
+		add_karma = +10
 		add_country_modifier = {
-			name = orc_religion_give_meat
+			name = orc_religion_spark_of_industry
 			duration = 3650
 		}
 	}
@@ -137,7 +126,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -148,51 +136,43 @@ country_event = {
 			}
 			religion = religion_orkish
 		}
-		OR = {
-			piety > -0.50
-			piety < 0.50
+		NOT = {
+			karma = 33
 		}
 		NOT = {
-			army_professionalism = 0.50 
-			has_country_modifier = orc_religion_force_train
-			has_country_modifier = orc_religion_loose_formation
+			army_professionalism = 0.50
+			has_country_modifier = orc_religion_spark_of_war
+			has_country_modifier = orc_religion_fuel_of_war
 		}
 	}
 	
 	#Force training
 	option = { 
 		name = LOU_orc_race.3.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.3 - Option : LOU_orc_race.3.a" }
 		
-		add_piety = 0.10
-		
+		add_karma = -10
 		add_army_professionalism = 0.05
-		
 		add_country_modifier = {
-			name = orc_religion_force_train
+			name = orc_religion_spark_of_war
 			duration = 3650
 		}
 	}
 	
-	#loose formation is also good
+	#follow our instincts
 	option = { 
 		name = LOU_orc_race.3.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.3 - Option : LOU_orc_race.3.b" }
 		
-		add_piety = -0.10
-		
 		add_army_professionalism = -0.05
-		
 		add_country_modifier = {
-			name = orc_religion_loose_formation
+			name = orc_religion_fuel_of_war
 			duration = 3650
 		}
 	}
 }
 
-# Warmongering amongst the orcs
+# calls for war
 country_event = {
 	id = LOU_orc_race.4
 	title = LOU_orc_race.4.t
@@ -203,7 +183,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -214,48 +193,30 @@ country_event = {
 			}
 			religion = religion_orkish
 		}
-		OR = {
-			piety > -0.50
-			piety < 0.50
+		NOT = {
+			karma = -33
 		}
 		
 		OR ={
 			is_at_war = no
 			NOT = {
 				had_recent_war = 5
-				has_country_modifier = orc_religion_prepare_for_war
-				has_country_modifier = orc_religion_promise_war
-				has_country_modifier = orc_religion_promise_war_but_didnt
+				has_country_modifier = orc_religion_purpose_of_war
+				has_country_modifier = orc_religion_unguided_flames
 			}
 		}
 	}
-	
-	#We are preparing
-	option = { 
-		name = LOU_orc_race.4.a
-
-		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.4 - Option : LOU_orc_race.4.a" }
-		
-		add_piety = 0.05
-
-		add_country_modifier = {
-			name = orc_religion_prepare_for_war
-			duration = 3650
-		}
-	}
-	
 	#Promise to start war
 	option = { 
 		name = LOU_orc_race.4.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.4 - Option : LOU_orc_race.4.b" }
 		
+		add_karma = -0.1
+
 		add_country_modifier = {
-			name = orc_religion_promise_war
-			duration = 365
+			name = orc_religion_purpose_of_war
+			duration = 3650
 		}
-		
-		custom_tooltip = orc_religion_promise_war_tooltip
 		
 		hidden_effect = {
 			country_event = {
@@ -277,7 +238,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -290,17 +250,14 @@ country_event = {
 			is_at_war = no
 		}
 		NOT = {
-			has_country_modifier = orc_religion_promise_war_but_didnt
+			has_country_modifier = orc_religion_unguided_flames
 		}
 	}
 	
 	#FAK
 	option = { 
 		name = LOU_orc_race.5.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.5 - Option : LOU_orc_race.5.a" }
-		
-		add_piety = -0.25
 		
 		add_corruption = 1
 		add_legitimacy = -25
@@ -308,7 +265,7 @@ country_event = {
 		add_stability = -1
 
 		add_country_modifier = {
-			name = orc_religion_promise_war_but_didnt
+			name = orc_religion_unguided_flames
 			duration = 3650
 		}
 	}
@@ -326,7 +283,6 @@ country_event = {
 	trigger = {
 	
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -339,11 +295,11 @@ country_event = {
 			is_at_war = no
 			
 			NOT = {
-				piety = -0.40
+				karma = -33
 			}
 			
 			NOT = {
-				has_country_modifier = orc_religion_stopped_raid
+				has_country_modifier = orc_religion_unguided_flames
 			}
 		}
 	
@@ -376,10 +332,9 @@ country_event = {
 	#Let Them Raid
 	option = { 
 		name = LOU_orc_race.6.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.6 - Option : LOU_orc_race.6.a" }
 		
-		add_piety = -0.20
+		add_karma = -0.10
 		
 		random_owned_province = {
 			limit = {
@@ -470,11 +425,9 @@ country_event = {
 				
 				hidden_effect = {
 					THIS = {
-						#owner = {
-							province_event = {
-								id = LOU_orc_race.7
-							}
-						#}
+						province_event = {
+							id = LOU_orc_race.7
+						}
 					}
 				}
 			}
@@ -484,16 +437,15 @@ country_event = {
 	#We haven't ordered a raid!
 	option = { 
 		name = LOU_orc_race.6.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.6 - Option : LOU_orc_race.6.b" }
 		
-		add_piety = 0.20
+		add_karma = 0.10
 		
-		add_prestige = -20
+		add_prestige = -10
 		add_manpower = -2
 		
 		add_country_modifier = {
-			name = orc_religion_stopped_raid
+			name = orc_religion_unguided_flames
 			duration = 3650
 		}
 	}
@@ -515,25 +467,10 @@ province_event = {
 	#bring forth destruction
 	option = { 
 		name = LOU_orc_race.7.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.7 - Option : LOU_orc_race.7.a" }
 
 		tooltip = {
 			FROM = {
-				#limit = {
-					#NOT = {
-					#	owner = {
-					#		uses_piety = yes
-					#		culture = culture_orkish
-					#		religion = religion_orkish
-					#		war_with = FROM
-					#	}
-					#	owned_by = ROOT
-					#	culture = culture_orkish
-					#	religion = religion_orkish
-					#}
-				#}
-				
 				random_list = {
 					33 = {
 						add_base_tax = -1
@@ -576,7 +513,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -588,13 +524,13 @@ country_event = {
 			religion = religion_orkish
 			
 			NOT = {
-				piety = -0.40
+				karma = -33
 			}
 			
 			
 			NOT = {
-				has_country_modifier = orc_religion_dont_compensate
-				has_country_modifier = orc_religion_compensate
+				has_country_modifier = orc_religion_fuel_of_war
+				has_country_modifier = orc_religion_spark_of_industry
 			}
 		}
 		
@@ -614,7 +550,6 @@ country_event = {
 	#This will hurt us
 	option = { 
 		name = LOU_orc_race.8.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.8 - Option : LOU_orc_race.8.a" }
 		
 		random_known_country = {
@@ -652,10 +587,10 @@ country_event = {
 		}
 		
 		ROOT = {
-			add_piety = -0.10
+			add_karma = -0.10
 		
 			add_country_modifier = {
-				name = orc_religion_dont_compensate 
+				name = orc_religion_fuel_of_war 
 				duration = 3650
 			}
 		}
@@ -664,7 +599,6 @@ country_event = {
 	#Compensate
 	option = { 
 		name = LOU_orc_race.8.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.8 - Option : LOU_orc_race.8.b" }
 		
 		add_adm_power = -50
@@ -675,10 +609,10 @@ country_event = {
 		add_treasury = -100
 		
 		ROOT = {
-			add_piety = 0.10
+			add_karma = 0.10
 		
 			add_country_modifier = {
-				name = orc_religion_compensate 
+				name = orc_religion_spark_of_industry 
 				duration = 3650
 			}
 		}
@@ -701,8 +635,7 @@ country_event = {
 	#bring forth destruction
 	option = { 
 		name = LOU_orc_race.9.a
-
-		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.9 - Option : LOU_orc_race.9.b" }
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.9 - Option : LOU_orc_race.9.a" }
 
 		tooltip = {
 			add_mercantilism = -2
@@ -722,18 +655,17 @@ country_event = {
 	}
 }
 
-# The Orcs rebel!
+# feeding the flames
 country_event = {
 	id = LOU_orc_race.10
 	title = LOU_orc_race.10.t
 	desc = LOU_orc_race.10.d
-	picture = ANGRY_MOB_eventPicture
-
+	picture = NATIVES_eventPicture
+	
 	is_triggered_only = yes
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -743,60 +675,43 @@ country_event = {
 				primary_culture = culture_desert_orkish
 			}
 			religion = religion_orkish
-			
+		}
+		AND = {
+			Karma = -33
 			NOT = {
-				piety = -0.79
-			}
-			
-			NOT = {
-				has_country_modifier = orc_religion_chaos_rebels
+				Karma = 33
+				has_country_modifier = orc_religion_fuel_of_industry
+				has_country_modifier = orc_religion_fuel_of_war
 			}
 		}
 	}
-	
-	immediate = {
 
-		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.10 - Option : immediate" }
-
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					NOT = {
-						controlled_by = REB
-					}
-					has_owner_culture = yes
-					has_owner_religion = yes
-					is_capital = no
-				}
-				spawn_rebels = {
-					type = orc_chaos_rebels
-					size = 1
-					win = yes
-				}
-			}
-		}
-	}
-	
-	#Bash their skulls!
-	option = { 
+	#feed the flames of Industry
+	option = {
 		name = LOU_orc_race.10.a
-
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.10 - Option : LOU_orc_race.10.a" }
+		
+		add_karma = 10
+		add_country_modifier = {
+			name = orc_religion_fuel_of_industry
+			duration = 3650
+		}
+	}
+		
+	#feed the flames of war
+	option = {
+		name = LOU_orc_race.10.b
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.10 - Option : LOU_orc_race.10.b" }
 		
-		add_piety = 0.30
-		
-		add_manpower = -2
-		add_prestige = -30
-		add_stability = -1
-		
+		add_karma = -10
 		add_country_modifier = {
-			name = orc_religion_chaos_rebels
+			name = orc_religion_fuel_of_war
 			duration = 3650
 		}
 	}
 }
 
-# Enlits Overseers
+#Where There Is a Whip There Is a Way
 country_event = {
 	id = LOU_orc_race.11
 	title = LOU_orc_race.11.t
@@ -807,7 +722,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -819,42 +733,40 @@ country_event = {
 			religion = religion_orkish
 		}
 		AND = {
-			piety > 0.40
+			Karma = -33
 		}
 		NOT = {
-			has_country_modifier = orc_religion_enlisted_overseers
-			has_country_modifier = orc_religion_loose_formation
+			has_country_modifier = orc_religion_spark_of_war
+			has_country_modifier = orc_religion_fuel_of_industry
 		}
 	}
 	
-	#Where There Is a Whip There Is a Way
+	#Whip them into fighting shape
 	option = { 
 		name = LOU_orc_race.11.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.11 - Option : LOU_orc_race.11.a" }
 		
-		add_piety = 0.20
+		add_karma = -0.10
 		
 		add_army_professionalism = 0.05
 		
 		add_country_modifier = {
-			name = orc_religion_enlisted_overseers
+			name = orc_religion_spark_of_war
 			duration = 3650
 		}
 	}
 	
-	#Leave Them Be
+	#Get them back to work
 	option = { 
 		name = LOU_orc_race.11.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.11 - Option : LOU_orc_race.11.b" }
 		
-		add_piety = -0.20
+		add_karma = 0.10
 		
 		add_army_professionalism = -0.05
 		
 		add_country_modifier = {
-			name = orc_religion_loose_formation
+			name = orc_religion_fuel_of_industry
 			duration = 3650
 		}
 	}
@@ -871,7 +783,6 @@ country_event = {
 	
 	trigger = {
 		AND = {
-			uses_piety = yes
 			OR = {
 				primary_culture = culture_orkish
 				primary_culture = culture_uruks
@@ -884,26 +795,25 @@ country_event = {
 			manpower_percentage = 0.75
 		}
 		AND = {
-			piety > 0.40
+			karma = 33
 		}
 		NOT = {
-			has_country_modifier = orc_religion_keep_the_grip
-			has_country_modifier = orc_religion_loosen_the_grip
+			has_country_modifier = orc_religion_goal_of_industry
+			has_country_modifier = orc_religion_unguided_flames
 		}
 	}
 	
 	#Keep The Grip
 	option = { 
 		name = LOU_orc_race.12.a
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.12 - Option : LOU_orc_race.12.a" }
 		
-		add_piety = 0.10
+		add_karma = 10
 		
 		add_stability = -1
 		
 		add_country_modifier = {
-			name = orc_religion_keep_the_grip
+			name = orc_religion_purpose_of_industry
 			duration = 3650
 		}
 	}
@@ -911,89 +821,14 @@ country_event = {
 	#Loosen The Grip
 	option = { 
 		name = LOU_orc_race.12.b
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.12 - Option : LOU_orc_race.12.b" }
 		
-		add_piety = -0.10
+		add_karma = -10
 		
 		add_stability = 1
 		
 		add_country_modifier = {
-			name = orc_religion_loosen_the_grip
-			duration = 3650
-		}
-	}
-}
-
-# Orcs Desert
-country_event = {
-	id = LOU_orc_race.13
-	title = LOU_orc_race.13.t
-	desc = LOU_orc_race.13.d
-	picture = MILITARY_CAMP_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		AND = {
-			uses_piety = yes
-			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
-			}
-			religion = religion_orkish
-			manpower_percentage = 0.25
-		}
-		
-		piety > 0.75
-		
-		NOT = {
-			has_country_modifier = orc_religion_deserted_orcs
-		}
-	}
-	
-	#They Were Controlled Too Much
-	option = { 
-		name = LOU_orc_race.13.a
-
-		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.13 - Option : LOU_orc_race.13.a" }
-		
-		add_piety = -0.30
-		
-		add_stability = -1
-		add_legitimacy = -25
-		add_mil_power = -100
-		
-		
-		
-		random_owned_province = {
-			limit = {
-				num_of_units_in_province = {
-					who = owner
-					amount = 3
-				}
-			}
-			
-			if = {
-				limit = {
-					unit_has_leader = yes
-				}
-				kill_leader = { type = general }
-			}
-			
-			kill_units = {
-				who = owner
-				amount = 3
-			}
-		}
-		
-		
-		add_country_modifier = {
-			name = orc_religion_deserted_orcs
+			name = orc_religion_unguided_flames
 			duration = 3650
 		}
 	}
@@ -1024,16 +859,21 @@ country_event = {
 		}
 		
 		NOT = {
-			has_country_modifier = orc_food_bonus
+			has_country_modifier = orc_religion_fuel_of_industry
+			has_country_modifier = orc_religion_fuel_of_war
 		}
 	}
 	
-	#Finally some decend food
+	#Grow it ourselves
 	option = {
 		name = "LOU_orc_race.14.a"
-
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.14 - Option : LOU_orc_race.14.a" }
-		
+		trigger = {
+			NOT = {
+				Karma = -33
+			}
+		}
+
 		random_owned_province = {
 			limit = {
 				has_owner_culture = yes
@@ -1044,9 +884,33 @@ country_event = {
 			
 			add_base_production = 1
 		}
+
+		add_country_modifier = {
+			name = orc_religion_fuel_of_industry
+			duration = 1095
+		}
+   	}
+	#Hunt for our meat
+	option = {
+		name = "LOU_orc_race.14.b"
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.14 - Option : LOU_orc_race.14.b" }
+		trigger = {
+			Karma = 33
+		}
+
+		add_years_of_owned_provinces_production_income = {
+			years = 1
+			trigger = {
+				has_owner_culture = yes
+				has_owner_religion = yes
+				controlled_by = ROOT
+				trade_goods = fur
+			}
+			custom_tooltip = LOU_orc_race.14.tt
+		}
 		
 		add_country_modifier = {
-            name = orc_food_bonus
+            name = orc_religion_fuel_of_war
 			duration = 1095
 		}
     }
@@ -1064,7 +928,8 @@ country_event = {
 	trigger = {
         is_orc = yes
 		NOT = {
-			has_country_modifier = orc_send_warg_scouts
+			has_country_modifier = orc_religion_spark_of_war
+			has_country_modifier = orc_religion_tempered_flames
 			has_country_flag = orc_send_scouts
 		}
 		
@@ -1076,16 +941,15 @@ country_event = {
     #Send Out
  	option = {
 		name = "LOU_orc_race.15.a"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.15 - Option : LOU_orc_race.15.a" }
-		
+		  		
 		random_neighbor_country  = {
 			limit = { has_removed_fow = no }
 			remove_fow = 6
 		}
 
 		add_country_modifier = {
-			name = orc_send_warg_scouts
+			name = orc_religion_spark_of_war
 			duration = 3650
 		}
     }
@@ -1093,10 +957,14 @@ country_event = {
 	#Don't Send
  	option = {
 		name = "LOU_orc_race.15.b"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.15 - Option : LOU_orc_race.15.b" }
-
+		  
 		add_mil_power = 50
+
+		add_country_modifier = {
+			name = orc_religion_tempered_flames
+			duration = 3650
+		}
 		set_country_flag = orc_send_scouts
 		
 		hidden_effect = {
@@ -1108,7 +976,7 @@ country_event = {
     }
 }
 
-# Wood Copping
+# Wood Chopping
 country_event = {
 	id = LOU_orc_race.16
 	title = LOU_orc_race.16.t
@@ -1120,8 +988,8 @@ country_event = {
 	trigger = {
         is_orc = yes
 		NOT = {
-			has_country_modifier = orc_wood_to_industry
-			has_country_modifier = orc_wood_to_campfires
+			has_country_modifier = orc_religion_purpose_of_industry
+			has_country_modifier = orc_religion_purpose_of_war
 		}
 		
 		any_owned_province = {
@@ -1135,9 +1003,8 @@ country_event = {
     #Industry
  	option = {
 		name = "LOU_orc_race.16.a"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.16 - Option : LOU_orc_race.16.a" }
-		
+		  		
 		random_owned_province = {
 			limit = {
 				has_owner_culture = yes
@@ -1150,19 +1017,18 @@ country_event = {
 		}
 
 		add_country_modifier = {
-			name = orc_wood_to_industry
+			name = orc_religion_purpose_of_industry
 			duration = 3650
 		}
     }
 	
-	#Campfires
+	#Siege Engines
  	option = {
 		name = "LOU_orc_race.16.b"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.16 - Option : LOU_orc_race.16.b" }
-
+		  
 		add_country_modifier = {
-			name = orc_wood_to_campfires
+			name = orc_religion_purpose_of_war
 			duration = 3650
 		}
     }
@@ -1216,9 +1082,8 @@ country_event = {
     #Men
  	option = {
 		name = "LOU_orc_race.17.a"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.17 - Option : LOU_orc_race.17.a" }
-		
+		  		
 		add_manpower = -3
 		add_mil_power = -25
 		add_prestige = -5
@@ -1239,9 +1104,8 @@ country_event = {
 	#Resouces
  	option = {
 		name = "LOU_orc_race.17.b"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.17 - Option : LOU_orc_race.17.b" }
-		
+		  		
 		add_adm_power = -50
 		add_dip_power = -50
 		add_prestige = -5
@@ -1262,9 +1126,8 @@ country_event = {
 	#Don't
  	option = {
 		name = "LOU_orc_race.17.c"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.17 - Option : LOU_orc_race.17.c" }
-		
+		  		
 		add_adm_power = 25
 		add_dip_power = 25
 		add_mil_power = 25
@@ -1345,9 +1208,8 @@ country_event = {
     #We are stronger than you!
  	option = {
 		name = "LOU_orc_race.18.a"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.18 - Option : LOU_orc_race.18.a" }
-		
+		  		
 		add_country_modifier = {
 			name = orc_offended_nation
 			duration = 3650
@@ -1432,9 +1294,8 @@ country_event = {
     #Kill Him
  	option = {
 		name = "LOU_orc_race.19.a"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.19 - Option : LOU_orc_race.19.a" }
-
+		  
 		kill_advisor = random
 		add_stability = 1
 		set_country_flag = orc_killed_advisor
@@ -1450,9 +1311,8 @@ country_event = {
 	#Keep him
  	option = {
 		name = "LOU_orc_race.19.b"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.19 - Option : LOU_orc_race.19.b" }
-		
+		  		
 		add_stability = -1
 		set_country_flag = orc_kept_advisor
 		
@@ -1491,9 +1351,8 @@ country_event = {
     #Convert Province
  	option = {
 		name = "LOU_orc_race.20.a"
-		  
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.23 - Option : LOU_orc_race.23.a" }
-
+		  
 		random_owned_province = { 
 			limit = {
 				controlled_by = ROOT

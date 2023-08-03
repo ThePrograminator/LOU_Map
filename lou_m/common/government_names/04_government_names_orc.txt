@@ -94,29 +94,85 @@ gov_lotr_nazgul = {
 		2 = NAZGUL
 		3 = NAZGUL
 	}
+	heir_male = {
+		1 = NAZGUL_HEIR
+		2 = NAZGUL_HEIR
+		3 = NAZGUL_HEIR
+	}
+	heir_female = {
+		1 = NAZGUL_HEIR
+		2 = NAZGUL_HEIR
+		3 = NAZGUL_HEIR
+	}
 	
 	trigger = {
 		has_reform = lotr_nazgul_reform
 	}
 }
 
-gov_lotr_isengard = {
+gov_lotr_necromancer = {
 	rank = {
-		1 = ISENGARD
-		2 = ISENGARD
-		3 = ISENGARD
+		1 = NECROMANCER_DOMAIN
+		2 = NECROMANCER_DOMAIN
+		3 = NECROMANCER_DOMAIN
 	}
 
 	ruler_male = {
-		1 = ISENGARD_RULER
-		2 = ISENGARD_RULER
-		3 = ISENGARD_RULER
+		1 = NECROMANCER
+		2 = NECROMANCER
+		3 = NECROMANCER
 	}
 
 	ruler_female = {
-		1 = ISENGARD_RULER
-		2 = ISENGARD_RULER
-		3 = ISENGARD_RULER
+		1 = NECROMANCER
+		2 = NECROMANCER
+		3 = NECROMANCER
+	}
+	heir_male = {
+		1 = NAZGUL
+		2 = NAZGUL
+		3 = NAZGUL
+	}
+	heir_female = {
+		1 = NAZGUL
+		2 = NAZGUL
+		3 = NAZGUL
+	}
+	
+	trigger = {
+		has_reform = lotr_necromancer_reform
+	}
+}
+
+gov_lotr_isengard_evil = {
+	rank = {
+		1 = ISENGARD_EVIL
+		2 = ISENGARD_EVIL
+		3 = ISENGARD_EVIL
+	}
+
+	ruler_male = {
+		1 = ISENGARD_WHITEHAND
+		2 = ISENGARD_WHITEHAND
+		3 = ISENGARD_WHITEHAND
+	}
+
+	ruler_female = {
+		1 = ISENGARD_WHITEHAND
+		2 = ISENGARD_WHITEHAND
+		3 = ISENGARD_WHITEHAND
+	}
+
+	heir_male = {
+		1 = ISENGARD_OVERSEER
+		2 = ISENGARD_OVERSEER
+		3 = ISENGARD_OVERSEER
+	}
+
+	heir_female = {
+		1 = ISENGARD_OVERSEER
+		2 = ISENGARD_OVERSEER
+		3 = ISENGARD_OVERSEER
 	}
 	
 	trigger = {
@@ -142,8 +198,92 @@ gov_lotr_mordor = {
 		2 = MORDOR_RULER
 		3 = MORDOR_RULER
 	}
+
+	heir_male = {
+		1 = MORDOR_COMMANDER
+		2 = MORDOR_COMMANDER
+		3 = MORDOR_COMMANDER
+	}
+
+	heir_female = {
+		1 = MORDOR_COMMANDER
+		2 = MORDOR_COMMANDER
+		3 = MORDOR_COMMANDER
+	}
 	
 	trigger = {
 		has_reform = lotr_mordor_reform
+	}
+}
+
+gov_lotr_carn_dum = {
+	rank = {
+		1 = CARN_DUM
+		2 = CARN_DUM
+		3 = CARN_DUM
+	}
+
+	ruler_male = {
+		1 = CARN_DUM_RULER
+		2 = CARN_DUM_RULER
+		3 = CARN_DUM_RULER
+	}
+
+	ruler_female = {
+		1 = CARN_DUM_RULER
+		2 = CARN_DUM_RULER
+		3 = CARN_DUM_RULER
+	}
+
+	heir_male = {
+		1 = CARN_DUM_COMMANDER
+		2 = CARN_DUM_COMMANDER
+		3 = CARN_DUM_COMMANDER
+	}
+
+	heir_female = {
+		1 = CARN_DUM_COMMANDER
+		2 = CARN_DUM_COMMANDER
+		3 = CARN_DUM_COMMANDER
+	}
+	
+	trigger = {
+		has_reform = lotr_carn_dum_reform
+	}
+}
+
+gov_lotr_angmar = {
+	rank = {
+		1 = ANGMAR
+		2 = ANGMAR
+		3 = ANGMAR
+	}
+
+	ruler_male = {
+		1 = ANGMAR_RULER
+		2 = ANGMAR_RULER
+		3 = ANGMAR_RULER
+	}
+
+	ruler_female = {
+		1 = ANGMAR_RULER
+		2 = ANGMAR_RULER
+		3 = ANGMAR_RULER
+	}
+
+	heir_male = {
+		1 = ANGMAR_COMMANDER
+		2 = ANGMAR_COMMANDER
+		3 = ANGMAR_COMMANDER
+	}
+
+	heir_female = {
+		1 = ANGMAR_COMMANDER
+		2 = ANGMAR_COMMANDER
+		3 = ANGMAR_COMMANDER
+	}
+	
+	trigger = {
+		has_reform = lotr_angmar_reform
 	}
 }

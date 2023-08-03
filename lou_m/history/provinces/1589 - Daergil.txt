@@ -9,35 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 7
-base_production = 5
-base_manpower = 5
-
-add_core = Y80
+base_tax = 1
+base_production = 1
+base_manpower = 1
 owner = Y80
 controller = Y80
-
 culture = culture_noldor
 religion = religion_calaquendi
-
-trade_goods = wine
-
-hre = no
-
-fort_1_elf_building=yes
-
-fort_low_walls_elf_building=yes
-
-moat_elf_building=yes
-
-warriors_gallery_building=yes
-
-temple_elf_building=yes
-
-#Eriador Superregion Discovery
+trade_goods = herbs
+add_core = Y80
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -51,7 +32,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -84,4 +64,8 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
+fort_1_elf_building = yes
+fort_low_walls_elf_building = yes
+moat_elf_building = yes
+warriors_gallery_building = yes
+temple_elf_building = yes

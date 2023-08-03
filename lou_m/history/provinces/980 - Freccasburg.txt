@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 8
+base_tax = 6
+base_production = 5
+base_manpower = 7
 
 add_core = X16
 owner = X16
@@ -27,11 +27,18 @@ trade_goods = iron
 
 hre = no
 
-fortress_1_building=yes
+capital_3_building = yes
 
-outpost_building=yes
+fort_castle_building = yes
 
-fort_pallisade_building=yes
+barracks_building = yes
+
+forge_building = yes
+
+provincial_office_building = yes
+
+marketplace_building = yes
+
 
 2758.1.1 = {
 	add_core = V95

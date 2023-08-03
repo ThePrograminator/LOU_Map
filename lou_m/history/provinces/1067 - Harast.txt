@@ -3,7 +3,7 @@
 # Province RGB : (90, 173, 83)
 # Province Area : Lairiardhon
 # Province Region : Harlindon
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Grey Havens
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y83
 owner = Y83
@@ -27,13 +27,6 @@ trade_goods = naval_supplies
 
 hre = no
 
-fort_1_elf_building=yes
-
-harbour_elf_building=yes
-
-warriors_gallery_building=yes
-
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

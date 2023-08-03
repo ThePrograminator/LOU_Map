@@ -3,16 +3,16 @@
 # Province RGB : (69, 25, 47)
 # Province Area : Gazar Gord
 # Province Region : Logathavuld
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sadvar
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X94
 owner = X94
@@ -21,17 +21,10 @@ controller = X94
 culture = culture_logath
 religion = religion_ulgath
 
-trade_goods = stone
+trade_goods = mushrooms
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-work_camp_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

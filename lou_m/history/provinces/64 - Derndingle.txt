@@ -12,18 +12,23 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 5
-base_manpower = 5
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z93
 owner = Z93
 controller = Z93
 
-culture = culture_ents
-religion = religion_ents
+culture = culture_huorn
+religion = religion_huorn
 
 trade_goods = tropical_wood
+
+add_province_modifier = {
+	name = fangorn_forest
+	duration = -1
+}
 
 hre = no
 

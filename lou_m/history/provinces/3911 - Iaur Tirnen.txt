@@ -3,7 +3,7 @@
 # Province RGB : (97, 25, 40)
 # Province Area : Annon Edhel
 # Province Region : Mirkwood
-# Province Super Region : Rhovanion
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Lake-Town
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 2
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Y67
 owner = Y67
@@ -27,11 +27,11 @@ trade_goods = tropical_wood
 
 hre = no
 
-fort_1_elf_building=yes
+add_permanent_province_modifier = {
+	name = rad_annon
+	duration = -1
+}
 
-warriors_gallery_building=yes
-
-#Rhovanion Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

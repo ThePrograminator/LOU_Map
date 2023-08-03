@@ -101,9 +101,30 @@ lotr_principality_legacy = {
 	allow_convert = no
 
 	modifiers = {
-    	governing_capacity = 100
 		global_tax_modifier = 0.1
 		stability_cost_modifier = -0.2
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+lotr_marcrize_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+
+	modifiers = {
+    	army_tradition = 1
+		defensiveness = 0.25
+		fort_maintenance_modifier = -0.25
 	}
 	
 	ai = {
@@ -163,6 +184,52 @@ empire_of_rhun_legacy = {
 		factor = 5
 	}
 }
+
+dol_amroth_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.1
+		stability_cost_modifier = -0.2
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+umbar_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+
+	modifiers = {
+		governing_capacity = 100
+		global_tax_modifier = 0.1
+		stability_cost_modifier = -0.2
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+
 
 #-----------------------------------------
 # Republic
@@ -563,6 +630,62 @@ arnorien_kingdom_legacy = {
 	}
 }
 
+lotr_isengard_white_council_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	monarchy = yes
+	allow_convert = no
+	heir = yes
+	queen = no
+	royal_marriage = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+    	governing_capacity = 100
+		tolerance_own = 2
+		tolerance_heretic = -2
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+radagast_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	monarchy = yes
+	allow_convert = no
+	heir = yes
+	queen = no
+	royal_marriage = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+    	governing_capacity = 100
+		tolerance_own = 2
+		tolerance_heretic = -2
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
 steppe_horde_legacy = {
 	# government mechanics flags go here
 	icon = "tribal_council"
@@ -719,9 +842,39 @@ lotr_nazgul_legacy = {
 	
 	monarchy = yes
 	allow_convert = no
-	heir = no
+	heir = yes
 	queen = no
 	royal_marriage = no
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+    	governing_capacity = 100
+		tolerance_own = 2
+		tolerance_heretic = -2
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+lotr_necromancer_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	monarchy = yes
+	allow_convert = no
+	heir = yes
+	queen = no
+	royal_marriage = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
 	
 	modifiers = {
     	governing_capacity = 100
@@ -745,9 +898,11 @@ lotr_isengard_legacy = {
 	
 	monarchy = yes
 	allow_convert = no
-	heir = no
+	heir = yes
 	queen = no
 	royal_marriage = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
 	
 	modifiers = {
     	governing_capacity = 100
@@ -771,9 +926,65 @@ lotr_mordor_legacy = {
 	
 	monarchy = yes
 	allow_convert = no
-	heir = no
+	heir = yes
 	queen = no
 	royal_marriage = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+    	governing_capacity = 100
+		tolerance_own = 2
+		tolerance_heretic = -2
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+lotr_carn_dum_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	monarchy = yes
+	allow_convert = no
+	heir = yes
+	queen = no
+	royal_marriage = no
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+    	governing_capacity = 100
+		tolerance_own = 2
+		tolerance_heretic = -2
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+lotr_angmar_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+	monarchy = yes
+	allow_convert = no
+	heir = yes
+	queen = no
+	royal_marriage = no
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
 	
 	modifiers = {
     	governing_capacity = 100
@@ -1052,6 +1263,29 @@ lotr_kingdom_elf_legacy = {
     	governing_capacity = 100
 		global_manpower_modifier = 0.1
 		global_unrest = -1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+lotr_eregion_elf_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	allow_convert = no
+	
+	modifiers = {
+    	max_absolutism = 10
+		discipline = 0.1
+		prestige_decay = -0.1
+		yearly_corruption = -0.1
 	}
 	
 	ai = {

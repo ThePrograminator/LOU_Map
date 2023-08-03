@@ -9,35 +9,16 @@
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 5
-base_production = 5
+base_tax = 4
+base_production = 6
 base_manpower = 5
-
-add_core = Y49
 owner = Y49
 controller = Y49
-
 culture = culture_orkish
 religion = religion_orkish
-
-trade_goods = gold
-
-hre = no
-
-fortress_1_orc_building=yes
-
-blacksmith_orc_building=yes
-
-orc_pit_orc_building=yes
-
-fort_wooden_walls_orc_building=yes
-
-small_arena_building=yes
-
-#Rhovanion Superregion Discovery
+trade_goods = iron
+add_core = Y49
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -87,4 +68,8 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
 discovered_by = lotr_wights_dyria
-
+fortress_1_orc_building = yes
+blacksmith_orc_building = yes
+orc_pit_orc_building = yes
+fort_wooden_walls_orc_building = yes
+small_arena_building = yes

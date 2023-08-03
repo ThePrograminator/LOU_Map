@@ -10,9 +10,9 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 7
-base_production = 9
-base_manpower = 12
+base_tax = 1
+base_production = 1
+base_manpower = 7
 
 culture = culture_wilderness
 religion = religion_wilderness
@@ -20,6 +20,15 @@ religion = religion_wilderness
 trade_goods = iron
 
 hre = no
+
+add_permanent_province_modifier = {
+	name = moroth_road
+	duration = -1
+}
+
+native_size = 100
+native_ferocity = 10
+native_hostileness = 10
 
 2942.1.1 = {
 	is_city = yes

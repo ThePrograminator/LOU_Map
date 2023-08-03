@@ -9,26 +9,17 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
-base_production = 4
-base_manpower = 4
-
-add_core = X16
+base_tax = 2
+base_production = 1
+base_manpower = 3
 owner = X16
 controller = X16
-
-add_core = W98
 culture = culture_eastemnet
 religion = religion_eorlingas
-
-trade_goods = fish
-
-hre = no
-
-#Rohan Superregion Discovery
+trade_goods = livestock
+add_core = X16
+add_core = W98
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -74,4 +65,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

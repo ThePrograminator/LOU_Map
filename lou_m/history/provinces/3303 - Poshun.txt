@@ -3,7 +3,7 @@
 # Province RGB : (101, 41, 41)
 # Province Area : Aegardh
 # Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -12,13 +12,15 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X24
 owner = X24
 controller = X24
+
+add_core = Q26
 
 culture = culture_donaen
 religion = religion_daen
@@ -27,11 +29,11 @@ trade_goods = wool
 
 hre = no
 
-settlement_building=yes
+add_permanent_province_modifier = {
+	name = men_harondor
+	duration = -1
+}
 
-work_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

@@ -18,6 +18,8 @@ historical_friend = V19
 historical_friend = Y44
 historical_friend = Y63
 historical_friend = Y43
+historical_friend = Y52
+historical_friend = ANG
 historical_rival = Y22
 historical_rival = Y68
 historical_rival = Y67
@@ -32,12 +34,13 @@ historical_rival = Z35
 
 2750.1.1 = {
 	monarch = {
-		name = "Lugthak"
-		dynasty = "Gazduf"
-		birth_date = 2705.1.1
-		adm = 2
-		dip = 1
-		mil = 2
+		name = "Azog"
+		dynasty = "of Moria"
+		birth_date = 2730.1.1
+		death_date = 2799.12.31
+		adm = 5
+		dip = 5
+		mil = 6
 	}
 	heir = {
 		monarch_name = "Laghúr"
@@ -45,21 +48,21 @@ historical_rival = Z35
 		dynasty = "Gazduf"
 		birth_date = 2725.1.1
 		death_date = 2767.1.1
-		adm = 5
-		dip = 5
+		adm = 3
+		dip = 2
 		mil = 4
 		claim = 100
 	}
 }
 
-2800.1.1 = {
+2799.12.31 = {
 	monarch = {
 		name = "Muzlug"
 		dynasty = "Gazduf"
 		birth_date = 2724.1.1
-		adm = 0
-		dip = 0
-		mil = 0
+		adm = 3
+		dip = 2
+		mil = 4
 	}
 	heir = {
 		monarch_name = "Naglur"
@@ -68,7 +71,7 @@ historical_rival = Z35
 		birth_date = 2773.1.1
 		death_date = 2850.1.1
 		adm = 3
-		dip = 0
+		dip = 1
 		mil = 5
 		claim = 100
 	}

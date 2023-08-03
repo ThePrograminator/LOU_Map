@@ -3,7 +3,7 @@
 # Province RGB : (186, 19, 173)
 # Province Area : Elanthia
 # Province Region : Heb Aaraan
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ulk Jey Ama
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 5
-base_production = 5
-base_manpower = 5
+base_tax = 2
+base_production = 3
+base_manpower = 1
 
 add_core = Y75
 owner = Y75
@@ -23,13 +23,8 @@ controller = Y75
 culture = culture_silvan
 religion = religion_umanyar
 
-trade_goods = herbs
+trade_goods = honey
 
-hre = no
-
-noble_residence_elf_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

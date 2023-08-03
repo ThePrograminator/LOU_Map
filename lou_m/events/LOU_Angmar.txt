@@ -1,0 +1,78 @@
+#Angmar Events
+namespace = LOU_Angmar
+
+country_event = {
+	id = LOU_Angmar.1
+	title = "LOU_Angmar.1.t"
+	desc = "LOU_Angmar.1.d"
+	picture = FAMINE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ANG
+		has_global_flag = witch_king_heads_north
+		NOT = {
+			has_global_flag = witch_king_angmar_announcement
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "LOU_Angmar.1.a"
+
+		define_ruler = {
+			name = "Witch-King"
+			dynasty = "of Angmar"
+			male = yes
+			adm = 5
+			dip = 3
+			mil = 6
+			age = 20
+			claim = 100
+			culture = culture_wight
+		}
+
+		add_ruler_personality = immortal_personality
+		set_ruler_flag = set_immortality
+
+		define_ruler_to_general = {
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 5
+		}
+		
+		add_stability = 1
+
+		hidden_effect = {
+
+			set_global_flag = witch_king_angmar_announcement
+
+			V18 = {
+				kill_ruler = yes
+				set_global_flag = witch_king_angmar_flag
+				define_ruler = {
+					name = "Jí Indûr"
+					dynasty = "Dawndeath"
+					male = yes
+					adm = 4
+					dip = 3
+					mil = 6
+					age = 20
+					claim = 100
+					culture = culture_wight
+				}
+			}
+
+			V18 = {
+				add_ruler_personality = immortal_personality
+				set_ruler_flag = set_immortality
+			}			
+		}
+	}
+}

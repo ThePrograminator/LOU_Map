@@ -9,25 +9,21 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 3
+base_tax = 1
 base_production = 3
-base_manpower = 4
-
-add_core = X53
+base_manpower = 2
 owner = X53
 controller = X53
-
 culture = culture_bellakaze
 religion = religion_sea_peoples
-
 trade_goods = fish
 
-hre = no
-
-#Haradwaith Superregion Discovery
+add_permanent_province_modifier = {
+	name = hyarmentie
+	duration = -1
+}
+add_core = X53
 discovered_by = lotr_human
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -58,4 +54,3 @@ discovered_by = lotr_orc_gondor
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_orc_rhun
 discovered_by = lotr_wights_ered_harmal
-

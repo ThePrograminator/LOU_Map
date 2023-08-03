@@ -3,7 +3,7 @@
 # Province RGB : (91, 90, 19)
 # Province Area : Gazar Ibar
 # Province Region : Logathavuld
-# Province Super Region : Rhûn
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Sadvar
 # Province Climate : Normal_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 2
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X95
 owner = X95
@@ -23,17 +23,10 @@ controller = X95
 culture = culture_logath
 religion = religion_ulgath
 
-trade_goods = cloth
+trade_goods = herbs
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
-
-work_camp_building=yes
-
-#Rhun Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_urd

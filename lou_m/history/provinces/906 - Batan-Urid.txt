@@ -3,7 +3,7 @@
 # Province RGB : (28, 205, 217)
 # Province Area : An-Adûn
 # Province Region : Thâni-Hazâd
-# Province Super Region : Far Harad
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Zadan an-Adûn
 # Province Climate : Arid
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 7
-base_production = 8
-base_manpower = 7
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X39
 owner = X39
@@ -23,21 +23,8 @@ controller = X39
 culture = culture_anbalukkhorian
 religion = religion_black_numenorean
 
-trade_goods = iron
+trade_goods = copper
 
-hre = no
-
-city_2_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-warehouse_building=yes
-
-army_camp_building=yes
-
-#Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt

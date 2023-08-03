@@ -40,7 +40,7 @@ country_event = {
 			spawn_mordor_province_setup_effect = yes
 			spawn_mordor_vassal_effect = {VASSAL = V18}
 			spawn_mordor_vassal_effect = {VASSAL = V19}
-			spawn_mordor_vassal_effect = {VASSAL = V20}
+			#spawn_mordor_vassal_effect = {VASSAL = V20}
 			spawn_mordor_vassal_effect = {VASSAL = ROOT}
 
 			spawn_morder_transfer_tech = yes
@@ -61,20 +61,20 @@ country_event = {
 		}
 		set_global_flag = mordor_spawned
 
-		hidden_effect = {
-			every_province = {
-				limit = {
-					owned_by = ROOT
-					NOT = {
-						is_in_capital_area = yes
-					}
-				}
+		# hidden_effect = {
+		# 	every_province = {
+		# 		limit = {
+		# 			owned_by = ROOT
+		# 			NOT = {
+		# 				is_in_capital_area = yes
+		# 			}
+		# 		}
 				
-				remove_core = ROOT
-				add_core = V17
-				cede_province = V17
-			}
-		}
+		# 		remove_core = ROOT
+		# 		add_core = V17
+		# 		cede_province = V17
+		# 	}
+		# }
 	}
 	
 	#No
@@ -138,9 +138,21 @@ country_event = {
 			}
 			swap_free_idea_group = yes
 			switch_tag = V17
-			
+			set_capital = 639
+			mordor_region = {
+				remove_core = V18
+				add_core = V17
+				cede_province = V17
+			}
 			#custom_tooltip = dol_guldur_switch_nation_meta
 		}
+
+		# if = {
+		# 	limit = {
+		# 		exists = V98
+		# 	}
+		# 	create_march = V98
+		# }
 
 		hidden_effect = {
 			#country_event = {
@@ -179,7 +191,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 6
 	}
 	
 	#Yes Player
@@ -205,20 +217,20 @@ country_event = {
 
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_servant_of_mordor.3 - Option : LOU_servant_of_mordor.3.b" }
 		
-		hidden_effect = {
-			every_province = {
-				limit = {
-					owned_by = ROOT
-					NOT = {
-						is_in_capital_area = yes
-					}
-				}
+		# hidden_effect = {
+		# 	every_province = {
+		# 		limit = {
+		# 			owned_by = ROOT
+		# 			NOT = {
+		# 				is_in_capital_area = yes
+		# 			}
+		# 		}
 				
-				remove_core = ROOT
-				add_core = V17
-				cede_province = V17
-			}
-		}
+		# 		remove_core = ROOT
+		# 		add_core = V17
+		# 		cede_province = V17
+		# 	}
+		# }
 		spawn_mordor_vassal_effect = {VASSAL = ROOT}
 		set_country_flag = servant_of_mordor_join
 	}

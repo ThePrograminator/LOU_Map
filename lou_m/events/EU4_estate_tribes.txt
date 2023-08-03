@@ -696,28 +696,7 @@ country_event = {
 	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
-		has_estate = estate_tribes
-		has_regency = no
-		has_government_attribute = heir
-		estate_influence = {
-			estate = estate_tribes
-			influence = 70
-		}
-		NOT = {
-			has_estate_influence_modifier = {
-				modifier = EST_VAL_KINGMAKERS
-				estate = estate_tribes
-			}
-		}
-		NOT = {
-			has_estate_influence_modifier = {
-				modifier = EST_VAL_REFUSED_TO_ALTER_SUCCESSION
-				estate = estate_tribes
-			}
-		}
-		NOT = {
-			is_bad_race = yes
-		}
+		always = no
 	}
 	
 	is_triggered_only = yes
@@ -733,44 +712,17 @@ country_event = {
 		}
 		if = {
 			limit = { has_heir = yes }
-			kill_heir = yes
+			kill_heir = { allow_new_heir = no }
 		}
 		define_heir = {
 			dynasty = ROOT
 			claim = 15
 			age = 45
 		}
-		add_estate_influence_modifier = {
-			desc = EST_VAL_KINGMAKERS
-			estate = estate_tribes
-			influence = 10
-			duration = 3650
-		}
 	}
 	option = {
 		name = tribal_estate_events.11.b
-		ai_chance = {
-			factor = 99
-			modifier = {
-				factor = 0.01
-				NOT = {
-					estate_loyalty = {
-						estate = estate_tribes
-						loyalty = 45
-					}
-				}
-			}
-		}
-		add_estate_loyalty = {
-			estate = estate_tribes
-			loyalty = -20
-		}
-		add_estate_influence_modifier = {
-			desc = EST_VAL_REFUSED_TO_ALTER_SUCCESSION
-			estate = estate_tribes
-			influence = -10
-			duration = 3650
-		}
+
 	}
 }
 

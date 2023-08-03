@@ -1,0 +1,95 @@
+namespace = LOU_dragons
+
+# "Dragons Roam The Skies"
+province_event = {
+	id = LOU_dragons.1
+	title = "LOU_dragons.1.t"
+	desc = "LOU_dragons.1.d"
+	picture = COMET_SIGHTED_eventPicture
+
+	trigger = {
+        NOT = { has_province_modifier = province_dragon_debuff }
+        # Province
+        OR = {
+            culture = culture_dragons
+            religion = religion_dragons
+        }
+        # Owner
+        NOT = {
+            owner = {
+                primary_culture = culture_dragons
+                religion = religion_dragons
+            }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_dragons.1.a"
+
+		add_province_modifier = {
+			name = "province_dragon_debuff"
+			duration = -1
+		}
+	}
+}
+
+# "Dragons Destroyed"
+province_event = {
+	id = LOU_dragons.2
+	title = "LOU_dragons.2.t"
+	desc = "LOU_dragons.2.d"
+	picture = COMET_SIGHTED_eventPicture
+
+	trigger = {
+        has_province_modifier = province_dragon_debuff
+        AND = {
+            NOT = { culture = culture_dragons }
+            NOT = { religion = religion_dragons }
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = "LOU_dragons.2.a"
+
+		add_manpower = -3
+		add_treasury = 250
+
+		remove_province_modifier = province_dragon_debuff
+	}
+}
+
+# "Dragons Expelled" - Is Dragon
+province_event = {
+	id = LOU_dragons.3
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+    
+	trigger = {
+        has_province_modifier = province_dragon_debuff
+        owner = {
+            primary_culture = culture_dragons
+            religion = religion_dragons
+        }
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+        name = "LOU_dragons.3.a"
+        
+		remove_province_modifier = province_dragon_debuff
+	}
+}

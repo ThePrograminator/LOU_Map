@@ -3,54 +3,32 @@
 # Province RGB : (220, 12, 45)
 # Province Area : Lebenninivet
 # Province Region : Lebennin
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Linhir
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
-base_tax = 2
-base_production = 3
-base_manpower = 4
-
-add_core = X01
+base_tax = 5
+base_production = 4
+base_manpower = 6
 owner = X01
 controller = X01
-
-add_core = X08
 culture = culture_dunedain_of_lebennin
 religion = religion_dunedain
-
-trade_goods = wine
-
-hre = no
-
-city_1_building=yes
-
-marketplace_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-outpost_building=yes
-
-dock_building=yes
-
+trade_goods = carracks
 center_of_trade = 1
-
 2758.9.15 = {
 	controller = X27
+	add_devastation = 75
 }
-
 2759.8.20 = {
 	controller = X01
+	add_devastation = -75
 }
-
-#Gondor Superregion Discovery
+add_core = X01
+add_core = X08
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -99,4 +77,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

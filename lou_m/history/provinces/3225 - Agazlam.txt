@@ -10,28 +10,36 @@
 # Province is not Sea/Lake Province
 # Province Contents : 
 
-base_tax = 4
+base_tax = 3
 base_production = 4
-base_manpower = 8
+base_manpower = 5
 
 add_core = V18
 owner = V18
 controller = V18
 
-culture = culture_orkish
+culture = culture_olog_hai
 religion = religion_orkish
 
-trade_goods = silver
+trade_goods = copper
 
 hre = no
+
+fortress_1_orc_building=yes
+
+fort_pallisade_orc_building=yes
+
+
+
+
+
 
 2942.1.1 = {
 	is_city = yes
 	add_core = V17
 	owner = V17
 	controller = V17
-	fortress_1_orc_building=yes
-	fort_pallisade_orc_building=yes
+	fortress_2_orc_building=yes
 }
 
 2953.7.1 = {

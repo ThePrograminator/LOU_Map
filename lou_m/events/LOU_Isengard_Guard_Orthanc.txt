@@ -1,0 +1,52 @@
+#Guard of Orthanc Heir for Isengard"
+namespace = LOU_Isengard_Guard_Orthanc
+
+country_event = {
+	id = LOU_Isengard_Guard_Orthanc.1
+	title = "LOU_Isengard_Guard_Orthanc.1.t"
+	desc = "LOU_Isengard_Guard_Orthanc.1.d"
+	picture = DAEN_event
+	
+	trigger = {
+		OR = {
+			tag = W53
+			tag = V49
+		}
+		NOT = {
+			heir_culture = culture_dunlendings
+			heir_mil = 6
+			heir_claim = 50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "LOU_Isengard_Guard_Orthanc.1.a"
+
+		add_stability = 1
+
+		define_heir = {
+			dynasty = "of Dunland"
+			male = yes
+			age = 30
+			max_random_adm = 4
+			max_random_dip = 4
+			mil = 6
+			claim = 100
+			culture = culture_dunlendings
+		}
+
+		add_heir_personality = inspiring_leader_personality
+
+		define_heir_to_general = {
+			fire = 3
+			shock = 5
+			manuever = 4
+			siege = 2
+		}
+	}
+}
+	

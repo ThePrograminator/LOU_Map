@@ -3,7 +3,7 @@
 # Province RGB : (157, 205, 65)
 # Province Area : Emyn Arnen
 # Province Region : Ithilien
-# Province Super Region : Gondor
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Minas Tirith
 # Province Climate : null
@@ -12,25 +12,26 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X01
 owner = X01
 controller = X01
 
 add_core = X06
-culture = culture_dunedain_of_ithilien
-religion = religion_dunedain
+culture = culture_wilderness
+religion = religion_wilderness
 
-trade_goods = marble
+trade_goods = stone
 
 hre = no
 
-settlement_building=yes
-
-outpost_building=yes
+add_province_modifier = {
+	name = wilderness_debuff
+	duration = -1
+}
 
 2954.1.1 = {
 	culture = culture_wilderness
@@ -45,7 +46,6 @@ outpost_building=yes
 	controller = V17
 }
 
-#Gondor Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

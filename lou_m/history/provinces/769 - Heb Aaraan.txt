@@ -3,7 +3,7 @@
 # Province RGB : (64, 204, 168)
 # Province Area : Heb Aaraan
 # Province Region : Heb Aaraan
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Ulk Jey Ama
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X71
 owner = X71
@@ -23,15 +23,8 @@ controller = X71
 culture = culture_chyan_hill-men
 religion = religion_chyans
 
-trade_goods = livestock
+trade_goods = great_beasts
 
-hre = no
-
-settlement_building=yes
-
-outpost_building=yes
-
-#Palisor Superregion Discovery
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

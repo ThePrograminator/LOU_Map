@@ -3,7 +3,7 @@
 # Province RGB : (53, 45, 80)
 # Province Area : Forethir
 # Province Region : Harondor
-# Province Super Region : Near Harad
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : null
 # Province Climate : null
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 6
-base_manpower = 3
+base_tax = 3
+base_production = 5
+base_manpower = 1
 
 add_core = X25
 owner = X25
@@ -23,17 +23,13 @@ controller = X25
 culture = culture_sakalai
 religion = religion_haruzani
 
-trade_goods = glass
+trade_goods = wine
 
-hre = no
+add_permanent_province_modifier = {
+	name = men_harondor
+	duration = -1
+}
 
-settlement_building=yes
-
-temple_building=yes
-
-work_camp_building=yes
-
-#Near Harad Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal

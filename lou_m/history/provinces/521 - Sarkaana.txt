@@ -9,39 +9,18 @@
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 6
-base_production = 5
-base_manpower = 7
-
-add_core = X33
+base_production = 7
+base_manpower = 5
 owner = X33
 controller = X33
-
 culture = culture_jelut_nomads
 religion = religion_haruzani
-
-trade_goods = ivory
-
-hre = no
-
-capital_2_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-forge_building=yes
-
-fort_castle_building=yes
-
-army_camp_building=yes
-
+trade_goods = slaves
 center_of_trade = 1
-
 #Near Harad Superregion Discovery
+add_core = X33
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_ered_harmal
@@ -107,4 +86,9 @@ discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights
 discovered_by = lotr_wights_ered_harmal
-
+capital_2_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+forge_building = yes
+fort_castle_building = yes
+army_camp_building = yes

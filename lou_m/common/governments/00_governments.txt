@@ -9,6 +9,7 @@ monarchy = {
 				feudalism_reform
 				autocracy_reform
 				principality_reform
+				marcrize_reform
 				stewardship_reform
 				easterling_clan_reform
 				gondor_kingship_reform
@@ -16,6 +17,10 @@ monarchy = {
                 empire_of_rhun_reform
                 dunland_kingdom_reform
                 arnorien_kingdom_reform
+                isengard_white_council_reform
+                radagast_reform
+                dol_amroth_reform
+                umbar_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -118,16 +123,25 @@ monarchy = {
 		lotr_kingship_legacy
 		lotr_stewardship_legacy
 		lotr_principality_legacy
+		lotr_marcrize_legacy
 		lotr_easterling_clan_legacy
 		gondor_kingship_legacy
         empire_of_rhun_legacy
         dunland_kingdom_legacy
         arnorien_kingdom_legacy
+        isengard_white_council_legacy
+        radagast_legacy
+        dol_amroth_legacy
+        umbar_legacy
 	}
 	
 	exclusive_reforms = {
 		stewardship_reform
-		gondor_kingship_reform
+		gondor_kingship_reform        
+        isengard_white_council_reform
+        radagast_reform
+        dol_amroth_reform
+        umbar_reform
 	}
 }
 
@@ -390,6 +404,9 @@ orc_gov = {
                 lotr_nazgul_reform
                 lotr_isengard_reform
                 lotr_mordor_reform
+                lotr_necromancer_reform
+                lotr_carn_dum_reform
+                lotr_angmar_reform
 			}
 		}
 		orc_tribe_decision = {
@@ -423,6 +440,9 @@ orc_gov = {
 		lotr_nazgul_legacy
 		lotr_isengard_legacy
 		lotr_mordor_legacy
+        lotr_necromancer_legacy
+        lotr_carn_dum_legacy        
+        lotr_angmar_legacy
     }
 	
 	exclusive_reforms = {
@@ -430,6 +450,9 @@ orc_gov = {
 		lotr_nazgul_reform
 		lotr_isengard_reform
 		lotr_mordor_reform
+        lotr_necromancer_reform
+        lotr_carn_dum_reform
+        lotr_angmar_reform
 	}
 }
 
@@ -522,6 +545,7 @@ elf_gov = {
                 lordship_elf_reform
 				kingdom_elf_reform
 				principality_elf_reform
+				eregion_elf_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -585,6 +609,7 @@ elf_gov = {
         lotr_lordship_elf_legacy
 		lotr_kingdom_elf_legacy
 		lotr_principality_elf_legacy
+        lotr_eregion_elf_legacy
     }
 }
 

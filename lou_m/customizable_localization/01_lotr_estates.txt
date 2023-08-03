@@ -33,6 +33,14 @@ defined_text = {
 		trigger = {
             has_estate = estate_stewards
 		}
+	}    
+
+	text = {
+		localisation_key = estate_stewards_orc
+		trigger = {
+			is_orc = yes
+            has_estate = estate_stewards
+		}
 	}
 }
 
@@ -69,6 +77,14 @@ defined_text = {
     text = {
 		localisation_key = estate_merchants
 		trigger = {
+			has_estate = estate_merchants
+		}
+	}  
+
+    text = {
+		localisation_key = estate_merchants_orc
+		trigger = {
+			is_orc = yes
 			has_estate = estate_merchants
 		}
 	}
@@ -110,6 +126,14 @@ defined_text = {
 			has_estate = estate_nobles
 		}
 	}
+    
+    text = {
+		localisation_key = estate_nobles_orc
+		trigger = {
+			is_orc = yes
+			has_estate = estate_nobles
+		}
+	}
 }
 
 defined_text = {
@@ -145,6 +169,14 @@ defined_text = {
     text = {
 		localisation_key = estate_commoners
 		trigger = {
+			has_estate = estate_commoners
+		}
+	}
+    
+    text = {
+		localisation_key = estate_commoners_orc
+		trigger = {
+			is_orc = yes
 			has_estate = estate_commoners
 		}
 	}

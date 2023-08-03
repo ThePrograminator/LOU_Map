@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = X66
 owner = X66
@@ -23,15 +23,10 @@ controller = X66
 culture = culture_harani
 religion = religion_sirani
 
-trade_goods = salt
+trade_goods = grain
 
 hre = no
 
-settlement_building=yes
-
-work_camp_building=yes
-
-#Sirayn Superregion Discovery
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal

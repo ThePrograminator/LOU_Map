@@ -3,7 +3,7 @@
 # Province RGB : (10, 32, 62)
 # Province Area : Tharbad
 # Province Region : Cardolan
-# Province Super Region : Eriador
+# Province Super Region : null
 # Province Continent : Middle Earth
 # Province Tradenode : Tharbad
 # Province Climate : Mild_winter
@@ -12,9 +12,9 @@
 
 is_city = yes
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 add_core = Z21
 owner = Z21
@@ -27,11 +27,10 @@ trade_goods = wool
 
 hre = no
 
-fortress_1_building=yes
-
-outpost_building=yes
-
-work_camp_building=yes
+add_permanent_province_modifier = {
+	name = north_road
+	duration = -1
+}
 
 2912.9.10 = {
 	add_core = Z17
@@ -39,7 +38,6 @@ work_camp_building=yes
 	controller = Z17
 }
 
-#Eriador Superregion Discovery
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

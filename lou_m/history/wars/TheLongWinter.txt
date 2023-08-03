@@ -5,44 +5,38 @@ war_goal = {
 	province = 114 # Edoras
 }
 
+2758.9.14 = {
+	add_attacker = X01						#Gondor addition for no-join-ally Truce
+}
+
 2758.9.15 = {
+	rem_attacker = X01						#Gondor removal for no-join-ally Truce
 	add_attacker = V95
 	add_attacker = X99
-	add_attacker = X90
+	add_attacker = X90						#Odhriags
 	add_attacker = Z48
 	add_attacker = V09
-	add_attacker = V08
+	#add_attacker = V08						#Arilthach Clan removal for balance
 	add_attacker = Z47
 	add_attacker = Z50
-	add_attacker = V48
-	add_attacker = X27
 	add_attacker = X43
-	add_attacker = V14
 	add_defender = X16
-	add_defender = X01
-	add_defender = X11
-	add_defender = X02
 	add_defender = V30
+	add_defender = Y95						#Brown Lands
 }
 
 # Helm Hammerhand dies, but his nephew Fréalaf drives out the dunlendings
 2759.8.20 = {
 	rem_attacker = V95
 	rem_attacker = X99
-	rem_attacker = X90
+	rem_attacker = X90						#Odhriags
 	rem_attacker = Z48
 	rem_attacker = V09
-	rem_attacker = V08
+	#rem_attacker = V08						#Arilthach Clan removal for balance
 	rem_attacker = Z47
 	rem_attacker = Z50
-	rem_attacker = V48
-	rem_attacker = X27
 	rem_attacker = X43
-	rem_attacker = V14
 	rem_defender = X16
-	rem_defender = X01
-	rem_defender = X11
-	rem_defender = X02
-	rem_defender = V30
-	
+	rem_defender = V30	
+	rem_defender = Y95						#Brown Lands
 }
