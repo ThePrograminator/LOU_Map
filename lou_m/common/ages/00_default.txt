@@ -24,7 +24,7 @@ third_age = {
 	objectives = {
 		obj_third_age_prestigious_capital = {
             capital_scope = {
-                development = 60
+                development = 30
                 religion = ROOT
                 culture = ROOT
                 NOT = { devastation = 1 }
@@ -53,7 +53,7 @@ third_age = {
         }
         obj_third_age_realm_of_virtues = {
             prestige = 95
-            NOT = { corruption = 0 }
+            NOT = { corruption = 1 }
             OR = {
                 legitimacy = 95
                 horde_unity = 95
@@ -63,7 +63,7 @@ third_age = {
             }
         }
         obj_third_age_well_connected = {
-            num_of_allies = 5
+            num_of_allies = 4
         }
 	}		
 
