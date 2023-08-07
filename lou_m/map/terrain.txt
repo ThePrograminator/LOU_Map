@@ -1287,12 +1287,22 @@ categories =  {
 		color = { 13 189 130 }
 		type = marsh
 		sound_type = forest
-		
-		movement_cost = 5.00
-		defence = 1.5
-		local_development_cost = 10.0
+
 		nation_designer_cost_multiplier = 0.85
+
+		defence = 1
 		supply_limit = 0
+		movement_cost = 5.00
+		
+		local_development_cost = 10.0
+		local_build_cost = 1000
+		local_build_time = 1000
+		local_tax_modifier = -100
+		local_production_efficiency = -100
+		province_trade_power_modifier = -100
+		allowed_num_of_buildings = -5
+		local_warscore_cost_modifier = -0.9
+		local_governing_cost = -1.0
 		
 		terrain_override = {
 			45 3032 574 3222 1936 1938
