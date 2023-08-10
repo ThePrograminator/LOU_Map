@@ -230,10 +230,6 @@ theocracy_gov_ideas = {
 	ai_will_do = {
 		factor = 3.75
 		modifier = {
-			factor = 0
-			has_idea_group = humanist_ideas
-		}
-		modifier = {
 			factor = 1.25
 			any_neighbor_country = { 
 				NOT = { religion = ROOT }
@@ -370,50 +366,6 @@ innovativeness_ideas = {
 	}
 }
 
-
-# religious_ideas = {
-# 	category = ADM
-
-# 	bonus = {
-# 		monarch_lifespan = 0.25
-# 	}
-
-# 	missionary_schools = {
-# 		missionaries = 1
-# 	}
-# 	church_attendance_duty = {
-# 		stability_cost_modifier = -0.25
-# 	}
-# 	divine_supremacy = {
-# 		global_missionary_strength = 0.03
-# 	}
-# 	devoutness = {
-# 		tolerance_own = 2
-# 		papal_influence = 2
-# 		devotion = 0.5
-# 		monthly_fervor_increase = 0.25
-# 		church_power_modifier = 0.1
-# 	}
-# 	religious_tradition = {
-# 		prestige = 1
-# 	}
-# 	inquisition = {
-# 		missionary_maintenance_cost = -0.5
-# 	}
-# 	deus_vult = {
-# 		cb_on_religious_enemies = yes
-# 	}
-
-# 	ai_will_do = {
-# 		factor = 0.9
-# 		modifier = {
-# 			factor = 0
-# 			has_idea_group = humanist_ideas
-# 		}
-# 	}
-# }
-
-
 shadow_of_melkor_ideas = {
 	category = ADM
 
@@ -460,7 +412,6 @@ shadow_of_melkor_ideas = {
 		}
 	}
 }
-
 
 light_of_eru_ideas = {
 	category = ADM
@@ -510,7 +461,6 @@ light_of_eru_ideas = {
 	}
 }
 
-
 spy_ideas = {
 	category = DIP
 
@@ -545,7 +495,7 @@ spy_ideas = {
 	
 	privateers = {
 		capture_ship_chance = 0.25
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.33
 	}
 	
 	blackmailing = {
@@ -569,7 +519,6 @@ spy_ideas = {
 		}
 	}
 }
-
 
 diplomatic_ideas = {
 	category = DIP
@@ -617,7 +566,6 @@ diplomatic_ideas = {
 		}
 	}
 }
-
 
 offensive_ideas = {
 	category = MIL
@@ -697,7 +645,6 @@ offensive_ideas = {
 	}
 }
 
-
 defensive_ideas = {
 	category = MIL
 
@@ -774,73 +721,6 @@ defensive_ideas = {
 	}
 }
 
-
-# trade_ideas = {
-# 	category = DIP
-
-# 	bonus = {
-# 		merchants = 1
-# 		merchants_loyalty_modifier = 0.1
-# 	}
-
-# 	shrewd_commerce_practise = {
-#  		global_trade_power = 0.2
-#   	}
-#   	free_trade = {
-#   		merchants = 1
-#   	}
-# 	merchant_adventures = {
-# 		trade_range_modifier = 0.25
-# 	}
-# 	national_trade_policy = {
-# 		trade_efficiency = 0.1
-# 		mercantilism_cost = -0.25
-# 	}
-# 	overseas_merchants = {
-# 		placed_merchant_power = 15
-# 	}
-# 	trade_manipulation = {
-# 		trade_steering = 0.25
-# 	}
-# 	fast_negotiations = {
-# 		caravan_power = 0.25
-# 	}
-
-# 	ai_will_do = {
-# 		factor = 0.4
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { num_of_cities = 6 }
-# 			NOT = { has_government_attribute = is_merchant_republic }
-# 		}
-# 		modifier = {
-# 			factor = 2
-# 			has_government_attribute = is_merchant_republic
-# 		}
-# 		modifier = {
-# 			factor = 1.25
-# 			personality = ai_capitalist 
-# 			trade_income_percentage = 0.35
-# 		}
-# 		modifier = {
-# 			factor = 1.25
-# 			home_trade_node = {
-# 				trade_share = {
-# 					country = ROOT 
-# 					share = 0.4
-# 				}
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.25
-# 			OR = {
-# 				has_idea_group = infrastructure_ideas
-# 				has_idea_group = economic_ideas
-# 			}
-# 		}
-# 	}
-# }
-
 economic_ideas = {
 	category = ADM
 
@@ -915,101 +795,6 @@ economic_ideas = {
 		}
 	}
 }
-
-# maritime_ideas = {											REPLACED BY NEW VERSION/CONCEPT
-# 	category = DIP
-
-# 	trigger = {
-# 		primitives = no
-# 	}
-
-# 	bonus = {
-# 		sea_repair = yes
-# 		movement_speed_in_fleet_modifier = 1 
-# 	}
-
-# 	merchant_traditions = {
-# 		naval_tradition_from_trade = 1.0
-# 		trade_range_modifier = 0.25
-# 	}
-# 	merchant_marine = {
-# 		global_sailors_modifier = 0.5
-# 		allowed_marine_fraction = 0.25
-# 	}
-# 	sheltered_ports = {
-# 		global_ship_repair = 0.1
-# 		sailor_maintenance_modifer = -0.1
-# 	}
-# 	grand_navy = {
-# 		naval_forcelimit_modifier = 0.5
-# 		ship_power_propagation = 0.25
-# 	}
-# 	ships_penny = {
-# 		global_ship_cost = -0.1
-# 	}
-# 	sea_hawks = {
-# 		global_naval_engagement_modifier = 0.1
-# 		admiral_cost = -0.25
-# 	}
-# 	naval_fighting_instruction = {
-# 		blockade_efficiency = 0.5
-# 		privateer_efficiency = 0.25
-# 	}
-
-# 	ai_will_do = {
-# 		factor = 0.55
-# 		modifier = {
-# 			factor = 0
-# 			is_tribal = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			primitives = yes
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { num_of_ports = 1 }
-# 		}
-# 		modifier = {
-# 			factor = 0.25
-# 			NOT = { num_of_ports = 10 }
-# 		}
-# 		modifier = {
-# 			factor = 0.25
-# 			NOT = { num_of_ports = 20 }
-# 		}
-# 		modifier = {
-# 			factor = 0.25
-# 			NOT = { num_of_ports = 30 }
-# 		}
-# 		modifier = {
-# 			factor = 0.25
-# 			NOT = { num_of_ports = 40 }
-# 		}
-# 		modifier = {
-# 			factor = 0.35
-# 			NOT = { num_of_ports = 15 }
-# 		}
-# 		modifier = {
-# 			factor = 1.5 
-# 			capital_scope = {
-# 				is_island = yes 
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.5
-# 			has_global_modifier_value = {
-# 				which = naval_forcelimit_modifier 
-# 				value = 0.25
-# 			}
-# 		}
-# 		modifier = {
-# 			factor = 1.15
-# 			light_ship_fraction = 0.25
-# 		}
-# 	}
-# }
-
 
 quality_ideas = {
 	category = MIL
@@ -1240,45 +1025,6 @@ administrative_ideas = {
 		}
 	}
 }
-
-# humanist_ideas = {
-# 	category = ADM
-
-# 	trigger = {
-# 		is_free_peoples_opinion = yes
-# 	}
-
-# 	bonus = {
-# 		idea_cost = -0.1
-# 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-# 	}
-
-# 	tolerance_idea = {
-# 		religious_unity = 0.25
-# 	}
-# 	local_traditions = {
-# 		global_unrest = -2
-# 	}
-# 	ecumenism = {
-# 		tolerance_heretic = 2
-# 	}
-# 	indirect_rule = {
-# 		years_of_nationalism = -10
-# 	}
-# 	cultural_ties = {
-# 		num_accepted_cultures = 2
-# 	}
-# 	benevolence = {
-# 		improve_relation_modifier = 0.3
-# 	}
-# 	humanist_tolerance = {
-# 		tolerance_heathen = 2
-# 	}
-
-# 	ai_will_do = {
-# 		factor = 50
-# 	}
-# }
 
 fellowship_ideas = {
 	category = ADM
@@ -1645,7 +1391,7 @@ mercenary_ideas = {
 	}
 	war_council = {
 		mil_advisor_cost = -0.25
-		merc_independent_from_trade_range = yes
+		allow_mercenaries_to_split = yes
 	}
 	expanded_contracts = {
 		merc_maintenance_modifier = -0.25
@@ -1905,14 +1651,14 @@ mercantilism_ideas = {
 	}
 
 	bonus = {
-		merchants = 1
+		ae_impact = -0.10
 	}
 
 	mercantilism_ideas_1 = {
 		global_own_trade_power = 0.1
 	}
 	mercantilism_ideas_2 = {
-		merchants = 1
+		center_of_trade_upgrade_cost = -0.15
 	}
 	mercantilism_ideas_3 = {
 		mercantilism_cost = -0.25
@@ -1955,14 +1701,15 @@ global_market_ideas = {
 	}
 
 	bonus = {
-		merchants = 1
+		merc_independent_from_trade_range = yes
+		merc_maintenance_modifier = -0.10
 	}
 
 	global_market_ideas_1 = {
 		global_foreign_trade_power = 0.15
 	}
 	global_market_ideas_2 = {
-		merchants = 1
+		reduced_trade_penalty_on_non_main_tradenode = 0.25
 	}
 	global_market_ideas_3 = {
 		trade_range_modifier = 0.25
@@ -1971,14 +1718,15 @@ global_market_ideas = {
 		trade_efficiency = 0.1
 		trade_steering = 0.25
 	}
-	global_market_ideas_5 = {
-		placed_merchant_power_modifier = 0.25
-	}
 	global_market_ideas_6 = {
 		global_trade_power = 0.10
 	}
+	global_market_ideas_5 = {
+		transfer_trade_power_reasons = 5
+	}
 	global_market_ideas_7 = {
-		global_trade_goods_size_modifier = 0.1
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
 	}
 
 	ai_will_do = {
