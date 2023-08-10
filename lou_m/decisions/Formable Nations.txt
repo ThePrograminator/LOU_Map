@@ -54,8 +54,8 @@ country_decisions = {
 			X01 = {
 				set_capital = 413		# Minas Tirith
 			}
-            
 			add_prestige = 50
+            swap_non_generic_missions = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
