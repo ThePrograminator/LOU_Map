@@ -114,7 +114,7 @@ minas_tirith_monument = {
 			yearly_patriarch_authority = 0.010
 			prestige_decay = -0.02
 			land_morale = 0.10
-			legitimacy = 0.1
+			legitimacy = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -484,7 +484,7 @@ amon_lhaw_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {			
-			global_spy_defence = 0.10
+			
 		}
 		on_upgraded = {
 		}
@@ -501,7 +501,7 @@ amon_lhaw_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_spy_defence = 0.20
+			global_spy_defence = 0.10
 		}
 		on_upgraded = {
 		}
@@ -519,6 +519,7 @@ amon_lhaw_monument = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_spy_defence = 0.20
 		}
 		on_upgraded = {
 		}
@@ -532,11 +533,12 @@ amon_lhaw_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-			global_spy_defence = 0.30
+			
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_spy_defence = 0.30
 		}
 		on_upgraded = {
 		}
@@ -1189,7 +1191,7 @@ imloth_melui_monument = {
 			local_manpower = 5
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.05
+			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
 		}
@@ -1207,7 +1209,7 @@ imloth_melui_monument = {
 			local_manpower = 5
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.05
+			local_manpower_modifier = 0.25
 		}
 		country_modifiers = {
 			manpower_recovery_speed = 0.1
@@ -1896,6 +1898,7 @@ cirithungol_monument = {
 		}
 		area_modifier = {
 		local_hostile_movement_speed = -0.2
+		hostile_attrition = 1
 		}
 		country_modifiers = {
 		}
@@ -4065,7 +4068,7 @@ moria_monument = {
 			factor = 0
 		}
 		province_modifiers = {
-			local_development_cost_modifier = -0.25
+			local_development_cost = -0.25
 		}
 		area_modifier = {
 		}
@@ -4083,7 +4086,7 @@ moria_monument = {
 			factor = 200
 		}
 		province_modifiers = {
-			local_development_cost_modifier = -0.75
+			local_development_cost = -0.75
 		}
 		area_modifier = {
 		}
@@ -4101,7 +4104,7 @@ moria_monument = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_development_cost_modifier = -1.50
+			local_development_cost = -1.50
 		}
 		area_modifier = {
 		}
@@ -4119,7 +4122,7 @@ moria_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost_modifier = -2
+			local_development_cost = -2
 		}
 		area_modifier = {
 		}
@@ -5295,7 +5298,7 @@ bree_monument = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			spy_offence = 0.010
+			spy_offence = 0.10
 			num_accepted_cultures = 2
 		}
 		on_upgraded = {
@@ -6320,7 +6323,7 @@ argond_monument = {
 		fort_level = 1
 		}
 		area_modifier = {
-		global_colonial_growth = 25
+		local_colonial_growth = 25
 		}
 		country_modifiers = {
 		global_missionary_strength = 0.01
@@ -6339,7 +6342,7 @@ argond_monument = {
 		fort_level = 2
 		}
 		area_modifier = {
-		global_colonial_growth = 25
+		local_colonial_growth = 25
 		}
 		country_modifiers = {
 		global_missionary_strength = 0.02
@@ -6360,7 +6363,7 @@ argond_monument = {
 		fort_level = 2
 		}
 		area_modifier = {
-		global_colonial_growth = 25
+		local_colonial_growth = 25
 		}
 		country_modifiers = {
 		global_missionary_strength = 0.03
@@ -7215,7 +7218,7 @@ mistrand_monument = {
 		}
 		province_modifiers = {
 		fort_level = 1
-		tax_income = 0.25
+		local_tax_modifier = 0.25
 		}
 		area_modifier = {
 		}
@@ -7233,7 +7236,7 @@ mistrand_monument = {
 		}
 		province_modifiers = {
 		fort_level = 2
-		tax_income = 0.5
+		local_tax_modifier = 0.5
 		}
 		area_modifier = {
 		}
@@ -7253,7 +7256,7 @@ mistrand_monument = {
 		}
 		province_modifiers = {
 		fort_level = 3
-		tax_income = 0.75
+		local_tax_modifier = 0.75
 		}
 		area_modifier = {
 		}
