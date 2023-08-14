@@ -27,14 +27,19 @@ servant_of_mordor_region_nurn = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			servant_of_mordor_region_nurn = yes
+			region = nurn_region
 			NOT = { 
 				owned_by = ROOT 
+			}
+			NOT = {
 				is_empty = yes
 			}
 		}
 		trigger = {
-			servant_of_mordor_region_nurn = yes
+			nurn_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 			add_prestige = 5
@@ -73,12 +78,11 @@ servant_of_mordor_region_rhovanion = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			rhovanion_region = {
-				type = all
-				owned_by = ROOT
-			}
+			region = rhovanion_region
 			NOT = { 
 				owned_by = ROOT 
+			}
+			NOT = {
 				is_empty = yes
 			}
 		}
@@ -125,12 +129,11 @@ servant_of_mordor_region_mirkwood = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			mirkwood_region = {
-				type = all
-				owned_by = ROOT
-			}
+			region = mirkwood_region
 			NOT = { 
 				owned_by = ROOT 
+			}
+			NOT = {
 				is_empty = yes
 			}
 		}
@@ -144,7 +147,6 @@ servant_of_mordor_region_mirkwood = {
 					type = all
 					owner = {
 						religion_group = religion_group_melkor
-
 					}
 				}
 			}
@@ -190,14 +192,20 @@ servant_of_mordor_region_ithilien = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			servant_of_mordor_region_ithilien = yes
+			region = ithilien_region
+		
 			NOT = { 
 				owned_by = ROOT 
+			}
+			NOT = {
 				is_empty = yes
 			}
 		}
 		trigger = {
-			servant_of_mordor_region_ithilien = yes
+			ithilien_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 			add_prestige = 5

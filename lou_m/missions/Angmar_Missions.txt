@@ -1044,25 +1044,17 @@ angmar_formable_slot_4 = {
 
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_manpower = 10
-				OR = {
-					has_building = capital_2_orc_building
-					has_building = encampment_2_orc_building
-					has_building = fortress_2_orc_building
-				}
-				has_building = orc_fissure_orc_building
+				base_manpower = 12
+				province_orc_has_main_building_tier_2 = yes
+				has_building = small_arena_building
 			}
 		}
 		trigger = {
 			1956 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_manpower = 10
-				OR = {
-					has_building = capital_2_orc_building
-					has_building = encampment_2_orc_building
-					has_building = fortress_2_orc_building
-				}
-				has_building = orc_fissure_orc_building
+				base_manpower = 12
+				province_orc_has_main_building_tier_2 = yes
+				has_building = small_arena_building
 			}
 		}
 		effect = { 

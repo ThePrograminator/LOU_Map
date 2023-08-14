@@ -1254,8 +1254,19 @@
  ################################################
  # Tooltips
  ################################################
-
- HAS_MARKETPLACE_TOOLTIP:0 "Has §YMarketplace§! or greater tier trade building"
- HAS_ORC_FORT_TOOLTIP:0 "Has §YWooden Walls§! or greater tier fort building"
- ELF_HAS_FORT_TOOLTIP:0 "Has §YLow Walls§! or greater tier fort building"
+ HAS_ANY_MAINBUILDING_1_TT:0 "Has any §YMain Building - Tier 1§! or greater tier main building"
+ HAS_CAPITAL_TOOLTIP:0 "Has §YMain Building - Capital Tier 1§! or greater tier capital building"
  province_has_current_tech_capital_trigger_tt:0 "§YProvince§! has the highest level of Capital building possible with the current level of technology."
+
+ # --- Human --- #
+ HAS_MARKETPLACE_TOOLTIP:0 "Has §YMarketplace§! or greater tier trade building"
+
+ # --- Dwarf --- #
+
+ # --- Elf --- #
+ ELF_HAS_FORT_TOOLTIP:0 "Has §YLow Walls§! or greater tier fort building"
+
+ # --- Orc --- #
+ HAS_FORTRESS_TOOLTIP:0 "Has §YMain Building - Fortress Tier 1§! or greater tier fortress building"
+ HAS_CITY_TOOLTIP:0 "Has §YMain Building - Encampment Tier 1§! or greater tier encampment building"
+ HAS_ORC_FORT_TOOLTIP:0 "Has §YWooden Walls§! or greater tier fort building"
