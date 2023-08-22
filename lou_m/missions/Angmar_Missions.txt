@@ -1096,6 +1096,8 @@ angmar_slot_4 = {
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
 			region = rhudaur_region
+			has_terrain = unique_hillmen_town
+			culture = culture_hillmen_of_rhudaur
 			NOT = {
 				owned_by = ROOT
 			}
