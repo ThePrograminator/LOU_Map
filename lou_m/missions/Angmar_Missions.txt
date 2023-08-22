@@ -805,7 +805,7 @@ angmar_slot_3 = {
 				}
 				AND = {
 					exists = V18
-					V17 = {
+					V18 = {
 						has_opinion = {
 							who = ROOT
 							value = 200
@@ -814,7 +814,7 @@ angmar_slot_3 = {
 				}
 				AND = {
 					exists = V19
-					V17 = {
+					V19 = {
 						has_opinion = {
 							who = ROOT
 							value = 200
@@ -1115,10 +1115,10 @@ angmar_slot_4 = {
 							who = ROOT
 							value = 200
 						}
-					}
-					trust = { 
-						who = Z62 
-						value = 75
+						trust = { 
+							who = ROOT 
+							value = 75
+						}
 					}
 				}
 			}
