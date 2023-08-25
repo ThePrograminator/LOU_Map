@@ -4047,7 +4047,14 @@ moria_monument = {
 	}
 	on_destroyed = {		
 	}
-	can_use_modifiers_trigger = {			
+	can_use_modifiers_trigger = {
+		AND = {
+			owner = {
+				is_dwarf = yes
+				religion = religion_mahal
+			}
+			has_owner_religion = yes
+		}	
 	}
 	can_upgrade_trigger = {	
 		AND = {
@@ -4960,7 +4967,7 @@ fornost_monument = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 	build_trigger = {
 		AND = {
@@ -4980,7 +4987,19 @@ fornost_monument = {
 	}
 	on_destroyed = {		
 	}
-	can_use_modifiers_trigger = {	
+	can_use_modifiers_trigger = {
+	AND = {
+			owner = {
+				OR = {
+					is_human = yes
+					is_elf = yes
+					is_dwarf = yes
+					technology_group = lotr_half_dwarf
+					is_hobbit = yes
+				}
+			}
+			has_owner_religion = yes
+		}	
 	}
 	can_upgrade_trigger = {	
 		AND = {
