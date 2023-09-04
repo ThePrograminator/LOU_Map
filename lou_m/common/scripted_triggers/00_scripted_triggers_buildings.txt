@@ -483,16 +483,19 @@ province_orc_has_main_building_tier_1 = { #Province Scope
 }
 
 province_orc_has_main_building_tier_2 = { #Province Scope
-	OR = {
-		has_building = encampment_1_orc_building
-		has_building = encampment_2_orc_building
-		has_building = encampment_3_orc_building
-		has_building = fortress_1_orc_building
-		has_building = fortress_2_orc_building
-		has_building = fortress_3_orc_building
-		has_building = capital_1_orc_building
-		has_building = capital_2_orc_building
-		has_building = capital_3_orc_building
+	custom_trigger_tooltip = {
+		tooltip = HAS_ANY_MAINBUILDING_1_TT
+		OR = {
+			has_building = encampment_1_orc_building
+			has_building = encampment_2_orc_building
+			has_building = encampment_3_orc_building
+			has_building = fortress_1_orc_building
+			has_building = fortress_2_orc_building
+			has_building = fortress_3_orc_building
+			has_building = capital_1_orc_building
+			has_building = capital_2_orc_building
+			has_building = capital_3_orc_building
+		}
 	}
 }
 
@@ -559,26 +562,35 @@ province_orc_has_city_building_tier_4 = { #Province Scope
 }
 
 province_orc_has_city_buildings = { #Province Scope
-	OR = { 
-		has_building = encampment_1_orc_building
-		has_building = encampment_2_orc_building
-		has_building = encampment_3_orc_building
-	}	
+	custom_trigger_tooltip = {
+		tooltip = HAS_CITY_TOOLTIP
+		OR = { 
+			has_building = encampment_1_orc_building
+			has_building = encampment_2_orc_building
+			has_building = encampment_3_orc_building
+		}	
+	}
 }
 
 province_orc_has_fortress_buildings = {
-	OR = { 
-		has_building = fortress_1_orc_building
-		has_building = fortress_2_orc_building
-		has_building = fortress_3_orc_building
+	custom_trigger_tooltip = {
+		tooltip = HAS_FORTRESS_TOOLTIP
+		OR = { 
+			has_building = fortress_1_orc_building
+			has_building = fortress_2_orc_building
+			has_building = fortress_3_orc_building
+		}
 	}
 }
 
 province_orc_has_capital_buildings = { #Province Scope
-	OR = { 
-		has_building = capital_1_orc_building
-		has_building = capital_2_orc_building
-		has_building = capital_3_orc_building
+	custom_trigger_tooltip = {
+		tooltip = HAS_CAPITAL_TOOLTIP
+		OR = { 
+			has_building = capital_1_orc_building
+			has_building = capital_2_orc_building
+			has_building = capital_3_orc_building
+		}
 	}
 }
 
@@ -672,7 +684,7 @@ province_has_current_tech_dwarf_capital_trigger = {
 		else_if = {
 			limit = {
 				owner = {
-					dip_tech = 15
+					adm_tech = 15
 				}
 			}
 			has_building = capital_3_dwarf_building
@@ -705,7 +717,7 @@ province_has_current_tech_elf_capital_trigger = {
 		else_if = {
 			limit = {
 				owner = {
-					dip_tech = 15
+					adm_tech = 15
 				}
 			}
 			has_building = capital_3_elf_building
@@ -738,7 +750,7 @@ province_has_current_tech_orc_capital_trigger = {
 		else_if = {
 			limit = {
 				owner = {
-					dip_tech = 15
+					adm_tech = 15
 				}
 			}
 			has_building = capital_3_orc_building

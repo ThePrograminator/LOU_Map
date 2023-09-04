@@ -805,7 +805,7 @@ angmar_slot_3 = {
 				}
 				AND = {
 					exists = V18
-					V17 = {
+					V18 = {
 						has_opinion = {
 							who = ROOT
 							value = 200
@@ -814,7 +814,7 @@ angmar_slot_3 = {
 				}
 				AND = {
 					exists = V19
-					V17 = {
+					V19 = {
 						has_opinion = {
 							who = ROOT
 							value = 200
@@ -1044,25 +1044,17 @@ angmar_formable_slot_4 = {
 
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_manpower = 10
-				OR = {
-					has_building = capital_2_orc_building
-					has_building = encampment_2_orc_building
-					has_building = fortress_2_orc_building
-				}
-				has_building = orc_fissure_orc_building
+				base_manpower = 12
+				province_orc_has_main_building_tier_2 = yes
+				has_building = small_arena_building
 			}
 		}
 		trigger = {
 			1956 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_manpower = 10
-				OR = {
-					has_building = capital_2_orc_building
-					has_building = encampment_2_orc_building
-					has_building = fortress_2_orc_building
-				}
-				has_building = orc_fissure_orc_building
+				base_manpower = 12
+				province_orc_has_main_building_tier_2 = yes
+				has_building = small_arena_building
 			}
 		}
 		effect = { 
@@ -1104,6 +1096,8 @@ angmar_slot_4 = {
 		required_missions = { angmarim_servitude }
 		provinces_to_highlight = {
 			region = rhudaur_region
+			has_terrain = unique_hillmen_town
+			culture = culture_hillmen_of_rhudaur
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1123,10 +1117,10 @@ angmar_slot_4 = {
 							who = ROOT
 							value = 200
 						}
-					}
-					trust = { 
-						who = Z62 
-						value = 75
+						trust = { 
+							who = ROOT 
+							value = 75
+						}
 					}
 				}
 			}

@@ -236,11 +236,13 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
-        NOT = { has_country_modifier = rejected_stewards_cooldown }
-        NOT = { has_country_flag = estate_statutory_rights_lock }
+		has_estate = estate_stewards
 		NOT = { crown_land_share = 11 }
-        has_estate = estate_stewards
+		NOT = {	num_of_estate_privileges = { estate = estate_stewards	value = 6 } }
+
 		NOT = { has_estate_privilege = estate_stewards_statutory_rights }
+		NOT = { has_country_modifier = rejected_stewards_cooldown }
+        NOT = { has_country_flag = estate_statutory_rights_lock }
 	}
 
 	mean_time_to_happen = {
@@ -275,10 +277,9 @@ country_event = {
 		custom_tooltip = seize_land_unavailable_from_privilege
         set_estate_privilege = estate_stewards_statutory_rights
 	}
+
 	option = {
 		name = LOU_estates.3.option.b
-        
-        add_prestige = -5
         
         hidden_effect = {
             add_country_modifier = {
@@ -298,10 +299,12 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
+		has_estate = estate_merchants
+		NOT = { crown_land_share = 11 }
+		NOT = {	num_of_estate_privileges = { estate = estate_merchants	value = 6 } }
+
         NOT = { has_country_modifier = rejected_merchants_cooldown }
         NOT = { has_country_flag = estate_statutory_rights_lock }
-		NOT = { crown_land_share = 11 }
-        has_estate = estate_merchants
 		NOT = { has_estate_privilege = estate_merchants_statutory_rights }
 	}
 
@@ -340,8 +343,6 @@ country_event = {
 	option = {
 		name = LOU_estates.4.option.b
         
-        add_prestige = -5
-        
         hidden_effect = {
             add_country_modifier = {
                 name = rejected_merchants_cooldown
@@ -360,10 +361,12 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
+		has_estate = estate_nobles
+		NOT = { crown_land_share = 11 }
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 6 } }
+
         NOT = { has_country_modifier = rejected_nobles_cooldown }
         NOT = { has_country_flag = estate_statutory_rights_lock }
-		NOT = { crown_land_share = 11 }
-        has_estate = estate_nobles
 		NOT = { has_estate_privilege = estate_nobility_statutory_rights }
 	}
 
@@ -402,8 +405,6 @@ country_event = {
 	option = {
 		name = LOU_estates.5.option.b
         
-        add_prestige = -5
-        
         hidden_effect = {
             add_country_modifier = {
                 name = rejected_nobles_cooldown
@@ -422,10 +423,12 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
+		has_estate = estate_commoners
+		NOT = { crown_land_share = 11 }
+		NOT = {	num_of_estate_privileges = { estate = estate_commoners	value = 6 } }
+		
         NOT = { has_country_modifier = rejected_commoners_cooldown }
         NOT = { has_country_flag = estate_statutory_rights_lock }
-		NOT = { crown_land_share = 11 }
-        has_estate = estate_commoners
 		NOT = { has_estate_privilege = estate_commoners_statutory_rights }
 	}
 
@@ -465,8 +468,6 @@ country_event = {
 	option = {
 		name = LOU_estates.6.option.b
         
-        add_prestige = -5
-        
         hidden_effect = {
             add_country_modifier = {
                 name = rejected_commoners_cooldown
@@ -485,10 +486,12 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
+		has_estate = estate_tribes
+		NOT = { crown_land_share = 11 }
+		NOT = {	num_of_estate_privileges = { estate = estate_tribes	value = 6 } }
+
         NOT = { has_country_modifier = rejected_tribes_cooldown }
         NOT = { has_country_flag = estate_statutory_rights_lock }
-		NOT = { crown_land_share = 11 }
-        has_estate = estate_tribes
 		NOT = { has_estate_privilege = estate_tribes_statutory_rights }
 	}
 
@@ -527,8 +530,6 @@ country_event = {
 	}
 	option = {
 		name = LOU_estates.7.option.b
-        
-        add_prestige = -5
         
         hidden_effect = {
             add_country_modifier = {

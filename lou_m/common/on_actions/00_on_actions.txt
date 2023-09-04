@@ -2393,15 +2393,22 @@ on_dip_exploited = {
 on_mil_exploited = {
 }
 on_raze = {
+	add_permanent_province_modifier = {
+		name = province_razed
+		duration = 7300
+	}
 }
 on_concentrate_development = {
 }
 
 on_slacken_start = {
-	
+	add_country_modifier = {
+		name = slackening_modifier
+		duration = -1
+	}
 }
 on_slacken_stop = {
-	
+	remove_country_modifier = slackening_modifier
 }
 
 on_colony_finished = { #ROOT - Province

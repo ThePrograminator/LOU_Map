@@ -369,35 +369,33 @@ servant_of_mordor_region_nurn = {
 }
 
 servant_of_mordor_region_ithilien = {
-	AND = {
-		harithilien_area = {
-			type = all
-			owned_by = ROOT
-		}
-		ithilien_area = {
-			type = all
-			owned_by = ROOT
-		}
-		forithilien_area = {
-			type = all
-			owned_by = ROOT
-		}
-		emyn_arnen_area = {
-			type = all
-			owned_by = ROOT
-		}
-		minas_ithil_area = {
-			type = all
-			owned_by = ROOT
-		}
-		nindalf_area = {
-			type = all
-			owned_by = ROOT
-		}
-		athrad_poros_area = {
-			type = all
-			owned_by = ROOT
-		}
+	harithilien_area = {
+		type = all
+		owned_by = ROOT
+	}
+	ithilien_area = {
+		type = all
+		owned_by = ROOT
+	}
+	forithilien_area = {
+		type = all
+		owned_by = ROOT
+	}
+	emyn_arnen_area = {
+		type = all
+		owned_by = ROOT
+	}
+	minas_ithil_area = {
+		type = all
+		owned_by = ROOT
+	}
+	nindalf_area = {
+		type = all
+		owned_by = ROOT
+	}
+	athrad_poros_area = {
+		type = all
+		owned_by = ROOT
 	}
 }
 

@@ -19,22 +19,20 @@ philosopher = {
 	# Bonus
 	prestige = 1
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
-		# modifier = {
-		# 	factor = 0
-		# 	owner = { culture_group = culture_group_melkor }
-		# }		
-		# modifier = {
-		# 	factor = 0
-		# 	owner = { culture_group = culture_group_orcs }
-		# }
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -49,22 +47,20 @@ natural_scientist = {
 	# Bonus
 	production_efficiency = 0.10
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }	
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
-		# modifier = {
-		# 	factor = 0
-		# 	owner = { culture_group = culture_group_melkor }
-		# }		
-		# modifier = {
-		# 	factor = 0
-		# 	owner = { culture_group = culture_group_orcs }
-		# }
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -79,22 +75,20 @@ artist = {
 	# Bonus
 	stability_cost_modifier = -0.10
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }	
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
-		# modifier = {
-		# 	factor = 0
-		# 	owner = { culture_group = culture_group_melkor }
-		# }		
-		# modifier = {
-		# 	factor = 0
-		# 	owner = { culture_group = culture_group_orcs }
-		# }
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -108,15 +102,21 @@ treasurer = {
 	
 	# Bonus
 	global_tax_modifier = 0.1
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }	
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -131,14 +131,20 @@ theologian = {
 	# Bonus
 	global_unrest = -2
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -152,15 +158,21 @@ master_of_mint = {
 	
 	# Bonus
 	inflation_reduction = 0.10
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -174,19 +186,21 @@ inquisitor = {
 	
 	# Bonus
 	global_missionary_strength = 0.02
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
-		factor = 1
+		factor = 1		
 		modifier = {
-			factor = 0
-			has_owner_religion = no
-		}		
-		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -205,23 +219,21 @@ statesman = {
 	
 	# Bonus
 	diplomatic_reputation = 1
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
 		}	
-		# modifier = {
-		# 	factor = 0.15
-		# 	owner = { culture_group = culture_group_melkor }
-		# }		
-		# modifier = {
-		# 	factor = 0.15
-		# 	owner = { culture_group = culture_group_orcs }
-		# }
 	}
 	
 	ai_will_do = {
@@ -236,6 +248,8 @@ naval_reformer = {
 	# Bonus
 	
 	naval_morale = 0.1 
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
@@ -250,9 +264,9 @@ naval_reformer = {
 			owner = { primitives = yes }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
 	}
 	
 	ai_will_do = {
@@ -266,15 +280,21 @@ trader = {
 	
 	# Bonus
 	trade_efficiency = 0.10
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -288,14 +308,20 @@ spymaster = {
 	
 	# Bonus
 	spy_offence = 0.25
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
 		}	
 	}
 	
@@ -310,6 +336,8 @@ colonial_governor = {
 	
 	# Bonus
 	global_tariffs = 0.10
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
@@ -324,9 +352,9 @@ colonial_governor = {
 			owner = { is_colonial_nation = yes }
 		}		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
 	}
 	
 	ai_will_do = {
@@ -341,22 +369,20 @@ diplomat = {
 	# Bonus
 	improve_relation_modifier = 0.2
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }	
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
 		}	
-		# modifier = {
-		# 	factor = 0.15
-		# 	owner = { culture_group = culture_group_melkor }
-		# }		
-		# modifier = {
-		# 	factor = 0.15
-		# 	owner = { culture_group = culture_group_orcs }
-		# }
 	}
 	
 	ai_will_do = {
@@ -370,6 +396,8 @@ navigator = {
 	
 	# Bonus
 	range = 0.20
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
@@ -378,11 +406,11 @@ navigator = {
 		modifier = {
 			factor = 0
 			owner = { NOT = { num_of_colonists = 1 } }
-		}		
-		modifier = {
-			factor = 0
-			has_owner_accepted_culture = no
 		}	
+		modifier = {
+			factor = 0.1
+			has_owner_accepted_culture = no
+		}
 	}
 	
 	ai_will_do = {
@@ -402,14 +430,20 @@ army_reformer = {
 	# Bonus
 	land_morale = 0.10
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }	
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -423,14 +457,20 @@ army_organiser = {
 	
 	# Bonus
 	land_forcelimit_modifier = 0.10
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
 		}	
 	}
 	
@@ -445,15 +485,21 @@ commandant = {
 	
 	# Bonus
 	discipline = 0.05
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {
@@ -468,14 +514,20 @@ quartermaster = {
 	# Bonus
 	reinforce_speed = 0.33
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}			
 	}
 	
 	ai_will_do = {
@@ -493,15 +545,21 @@ recruitmaster = {
 	
 	# Bonus
 	global_manpower_modifier = 0.10
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}		
 	}
 	
 	ai_will_do = {
@@ -519,15 +577,21 @@ fortification_expert = {
 	
 	# Bonus
 	defensiveness = 0.2
+
+	allow_only_owner_religion = yes
 	
 	skill_scaled_modifier = { }
 
 	chance = {
-		factor = 1				
+		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}			
 	}
 	
 	ai_will_do = {
@@ -542,14 +606,20 @@ grand_captain = {
 	# Bonus
 	land_maintenance_modifier = -0.10
 
+	allow_only_owner_religion = yes
+
 	skill_scaled_modifier = { }
 
 	chance = {
 		factor = 1		
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_owner_accepted_culture = no
-		}	
+		}
+		modifier = {
+			factor = 1
+			has_owner_accepted_culture = yes
+		}
 	}
 	
 	ai_will_do = {

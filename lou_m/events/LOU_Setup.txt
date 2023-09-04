@@ -75,9 +75,26 @@ country_event = {
                 NOT = {
                     primary_culture = culture_beornings
                 }
+                NOT = {
+                    culture_group = culture_group_numenorean
+                }
             }
             country_event = { 
                 id = LOU_races.1
+            }
+        }
+        # Dúnedain
+        if = {
+            limit = {
+                NOT = {	has_country_modifier =  "human_buff" }
+                is_human = yes
+                culture_group = culture_group_numenorean
+                NOT = {
+                    primary_culture = culture_beornings
+                }
+            }
+            country_event = { 
+                id = LOU_races.19
             }
         }
         # Beorning

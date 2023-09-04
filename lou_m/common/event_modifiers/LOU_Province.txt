@@ -138,24 +138,6 @@ elfs_forest_defence_roll = {
 	own_territory_dice_roll_bonus = 1
 }
 
-dead_marshes_modifier = {
-	local_development_cost = 1000
-	local_build_cost = 1000
-	local_build_time = 1000
-	local_tax_modifier = -100
-	local_production_efficiency = -100
-	province_trade_power_modifier = -100
-	allowed_num_of_buildings = -5
-	attrition = 10
-	max_attrition = 10
-	local_friendly_movement_speed = -0.9
-	local_hostile_movement_speed = -0.9
-	local_warscore_cost_modifier = -0.9
-	local_governing_cost = -1.0
-	local_unrest = -100
-	local_years_of_nationalism = -100
-}
-
 dol_guldur = {
 	fort_level = 1
 	local_hostile_attrition = 2
