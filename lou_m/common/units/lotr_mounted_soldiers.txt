@@ -1,14 +1,15 @@
-# Guards of Osgiliath
-type = infantry
+type = cavalry
 unit_type = lotr_human
 
-maneuver = 1
-offensive_morale = 3
-defensive_morale = 5
+maneuver = 2
+offensive_morale = 2
+defensive_morale = 2
 offensive_fire = 0
-defensive_fire = 0
-offensive_shock = 4
-defensive_shock = 5
+defensive_fire = 1
+offensive_shock = 3
+defensive_shock = 1
+
+manpower = 1
 
 trigger = {
 	OR = {
@@ -19,4 +20,3 @@ trigger = {
 		primary_culture = culture_dunedain_of_tol_falas
 		primary_culture = culture_numenorean
 	}
-}
