@@ -5049,7 +5049,8 @@ fornost_monument = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.01
+			has_dlc = "Cradle of Civilization"
+				yearly_army_professionalism = 0.01
 		}
 		on_upgraded = {
 		}
@@ -5070,7 +5071,8 @@ fornost_monument = {
 		local_unrest = -2
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.03
+			has_dlc = "Cradle of Civilization" 
+				yearly_army_professionalism = 0.03
 		}
 		on_upgraded = {
 
@@ -5092,7 +5094,8 @@ fornost_monument = {
 		local_unrest = -3
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.05
+			has_dlc = "Cradle of Civilization"
+				yearly_army_professionalism = 0.05
 		}
 		on_upgraded = {
 		}
