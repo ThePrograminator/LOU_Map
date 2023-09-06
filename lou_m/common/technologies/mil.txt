@@ -28,10 +28,8 @@ technology = {
 
 	may_drill = yes
 	
-	enable = lotr_dunedain_militia_1
-	enable = lotr_dunedain_axemen_1
-	enable = lotr_dunedain_militia_archers_1
-	enable = lotr_dunedain_militia_cavalry_1
+	enable = lotr_gondor_conscripts
+	enable = lotr_mounted_conscripts
 
 	enable = lotr_arnor_arnor_militia_1
 	enable = lotr_arnor_rangers_1
@@ -212,8 +210,6 @@ technology = {
 
 	enable = lotr_zori_militia_1
 	enable = lotr_zori_mounted_militia_1
-
-	enable = lotr_siege_balista
 	
 	#Human Buildings
 	#Human Fortifications Buildings
@@ -312,15 +308,16 @@ technology = {
 
     artillery_fire = 0.5
     artillery_shock = 0.1
+	
+	enable = lotr_field_trebuchet
 }
 
 technology = {
 	# Tech 6
 	year = 2828
 
-	enable = lotr_dunedain_pelargir_spears_2
-	enable = lotr_dunedain_pelargir_swords_2
-	enable = lotr_dunedain_blackroot_archers_2
+	enable = lotr_early_gondorian_swordsmen
+	enable = lotr_early_gondorian_spearwall
 	
 	enable = lotr_dale_dalesmen_2
 
@@ -532,6 +529,7 @@ technology = {
 	#Orc Fortifications Buildings
 	fort_orc_stronghold_orc_building = yes
 
+	enable = lotr_mounted_soldiers
 }
 
 technology = {
@@ -571,10 +569,8 @@ technology = {
 	# Tech 12
 	year = 2906
 	
-	enable = lotr_dunedain_gondor_archers_3
-	enable = lotr_dunedain_gondor_spears_3
-	enable = lotr_dunedain_gondor_sword_3
-	enable = lotr_dunedain_heavy_cavalry_2
+	enable = lotr_gondorian_swordsmen
+	enable = lotr_gondorian_spearwall
 	
 	enable = lotr_dale_winter_guard_3
 	enable = lotr_dale_aihwothiuda_horses_2
@@ -653,8 +649,6 @@ technology = {
 	enable = lotr_hillmen_mounted_clans_guard_2
 
 	enable = lotr_snowmen_whale_hunters_3
-	
-	enable = lotr_siege_catapult
 	
 	enable = lotr_uruk_hai_pike_2
 	enable = lotr_uruk_hai_raider_2
@@ -834,6 +828,9 @@ technology = {
 	
 	#Orc Fortifications Buildings
 	fort_large_orc_stronghold_orc_building = yes
+
+	enable = lotr_armoured_horsemen
+	enable = lotr_reinforced_trebuchet
 }
 
 technology = {
@@ -856,9 +853,7 @@ technology = {
 	# Tech 18
 	year = 2984
 
-	enable = lotr_dunedain_citidal_archers_4
-	enable = lotr_dunedain_fountain_spear_4
-	enable = lotr_dunedain_citidal_sword_4
+	enable = lotr_unified_gondorian_infantry
 	
 	enable = lotr_dale_bardian_hird_4
 	enable = lotr_dale_bardian_marksman_4
@@ -1039,6 +1034,8 @@ technology = {
     cavalry_shock = 0.5
     cavalry_fire = 0.1
     maneuver_value = 0.1
+	
+	enable = lotr_knights_of_gondor
 }
 
 technology = {
@@ -1053,10 +1050,7 @@ technology = {
 	# Tech 24
 	year = 3062
 	
-	enable = lotr_dunedain_ithilien_rangers_5
-	enable = lotr_dunedain_osgiliath_guard_5
-	enable = lotr_dunedain_swan_knights_5
-	enable = lotr_dunedain_swan_cavalry_3
+	enable = lotr_gondorian_legion
 	
 	enable = lotr_dale_earls_guard_5
 	enable = lotr_dale_athala_rangers_5
@@ -1125,9 +1119,6 @@ technology = {
 	enable = lotr_dunmen_saighedar_archer_5
 	enable = lotr_dunmen_wolf_guard_5
 	enable = lotr_dunmen_mounted_saighedar_lancers_3
-	
-	enable = lotr_siege_trebuchet
-	enable = lotr_siege_troll_catapult_3
 	
 	enable = lotr_troll_hill_3
 	enable = lotr_troll_stone_3
@@ -1260,6 +1251,8 @@ technology = {
 	
     supply_limit = 0.25
     combat_width = 2
+	
+	enable = lotr_grand_trebuchet
 }
 
 technology = {
@@ -1301,6 +1294,9 @@ technology = {
     cavalry_shock = 1
     cavalry_fire = 0.3
     maneuver_value = 0.1
+	
+	enable = lotr_guardians_of_the_white_city
+	enable = lotr_Swan_knights_of_Dol-Amroth
 }
 
 technology = {
