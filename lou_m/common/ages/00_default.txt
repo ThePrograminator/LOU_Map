@@ -1,4 +1,4 @@
-third_age = {
+long_winter_age = {
 	start = 2560
 	
 	can_start = {
@@ -22,7 +22,7 @@ third_age = {
 	}
 
 	objectives = {
-		obj_third_age_prestigious_capital = {
+		obj_long_winter_age_prestigious_capital = {
             capital_scope = {
                 development = 30
                 religion = ROOT
@@ -31,7 +31,7 @@ third_age = {
             }
         }
         # Wise Ruler
-		obj_third_age_wise_ruler = {
+		obj_long_winter_age_wise_ruler = {
             OR = {
                 adm = 6
                 dip = 6
@@ -39,19 +39,19 @@ third_age = {
             }
         }
         # Religious Defender
-        obj_third_age_racial_unity = {
+        obj_long_winter_age_racial_unity = {
             #is_defender_of_faith = yes
             religious_unity = 1.0
         }
-        obj_third_age_colassal_fleet = {
+        obj_long_winter_age_colassal_fleet = {
             naval_forcelimit = 100
             navy_size_percentage = 0.9
         }
-        obj_third_age_colassal_army = {
+        obj_long_winter_age_colassal_army = {
             land_forcelimit = 100
             army_size_percentage = 0.9
         }
-        obj_third_age_realm_of_virtues = {
+        obj_long_winter_age_realm_of_virtues = {
             prestige = 95
             NOT = { corruption = 1 }
             OR = {
@@ -62,13 +62,13 @@ third_age = {
                 meritocracy = 95
             }
         }
-        obj_third_age_well_connected = {
+        obj_long_winter_age_well_connected = {
             num_of_allies = 4
         }
 	}		
 
 	abilities = {
-         ab_third_age_lay_of_the_land = {
+         ab_long_winter_age_lay_of_the_land = {
             modifier = {
                 global_defender_dice_roll_bonus = 1
             }
@@ -76,7 +76,7 @@ third_age = {
 				factor = 100
 			}
         }
-        ab_third_age_local_administators = {
+        ab_long_winter_age_local_administators = {
             modifier = {
                 governing_capacity_modifier = 0.25
                 ignore_coring_distance = yes
@@ -85,7 +85,7 @@ third_age = {
 				factor = 100
 			}
         }
-		ab_third_age_integrated_sappers = {
+		ab_long_winter_age_integrated_sappers = {
             modifier = {
                 siege_ability = 0.15
             }
@@ -93,7 +93,7 @@ third_age = {
 				factor = 100
 			}
         }
-        ab_third_age_charismatic_presence = {
+        ab_long_winter_age_charismatic_presence = {
             modifier = {
                 diplomatic_reputation = 2
             }
@@ -101,7 +101,7 @@ third_age = {
 				factor = 100
 			}
         }
-        ab_third_age_purification_regiments = {
+        ab_long_winter_age_purification_regiments = {
             modifier = {
                 global_missionary_strength = 0.03
             }
@@ -109,7 +109,7 @@ third_age = {
 				factor = 100
 			}
         }
-        ab_third_age_age_of_civility = {
+        ab_long_winter_age_age_of_civility = {
             modifier = {
                 min_autonomy_in_territories = -0.2
             }
@@ -119,7 +119,7 @@ third_age = {
         }
         
         # Gondor
-        ab_third_age_gondorian_steel = {
+        ab_long_winter_age_gondorian_steel = {
             allow = {
                 tag = X01
             }
@@ -132,7 +132,7 @@ third_age = {
         }
         
         # Rohan
-        ab_third_age_rohirrim_riders = {
+        ab_long_winter_age_rohirrim_riders = {
             allow = {
                 tag = X16
             }
@@ -145,7 +145,7 @@ third_age = {
         }
         
         # Mordor
-        ab_third_age_saurons_will = {
+        ab_long_winter_age_saurons_will = {
             allow = {
                 tag = V17
             }
@@ -158,7 +158,7 @@ third_age = {
         }
         
         # Warlord of Rhun
-        ab_third_age_rhunic_hegemony = {
+        ab_long_winter_age_rhunic_hegemony = {
             allow = {
                 is_emperor_of_china = yes
             }
@@ -172,11 +172,359 @@ third_age = {
 	}
 }
 
-fourth_age = {
-	start = 3019
+the_war_of_dwarves_and_orcs_age = {
+	start = 2780
 	
 	can_start = {
-		has_global_flag = fourth_age
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	papacy = 1.0
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+
+	objectives = {
+		obj_the_war_of_dwarves_and_orcs_age_1 = {
+            capital_scope = {
+                development = 30
+                religion = ROOT
+                culture = ROOT
+                NOT = { devastation = 1 }
+            }
+        }
+        # Wise Ruler
+		obj_the_war_of_dwarves_and_orcs_age_2 = {
+            OR = {
+                adm = 6
+                dip = 6
+                mil = 6
+            }
+        }
+        # Religious Defender
+        obj_the_war_of_dwarves_and_orcs_age_3 = {
+            #is_defender_of_faith = yes
+            religious_unity = 1.0
+        }
+        obj_the_war_of_dwarves_and_orcs_age_4 = {
+            naval_forcelimit = 100
+            navy_size_percentage = 0.9
+        }
+        obj_the_war_of_dwarves_and_orcs_age_5 = {
+            land_forcelimit = 100
+            army_size_percentage = 0.9
+        }
+        obj_the_war_of_dwarves_and_orcs_age_6 = {
+            prestige = 95
+            NOT = { corruption = 1 }
+            OR = {
+                legitimacy = 95
+                horde_unity = 95
+                devotion = 95
+                republican_tradition = 95
+                meritocracy = 95
+            }
+        }
+        obj_the_war_of_dwarves_and_orcs_age_7 = {
+            num_of_allies = 4
+        }
+	}		
+
+	abilities = {
+         ab_the_war_of_dwarves_and_orcs_age_1 = {
+            modifier = {
+                global_defender_dice_roll_bonus = 1
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_the_war_of_dwarves_and_orcs_age_2 = {
+            modifier = {
+                governing_capacity_modifier = 0.25
+                ignore_coring_distance = yes
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+		ab_the_war_of_dwarves_and_orcs_age_3 = {
+            modifier = {
+                siege_ability = 0.15
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_the_war_of_dwarves_and_orcs_age_4 = {
+            modifier = {
+                diplomatic_reputation = 2
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_the_war_of_dwarves_and_orcs_age_5 = {
+            modifier = {
+                global_missionary_strength = 0.03
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_the_war_of_dwarves_and_orcs_age_6 = {
+            modifier = {
+                min_autonomy_in_territories = -0.2
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Gondor
+        ab_the_war_of_dwarves_and_orcs_age_7 = {
+            allow = {
+                tag = X01
+            }
+            modifier = {
+                discipline = 0.05
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Rohan
+        ab_the_war_of_dwarves_and_orcs_age_8 = {
+            allow = {
+                tag = X16
+            }
+            modifier = {
+                cavalry_power = 0.10
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Mordor
+        ab_the_war_of_dwarves_and_orcs_age_9 = {
+            allow = {
+                tag = V17
+            }
+            modifier = {
+                country_military_power = 1
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Warlord of Rhun
+        ab_the_war_of_dwarves_and_orcs_age_10 = {
+            allow = {
+                is_emperor_of_china = yes
+            }
+            modifier = {
+                infantry_power = 0.10
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+	}
+}
+
+corruption_of_dol_guldur_age = {
+	start = 2850
+	
+	can_start = {
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	papacy = 1.0
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+
+	objectives = {
+		obj_corruption_of_dol_guldur_age_1 = {
+            capital_scope = {
+                development = 30
+                religion = ROOT
+                culture = ROOT
+                NOT = { devastation = 1 }
+            }
+        }
+        # Wise Ruler
+		obj_corruption_of_dol_guldur_age_2 = {
+            OR = {
+                adm = 6
+                dip = 6
+                mil = 6
+            }
+        }
+        # Religious Defender
+        obj_corruption_of_dol_guldur_age_3 = {
+            #is_defender_of_faith = yes
+            religious_unity = 1.0
+        }
+        obj_corruption_of_dol_guldur_age_4 = {
+            naval_forcelimit = 100
+            navy_size_percentage = 0.9
+        }
+        obj_corruption_of_dol_guldur_age_5 = {
+            land_forcelimit = 100
+            army_size_percentage = 0.9
+        }
+        obj_corruption_of_dol_guldur_age_6 = {
+            prestige = 95
+            NOT = { corruption = 1 }
+            OR = {
+                legitimacy = 95
+                horde_unity = 95
+                devotion = 95
+                republican_tradition = 95
+                meritocracy = 95
+            }
+        }
+        obj_corruption_of_dol_guldur_age_7 = {
+            num_of_allies = 4
+        }
+	}		
+
+	abilities = {
+         ab_corruption_of_dol_guldur_age_1 = {
+            modifier = {
+                global_defender_dice_roll_bonus = 1
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_corruption_of_dol_guldur_age_2 = {
+            modifier = {
+                governing_capacity_modifier = 0.25
+                ignore_coring_distance = yes
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+		ab_corruption_of_dol_guldur_age_3 = {
+            modifier = {
+                siege_ability = 0.15
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_corruption_of_dol_guldur_age_4 = {
+            modifier = {
+                diplomatic_reputation = 2
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_corruption_of_dol_guldur_age_5 = {
+            modifier = {
+                global_missionary_strength = 0.03
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        ab_corruption_of_dol_guldur_age_6 = {
+            modifier = {
+                min_autonomy_in_territories = -0.2
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Gondor
+        ab_corruption_of_dol_guldur_age_7 = {
+            allow = {
+                tag = X01
+            }
+            modifier = {
+                discipline = 0.05
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Rohan
+        ab_corruption_of_dol_guldur_age_8 = {
+            allow = {
+                tag = X16
+            }
+            modifier = {
+                cavalry_power = 0.10
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Mordor
+        ab_corruption_of_dol_guldur_age_9 = {
+            allow = {
+                tag = V17
+            }
+            modifier = {
+                country_military_power = 1
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Warlord of Rhun
+        ab_corruption_of_dol_guldur_age_10 = {
+            allow = {
+                is_emperor_of_china = yes
+            }
+            modifier = {
+                infantry_power = 0.10
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+	}
+}
+
+war_of_the_ring_age = {
+	start = 2940
+	
+	can_start = {
+		always = yes
 	}
 	
 	papacy = 1.25
@@ -195,7 +543,7 @@ fourth_age = {
 	}
     
 	objectives = {
-		obj_forth_age_prestigious_capital = {
+		obj_war_of_the_ring_age_1 = {
             capital_scope = {
                 development = 30
                 religion = ROOT
@@ -204,7 +552,7 @@ fourth_age = {
             }
         }
         # Wise Ruler
-		obj_forth_age_wise_ruler = {
+		obj_war_of_the_ring_age_2 = {
             OR = {
                 adm = 6
                 dip = 6
@@ -212,19 +560,19 @@ fourth_age = {
             }
         }
         # Religious Defender
-        obj_forth_age_racial_unity = {
+        obj_war_of_the_ring_age_3 = {
             is_defender_of_faith = yes
             religious_unity = 1.0
         }
-        obj_forth_age_colassal_fleet = {
+        obj_war_of_the_ring_age_4 = {
             naval_forcelimit = 100
             navy_size_percentage = 0.9
         }
-        obj_forth_age_colassal_army = {
+        obj_war_of_the_ring_age_5 = {
             land_forcelimit = 100
             army_size_percentage = 0.9
         }
-        obj_forth_age_realm_of_virtues = {
+        obj_war_of_the_ring_age_6 = {
             prestige = 95
             NOT = { corruption = 0 }
             OR = {
@@ -235,13 +583,13 @@ fourth_age = {
                 meritocracy = 95
             }
         }
-        obj_forth_age_well_connected = {
+        obj_war_of_the_ring_age_7 = {
             num_of_allies = 5
         }
 	}		
 
 	abilities = {
-         ab_fourth_age_lay_of_the_land = {
+         ab_war_of_the_ring_age_1 = {
             modifier = {
                 attack_bonus_in_capital_terrain = 1
             }
@@ -249,7 +597,7 @@ fourth_age = {
 				factor = 100
 			}
         }
-        ab_fourth_age_local_administators = {
+        ab_war_of_the_ring_age_2 = {
             modifier = {
                 ignore_coring_distance = yes
             }
@@ -257,7 +605,7 @@ fourth_age = {
 				factor = 100
 			}
         }
-        ab_fourth_age_secret_trails = {
+        ab_war_of_the_ring_age_3 = {
             modifier = {
                 can_bypass_forts = yes
             }
@@ -265,7 +613,7 @@ fourth_age = {
 				factor = 100
 			}
         }
-		ab_fourth_age_integrated_sappers = {
+		ab_war_of_the_ring_age_4 = {
             modifier = {
                 artillery_levels_available_vs_fort = 3
             }
@@ -273,7 +621,7 @@ fourth_age = {
 				factor = 100
 			}
         }
-        ab_fourth_age_charismatic_presence = {
+        ab_war_of_the_ring_age_5 = {
             modifier = {
                 diplomatic_reputation = 2
             }
@@ -281,7 +629,7 @@ fourth_age = {
 				factor = 100
 			}
         }
-        ab_fourth_age_purification_regiments = {
+        ab_war_of_the_ring_age_6 = {
             modifier = {
                 global_missionary_strength = 0.03
             }
@@ -289,7 +637,7 @@ fourth_age = {
 				factor = 100
 			}
         }
-        ab_fourth_age_age_of_civility = {
+        ab_war_of_the_ring_age_7 = {
             modifier = {
                 min_autonomy_in_territories = -0.2
             }
@@ -299,7 +647,7 @@ fourth_age = {
         }
         
         # Gondor
-        ab_fourth_age_gondorian_steel = {
+        ab_war_of_the_ring_age_8 = {
             allow = {
                 tag = X01
             }
@@ -312,7 +660,7 @@ fourth_age = {
         }
         
         # Rohan
-        ab_fourth_age_rohirrim_riders = {
+        ab_war_of_the_ring_age_9 = {
             allow = {
                 tag = X16
             }
@@ -325,7 +673,7 @@ fourth_age = {
         }
         
         # Mordor
-        ab_fourth_age_saurons_will = {
+        ab_war_of_the_ring_age_10 = {
             allow = {
                 tag = V17
             }
@@ -338,7 +686,7 @@ fourth_age = {
         }
         
         # Warlord of Rhun
-        ab_fourth_age_rhunic_hegemony = {
+        ab_war_of_the_ring_age_11 = {
             allow = {
                 is_emperor_of_china = yes
             }

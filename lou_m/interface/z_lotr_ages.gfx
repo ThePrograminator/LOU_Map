@@ -1,112 +1,215 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_third_age"
-		texturefile = "gfx/interface/ages/third_age.dds"
+		name = "GFX_long_winter_age"
+		texturefile = "gfx/interface/ages/long_winter_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_long_winter_age_g"
+		texturefile = "gfx/interface/ages/icon_long_winter_age_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_the_war_of_dwarves_and_orcs_age"
+		texturefile = "gfx/interface/ages/the_war_of_dwarves_and_orcs_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_the_war_of_dwarves_and_orcs_age_g"
+		texturefile = "gfx/interface/ages/icon_the_war_of_dwarves_and_orcs_age_g.dds"
 	}
     
     spriteType = {
-		name = "GFX_fourth_age"
-		texturefile = "gfx/interface/ages/fourth_age.dds"
+		name = "GFX_corruption_of_dol_guldur_age"
+		texturefile = "gfx/interface/ages/corruption_of_dol_guldur_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_corruption_of_dol_guldur_age_g"
+		texturefile = "gfx/interface/ages/icon_corruption_of_dol_guldur_age_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_war_of_the_ring_age"
+		texturefile = "gfx/interface/ages/war_of_the_ring_age.dds"
 	}
 
     # Ability
-	# Thrid Age
+	# The Long Winter
     spriteType = {
-		name = "GFX_ab_third_age_lay_of_the_land"
+		name = "GFX_ab_long_winter_age_lay_of_the_land"
 		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_lay_of_the_land"
-		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_local_administators"
-		texturefile = "gfx/interface/ages/ab_local_administators.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_local_administators"
-		texturefile = "gfx/interface/ages/ab_local_administators.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_secret_trails"
-		texturefile = "gfx/interface/ages/ab_secret_trails.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_secret_trails"
-		texturefile = "gfx/interface/ages/ab_secret_trails.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_integrated_sappers"
-		texturefile = "gfx/interface/ages/ab_integrated_sappers.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_integrated_sappers"
-		texturefile = "gfx/interface/ages/ab_integrated_sappers.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_charismatic_presence"
-		texturefile = "gfx/interface/ages/ab_charismatic_presence.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_charismatic_presence"
-		texturefile = "gfx/interface/ages/ab_charismatic_presence.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_purification_regiments"
-		texturefile = "gfx/interface/ages/ab_purification_regiments.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_purification_regiments"
-		texturefile = "gfx/interface/ages/ab_purification_regiments.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_age_of_civility"
-		texturefile = "gfx/interface/ages/ab_age_of_civility.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_age_of_civility"
-		texturefile = "gfx/interface/ages/ab_age_of_civility.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_gondorian_steel"
-		texturefile = "gfx/interface/ages/ab_gondorian_steel.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_gondorian_steel"
-		texturefile = "gfx/interface/ages/ab_gondorian_steel.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_rohirrim_riders"
-		texturefile = "gfx/interface/ages/ab_rohirrim_riders.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_rohirrim_riders"
-		texturefile = "gfx/interface/ages/ab_rohirrim_riders.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_saurons_will"
-		texturefile = "gfx/interface/ages/ab_saurons_will.dds"
-	}
-    spriteType = {
-		name = "GFX_ab_fourth_age_saurons_will"
-		texturefile = "gfx/interface/ages/ab_saurons_will.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_ab_third_age_rhunic_hegemony"
-		texturefile = "gfx/interface/ages/ab_rhunic_hegemony.dds"
 	}
 	spriteType = {
-		name = "GFX_ab_fourth_age_rhunic_hegemony"
+		name = "GFX_ab_long_winter_age_local_administators"
+		texturefile = "gfx/interface/ages/ab_local_administators.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_secret_trails"
+		texturefile = "gfx/interface/ages/ab_secret_trails.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_long_winter_age_integrated_sappers"
+		texturefile = "gfx/interface/ages/ab_integrated_sappers.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_charismatic_presence"
+		texturefile = "gfx/interface/ages/ab_charismatic_presence.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_purification_regiments"
+		texturefile = "gfx/interface/ages/ab_purification_regiments.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_age_of_civility"
+		texturefile = "gfx/interface/ages/ab_age_of_civility.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_gondorian_steel"
+		texturefile = "gfx/interface/ages/ab_gondorian_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_rohirrim_riders"
+		texturefile = "gfx/interface/ages/ab_rohirrim_riders.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_saurons_will"
+		texturefile = "gfx/interface/ages/ab_saurons_will.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_long_winter_age_rhunic_hegemony"
+		texturefile = "gfx/interface/ages/ab_rhunic_hegemony.dds"
+	}
+	# Ability
+	# War of The Dwarves and Orcs
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_1"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_2"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_3"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_4"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_5"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_6"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_7"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_8"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_9"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_war_of_dwarves_and_orcs_age_10"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+
+	# Ability
+	# Corruption of Dol Guldur
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_1"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_2"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_3"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_4"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_5"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_6"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_7"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_8"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_9"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corruption_of_dol_guldur_age_10"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+
+	# Ability
+	# War of The Ring
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_1"
+		texturefile = "gfx/interface/ages/ab_lay_of_the_land.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_2"
+		texturefile = "gfx/interface/ages/ab_local_administators.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_3"
+		texturefile = "gfx/interface/ages/ab_secret_trails.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_4"
+		texturefile = "gfx/interface/ages/ab_integrated_sappers.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_5"
+		texturefile = "gfx/interface/ages/ab_charismatic_presence.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_6"
+		texturefile = "gfx/interface/ages/ab_purification_regiments.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_7"
+		texturefile = "gfx/interface/ages/ab_age_of_civility.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_8"
+		texturefile = "gfx/interface/ages/ab_gondorian_steel.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_9"
+		texturefile = "gfx/interface/ages/ab_rohirrim_riders.dds"
+	}
+    spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_10"
+		texturefile = "gfx/interface/ages/ab_saurons_will.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_war_of_the_ring_age_11"
 		texturefile = "gfx/interface/ages/ab_rhunic_hegemony.dds"
 	}
 }

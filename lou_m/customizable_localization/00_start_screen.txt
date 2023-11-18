@@ -368,15 +368,27 @@ defined_text = {
 	
 	#Later Start Dates
 	text = {
-		localisation_key = string_start_third_age
+		localisation_key = string_start_long_winter_age
 		trigger = {
-			current_age = third_age
+			current_age = long_winter_age
+		}
+	}
+    text = {
+		localisation_key = string_start_the_war_of_dwarves_and_orcs_age
+		trigger = {
+			current_age = the_war_of_dwarves_and_orcs_age
+		}
+	}
+    text = {
+		localisation_key = string_start_corruption_of_dol_guldur_age
+		trigger = {
+			current_age = corruption_of_dol_guldur_age
 		}
 	}
 	text = {
-		localisation_key = string_start_fourth_age
+		localisation_key = string_start_war_of_the_ring_age
 		trigger = {
-			current_age = fourth_age
+			current_age = war_of_the_ring_age
 		}
     }
     

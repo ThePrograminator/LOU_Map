@@ -28,7 +28,7 @@ guiTypes = {
 		}
 		
 		WindowType = {
-			name = "third_age"
+			name = "long_winter_age"
 			position = { x= 35 y = -29}
 			upsound = age_of_discovery
 
@@ -36,43 +36,134 @@ guiTypes = {
 				name ="frame"
 				spriteType = "GFX_age_indicator_4"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
-				name ="icon_age_of_discovery"
+				name ="icon_long_winter_age"
 				spriteType = "GFX_icon_age_l"
 				position = { x= -30 y = 18 }
 				frame = 1
-				}
+			}
 			iconType = {
-				name ="icon_age_of_reformation"
+				name ="icon_the_war_of_dwarves_and_orcs_age"
 				spriteType = "GFX_icon_age_s"
 				position = { x= -15 y = 70 }
 				frame = 2
-				}
-		}			
+			}
+			iconType = {
+				name ="icon_corruption_of_dol_guldur_age"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 111 }
+				frame = 3
+			}
+			iconType = {
+				name ="icon_war_of_the_ring_age"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 152 }
+				frame = 4
+			}
+		}
 		
 		WindowType = {
-			name = "fourth_age"
+			name = "the_war_of_dwarves_and_orcs_age"
 			position = { x= 35 y = -29}
-			upsound = age_of_reformation
+			upsound = age_of_discovery
 
 			iconType = {
 				name ="frame"
 				spriteType = "GFX_age_indicator_3"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
-				name ="icon_age_of_discovery"
-				spriteType = "GFX_icon_age_of_discovery_g"
+				name ="icon_long_winter_age"
+				spriteType = "GFX_icon_long_winter_age_g"
 				position = { x= -15 y = 22 }
-				}
+			}
 			iconType = {
-				name ="icon_age_of_reformation"
+				name ="icon_the_war_of_dwarves_and_orcs_age"
 				spriteType = "GFX_icon_age_l"
 				position = { x= -30 y = 59 }
 				frame = 2
-				}
+			}
+			iconType = {
+				name ="icon_corruption_of_dol_guldur_age"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 111 }
+				frame = 3
+			}
+			iconType = {
+				name ="icon_war_of_the_ring_age"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 152 }
+				frame = 4
+			}
+		}
+		
+		WindowType = {
+			name = "corruption_of_dol_guldur_age"
+			position = { x= 35 y = -29}
+			upsound = age_of_reformation
+
+			iconType = {
+				name ="frame"
+				spriteType = "GFX_age_indicator_2"
+				position = { x= 0 y = 7 }
+			}
+			iconType = {
+				name ="icon_long_winter_age"
+				spriteType = "GFX_icon_long_winter_age_g"
+				position = { x= -15 y = 22 }
+			}
+			iconType = {
+				name ="icon_the_war_of_dwarves_and_orcs_age"
+				spriteType = "GFX_icon_the_war_of_dwarves_and_orcs_age_g"
+				position = { x= -15 y = 63 }
+			}
+			iconType = {
+				name ="icon_corruption_of_dol_guldur_age"
+				spriteType = "GFX_icon_age_l"
+				position = { x= -30 y = 100 }
+				frame = 3
+			}
+			iconType = {
+				name ="icon_war_of_the_ring_age"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 152 }
+				frame = 4
+			}
 		}	
+
+		WindowType = {
+			name = "war_of_the_ring_age"
+			position = { x= 35 y = -29}
+			upsound = age_of_reformation
+
+			iconType = {
+				name ="frame"
+				spriteType = "GFX_age_indicator_1"
+				position = { x= 0 y = 7 }
+			}
+			iconType = {
+				name ="icon_long_winter_age"
+				spriteType = "GFX_icon_long_winter_age_g"
+				position = { x= -15 y = 22 }
+			}
+			iconType = {
+				name ="icon_the_war_of_dwarves_and_orcs_age"
+				spriteType = "GFX_icon_the_war_of_dwarves_and_orcs_age_g"
+				position = { x= -15 y = 63 }
+			}
+			iconType = {
+				name ="icon_corruption_of_dol_guldur_age"
+				spriteType = "GFX_icon_corruption_of_dol_guldur_age_g"
+				position = { x= -15 y = 104 }
+			}
+			iconType = {
+				name ="icon_war_of_the_ring_age"
+				spriteType = "GFX_icon_age_l"
+				position = { x= -30 y = 141 }
+				frame = 4
+			}
+		}
 		
 		instantTextBoxType = {
 			name = "title"
