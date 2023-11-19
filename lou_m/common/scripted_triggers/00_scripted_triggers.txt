@@ -101,12 +101,52 @@ has_adm_advisor_3 = {
 			treasurer = 3
 			philosopher = 3
 			artist = 3
-			 theologian = 3
+			theologian = 3
 			master_of_mint = 3
 			inquisitor = 3
 			natural_scientist = 3
 		}
 	}
+}
+
+has_adm_advisor_of_level = {
+	OR = {
+		treasurer = $level$
+		philosopher = $level$
+		artist = $level$
+		theologian = $level$
+		master_of_mint = $level$
+		inquisitor = $level$
+		natural_scientist = $level$
+	}
+}
+
+has_dip_advisor_of_level = {
+	OR = {
+		statesman = $level$
+		diplomat = $level$
+		naval_reformer = $level$
+		trader = $level$
+		colonial_governor = $level$
+		navigator = $level$
+		spymaster = $level$
+	}
+}
+
+has_mil_advisor_of_level = {
+	OR = {
+		army_organiser = $level$
+		army_reformer = $level$
+		commandant = $level$
+		grand_captain = $level$
+		recruitmaster = $level$
+		fortification_expert = $level$
+		quartermaster = $level$
+	}
+}
+
+has_advisor_of_type_and_level = {
+	has_$type$_advisor_of_level = { level = $level$ }
 }
 
 
@@ -161,6 +201,7 @@ is_subject_other_than_tributary_trigger = { #Ie Tags that cannot conduct indepen
 		tooltip = is_subject_other_than_tributary_trigger_tooltip
 		is_subject = yes
 		NOT = { is_subject_of_type = tributary_state }
+		NOT = { is_subject_of_type = cultural_sphere_of_influence_subject }
 	}
 }
 
@@ -170,6 +211,7 @@ is_free_or_tributary_trigger = { #I.e. Tags that can conduct independent diploma
 		OR = {
 			is_subject = no
 			is_subject_of_type = tributary_state
+			is_subject_of_type = cultural_sphere_of_influence_subject
 		}
 	}
 }
@@ -200,7 +242,7 @@ ruler_has_good_adm_personality = {
 		ruler_has_personality = incorruptible_personality
 		ruler_has_personality = architectural_visionary_personality
 		ruler_has_personality = scholar_personality
-	}
+			}
 }
 
 ruler_has_good_dip_personality = {
@@ -231,7 +273,7 @@ ruler_has_good_mil_personality = {
 		ruler_has_personality = inspiring_leader_personality
 		ruler_has_personality = martial_educator_personality
 		ruler_has_personality = kind_hearted_personality
-	}
+			}
 }
 
 ruler_has_bad_adm_personality = {
@@ -279,7 +321,7 @@ heir_has_good_adm_personality = {
 		heir_has_personality = incorruptible_personality
 		heir_has_personality = architectural_visionary_personality
 		heir_has_personality = scholar_personality
-	}
+			}
 }
 
 heir_has_good_dip_personality = {
@@ -311,7 +353,7 @@ heir_has_good_mil_personality = {
 		heir_has_personality = inspiring_leader_personality
 		heir_has_personality = martial_educator_personality
 		heir_has_personality = kind_hearted_personality
-	}
+			}
 }
 
 heir_has_bad_adm_personality = {
@@ -359,7 +401,7 @@ consort_has_good_adm_personality = {
 		consort_has_personality = incorruptible_personality
 		consort_has_personality = architectural_visionary_personality
 		consort_has_personality = scholar_personality
-	}
+			}
 }
 
 consort_has_good_dip_personality = {
@@ -391,7 +433,7 @@ consort_has_good_mil_personality = {
 		consort_has_personality = inspiring_leader_personality
 		consort_has_personality = martial_educator_personality
 		consort_has_personality = kind_hearted_personality
-	}
+			}
 }
 
 consort_has_bad_adm_personality = {
@@ -667,8 +709,8 @@ has_nobles_trade_good_trigger = {
 		trade_goods = livestock
 		trade_goods = grain
 		trade_goods = gems
-		trade_goods = slaves
-	}
+					trade_goods = slaves
+				}
 }
 
 has_burghers_trade_good_trigger = {
@@ -782,6 +824,21 @@ has_holy_order_trigger = {
 		}
 		always = no
 	}
+}
+
+has_any_holy_order = {
+	custom_trigger_tooltip = {
+		tooltip = "has_holy_order_trigger_tooltip"
+		always = no
+	}
+}
+
+can_create_holy_orders = {
+	always = no
+}
+
+unlocked_holy_order = {
+	has_country_flag = unlocked_holy_order_$type$
 }
 
 same_govt_as_root_trigger = {
@@ -1014,7 +1071,7 @@ valid_for_personal_unions_trigger = {
 
 is_shadow_kingdom_eligible_trigger = {
 	always = no
-}
+	}
 
 will_leave_for_shadow_kingdom_trigger = {
 	always = no
@@ -1228,7 +1285,7 @@ is_iroquois = {
 }
 
 is_volcanic_area = { #polynesia and indonesia
-always = no
+	always = no
 }
 
 #Country scope
@@ -1342,40 +1399,53 @@ has_completed_idea_group_of_category = {
 	]
 }
 
-num_of_completed_idea_groups_by_category = {
+num_of_completed_idea_groups_adm = {
 	calc_true_if = {
-		[[adm_ideas]
-			full_idea_group = innovativeness_ideas
-			full_idea_group = shadow_of_melkor_ideas
-			full_idea_group = light_of_eru_ideas
-			full_idea_group = economic_ideas
-			full_idea_group = expansion_ideas
-			full_idea_group = humanist_ideas
-			full_idea_group = infrastructure_ideas
-		]
-		[[dip_ideas]
-			full_idea_group = spy_ideas
-			full_idea_group = diplomatic_ideas
-			full_idea_group = trade_ideas
-			full_idea_group = maritime_ideas
-			full_idea_group = influence_ideas
-			full_idea_group = court_ideas
-		]
-		[[mil_ideas]
-			full_idea_group = aristocracy_ideas
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = naval_ideas
-			full_idea_group = theocracy_gov_ideas
-			full_idea_group = indigenous_ideas
-			full_idea_group = horde_gov_ideas
-			full_idea_group = plutocracy_ideas
-			full_idea_group = mercenary_ideas
-		]
+		desc = num_of_completed_idea_groups_adm_tt
+		full_idea_group = innovativeness_ideas
+		full_idea_group = shadow_of_melkor_ideas
+		full_idea_group = light_of_eru_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = infrastructure_ideas
 		amount = $amount$
 	}
+}
+
+num_of_completed_idea_groups_dip = {
+	calc_true_if = {
+		desc = num_of_completed_idea_groups_dip_tt
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = court_ideas
+		amount = $amount$
+	}
+}
+
+num_of_completed_idea_groups_mil = {
+	calc_true_if = {
+		desc = num_of_completed_idea_groups_mil_tt
+		full_idea_group = aristocracy_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = indigenous_ideas
+		full_idea_group = horde_gov_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = mercenary_ideas
+		amount = $amount$
+	}
+}
+
+num_of_completed_idea_groups_by_category = {
+	num_of_completed_idea_groups_$type$ = { amount = $amount$ }
 }
 
 has_religion_of_increased_opinion_for_scope = {
@@ -1525,7 +1595,7 @@ is_not_free_merc_company = {
 
 has_free_mercs_trait = {
 	OR = {
-		has_government_attribute = mercs_do_not_cost_army_professionalism
+				has_government_attribute = mercs_do_not_cost_army_professionalism
 		has_country_flag = fra_free_mercs_bargain_sale_flag
 	}
 }
@@ -1551,7 +1621,7 @@ has_not_free_mercs_trait = {
 # merc_reislaufer
 ##########################################################
 # When adding a new merc company then make sure that a unlock_$merc_company$_tt is defined in the localization
-# For localization purposes use the following line: "Has unlocked the §Y$merc_company$§! mercenary company."
+# For localization purposes use the following line: "Has unlocked the �Y$merc_company$�! mercenary company."
 
 has_unlocked_estate_privilege = {
 	has_country_flag = unlocked_privilege_$estate_privilege$
@@ -1568,7 +1638,7 @@ has_unlocked_merc_company = {
 # Supports following merc companies
 ##########################################################
 # When adding a new merc company then make sure that a unlock_$merc_company$_tt is defined in the localization
-# For localization purposes use the following line: "The §Y$merc_company$§! mercenary company has been globally unlocked."
+# For localization purposes use the following line: "The �Y$merc_company$�! mercenary company has been globally unlocked."
 has_globally_unlocked_merc_company = {
 	custom_trigger_tooltip = {
 		tooltip = has_globally_unlocked_$merc_company$
@@ -1581,8 +1651,18 @@ has_unlocked_government_reform = {
 	has_country_flag = unlocked_$government_reform$
 }
 
+#This trigger is used for enabled estates which should be active, but can naturally disappear (like through revolutions)
 has_unlocked_estate = {
-	has_country_flag = unlocked_$estate$
+	has_country_flag = unlocked_$estate$_flag
+}
+
+#This trigger is used for enabled estates which should be active at all time, no matter what
+has_enabled_estate = {
+	has_country_flag = enables_$estate$_flag
+}
+
+has_disabled_estate = {
+	has_country_flag = disables_$estate$_flag
 }
 
 #### Supports the following government reforms ####
@@ -1625,10 +1705,6 @@ province_is_or_accepts_culture = {
 		has_owner_culture = yes
 		has_owner_accepted_culture = yes
 	}
-}
-
-secondary_religion_group = {
-	always = no
 }
 
 #Buddhism is its own can of worms due to the so many aspects of it
@@ -1768,7 +1844,7 @@ has_valuable_resource = {
 #country scope
 ruler_total_stats = {
 	variable_arithmetic_trigger = {
-		custom_tooltip = ruler_total_stats_$stats$
+		custom_tooltip = ruler_total_stats_$amount$
 		export_to_variable = {
 			variable_name = ruler_adm
 			value = ADM
@@ -1794,7 +1870,7 @@ ruler_total_stats = {
 		}
 		check_variable = {
 			which = ruler_adm
-			value = $stats$
+			value = $amount$
 		}
 	}
 }
@@ -1827,14 +1903,14 @@ ruler_total_stats_target = {
 		}
 		check_variable = {
 			which = ruler_adm
-			value = $stats$
+			value = $amount$
 		}
 	}
 }
 
 heir_total_stats = {
 	variable_arithmetic_trigger = {
-		custom_tooltip = heir_total_stats_$stats$
+		custom_tooltip = heir_total_stats_$amount$
 		export_to_variable = {
 			variable_name = heir_adm_var
 			value = heir_adm
@@ -1860,7 +1936,7 @@ heir_total_stats = {
 		}
 		check_variable = {
 			which = heir_adm_var
-			value = $stats$
+			value = $amount$
 		}
 	}
 }
@@ -1893,14 +1969,14 @@ heir_total_stats_target = {
 		}
 		check_variable = {
 			which = heir_adm_var
-			value = $stats$
+			value = $amount$
 		}
 	}
 }
 
 consort_total_stats = {
 	variable_arithmetic_trigger = {
-		custom_tooltip = consort_total_stats_$stats$
+		custom_tooltip = consort_total_stats_$amount$
 		export_to_variable = {
 			variable_name = consort_adm_var
 			value = consort_adm
@@ -1926,7 +2002,7 @@ consort_total_stats = {
 		}
 		check_variable = {
 			which = consort_adm_var
-			value = $stats$
+			value = $amount$
 		}
 	}
 }
@@ -1959,7 +2035,7 @@ consort_total_stats_target = {
 		}
 		check_variable = {
 			which = consort_adm_var
-			value = $stats$
+			value = $amount$
 		}
 	}
 }
@@ -2304,7 +2380,7 @@ is_not_eligible_for_trade_good_fur = {
 	}
 }
 is_not_eligible_for_trade_good_salt = {
-	always = no
+    always = no
 }
 is_not_eligible_for_trade_good_naval_supplies = {
 	OR = {
@@ -2317,7 +2393,7 @@ is_not_eligible_for_trade_good_naval_supplies = {
 		has_terrain = steppe
 		has_terrain = highlands
 		has_terrain = farmlands
-	}
+			}
 }
 is_not_eligible_for_trade_good_copper = {
 	OR = {
@@ -2362,7 +2438,7 @@ is_not_eligible_for_trade_good_cotton = {
 	always = no
 }
 is_not_eligible_for_trade_good_sugar = {
-	always = no
+    always = no
 }
 is_not_eligible_for_trade_good_tobacco = {
 	always = no
@@ -2377,7 +2453,7 @@ is_not_eligible_for_trade_good_dyes = {
 	always = no
 }
 is_not_eligible_for_trade_good_tropical_wood = {
-	always = no
+    always = no
 }
 is_not_eligible_for_trade_good_livestock = {
 	always = no
@@ -2466,4 +2542,217 @@ has_not_modifier_locking_military_tier = {
 		tooltip = has_modifier_locking_military_tier_tt
 		NOT = { has_modifier_locking_military_tier = yes }
 	}
+}
+
+has_not_locked_first_tier_reform = {
+	always = no	
+}
+
+ARB_hedjaz_najd_bedouin_potential = {
+	always = no	
+}
+
+YEM_is_yemeni_nation ={
+	always = no	
+}
+
+num_of_forced_converted_countries = {
+	custom_trigger_tooltip = {
+		tooltip = HAS_FORCE_CONVERTED_$amount$_COUNTRIES_TT
+		check_variable = {
+			which = num_of_forced_conversions
+			value = $amount$
+		}
+	}
+}
+
+num_of_converted_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = HAS_CONVERTED_$amount$_PROVINCES_TT
+		check_variable = {
+			which = num_converted_religion
+			value = $amount$
+		}
+	}
+}
+
+has_unlocked_trading_policy = {
+	custom_trigger_tooltip = {
+		tooltip = has_unlocked_trading_policy_$policy$_tt
+		NOT = { has_country_flag = locked_trading_policy_$policy$ }
+	}
+}
+
+has_locked_trading_policy = {
+	custom_trigger_tooltip = {
+		tooltip = has_locked_trading_policy_$policy$_tt
+		has_country_flag = locked_trading_policy_$policy$
+	}
+}
+
+has_enabled_trading_policy = {
+	has_country_flag = enabled_trading_policy_$policy$
+	NOT = { has_country_flag = disabled_trading_policy_$policy$ }
+}
+
+has_disabled_trading_policy = {
+	has_country_flag = disabled_trading_policy_$policy$
+}
+
+has_not_disabled_trading_policy = {
+	NOT = { has_country_flag = disabled_trading_policy_$policy$ }
+}
+
+trading_policy_or_upgraded_policy_in_node = {
+	OR = {
+		trading_policy_in_node = {
+			node = $node$
+			policy = $policy$
+		}
+		trading_policy_in_node = {
+			node = $node$
+			policy = $policy$_upgraded
+		}
+	}
+}
+
+# Supports the following decisions
+##################################
+# grand_vizier_selection
+# horse_breeding_decision
+has_unlocked_decision = {
+	custom_trigger_tooltip = {
+		tooltip = has_unlocked_decision_$type$_tt
+		has_country_flag = unlocked_decision_$type$
+	}
+}
+
+has_max_monthly_monarch_power = {
+	if = {
+		limit = {
+			#Promote Advisors - +2
+			has_dlc = "Cradle of Civilization"
+			#National Focus - +2
+			has_dlc = "Res Publica"
+			has_dlc = "Common Sense"
+		}
+		monthly_$type$ = 18
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Res Publica"
+				has_dlc = "Common Sense"
+			}
+		}
+		monthly_$type$ = 16
+	}
+	else = {
+		monthly_$type$ = 14
+	}
+}
+
+has_high_monthly_monarch_power = {
+	if = {
+		limit = {
+			#Promote Advisors - +2
+			has_dlc = "Cradle of Civilization"
+			#National Focus - +2
+			has_dlc = "Res Publica"
+			has_dlc = "Common Sense"
+		}
+		monthly_$type$ = 14
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Res Publica"
+				has_dlc = "Common Sense"
+			}
+		}
+		monthly_$type$ = 12
+	}
+	else = {
+		monthly_$type$ = 10
+	}
+}
+
+has_medium_monthly_monarch_power = {
+	if = {
+		limit = {
+			#Promote Advisors - +2
+			has_dlc = "Cradle of Civilization"
+			#National Focus - +2
+			has_dlc = "Res Publica"
+			has_dlc = "Common Sense"
+		}
+		monthly_$type$ = 12
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Res Publica"
+				has_dlc = "Common Sense"
+			}
+		}
+		monthly_$type$ = 10
+	}
+	else = {
+		monthly_$type$ = 8
+	}
+}
+
+has_defender_of_faith_religion = {
+	custom_trigger_tooltip = {
+		tooltip = has_defender_of_faith_religion_tt
+		always = no
+	}
+}
+
+has_unlocked_diplomatic_action = {
+	has_country_flag = unlocked_diplomatic_action_$type$
+}
+
+has_unified_islam = {
+	custom_trigger_tooltip = {
+		tooltip = has_unified_islam_tt
+		has_country_modifier = unified_islam
+	}
+}
+
+has_completed_all_persian_missions = {
+	custom_trigger_tooltip = {
+		tooltip = has_completed_all_persian_missions_tt
+		always = no
+	}
+}
+
+has_any_ongoing_construction = {
+	custom_trigger_tooltip = {
+		tooltip = has_any_ongoing_construction_tt
+		has_construction = building
+		has_construction = core
+		has_construction = culture
+		has_construction = great_project
+		has_construction = canal
+		has_construction = missionary
+	}
+}
+
+total_non_estate_disasters_completed = {
+	custom_trigger_tooltip = {
+		tooltip = total_non_estate_disasters_completed_$value$_tt
+		check_variable = {
+			which = total_disasters_completed_counter
+			value = $value$
+		}
+	}
+}
+
+has_domination_eoc_missions_available = {
+	has_dlc = "Domination"
+	always = no
 }

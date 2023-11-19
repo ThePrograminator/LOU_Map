@@ -2,7 +2,10 @@ tribal_federation_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 5
 	available = {
-		has_dlc = "Cradle of Civilization"
+		OR = {
+			has_dlc = "Cradle of Civilization"
+			has_dlc = "King of Kings"
+		}
 	}
 
 	powers = {
@@ -103,7 +106,7 @@ tribal_federation_mechanic = {
 					duration = 3650
 				}
 			}
-			cooldown_years = 10
+			cooldown_years = 0
 			ai_chance = {
 				factor = 1
 				modifier = {

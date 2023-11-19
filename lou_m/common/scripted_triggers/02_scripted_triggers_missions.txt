@@ -2,3 +2,188 @@
 tur_al_andalus_eyalet_limit_a = {
 	always = no
 }
+
+BYZ_roman_empire_decision_trigger = {
+	always = no
+}
+
+BYZ_has_rights_of_man = {
+	has_dlc = "Rights of Man"
+}
+
+BYZ_has_leviathan = {
+	has_dlc = "Leviathan"
+}
+
+BYZ_eligible_province_for_culture_conversion = {
+	always = no
+}
+
+BYZ_reached_pronia_slot_limit = {
+	variable_arithmetic_trigger = {
+		export_to_variable = {
+			variable_name = current_amount_of_pronoiars
+			value = modifier:pronoia_amount_check_influence
+		}
+		export_to_variable = {
+			variable_name = max_amount_of_pronoiars
+			value = modifier:num_of_pronoiars
+		}
+		check_variable = {
+			which = current_amount_of_pronoiars
+			which = max_amount_of_pronoiars
+		}
+	}
+}
+
+BYZ_enough_pronoia_slots = {
+	variable_arithmetic_trigger = {
+		export_to_variable = {
+			variable_name = current_amount_of_pronoiars
+			value = modifier:pronoia_amount_check_influence
+		}
+		export_to_variable = {
+			variable_name = max_amount_of_pronoiars
+			value = modifier:num_of_pronoiars
+		}
+		NOT = {
+			check_variable = {
+				which = current_amount_of_pronoiars
+				which = max_amount_of_pronoiars
+			}
+		}
+	}
+}
+
+BYZ_branch_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = BYZ_this_is_a_branching_mission
+		always = no
+	}
+}
+
+byz_is_in_middle_east_or_europe = {
+	always = no
+}
+
+BYZ_historical_interest_against_ottomans = {
+	always = no
+}
+
+BYZ_is_not_latin_empire = {
+	always = no
+}
+
+has_orthodox_religious_icon_trigger = {
+	always = no
+}
+
+has_branching_missions = {
+	always = no
+}
+
+has_preview_mission_flag = {
+	check_variable = {
+		which = can_preview_missions_var
+		value = 1
+	}
+}
+
+can_preview_batch = {
+	has_country_flag = has_batch_$batch$_active
+}
+
+can_preview_mission_of_key_and_batch = {
+	has_country_flag = can_choose_$key$_$batch$_branching_missions
+}
+can_preview_mission_of_key = {
+	or = {
+		can_preview_mission_of_key_and_batch = { key = $key$ batch = 1 }
+		can_preview_mission_of_key_and_batch = { key = $key$ batch = 2 }
+		can_preview_mission_of_key_and_batch = { key = $key$ batch = 3 }
+	}
+}
+can_preview_missions = {
+	custom_trigger_tooltip = {
+		tooltip = preview_missions_decision_ct
+		always = no
+	}
+}
+
+not_in_mission_preview_mode = {
+	if = {
+		limit = {
+			check_variable = {
+				which = can_preview_missions_var
+				value = 1
+			}
+			can_preview_mission_of_key = { key = $key$ }
+		}
+		custom_trigger_tooltip = {
+			tooltip = BYZ_we_are_in_preview
+			always = no
+		}
+	}
+}
+
+has_selected_a_branch = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_a_branch_tt
+		always = no
+	}
+}
+
+num_of_mission_branches_3 = {
+	always = no
+}
+
+num_of_mission_branches_4 = {
+	always = no
+}
+
+num_of_mission_branches_5 = {
+	always = no
+	has_country_flag = has_$batch$_batch	#Dummy
+}
+num_of_mission_branches = {
+	num_of_mission_branches_$value$ = { batch = $batch$ }
+}
+
+currently_selected_branch_1 = {
+	always = no
+}
+currently_selected_branch_2 = {
+	always = no
+}
+currently_selected_branch_3 = {
+	always = no
+}
+currently_selected_branch_4 = {
+	always = no
+}
+currently_selected_branch_5 = {
+	always = no
+	has_country_flag = has_$batch$_batch	#dummy
+}
+currently_selected_branch = {
+	currently_selected_branch_$value$ = { batch = $batch$ }
+}
+
+can_select_branch_1 = {
+	hidden_trigger = { or = { always = yes } }
+}
+can_select_branch_2 = {
+	hidden_trigger = { or = { always = yes } }
+}
+can_select_branch_3 = {
+	hidden_trigger = { or = { always = yes } }
+}
+can_select_branch_4 = {
+	hidden_trigger = { or = { always = yes } }
+}
+can_select_branch_5 = {
+	hidden_trigger = { or = { always = yes has_country_flag = has_$batch$_batch } }
+}
+can_select_branch = {
+	can_select_branch_$value$ = { batch = $batch$ }
+}
