@@ -134,7 +134,7 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
-	condition = {
+condition = {
 		tooltip = "TOOLTIP_CAN_COLONIZE"
 		potential = {
 		}
@@ -166,6 +166,7 @@ can_expel_minority_from = {
 	condition = {
 		potential = {
 			OR = {
+				is_religious_center_province = yes
 				is_reformation_center = yes
 			}
 		}
@@ -197,5 +198,21 @@ is_possible_hre_province = {
 }
 
 will_demand_annexation = {
-	
+
+}
+
+can_join_hre = {
+	condition = {
+		tooltip = "PERMANENTLY_LEFT_HRE"
+		potential = {
+		}
+		allow = {
+			NOT = {
+				has_country_flag = permanently_left_hre_flag
+			}
+		}
+	}
+}
+
+can_leave_hre = {
 }

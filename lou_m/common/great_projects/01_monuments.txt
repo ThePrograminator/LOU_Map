@@ -4196,10 +4196,14 @@ ost_in_edhil_monument = {
 			factor = 200
 		}
 		province_modifiers = {
+			local_regiment_cost = -0.20
 		}
 		area_modifier = {
+			province_trade_power_modifier = 0.1
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
+			trade_steering = 0.05
 		}
 		on_upgraded = {
 		}
@@ -4212,10 +4216,14 @@ ost_in_edhil_monument = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_regiment_cost = -0.35
 		}
 		area_modifier = {
+			province_trade_power_modifier = 0.2
+			local_development_cost = -0.2
 		}
 		country_modifiers = {
+			trade_steering = 0.1
 		}
 		on_upgraded = {
 		}
@@ -4228,10 +4236,14 @@ ost_in_edhil_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_regiment_cost = -0.50
 		}
 		area_modifier = {
+			province_trade_power_modifier = 0.3
+			local_development_cost = -0.3
 		}
 		country_modifiers = {
+			trade_steering = 0.15
 		}
 		on_upgraded = {
 		}
@@ -5049,7 +5061,8 @@ fornost_monument = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.01
+			has_dlc = "Cradle of Civilization"
+				yearly_army_professionalism = 0.01
 		}
 		on_upgraded = {
 		}
@@ -5070,7 +5083,8 @@ fornost_monument = {
 		local_unrest = -2
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.03
+			has_dlc = "Cradle of Civilization" 
+				yearly_army_professionalism = 0.03
 		}
 		on_upgraded = {
 
@@ -5092,7 +5106,8 @@ fornost_monument = {
 		local_unrest = -3
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.05
+			has_dlc = "Cradle of Civilization"
+				yearly_army_professionalism = 0.05
 		}
 		on_upgraded = {
 		}
@@ -5533,8 +5548,8 @@ carndum_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
+			is_owner_racial_group_melkor = yes	
 			owner = {
-				is_owner_racial_group_melkor = yes	
 				religion = religion_orkish
 			}
 			has_owner_religion = yes
@@ -5548,8 +5563,8 @@ carndum_monument = {
 	}
 	can_upgrade_trigger = {	
 		AND = {
+			is_owner_racial_group_melkor = yes	
 			owner = {
-				is_owner_racial_group_melkor = yes	
 				religion = religion_orkish
 			}
 			has_owner_religion = yes
@@ -5587,7 +5602,7 @@ carndum_monument = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-			production_efficiency = 0.05
+			local_production_efficiency = 0.05
 			local_unrest = -3
 		}
 		country_modifiers = {
@@ -5609,10 +5624,10 @@ carndum_monument = {
 			local_defensiveness = 0.20
 		}
 		area_modifier = {
-			production_efficiency = 0.10
+			local_production_efficiency = 0.10
 			local_unrest = -4
 		}
-			country_modifiers = {
+		country_modifiers = {
 			diplomatic_upkeep = 2
 			relation_with_same_culture_group = 25
 		}
@@ -5631,7 +5646,7 @@ carndum_monument = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = {
-			production_efficiency = 0.15
+			local_production_efficiency = 0.15
 			local_unrest = -5
 		}
 		country_modifiers = {
@@ -6755,10 +6770,13 @@ elostirion_monument = {
 			factor = 200
 		}
 		province_modifiers = {
+			local_defensiveness = 0.1
 		}
 		area_modifier = {
+			local_governing_cost = -0.20
 		}
 		country_modifiers = {
+			spy_offence = 0.1
 		}
 		on_upgraded = {
 		}
@@ -6771,10 +6789,13 @@ elostirion_monument = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_defensiveness = 0.2
 		}
 		area_modifier = {
+			local_governing_cost = -0.35
 		}
 		country_modifiers = {
+			spy_offence = 0.2
 		}
 		on_upgraded = {
 		}
@@ -6787,10 +6808,14 @@ elostirion_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_defensiveness = 0.3
 		}
 		area_modifier = {
+			local_governing_cost = -0.5
 		}
 		country_modifiers = {
+			spy_offence = 0.3
+			diplomats = 1
 		}
 		on_upgraded = {
 		}
@@ -7349,10 +7374,13 @@ hyvat_kalat_monument = {
 			factor = 200
 		}
 		province_modifiers = {
+			local_development_cost = -0.1
 		}
 		area_modifier = {
+			supply_limit_modifier = 0.25
 		}
 		country_modifiers = {
+			improve_relation_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -7366,10 +7394,13 @@ hyvat_kalat_monument = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.2
 		}
 		area_modifier = {
+			supply_limit_modifier = 0.50
 		}
 		country_modifiers = {
+			improve_relation_modifier = 0.2
 		}
 		on_upgraded = {
 		}
@@ -7382,10 +7413,14 @@ hyvat_kalat_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -0.3
 		}
 		area_modifier = {
+			supply_limit_modifier = 0.75
 		}
 		country_modifiers = {
+			improve_relation_modifier = 0.3
+			merchants = 1
 		}
 		on_upgraded = {
 		}
