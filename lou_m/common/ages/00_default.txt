@@ -76,6 +76,14 @@ long_winter_age = {
 				factor = 100
 			}
         }
+        ab_long_winter_age_supplies_in_dire_times = {
+            modifier = {
+                global_supply_limit_modifier = 0.5
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
         ab_long_winter_age_local_administators = {
             modifier = {
                 governing_capacity_modifier = 0.25
@@ -117,53 +125,53 @@ long_winter_age = {
 				factor = 100
 			}
         }
-        
-        # Gondor
-        ab_long_winter_age_gondorian_steel = {
+
+        #Umbar
+        ab_long_winter_age_umbar = {
             allow = {
-                tag = X01
+                tag = X27
             }
             modifier = {
-                discipline = 0.05
+                naval_morale = 0.2
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+
+        #Dunleding
+        ab_long_winter_age_dunleding = {
+            allow = {
+                primary_culture = culture_dunlendings
+            }
+            modifier = {
+                shock_damage = 0.15
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Rohan
-        ab_long_winter_age_rohirrim_riders = {
+        #Sagath
+        ab_long_winter_age_sagath = {
             allow = {
-                tag = X16
+                tag = X99
             }
             modifier = {
-                cavalry_power = 0.10
+                cavalry_flanking = 0.2
             }
             ai_will_do = {
 				factor = 100
 			}
         }
-        
-        # Mordor
-        ab_long_winter_age_saurons_will = {
+
+        #Haradrim
+        ab_long_winter_age_haradrim = {
             allow = {
-                tag = V17
+                culture_group = culture_group_haruzani
             }
             modifier = {
-                country_military_power = 1
-            }
-            ai_will_do = {
-				factor = 100
-			}
-        }
-        
-        # Warlord of Rhun
-        ab_long_winter_age_rhunic_hegemony = {
-            allow = {
-                is_emperor_of_china = yes
-            }
-            modifier = {
-                infantry_power = 0.10
+                force_march_free = yes
             }
             ai_will_do = {
 				factor = 100
@@ -244,7 +252,7 @@ the_war_of_dwarves_and_orcs_age = {
 	abilities = {
          ab_the_war_of_dwarves_and_orcs_age_1 = {
             modifier = {
-                global_defender_dice_roll_bonus = 1
+                build_cost = -0.25
             }
             ai_will_do = {
 				factor = 100
@@ -252,8 +260,7 @@ the_war_of_dwarves_and_orcs_age = {
         }
         ab_the_war_of_dwarves_and_orcs_age_2 = {
             modifier = {
-                governing_capacity_modifier = 0.25
-                ignore_coring_distance = yes
+                army_tradition = 1
             }
             ai_will_do = {
 				factor = 100
@@ -261,7 +268,7 @@ the_war_of_dwarves_and_orcs_age = {
         }
 		ab_the_war_of_dwarves_and_orcs_age_3 = {
             modifier = {
-                siege_ability = 0.15
+                province_warscore_cost = -0.25
             }
             ai_will_do = {
 				factor = 100
@@ -269,7 +276,7 @@ the_war_of_dwarves_and_orcs_age = {
         }
         ab_the_war_of_dwarves_and_orcs_age_4 = {
             modifier = {
-                diplomatic_reputation = 2
+                culture_conversion_cost = -0.5
             }
             ai_will_do = {
 				factor = 100
@@ -277,7 +284,7 @@ the_war_of_dwarves_and_orcs_age = {
         }
         ab_the_war_of_dwarves_and_orcs_age_5 = {
             modifier = {
-                global_missionary_strength = 0.03
+                relation_with_same_culture_group = 35
             }
             ai_will_do = {
 				factor = 100
@@ -285,59 +292,67 @@ the_war_of_dwarves_and_orcs_age = {
         }
         ab_the_war_of_dwarves_and_orcs_age_6 = {
             modifier = {
-                min_autonomy_in_territories = -0.2
+                idea_cost = -0.2
             }
             ai_will_do = {
 				factor = 100
 			}
         }
-        
-        # Gondor
         ab_the_war_of_dwarves_and_orcs_age_7 = {
-            allow = {
-                tag = X01
-            }
             modifier = {
-                discipline = 0.05
+                inflation_action_cost = -0.5
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Rohan
-        ab_the_war_of_dwarves_and_orcs_age_8 = {
+        # Durins folk
+        ab_the_war_of_dwarves_and_orcs_age_durins_folk = {
             allow = {
-                tag = X16
+                tag = Y22
             }
             modifier = {
-                cavalry_power = 0.10
+                war_exhaustion = -0.2
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Mordor
-        ab_the_war_of_dwarves_and_orcs_age_9 = {
+        # Moria
+        ab_the_war_of_dwarves_and_orcs_age_moria = {
             allow = {
-                tag = V17
+                tag = Y57
             }
             modifier = {
-                country_military_power = 1
+                manpower_recovery_speed = 0.10
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Warlord of Rhun
-        ab_the_war_of_dwarves_and_orcs_age_10 = {
+        # Goblin Town
+        ab_the_war_of_dwarves_and_orcs_goblin_town = {
             allow = {
-                is_emperor_of_china = yes
+                tag = Y44
             }
             modifier = {
-                infantry_power = 0.10
+                leader_land_shock = 1
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Lake Town
+        ab_the_war_of_dwarves_and_orcs_age_lake_town = {
+            allow = {
+                tag = V51
+            }
+            modifier = {
+                trade_efficiency = 0.25
             }
             ai_will_do = {
 				factor = 100
@@ -418,7 +433,7 @@ corruption_of_dol_guldur_age = {
 	abilities = {
          ab_corruption_of_dol_guldur_age_1 = {
             modifier = {
-                global_defender_dice_roll_bonus = 1
+                ae_impact = -0.2
             }
             ai_will_do = {
 				factor = 100
@@ -426,8 +441,7 @@ corruption_of_dol_guldur_age = {
         }
         ab_corruption_of_dol_guldur_age_2 = {
             modifier = {
-                governing_capacity_modifier = 0.25
-                ignore_coring_distance = yes
+                all_power_cost = -0.1
             }
             ai_will_do = {
 				factor = 100
@@ -435,7 +449,7 @@ corruption_of_dol_guldur_age = {
         }
 		ab_corruption_of_dol_guldur_age_3 = {
             modifier = {
-                siege_ability = 0.15
+                advisor_cost = -0.25
             }
             ai_will_do = {
 				factor = 100
@@ -443,7 +457,7 @@ corruption_of_dol_guldur_age = {
         }
         ab_corruption_of_dol_guldur_age_4 = {
             modifier = {
-                diplomatic_reputation = 2
+                can_chain_claim = yes
             }
             ai_will_do = {
 				factor = 100
@@ -451,7 +465,7 @@ corruption_of_dol_guldur_age = {
         }
         ab_corruption_of_dol_guldur_age_5 = {
             modifier = {
-                global_missionary_strength = 0.03
+                spy_offence = 0.5
             }
             ai_will_do = {
 				factor = 100
@@ -459,59 +473,67 @@ corruption_of_dol_guldur_age = {
         }
         ab_corruption_of_dol_guldur_age_6 = {
             modifier = {
-                min_autonomy_in_territories = -0.2
+                yearly_corruption = -0.15
             }
             ai_will_do = {
 				factor = 100
 			}
         }
-        
-        # Gondor
         ab_corruption_of_dol_guldur_age_7 = {
-            allow = {
-                tag = X01
-            }
             modifier = {
-                discipline = 0.05
+                improve_relation_modifier = 0.25
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Rohan
-        ab_corruption_of_dol_guldur_age_8 = {
+        # Dol Guldur
+        ab_corruption_of_dol_guldur_age_dol_guldur = {
             allow = {
-                tag = X16
+                tag = V19
             }
             modifier = {
-                cavalry_power = 0.10
+                core_creation = -0.25
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Mordor
-        ab_corruption_of_dol_guldur_age_9 = {
+        # Lothlorien
+        ab_corruption_of_dol_guldur_age_lothlorien = {
             allow = {
-                tag = V17
+                tag = Y68
             }
             modifier = {
-                country_military_power = 1
+                diplomatic_upkeep = 2
             }
             ai_will_do = {
 				factor = 100
 			}
         }
         
-        # Warlord of Rhun
-        ab_corruption_of_dol_guldur_age_10 = {
+        # woodland realm
+        ab_corruption_of_dol_guldur_age_woodland_realm = {
             allow = {
-                is_emperor_of_china = yes
+                tag = Y67
             }
             modifier = {
-                infantry_power = 0.10
+                fire_damage = 0.20
+            }
+            ai_will_do = {
+				factor = 100
+			}
+        }
+        
+        # Gundabad
+        ab_corruption_of_dol_guldur_age_gundabad = {
+            allow = {
+                tag = Y63
+            }
+            modifier = {
+                land_maintenance_modifier = -0.20
             }
             ai_will_do = {
 				factor = 100
@@ -528,6 +550,7 @@ war_of_the_ring_age = {
 	}
 	
 	papacy = 1.25
+    religious_conflicts = yes
 	absolutism = {
 		harsh_treatment = 1
 		stability = 1
@@ -591,7 +614,7 @@ war_of_the_ring_age = {
 	abilities = {
          ab_war_of_the_ring_age_1 = {
             modifier = {
-                attack_bonus_in_capital_terrain = 1
+                development_cost = -0.2
             }
             ai_will_do = {
 				factor = 100
@@ -599,7 +622,7 @@ war_of_the_ring_age = {
         }
         ab_war_of_the_ring_age_2 = {
             modifier = {
-                ignore_coring_distance = yes
+                merc_maintenance_modifier = -0.35
             }
             ai_will_do = {
 				factor = 100
@@ -607,7 +630,7 @@ war_of_the_ring_age = {
         }
         ab_war_of_the_ring_age_3 = {
             modifier = {
-                can_bypass_forts = yes
+                own_coast_naval_combat_bonus = 1
             }
             ai_will_do = {
 				factor = 100
@@ -615,7 +638,7 @@ war_of_the_ring_age = {
         }
 		ab_war_of_the_ring_age_4 = {
             modifier = {
-                artillery_levels_available_vs_fort = 3
+                unjustified_demands = -0.25
             }
             ai_will_do = {
 				factor = 100
@@ -623,7 +646,7 @@ war_of_the_ring_age = {
         }
         ab_war_of_the_ring_age_5 = {
             modifier = {
-                diplomatic_reputation = 2
+                free_policy = 1
             }
             ai_will_do = {
 				factor = 100
@@ -631,7 +654,7 @@ war_of_the_ring_age = {
         }
         ab_war_of_the_ring_age_6 = {
             modifier = {
-                global_missionary_strength = 0.03
+                all_estate_loyalty_equilibrium = 0.1
             }
             ai_will_do = {
 				factor = 100
@@ -639,7 +662,7 @@ war_of_the_ring_age = {
         }
         ab_war_of_the_ring_age_7 = {
             modifier = {
-                min_autonomy_in_territories = -0.2
+                extra_manpower_at_religious_war = yes
             }
             ai_will_do = {
 				factor = 100
@@ -647,12 +670,12 @@ war_of_the_ring_age = {
         }
         
         # Gondor
-        ab_war_of_the_ring_age_8 = {
+        ab_war_of_the_ring_age_gondorian_steel = {
             allow = {
                 tag = X01
             }
             modifier = {
-                discipline = 0.1
+                discipline = 0.05
             }
             ai_will_do = {
 				factor = 100
@@ -660,12 +683,12 @@ war_of_the_ring_age = {
         }
         
         # Rohan
-        ab_war_of_the_ring_age_9 = {
+        ab_war_of_the_ring_age_rohirrim_riders = {
             allow = {
                 tag = X16
             }
             modifier = {
-                cavalry_power = 0.2
+                cavalry_power = 0.10
             }
             ai_will_do = {
 				factor = 100
@@ -673,12 +696,12 @@ war_of_the_ring_age = {
         }
         
         # Mordor
-        ab_war_of_the_ring_age_10 = {
+        ab_war_of_the_ring_age_saurons_will = {
             allow = {
                 tag = V17
             }
             modifier = {
-                country_military_power = 3
+                country_military_power = 1
             }
             ai_will_do = {
 				factor = 100
@@ -686,12 +709,12 @@ war_of_the_ring_age = {
         }
         
         # Warlord of Rhun
-        ab_war_of_the_ring_age_11 = {
+        ab_war_of_the_ring_age_rhunic_hegemony = {
             allow = {
                 is_emperor_of_china = yes
             }
             modifier = {
-                infantry_power = 0.2
+                infantry_power = 0.10
             }
             ai_will_do = {
 				factor = 100
