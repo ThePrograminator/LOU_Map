@@ -22,6 +22,10 @@ long_winter_age = {
 	}
 
 	objectives = {
+        ##############################################
+        #Generic
+        ##############################################
+        #Generic 1
 		obj_long_winter_age_prestigious_capital = {
             capital_scope = {
                 development = 30
@@ -30,40 +34,197 @@ long_winter_age = {
                 NOT = { devastation = 1 }
             }
         }
-        # Wise Ruler
-		obj_long_winter_age_wise_ruler = {
+        #Generic 2
+		obj_long_winter_age_well_connected = {
+            num_of_allies = 4
+        }
+        #Generic 3
+        obj_long_winter_age_wise_ruler = {
             OR = {
                 adm = 6
                 dip = 6
                 mil = 6
             }
         }
-        # Religious Defender
-        obj_long_winter_age_racial_unity = {
-            #is_defender_of_faith = yes
-            religious_unity = 1.0
+        ##############################################
+        #Allegiance
+        ##############################################
+        #Good 1
+        obj_long_winter_age_good_1 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_discover_america_tooltip
+                trade_goods_produced_amount = {
+                    trade_goods = grain
+                    amount = 15
+                }
+			}
         }
-        obj_long_winter_age_colassal_fleet = {
-            naval_forcelimit = 100
-            navy_size_percentage = 0.9
+        #Good 2
+        obj_long_winter_age_good_2 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_discover_america_tooltip
+                trade_goods_produced_amount = {
+                    trade_goods = grain
+                    amount = 10
+                }
+			}
         }
-        obj_long_winter_age_colassal_army = {
-            land_forcelimit = 100
-            army_size_percentage = 0.9
+        #Evil 1
+        obj_long_winter_age_evil_1 = {
+            allow = {
+                is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+            always = yes
         }
-        obj_long_winter_age_realm_of_virtues = {
-            prestige = 95
-            NOT = { corruption = 1 }
-            OR = {
-                legitimacy = 95
-                horde_unity = 95
-                devotion = 95
-                republican_tradition = 95
-                meritocracy = 95
+        #Evil 2
+        obj_long_winter_age_evil_2 = {
+            allow = {
+				is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+			always = yes
+        }
+        #Neutral 1
+        obj_long_winter_age_neutral_1 = {
+            allow = {
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			num_accepted_cultures = 3
+        }
+        #Neural 2
+        obj_long_winter_age_neutral_2 = {
+            allow = {
+				NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = yes
+        }
+        ##############################################
+        #Race
+        ##############################################
+        #Human
+        obj_long_winter_age_human = {
+            allow = {
+                OR = {
+                    is_human = yes
+                    is_hobbit = yes
+                    is_wizard = yes
+                }
+			}
+            is_at_war = no
+            stability = 2
+            war_exhaustion = 0
+			trade_goods_produced_amount = {
+                trade_goods = grain
+                amount = 10
+            }
+            any_owned_province = {
+                devastation = 1
             }
         }
-        obj_long_winter_age_well_connected = {
-            num_of_allies = 4
+        #Dwarf
+        obj_long_winter_age_dwarf = {
+            allow = {
+				is_dwarf = yes
+			}
+			num_of_owned_provinces_with = {
+                value = 10
+                has_terrain = mountain
+            }
+        }
+        #Elf
+        obj_long_winter_age_elf = {
+            allow = {
+				is_elf = yes
+			}
+            has_adm_advisor_2 = yes
+            has_dip_advisor_2 = yes
+			has_mil_advisor_2 = yes
+        }
+        #Orc
+        obj_long_winter_age_orc = {
+            allow = {
+				OR = {
+                    is_orc = yes
+                    technology_group = lotr_half_orc
+                    is_goblin = yes
+                    technology_group = lotr_uruk_hai
+                    is_wight = yes
+                }
+			}
+			grown_by_development = 50
+        }
+        ##############################################
+        #Continent
+        ##############################################
+        #Middle Earth
+        obj_long_winter_age_middle_earth = {
+            allow = {
+				capital_scope = {
+                    continent = middle_earth
+                }
+			}
+            OR = {
+                trading_part = {
+                    trade_goods = grain
+                    value = 0.05
+                }
+                trading_part = {
+                    trade_goods = livestock
+                    value = 0.05
+                }
+            }
+        }
+        #Hither Lands
+        obj_long_winter_age_hither_lands = {
+            allow = {
+				capital_scope = {
+                    continent = hither_lands
+                }
+			}
+			num_of_owned_provinces_with = {
+                value = 10
+                is_prosperous = yes
+            }
+        }
+        #Palisor
+        obj_long_winter_age_Palisor = {
+            allow = {
+				capital_scope = {
+                    continent = palisor
+                }
+			}
+			any_neighbor_country = {
+                NOT = {
+                    tech_difference = 3
+                }
+            } 
         }
 	}		
 
