@@ -32,4 +32,91 @@ country_event = {
 		}
 	}
 }
+#North War
+country_event = {
+	id = LOU_Long_Winter.2
+	title = "LOU_Long_Winter.2.t"
+	desc = "LOU_Long_Winter.2.d"
+	picture = fellowship_caradhras_eventpicture
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	
+	trigger = {
+		NOT = {
+			has_global_flag = long_winter_war_north_finished_flag
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "LOU_Long_Winter.3.a"
+		trigger = {
+			tag = X16
+		}
+
+		set_global_flag = long_winter_war_north_finished_flag
+
+		set_global_flag = long_winter_war_north_good_flag
+	}
+	
+	option = {
+		name = "LOU_Long_Winter.3.b"
+		trigger = {
+			tag = V95
+		}
+
+		set_global_flag = long_winter_war_north_finished_flag
+
+		set_global_flag = long_winter_war_north_evil_flag
+	}
+}
+
+#South War
+country_event = {
+	id = LOU_Long_Winter.3
+	title = "LOU_Long_Winter.3.t"
+	desc = "LOU_Long_Winter.3.d"
+	picture = fellowship_caradhras_eventpicture
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = {
+			has_global_flag = long_winter_war_south_finished_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "LOU_Long_Winter.3.a"
+		trigger = {
+			tag = X01
+		}
+
+		set_global_flag = long_winter_war_south_finished_flag
+
+		set_global_flag = long_winter_war_south_good_flag
+	}
+	
+	option = {
+		name = "LOU_Long_Winter.3.b"
+		trigger = {
+			tag = X27
+		}
+
+		set_global_flag = long_winter_war_south_finished_flag
+
+		set_global_flag = long_winter_war_south_evil_flag
+	}
+}

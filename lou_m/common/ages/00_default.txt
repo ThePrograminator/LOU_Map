@@ -57,12 +57,9 @@ long_winter_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			custom_trigger_tooltip = {
-				tooltip = obj_discover_america_tooltip
-                trade_goods_produced_amount = {
-                    trade_goods = grain
-                    amount = 15
-                }
+            custom_trigger_tooltip = {
+				tooltip = obj_long_winter_age_good_1_tooltip
+                has_global_flag = long_winter_war_north_good_flag
 			}
         }
         #Good 2
@@ -73,12 +70,9 @@ long_winter_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			custom_trigger_tooltip = {
-				tooltip = obj_discover_america_tooltip
-                trade_goods_produced_amount = {
-                    trade_goods = grain
-                    amount = 10
-                }
+            custom_trigger_tooltip = {
+				tooltip = obj_long_winter_age_good_2_tooltip
+                has_global_flag = long_winter_war_south_good_flag
 			}
         }
         #Evil 1
@@ -89,7 +83,10 @@ long_winter_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-            always = yes
+            custom_trigger_tooltip = {
+				tooltip = obj_long_winter_age_evil_1_tooltip
+                has_global_flag = long_winter_war_north_evil_flag
+			}
         }
         #Evil 2
         obj_long_winter_age_evil_2 = {
@@ -99,7 +96,10 @@ long_winter_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-			always = yes
+            custom_trigger_tooltip = {
+				tooltip = obj_long_winter_age_evil_2_tooltip
+                has_global_flag = long_winter_war_south_evil_flag
+			}
         }
         #Neutral 1
         obj_long_winter_age_neutral_1 = {
@@ -123,7 +123,11 @@ long_winter_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = yes
+			capital_scope = {
+                fort_level = 3
+                has_influencing_fort = yes
+                development = 20
+            }
         }
         ##############################################
         #Race
@@ -365,48 +369,159 @@ the_war_of_dwarves_and_orcs_age = {
 	}
 
 	objectives = {
-		obj_the_war_of_dwarves_and_orcs_age_1 = {
-            capital_scope = {
-                development = 30
-                religion = ROOT
-                culture = ROOT
-                NOT = { devastation = 1 }
-            }
+		##############################################
+        #Generic
+        ##############################################
+        #Generic 1
+		obj_the_war_of_dwarves_and_orcs_age_generic_1 = {
+            always = no
         }
-        # Wise Ruler
-		obj_the_war_of_dwarves_and_orcs_age_2 = {
-            OR = {
-                adm = 6
-                dip = 6
-                mil = 6
-            }
+        #Generic 2
+		obj_the_war_of_dwarves_and_orcs_age_generic_2 = {
+            always = no
         }
-        # Religious Defender
-        obj_the_war_of_dwarves_and_orcs_age_3 = {
-            #is_defender_of_faith = yes
-            religious_unity = 1.0
+        #Generic 3
+        obj_the_war_of_dwarves_and_orcs_age_generic_3 = {
+            always = no
         }
-        obj_the_war_of_dwarves_and_orcs_age_4 = {
-            naval_forcelimit = 100
-            navy_size_percentage = 0.9
+        ##############################################
+        #Allegiance
+        ##############################################
+        #Good 1
+        obj_the_war_of_dwarves_and_orcs_age_good_1 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
         }
-        obj_the_war_of_dwarves_and_orcs_age_5 = {
-            land_forcelimit = 100
-            army_size_percentage = 0.9
+        #Good 2
+        obj_the_war_of_dwarves_and_orcs_age_good_2 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
         }
-        obj_the_war_of_dwarves_and_orcs_age_6 = {
-            prestige = 95
-            NOT = { corruption = 1 }
-            OR = {
-                legitimacy = 95
-                horde_unity = 95
-                devotion = 95
-                republican_tradition = 95
-                meritocracy = 95
-            }
+        #Evil 1
+        obj_the_war_of_dwarves_and_orcs_age_evil_1 = {
+            allow = {
+                is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+            always = no
         }
-        obj_the_war_of_dwarves_and_orcs_age_7 = {
-            num_of_allies = 4
+        #Evil 2
+        obj_the_war_of_dwarves_and_orcs_age_evil_2 = {
+            allow = {
+				is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Neutral 1
+        obj_the_war_of_dwarves_and_orcs_age_neutral_1 = {
+            allow = {
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Neural 2
+        obj_the_war_of_dwarves_and_orcs_age_neutral_2 = {
+            allow = {
+				NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        ##############################################
+        #Race
+        ##############################################
+        #Human
+        obj_the_war_of_dwarves_and_orcs_age_human = {
+            allow = {
+                OR = {
+                    is_human = yes
+                    is_hobbit = yes
+                    is_wizard = yes
+                }
+			}
+            always = no
+        }
+        #Dwarf
+        obj_the_war_of_dwarves_and_orcs_age_dwarf = {
+            allow = {
+				is_dwarf = yes
+			}
+			always = no
+        }
+        #Elf
+        obj_the_war_of_dwarves_and_orcs_age_elf = {
+            allow = {
+				is_elf = yes
+			}
+            always = no
+        }
+        #Orc
+        obj_the_war_of_dwarves_and_orcs_age_orc = {
+            allow = {
+				OR = {
+                    is_orc = yes
+                    technology_group = lotr_half_orc
+                    is_goblin = yes
+                    technology_group = lotr_uruk_hai
+                    is_wight = yes
+                }
+			}
+			national_focus = MIL 
+            monthly_mil = 12
+        }
+        ##############################################
+        #Continent
+        ##############################################
+        #Middle Earth
+        obj_the_war_of_dwarves_and_orcs_age_middle_earth = {
+            allow = {
+				capital_scope = {
+                    continent = middle_earth
+                }
+			}
+            always = no
+        }
+        #Hither Lands
+        obj_the_war_of_dwarves_and_orcs_age_hither_lands = {
+            allow = {
+				capital_scope = {
+                    continent = hither_lands
+                }
+			}
+			always = no
+        }
+        #Palisor
+        obj_the_war_of_dwarves_and_orcs_age_Palisor = {
+            allow = {
+				capital_scope = {
+                    continent = palisor
+                }
+			}
+			always = no
         }
 	}		
 
@@ -546,38 +661,13 @@ corruption_of_dol_guldur_age = {
 	}
 
 	objectives = {
-		obj_corruption_of_dol_guldur_age_1 = {
-            capital_scope = {
-                development = 30
-                religion = ROOT
-                culture = ROOT
-                NOT = { devastation = 1 }
-            }
-        }
-        # Wise Ruler
-		obj_corruption_of_dol_guldur_age_2 = {
-            OR = {
-                adm = 6
-                dip = 6
-                mil = 6
-            }
-        }
-        # Religious Defender
-        obj_corruption_of_dol_guldur_age_3 = {
-            #is_defender_of_faith = yes
-            religious_unity = 1.0
-        }
-        obj_corruption_of_dol_guldur_age_4 = {
-            naval_forcelimit = 100
-            navy_size_percentage = 0.9
-        }
-        obj_corruption_of_dol_guldur_age_5 = {
-            land_forcelimit = 100
-            army_size_percentage = 0.9
-        }
-        obj_corruption_of_dol_guldur_age_6 = {
+		##############################################
+        #Generic
+        ##############################################
+        #Generic 1
+		obj_corruption_of_dol_guldur_age_generic_1 = {
             prestige = 95
-            NOT = { corruption = 1 }
+            NOT = { corruption = 0 }
             OR = {
                 legitimacy = 95
                 horde_unity = 95
@@ -586,8 +676,151 @@ corruption_of_dol_guldur_age = {
                 meritocracy = 95
             }
         }
-        obj_corruption_of_dol_guldur_age_7 = {
-            num_of_allies = 4
+        #Generic 2
+		obj_corruption_of_dol_guldur_age_generic_2 = {
+            always = no
+        }
+        #Generic 3
+        obj_corruption_of_dol_guldur_age_generic_3 = {
+            always = no
+        }
+        ##############################################
+        #Allegiance
+        ##############################################
+        #Good 1
+        obj_corruption_of_dol_guldur_age_good_1 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Good 2
+        obj_corruption_of_dol_guldur_age_good_2 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Evil 1
+        obj_corruption_of_dol_guldur_age_evil_1 = {
+            allow = {
+                is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+            always = no
+        }
+        #Evil 2
+        obj_corruption_of_dol_guldur_age_evil_2 = {
+            allow = {
+				is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Neutral 1
+        obj_corruption_of_dol_guldur_age_neutral_1 = {
+            allow = {
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Neural 2
+        obj_corruption_of_dol_guldur_age_neutral_2 = {
+            allow = {
+				NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        ##############################################
+        #Race
+        ##############################################
+        #Human
+        obj_corruption_of_dol_guldur_age_human = {
+            allow = {
+                OR = {
+                    is_human = yes
+                    is_hobbit = yes
+                    is_wizard = yes
+                }
+			}
+            always = no
+        }
+        #Dwarf
+        obj_corruption_of_dol_guldur_age_dwarf = {
+            allow = {
+				is_dwarf = yes
+			}
+			always = no
+        }
+        #Elf
+        obj_corruption_of_dol_guldur_age_elf = {
+            allow = {
+				is_elf = yes
+			}
+            always = no
+        }
+        #Orc
+        obj_corruption_of_dol_guldur_age_orc = {
+            allow = {
+				OR = {
+                    is_orc = yes
+                    technology_group = lotr_half_orc
+                    is_goblin = yes
+                    technology_group = lotr_uruk_hai
+                    is_wight = yes
+                }
+			}
+			always = no
+        }
+        ##############################################
+        #Continent
+        ##############################################
+        #Middle Earth
+        obj_corruption_of_dol_guldur_age_middle_earth = {
+            allow = {
+				capital_scope = {
+                    continent = middle_earth
+                }
+			}
+            always = no
+        }
+        #Hither Lands
+        obj_corruption_of_dol_guldur_age_hither_lands = {
+            allow = {
+				capital_scope = {
+                    continent = hither_lands
+                }
+			}
+			always = no
+        }
+        #Palisor
+        obj_corruption_of_dol_guldur_age_Palisor = {
+            allow = {
+				capital_scope = {
+                    continent = palisor
+                }
+			}
+			always = no
         }
 	}		
 
@@ -727,48 +960,159 @@ war_of_the_ring_age = {
 	}
     
 	objectives = {
-		obj_war_of_the_ring_age_1 = {
-            capital_scope = {
-                development = 30
-                religion = ROOT
-                culture = ROOT
-                NOT = { devastation = 1 }
-            }
-        }
-        # Wise Ruler
-		obj_war_of_the_ring_age_2 = {
-            OR = {
-                adm = 6
-                dip = 6
-                mil = 6
-            }
-        }
-        # Religious Defender
-        obj_war_of_the_ring_age_3 = {
-            is_defender_of_faith = yes
+		##############################################
+        #Generic
+        ##############################################
+        #Generic 1
+		obj_war_of_the_ring_age_generic_1 = {
             religious_unity = 1.0
         }
-        obj_war_of_the_ring_age_4 = {
-            naval_forcelimit = 100
-            navy_size_percentage = 0.9
-        }
-        obj_war_of_the_ring_age_5 = {
+        #Generic 2
+		obj_war_of_the_ring_age_generic_2 = {
             land_forcelimit = 100
             army_size_percentage = 0.9
         }
-        obj_war_of_the_ring_age_6 = {
-            prestige = 95
-            NOT = { corruption = 0 }
-            OR = {
-                legitimacy = 95
-                horde_unity = 95
-                devotion = 95
-                republican_tradition = 95
-                meritocracy = 95
-            }
+        #Generic 3
+        obj_war_of_the_ring_age_generic_3 = {
+            always = no
         }
-        obj_war_of_the_ring_age_7 = {
-            num_of_allies = 5
+        ##############################################
+        #Allegiance
+        ##############################################
+        #Good 1
+        obj_war_of_the_ring_age_good_1 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Good 2
+        obj_war_of_the_ring_age_good_2 = {
+            allow = {
+				is_free_peoples_opinion = yes
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Evil 1
+        obj_war_of_the_ring_age_evil_1 = {
+            allow = {
+                is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+            always = no
+        }
+        #Evil 2
+        obj_war_of_the_ring_age_evil_2 = {
+            allow = {
+				is_servants_of_evil_opinion = yes
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Neutral 1
+        obj_war_of_the_ring_age_neutral_1 = {
+            allow = {
+                NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        #Neural 2
+        obj_war_of_the_ring_age_neutral_2 = {
+            allow = {
+				NOT = {
+                    is_free_peoples_opinion = yes
+                }
+                NOT = {
+                    is_servants_of_evil_opinion = yes
+                }
+			}
+			always = no
+        }
+        ##############################################
+        #Race
+        ##############################################
+        #Human
+        obj_war_of_the_ring_age_human = {
+            allow = {
+                OR = {
+                    is_human = yes
+                    is_hobbit = yes
+                    is_wizard = yes
+                }
+			}
+            always = no
+        }
+        #Dwarf
+        obj_war_of_the_ring_age_dwarf = {
+            allow = {
+				is_dwarf = yes
+			}
+			always = no
+        }
+        #Elf
+        obj_war_of_the_ring_age_elf = {
+            allow = {
+				is_elf = yes
+			}
+            always = no
+        }
+        #Orc
+        obj_war_of_the_ring_age_orc = {
+            allow = {
+				OR = {
+                    is_orc = yes
+                    technology_group = lotr_half_orc
+                    is_goblin = yes
+                    technology_group = lotr_uruk_hai
+                    is_wight = yes
+                }
+			}
+			always = no
+        }
+        ##############################################
+        #Continent
+        ##############################################
+        #Middle Earth
+        obj_war_of_the_ring_age_middle_earth = {
+            allow = {
+				capital_scope = {
+                    continent = middle_earth
+                }
+			}
+            always = no
+        }
+        #Hither Lands
+        obj_war_of_the_ring_age_hither_lands = {
+            allow = {
+				capital_scope = {
+                    continent = hither_lands
+                }
+			}
+			always = no
+        }
+        #Palisor
+        obj_war_of_the_ring_age_Palisor = {
+            allow = {
+				capital_scope = {
+                    continent = palisor
+                }
+			}
+			always = no
         }
 	}		
 

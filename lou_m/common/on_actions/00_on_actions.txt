@@ -334,6 +334,43 @@ on_war_won = {
 			set_country_flag = MigratingOrcsWonWar_FLAG
 		}
 	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = X16
+					tag = V95
+				}
+			}
+			NOT = {
+				has_global_flag = long_winter_war_north_finished_flag
+			}
+		}
+		FROM = {
+			country_event = {
+				id = LOU_Long_Winter.2
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = X01
+					tag = X27
+				}
+			}
+			NOT = {
+				has_global_flag = long_winter_war_south_finished_flag
+			}
+		}
+		FROM = {
+			country_event = {
+				id = LOU_Long_Winter.3
+			}
+		}
+	}
     
     events = {
         LOU_empire_of_rhun.1
