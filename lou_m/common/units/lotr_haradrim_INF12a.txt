@@ -1,14 +1,15 @@
-# Haradrim Archers
 type = infantry
 unit_type = lotr_human_near_harad
 
 maneuver = 1
-offensive_morale = 3
-defensive_morale = 3
-offensive_fire = 3
-defensive_fire = 0
-offensive_shock = 3
-defensive_shock = 2
+offensive_morale = 1
+defensive_morale = 0
+offensive_fire = 1
+defensive_fire = 1
+offensive_shock = 1
+defensive_shock = 3
+
+manpower = 1
 
 trigger = {
 	OR = {

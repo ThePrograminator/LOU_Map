@@ -8,15 +8,6 @@ estate_stewards = {
     
     # ----- Names -----
     custom_name = {
-		desc = estate_stewards_dwarf
-		trigger = {
-			OR = {
-                is_dwarf = yes
-                technology_group = lotr_half_dwarf
-            }
-		}
-	}
-    custom_name = {
 		desc = estate_stewards_elven
 		trigger = {
 			is_elf = yes
@@ -56,8 +47,8 @@ estate_stewards = {
         NOT = { has_reform = lotr_ent_government_reform }
         NOT = { has_reform = lotr_great_eagle_government_reform }
         NOT = { has_reform = lotr_giant_government_reform }
-	}
-
+		NOT = { culture_group = culture_group_dwarves }
+		}
 	# ----- Country -----
 	country_modifier_happy = {
 		tolerance_own = 2

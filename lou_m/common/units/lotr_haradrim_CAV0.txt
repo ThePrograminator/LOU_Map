@@ -1,14 +1,15 @@
-# Haradrim Cavalry
 type = cavalry
 unit_type = lotr_human_near_harad
 
 maneuver = 2
-offensive_morale = 2
+offensive_morale = 0
 defensive_morale = 2
 offensive_fire = 0
 defensive_fire = 0
 offensive_shock = 1
 defensive_shock = 1
+
+manpower = 1
 
 trigger = {
 	OR = {
