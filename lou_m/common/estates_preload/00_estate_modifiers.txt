@@ -84,3 +84,88 @@ estate_tribes = {
 		}
 	}
 }
+
+estate_dwarven_scholars = {
+	modifier_definition = {
+		type = loyalty
+		key = dwarven_scholars_loyalty_modifier
+		trigger = {
+			has_estate = estate_dwarven_scholars
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = dwarven_scholars_influence_modifier
+		trigger = {
+			has_estate = estate_dwarven_scholars
+		}
+	}
+}
+
+estate_dwarven_masons = {
+	modifier_definition = {
+		type = loyalty
+		key = dwarven_masons_loyalty_modifier
+		trigger = {
+			has_estate = estate_dwarven_masons
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = dwarven_masons_influence_modifier
+		trigger = {
+			has_estate = estate_dwarven_masons
+		}
+	}
+}
+
+estate_dwarven_warriors = {
+	modifier_definition = {
+		type = loyalty
+		key = dwarven_warriors_loyalty_modifier
+		trigger = {
+			has_estate = estate_dwarven_warriors
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = dwarven_warriors_influence_modifier
+		trigger = {
+			has_estate = estate_dwarven_warriors
+		}
+	}
+}
+
+estate_dwarven_blacksmiths = {
+	modifier_definition = {
+		type = loyalty
+		key = dwarven_blacksmiths_loyalty_modifier
+		trigger = {
+			has_estate = estate_dwarven_blacksmiths
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = dwarven_blacksmiths_influence_modifier
+		trigger = {
+			has_estate = estate_dwarven_blacksmiths
+		}
+	}
+}
+
+estate_dwarven_artisans = {
+	modifier_definition = {
+		type = loyalty
+		key = dwarven_artisans_loyalty_modifier
+		trigger = {
+			has_estate = estate_dwarven_artisans
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = dwarven_artisans_influence_modifier
+		trigger = {
+			has_estate = estate_dwarven_artisans
+		}
+	}
+}

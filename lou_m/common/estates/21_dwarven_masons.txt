@@ -28,25 +28,29 @@ estate_dwarven_masons = {
 		dwarven_masons_loyalty = 0.1
 	}
 
+	# Influence modifiers
+	base_influence = 30
+
 	province_independence_weight = {
 		factor = 1
-		modifier = { 0.1 
-			factor = 
-				{ NOT = {
-					culture = culture_longbeard
-					culture = culture_firebeard
-					culture = culture_broadbeam
-					culture = culture_ironfist
-					culture = culture_stiffbeard
-					culture = culture_blacklock
-					culture = culture_stonefoot
-				}
-			}
+		modifier = {
+			factor = 0.1
+			NOT = { religion_group = owner }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion = owner }
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 1.2
+			base_tax = 10
 		}
 	}
 
-	# Influence modifiers
-	base_influence = 30
 #	influence_modifier = {
 #		desc = masons_hold # The new name to apply
 #		trigger = {
