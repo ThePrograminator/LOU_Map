@@ -895,7 +895,7 @@ country_event = {
 		name = "LOU_orc_race.14.b"
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.14 - Option : LOU_orc_race.14.b" }
 		trigger = {
-			Karma = 33
+			Karma = -33
 		}
 
 		add_years_of_owned_provinces_production_income = {

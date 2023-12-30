@@ -1,0 +1,21 @@
+type = artillery
+unit_type = lotr_human_near_harad
+
+maneuver = 1
+offensive_morale = 2
+defensive_morale = 3
+offensive_fire = 4
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 1
+
+manpower = 1
+
+trigger = {
+	OR = {
+		primary_culture = culture_haruze
+		primary_culture = culture_eluzan
+		primary_culture = culture_siaken
+		primary_culture = culture_haludji
+	}
+}

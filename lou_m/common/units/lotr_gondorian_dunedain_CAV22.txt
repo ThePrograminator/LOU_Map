@@ -1,0 +1,22 @@
+type = cavalry
+unit_type = lotr_human
+
+maneuver = 2
+offensive_morale = 2
+defensive_morale = 3
+offensive_fire = 0
+defensive_fire = 2
+offensive_shock = 3
+defensive_shock = 2
+
+manpower = 1
+
+trigger = {
+	OR = {
+		primary_culture = culture_dunedain_of_gondor
+		primary_culture = culture_dunedain_of_ithilien
+		primary_culture = culture_dunedain_of_lebennin
+		primary_culture = culture_dunedain_of_belfalas
+		primary_culture = culture_dunedain_of_tol_falas
+		primary_culture = culture_numenorean
+	}

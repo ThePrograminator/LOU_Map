@@ -1,0 +1,77 @@
+estate_dwarven_warriors = {
+	icon = 1
+	color = { 30  60  200 }   # Sets the estate's color in the land share pie chart
+	influence_from_dev_modifier = 1.0
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			culture = culture_longbeard
+			culture = culture_firebeard
+			culture = culture_broadbeam
+			culture = culture_ironfist
+			culture = culture_stiffbeard
+			culture = culture_blacklock
+			culture = culture_stonefoot
+		}
+	}
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		
+	}
+	country_modifier_neutral = {
+		
+	}	
+	country_modifier_angry = {
+		
+	}
+	land_ownership_modifier = {
+		dwarven_warriors_loyalty = 0.1
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = { 0.1 
+			factor = 
+				{ NOT = {
+					culture = culture_longbeard
+					culture = culture_firebeard
+					culture = culture_broadbeam
+					culture = culture_ironfist
+					culture = culture_stiffbeard
+					culture = culture_blacklock
+					culture = culture_stonefoot
+				}
+			}
+		}
+	}
+	
+	# Influence modifiers
+	base_influence = 30
+#	influence_modifier = {
+#		desc = warriors_hold # The new name to apply
+#		trigger = {
+#			
+#		}	
+#		influence = 0.1
+#	}
+	# Loyalty modifiers
+#	loyalty_modifier = {
+#		desc =  # The new name to apply
+#		trigger = {			
+#		}
+#		loyalty = 
+#	}
+#	custom_name = {
+#		desc =  # The new name to apply
+#		trigger = {			
+#			}
+#		}
+	privileges = {
+                #'privileges' includes the names of the estate privileges this estate uses.
+                #Estate privileges can be found in the {{path|common/estates_privileges/00_privileges.txt}}
+	}
+	agendas = {
+                #'agendas' includes the names of the estate privileges this estate uses.
+                #Estate agendas can be found in the {{path|common/estates_agendas/*.txt}}
+	}
+}
