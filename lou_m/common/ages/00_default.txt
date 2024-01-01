@@ -374,15 +374,18 @@ the_war_of_dwarves_and_orcs_age = {
         ##############################################
         #Generic 1
 		obj_the_war_of_dwarves_and_orcs_age_generic_1 = {
-            always = no
+            num_of_non_tributary_subjects = 3
         }
         #Generic 2
 		obj_the_war_of_dwarves_and_orcs_age_generic_2 = {
-            always = no
+            num_of_owned_provinces_with = {
+                value = 3
+                has_manufactory_trigger = yes
+            }
         }
         #Generic 3
         obj_the_war_of_dwarves_and_orcs_age_generic_3 = {
-            always = no
+            stability = 3
         }
         ##############################################
         #Allegiance
@@ -395,7 +398,7 @@ the_war_of_dwarves_and_orcs_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			num_of_times_used_transfer_development = 10
         }
         #Good 2
         obj_the_war_of_dwarves_and_orcs_age_good_2 = {
@@ -405,7 +408,8 @@ the_war_of_dwarves_and_orcs_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+            national_focus = DIP 
+            monthly_dip = 12
         }
         #Evil 1
         obj_the_war_of_dwarves_and_orcs_age_evil_1 = {
@@ -415,7 +419,7 @@ the_war_of_dwarves_and_orcs_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-            always = no
+            num_of_times_used_pillage_capital = 10
         }
         #Evil 2
         obj_the_war_of_dwarves_and_orcs_age_evil_2 = {
@@ -425,7 +429,8 @@ the_war_of_dwarves_and_orcs_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-			always = no
+			national_focus = MIL 
+            monthly_mil = 12
         }
         #Neutral 1
         obj_the_war_of_dwarves_and_orcs_age_neutral_1 = {
@@ -437,7 +442,7 @@ the_war_of_dwarves_and_orcs_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			num_of_states = 10
         }
         #Neural 2
         obj_the_war_of_dwarves_and_orcs_age_neutral_2 = {
@@ -449,7 +454,10 @@ the_war_of_dwarves_and_orcs_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			crown_land_share = 50
+            NOT = {
+                average_autonomy_above_min = 40
+            }
         }
         ##############################################
         #Race
@@ -463,21 +471,25 @@ the_war_of_dwarves_and_orcs_age = {
                     is_wizard = yes
                 }
 			}
-            always = no
+            army_professionalism = 0.40
         }
         #Dwarf
         obj_the_war_of_dwarves_and_orcs_age_dwarf = {
             allow = {
 				is_dwarf = yes
 			}
-			always = no
+			740 = {
+                owner = {
+                    is_dwarf = yes
+                }
+            }
         }
         #Elf
         obj_the_war_of_dwarves_and_orcs_age_elf = {
             allow = {
 				is_elf = yes
 			}
-            always = no
+            diplomatic_reputation = 6
         }
         #Orc
         obj_the_war_of_dwarves_and_orcs_age_orc = {
@@ -490,8 +502,26 @@ the_war_of_dwarves_and_orcs_age = {
                     is_wight = yes
                 }
 			}
-			national_focus = MIL 
-            monthly_mil = 12
+
+            OR = {
+                misty_mountains_region = {
+                    type = all
+                    NOT = {
+                        owner = {
+                            is_dwarf = yes
+                        }
+                    }
+                }
+    
+                erebor_ironhills_region = {
+                    type = all
+                    NOT = {
+                        owner = {
+                            is_dwarf = yes
+                        }
+                    }
+                }
+            }
         }
         ##############################################
         #Continent
@@ -503,7 +533,7 @@ the_war_of_dwarves_and_orcs_age = {
                     continent = middle_earth
                 }
 			}
-            always = no
+            trade_efficiency = 0.35
         }
         #Hither Lands
         obj_the_war_of_dwarves_and_orcs_age_hither_lands = {
@@ -512,7 +542,10 @@ the_war_of_dwarves_and_orcs_age = {
                     continent = hither_lands
                 }
 			}
-			always = no
+            num_of_owned_provinces_with = {
+                value = 3
+                province_has_center_of_trade_of_level = 2
+            }
         }
         #Palisor
         obj_the_war_of_dwarves_and_orcs_age_Palisor = {
@@ -521,7 +554,9 @@ the_war_of_dwarves_and_orcs_age = {
                     continent = palisor
                 }
 			}
-			always = no
+            capital_scope = {
+                has_most_province_trade_power = ROOT
+            }
         }
 	}		
 
@@ -974,7 +1009,7 @@ war_of_the_ring_age = {
         }
         #Generic 3
         obj_war_of_the_ring_age_generic_3 = {
-            always = no
+            is_great_power = yes
         }
         ##############################################
         #Allegiance
