@@ -1,12 +1,13 @@
 #Country Name: Please see filename.
 graphical_culture = northamericagfx
-
-color = { 40 80 35 }
-
-revolutionary_colors = { 13 14 0 }
-
+color = {
+	40 80 35 
+}
+revolutionary_colors = {
+	13 14 0 
+}
 historical_idea_groups = {
-	offensive_ideas
+	 offensive_ideas
 	diplomatic_ideas
 	defensive_ideas
 	innovativeness_ideas
@@ -15,289 +16,33 @@ historical_idea_groups = {
 	economic_ideas
 	aristocracy_ideas
 }
-
 historical_units = {
-	lotr_wildmen_tribes_men_1
+	 lotr_wildmen_tribes_men_1
 	lotr_wildmen_axe_raiders_2
 	lotr_wildmen_heavy_axemen_3
-
 	lotr_wildmen_mounted_tribesmen_1
 	lotr_wildmen_mounted_axe_raiders_2
 }
-
 monarch_names = {
-	"Bhân #0" = 20
-    "Bhôn #0" = 20
-    "Bhûn #0" = 20
-    "Dhân #0" = 20
-    "Dhôn #0" = 20
-    "Dhûn #0" = 20
-    "Ghân #0" = 20
-    "Ghôn #0" = 20
-    "Ghûn #0" = 20
-    "Rhân #0" = 20
-    "Rhôn #0" = 20
-    "Rhûn #0" = 20
-    "Abûmi #0" = 20
-    "Abrîna #0" = 20
-    "Adêr #0" = 20
-    "Adrîm #0" = 20
-    "Âgi #0" = 20
-    "Ambûgha #0" = 20
-    "Andrî #0" = 20
-    "Arîgha #0" = 20
-    "Arû #0" = 20
-    "Awâb #0" = 20
-    "Baghâd #0" = 20
-    "Bâmi #0" = 20
-    "Bî #0" = 20
-    "Brâmbi #0" = 20
-    "Brâwi #0" = 20
-    "Brîghor #0" = 20
-    "Brûdri #0" = 20
-    "Brûni #0" = 20
-    "Bûri #0" = 20
-    "Darîgha #0" = 20
-    "Dêrdri #0" = 20
-    "Digâr #0" = 20
-    "Dî #0" = 20
-    "Dragêr #0" = 20
-    "Drûna #0" = 20
-    "Êrrîgha #0" = 20
-    "Gâbi #0" = 20
-    "Gâr #0" = 20
-    "Gâzi #0" = 20
-    "Ghâmi #0" = 20
-    "Ghâwa #0" = 20
-    "Ghêrdu #0" = 20
-    "Ghîm #0" = 20
-    "Ghôrdri #0" = 20
-    "Gîma #0" = 20
-    "Grâtam #0" = 20
-    "Grî #0" = 20
-    "Grîga #0" = 20
-    "Grûghi #0" = 20
-    "Gûbi #0" = 20
-    "Gûma #0" = 20
-    "Gurîgha #0" = 20
-    "Gûza #0" = 20
-    "Îbi #0" = 20
-    "Izûn #0" = 20
-    "Madrîn #0" = 20
-    "Môrghi #0" = 20
-    "Narîgha #0" = 20
-    "Ôgi #0" = 20
-    "Ordrîg #0" = 20
-    "Ôrgrin #0" = 20
-    "Râma #0" = 20
-    "Rîgha #0" = 20
-    "Rûbêr #0" = 20
-    "Rûgha #0" = 20
-    "Sarîgha #0" = 20
-    "Tîrîgha #0" = 20
-    "Wâ #0" = 20
-    "Warîgha #0" = 20
-    "Zîgha #0" = 20
-    "Zîn #0" = 20
-    
-    "Bhân #0" = -10
-    "Bhôn #0" = -10
-    "Bhûn #0" = -10
-    "Dhân #0" = -10
-    "Dhôn #0" = -10
-    "Dhûn #0" = -10
-    "Ghân #0" = -10
-    "Ghôn #0" = -10
-    "Ghûn #0" = -10
-    "Rhân #0" = -10
-    "Rhôn #0" = -10
-    "Rhûn #0" = -10
-    "Abûmi #0" = -10
-    "Abrîna #0" = -10
-    "Adêr #0" = -10
-    "Adrîm #0" = -10
-    "Âgi #0" = -10
-    "Ambûgha #0" = -10
-    "Andrî #0" = -10
-    "Arîgha #0" = -10
-    "Arû #0" = -10
-    "Awâb #0" = -10
-    "Baghâd #0" = -10
-    "Bâmi #0" = -10
-    "Bî #0" = -10
-    "Brâmbi #0" = -10
-    "Brâwi #0" = -10
-    "Brîghor #0" = -10
-    "Brûdri #0" = -10
-    "Brûni #0" = -10
-    "Bûri #0" = -10
-    "Darîgha #0" = -10
-    "Dêrdri #0" = -10
-    "Digâr #0" = -10
-    "Dî #0" = -10
-    "Dragêr #0" = -10
-    "Drûna #0" = -10
-    "Êrrîgha #0" = -10
-    "Gâbi #0" = -10
-    "Gâr #0" = -10
-    "Gâzi #0" = -10
-    "Ghâmi #0" = -10
-    "Ghâwa #0" = -10
-    "Ghêrdu #0" = -10
-    "Ghîm #0" = -10
-    "Ghôrdri #0" = -10
-    "Gîma #0" = -10
-    "Grâtam #0" = -10
-    "Grî #0" = -10
-    "Grîga #0" = -10
-    "Grûghi #0" = -10
-    "Gûbi #0" = -10
-    "Gûma #0" = -10
-    "Gurîgha #0" = -10
-    "Gûza #0" = -10
-    "Îbi #0" = -10
-    "Izûn #0" = -10
-    "Madrîn #0" = -10
-    "Môrghi #0" = -10
-    "Narîgha #0" = -10
-    "Ôgi #0" = -10
-    "Ordrîg #0" = -10
-    "Ôrgrin #0" = -10
-    "Râma #0" = -10
-    "Rîgha #0" = -10
-    "Rûbêr #0" = -10
-    "Rûgha #0" = -10
-    "Sarîgha #0" = -10
-    "Tîrîgha #0" = -10
-    "Wâ #0" = -10
-    "Warîgha #0" = -10
-    "Zîgha #0" = -10
-    "Zîn #0" = -10
 }
-
 leader_names = {
-	Bhân
-    Bhôn
-    Bhûn
-    Dhân
-    Dhôn
-    Dhûn
-    Ghân
-    Ghôn
-    Ghûn
-    Rhân
-    Rhôn
-    Rhûn
-    Abûmi
-    Abrîna
-    Adêr
-    Adrîm
-    Âgi
-    Ambûgha
-    Andrî
-    Arîgha
-    Arû
-    Awâb
-    Baghâd
-    Bâmi
-    Bî
-    Brâmbi
-    Brâwi
-    Brîghor
-    Brûdri
-    Brûni
-    Bûri
-    Darîgha
-    Dêrdri
-    Digâr
-    Dî
-    Dragêr
-    Drûna
-    Êrrîgha
-    Gâbi
-    Gâr
-    Gâzi
-    Ghâmi
-    Ghâwa
-    Ghêrdu
-    Ghîm
-    Ghôrdri
-    Gîma
-    Grâtam
-    Grî
-    Grîga
-    Grûghi
-    Gûbi
-    Gûma
-    Gurîgha
-    Gûza
-    Îbi
-    Izûn
-    Madrîn
-    Môrghi
-    Narîgha
-    Ôgi
-    Ordrîg
-    Ôrgrin
-    Râma
-    Rîgha
-    Rûbêr
-    Rûgha
-    Sarîgha
-    Tîrîgha
-    Wâ
-    Warîgha
-    Zîgha
-    Zîn
+	Bhï¿½n Dhï¿½n Ghï¿½n Rhï¿½n Abï¿½mi Abrï¿½na Adï¿½r Adrï¿½m ï¿½gi Ambï¿½gha
+	Andrï¿½ Arï¿½gha Arï¿½ Awï¿½b Baghï¿½d Bï¿½mi Bï¿½ Brï¿½mbi Brï¿½wi Brï¿½ghor
+	Brï¿½dri Brï¿½ni Bï¿½ri Darï¿½gha Dï¿½rdri Digï¿½r Dï¿½ Dragï¿½r Drï¿½na ï¿½rrï¿½gha
+	Gï¿½bi Gï¿½r Gï¿½zi Ghï¿½mi Ghï¿½wa Ghï¿½rdu Ghï¿½m Ghï¿½rdri Gï¿½ma Grï¿½tam
+	Grï¿½ Grï¿½ga Grï¿½ghi Gurï¿½gha Gï¿½za ï¿½bi Izï¿½n Madrï¿½n Mï¿½rghi Narï¿½gha
+	Ordrï¿½g ï¿½rgrin Rï¿½ma Rï¿½gha Rï¿½bï¿½r Sarï¿½gha Tï¿½rï¿½gha Wï¿½ Warï¿½gha Zï¿½gha
+	Zï¿½n 
 }
-
 ship_names = {
-	Eagletree
-	Feathersun
-	Lowtree
-	Distantblade
-	Pineweaver
-	Oceanfang
-	Humbleripper
-	Wiseblood
-	Sunmantle
-	Grandpunch
-	Pyrefollower
-	Hawkfall
-	Heartsteam
-	Stonestrength
-	Mastertide
-	Gloomsworn
-	Redfist
-	Riverwinds
-	Skyspire
-	Fireclaw
-	Lunapike
-	Whitbane
-	Tarrensnow
-	Leafroot
-	Softswallow
-	Peacereaper
-	Stagarm
-	Monsterfury
-	Horsebinder
-	Strongmoon
-	Moltenmourn
-	Skymight
-	Covenstriker
-	Glowstrider
-	Farwatcher
-	Fallendown
-	Tarrengem
-	Stonestar
-	Fernstriker
-	Roughheart
+	Eagletree Feathersun Lowtree Distantblade Pineweaver Oceanfang Humbleripper Wiseblood Sunmantle Grandpunch
+	Pyrefollower Hawkfall Heartsteam Stonestrength Mastertide Gloomsworn Redfist Riverwinds Skyspire Fireclaw
+	Lunapike Whitbane Tarrensnow Leafroot Softswallow Peacereaper Stagarm Monsterfury Horsebinder Strongmoon
+	Moltenmourn Skymight Covenstriker Glowstrider Farwatcher Fallendown Tarrengem Stonestar Fernstriker Roughheart
 }
-
 army_names = {
-	"Regiment of $PROVINCE$"
+	"Regiment of $PROVINCE$" 
 }
-
 fleet_names = {
-	"Fleet of $PROVINCE$"
+	"Fleet of $PROVINCE$" 
 }

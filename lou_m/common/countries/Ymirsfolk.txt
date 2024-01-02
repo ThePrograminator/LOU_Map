@@ -1,12 +1,13 @@
 #Country Name: Please see filename.
 graphical_culture = easterngfx
-
-color = { 20 125 20 }
-
-revolutionary_colors = { 13 14 0 }
-
+color = {
+	20 125 20 
+}
+revolutionary_colors = {
+	13 14 0 
+}
 historical_idea_groups = {
-	offensive_ideas
+	 offensive_ideas
 	diplomatic_ideas
 	defensive_ideas
 	innovativeness_ideas
@@ -15,111 +16,33 @@ historical_idea_groups = {
 	economic_ideas
 	aristocracy_ideas
 }
-
 historical_units = {
-	lotr_nenedain_militia_1
+	 lotr_nenedain_militia_1
 	lotr_nenedain_levy_spear_2
 	lotr_nenedain_spear_infantry_3
 	lotr_nenedain_pikemen_4
 	lotr_nenedain_guard_5
-
 	lotr_nenedain_mounted_militia_1
 	lotr_nenedain_mounted_levy_2
 	lotr_nenedain_mounted_guards_3
 }
-
 monarch_names = {
-	"Aghari #0" = 20
-	"Aleric #0" = 20
-	"Ardwini #0" = 20
-	"Aribrand #0" = 20
-	"Atagar #0" = 20
-	"Athalgavia #0" = 20
-	"Athalimer #0" = 20
-	"Athanila #0" = 20
-	"Athanwini #0" = 20
-	"Erigar #0" = 20
-	"Erioric #0" = 20
-	"Framgar #0" = 20
-	"Framred #0" = 20
-	"Frithbald #0" = 20
-	"Frithgavia #0" = 20
-	"Frumbrand #0" = 20
-	"Frumimer #0" = 20
-	"Gaisgar #0" = 20
-	"Guntulf #0" = 20
-	"Haruulf #0" = 20
-	"Heribald #0" = 20
-	"Herigar #0" = 20
-	"Hildegar #0" = 20
-	"Marila #0" = 20
-	"Richari #0" = 20
-	"Rodbald #0" = 20
-	"Rodred #0" = 20
-	"Rodulf #0" = 20
-	"Seggar #0" = 20
-	"Sigaric #0" = 20
-	"Theodgar #0" = 20
-	"Vidubrand #0" = 20
-	"Viduulf #0" = 20
-	"Wingulf #0" = 20
-	"Winidhari #0" = 20
 }
-
 leader_names = {
-	Aghari Aleric Ardwini Aribrand Atagar Athalgavia Athalimer Athanila Athanwini Erigar 
-	Erioric Framgar Framred Frithbald Frithgavia Frumbrand Frumimer Gaisgar Guntulf Haruulf 
-	Heribald Herigar Hildegar Marila Richari Rodbald Rodred Rodulf Seggar Sigaric 
-	Theodgar Vidubrand Viduulf Wingulf Winidhari
+	Aghari Aleric Ardwini Aribrand Atagar Athalgavia Athalimer Athanila Athanwini Erigar
+	Erioric Framgar Framred Frithbald Frithgavia Frumbrand Frumimer Gaisgar Guntulf Haruulf
+	Heribald Herigar Hildegar Marila Richari Rodbald Rodred Rodulf Seggar Sigaric
+	Theodgar Vidubrand Viduulf Wingulf Winidhari 
 }
-
 ship_names = {
-	Eagletree
-	Feathersun
-	Lowtree
-	Distantblade
-	Pineweaver
-	Oceanfang
-	Humbleripper
-	Wiseblood
-	Sunmantle
-	Grandpunch
-	Pyrefollower
-	Hawkfall
-	Heartsteam
-	Stonestrength
-	Mastertide
-	Gloomsworn
-	Redfist
-	Riverwinds
-	Skyspire
-	Fireclaw
-	Lunapike
-	Whitbane
-	Tarrensnow
-	Leafroot
-	Softswallow
-	Peacereaper
-	Stagarm
-	Monsterfury
-	Horsebinder
-	Strongmoon
-	Moltenmourn
-	Skymight
-	Covenstriker
-	Glowstrider
-	Farwatcher
-	Fallendown
-	Tarrengem
-	Stonestar
-	Fernstriker
-	Roughheart
+	Eagletree Feathersun Lowtree Distantblade Pineweaver Oceanfang Humbleripper Wiseblood Sunmantle Grandpunch
+	Pyrefollower Hawkfall Heartsteam Stonestrength Mastertide Gloomsworn Redfist Riverwinds Skyspire Fireclaw
+	Lunapike Whitbane Tarrensnow Leafroot Softswallow Peacereaper Stagarm Monsterfury Horsebinder Strongmoon
+	Moltenmourn Skymight Covenstriker Glowstrider Farwatcher Fallendown Tarrengem Stonestar Fernstriker Roughheart
 }
-
 army_names = {
-	"Regiment of $PROVINCE$"
+	"Regiment of $PROVINCE$" 
 }
-
 fleet_names = {
-	"Fleet of $PROVINCE$"
+	"Fleet of $PROVINCE$" 
 }

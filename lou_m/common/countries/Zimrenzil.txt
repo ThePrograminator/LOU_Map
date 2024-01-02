@@ -1,12 +1,13 @@
 #Country Name: Please see filename.
 graphical_culture = indiangfx
-
-color = { 220 190 130 }
-
-revolutionary_colors = { 13 14 0 }
-
+color = {
+	220 190 130 
+}
+revolutionary_colors = {
+	13 14 0 
+}
 historical_idea_groups = {
-	offensive_ideas
+	 offensive_ideas
 	diplomatic_ideas
 	defensive_ideas
 	innovativeness_ideas
@@ -15,634 +16,83 @@ historical_idea_groups = {
 	economic_ideas
 	aristocracy_ideas
 }
-
 historical_units = {
-	lotr_sea_people_militia_1
+	 lotr_sea_people_militia_1
 	lotr_sea_people_levy_spear_2
 	lotr_sea_people_spear_infantry_3
 	lotr_sea_people_pikemen_4
 	lotr_sea_people_guard_5
-
 	lotr_sea_people_mounted_militia_1
 	lotr_sea_people_mounted_levy_2
 	lotr_sea_people_mounted_guards_3
 }
-
 monarch_names = {
-	"Aaban #0" = 20
-    "Aabid #0" = 20
-    "Aadil #0" = 20
-    "Aahil #0" = 20
-    "Aalam #0" = 20
-    "Aalee #0" = 20
-    "Aalim #0" = 20
-    "Aamil #0" = 20
-    "Aamir #0" = 20
-    "Aaqib #0" = 20
-    "Aaqil #0" = 20
-    "Aarif #0" = 20
-    "Aariz #0" = 20
-    "Aaryan #0" = 20
-    "Aashif #0" = 20
-    "Aashir #0" = 20
-    "Aasif #0" = 20
-    "Aasim #0" = 20
-    "Aatif #0" = 20
-    "Aaus #0" = 20
-    "Aayan #0" = 20
-    "Aazim #0" = 20
-    "Abaan #0" = 20
-    "Abbas #0" = 20
-    "Baahir #0" = 20
-    "Baasim #0" = 20
-    "Babar #0" = 20
-    "Baber #0" = 20
-    "Baqar #0" = 20
-    "Baqir #0" = 20
-    "Barkat #0" = 20
-    "Barr #0" = 20
-    "Barraq #0" = 20
-    "Basel #0" = 20
-    "Basem #0" = 20
-    "Bashaar #0" = 20
-    "Bashar #0" = 20
-    "Basharat #0" = 20
-    "Basil #0" = 20
-    "Basim #0" = 20
-    "Basir #0" = 20
-    "Bassam #0" = 20
-    "Batal #0" = 20
-    "Bazaan #0" = 20
-    "Bazam #0" = 20
-    "Behzad #0" = 20
-    "Bilal #0" = 20
-    "Bishr #0" = 20
-    "Bulhut #0" = 20
-    "Da'wud #0" = 20
-    "Daamin #0" = 20
-    "Daanish #0" = 20
-    "Dabbah #0" = 20
-    "Dabir #0" = 20
-    "Daghfal #0" = 20
-    "Dakhil #0" = 20
-    "Dameer #0" = 20
-    "Damurah #0" = 20
-    "Daniel #0" = 20
-    "Danish #0" = 20
-    "Daniyal #0" = 20
-    "Darim #0" = 20
-    "Dawid #0" = 20
-    "Dawlah #0" = 20
-    "Dawoud #0" = 20
-    "Dayyan #0" = 20
-    "Dean #0" = 20
-    "Deen #0" = 20
-    "Dhiya #0" = 20
-    "Dhul #0" = 20
-    "Fiqar #0" = 20
-    "Dilawar #0" = 20
-    "Dildar #0" = 20
-    "Dinar #0" = 20
-    "Diya #0" = 20
-    "Ehan #0" = 20
-    "Ehsaas #0" = 20
-    "Ehsan #0" = 20
-    "Eijaz #0" = 20
-    "Ejaz #0" = 20
-    "El-Amin #0" = 20
-    "Emran #0" = 20
-    "Faaiz #0" = 20
-    "Faakhir #0" = 20
-    "Faaris #0" = 20
-    "Faaz #0" = 20
-    "Fadi #0" = 20
-    "Fadil #0" = 20
-    "Fadl #0" = 20
-    "Faeq #0" = 20
-    "Fahad #0" = 20
-    "Fahd #0" = 20
-    "Faheem #0" = 20
-    "Fahim #0" = 20
-    "Fahmi #0" = 20
-    "Fahyim #0" = 20
-    "Faik #0" = 20
-    "Faiq #0" = 20
-    "Faisal #0" = 20
-    "Faiyaz #0" = 20
-    "Faiz #0" = 20
-    "Faizaan #0" = 20
-    "Faizan #0" = 20
-    "Fajaruddin #0" = 20
-    "Fajer #0" = 20
-    "Fakeeh #0" = 20
-    "Fakhr #0" = 20
-    "Ghaith #0" = 20
-    "Ghalib #0" = 20
-    "Ghanem #0" = 20
-    "Ghannam #0" = 20
-    "Ghasaan #0" = 20
-    "Ghauth #0" = 20
-    "Ghawth #0" = 20
-    "Ghayoor #0" = 20
-    "Ghazalan #0" = 20
-    "Ghazanfar #0" = 20
-    "Ghazawan #0" = 20
-    "Ghazi #0" = 20
-    "Ghazzal #0" = 20
-    "Ghiyath #0" = 20
-    "Ghufran #0" = 20
-    "Ghulam #0" = 20
-    "Ghunayn #0" = 20
-    "Ghusharib #0" = 20
-    "Ghusun #0" = 20
-    "Ghutayf #0" = 20
-    "Gohar #0" = 20
-    "Gulab #0" = 20
-    "Gulfam #0" = 20
-    "Gulshan #0" = 20
-    "Gulzar #0" = 20
-    "Haadee #0" = 20
-    "Haaris #0" = 20
-    "Haashir #0" = 20
-    "Haaziq #0" = 20
-    "Habeebullah #0" = 20
-    "Habib #0" = 20
-    "Habis #0" = 20
-    "Hadee #0" = 20
-    "Hadi #0" = 20
-    "Hadid #0" = 20
-    "Hafid #0" = 20
-    "Hafiz #0" = 20
-    "Hafs #0" = 20
-    "Haider #0" = 20
-    "Haikal #0" = 20
-    "Haitham #0" = 20
-    "Haji #0" = 20
-    "Hajib #0" = 20
-    "Hajjaj #0" = 20
-    "Hakim #0" = 20
-    "Haleef #0" = 20
-    "Haleem #0" = 20
-    "Hallaj #0" = 20
-    "Halwani #0" = 20
-    "Hamd #0" = 20
-    "Ibaad #0" = 20
-    "Ibn #0" = 20
-    "Ibrahim #0" = 20
-    "Idris #0" = 20
-    "Iftikhar #0" = 20
-    "Ihab #0" = 20
-    "Ihsan #0" = 20
-    "Ihtesham #0" = 20
-    "Ihtiram #0" = 20
-    "Ihtsham #0" = 20
-    "Ijaz #0" = 20
-    "Ijli #0" = 20
-    "Ikrimah #0" = 20
-    "Ilan #0" = 20
-    "Ilifat #0" = 20
-    "Ilyas #0" = 20
-    "Imaad #0" = 20
-    "Imaan #0" = 20
-    "Imad #0" = 20
-    "Imran #0" = 20
-    "Imtiaz #0" = 20
-    "Imtiyaz #0" = 20
-    "Inaam #0" = 20
-    "Inayat #0" = 20
-    "Iniat #0" = 20
-    "Jaan #0" = 20
-    "Jabir #0" = 20
-    "Jabr #0" = 20
-    "Jad #0" = 20
-    "Jafar #0" = 20
-    "Jaffer #0" = 20
-    "Jahangir #0" = 20
-    "Jahanzeb #0" = 20
-    "Jahdami #0" = 20
-    "Jahdari #0" = 20
-    "Jahiz #0" = 20
-    "Jahm #0" = 20
-    "Jalal #0" = 20
-    "Jalees #0" = 20
-    "Jalil #0" = 20
-    "Jamal #0" = 20
-    "Jamesha #0" = 20
-    "Jamil #0" = 20
-    "Jan #0" = 20
-    "Jaraah #0" = 20
-    "Jareer #0" = 20
-    "Jari #0" = 20
-    "Jariyah #0" = 20
-    "Jarood #0" = 20
-    "Jarrar #0" = 20
-    "Kaamil #0" = 20
-    "Kaashif #0" = 20
-    "Kabeer #0" = 20
-    "Kabir #0" = 20
-    "Kafeel #0" = 20
-    "Kaiser #0" = 20
-    "Kajji #0" = 20
-    "Kalbi #0" = 20
-    "Kaleem #0" = 20
-    "Kaleema #0" = 20
-    "Kamal #0" = 20
-    "Kamil #0" = 20
-    "Kamran #0" = 20
-    "Kareem #0" = 20
-    "Karim #0" = 20
-    "Kasam #0" = 20
-    "Kashan #0" = 20
-    "Kashif #0" = 20
-    "Kasim #0" = 20
-    "Kawkab #0" = 20
-    "Kawthar #0" = 20
-    "Kaysan #0" = 20
-    "Kazi #0" = 20
-    "Kazim #0" = 20
-    "Keyaan #0" = 20
-    "Labeeb #0" = 20
-    "Labib #0" = 20
-    "Lahi'ah #0" = 20
-    "Laiq #0" = 20
-    "Laith #0" = 20
-    "Lajlaj #0" = 20
-    "Laqeet #0" = 20
-    "Lateef #0" = 20
-    "Latif #0" = 20
-    "Layth #0" = 20
-    "Liban #0" = 20
-    "Limazah #0" = 20
-    "Liyaqat #0" = 20
-    "Lu'ay #0" = 20
-    "Luqman #0" = 20
-    "Lut #0" = 20
-    "Lutf #0" = 20
-    "Lutfi #0" = 20
-    "Ma'mun #0" = 20
-    "Ma'n #0" = 20
-    "Maaz #0" = 20
-    "Mabad #0" = 20
-    "Madani #0" = 20
-    "Madiyan #0" = 20
-    "Madyan #0" = 20
-    "Mahad #0" = 20
-    "Mahaz #0" = 20
-    "Mahbeer #0" = 20
-    "Mahbub #0" = 20
-    "Mahd #0" = 20
-    "Mahdi #0" = 20
-    "Maher #0" = 20
-    "Mahfuj #0" = 20
-    "Mahfuz #0" = 20
-    "Mahja #0" = 20
-    "Mahmud #0" = 20
-    "Majd #0" = 20
-    "Majdi #0" = 20
-    "Makhdoom #0" = 20
-    "Makki #0" = 20
-    "Malih #0" = 20
-    "Malik #0" = 20
-    "Mamduh #0" = 20
-    "Na'il #0" = 20
-    "Naadir #0" = 20
-    "Nabeel #0" = 20
-    "Nabhan #0" = 20
-    "Nabigh #0" = 20
-    "Nabih #0" = 20
-    "Nabil #0" = 20
-    "Nadeem #0" = 20
-    "Nadhir #0" = 20
-    "Nadim #0" = 20
-    "Nadir #0" = 20
-    "Nadr #0" = 20
-    "Naeem #0" = 20
-    "Nafasat #0" = 20
-    "Nafees #0" = 20
-    "Nafis #0" = 20
-    "Naib #0" = 20
-    "Naim #0" = 20
-    "Najair #0" = 20
-    "Najam #0" = 20
-    "Najeeb #0" = 20
-    "Najeed #0" = 20
-    "Naji #0" = 20
-    "Najib #0" = 20
-    "Najid #0" = 20
-    "Obaid #0" = 20
-    "Omair #0" = 20
-    "Omar #0" = 20
-    "Osama #0" = 20
-    "Owais #0" = 20
-    "Parsa #0" = 20
-    "Parvez #0" = 20
-    "Pervaiz #0" = 20
-    "Qaadir #0" = 20
-    "Qabeel #0" = 20
-    "Qadar #0" = 20
-    "Qadeer #0" = 20
-    "Qadi #0" = 20
-    "Qadim #0" = 20
-    "Qahtan #0" = 20
-    "Qaim #0" = 20
-    "Qais #0" = 20
-    "Qamar #0" = 20
-    "Qani #0" = 20
-    "Qanit #0" = 20
-    "Qareeb #0" = 20
-    "Qaseem #0" = 20
-    "Qasid #0" = 20
-    "Qasif #0" = 20
-    "Qasim #0" = 20
-    "Qatadah #0" = 20
-    "Qawee #0" = 20
-    "Qays #0" = 20
-    "Quadir #0" = 20
-    "Qudamah #0" = 20
-    "Qudoos #0" = 20
-    "Qurban #0" = 20
-    "Qusay #0" = 20
-    "Ra'id #0" = 20
-    "Raahil #0" = 20
-    "Raamis #0" = 20
-    "Raamiz #0" = 20
-    "Raashid #0" = 20
-    "Rabah #0" = 20
-    "Rabar #0" = 20
-    "Rabbani #0" = 20
-    "Rabee #0" = 20
-    "Rabi' #0" = 20
-    "Rabiah #0" = 20
-    "Rabit #0" = 20
-    "Radi #0" = 20
-    "Raees #0" = 20
-    "Rafan #0" = 20
-    "Rafay #0" = 20
-    "Rafee #0" = 20
-    "Rafeek #0" = 20
-    "Rafi #0" = 20
-    "Rafik #0" = 20
-    "Rafiq #0" = 20
-    "Raghib #0" = 20
-    "Rahat #0" = 20
-    "Raheel #0" = 20
-    "Raheesh #0" = 20
-    "Sa'd #0" = 20
-    "Sa'dan #0" = 20
-    "Sa'id #0" = 20
-    "Sa'im #0" = 20
-    "Sa'ir #0" = 20
-    "Sa'irah #0" = 20
-    "Sa'ood #0" = 20
-    "Saad #0" = 20
-    "Saadat #0" = 20
-    "Saafir #0" = 20
-    "Saahir #0" = 20
-    "Saaiq #0" = 20
-    "Saal #0" = 20
-    "Saaqib #0" = 20
-    "Sabbir #0" = 20
-    "Sabeeh #0" = 20
-    "Sabil #0" = 20
-    "Sabiq #0" = 20
-    "Sabir #0" = 20
-    "Sabur #0" = 20
-    "Saburah #0" = 20
-    "Sadan #0" = 20
-    "Sadaqat #0" = 20
-    "Sadeed #0" = 20
-    "Sadeem #0" = 20
-    "Taanish #0" = 20
-    "Taban #0" = 20
-    "Tabassum #0" = 20
-    "Tabish #0" = 20
-    "Taha #0" = 20
-    "Tahawwur #0" = 20
-    "Taheem #0" = 20
-    "Tahir #0" = 20
-    "Tahmeed #0" = 20
-    "Tahmid #0" = 20
-    "Tahoor #0" = 20
-    "Tahseen #0" = 20
-    "Taimur #0" = 20
-    "Taj #0" = 20
-    "Tajammal #0" = 20
-    "Tajammul #0" = 20
-    "Tajudinn #0" = 20
-    "Talal #0" = 20
-    "Talat #0" = 20
-    "Talha #0" = 20
-    "Talhah #0" = 20
-    "Tali #0" = 20
-    "Talib #0" = 20
-    "Tameem #0" = 20
-    "Tameez #0" = 20
-    "Ubadah #0" = 20
-    "Ubayd #0" = 20
-    "Ubaydullah #0" = 20
-    "Uhban #0" = 20
-    "Ulfat #0" = 20
-    "Umair #0" = 20
-    "Umar #0" = 20
-    "Umarah #0" = 20
-    "Umayr #0" = 20
-    "Umayyah #0" = 20
-    "Umran #0" = 20
-    "Unais #0" = 20
-    "Unal #0" = 20
-    "Unays #0" = 20
-    "Uqbah #0" = 20
-    "Urfee #0" = 20
-    "Urooj #0" = 20
-    "Urwah #0" = 20
-    "Usamah #0" = 20
-    "Usayd #0" = 20
-    "Usman #0" = 20
-    "Utbah #0" = 20
-    "Uthman #0" = 20
-    "Uwayam #0" = 20
-    "Uzair #0" = 20
-    "Waa'il #0" = 20
-    "Wadi #0" = 20
-    "Wafa #0" = 20
-    "Wafi #0" = 20
-    "Wafiq #0" = 20
-    "Wahb #0" = 20
-    "Wahban #0" = 20
-    "Waheed #0" = 20
-    "Wahhaj #0" = 20
-    "Wahib #0" = 20
-    "Wahid #0" = 20
-    "Wail #0" = 20
-    "Wais #0" = 20
-    "Waiz #0" = 20
-    "Wajdaan #0" = 20
-    "Wajeeh #0" = 20
-    "Wajid #0" = 20
-    "Wajih #0" = 20
-    "Wakalat #0" = 20
-    "Wakeel #0" = 20
-    "Waleed #0" = 20
-    "Wali #0" = 20
-    "Wali-ud-din #0" = 20
-    "Walid #0" = 20
-    "Waqaar #0" = 20
-    "Yafi #0" = 20
-    "Yaghnam #0" = 20
-    "Yahya #0" = 20
-    "Yaman #0" = 20
-    "Yameen #0" = 20
-    "Yaqeen #0" = 20
-    "Yaqoot #0" = 20
-    "Yaqub #0" = 20
-    "Yar #0" = 20
-    "Yaseen #0" = 20
-    "Yasin #0" = 20
-    "Yasir #0" = 20
-    "Yathrib #0" = 20
-    "Yawar #0" = 20
-    "Yawer #0" = 20
-    "Yuhannis #0" = 20
-    "Yunus #0" = 20
-    "Yusr #0" = 20
-    "Yusuf #0" = 20
-    "Zackariya #0" = 20
-    "Zaeem #0" = 20
-    "Zafar #0" = 20
-    "Zafir #0" = 20
-    "Zafrul #0" = 20
-    "Zaheer #0" = 20
-    "Zahi #0" = 20
-    "Zahir #0" = 20
-    "Zaid #0" = 20
-    "Zaigham #0" = 20
-    "Zaighum #0" = 20
-    "Zaim #0" = 20
-    "Zain #0" = 20
-    "Zair #0" = 20
-    "Zakar #0" = 20
-    "Zakariya #0" = 20
-    "Zakariyya #0" = 20
-    "Zaki #0" = 20
-    "Zakir #0" = 20
-    "Zaman #0" = 20
-    "Zameer #0" = 20
-    "Zamil #0" = 20
-    "Zarar #0" = 20
-    "Zaroon #0" = 20
-    "Zarrar #0" = 20
-    "Abaan #0" = 20
-    "Adnan #0" = 20
-    "Al #0" = 20
-    "Tufayl #0" = 20
-    "Amr #0" = 20
-    "Amro #0" = 20
-    "Aqil #0" = 20
-    "Bakr #0" = 20
-    "Dirar #0" = 20
-    "Ghasaan #0" = 20
-    "Haarith #0" = 20
-    "Haashim #0" = 20
-    "Hannad #0" = 20
-    "Hudhafah #0" = 20
-    "Hudhayfah #0" = 20
-    "Huthayfah #0" = 20
-    "Ikrimah #0" = 20
-    "Jibran #0" = 20
-    "Jubayr #0" = 20
-    "Khaldoon #0" = 20
-    "Khuzaymah #0" = 20
-    "Lubayd #0" = 20
-    "Marwan #0" = 20
-    "Maazin #0" = 20
-    "Musâ'ab #0" = 20
-    "Muthanna #0" = 20
-    "Naâ'man #0" = 20
-    "Nawfal #0" = 20
-    "Nizar #0" = 20
-    "Qusay #0" = 20
-    "Sufyan #0" = 20
-    "Ubaadah #0" = 20
-    "Ubayy #0" = 20
-    "Udayl #0" = 20
-    "Umar #0" = 20
-    "Umaarah #0" = 20
-    "Umayr #0" = 20
-    "Utbah #0" = 20
-    "Waqqas #0" = 20
-    "Yaman #0" = 20
-    "Yazan #0" = 20
-    
-    "Daâ'd #0" = -10
-    "Firyal #0" = -10
-    "Hind #0" = -10
-    "Khawlah #0" = -10
-    "Mawiyah #0" = -10
-    "May #0" = -10
-    "Nusaybah #0" = -10
-    "Ramlah #0" = -10
-    "Rudaynah #0" = -10
-    "Rumaylah #0" = -10
-    "Rumaythah #0" = -10
-    "Sawda #0" = -10
-    "Suhayr #0" = -10
-    "Sumayyaa #0" = -10
-    "Tamadhur #0" = -10
-    "Yusraa #0" = -10
-    "Usaymah #0" = -10
 }
-
 leader_names = {
-	Aaban Aabid Aadil Aahil Aalam Aalee Aalim Aamil Aamir Aaqib Aaqil Aarif Aariz Aaryan Aashif Aashir Aasif Aasim Aatif Aaus Aayan Aazim Abaan Abbas Baahir Baasim Babar Baber Baqar Baqir Barkat Barr Barraq Basel Basem Bashaar Bashar Basharat Basil Basim Basir Bassam Batal Bazaan Bazam Behzad Bilal Bishr Bulhut Da'wud Daamin Daanish Dabbah Dabir Daghfal Dakhil Dameer Damurah Daniel Danish Daniyal Darim Dawid Dawlah Dawoud Dayyan Dean Deen Dhiya Dhul Fiqar Dilawar Dildar Dinar Diya Ehan Ehsaas Ehsan Eijaz Ejaz El-Amin Emran Faaiz Faakhir Faaris Faaz Fadi Fadil Fadl Faeq Fahad Fahd Faheem Fahim Fahmi Fahyim Faik Faiq Faisal Faiyaz Faiz Faizaan Faizan Fajaruddin Fajer Fakeeh Fakhr Ghaith Ghalib Ghanem Ghannam Ghasaan Ghauth Ghawth Ghayoor Ghazalan Ghazanfar Ghazawan Ghazi Ghazzal Ghiyath Ghufran Ghulam Ghunayn Ghusharib Ghusun Ghutayf Gohar Gulab Gulfam Gulshan Gulzar Haadee Haaris Haashir Haaziq Habeebullah Habib Habis Hadee Hadi Hadid Hafid Hafiz Hafs Haider Haikal Haitham Haji Hajib Hajjaj Hakim Haleef Haleem Hallaj Halwani Hamd Ibaad Ibn Ibrahim Idris Iftikhar Ihab Ihsan Ihtesham Ihtiram Ihtsham Ijaz Ijli Ikrimah Ilan Ilifat Ilyas Imaad Imaan Imad Imran Imtiaz Imtiyaz Inaam Inayat Iniat Jaan Jabir Jabr Jad Jafar Jaffer Jahangir Jahanzeb Jahdami Jahdari Jahiz Jahm Jalal Jalees Jalil Jamal Jamesha Jamil Jan Jaraah Jareer Jari Jariyah Jarood Jarrar Kaamil Kaashif Kabeer Kabir Kafeel Kaiser Kajji Kalbi Kaleem Kaleema Kamal Kamil Kamran Kareem Karim Kasam Kashan Kashif Kasim Kawkab Kawthar Kaysan Kazi Kazim Keyaan Labeeb Labib Lahi'ah Laiq Laith Lajlaj Laqeet Lateef Latif Layth Liban Limazah Liyaqat Lu'ay Luqman Lut Lutf Lutfi Ma'mun Ma'n Maaz Mabad Madani Madiyan Madyan Mahad Mahaz Mahbeer Mahbub Mahd Mahdi Maher Mahfuj Mahfuz Mahja Mahmud Majd Majdi Makhdoom Makki Malih Malik Mamduh Na'il Naadir Nabeel Nabhan Nabigh Nabih Nabil Nadeem Nadhir Nadim Nadir Nadr Naeem Nafasat Nafees Nafis Naib Naim Najair Najam Najeeb Najeed Naji Najib Najid Obaid Omair Omar Osama Owais Parsa Parvez Pervaiz Qaadir Qabeel Qadar Qadeer Qadi Qadim Qahtan Qaim Qais Qamar Qani Qanit Qareeb Qaseem Qasid Qasif Qasim Qatadah Qawee Qays Quadir Qudamah Qudoos Qurban Qusay Ra'id Raahil Raamis Raamiz Raashid Rabah Rabar Rabbani Rabee Rabi' Rabiah Rabit Radi Raees Rafan Rafay Rafee Rafeek Rafi Rafik Rafiq Raghib Rahat Raheel Raheesh Sa'd Sa'dan Sa'id Sa'im Sa'ir Sa'irah Sa'ood Saad Saadat Saafir Saahir Saaiq Saal Saaqib Sabbir Sabeeh Sabil Sabiq Sabir Sabur Saburah Sadan Sadaqat Sadeed Sadeem Taanish Taban Tabassum Tabish Taha Tahawwur Taheem Tahir Tahmeed Tahmid Tahoor Tahseen Taimur Taj Tajammal Tajammul Tajudinn Talal Talat Talha Talhah Tali Talib Tameem Tameez Ubadah Ubayd Ubaydullah Uhban Ulfat Umair Umar Umarah Umayr Umayyah Umran Unais Unal Unays Uqbah Urfee Urooj Urwah Usamah Usayd Usman Utbah Uthman Uwayam Uzair Waa'il Wadi Wafa Wafi Wafiq Wahb Wahban Waheed Wahhaj Wahib Wahid Wail Wais Waiz Wajdaan Wajeeh Wajid Wajih Wakalat Wakeel Waleed Wali Wali-ud-din Walid Waqaar Yafi Yaghnam Yahya Yaman Yameen Yaqeen Yaqoot Yaqub Yar Yaseen Yasin Yasir Yathrib Yawar Yawer Yuhannis Yunus Yusr Yusuf Zackariya Zaeem Zafar Zafir Zafrul Zaheer Zahi Zahir Zaid Zaigham Zaighum Zaim Zain Zair Zakar Zakariya Zakariyya Zaki Zakir Zaman Zameer Zamil Zarar Zaroon Zarrar Abaan Adnan Al Tufayl Amr Amro Aqil Bakr Dirar Ghasaan Haarith Haashim Hannad Hudhafah Hudhayfah Huthayfah Ikrimah Jibran Jubayr Khaldoon Khuzaymah Lubayd Marwan Maazin Musâ'ab Muthanna Naâ'man Nawfal Nizar Qusay Sufyan Ubaadah Ubayy Udayl Umar Umaarah Umayr Utbah Waqqas Yaman Yazan
+	Aaban Aabid Aadil Aahil Aalam Aalee Aalim Aamil Aamir Aaqib
+	Aaqil Aarif Aariz Aaryan Aashif Aashir Aasif Aasim Aatif Aaus
+	Aayan Aazim Abaan Abbas Baahir Baasim Babar Baber Baqar Baqir
+	Barkat Barr Barraq Basel Basem Bashaar Bashar Basharat Basil Basim
+	Basir Bassam Batal Bazaan Bazam Behzad Bilal Bishr Bulhut Da'wud
+	Daamin Daanish Dabbah Dabir Daghfal Dakhil Dameer Damurah Daniel Danish
+	Daniyal Darim Dawid Dawlah Dawoud Dayyan Dean Deen Dhiya Dhul
+	Fiqar Dilawar Dildar Dinar Diya Ehan Ehsaas Ehsan Eijaz Ejaz
+	El-Amin Emran Faaiz Faakhir Faaris Faaz Fadi Fadil Fadl Faeq
+	Fahad Fahd Faheem Fahim Fahmi Fahyim Faik Faiq Faisal Faiyaz
+	Faiz Faizaan Faizan Fajaruddin Fajer Fakeeh Fakhr Ghaith Ghalib Ghanem
+	Ghannam Ghasaan Ghauth Ghawth Ghayoor Ghazalan Ghazanfar Ghazawan Ghazi Ghazzal
+	Ghiyath Ghufran Ghulam Ghunayn Ghusharib Ghusun Ghutayf Gohar Gulab Gulfam
+	Gulshan Gulzar Haadee Haaris Haashir Haaziq Habeebullah Habib Habis Hadee
+	Hadi Hadid Hafid Hafiz Hafs Haider Haikal Haitham Haji Hajib
+	Hajjaj Hakim Haleef Haleem Hallaj Halwani Hamd Ibaad Ibn Ibrahim
+	Idris Iftikhar Ihab Ihsan Ihtesham Ihtiram Ihtsham Ijaz Ijli Ikrimah
+	Ilan Ilifat Ilyas Imaad Imaan Imad Imran Imtiaz Imtiyaz Inaam
+	Inayat Iniat Jaan Jabir Jabr Jad Jafar Jaffer Jahangir Jahanzeb
+	Jahdami Jahdari Jahiz Jahm Jalal Jalees Jalil Jamal Jamesha Jamil
+	Jan Jaraah Jareer Jari Jariyah Jarood Jarrar Kaamil Kaashif Kabeer
+	Kabir Kafeel Kaiser Kajji Kalbi Kaleem Kaleema Kamal Kamil Kamran
+	Kareem Karim Kasam Kashan Kashif Kasim Kawkab Kawthar Kaysan Kazi
+	Kazim Keyaan Labeeb Labib Lahi'ah Laiq Laith Lajlaj Laqeet Lateef
+	Latif Layth Liban Limazah Liyaqat Lu'ay Luqman Lut Lutf Lutfi
+	Ma'mun Ma'n Maaz Mabad Madani Madiyan Madyan Mahad Mahaz Mahbeer
+	Mahbub Mahd Mahdi Maher Mahfuj Mahfuz Mahja Mahmud Majd Majdi
+	Makhdoom Makki Malih Malik Mamduh Na'il Naadir Nabeel Nabhan Nabigh
+	Nabih Nabil Nadeem Nadhir Nadim Nadir Nadr Naeem Nafasat Nafees
+	Nafis Naib Naim Najair Najam Najeeb Najeed Naji Najib Najid
+	Obaid Omair Omar Osama Owais Parsa Parvez Pervaiz Qaadir Qabeel
+	Qadar Qadeer Qadi Qadim Qahtan Qaim Qais Qamar Qani Qanit
+	Qareeb Qaseem Qasid Qasif Qasim Qatadah Qawee Qays Quadir Qudamah
+	Qudoos Qurban Qusay Ra'id Raahil Raamis Raamiz Raashid Rabah Rabar
+	Rabbani Rabee Rabi' Rabiah Rabit Radi Raees Rafan Rafay Rafee
+	Rafeek Rafi Rafik Rafiq Raghib Rahat Raheel Raheesh Sa'd Sa'dan
+	Sa'id Sa'im Sa'ir Sa'irah Sa'ood Saad Saadat Saafir Saahir Saaiq
+	Saal Saaqib Sabbir Sabeeh Sabil Sabiq Sabir Sabur Saburah Sadan
+	Sadaqat Sadeed Sadeem Taanish Taban Tabassum Tabish Taha Tahawwur Taheem
+	Tahir Tahmeed Tahmid Tahoor Tahseen Taimur Taj Tajammal Tajammul Tajudinn
+	Talal Talat Talha Talhah Tali Talib Tameem Tameez Ubadah Ubayd
+	Ubaydullah Uhban Ulfat Umair Umar Umarah Umayr Umayyah Umran Unais
+	Unal Unays Uqbah Urfee Urooj Urwah Usamah Usayd Usman Utbah
+	Uthman Uwayam Uzair Waa'il Wadi Wafa Wafi Wafiq Wahb Wahban
+	Waheed Wahhaj Wahib Wahid Wail Wais Waiz Wajdaan Wajeeh Wajid
+	Wajih Wakalat Wakeel Waleed Wali Wali-ud-din Walid Waqaar Yafi Yaghnam
+	Yahya Yaman Yameen Yaqeen Yaqoot Yaqub Yar Yaseen Yasin Yasir
+	Yathrib Yawar Yawer Yuhannis Yunus Yusr Yusuf Zackariya Zaeem Zafar
+	Zafir Zafrul Zaheer Zahi Zahir Zaid Zaigham Zaighum Zaim Zain
+	Zair Zakar Zakariya Zakariyya Zaki Zakir Zaman Zameer Zamil Zarar
+	Zaroon Zarrar Adnan Al Tufayl Amr Amro Aqil Bakr Dirar
+	Haarith Haashim Hannad Hudhafah Hudhayfah Huthayfah Jibran Jubayr Khaldoon Khuzaymah
+	Lubayd Marwan Maazin Musï¿½'ab Muthanna Naï¿½'man Nawfal Nizar Sufyan Ubaadah
+	Ubayy Udayl Umaarah Waqqas Yazan 
 }
-
 ship_names = {
-	Eagletree
-	Feathersun
-	Lowtree
-	Distantblade
-	Pineweaver
-	Oceanfang
-	Humbleripper
-	Wiseblood
-	Sunmantle
-	Grandpunch
-	Pyrefollower
-	Hawkfall
-	Heartsteam
-	Stonestrength
-	Mastertide
-	Gloomsworn
-	Redfist
-	Riverwinds
-	Skyspire
-	Fireclaw
-	Lunapike
-	Whitbane
-	Tarrensnow
-	Leafroot
-	Softswallow
-	Peacereaper
-	Stagarm
-	Monsterfury
-	Horsebinder
-	Strongmoon
-	Moltenmourn
-	Skymight
-	Covenstriker
-	Glowstrider
-	Farwatcher
-	Fallendown
-	Tarrengem
-	Stonestar
-	Fernstriker
-	Roughheart
+	Eagletree Feathersun Lowtree Distantblade Pineweaver Oceanfang Humbleripper Wiseblood Sunmantle Grandpunch
+	Pyrefollower Hawkfall Heartsteam Stonestrength Mastertide Gloomsworn Redfist Riverwinds Skyspire Fireclaw
+	Lunapike Whitbane Tarrensnow Leafroot Softswallow Peacereaper Stagarm Monsterfury Horsebinder Strongmoon
+	Moltenmourn Skymight Covenstriker Glowstrider Farwatcher Fallendown Tarrengem Stonestar Fernstriker Roughheart
 }
-
 army_names = {
-	"Regiment of $PROVINCE$"
+	"Regiment of $PROVINCE$" 
 }
-
 fleet_names = {
-	"Fleet of $PROVINCE$"
+	"Fleet of $PROVINCE$" 
 }

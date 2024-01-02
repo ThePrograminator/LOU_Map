@@ -9,22 +9,17 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 2
 base_production = 3
 base_manpower = 1
-
-add_core = Y05
-owner = Y05
-controller = Y05
-
+owner = Y29
+controller = Y29
 culture = culture_firebeard
 religion = religion_mahal
-
 trade_goods = silver
-
+add_core = Y29
+add_core = Y05
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -70,4 +65,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

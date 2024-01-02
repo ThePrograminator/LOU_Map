@@ -1,12 +1,13 @@
 #Country Name: Please see filename.
 graphical_culture = lotr_rohan_gfx
-
-color = { 55 70 20 }
-
-revolutionary_colors = { 13 14 0 }
-
+color = {
+	55 70 20 
+}
+revolutionary_colors = {
+	13 14 0 
+}
 historical_idea_groups = {
-	offensive_ideas
+	 offensive_ideas
 	diplomatic_ideas
 	defensive_ideas
 	innovativeness_ideas
@@ -15,176 +16,41 @@ historical_idea_groups = {
 	economic_ideas
 	aristocracy_ideas
 }
-
 historical_units = {
-	lotr_rohirrim_eorling_militia_axe_1
+	 lotr_rohirrim_eorling_militia_axe_1
 	lotr_rohirrim_eorling_sword_2
 	lotr_rohirrim_riddermark_axemen_3
 	lotr_rohirrim_eored_axe_4
 	lotr_rohirrim_royal_guard_sword_5
-
 	lotr_rohirrim_scouts_1
 	lotr_rohirrim_riders_2
 	lotr_rohirrim_eored_horse_archers_3
 	lotr_rohirrim_riders_fold_archers_4
 	lotr_rohirrim_royal_guard_horse_archer_5
 }
-
 monarch_names = {
-	"Aldor #0" = 20
-	"Baldor #0" = 20
-	"Baldred #0" = 20
-	"Bregdan #0" = 20
-	"Brego #0" = 20
-	"Brytta #0" = 20
-	"Ceorl #0" = 20
-	"Dernfara #0" = 20
-	"Derngar #0" = 20
-	"Dernhelm #0" = 20
-	"Dernwine #0" = 20
-	"Déor #0" = 20
-	"Déorbrand #0" = 20
-	"Déorgar #0" = 20
-	"Déorhelm #0" = 20
-	"Déorthain #0" = 20
-	"Déorwine #0" = 20
-	"Dúnhere #0" = 20
-	"Elfhelm #0" = 20
-	"Elfwine #0" = 20
-	"Erkenbrand #0" = 20
-	"Fasthelm #0" = 20
-	"Fastred #0" = 20
-	"Fengel #0" = 20
-	"Folca #0" = 20
-	"Folcred #0" = 20
-	"Folcwine #0" = 20
-	"Fram #0" = 20
-	"Freca #0" = 20
-	"Frumgar #0" = 20
-	"Fréa #0" = 20
-	"Fréaláf #0" = 20
-	"Fréawine #0" = 20
-	"Fulgar #0" = 20
-	"Fulgrim #0" = 20
-	"Fulor #0" = 20
-	"Fulthain #0" = 20
-	"Gamling #0" = 20
-	"Gléobeam #0" = 20
-	"Gléomer #0" = 20
-	"Gléothain #0" = 20
-	"Gléowine #0" = 20
-	"Goldwine #0" = 20
-	"Gram #0" = 20
-	"Grimbold #0" = 20
-	"Gríma #0" = 20
-	"Guthbrand #0" = 20
-	"Guthláf #0" = 20
-	"Guthmer #0" = 20
-	"Guthred #0" = 20
-	"Gálmód #0" = 20
-	"Gárbald #0" = 20
-	"Gárulf #0" = 20
-	"Gárwine #0" = 20
-	"Haleth #0" = 20
-	"Helm #0" = 20
-	"Herefara #0" = 20
-	"Herubrand #0" = 20
-	"Herumer #0" = 20
-	"Heruthain #0" = 20
-	"Heruwine #0" = 20
-	"Holdred #0" = 20
-	"Holdwine #0" = 20
-	"Horn #0" = 20
-	"Háma #0" = 20
-	"Héostor #0" = 20
-	"Léod #0" = 20
-	"Léofa #0" = 20
-	"Léofara #0" = 20
-	"Léofred #0" = 20
-	"Léofwine #0" = 20
-	"Léonerethengel #0" = 20
-	"Walda #0" = 20
-	"Wulf #0" = 20
-	"Wídfara #0" = 20
-	"Éadig #0" = 20
-	"Éadmód #0" = 20
-	"Éoblod #0" = 20
-	"Éogar #0" = 20
-	"Éoheort #0" = 20
-	"Éohere #0" = 20
-	"Éoman #0" = 20
-	"Éomer #0" = 20
-	"Éomund #0" = 20
-	"Éomód #0" = 20
-	"Éorcanstan #0" = 20
-	"Éored #0" = 20
-	"Éorl #0" = 20
-	"Éothain #0" = 20
-	"Éowine #0" = 20
-	"Théoden #0" = 20
-	"Théodred #0" = 20
 }
-
 leader_names = {
-	Aldor Baldor Baldred Bregdan Brego Brytta Ceorl Dernfara Derngar Dernhelm 
-	Dernwine Déor Déorbrand Déorgar Déorhelm Déorthain Déorwine Dúnhere Elfhelm Elfwine 
-	Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram Freca Frumgar 
-	Fréa Fréaláf Fréawine Fulgar Fulgrim Fulor Fulthain Gamling Gléobeam Gléomer 
-	Gléothain Gléowine Goldwine Gram Grimbold Gríma Guthbrand Guthláf Guthmer Guthred 
-	Gálmód Gárbald Gárulf Gárwine Haleth Helm Herefara Herubrand Herumer Heruthain 
-	Heruwine Holdred Holdwine Horn Háma Héostor Léod Léofa Léofara Léofred 
-	Léofwine Léonerethengel Walda Wulf Wídfara Éadig Éadmód Éoblod Éogar Éoheort 
-	Éohere Éoman Éomer Éomund Éomód Éorcanstan Éored Éorl Éothain Éowine 
-	Théoden Théodred
+	Aldor Baldor Baldred Bregdan Brego Brytta Ceorl Dernfara Derngar Dernhelm
+	Dernwine Dï¿½or Dï¿½orbrand Dï¿½orgar Dï¿½orhelm Dï¿½orthain Dï¿½orwine Dï¿½nhere Elfhelm Elfwine
+	Erkenbrand Fasthelm Fastred Fengel Folca Folcred Folcwine Fram Freca Frumgar
+	Frï¿½a Frï¿½alï¿½f Frï¿½awine Fulgar Fulgrim Fulor Fulthain Gamling Glï¿½obeam Glï¿½omer
+	Glï¿½othain Glï¿½owine Goldwine Gram Grimbold Grï¿½ma Guthbrand Guthlï¿½f Guthmer Guthred
+	Gï¿½lmï¿½d Gï¿½rbald Gï¿½rulf Gï¿½rwine Haleth Helm Herefara Herubrand Herumer Heruthain
+	Heruwine Holdred Holdwine Horn Hï¿½ma Hï¿½ostor Lï¿½od Lï¿½ofa Lï¿½ofara Lï¿½ofred
+	Lï¿½ofwine Lï¿½onerethengel Walda Wulf Wï¿½dfara ï¿½adig ï¿½admï¿½d ï¿½oblod ï¿½ogar ï¿½oheort
+	ï¿½ohere ï¿½oman ï¿½omer ï¿½omund ï¿½omï¿½d ï¿½orcanstan ï¿½ored ï¿½orl ï¿½othain ï¿½owine
+	Thï¿½oden Thï¿½odred 
 }
-
 ship_names = {
-	Eagletree
-	Feathersun
-	Lowtree
-	Distantblade
-	Pineweaver
-	Oceanfang
-	Humbleripper
-	Wiseblood
-	Sunmantle
-	Grandpunch
-	Pyrefollower
-	Hawkfall
-	Heartsteam
-	Stonestrength
-	Mastertide
-	Gloomsworn
-	Redfist
-	Riverwinds
-	Skyspire
-	Fireclaw
-	Lunapike
-	Whitbane
-	Tarrensnow
-	Leafroot
-	Softswallow
-	Peacereaper
-	Stagarm
-	Monsterfury
-	Horsebinder
-	Strongmoon
-	Moltenmourn
-	Skymight
-	Covenstriker
-	Glowstrider
-	Farwatcher
-	Fallendown
-	Tarrengem
-	Stonestar
-	Fernstriker
-	Roughheart
+	Eagletree Feathersun Lowtree Distantblade Pineweaver Oceanfang Humbleripper Wiseblood Sunmantle Grandpunch
+	Pyrefollower Hawkfall Heartsteam Stonestrength Mastertide Gloomsworn Redfist Riverwinds Skyspire Fireclaw
+	Lunapike Whitbane Tarrensnow Leafroot Softswallow Peacereaper Stagarm Monsterfury Horsebinder Strongmoon
+	Moltenmourn Skymight Covenstriker Glowstrider Farwatcher Fallendown Tarrengem Stonestar Fernstriker Roughheart
 }
-
 army_names = {
-	"Regiment of $PROVINCE$"
+	"Regiment of $PROVINCE$" 
 }
-
 fleet_names = {
-	"Fleet of $PROVINCE$"
+	"Fleet of $PROVINCE$" 
 }

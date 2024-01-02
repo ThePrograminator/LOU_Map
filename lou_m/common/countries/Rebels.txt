@@ -1,43 +1,31 @@
 #Rebels
-
 graphical_culture = westerngfx
-
-color = { 30  30  30 }
-
+color = {
+	30 30 30 
+}
 # Used for client states
-revolutionary_colors = { 13 14 0 }
-
-historical_idea_groups = {	
-	administrative_ideas
+revolutionary_colors = {
+	13 14 0 
+}
+historical_idea_groups = {
+	 administrative_ideas
 	quantity_ideas
-	defensive_ideas	
+	defensive_ideas
 	fellowship_ideas
 	trade_ideas
 	quality_ideas
-	economic_ideas	
+	economic_ideas
 	maritime_ideas
 }
-	
 monarch_names = {
-	"Corneles #0" = 10
-	"Moise #0" = 10
-	"Mahieu #0" = 10
-	"Daniel #0" = 10
-	"Jacob #0" = 10
-	"Piet #0" = 10
-	"Hendrik #0" = 10
-	"David #0" = 10	
-	"John #0" = 10	
-	"Eric #0" = 10	
-	
-	"Boel #0" = -1	
-	"Alexandra #0" = -1	
-	"Regina #0" = -1	
-	"Miriam #0" = -1	
 }
-
 leader_names = {
-	Lowther Quelch Condent Dalzeel
-	Spriggs Condon Angre Anstis Chivers
-	Searle Hout Coxon Vynne Vane Worley
+	Lowther Quelch Condent Dalzeel Spriggs Condon Angre Anstis Chivers Searle
+	Hout Coxon Vynne Vane Worley 
+}
+ship_names = {
+}
+fleet_names = {
+}
+army_names = {
 }

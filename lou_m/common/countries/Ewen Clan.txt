@@ -1,12 +1,13 @@
 #Country Name: Please see filename.
 graphical_culture = northamericagfx
-
-color = { 90 55 0 }
-
-revolutionary_colors = { 13 14 0 }
-
+color = {
+	90 55 0 
+}
+revolutionary_colors = {
+	13 14 0 
+}
 historical_idea_groups = {
-	offensive_ideas
+	 offensive_ideas
 	diplomatic_ideas
 	defensive_ideas
 	innovativeness_ideas
@@ -15,99 +16,32 @@ historical_idea_groups = {
 	economic_ideas
 	aristocracy_ideas
 }
-
 historical_units = {
-	lotr_dunmen_clansmen_1
+	 lotr_dunmen_clansmen_1
 	lotr_dunmen_slaeghedar_spear_2
 	lotr_dunmen_bear_hunter_3
 	lotr_dunmen_highland_warriors_4
 	lotr_dunmen_saighedar_infantry_5
-
 	lotr_dunmen_warhounds_1
 	lotr_dunmen_isenmarch_riders_2
 	lotr_dunmen_mounted_saighedar_lancers_3
 }
-
 monarch_names = {
-	"Brac #0" = 20
-	"Cadarn #0" = 20
-	"Cadoc #0" = 20
-	"Cant #0" = 20
-	"Caradoc #0" = 20
-	"Dernad #0" = 20
-	"Dragdild #0" = 20
-	"Drorsald #0" = 20
-	"Garnoc #0" = 20
-	"Geth #0" = 20
-	"Gormadoc #0" = 20
-	"Gorsad #0" = 20
-	"Madoc #0" = 20
-	"Madol #0" = 20
-	"Marroc #0" = 20
-	"Melmidoc #0" = 20
-	"Meront #0" = 20
-	"Renralt #0" = 20
-	"Sadoc #0" = 20
-	"Sanrind #0" = 20
-	"Saradoc #0" = 20
-	"Sarin #0" = 20
-	"Von #0" = 20
-	"Zagradoc #0" = 20
 }
-
 leader_names = {
-	Brac Cadarn Cadoc Cant Caradoc Dernad Dragdild Drorsald Garnoc Geth 
-	Gormadoc Gorsad Madoc Madol Marroc Melmidoc Meront Renralt Sadoc Sanrind 
+	Brac Cadarn Cadoc Cant Caradoc Dernad Dragdild Drorsald Garnoc Geth
+	Gormadoc Gorsad Madoc Madol Marroc Melmidoc Meront Renralt Sadoc Sanrind
 	Saradoc Sarin Von Zagradoc 
 }
-
 ship_names = {
-	Eagletree
-	Feathersun
-	Lowtree
-	Distantblade
-	Pineweaver
-	Oceanfang
-	Humbleripper
-	Wiseblood
-	Sunmantle
-	Grandpunch
-	Pyrefollower
-	Hawkfall
-	Heartsteam
-	Stonestrength
-	Mastertide
-	Gloomsworn
-	Redfist
-	Riverwinds
-	Skyspire
-	Fireclaw
-	Lunapike
-	Whitbane
-	Tarrensnow
-	Leafroot
-	Softswallow
-	Peacereaper
-	Stagarm
-	Monsterfury
-	Horsebinder
-	Strongmoon
-	Moltenmourn
-	Skymight
-	Covenstriker
-	Glowstrider
-	Farwatcher
-	Fallendown
-	Tarrengem
-	Stonestar
-	Fernstriker
-	Roughheart
+	Eagletree Feathersun Lowtree Distantblade Pineweaver Oceanfang Humbleripper Wiseblood Sunmantle Grandpunch
+	Pyrefollower Hawkfall Heartsteam Stonestrength Mastertide Gloomsworn Redfist Riverwinds Skyspire Fireclaw
+	Lunapike Whitbane Tarrensnow Leafroot Softswallow Peacereaper Stagarm Monsterfury Horsebinder Strongmoon
+	Moltenmourn Skymight Covenstriker Glowstrider Farwatcher Fallendown Tarrengem Stonestar Fernstriker Roughheart
 }
-
 army_names = {
-	"Regiment of $PROVINCE$"
+	"Regiment of $PROVINCE$" 
 }
-
 fleet_names = {
-	"Fleet of $PROVINCE$"
+	"Fleet of $PROVINCE$" 
 }

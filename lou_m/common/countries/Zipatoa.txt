@@ -1,12 +1,13 @@
 #Country Name: Please see filename.
 graphical_culture = indiangfx
-
-color = { 185 135 60 }
-
-revolutionary_colors = { 13 14 0 }
-
+color = {
+	185 135 60 
+}
+revolutionary_colors = {
+	13 14 0 
+}
 historical_idea_groups = {
-	offensive_ideas
+	 offensive_ideas
 	diplomatic_ideas
 	defensive_ideas
 	innovativeness_ideas
@@ -15,529 +16,71 @@ historical_idea_groups = {
 	economic_ideas
 	aristocracy_ideas
 }
-
 historical_units = {
-	lotr_linerim_militia_1
+	 lotr_linerim_militia_1
 	lotr_linerim_levy_spear_2
 	lotr_linerim_spear_infantry_3
 	lotr_linerim_pikemen_4
 	lotr_linerim_guard_5
-
 	lotr_linerim_mounted_militia_1
 	lotr_linerim_mounted_levy_2
 	lotr_linerim_mounted_guards_3
 }
-
 monarch_names = {
-	"Adda #0" = 20
-	"Adwyn #0" = 20
-	"Aeddan #0" = 20
-	"Ailill #0" = 20
-	"Ainmere #0" = 20
-	"Alan #0" = 20
-	"Alisander #0" = 20
-	"Alwyn #0" = 20
-	"Amalgaid #0" = 20
-	"Amlaúb #0" = 20
-	"Anarawd #0" = 20
-	"Andras #0" = 20
-	"Andrew #0" = 20
-	"Aneurin #0" = 20
-	"Angus #0" = 20
-	"Annun #0" = 20
-	"Ardgar #0" = 20
-	"Argel #0" = 20
-	"Arod #0" = 20
-	"Art #0" = 20
-	"Artgal #0" = 20
-	"Arthfael #0" = 20
-	"Arthur #0" = 20
-	"Arthwr #0" = 20
-	"Arthws #0" = 20
-	"Artúr #0" = 20
-	"Arwyl #0" = 20
-	"Asa #0" = 20
-	"Asaph #0" = 20
-	"Astulph #0" = 20
-	"Astulphis #0" = 20
-	"Augaire #0" = 20
-	"Awst #0" = 20
-	"Bain #0" = 20
-	"Bangar #0" = 20
-	"Barri #0" = 20
-	"Barry #0" = 20
-	"Bedwyr #0" = 20
-	"Belyn #0" = 20
-	"Bert #0" = 20
-	"Blathmac #0" = 20
-	"Bleddyn #0" = 20
-	"Bledhun #0" = 20
-	"Bodúan #0" = 20
-	"Bowen #0" = 20
-	"Bran #0" = 20
-	"Brandon #0" = 20
-	"Brandub #0" = 20
-	"Branwaladr #0" = 20
-	"Brian #0" = 20
-	"Britou #0" = 20
-	"Brochfael #0" = 20
-	"Brochmael #0" = 20
-	"Brwt #0" = 20
-	"Brwyn #0" = 20
-	"Bryan #0" = 20
-	"Brychan #0" = 20
-	"Brúen #0" = 20
-	"Brún #0" = 20
-	"Buldar #0" = 20
-	"Búetún #0" = 20
-	"Búin #0" = 20
-	"Cada #0" = 20
-	"Cadell #0" = 20
-	"Cadfan #0" = 20
-	"Cadoc #0" = 20
-	"Cadugan #0" = 20
-	"Cadwal #0" = 20
-	"Cadwaladr #0" = 20
-	"Cadwallon #0" = 20
-	"Cadwgan #0" = 20
-	"Cai #0" = 20
-	"Caid #0" = 20
-	"Cain #0" = 20
-	"Caradoc #0" = 20
-	"Carlus #0" = 20
-	"Caron #0" = 20
-	"Casnar #0" = 20
-	"Caswallawn #0" = 20
-	"Cathal #0" = 20
-	"Cathalún #0" = 20
-	"Cawdaf #0" = 20
-	"Cedig #0" = 20
-	"Cedwyn #0" = 20
-	"Cedyfawr #0" = 20
-	"Celi #0" = 20
-	"Cellach #0" = 20
-	"Celun #0" = 20
-	"Ceneu #0" = 20
-	"Cenn-Fúelad #0" = 20
-	"Cennútig #0" = 20
-	"Cerball #0" = 20
-	"Ceredig #0" = 20
-	"Ceri #0" = 20
-	"Charles #0" = 20
-	"Cinúed #0" = 20
-	"Coel #0" = 20
-	"Coirpre #0" = 20
-	"Colmún #0" = 20
-	"Conall #0" = 20
-	"Conan #0" = 20
-	"Conchobar #0" = 20
-	"Congalach #0" = 20
-	"Conn #0" = 20
-	"Constantine #0" = 20
-	"Constantún #0" = 20
-	"Cormac #0" = 20
-	"Crimthann #0" = 20
-	"Crundmúel #0" = 20
-	"Custennin #0" = 20
-	"Cyllin #0" = 20
-	"Cynan #0" = 20
-	"Cynddelw #0" = 20
-	"Cynddylan #0" = 20
-	"Cynfarch #0" = 20
-	"Cynfawr #0" = 20
-	"Cynfeddw #0" = 20
-	"Cynfelyn #0" = 20
-	"Cynfyn #0" = 20
-	"Cyngyn #0" = 20
-	"Cynwallon #0" = 20
-	"Cynyr #0" = 20
-	"Cyrill #0" = 20
-	"Dabúd #0" = 20
-	"Dafrig #0" = 20
-	"Dafydd #0" = 20
-	"Dai #0" = 20
-	"Dan #0" = 20
-	"David #0" = 20
-	"Ddraigiog #0" = 20
-	"Deheuwant #0" = 20
-	"Deiniol #0" = 20
-	"Demmún #0" = 20
-	"Dewi #0" = 20
-	"Diarmait #0" = 20
-	"Dogfael #0" = 20
-	"Domnall #0" = 20
-	"Donald #0" = 20
-	"Donnchad #0" = 20
-	"Donncuan #0" = 20
-	"Draxos #0" = 20
-	"Drystan #0" = 20
-	"Duncan #0" = 20
-	"Dylan #0" = 20
-	"Dylwyn #0" = 20
-	"Dúin #0" = 20
-	"Dúnchad #0" = 20
-	"Dúngal #0" = 20
-	"Dúnlaing #0" = 20
-	"Echmarcach #0" = 20
-	"Edern #0" = 20
-	"Edmund #0" = 20
-	"Ednyfed #0" = 20
-	"Ednywain #0" = 20
-	"Edwyn #0" = 20
-	"Einion #0" = 20
-	"Elis #0" = 20
-	"Elisedd #0" = 20
-	"Elud #0" = 20
-	"Elystan #0" = 20
-	"Emrys #0" = 20
-	"Erp #0" = 20
-	"Ewan #0" = 20
-	"Ewyas #0" = 20
-	"Eúgan #0" = 20
-	"Fawlant #0" = 20
-	"Fedelmid #0" = 20
-	"Fedlimid #0" = 20
-	"Feidlimid #0" = 20
-	"Fergal #0" = 20
-	"Fergus #0" = 20
-	"Ffilip #0" = 20
-	"Ffriog #0" = 20
-	"Ffwdwr #0" = 20
-	"Fiachnae #0" = 20
-	"Fingen #0" = 20
-	"Finn #0" = 20
-	"Fionn #0" = 20
-	"Fionnsnechtae #0" = 20
-	"Flaithbertach #0" = 20
-	"Flann #0" = 20
-	"Fogartach #0" = 20
-	"Fragan #0" = 20
-	"Fraid #0" = 20
-	"Fychan #0" = 20
-	"Fyrsil #0" = 20
-	"Fúelbe #0" = 20
-	"Fúelún #0" = 20
-	"Gabrún #0" = 20
-	"Gamon #0" = 20
-	"Geraint #0" = 20
-	"Gerallt #0" = 20
-	"Gethen #0" = 20
-	"Gethin #0" = 20
-	"Gilbert #0" = 20
-	"Gilla-Brúgte #0" = 20
-	"Gilla-Coluim #0" = 20
-	"Gilla-Comgúin #0" = 20
-	"Gilla-Pútraic #0" = 20
-	"Gilla-Ruad #0" = 20
-	"Gilla-na-Núem #0" = 20
-	"Gilla-úosa #0" = 20
-	"Glen #0" = 20
-	"Glundur #0" = 20
-	"Glynn #0" = 20
-	"Gofannon #0" = 20
-	"Goibniu #0" = 20
-	"Gorbadoc #0" = 20
-	"Goronu #0" = 20
-	"Goronwy #0" = 20
-	"Gronw #0" = 20
-	"Gruffydd #0" = 20
-	"Gwerthefyr #0" = 20
-	"Gwerthern #0" = 20
-	"Gwidyr #0" = 20
-	"Gwilym #0" = 20
-	"Gwrgant #0" = 20
-	"Gwydr #0" = 20
-	"Gwyn #0" = 20
-	"Gwynwynwyn #0" = 20
-	"Haldad #0" = 20
-	"Hamon #0" = 20
-	"Hasad #0" = 20
-	"Haul #0" = 20
-	"Hazad #0" = 20
-	"Hedhwyn #0" = 20
-	"Henry #0" = 20
-	"Hopcun #0" = 20
-	"Hopkin #0" = 20
-	"Hugh #0" = 20
-	"Hywel #0" = 20
-	"Iacob #0" = 20
-	"Iago #0" = 20
-	"Ianto #0" = 20
-	"Idwal #0" = 20
-	"Iestyn #0" = 20
-	"Ieuan #0" = 20
-	"Ifor #0" = 20
-	"Ilar #0" = 20
-	"Indrechtach #0" = 20
-	"Inyr #0" = 20
-	"Io #0" = 20
-	"Iolo #0" = 20
-	"Iorwerth #0" = 20
-	"Ithel #0" = 20
-	"Iwan #0" = 20
-	"Jacob #0" = 20
-	"John #0" = 20
-	"Justin #0" = 20
-	"Kenneth #0" = 20
-	"Liam #0" = 20
-	"Lleu #0" = 20
-	"Lleudd #0" = 20
-	"Llyr #0" = 20
-	"Llywarch #0" = 20
-	"Llywelyn #0" = 20
-	"Lochlann #0" = 20
-	"Loingsech #0" = 20
-	"Lorcún #0" = 20
-	"Luarch #0" = 20
-	"Lug #0" = 20
-	"Lugaid #0" = 20
-	"Lugdagnir #0" = 20
-	"Lugedur #0" = 20
-	"Lugh #0" = 20
-	"Lun #0" = 20
-	"Lyfylla #0" = 20
-	"Lúeguire #0" = 20
-	"Lúolyn #0" = 20
-	"Mabon #0" = 20
-	"Macdoc #0" = 20
-	"Macsen #0" = 20
-	"Madoc #0" = 20
-	"Mael #0" = 20
-	"Maelgwn #0" = 20
-	"Magnus #0" = 20
-	"Malise #0" = 20
-	"Maredudd #0" = 20
-	"Math #0" = 20
-	"Mathgamain #0" = 20
-	"Matthew #0" = 20
-	"Matudún #0" = 20
-	"Mawrig #0" = 20
-	"Meilyr #0" = 20
-	"Meirion #0" = 20
-	"Melfyn #0" = 20
-	"Merfyn #0" = 20
-	"Meriadoc #0" = 20
-	"Meurig #0" = 20
-	"Morgan #0" = 20
-	"Morien #0" = 20
-	"Morydd #0" = 20
-	"Mostun #0" = 20
-	"Muirchertach #0" = 20
-	"Muiredach #0" = 20
-	"Murchad #0" = 20
-	"Murdoch #0" = 20
-	"Múel-Brúgte #0" = 20
-	"Múel-Ciarúin #0" = 20
-	"Múel-Dúin #0" = 20
-	"Múel-Martain #0" = 20
-	"Múel-Múedúc #0" = 20
-	"Múel-Múrda #0" = 20
-	"Múel-Pútraic #0" = 20
-	"Múel-Ruanaid #0" = 20
-	"Múel-Sechlainn #0" = 20
-	"Múel-Sechnaill #0" = 20
-	"Múel-úosa #0" = 20
-	"Nai #0" = 20
-	"Niall #0" = 20
-	"Nigel #0" = 20
-	"Nye #0" = 20
-	"Ogma #0" = 20
-	"Olaf #0" = 20
-	"Owain #0" = 20
-	"Owen #0" = 20
-	"Padern #0" = 20
-	"Padrig #0" = 20
-	"Pandoff #0" = 20
-	"Parru #0" = 20
-	"Pasgen #0" = 20
-	"Patrick #0" = 20
-	"Paul #0" = 20
-	"Pawl #0" = 20
-	"Pedr #0" = 20
-	"Penlyn #0" = 20
-	"Penrod #0" = 20
-	"Peredyr #0" = 20
-	"Peter #0" = 20
-	"Philip #0" = 20
-	"Pilib #0" = 20
-	"Pryderi #0" = 20
-	"Publig #0" = 20
-	"Pwydion #0" = 20
-	"Pwyll #0" = 20
-	"Pyr #0" = 20
-	"Púl #0" = 20
-	"Pútraic #0" = 20
-	"Rhainallt #0" = 20
-	"Rhicert #0" = 20
-	"Rhirid #0" = 20
-	"Rhobert #0" = 20
-	"Rhodri #0" = 20
-	"Rhun #0" = 20
-	"Rhydderch #0" = 20
-	"Rhydog #0" = 20
-	"Rhys #0" = 20
-	"Ricard #0" = 20
-	"Richard #0" = 20
-	"Rioc #0" = 20
-	"Robert #0" = 20
-	"Roderick #0" = 20
-	"Ruaidrú #0" = 20
-	"Ruarc #0" = 20
-	"Rúen #0" = 20
-	"Sadoc #0" = 20
-	"Sawyl #0" = 20
-	"Seferus #0" = 20
-	"Segamain #0" = 20
-	"Segomo #0" = 20
-	"Seisyll #0" = 20
-	"Selbach #0" = 20
-	"Seoún #0" = 20
-	"Seún #0" = 20
-	"Siam #0" = 20
-	"Sion #0" = 20
-	"Siorus #0" = 20
-	"Siwauna #0" = 20
-	"Sonnagh #0" = 20
-	"Sors #0" = 20
-	"Steffen #0" = 20
-	"Stephen #0" = 20
-	"Sufulch #0" = 20
-	"Sulien #0" = 20
-	"Súarl #0" = 20
-	"Tadg #0" = 20
-	"Taf #0" = 20
-	"Taran #0" = 20
-	"Tegonwy #0" = 20
-	"Tegwyd #0" = 20
-	"Teilo #0" = 20
-	"Tewdwr #0" = 20
-	"Thomas #0" = 20
-	"Tigernún #0" = 20
-	"Toirrdelbach #0" = 20
-	"Tomos #0" = 20
-	"Tomús #0" = 20
-	"Trahaearn #0" = 20
-	"Tref #0" = 20
-	"Trehúarn #0" = 20
-	"Tudwal #0" = 20
-	"Tudwallon #0" = 20
-	"Tydy #0" = 20
-	"Tyfodedd #0" = 20
-	"Tysilio #0" = 20
-	"Túathal #0" = 20
-	"Ualgarg #0" = 20
-	"Ualtar #0" = 20
-	"Uilliam #0" = 20
-	"Urien #0" = 20
-	"Walter #0" = 20
-	"William #0" = 20
-	"Wynfawr #0" = 20
-	"Wynfyrdd #0" = 20
-	"Yefen #0" = 20
-	"Ynyr #0" = 20
-	"Ysfael #0" = 20
-	"Úamonn #0" = 20
-	"Úed #0" = 20
-	"Úedún #0" = 20
-	"Úengus #0" = 20
-	"Úicnechún #0" = 20
-	"Úlchobar #0" = 20
-	"Únna #0" = 20
-	"Únri #0" = 20
 }
-
 leader_names = {
-	Adda Adwyn Aeddan Ailill Ainmere Alan Alisander Alwyn Amalgaid Amlaúb 
-	Anarawd Andras Andrew Aneurin Angus Annun Ardgar Argel Arod Art 
-	Artgal Arthfael Arthur Arthwr Arthws Artúr Arwyl Asa Asaph Astulph 
-	Astulphis Augaire Awst Bain Bangar Barri Barry Bedwyr Belyn Bert 
-	Blathmac Bleddyn Bledhun Bodúan Bowen Bran Brandon Brandub Branwaladr Brian 
-	Britou Brochfael Brochmael Brwt Brwyn Bryan Brychan Brúen Brún Buldar 
-	Búetún Búin Cada Cadell Cadfan Cadoc Cadugan Cadwal Cadwaladr Cadwallon 
-	Cadwgan Cai Caid Cain Caradoc Carlus Caron Casnar Caswallawn Cathal 
-	Cathalún Cawdaf Cedig Cedwyn Cedyfawr Celi Cellach Celun Ceneu Cenn-Fúelad 
-	Cennútig Cerball Ceredig Ceri Charles Cinúed Coel Coirpre Colmún Conall 
-	Conan Conchobar Congalach Conn Constantine Constantún Cormac Crimthann Crundmúel Custennin 
-	Cyllin Cynan Cynddelw Cynddylan Cynfarch Cynfawr Cynfeddw Cynfelyn Cynfyn Cyngyn 
-	Cynwallon Cynyr Cyrill Dabúd Dafrig Dafydd Dai Dan David Ddraigiog 
-	Deheuwant Deiniol Demmún Dewi Diarmait Dogfael Domnall Donald Donnchad Donncuan 
-	Draxos Drystan Duncan Dylan Dylwyn Dúin Dúnchad Dúngal Dúnlaing Echmarcach 
-	Edern Edmund Ednyfed Ednywain Edwyn Einion Elis Elisedd Elud Elystan 
-	Emrys Erp Ewan Ewyas Eúgan Fawlant Fedelmid Fedlimid Feidlimid Fergal 
-	Fergus Ffilip Ffriog Ffwdwr Fiachnae Fingen Finn Fionn Fionnsnechtae Flaithbertach 
-	Flann Fogartach Fragan Fraid Fychan Fyrsil Fúelbe Fúelún Gabrún Gamon 
-	Geraint Gerallt Gethen Gethin Gilbert Gilla-Brúgte Gilla-Coluim Gilla-Comgúin Gilla-Pútraic Gilla-Ruad 
-	Gilla-na-Núem Gilla-úosa Glen Glundur Glynn Gofannon Goibniu Gorbadoc Goronu Goronwy 
-	Gronw Gruffydd Gwerthefyr Gwerthern Gwidyr Gwilym Gwrgant Gwydr Gwyn Gwynwynwyn 
-	Haldad Hamon Hasad Haul Hazad Hedhwyn Henry Hopcun Hopkin Hugh 
-	Hywel Iacob Iago Ianto Idwal Iestyn Ieuan Ifor Ilar Indrechtach 
-	Inyr Io Iolo Iorwerth Ithel Iwan Jacob John Justin Kenneth 
-	Liam Lleu Lleudd Llyr Llywarch Llywelyn Lochlann Loingsech Lorcún Luarch 
-	Lug Lugaid Lugdagnir Lugedur Lugh Lun Lyfylla Lúeguire Lúolyn Mabon 
-	Macdoc Macsen Madoc Mael Maelgwn Magnus Malise Maredudd Math Mathgamain 
-	Matthew Matudún Mawrig Meilyr Meirion Melfyn Merfyn Meriadoc Meurig Morgan 
-	Morien Morydd Mostun Muirchertach Muiredach Murchad Murdoch Múel-Brúgte Múel-Ciarúin Múel-Dúin 
-	Múel-Martain Múel-Múedúc Múel-Múrda Múel-Pútraic Múel-Ruanaid Múel-Sechlainn Múel-Sechnaill Múel-úosa Nai Niall 
-	Nigel Nye Ogma Olaf Owain Owen Padern Padrig Pandoff Parru 
-	Pasgen Patrick Paul Pawl Pedr Penlyn Penrod Peredyr Peter Philip 
-	Pilib Pryderi Publig Pwydion Pwyll Pyr Púl Pútraic Rhainallt Rhicert 
-	Rhirid Rhobert Rhodri Rhun Rhydderch Rhydog Rhys Ricard Richard Rioc 
-	Robert Roderick Ruaidrú Ruarc Rúen Sadoc Sawyl Seferus Segamain Segomo 
-	Seisyll Selbach Seoún Seún Siam Sion Siorus Siwauna Sonnagh Sors 
-	Steffen Stephen Sufulch Sulien Súarl Tadg Taf Taran Tegonwy Tegwyd 
-	Teilo Tewdwr Thomas Tigernún Toirrdelbach Tomos Tomús Trahaearn Tref Trehúarn 
-	Tudwal Tudwallon Tydy Tyfodedd Tysilio Túathal Ualgarg Ualtar Uilliam Urien 
-	Walter William Wynfawr Wynfyrdd Yefen Ynyr Ysfael Úamonn Úed Úedún 
-	Úengus Úicnechún Úlchobar Únna Únri 
+	Adda Adwyn Aeddan Ailill Ainmere Alan Alisander Alwyn Amalgaid Amlaï¿½b
+	Anarawd Andras Andrew Aneurin Angus Annun Ardgar Argel Arod Art
+	Artgal Arthfael Arthur Arthwr Arthws Artï¿½r Arwyl Asa Asaph Astulph
+	Astulphis Augaire Awst Bain Bangar Barri Barry Bedwyr Belyn Bert
+	Blathmac Bleddyn Bledhun Bodï¿½an Bowen Bran Brandon Brandub Branwaladr Brian
+	Britou Brochfael Brochmael Brwt Brwyn Bryan Brychan Brï¿½en Brï¿½n Buldar
+	Bï¿½etï¿½n Bï¿½in Cada Cadell Cadfan Cadoc Cadugan Cadwal Cadwaladr Cadwallon
+	Cadwgan Cai Caid Cain Caradoc Carlus Caron Casnar Caswallawn Cathal
+	Cathalï¿½n Cawdaf Cedig Cedwyn Cedyfawr Celi Cellach Celun Ceneu Cenn-Fï¿½elad
+	Cennï¿½tig Cerball Ceredig Ceri Charles Cinï¿½ed Coel Coirpre Colmï¿½n Conall
+	Conan Conchobar Congalach Conn Constantine Constantï¿½n Cormac Crimthann Crundmï¿½el Custennin
+	Cyllin Cynan Cynddelw Cynddylan Cynfarch Cynfawr Cynfeddw Cynfelyn Cynfyn Cyngyn
+	Cynwallon Cynyr Cyrill Dabï¿½d Dafrig Dafydd Dai Dan David Ddraigiog
+	Deheuwant Deiniol Demmï¿½n Dewi Diarmait Dogfael Domnall Donald Donnchad Donncuan
+	Draxos Drystan Duncan Dylan Dylwyn Dï¿½in Dï¿½nchad Dï¿½ngal Dï¿½nlaing Echmarcach
+	Edern Edmund Ednyfed Ednywain Edwyn Einion Elis Elisedd Elud Elystan
+	Emrys Erp Ewan Ewyas Eï¿½gan Fawlant Fedelmid Fedlimid Feidlimid Fergal
+	Fergus Ffilip Ffriog Ffwdwr Fiachnae Fingen Finn Fionn Fionnsnechtae Flaithbertach
+	Flann Fogartach Fragan Fraid Fychan Fyrsil Fï¿½elbe Fï¿½elï¿½n Gabrï¿½n Gamon
+	Geraint Gerallt Gethen Gethin Gilbert Gilla-Brï¿½gte Gilla-Coluim Gilla-Comgï¿½in Gilla-Pï¿½traic Gilla-Ruad
+	Gilla-na-Nï¿½em Gilla-ï¿½osa Glen Glundur Glynn Gofannon Goibniu Gorbadoc Goronu Goronwy
+	Gronw Gruffydd Gwerthefyr Gwerthern Gwidyr Gwilym Gwrgant Gwydr Gwyn Gwynwynwyn
+	Haldad Hamon Hasad Haul Hazad Hedhwyn Henry Hopcun Hopkin Hugh
+	Hywel Iacob Iago Ianto Idwal Iestyn Ieuan Ifor Ilar Indrechtach
+	Inyr Io Iolo Iorwerth Ithel Iwan Jacob John Justin Kenneth
+	Liam Lleu Lleudd Llyr Llywarch Llywelyn Lochlann Loingsech Lorcï¿½n Luarch
+	Lug Lugaid Lugdagnir Lugedur Lugh Lun Lyfylla Lï¿½eguire Lï¿½olyn Mabon
+	Macdoc Macsen Madoc Mael Maelgwn Magnus Malise Maredudd Math Mathgamain
+	Matthew Matudï¿½n Mawrig Meilyr Meirion Melfyn Merfyn Meriadoc Meurig Morgan
+	Morien Morydd Mostun Muirchertach Muiredach Murchad Murdoch Mï¿½el-Brï¿½gte Mï¿½el-Ciarï¿½in Mï¿½el-Dï¿½in
+	Mï¿½el-Martain Mï¿½el-Mï¿½edï¿½c Mï¿½el-Mï¿½rda Mï¿½el-Pï¿½traic Mï¿½el-Ruanaid Mï¿½el-Sechlainn Mï¿½el-Sechnaill Mï¿½el-ï¿½osa Nai Niall
+	Nigel Nye Ogma Olaf Owain Owen Padern Padrig Pandoff Parru
+	Pasgen Patrick Paul Pawl Pedr Penlyn Penrod Peredyr Peter Philip
+	Pilib Pryderi Publig Pwydion Pwyll Pyr Pï¿½l Pï¿½traic Rhainallt Rhicert
+	Rhirid Rhobert Rhodri Rhun Rhydderch Rhydog Rhys Ricard Richard Rioc
+	Robert Roderick Ruaidrï¿½ Ruarc Rï¿½en Sadoc Sawyl Seferus Segamain Segomo
+	Seisyll Selbach Seoï¿½n Seï¿½n Siam Sion Siorus Siwauna Sonnagh Sors
+	Steffen Stephen Sufulch Sulien Sï¿½arl Tadg Taf Taran Tegonwy Tegwyd
+	Teilo Tewdwr Thomas Tigernï¿½n Toirrdelbach Tomos Tomï¿½s Trahaearn Tref Trehï¿½arn
+	Tudwal Tudwallon Tydy Tyfodedd Tysilio Tï¿½athal Ualgarg Ualtar Uilliam Urien
+	Walter William Wynfawr Wynfyrdd Yefen Ynyr Ysfael ï¿½amonn ï¿½ed ï¿½edï¿½n
+	ï¿½engus ï¿½icnechï¿½n ï¿½lchobar ï¿½nna ï¿½nri 
 }
-
 ship_names = {
-	Eagletree
-	Feathersun
-	Lowtree
-	Distantblade
-	Pineweaver
-	Oceanfang
-	Humbleripper
-	Wiseblood
-	Sunmantle
-	Grandpunch
-	Pyrefollower
-	Hawkfall
-	Heartsteam
-	Stonestrength
-	Mastertide
-	Gloomsworn
-	Redfist
-	Riverwinds
-	Skyspire
-	Fireclaw
-	Lunapike
-	Whitbane
-	Tarrensnow
-	Leafroot
-	Softswallow
-	Peacereaper
-	Stagarm
-	Monsterfury
-	Horsebinder
-	Strongmoon
-	Moltenmourn
-	Skymight
-	Covenstriker
-	Glowstrider
-	Farwatcher
-	Fallendown
-	Tarrengem
-	Stonestar
-	Fernstriker
-	Roughheart
+	Eagletree Feathersun Lowtree Distantblade Pineweaver Oceanfang Humbleripper Wiseblood Sunmantle Grandpunch
+	Pyrefollower Hawkfall Heartsteam Stonestrength Mastertide Gloomsworn Redfist Riverwinds Skyspire Fireclaw
+	Lunapike Whitbane Tarrensnow Leafroot Softswallow Peacereaper Stagarm Monsterfury Horsebinder Strongmoon
+	Moltenmourn Skymight Covenstriker Glowstrider Farwatcher Fallendown Tarrengem Stonestar Fernstriker Roughheart
 }
-
 army_names = {
-	"Regiment of $PROVINCE$"
+	"Regiment of $PROVINCE$" 
 }
-
 fleet_names = {
-	"Fleet of $PROVINCE$"
+	"Fleet of $PROVINCE$" 
 }
