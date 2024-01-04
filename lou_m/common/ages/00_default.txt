@@ -713,11 +713,17 @@ corruption_of_dol_guldur_age = {
         }
         #Generic 2
 		obj_corruption_of_dol_guldur_age_generic_2 = {
-            always = no
+            inflation = 2
+            num_of_loans = 0
+            treasury = 1000
         }
         #Generic 3
         obj_corruption_of_dol_guldur_age_generic_3 = {
-            always = no
+            num_of_war_reparations = 3
+            overextension_percentage = 0.0
+            NOT = {
+                war_exhaustion = 8
+            }
         }
         ##############################################
         #Allegiance
@@ -730,7 +736,20 @@ corruption_of_dol_guldur_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+            custom_trigger_tooltip = {
+                tooltip = NO_SERVANT_OF_EVIL_IN_CAPITAL_REGION_TOOLTIP
+                capital_scope = {
+                    region_for_scope_province = {
+                        type = all
+                        NOT = {
+                            is_empty = yes
+                        }
+                        owner = {
+                            is_servants_of_evil_opinion = no
+                        }
+                    }
+                }
+            }
         }
         #Good 2
         obj_corruption_of_dol_guldur_age_good_2 = {
@@ -740,7 +759,7 @@ corruption_of_dol_guldur_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			full_idea_group = light_of_eru_ideas
         }
         #Evil 1
         obj_corruption_of_dol_guldur_age_evil_1 = {
@@ -750,7 +769,20 @@ corruption_of_dol_guldur_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-            always = no
+            custom_trigger_tooltip = {
+                tooltip = NO_FREE_PEOPLES_IN_CAPITAL_REGION_TOOLTIP
+                capital_scope = {
+                    region_for_scope_province = {
+                        type = all
+                        NOT = {
+                            is_empty = yes
+                        }
+                        owner = {
+                            is_free_peoples_opinion = no
+                        }
+                    }
+                }
+            }
         }
         #Evil 2
         obj_corruption_of_dol_guldur_age_evil_2 = {
@@ -760,7 +792,7 @@ corruption_of_dol_guldur_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-			always = no
+			full_idea_group = shadow_of_melkor_ideas
         }
         #Neutral 1
         obj_corruption_of_dol_guldur_age_neutral_1 = {
@@ -772,7 +804,7 @@ corruption_of_dol_guldur_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			full_idea_group = assimilation_ideas
         }
         #Neural 2
         obj_corruption_of_dol_guldur_age_neutral_2 = {
@@ -784,7 +816,7 @@ corruption_of_dol_guldur_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			grown_by_development = 100
         }
         ##############################################
         #Race
@@ -798,21 +830,46 @@ corruption_of_dol_guldur_age = {
                     is_wizard = yes
                 }
 			}
-            always = no
+            
+            num_of_owned_provinces_with = {
+                value = 5
+                OR = {
+                    has_building = city_2_building
+                    has_building = city_3_building
+                }
+                development = 20
+            }
         }
         #Dwarf
         obj_corruption_of_dol_guldur_age_dwarf = {
             allow = {
 				is_dwarf = yes
 			}
-			always = no
+			num_of_owned_provinces_with = {
+                value = 5
+                OR = {
+                    has_building = hold_2_dwarf_building
+                    has_building = hold_3_dwarf_building
+                }
+                OR = {
+                    has_building = miners_guild_dwarf_building
+                    has_building = warriors_guild_dwarf_building
+                }
+            }
         }
         #Elf
         obj_corruption_of_dol_guldur_age_elf = {
             allow = {
 				is_elf = yes
 			}
-            always = no
+            num_of_owned_provinces_with = {
+                value = 5
+                OR = {
+                    has_building = town_2_elf_building
+                    has_building = town_3_elf_building
+                }
+                is_prosperous = yes
+            }
         }
         #Orc
         obj_corruption_of_dol_guldur_age_orc = {
@@ -825,7 +882,17 @@ corruption_of_dol_guldur_age = {
                     is_wight = yes
                 }
 			}
-			always = no
+			num_of_owned_provinces_with = {
+                value = 5
+                OR = {
+                    has_building = fortress_2_orc_building
+                    has_building = fortress_3_orc_building
+                }
+                OR = {
+                    has_building = large_arena_building
+                    has_building = tortur_chambers_orc_building
+                }
+            }
         }
         ##############################################
         #Continent
@@ -837,7 +904,7 @@ corruption_of_dol_guldur_age = {
                     continent = middle_earth
                 }
 			}
-            always = no
+            num_of_centers_of_trade = 10
         }
         #Hither Lands
         obj_corruption_of_dol_guldur_age_hither_lands = {
@@ -846,7 +913,7 @@ corruption_of_dol_guldur_age = {
                     continent = hither_lands
                 }
 			}
-			always = no
+			revolt_percentage = 0.1
         }
         #Palisor
         obj_corruption_of_dol_guldur_age_Palisor = {
@@ -855,7 +922,7 @@ corruption_of_dol_guldur_age = {
                     continent = palisor
                 }
 			}
-			always = no
+			num_of_trade_companies = 3
         }
 	}		
 

@@ -1,44 +1,47 @@
 is_free_peoples_opinion = {
-	OR = {
-		is_racial_group_numenorean = yes
-		is_ent = yes
-		is_erus_children = yes
-		is_elf = yes
-		is_dwarf = yes
-		is_hobbit = yes
-		#Isengard - White Council (Good)
-		tag = W53
-		#Anarike
-		tag = X41
-		#Lynerian League
-		tag = Z74
-		#Niss
-		tag = Z83
-		#Elinse
-		tag = Z84
-		#Acaana
-		tag = Z85
+	custom_trigger_tooltip = {
+		tooltip = IS_FREE_PEOPLES_TOOLTIP
+		OR = {
+			is_racial_group_numenorean = yes
+			is_ent = yes
+			is_erus_children = yes
+			is_elf = yes
+			is_dwarf = yes
+			is_hobbit = yes
+			#Isengard - White Council (Good)
+			tag = W53
+			#Anarike
+			tag = X41
+			#Lynerian League
+			tag = Z74
+			#Niss
+			tag = Z83
+			#Elinse
+			tag = Z84
+			#Acaana
+			tag = Z85
 
-		culture_group = culture_group_zori
-		culture_group = culture_group_eriadorians
-		culture_group = culture_group_rivermen
-		culture_group = culture_group_daen_of_gondor
-		culture_group = culture_group_eotheod
-		culture_group = culture_group_ulthiuda
-		culture_group = culture_group_nenedain
-		culture_group = culture_group_donath
-		culture_group = culture_group_aivathiuda
-		culture_group = culture_group_beijabar
-	}
-	NOT = {
-		# Waw
-		tag = Z80
-		# Saralainn
-		tag = Z43
-		# Umbar
-		tag = X27
-        # Gobel Mirlond
-        tag = X25
+			culture_group = culture_group_zori
+			culture_group = culture_group_eriadorians
+			culture_group = culture_group_rivermen
+			culture_group = culture_group_daen_of_gondor
+			culture_group = culture_group_eotheod
+			culture_group = culture_group_ulthiuda
+			culture_group = culture_group_nenedain
+			culture_group = culture_group_donath
+			culture_group = culture_group_aivathiuda
+			culture_group = culture_group_beijabar
+		}
+		NOT = {
+			# Waw
+			tag = Z80
+			# Saralainn
+			tag = Z43
+			# Umbar
+			tag = X27
+			# Gobel Mirlond
+			tag = X25
+		}
 	}
 }
 
@@ -124,54 +127,57 @@ is_free_peoples_opinion_province = {
 #}
 
 is_servants_of_evil_opinion = {
-	OR = {
-		is_racial_group_melkor = yes
-		primary_culture = culture_dunlendings
-		culture_group = culture_group_ioriags
-		culture_group = culture_group_black_numenorean
-		culture_group = culture_group_haruzani
-		culture_group = culture_group_apysani
-		culture_group = culture_group_sea_people
-		culture_group = culture_group_mornedain
-		culture_group = culture_group_chailuza
-		culture_group = culture_group_ulgath
-		culture_group = culture_group_surk
-		culture_group = culture_group_monhunrim
-		culture_group = culture_group_womaw
-		culture_group = culture_group_borians
-		primary_culture = culture_wolim
-		primary_culture = culture_dyrians
-		primary_culture = culture_dirians
-		primary_culture = culture_desdursy
-		primary_culture = culture_urdar
-		#Isengard - White Hand (Evil)
-		tag = V49
-		# Waw
-		tag = Z80
-		# Saralainn
-		tag = Z43
-        # Gobel Mirlond
-        tag = X25
-	}
-	NOT = {
-		#Nurn
-		tag = X86
-		#Anarike
-		tag = X41
-		#Lynerian League
-		tag = Z74
-		#Niss
-		tag = Z83
-		#Elinse
-		tag = Z84
-		#Acaana
-		tag = Z85
-		#Romenor
-		tag = Q21
+	custom_trigger_tooltip = {
+		tooltip = IS_SERVANT_OF_EVIL_TOOLTIP
+		OR = {
+			is_racial_group_melkor = yes
+			primary_culture = culture_dunlendings
+			culture_group = culture_group_ioriags
+			culture_group = culture_group_black_numenorean
+			culture_group = culture_group_haruzani
+			culture_group = culture_group_apysani
+			culture_group = culture_group_sea_people
+			culture_group = culture_group_mornedain
+			culture_group = culture_group_chailuza
+			culture_group = culture_group_ulgath
+			culture_group = culture_group_surk
+			culture_group = culture_group_monhunrim
+			culture_group = culture_group_womaw
+			culture_group = culture_group_borians
+			primary_culture = culture_wolim
+			primary_culture = culture_dyrians
+			primary_culture = culture_dirians
+			primary_culture = culture_desdursy
+			primary_culture = culture_urdar
+			#Isengard - White Hand (Evil)
+			tag = V49
+			# Waw
+			tag = Z80
+			# Saralainn
+			tag = Z43
+			# Gobel Mirlond
+			tag = X25
+		}
+		NOT = {
+			#Nurn
+			tag = X86
+			#Anarike
+			tag = X41
+			#Lynerian League
+			tag = Z74
+			#Niss
+			tag = Z83
+			#Elinse
+			tag = Z84
+			#Acaana
+			tag = Z85
+			#Romenor
+			tag = Q21
 
-		#Tirith Argon
-		tag = Q22
-		primary_culture = culture_logath
+			#Tirith Argon
+			tag = Q22
+			primary_culture = culture_logath
+		}
 	}
 }
 
