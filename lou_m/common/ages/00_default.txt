@@ -224,11 +224,8 @@ long_winter_age = {
                     continent = palisor
                 }
 			}
-			any_neighbor_country = {
-                NOT = {
-                    tech_difference = 3
-                }
-            } 
+            cavalry_fraction = 0.5
+            num_of_cavalry = 10
         }
 	}		
 
@@ -1089,7 +1086,13 @@ war_of_the_ring_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+            is_year = 2945
+
+            287 = {
+                owner = {
+                    is_free_peoples_opinion = yes
+                }
+            }
         }
         #Good 2
         obj_war_of_the_ring_age_good_2 = {
@@ -1099,7 +1102,11 @@ war_of_the_ring_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			is_year = 2943
+
+            NOT = {
+                exists = V17
+            }
         }
         #Evil 1
         obj_war_of_the_ring_age_evil_1 = {
@@ -1109,7 +1116,18 @@ war_of_the_ring_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-            always = no
+            is_year = 2945
+
+            OR = {
+                287 = {
+                    is_empty = yes
+                }
+                287 = {
+                    owner = {
+                        is_servants_of_evil_opinion = yes
+                    }
+                }
+            }
         }
         #Evil 2
         obj_war_of_the_ring_age_evil_2 = {
@@ -1119,7 +1137,9 @@ war_of_the_ring_age = {
                     is_free_peoples_opinion = yes
                 }
 			}
-			always = no
+			NOT = {
+                exists = X01
+            }
         }
         #Neutral 1
         obj_war_of_the_ring_age_neutral_1 = {
@@ -1131,7 +1151,11 @@ war_of_the_ring_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			any_neighbor_country = {
+                NOT = {
+                    tech_difference = 3
+                }
+            }
         }
         #Neural 2
         obj_war_of_the_ring_age_neutral_2 = {
@@ -1143,7 +1167,7 @@ war_of_the_ring_age = {
                     is_servants_of_evil_opinion = yes
                 }
 			}
-			always = no
+			mercantilism = 35
         }
         ##############################################
         #Race
@@ -1157,21 +1181,24 @@ war_of_the_ring_age = {
                     is_wizard = yes
                 }
 			}
-            always = no
+            power_projection = 75
         }
         #Dwarf
         obj_war_of_the_ring_age_dwarf = {
             allow = {
 				is_dwarf = yes
 			}
-			always = no
+			num_of_active_blessings = 4
         }
         #Elf
         obj_war_of_the_ring_age_elf = {
             allow = {
 				is_elf = yes
 			}
-            always = no
+            star_of_earendil_shrine_elf_building = 1
+            mirror_fountain_elf_building = 1
+            statue_of_the_elders_elf_building = 1
+            mallorn_tree_elf_building = 1
         }
         #Orc
         obj_war_of_the_ring_age_orc = {
@@ -1184,7 +1211,7 @@ war_of_the_ring_age = {
                     is_wight = yes
                 }
 			}
-			always = no
+			max_manpower = 100
         }
         ##############################################
         #Continent
@@ -1196,7 +1223,7 @@ war_of_the_ring_age = {
                     continent = middle_earth
                 }
 			}
-            always = no
+            grown_by_states = 20
         }
         #Hither Lands
         obj_war_of_the_ring_age_hither_lands = {
@@ -1205,7 +1232,7 @@ war_of_the_ring_age = {
                     continent = hither_lands
                 }
 			}
-			always = no
+			num_of_continents = 3
         }
         #Palisor
         obj_war_of_the_ring_age_Palisor = {
@@ -1214,7 +1241,11 @@ war_of_the_ring_age = {
                     continent = palisor
                 }
 			}
-			always = no
+            has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.40
+				extra_shortcut = yes
+			}
         }
 	}		
 
