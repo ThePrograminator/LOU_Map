@@ -1,0 +1,28 @@
+#-----------------------------------------
+# menu state
+#-----------------------------------------
+customui_menu_is_closed_dwarven_hold_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = customui_open_menu_dwarven_hold_trigger
+		check_variable = {
+			which = customui_menu_state_dwarven_hold
+			value = 0
+		}
+		NOT = {
+			check_variable = {
+				which = customui_menu_state_dwarven_hold
+				value = 1
+			}
+		}
+	}
+}
+
+customui_menu_is_open_dwarven_hold_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = customui_open_menu_dwarven_hold_trigger
+		check_variable = {
+			which = customui_menu_state_dwarven_hold
+			value = 1
+		}
+	}
+}

@@ -3766,6 +3766,71 @@ guiTypes = {
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
+
+			#---------------------------------------
+			#Custom UI - Building tab bar Extention
+			#---------------------------------------
+			guiButtonType = {
+				name = "customui_open_menu_button_dwarven_hold"
+				position = { x = 324 y = 153 }
+				quadTextureSprite ="GFX_customui_open_menu_button_dwarven_hold"
+				scripted = yes
+			}
+
+			#---------------------------------------
+			#Custom UI - Dwarven Hold View
+			#---------------------------------------
+			#---------------------------------------
+			#Custom UI - Dwarven Hold View - Main
+			#---------------------------------------
+			iconType = {
+				name = "customui_menu_bg_dwarven_hold"
+				position = { x = 334 y = 83 }
+				quadTextureSprite ="GFX_customui_menu_bg_2_dwarven_hold"
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "customui_close_menu_button_dwarven_hold"
+				position = { x = 794 y = 83 }
+				quadTextureSprite ="GFX_closebutton2"
+				scripted = yes
+			}
+
+			instantTextBoxType = {
+				name = "customui_menu_title_dwarven_hold"
+				position = { x = 395 y = 115 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 100
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+			#---------------------------------------
+			#Custom UI - Dwarven Hold View - Top
+			#---------------------------------------
+			iconType = {
+				name = "customui_hold_level_icon_dwarven_hold"
+				position = { x = 395 y = 145 }
+				quadTextureSprite ="GFX_customui_hold_level_1_dwarven_hold"
+				scripted = yes
+			}
+
+			instantTextBoxType = {
+				name = "customui_hold_level_title_dwarven_hold"
+				position = { x = 380 y = 317 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
 		}
 
 		#### INSTITUTIONS WINDOW

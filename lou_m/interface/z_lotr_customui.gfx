@@ -1,0 +1,32 @@
+spriteTypes = {
+	#----------------------------------------------
+    # View
+    #----------------------------------------------
+	spriteType = {
+		name = "GFX_customui_open_menu_button_dwarven_hold"
+		texturefile = "gfx//interface//customui_dwarven_hold//customui_open_menu_button_dwarven_hold.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_customui_menu_bg_dwarven_hold"
+		texturefile = "gfx//interface//customui_dwarven_hold//customui_menu_bg_dwarven_hold.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_customui_menu_bg_2_dwarven_hold"
+		texturefile = "gfx//interface//customui_dwarven_hold//customui_menu_bg_2_dwarven_hold.dds"
+		allwaystransparent = yes
+	}
+	#----------------------------------------------
+    # Hold Levels
+    #----------------------------------------------
+	spriteType = {
+		name = "GFX_customui_hold_level_1_dwarven_hold"
+		texturefile = "gfx//interface//customui_dwarven_hold//customui_hold_level_1_dwarven_hold.dds"
+		allwaystransparent = yes
+	}
+}

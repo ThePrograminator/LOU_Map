@@ -1,0 +1,14 @@
+customui_open_menu_dwarven_hold_effect = {
+	custom_tooltip = customui_open_menu_dwarven_hold_effect_tt
+	hidden_effect = {
+		change_variable = { which = customui_menu_state_dwarven_hold value = 1 }
+	}
+	
+}
+
+customui_close_menu_dwarven_hold_effect = {
+	custom_tooltip = customui_close_menu_dwarven_hold_effect_tt
+	hidden_effect = {
+		subtract_variable = { which = customui_menu_state_dwarven_hold value = 1 }
+	}
+}

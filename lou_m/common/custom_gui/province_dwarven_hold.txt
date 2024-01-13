@@ -1,0 +1,76 @@
+###############################
+#Province Building Tab-bar
+###############################
+custom_button = {
+    name = customui_open_menu_button_dwarven_hold
+    potential = {
+        customui_menu_is_closed_dwarven_hold_trigger = yes
+        province_group = hold_province_group
+        owner = {
+            ai = no #make sure the AI gets an event or something similar where they can choose their branch the moment these buttons get unlocked for the player
+            is_dwarf = yes
+        }
+    }
+    trigger = { 
+        customui_menu_is_closed_dwarven_hold_trigger = yes 
+    }
+    effect = { 
+        customui_open_menu_dwarven_hold_effect = yes 
+    }
+    tooltip = customui_open_menu_button_dwarven_hold_title
+}
+
+###############################
+#Hold View
+###############################
+custom_icon = {
+    name = customui_menu_bg_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+}
+
+custom_button = {
+    name = customui_close_menu_button_dwarven_hold
+    potential = {
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes 
+    }
+    effect = { 
+        customui_close_menu_dwarven_hold_effect = yes 
+    }
+    tooltip = customui_close_menu_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_menu_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+###############################
+#Hold View - Top Bar
+###############################
+
+custom_icon = {
+    name = customui_hold_level_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_hold_level_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
