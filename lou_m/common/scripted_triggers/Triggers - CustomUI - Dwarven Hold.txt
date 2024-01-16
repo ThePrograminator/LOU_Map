@@ -26,3 +26,52 @@ customui_menu_is_open_dwarven_hold_trigger = {
 		}
 	}
 }
+
+#-----------------------------------------
+# Hold Level
+#-----------------------------------------
+customui_dev_30_erebor_dwarven_hold_trigger = {
+	development = 30
+	province_id = 287  #Erebor
+}
+
+customui_dev_30_moria_dwarven_hold_trigger = {
+	development = 30
+	province_id = 740  #Moria
+}
+
+customui_dev_30_belegost_dwarven_hold_trigger = {
+	development = 30
+	province_id = 1051 #Belegost
+}
+
+customui_dev_30_dwarven_hold_trigger = {
+	development = 30
+	NOT = {
+		OR = {
+			province_id = 287  #Erebor
+			province_id = 740  #Moria
+			province_id = 1051 #Belegost
+		}
+	}
+}
+
+customui_dev_20_29_dwarven_hold_trigger = {
+	development = 20
+	NOT = {
+		development = 30
+	}
+}
+
+customui_dev_10_19_dwarven_hold_trigger = {
+	development = 10
+	NOT = {
+		development = 20
+	}
+}
+
+customui_dev_0_10_dwarven_hold_trigger = {
+	NOT = {
+		development = 10
+	}
+}

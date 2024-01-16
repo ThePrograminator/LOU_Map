@@ -64,6 +64,18 @@ custom_icon = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the icon is visible
     tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+            customui_dev_0_10_dwarven_hold_trigger = yes
+        } #First matched frame clause will be used.
+    }
+    frame = {
+        number = 2
+        trigger = { 
+            customui_dev_0_10_dwarven_hold_trigger = no
+        }
+    }
 }
 
 custom_text_box = {

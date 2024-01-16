@@ -1,0 +1,46 @@
+defined_text = {
+	name = GetCustomUIDwarvenHoldName
+
+	text = { 
+		localisation_key = string_dwarven_hold_name_dev_30_erebor
+		trigger = {
+			customui_dev_30_erebor_dwarven_hold_trigger = yes
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_name_dev_30_moria
+		trigger = {
+			customui_dev_30_moria_dwarven_hold_trigger = yes
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_name_dev_30_belegost
+		trigger = {
+			customui_dev_30_belegost_dwarven_hold_trigger = yes
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_name_dev_30
+		trigger = {
+			customui_dev_30_dwarven_hold_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_name_dev_20_29
+		trigger = {
+			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_name_dev_10_19
+		trigger = {
+			customui_dev_10_19_dwarven_hold_trigger = yes
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_name_dev_0_10
+		trigger = {
+			customui_dev_0_10_dwarven_hold_trigger = yes
+		}
+	}
+}
