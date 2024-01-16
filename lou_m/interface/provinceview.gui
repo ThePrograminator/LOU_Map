@@ -3831,6 +3831,50 @@ guiTypes = {
 				format = center
 				scripted = yes
 			}
+
+			#---------------------------------------
+			#Custom UI - Dwarven Hold View - Estate
+			#---------------------------------------
+
+			instantTextBoxType = {
+				name = "customui_assigned_estate_title_dwarven_hold"
+				position = { x = 580 y = 155 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "customui_assign_estate_button_dwarven_hold"
+				position = { x = 632 y = 260 }
+				quadTextureSprite ="button_type_9"
+				buttonText = "customui_assign_estate_button_text_dwarven_hold"
+				buttonFont = "vic_22"
+				scripted = yes
+			}
+
+			#---------------------------------------
+			#Custom UI - Dwarven Hold View - Bottom Modifiers
+			#---------------------------------------
+
+			instantTextBoxType = {
+				name = "customui_tax_modifier_text_dwarven_hold"
+				position = { x = 340 y = 465 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+
 		}
 
 		#### INSTITUTIONS WINDOW

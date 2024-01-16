@@ -44,3 +44,43 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateTitle
+
+	text = { #fallback
+		localisation_key = string_dwarven_hold_estate_no_estate
+		trigger = {
+			customui_no_estate_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldTaxModifierText
+
+	text = {
+		localisation_key = string_dwarven_hold_tax_modifier_text_dev_30
+		trigger = {
+			development = 30
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_tax_modifier_text_dev_20_29
+		trigger = {
+			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_tax_modifier_text_dev_10_19
+		trigger = {
+			customui_dev_10_19_dwarven_hold_trigger = yes
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_tax_modifier_text_dev_0_10
+		trigger = {
+			customui_dev_0_10_dwarven_hold_trigger = yes
+		}
+	}
+}

@@ -73,7 +73,37 @@ custom_icon = {
     frame = {
         number = 2
         trigger = { 
-            customui_dev_0_10_dwarven_hold_trigger = no
+            customui_dev_10_19_dwarven_hold_trigger = yes
+        }
+    }
+    frame = {
+        number = 3
+        trigger = { 
+            customui_dev_20_29_dwarven_hold_trigger = yes
+        }
+    }
+    frame = {
+        number = 4
+        trigger = { 
+            customui_dev_30_dwarven_hold_trigger = yes
+        }
+    }
+    frame = {
+        number = 5
+        trigger = { 
+            customui_dev_30_belegost_dwarven_hold_trigger = yes
+        }
+    }
+    frame = {
+        number = 6
+        trigger = { 
+            customui_dev_30_moria_dwarven_hold_trigger = yes
+        }
+    }
+    frame = {
+        number = 7
+        trigger = { 
+            customui_dev_30_erebor_dwarven_hold_trigger = yes
         }
     }
 }
@@ -84,5 +114,51 @@ custom_text_box = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
     tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+###############################
+#Hold View - Estate
+###############################
+
+custom_text_box = {
+    name = customui_assigned_estate_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_button = {
+    name = customui_assign_estate_button_dwarven_hold
+    potential = {
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        OR = {
+            customui_dev_30_erebor_dwarven_hold_trigger = yes
+            customui_dev_30_moria_dwarven_hold_trigger = yes
+            customui_dev_30_belegost_dwarven_hold_trigger = yes
+            customui_dev_30_dwarven_hold_trigger = yes
+            customui_dev_20_29_dwarven_hold_trigger = yes
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_button_dwarven_hold_title
+}
+
+###############################
+#Hold View - Bottom Modifiers
+###############################
+
+custom_text_box = {
+    name = customui_tax_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_tax_modifier_text_dwarven_hold_tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }

@@ -26,6 +26,15 @@ customui_menu_is_open_dwarven_hold_trigger = {
 		}
 	}
 }
+#-----------------------------------------
+# Estate
+#-----------------------------------------
+customui_no_estate_dwarven_hold_trigger = {
+	check_variable = {
+		which = customui_assigned_estate_dwarven_hold
+		value = 0
+	}
+}
 
 #-----------------------------------------
 # Hold Level
@@ -75,3 +84,7 @@ customui_dev_0_10_dwarven_hold_trigger = {
 		development = 10
 	}
 }
+
+#-----------------------------------------
+# Bottom Modifiers
+#-----------------------------------------

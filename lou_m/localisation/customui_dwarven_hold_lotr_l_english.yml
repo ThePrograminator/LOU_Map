@@ -8,10 +8,15 @@
  #Tooltips
  customui_open_menu_button_dwarven_hold_title: "Open Dwarven Hold View"
  customui_close_menu_button_dwarven_hold_title: "Close Dwarven Hold View"
+ customui_assign_estate_button_dwarven_hold_title: "Assign an Estate to your hold"
+ customui_tax_modifier_text_dwarven_hold_tt: "Local Tax Modifier"
 
  #Text
  customui_menu_title_dwarven_hold: "Dwarven Hold"
  customui_hold_level_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldName]"
+ customui_assigned_estate_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldEstateTitle]"
+ customui_assign_estate_button_text_dwarven_hold: "Assign"
+ customui_tax_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldTaxModifierText]"
 
  #Custom Localization
  string_dwarven_hold_name_dev_30_erebor: "Great Hold of Erebor"
@@ -21,3 +26,10 @@
  string_dwarven_hold_name_dev_20_29: "Populous Hold"
  string_dwarven_hold_name_dev_10_19: "Reestablished Hold"
  string_dwarven_hold_name_dev_0_10: "Neglected Hold"
+
+ string_dwarven_hold_estate_no_estate: "No Estate Assigned"
+
+ string_dwarven_hold_tax_modifier_text_dev_30: "£local_tax_modifier£ §G+35%§!"
+ string_dwarven_hold_tax_modifier_text_dev_20_29: "£local_tax_modifier£ §G+20%§!"
+ string_dwarven_hold_tax_modifier_text_dev_10_19: "£local_tax_modifier£ §G+5%§!"
+ string_dwarven_hold_tax_modifier_text_dev_0_10: "£local_tax_modifier£ §R-10%§!"
