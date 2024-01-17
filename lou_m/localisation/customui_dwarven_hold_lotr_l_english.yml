@@ -9,14 +9,21 @@
  customui_open_menu_button_dwarven_hold_title: "Open Dwarven Hold View"
  customui_close_menu_button_dwarven_hold_title: "Close Dwarven Hold View"
  customui_assign_estate_button_dwarven_hold_title: "Assign an Estate to your hold"
+ customui_upgrade_hold_button_dwarven_hold_title: "Upgrading your hold will increase your Local Tax Modifier, Local Production Efficiency Modifier and Local Manpower Modifier."
  customui_tax_modifier_text_dwarven_hold_tt: "Local Tax Modifier"
+ customui_production_modifier_text_dwarven_hold_tt: "Local Production Efficiency Modifier"
+ customui_manpower_modifier_text_dwarven_hold_tt: "Local Manpower Modifier"
 
  #Text
- customui_menu_title_dwarven_hold: "Dwarven Hold"
+ customui_menu_title_dwarven_hold: "Hold Dedication"
  customui_hold_level_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldName]"
  customui_assigned_estate_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldEstateTitle]"
  customui_assign_estate_button_text_dwarven_hold: "Assign"
+ customui_progress_bar_dwarven_hold_text: "[Root.GetCustomUIDwarvenHoldProgressBarText]"
+ customui_upgrade_hold_button_text_dwarven_hold: "Upgrade Hold"
  customui_tax_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldTaxModifierText]"
+ customui_production_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldProductionModifierText]"
+ customui_manpower_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldManpowerModifierText]"
 
  #Custom Localization
  string_dwarven_hold_name_dev_30_erebor: "Great Hold of Erebor"
@@ -29,7 +36,23 @@
 
  string_dwarven_hold_estate_no_estate: "No Estate Assigned"
 
+ string_dwarven_hold_progress_bar_text_dev_30: "Your Hold is at max level."
+ string_dwarven_hold_progress_bar_text_dev_20_29: "You Need 30 Development until you are able to upgrade your Hold."
+ string_dwarven_hold_progress_bar_text_dev_10_19: "You Need 20 Development until you are able to upgrade your Hold."
+ string_dwarven_hold_progress_bar_text_dev_0_10: "You Need 10 Development until you are able to upgrade your Hold."
+
  string_dwarven_hold_tax_modifier_text_dev_30: "£local_tax_modifier£ §G+35%§!"
  string_dwarven_hold_tax_modifier_text_dev_20_29: "£local_tax_modifier£ §G+20%§!"
  string_dwarven_hold_tax_modifier_text_dev_10_19: "£local_tax_modifier£ §G+5%§!"
  string_dwarven_hold_tax_modifier_text_dev_0_10: "£local_tax_modifier£ §R-10%§!"
+
+ string_dwarven_hold_production_modifier_text_dev_30: "£local_production_efficiency£ §G+35%§!"
+ string_dwarven_hold_production_modifier_text_dev_20_29: "£local_production_efficiency£ §G+20%§!"
+ string_dwarven_hold_production_modifier_text_dev_10_19: "£local_production_efficiency£ §G+5%§!"
+ string_dwarven_hold_production_modifier_text_dev_0_10: "£local_production_efficiency£ §R-10%§!"
+
+ string_dwarven_hold_manpower_modifier_text_dev_30: "£local_manpower_modifier£ §G+35%§!"
+ string_dwarven_hold_manpower_modifier_text_dev_20_29: "£local_manpower_modifier£ §G+20%§!"
+ string_dwarven_hold_manpower_modifier_text_dev_10_19: "£local_manpower_modifier£ §G+5%§!"
+ string_dwarven_hold_manpower_modifier_text_dev_0_10: "£local_manpower_modifier£ §R-10%§!"
+

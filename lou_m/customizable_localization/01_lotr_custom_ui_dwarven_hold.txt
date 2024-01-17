@@ -5,42 +5,70 @@ defined_text = {
 		localisation_key = string_dwarven_hold_name_dev_30_erebor
 		trigger = {
 			customui_dev_30_erebor_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
 		}
 	}
 	text = { 
 		localisation_key = string_dwarven_hold_name_dev_30_moria
 		trigger = {
 			customui_dev_30_moria_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
 		}
 	}
 	text = { 
 		localisation_key = string_dwarven_hold_name_dev_30_belegost
 		trigger = {
 			customui_dev_30_belegost_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
 		}
 	}
 	text = { 
 		localisation_key = string_dwarven_hold_name_dev_30
 		trigger = {
 			customui_dev_30_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
 		}
 	}
 	text = {
 		localisation_key = string_dwarven_hold_name_dev_20_29
 		trigger = {
-			customui_dev_20_29_dwarven_hold_trigger = yes
+			#customui_dev_20_29_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 2
+            }
 		}
 	}
 	text = {
 		localisation_key = string_dwarven_hold_name_dev_10_19
 		trigger = {
-			customui_dev_10_19_dwarven_hold_trigger = yes
+			#customui_dev_10_19_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 1
+            }
 		}
 	}
 	text = { #fallback
 		localisation_key = string_dwarven_hold_name_dev_0_10
 		trigger = {
-			customui_dev_0_10_dwarven_hold_trigger = yes
+			#customui_dev_0_10_dwarven_hold_trigger = yes
+			check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 0
+            }
 		}
 	}
 }
@@ -52,6 +80,35 @@ defined_text = {
 		localisation_key = string_dwarven_hold_estate_no_estate
 		trigger = {
 			customui_no_estate_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldProgressBarText
+
+	text = {
+		localisation_key = string_dwarven_hold_progress_bar_text_dev_30
+		trigger = {
+			development = 30
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_progress_bar_text_dev_20_29
+		trigger = {
+			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_progress_bar_text_dev_10_19
+		trigger = {
+			customui_dev_10_19_dwarven_hold_trigger = yes
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_progress_bar_text_dev_0_10
+		trigger = {
+			customui_dev_0_10_dwarven_hold_trigger = yes
 		}
 	}
 }
@@ -79,6 +136,64 @@ defined_text = {
 	}
 	text = { #fallback
 		localisation_key = string_dwarven_hold_tax_modifier_text_dev_0_10
+		trigger = {
+			customui_dev_0_10_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldProductionModifierText
+
+	text = {
+		localisation_key = string_dwarven_hold_production_modifier_text_dev_30
+		trigger = {
+			development = 30
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_production_modifier_text_dev_20_29
+		trigger = {
+			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_production_modifier_text_dev_10_19
+		trigger = {
+			customui_dev_10_19_dwarven_hold_trigger = yes
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_production_modifier_text_dev_0_10
+		trigger = {
+			customui_dev_0_10_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldManpowerModifierText
+
+	text = {
+		localisation_key = string_dwarven_hold_manpower_modifier_text_dev_30
+		trigger = {
+			development = 30
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_manpower_modifier_text_dev_20_29
+		trigger = {
+			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_manpower_modifier_text_dev_10_19
+		trigger = {
+			customui_dev_10_19_dwarven_hold_trigger = yes
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_manpower_modifier_text_dev_0_10
 		trigger = {
 			customui_dev_0_10_dwarven_hold_trigger = yes
 		}

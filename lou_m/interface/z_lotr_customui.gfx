@@ -36,4 +36,15 @@ spriteTypes = {
 		allwaystransparent = yes
 		noOfFrames = 7
 	}
+
+	#----------------------------------------------
+    # Progress bar
+    #----------------------------------------------
+
+	spriteType  = {
+		name = "GFX_customui_progress_bar_empty_dwarven_hold"
+		texturefile = "gfx//interface//customui_dwarven_hold//customui_progress_bar_dwarven_hold_atlas.dds"
+		allwaystransparent = no
+		noOfFrames = 11
+	}
 }
