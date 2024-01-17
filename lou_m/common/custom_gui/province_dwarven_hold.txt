@@ -67,43 +67,89 @@ custom_icon = {
     frame = {  #Can define multiple frame clauses
         number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
         trigger = { 
-            customui_dev_0_10_dwarven_hold_trigger = yes
+            #customui_dev_0_10_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 0
+            }
+            NOT = {
+                check_variable = {
+                    which = customui_hold_level_dwarven_hold
+                    value = 1
+                }
+            }
         } #First matched frame clause will be used.
     }
     frame = {
         number = 2
         trigger = { 
-            customui_dev_10_19_dwarven_hold_trigger = yes
+            #customui_dev_10_19_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 1
+            }
+            NOT = {
+                check_variable = {
+                    which = customui_hold_level_dwarven_hold
+                    value = 2
+                }
+            }
         }
     }
     frame = {
         number = 3
         trigger = { 
-            customui_dev_20_29_dwarven_hold_trigger = yes
+            #customui_dev_20_29_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 2
+            }
+            NOT = {
+                check_variable = {
+                    which = customui_hold_level_dwarven_hold
+                    value = 3
+                }
+            }
         }
     }
     frame = {
         number = 4
         trigger = { 
             customui_dev_30_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
         }
     }
     frame = {
         number = 5
         trigger = { 
             customui_dev_30_belegost_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
         }
     }
     frame = {
         number = 6
         trigger = { 
             customui_dev_30_moria_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
         }
     }
     frame = {
         number = 7
         trigger = { 
             customui_dev_30_erebor_dwarven_hold_trigger = yes
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
         }
     }
 }
@@ -137,17 +183,351 @@ custom_button = {
     }
     trigger = { 
         OR = {
-            customui_dev_30_erebor_dwarven_hold_trigger = yes
-            customui_dev_30_moria_dwarven_hold_trigger = yes
-            customui_dev_30_belegost_dwarven_hold_trigger = yes
-            customui_dev_30_dwarven_hold_trigger = yes
-            customui_dev_20_29_dwarven_hold_trigger = yes
+            development = 20
         }
     }
     effect = { 
         
     }
     tooltip = customui_assign_estate_button_dwarven_hold_title
+}
+
+###############################
+#Hold View - Center
+###############################
+custom_icon = {
+    name = customui_progress_bar_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_progress_bar_dwarven_hold_text #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           OR = {
+                AND = {
+                    exact_development = { VALUE = 10 LESSTHAN = 11 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 20 LESSTHAN = 21 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+           }
+        } #First matched frame clause will be used.
+    }
+    frame = {
+        number = 2
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 11 LESSTHAN = 12 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 21 LESSTHAN = 22 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 3
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 12 LESSTHAN = 13 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 22 LESSTHAN = 23 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 4
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 3 LESSTHAN = 4 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 13 LESSTHAN = 14 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 23 LESSTHAN = 24 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 5
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 4 LESSTHAN = 5 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 14 LESSTHAN = 15 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 24 LESSTHAN = 25 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 6
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 5 LESSTHAN = 6 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 15 LESSTHAN = 16 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 25 LESSTHAN = 26 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 7
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 6 LESSTHAN = 7 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 16 LESSTHAN = 17 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 26 LESSTHAN = 27 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 8
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 7 LESSTHAN = 8 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 17 LESSTHAN = 18 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 27 LESSTHAN = 28 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 9
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 8 LESSTHAN = 9 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 18 LESSTHAN = 19 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 28 LESSTHAN = 29 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 10
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 9 LESSTHAN = 10 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 19 LESSTHAN = 20 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                AND = {
+                    exact_development = { VALUE = 29 LESSTHAN = 30 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            }
+        }
+    }
+    frame = {
+        number = 11
+        trigger = { 
+            OR = {
+                AND = {
+                    exact_development = { VALUE = 10 LESSTHAN = 20 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                }
+                
+                AND = {
+                    exact_development = { VALUE = 20 LESSTHAN = 30 }
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                }
+                #exact_development = { VALUE = 10 LESSTHAN = 11 }
+                #exact_development = { VALUE = 20 LESSTHAN = 21 }
+                development = 30
+            }
+        }
+    }
+}
+
+custom_button = {
+    name = customui_upgrade_hold_button_dwarven_hold
+    potential = {
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = {
+        OR = {
+            AND = {
+                development = 10
+                check_variable = {
+                    which = customui_hold_level_dwarven_hold
+                    value = 0
+                }
+            }
+            AND = {
+                development = 20
+                check_variable = {
+                    which = customui_hold_level_dwarven_hold
+                    value = 1
+                }
+            }
+            AND = {
+                development = 30
+                check_variable = {
+                    which = customui_hold_level_dwarven_hold
+                    value = 2
+                }
+            }
+        } 
+        
+        NOT = {
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 3
+            }
+        }
+    }
+    effect = { 
+        customui_upgrade_dwarven_level_dwarven_hold_effect = yes
+    }
+    tooltip = customui_upgrade_hold_button_dwarven_hold_title
 }
 
 ###############################
@@ -160,5 +540,23 @@ custom_text_box = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
     tooltip = customui_tax_modifier_text_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_production_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_production_modifier_text_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_manpower_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_manpower_modifier_text_dwarven_hold_tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
