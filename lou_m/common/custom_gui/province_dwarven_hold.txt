@@ -12,7 +12,9 @@ custom_button = {
         }
     }
     trigger = { 
-        customui_menu_is_closed_dwarven_hold_trigger = yes 
+        hidden_trigger = {
+            customui_menu_is_closed_dwarven_hold_trigger = yes 
+        }
     }
     effect = { 
         customui_open_menu_dwarven_hold_effect = yes 
@@ -37,7 +39,9 @@ custom_button = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     }
     trigger = { 
-        customui_menu_is_open_dwarven_hold_trigger = yes 
+        hidden_trigger = {
+            customui_menu_is_open_dwarven_hold_trigger = yes 
+        }
     }
     effect = { 
         customui_close_menu_dwarven_hold_effect = yes 
@@ -67,7 +71,6 @@ custom_icon = {
     frame = {  #Can define multiple frame clauses
         number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
         trigger = { 
-            #customui_dev_0_10_dwarven_hold_trigger = yes
             check_variable = {
                 which = customui_hold_level_dwarven_hold
                 value = 0
@@ -83,7 +86,6 @@ custom_icon = {
     frame = {
         number = 2
         trigger = { 
-            #customui_dev_10_19_dwarven_hold_trigger = yes
             check_variable = {
                 which = customui_hold_level_dwarven_hold
                 value = 1
@@ -99,7 +101,6 @@ custom_icon = {
     frame = {
         number = 3
         trigger = { 
-            #customui_dev_20_29_dwarven_hold_trigger = yes
             check_variable = {
                 which = customui_hold_level_dwarven_hold
                 value = 2
@@ -181,13 +182,14 @@ custom_button = {
     potential = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     }
-    trigger = { 
-        OR = {
-            development = 20
-        }
+    trigger = {
+        development = 20
+        hidden_trigger = {
+            customui_dropdown_is_closed_dwarven_hold_trigger = yes
+        } 
     }
     effect = { 
-        
+        customui_open_dropdown_dwarven_hold_effect =yes
     }
     tooltip = customui_assign_estate_button_dwarven_hold_title
 }
@@ -206,14 +208,14 @@ custom_icon = {
         trigger = { 
            OR = {
                 AND = {
-                    exact_development = { VALUE = 10 LESSTHAN = 11 }
+                    development_between = { VALUE = 10 LESSTHAN = 11 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 20 LESSTHAN = 21 }
+                    development_between = { VALUE = 20 LESSTHAN = 21 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -227,14 +229,14 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 11 LESSTHAN = 12 }
+                    development_between = { VALUE = 11 LESSTHAN = 12 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 21 LESSTHAN = 22 }
+                    development_between = { VALUE = 21 LESSTHAN = 22 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -248,14 +250,14 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 12 LESSTHAN = 13 }
+                    development_between = { VALUE = 12 LESSTHAN = 13 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 22 LESSTHAN = 23 }
+                    development_between = { VALUE = 22 LESSTHAN = 23 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -269,21 +271,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 3 LESSTHAN = 4 }
+                    development_between = { VALUE = 3 LESSTHAN = 4 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 13 LESSTHAN = 14 }
+                    development_between = { VALUE = 13 LESSTHAN = 14 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 23 LESSTHAN = 24 }
+                    development_between = { VALUE = 23 LESSTHAN = 24 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -297,21 +299,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 4 LESSTHAN = 5 }
+                    development_between = { VALUE = 4 LESSTHAN = 5 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 14 LESSTHAN = 15 }
+                    development_between = { VALUE = 14 LESSTHAN = 15 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 24 LESSTHAN = 25 }
+                    development_between = { VALUE = 24 LESSTHAN = 25 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -325,21 +327,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 5 LESSTHAN = 6 }
+                    development_between = { VALUE = 5 LESSTHAN = 6 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 15 LESSTHAN = 16 }
+                    development_between = { VALUE = 15 LESSTHAN = 16 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 25 LESSTHAN = 26 }
+                    development_between = { VALUE = 25 LESSTHAN = 26 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -353,21 +355,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 6 LESSTHAN = 7 }
+                    development_between = { VALUE = 6 LESSTHAN = 7 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 16 LESSTHAN = 17 }
+                    development_between = { VALUE = 16 LESSTHAN = 17 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 26 LESSTHAN = 27 }
+                    development_between = { VALUE = 26 LESSTHAN = 27 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -381,21 +383,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 7 LESSTHAN = 8 }
+                    development_between = { VALUE = 7 LESSTHAN = 8 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 17 LESSTHAN = 18 }
+                    development_between = { VALUE = 17 LESSTHAN = 18 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 27 LESSTHAN = 28 }
+                    development_between = { VALUE = 27 LESSTHAN = 28 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -409,21 +411,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 8 LESSTHAN = 9 }
+                    development_between = { VALUE = 8 LESSTHAN = 9 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 18 LESSTHAN = 19 }
+                    development_between = { VALUE = 18 LESSTHAN = 19 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 28 LESSTHAN = 29 }
+                    development_between = { VALUE = 28 LESSTHAN = 29 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -437,21 +439,21 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 9 LESSTHAN = 10 }
+                    development_between = { VALUE = 9 LESSTHAN = 10 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 19 LESSTHAN = 20 }
+                    development_between = { VALUE = 19 LESSTHAN = 20 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
-                    exact_development = { VALUE = 29 LESSTHAN = 30 }
+                    development_between = { VALUE = 29 LESSTHAN = 30 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
@@ -465,7 +467,7 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    exact_development = { VALUE = 10 LESSTHAN = 20 }
+                    development_between = { VALUE = 10 LESSTHAN = 20 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
@@ -473,14 +475,14 @@ custom_icon = {
                 }
                 
                 AND = {
-                    exact_development = { VALUE = 20 LESSTHAN = 30 }
+                    development_between = { VALUE = 20 LESSTHAN = 30 }
                     check_variable = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
-                #exact_development = { VALUE = 10 LESSTHAN = 11 }
-                #exact_development = { VALUE = 20 LESSTHAN = 21 }
+                #development_between = { VALUE = 10 LESSTHAN = 11 }
+                #development_between = { VALUE = 20 LESSTHAN = 21 }
                 development = 30
             }
         }
@@ -493,34 +495,48 @@ custom_button = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     }
     trigger = {
-        OR = {
-            AND = {
-                development = 10
+        hidden_trigger = {
+            OR = {
+                AND = {
+                    development = 10
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 0
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = customui_hold_level_dwarven_hold
+                            value = 1
+                        }
+                    }
+                }
+                AND = {
+                    development = 20
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 1
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = customui_hold_level_dwarven_hold
+                            value = 2
+                        }
+                    }
+                }
+                AND = {
+                    development = 30
+                    check_variable = {
+                        which = customui_hold_level_dwarven_hold
+                        value = 2
+                    }
+                }
+            } 
+            
+            NOT = {
                 check_variable = {
                     which = customui_hold_level_dwarven_hold
-                    value = 0
+                    value = 3
                 }
-            }
-            AND = {
-                development = 20
-                check_variable = {
-                    which = customui_hold_level_dwarven_hold
-                    value = 1
-                }
-            }
-            AND = {
-                development = 30
-                check_variable = {
-                    which = customui_hold_level_dwarven_hold
-                    value = 2
-                }
-            }
-        } 
-        
-        NOT = {
-            check_variable = {
-                which = customui_hold_level_dwarven_hold
-                value = 3
             }
         }
     }
@@ -558,5 +574,318 @@ custom_text_box = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
     tooltip = customui_manpower_modifier_text_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+###############################
+#Hold View - Drop Down
+###############################
+
+custom_icon = {
+    name = customui_dropdown_bg_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+}
+
+custom_button = {
+    name = customui_close_dropdown_button_dwarven_hold
+    potential = {
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        customui_close_dropdown_dwarven_hold_effect = yes 
+    }
+    tooltip = customui_close_dropdown_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 1 Estate
+#####################################
+
+custom_icon = {
+    name = customui_dropdown_estate_1_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_dropdown_estate_1_modifier_dwarven_hold #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           always = yes
+        } #First matched frame clause will be used.
+    }
+}
+
+custom_button = {
+    name = customui_dropdown_estate_1_button_dwarven_hold
+    potential = {
+        owner = {
+            has_estate = estate_dwarven_scholars
+        }
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_1_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_estate_1_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_dropdown_estate_1_modifier_dwarven_hold #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 2 Estate
+#####################################
+
+custom_icon = {
+    name = customui_dropdown_estate_2_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_dropdown_estate_2_modifier_dwarven_hold #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 2 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           always = yes
+        } #First matched frame clause will be used.
+    }
+}
+
+custom_button = {
+    name = customui_dropdown_estate_2_button_dwarven_hold
+    potential = {
+        owner = {
+            has_estate = estate_dwarven_masons
+        }
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_2_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_estate_2_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_dropdown_estate_2_modifier_dwarven_hold #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 3 Estate
+#####################################
+
+custom_icon = {
+    name = customui_dropdown_estate_3_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_dropdown_estate_3_modifier_dwarven_hold #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 3 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           always = yes
+        } #First matched frame clause will be used.
+    }
+}
+
+custom_button = {
+    name = customui_dropdown_estate_3_button_dwarven_hold
+    potential = {
+        owner = {
+            has_estate = estate_dwarven_warriors
+        }
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_3_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_estate_3_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_dropdown_estate_3_modifier_dwarven_hold #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 4 Estate
+#####################################
+
+custom_icon = {
+    name = customui_dropdown_estate_4_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_dropdown_estate_4_modifier_dwarven_hold #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 4 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           always = yes
+        } #First matched frame clause will be used.
+    }
+}
+
+custom_button = {
+    name = customui_dropdown_estate_4_button_dwarven_hold
+    potential = {
+        owner = {
+            has_estate = estate_dwarven_warriors
+        }
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_4_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_estate_4_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_dropdown_estate_4_modifier_dwarven_hold #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 5 Estate
+#####################################
+
+custom_icon = {
+    name = customui_dropdown_estate_5_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_dropdown_estate_5_modifier_dwarven_hold #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 5 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           always = yes
+        } #First matched frame clause will be used.
+    }
+}
+
+custom_button = {
+    name = customui_dropdown_estate_5_button_dwarven_hold
+    potential = {
+        owner = {
+            has_estate = estate_dwarven_warriors
+        }
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_5_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_estate_5_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_dropdown_estate_5_modifier_dwarven_hold #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 6 (Special) Estate
+#####################################
+
+custom_icon = {
+    name = customui_dropdown_estate_6_icon_dwarven_hold #Must match a scripted iconType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the icon is visible
+    tooltip = customui_dropdown_estate_6_modifier_dwarven_hold #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 6 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+           always = yes
+        } #First matched frame clause will be used.
+    }
+}
+
+custom_button = {
+    name = customui_dropdown_estate_6_button_dwarven_hold
+    potential = {
+        owner = {
+            has_estate = estate_dwarven_warriors
+        }
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+        }
+    }
+    effect = { 
+        
+    }
+    tooltip = customui_assign_estate_6_button_dwarven_hold_title
+}
+
+custom_text_box = {
+    name = customui_dropdown_estate_6_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    } #Determines when the text is visible
+    tooltip = customui_dropdown_estate_6_modifier_dwarven_hold #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }

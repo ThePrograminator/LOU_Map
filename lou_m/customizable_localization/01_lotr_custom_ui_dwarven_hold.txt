@@ -44,7 +44,6 @@ defined_text = {
 	text = {
 		localisation_key = string_dwarven_hold_name_dev_20_29
 		trigger = {
-			#customui_dev_20_29_dwarven_hold_trigger = yes
 			check_variable = {
                 which = customui_hold_level_dwarven_hold
                 value = 2
@@ -54,7 +53,6 @@ defined_text = {
 	text = {
 		localisation_key = string_dwarven_hold_name_dev_10_19
 		trigger = {
-			#customui_dev_10_19_dwarven_hold_trigger = yes
 			check_variable = {
                 which = customui_hold_level_dwarven_hold
                 value = 1
@@ -64,7 +62,6 @@ defined_text = {
 	text = { #fallback
 		localisation_key = string_dwarven_hold_name_dev_0_10
 		trigger = {
-			#customui_dev_0_10_dwarven_hold_trigger = yes
 			check_variable = {
                 which = customui_hold_level_dwarven_hold
                 value = 0
@@ -196,6 +193,46 @@ defined_text = {
 		localisation_key = string_dwarven_hold_manpower_modifier_text_dev_0_10
 		trigger = {
 			customui_dev_0_10_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldDropdownModifierText
+
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_dev_30
+		trigger = {
+			development = 30
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_dev_20_29
+		trigger = {
+			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldDropdownSpecialText
+
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_special_erebor_text
+		trigger = {
+			province_id = 287  #Erebor
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_special_moria_text
+		trigger = {
+			province_id = 740  #Moria
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_special_belegost_text
+		trigger = {
+			province_id = 1051 #Belegost 
 		}
 	}
 }

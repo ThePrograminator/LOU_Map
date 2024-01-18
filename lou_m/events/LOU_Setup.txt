@@ -354,3 +354,55 @@ country_event = {
         
     }  
 }
+
+# Apply Dwarven hold Variables
+country_event = {
+	id = LOU_setup.6
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    fire_only_once = yes
+    hidden = yes
+	is_triggered_only = yes
+
+    trigger = {
+        
+    }
+
+    option = {
+        name = "LOU_setup.4.a"
+        log = "LOU_setup.6 - Dwarven Hold Setup Event"
+
+        hold_province_group = {
+            province_event = {
+                id = LOU_setup.7
+            }
+        }
+    }  
+}
+
+# Apply Dwarven hold Variables
+province_event = {
+	id = LOU_setup.7
+    title = dummy.1.t
+	desc = dummy.1.d
+    picture = COMET_SIGHTED_eventPicture
+    
+    hidden = yes
+	is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_province_flag = has_dwarven_hold_flag
+        }
+    }
+
+    option = {
+        name = "LOU_setup.4.a"
+
+        log = "LOU_setup.7 - [Root.GetName] - Apply Dwarven Hold Variable" 
+
+        customui_setup_variables_dwarven_hold_effect = yes
+    }  
+}

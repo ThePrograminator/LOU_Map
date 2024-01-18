@@ -4,15 +4,31 @@
  #Effect Tooltips
  customui_open_menu_dwarven_hold_effect_tt: "Open Dwarven Hold View"
  customui_close_menu_dwarven_hold_effect_tt: "Close Dwarven Hold View"
+ customui_open_dropdown_dwarven_hold_effect_tt: "Open Assign Estate Menu"
+ customui_close_dropdown_dwarven_hold_effect_tt: "Close Assign Estate Menu"
 
  #Tooltips
  customui_open_menu_button_dwarven_hold_title: "Open Dwarven Hold View"
  customui_close_menu_button_dwarven_hold_title: "Close Dwarven Hold View"
+ customui_close_dropdown_button_dwarven_hold_title: "Close Assign Estate Menu"
  customui_assign_estate_button_dwarven_hold_title: "Assign an Estate to your hold"
  customui_upgrade_hold_button_dwarven_hold_title: "Upgrading your hold will increase your Local Tax Modifier, Local Production Efficiency Modifier and Local Manpower Modifier."
  customui_tax_modifier_text_dwarven_hold_tt: "Local Tax Modifier"
  customui_production_modifier_text_dwarven_hold_tt: "Local Production Efficiency Modifier"
  customui_manpower_modifier_text_dwarven_hold_tt: "Local Manpower Modifier"
+
+ customui_assign_estate_1_button_dwarven_hold_title: "Assign Scholars Guild"
+ customui_dropdown_estate_1_modifier_dwarven_hold: "§YScholars Guild§!"
+ customui_assign_estate_2_button_dwarven_hold_title: "Assign Masons Guild"
+ customui_dropdown_estate_2_modifier_dwarven_hold: "§YMasons Guild§!"
+ customui_assign_estate_3_button_dwarven_hold_title: "Assign Warriors Guild"
+ customui_dropdown_estate_3_modifier_dwarven_hold: "§YWarriors Guild§!"
+ customui_assign_estate_4_button_dwarven_hold_title: "Assign Blacksmiths Guild"
+ customui_dropdown_estate_4_modifier_dwarven_hold: "§YBlacksmiths Guild§!"
+ customui_assign_estate_5_button_dwarven_hold_title: "Assign Artisans Guild"
+ customui_dropdown_estate_5_modifier_dwarven_hold: "§YArtisans Guild§!"
+ customui_assign_estate_6_button_dwarven_hold_title: "Assign Artisans Guild"
+ customui_dropdown_estate_6_modifier_dwarven_hold: "§YArtisans Guild§!"
 
  #Text
  customui_menu_title_dwarven_hold: "Hold Dedication"
@@ -24,6 +40,21 @@
  customui_tax_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldTaxModifierText]"
  customui_production_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldProductionModifierText]"
  customui_manpower_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldManpowerModifierText]"
+ customui_dropdown_title_dwarven_hold: "Select Estate for Hold of §Y[Root.GetName]§!:"
+
+ customui_dropdown_estate_1_button_text_dwarven_hold: "Scholars Guild"
+ customui_dropdown_estate_1_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+ customui_dropdown_estate_2_button_text_dwarven_hold: "Masons Guild"
+ customui_dropdown_estate_2_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+ customui_dropdown_estate_3_button_text_dwarven_hold: "Warriors Guild"
+ customui_dropdown_estate_3_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+ customui_dropdown_estate_4_button_text_dwarven_hold: "Blacksmiths Guild"
+ customui_dropdown_estate_4_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+ customui_dropdown_estate_5_button_text_dwarven_hold: "Artisans Guild"
+ customui_dropdown_estate_5_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+ customui_dropdown_estate_6_button_text_dwarven_hold: "[Root.GetName]"
+ customui_dropdown_estate_6_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+
 
  #Custom Localization
  string_dwarven_hold_name_dev_30_erebor: "Great Hold of Erebor"
@@ -55,4 +86,11 @@
  string_dwarven_hold_manpower_modifier_text_dev_20_29: "£local_manpower_modifier£ §G+20%§!"
  string_dwarven_hold_manpower_modifier_text_dev_10_19: "£local_manpower_modifier£ §G+5%§!"
  string_dwarven_hold_manpower_modifier_text_dev_0_10: "£local_manpower_modifier£ §R-10%§!"
+
+ string_dwarven_hold_dropdown_modifier_text_dev_30: "§G+10% Loyalty§! and §Y+5% Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_dev_20_29: "§G+5% Loyalty§! and §Y+5% Influence§!"
+
+ string_dwarven_hold_dropdown_special_erebor_text: "The Mithril Source"
+ string_dwarven_hold_dropdown_special_moria_text: "Seat of the High King"
+ string_dwarven_hold_dropdown_special_belegost_text: "Birthplace of the Broadbeams"
 

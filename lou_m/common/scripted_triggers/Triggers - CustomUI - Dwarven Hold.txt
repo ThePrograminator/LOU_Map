@@ -26,6 +26,32 @@ customui_menu_is_open_dwarven_hold_trigger = {
 		}
 	}
 }
+
+customui_dropdown_is_closed_dwarven_hold_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = customui_open_menu_dwarven_hold_trigger
+		check_variable = {
+			which = customui_dropdown_state_dwarven_hold
+			value = 0
+		}
+		NOT = {
+			check_variable = {
+				which = customui_dropdown_state_dwarven_hold
+				value = 1
+			}
+		}
+	}
+}
+
+customui_dropdown_is_open_dwarven_hold_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = customui_open_menu_dwarven_hold_trigger
+		check_variable = {
+			which = customui_dropdown_state_dwarven_hold
+			value = 1
+		}
+	}
+}
 #-----------------------------------------
 # Estate
 #-----------------------------------------
@@ -89,7 +115,7 @@ customui_dev_0_10_dwarven_hold_trigger = {
 # Center
 #-----------------------------------------
 
-exact_development = {
+development_between = {
 	development = $VALUE$
 	NOT = {
 		development = $LESSTHAN$
