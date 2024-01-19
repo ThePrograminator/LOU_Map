@@ -9,3 +9,23 @@ religious_center = {
 
 	local_missionary_strength = -0.05
 }
+
+customui_dwarven_hold_estate_special_erebor_triggered = {
+	potential = { 
+		province_id = 287
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 6
+		}
+	}
+    
+	trigger = {
+		province_id = 287
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 6
+		}
+	}
+
+	all_estate_loyalty_equilibrium = 0.10
+}

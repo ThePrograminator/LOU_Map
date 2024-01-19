@@ -71,45 +71,27 @@ custom_icon = {
     frame = {  #Can define multiple frame clauses
         number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
         trigger = { 
-            check_variable = {
+            is_variable_equal = {
                 which = customui_hold_level_dwarven_hold
                 value = 0
-            }
-            NOT = {
-                check_variable = {
-                    which = customui_hold_level_dwarven_hold
-                    value = 1
-                }
             }
         } #First matched frame clause will be used.
     }
     frame = {
         number = 2
         trigger = { 
-            check_variable = {
+            is_variable_equal = {
                 which = customui_hold_level_dwarven_hold
                 value = 1
-            }
-            NOT = {
-                check_variable = {
-                    which = customui_hold_level_dwarven_hold
-                    value = 2
-                }
             }
         }
     }
     frame = {
         number = 3
         trigger = { 
-            check_variable = {
+            is_variable_equal = {
                 which = customui_hold_level_dwarven_hold
                 value = 2
-            }
-            NOT = {
-                check_variable = {
-                    which = customui_hold_level_dwarven_hold
-                    value = 3
-                }
             }
         }
     }
@@ -183,7 +165,10 @@ custom_button = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     }
     trigger = {
-        development = 20
+        check_variable = {
+            which = customui_hold_level_dwarven_hold
+            value = 2
+        }
         hidden_trigger = {
             customui_dropdown_is_closed_dwarven_hold_trigger = yes
         } 
@@ -209,14 +194,14 @@ custom_icon = {
            OR = {
                 AND = {
                     development_between = { VALUE = 10 LESSTHAN = 11 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 20 LESSTHAN = 21 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -230,14 +215,14 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 11 LESSTHAN = 12 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 21 LESSTHAN = 22 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -251,14 +236,14 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 12 LESSTHAN = 13 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 22 LESSTHAN = 23 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -272,21 +257,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 3 LESSTHAN = 4 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 13 LESSTHAN = 14 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 23 LESSTHAN = 24 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -300,21 +285,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 4 LESSTHAN = 5 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 14 LESSTHAN = 15 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 24 LESSTHAN = 25 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -328,21 +313,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 5 LESSTHAN = 6 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 15 LESSTHAN = 16 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 25 LESSTHAN = 26 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -356,21 +341,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 6 LESSTHAN = 7 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 16 LESSTHAN = 17 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 26 LESSTHAN = 27 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -384,21 +369,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 7 LESSTHAN = 8 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 17 LESSTHAN = 18 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 27 LESSTHAN = 28 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -412,21 +397,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 8 LESSTHAN = 9 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 18 LESSTHAN = 19 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 28 LESSTHAN = 29 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -440,21 +425,21 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 9 LESSTHAN = 10 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
                     development_between = { VALUE = 19 LESSTHAN = 20 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
                 AND = {
                     development_between = { VALUE = 29 LESSTHAN = 30 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -468,21 +453,18 @@ custom_icon = {
             OR = {
                 AND = {
                     development_between = { VALUE = 10 LESSTHAN = 20 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
-                
                 AND = {
                     development_between = { VALUE = 20 LESSTHAN = 30 }
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
                     }
                 }
-                #development_between = { VALUE = 10 LESSTHAN = 11 }
-                #development_between = { VALUE = 20 LESSTHAN = 21 }
                 development = 30
             }
         }
@@ -499,33 +481,21 @@ custom_button = {
             OR = {
                 AND = {
                     development = 10
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
-                    }
-                    NOT = {
-                        check_variable = {
-                            which = customui_hold_level_dwarven_hold
-                            value = 1
-                        }
                     }
                 }
                 AND = {
                     development = 20
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1
-                    }
-                    NOT = {
-                        check_variable = {
-                            which = customui_hold_level_dwarven_hold
-                            value = 2
-                        }
                     }
                 }
                 AND = {
                     development = 30
-                    check_variable = {
+                    is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 2
                     }
@@ -533,7 +503,7 @@ custom_button = {
             } 
             
             NOT = {
-                check_variable = {
+                is_variable_equal = {
                     which = customui_hold_level_dwarven_hold
                     value = 3
                 }
@@ -643,10 +613,16 @@ custom_button = {
     trigger = { 
         hidden_trigger = {
             customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 1
+                }
+            }
         }
     }
     effect = { 
-        
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 1}
     }
     tooltip = customui_assign_estate_1_button_dwarven_hold_title
 }
@@ -689,10 +665,16 @@ custom_button = {
     trigger = { 
         hidden_trigger = {
             customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 2
+                }
+            }
         }
     }
     effect = { 
-        
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 2}
     }
     tooltip = customui_assign_estate_2_button_dwarven_hold_title
 }
@@ -735,10 +717,16 @@ custom_button = {
     trigger = { 
         hidden_trigger = {
             customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 3
+                }
+            }
         }
     }
     effect = { 
-        
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 3}
     }
     tooltip = customui_assign_estate_3_button_dwarven_hold_title
 }
@@ -781,10 +769,16 @@ custom_button = {
     trigger = { 
         hidden_trigger = {
             customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 4
+                }
+            }
         }
     }
     effect = { 
-        
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 4}
     }
     tooltip = customui_assign_estate_4_button_dwarven_hold_title
 }
@@ -827,10 +821,16 @@ custom_button = {
     trigger = { 
         hidden_trigger = {
             customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 5
+                }
+            }
         }
     }
     effect = { 
-        
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 5}
     }
     tooltip = customui_assign_estate_5_button_dwarven_hold_title
 }
@@ -873,10 +873,16 @@ custom_button = {
     trigger = { 
         hidden_trigger = {
             customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 6
+                }
+            }
         }
     }
     effect = { 
-        
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 6}
     }
     tooltip = customui_assign_estate_6_button_dwarven_hold_title
 }

@@ -59,3 +59,16 @@ customui_close_dropdown_dwarven_hold_effect = {
 		subtract_variable = { which = customui_dropdown_state_dwarven_hold value = 1 }
 	}
 }
+
+customui_assign_estate_dwarven_hold_effect = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	if = {
+		limit = {
+			province_id = 287
+		}
+		add_province_triggered_modifier = customui_dwarven_hold_estate_special_erebor_triggered
+	}
+	hidden_effect = {
+		set_variable = { which = customui_assigned_estate_dwarven_hold value = $VALUE$ }
+	}
+}

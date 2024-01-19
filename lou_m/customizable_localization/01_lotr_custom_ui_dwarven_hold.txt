@@ -73,8 +73,62 @@ defined_text = {
 defined_text = {
 	name = GetCustomUIDwarvenHoldEstateTitle
 
+	text = { 
+		localisation_key = string_dwarven_hold_assigned_estate_6
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_assigned_estate_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_assigned_estate_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_assigned_estate_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_assigned_estate_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_assigned_estate_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
 	text = { #fallback
-		localisation_key = string_dwarven_hold_estate_no_estate
+		localisation_key = string_dwarven_hold_assinged_no_estate
 		trigger = {
 			customui_no_estate_dwarven_hold_trigger = yes
 		}
