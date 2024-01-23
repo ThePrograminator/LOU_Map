@@ -159,6 +159,58 @@ custom_text_box = {
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
+custom_text_box = {
+    name = customui_estate_modifier_1_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+        check_variable = {
+            which = customui_assigned_estate_dwarven_hold
+            value = 1
+        }
+    } #Determines when the text is visible
+    tooltip = customui_estate_modifier_1_title_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_estate_modifier_2_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+        check_variable = {
+            which = customui_assigned_estate_dwarven_hold
+            value = 1
+        }
+    } #Determines when the text is visible
+    tooltip = customui_estate_modifier_2_title_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_estate_modifier_3_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+        check_variable = {
+            which = customui_assigned_estate_dwarven_hold
+            value = 1
+        }
+    } #Determines when the text is visible
+    tooltip = customui_estate_modifier_3_title_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_estate_modifier_4_title_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        customui_menu_is_open_dwarven_hold_trigger = yes
+        check_variable = {
+            which = customui_assigned_estate_dwarven_hold
+            value = 1
+        }
+    } #Determines when the text is visible
+    tooltip = customui_estate_modifier_4_title_dwarven_hold_tt #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
 custom_button = {
     name = customui_assign_estate_button_dwarven_hold
     potential = {
@@ -171,6 +223,9 @@ custom_button = {
         }
         hidden_trigger = {
             customui_dropdown_is_closed_dwarven_hold_trigger = yes
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
+            }
         } 
     }
     effect = { 
@@ -619,10 +674,13 @@ custom_button = {
                     value = 1
                 }
             }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
+            }
         }
     }
     effect = { 
-        customui_assign_estate_dwarven_hold_effect = { VALUE = 1}
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 1 }
     }
     tooltip = customui_assign_estate_1_button_dwarven_hold_title
 }
@@ -670,6 +728,9 @@ custom_button = {
                     which = customui_assigned_estate_dwarven_hold
                     value = 2
                 }
+            }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
             }
         }
     }
@@ -723,6 +784,9 @@ custom_button = {
                     value = 3
                 }
             }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
+            }
         }
     }
     effect = { 
@@ -774,6 +838,9 @@ custom_button = {
                     which = customui_assigned_estate_dwarven_hold
                     value = 4
                 }
+            }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
             }
         }
     }
@@ -827,6 +894,9 @@ custom_button = {
                     value = 5
                 }
             }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
+            }
         }
     }
     effect = { 
@@ -879,6 +949,9 @@ custom_button = {
                     value = 6
                 }
             }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
+            }
         }
     }
     effect = { 
@@ -894,4 +967,33 @@ custom_text_box = {
     } #Determines when the text is visible
     tooltip = customui_dropdown_estate_6_modifier_dwarven_hold #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+#####################################
+#Hold View - Drop Down - 0 Unasign
+#####################################
+
+custom_button = {
+    name = customui_dropdown_estate_0_button_dwarven_hold
+    potential = {
+        customui_dropdown_is_open_dwarven_hold_trigger = yes
+    }
+    trigger = { 
+        hidden_trigger = {
+            customui_dropdown_is_open_dwarven_hold_trigger = yes 
+            NOT = {
+                is_variable_equal = {
+                    which = customui_assigned_estate_dwarven_hold
+                    value = 0
+                }
+            }
+            NOT = {
+                customui_had_estate_flag_dwarven_hold_trigger = yes
+            }
+        }
+    }
+    effect = { 
+        customui_assign_estate_dwarven_hold_effect = { VALUE = 0}
+    }
+    tooltip = customui_assign_estate_0_button_dwarven_hold_title
 }

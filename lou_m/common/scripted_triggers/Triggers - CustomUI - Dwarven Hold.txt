@@ -99,6 +99,18 @@ customui_dev_0_10_dwarven_hold_trigger = {
 	}
 }
 
+customui_had_estate_flag_dwarven_hold_trigger = {
+	AND = {
+		has_province_flag = dwarven_hold_assign_estate_province_flag
+		NOT = {
+			had_province_flag = {
+				flag = dwarven_hold_assign_estate_province_flag
+				days = 3650
+			}
+		}
+	}
+}
+
 #-----------------------------------------
 # Center
 #-----------------------------------------
