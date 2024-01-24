@@ -1018,3 +1018,48 @@ angmar_ideas = {
 		prestige = 1
 	}
 }
+
+#------------------------------------
+# Rhudaur
+#------------------------------------
+
+
+rhudaur_ideas = {
+	start = {
+		hostile_attrition = 1
+		manpower_in_culture_group_provinces = 0.25
+	}
+
+	bonus = {
+		yearly_absolutism = 1
+	}
+	
+	trigger = {
+		tag = Z62
+	}
+	free = yes		
+	
+	trained_scouts = {
+		spy_offence = 0.15
+	}
+	hill_warriors = {
+		land_attrition = -0.15
+	}
+	angmars_secrets = {
+		reform_progress_growth = 0.20
+	}
+	natural_skirmishers = {
+		fire_damage = 0.10
+		fire_damage_received = -0.05
+	}
+	wildmen_shamans = {
+		religious_unity = 0.25
+	}
+	dunedain_bloodlines = {
+		monarch_lifespan = 0.25
+	}
+	subjugated_trolls = {
+		infantry_shock = 1
+		production_efficiency = 0.05
+	}
+}
