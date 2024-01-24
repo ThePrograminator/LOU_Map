@@ -584,12 +584,12 @@ categories =  {
 		movement_cost = 0.85
 		local_development_cost = -0.1
 		supply_limit = 8
-		allowed_num_of_buildings = 2
+		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1.05
 		local_defensiveness = 0.10
 		
 		terrain_override = {
-			7 1218 25 361 3085 992 216 991 219 195 193 178 2166 2160 123 21 201 3067
+			1218 25 361 3085 992 216 991 219 195 193 178 2166 2160 123 21 201 3067
 		}
 	}
 	
@@ -922,6 +922,23 @@ categories =  {
 		
 		terrain_override = {
 			17
+		}
+	}
+
+	unique_cair_andros = {
+		color = { 150 100 200 }
+		sound_type = mountains
+		
+		movement_cost = 1.15
+		local_development_cost = -0.10
+		local_defensiveness = 0.25
+		allowed_num_of_buildings = 2
+		nation_designer_cost_multiplier = 1.20
+		supply_limit = 10
+		defence = 2
+		
+		terrain_override = {
+			7
 		}
 	}
 	
