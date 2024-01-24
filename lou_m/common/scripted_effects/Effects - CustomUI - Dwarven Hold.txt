@@ -4,18 +4,27 @@ customui_setup_variables_dwarven_hold_effect = {
 	set_variable = { which = customui_assigned_estate_dwarven_hold value = 0 }
 	if = {
 		limit = {
+			owner = {
+				is_dwarf = yes
+			}
 			customui_dev_10_19_dwarven_hold_trigger = yes
 		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 1 }
 	}
 	else_if = {
-		limit = { 
+		limit = {
+			owner = {
+				is_dwarf = yes
+			} 
 			customui_dev_20_29_dwarven_hold_trigger = yes
 		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 2 }
 	}
 	else_if = {
 		limit = { 
+			owner = {
+				is_dwarf = yes
+			}
 			development = 30
 		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 3 }
@@ -61,14 +70,188 @@ customui_close_dropdown_dwarven_hold_effect = {
 }
 
 customui_assign_estate_dwarven_hold_effect = {
-	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
-	if = {
-		limit = {
-			province_id = 287
-		}
-		add_province_triggered_modifier = customui_dwarven_hold_estate_special_erebor_triggered
-	}
 	hidden_effect = {
 		set_variable = { which = customui_assigned_estate_dwarven_hold value = $VALUE$ }
 	}
+	clr_province_flag = dwarven_hold_assign_estate_province_flag
+	customui_assign_estate_dwarven_hold_effect_$VALUE$ = yes
 }
+
+customui_assign_estate_dwarven_hold_effect_0 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_no_estate_effect_tt
+	clr_province_flag = dwarven_hold_assign_estate_province_flag
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_estate_timer
+		remove_province_modifier = dwarven_hold_estate_scholars
+		remove_province_modifier = dwarven_hold_estate_masons
+		remove_province_modifier = dwarven_hold_estate_warriors
+		remove_province_modifier = dwarven_hold_estate_blacksmiths
+		remove_province_modifier = dwarven_hold_estate_artisans
+		remove_province_modifier = dwarven_hold_estate_special_erebor
+		remove_province_modifier = dwarven_hold_estate_special_moria
+		remove_province_modifier = dwarven_hold_estate_special_belegost
+	}
+}
+
+customui_assign_estate_dwarven_hold_effect_1 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	set_province_flag = dwarven_hold_assign_estate_province_flag
+	add_province_modifier = {
+		name = dwarven_hold_estate_scholars
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_estate_masons
+		remove_province_modifier = dwarven_hold_estate_warriors
+		remove_province_modifier = dwarven_hold_estate_blacksmiths
+		remove_province_modifier = dwarven_hold_estate_artisans
+		remove_province_modifier = dwarven_hold_estate_special_erebor
+		remove_province_modifier = dwarven_hold_estate_special_moria
+		remove_province_modifier = dwarven_hold_estate_special_belegost
+	}
+}
+customui_assign_estate_dwarven_hold_effect_2 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	set_province_flag = dwarven_hold_assign_estate_province_flag
+	add_province_modifier = {
+		name = dwarven_hold_estate_masons
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_estate_scholars
+		remove_province_modifier = dwarven_hold_estate_warriors
+		remove_province_modifier = dwarven_hold_estate_blacksmiths
+		remove_province_modifier = dwarven_hold_estate_artisans
+		remove_province_modifier = dwarven_hold_estate_special_erebor
+		remove_province_modifier = dwarven_hold_estate_special_moria
+		remove_province_modifier = dwarven_hold_estate_special_belegost
+	}
+}
+customui_assign_estate_dwarven_hold_effect_3 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	set_province_flag = dwarven_hold_assign_estate_province_flag
+	add_province_modifier = {
+		name = dwarven_hold_estate_warriors
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_estate_scholars
+		remove_province_modifier = dwarven_hold_estate_masons
+		remove_province_modifier = dwarven_hold_estate_blacksmiths
+		remove_province_modifier = dwarven_hold_estate_artisans
+		remove_province_modifier = dwarven_hold_estate_special_erebor
+		remove_province_modifier = dwarven_hold_estate_special_moria
+		remove_province_modifier = dwarven_hold_estate_special_belegost
+	}
+}
+customui_assign_estate_dwarven_hold_effect_4 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	set_province_flag = dwarven_hold_assign_estate_province_flag
+	add_province_modifier = {
+		name = dwarven_hold_estate_blacksmiths
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_estate_scholars
+		remove_province_modifier = dwarven_hold_estate_masons
+		remove_province_modifier = dwarven_hold_estate_warriors
+		remove_province_modifier = dwarven_hold_estate_artisans
+		remove_province_modifier = dwarven_hold_estate_special_erebor
+		remove_province_modifier = dwarven_hold_estate_special_moria
+		remove_province_modifier = dwarven_hold_estate_special_belegost
+	}
+}
+customui_assign_estate_dwarven_hold_effect_5 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	set_province_flag = dwarven_hold_assign_estate_province_flag
+	add_province_modifier = {
+		name = dwarven_hold_estate_artisans
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_estate_scholars
+		remove_province_modifier = dwarven_hold_estate_masons
+		remove_province_modifier = dwarven_hold_estate_warriors
+		remove_province_modifier = dwarven_hold_estate_blacksmiths
+		remove_province_modifier = dwarven_hold_estate_special_erebor
+		remove_province_modifier = dwarven_hold_estate_special_moria
+		remove_province_modifier = dwarven_hold_estate_special_belegost
+	}
+}
+customui_assign_estate_dwarven_hold_effect_6 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_effect_tt
+	set_province_flag = dwarven_hold_assign_estate_province_flag
+	if = {
+		limit = {
+			province_id = 287 #Erebor
+		}
+		add_province_modifier = {
+			name = dwarven_hold_estate_special_erebor
+			duration = -1
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_estate_scholars
+			remove_province_modifier = dwarven_hold_estate_masons
+			remove_province_modifier = dwarven_hold_estate_warriors
+			remove_province_modifier = dwarven_hold_estate_blacksmiths
+			remove_province_modifier = dwarven_hold_estate_artisans
+			remove_province_modifier = dwarven_hold_estate_special_moria
+			remove_province_modifier = dwarven_hold_estate_special_belegost
+		}
+	}
+	else_if = {
+		limit = { 
+			province_id = 740 #Moria
+		}
+		add_province_modifier = {
+			name = dwarven_hold_estate_special_moria
+			duration = -1
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_estate_scholars
+			remove_province_modifier = dwarven_hold_estate_masons
+			remove_province_modifier = dwarven_hold_estate_warriors
+			remove_province_modifier = dwarven_hold_estate_blacksmiths
+			remove_province_modifier = dwarven_hold_estate_artisans
+			remove_province_modifier = dwarven_hold_estate_special_erebor
+			remove_province_modifier = dwarven_hold_estate_special_belegost
+		}
+	}
+	else_if = {
+		limit = { 
+			province_id = 1051 #Belegost
+		}
+		add_province_modifier = {
+			name = dwarven_hold_estate_special_belegost
+			duration = -1
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_estate_scholars
+			remove_province_modifier = dwarven_hold_estate_masons
+			remove_province_modifier = dwarven_hold_estate_warriors
+			remove_province_modifier = dwarven_hold_estate_blacksmiths
+			remove_province_modifier = dwarven_hold_estate_artisans
+			remove_province_modifier = dwarven_hold_estate_special_erebor
+			remove_province_modifier = dwarven_hold_estate_special_moria
+		}
+	}
+	
+}
+
+#"
+#					has_regency = no
+#					is_free_or_tributary_trigger = yes
+#					OR = {
+#						has_estate = estate_nobles
+#						has_estate = estate_brahmins
+#						has_estate = estate_rajput
+#					}
+#					government = monarchy
+#					NOT = { war_with = ROOT }
+#					if = {
+#						limit = {
+#							ROOT = { religion_group = christian }
+#						}
+#						religion_group = christian
+#					}
+#				"

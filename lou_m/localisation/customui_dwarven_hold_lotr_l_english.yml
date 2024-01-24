@@ -6,7 +6,8 @@
  customui_close_menu_dwarven_hold_effect_tt: "Close Dwarven Hold View"
  customui_open_dropdown_dwarven_hold_effect_tt: "Open Assign Estate Menu"
  customui_close_dropdown_dwarven_hold_effect_tt: "Close Assign Estate Menu"
- customui_assign_estate_dwarven_hold_effect_tt: "Assign Estate"
+ customui_assign_estate_dwarven_hold_effect_tt: "The contract for assigning this Estate to the Hold will last 10 years. Until the contract has ended you cannot pick another."
+ customui_assign_estate_dwarven_hold_no_estate_effect_tt: "Unasign Estate"
 
  #Tooltips
  customui_open_menu_button_dwarven_hold_title: "Open Dwarven Hold View"
@@ -30,6 +31,12 @@
  customui_dropdown_estate_5_modifier_dwarven_hold: "§YArtisans Guild§!"
  customui_assign_estate_6_button_dwarven_hold_title: "Assign Artisans Guild"
  customui_dropdown_estate_6_modifier_dwarven_hold: "§YArtisans Guild§!"
+ customui_assign_estate_0_button_dwarven_hold_title: "No Estate"
+
+ customui_estate_modifier_1_title_dwarven_hold_tt: "[Root.GetCustomUIDwarvenHoldEstateModifier1tt]"
+ customui_estate_modifier_2_title_dwarven_hold_tt: "[Root.GetCustomUIDwarvenHoldEstateModifier2tt]"
+ customui_estate_modifier_3_title_dwarven_hold_tt: "[Root.GetCustomUIDwarvenHoldEstateModifier3tt]"
+ customui_estate_modifier_4_title_dwarven_hold_tt: "[Root.GetCustomUIDwarvenHoldEstateModifier4tt]"
 
  #Text
  customui_menu_title_dwarven_hold: "Hold Dedication"
@@ -53,9 +60,14 @@
  customui_dropdown_estate_4_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
  customui_dropdown_estate_5_button_text_dwarven_hold: "Artisans Guild"
  customui_dropdown_estate_5_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
- customui_dropdown_estate_6_button_text_dwarven_hold: "[Root.GetName]"
- customui_dropdown_estate_6_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierText]"
+ customui_dropdown_estate_6_button_text_dwarven_hold: "Unique Hold Bonus"
+ customui_dropdown_estate_6_modifier_text_dwarven_hold: "[Root.GetCustomUIDwarvenHoldDropdownModifierSpecialText]"
+ customui_dropdown_estate_0_button_text_dwarven_hold: "No Estate"
 
+ customui_estate_modifier_1_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldEstateModifier1]"
+ customui_estate_modifier_2_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldEstateModifier2]"
+ customui_estate_modifier_3_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldEstateModifier3]"
+ customui_estate_modifier_4_title_dwarven_hold: "[Root.GetCustomUIDwarvenHoldEstateModifier4]"
 
  #Custom Localization
  string_dwarven_hold_name_dev_30_erebor: "Great Hold of Erebor"
@@ -94,10 +106,115 @@
  string_dwarven_hold_manpower_modifier_text_dev_10_19: "£local_manpower_modifier£ §G+5%§!"
  string_dwarven_hold_manpower_modifier_text_dev_0_10: "£local_manpower_modifier£ §R-10%§!"
 
- string_dwarven_hold_dropdown_modifier_text_dev_30: "§G+10% Loyalty§! and §Y+5% Influence§!"
- string_dwarven_hold_dropdown_modifier_text_dev_20_29: "§G+5% Loyalty§! and §Y+5% Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_level_3_special_belegost: "§G+10% Blacksmiths & Masons Guild Loyalty§!\n§Y+5% Blacksmiths & Masons Guild Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_level_2_special_belegost: "§G+10% Blacksmiths & Masons Guild Loyalty§!\n§Y+5% Blacksmiths & Masons Guild Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_level_3_special_moria: "§G+10% Loyalty§! and §Y+5% Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_level_2_special_moria: "§G+10% Loyalty§! and §Y+5% Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_level_3_special_erebor: "§G+10% All Loyalty§! and §G+1% Prestige Decay§!"
+ string_dwarven_hold_dropdown_modifier_text_level_2_special_erebor: "§G+10% All Loyalty§! and §G+1% Prestige Decay§!"
+ string_dwarven_hold_dropdown_modifier_text_level_3: "§G+10% Loyalty§! and §Y+5% Influence§!"
+ string_dwarven_hold_dropdown_modifier_text_level_2: "§G+5% Loyalty§! and §Y+5% Influence§!"
 
  string_dwarven_hold_dropdown_special_erebor_text: "The Mithril Source"
  string_dwarven_hold_dropdown_special_moria_text: "Seat of the High King"
  string_dwarven_hold_dropdown_special_belegost_text: "Birthplace of the Broadbeams"
 
+ string_dwarven_hold_estate_modifier_1_6_special_belegost: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_6_special_moria: "£text_estate_loyalty£ §G+15%§!"
+ string_dwarven_hold_estate_modifier_1_6_special_erebor: "£text_all_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_5: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_5: "£text_estate_loyalty£ §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_4: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_4: "£text_estate_loyalty£ §G+5%!"
+ string_dwarven_hold_estate_modifier_1_level_3_3: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_3: "£text_estate_loyalty£ §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_2: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_2: "£text_estate_loyalty£ §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_1: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_1: "£text_estate_loyalty£ §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_0: ""
+
+ string_dwarven_hold_estate_modifier_1_6_special_belegost_tt: "Blacksmiths Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_6_special_moria_tt: "Artisans Loyalty Equilibrium: §G+15%§!"
+ string_dwarven_hold_estate_modifier_1_6_special_erebor_tt: "All Estates' Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_5_tt: "Artisans Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_5_tt: "Artisans Loyalty Equilibrium: §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_4_tt: "Blacksmiths Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_4_tt: "Blacksmiths Loyalty Equilibrium: §G+5%!"
+ string_dwarven_hold_estate_modifier_1_level_3_3_tt: "Warriors Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_3_tt: "Warriors Loyalty Equilibrium: §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_2_tt: "Masons Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_2_tt: "Masons Loyalty Equilibrium: §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_level_3_1_tt: "Scholars Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_1_level_2_1_tt: "Scholars Loyalty Equilibrium: §G+5%§!"
+ string_dwarven_hold_estate_modifier_1_0: ""
+
+ string_dwarven_hold_estate_modifier_2_6_special_belegost: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_2_6_special_moria: "£text_estate_loyalty£ §G+10%§!"
+ string_dwarven_hold_estate_modifier_2_6_special_erebor: "£text_prestige_decay£ §G+1%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_5: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_5: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_4: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_4: "£text_estate_influence£ §Y+5%!"
+ string_dwarven_hold_estate_modifier_2_level_3_3: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_3: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_2: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_2: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_1: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_1: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_0: ""
+
+ string_dwarven_hold_estate_modifier_2_6_special_belegost_tt: "Masons Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_2_6_special_moria_tt: "Blacksmiths Loyalty Equilibrium: §G+10%§!"
+ string_dwarven_hold_estate_modifier_2_6_special_erebor_tt: "Prestige Decay §G+1%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_5_tt: "Artisans Influence: §Y+10%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_5_tt: "Artisans Influence: §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_4_tt: "Blacksmiths Influence: §Y+10%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_4_tt: "Blacksmiths Influence: §Y+5%!"
+ string_dwarven_hold_estate_modifier_2_level_3_3_tt: "Warriors Influence: §Y+10%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_3_tt: "Warriors Influence: §Y+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_2_tt: "Masons Influence: §G+10%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_2_tt: "Masons Influence: §G+5%§!"
+ string_dwarven_hold_estate_modifier_2_level_3_1_tt: "Scholars Influence: §G+10%§!"
+ string_dwarven_hold_estate_modifier_2_level_2_1_tt: "Scholars Influence: §G+5%§!"
+ string_dwarven_hold_estate_modifier_2_0_tt: ""
+
+ string_dwarven_hold_estate_modifier_3_6_special_belegost: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_3_6_special_moria: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_3_0: ""
+
+ string_dwarven_hold_estate_modifier_3_6_special_belegost_tt: "Artisans Influence: §Y+5%§!"
+ string_dwarven_hold_estate_modifier_3_6_special_moria_tt: "Blacksmiths Influence: §Y+5%!"
+
+ string_dwarven_hold_estate_modifier_4_6_special_belegost: "£text_estate_influence£ §Y+5%§!"
+ string_dwarven_hold_estate_modifier_4_0: ""
+
+ string_dwarven_hold_estate_modifier_4_6_special_belegost_tt: "Warriors Influence: §Y+5%§!"
+
+ #estates_loyalty_icon
+ #estates_influence_icon
+ #prestige
+ #prestige_decay
+ #spriteType = {
+ #	name = "GFX_text_prestige"
+ #	texturefile = "gfx/interface/ideas_EU4/prestige.dds"
+ #}
+ #all_estate_loyalty_equilibrium
+
+#Custom Localization
+ dwarven_hold_estate_scholars: "Scholars Guild Manages Hold"
+ desc_dwarven_hold_estate_scholars: "The Scholars Guild have been granted this hold to manage. For this our favor with the guild has increased."
+ dwarven_hold_estate_masons: "Masons Guild Manages Hold"
+ desc_dwarven_hold_estate_masons: "The Masons Guild have been granted this hold to manage. For this our favor with the guild has increased."
+ dwarven_hold_estate_warriors: "Warrios Guild Manages Hold"
+ desc_dwarven_hold_estate_warriors: "The Warrios Guild have been granted this hold to manage. For this our favor with the guild has increased."
+ dwarven_hold_estate_blacksmiths: "Blacksmiths Guild Manages Hold"
+ desc_dwarven_hold_estate_blacksmiths: "The Blacksmiths Guild have been granted this hold to manage. For this our favor with the guild has increased."
+ dwarven_hold_estate_artisans: "Artisans Guild Manages Hold"
+ desc_dwarven_hold_estate_artisans: "The Artisans Guild have been granted this hold to manage. For this our favor with the guild has increased."
+ dwarven_hold_estate_special_erebor: "Seat of The High King"
+ desc_dwarven_hold_estate_special_erebor: ""
+ dwarven_hold_estate_special_moria: "The Mithril Source"
+ desc_dwarven_hold_estate_special_moria: ""
+ dwarven_hold_estate_special_belegost: "Birthplace of the Broadbeams"
+ desc_dwarven_hold_estate_special_belegost: ""

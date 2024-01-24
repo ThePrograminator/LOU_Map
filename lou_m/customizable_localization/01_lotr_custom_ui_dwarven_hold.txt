@@ -136,6 +136,842 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier1
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_belegost
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_moria
+		trigger = {
+			province_id = 740
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_erebor
+		trigger = {
+			province_id = 287
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_estate_modifier_1_0
+		trigger = {
+			customui_no_estate_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier1tt
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_belegost_tt
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_moria_tt
+		trigger = {
+			province_id = 740
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_erebor_tt
+		trigger = {
+			province_id = 287
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_5_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_5_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_4_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_4_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_3_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_3_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_2_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_2_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_3_1_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_level_2_1_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier2
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_belegost
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_moria
+		trigger = {
+			province_id = 740
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_erebor
+		trigger = {
+			province_id = 287
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_estate_modifier_2_0
+		trigger = {
+			customui_no_estate_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier2tt
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_belegost_tt
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_moria_tt
+		trigger = {
+			province_id = 740
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_erebor_tt
+		trigger = {
+			province_id = 287
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_5_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_5_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_4_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_4_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_3_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_3_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_2_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_2_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_3_1_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_level_2_1_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier3
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_belegost
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_moria
+		trigger = {
+			province_id = 740
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_estate_modifier_3_0
+		trigger = {
+			customui_no_estate_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier3tt
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_belegost_tt
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_moria_tt
+		trigger = {
+			province_id = 740
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier4
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_4_6_special_belegost
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { #fallback
+		localisation_key = string_dwarven_hold_estate_modifier_4_0
+		trigger = {
+			customui_no_estate_dwarven_hold_trigger = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateModifier4tt
+
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_4_6_special_belegost_tt
+		trigger = {
+			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+}
+
+defined_text = {
 	name = GetCustomUIDwarvenHoldProgressBarText
 
 	text = {
@@ -255,15 +1091,86 @@ defined_text = {
 	name = GetCustomUIDwarvenHoldDropdownModifierText
 
 	text = {
-		localisation_key = string_dwarven_hold_dropdown_modifier_text_dev_30
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3
 		trigger = {
-			development = 30
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
 		}
 	}
 	text = {
-		localisation_key = string_dwarven_hold_dropdown_modifier_text_dev_20_29
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_2
 		trigger = {
-			customui_dev_20_29_dwarven_hold_trigger = yes
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldDropdownModifierSpecialText
+
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3_special_belegost
+		trigger = {
+			province_id = 1051
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_2_special_belegost
+		trigger = {
+			province_id = 1051
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3_special_moria
+		trigger = {
+			province_id = 740
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_2_special_moria
+		trigger = {
+			province_id = 740
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3_special_erebor
+		trigger = {
+			province_id = 287
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_2_special_erebor
+		trigger = {
+			province_id = 287
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
 		}
 	}
 }

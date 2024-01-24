@@ -3849,6 +3849,58 @@ guiTypes = {
 				scripted = yes
 			}
 
+			instantTextBoxType = {
+				name = "customui_estate_modifier_1_title_dwarven_hold"
+				position = { x = 515 y = 190 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+
+			instantTextBoxType = {
+				name = "customui_estate_modifier_2_title_dwarven_hold"
+				position = { x = 645 y = 190 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+
+			instantTextBoxType = {
+				name = "customui_estate_modifier_3_title_dwarven_hold"
+				position = { x = 515 y = 220 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+
+			instantTextBoxType = {
+				name = "customui_estate_modifier_4_title_dwarven_hold"
+				position = { x = 645 y = 220 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "Dwarven Hold"
+				maxWidth = 200
+				maxHeight = 30
+				format = center
+				scripted = yes
+			}
+
 			guiButtonType = {
 				name = "customui_assign_estate_button_dwarven_hold"
 				position = { x = 615 y = 260 }
@@ -4146,6 +4198,19 @@ guiTypes = {
 				maxWidth = 300
 				maxHeight = 30
 				format = left
+				scripted = yes
+			}
+
+			#------------------------------------------------
+			#Custom UI - Dwarven Hold View - Dropdown - 0 Unasign 
+			#------------------------------------------------
+
+			guiButtonType = {
+				name = "customui_dropdown_estate_0_button_dwarven_hold"
+				position = { x = 895 y = 520 }
+				quadTextureSprite ="GFX_button_type_246"
+				buttonText = "customui_dropdown_estate_0_button_text_dwarven_hold"
+				buttonFont = "vic_22"
 				scripted = yes
 			}
 		}
