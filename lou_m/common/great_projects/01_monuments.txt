@@ -8073,3 +8073,116 @@ annuminas_monument = {
 		}
 	}
 }
+
+osgiliath_bridge_monument = {
+	start = 419
+	date = 537.01.01
+	time = {
+		months = 60
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = canal
+	build_trigger = {			
+	}
+	on_built = {	
+	}
+	on_destroyed = {
+		remove_canal = osgiliath_bridge_monument	
+	}
+	can_use_modifiers_trigger = {			
+	}
+	can_upgrade_trigger = {	
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+			province_trade_power_value = 5
+			local_defensiveness = 0.15
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.05
+		}
+		country_modifiers = {
+			prestige = 0.25
+			caravan_power = 0.05
+			#imperial_authority = 0.05
+		}
+		on_upgraded = {
+			add_canal = osgiliath_bridge_monument	
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			province_trade_power_value = 15
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.15
+		}
+		country_modifiers = {
+			prestige = 0.50
+			caravan_power = 0.15
+			#imperial_authority = 0.10
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			province_trade_power_value = 25
+			local_defensiveness = 0.35
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.25
+		}
+		country_modifiers = {
+			prestige = 1
+			caravan_power = 0.25
+			#imperial_authority = 0.15
+		}
+		on_upgraded = {
+			677 = {
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+}

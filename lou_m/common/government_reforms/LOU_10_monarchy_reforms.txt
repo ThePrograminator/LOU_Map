@@ -107,7 +107,9 @@ stewardship_reform = {
 	modifiers = {
 		legitimacy = -1
 		administrative_efficiency = -0.05
-		governing_capacity = 250
+		governing_capacity_modifier = 0.5
+		land_morale = -0.05
+		diplomatic_reputation = 1
 	}
 	
 	custom_attributes = {
