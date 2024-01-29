@@ -30,7 +30,7 @@ custom_icon = {
     potential = { 
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the icon is visible
-    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
 }
 
 custom_button = {
@@ -54,7 +54,7 @@ custom_text_box = {
     potential = { 
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
-    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
@@ -67,7 +67,7 @@ custom_icon = {
     potential = { 
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the icon is visible
-    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
     frame = {  #Can define multiple frame clauses
         number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
         trigger = { 
@@ -155,7 +155,7 @@ custom_text_box = {
     potential = { 
         customui_menu_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
-    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    tooltip = customui_assigned_estate_title_dwarven_hold_tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
@@ -217,11 +217,11 @@ custom_button = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     }
     trigger = {
-        check_variable = {
-            which = customui_hold_level_dwarven_hold
-            value = 2
-        }
         hidden_trigger = {
+            check_variable = {
+                which = customui_hold_level_dwarven_hold
+                value = 2
+            }
             customui_dropdown_is_closed_dwarven_hold_trigger = yes
             NOT = {
                 customui_had_estate_flag_dwarven_hold_trigger = yes
@@ -636,7 +636,7 @@ custom_text_box = {
     potential = { 
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
-    tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
+    #tooltip = customui_open_menu_button_dwarven_hold_title #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 

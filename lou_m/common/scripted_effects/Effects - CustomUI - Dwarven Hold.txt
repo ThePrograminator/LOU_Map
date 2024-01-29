@@ -51,14 +51,14 @@ customui_setup_variables_dwarven_hold_effect = {
 }
 
 customui_open_menu_dwarven_hold_effect = {
-	custom_tooltip = customui_open_menu_dwarven_hold_effect_tt
+	#custom_tooltip = customui_open_menu_dwarven_hold_effect_tt
 	hidden_effect = {
 		change_variable = { which = customui_menu_state_dwarven_hold value = 1 }
 	}
 }
 
 customui_close_menu_dwarven_hold_effect = {
-	custom_tooltip = customui_close_menu_dwarven_hold_effect_tt
+	#custom_tooltip = customui_close_menu_dwarven_hold_effect_tt
 	hidden_effect = {
 		subtract_variable = { which = customui_menu_state_dwarven_hold value = 1 }
 	}
@@ -131,14 +131,14 @@ customui_upgrade_dwarven_level_dwarven_hold_effect = {
 }
 
 customui_open_dropdown_dwarven_hold_effect = {
-	custom_tooltip = customui_open_dropdown_dwarven_hold_effect_tt
+	#custom_tooltip = customui_open_dropdown_dwarven_hold_effect_tt
 	hidden_effect = {
 		change_variable = { which = customui_dropdown_state_dwarven_hold value = 1 }
 	}
 }
 
 customui_close_dropdown_dwarven_hold_effect = {
-	custom_tooltip = customui_close_dropdown_dwarven_hold_effect_tt
+	#custom_tooltip = customui_close_dropdown_dwarven_hold_effect_tt
 	hidden_effect = {
 		subtract_variable = { which = customui_dropdown_state_dwarven_hold value = 1 }
 	}

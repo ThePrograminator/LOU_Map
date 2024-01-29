@@ -1245,3 +1245,67 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldLevelTitleToolTip
+
+	text = {
+		localisation_key = string_dwarven_hold_level_3_title_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 3
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_level_2_title_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 2
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_level_1_title_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_level_0_title_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 0
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIDwarvenHoldEstateTitleToolTip
+
+	text = {
+		localisation_key = string_dwarven_hold_estate_assigned_title_tt
+		trigger = {
+			check_variable = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 1
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_estate_not_assigned_title_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 0
+			}
+		}
+	}
+}
