@@ -532,6 +532,7 @@ custom_button = {
         customui_menu_is_open_dwarven_hold_trigger = yes
     }
     trigger = {
+        upgrade_dwarven_hold_requirement = yes
         hidden_trigger = {
             OR = {
                 AND = {
