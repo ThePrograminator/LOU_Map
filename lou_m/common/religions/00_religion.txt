@@ -1220,6 +1220,32 @@ religion_group_dwarf = {
 			dwarven_blessing_envoy_banners
 		}
 	}
+
+	religion_southern_dwarves = {
+		icon = 1
+		color = { 0.21 0.37 0.59 }
+		
+		country = {
+			build_cost = -0.25
+			advisor_cost = -0.10
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { MAHAL_HERETIC }
+		
+		holy_sites = {  287 663 628 740 2004 }
+		
+		blessings = {
+			dwarven_blessing_envoy_gold
+			dwarven_blessing_envoy_stone
+			dwarven_blessing_envoy_fire
+			dwarven_blessing_envoy_iron
+			dwarven_blessing_envoy_silver
+		}
+	}
     
 	crusade_name = HOLY_WAR
 }

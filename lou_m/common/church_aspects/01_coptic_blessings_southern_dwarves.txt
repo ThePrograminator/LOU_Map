@@ -1,0 +1,70 @@
+# Eastern Dwarven religion
+#Sending Workers to a Mine (Dwarven settlement)
+
+#Envoy of Gold: Caravan power
+dwarven_blessing_envoy_gold = {
+	is_blessing = yes
+
+    trigger = {
+        adm_power = 100
+    }
+	modifier = {
+		trade_efficiency = 0.10
+		trade_range_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+#Envoy of Stone: Fort Defense
+dwarven_blessing_envoy_stone = {
+	is_blessing = yes
+
+	modifier = {
+		build_cost = -0.10
+		production_efficiency = 0.10
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+# Envoy of Fire: Attrition
+dwarven_blessing_envoy_fire = {
+	is_blessing = yes
+
+	modifier = {
+		global_trade_goods_size_modifier = 0.20
+	}
+	ai_will_do = {
+		factor = 20
+	}
+}
+
+# Envoy of Iron: Goods produced
+dwarven_blessing_envoy_iron = {
+	is_blessing = yes
+
+	modifier = {
+		infantry_power = 0.1
+		discipline = 0.025
+	}
+	ai_will_do = {
+		factor = 25
+	}
+}
+
+# Envoy of Silver: Merc bonuses
+dwarven_blessing_envoy_silver = {
+	is_blessing = yes
+
+	modifier = {
+		advisor_cost = -0.25
+		prestige = 1
+	}
+	ai_will_do = {
+		factor = 20
+	}
+}
