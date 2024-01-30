@@ -1,9 +1,10 @@
 # Province ID : 3570
 # Province Name : Arganul-hund-dûm
+# Is Capital : false
 # Province RGB : (140, 12, 48)
 # Province Area : Ûster Kryl
 # Province Region : Ûster Kryl
-# Province Super Region : Palisor
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Linimér
 # Province Climate : Mild_winter
@@ -21,25 +22,18 @@ owner = W01
 controller = W01
 
 culture = culture_stiffbeard
-religion = religion_northern_dwarves
+religion = religion_eastern_dwarves
 
 trade_goods = iron
 
 hre = no
 
-settlement_1_dwarf_building=yes
-
-material_exchance_dwarf_building=yes
-
-training_hall_dwarf_building=yes
-
-mining_network_dwarf_building=yes
-
-fort_small_gatehouse_dwarf_building=yes
-
-narrow_bridge_dwarf_building=yes
-
-#Palisor Superregion Discovery
+settlement_1_dwarf_building
+material_exchance_dwarf_building
+training_hall_dwarf_building
+mining_network_dwarf_building
+fort_small_gatehouse_dwarf_building
+narrow_bridge_dwarf_building
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer

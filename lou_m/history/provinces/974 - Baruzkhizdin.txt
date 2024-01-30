@@ -1,26 +1,46 @@
 # Province ID : 974
 # Province Name : Baruzkhizdîn
+# Is Capital : false
 # Province RGB : (190, 69, 80)
 # Province Area : Tarapársa
-# Province Region : Desdursyton
-# Province Super Region : Urd
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Mitheryn
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 5
 base_production = 7
 base_manpower = 3
+
+add_core = W38
 owner = W38
 controller = W38
+
 culture = culture_stonefoot
-religion = religion_northern_dwarves
+religion = religion_eastern_dwarves
+
 trade_goods = silver
+
+capital_3_dwarf_building
+great_market_dwarf_building
+traders_guild_building
+arsenal_dwarf_building
+smithies_guild_building
+acadamy_dwarf_building
+advisor_guild_dwarf_building
+hall_of_warriors_dwarf_building
+warriors_guild_dwarf_building
+materials_depot_building
+miners_guild_dwarf_building
+fort_mountain_citidal_dwarf_building
+ballista_towers_dwarf_building
 center_of_trade = 2
-#Urd Superregion Discovery
-add_core = W38
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -61,16 +81,4 @@ discovered_by = lotr_wights_dyria
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-capital_3_dwarf_building = yes
-great_market_dwarf_building = yes
-traders_guild_building = yes
-arsenal_dwarf_building = yes
-smithies_guild_building = yes
-acadamy_dwarf_building = yes
-advisor_guild_dwarf_building = yes
-hall_of_warriors_dwarf_building = yes
-warriors_guild_dwarf_building = yes
-materials_depot_building = yes
-miners_guild_dwarf_building = yes
-fort_mountain_citidal_dwarf_building = yes
-ballista_towers_dwarf_building = yes
+
