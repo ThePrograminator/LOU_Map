@@ -1,0 +1,70 @@
+# Eastern Dwarven religion
+#Sending Workers to a Mine (Dwarven settlement)
+
+#The Envoy of Shields: Damage received
+dwarven_blessing_envoy_shields = {
+	is_blessing = yes
+
+    trigger = {
+        adm_power = 100
+    }
+	modifier = {
+		trade_efficiency = 0.10
+		trade_range_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+#The Envoy of Scales: Warscore versus
+dwarven_blessing_envoy_scales = {
+	is_blessing = yes
+
+	modifier = {
+		build_cost = -0.10
+		production_efficiency = 0.10
+	}
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+# The Envoy of Spears: Infantry bonus
+dwarven_blessing_envoy_spears = {
+	is_blessing = yes
+
+	modifier = {
+		global_trade_goods_size_modifier = 0.20
+	}
+	ai_will_do = {
+		factor = 20
+	}
+}
+
+# The Envoy of Horns: morale recovery
+dwarven_blessing_envoy_horns = {
+	is_blessing = yes
+
+	modifier = {
+		infantry_power = 0.1
+		discipline = 0.025
+	}
+	ai_will_do = {
+		factor = 25
+	}
+}
+
+# The Envoy of Banners: Morale
+dwarven_blessing_envoy_banners = {
+	is_blessing = yes
+
+	modifier = {
+		advisor_cost = -0.25
+		prestige = 1
+	}
+	ai_will_do = {
+		factor = 20
+	}
+}
