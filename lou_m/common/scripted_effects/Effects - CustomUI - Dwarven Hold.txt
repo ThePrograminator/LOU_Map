@@ -9,6 +9,10 @@ customui_setup_variables_dwarven_hold_effect = {
 			}
 			customui_dev_10_19_dwarven_hold_trigger = yes
 		}
+		add_province_modifier = {
+			name = dwarven_hold_level_1
+			duration = -1
+		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 1 }
 	}
 	else_if = {
@@ -17,6 +21,10 @@ customui_setup_variables_dwarven_hold_effect = {
 				is_dwarf = yes
 			} 
 			customui_dev_20_29_dwarven_hold_trigger = yes
+		}
+		add_province_modifier = {
+			name = dwarven_hold_level_2
+			duration = -1
 		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 2 }
 	}
@@ -27,22 +35,30 @@ customui_setup_variables_dwarven_hold_effect = {
 			}
 			development = 30
 		}
+		add_province_modifier = {
+			name = dwarven_hold_level_3
+			duration = -1
+		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 3 }
 	}
 	else = {
+		add_province_modifier = {
+			name = dwarven_hold_level_0
+			duration = -1
+		}
 		set_variable = { which = customui_hold_level_dwarven_hold value = 0 }
 	}	
 }
 
 customui_open_menu_dwarven_hold_effect = {
-	custom_tooltip = customui_open_menu_dwarven_hold_effect_tt
+	#custom_tooltip = customui_open_menu_dwarven_hold_effect_tt
 	hidden_effect = {
 		change_variable = { which = customui_menu_state_dwarven_hold value = 1 }
 	}
 }
 
 customui_close_menu_dwarven_hold_effect = {
-	custom_tooltip = customui_close_menu_dwarven_hold_effect_tt
+	#custom_tooltip = customui_close_menu_dwarven_hold_effect_tt
 	hidden_effect = {
 		subtract_variable = { which = customui_menu_state_dwarven_hold value = 1 }
 	}
@@ -50,20 +66,79 @@ customui_close_menu_dwarven_hold_effect = {
 
 customui_upgrade_dwarven_level_dwarven_hold_effect = {
 	custom_tooltip = customui_close_menu_dwarven_hold_effect_tt
+
+	if = {
+		limit = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 0
+			}
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_level_0
+		}
+		add_province_modifier = {
+			name = dwarven_hold_level_1
+			duration = -1
+		}
+		owner = {
+			add_treasury = -500
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 1
+			}
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_level_0
+			remove_province_modifier = dwarven_hold_level_1
+		}
+		add_province_modifier = {
+			name = dwarven_hold_level_2
+			duration = -1
+		}
+		owner = {
+			add_treasury = -1000
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 2
+			}
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_level_0
+			remove_province_modifier = dwarven_hold_level_1
+			remove_province_modifier = dwarven_hold_level_2
+		}
+		add_province_modifier = {
+			name = dwarven_hold_level_3
+			duration = -1
+		}
+		owner = {
+			add_treasury = -1500
+		}
+	}
+
 	hidden_effect = {
 		change_variable = { which = customui_hold_level_dwarven_hold value = 1 }
 	}
 }
 
 customui_open_dropdown_dwarven_hold_effect = {
-	custom_tooltip = customui_open_dropdown_dwarven_hold_effect_tt
+	#custom_tooltip = customui_open_dropdown_dwarven_hold_effect_tt
 	hidden_effect = {
 		change_variable = { which = customui_dropdown_state_dwarven_hold value = 1 }
 	}
 }
 
 customui_close_dropdown_dwarven_hold_effect = {
-	custom_tooltip = customui_close_dropdown_dwarven_hold_effect_tt
+	#custom_tooltip = customui_close_dropdown_dwarven_hold_effect_tt
 	hidden_effect = {
 		subtract_variable = { which = customui_dropdown_state_dwarven_hold value = 1 }
 	}

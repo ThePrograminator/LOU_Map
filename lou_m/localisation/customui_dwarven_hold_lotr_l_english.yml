@@ -13,11 +13,14 @@
  customui_open_menu_button_dwarven_hold_title: "Open Dwarven Hold View"
  customui_close_menu_button_dwarven_hold_title: "Close Dwarven Hold View"
  customui_close_dropdown_button_dwarven_hold_title: "Close Assign Estate Menu"
- customui_assign_estate_button_dwarven_hold_title: "Assign an Estate to your hold"
+ customui_assign_estate_button_dwarven_hold_title: "Assign an Estate to your hold.\nWhen reaching a §YHold Dedication Level of: Populous Hold or Great Hold.§! Then the hold will be eligible to get an Estate Assigned to the hold which will boost their loyalty and influence."
  customui_upgrade_hold_button_dwarven_hold_title: "Upgrading your hold will increase your Local Tax Modifier, Local Production Efficiency Modifier and Local Manpower Modifier."
  customui_tax_modifier_text_dwarven_hold_tt: "Local Tax Modifier"
  customui_production_modifier_text_dwarven_hold_tt: "Local Production Efficiency Modifier"
  customui_manpower_modifier_text_dwarven_hold_tt: "Local Manpower Modifier"
+
+ customui_hold_level_title_dwarven_hold_tt: "[Root.GetCustomUIDwarvenHoldLevelTitleToolTip]"
+ customui_assigned_estate_title_dwarven_hold_tt: "[Root.GetCustomUIDwarvenHoldEstateTitleToolTip]"
 
  customui_assign_estate_1_button_dwarven_hold_title: "Assign Scholars Guild"
  customui_dropdown_estate_1_modifier_dwarven_hold: "§YScholars Guild§!"
@@ -191,17 +194,24 @@
 
  string_dwarven_hold_estate_modifier_4_6_special_belegost_tt: "Warriors Influence: §Y+5%§!"
 
- #estates_loyalty_icon
- #estates_influence_icon
- #prestige
- #prestige_decay
- #spriteType = {
- #	name = "GFX_text_prestige"
- #	texturefile = "gfx/interface/ideas_EU4/prestige.dds"
- #}
- #all_estate_loyalty_equilibrium
+ string_dwarven_hold_level_3_title_tt: "Hold Dedication Level - Great Hold\nYour Hold has been deemed Great. Songs have been written of it's vast stone halls, and travelers across the world come here to trade."
+ string_dwarven_hold_level_2_title_tt: "Hold Dedication Level - Populous Hold - Reestablished Hold\nYour hold is Populous and dwarves far and wide have come to settle, upgrade your hold to improve the state of it."
+ string_dwarven_hold_level_1_title_tt: "Hold Dedication Level - Reestablished Hold\nYour hold has been Reestablished and life has started to fill the halls, upgrade your hold to improve the state of it."
+ string_dwarven_hold_level_0_title_tt: "Hold Dedication Level - Neglected Hold\nYour hold is neglected, upgrade your hold to improve the state of it."
 
-#Custom Localization
+ string_dwarven_hold_estate_assigned_title_tt: "Assigned Estate"
+ string_dwarven_hold_estate_not_assigned_title_tt: "No Estate has been Assigned.\nWhen reaching a §YHold Dedication Level of: Populous Hold or Great Hold.§! Then the hold will be eligible to get an Estate Assigned to the hold which will boost their loyalty and influence."
+
+ #Modifiers
+ dwarven_hold_level_0: "Hold Dedication Level - Neglected Hold"
+ desc_dwarven_hold_level_0: "Your hold is neglected, upgrade your hold to improve the state of it."
+ dwarven_hold_level_1: "Hold Dedication Level - Reestablished Hold"
+ desc_dwarven_hold_level_1: "Your hold has been Reestablished and life has started to fill the halls, upgrade your hold to improve the state of it."
+ dwarven_hold_level_2: "Hold Dedication Level - Populous Hold"
+ desc_dwarven_hold_level_2: "Your hold is Populous and dwarves far and wide have come to settle, upgrade your hold to improve the state of it."
+ dwarven_hold_level_3: "Hold Dedication Level - Great Hold"
+ desc_dwarven_hold_level_3: "Your Hold has been deemed Great. Songs have been written of it's vast stone halls, and travelers across the world come here to trade."
+
  dwarven_hold_estate_scholars: "Scholars Guild Manages Hold"
  desc_dwarven_hold_estate_scholars: "The Scholars Guild have been granted this hold to manage. For this our favor with the guild has increased."
  dwarven_hold_estate_masons: "Masons Guild Manages Hold"

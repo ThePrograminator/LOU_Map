@@ -123,5 +123,41 @@ development_between = {
 }
 
 #-----------------------------------------
-# Bottom Modifiers
+# Other
 #-----------------------------------------
+
+upgrade_dwarven_hold_requirement = {
+	if = {
+		limit = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 0
+			}
+		}
+		owner = {
+			treasury = 500
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 1
+			}
+		}
+		owner = {
+			treasury = 1000
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold
+				value = 2
+			}
+		}
+		owner = {
+			treasury = 1500
+		}
+	}
+}

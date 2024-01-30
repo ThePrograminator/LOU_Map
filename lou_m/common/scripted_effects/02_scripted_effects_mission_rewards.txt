@@ -569,3 +569,618 @@ tur_al_andalus_eyalet_effect_a = {
 gbr_take_over_the_lowlands_effect_a = {
 	
 }
+
+#Persian missions
+per_claim_constantinople_effect = {
+
+}
+per_invade_india_effect = {
+
+}
+
+
+BYZ_convert_to_greek_culture = { #It's here in case I want to add anatolian-themed cultures.
+
+}
+
+BYZ_upgrade_hexamilion_if_possible = {
+
+}
+
+BYZ_upgrade_theodosian_if_possible = {
+	
+}
+
+BYZ_branch_effect = {
+
+}
+
+BYZ_if_saved_export_variable = {
+
+}
+
+BYZ_offer_mosaicists = {
+
+}
+
+ARB_flavor_event_6_effect = {
+	
+}
+
+add_persian_and_zoroastrian_influence = {
+	
+}
+
+pick_best_provinces = {
+	[[scope]
+		pick_best_provinces_2 = {
+			scope = "$scope$"
+			scale = "$scale$"
+			event_target_name = "$event_target_name$"
+			global_trigger = "$global_trigger$"
+			1 = "$1$"
+			2 = "$2$"
+			3 = "$3$"
+			4 = "$4$"
+			5 = "$5$"
+			10 = "$10$"
+		}
+		set_global_flag = PICK_BEST_PROVINCES_FLAG
+	] #curses for not having an [ELSE ] or something.
+	if = {
+		limit = {
+			NOT = { has_global_flag = PICK_BEST_PROVINCES_FLAG } #This check is here to prevent the algorithm from being run again after the scoped version was executed
+		}
+		pick_best_provinces_2 = {
+			scope = " every_province "
+			scale = "$scale$"
+			event_target_name = "$event_target_name$"
+			global_trigger = "$global_trigger$"
+			1 = "$1$"
+			2 = "$2$"
+			3 = "$3$"
+			4 = "$4$"
+			5 = "$5$"
+			10 = "$10$"
+		}
+	}
+	else = { clr_global_flag = PICK_BEST_PROVINCES_FLAG }
+}
+
+pick_best_provinces_2 = {
+	hidden_effect = {
+		[[1]
+			if = {
+				limit = { always = $1$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+			}
+		]
+		[[2]
+			if = {
+				limit = { always = $2$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+			}
+		]
+		[[3]
+			if = {
+				limit = { always = $3$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+			}
+		]
+		[[4]
+			if = {
+				limit = { always = $4$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+			}
+		]
+		[[5]
+			if = {
+				limit = { always = $5$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 5
+				}
+			}
+		]
+		[[10]
+			if = {
+				limit = { always = $10$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 5
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 6
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 7
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 8
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 9
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 10
+				}
+			}
+		]
+		$scope$ = {
+			limit = {
+				has_province_flag = $event_target_name$_exclude
+			}
+			clr_province_flag = $event_target_name$_exclude
+		}
+	}
+}
+
+pick_best_province = {
+	$scope$ = {
+		limit = {
+			[[global_trigger] $global_trigger$ ]
+			NOT = { has_province_flag = $event_target_name$_exclude }
+		}
+		save_event_target_as = $event_target_name$_$number$
+	}
+	$scope$ = {
+		limit = {
+			[[global_trigger] $global_trigger$ ]
+			$scale$ = event_target:$event_target_name$_$number$
+			NOT = { has_province_flag = $event_target_name$_exclude }
+		}
+		save_event_target_as = $event_target_name$_$number$
+	}
+	event_target:$event_target_name$_$number$ = {
+		set_province_flag = $event_target_name$_exclude
+	}
+}
+
+create_general_with_pips = {
+	create_general = {
+		tradition = $tradition$
+		[[add_fire] add_fire = $add_fire$ ]
+		[[add_shock] add_shock = $add_shock$ ]
+		[[add_manuever] add_manuever = $add_manuever$ ]
+		[[add_siege] add_siege = $add_siege$ ]
+		[[name] name = "$name$" ]
+		[[culture] culture = $culture$ ]
+	}
+	custom_tooltip = ME_GENERAL_$add_fire$_$add_shock$_$add_manuever$_$add_siege$
+}
+
+mission_give_province_claims = {
+	$id$ = {
+		if = {
+			limit = {
+				NOT = { is_core = $tag$ }
+				NOT = { is_permanent_claim = $tag$ }
+			}
+			add_permanent_claim = $tag$
+		}
+	}
+}
+
+mission_give_area_claims = {
+	$group$ = {
+		limit = {
+			NOT = { is_core = $tag$ }
+			NOT = { is_permanent_claim = $tag$ }
+		}
+		add_permanent_claim = $tag$
+	}
+}
+
+give_claims = {
+	[[province]
+		mission_give_province_claims = { id = $province$ tag = ROOT }
+	]
+	[[id]
+		mission_give_province_claims = { id = $id$ tag = ROOT }
+	]
+	[[area]
+		mission_give_area_claims = { group = $area$ tag = ROOT }
+	]
+	[[region]
+		mission_give_area_claims = { group = $region$ tag = ROOT }
+	]
+
+}
+
+add_power_projection_mission = {
+	add_power_projection = {
+		type = mission_rewards_power_projection
+		amount = $amount$
+	}
+}
+
+country_event_with_effect_insight = {
+	country_event = {
+		id = $id$
+		[[days] days = $days$]
+		[[random] random = $random$]
+		[[tooltip] tooltip = $tooltip$]
+	}
+	custom_tooltip = EVENT_INSIGHT_INTRO
+	tooltip = {
+		$effect$
+	}
+}
+
+country_event_with_option_insight = {
+	country_event = {
+		id = $id$
+		[[days] days = $days$]
+		[[random] random = $random$]
+		[[tooltip] tooltip = $tooltip$]
+	}
+	custom_tooltip = EVENT_INSIGHT_INTRO
+	custom_tooltip = EVENT_INSIGHT_OPT_1
+	tooltip = {
+		$option_1$
+	}
+	[[option_2]
+		custom_tooltip = EVENT_INSIGHT_OPT_2
+		tooltip = {
+			$option_2$
+		}
+	]
+	[[option_3]
+		custom_tooltip = EVENT_INSIGHT_OPT_3
+		tooltip = {
+			$option_3$
+		}
+	]
+	[[option_4]
+		custom_tooltip = EVENT_INSIGHT_OPT_4
+		tooltip = {
+			$option_4$
+		}
+	]
+	[[option_5]
+		custom_tooltip = EVENT_INSIGHT_OPT_5
+		tooltip = {
+			$option_5$
+		}
+	]
+}
+
+######################################
+# Branching Missions Preview Effects #
+######################################
+enable_branching_mission_review_of_batch = {
+	if = {
+		limit = { not = { has_country_flag = has_batch_1_active } }
+		set_country_flag = has_batch_1_active
+		set_country_flag = can_choose_$key$_1_branching_missions
+	}
+	else_if = {
+		limit = { not = { has_country_flag = has_batch_2_active } }
+		set_country_flag = has_batch_2_active
+		set_country_flag = can_choose_$key$_2_branching_missions
+	}
+	else_if = {
+		limit = { not = { has_country_flag = has_batch_3_active } }
+		set_country_flag = has_batch_3_active
+		set_country_flag = can_choose_$key$_3_branching_missions
+	}
+	else = {
+		log = "Too many mission batches active at the same time. Make sure that any given moment only 3 batches are active to preview"
+	}
+}
+enable_branching_mission_review = {
+	if = {
+		limit = { ai = yes }
+		country_event = { id = $ai_event_id$ }
+	}
+	else = {
+		custom_tooltip = BYZ_unlock_branches_decision
+		hidden_effect = {
+			enable_branching_mission_review_of_batch = { key = $key$ }
+			change_variable = {
+				which = can_preview_missions_var
+				value = 1
+			}
+		}
+	}
+}
+enable_branching_mission_review_without_ai = {
+	custom_tooltip = BYZ_unlock_branches_decision
+	hidden_effect = {
+		enable_branching_mission_review_of_batch = { key = $key$ }
+		change_variable = {
+			which = can_preview_missions_var
+			value = 1
+		}
+	}
+}
+
+select_current_missions_MAL = {}	#Empty on purpose, preview system only implemented for the sake of completion
+select_current_missions_SON = {
+	
+}
+select_current_missions_KON = {}	#Empty on purpose, preview system only implemented for the sake of completion
+select_scandinavian_religion_mission_effect = {
+	
+}
+select_current_missions_SWE = {
+
+}
+select_current_missions_DAN = {
+
+}
+select_current_missions_NOR = {
+
+}
+select_current_missions_TEU = {
+	
+}
+select_current_missions_TEU_PRU = {
+	
+}
+select_current_missions_LIV = {
+	
+}
+select_current_missions_POL = {}	#Empty on purpose, preview system only implemented for the sake of completion
+select_current_missions_TUR = {
+	
+}
+select_current_missions_MNG = {
+	
+}
+select_current_missions_QNG = {
+	
+}
+select_current_missions_GBR = {
+	
+}
+select_current_missions_FRA = {
+	
+}
+select_current_missions_FRA_HRE = {
+	
+}
+select_current_missions_JAP = {
+	
+}
+select_current_missions_JAP_RELI = {
+	
+}
+select_current_missions_BYZ = {}	#Empty, nothing should happen
+select_current_missions_PER = {
+	
+}
+
+select_current_missions = {
+	hidden_effect = {
+		clr_country_flag = can_choose_$key$_1_branching_missions
+		clr_country_flag = can_choose_$key$_2_branching_missions
+		clr_country_flag = can_choose_$key$_3_branching_missions
+		change_variable = {
+			which = can_preview_missions_var
+			value = -1
+		}
+	}
+	select_current_missions_$key$ = yes
+}
+select_current_branch = {
+	custom_tooltip = BYZ_end_preview
+	hidden_effect = { clr_country_flag = has_batch_$batch$_active }
+	#Origins
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = MAL batch = $batch$ } } select_current_missions = { key = MAL } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = SON batch = $batch$ } } select_current_missions = { key = SON } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = KON batch = $batch$ } } select_current_missions = { key = KON } }
+	#Lions of the North
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = SWE batch = $batch$ } } select_current_missions = { key = SWE } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = DAN batch = $batch$ } } select_current_missions = { key = DAN } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = NOR batch = $batch$ } } select_current_missions = { key = NOR } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = TEU batch = $batch$ } } select_current_missions = { key = TEU } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = TEU_PRU batch = $batch$ } } select_current_missions = { key = TEU_PRU } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = LIV batch = $batch$ } } select_current_missions = { key = LIV } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = POL batch = $batch$ } } select_current_missions = { key = POL } }
+	#Domination
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = TUR batch = $batch$ } } select_current_missions = { key = TUR } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = MNG batch = $batch$ } } select_current_missions = { key = MNG } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = QNG batch = $batch$ } } select_current_missions = { key = QNG } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = JAP batch = $batch$ } } select_current_missions = { key = JAP } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = JAP_RELI batch = $batch$ } } select_current_missions = { key = JAP_RELI } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = FRA batch = $batch$ } } select_current_missions = { key = FRA } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = FRA_HRE batch = $batch$ } } select_current_missions = { key = FRA_HRE } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = GBR batch = $batch$ } } select_current_missions = { key = GBR } }
+	#King of Kings
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = BYZ batch = $batch$ } } select_current_missions = { key = BYZ } }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = PER batch = $batch$ } } select_current_missions = { key = PER } }
+}
+
+clear_all_branching_flags = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = DUMMY batch = $batch$ } }
+		custom_tooltip = COOL_EFFECT
+	}
+}
+
+preview_mission_branch_1 = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = DUMMY batch = $batch$ } }
+		custom_tooltip = COOL_EFFECT
+	}
+}
+preview_mission_branch_2 = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = DUMMY batch = $batch$ } }
+		custom_tooltip = COOL_EFFECT
+	}
+}
+preview_mission_branch_3 = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = DUMMY batch = $batch$ } }
+		custom_tooltip = COOL_EFFECT
+	}
+}
+preview_mission_branch_4 = {
+
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = DUMMY batch = $batch$ } }
+		custom_tooltip = COOL_EFFECT
+	}
+}
+preview_mission_branch_5 = {
+
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = DUMMY batch = $batch$ } }
+		custom_tooltip = COOL_EFFECT
+	}
+}
+preview_mission_branch = {
+	clear_all_branching_flags = { batch = $batch$ }
+	preview_mission_branch_$branch$ = { batch = $batch$ }
+	hidden_effect = { swap_non_generic_missions = yes }
+}
