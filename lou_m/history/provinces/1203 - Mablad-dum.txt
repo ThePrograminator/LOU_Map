@@ -1,25 +1,41 @@
 # Province ID : 1203
 # Province Name : Mablád-dûm
+# Is Capital : false
 # Province RGB : (18, 231, 195)
 # Province Area : Mablád-dûm
-# Province Region : Tûr Betark
-# Province Super Region : Múmakan
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Tantûrak
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 3
 base_production = 4
 base_manpower = 2
+
+add_core = Y15
 owner = Y15
 controller = Y15
+
 culture = culture_blacklock
-religion = religion_northern_dwarves
+religion = religion_southern_dwarves
+
 trade_goods = marble
-#Mumakan Superregion Discovery
-add_core = Y15
+
+hold_3_dwarf_building = yes
+great_market_dwarf_building = yes
+traders_guild_building = yes
+arsenal_dwarf_building = yes
+acadamy_dwarf_building = yes
+hall_of_warriors_dwarf_building = yes
+warriors_guild_dwarf_building = yes
+materials_depot_building = yes
+fort_great_gatehouse_dwarf_building = yes
+ballista_towers_dwarf_building = yes
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -49,13 +65,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-hold_3_dwarf_building = yes
-great_market_dwarf_building = yes
-traders_guild_building = yes
-arsenal_dwarf_building = yes
-acadamy_dwarf_building = yes
-hall_of_warriors_dwarf_building = yes
-warriors_guild_dwarf_building = yes
-materials_depot_building = yes
-fort_great_gatehouse_dwarf_building = yes
-ballista_towers_dwarf_building = yes
+
