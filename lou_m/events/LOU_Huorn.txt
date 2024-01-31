@@ -12,7 +12,7 @@ province_event = {
         # Province
         OR = {
             culture = culture_huorn
-            religion = religion_ents
+            religion = religion_shepherds_of_the_forest
         }
         # Owner
         NOT = {
@@ -21,7 +21,7 @@ province_event = {
                     primary_culture = culture_ents
                     primary_culture = culture_huorn
                 }
-                religion = religion_ents
+                religion = religion_shepherds_of_the_forest
             }
         }
 	}
@@ -51,7 +51,7 @@ province_event = {
         has_province_modifier = province_huorn_debuff
         AND = {
             NOT = { culture = culture_huorn }
-            NOT = { religion = religion_ents }
+            NOT = { religion = religion_shepherds_of_the_forest }
         }
 	}
 	
@@ -82,7 +82,7 @@ province_event = {
                 primary_culture = culture_ents
                 primary_culture = culture_huorn
             }
-            religion = religion_ents
+            religion = religion_shepherds_of_the_forest
         }
 	}
 	

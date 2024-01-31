@@ -97,23 +97,6 @@ religion_group_human = {
 		fervor = yes
 	}
 	
-	religion_drughu = {
-		icon = 1
-		color = { 0.31 0.56 0.39 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-		heretic = { DRUGHU_HERETIC }
-		
-		fervor = yes
-	}
-	
 	religion_forodwaith = {
 		icon = 1
 		color = { 0.00 0.35 0.35 }
@@ -1345,42 +1328,14 @@ religion_group_hobbit = {
 }
 
 #-------------------------------------------
-# Marriage Group - Giant
+# Great Eagles / Giants
 #-------------------------------------------
-religion_group_giant = {
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-    
-    religion_giants = {
-		icon = 1
-		color = { 0.23 0.43 0.52 }
-		
-		country = {
-			production_efficiency = 0.1
-			core_creation = -0.5
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { GIANTS_HERETIC }
-		
-		fervor = yes
-	}
-    
-	crusade_name = HOLY_WAR
-}
-
-#-------------------------------------------
-# Marriage Group - Great Eagles
-#-------------------------------------------
-religion_group_eagle = {
+religion_group_worshippers_of_manwe = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
     
-    religion_great_eagles = {
+    religion_messengers_of_manwe = {
 		icon = 1
 		color = { 0.09 0.29 0.27 }
 		
@@ -1405,11 +1360,11 @@ religion_group_eagle = {
 #-------------------------------------------
 # Marriage Group - Ents
 #-------------------------------------------
-religion_group_ent = {
+religion_group_worshippers_of_yavanna = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
     
-    religion_ents = {
+    religion_shepherds_of_the_forest = {
 		icon = 1
 		color = { 0.15 0.50 0.0 }
 		
@@ -1427,7 +1382,7 @@ religion_group_ent = {
 		fervor = yes
 	}
 
-	religion_huorn = {
+	religion_wrath_of_the_forest = {
 		icon = 1
 		color = { 0.15 0.50 0.0 }
 		
@@ -1444,6 +1399,23 @@ religion_group_ent = {
 		
 		fervor = yes
 	}
+
+	religion_spirits_of_the_forest = {
+		icon = 1
+		color = { 0.31 0.56 0.39 }
+		
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+		heretic = { DRUGHU_HERETIC }
+		
+		fervor = yes
+	}
     
 	crusade_name = HOLY_WAR
 }
@@ -1451,7 +1423,7 @@ religion_group_ent = {
 #-------------------------------------------
 # Marriage Group - Melkor
 #-------------------------------------------
-religion_group_melkor = {
+religion_group_worshippers_of_melkor = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
     
