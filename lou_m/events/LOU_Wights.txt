@@ -12,13 +12,13 @@ province_event = {
         # Province
         OR = {
             culture = culture_wight
-            religion = religion_wight
+            religion = religion_umaiar
         }
         # Owner
         NOT = {
             owner = {
                 primary_culture = culture_wight
-                religion = religion_wight
+                religion = religion_umaiar
             }
         }
 	}
@@ -48,7 +48,7 @@ province_event = {
         has_province_modifier = province_wight_debuff
         AND = {
             NOT = { culture = culture_wight }
-            NOT = { religion = religion_wight }
+            NOT = { religion = religion_umaiar }
         }
 	}
 	
@@ -76,7 +76,7 @@ province_event = {
         has_province_modifier = province_wight_debuff
         owner = {
             primary_culture = culture_wight
-            religion = religion_wight
+            religion = religion_umaiar
         }
 	}
 	
