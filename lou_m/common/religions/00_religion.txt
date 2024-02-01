@@ -1445,24 +1445,6 @@ religion_group_worshippers_of_melkor = {
 		fervor = yes
 	}
 	
-	religion_olog = {
-		icon = 2
-		color = { 0.83 0.10 0.5 }
-		
-		country = {
-			war_exhaustion = -0.25
-			heir_chance = 1.0
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { OLOG_HERETIC }
-		
-		fervor = yes
-	}
-	
 	religion_orkish = {
 		icon = 2
 		color = { 0.72 0.0 0.0 }
@@ -1551,7 +1533,7 @@ religion_group_worshippers_of_melkor = {
 		fervor = yes
 	}
 	
-	religion_burz_uruk = {
+	religion_servants_of_morgoth = {
 		icon = 2
 		color = { 0.74 0.27 0.09 }
 		

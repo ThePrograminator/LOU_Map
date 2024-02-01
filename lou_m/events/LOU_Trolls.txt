@@ -22,7 +22,7 @@ province_event = {
                     primary_culture = culture_wights
                 }
                 OR = {
-                    religion = religion_olog
+                    religion = religion_servants_of_morgoth
                     religion = religion_goblin
                     religion = religion_orkish
                 }
@@ -55,7 +55,7 @@ province_event = {
         has_province_modifier = province_troll_debuff
         AND = {
             NOT = { culture = culture_troll }
-            NOT = { religion = religion_olog }
+            NOT = { religion = religion_servants_of_morgoth }
         }
 	}
 	
@@ -88,7 +88,7 @@ province_event = {
                 primary_culture = culture_goblin
             }
             OR = {
-                religion = religion_olog
+                religion = religion_servants_of_morgoth
                 religion = religion_goblin
                 religion = religion_orkish
             }
