@@ -95,7 +95,7 @@ gov_lotr_principality = {
 	trigger = {
 		has_reform = principality_reform
 		NOT = {
-			religion = religion_haruzani
+			religion = religion_southron_men_of_darkness
 		}
 	}
 }
@@ -185,7 +185,7 @@ gov_lotr_haradrim_monarchy = {
 			has_reform = feudalism_reform
 			has_reform = autocracy_reform
 		}
-		religion = religion_haruzani
+		religion = religion_southron_men_of_darkness
 	}
 }
 
@@ -235,7 +235,7 @@ gov_lotr_haradrim_principality = {
 	trigger = {
 		government = monarchy
 		has_reform = principality_reform
-		religion = religion_haruzani
+		religion = religion_southron_men_of_darkness
 	}
 }
 

@@ -366,180 +366,6 @@ religion_group_human = {
     #---------------
     # Haradrim
     #---------------
-    religion_haruzani = {
-		icon = 2
-		color = { 0.68 0.17 0.21 }
-		
-		country = {
-			hostile_attrition = 1
-			heir_chance = 0.5
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { HARUZANI_HERETIC }
-		
-		papacy = {
-			papal_tag = X19 # Haruzan
-			election_cost = 5
-			seat_of_papacy = 1762 # Korb Taskral
-			
-			capure_mumakil = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = capture_mummakill_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "capture_mummakill_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}				
-			}
-			host_a_race = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = hold_a_race_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "hold_a_race_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			hold_a_feast = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { legitimacy = 100 }
-					NOT = { has_country_modifier = hold_a_feast_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "hold_a_feast_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}	
-			challege_minor_chief = {
-				cost = 100
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = challenge_to_a_duel_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "challenge_to_a_duel_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			train_troops = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = train_troops_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "train_troops_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}			
-			prepare_for_war = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = prepare_for_war_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "prepare_for_war_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			encourage_trade_imports = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = encourage_trade_imports_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "encourage_trade_imports_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}	
-			proclaim_strength = {
-				cost = 50
-				potential = { }
-				allow = {
-					NOT = { has_country_modifier = display_might_southron_religion }
-				}
-				effect = {
-					add_country_modifier = {
-						name = "display_might_southron_religion"
-						duration = 7300
-					}
-				}
-				ai_will_do = {
-					factor = 1
-				}
-			}
-            
-            # Unused
-            harsh = { }
-			neutral = { }
-			concilatory = { }
-			concessions = {
-				first_concession = {
-					harsh = { }
-					concilatory = { }
-				}
-				second_concession = {
-					harsh = { }
-					concilatory = { }
-				}
-				third_concession = {
-					harsh = { }
-					concilatory = { }
-				}
-				fourth_concession = {
-					harsh = { }
-					concilatory = { }
-				}
-			}
-		}
-	}
 	
 	religion_apysani_beduins = {
 		icon = 1
@@ -1546,13 +1372,184 @@ religion_group_worshippers_of_melkor = {
 			tolerance_own = 1
 		}
 
-		heretic = { BURZ_URUK_HERETIC }
+		heretic = { SERVANTS_OF_MORGOTH_HERETIC }
 		
 		uses_piety = yes
+	}
+
+	religion_southron_men_of_darkness = {
+		icon = 2
+		color = { 0.68 0.17 0.21 }
 		
-		#authority = yes
-		#religious_reforms = yes
-		#reform_tooltip = INTI_REFORM_TOOLTIP
+		country = {
+			hostile_attrition = 1
+			heir_chance = 0.5
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { HARUZANI_HERETIC }
+		
+		papacy = {
+			papal_tag = X19 # Haruzan
+			election_cost = 5
+			seat_of_papacy = 1762 # Korb Taskral
+			
+			capure_mumakil = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = capture_mummakill_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "capture_mummakill_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}				
+			}
+			host_a_race = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = hold_a_race_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "hold_a_race_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			hold_a_feast = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { legitimacy = 100 }
+					NOT = { has_country_modifier = hold_a_feast_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "hold_a_feast_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			challege_minor_chief = {
+				cost = 100
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = challenge_to_a_duel_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "challenge_to_a_duel_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			train_troops = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = train_troops_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "train_troops_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}			
+			prepare_for_war = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = prepare_for_war_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "prepare_for_war_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			encourage_trade_imports = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = encourage_trade_imports_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "encourage_trade_imports_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}	
+			proclaim_strength = {
+				cost = 50
+				potential = { }
+				allow = {
+					NOT = { has_country_modifier = display_might_southron_religion }
+				}
+				effect = {
+					add_country_modifier = {
+						name = "display_might_southron_religion"
+						duration = 7300
+					}
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+            
+            # Unused
+            harsh = { }
+			neutral = { }
+			concilatory = { }
+			concessions = {
+				first_concession = {
+					harsh = { }
+					concilatory = { }
+				}
+				second_concession = {
+					harsh = { }
+					concilatory = { }
+				}
+				third_concession = {
+					harsh = { }
+					concilatory = { }
+				}
+				fourth_concession = {
+					harsh = { }
+					concilatory = { }
+				}
+			}
+		}
 	}
 
 	crusade_name = HOLY_WAR
