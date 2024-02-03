@@ -224,23 +224,6 @@ religion_group_human = {
 		}
 	
 	}
-	
-	religion_black_numenorean = {
-		icon = 1
-		color = { 0.11 0.11 0.09 }
-		
-		country = {
-			leader_naval_fire = 1
-			leader_naval_shock = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-		heretic = { BLACK_NUMENOREAN_HERETIC }
-		
-		fervor = yes
-	}
     
     #---------------
     # Eriedain
@@ -1375,6 +1358,23 @@ religion_group_worshippers_of_melkor = {
 		heretic = { SERVANTS_OF_MORGOTH_HERETIC }
 		
 		uses_piety = yes
+	}
+
+	religion_kings_men = {
+		icon = 1
+		color = { 0.11 0.11 0.09 }
+		
+		country = {
+			leader_naval_fire = 1
+			leader_naval_shock = 1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+		heretic = { BLACK_NUMENOREAN_HERETIC }
+		
+		fervor = yes
 	}
 
 	religion_southron_men_of_darkness = {
