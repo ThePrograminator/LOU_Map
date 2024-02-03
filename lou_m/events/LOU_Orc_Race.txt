@@ -318,7 +318,7 @@ country_event = {
 					culture = culture_desert_orkish
 					religion = religion_orkish
 					culture = culture_spider
-					religion = religion_spider
+					religion = religion_children_of_ungoliant
 					has_province_modifier = orc_religion_raided_neighbour_province
 				}
 				owner = {
@@ -352,7 +352,7 @@ country_event = {
 						culture = culture_desert_orkish
 						religion = religion_orkish
 						culture = culture_spider
-						religion = religion_spider
+						religion = religion_children_of_ungoliant
 						has_province_modifier = orc_religion_raided_neighbour_province
 					}
 					owner = {
@@ -374,7 +374,7 @@ country_event = {
 						religion = religion_orkish
 						
 						culture = culture_spider
-						religion = religion_spider
+						religion = religion_children_of_ungoliant
 						has_province_modifier = orc_religion_raided_neighbour_province
 					}
 					owner = {
@@ -537,7 +537,7 @@ country_event = {
 		any_known_country = {
 			NOT = {
 				primary_culture = culture_spider
-				religion = religion_spider
+				religion = religion_children_of_ungoliant
 				has_country_modifier = orc_religion_frighten_traders
 			}
 			any_active_trade_node = {
@@ -556,7 +556,7 @@ country_event = {
 			limit = {
 				NOT = {
 					primary_culture = culture_spider
-					religion = religion_spider
+					religion = religion_children_of_ungoliant
 					has_country_modifier = orc_religion_frighten_traders
 				}
 			

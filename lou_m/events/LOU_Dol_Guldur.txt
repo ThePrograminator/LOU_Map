@@ -127,7 +127,7 @@ country_event = {
 			country_or_vassal_holds = ROOT
 			OR = {
 				culture = culture_spider
-				religion = religion_spider
+				religion = religion_children_of_ungoliant
 			}
 		}
 		NOT = {
@@ -157,7 +157,7 @@ country_event = {
 				country_or_vassal_holds = ROOT
 				OR = {
 					culture = culture_spider
-					religion = religion_spider
+					religion = religion_children_of_ungoliant
 				}
 			}
 			

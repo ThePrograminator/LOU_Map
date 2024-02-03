@@ -12,13 +12,13 @@ province_event = {
         # Province
         OR = {
             culture = culture_dragons
-            religion = religion_dragons
+            religion = religion_fire_of_morgoth
         }
         # Owner
         NOT = {
             owner = {
                 primary_culture = culture_dragons
-                religion = religion_dragons
+                religion = religion_fire_of_morgoth
             }
         }
 	}
@@ -48,7 +48,7 @@ province_event = {
         has_province_modifier = province_dragon_debuff
         AND = {
             NOT = { culture = culture_dragons }
-            NOT = { religion = religion_dragons }
+            NOT = { religion = religion_fire_of_morgoth }
         }
 	}
 	
@@ -79,7 +79,7 @@ province_event = {
         has_province_modifier = province_dragon_debuff
         owner = {
             primary_culture = culture_dragons
-            religion = religion_dragons
+            religion = religion_fire_of_morgoth
         }
 	}
 	
