@@ -1252,24 +1252,6 @@ religion_group_worshippers_of_yavanna = {
 religion_group_worshippers_of_melkor = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
-    
-	religion_umaiar = {
-		icon = 2
-		color = { 0.80 0.25 0.25 }
-		
-		country = {
-			hostile_attrition = 2
-			recover_army_morale_speed = 0.25
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { WIGHT_HERETIC }
-		
-		fervor = yes
-	}
 	
 	religion_servants_of_sauron = {
 		icon = 2
@@ -1323,42 +1305,6 @@ religion_group_worshippers_of_melkor = {
 		uses_karma = yes
 	}
 	
-	religion_fire_of_morgoth = {
-		icon = 2
-		color = { 0.83 0.10 0.5 }
-		
-		country = {
-			loot_amount = 1.0
-			tolerance_own = 3
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { DRAGONS_HERETIC }
-		
-		fervor = yes
-	}
-	
-	religion_children_of_ungoliant = {
-		icon = 2
-		color = { 0.49 0.49 0.49 }
-		
-		country = {
-			movement_speed = 0.15
-			hostile_attrition = 2
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { SPIDER_HERETIC }
-		
-		fervor = yes
-	}
-	
 	religion_servants_of_morgoth = {
 		icon = 2
 		color = { 0.74 0.27 0.09 }
@@ -1374,24 +1320,7 @@ religion_group_worshippers_of_melkor = {
 
 		heretic = { SERVANTS_OF_MORGOTH_HERETIC }
 		
-		uses_piety = yes
-	}
-
-	religion_kings_men = {
-		icon = 1
-		color = { 0.11 0.11 0.09 }
-		
-		country = {
-			leader_naval_fire = 1
-			leader_naval_shock = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-		heretic = { BLACK_NUMENOREAN_HERETIC }
-		
-		fervor = yes
+		uses_karma = yes
 	}
 
 	religion_southron_men_of_darkness = {
@@ -1567,6 +1496,77 @@ religion_group_worshippers_of_melkor = {
 				}
 			}
 		}
+	}
+
+	religion_fire_of_morgoth = {
+		icon = 2
+		color = { 0.83 0.10 0.5 }
+		
+		country = {
+			loot_amount = 1.0
+			tolerance_own = 3
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { DRAGONS_HERETIC }
+		
+		fervor = yes
+	}
+	
+	religion_children_of_ungoliant = {
+		icon = 2
+		color = { 0.49 0.49 0.49 }
+		
+		country = {
+			movement_speed = 0.15
+			hostile_attrition = 2
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { SPIDER_HERETIC }
+		
+		fervor = yes
+	}
+
+	religion_kings_men = {
+		icon = 1
+		color = { 0.11 0.11 0.09 }
+		
+		country = {
+			leader_naval_fire = 1
+			leader_naval_shock = 1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+		heretic = { BLACK_NUMENOREAN_HERETIC }
+		
+		fervor = yes
+	}
+
+	religion_umaiar = {
+		icon = 2
+		color = { 0.80 0.25 0.25 }
+		
+		country = {
+			hostile_attrition = 2
+			recover_army_morale_speed = 0.25
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { WIGHT_HERETIC }
+		
+		fervor = yes
 	}
 
 	crusade_name = HOLY_WAR
