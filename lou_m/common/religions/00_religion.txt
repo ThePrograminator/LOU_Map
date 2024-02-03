@@ -1271,40 +1271,6 @@ religion_group_worshippers_of_melkor = {
 		
 	}
 	
-	religion_goblin = {
-		icon = 2
-		color = { 0.27 0.23 0.23 }
-		
-		country = {
-			leader_land_shock = 1
-			land_attrition = -0.25
-		}
-		country_as_secondary = {
-			land_attrition = -0.1
-		}
-
-		heretic = { GOBLIN_HERETIC }
-		
-		uses_karma = yes
-	}
-	
-	religion_uruk = {
-		icon = 2
-		color = { 0.0 0.0 0.0 }
-		
-		country = {
-			mil_tech_cost_modifier = -0.1
-			province_warscore_cost = -0.25
-		}
-		country_as_secondary = {
-			province_warscore_cost = -0.1
-		}
-
-		heretic = { URUK_HERETIC }
-		
-		uses_karma = yes
-	}
-	
 	religion_servants_of_morgoth = {
 		icon = 2
 		color = { 0.74 0.27 0.09 }
