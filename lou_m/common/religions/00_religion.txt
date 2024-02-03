@@ -1038,6 +1038,23 @@ religion_group_worshippers_of_aule = {
 			dwarven_blessing_envoy_silver
 		}
 	}
+
+	religion_servants_of_the_white_wizard = {
+		icon = 1
+		color = { 0.0 0.0 0.0 }
+		
+		country = {
+			mil_tech_cost_modifier = -0.1
+			province_warscore_cost = -0.25
+		}
+		country_as_secondary = {
+			province_warscore_cost = -0.1
+		}
+
+		heretic = { SERVANTS_OF_THE_WHITE_WIZARD_HERETIC }
+		
+		uses_karma = yes
+	}
     
 	crusade_name = HOLY_WAR
 }
@@ -1254,7 +1271,7 @@ religion_group_worshippers_of_melkor = {
 		fervor = yes
 	}
 	
-	religion_orkish = {
+	religion_servants_of_sauron = {
 		icon = 2
 		color = { 0.72 0.0 0.0 }
 		
