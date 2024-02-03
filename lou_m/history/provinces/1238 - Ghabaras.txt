@@ -1,24 +1,39 @@
 # Province ID : 1238
 # Province Name : Ghabaras
+# Is Capital : false
 # Province RGB : (11, 1, 132)
 # Province Area : Ghabaras
-# Province Region : Tûr Betark
-# Province Super Region : Múmakan
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : null
 # Province Climate : Normal_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = Y39
 owner = Y39
 controller = Y39
+
 culture = culture_orkish
-religion = religion_servants_of_sauron
+religion = religion_servants_of_morgoth
+
 trade_goods = iron
-add_core = Y39
+
+fortress_3_orc_building = yes
+army_garrison_orc_building = yes
+troll_cage_orc_building = yes
+workshop_orc_building = yes
+fort_orc_stronghold_orc_building = yes
+large_arena_building = yes
+prisoner_cage_orc_building = yes
+tortur_chambers_orc_building = yes
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -48,11 +63,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-fortress_3_orc_building = yes
-army_garrison_orc_building = yes
-troll_cage_orc_building = yes
-workshop_orc_building = yes
-fort_orc_stronghold_orc_building = yes
-large_arena_building = yes
-prisoner_cage_orc_building = yes
-tortur_chambers_orc_building = yes
+
