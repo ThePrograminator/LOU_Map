@@ -1,24 +1,39 @@
 # Province ID : 3512
 # Province Name : Unâkh Ublag's Lair
+# Is Capital : false
 # Province RGB : (55, 167, 207)
 # Province Area : Urulis
-# Province Region : Orocarni
-# Province Super Region : Womarin Realms
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Palisor
 # Province Tradenode : Moinarlin
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = W32
 owner = W32
 controller = W32
+
 culture = culture_cave_troll
-religion = religion_servants_of_sauron
+religion = religion_servants_of_morgoth
+
 trade_goods = stone
-add_core = W32
+
+fortress_2_orc_building = yes
+blacksmith_orc_building = yes
+orc_pit_orc_building = yes
+orc_fissure_orc_building = yes
+warg_pit_orc_building = yes
+fort_wooden_walls_orc_building = yes
+small_arena_building = yes
+prisoner_cage_orc_building = yes
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -51,11 +66,4 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-fortress_2_orc_building = yes
-blacksmith_orc_building = yes
-orc_pit_orc_building = yes
-orc_fissure_orc_building = yes
-warg_pit_orc_building = yes
-fort_wooden_walls_orc_building = yes
-small_arena_building = yes
-prisoner_cage_orc_building = yes
+

@@ -1,25 +1,39 @@
 # Province ID : 2983
 # Province Name : Dolguêth
+# Is Capital : false
 # Province RGB : (82, 74, 74)
 # Province Area : Nâlashatûr
-# Province Region : Ered Harmal
-# Province Super Region : Ered Harmal
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Palisor
-# Province Tradenode : Nâlashatûr
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = Y41
 owner = Y41
 controller = Y41
-culture = culture_orkish
-religion = religion_servants_of_sauron
-trade_goods = iron
-add_core = Y41
+
 add_core = X41
+culture = culture_orkish
+religion = religion_servants_of_morgoth
+
+trade_goods = iron
+
+fortress_2_orc_building = yes
+fort_wooden_walls_orc_building = yes
+large_arena_building = yes
+orc_fissure_orc_building = yes
+workshop_orc_building = yes
+metal_works_orc_building = yes
+overseer_station_orc_building = yes
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms
 discovered_by = lotr_human_lochan_daer
@@ -72,10 +86,4 @@ discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
 discovered_by = lotr_wights_womarin_realms
-fortress_2_orc_building = yes
-fort_wooden_walls_orc_building = yes
-large_arena_building = yes
-orc_fissure_orc_building = yes
-workshop_orc_building = yes
-metal_works_orc_building = yes
-overseer_station_orc_building = yes
+
