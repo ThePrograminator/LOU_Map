@@ -3,15 +3,12 @@ ulgath_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = ulgath_cult
-				religion = religion_ulgath
+				religion = religion_easterling_men_of_darkness
 				any_neighbor_country = { 
-					religion = religion_ulgath
+					religion = religion_easterling_men_of_darkness
 				}
 			}
 		}
@@ -33,10 +30,7 @@ ioriags_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = ioriags_cult
 				religion = religion_easterling_men_of_darkness
@@ -63,10 +57,7 @@ avari_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = avari_cult
 				any_neighbor_country = { 
@@ -92,10 +83,7 @@ dwarven_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = dwarven_cult
 				any_neighbor_country = { 
@@ -121,10 +109,7 @@ orc_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = orc_cult
 				any_neighbor_country = { 
@@ -150,10 +135,7 @@ goblin_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = goblin_cult
 				any_neighbor_country = { 
@@ -179,10 +161,7 @@ ahar_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = ahar_cult
 				any_neighbor_country = { 
@@ -208,10 +187,7 @@ nenedain_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = nenedain_cult
 				any_neighbor_country = { 
@@ -237,10 +213,7 @@ donath_cult = {
 
 	allow = {
 		AND = {
-			OR = {
-				religion =  religion_easterling_men_of_darkness
-				religion =  religion_ulgath
-			}
+			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = donath_cult
 				any_neighbor_country = { 

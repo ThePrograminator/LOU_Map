@@ -15,36 +15,6 @@ religion_group_human = {
     #---------------
     # Arhunerim
     #---------------
-	religion_daen = {
-		icon = 1
-		color = { 0.33 0.23 0.15 }
-		
-		country = {
-			infantry_cost = -0.1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-		heretic = { DAEN_HERETIC }
-
-		ancestors = yes
-		declare_war_in_regency = yes
-		will_get_center = { #Refered to even for initial CoR Spawn
-			any_province = {
-				#can_have_center_of_reformation_trigger = {
-				#	RELIGION = religion_daen
-				#}
-				OR = {
-					superregion = old_pukel_land_superregion
-					superregion = rohan_superregion
-					superregion = gondor_superregion
-					superregion = eriador_superregion
-				}
-			}
-		}
-		
-	}
 	
 	religion_baradhrim = {
 		icon = 1
@@ -690,24 +660,6 @@ religion_group_human = {
 		heretic = { TALATHERIM_HERETIC }
 		
 		fervor = yes
-	}
-    
-    religion_ulgath = {
-		icon = 1
-		color = { 0.45 0.07 0.07 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { ULGATH_HERETIC }
-		
-		fetishist_cult = yes
 	}
     
     religion_chailuza = {
@@ -1462,6 +1414,23 @@ religion_group_worshippers_of_melkor = {
 		heretic = { IORIAGS_HERETIC }
 		
 		fetishist_cult = yes
+	}
+
+	religion_daen = {
+		icon = 1
+		color = { 0.33 0.23 0.15 }
+		
+		country = {
+			infantry_cost = -0.1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+		heretic = { DAEN_HERETIC }
+
+		ancestors = yes
+		declare_war_in_regency = yes
 	}
 
 	religion_fire_of_morgoth = {
