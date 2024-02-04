@@ -4,7 +4,7 @@ ulgath_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -34,14 +34,14 @@ ioriags_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
 				has_unlocked_cult = ioriags_cult
-				religion = religion_ioriags
+				religion = religion_easterling_men_of_darkness
 				any_neighbor_country = { 
-					religion = religion_ioriags
+					religion = religion_easterling_men_of_darkness
 				}
 			}
 		}
@@ -64,7 +64,7 @@ avari_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -93,7 +93,7 @@ dwarven_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -122,7 +122,7 @@ orc_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -151,7 +151,7 @@ goblin_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -180,7 +180,7 @@ ahar_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -209,7 +209,7 @@ nenedain_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
@@ -238,7 +238,7 @@ donath_cult = {
 	allow = {
 		AND = {
 			OR = {
-				religion =  religion_ioriags
+				religion =  religion_easterling_men_of_darkness
 				religion =  religion_ulgath
 			}
 			OR = {
