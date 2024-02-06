@@ -154,9 +154,7 @@ easterling_ideas = {
 		is_human = yes
 		is_racial_group_talatherim = yes
         
-        
-        NOT = { religion = religion_tyr }
-        NOT = { religion = religion_ahar }
+        NOT = { religion = religion_followers_of_the_great_rider }
         NOT = { culture_group = culture_group_ioriags }
         NOT = { primary_culture = culture_sagath }
 	}
@@ -954,11 +952,7 @@ eastern_lakemen_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-            religion = religion_linerim
-            religion = religion_dhilikhran
-            religion = religion_raliani
-        } 
+            religion = religion_followers_of_the_blue_wizards
 	}
 	free = yes		
 	
@@ -1008,7 +1002,7 @@ tyr_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_tyr
+		culture_group = culture_group_tyr
 	}
 	free = yes		
 	
@@ -1056,7 +1050,7 @@ ahar_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_ahar
+		religion = religion_followers_of_the_great_rider
 	}
 	free = yes		
 	

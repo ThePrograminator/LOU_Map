@@ -3,10 +3,7 @@
 #-----------------------------------------
 is_racial_group_arhunerim = {
     OR = {
-        religion = religion_daen
-        religion = religion_baradhrim
-        religion = religion_urnfield
-        religion = religion_nadhrim
+        religion = religion_eriadorian_men_of_darkness
         religion = religion_spirits_of_the_forest
         religion = religion_forodwaith
     }
@@ -72,21 +69,14 @@ is_racial_group_people_of_the_southeast = {
 }
 is_racial_group_talatherim = {
     OR = {
-        religion = religion_talatherim
+
         religion = religion_easterling_men_of_darkness
-        religion = religion_chailuza
-        religion = religion_chyans
-        religion = religion_sirani
-        religion = religion_tyr
-        religion = religion_chegra
-        religion = religion_ahar
+        religion = religion_followers_of_the_great_rider
     }
 }
 is_racial_group_linerim = {
     OR = {
-        religion = religion_linerim
-        religion = religion_dhilikhran
-        religion = religion_raliani
+        religion = religion_followers_of_the_blue_wizards
     }
 }
 is_racial_group_lynerians = {

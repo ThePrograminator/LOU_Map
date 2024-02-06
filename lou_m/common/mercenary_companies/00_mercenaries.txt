@@ -77,7 +77,7 @@ merc_variags_of_khand = {
             tag = V17
             religion = religion_southron_men_of_darkness
             religion = religion_easterling_men_of_darkness
-            religion = religion_chailuza
+            primary_culture = culture_cheyans
         }
 	}
 }
@@ -155,7 +155,7 @@ merc_desdursya_riders = {
     home_province = 972
     trigger = {
         OR = {
-            religion = religion_tyr
+            culture_group = culture_group_tyr
             religion = religion_eastern_snowmen
         }
 	}
