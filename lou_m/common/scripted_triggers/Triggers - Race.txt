@@ -27,7 +27,7 @@ is_racial_group_eriedain = {
 }
 is_racial_group_haradrim = {
     OR = {
-        religion = religion_southron_men_of_darkness
+        religion = religion_haradrim_of_darkness
         religion = religion_apysani_beduins
         religion = religion_sea_peoples
     }
@@ -35,12 +35,12 @@ is_racial_group_haradrim = {
 is_racial_group_mornerim = {
     OR = {
         religion = religion_umli
-        religion = religion_eastern_snowmen
+        religion = religion_followers_of_the_great_hunter
     }
 }
 is_racial_group_eastern_black_peoples = {
     OR = {
-        religion = religion_eastern_black_peoples
+        religion = religion_far_eastern_men_of_darkness
     }
 }
 is_racial_group_mornedain = {
@@ -53,18 +53,14 @@ is_racial_group_mornedain = {
 }
 is_racial_group_avarim = {
     OR = {
-        religion = religion_avaradan
-        religion = religion_cuivac
-        religion = religion_woodmen_of_the_far_east
-        religion = religion_men_of_the_orocarni
-        religion = religion_other_eastern_peoples
-        religion = religion_lakhab
+        religion = religion_far_eastern_men_of_darkness
+        religion = religion_followers_of_the_great_hunter
+        religion = religion_followers_of_the_pourer
     }
 }
 is_racial_group_people_of_the_southeast = {
     OR = {
-        religion = religion_nargaathi
-        religion = religion_ivabi
+        
     }
 }
 is_racial_group_talatherim = {
@@ -81,9 +77,7 @@ is_racial_group_linerim = {
 }
 is_racial_group_lynerians = {
     OR = {
-        religion = religion_nikkeans
-        religion = religion_lynerian
-        religion = religion_makurians
+        religion = religion_followers_of_the_pourer
     }
 }
 is_racial_group_periannath = {

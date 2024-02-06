@@ -42,7 +42,7 @@ merc_guards_of_karna = {
             tag = V17
             tag = X27
             tag = X43
-            religion = religion_southron_men_of_darkness
+            religion = religion_haradrim_of_darkness
         }
 	}
 }
@@ -75,7 +75,7 @@ merc_variags_of_khand = {
     trigger = {
         OR = {
             tag = V17
-            religion = religion_southron_men_of_darkness
+            religion = religion_haradrim_of_darkness
             religion = religion_easterling_men_of_darkness
             primary_culture = culture_cheyans
         }
@@ -156,7 +156,7 @@ merc_desdursya_riders = {
     trigger = {
         OR = {
             culture_group = culture_group_tyr
-            religion = religion_eastern_snowmen
+            religion = religion_followers_of_the_great_hunter
         }
 	}
 }
@@ -183,8 +183,8 @@ merc_wolim_blood_brothers = {
     home_province = 2035
     trigger = {
         OR = {
-            religion = religion_cuivac
-            religion = religion_lakhab
+            culture_group = culture_group_surk
+            religion = religion_followers_of_the_pourer
         }
 	}
 }

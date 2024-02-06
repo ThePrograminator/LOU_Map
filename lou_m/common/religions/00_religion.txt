@@ -325,45 +325,7 @@ religion_group_human = {
 		
 		fervor = yes
 	}
-    
-    religion_eastern_snowmen = {
-		icon = 1
-		color = { 0.94 0.94 0.94 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
 
-		heretic = { EASTERN_SNOWMEN_HERETIC }
-		
-		fervor = yes
-	}
-    
-    #---------------
-    # Eastern Black People
-    #---------------
-    religion_eastern_black_peoples = {
-		icon = 1
-		color = { 0.37 0.03 0.52 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { EASTERN_BLACK_PEOPLES_HERETIC }
-		
-		fervor = yes
-	}
     
     #---------------
     # Mornedain
@@ -443,152 +405,10 @@ religion_group_human = {
     #---------------
     # Avarim
     #---------------
-    religion_avaradan = {
-		icon = 1
-		color = { 0.96 0.74 0.21 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { AVARADAN_HERETIC }
-		
-		fervor = yes
-	}
-    
-    religion_cuivac = {
-		icon = 1
-		color = { 0.80 0.76 0.70 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { CUIVAC_HERETIC }
-		
-		fervor = yes
-	}
-    
-    religion_woodmen_of_the_far_east = {
-		icon = 1
-		color = { 0.70 0.82 0.81 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { WOODMEN_OF_THE_FAR_EAST_HERETIC }
-		
-		fervor = yes
-	}
-    
-    religion_men_of_the_orocarni = {
-		icon = 1
-		color = { 0.70 0.82 0.81 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { MEN_OF_THE_OROCARNI_HERETIC }
-		
-		fervor = yes
-	}
-    
-    religion_other_eastern_peoples = {
-		icon = 1
-		color = { 0.70 0.82 0.81 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { OTHER_EASTERN_PEOPLES_HERETIC }
-		
-		fervor = yes
-	}
-    
-    religion_lakhab = {
-		icon = 1
-		color = { 0.68 0.23 0.09 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { LAKHAB_HERETIC }
-		
-		fervor = yes
-	}
     
     #---------------
     # People of the Southeast
     #---------------
-    religion_nargaathi = {
-		icon = 1
-		color = { 0.70 0.82 0.81 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { NARGAATHI_HERETIC }
-		
-		fervor = yes
-	}
-    
-    religion_ivabi = {
-		icon = 1
-		color = { 0.33 0.49 0.45 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { IVABI_HERETIC }
-		
-		fervor = yes
-	}
     
     #---------------
     # Talatherim
@@ -603,59 +423,6 @@ religion_group_human = {
     #---------------
     # Lynerian
     #---------------
-    religion_nikkeans = {
-		icon = 1
-		color = { 0.35 0.03 0.74 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { NIKKEANS_HERETIC }
-		
-		fervor = yes
-	}
-	
-	religion_lynerian = {
-		icon = 1
-		color = { 0.13 0.19 0.35 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { LYNIR_HERETIC }
-		
-		fervor = yes
-	}
-	
-	religion_makurians = {
-		icon = 1
-		color = { 1.00 0.82 0.35 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { MAKURIANS_HERETIC }
-		
-		fervor = yes
-	}
     
 	crusade_name = HOLY_WAR
 }
@@ -805,6 +572,52 @@ religion_group_worshippers_of_orome = {
 		}
 
 		heretic = { LINERIM_HERETIC }
+		
+		fervor = yes
+	}
+
+	religion_followers_of_the_great_hunter = {
+		icon = 1
+		color = { 0.49 0.8 0.19 }
+		
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { AHAR_HERETIC }
+		
+		fervor = yes
+	}
+    
+	crusade_name = HOLY_WAR
+}
+
+religion_group_worshippers_of_ulmo = {
+	can_form_personal_unions = yes
+	flags_with_emblem_percentage = 33 # default == 0
+	flag_emblem_index_range = { 1 18 }
+
+	center_of_religion = 413
+	
+    religion_followers_of_the_pourer = {
+		icon = 1
+		color = { 0.35 0.03 0.74 }
+		
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { AHAR_HERETIC }
 		
 		fervor = yes
 	}
@@ -1043,7 +856,7 @@ religion_group_worshippers_of_melkor = {
 		uses_karma = yes
 	}
 
-	religion_southron_men_of_darkness = {
+	religion_haradrim_of_darkness = {
 		icon = 2
 		color = { 0.68 0.17 0.21 }
 		

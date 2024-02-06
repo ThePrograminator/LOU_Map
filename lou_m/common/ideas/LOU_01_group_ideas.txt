@@ -154,7 +154,8 @@ easterling_ideas = {
 		is_human = yes
 		is_racial_group_talatherim = yes
         
-        NOT = { religion = religion_followers_of_the_great_rider }
+        NOT = { culture_group = culture_group_ahar }
+        NOT = { culture_group = culture_group_tyr }
         NOT = { culture_group = culture_group_ioriags }
         NOT = { primary_culture = culture_sagath }
 	}
@@ -758,7 +759,7 @@ snowmen_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_eastern_snowmen
+		culture_group = culture_group_mornerim
 	}
 	free = yes		
 	
@@ -807,7 +808,7 @@ avaradan_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_avaradan
+		culture_group = culture_group_womaw
 	}
 	free = yes		
 	
@@ -855,7 +856,7 @@ cuivac_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_cuivac
+		culture_group = culture_group_surk
 	}
 	free = yes		
 	
@@ -903,7 +904,7 @@ woodmen_of_the_far_east_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_woodmen_of_the_far_east
+		primary_culture = culture_aegaw
 	}
 	free = yes		
 	
@@ -1301,7 +1302,7 @@ beorning_ideas = {
 	# }
 	
 	# trigger = {
-		# religion = religion_avaradan
+		# religion = religion_far_eastern_men_of_darkness
 	# }
 	# free = yes		
 	
