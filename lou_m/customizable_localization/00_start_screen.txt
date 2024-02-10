@@ -413,7 +413,7 @@ defined_text = {
 	text = {
         localisation_key = string_start_religion_dunedain
         trigger = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
         }
     }
 	
@@ -459,14 +459,14 @@ defined_text = {
 	text = {
         localisation_key = string_dunedain_icons #Has to end with \n
         trigger = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_dlc = "Third Rome"
         }
     }
 	text = {
         localisation_key = string_orthodox_icons_no #\n
         trigger = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			NOT = { has_dlc = "Third Rome" }
         }
     }

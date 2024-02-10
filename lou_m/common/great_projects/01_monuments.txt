@@ -11,7 +11,7 @@ minas_tirith_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}			
 	}
@@ -160,7 +160,7 @@ library_of_minas_tirith_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}			
 	}
@@ -296,7 +296,7 @@ amon_hen_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}				
 	}
@@ -425,7 +425,7 @@ amon_lhaw_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}			
 	}
@@ -558,7 +558,7 @@ dol_amroth_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}				
 	}
@@ -776,7 +776,7 @@ minas_ithil_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}		
 	}
@@ -1019,7 +1019,7 @@ gobel_tolfalas_monument = {
 	build_trigger = {
 		AND = {
 			OR = {
-				religion = religion_dunedain
+				religion = religion_southern_followers_of_illuvatar
 				religion = religion_kings_men
 			}
 			has_owner_religion = yes
@@ -1232,7 +1232,7 @@ argonath_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}			
 	}
@@ -1256,7 +1256,7 @@ argonath_monument = {
 	}
 	can_upgrade_trigger = {	
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}	
 	}
@@ -1356,7 +1356,7 @@ henneth_annun_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}			
 	}
@@ -1366,18 +1366,18 @@ henneth_annun_monument = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}	
 	}
 	can_upgrade_trigger = {	
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}
 	}
 	keep_trigger = {
-		religion = religion_dunedain
+		religion = religion_southern_followers_of_illuvatar
 	}
 	tier_0 = {
 		upgrade_time = {
@@ -1582,7 +1582,7 @@ blackgate_monument = {
 		AND = {
 			OR = {
 				is_owner_racial_group_melkor = yes
-				religion = religion_dunedain
+				religion = religion_southern_followers_of_illuvatar
 			}
 			has_owner_religion = yes
 		}			
@@ -1600,7 +1600,7 @@ blackgate_monument = {
 		AND = {
 			OR = {
 				is_owner_racial_group_melkor = yes
-				religion = religion_dunedain
+				religion = religion_southern_followers_of_illuvatar
 			}
 			has_owner_religion = yes
 		}	
@@ -1813,7 +1813,7 @@ cirithungol_monument = {
 		AND = {
 			OR = {
 				is_owner_racial_group_melkor = yes
-				religion = religion_dunedain
+				religion = religion_southern_followers_of_illuvatar
 			}
 			has_owner_religion = yes
 		}			
@@ -2694,7 +2694,7 @@ pillar_of_umbar_monument = {
 	type = monument
 	build_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}			
 	}
@@ -2704,19 +2704,19 @@ pillar_of_umbar_monument = {
 	}
 	can_use_modifiers_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}
 	}
 	can_upgrade_trigger = {	
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}	
 	}
 	keep_trigger = {
 		AND = {
-			religion = religion_dunedain
+			religion = religion_southern_followers_of_illuvatar
 			has_owner_religion = yes
 		}
 	}

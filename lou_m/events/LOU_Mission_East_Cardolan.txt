@@ -21,7 +21,7 @@ country_event = { #Form Cardolan
 		#W55 = {
 			#set_capital = 170
 		#}
-		change_religion = religion_dunedain
+		change_religion = religion_southern_followers_of_illuvatar
 		change_primary_culture = culture_dunedain_of_arnor
 		
 		add_prestige = 50
@@ -41,9 +41,9 @@ country_event = { #Form Cardolan
 		hidden_effect = {
 			every_owned_province = { 
 				limit = {
-					religion = religion_eriadorians
+					religion = religion_northern_followers_of_illuvatar
 				}
-				change_religion = religion_dunedain
+				change_religion = religion_southern_followers_of_illuvatar
 			}
 			every_owned_province = { 
 				limit = {

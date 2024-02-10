@@ -3,40 +3,16 @@
 # Uses all 'modifiers' possible thats exported as a Modifier.
 
 #-------------------------------------------
-# Marriage Group - Human
+# Worshippers of Illuvatar
 #-------------------------------------------
-religion_group_human = {
+religion_group_worshippers_of_illuvatar = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
 
 	center_of_religion = 413
 	
-    #---------------
-    # Arhunerim
-    #---------------
-	
-	religion_forodwaith = {
-		icon = 1
-		color = { 0.00 0.35 0.35 }
-		
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-		heretic = { FORODWAITH_HERETIC }
-		
-		fervor = yes
-	}
-
-    #---------------
-    # Numenorean
-    #---------------
-    religion_dunedain = {
+    religion_southern_followers_of_illuvatar = {
 		icon = 1
 		#color = { 0.05 0.21 0.31 }
 		color = { 0.21 0.35 0.88 }
@@ -141,13 +117,9 @@ religion_group_human = {
 				
 			}
 		}
-	
 	}
     
-    #---------------
-    # Eriedain
-    #---------------
-    religion_eriadorians = {
+    religion_northern_followers_of_illuvatar = {
 		icon = 1
 		color = { 0.11 0.50 0.41 }
 		
@@ -162,10 +134,10 @@ religion_group_human = {
 		
 		fetishist_cult = yes
 	}
-	
-	religion_eriadorian_northmen = {
+
+	religion_eastern_followers_of_illuvatar = {
 		icon = 1
-		color = { 0.19 0.29 0.11 }
+		color = { 0.05 0.21 0.31 }
 		
 		country = {
 			stability_cost_modifier = -0.1
@@ -175,53 +147,16 @@ religion_group_human = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
-		heretic = { ERIADORIAN_NORTHMEN_HERETIC }
+		heretic = { DRUGHU_HERETIC }
 		
 		fervor = yes
 	}
-    
-    #---------------
-    # Haradrim
-    #---------------
-    
-    #---------------
-    # Mornerim
-    #---------------
-    
-
-    
-    #---------------
-    # Mornedain
-    #---------------
-    
-    
-    #---------------
-    # Avarim
-    #---------------
-    
-    #---------------
-    # People of the Southeast
-    #---------------
-    
-    #---------------
-    # Talatherim
-    #---------------
-    
-    
-    #---------------
-    # Linerim
-    #---------------
-
-    
-    #---------------
-    # Lynerian
-    #---------------
     
 	crusade_name = HOLY_WAR
 }
 
 #-------------------------------------------
-# Marriage Group - Dwarf
+# Worshippers of Aule
 #-------------------------------------------
 religion_group_worshippers_of_aule = {
 	can_form_personal_unions = yes
@@ -344,6 +279,9 @@ religion_group_worshippers_of_aule = {
 	crusade_name = HOLY_WAR
 }
 
+#-------------------------------------------
+# Worshippers of Orome
+#-------------------------------------------
 religion_group_worshippers_of_orome = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
@@ -442,6 +380,9 @@ religion_group_worshippers_of_orome = {
 	crusade_name = HOLY_WAR
 }
 
+#-------------------------------------------
+# Worshippers of Ulmo
+#-------------------------------------------
 religion_group_worshippers_of_ulmo = {
 	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
@@ -537,36 +478,7 @@ religion_group_elf = {
 }
 
 #-------------------------------------------
-# Marriage Group - Hobbit
-#-------------------------------------------
-religion_group_hobbit = {
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-    
-    religion_perian = {
-		icon = 1
-		color = { 0.69 1 0.39 }
-		
-		country = {
-			production_efficiency = 0.1
-			enemy_core_creation = -0.5
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { PERIANNATH_HERETIC }
-		
-		fervor = yes
-	}
-    
-	crusade_name = HOLY_WAR
-}
-
-#-------------------------------------------
-# Great Eagles / Giants
+# Worshippers of Manwe
 #-------------------------------------------
 religion_group_worshippers_of_manwe = {
 	can_form_personal_unions = yes
@@ -596,7 +508,7 @@ religion_group_worshippers_of_manwe = {
 }
 
 #-------------------------------------------
-# Marriage Group - Ents
+# Worshippers of Yavanna
 #-------------------------------------------
 religion_group_worshippers_of_yavanna = {
 	flags_with_emblem_percentage = 33 # default == 0
@@ -655,9 +567,9 @@ religion_group_worshippers_of_yavanna = {
 		fervor = yes
 	}
 
-	religion_spirits_of_the_animals = {
+	religion_forodwaith = {
 		icon = 1
-		color = { 0.19 0.29 0.11 }
+		color = { 0.00 0.35 0.35 }
 		
 		country = {
 			stability_cost_modifier = -0.1
@@ -667,7 +579,7 @@ religion_group_worshippers_of_yavanna = {
 			global_colonial_growth = 10
 			tolerance_own = 1
 		}
-		heretic = { DRUGHU_HERETIC }
+		heretic = { FORODWAITH_HERETIC }
 		
 		fervor = yes
 	}
@@ -676,7 +588,7 @@ religion_group_worshippers_of_yavanna = {
 }
 
 #-------------------------------------------
-# Marriage Group - Melkor
+# Worshippers of Melkor
 #-------------------------------------------
 religion_group_worshippers_of_melkor = {
 	flags_with_emblem_percentage = 33 # default == 0

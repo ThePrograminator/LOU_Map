@@ -10,16 +10,15 @@ is_racial_group_arhunerim = {
 }
 is_racial_group_numenorean = {
     OR = {
-        religion = religion_dunedain
+        religion = religion_southern_followers_of_illuvatar
         religion = religion_kings_men
     }
 }
 is_racial_group_eriedain = {
     OR = {
-        religion = religion_eriadorians
+        religion = religion_northern_followers_of_illuvatar
         religion = religion_followers_of_mearas
         religion = religion_followers_of_felarof
-        religion = religion_eriadorian_northmen
     }
 }
 is_racial_group_haradrim = {
@@ -75,7 +74,7 @@ is_racial_group_lynerians = {
 }
 is_racial_group_periannath = {
     OR = {
-        religion = religion_perian
+        religion = religion_northern_followers_of_illuvatar
     }
 }
 is_racial_group_khazad = {
