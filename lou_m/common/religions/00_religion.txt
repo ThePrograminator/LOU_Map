@@ -151,6 +151,24 @@ religion_group_worshippers_of_illuvatar = {
 		
 		fervor = yes
 	}
+
+	religion_firstborn_of_illuvatar = {
+		icon = 1
+		color = { 0.17 0.21 0.41 }
+		
+		country = {
+			hostile_attrition = 1
+			defensiveness = 0.25
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+
+		heretic = { CALAQUENDI_HERETIC }
+		
+		uses_piety = yes
+	}
     
 	crusade_name = HOLY_WAR
 }
@@ -411,77 +429,10 @@ religion_group_worshippers_of_ulmo = {
 	crusade_name = HOLY_WAR
 }
 
-
-#-------------------------------------------
-# Marriage Group - Elf
-#-------------------------------------------
-religion_group_elf = {
-	can_form_personal_unions = yes
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-    
-    religion_moriquendi = {
-		icon = 1
-		color = { 0.45 0.39 0.56 }
-		
-		country = {
-			technology_cost = -0.05
-			tolerance_heretic = 2
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { MORIQUENDI_HERETIC }
-		
-		uses_piety = yes
-	}
-	
-	religion_umanyar = {
-		icon = 1
-		color = { 0.68 0.74 0.37 }
-		
-		country = {
-			leader_land_fire = 2	
-			hostile_attrition = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { UMANYAR_HERETIC }
-		
-		uses_piety = yes
-	}
-	
-	religion_calaquendi = {
-		icon = 1
-		color = { 0.17 0.21 0.41 }
-		
-		country = {
-			hostile_attrition = 1
-			defensiveness = 0.25
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { CALAQUENDI_HERETIC }
-		
-		uses_piety = yes
-	}
-    
-	crusade_name = HOLY_WAR
-}
-
 #-------------------------------------------
 # Worshippers of Manwe
 #-------------------------------------------
 religion_group_worshippers_of_manwe = {
-	can_form_personal_unions = yes
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 18 }
     
