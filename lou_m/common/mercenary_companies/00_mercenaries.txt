@@ -7,9 +7,7 @@ merc_riders_of_snowbourn = {
     home_province = 111
     trigger = {
         OR = {
-            religion = religion_nenedain
-            religion = religion_aivathuida
-            religion = religion_ullthiuda
+            religion = religion_followers_of_mearas
             tag = X01
             tag = X16
         }
@@ -24,9 +22,7 @@ merc_gadrauhteis = {
     home_province = 1931
     trigger = {
         OR = {
-            religion = religion_nenedain
-            religion = religion_aivathuida
-            religion = religion_ullthiuda
+            religion = religion_followers_of_mearas
         }
     }
 }
