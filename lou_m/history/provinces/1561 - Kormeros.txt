@@ -1,26 +1,41 @@
 # Province ID : 1561
 # Province Name : Kormeros
+# Is Capital : true
 # Province RGB : (84, 246, 214)
 # Province Area : Makuria
-# Province Region : Sîrayn
-# Province Super Region : Sîrayn
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Kormeros
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 5
 base_production = 4
 base_manpower = 6
+
+add_core = Z72
 owner = Z72
 controller = Z72
+
 culture = culture_makurians
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = glass
+
+capital_2_building = yes
+trade_depot_building = yes
+tax_office_building = yes
+warehouse_building = yes
+fort_castle_building = yes
+barracks_building = yes
+seaport_building = yes
+drydock_building = yes
 center_of_trade = 2
-#Sirayn Superregion Discovery
-add_core = Z72
+
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
@@ -51,11 +66,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-capital_2_building = yes
-trade_depot_building = yes
-tax_office_building = yes
-warehouse_building = yes
-fort_castle_building = yes
-barracks_building = yes
-seaport_building = yes
-drydock_building = yes
+

@@ -1,11 +1,12 @@
 # Province ID : 2940
 # Province Name : Mahdat
+# Is Capital : false
 # Province RGB : (17, 68, 126)
 # Province Area : Jorash
-# Province Region : Bulchyades
-# Province Super Region : Chy
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
-# Province Tradenode : Samarth
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
@@ -22,25 +23,18 @@ controller = X74
 
 add_core = W39
 culture = culture_bulchy
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
 
 trade_goods = grain
 
 hre = no
 
-city_1_building=yes
-
-trade_outpost_building=yes
-
-tax_office_building=yes
-
-workshop_building=yes
-
-fort_pallisade_building=yes
-
-outpost_building=yes
-
-#Chy Superregion Discovery
+city_1_building = yes
+trade_outpost_building = yes
+tax_office_building = yes
+workshop_building = yes
+fort_pallisade_building = yes
+outpost_building = yes
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar

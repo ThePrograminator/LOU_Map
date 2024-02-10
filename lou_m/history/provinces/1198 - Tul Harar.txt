@@ -1,34 +1,52 @@
 # Province ID : 1198
 # Province Name : Tûl Harar
+# Is Capital : true
 # Province RGB : (153, 54, 246)
 # Province Area : Sîrayn
-# Province Region : Sîrayn
-# Province Super Region : Sîrayn
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 5
 base_production = 6
 base_manpower = 4
+
+add_core = X66
 owner = X66
 controller = X66
+
 culture = culture_harani
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = silk
+
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+foundry_building = yes
+fort_stronghold_building = yes
+garrison_building = yes
+dockyard_building = yes
+grand_shipyard_building = yes
 center_of_trade = 2
+
 add_permanent_province_modifier = {
 	name = yol_cennacatt
 	duration = -1
 }
+
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
-#Sirayn Superregion Discovery
-add_core = X66
+
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
@@ -59,12 +77,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-capital_3_building = yes
-forum_building = yes
-bank_building = yes
-stockpile_building = yes
-foundry_building = yes
-fort_stronghold_building = yes
-garrison_building = yes
-dockyard_building = yes
-grand_shipyard_building = yes
+

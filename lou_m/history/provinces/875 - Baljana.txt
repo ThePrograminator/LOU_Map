@@ -1,27 +1,40 @@
 # Province ID : 875
 # Province Name : Baljana
+# Is Capital : true
 # Province RGB : (51, 5, 107)
 # Province Area : Lódenûly
-# Province Region : Lôdenûly
-# Province Super Region : Chy
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Chaiapûn
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 4
 base_production = 3
 base_manpower = 2
+
+add_core = X74
 owner = X74
 controller = X74
-culture = culture_lodenuly
-religion = religion_followers_of_the_great_rider
-trade_goods = chinaware
-center_of_trade = 2
-#Chy Superregion Discovery
-add_core = X74
+
 add_core = W40
+culture = culture_lodenuly
+religion = religion_followers_of_the_pourer
+
+trade_goods = chinaware
+
+fortress_3_building = yes
+marketplace_building = yes
+tax_office_building = yes
+foundry_building = yes
+fort_castle_building = yes
+garrison_building = yes
+center_of_trade = 2
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -62,9 +75,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-fortress_3_building = yes
-marketplace_building = yes
-tax_office_building = yes
-foundry_building = yes
-fort_castle_building = yes
-garrison_building = yes
+

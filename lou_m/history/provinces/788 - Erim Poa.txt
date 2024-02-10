@@ -1,24 +1,31 @@
 # Province ID : 788
 # Province Name : Erim Póa
+# Is Capital : false
 # Province RGB : (124, 204, 174)
 # Province Area : Erim Póa
-# Province Region : Sîrayn
-# Province Super Region : Sîrayn
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : null
 # Province Climate : Arid
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X70
 owner = X70
 controller = X70
+
 culture = culture_poa
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = mumakil
-add_core = X70
+
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
@@ -49,3 +56,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
+

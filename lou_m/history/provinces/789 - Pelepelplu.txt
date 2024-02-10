@@ -1,30 +1,44 @@
 # Province ID : 789
 # Province Name : Pelepelplû
+# Is Capital : false
 # Province RGB : (247, 227, 96)
 # Province Area : Pelepelplû
-# Province Region : Chy
-# Province Super Region : Chy
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Pelepelplû
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 4
 base_production = 3
 base_manpower = 2
+
+add_core = X74
 owner = X74
 controller = X74
+
 culture = culture_chy
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = chinaware
+
+city_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+fort_castle_building = yes
+army_camp_building = yes
 center_of_trade = 2
+
 add_permanent_province_modifier = {
 	name = rak_harmal
 	duration = -1
 }
-#Chy Superregion Discovery
-add_core = X74
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -65,9 +79,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-city_3_building = yes
-forum_building = yes
-bank_building = yes
-stockpile_building = yes
-fort_castle_building = yes
-army_camp_building = yes
+

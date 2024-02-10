@@ -1,28 +1,40 @@
 # Province ID : 1375
 # Province Name : Kál Peshidi
+# Is Capital : false
 # Province RGB : (14, 85, 37)
 # Province Area : Ornad
-# Province Region : Harshandatt
-# Province Super Region : Harshandatt
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X64
 owner = X64
 controller = X64
+
 culture = culture_muranians
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = livestock
+
+fortress_1_building = yes
+fort_pallisade_building = yes
+army_camp_building = yes
+work_camp_building = yes
 add_permanent_province_modifier = {
 	name = yol_harshandatt
 	duration = -1
 }
-add_core = X64
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -61,7 +73,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-fortress_1_building = yes
-fort_pallisade_building = yes
-army_camp_building = yes
-work_camp_building = yes
+

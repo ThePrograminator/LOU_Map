@@ -1,24 +1,35 @@
 # Province ID : 3942
 # Province Name : Naria
+# Is Capital : false
 # Province RGB : (200, 199, 212)
 # Province Area : Mablád-dûm
-# Province Region : Tûr Betark
-# Province Super Region : Múmakan
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X68
 owner = X68
 controller = X68
+
 culture = culture_chennacatti
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = stone
-add_core = X68
+
+fortress_2_building = yes
+fort_castle_building = yes
+barracks_building = yes
+forge_building = yes
 discovered_by = lotr_human_balizar
 discovered_by = lotr_human_ered_harmal
 discovered_by = lotr_human_harshandatt
@@ -48,7 +59,4 @@ discovered_by = lotr_orc_mumakan
 discovered_by = lotr_orc_near_harad
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-fortress_2_building = yes
-fort_castle_building = yes
-barracks_building = yes
-forge_building = yes
+

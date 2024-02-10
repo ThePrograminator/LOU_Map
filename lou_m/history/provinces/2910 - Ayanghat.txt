@@ -1,24 +1,34 @@
 # Province ID : 2910
 # Province Name : Ayanghat
+# Is Capital : false
 # Province RGB : (58, 186, 218)
 # Province Area : Jelhad
-# Province Region : Chy
-# Province Super Region : Chy
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
-# Province Tradenode : Pelepelplû
+# Province Tradenode : null
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 1
 base_production = 1
 base_manpower = 1
+
+add_core = X74
 owner = X74
 controller = X74
+
 culture = culture_denuly
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = iron
-add_core = X74
+
+fortress_1_building = yes
+fort_castle_building = yes
+army_camp_building = yes
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -59,6 +69,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-fortress_1_building = yes
-fort_castle_building = yes
-army_camp_building = yes
+

@@ -1,26 +1,42 @@
 # Province ID : 756
 # Province Name : Tenôlkachyn
+# Is Capital : true
 # Province RGB : (139, 147, 238)
 # Province Area : Lhûd
-# Province Region : Chy
-# Province Super Region : Chy
+# Province Area : null
+# Province Super Region : null
 # Province Continent : Hither Lands
 # Province Tradenode : Tenôlkachyn
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
+
 is_city = yes
+
 base_tax = 5
 base_production = 4
 base_manpower = 6
+
+add_core = X72
 owner = X72
 controller = X72
+
 culture = culture_chy
-religion = religion_followers_of_the_great_rider
+religion = religion_followers_of_the_pourer
+
 trade_goods = chinaware
+
+capital_3_building = yes
+forum_building = yes
+bank_building = yes
+stockpile_building = yes
+foundry_building = yes
+fort_stronghold_building = yes
+garrison_building = yes
+dockyard_building = yes
+grand_shipyard_building = yes
 center_of_trade = 2
-#Chy Superregion Discovery
-add_core = X72
+
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_lochan_daer
 discovered_by = lotr_human_balizar
@@ -61,12 +77,4 @@ discovered_by = lotr_orc_rhun
 discovered_by = lotr_wizard_palisor
 discovered_by = lotr_wights_ered_harmal
 discovered_by = lotr_wights_balizor
-capital_3_building = yes
-forum_building = yes
-bank_building = yes
-stockpile_building = yes
-foundry_building = yes
-fort_stronghold_building = yes
-garrison_building = yes
-dockyard_building = yes
-grand_shipyard_building = yes
+
