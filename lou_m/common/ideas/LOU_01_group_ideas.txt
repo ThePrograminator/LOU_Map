@@ -294,7 +294,6 @@ forodrim_ideas = {
 	
 	trigger = {
 		is_human = yes
-		religion = religion_northern_followers_of_illuvatar
 		primary_culture = culture_forodrim
 	}
 	free = yes		
@@ -341,7 +340,6 @@ arthedain_ideas = {
 		OR = {
 			AND = {
 				is_human = yes
-				religion = religion_northern_followers_of_illuvatar
 				primary_culture = culture_arthedain
 			}
 			tag = W54
@@ -390,7 +388,6 @@ cardolani_ideas = {
 		OR = {
 			AND = {
 				is_human = yes
-				religion = religion_northern_followers_of_illuvatar
 				primary_culture = culture_cardolani
 			}
 			tag = W55
@@ -440,7 +437,6 @@ feotari_ideas = {
 	
 	trigger = {
 		is_human = yes
-		religion = religion_northern_followers_of_illuvatar
 		primary_culture = culture_feotari
 	}
 	free = yes		
@@ -487,7 +483,6 @@ cerens_ideas = {
 	
 	trigger = {
 		is_human = yes
-		religion = religion_northern_followers_of_illuvatar
 		primary_culture = culture_cerens
 	}
 	free = yes		
@@ -532,7 +527,6 @@ rivermen_ideas = {
 	
 	trigger = {
 		is_human = yes
-		religion = religion_northern_followers_of_illuvatar
 		culture_group = culture_group_rivermen
 		NOT = {
 			tag = Z21
@@ -953,7 +947,7 @@ eastern_lakemen_ideas = {
 	}
 	
 	trigger = {
-            religion = religion_followers_of_the_blue_wizards
+        culture_group = culture_group_raliani
 	}
 	free = yes		
 	
@@ -1051,7 +1045,7 @@ ahar_ideas = {
 	}
 	
 	trigger = {
-		religion = religion_followers_of_the_great_rider
+		culture_group = culture_group_ahar
 	}
 	free = yes		
 	

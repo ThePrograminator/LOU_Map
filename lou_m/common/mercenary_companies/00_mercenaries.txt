@@ -8,8 +8,8 @@ merc_riders_of_snowbourn = {
     trigger = {
         OR = {
             religion = religion_followers_of_mearas
+            religion = religion_followers_of_felarof
             tag = X01
-            tag = X16
         }
   }
 }
@@ -73,7 +73,6 @@ merc_variags_of_khand = {
             tag = V17
             religion = religion_haradrim_of_darkness
             religion = religion_easterling_men_of_darkness
-            primary_culture = culture_cheyans
         }
 	}
 }
@@ -180,7 +179,7 @@ merc_wolim_blood_brothers = {
     trigger = {
         OR = {
             culture_group = culture_group_surk
-            religion = religion_followers_of_the_pourer
+            culture_group = culture_group_lakhab
         }
 	}
 }

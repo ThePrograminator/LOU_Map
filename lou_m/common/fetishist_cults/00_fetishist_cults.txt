@@ -6,9 +6,9 @@ ulgath_cult = {
 			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = ulgath_cult
-				religion = religion_easterling_men_of_darkness
+				culture_group = culture_group_ulgath
 				any_neighbor_country = { 
-					religion = religion_easterling_men_of_darkness
+					culture_group = culture_group_ulgath
 				}
 			}
 		}
@@ -33,9 +33,9 @@ ioriags_cult = {
 			religion =  religion_easterling_men_of_darkness
 			OR = {
 				has_unlocked_cult = ioriags_cult
-				religion = religion_easterling_men_of_darkness
+				culture_group = culture_group_ioriags
 				any_neighbor_country = { 
-					religion = religion_easterling_men_of_darkness
+					culture_group = culture_group_ioriags
 				}
 			}
 		}
@@ -61,7 +61,7 @@ avari_cult = {
 			OR = {
 				has_unlocked_cult = avari_cult
 				any_neighbor_country = { 
-					religion = religion_firstborn_of_illuvatar
+					culture_group = culture_group_avari
 				}
 			}
 		}
@@ -165,7 +165,7 @@ ahar_cult = {
 			OR = {
 				has_unlocked_cult = ahar_cult
 				any_neighbor_country = { 
-					religion = religion_followers_of_the_great_rider
+					culture_group = culture_group_ahar
 				}
 			}
 		}
