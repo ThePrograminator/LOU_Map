@@ -2,7 +2,6 @@ is_free_peoples_opinion = {
 	custom_trigger_tooltip = {
 		tooltip = IS_FREE_PEOPLES_TOOLTIP
 		OR = {
-			is_racial_group_numenorean = yes
 			is_ent = yes
 			is_erus_children = yes
 			is_elf = yes
@@ -31,6 +30,7 @@ is_free_peoples_opinion = {
 			culture_group = culture_group_donath
 			culture_group = culture_group_aivathiuda
 			culture_group = culture_group_beijabar
+			culture_group = culture_group_numenorean
 		}
 		NOT = {
 			# Waw
@@ -46,7 +46,6 @@ is_free_peoples_opinion = {
 }
 
 test_only_is_free_peoples_opinion_test_only = {
-		is_racial_group_numenorean = yes
 		is_ent = yes
 		is_erus_children = yes
 		is_elf = yes
@@ -75,6 +74,7 @@ test_only_is_free_peoples_opinion_test_only = {
 		culture_group = culture_group_donath
 		culture_group = culture_group_aivathiuda
 		culture_group = culture_group_beijabar
+		culture_group = culture_group_numenorean
 	NOT = {
 		# Waw
 		tag = Z80
@@ -144,6 +144,7 @@ is_servants_of_evil_opinion = {
 			culture_group = culture_group_monhunrim
 			culture_group = culture_group_womaw
 			culture_group = culture_group_borians
+			culture_group = culture_group_sirani
 			primary_culture = culture_wolim
 			primary_culture = culture_dyrians
 			primary_culture = culture_dirians
@@ -196,6 +197,7 @@ test_only_is_servants_of_evil_opinion_test_only = {
 	culture_group = culture_group_monhunrim
 	culture_group = culture_group_womaw
 	culture_group = culture_group_borians
+	culture_group = culture_group_sirani
 	primary_culture = culture_wolim
 	primary_culture = culture_dyrians
 	primary_culture = culture_dirians
@@ -248,6 +250,7 @@ is_servants_of_evil_opinion_province = {
 		culture_group = culture_group_monhunrim
 		culture_group = culture_group_womaw
 		culture_group = culture_group_borians
+		culture_group = culture_group_sirani
 		culture = culture_wolim
 		culture = culture_dyrians
 		culture = culture_dirians
