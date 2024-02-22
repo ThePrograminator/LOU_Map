@@ -409,7 +409,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -432,7 +435,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -455,7 +461,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -478,7 +487,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -501,7 +513,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -524,7 +539,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -547,7 +565,10 @@ give_minas_ithil_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}
@@ -588,7 +609,10 @@ give_black_gate_to_gondor = {
 			}
 			if = {
 				limit = {
-					religion = religion_servants_of_sauron
+					OR = {
+						religion = religion_servants_of_sauron
+						religion = religion_servants_of_morgoth
+					}
 				}
 				change_religion = religion_wilderness
 			}

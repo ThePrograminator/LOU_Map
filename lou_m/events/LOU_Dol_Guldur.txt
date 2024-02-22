@@ -195,12 +195,7 @@ country_event = {
 			tag = V19
 			dol_guldur_area = {
 				OR ={
-					#owns_or_vassal_of = Z61
 					owned_by = V19
-				}
-				OR = {
-					#culture = culture_guldurim
-					#religion = religion_easterlings
 				}
 			}
 		}
@@ -226,11 +221,8 @@ country_event = {
 		dol_guldur_area = {
 			limit = {
 				OR ={
-					#owns_or_vassal_of = Z61
 					owned_by = V19
 				}
-				#culture = culture_guldurim
-				#religion = religion_easterlings
 			}
 			add_province_modifier = {
 				name = dol_guldur_ask_guldurim_troops

@@ -10,16 +10,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			primary_culture = culture_orkish
-			primary_culture = culture_uruks
-			primary_culture = culture_half_orc
-			primary_culture = culture_ice_orkish
-			primary_culture = culture_jungle_orkish
-			primary_culture = culture_desert_orkish
-		}
+		culture_group = culture_group_orcs
 		
-		religion = religion_servants_of_sauron
+		OR = {
+			religion = religion_servants_of_sauron
+			religion = religion_servants_of_morgoth
+		}
 		
 		AND = {
 			Karma = -33
@@ -68,15 +64,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		culture_group = culture_group_orcs
 		OR = {
-			primary_culture = culture_orkish
-			primary_culture = culture_uruks
-			primary_culture = culture_half_orc
-			primary_culture = culture_ice_orkish
-			primary_culture = culture_jungle_orkish
-			primary_culture = culture_desert_orkish
+			religion = religion_servants_of_sauron
+			religion = religion_servants_of_morgoth
 		}
-		religion = religion_servants_of_sauron
 		
 		AND = {
 			Karma = -33
@@ -126,15 +118,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 		}
 		NOT = {
 			karma = 33
@@ -183,15 +171,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 		}
 		NOT = {
 			karma = -33
@@ -238,15 +222,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 			is_at_war = no
 		}
 		NOT = {
@@ -283,15 +263,11 @@ country_event = {
 	trigger = {
 	
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 			is_at_war = no
 			
 			NOT = {
@@ -308,19 +284,18 @@ country_event = {
 			has_owner_religion = yes
 			any_neighbor_province = {
 				
-				NOT = { 
-					owned_by = ROOT 
-					culture = culture_orkish
-					culture = culture_uruks
-					culture = culture_half_orc
-					culture = culture_ice_orkish
-					culture = culture_jungle_orkish
-					culture = culture_desert_orkish
-					religion = religion_servants_of_sauron
-					culture = culture_spider
-					religion = religion_children_of_ungoliant
-					has_province_modifier = orc_religion_raided_neighbour_province
-				}
+				NOT = { owned_by = ROOT }
+				NOT = { culture = culture_orkish }
+				NOT = { culture = culture_uruks }
+				NOT = { culture = culture_half_orc }
+				NOT = { culture = culture_ice_orkish }
+				NOT = { culture = culture_jungle_orkish }
+				NOT = { culture = culture_desert_orkish }
+				NOT = { culture = culture_spider }
+				NOT = { religion = religion_servants_of_sauron }
+				NOT = { religion = religion_servants_of_morgoth }
+				NOT = { religion = religion_children_of_ungoliant }
+				NOT = { has_province_modifier = orc_religion_raided_neighbour_province }
 				owner = {
 					NOT = { war_with = ROOT }
 				}
@@ -341,20 +316,18 @@ country_event = {
 				has_owner_culture = yes
 				has_owner_religion = yes
 				any_neighbor_province = {
-					#NOT = { owned_by = ROOT }
-					NOT = { 
-						owned_by = ROOT 
-						culture = culture_orkish
-						culture = culture_uruks
-						culture = culture_half_orc
-						culture = culture_ice_orkish
-						culture = culture_jungle_orkish
-						culture = culture_desert_orkish
-						religion = religion_servants_of_sauron
-						culture = culture_spider
-						religion = religion_children_of_ungoliant
-						has_province_modifier = orc_religion_raided_neighbour_province
-					}
+					NOT = { owned_by = ROOT }
+					NOT = { culture = culture_orkish }
+					NOT = { culture = culture_uruks }
+					NOT = { culture = culture_half_orc }
+					NOT = { culture = culture_ice_orkish }
+					NOT = { culture = culture_jungle_orkish }
+					NOT = { culture = culture_desert_orkish }
+					NOT = { culture = culture_spider }
+					NOT = { religion = religion_servants_of_sauron }
+					NOT = { religion = religion_servants_of_morgoth }
+					NOT = { religion = religion_children_of_ungoliant }
+					NOT = { has_province_modifier = orc_religion_raided_neighbour_province }
 					owner = {
 						NOT = { war_with = ROOT }
 					}
@@ -362,21 +335,18 @@ country_event = {
 			}
 			random_neighbor_province = {
 				limit = {
-					NOT = {
-						owned_by = ROOT 
-						
-						culture = culture_orkish
-						culture = culture_uruks
-						culture = culture_half_orc
-						culture = culture_ice_orkish
-						culture = culture_jungle_orkish
-						culture = culture_desert_orkish
-						religion = religion_servants_of_sauron
-						
-						culture = culture_spider
-						religion = religion_children_of_ungoliant
-						has_province_modifier = orc_religion_raided_neighbour_province
-					}
+					NOT = { owned_by = ROOT }
+					NOT = { culture = culture_orkish }
+					NOT = { culture = culture_uruks }
+					NOT = { culture = culture_half_orc }
+					NOT = { culture = culture_ice_orkish }
+					NOT = { culture = culture_jungle_orkish }
+					NOT = { culture = culture_desert_orkish }
+					NOT = { culture = culture_spider }
+					NOT = { religion = religion_servants_of_sauron }
+					NOT = { religion = religion_servants_of_morgoth }
+					NOT = { religion = religion_children_of_ungoliant }
+					NOT = { has_province_modifier = orc_religion_raided_neighbour_province }
 					owner = {
 						NOT = { war_with = ROOT }
 					}
@@ -513,15 +483,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 			
 			NOT = {
 				karma = -33
@@ -666,15 +632,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 		}
 		AND = {
 			Karma = -33
@@ -722,15 +684,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 		}
 		AND = {
 			Karma = -33
@@ -783,15 +741,11 @@ country_event = {
 	
 	trigger = {
 		AND = {
+			culture_group = culture_group_orcs
 			OR = {
-				primary_culture = culture_orkish
-				primary_culture = culture_uruks
-				primary_culture = culture_half_orc
-				primary_culture = culture_ice_orkish
-				primary_culture = culture_jungle_orkish
-				primary_culture = culture_desert_orkish
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
 			}
-			religion = religion_servants_of_sauron
 			manpower_percentage = 0.75
 		}
 		AND = {

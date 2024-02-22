@@ -5550,7 +5550,10 @@ carndum_monument = {
 		AND = {
 			is_owner_racial_group_melkor = yes	
 			owner = {
-				religion = religion_servants_of_sauron
+				OR = {
+					religion = religion_servants_of_sauron
+					religion = religion_servants_of_morgoth
+				}
 			}
 			has_owner_religion = yes
 		}		
@@ -5565,7 +5568,10 @@ carndum_monument = {
 		AND = {
 			is_owner_racial_group_melkor = yes	
 			owner = {
-				religion = religion_servants_of_sauron
+				OR = {
+					religion = religion_servants_of_sauron
+					religion = religion_servants_of_morgoth
+				}
 			}
 			has_owner_religion = yes
 		}
