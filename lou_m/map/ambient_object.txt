@@ -272,7 +272,7 @@ type={
 type={
 	type="minas_tirith_monument"
 	use_animation=no
-	scale=0.900000
+	scale=0.500000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
@@ -280,10 +280,10 @@ type={
 		name="minas_tirith_monument"
 		hidden_on_start=no
 		position={
-			1831.000 0.000 1155.000 
+			1829.000 -0.300 1156.000 
 		}
 		rotation={
-			0.000 150.000 0.000 
+			0.000 -30.000 0.000 
 		}
 	}
 }
@@ -292,6 +292,7 @@ type={
 	use_animation=no
 	scale=0.900000
 	time_duration=300.000000
+	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
 		name="barad_dur_monument"
@@ -1242,6 +1243,21 @@ type={
 		}
 		rotation={
 			0.000 115.000 90.000 
+		}
+	}
+}
+type={
+	type="minas_tirith"
+	use_animation=no
+	time_duration=300.000000
+	object={
+		name="minas_tirith"
+		hidden_on_start=no
+		position={
+			1900.000 0.000 1600.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
 		}
 	}
 }
