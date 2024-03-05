@@ -1702,6 +1702,39 @@ on_province_religion_converted = {
 	if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - province : [Root.GetName] - country : [From.GetName] - on_province_religion_converted" }
     
     on_province_religion_converted_estate_privileges_effect = yes
+
+	if = {
+		limit = {
+			OR = {
+				culture_group = culture_group_orcs
+				culture_group = culture_group_melkor
+			}
+			
+			NOT = {
+				OR = {
+					religion = religion_servants_of_sauron
+					religion = religion_servants_of_morgoth
+				}
+			}
+		}
+		change_culture = owner
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+					culture_group = culture_group_orcs
+					culture_group = culture_group_melkor
+				}
+			} 
+
+			OR = {
+				religion = religion_servants_of_sauron
+				religion = religion_servants_of_morgoth
+			}
+		}
+		change_culture = owner
+	}
 }
 
 on_province_religion_changed = {
