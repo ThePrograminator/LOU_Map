@@ -507,14 +507,14 @@ custom_icon = {
         trigger = { 
             OR = {
                 AND = {
-                    development_between = { VALUE = 10 LESSTHAN = 20 }
+                    development_between = { VALUE = 10 LESSTHAN = 21 }
                     is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 0
                     }
                 }
                 AND = {
-                    development_between = { VALUE = 20 LESSTHAN = 30 }
+                    development_between = { VALUE = 20 LESSTHAN = 31 }
                     is_variable_equal = {
                         which = customui_hold_level_dwarven_hold
                         value = 1

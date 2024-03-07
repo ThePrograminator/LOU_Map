@@ -1,0 +1,220 @@
+########################################
+# Events for Nûrn
+########################################
+namespace = LOU_dwarven_hold
+
+# Forms Great Khaganate of Nûrn
+province_event = {
+	id = LOU_dwarven_hold.1
+	title = LOU_dwarven_hold.1.t
+	desc = LOU_dwarven_hold.1.d
+	picture = COURT_easterling_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			ai = yes
+		}
+	}
+	
+	#Estate 0
+	option = { 
+		name = LOU_dwarven_hold.1.a
+		ai_chance = { 
+			factor = 0 
+			modifier = {
+				factor = 100
+				OR = {
+					AND = {
+						is_variable_equal = {
+							which = customui_assigned_estate_dwarven_hold
+							value = 1
+						}
+						owner = {
+							estate_influence = {
+								estate = estate_dwarven_scholars
+								influence = 75
+							}
+						}
+					}
+					AND = {
+						is_variable_equal = {
+							which = customui_assigned_estate_dwarven_hold
+							value = 2
+						}
+						owner = {
+							estate_influence = {
+								estate = estate_dwarven_masons
+								influence = 75
+							}
+						}
+					}
+					AND = {
+						is_variable_equal = {
+							which = customui_assigned_estate_dwarven_hold
+							value = 3
+						}
+						owner = {
+							estate_influence = {
+								estate = estate_dwarven_warriors
+								influence = 75
+							}
+						}
+					}
+					AND = {
+						is_variable_equal = {
+							which = customui_assigned_estate_dwarven_hold
+							value = 4
+						}
+						owner = {
+							estate_influence = {
+								estate = estate_dwarven_blacksmiths
+								influence = 75
+							}
+						}
+					}
+					AND = {
+						is_variable_equal = {
+							which = customui_assigned_estate_dwarven_hold
+							value = 5
+						}
+						owner = {
+							estate_influence = {
+								estate = estate_dwarven_artisans
+								influence = 75
+							}
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.a" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 0 }
+	}
+
+	#Estate 1
+	option = { 
+		name = LOU_dwarven_hold.1.b
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 25
+				NOT = {
+					owner = {
+						estate_influence = {
+							estate = estate_dwarven_scholars
+							influence = 75
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.b" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 1 }
+	}
+
+	#Estate 2
+	option = { 
+		name = LOU_dwarven_hold.1.c
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 25
+				NOT = {
+					owner = {
+						estate_influence = {
+							estate = estate_dwarven_masons
+							influence = 75
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.c" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 2 }
+	}
+
+	#Estate 3
+	option = { 
+		name = LOU_dwarven_hold.1.d
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 25
+				NOT = {
+					owner = {
+						estate_influence = {
+							estate = estate_dwarven_warriors
+							influence = 75
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.d" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 3 }
+	}
+
+	#Estate 4
+	option = { 
+		name = LOU_dwarven_hold.1.e
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 25
+				NOT = {
+					owner = {
+						estate_influence = {
+							estate = estate_dwarven_blacksmiths
+							influence = 75
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.e" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 4 }
+	}
+
+	#Estate 5
+	option = { 
+		name = LOU_dwarven_hold.1.e
+		ai_chance = { 
+			factor = 25 
+			modifier = {
+				factor = 25
+				NOT = {
+					owner = {
+						estate_influence = {
+							estate = estate_dwarven_artisans
+							influence = 75
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.e" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 5 }
+	}
+
+	#Estate 6
+	option = { 
+		name = LOU_dwarven_hold.1.f
+		trigger = {
+			is_special_hold = yes
+		}
+		ai_chance = { 
+			factor = 2000 
+		}
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_dwarven_hold.1 - Option : LOU_dwarven_hold.1.f" }
+		customui_assign_estate_dwarven_hold_effect = { VALUE = 6 }
+	}
+}

@@ -74,16 +74,7 @@ customui_upgrade_dwarven_level_dwarven_hold_effect = {
 				value = 0
 			}
 		}
-		hidden_effect = {
-			remove_province_modifier = dwarven_hold_level_0
-		}
-		add_province_modifier = {
-			name = dwarven_hold_level_1
-			duration = -1
-		}
-		owner = {
-			add_treasury = -500
-		}
+		customui_upgrade_dwarven_level_0_1_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -92,17 +83,7 @@ customui_upgrade_dwarven_level_dwarven_hold_effect = {
 				value = 1
 			}
 		}
-		hidden_effect = {
-			remove_province_modifier = dwarven_hold_level_0
-			remove_province_modifier = dwarven_hold_level_1
-		}
-		add_province_modifier = {
-			name = dwarven_hold_level_2
-			duration = -1
-		}
-		owner = {
-			add_treasury = -1000
-		}
+		customui_upgrade_dwarven_level_1_2_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -111,20 +92,56 @@ customui_upgrade_dwarven_level_dwarven_hold_effect = {
 				value = 2
 			}
 		}
-		hidden_effect = {
-			remove_province_modifier = dwarven_hold_level_0
-			remove_province_modifier = dwarven_hold_level_1
-			remove_province_modifier = dwarven_hold_level_2
-		}
-		add_province_modifier = {
-			name = dwarven_hold_level_3
-			duration = -1
-		}
-		owner = {
-			add_treasury = -1500
-		}
+		customui_upgrade_dwarven_level_2_3_effect = yes
 	}
+}
 
+customui_upgrade_dwarven_level_0_1_effect = {
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_level_0
+	}
+	add_province_modifier = {
+		name = dwarven_hold_level_1
+		duration = -1
+	}
+	owner = {
+		add_treasury = -500
+	}
+	hidden_effect = {
+		change_variable = { which = customui_hold_level_dwarven_hold value = 1 }
+	}
+}
+
+customui_upgrade_dwarven_level_1_2_effect = {
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_level_0
+		remove_province_modifier = dwarven_hold_level_1
+	}
+	add_province_modifier = {
+		name = dwarven_hold_level_2
+		duration = -1
+	}
+	owner = {
+		add_treasury = -1000
+	}
+	hidden_effect = {
+		change_variable = { which = customui_hold_level_dwarven_hold value = 1 }
+	}
+}
+
+customui_upgrade_dwarven_level_2_3_effect = {
+	hidden_effect = {
+		remove_province_modifier = dwarven_hold_level_0
+		remove_province_modifier = dwarven_hold_level_1
+		remove_province_modifier = dwarven_hold_level_2
+	}
+	add_province_modifier = {
+		name = dwarven_hold_level_3
+		duration = -1
+	}
+	owner = {
+		add_treasury = -1500
+	}
 	hidden_effect = {
 		change_variable = { which = customui_hold_level_dwarven_hold value = 1 }
 	}

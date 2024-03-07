@@ -71,11 +71,7 @@ customui_dev_30_belegost_dwarven_hold_trigger = {
 customui_dev_30_dwarven_hold_trigger = {
 	development = 30
 	NOT = {
-		OR = {
-			province_id = 287  #Erebor
-			province_id = 740  #Moria
-			province_id = 1051 #Belegost
-		}
+		is_special_hold = yes
 	}
 }
 
@@ -125,6 +121,14 @@ development_between = {
 #-----------------------------------------
 # Other
 #-----------------------------------------
+
+is_special_hold = {
+	OR = {
+		province_id = 287  #Erebor
+		province_id = 740  #Moria
+		province_id = 1051 #Belegost
+	}
+}
 
 upgrade_dwarven_hold_requirement = {
 	if = {
