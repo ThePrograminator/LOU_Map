@@ -1501,3 +1501,41 @@
 
  immortal_personality:0 "Long Lifespan / Immortal"
  desc_immortal_personality:0 "§YLong Lifespan§! - Dúnedain and Dwarves have prolonged lifespan, Dúnedain has a life expectancy of 120 while Dwarves is 200.\n\n§YImmortal§! - This ruler if of a race that will not age and potentially will live forever. While immune to disease and old age, they may still die from physical violence.\n(Immortal Races include; Elves, Creatures of Melkor, Maiar, Istari, Ents, Huorns, Great Eagles and Giants)"
+
+ #-------------------------------------
+ # Special Units
+ #-------------------------------------
+ HUSSARS_NAME:0 "$HOME$'s $NUM$$ORDER$ Mûmakil"
+ MODIFIER_HAS_HUSSARS:0 "Allows Mûmakil"
+ HUSSARS_CANT_HAVE:0 "Your nation cannot raise Mûmakil."
+ HUSSARS_DESC:1 "The Mûmakil are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YMûmakil§! is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 100 development."
+ REGCAT_hussars:0 "Mûmakil"
+ hussars_regiment:0 "Mûmakil"
+ ADD_HUSSARS_SUB_UNIT_EFFECT:0 "Get '§GMûmakil§!' $UNIT$ in $WHERE|Y$."
+ HUSSARS_REGIMENT:0 "Mûmakil Regiment\n$EFFECT$"
+ HAVE_LESS_HUSSARS_THAN:0 "Have less Mûmakil than $VALUE|Y$.\n"
+ HAVE_AT_LEAST_HUSSARS_THAN:0 "Have at least $VALUE|Y$ Mûmakil.\n"
+ MODIFIER_AMOUNT_OF_HUSSARS:0 "Possible Mûmakil"
+ MODIFIER_LOCAL_AMOUNT_OF_HUSSARS:0 "Possible Mûmakil from development"
+ MODIFIER_CAN_RECRUIT_HUSSARS:0 "May recruit §YMûmakil§!"
+ HUSSARS_REGIMENT_TYPE:0 "Mûmakil"
+ STATE_HUSSARS_CREATED_REGIMENTS:0 "This will cost $MILAMOUNT|Y$ £mil£, and $NUM|Y$ Mûmakil will spawn in $PROV|Y$.\nDo you want to create a Mûmakil regiment?"
+ HUSSARS_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Mûmakil here."
+
+ RAJPUT_REGIMENT:0 "Ithilien Rangers Regiment\n$EFFECT$"
+ RECRUIT_RAJPUT_REGIMENTS:0 "Recruit Ithilien Rangers Regiments"
+ enables_rajput_regiments:0 "Ithilien Rangers Regiments"
+ rajput_regiment:0 "Ithilien Rangers Regiment"
+ RAJPUT_REGIMENT_TYPE:0 "Ithilien Rangers"
+ 
+ rajput_regiments.tooltip:0 "Up to §Y10§! §YIthilien Rangers Regiments§! will be recruited dependent on the number of provinces under §YRajputs§! control and current §YIthilien Rangers§! influence.\nNumber of §YIthilien Rangers Regiments§! cannot exceed the number of provinces controlled by the §YIthilien Rangers§! estate."
+ EST_VAL_RECRUITED_RAJPUTS:0 "Recruited Ithilien Rangers Regiments: §Y$VAL$%§!"
+ RAJPUT_DESC:2 "Ithilien Rangers were selected from the descendants of the people who had dwelt in Ithilien. They have been trained with a bow for greater fire damage, they have stronger morale than average troops, and because of their training better able to survive when low on supplies."
+ estate_rajput_rajput_regiments:0 "Establish the Ithilien Rangers Regiments"
+ RAJPUT_FORCELIMIT:1 "We can recruit up to $VAL|%Y$ of our force-limit of $FL$ as §GIthilien Rangers§! due to:\n"
+ MODIFIER_ALLOWED_RAJPUT_FRACTION:0 "Ithilien Rangers Force Limit Fraction"
+ ADD_RAJPUT_SUB_UNIT_EFFECT:0 "Get '§GIthilien Rangers§!' $UNIT$ in $WHERE|Y$."
+ REGCAT_rajput:0 "Ithilien Rangers"
+ RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Ithilien Rangers"
+ MODIFIER_ALLOWED_COSSACK_FRACTION:0 "Ithilien Rangers Force Limit Fraction"
+ MODIFIER_CAN_RECRUIT_RAJPUTS:0 "Can recruit Ithilien Rangers"

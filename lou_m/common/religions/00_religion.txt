@@ -586,7 +586,7 @@ religion_group_worshippers_of_melkor = {
 		color = { 1.0 0.75 0.0 }
 		
 		country = {
-			hostile_attrition = 1
+			can_recruit_hussars = yes
 			heir_chance = 0.5
 		}
 		country_as_secondary = {
@@ -798,7 +798,7 @@ religion_group_worshippers_of_melkor = {
 		
 		country = {
 			stability_cost_modifier = -0.1
-			tolerance_own = 1
+			can_recruit_hussars = yes
 		}
 		country_as_secondary = {
 			global_colonial_growth = 10
