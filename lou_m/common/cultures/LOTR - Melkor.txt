@@ -3,6 +3,7 @@
 #-----------------------------------
 culture_group_melkor = {
 	graphical_culture = lotr_orc_gfx
+	country = { has_samurai = yes }
 	
 	culture_balrog = {
 		male_names = {
@@ -72,6 +73,7 @@ culture_group_melkor = {
 	}
 	
 	culture_olog_hai = {
+		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
 			Buhrdur Bulrakur Burazog Burzash Buthrakur Gorthog Gothmog Hargrog Huntan Hunatoth Kadak Kur-Tuk
@@ -85,6 +87,7 @@ culture_group_melkor = {
 	}
 	
 	culture_cave_troll = {
+		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
 			Buhrdur Bulrakur Burazog Burzash Buthrakur Gorthog Gothmog Hargrog Huntan Hunatoth Kadak Kur-Tuk
@@ -98,6 +101,7 @@ culture_group_melkor = {
 	}	
 
 	culture_snow_troll = {
+		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
 			Buhrdur Bulrakur Burazog Burzash Buthrakur Gorthog Gothmog Hargrog Huntan Hunatoth Kadak Kur-Tuk

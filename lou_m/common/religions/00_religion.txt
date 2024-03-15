@@ -552,6 +552,8 @@ religion_group_worshippers_of_melkor = {
 		country = {
 			war_exhaustion = -0.10
 			reinforce_cost_modifier = -0.25
+			has_samurai = yes
+			allowed_samurai_fraction = 0.1
 		}
 		country_as_secondary = {
 			reinforce_cost_modifier = -0.1
@@ -570,6 +572,8 @@ religion_group_worshippers_of_melkor = {
 		country = {
 			war_exhaustion = -0.25
 			reinforce_cost_modifier = -0.50
+			has_samurai = yes
+			allowed_samurai_fraction = 0.1
 		}
 		country_as_secondary = {
 			global_colonial_growth = 10

@@ -1937,9 +1937,11 @@ cawa_regiment = {
 
 #Modified
 hussars_regiment = {
-	cavalry_shock = 3
+	cavalry_shock = 4
 	morale_damage = 0.75
+	morale_damage_received = -0.5
 	reinforce_speed = -0.85
+	reinforce_cost_modifier = 0.75
 }
 
 marine_regiment = {
@@ -1967,9 +1969,12 @@ musketeer_regiment = {
 	fire_damage = 0.15
 }
 
+#Modified
 samurai_regiment = {
-	discipline = 0.05
-	morale_damage_received = -0.1
+	infantry_shock = 3
+	morale_damage = 0.30
+	morale_damage_received = -0.25
+	reinforce_speed = -0.30
 	reinforce_cost_modifier = 0.5
 }
 
