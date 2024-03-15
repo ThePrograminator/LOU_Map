@@ -3,7 +3,10 @@
 #-----------------------------------
 culture_group_orcs = {
 	graphical_culture = lotr_orc_gfx
-	country = { has_samurai = yes }
+	country = { 
+		has_samurai = yes 
+		allowed_samurai_fraction = 0.1
+	}	
 	culture_desert_orkish = {
 		primary = Y46
 		male_names = {

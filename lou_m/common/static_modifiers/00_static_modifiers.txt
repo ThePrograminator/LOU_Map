@@ -279,7 +279,7 @@ development = {
 	local_amount_of_banners = 0.066
 	local_amount_of_cawa = 0.125
 	local_amount_of_carolean = 0.1
-	local_amount_of_hussars = 0.01
+	local_amount_of_hussars = 0.0175
 }
 
 development_scaled = {
@@ -1961,8 +1961,12 @@ streltsy_regiment = {
 	fire_damage_received = -0.1
 }
 
+#Modified
 tercio_regiment = {
+	discipline = 0.05
 	shock_damage_received = -0.3
+	fire_damage_received = -0.3
+	morale_damage_received = -0.15
 }
 
 musketeer_regiment = {

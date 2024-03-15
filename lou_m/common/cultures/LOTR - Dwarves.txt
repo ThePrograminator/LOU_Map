@@ -4,7 +4,11 @@
 #Names Done dynasty names not done
 culture_group_dwarves = {
 	graphical_culture = lotr_dwarf_gfx
-	
+	country = { 
+		has_tercio = yes 
+		allowed_tercio_fraction = 0.2
+	}
+	province = { local_has_tercio = yes }
 	culture_longbeard = {
 		male_names = {
 			Adwyn Adwýn Afwald Albrýc Aldwulf Alf Ali Almar Althór Alvari 
