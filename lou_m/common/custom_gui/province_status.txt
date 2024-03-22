@@ -1,0 +1,17 @@
+custom_text_box = {
+    name = customui_title_text_province_status #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        always = yes
+    } #Determines when the text is visible
+    tooltip = customui_title_text_province_status #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_text_box = {
+    name = customui_status_text_province_status #Must match a scripted instantTextBoxType in a .gui file
+    potential = { 
+        always = yes
+    } #Determines when the text is visible
+    tooltip = customui_status_text_province_status #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}

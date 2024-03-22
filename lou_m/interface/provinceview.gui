@@ -325,11 +325,15 @@ guiTypes = {
 			position = { x= -2 y = -81}
 		}
 
-
-
-
-
-
+		#------------------------------------------------
+		#Custom UI - Province Status
+		#------------------------------------------------
+		iconType =
+		{
+			name ="provinceview_status_large"
+			spriteType = "GFX_provinceview_status_large"
+			position = { x= -2 y = -250}
+		}
 
 		iconType =
 		{
@@ -570,6 +574,36 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 
 			### Core
+
+			#------------------------------------------------
+			#Custom UI - Province Status
+			#------------------------------------------------
+
+			instantTextBoxType = {
+				name = "customui_title_text_province_status"
+				position = { x = 50 y = -227 }
+				textureFile = ""
+				font = "vic_29"
+				borderSize = {x = 2 y = 2}
+				text = "Province Status"
+				maxWidth = 400
+				maxHeight = 50
+				format = center
+				scripted = yes
+			}
+
+			instantTextBoxType = {
+				name = "customui_status_text_province_status"
+				position = { x = 268 y = -165 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 2 y = 2}
+				text = "No Status"
+				maxWidth = 400
+				maxHeight = 50
+				format = left
+				scripted = yes
+			}
 
 
 			iconType =

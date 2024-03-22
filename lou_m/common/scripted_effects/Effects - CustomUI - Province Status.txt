@@ -1,0 +1,168 @@
+customui_province_status_assign_status_effect = {
+	hidden_effect = {
+		set_variable = { which = customui_province_status_variable value = $VALUE$ }
+	}
+	clr_province_flag = customui_province_status_assign_status_flag
+	customui_province_status_assign_status_effect_$VALUE$ = yes
+}
+
+#0 - No Status
+customui_province_status_assign_status_effect_0 = {
+	custom_tooltip = customui_assign_estate_dwarven_hold_no_estate_effect_tt
+	clr_province_flag = customui_province_status_assign_status_flag
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+
+#1 - Wilderness
+customui_province_status_assign_status_effect_1 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = wilderness_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#2 - Capital In Ruins
+customui_province_status_assign_status_effect_2 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = ruins_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#3 - Roaming Trolls
+customui_province_status_assign_status_effect_3 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = province_troll_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#4 - Roaming Wights
+customui_province_status_assign_status_effect_4 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = province_wight_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#5 - Roaming Huorn
+customui_province_status_assign_status_effect_5 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = province_huorn_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#6 - Roaming Dragons
+customui_province_status_assign_status_effect_6 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = province_dragon_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_free_people_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#7 - Roaming Free Peoples
+customui_province_status_assign_status_effect_7 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = province_free_people_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_evil_debuff
+	}
+}
+#8 - Roaming Melkor Creatures
+customui_province_status_assign_status_effect_7 = {
+	custom_tooltip = customui_province_status_assign_status_effect_tt
+	set_province_flag = customui_province_status_assign_status_flag
+	add_province_modifier = {
+		name = province_evil_debuff
+		duration = -1
+	}
+	hidden_effect = {
+		remove_province_modifier = wilderness_debuff
+		remove_province_modifier = ruins_debuff
+		remove_province_modifier = province_troll_debuff
+		remove_province_modifier = province_wight_debuff
+		remove_province_modifier = province_huorn_debuff
+		remove_province_modifier = province_dragon_debuff
+		remove_province_modifier = province_free_people_debuff
+	}
+}

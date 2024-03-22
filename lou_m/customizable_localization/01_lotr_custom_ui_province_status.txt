@@ -1,0 +1,92 @@
+#0 - No Status
+#1 - Wilderness
+#2 - Capital In Ruins
+#3 - Roaming Trolls
+#4 - Roaming Wights
+#5 - Roaming Huorn
+#6 - Roaming Dragons
+#7 - Roaming Free Peoples
+#8 - Roaming Melkor Creatures
+defined_text = {
+	name = GetCustomUIStatusText
+
+	text = { 
+		localisation_key = string_province_status_text_8
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 8
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_7
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 7
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_6
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = string_province_status_no_status
+		trigger = {
+			always = yes
+		}
+	}
+}
