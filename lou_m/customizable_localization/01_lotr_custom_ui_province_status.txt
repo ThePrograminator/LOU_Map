@@ -8,10 +8,10 @@
 #7 - Roaming Free Peoples
 #8 - Roaming Melkor Creatures
 defined_text = {
-	name = GetCustomUIStatusText
+	name = GetCustomUIStatusTextTitle
 
 	text = { 
-		localisation_key = string_province_status_text_8
+		localisation_key = string_province_status_text_title_8
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -20,7 +20,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_7
+		localisation_key = string_province_status_text_title_7
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -29,7 +29,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_6
+		localisation_key = string_province_status_text_title_6
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -38,7 +38,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_5
+		localisation_key = string_province_status_text_title_5
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -47,7 +47,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_4
+		localisation_key = string_province_status_text_title_4
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -56,7 +56,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_3
+		localisation_key = string_province_status_text_title_3
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -65,7 +65,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_2
+		localisation_key = string_province_status_text_title_2
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -74,7 +74,7 @@ defined_text = {
 		}
 	}
 	text = { 
-		localisation_key = string_province_status_text_1
+		localisation_key = string_province_status_text_title_1
 		trigger = {
 			is_variable_equal = {
 				which = customui_province_status_variable
@@ -90,3 +90,88 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GetCustomUIStatusTextDescription
+
+	text = { 
+		localisation_key = string_province_status_text_description_8
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 8
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_7
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 7
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_6
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_text_description_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = string_province_status_text_description_0
+		trigger = {
+			always = yes
+		}
+	}
+}
+

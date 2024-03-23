@@ -1,16 +1,20 @@
 ﻿l_english:
  #Text
  customui_title_text_province_status: "Province Status"
- customui_status_text_province_status: "[Root.GetCustomUIStatusText]"
+ customui_status_text_province_status: "[Root.GetCustomUIStatusTextTitle]"
+ 
 
- string_province_status_text_7: "Roaming Melkor Creatures"
- string_province_status_text_6: "Roaming Free Peoples"
- string_province_status_text_5: "Roaming Huorn"
- string_province_status_text_4: "Roaming Wights"
- string_province_status_text_3: "Roaming Trolls"
- string_province_status_text_2: "Capital In Ruins"
- string_province_status_text_1: "Wilderness"
  string_province_status_no_status: "No Status"
+ string_province_status_text_title_1: "Wilderness"
+ string_province_status_text_title_2: "Capital In Ruins"
+ string_province_status_text_title_3: "Roaming Trolls"
+ string_province_status_text_title_4: "Roaming Wights"
+ string_province_status_text_title_5: "Roaming Huorn"
+ string_province_status_text_title_6: "Roaming Dragons"
+ string_province_status_text_title_7: "Roaming Free Peoples"
+ string_province_status_text_title_8: "Roaming Melkor Creatures"
+ 
+
 
  #Trigger Tooltips
  
@@ -18,4 +22,13 @@
  customui_province_status_assign_status_effect_tt: ""
 
  #Tooltips
- 
+ customui_province_status_icon_tt: "[Root.GetCustomUIStatusTextDescription]"
+ string_province_status_text_description_0: "No Status - Description"
+ string_province_status_text_description_1: "Wilderness - Description"
+ string_province_status_text_description_2: "Capital In Ruins - Description"
+ string_province_status_text_description_3: "Roaming Trolls - Description"
+ string_province_status_text_description_4: "Roaming Wights - Description"
+ string_province_status_text_description_5: "Roaming Huorn - Description"
+ string_province_status_text_description_6: "Roaming Dragons - Description"
+ string_province_status_text_description_7: "Roaming Free Peoples - Description"
+ string_province_status_text_description_8: "Roaming Melkor Creatures - Description"
