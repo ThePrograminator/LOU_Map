@@ -1,0 +1,12 @@
+customui_province_status_progresbar_between = {
+	check_variable = {
+		which = customui_province_status_progress_variable
+		value = $VALUE$
+	} 
+	NOT = {
+		check_variable = {
+			which = customui_province_status_progress_variable
+			value = $LESSTHAN$
+		}
+	}
+}

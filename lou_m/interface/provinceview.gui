@@ -331,7 +331,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="provinceview_status_large"
-			spriteType = "GFX_provinceview_status_large"
+			spriteType = "GFX_provinceview_bottom_status_large"
 			position = { x= -2 y = -250}
 		}
 
@@ -579,6 +579,13 @@ guiTypes = {
 			#Custom UI - Province Status
 			#------------------------------------------------
 
+			iconType = {
+				name = "customui_province_status_top_bg_icon"
+				position = { x= -2 y = -250}
+				quadTextureSprite ="GFX_provinceview_top_status_large"
+				scripted = yes
+			}
+
 			instantTextBoxType = {
 				name = "customui_title_text_province_status"
 				position = { x = 50 y = -227 }
@@ -609,6 +616,34 @@ guiTypes = {
 				name = "customui_province_status_icon"
 				position = { x = 80 y = -179 }
 				quadTextureSprite ="GFX_province_status_icon_atlas"
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "customui_province_status_start_progress_button"
+				position = { x = 415 y = -179 }
+				quadTextureSprite ="GFX_goto_province_button"
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "customui_province_status_stop_progress_button"
+				position = { x = 422 y = -135 }
+				quadTextureSprite ="GFX_macrobuild_onmap_cancel"
+				scripted = yes
+			}
+
+			iconType = {
+				name = "customui_province_status_progressbar_progress_icon"
+				position = { x = 272 y = -130 }
+				quadTextureSprite ="GFX_progressbar_5_percent_w123_h15_green"
+				scripted = yes
+			}
+
+			iconType = {
+				name = "customui_province_status_progressbar_icon"
+				position = { x = 260 y = -135 }
+				quadTextureSprite ="GFX_progress_bar_frame"
 				scripted = yes
 			}
 

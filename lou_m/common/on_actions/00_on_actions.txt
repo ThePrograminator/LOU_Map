@@ -1907,6 +1907,17 @@ on_province_owner_change = {
 			builder = ROOT
 		}
 	}
+
+	if = {
+		limit = {
+			has_province_flag = customui_province_status_removing_status_flag
+			check_variable = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+		customui_province_status_stop_removal_effect = yes
+	}
 }
 
 # country

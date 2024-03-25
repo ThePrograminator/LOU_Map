@@ -1,7 +1,21 @@
+custom_icon = {
+    name = customui_province_status_top_bg_icon #Must match a scripted iconType in a .gui file
+    potential = { 
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
+    } #Determines when the icon is visible
+    #tooltip = customui_province_status_progressbar_tt #Can use customizable localisation
+}
+
 custom_text_box = {
     name = customui_title_text_province_status #Must match a scripted instantTextBoxType in a .gui file
     potential = { 
-        always = yes
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
     } #Determines when the text is visible
     tooltip = customui_title_text_province_status #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
@@ -10,16 +24,114 @@ custom_text_box = {
 custom_text_box = {
     name = customui_status_text_province_status #Must match a scripted instantTextBoxType in a .gui file
     potential = { 
-        always = yes
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
     } #Determines when the text is visible
-    tooltip = customui_status_text_province_status #Can use customizable localisation
+    tooltip = customui_province_status_icon_tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+
+custom_button = {
+    name = customui_province_status_start_progress_button
+    potential = {
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
+        owner = {
+            tag = FROM
+        }
+    }
+    trigger = {
+        custom_trigger_tooltip = {
+            tooltip = customui_province_status_start_progress_button_trigger_tt
+            owner = {
+                mil_power = 50
+            }
+        }
+        
+        
+        hidden_trigger = {
+            check_variable = {
+                which = customui_province_status_variable
+                value = 1
+            }
+            NOT = {
+                has_province_flag = customui_province_status_removing_status_flag
+            }
+            owner = {
+                tag = FROM
+            }
+        } 
+    }
+    effect = { 
+        customui_province_status_start_removal_effect = yes
+    }
+    tooltip = customui_province_status_remove_status_button_tt
+}
+
+custom_button = {
+    name = customui_province_status_stop_progress_button
+    potential = {
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
+        owner = {
+            tag = FROM
+        }
+        has_province_flag = customui_province_status_removing_status_flag
+    }
+    trigger = {
+        owner = {
+            tag = ROOT
+        }
+        hidden_trigger = {
+            check_variable = {
+                which = customui_province_status_variable
+                value = 1
+            }
+            owner = {
+                tag = FROM
+            }
+        } 
+    }
+    effect = { 
+        hidden_effect = {
+            owner = {
+                add_mil_power = 50
+            }
+        }
+        tooltip = {
+            add_mil_power = 50
+        }
+        customui_province_status_stop_removal_effect = yes
+    }
+    tooltip = customui_province_status_stop_progress_button_tt
+}
+
+
+custom_icon = {
+    name = customui_province_status_progressbar_icon #Must match a scripted iconType in a .gui file
+    potential = { 
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
+        has_province_flag = customui_province_status_removing_status_flag
+    } #Determines when the icon is visible
+    tooltip = customui_province_status_progressbar_tt #Can use customizable localisation
 }
 
 custom_icon = {
     name = customui_province_status_icon #Must match a scripted iconType in a .gui file
     potential = { 
-        always = yes
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
     } #Determines when the icon is visible
     tooltip = customui_province_status_icon_tt #Can use customizable localisation
     frame = {  #Can define multiple frame clauses
@@ -100,6 +212,145 @@ custom_icon = {
             is_variable_equal = {
                 which = customui_province_status_variable
                 value = 8
+            }
+        }
+    }
+}
+
+custom_icon = {
+    name = customui_province_status_progressbar_progress_icon #Must match a scripted iconType in a .gui file
+    potential = { 
+        check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
+        check_variable = {
+            which = customui_province_status_progress_variable
+            value = 0
+        }
+        has_province_flag = customui_province_status_removing_status_flag
+    } #Determines when the icon is visible
+    tooltip = customui_province_status_progressbar_tt #Can use customizable localisation
+    frame = {  #Can define multiple frame clauses
+        number = 1 #Which frame to use. Check dds files with multiple icons like icon_religion.dds
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 0 LESSTHAN = 5 }
+        } #First matched frame clause will be used.
+    }
+    frame = {
+        number = 2
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 5 LESSTHAN = 10 }
+        }
+    }
+    frame = {
+        number = 3
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 10 LESSTHAN = 15 }
+        }
+    }
+    frame = {
+        number = 4
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 15 LESSTHAN = 20 }
+        }
+    }
+    frame = {
+        number = 5
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 20 LESSTHAN = 25 }
+        }
+    }
+    frame = {
+        number = 6
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 25 LESSTHAN = 30 }
+        }
+    }
+    frame = {
+        number = 7
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 30 LESSTHAN = 35 }
+        }
+    }
+    frame = {
+        number = 8
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 35 LESSTHAN = 40 }
+        }
+    }
+    frame = {
+        number = 9
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 40 LESSTHAN = 45 }
+        }
+    }
+    frame = {
+        number = 10
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 45 LESSTHAN = 50 }
+        }
+    }
+    frame = {
+        number = 11
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 50 LESSTHAN = 55 }
+        }
+    }
+    frame = {
+        number = 12
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 55 LESSTHAN = 60 }
+        }
+    }
+    frame = {
+        number = 13
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 60 LESSTHAN = 65 }
+        }
+    }
+    frame = {
+        number = 14
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 65 LESSTHAN = 70 }
+        }
+    }
+    frame = {
+        number = 15
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 70 LESSTHAN = 75 }
+        }
+    }
+    frame = {
+        number = 16
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 75 LESSTHAN = 80 }
+        }
+    }
+    frame = {
+        number = 17
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 80 LESSTHAN = 85 }
+        }
+    }
+    frame = {
+        number = 18
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 85 LESSTHAN = 90 }
+        }
+    }
+    frame = {
+        number = 19
+        trigger = { 
+            customui_province_status_progresbar_between = { VALUE = 90 LESSTHAN = 95 }
+        }
+    }
+    frame = {
+        number = 20
+        trigger = { 
+            check_variable = {
+                which = customui_province_status_progress_variable
+                value = 100
             }
         }
     }

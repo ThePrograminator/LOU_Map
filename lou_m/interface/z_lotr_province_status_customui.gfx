@@ -1,13 +1,26 @@
 spriteTypes = {
     spriteType = {
-		name = "GFX_provinceview_status_large"
-		texturefile = "gfx/interface/provinceview_status_large.dds"
+		name = "GFX_provinceview_bottom_status_large"
+		texturefile = "gfx/interface/provinceview_bottom_status_large.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_provinceview_top_status_large"
+		texturefile = "gfx/interface/provinceview_top_status_large.dds"
+		alwaystransparent = yes
 	}
 
 	spriteType  = {
 		name = "GFX_province_status_icon_atlas"
 		texturefile = "gfx/interface/province_status_icon_atlas.dds"
 		noOfFrames = 9
+	}
+
+	spriteType  = {
+		name = "GFX_progressbar_5_percent_w123_h15_green"
+		texturefile = "gfx/interface/progressbar_5_percent_w123_h15_green.dds"
+		noOfFrames = 20
 	}
 }
 

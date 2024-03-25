@@ -1,0 +1,91 @@
+########################################
+# Events for Province Status
+########################################
+namespace = LOU_province_status
+
+# Tick every 30 days
+province_event = {
+	id = LOU_province_status.1
+	title = LOU_province_status.1.t
+	desc = LOU_province_status.1.d
+	picture = COURT_easterling_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		check_variable = {
+            which = customui_province_status_variable
+            value = 1
+        }
+        check_variable = {
+            which = customui_province_status_progress_variable
+            value = 0
+        }
+		has_province_flag = customui_province_status_removing_status_flag
+		NOT = {
+			check_variable = {
+				which = customui_province_status_progress_variable
+				value = 101
+			}
+		}
+	}
+
+	immediate = {
+		export_to_variable = {
+			variable_name = province_development
+			value = development
+		}
+
+		set_variable = {
+			which = province_status_baseFactor
+			value = 9.8039
+		}
+		set_variable = {
+			which = province_status_baseline
+			value = 5
+		}
+	 	divide_variable  = {            
+			which = province_development
+			which = province_status_baseFactor
+		}
+		subtract_variable = {            
+			which = province_status_baseline
+			which = province_development
+		}
+	}
+	
+	#Normal
+	option = { 
+		name = LOU_province_status.1.a
+		trigger = {
+			controlled_by = owner
+		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_province_status.1 - Option : LOU_province_status.1.a - Progressbar: [Root.customui_province_status_progress_variable.GetValue] - Increase: [Root.province_status_baseline.GetValue] " }
+		customui_province_status_update_progress_effect = { VALUE = province_status_baseline }
+		if = {
+			limit = {
+				check_variable = {
+					which = customui_province_status_progress_variable
+					value = 100
+				}
+			}
+			customui_province_status_finish_removal_effect = yes
+		}
+	}
+
+	#Paused
+	option = { 
+		name = LOU_province_status.1.b
+		trigger = {
+			NOT = {
+				controlled_by = owner
+			}
+		}
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_province_status.1 - Option : LOU_province_status.1.b - Progressbar: [Root.customui_province_status_progress_variable.GetValue] - Paused" }
+		province_event = {
+			id = LOU_province_status.1
+			days = 30
+		}
+	}
+}
