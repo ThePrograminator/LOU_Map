@@ -37,7 +37,31 @@
  string_province_status_text_description_7: "Roaming Free Peoples - Description"
  string_province_status_text_description_8: "Roaming Melkor Creatures - Description"
 
- customui_province_status_start_progress_button_trigger_tt: "Has 50 Military Power"
- customui_province_status_remove_status_button_tt: "Remove Status - tool tip"
- customui_province_status_stop_progress_button_tt: "Stop Remove Status Progression - tool tip"
- customui_province_status_progressbar_tt: "Progresbar - description"
+ customui_province_status_start_progress_button_trigger_tt: "[ROOT.GetCustomUIStatusStartProgressTT]"
+ customui_province_status_remove_status_button_tt: "[ROOT.GetCustomUIStatusButtonDescription]"
+ customui_province_status_stop_progress_button_tt: "[ROOT.GetCustomUIStatusStopProgressDescription]"
+ customui_province_status_progressbar_tt: "[ROOT.GetCustomUIStatusProgressDescription]"
+
+ string_province_status_button_description: "-Button Description-"
+ string_province_status_button_description_1: "§YInhabit Province§!\nBy inhabiting the province we will be able to use it to our advantage.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done inhabiting the province due to the it's development.\nWhile Inhabiting the province it will cost §R-1 Administrative Power§! every month.\n"
+ string_province_status_button_description_2: "§YRebuild Province§!\nBy rebuilding the province we will be able to use it to our advantage.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done the  rebuilding the province due to the it's development.\nWhile Rebuilding the province it will cost §R-1 Diplomatic Power§! every month.\n"
+ string_province_status_button_description_3_8: "§YEradicate Province§!\nBy eradicating the province we will be able to use it to our advantage.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done eradicating the province due to the it's development.\nWhile Eradicating the province it will cost §R-1 Military Power§! every month.\n"
+
+ string_province_status_progress_description: "-Progression Description-"
+ string_province_status_progress_description_1: "Current §YInhabiting-Progression [ROOT.customui_province_status_progress_variable.GetValue]/100§!.\n\nCurrent §YMonthly Inhabiting-Progression§! is at §G+[ROOT.province_status_baseline.GetValue]§! due to the province development.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done inhabiting the province.\nWhile Inhabiting the province it will cost §R-1 Administrative Power§! every month.\n"
+ string_province_status_progress_description_2: "Current §YRebuilding-Progression [ROOT.customui_province_status_progress_variable.GetValue]/100§!.\n\nCurrent §YMonthly Rebuilding-Progression§! is at §G+[ROOT.province_status_baseline.GetValue]§! due to the province development.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done the  rebuilding the province.\nWhile Rebuilding the province it will cost §R-1 Diplomatic Power§! every month.\n"
+ string_province_status_progress_description_3_8: "Current §YEradication-Progression [ROOT.customui_province_status_progress_variable.GetValue]/100§!.\n\nCurrent §YMonthly Eradication-Progression§! is §G+[ROOT.province_status_baseline.GetValue]§! due to the province development.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done eradicating the province.\nWhile Eradicating the province it will cost §R-1 Military Power§! every month.\n"
+
+ string_province_status_stop_progress_description: "-Stop Remove Status Progression-"
+ string_province_status_stop_progress_description_1: "§RStop Inhabit Province§!\nWe can stop inhabiting the province and get our initial Administrative Power cost covered. However the Administrative Power effort put in every month will be lost."
+ string_province_status_stop_progress_description_2: "§RStop Rebuilding Province§!\nWe can stop rebuilding the province and get our initial Diplomatic Power cost covered. However the Administrative Power effort put in every month will be lost."
+ string_province_status_stop_progress_description_3_8: "§RStop Eradicating Province§!\nWe can stop eradicating the province and get our initial Military Power cost covered. However the Administrative Power effort put in every month will be lost."
+
+ customui_province_status_start_progress_trigger_0_tt: "Has X Military Power"
+ customui_province_status_start_progress_trigger_1_tt: "Has 15 Administrative Power"
+ customui_province_status_start_progress_trigger_2_tt: "Has 15 Diplomatic Power"
+ customui_province_status_start_progress_trigger_3_8_tt: "Has 15 Military Power"
+
+ customui_province_status_progress_variable: "Progress"
+ province_status_baseline: "Monthly Progression"
+ 

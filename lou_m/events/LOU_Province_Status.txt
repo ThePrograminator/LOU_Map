@@ -32,27 +32,7 @@ province_event = {
 	}
 
 	immediate = {
-		export_to_variable = {
-			variable_name = province_development
-			value = development
-		}
-
-		set_variable = {
-			which = province_status_baseFactor
-			value = 9.8039
-		}
-		set_variable = {
-			which = province_status_baseline
-			value = 5
-		}
-	 	divide_variable  = {            
-			which = province_development
-			which = province_status_baseFactor
-		}
-		subtract_variable = {            
-			which = province_status_baseline
-			which = province_development
-		}
+		customui_province_status_calculate_progression_effect = yes
 	}
 	
 	#Normal

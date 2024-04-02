@@ -48,7 +48,7 @@ custom_button = {
         custom_trigger_tooltip = {
             tooltip = customui_province_status_start_progress_button_trigger_tt
             owner = {
-                mil_power = 50
+                mil_power = 15
             }
         }
         
@@ -85,9 +85,6 @@ custom_button = {
         has_province_flag = customui_province_status_removing_status_flag
     }
     trigger = {
-        owner = {
-            tag = ROOT
-        }
         hidden_trigger = {
             check_variable = {
                 which = customui_province_status_variable
@@ -101,11 +98,11 @@ custom_button = {
     effect = { 
         hidden_effect = {
             owner = {
-                add_mil_power = 50
+                add_mil_power = 15
             }
         }
         tooltip = {
-            add_mil_power = 50
+            add_mil_power = 15
         }
         customui_province_status_stop_removal_effect = yes
     }

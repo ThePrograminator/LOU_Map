@@ -9,12 +9,10 @@ customui_province_status_start_removal_effect = {
 			id = LOU_province_status.1
 			days = 30
 		}
-		owner = {
-			add_mil_power = -50
-		}
+		customui_province_status_initial_cost_effect = yes
 	}
 	tooltip = {
-		add_mil_power = -50
+		customui_province_status_initial_cost_effect = yes
 	}
 	
 }
@@ -62,10 +60,47 @@ customui_province_status_update_progress_effect = {
 customui_province_status_assign_status_effect = {
 	hidden_effect = {
 		set_variable = { which = customui_province_status_variable value = $VALUE$ }
+		customui_province_status_calculate_progression_effect = yes
 	}
 	clr_province_flag = customui_province_status_assign_status_flag
 	customui_province_status_assign_status_effect_$VALUE$ = yes
 }
+
+#Province Scope
+customui_province_status_calculate_progression_effect = {
+	export_to_variable = {
+		variable_name = province_development
+		value = development
+	}
+	
+	set_variable = {
+		which = province_status_baseFactor
+		value = 9.8039
+	}
+	set_variable = {
+		which = province_status_baseline
+		value = 5
+	}
+	set_variable = {
+		which = province_status_estimated_time
+		value = 100
+	}
+
+	divide_variable  = {            
+		which = province_development
+		which = province_status_baseFactor
+	}
+	subtract_variable = {            
+		which = province_status_baseline
+		which = province_development
+	}
+	divide_variable  = {            
+		which = province_status_estimated_time
+		which = province_status_baseline
+	}
+}
+
+
 
 customui_province_status_monthly_cost_effect = {
 	#hidden_effect = {
@@ -159,6 +194,98 @@ customui_province_status_monthly_cost_effect = {
 			}
 		}
 	#}
+}
+
+customui_province_status_initial_cost_effect = {
+	if = { #1 - Wilderness
+		limit = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+		owner = {
+			add_adm_power = -15
+		}
+		
+	}
+	else_if = { #2 - Capital In Ruins
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+		owner = {
+			add_dip_power = -15
+		}
+	}
+	else_if = { #3 - Roaming Trolls
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 3
+			}
+		}
+		owner = {
+			add_mil_power = -15
+		}
+	}
+	else_if = { #4 - Roaming Wights
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 4
+			}
+		}
+		owner = {
+			add_mil_power = -15
+		}
+	}
+	else_if = { #5 - Roaming Huorn
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 5
+			}
+		}
+		owner = {
+			add_mil_power = -15
+		}
+	}
+	else_if = { #6 - Roaming Dragons
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 6
+			}
+		}
+		owner = {
+			add_mil_power = -15
+		}
+	}
+	else_if = { #7 - Roaming Free Peoples
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 7
+			}
+		}
+		owner = {
+			add_mil_power = -15
+		}
+	}
+	else_if = { #8 - Roaming Melkor Creatures
+		limit = { 
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 8
+			}
+		}
+		owner = {
+			add_mil_power = -15
+		}
+	}
 }
 
 #0 - No Status

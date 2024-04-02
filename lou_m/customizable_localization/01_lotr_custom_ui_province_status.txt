@@ -175,3 +175,182 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetCustomUIStatusButtonDescription
+
+	text = { 
+		localisation_key = string_province_status_button_description_3_8
+		trigger = {
+			check_variable = {
+				which = customui_province_status_variable
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = customui_province_status_variable
+					value = 9
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_button_description_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_button_description_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = string_province_status_button_description_0
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIStatusProgressDescription
+
+	text = { 
+		localisation_key = string_province_status_progress_description_3_8
+		trigger = {
+			check_variable = {
+				which = customui_province_status_variable
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = customui_province_status_variable
+					value = 9
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_progress_description_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_progress_description_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = string_province_status_progress_description_0
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIStatusStopProgressDescription
+
+	text = { 
+		localisation_key = string_province_status_stop_progress_description_3_8
+		trigger = {
+			check_variable = {
+				which = customui_province_status_variable
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = customui_province_status_variable
+					value = 9
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_stop_progress_description_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_stop_progress_description_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = string_province_status_stop_progress_description_0
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetCustomUIStatusStartProgressTT
+
+	text = { 
+		localisation_key = customui_province_status_start_progress_trigger_3_8_tt
+		trigger = {
+			check_variable = {
+				which = customui_province_status_variable
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = customui_province_status_variable
+					value = 9
+				}
+			}
+		}
+	}
+	text = { 
+		localisation_key = customui_province_status_start_progress_trigger_2_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = customui_province_status_start_progress_trigger_1_tt
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = customui_province_status_start_progress_trigger_0_tt
+		trigger = {
+			always = yes
+		}
+	}
+}
