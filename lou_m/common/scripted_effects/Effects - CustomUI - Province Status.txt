@@ -18,7 +18,10 @@ customui_province_status_start_removal_effect = {
 }
 
 customui_province_status_finish_removal_effect = {
-	customui_province_status_assign_status_effect = { VALUE = 0 }
+	customui_province_status_assign_status_effect = { 
+		scope = ROOT 
+		no_status = yes
+	}
 	hidden_effect = {
 		customui_province_status_stop_removal_effect = yes
 	}
@@ -58,12 +61,44 @@ customui_province_status_update_progress_effect = {
 }
 
 customui_province_status_assign_status_effect = {
+	$scope$ = {
+		[[no_status] 
+		customui_province_status_assign_variable_effect = { VALUE = 0 }
+		]
+		[[wilderness]
+			customui_province_status_assign_variable_effect = { VALUE = 1 }
+		]
+		[[ruins]
+			customui_province_status_assign_variable_effect = { VALUE = 2 }
+		]
+		[[trolls]
+			customui_province_status_assign_variable_effect = { VALUE = 3 }
+		]
+		[[wights]
+			customui_province_status_assign_variable_effect = { VALUE = 4 }
+		]
+		[[huorns]
+			customui_province_status_assign_variable_effect = { VALUE = 5 }
+		]
+		[[dragons]
+			customui_province_status_assign_variable_effect = { VALUE = 6 }
+		]
+		[[free_people]
+			customui_province_status_assign_variable_effect = { VALUE = 7 }
+		]
+		[[melkor]
+			customui_province_status_assign_variable_effect = { VALUE = 8 }
+		]
+	}
+}
+
+customui_province_status_assign_variable_effect = {
 	hidden_effect = {
 		set_variable = { which = customui_province_status_variable value = $VALUE$ }
 		customui_province_status_calculate_progression_effect = yes
 	}
 	clr_province_flag = customui_province_status_assign_status_flag
-	customui_province_status_assign_status_effect_$VALUE$ = yes
+	customui_province_status_assign_variable_effect_$VALUE$ = yes
 }
 
 #Province Scope
@@ -289,7 +324,7 @@ customui_province_status_initial_cost_effect = {
 }
 
 #0 - No Status
-customui_province_status_assign_status_effect_0 = {
+customui_province_status_assign_variable_effect_0 = {
 	custom_tooltip = customui_assign_estate_dwarven_hold_no_estate_effect_tt
 	clr_province_flag = customui_province_status_assign_status_flag
 	hidden_effect = {
@@ -305,8 +340,8 @@ customui_province_status_assign_status_effect_0 = {
 }
 
 #1 - Wilderness
-customui_province_status_assign_status_effect_1 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_1 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = wilderness_debuff
@@ -323,8 +358,8 @@ customui_province_status_assign_status_effect_1 = {
 	}
 }
 #2 - Capital In Ruins
-customui_province_status_assign_status_effect_2 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_2 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = ruins_debuff
@@ -341,8 +376,8 @@ customui_province_status_assign_status_effect_2 = {
 	}
 }
 #3 - Roaming Trolls
-customui_province_status_assign_status_effect_3 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_3 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = province_troll_debuff
@@ -359,8 +394,8 @@ customui_province_status_assign_status_effect_3 = {
 	}
 }
 #4 - Roaming Wights
-customui_province_status_assign_status_effect_4 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_4 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = province_wight_debuff
@@ -377,8 +412,8 @@ customui_province_status_assign_status_effect_4 = {
 	}
 }
 #5 - Roaming Huorn
-customui_province_status_assign_status_effect_5 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_5 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = province_huorn_debuff
@@ -395,8 +430,8 @@ customui_province_status_assign_status_effect_5 = {
 	}
 }
 #6 - Roaming Dragons
-customui_province_status_assign_status_effect_6 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_6 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = province_dragon_debuff
@@ -413,8 +448,8 @@ customui_province_status_assign_status_effect_6 = {
 	}
 }
 #7 - Roaming Free Peoples
-customui_province_status_assign_status_effect_7 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_7 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = province_free_people_debuff
@@ -431,8 +466,8 @@ customui_province_status_assign_status_effect_7 = {
 	}
 }
 #8 - Roaming Melkor Creatures
-customui_province_status_assign_status_effect_7 = {
-	custom_tooltip = customui_province_status_assign_status_effect_tt
+customui_province_status_assign_variable_effect_8 = {
+	custom_tooltip = customui_province_status_assign_variable_effect_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = province_evil_debuff

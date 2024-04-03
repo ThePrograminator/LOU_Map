@@ -354,3 +354,87 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GetCustomUIStatusModifierDescription
+
+	text = { 
+		localisation_key = string_province_status_modifier_description_8
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 8
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_7
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 7
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_6
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_5
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 5
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_4
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 4
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_3
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 3
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_2
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 2
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_province_status_modifier_description_1
+		trigger = {
+			is_variable_equal = {
+				which = customui_province_status_variable
+				value = 1
+			}
+		}
+	}
+
+	text = { 
+		localisation_key = string_province_status_text_description_0
+		trigger = {
+			always = yes
+		}
+	}
+}

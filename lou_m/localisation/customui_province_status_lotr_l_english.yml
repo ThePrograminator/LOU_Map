@@ -23,10 +23,10 @@
  #Trigger Tooltips
  
  #Effect Tooltips
- customui_province_status_assign_status_effect_tt: ""
+ customui_province_status_assign_variable_effect_tt: ""
 
  #Tooltips
- customui_province_status_icon_tt: "[Root.GetCustomUIStatusTextDescription]"
+ customui_province_status_icon_tt: "[Root.GetCustomUIStatusModifierDescription]"
  string_province_status_text_description_0: "No Status - Description"
  string_province_status_text_description_1: "Wilderness - Description"
  string_province_status_text_description_2: "Capital In Ruins - Description"
@@ -53,9 +53,9 @@
  string_province_status_progress_description_3_8: "Current §YEradication-Progression [ROOT.customui_province_status_progress_variable.GetValue]/100§!.\n\nCurrent §YMonthly Eradication-Progression§! is §G+[ROOT.province_status_baseline.GetValue]§! due to the province development.\nIt will take approximately §Y[ROOT.province_status_estimated_time.GetValue]§! months for us to be done eradicating the province.\nWhile Eradicating the province it will cost §R-1 Military Power§! every month.\n"
 
  string_province_status_stop_progress_description: "-Stop Remove Status Progression-"
- string_province_status_stop_progress_description_1: "§RStop Inhabit Province§!\nWe can stop inhabiting the province and get our initial Administrative Power cost covered. However the Administrative Power effort put in every month will be lost."
- string_province_status_stop_progress_description_2: "§RStop Rebuilding Province§!\nWe can stop rebuilding the province and get our initial Diplomatic Power cost covered. However the Administrative Power effort put in every month will be lost."
- string_province_status_stop_progress_description_3_8: "§RStop Eradicating Province§!\nWe can stop eradicating the province and get our initial Military Power cost covered. However the Administrative Power effort put in every month will be lost."
+ string_province_status_stop_progress_description_1: "§RStop Inhabit Province§!\nWe can stop inhabiting the province and get our initial Administrative Power cost covered. However the Administrative Power effort we have put in every month will be lost."
+ string_province_status_stop_progress_description_2: "§RStop Rebuilding Province§!\nWe can stop rebuilding the province and get our initial Diplomatic Power cost covered. However the Administrative Power effort we have put in every month will be lost."
+ string_province_status_stop_progress_description_3_8: "§RStop Eradicating Province§!\nWe can stop eradicating the province and get our initial Military Power cost covered. However the Administrative Power effort we have put in every month will be lost."
 
  customui_province_status_start_progress_trigger_0_tt: "Has X Military Power"
  customui_province_status_start_progress_trigger_1_tt: "Has 15 Administrative Power"
@@ -65,3 +65,12 @@
  customui_province_status_progress_variable: "Progress"
  province_status_baseline: "Monthly Progression"
  
+ string_province_status_modifier_description_0: "No Status - Modifier Description"
+ string_province_status_modifier_description_1: "§YWilderness§!\n\nNo one lives in this province.\nTo change this the province must be §Yinhabited§!."
+ string_province_status_modifier_description_2: "§YCapital In Ruins§!\n\nYour province capital is in ruins. This has resulted in a depleation of the population.\nInorder for the province to be useful again you should §Yrebuild§! it."
+ string_province_status_modifier_description_3: "Trolls are strong and vicious, but generally dim-witted and stupid at best. Some were described as being able to speak, while others appear to be as irrational as animals. They seem to be fond of meat, and will eat almost any animal or being they come across. They also have very disgusting manners.\nThese beings are hostile and are roaming the province attacking our efforts to control the lands.\nTo control the province the owner must §Yeradicate§! the province or change it's §Yreligion§! and §Yculture§!."
+ string_province_status_modifier_description_4: "§YWights§!\n\nThe Barrow-wights were shape-shifting beings of darkness, similar in circumstance to Wraiths, who dwelt in dark places of Eriador such as the Barrow-downs.  They were put there by sorcerers of Angmar who corrupted the souls of the inhabitants of the Barrow-downs. The sorcerers were sent by the Witch-king of Angmar who wished to keep the Dúnedain away from there.\nThese beings are hostile and are roaming the province attacking our efforts to control the lands.\nTo control the province the owner must §Yeradicate§! the province or change it's §Yreligion§! and §Yculture§!."
+ string_province_status_modifier_description_5: "§YHuorns§!\n\nHuorns were the dreadful, living race of ancient, slow-moving trees, whom the Ents cared for and tended to in the Second and Third Ages. The Huorns mostly stood as dark trees in the deepest forests, gnarled and unmoving, yet watchful. When aroused in wrath they moved swiftly as if wrapped in shadows, falling on foes with deadly and merciless strength.\nThese beings are hostile and are roaming the province attacking our efforts to control the lands.\nTo control the province the owner must §Yeradicate§! the province or change it's §Yreligion§! and §Yculture§!."
+ string_province_status_modifier_description_6: "§YDragons§!\n\nDragons were ancient, intelligent, powerful creatures, as feared as they were admired in Middle-earth. Their exact origin is debated, though it was clearly stated that they were created by Morgoth in some sense."
+ string_province_status_modifier_description_7: "§YFree People of Middle-Earth§!\n\nThe Free Peoples were those who resisted the dominion of dark forces like Sauron. These diverse races stood united against the encroaching darkness, each contributing their unique strengths to the struggle.\nThese people of Middle-Earth and are roaming the province attacking our efforts to control the lands.\nTo control the province the owner must §Yeradicate§! the province or change it's §Yreligion§! and §Yculture§!."
+ string_province_status_modifier_description_8: "§YCreatures of Melkor§!\n\nThe Creatures of Melkor comprised of many races and beings ranging from Orcs, Trolls, Wights and Dragons.\nThese beings are hostile and are roaming the province attacking our efforts to control the lands.\nTo control the province the owner must §Yeradicate§! the province or change it's §Yreligion§! and §Yculture§!."
