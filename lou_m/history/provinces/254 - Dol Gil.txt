@@ -25,10 +25,7 @@ religion = religion_servants_of_morgoth
 
 trade_goods = copper
 
-add_province_modifier = {
-	name = province_troll_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT trolls = yes }
 
 2799.1.1 = {
 	add_core = Z62

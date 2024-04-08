@@ -20,8 +20,8 @@ add_core = X01
 owner = X01
 controller = X01
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_sagath
+religion = religion_easterling_men_of_darkness
 
 trade_goods = stone
 
@@ -32,10 +32,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-add_province_modifier = {
-	name = wilderness_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2758.9.15 = {
 	add_core = X99

@@ -8,7 +8,7 @@ province_event = {
 	picture = COMET_SIGHTED_eventPicture
 
 	trigger = {
-        NOT = { has_province_modifier = province_dragon_debuff }
+        NOT = { customui_province_status_has_status_trigger = { dragons = yes } }
         # Province
         OR = {
             culture = culture_dragons
@@ -30,10 +30,7 @@ province_event = {
 	option = {
 		name = "LOU_dragons.1.a"
 
-		add_province_modifier = {
-			name = "province_dragon_debuff"
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = ROOT dragons = yes }
 	}
 }
 
@@ -45,7 +42,8 @@ province_event = {
 	picture = COMET_SIGHTED_eventPicture
 
 	trigger = {
-        has_province_modifier = province_dragon_debuff
+		always = no
+        customui_province_status_has_status_trigger = { dragons = yes }
         AND = {
             NOT = { culture = culture_dragons }
             NOT = { religion = religion_fire_of_morgoth }
@@ -62,7 +60,7 @@ province_event = {
 		add_manpower = -3
 		add_treasury = 250
 
-		remove_province_modifier = province_dragon_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }
 
@@ -76,7 +74,7 @@ province_event = {
     hidden = yes
     
 	trigger = {
-        has_province_modifier = province_dragon_debuff
+        customui_province_status_has_status_trigger = { dragons = yes }
         owner = {
             primary_culture = culture_dragons
             religion = religion_fire_of_morgoth
@@ -90,6 +88,6 @@ province_event = {
 	option = {
         name = "LOU_dragons.3.a"
         
-		remove_province_modifier = province_dragon_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }

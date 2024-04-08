@@ -8,7 +8,7 @@ province_event = {
 	picture = COMET_SIGHTED_eventPicture
 
 	trigger = {
-        NOT = { has_province_modifier = province_wight_debuff }
+        NOT = { customui_province_status_has_status_trigger = { wights = yes } }
         # Province
         OR = {
             culture = culture_wight
@@ -30,10 +30,7 @@ province_event = {
 	option = {
 		name = "LOU_wights.1.a"
 
-		add_province_modifier = {
-			name = "province_wight_debuff"
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = ROOT wights = yes }
 	}
 }
 
@@ -45,7 +42,8 @@ province_event = {
 	picture = COMET_SIGHTED_eventPicture
 
 	trigger = {
-        has_province_modifier = province_wight_debuff
+		always = no
+        customui_province_status_has_status_trigger = { wights = yes }
         AND = {
             NOT = { culture = culture_wight }
             NOT = { religion = religion_umaiar }
@@ -59,7 +57,7 @@ province_event = {
 	option = {
 		name = "LOU_wights.2.a"
 
-		remove_province_modifier = province_wight_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }
 
@@ -73,7 +71,7 @@ province_event = {
     hidden = yes
     
 	trigger = {
-        has_province_modifier = province_wight_debuff
+        customui_province_status_has_status_trigger = { wights = yes }
         owner = {
             primary_culture = culture_wight
             religion = religion_umaiar
@@ -87,6 +85,6 @@ province_event = {
 	option = {
         name = "LOU_wights.3.a"
         
-		remove_province_modifier = province_wight_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }

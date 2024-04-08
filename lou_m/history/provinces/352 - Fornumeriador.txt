@@ -14,12 +14,14 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_rivermen_of_lhun
+religion = religion_northern_followers_of_illuvatar
 
 trade_goods = fur
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

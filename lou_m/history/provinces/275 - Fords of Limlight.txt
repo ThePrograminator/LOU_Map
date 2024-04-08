@@ -21,17 +21,14 @@ owner = X16
 controller = X16
 
 add_core = Q01
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_wold
+religion = religion_followers_of_felarof
 
 trade_goods = iron
 
 hre = no
 
-add_province_modifier = {
-	name = wilderness_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rohan Superregion Discovery
 discovered_by = lotr_human

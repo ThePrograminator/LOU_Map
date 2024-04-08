@@ -25,10 +25,7 @@ religion = religion_followers_of_mearas
 
 trade_goods = fish
 
-add_province_modifier = {
-	name = wilderness_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan

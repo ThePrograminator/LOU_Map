@@ -20,8 +20,8 @@ add_core = X01
 owner = X01
 controller = X01
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_dunedain_of_ithilien
+religion = religion_southern_followers_of_illuvatar
 
 trade_goods = fish
 
@@ -37,11 +37,6 @@ settlement_building=yes
 fort_pallisade_building=yes
 
 customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
-
-add_province_modifier = {
-	name = wilderness_debuff
-	duration = -1
-}
 
 #Gondor Superregion Discovery
 discovered_by = lotr_human

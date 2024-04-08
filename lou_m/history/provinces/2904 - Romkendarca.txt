@@ -27,10 +27,7 @@ trade_goods = tropical_wood
 
 hre = no
 
-add_province_modifier = {
-	name = wilderness_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Palisor Superregion Discovery
 discovered_by = lotr_human_palisor

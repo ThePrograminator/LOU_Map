@@ -20,8 +20,8 @@ add_core = Z04
 owner = Z04
 controller = Z04
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_grimburz
+religion = religion_followers_of_mearas
 
 trade_goods = grain
 
@@ -32,6 +32,8 @@ hre = no
 	owner = V19
 	controller = V19
 }
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human

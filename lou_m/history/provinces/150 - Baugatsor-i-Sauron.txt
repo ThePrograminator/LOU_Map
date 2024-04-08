@@ -12,16 +12,18 @@
 base_tax = 1
 base_production = 1
 base_manpower = 1
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_orkish
+religion = religion_servants_of_sauron
 trade_goods = great_beasts
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+
 2942.1.1 = {
 	is_city = yes
 	add_core = V17
 	owner = V17
 	controller = V17
-	culture = culture_orkish
-	religion = religion_servants_of_sauron
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 }
 #Mordor Superregion Discovery
 discovered_by = lotr_human

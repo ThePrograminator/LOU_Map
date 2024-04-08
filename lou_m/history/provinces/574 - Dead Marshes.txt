@@ -27,10 +27,7 @@ trade_goods = herbs
 
 hre = no
 
-add_province_modifier = {
-	name = province_wight_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wights = yes }
 
 2942.1.1 = {
 	add_core = V17

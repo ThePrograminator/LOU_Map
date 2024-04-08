@@ -27,10 +27,7 @@ trade_goods = tropical_wood
 
 hre = no
 
-add_province_modifier = {
-	name = province_huorn_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT huorns = yes }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

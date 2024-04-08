@@ -12,17 +12,19 @@
 base_tax = 1
 base_production = 1
 base_manpower = 1
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_longbeard
+religion = religion_northern_dwarves
 trade_goods = silver
 center_of_trade = 1
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+
 2802.3.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 	is_city = yes
-	culture = culture_longbeard
-	religion = religion_northern_dwarves	
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	set_capital = Y22
 	add_base_tax = 6
 	add_base_production = 12

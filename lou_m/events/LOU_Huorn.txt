@@ -8,7 +8,7 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        NOT = { has_province_modifier = province_huorn_debuff }
+        NOT = { customui_province_status_has_status_trigger = { huorns = yes } }
         # Province
         OR = {
             culture = culture_huorn
@@ -33,10 +33,7 @@ province_event = {
 	option = {
 		name = "LOU_huorn.1.a"
 
-		add_province_modifier = {
-			name = "province_huorn_debuff"
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = ROOT huorns = yes }
 	}
 }
 
@@ -48,7 +45,8 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        has_province_modifier = province_huorn_debuff
+		always = no
+        customui_province_status_has_status_trigger = { huorns = yes }
         AND = {
             NOT = { culture = culture_huorn }
             NOT = { religion = religion_shepherds_of_the_forest }
@@ -62,7 +60,7 @@ province_event = {
 	option = {
 		name = "LOU_huorn.2.a"
 
-		remove_province_modifier = province_huorn_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }
 
@@ -76,7 +74,7 @@ province_event = {
     hidden = yes
     
 	trigger = {
-        has_province_modifier = province_huorn_debuff
+        customui_province_status_has_status_trigger = { huorns = yes }
         owner = {
             OR = {
                 primary_culture = culture_ents
@@ -93,6 +91,6 @@ province_event = {
 	option = {
         name = "LOU_huorn.3.a"
         
-		remove_province_modifier = province_huorn_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }

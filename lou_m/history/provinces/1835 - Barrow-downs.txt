@@ -18,10 +18,7 @@ controller = V34
 culture = culture_wight
 religion = religion_umaiar
 trade_goods = plunder
-add_province_modifier = {
-	name = province_wight_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wights = yes }
 #Eriador Superregion Discovery
 add_core = V34
 discovered_by = lotr_human

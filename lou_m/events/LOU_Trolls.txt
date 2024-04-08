@@ -8,7 +8,7 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        NOT = { has_province_modifier = province_troll_debuff }
+        NOT = { customui_province_status_has_status_trigger = { trolls = yes } }
         # Province
         culture = culture_troll
         # Owner
@@ -36,10 +36,7 @@ province_event = {
 	option = {
 		name = "LOU_trolls.1.a"
 
-		add_province_modifier = {
-			name = "province_troll_debuff"
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = ROOT trolls = yes }
 	}
 }
 
@@ -51,7 +48,8 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        has_province_modifier = province_troll_debuff
+        always = no
+        customui_province_status_has_status_trigger = { trolls = yes }
         AND = {
             NOT = { culture = culture_troll }
             NOT = { religion = religion_servants_of_morgoth }
@@ -65,7 +63,7 @@ province_event = {
 	option = {
 		name = "LOU_trolls.2.a"
 
-		remove_province_modifier = province_troll_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }
 
@@ -79,7 +77,7 @@ province_event = {
     hidden = yes
     
 	trigger = {
-        has_province_modifier = province_troll_debuff
+        customui_province_status_has_status_trigger = { trolls = yes }
         owner = {
             OR = {
                 primary_culture = culture_troll
@@ -100,6 +98,6 @@ province_event = {
 	option = {
         name = "LOU_trolls.3.a"
         
-		remove_province_modifier = province_troll_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }

@@ -20,17 +20,14 @@ add_core = X01
 owner = X01
 controller = X01
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_dunedain_of_ithilien
+religion = religion_southern_followers_of_illuvatar
 
 trade_goods = herbs
 
 hre = no
 
-add_province_modifier = {
-	name = wilderness_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2942.1.1 = {
 	add_core = V17

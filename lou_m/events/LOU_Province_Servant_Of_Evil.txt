@@ -8,7 +8,7 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        NOT = { has_province_modifier = province_free_people_debuff }
+        NOT = { customui_province_status_has_status_trigger = { free_people = yes } }
         # Province
 		is_free_peoples_opinion_province = yes
         # Owner
@@ -27,10 +27,7 @@ province_event = {
 	option = {
 		name = "LOU_Province_Servant_Of_Evil.1.a"
 
-		add_province_modifier = {
-			name = "province_free_people_debuff"
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = ROOT free_people = yes }
 	}
 }
 
@@ -42,7 +39,8 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        has_province_modifier = province_free_people_debuff
+		always = no
+        customui_province_status_has_status_trigger = { free_people = yes }
         owner = {
             OR = {
 				culture_group = culture_group_orcs
@@ -61,7 +59,7 @@ province_event = {
 	option = {
 		name = "LOU_Province_Servant_Of_Evil.2.a"
 
-		remove_province_modifier = province_free_people_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }
 
@@ -75,7 +73,7 @@ province_event = {
     hidden = yes
     
 	trigger = {
-        has_province_modifier = province_free_people_debuff
+        customui_province_status_has_status_trigger = { free_people = yes }
         owner = {
            	NOT = { culture_group = culture_group_orcs}
 			NOT = { culture_group = culture_group_melkor}
@@ -89,6 +87,6 @@ province_event = {
 	option = {
         name = "LOU_Province_Servant_Of_Evil.3.a"
         
-		remove_province_modifier = province_free_people_debuff
+		customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	}
 }

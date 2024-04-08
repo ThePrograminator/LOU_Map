@@ -27,10 +27,7 @@ trade_goods = mushrooms
 
 hre = no
 
-add_province_modifier = {
-	name = province_wight_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT wights = yes }
 
 #Gondor Superregion Discovery
 discovered_by = lotr_human
