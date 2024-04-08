@@ -446,7 +446,7 @@ country_event = {
 			add_base_manpower = 3
 			add_base_production = 3
 			add_base_tax = 3
-			remove_province_modifier = ruins_debuff
+			customui_province_status_assign_status_effect = { scope = PREV no_status = yes }
 			remove_building = resettlement_action
 			add_building = capital_3_orc_building
 			add_building = fort_large_orc_stronghold_orc_building

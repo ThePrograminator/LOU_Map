@@ -30,10 +30,7 @@ trade_goods = copper
 	controller = ---
 	culture = culture_wilderness
 	religion = religion_wilderness
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 
 2941.11.23 = {
@@ -45,7 +42,7 @@ trade_goods = copper
 }
 
 2943.1.1 = {
-	remove_province_modifier = ruins_debuff
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 }
 
 2943.1.2 = {

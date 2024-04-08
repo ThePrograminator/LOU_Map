@@ -27,10 +27,7 @@ trade_goods = mushrooms
 
 hre = no
 
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 
 2941.12.1 = {
 	owner = V20

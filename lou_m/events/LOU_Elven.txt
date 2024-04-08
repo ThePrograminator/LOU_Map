@@ -71,7 +71,7 @@ province_event = {
 						base_tax = 2
 					}
 				}
-				change_culture = culture_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 				change_religion = religion_wilderness
 			}
 		

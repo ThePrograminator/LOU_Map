@@ -9,10 +9,7 @@ province_event = {
 
 	trigger = {
         NOT = { has_province_modifier = wilderness_debuff }
-        OR = {
-            culture = culture_wilderness
-            religion = religion_wilderness
-        }
+        customui_province_status_has_status_trigger = { wilderness = yes }
 	}
 	
     mean_time_to_happen = {
@@ -22,10 +19,7 @@ province_event = {
 	option = {
 		name = "LOU_wilderness.1.a"
 
-		add_province_modifier = {
-			name = "wilderness_debuff"
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 	}
 }
 
@@ -37,11 +31,11 @@ province_event = {
 	picture = COLONIZATION_eventPicture
 
 	trigger = {
+		always = no
         has_province_modifier = wilderness_debuff
-        AND = {
-            NOT = { culture = culture_wilderness }
-            NOT = { religion = religion_wilderness }
-        }
+		NOT = { 
+			customui_province_status_has_status_trigger = { wilderness = yes }
+		}
 	}
 	
     mean_time_to_happen = {

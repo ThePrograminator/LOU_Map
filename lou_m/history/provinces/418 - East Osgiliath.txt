@@ -36,10 +36,7 @@ settlement_building=yes
 
 fort_pallisade_building=yes
 
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 
 add_province_modifier = {
 	name = wilderness_debuff

@@ -1203,10 +1203,7 @@ angmar_slot_4 = {
 			add_mil_power = 100
 
 			642 = {
-				add_province_modifier = {
-					name = ruins_debuff
-					duration = -1
-				}
+				customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 			}
 
 			capital_scope = {
@@ -1488,10 +1485,7 @@ angmar_slot_5 = {
 					name = ruined_imladris
 					duration = -1  
 				}
-				add_province_modifier = {
-					name = ruins_debuff
-					duration = -1  
-				}
+				customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 			}
 			610 = {
 				add_base_tax = 2

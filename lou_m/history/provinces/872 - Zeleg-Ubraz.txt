@@ -20,10 +20,7 @@ religion = religion_fire_of_morgoth
 trade_goods = silver
 add_core = Y30
 2750.1.1 = {
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human

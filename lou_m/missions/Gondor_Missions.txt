@@ -1461,7 +1461,7 @@ gondor_missions_5_2 = {
 		required_missions = { gondor_restore_minas_ithil gondor_house_of_hurin }
 		provinces_to_highlight = {
 			region = ithilien_region
-			culture = culture_wilderness
+			customui_province_status_has_status_trigger = { wilderness = yes}
 		}
 		trigger = { 
 			development_in_provinces = {
@@ -1471,7 +1471,7 @@ gondor_missions_5_2 = {
 			NOT = {
 				any_owned_province = {
 					region = ithilien_region
-					culture = culture_wilderness
+					customui_province_status_has_status_trigger = { wilderness = yes }
 				}
 			}
 		}

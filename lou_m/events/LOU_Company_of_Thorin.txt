@@ -948,10 +948,7 @@ country_event = {
 			change_culture = culture_longbeard
 			change_religion = religion_northern_dwarves
 			change_trade_goods = gold
-			add_province_modifier = {
-				name = ruins_debuff
-				duration = -1
-			}
+			customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 			add_base_tax = 4
 			add_base_production = 8
 			add_base_manpower = 4
@@ -991,10 +988,7 @@ country_event = {
 			add_core = Y94
 			remove_core = V51
 			change_trade_goods = silk
-			add_province_modifier = {
-				name = ruins_debuff
-				duration = -1
-			}
+			customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 		}
 		
 		if = {
@@ -1004,10 +998,7 @@ country_event = {
 				}
 			}
 			528 = {
-				add_province_modifier = {
-					name = ruins_debuff
-					duration = -1
-				}
+				customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 			}
 		}
 		

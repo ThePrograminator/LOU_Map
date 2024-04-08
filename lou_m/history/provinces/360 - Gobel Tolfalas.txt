@@ -36,10 +36,7 @@ center_of_trade = 1
 2758.9.15 = {
 	controller = X27
 	add_devastation = 75
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 
 2759.8.20 = {

@@ -18,10 +18,7 @@ controller = Y57
 culture = culture_goblin
 religion = religion_servants_of_morgoth
 trade_goods = cloth
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 #Eriador Superregion Discovery
 add_core = Y57
 discovered_by = lotr_human

@@ -22,10 +22,7 @@ hre = no
 add_core = Q19
 add_core = Z06
 2750.1.1 = {
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan

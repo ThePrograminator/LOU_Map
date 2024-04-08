@@ -403,18 +403,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 		ithilien_area = {
@@ -429,18 +424,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 		forithilien_area = {
@@ -455,18 +445,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 		emyn_arnen_area = {
@@ -481,18 +466,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 		minas_ithil_area = {
@@ -507,18 +487,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 		nindalf_area = {
@@ -533,18 +508,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 		athrad_poros_area = {
@@ -559,18 +529,13 @@ give_minas_ithil_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 	}
@@ -603,18 +568,13 @@ give_black_gate_to_gondor = {
 			remove_core = V18
 			if = {
 				limit = {
-					culture = culture_orkish
-				}
-				change_culture = culture_wilderness
-			}
-			if = {
-				limit = {
 					OR = {
+						culture = culture_orkish
 						religion = religion_servants_of_sauron
 						religion = religion_servants_of_morgoth
 					}
 				}
-				change_religion = religion_wilderness
+				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 			}
 		}
 	}
@@ -728,7 +688,7 @@ set_mordor_region_empty = {
 		}
 		
 		cede_province = ---
-		change_culture = culture_wilderness
+		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 		change_religion = religion_wilderness
 		remove_core = V17
 	}
@@ -1012,10 +972,7 @@ spawn_mordor_province_setup_effect = {
 	639 = {
 		change_trade_goods = great_beasts
 		
-		add_province_modifier = {
-			name = ruins_debuff 
-			duration = 1095
-		}
+		customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 	}
 		
 	3028 = {
@@ -1258,10 +1215,7 @@ desolation_of_smaug_lost_effect = {
 		cede_province = ---
 		change_culture = culture_dragons
 		change_religion = religion_fire_of_morgoth
-		add_province_modifier = {
-			name = ruins_debuff
-			duration = -1
-		}
+		customui_province_status_assign_status_effect = { scope = PREV ruins = yes }
 		add_base_tax = -10
 		add_base_production = -10
 		add_base_manpower = -10
@@ -1270,7 +1224,7 @@ desolation_of_smaug_lost_effect = {
 
 	1903 = {
 		cede_province = ---
-		change_culture = culture_wilderness
+		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 		change_religion = religion_wilderness
 		set_base_tax = 1
 		set_base_production = 1
@@ -1279,7 +1233,7 @@ desolation_of_smaug_lost_effect = {
 
 	1951 = {
 		cede_province = ---
-		change_culture = culture_wilderness
+		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 		change_religion = religion_wilderness
 		set_base_tax = 1
 		set_base_production = 1
@@ -1288,7 +1242,7 @@ desolation_of_smaug_lost_effect = {
 
 	527 = {
 		cede_province = ---
-		change_culture = culture_wilderness
+		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 		change_religion = religion_wilderness
 		add_province_modifier = {
 			name = ruins_debuff

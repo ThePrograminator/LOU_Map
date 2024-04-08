@@ -1,0 +1,41 @@
+country_decisions = {
+    debug_highlight_wilderness = {
+        potential = {
+            ai = no
+            has_global_flag = enable_event_logging
+        }
+        provinces_to_highlight = {
+            customui_province_status_has_status_trigger = { wilderness = yes }
+        }
+        allow = {
+            ai = no
+        }
+        effect = {
+            #add_treasury = 1
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        ai_importance = 0
+    }
+
+    debug_highlight_ruins = {
+        potential = {
+            ai = no
+            has_global_flag = enable_event_logging
+        }
+        provinces_to_highlight = {
+            customui_province_status_has_status_trigger = { ruins = yes }
+        }
+        allow = {
+            ai = no
+        }
+        effect = {
+            #add_treasury = 1
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        ai_importance = 0
+    }
+}

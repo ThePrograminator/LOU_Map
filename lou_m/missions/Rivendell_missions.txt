@@ -125,30 +125,30 @@ slot_02 = {
 				area = foreregion_area
 				area = daergil_area
 			}
-			culture =  culture_wilderness
+			customui_province_status_has_status_trigger = { wilderness = yes }
 		}
 		trigger = {
 			foreregion_area = {
 				type = all
 				NOT  = {
-					culture =  culture_wilderness
+					customui_province_status_has_status_trigger = { wilderness = yes }
 				}
 				custom_trigger_tooltip = {
 					tooltip = RESETTLEMENT_TT
 					NOT = {
-						has_province_modifier = ruins_debuff
+						customui_province_status_has_status_trigger = { ruins = yes }
 					}
 				}
 			}
 			daergil_area = {
 				type = all
 				NOT  = {
-					culture =  culture_wilderness
+					customui_province_status_has_status_trigger = { wilderness = yes }
 				}
 				custom_trigger_tooltip = {
 					tooltip = RESETTLEMENT_TT
 					NOT = {
-						has_province_modifier = ruins_debuff
+						customui_province_status_has_status_trigger = { ruins = yes }
 					}
 				}
 			}

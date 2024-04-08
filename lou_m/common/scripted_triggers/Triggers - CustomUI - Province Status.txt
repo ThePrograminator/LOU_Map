@@ -10,3 +10,99 @@ customui_province_status_progresbar_between = {
 		}
 	}
 }
+
+customui_province_status_has_status_trigger = {
+	#$scope$ = {
+		[[no_status] 
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_no_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 0
+				}
+			}
+		]
+		[[wilderness]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_wilderness_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 1
+				}
+			}
+		]
+		[[ruins]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_ruins_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 2
+				}
+			}
+		]
+		[[trolls]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_trolls_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 3
+				}
+			}
+		]
+		[[wights]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_wights_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 4
+				}
+			}
+		]
+		[[huorns]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_huorns_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 5
+				}
+			}
+		]
+		[[dragons]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_dragons_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 6
+				}
+			}
+		]
+		[[free_people]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_free_people_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 7
+				}
+			}
+		]
+		[[melkor]
+			custom_trigger_tooltip = {
+				tooltip = customui_province_status_has_melkor_status_tt
+				is_variable_equal = {
+					which = customui_province_status_variable
+					value = 8
+				}
+			}
+		]
+	#}
+}
+
+customui_province_status_has_any_status_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = customui_province_status_has_any_status_tt
+		check_variable = {
+			which = customui_province_status_variable
+			value = 1
+		}
+	}
+}

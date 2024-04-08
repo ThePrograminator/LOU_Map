@@ -42,10 +42,7 @@ fort_pallisade_building=yes
 outpost_building=yes
 
 2750.1.1 = {
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 
 #Rohan Superregion Discovery

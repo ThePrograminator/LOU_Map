@@ -18,10 +18,7 @@ controller = X01
 culture = culture_sakalai
 religion = religion_eastern_followers_of_illuvatar
 trade_goods = fish
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 2758.9.15 = {
 	add_core = V14
 	owner = V14

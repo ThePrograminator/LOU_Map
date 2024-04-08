@@ -19,10 +19,7 @@ culture = culture_orkish
 religion = religion_servants_of_sauron
 trade_goods = orc_draught
 center_of_trade = 1
-add_province_modifier = {
-	name = ruins_debuff
-	duration = -1
-}
+customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 add_core = Q20
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan

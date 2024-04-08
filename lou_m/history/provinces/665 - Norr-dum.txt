@@ -23,10 +23,7 @@ center_of_trade = 1
 add_core = Y30
 add_core = Y22
 2750.1.1 = {
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human

@@ -23,10 +23,7 @@ native_size = 40
 native_ferocity = 8
 native_hostileness = 8
 2750.1.1 = {
-	add_province_modifier = {
-		name = ruins_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT ruins = yes }
 }
 #city_2_building=yes
 #trade_outpost_building=yes

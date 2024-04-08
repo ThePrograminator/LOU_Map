@@ -44,11 +44,8 @@ province_owner_is_melkor_race = { #Province Scope
 province_is_buildable = { #Province Scope
 	NOT = {
 		OR = {
-			culture = culture_wilderness
-			religion = religion_wilderness 
-			has_province_modifier = wilderness_debuff
-			has_province_modifier = constructing_capital_debuff
-			has_province_modifier = ruins_debuff
+			customui_province_status_has_status_trigger = { wilderness = yes}
+			customui_province_status_has_status_trigger = { ruins = yes}
 		}
 	}
 }
