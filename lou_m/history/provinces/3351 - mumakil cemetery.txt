@@ -20,12 +20,14 @@ add_core = X49
 owner = X49
 controller = X49
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_half_troll
+religion = religion_servants_of_morgoth
 
 trade_goods = ivory
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Far Harad Superregion Discovery
 discovered_by = lotr_human_balizar

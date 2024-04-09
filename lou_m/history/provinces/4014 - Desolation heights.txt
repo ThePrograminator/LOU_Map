@@ -20,20 +20,14 @@ add_core = W93
 owner = W93
 controller = W93
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_aegaw
+religion = religion_followers_of_the_great_hunter
 
 trade_goods = iron
 
 hre = no
 
-fortress_1_building=yes
-
-work_camp_building=yes
-
-fort_pallisade_building=yes
-
-army_camp_building=yes
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor

@@ -900,34 +900,3 @@ religion_group_worshippers_of_melkor = {
 
 	crusade_name = HOLY_WAR
 }
-
-religion_group_wilderness = {
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-	
-	religion_wilderness = {
-		icon = 1
-		color = { 0.15 0.15 0.15 }
-		
-        #papacy = {
-		#	papal_tag = REB
-		#	election_cost = 100
-		#	seat_of_papacy = 1
-        #}
-        
-		country = {
-			stability_cost_modifier = -0.1
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { WILDERNESS_HERETIC }
-		
-		fervor = yes
-	}
-
-	crusade_name = HOLY_WAR
-}

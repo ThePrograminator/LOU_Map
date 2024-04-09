@@ -20,12 +20,14 @@ add_core = Y72
 owner = Y72
 controller = Y72
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_mithrim
+religion = religion_firstborn_of_illuvatar
 
 trade_goods = fish
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

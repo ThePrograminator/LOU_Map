@@ -31,8 +31,9 @@ hre = no
 	add_core = Y65
 	owner = Y65
 	controller = Y65
-	culture = culture_wilderness
-	religion = religion_wilderness
+	culture = culture_noldor
+	religion = religion_firstborn_of_illuvatar
+	customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 }
 
 2802.3.1 = {
@@ -41,6 +42,7 @@ hre = no
 	controller = Y22
 	culture = culture_longbeard
 	religion = religion_northern_dwarves
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 }
 
 2941.11.23 = {

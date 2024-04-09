@@ -39,11 +39,11 @@ country_event = {
 					NOT = {
 						culture_group = culture_group_orcs
 						culture_group = culture_group_melkor
-						culture_group = culture_group_wilderness
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 					NOT = {
 						is_racial_group_melkor = yes
-						is_racial_group_wilderness = yes
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 				}
 				set_local_autonomy = 50
@@ -71,11 +71,11 @@ country_event = {
 					NOT = {
 						culture_group = culture_group_orcs
 						culture_group = culture_group_melkor
-						culture_group = culture_group_wilderness
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 					NOT = {
 						is_racial_group_melkor = yes
-						is_racial_group_wilderness = yes
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 				}
 			
@@ -468,11 +468,11 @@ country_event = {
 					NOT = {
 						culture_group = culture_group_orcs
 						culture_group = culture_group_melkor
-						culture_group = culture_group_wilderness
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 					NOT = {
 						is_racial_group_melkor = yes
-						is_racial_group_wilderness = yes
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 				}
 			}
@@ -503,11 +503,11 @@ country_event = {
 					NOT = {
 						culture_group = culture_group_orcs
 						culture_group = culture_group_melkor
-						culture_group = culture_group_wilderness
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 					NOT = {
 						is_racial_group_melkor = yes
-						is_racial_group_wilderness = yes
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 				}
 			}
@@ -779,11 +779,11 @@ country_event = {
 				NOT = {
 					culture_group = culture_group_orcs
 					culture_group = culture_group_melkor
-					culture_group = culture_group_wilderness
+					customui_province_status_assign_status_effect = { scope = PREV wilderness = yes }
 				}
 				NOT = {
 					is_racial_group_melkor = yes
-					is_racial_group_wilderness = yes
+					customui_province_status_assign_status_effect = { scope = PREV wilderness = yes }
 				}
 				owned_by = ROOT
 			}
@@ -792,7 +792,7 @@ country_event = {
 				NOT = {
 					culture_group = culture_group_orcs
 					culture_group = culture_group_melkor
-					culture_group = culture_group_wilderness
+					customui_province_status_assign_status_effect = { scope = PREV wilderness = yes }
 				}
 				NOT = {
 					is_racial_group_melkor = yes
@@ -805,7 +805,7 @@ country_event = {
 				NOT = {
 					culture_group = culture_group_orcs
 					culture_group = culture_group_melkor
-					culture_group = culture_group_wilderness
+					customui_province_status_assign_status_effect = { scope = PREV wilderness = yes }
 				}
 				NOT = {
 					is_racial_group_melkor = yes
@@ -835,7 +835,7 @@ country_event = {
 				NOT = {
 					culture_group = culture_group_orcs
 					culture_group = culture_group_melkor
-					culture_group = culture_group_wilderness
+					customui_province_status_has_status_trigger = { wilderness = yes }
 				}
 				NOT = {
 					is_racial_group_melkor = yes

@@ -20,12 +20,14 @@ add_core = Z77
 owner = Z77
 controller = Z77
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_argaw
+religion = religion_far_eastern_men_of_darkness
 
 trade_goods = stone
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2886.12.15 = {
 	add_core = Y64

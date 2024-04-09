@@ -32,8 +32,7 @@ hre = no
 	add_core = Y80
 	owner = Y80
 	controller = Y80
-	culture = culture_wilderness
-	religion = religion_wilderness
+	customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 }
 
 #Eriador Superregion Discovery

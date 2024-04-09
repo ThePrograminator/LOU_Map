@@ -31,8 +31,9 @@ hre = no
 	add_core = Z41
 	owner = Z41
 	controller = Z41
-	culture = culture_wilderness
-	religion = religion_wilderness
+	culture = culture_orkish
+	religion = religion_servants_of_morgoth
+	customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 }
 
 2770.1.1 = {
@@ -40,7 +41,8 @@ hre = no
 	owner = Y63
 	controller = Y63
 	culture = culture_orkish
-	religion = religion_servants_of_sauron
+	religion = religion_servants_of_morgoth
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 }
 
 2799.12.1 = {
@@ -54,7 +56,7 @@ hre = no
 	owner = Y63
 	controller = Y63
 	culture = culture_orkish
-	religion = religion_servants_of_sauron
+	religion = religion_servants_of_morgoth
 }
 
 #Forodwaith Superregion Discovery

@@ -16,9 +16,12 @@ base_manpower = 1
 #add_core = Z43
 #owner = Z43
 #controller = Z43
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_wight
+religion = religion_umaiar
 trade_goods = cloth
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

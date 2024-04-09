@@ -12,10 +12,13 @@
 base_tax = 1
 base_production = 1
 base_manpower = 1
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_firebeard
+religion = religion_northern_dwarves
 trade_goods = stone
 add_core = Y05
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

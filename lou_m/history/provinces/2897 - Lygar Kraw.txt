@@ -20,12 +20,14 @@ add_core = W07
 owner = W07
 controller = W07
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_oplan_din_kaarn
+religion = religion_followers_of_the_blue_wizards
 
 trade_goods = livestock
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Palisor Superregion Discovery
 discovered_by = lotr_human_palisor

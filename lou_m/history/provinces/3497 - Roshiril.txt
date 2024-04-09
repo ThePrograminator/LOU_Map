@@ -20,12 +20,14 @@ add_core = Y83
 owner = Y83
 controller = Y83
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_firebeard
+religion = religion_northern_dwarves
 
 trade_goods = mushrooms
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Eriador Superregion Discovery
 discovered_by = lotr_human

@@ -98,7 +98,6 @@ is_good_race_province = { #Province Scope
 is_neutral_race_province = { #Province Scope
 	owner = {
 		OR = {
-			is_racial_group_wilderness = yes
 			is_ent = yes
 			is_erus_children = yes
 			technology_group = lotr_giant
@@ -132,7 +131,6 @@ is_good_race = { #Country Scope
 
 is_neutral_race = { #Country Scope
 	OR = {
-		is_racial_group_wilderness = yes
 		is_ent = yes
 		is_erus_children = yes
 		technology_group = lotr_giant

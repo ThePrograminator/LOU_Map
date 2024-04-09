@@ -14,12 +14,14 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_orkish
+religion = religion_servants_of_sauron
 
 trade_goods = grain
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2989.1.1 = {
 	add_core = Z27
@@ -27,6 +29,7 @@ hre = no
 	controller = Z27
 	culture = culture_forodrim
 	religion = religion_northern_followers_of_illuvatar
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 }
 
 #Eriador Superregion Discovery

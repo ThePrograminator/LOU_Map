@@ -20,12 +20,14 @@ add_core = W17
 owner = W17
 controller = W17
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_rale_cuvian
+religion = religion_followers_of_the_blue_wizards
 
 trade_goods = fish
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Palisor Superregion Discovery
 discovered_by = lotr_human_palisor

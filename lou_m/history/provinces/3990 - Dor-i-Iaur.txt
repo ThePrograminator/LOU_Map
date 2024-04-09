@@ -20,12 +20,14 @@ add_core = V59
 owner = V59
 controller = V59
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_hisildi
+religion = religion_firstborn_of_illuvatar
 
 trade_goods = livestock
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor

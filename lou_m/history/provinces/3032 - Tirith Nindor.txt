@@ -44,12 +44,7 @@ hre = no
 	add_core = V17
 	owner = V17
 	controller = V17
-	culture = culture_wilderness
-	religion = religion_wilderness
-	add_province_modifier = {
-		name = wilderness_debuff
-		duration = -1
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 }
 
 #Gondor Superregion Discovery

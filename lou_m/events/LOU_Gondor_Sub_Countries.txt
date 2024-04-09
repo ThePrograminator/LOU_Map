@@ -35,7 +35,7 @@ province_event = {
 				OR = {
 					culture_group = culture_group_numenorean
 					culture_group = culture_group_daen_of_gondor
-					culture_group = culture_group_wilderness
+					customui_province_status_has_status_trigger = { wilderness = yes }
 				}
 				NOT = {
 					is_permanent_claim = X06
@@ -47,8 +47,7 @@ province_event = {
 					NOT = {
 						culture_group = culture_group_numenorean
 						culture_group = culture_group_daen_of_gondor
-						culture_group = culture_group_wilderness
-						
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 					NOT = {
 						owner = {
@@ -73,7 +72,7 @@ province_event = {
 			OR = {
 				culture_group = culture_group_numenorean
 				culture_group = culture_group_daen_of_gondor
-				culture_group = culture_group_wilderness
+				customui_province_status_has_status_trigger = { wilderness = yes }
 			}
 			NOT = {
 				is_core = X06
@@ -91,8 +90,7 @@ province_event = {
 					NOT = {
 						culture_group = culture_group_numenorean
 						culture_group = culture_group_daen_of_gondor
-						culture_group = culture_group_wilderness
-						
+						customui_province_status_has_status_trigger = { wilderness = yes }
 					}
 					NOT = {
 						owner = {

@@ -15,10 +15,13 @@ base_production = 1
 base_manpower = 1
 owner = X15
 controller = X15
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_druedain
+religion = religion_spirits_of_the_forest
 trade_goods = grain
 add_core = X15
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor

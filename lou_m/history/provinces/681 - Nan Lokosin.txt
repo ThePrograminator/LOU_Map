@@ -20,12 +20,14 @@ add_core = Y63
 owner = Y63
 controller = Y63
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_orkish
+religion = religion_servants_of_morgoth
 
 trade_goods = fur
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Forodwaith Superregion Discovery
 discovered_by = lotr_human

@@ -20,12 +20,14 @@ add_core = X36
 owner = X36
 controller = X36
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_ayten
+religion = religion_far_harad_men_of_darkness
 
 trade_goods = livestock
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Sirayn Superregion Discovery
 discovered_by = lotr_human_lochan_daer

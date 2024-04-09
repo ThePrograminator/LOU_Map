@@ -20,12 +20,14 @@ add_core = Y24
 owner = Y24
 controller = Y24
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_umli
+religion = religion_umli
 
 trade_goods = fur
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2911.12.15 = {
 	add_core = Y36

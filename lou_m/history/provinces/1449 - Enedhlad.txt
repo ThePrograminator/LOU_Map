@@ -20,12 +20,14 @@ add_core = V16
 owner = V16
 controller = V16
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_clansmen
+religion = religion_daen_men_of_darkness
 
 trade_goods = wool
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2759.1.1 = {
 	add_core = Z46

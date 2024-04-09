@@ -20,12 +20,14 @@ add_core = Y64
 owner = Y64
 controller = Y64
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_half_troll
+religion = religion_servants_of_morgoth
 
 trade_goods = stone
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 discovered_by = lotr_human_palisor
 discovered_by = lotr_human_womarin_realms

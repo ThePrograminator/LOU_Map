@@ -20,12 +20,14 @@ add_core = Z41
 owner = Z41
 controller = Z41
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_lossoth
+religion = religion_spirits_of_the_animals
 
 trade_goods = tropical_wood
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2758.1.1 = {
 	add_core = Z41
@@ -39,6 +41,7 @@ hre = no
 	controller = Y52
 	culture = culture_orkish
 	religion = religion_servants_of_sauron
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 }
 
 2799.12.1 = {

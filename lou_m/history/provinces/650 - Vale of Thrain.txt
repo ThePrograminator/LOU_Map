@@ -31,8 +31,9 @@ hre = no
 	add_core = Z12
 	owner = Z12
 	controller = Z12
-	culture = culture_wilderness
-	religion = religion_wilderness
+	culture = culture_arthedain
+	religion = religion_northern_followers_of_illuvatar
+	customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 }
 
 2802.3.1 = {
@@ -41,6 +42,7 @@ hre = no
 	controller = Y22
 	culture = culture_longbeard
 	religion = religion_northern_dwarves
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	settlement_1_dwarf_building=yes
 	material_exchance_dwarf_building=yes
 }

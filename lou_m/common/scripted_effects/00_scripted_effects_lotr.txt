@@ -689,7 +689,6 @@ set_mordor_region_empty = {
 		
 		cede_province = ---
 		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
-		change_religion = religion_wilderness
 		remove_core = V17
 	}
 }
@@ -1225,7 +1224,6 @@ desolation_of_smaug_lost_effect = {
 	1903 = {
 		cede_province = ---
 		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
-		change_religion = religion_wilderness
 		set_base_tax = 1
 		set_base_production = 1
 		set_base_manpower = 1
@@ -1234,7 +1232,6 @@ desolation_of_smaug_lost_effect = {
 	1951 = {
 		cede_province = ---
 		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
-		change_religion = religion_wilderness
 		set_base_tax = 1
 		set_base_production = 1
 		set_base_manpower = 1
@@ -1243,7 +1240,6 @@ desolation_of_smaug_lost_effect = {
 	527 = {
 		cede_province = ---
 		customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
-		change_religion = religion_wilderness
 		add_province_modifier = {
 			name = ruins_debuff
 			duration = -1

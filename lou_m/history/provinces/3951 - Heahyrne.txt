@@ -14,12 +14,14 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_west_march
+religion = religion_followers_of_felarof
 
 trade_goods = iron
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rohan Superregion Discovery
 discovered_by = lotr_human

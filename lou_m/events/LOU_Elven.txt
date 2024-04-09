@@ -59,7 +59,7 @@ province_event = {
 				owned_by = ROOT
 				
 				NOT = {
-					has_province_modifier = wilderness_debuff
+					customui_province_status_has_status_trigger = { wilderness = yes}
 				}
 			}
 			
@@ -72,7 +72,6 @@ province_event = {
 					}
 				}
 				customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
-				change_religion = religion_wilderness
 			}
 		
 			if = {

@@ -20,12 +20,14 @@ add_core = Y47
 owner = Y47
 controller = Y47
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_ice_orkish
+religion = religion_servants_of_morgoth
 
 trade_goods = fish
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Forodwaith Superregion Discovery
 discovered_by = lotr_human

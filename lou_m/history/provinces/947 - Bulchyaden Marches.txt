@@ -21,12 +21,14 @@ owner = X74
 controller = X74
 
 add_core = W39
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_bulchy
+religion = religion_followers_of_the_pourer
 
 trade_goods = herbs
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Chy Superregion Discovery
 discovered_by = lotr_human_palisor

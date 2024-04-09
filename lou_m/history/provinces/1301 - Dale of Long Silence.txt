@@ -20,12 +20,14 @@ add_core = V42
 owner = V42
 controller = V42
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_kargarim
+religion = religion_followers_of_the_great_rider
 
 trade_goods = cotton
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Palisor Superregion Discovery
 discovered_by = lotr_human_palisor

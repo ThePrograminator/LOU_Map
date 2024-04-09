@@ -20,12 +20,14 @@ add_core = X41
 owner = X41
 controller = X41
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_anarkani
+religion = religion_southern_followers_of_illuvatar
 
 trade_goods = livestock
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Balizar Superregion Discovery
 discovered_by = lotr_human_palisor

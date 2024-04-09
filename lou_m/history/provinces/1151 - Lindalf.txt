@@ -20,12 +20,14 @@ add_core = Z39
 owner = Z39
 controller = Z39
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_lossoth
+religion = religion_spirits_of_the_animals
 
 trade_goods = tropical_wood
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 2911.12.15 = {
 	add_core = Y47

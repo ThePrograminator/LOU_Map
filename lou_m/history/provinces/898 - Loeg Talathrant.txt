@@ -20,12 +20,14 @@ add_core = X98
 owner = X98
 controller = X98
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_lothrags
+religion = religion_easterling_men_of_darkness
 
 trade_goods = herbs
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rhun Superregion Discovery
 discovered_by = lotr_human

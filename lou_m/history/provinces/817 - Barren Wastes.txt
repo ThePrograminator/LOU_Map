@@ -19,12 +19,14 @@ owner = Y33
 controller = Y33
 
 add_core = W65
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_orkish
+religion = religion_servants_of_morgoth
 
 trade_goods = wool
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rhovanion Superregion Discovery
 discovered_by = lotr_human

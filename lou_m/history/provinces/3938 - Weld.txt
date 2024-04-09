@@ -20,12 +20,14 @@ add_core = X97
 owner = X97
 controller = X97
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_sagath
+religion = religion_easterling_men_of_darkness
 
 trade_goods = fur
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rhun Superregion Discovery
 discovered_by = lotr_human

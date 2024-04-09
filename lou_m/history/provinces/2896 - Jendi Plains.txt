@@ -20,12 +20,14 @@ add_core = W04
 owner = W04
 controller = W04
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_jendi
+religion = religion_followers_of_the_blue_wizards
 
 trade_goods = cotton
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Palisor Superregion Discovery
 discovered_by = lotr_human_palisor

@@ -20,12 +20,14 @@ add_core = X56
 owner = X56
 controller = X56
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_bellakaze
+religion = religion_far_harad_men_of_darkness
 
 trade_goods = mushrooms
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Haradwaith Superregion Discovery
 discovered_by = lotr_human

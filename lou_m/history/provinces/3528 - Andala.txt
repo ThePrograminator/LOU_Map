@@ -18,12 +18,14 @@ add_core = V97
 owner = V97
 controller = V97
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_wom
+religion = religion_far_eastern_men_of_darkness
 
 trade_goods = stone
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Womarin Realms Superregion Discovery
 discovered_by = lotr_human_palisor

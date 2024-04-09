@@ -20,8 +20,8 @@ add_core = X98
 owner = X98
 controller = X98
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_lothrags
+religion = religion_easterling_men_of_darkness
 
 trade_goods = fish
 
@@ -31,6 +31,8 @@ add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 discovered_by = lotr_human
 discovered_by = lotr_human_palisor

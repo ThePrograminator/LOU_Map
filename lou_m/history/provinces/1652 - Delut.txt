@@ -20,12 +20,14 @@ add_core = V46
 owner = V46
 controller = V46
 
-culture = culture_wilderness
-religion = religion_wilderness
+culture = culture_relmetherin
+religion = religion_followers_of_the_great_rider
 
 trade_goods = herbs
 
 hre = no
+
+customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
 
 #Rhun Superregion Discovery
 discovered_by = lotr_human
