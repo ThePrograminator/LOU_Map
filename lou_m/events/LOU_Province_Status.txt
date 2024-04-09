@@ -69,3 +69,62 @@ province_event = {
 		}
 	}
 }
+
+province_event = {
+	id = LOU_province_status.2
+	title = LOU_province_status.2.t
+	desc = LOU_province_status.2.d
+	picture = COURT_easterling_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+	
+	#Normal
+	option = { 
+		name = LOU_province_status.2.a
+		customui_province_status_finish_removal_effect = yes
+	}
+}
+
+province_event = {
+	id = LOU_province_status.3
+	title = LOU_province_status.3.t
+	desc = LOU_province_status.3.d
+	picture = COURT_easterling_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+	
+	#Normal
+	option = { 
+		name = LOU_province_status.3.a
+		change_culture = owner
+		change_religion = owner
+	}
+}
+
+province_event = {
+	id = LOU_province_status.4
+	title = LOU_province_status.4.t
+	desc = LOU_province_status.4.d
+	picture = COURT_easterling_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+	
+	#Normal
+	option = { 
+		name = LOU_province_status.4.a
+		change_culture = culture_dunedain_of_arnor
+		change_religion = religion_northern_followers_of_illuvatar
+	}
+}

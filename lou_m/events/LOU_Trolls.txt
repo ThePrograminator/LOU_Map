@@ -48,7 +48,6 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-        always = no
         customui_province_status_has_status_trigger = { trolls = yes }
         AND = {
             NOT = { culture = culture_troll }

@@ -14,6 +14,11 @@ province_event = {
             culture_group =  culture_group_orcs
             culture_group =  culture_group_melkor
         }
+		NOT = {
+			culture = culture_wight
+			culture = culture_troll
+			culture = culture_dragons
+		}
         # Owner
         owner = {
             is_free_peoples_opinion = yes
@@ -39,7 +44,6 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-		always = no
 		customui_province_status_has_status_trigger = { melkor = yes }
         owner = {
             is_free_peoples_opinion = yes

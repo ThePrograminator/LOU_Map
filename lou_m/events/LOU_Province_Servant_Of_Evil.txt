@@ -39,7 +39,6 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-		always = no
         customui_province_status_has_status_trigger = { free_people = yes }
         owner = {
             OR = {

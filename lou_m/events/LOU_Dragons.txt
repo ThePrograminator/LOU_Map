@@ -42,7 +42,6 @@ province_event = {
 	picture = COMET_SIGHTED_eventPicture
 
 	trigger = {
-		always = no
         customui_province_status_has_status_trigger = { dragons = yes }
         AND = {
             NOT = { culture = culture_dragons }

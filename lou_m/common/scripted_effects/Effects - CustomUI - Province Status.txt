@@ -18,10 +18,7 @@ customui_province_status_start_removal_effect = {
 }
 
 customui_province_status_finish_removal_effect = {
-	customui_province_status_assign_status_effect = { 
-		scope = ROOT 
-		no_status = yes
-	}
+	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
 	hidden_effect = {
 		customui_province_status_stop_removal_effect = yes
 	}
@@ -94,6 +91,16 @@ customui_province_status_assign_status_effect = {
 
 customui_province_status_assign_variable_effect = {
 	hidden_effect = {
+		if = { #Pacify
+			limit = { 
+				check_variable = {
+					which = customui_province_status_variable
+					value = 3
+				}
+			}
+			change_culture = owner
+			change_religion = owner
+		}
 		set_variable = { which = customui_province_status_variable value = $VALUE$ }
 		customui_province_status_calculate_progression_effect = yes
 	}
@@ -325,7 +332,7 @@ customui_province_status_initial_cost_effect = {
 
 #0 - No Status
 customui_province_status_assign_variable_effect_0 = {
-	custom_tooltip = customui_assign_estate_dwarven_hold_no_estate_effect_tt
+	custom_tooltip = customui_province_status_assign_variable_effect_0_tt
 	clr_province_flag = customui_province_status_assign_status_flag
 	hidden_effect = {
 		remove_province_modifier = wilderness_debuff
@@ -341,7 +348,7 @@ customui_province_status_assign_variable_effect_0 = {
 
 #1 - Wilderness
 customui_province_status_assign_variable_effect_1 = {
-	custom_tooltip = customui_province_status_assign_variable_effect_tt
+	custom_tooltip = customui_province_status_assign_variable_effect_1_tt
 	set_province_flag = customui_province_status_assign_status_flag
 	add_province_modifier = {
 		name = wilderness_debuff
