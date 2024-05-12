@@ -13,7 +13,7 @@ increase_force_limit_from_colony = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -39,7 +39,7 @@ enlarge_the_gold_fleet = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -64,7 +64,7 @@ increase_religious_control = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 		hidden_effect = {
 			set_country_flag = has_increased_religious_control
@@ -96,7 +96,7 @@ increase_integration_in_the_realm = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -122,7 +122,7 @@ increase_trade_power_transfer_from_colony = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -148,7 +148,7 @@ encourage_cash_crops = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 		custom_tooltip = encourage_cash_crops_tt
 		set_country_flag = encourage_cash_crops_flag
@@ -172,7 +172,7 @@ increase_naval_force_limit_from_colony = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -198,7 +198,7 @@ increase_the_gold_tax = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -228,7 +228,7 @@ allow_autonomous_trade = {
 
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 	
@@ -253,7 +253,7 @@ allow_autonomous_taxing = {
 
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 	
@@ -278,7 +278,7 @@ allow_autonomous_militias = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
@@ -303,12 +303,141 @@ allow_autonomous_navy = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 25
 		}
 	}
 
 	modifier_subject = {
 		global_sailors_modifier = 0.1
 		liberty_desire = -5
+	}
+}
+
+increase_voc_eastindiamen_construction = {
+	can_upgrade_trigger = {
+		always = no
+	}
+	
+	cost = 100
+	
+	effect = {
+		colonial_parent = {
+			adm_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_increased_voc_eastindiamen_construction
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_increased_voc_eastindiamen_construction
+		}
+	}
+
+	modifier_overlord = {
+		allowed_voc_indiamen_fraction = 0.05
+	}
+
+	modifier_subject = {
+		allowed_voc_indiamen_fraction = -0.05
+		liberty_desire = 10
+	}
+}
+
+increase_asian_trade_routes_influence = {
+	can_upgrade_trigger = {
+		always = no
+	}
+	
+	cost = 100
+	
+	effect = {
+		colonial_parent = {
+			dip_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_increased_asian_trade_routes_influence
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_increased_asian_trade_routes_influence
+		}
+	}
+
+	modifier_overlord = {
+		merchants = 1
+		placed_merchant_power_modifier = 0.1 
+	}
+
+	modifier_subject = {
+		merchants = -1
+		liberty_desire = 10
+	}
+}
+
+increase_trade_company_control = {
+	can_upgrade_trigger = {
+		always = no
+	}
+	
+	cost = 100
+	
+	effect = {
+		colonial_parent = {
+			dip_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_increased_trade_company_control
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_increased_trade_company_control
+		}
+	}
+
+	modifier_overlord = {
+		trade_efficiency = 0.05
+	}
+
+	modifier_subject = {
+		trade_efficiency = -0.05
+		liberty_desire = 10
+	}
+}
+
+allow_religious_conquests = {
+	can_upgrade_trigger = {
+		always = no
+	}
+	
+	cost = 100
+	
+	effect = {
+		colonial_parent = {
+			mil_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_allowed_religious_conquests
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_allowed_religious_conquests
+		}
+	}
+
+	modifier_overlord = {
+		missionaries = -1
+	}
+
+	modifier_subject = {
+		cb_on_religious_enemies = yes
+		global_missionary_strength = 0.02
 	}
 }

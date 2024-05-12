@@ -961,9 +961,18 @@ horde_unity = {
 # Multiplied by current Devotion - 50
 devotion = {
 	papal_influence = 2
+	monthly_fervor_increase = 2
+	church_power_modifier = 0.5
+	harmonization_speed = 0.5
+	monthly_piety_accelerator = 0.01
+	yearly_authority = 0.5
+	yearly_patriarch_authority = 0.01
+	yearly_doom_reduction = 0.5
+	yearly_karma_decay = 0.1
 	prestige = 2
 	global_tax_modifier = 0.50
 	commoners_loyalty_modifier = 0.05
+	reform_progress_growth = 0.5
 }
 
 # Multiplied by current meritocracy - 50
@@ -1018,7 +1027,6 @@ luck = {
 	#economy
 	mercenary_cost = -0.2
 	embracement_cost = -0.2
-	advisor_cost = -0.2
 	interest = -1
 	missionary_maintenance_cost = -0.1
 
@@ -1037,6 +1045,7 @@ luck = {
 	legitimacy = 1
 	ae_impact = -0.25
 	governing_capacity_modifier = 0.25
+
 }
 
 over_extension = {
@@ -1113,6 +1122,7 @@ religious_unity = {
 inverse_religious_unity = {
 	stability_cost_modifier = 1.0		#more expensive to recover stability
 	global_unrest = 3
+	church_power_modifier = -1
 	devotion = -1
 	yearly_corruption = 0.1
 }
@@ -1195,6 +1205,17 @@ BYZ_army_trad = {
 
 BYZ_discipline = {
 	discipline = 0.05
+}
+
+soyurghal_base_overlord_modifiers = {
+	land_forcelimit_modifier = 0.05
+	#soyurghals_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+soyurghal_base_modifiers = { #slightly weaker pronoia but without penalties
+	global_manpower = 5
+	global_manpower_modifier = 0.25
+	global_regiment_cost = -0.25
 }
 
 tributary_state_behind_overlord_tech_adm = {
@@ -1830,6 +1851,7 @@ outward_focus_modifier = {
 	diplomatic_reputation = 1
 	global_colonial_growth = 20
 	range = 0.25
+	merchants_loyalty_modifier = 0.05
 	harmonization_speed = 0.25
 }
 
@@ -2243,15 +2265,16 @@ reverse_average_overseas_subject_liberty_desire = { #only counts subjects with c
 }
 
 average_subject_liberty_desire = { #100% LD => 100% modifier
-#monthly_ottoman_decadence = 0.125
+	#monthly_ottoman_decadence = 0.125
 }
 
 reverse_average_subject_liberty_desire = { #100% LD => 0% modifier
-
+	#MAY_conditional_loyalty = 0.1
 }
 
 average_global_autonomy = { #100% autonomy => 100% modifier
-#monthly_ottoman_decadence = 0.25
+	#monthly_ottoman_decadence = 0.25
+	#monthly_divine_authority = -0.5
 }
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier
@@ -2307,4 +2330,9 @@ sailors_percentage = {
 
 reverse_sailors_percentage = {
 
+}
+
+may_dynastic_influence_modifier = {
+	legitimacy = 0.25 
+	land_forcelimit = 3
 }

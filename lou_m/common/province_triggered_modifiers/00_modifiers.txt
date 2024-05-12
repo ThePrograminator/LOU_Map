@@ -1,31 +1,1619 @@
 # Province Triggered modifiers are here.
 # These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+
+###########################################
+# Just random test modifier
+###########################################
+test_modifier = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	local_build_cost = 0.05	
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+
+catholic_rome = {
+	potential = {
+		always = no
+	}
+
+	trigger = {	
+		always = no
+	}
+
+	papal_influence = -10
+	diplomatic_reputation = -1
+	#icon = 9
+}
+
+non_catholic_rome = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+
+	prestige = 0.5
+	missionaries = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
 religious_center = {
-	potential = { }
-    
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
 	trigger = {
 		always = no
 	}
 
 	local_missionary_strength = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }
 
-customui_dwarven_hold_estate_special_erebor_triggered = {
-	potential = { 
-		province_id = 287
-		is_variable_equal = {
-			which = customui_assigned_estate_dwarven_hold
-			value = 6
+# Perpetual Diet
+perpetual_diet = {
+	potential = {
+		always = no
+	}
+	
+	trigger = {
+		always = no
+	}
+
+	prestige = 0.5
+	local_development_cost = -0.05
+	is_imperial_modifier = yes
+
+	on_activation = {
+		emperor = {
+			remove_country_modifier = diet_occupied
 		}
 	}
-    
+	
+	on_deactivation = {
+		emperor = {
+			add_country_modifier = { name = diet_occupied duration = -1 }
+		}
+	}
+}
+
+#Coptic control of Alexandria
+
+coptic_alexandria = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
 	trigger = {
-		province_id = 287
-		is_variable_equal = {
-			which = customui_assigned_estate_dwarven_hold
-			value = 6
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+#Therevada Control of sacred tooth
+
+theravada_kotte = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+#Vajrayana Control of Lhasa
+
+vajrayana_lhasa = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+#Mahayana control of Louyang
+
+mahayana_louyang = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+#Buddhist control of Bodh Gaya
+
+buddhist_bodh_gaya = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	global_heretic_missionary_strength = 0.02
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# Hindu control of Varanasi
+
+hindu_varanasi = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# Inti control of Pachamac
+
+inti_lima = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+#Nahuatl control of cholulula
+
+nahuatl_cholula = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# Mayan control of Chichen Itza
+
+mayan_chichen_itza = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# Sikh control of Amritsar
+
+sikh_amritsar = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# Christian control of Mecca
+
+christian_mecca = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# Jerusalem held by any Abrahamic faith
+
+jerusalem_held = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	global_heretic_missionary_strength = 0.02
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+alandalus_returns = {
+	potential = {
+		always = no
+	}
+	
+	#viewer = {
+	#
+	#}
+	
+	trigger = {
+		always = no
+	}
+	
+	prestige = 0.5
+	tolerance_heretic = 1
+	
+	on_activation = {}
+	
+	on_deactivation = {}
+	
+}
+
+changbai_mountain = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	tolerance_own = 1
+	prestige = 0.5
+}
+
+mongol_kurultai = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	horde_unity = 1
+	legitimacy = 1
+}
+
+# Vatican Library
+adm_vatican_library = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	adm_tech_cost_modifier = -0.05
+	global_unrest = -2
+}
+
+dip_vatican_library = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	dip_tech_cost_modifier = -0.05
+	diplomatic_reputation = 1
+}
+
+mil_vatican_library = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	mil_tech_cost_modifier = -0.05
+	army_tradition_from_battle = 0.5
+}
+
+pap_sistine_chapel = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	devotion = 0.1
+}
+
+pap_sistinechapel_botticelli = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	devotion = 0.1
+	global_unrest = -1
+}
+
+pap_sistinechapel_ghirlandaio = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	devotion = 0.1
+	prestige = 0.5
+}
+
+pap_sistinechapel_perugino = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	devotion = 0.1
+	improve_relation_modifier = 0.1
+}
+
+pap_sistinechapel_michelangelo = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	devotion = 0.1
+	idea_cost = -0.05
+}
+
+pap_sistinechapel_decorated = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	devotion = 0.1
+	global_missionary_strength = 0.01
+}
+
+krantor_crane = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	province_trade_power_value = 5 
+	trade_efficiency = 0.1
+	
+}
+
+#Province modifiers, which have become monuments
+
+#Mountain of Riches - Potosí Silver Mines
+cerro_rico_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	trade_goods_size = 3.0
+}
+
+# Restored Great Mosque of Djenné for people without Leviathan
+great_mosque_djenne_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	missionaries = 1
+	global_heathen_missionary_strength = 0.01
+	monthly_piety = 0.003
+}
+
+promised_land_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	land_morale = 0.1
+	naval_morale = 0.1
+	tolerance_own = 2
+}
+
+kongo_cardinal_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_tax_modifier = 0.25
+	tolerance_own = 1
+	papal_influence = 1
+}
+
+ajuuran_place_of_istunka = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_development_cost = -0.05
+	global_unrest = -1
+}
+
+city_of_401_deities = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	missionaries = 1
+	tolerance_own = 1
+}
+
+temple_of_confucius_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	yearly_harmony = 0.25
+	religious_unity = 0.25
+	prestige = 0.25
+}
+
+temple_of_uppsala_modifier = {
+	potential = {always = no}
+	trigger = {
+		always = no
+	}
+	missionaries = 1
+	tolerance_own = 1
+	global_missionary_strength = 0.02
+}
+
+sound_toll_protection_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	province_trade_power_value = 3
+	hostile_fleet_attrition = 3
+	allowed_num_of_buildings = 2
+	mercantilism_cost = -0.05
+}
+
+imperial_prussian_capital = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	governing_capacity_modifier = 0.1
+}
+
+holy_horde_capital = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	manpower_in_true_faith_provinces = 0.25
+}
+
+livonian_diet_capital = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	advisor_pool = 1
+	local_tax_modifier = 0.1
+	local_production_efficiency = 0.1
+	local_manpower_modifier = 0.1
+	local_development_cost = -0.05
+}
+
+livonian_headquarter = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	diplomatic_upkeep = 1
+	yearly_army_professionalism = 0.005
+	local_manpower_modifier = 0.25
+	local_development_cost = -0.05
+}
+
+teutonic_headquarter = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	diplomatic_upkeep = 1
+	yearly_army_professionalism = 0.01
+	local_manpower_modifier = 0.25
+	local_development_cost = -0.05
+}
+
+seat_of_the_rigan_archbishopric = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	devotion = 1
+	local_tax_modifier = 0.25
+	local_production_efficiency = 0.25
+	local_manpower_modifier = 0.25
+	local_sailors_modifier = 0.25
+	local_development_cost = -0.15
+}
+
+cathedral_of_riga = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_development_cost = -0.25
+	tax_income = 60
+	local_governing_cost = -0.25
+}
+
+market_of_riga = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	trade_goods_size = 3
+	province_trade_power_value = 5
+	naval_forcelimit = 20
+	local_sailors = 5000
+}
+
+fortification_of_riga = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_manpower = 6
+	land_forcelimit = 20
+	local_fort_maintenance_modifier = -0.9
+	local_defensiveness = 0.5
+	nobles_loyalty_modifier = 0.1
+}
+
+stora_kopparberget_modifier = { #Great Copper Mountain
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	trade_goods_size = 5.0
+}
+
+heddal_stave_church_modifier_leviathan_catholic = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_tax_modifier = 0.75
+	local_religious_conversion_resistance = 1
+	papal_influence = 0.25
+}
+
+heddal_stave_church_modifier_non_leviathan_catholic = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_unrest = -1
+	stability_cost_modifier = -0.05
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+
+	local_tax_modifier = 0.75
+	local_religious_conversion_resistance = 1
+	papal_influence = 0.25
+}
+
+heddal_stave_church_modifier_leviathan_reformation = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	church_power_modifier = 0.1
+	monthly_fervor_increase = 0.25
+	local_tax_modifier = 0.25
+}
+
+heddal_stave_church_modifier_non_leviathan_reformation = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	local_unrest = -1
+	stability_cost_modifier = -0.05
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+
+	church_power_modifier = 0.1
+	monthly_fervor_increase = 0.25
+	local_tax_modifier = 0.25
+}
+
+mng_hanlin_academy_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	governing_capacity_modifier = 0.05
+	yearly_corruption = -0.03
+}
+
+mng_islamic_mosque_of_beijing_modifier = { 
+	potential = { always = no }
+	trigger = {
+		always = no
+	}
+	tolerance_of_heathens_capacity = 1 
+	improve_relation_modifier = 0.15
+}
+
+fra_roi_palace_triggered_modifier = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	reform_progress_growth = 0.15
+	all_estate_loyalty_equilibrium = 0.05
+	diplomatic_upkeep = 1 
+}
+
+# fra_palais_de_papes_triggered_modifier = {
+	# potential = {
+		# mission_completed = fra_house_god
+		# custom_trigger_tooltip = {
+			# tooltip = fra_aligned_with_pope_tt
+			# has_country_flag = fra_chose_to_piss_off_pope_flag
+		# }
+	# }
+	# trigger = {
+		# OR = {
+			# religion = catholic 
+			# custom_trigger_tooltip = {
+				# tooltip = fra_3_tolerance_heretics
+				# has_global_modifier_value = {
+					# which = tolerance_heretic 
+					# value = 3 
+				# }
+			# }
+			# PAP = {
+				# has_opinion = {
+					# who = ROOT 
+					# value = 180 
+				# }
+			# }
+		# }
+	# }
+	
+	# church_loyalty_modifier = 0.15
+	# tolerance_of_heretics_capacity = 1
+	# tolerance_own = 1
+	# diplomatic_annexation_cost = -0.2
+# }
+
+gol_the_tatar_yoke = { 
+	potential = { 
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	on_deactivation = {
+
+	}
+	global_tax_income = 24
+}
+
+eng_globe_theatre = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	monthly_splendor = 1
+	idea_cost = -0.15
+	local_tax_modifier = 0.2
+}
+
+BYZ_heart_of_the_empire = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	movement_speed = 0.05
+	free_land_leader_pool = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+BYZ_illustrious_court = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	reform_progress_growth = 0.1
+	monthly_splendor = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+BYZ_seat_of_a_patriarch = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	tax_income = 12
+	local_tax_modifier = 0.25
+	local_development_cost = -0.1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+BYZ_bosphorus_toll = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	province_trade_power_value = 10
+	province_trade_power_modifier = 0.5
+}
+
+BYZ_megalopolis_updater = {
+	potential = {
+		always = no
+	}
+
+	hidden = yes
+	
+	trigger = {
+		always = no
+	}
+	
+	on_activation = {
+		
+	}
+}
+
+BYZ_galata = {
+	potential = {
+		always = no
+	}
+	
+	trigger = {
+		always = no
+	}
+	
+	province_trade_power_value = -5
+	province_trade_power_modifier = -0.75
+	on_activation = {
+		
+	}
+	on_deactivation = {
+		
+	}
+}
+
+ARB_local_madrasa = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	same_culture_advisor_cost = -0.1
+}
+
+ARB_mosque_of_kairouan = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	overextension_impact_modifier = -0.1
+}
+
+#Province modifier
+per_persian_embassy = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	on_deactivation = {
+		
+	}
+	yearly_innovativeness = 0.2
+	diplomatic_upkeep = 1
+	local_institution_spread = 0.25
+	province_trade_power_value = 5
+}
+
+#Province modifier
+per_chinese_embassy = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	on_deactivation = {
+	}
+	yearly_innovativeness = 0.2
+	diplomatic_upkeep = 1
+	local_institution_spread = 0.25
+	province_trade_power_value = 5	
+}
+
+feo_heart_of_steppes = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	caravan_power = 0.25
+	merchants = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+orm_hormuz_sound_tool = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+
+	province_trade_power_value = 20
+	local_development_cost = -0.10
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ITA_all_roads_lead_to_rome = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	local_development_cost_modifier = -0.25
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ITA_crusader_kings = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	warscore_cost_vs_other_religion = -0.1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ITA_flowering_of_renaissance = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	yearly_innovativeness = 0.25
+	institution_growth = 3
+	global_prosperity_growth = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ITA_superior_trade_center = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+	
+	local_development_cost_modifier = -0.15
+	
+	
+	#Province scope
+	on_activation = {
+
+	}
+	
+	on_deactivation = {
+
+	}
+	
+}
+
+GER_early_coal_mining = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	global_trade_goods_size_modifier = 0.05
+	trade_goods_size = 1 #intended
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+GER_treaty_port = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	global_trade_goods_size_modifier = 0.05
+	trade_goods_size = 1 #intended
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+
+GER_staying_in_lubeck = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	trade_efficiency = 0.1
+	global_prov_trade_power_modifier = 0.1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ned_dutch_admirality = {
+	potential = {always = no}
+	trigger = {
+		always = no
+	}
+
+	navy_tradition = 0.15
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ned_cape_city = {
+	potential = {always = no}
+	trigger = {
+		always = no
+	}
+	
+	trade_goods_size_modifier = 0.2
+	local_defensiveness = 0.15
+	
+	#Province scope
+	on_activation = {
+
+	}
+	
+	on_deactivation = {
+
+	}
+}
+
+ned_dutch_traders = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	technology_cost = -0.05
+	global_prov_trade_power_modifier = -0.05
+	
+	#Province scope
+	on_activation = {
+
+	}
+	
+	on_deactivation = {
+
+	}
+}
+
+INC_hostage_idols = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		owner = {
+			stability = 3
 		}
 	}
 
-	all_estate_loyalty_equilibrium = 0.10
+	harsh_treatment_cost = -0.15
+	years_of_nationalism = -5
+	
+	#Province scope
+	on_activation = {
+		
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+MAY_obsidian_source = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	land_forcelimit = 1
+	
+	#Province scope
+	on_activation = {
+		
+	}
+	
+	on_deactivation = {
+	}
+	
+}
+
+MAY_restoration = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+
+	local_great_project_upgrade_cost = -0.1
+	local_great_project_upgrade_time = -0.33
+}
+
+SUN_symposium_modifier = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+	
+	development_cost = -0.1
+}
+
+hab_vienna_ballrooms = {
+	potential = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	
+	all_estate_loyalty_equilibrium = 0.1
+	monthly_splendor = 4
+}
+
+ned_sound_toll_ties = {
+	potential = {
+		always = no
+	}
+	trigger = {
+
+	}
+	
+	local_development_cost = -0.1
+	
+	#Province scope
+	on_activation = {
+
+	}
+	
+	on_deactivation = {
+
+	}
+}
+
+TIM_tomb_of_ansari = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		owner = {
+			stability = 2
+			NOT = { piety = -0.25 }
+		}
+	}
+
+	tolerance_own = 1
+	same_religion_advisor_cost = -0.15
+}
+
+TIM_ulugh_beg_observatory_modifier = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		owner = {
+			stability = 2
+		}
+	}
+
+	technology_cost = -0.05
+}
+
+MUG_ibadat_khana = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		owner = {
+			religious_unity = 0.95
+			has_adm_advisor_3 = yes
+			stability = 1
+		}
+	}
+
+	idea_cost = -0.1
+}
+
+ITA_flowering_of_renaissance_no_dlc = {
+    potential = {
+        always = no
+    }
+    trigger = {
+        always = no
+    }
+
+    stability_cost_modifier = -0.25
+    
+    #Province scope
+    on_activation = {
+    
+    }
+    
+    on_deactivation = {
+    
+    }
+    
 }

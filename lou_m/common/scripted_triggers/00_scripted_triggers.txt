@@ -2756,3 +2756,135 @@ has_domination_eoc_missions_available = {
 	has_dlc = "Domination"
 	always = no
 }
+
+has_new_aztec_inca_maya_mission_trigger = {
+	always = no
+}
+
+is_andean_society_trigger = {
+	always = no
+}
+
+is_mayan_society_trigger = {
+	always = no
+}
+
+has_reformed_inti_religion_trigger = {
+	always = no
+}
+
+INC_every_part_of_route = {
+	always = no
+}
+
+INC_part_of_the_route = {
+	always = no
+}
+
+INC_can_be_colonized_without_natives = {
+	always = no
+}
+INC_highlight_provinces_that_can_be_colonized = {
+	always = no
+}
+
+INC_has_any_provinces_to_colonize = {
+	always = no
+}
+INC_has_any_provinces_to_colonize_with_trigger = {
+	always = no
+}
+
+has_generic_maya_missions = {
+	always = no
+}
+
+is_in_mesoamerica_trigger = {
+	always = no
+}
+
+num_of_battles = {
+	custom_trigger_tooltip = {
+		tooltip = has_won_at_least_$amount$_battles #in case of adding a new number, localize
+		check_variable = {
+			which = num_of_battles_won_var
+			value = $amount$
+		}
+	}
+}
+
+num_of_wars = {
+	custom_trigger_tooltip = {
+		tooltip = has_won_at_least_$amount$_wars #in case of adding a new number, localize
+		check_variable = {
+			which = num_of_wars_won_var
+			value = $amount$
+		}
+	}
+}
+
+num_of_provinces_developed = {
+	custom_trigger_tooltip = {
+		tooltip = has_developed_at_least_$amount$_provinces
+		check_variable = {
+			which = num_of_times_developed
+			value = $amount$
+		}
+	}
+}
+
+has_obsidian_source_trigger = {
+	always = no
+}
+
+num_of_maya_religious_reforms = {
+	always = no
+}
+
+MAY_realm_size_trigger = {
+	always = no
+}
+
+MAY_pass_reform_trigger = {
+	always = no
+}
+
+MAY_venus_trigger = {
+	always = no
+}
+
+has_had_disease_trigger = {
+	always = no
+}
+
+former_colonial_territory_trigger = {
+	always = no
+}
+
+colonial_territory_trigger = {
+	always = no
+}
+
+colonial_territory_trigger_on_action = {
+	always = no
+}
+
+is_colonial_empire_trigger = {
+	always = no
+}
+
+is_non_new_world_tech_group = {
+	always = no
+}
+
+is_or_was_tatar_nation = {
+	always = no
+}
+
+is_or_was_mongol_nation = {
+	always = no
+}
+
+is_or_was_moghulistan_nation = {
+	always = no
+}
