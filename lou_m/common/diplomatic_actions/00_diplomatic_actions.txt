@@ -86,14 +86,22 @@
 # knowledge_sharing
 
 
-# religion_group_worshippers_of_melkor cannot be diplomatic with non-religion_group_worshippers_of_melkor
-
+#Cut because the Grand Crusade war doesn't really have any place in the current content, but it could be very useful for the future.
+#Also modders should have the chance to just uncomment it all so they can experience the great 30 Years War like Crusade.
 declarewar = {
 	condition = {
-		tooltip = DECLARE_WAR
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
 		potential = {
+			ai = yes
 		}
 		allow = {
+			ai = yes
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
 			NOT = { 
 				OR = {
 					tag = X13	
@@ -103,6 +111,137 @@ declarewar = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_OTHER_THAN_INDEPENDENCE_WARS
+		potential = {
+			has_country_modifier = revoked_war_rights
+			FROM = { NOT = { overlord_of = ROOT } }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_modifier = revoked_war_rights }
+				FROM = { overlord_of = ROOT }
+			}
+		}
+	}
+	effect = {
+		on_war_declaration_effect = yes
+	}
+}
+
+allianceaction = {
+	condition = {
+		tooltip = SERVANTS_OF_DARKNESS_BAN_ALLIANCEACTION
+		potential = {
+			is_servants_of_evil_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = FREE_PEOPLE_BAN_ALLIANCEACTION
+		potential = {
+			is_free_peoples_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics }
+				FROM = { government = republic }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				government = republic
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics_or_non_rev
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
+				FROM = { 
+					OR = {
+						government = republic 
+						is_revolutionary = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics_or_non_rev
+			}
+			NOT = { government = republic }
+			is_revolutionary = no
+		}
+		allow = {
+			OR = {
+				government = republic 
+				is_revolutionary = yes
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_MAKE_ALLIANCES
+		potential = {
+			has_government_attribute = cannot_form_alliances
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_form_alliances }
+		}
+	}
+	condition = {
+		tooltip = FROM_CANNOT_MAKE_ALLIANCES
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_form_alliances
+			}
+		}
+		allow = {
+			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
+		}
+	}
+}
+
+enforce_peace = {
+
 }
 
 royal_marriage = {
@@ -114,7 +253,6 @@ royal_marriage = {
 			NOT = { war_with = FROM }
 		}
 	}
-	
 	condition = {
 		tooltip = SERVANTS_OF_DARKNESS_BAN_MARRIAGE
 		potential = {
@@ -173,7 +311,12 @@ guaranteeaction = {
 		}
 	}
 }
+threaten_war = {
 
+}
+insultaction = {
+
+}
 giftaction = {
 	condition = {
 		tooltip = SERVANTS_OF_DARKNESS_BAN_GIFT
@@ -203,347 +346,31 @@ giftaction = {
 		}
 	}
 }
-support_independence_action = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_SUPPORT_INDEPENDENCE
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_SUPPORT_INDEPENDENCE
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
+fabricate_claim = {
 }
-
-milaccess = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_MILACCESS
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
+break_marriage = {
 	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_MILACCESS
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
 }
+takeondebt = {
 
-fleet_access = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_FLEET_ACCESS
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_FLEET_ACCESS
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}	
-
-offer_fleet_access = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_OFFER_FLEET_ACCESS
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_OFFER_FLEET_ACCESS
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
 }
-
-offermilaccess = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_OFFER_MIL_ACCESS
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
+influence_nation = {
 	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_OFFER_MIL_ACCESS
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
 }
-
-offerloan = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_OFFER_LOAN
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
+intervene_in_war = {
 	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_OFFER_LOAN
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
 }
-
-warsubsidy = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_WARSUBSIDY
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_WARSUBSIDY
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-sellprov = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_SELLPROV
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_SELLPROV
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-#enforce_peace = {
-#	
-#}
-
-improve_relation = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_IMPROVE_RELATION
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_IMPROVE_RELATION
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-transfer_trade_power = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_TRANSFER_TRADE_POWER
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_TRANSFER_TRADE_POWER
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-allianceaction = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_ALLIANCEACTION
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_ALLIANCEACTION
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
 
 annexationaction = {
 	condition = {
 		tooltip = ANNEX_TOO_LOW
 		potential = {
 			FROM = {
-				vassal_of = ROOT
+				OR = {
+					is_subject_of_type = core_eyalet
+					is_subject_of_type = appanage
+					vassal_of = ROOT
+				}
 			}
 		}
 		allow = {
@@ -582,13 +409,58 @@ annexationaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = NEEDS_50_CROWNLAND_TT
+		potential = {
+			has_government_attribute = need_crownland_to_annex
+			NOT = { crown_land_share = 50 }
+		}
+		allow = {
+			crown_land_share = 50
+		}
+	}
+	condition = {
+		tooltip = NEEDS_TO_HAVE_SEIZED_LAND
+		potential = {
+			has_government_attribute = has_appanages
+			NOT = {
+				check_variable = {
+					which = can_annex_appanages_points
+					value = 1
+				}
+			}
+		}
+		allow = {
+			check_variable = {
+				which = can_annex_appanages_points
+				value = 1
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				FROM = { is_subject_of_type = appanage }
+			}
+			subtract_variable = {
+				which = can_annex_appanages_points
+				value = 1
+			}
+		}
+	}
 }
 
 integrationaction = {
 	condition = {
 		tooltip = INTEGRATETOOLOWDESC
 		potential = {
-			senior_union_with = FROM
+			OR = {
+				senior_union_with = FROM
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = mongol_brother_realm
+				}
+			}
 		}
 		allow = {
 			FROM = {
@@ -624,6 +496,15 @@ integrationaction = {
 					is_servants_of_evil_opinion = yes
 				}
 			}
+		}
+	}
+	condition = {
+		tooltip = PUINTEGRATIONIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_integrate_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_integrate_personal_unions }
 		}
 	}
 }
@@ -673,6 +554,28 @@ vassalaction = {
 	}
 }
 
+abandon_union = {
+	condition = {
+		potential = {
+		}
+		allow = {
+			ROOT = {
+				senior_union_with = FROM
+				is_at_war = no
+			}
+		}
+	}
+	condition = {
+		tooltip = PUABANDONINGIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_abandon_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_abandon_personal_unions }
+		}
+	}
+}
+
 form_coalition = {
 	condition = {
 		tooltip = MINAGGRESSIVEEXPANSION
@@ -687,163 +590,7 @@ form_coalition = {
 				has_opinion_modifier = {
 					modifier = aggressive_expansion
 					who = FROM
-					value = -50
-				}
-			}
-		}
-	}
-}
-
-call_crusade_action = {
-	condition = {
-		tooltip = CALL_CRUSADE
-		potential = {
-			is_papal_controller = yes
-		}
-		allow = {
-			is_papal_controller = yes
-			
-			NOT = { 
-				war_with = FROM
-				FROM = {
-					religion = religion_haradrim_of_darkness
-				}
-				border_distance = {
-					who = FROM
-					distance = 300
-				}
-			}
-			FROM = {
-				num_of_cities = 20
-				#num_of_cities = ROOT
-			}
-		}
-	}
-	effect = {
-		FROM = {
-			set_country_flag = Invasion_called
-			country_event = { id = LOU_harad.1 }
-		}
-		ROOT = {
-			country_event = { id = LOU_harad.7 }
-		}
-	}
-}
-
-sell_ships_action = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_SELL_SHIPS_ACTION
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_SELL_SHIPS_ACTION
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-condottieri_action = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_CONDOTTIERI_ACTION
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_CONDOTTIERI_ACTION
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-support_heir = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_SUPPORT_HEIR
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_SUPPORT_HEIR
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
-				}
-			}
-		}
-	}
-}
-
-ask_for_march = {
-	condition = {
-		tooltip = SERVANTS_OF_DARKNESS_BAN_ASK_FOR_MARCH
-		potential = {
-			is_servants_of_evil_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_free_peoples_opinion = yes
-				}
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = FREE_PEOPLE_BAN_ASK_FOR_MARCH
-		potential = {
-			is_free_peoples_opinion = yes
-		}
-		allow = {
-			NOT = {
-				FROM = {
-					is_servants_of_evil_opinion = yes
+					value = -49
 				}
 			}
 		}
@@ -860,6 +607,33 @@ request_to_join_trade_league = {
 				trade_share = {
 					country = from
 					share = 1
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = SERVANTS_OF_DARKNESS_BAN_VASSALACTION
+		potential = {
+			is_servants_of_evil_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = FREE_PEOPLE_BAN_VASSALACTION
+		potential = {
+			is_free_peoples_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
 				}
 			}
 		}
@@ -882,16 +656,30 @@ invite_to_trade_league = {
 			}
 		}
 	}
-}
-
-abandon_union_action = {
 	condition = {
+		tooltip = SERVANTS_OF_DARKNESS_BAN_VASSALACTION
 		potential = {
+			is_servants_of_evil_opinion = yes
 		}
 		allow = {
-			ROOT = {
-				senior_union_with = FROM
-				is_at_war = no
+			NOT = {
+				FROM = {
+					is_free_peoples_opinion = yes
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = FREE_PEOPLE_BAN_VASSALACTION
+		potential = {
+			is_free_peoples_opinion = yes
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					is_servants_of_evil_opinion = yes
+				}
 			}
 		}
 	}
@@ -917,5 +705,11 @@ ask_for_tributary_state_action = {
 		allow = {
 			always = no
 		}
+	}
+}
+
+break_alliance = {
+	effect = {
+		on_alliance_broken_effect = yes
 	}
 }

@@ -1,6 +1,6 @@
 the_three_royal_fires_mechanic = {
-	alert_icon_gfx = GFX_alerticons_government_mechanics #TODO
-	alert_icon_index = 12 #TODO
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 12
 	available = {
 		has_dlc = "King of Kings"
 	}
@@ -77,13 +77,6 @@ the_three_royal_fires_mechanic = {
 			cost_type = adur_farnbag
 			cost = 100
 			trigger = {
-				#if = {
-				#	limit = { has_country_flag = can_place_center_of_reformation }
-				#	custom_trigger_tooltip = {
-				#		tooltip = adur_farnbag_interaction_ct
-				#		NOT = { has_country_flag = can_place_center_of_reformation }
-				#	}
-				#}
 				has_government_power = {
 					mechanic_type = the_three_royal_fires_mechanic
 					power_type = asha_vahishta
@@ -91,30 +84,6 @@ the_three_royal_fires_mechanic = {
 				}
 			}
 			effect = {
-				#if = {
-				#	limit = {
-				#		has_country_modifier = embraced_passive_conversion_methods
-				#	}
-				#	if = {
-				#		limit = {
-				#			NOT = {
-				#				1 = {
-				#					check_variable = {
-				#						which = zoroastrian_reform_center_counter
-				#						value = 3
-				#					}
-				#				}
-				#			}
-				#		}
-				#		hidden_effect = {
-				#			set_country_flag = can_place_center_of_reformation
-				#		}
-				#		custom_tooltip = adur_farnbag_interaction_at
-				#	}
-				#	else = {
-				#		custom_tooltip = adur_farnbag_interaction_bt
-				#	}
-				#}
 				if = {
 					limit = { has_country_flag = upgraded_the_three_fire }
 					add_estate_loyalty = {

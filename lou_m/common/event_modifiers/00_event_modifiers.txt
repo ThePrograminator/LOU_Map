@@ -799,7 +799,8 @@ the_statue_in_restraint_of_appeals = {
 	global_unrest = -1
 	prestige = 0.5
 	papal_influence = -10
-		religion = yes
+	church_loyalty_modifier = 0.05
+	religion = yes
 }
 
 
@@ -1120,6 +1121,7 @@ the_popery_act = {
 
 the_sheikh_ul_islam = {
 	global_missionary_strength = 0.01
+	church_loyalty_modifier = 0.05
 	religion = yes
 }
 
@@ -1668,7 +1670,7 @@ tripitaka_koreana = {
 	harmonization_speed = 0.1
 	yearly_karma_decay = 0.01
 	monthly_splendor = 1
-	institution_growth = 3
+	local_institution_spread = 1
 }
 
 tripitaka_koreana_defenses = {
@@ -1849,7 +1851,8 @@ granary_of_the_mediterranean = {
 
 ven_murano_glass_industry = {
 	trade_goods_size = 2.0
-	}
+	mr_guilds_influence = 0.02
+}
 
 diamond_mines_of_golconda_modifier = { #The only major source of diamonds in the world for most of the game.
 	trade_goods_size = 4.0
@@ -1915,6 +1918,7 @@ important_natural_harbor = {
 #Tradepost
 trade_post_modifier = {
 	province_trade_power_value = 10
+	monthly_authority_power = -0.01
 	#naval_forcelimit = 1
 	picture = "province_trade_power_value"
 }
@@ -2382,11 +2386,15 @@ vasa_centralization_reforms = {
 
 swe_debt_with_the_clergy = {
 	legitimacy = -0.5
-	}
+	church_loyalty_modifier = -0.1
+	church_influence_modifier = 0.1
+}
 
 swe_debt_with_the_burghers = {
 	legitimacy = -0.5
-	}
+	burghers_loyalty_modifier = -0.1
+	burghers_influence_modifier = 0.1
+}
 
 swe_debt_with_the_nobles = {
 	legitimacy = -0.5
@@ -3086,7 +3094,9 @@ tur_jade_techniques_of_far_east_modifier = {
 }
 
 tur_abu_hanifa_mosque_modifier = { 
-		tolerance_own = 1 
+	church_loyalty_modifier = 0.05
+	church_influence_modifier = 0.05
+	tolerance_own = 1 
 }
 
 tur_inefficient_tax_collection = {
@@ -3110,13 +3120,15 @@ tur_weakened_the_harem = {
 }
 
 tur_growing_influence_of_the_janissaries = {	#Permanent
-	}
+	janissaries_privilege_slots = 1
+}
 
 tur_shattered_the_janissaries = {
 	legitimacy = 1
 	republican_tradition = 0.5
 	max_absolutism = 15
-	}
+	janissaries_influence_modifier = -0.5
+}
 
 tur_reformation_of_the_ottoman_estates = {
 	all_estate_loyalty_equilibrium = 0.2
@@ -3628,10 +3640,6 @@ pol_zebrzydowski_rebellion_flag = {
 	global_unrest = 10
 	stability_cost_modifier = 0.25
 	global_trade_goods_size_modifier = -0.25
-}
-
-plc_polish_lithuanian_union = {
-	num_accepted_cultures = 1
 }
 
 economic_development_of_mazovia = {
@@ -4716,7 +4724,8 @@ ven_venetian_school = {
 
 ven_nobility_bought = {
 	global_tax_modifier = 0.05 #Income from sold titles
-	}
+	mr_traders_influence = 0.02
+}
 
 ven_accademia_della_guidecca = {
 	republican_tradition = 0.2
@@ -4725,21 +4734,26 @@ ven_accademia_della_guidecca = {
 ven_barnabotti = {
 	republican_tradition = -0.1
 	stability_cost_modifier = 0.1
-	}
+	mr_traders_influence = 0.05 #Vote Buying
+}
 
 ven_expanded_council = {
 	republican_tradition = 0.1 #Bigger council is more representative and has a bigger chance to act as a counterweight to powerful doges or other institutions.
-	}
+	mr_traders_influence = 0.05
+}
 
 ven_ten_restrained = {
 	republican_tradition = 0.1 #By stopping a single institution from exercising too much power
-	stability_cost_modifier = 0.1 #Inefficient Government
-	}
+	stability_cost_modifier = 0.2 #Inefficient Government
+	mr_aristocrats_influence = -0.05
+	monthly_authority_power = -0.05
+}
 
 ven_council_of_ten_strong = {
-		#global_tax_modifier = 0.1
-	global_autonomy = -0.05
-	republican_tradition = -1 #By giving a single institution much larger influence than any other.
+	mr_aristocrats_influence = 0.05
+	monthly_authority_power = 0.05
+	all_estate_loyalty_equilibrium = 0.1
+	republican_tradition = -0.05 #By giving a single institution much larger influence than any other.
 }
 
 #Netherlands
@@ -8215,7 +8229,8 @@ legitimacy_defended = {
 
 horde_unity_defended = {
 	horde_unity = 0.5
-	}
+	nomadic_tribes_loyalty_modifier = 0.05
+}
 
 baltic_ambition = {
 	trade_efficiency = 0.1
@@ -11227,24 +11242,28 @@ eng_reformer_ruler = {
 	tolerance_heretic = -1
 	church_power_modifier = 0.5
 	monthly_fervor_increase = 0.5
+	church_influence_modifier = -0.15
 	religion = yes
 }
 
 eng_catholic_ruler = {
 	tolerance_heretic = -1
 	papal_influence = 2
+	church_influence_modifier = 0.1
 	religion = yes
 }
 
 eng_reformer_ruler_for_catholic_gb = {
 	tolerance_heretic = 1
 	tolerance_own = -2
+	church_influence_modifier = -0.15
 	religion = yes
 }
 
 eng_catholic_ruler_for_reformed_gb = {
 	tolerance_heretic = 1
 	tolerance_own = -2
+	church_influence_modifier = 0.1
 	religion = yes
 }
 
@@ -11278,12 +11297,14 @@ eng_the_crown_of_italy = {	#Permanent
 }
 
 eng_taxation_of_the_clergy = {
+	church_influence_modifier = -0.15
 	global_tax_modifier = 0.33
 	tolerance_own = -2
 	religion = yes
 }
 
 eng_protects_the_clergy = {
+	church_loyalty_modifier = 0.1
 	tolerance_own = 2
 	tolerance_heretic = -2
 	religion = yes
@@ -11299,12 +11320,14 @@ eng_taxation_of_the_clergy_prot = {
 }
 
 eng_protects_the_clergy_prot = {
+	church_loyalty_modifier = 0.1
 	tolerance_heretic = 2
 	tolerance_own = -2
 	religion = yes
 }
 
 eng_foreign_religious_control = {
+	church_influence_modifier = 0.1
 }
 
 eng_end_of_the_english_reformation = {
@@ -11462,6 +11485,7 @@ ingolstadt_beer_city = {
 
 bav_religious_mandate_mod = {
 	global_religious_conversion_resistance = 0.5
+	church_loyalty_modifier = -0.05
 }
 
 bav_building_wife_church = {
@@ -11506,7 +11530,7 @@ estate_dhimmi_lighter_dhimmi_taxes_privilege_mod = {
 
 estate_dhimmi_manpower_mod = {
 	religion = yes
-	local_manpower_modifier = 0.3
+	local_manpower_modifier = 0.2
 }
 
 estate_maratha_levies_for_muslims_mod = {
@@ -12162,6 +12186,8 @@ sisters_takeover = {
 	may_recruit_female_generals = yes
 	global_manpower_modifier = 0.2
 	female_advisor_chance = 1.0
+	church_privilege_slots = 1
+	church_loyalty_modifier = 0.05
 	tolerance_own = 1
 	tolerance_heretic = -3
 }
@@ -12422,6 +12448,8 @@ makahiki_mod = {
 
 historic_ava_mod = {
 	global_unrest = -1
+	burghers_loyalty_modifier = 0.05
+	church_loyalty_modifier = 0.05
 	nobles_loyalty_modifier = 0.05
 }
 
@@ -12770,10 +12798,12 @@ mal_nobles_take_over = {
 
 mal_radical_clergy = {
 	tolerance_heathen = -3
+	dhimmi_loyalty_modifier = -0.2
 }
 
 mal_radical_dhimmi = {
 	tolerance_own = -3
+	church_loyalty_modifier = -0.2
 }
 
 mal_burghers_take_over = {
@@ -13010,6 +13040,7 @@ teu_the_last_reyse = {
 teu_renewed_hanseatic_relations = {
 	naval_maintenance_modifier = -0.2
 	land_maintenance_modifier = -0.1
+	burghers_influence_modifier = 0.1
 }
 
 liv_merc_focus = {
@@ -13362,7 +13393,7 @@ PRU_toleranzedikt = {
 	advisor_cost = -0.05
 }
 PRU_bitter_resistance = {
-
+	church_loyalty_modifier = -0.05
 }
 
 BRA_reformed_kreditwerk = {
@@ -13621,8 +13652,8 @@ CONTRIBUTE_WARRIORS_NOMADIC_TRIBES_level_3 = {
 	reinforce_speed = 0.075
 }
 CONTRIBUTE_WARRIORS_NOMADIC_TRIBES_level_4 = {
-	land_maintenance_modifier = -0.01
-	reinforce_speed = 0.01
+	land_maintenance_modifier = -0.1
+	reinforce_speed = 0.1
 }
 
 #Parliament Issues
@@ -13756,19 +13787,23 @@ overhauling_the_court = {
 }
 
 rise_of_the_ottomans = {
-
+	monthly_ottoman_decadence = -1
+	ottoman_decadence_gain_modifier = -0.5
 }
 
 zenith_of_the_ottomans = {
-
+	monthly_ottoman_decadence = -0.5
+	ottoman_decadence_gain_modifier = -0.25
 }
 
 twilight_of_the_ottomans = {
-
+	monthly_ottoman_decadence = 0.1
+	ottoman_decadence_gain_modifier = 0.5
 }
 
 decline_of_the_ottomans = {
-
+	monthly_ottoman_decadence = 0.25
+	ottoman_decadence_gain_modifier = 1
 }
 
 #Diplo actions
@@ -13782,6 +13817,7 @@ revoked_war_rights = {
 
 #Promoting Art
 promoting_art = {
+	monthly_persian_influence = 0.1
 	global_unrest = -0.5
 	country_admin_power = -1
 }
@@ -13815,10 +13851,12 @@ per_muzaffarid_centre_of_admin_modifier = {
 per_sponsorship_of_christian_armenians_modifier = {
 	tolerance_heathen = 1
 	manpower_recovery_speed = 0.1
+	qizilbash_loyalty_modifier = -0.1
 }
 per_elitist_caste_modifier = {
 	same_culture_advisor_cost = -0.2
 	culture_conversion_cost = -0.2 
+	qizilbash_loyalty_modifier = 0.1
 }
 per_turkmen_recruits_modifier = {
 	local_manpower_modifier = 0.33 
@@ -13917,6 +13955,7 @@ per_porcelain_exports_to_the_west_modifier = {
 zoroastrian_interests = {
 	tolerance_own = -2
 	tolerance_heathen = 2
+	church_loyalty_modifier = -0.2
 	can_not_build_missionaries = yes
 	religion = yes
 }
@@ -13970,6 +14009,18 @@ estate_ghulams_ensure_caucasian_sovereignty_mod = {
 embraced_passive_conversion_methods = {
 	can_not_build_missionaries = yes
 	religion = yes
+}
+
+#Theodoro rewards
+feo_buffed_freedom_of_steppes_mod = {
+	local_unrest = -2
+}
+feo_cossack_self_governance_buff_mod = {
+	local_state_maintenance_modifier = -0.1
+	local_religious_unity_contribution = -1
+}
+feo_upgrade_prime_herding_rights_mod = {
+	local_manpower_modifier = 0.1
 }
 
 #Grand Vizier Modifiers
@@ -14079,6 +14130,18 @@ grand_vizier_grand_captain = {
 	siege_ability = 0.1
 }
 
+estate_church_TIM_promote_ijazah_scaling = {
+	yearly_innovativeness = 0.5
+}
+
+TIM_full_army_trad = {
+	army_tradition = 1 
+}
+
+TIM_full_army_prof = {
+	yearly_army_professionalism = 0.01 
+}
+
 #Perisna Influence Counter
 used_persian_influece_interaction_1 = { influence_to_vassal_elevation_cost = -20 }
 used_persian_influece_interaction_2 = { influence_to_vassal_elevation_cost = -40 }
@@ -14102,8 +14165,8 @@ used_persian_influece_interaction_19 = { influence_to_vassal_elevation_cost = -3
 used_persian_influece_interaction_20 = { influence_to_vassal_elevation_cost = -400 }
 
 #Permanently Accepted Culture (until demoted)
-free_slot_for_armenian = { num_accepted_cultures = 1 }
-free_slot_for_georgian = { num_accepted_cultures = 1 }
-free_slot_for_turkish = { num_accepted_cultures = 1 }
-free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
-free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }
+#free_slot_for_armenian = { num_accepted_cultures = 1 }
+#free_slot_for_georgian = { num_accepted_cultures = 1 }
+#free_slot_for_turkish = { num_accepted_cultures = 1 }
+#free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
+#free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }

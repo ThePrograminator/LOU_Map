@@ -2,7 +2,7 @@
 # If adding new groups or cultures, make sure they are unique.
 #
 # Union tags do not suffer from the 'same_culture_group' tax penalty.
-# #primary tags are the first choice for rebel factions seeking cultural independence.
+# Primary tags are the first choice for rebel factions seeking cultural independence.
 #
 # graphical_culture = westerngfx
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
@@ -13,7 +13,7 @@ germanic = {
 	male_names = { Gunther Rolf }
 	
 	pommeranian = {
-		# #primary = POM
+		primary = POM
 		male_names = {
 			Boguslaw Barnim Ota Eryk Filip Franciszek Jan Fryderyk Georg Ernest 
 			Ludwik Albrecht Arnt August Bernhard Bodo Carl Emil Fritz Gerhard 
@@ -65,7 +65,7 @@ germanic = {
 		}
 	}
 	prussian = {
-		# #primary = PRU
+		primary = PRU
 		male_names = {
 			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
 			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
@@ -79,7 +79,7 @@ germanic = {
 		}
 	}
 	baltic_german = {
-		##primary = RIG
+		primary = RIG
 		male_names = {
 			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
 			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
@@ -93,7 +93,7 @@ germanic = {
 		}
 	}
 	lower_saxon = {
-		##primary = HAN
+		primary = HAN
 		male_names = {
 			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm 
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried Günther Helmut Herbert Ignatz Isidor 
@@ -104,7 +104,7 @@ germanic = {
 		}
 	}
 	hannoverian = {
-		# #primary = WES
+		primary = WES
 		male_names = {
 			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm 
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried Günther Helmut Herbert Ignatz Isidor 
@@ -115,7 +115,7 @@ germanic = {
 		}
 	}
 	hessian = {
-		# #primary = HES
+		primary = HES
 		male_names = {
 			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
 			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
@@ -127,7 +127,7 @@ germanic = {
 		}
 	}
 	saxon = {
-		# #primary = SAX
+		primary = SAX
 		male_names = {
 			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor 
 			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang 
@@ -173,13 +173,13 @@ germanic = {
 		}
 	}
 	franconian = {
-		# #primary = FKN
+		primary = FKN
 	}
 	swabian = {
-		# #primary = SWA
+		primary = SWA
 	}
 	swiss = {
-		# #primary = SWI
+		primary = SWI
 		male_names = {
 			Friedrich Otto Heinrich Werner Ferdinand Karl Alfred Benedikt Christoph Dietrich Engelbert 
 			Florian Gerhard Immanuel Johan Leonhard Markus Nikolaus Paul Ruprecht Stefan Thomas Ulrich 
@@ -191,7 +191,7 @@ germanic = {
 		}
 	}
 	bavarian = {
-		# #primary = BAV
+		primary = BAV
 		male_names = {
 			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
 			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
@@ -217,7 +217,7 @@ germanic = {
 		}
 	}
 	austrian = {
-		# #primary = HAB
+		primary = HAB
 		male_names = {
 			Albrecht Maximilian Friedrich Ladislav Matthias Ernst Ferdinand Wenzel Georg Philipp Joseph 
 			Rudolf Gerhard Wolfgang Leopold Florian
@@ -234,7 +234,7 @@ germanic = {
 		}
 	}
 	dutch = {
-		# #primary = NED
+		primary = NED
 		male_names = {
 			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
 			Barnaerd Bernard Bartolomeus Bartolomeus
@@ -285,7 +285,7 @@ germanic = {
 		}
 	}
 	flemish = {
-		# #primary = FLA
+		primary = FLA
 			dynasty_names = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
@@ -320,7 +320,7 @@ germanic = {
 		}
 	}
 	frisian = {
-		# #primary = FRI
+		primary = FRI
 		male_names = {
 			Anno Bernard Baltasar Campegius Dodo Eggerik Eilhard Eeltsje Enno Edzard Edo
 			Freark Franciscus Gysbert Gerlof Hendrik Jancko Jacobus Joast Jehan Joaris
@@ -339,6 +339,9 @@ germanic = {
 			Japiks "fan Jever" Jelckama Jelgersma Lenige Ripperda "fan Rossum" Steenbicker 
 			Sirksena Syrtsema "fan Thabor" Vitringa Walles Wiarda Zelle
 		}
+	}
+	gothic_ger = {
+		primary = FEO
 	}
 	female_names = {
 		Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda 
@@ -459,7 +462,7 @@ scandinavian = { #Nordic
 
 
 	swedish = {
-		#primary = SWE
+		primary = SWE
 		
 		country = {  }
 		province = { local_has_carolean = yes }
@@ -503,7 +506,7 @@ scandinavian = { #Nordic
 		}
 	}
 	danish = {
-		#primary = DAN
+		primary = DAN
 		male_names = {
 			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
 			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
@@ -540,7 +543,7 @@ scandinavian = { #Nordic
 		}
 	}
 	norwegian = {
-		#primary = NOR
+		primary = NOR
 		male_names = {
 				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
 				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
@@ -584,7 +587,7 @@ scandinavian = { #Nordic
 		}
 	}
 	finnish = {
-		#primary = FIN
+		primary = FIN
 		country = {  }
 		province = { local_has_carolean = yes }
 		dynasty_names = {
@@ -616,7 +619,7 @@ scandinavian = { #Nordic
 		}
 	}
 	sapmi = {
-		#primary = SMI
+		primary = SMI
 		male_names = {
 			Baeivvet Biejan Bijás Bilzi Dávgon Duttá Gáivvas Elmar Hain Haljas Igapäiv Ihalemb Kahar Eeri Heameel Heatõiv 
 			Hoovatõiv Hurmas Hurmetõiv Hõimulemb Hüvalemb Hüvameel Hüvatõiv Tõnn Uku Vootele Väino Värvo Õigemeel Ülo Küllelemb 
@@ -642,7 +645,7 @@ scandinavian = { #Nordic
 		}
 	}
 	karelian = {
-		#primary = KRL
+		primary = KRL
 		male_names = {
 			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
 			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Päevalemb Pärt Raak Raho Rahuleid Sulev 
@@ -660,7 +663,7 @@ scandinavian = { #Nordic
 		}
 	}
 	icelandic = {
-		#primary = ICE
+		primary = ICE
 		male_names = {
 			Andreas Arnaldur Arnmundur Ari Axel Baldur Bjargmundur Bernhard Benedikt Brynjar Carl Cecil Christian Christopher Cyrus Daggeir Daniel Dvalinn Draupnir Dufgus Egill Erlendur Esra Eymundur Eyvindur Fenrir 
 			Finngeir Floki Francis Frosti Geirfinnur Grímkell Gunnar Gunnlaugur Gustav Hagar Hafthor Hildimundur Hrafnkell Huginn Hakon Ingar Ingibjartur Ingimundur Ismael Ivar Jani Jesper Johan Jonmundur Jorgen Kalmar 
@@ -707,7 +710,7 @@ british	= {
 	graphical_culture = westerngfx
 
 	english = {
-		#primary = ENG
+		primary = ENG
 		dynasty_names = { 
 			Plantagenet Lancaster York Tudor Dudley Mowbray Beaufort Neville Percy Howard Seymour Holland 
 			Talbot Stanley Courtenay "de la Pole" "de Vere" Stafford Grey Mortimer "le Despenser" "de Camoys"
@@ -735,7 +738,7 @@ british	= {
 		}
 	}
 	american = {
-		#primary = USA
+		primary = USA
 		male_names = {
 			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
 			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
@@ -813,7 +816,7 @@ british	= {
 		}
 	}
 	welsh = {
-		#primary = WLS
+		primary = WLS
 		dynasty_names = { 
 			Aberffraw Dinefwr Mathrafal Gwynedd Tudor Kernew "of Cornwall" Glyndwr "Ternyllwg" 
 			#CK2
@@ -879,7 +882,7 @@ british	= {
 		}
 	}
 	cornish = {
-		#primary = CRN
+		primary = CRN
 		dynasty_names = { 
 			Aberffraw Dinefwr Mathrafal Gwynedd Tudor Kernew "of Cornwall" Glyndwr "Ternyllwg" 
 			#CK2
@@ -904,7 +907,7 @@ british	= {
 		}
 	}
 	scottish = {
-		#primary = SCO
+		primary = SCO
 		dynasty_names = { 
 			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
 			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
@@ -947,7 +950,7 @@ gaelic	= {
 	graphical_culture = westerngfx
 	
 	irish = {
-		#primary = IRE
+		primary = IRE
 		dynasty_names = { 
 			"O'Donnell" "O'Neill" "O'Connor" "O'Brien" MacLochlainn MacMurrough MacWilliam
 			MacNamara "O'Reilly"  "FitzGerald" Kelly
@@ -1039,7 +1042,7 @@ gaelic	= {
 		}
 	}
 	highland_scottish = {
-		#primary = HSC
+		primary = HSC
 
 		male_names = {
 			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
@@ -1100,29 +1103,29 @@ latin = {
 	graphical_culture = westerngfx
 
 	lombard = {
-		#primary = MLO
+		primary = MLO
 	}
 	tuscan = {
-		#primary = TUS
+		primary = TUS
 	}
 	sardinian = {
-		#primary = SAR
+		primary = SAR
 	}
 	romagnan = {
-		#primary = FER
+		primary = FER
 
 		dynasty_names = {
 			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" Bevilacqua "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
 		}
 	}
 	ligurian = {
-		#primary = GEN
+		primary = GEN
 	}
 	venetian = {
-		#primary = VEN
+		primary = VEN
 	}
 	dalmatian = {
-		#primary = DAL
+		primary = DAL
 		male_names = {
 			Pongo
 			Alban Arber Ardian Aplis Apludus Aplus Aplius Aelius Andabio Armatus Apurus
@@ -1164,19 +1167,19 @@ latin = {
 		}
 	}
 	neapolitan = {
-		#primary = NAP
+		primary = NAP
 	}
 	piedmontese = {
-		#primary = SAV
+		primary = SAV
 	}
 	umbrian = {
-		#primary = URB
+		primary = URB
 	}
 	sicilian = {
-		#primary = SIC
+		primary = SIC
 	}
 	maltese = {
-		#primary = JAI
+		primary = JAI
 		dynasty_names = {
 			"de la Valette" "de Villaret" "L'Isle-Adam" "de Ponte" "de Saint-Jaille" "de la Sengle"
 			"de Monte" "de la Cassière" "de Vasconcellos" "de Paule" Cotoner Carafa "de Wignacourt"
@@ -1265,7 +1268,7 @@ iberian	= {
 	castillian = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = CAS
+		primary = CAS
 		dynasty_names = {
 			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
@@ -1295,7 +1298,7 @@ iberian	= {
 		}
 	}
 	mexican = {
-		#primary = MEX
+		primary = MEX
 		dynasty_names = {
 			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
@@ -1325,7 +1328,7 @@ iberian	= {
 		}
 	}
 	platinean = {
-		#primary = LAP
+		primary = LAP
 		dynasty_names = {
 			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
@@ -1357,7 +1360,7 @@ iberian	= {
 	leonese = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = LON
+		primary = LON
 		dynasty_names = {
 			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
@@ -1388,7 +1391,7 @@ iberian	= {
 	aragonese = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = ARA
+		primary = ARA
 		dynasty_names = {
 			"d'Aragó" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
@@ -1415,7 +1418,7 @@ iberian	= {
 	catalan = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = CAT
+		primary = CAT
 		dynasty_names = {
 			"d'Aragó" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
@@ -1439,7 +1442,7 @@ iberian	= {
 	galician = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = GAL
+		primary = GAL
 		dynasty_names = {
 			Osorio Andrade
 			#CK2
@@ -1460,7 +1463,8 @@ iberian	= {
 		}
 	}
 	andalucian = {
-		#primary = GRA
+		primary = GRA
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Nasrid Ummayad Zirid
 		}
@@ -1484,7 +1488,7 @@ iberian	= {
 	portugese = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = POR
+		primary = POR
 		dynasty_names = {
 			"de Aviz" "de Bragança" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo" 
 			"de Moura" "de Nápoles" "de Menezes" "de Saldanha" 
@@ -1511,7 +1515,8 @@ iberian	= {
 		}
 	}
 	brazilian = {
-		#primary = BRZ
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = BRZ
 		dynasty_names = {
 			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo" 
 			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
@@ -1550,7 +1555,7 @@ iberian	= {
 	basque = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		#primary = NAV
+		primary = NAV
 		dynasty_names = {
 			"de Navarra" "de Beaumont" "de Lerín" "de Monteagudo" Escors 
 			# CKII
@@ -1581,7 +1586,7 @@ french	= {
 	graphical_culture = westerngfx
 	cosmopolitan_french = {
 		
-		#primary = FRA
+		primary = FRA
 		dynasty_names = {
 			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" 
 			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
@@ -1590,38 +1595,38 @@ french	= {
 	}
 	gascon = {
 		
-		#primary = GUY
+		primary = GUY
 	}
 	normand = {
 		
-		#primary = NRM
+		primary = NRM
 	}
 	aquitaine = {
 		
-		#primary = TOU
+		primary = TOU
 	}
 	burgundian = {
 		
-		#primary = BUR
+		primary = BUR
 	}
 	occitain = {
 		
-		#primary = PRO
+		primary = PRO
 	}
 	wallonian = {
 		
-		#primary = HAI
+		primary = HAI
 	}
 	louisianans = {
 		
-		#primary = LOU
+		primary = LOU
 	}
 	quebecois = {
 		
-		#primary = QUE
+		primary = QUE
 	}
 	anglois = {
-		#primary = AVE
+		primary = AVE
 		dynasty_names = { 
 			Plantagenet Lancaster York Tudor Dudley Mowbray Beaufort Neville Percy Howard Seymour Holland 
 			Talbot Stanley Courtenay "de la Pole" "de Vere" Stafford Grey Mortimer "le Despenser" "de Camoys"
@@ -1650,7 +1655,7 @@ french	= {
 	}
 	breton = {
 		
-		#primary = BRI
+		primary = BRI
 		dynasty_names = { 
 			Rohan Penteur Leon Roazhon Poutrecoet Naoned "Leon" "de Dinan" "de Vitré" "de Cornouaille" 
 			"de Rohan" "de Porhoët" "of Brittany" "de Châteaubriant" "de Nantes" "Leon" "Guennec" "Pensec" 
@@ -1778,7 +1783,7 @@ finno_ugric = { #Ugric
 	graphical_culture = westerngfx
 	
 	uralic = {
-		#primary = PRM
+		primary = PRM
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -1856,7 +1861,7 @@ south_slavic = {
 	graphical_culture = easterngfx
 
 	croatian = {
-		#primary = CRO
+		primary = CRO
 		male_names = {
 			Kresimir Stjepan Almos Dimitrije Zvonimir Trpimir Goislav Slavic Svetoslav Miroslav Mutimir 
 			Ladislav Karlo Andrej Luj Pero Vladislav Vjenceslav Aleksandar Dragutin Fauszty Franjo Gavrilo Ivan 
@@ -1887,7 +1892,7 @@ south_slavic = {
 		}
 	}
 	serbian = {
-		#primary = SER
+		primary = SER
 		male_names = {
 			Stefan Lazar Djuradj Milosh Djordje Alexa Grgur Petrija Todor Aleksandar Mihailo Milan 
 			Bratislav Darko Dragan Dubravko Dusan Filip Goran Ivan Josif Konstantin Luka Marko Mateja Miroslav 
@@ -1917,7 +1922,7 @@ south_slavic = {
 		}
 	}
 	slovene = {
-		#primary = CLI
+		primary = CLI
 		male_names = {
 			Andrej Albreht Alojzij Anton Adam Avgust Boris Blaz	Davorin	Etbin Filip Franc Friderik
 			Gregorij Henrik Ivan Igor Ignacij Janez Janko Jernej Jozef Karel Konrad	Lovro Luka Ludvik
@@ -1934,7 +1939,7 @@ south_slavic = {
 		}
 	}
 	bosnian = {
-		#primary = BOS
+		primary = BOS
 		male_names = {
 			Andrija Aljen Boric Bogisa Bogut Batalo Brailo Brajko Batic Beljak Budelja Celk Dabisa
 			Dragonja Danis Dragisa Drazen Franjo Grgur Hran Hrvoje Hval Ivanis Juraj Kulin Krsmir
@@ -1953,7 +1958,7 @@ south_slavic = {
 		}
 	}
 	bulgarian = {
-		#primary = BUL
+		primary = BUL
 		male_names = {
 			Iwan Asen Koloman Petar Todor Michael Aleksandar Iwan Kalojan Georgi Konstantin Stepan Stracimir 
 			Simeon Andon Andrei Angel Atanas Bogdan Bogomil Branimir Damyan Dimitar Emil Gavril Hristo Iordan 
@@ -1978,7 +1983,7 @@ south_slavic = {
 		}
 	}
 	albanian = {
-		#primary = ALB
+		primary = ALB
 		male_names = {
 			Gjergj Lekë Gjon Kostandin Lulëzim Pal Tanush Aleksandër Karolus Filippo Adnan Agim Bashkim Besnik 
 			Dardan Dhurim Dritëro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim 
@@ -2000,7 +2005,7 @@ west_slavic = {
 	graphical_culture = westerngfx
 
 	czech = {
-		#primary = BOH
+		primary = BOH
 		dynasty_names = {
 			"Jankovský z Vlašimi" Chotek Lichnowsky Lobkowicz Nostitz Kutscha 
 			"Kounic" "Vítkovec" "Zerotín" "Czernín" "von Harrach" Kinsky Rosenberg
@@ -2018,7 +2023,7 @@ west_slavic = {
 	}
 	polish = {
 		graphical_culture = easterngfx
-		#primary = POL
+		primary = POL
 		male_names = {
 			August Wladyslaw Stanislaw Kazimierz Aleksander Henryk Albert Kazimierz Michal Stefan 
 			August Aleksander Karol Kazimierz Krzysztof Fryderyk Olbracht Jan Karol Patryk
@@ -2063,7 +2068,7 @@ west_slavic = {
 	}
 	
 	schlesian = {
-		#primary = SIL
+		primary = SIL
 		male_names = {
 			Fryderyk Jan Henryk Ludwik Jan Krystian Jerzy Jerzy Rudolf Jerzy Wilhelm Joachim Fryderyk Krystian 
 			Jan Jerzy Jerzy Ernest August Ernest Krystian Ludwik Rudolf Wladislaw Albert Aleksander Andel 
@@ -2077,7 +2082,7 @@ west_slavic = {
 	}
 	
 	sorbian = {
-		#primary = SOR
+		primary = SOR
 		male_names = {
 			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
 			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
@@ -2096,7 +2101,7 @@ west_slavic = {
 	}
 	
 	slovak = {
-		#primary = SLO
+		primary = SLO
 		male_names = {
 			Matej Jan Lukas Stefan Pavol Peter Juraj Jozef Marek Daniel Moric Samuel Martin Ondrej Anton Karol
 			Hugolín Tomas Ludovít Viliam Mikulas Ignac Jaroslav Jaromir Miroslav Drahoslav Svatopluk Mojmir
@@ -2151,7 +2156,7 @@ west_slavic = {
 carpathian = {	
 	graphical_culture = easterngfx
 	transylvanian = {
-		#primary = TRA
+		primary = TRA
 		male_names = {
 			Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás 
 			Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc 
@@ -2215,7 +2220,7 @@ carpathian = {
 		}
 	}
 	romanian = {
-		#primary = WAL
+		primary = WAL
 		dynasty_names = {
 			"Basarab" "Danesti" "Draculesti"
 			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
@@ -2250,7 +2255,7 @@ carpathian = {
 		}
 	}
 	hungarian = {
-		#primary = HUN
+		primary = HUN
 		dynasty_names = {
 			Báthory Hunyadi Szapolyai Rákóczy Bocskai Bethlen Almásy Andrássy Batthyány Csáky Dessewffy
 			Erdody Eszterházy Festetics Hajdú Károlyi Kun Magyary Perényi Rónai Széchenyi Szepessy 
@@ -2295,7 +2300,7 @@ carpathian = {
 east_slavic = {
 	graphical_culture = easterngfx
 	russian = { #Muscovite - Vladimir-Suzdal dialects
-		#primary = MOS
+		primary = MOS
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2335,7 +2340,7 @@ east_slavic = {
 		}
 	}
 	novgorodian = { #Novgorodian and most North Russian dialects.
-		#primary = NOV
+		primary = NOV
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2375,7 +2380,7 @@ east_slavic = {
 		}
 	}
 	ryazanian = { #Southern Russian Dialects
-		#primary = RYA
+		primary = RYA
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2415,7 +2420,7 @@ east_slavic = {
 		}
 	}
 	byelorussian = {
-		#primary = PLT
+		primary = PLT
 		male_names = {
 			Andrei Lubko Olgierd Bryachislav Vasiliy Svyatoslav Vladimir Izyaslav Vseslav Boris Aleksandr Adrian 
 			Afanasiy Daniil Dmitriy Dorofey Faddey Feodosiy Feofil Foma Fyodor Gavriil Grigoriy Igor Ivan 
@@ -2427,7 +2432,7 @@ east_slavic = {
 		}
 	}
 	ruthenian = {
-		#primary = KIE
+		primary = KIE
 		male_names = {
 			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2861,7 +2866,7 @@ baltic	= {
 	graphical_culture = easterngfx
 	
 	estonian = {
-		#primary = EST
+		primary = EST
 		dynasty_names = {
 			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
@@ -2907,7 +2912,7 @@ baltic	= {
 		}
 	}
 	lithuanian = {
-		#primary = LIT
+		primary = LIT
 		male_names = {
 			Zygimantas Kazimieras Aleksandras Jonas Albertas Zygimantas Augustas Vytautas Jogaila Vladislovas 
 			Algirdas Stanislovas Svitrigaila Mindaugas Albertas Andrius Antanas Aras Arturas Azuolas 
@@ -2930,7 +2935,7 @@ baltic	= {
 		}
 	}
 	latvian = {
-		#primary = LTG
+		primary = LTG
 		male_names = {
 			Aishno Ako Ankad Baise Balodis Bikshe Borut Bulei Butovit Cirulis Dangeruthe Darbeslave 
 			Davins Demas Dobre Dovyat Dzintis Dausprungas Imanta
@@ -2980,7 +2985,394 @@ baltic	= {
 byzantine = {
 	graphical_culture = easterngfx
 	greek = {
-		#primary = GRE
+		primary = GRE
+		male_names = {
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios 
+			Andreas Andronikos Anthemios Anthimos Antiokhos Antonios Apollonios 
+			Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Belisarios Boethios Bosporios 
+			Khristophoros Khrysanthos Khrysogonos Damianos Daniel David Demetrios 
+			Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios 
+			Gerasimos Germanos Gregoras Gregorios Hektorios Helias 
+			Herakleios Hierotheos Himerios
+			Konstantinos Pavlos Nikolaos Aineias Alexeios Ambrosios
+			Dionysos Elpidios Hektor 
+			Kastor Manouel Matthaios Nestor Nikomedes Orestes Palaimon Pelagios Petros Philemon Philippos 
+			Skantarios Stefanos Theodoros Thomas Prokopios Ioannes Iason
+		}
+		female_names = {
+			Alexandra Adriane Agathe Agne Agnes Aikaterine Alexeia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania 
+			Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene 
+			Ioanna Ioulia Iouliana Ioustina Kale Konstantia 
+			Konstantine Kyra Kyriake Hypatia Zoe
+		}
+		dynasty_names = {
+			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+			# CKII
+			"Kameniatis" "Chameas" "Demetrianos" "Laloudios" "Stamopatas" "Peloponnesites" "Klados" "Avastaktos" 
+			"Lardotyros" "Kyritzios" "Kolovos" "Podopagouros" "Touvakes" "Peteinakes" "Ooryphas" "Myxares" "Toxias" 
+			"Bardouchos" "Boilas" "Skepides" "Mamoulianos" "Katakylas" "Drakokephalos" "Rentakes" "Exarchos" "Skepastos" 
+			"Kyminas" "Krasas" "Konstantinakes" "Mouzelis" "Souanites" "Karteroukas" "Machairas" "Koutzodaktylos" 
+			"Kanakaris" "Vamvaloudes" "Leontares" "Klokas" "Axiotes" "Chrysouchos" "Pyrrogenes" "Kophinas" "Makroleon" 
+			"Kalopragmon" "Karphitzes" "Trichares" "Kokkalos" "Kritharatos" "Kretikos" "Tourkos" "Symvatikes" 
+			"Glykomachaires" "Chrysochoos" "Vonos" "Mystakon" "Pterotos" "Monotes" "Manginos" 
+			"Kalavros" "Sikelos" "Kilikos" "Macrodoukas" "Aineidas" 
+			"Pegonitissos" "Kastriotis" "Kamateros" "Skleros"
+			"Makrembolites" "Botaneiates" "Diogenes" "Stratiotikos" "Monomachos" "Kalaphates" 
+			"Paphlagon" "Argyros" "Kourkouas" "Lekapenos" "Karbonopsis" "Makedon" "Stryphnos" "Euforbenos" 
+			"Gabras" "Aaron" "Lampinos" "Tzimiskes" "Kurtikainos" "Murzuphlos" "Balatios" "Ouranos" "Amorios" "Armenios" 
+			"Rangabes" "Logothetes" "Isauros" "Polites" "Studites" "Skamandrenos" "Synkellos" "Kauleas" "Monocharzanios" 
+			"Kassymatas" "Nesteutes" "Scholastikos" "Chrisostomos" "Nazianzen" "Nikomedianos" "Protokletos" "Garidas" 
+			"Grammatikos" "Zeno" "Gavalas" "Axuchos" "Kamonas" "Asidenos" "Hephaistos" "Karatzas" 
+			"Amiroutzes" "Bessarion" "Callistus" "Chalkokondyles" "Gazis" "Kourtesios" "Kallistos" "Kladas" "de Patras" 
+			"Gemistus" "Allatios" "Chalcocondyles" "Korniaktos" "Damaskenos" "Eparchos" "Flanginis" "Fokás" "Heraclides" 
+			"Kallokratos" "Kottounios" "Leontaritis" "Loukanis" "Margunios" "Musurus" "Nafpliotis" "Hatzidákis" 
+			"Aprenos"  "Chortatzis" "Gabrielopoulos" "Gounaropoulos" "Belissariotis" "Konstantopoulos" "Kavallarios" 
+			"Maniakis" "Notaras" "Sgouromallis" "Epiphanis" "Logaras" "Eudaimon" "Sakellarios" "Maurozoumis" "Stylaios" 
+			"Maleinos" "Basilakios" "Mamonas" "Kekaumenos" "Metaxas" "Kanavos" "Koukouzelis" "Koresis" "Makrinos" 
+			"Lambardas" "Adrianos" "Agallon" "Akropolites" "Aoinos" "Apokaukos" "Aprenos" "Arbantenos" "Argyros" 
+			"Arianites" "Atrapes" "Balsamon" "Batatzes" "Botaneiates" "Boumbalis" "Bourtzes" "Branas" "Bryennios" 
+			"Chandrenos" "Choniates" "Choumnos" "Chrysaphes" "Chrysoloras" "Dalassenos" "Dermokaïtes" "Diasorenos" 
+			"Dokeianos" "Eirenikos" "Exazenos" "Gavras" "Glabas" "Iagaris" "Kabakes" "Kabasilas" "Kalamanos" "Kaloethes" 
+			"Kalothetos" "Kamateros" "Katrares" "Kaukadenos" "Kontostephanos" "Koresses" "Kourkouas" 
+			"Kourtikes" "Limpidares" "Machoneos" "Makrembolites" "Malakes" "Maliasenos" "Mamalis" 
+			"Mandromenos" "Manouelites" "Melachroinos" "Mourtzouphlos" "Mouzakios" "Mouzalon" "Neokaisareites" 
+			"Nestongos" "Pantechnes" "Paraspondylos" "Petraliphas" "Petzikopoulos" "Philanthropenos" "Pleustes" 
+			"Prasomales" "Prinkips" "Psellos" "Radenos" "Rossatas" "Sarantapechos" "Sebastopoulos" "Segouropoulos" 
+			"Sgouros" "Spartenos" "Sphrantzes" "Strabomytes" "Synadenos" "Syraneres" "Syropoulos" "Tagares" 
+			"Tarchaneiotes" "Tornikes" "Trichas" "Tsaphas" "Tzamplakon" "Tzykandeles" "Zaridas" "Akunin" "Abalantes" 
+			"Aboudimos" "Adralestos" "Agallianos" "Agrites" "Akapnes" "Alopos" "Alousianos" "Alyattes" "Amaseianos" 
+			"Amiropoulos" "Anatolikos" "Andreiomenos" "Androsalites" "Anemas" "Angoures" "Anthemiotes" "Antiochites" 
+			"Antiochos" "Antipapas" "Arbintenos" "Areobindenos" "Areobindos" "Argyropoulos" "Aristenos" "Artoukomites" 
+			"Arvantenos" "Attaleiates" "Aulenos" "Aulepates" "Axinites" "Axiomatikos" "Balantes" "Barbaros" "Bardales" 
+			"Barenos" "Barsakes" "Barys" "Belissariotes" "Bempetziotes" "Beriboes" "Beriotes" "Blachernites" "Blangas" 
+			"Boïlas" "Bouches" "Boutzares" "Bouzenos" "Brachamios" "Bringas" "Chaldos" "Chalkites" "Chalkoutzes" 
+			"Chamaretos" "Charsianites" "Chasanes" "Chazanes" "Choinides" "Choirosphaktes" "Chomatenos" "Chordolibas" 
+			"Choriates" "Chrouselios" "Chrousos" "Chrysanthos" "Chryselios" "Chrysobalantites" "Chrysoberges" "Chytes" 
+			"Daimones" "Dalessenos" "Dalassenos Doukas" "Dekanos" "Diabatenos" "Dikaios" "Diogenes" "Domestikopouolos" 
+			"Doxapatres" "Drakontopoulos" "Drosinos" "Drosos" "Droulenos" 
+			"Elegmites" "Enochos" "Epanokomites" "Ergodotes" "Erotikos" "Eugenianos" "Eugenios" "Eulogios" "Exotrochos" 
+			"Gabalas" "Galaton" "Gelotes" "Gidos" "Glykys" "Goudeles" "Gourzoubathenos" "Granatos" "Gribas" "Grispos" 
+			"Gymnos" "Hagiochrisophorites" "Hagioprokopites" "Hagiotheodorites" "Hagiozacharites" "Hamartolos" 
+			"Haplorabdes" "Haploucheir" "Hexakionites" "Hexaklinites" "Hexamilites" "Hierakes" "Hikanatos" "Iasites" 
+			"Iberopoulos" "Isakiotes" "Italikos" "Kaballarios" "Kabasilas" "Kaisar" "Kalameteros" "Kalamaras" 
+			"Kalampakes" "Kalognomos" "Kamytzes Komnenodoukas" "Kappadokes" "Kappadox Kalampakes" "Karabitenos" 
+			"Karabitziotes" "Karaïonatan" "Karamallos" "Karandenos" "Karantes" "Kardamopoulos" "Karenos" "Karianites" 
+			"Karkaronymos" "Karmalikes" "Karouzeiates" "Kaspax" "Kastamonites" "Katakalon" "Katakalos" "Kataphloros" 
+			"Katas" "Katharos" "Katotikos" "Katzamoundes" "Kegenes" "Kekaleimenos" "Keklymmenos" "Kemineianos" "Kenchres" 
+			"Kentenares" "Kephalas" "Keroularios" "Kibyrraiotes" "Kinnamos" "Kokkinos" "Komnenodoukas" "Konops" 
+			"Kopsenos" "Kostomyres" "Kotertzes" "Kouloukes" "Kouneres" "Krateros" "Krinites" 
+			"Kritharas" "Kritopolos" "Kyminianos" "Kynochorites" "Kyriotes" "Kyritzes" "Labouzenos" "Laktentitzes" 
+			"Lalakon" "Lampsiotes" "Lapardas" "Leichoudes" "Lependrenos" "Leukedonites" "Libadares" "Libadas" 
+			"Libellisios" "Limas" "Liparites" "Lithokastrites" "Logariastes" "Loules" "Louloukes" "Lykaon" "Machetarios" 
+			"Madrites" "Madytenos" "Makropoderes" "Maleïnos" "Maleses" "Mamalos" "Manganes" "Marachas" "Marapas" 
+			"Marchapsabos" "Marianites" "Marzapoulos" "Matzaris" "Matzas" "Matzoukes" "Maurex" "Maurokatakalos" "Mauros" 
+			"Maurozomes" "Mechos" "Megalommates" "Megenos" "Meginos" "Melias" "Melissenos" "Mermentoulos" "Mesarites" 
+			"Meschos" "Mesopotamites" "Metochites" "Metropoulos" "Mitylenaios" "Monachites" "Monokarites" "Monomachatos" 
+			"Moroiannes" "Mosaraph" "Moschos" "Mosele" "Moungos" "Mourmoures" "Moustakes" "Mozaes" "Myralides" 
+			"Myredeïtes" "Myrelaetes" "Myron" "Nabatenos" "Narbiotes" "Narsites" "Neophytos" "Neustongios" "Nikerites" 
+			"Nikoulitzes" "Noe" "Oinaiotes" "Olyntenos" "Opos" "Pagomenos" "Pakourianos" "Paktiares" 
+			"Doukas Mourtzouphlos" "Palaiotes" "Palatinos" "Pamphilos" "Panaretos" "Pankalos" 
+			"Panokomites" "Parsakoutenos" "Parthenios" "Paxenos" "Pediasimos" "Peganites" "Pegonites" "Pekoules" 
+			"Pelamedes" "Pentarkles" "Pepagomenos" "Pepanos" "Perenos" "Peribleptenos" "Phalkon" "Phialites" "Philaretos" 
+			"Philinos" "Philokales" "Phrangopolos" "Pistophilos" "Pleures" "Politopolos" "Pothos" "Probatas" 
+			"Promountenos" "Proteuon" "Ptochos" "Rentakenos" "Rizenos" "Rodios" "Rogerios" "Romaios" "Rousopoulos" 
+			"Sagopoulos" "Sarakenopoulos" "Saronites" "Sauloioannes" "Semnos" "Serblias" "Sikoundenos" "Sinopites" 
+			"Skandales" "Skanranos" "Skeblenos" "Skoutariotes" "Skribas" "Smyrnaios" "Solomon" "Sortes" 
+			"Soumenos" "Spanogregores" "Spanopoulos""Stachytzes" "Stemnitziotes"
+			"Strephnes" "Stypeiotes" "Styppes" "Synacheris" "Syros" "Taronites" "Tatikes" "Tetragonites" "Theodorokanos" 
+			"Theodosiopolites" "Thrakesios" "Thylakas" "Tilapos" "Timonites" "Tourmarchopoulos" "Traphines" "Trellos" 
+			"Triakontaphyllos" "Triblattites" "Trichinopodes" "Triphyllios" "Tzanzes" "Tzefres" "Tzetas" "Tzipoureles" 
+			"Tzirithon" "Tzoulas" "Tzoumenes" "Tzouroulles" "Tzympenos" "Vatatzes" "Xanthos" "Xenos" "Xeros" "Xiphias" 
+			"Xiphilinos" "Xylinites" "Zabareiotes" "Zagarommates" "Zerbos" "Zomes" "Zonaras" "Kalomalas" "Kaloudes" 
+			"Kampanarios" "Kamytzes" "Kallierges" "Loukites" "Kometopoulos" "Basiliakos" 
+			"Pateranos" "von Winterthur" "Paleologo" "Gregoras" "Sanudo" "Komytzes" "Lascaris" "Kyrdiniatis" "Agapetos" 
+			"Attikos" "Anastasiotis" "Evergetidiotis" "Chliarinos" "Chysovergis" "Eugeniotis" "Vorradiotis" "Mountanis" 
+			"Theotokitis" "Viticlenou" "Autoreianos" "Akoimitos" "Charitopoulos" "Panemorphiotis" "Hyakinthiotis" 
+			"Galesiotis" "Bekkos" "Kyprios" "Gonitis" "Pammakaristiotis" "Perivleptiotis" "Manganiotis" "Kalekas" 
+			"Herakleidon" "Xylaloes" "Syrikos" "Tatikios" "Aspietes" "Kastenianos" "Leovachos" "Maniatis" "Vaklikas" 
+			"Maurikios" "Skrinarios" "Mesanaktis" "Lachanodrakon" "Kalokyris" "Lykodontis" "Skyllaris" "Ampelas" 
+			"Gerontas" "Apokapis" "Pallikarios" "Orphanotrophos" "Chlorokokis" "Hexavoulis" "Martinakios" "Agelastos" 
+			"Kotzes" "Toxaras" "Aplakes" "Gomostos" "Koupharas" "Tyropoulis" "Kontomytes" "Chenopoulos" "Sellokalas" 
+			"Kentrokoukouros" "Antigonos" "Pastillas" "Katakalitzes" "Manikophagos" "Kolokynthis" "Rachites" "Bua Spatas" 
+			"Apsimaros" "Artemios"
+		}
+	}
+	pontic_greek = {
+		primary = TRE
+		male_names = {
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios 
+			Andreas Andronikos Anthemios Anthimos Antiokhos Antonios Apollonios 
+			Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Belisarios Boethios Bosporios 
+			Khristophoros Khrysanthos Khrysogonos Damianos Daniel David Demetrios 
+			Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios 
+			Gerasimos Germanos Gregoras Gregorios Hektorios Helias 
+			Herakleios Hierotheos Himerios
+			Konstantinos Pavlos Nikolaos Aineias Alexeios Ambrosios
+			Dionysos Elpidios Hektor 
+			Kastor Manouel Matthaios Nestor Nikomedes Orestes Palaimon Pelagios Petros Philemon Philippos 
+			Skantarios Stefanos Theodoros Thomas Prokopios Ioannes Iason
+		}
+		female_names = {
+			Alexandra Adriane Agathe Agne Agnes Aikaterine Alexeia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania 
+			Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene 
+			Ioanna Ioulia Iouliana Ioustina Kale Konstantia 
+			Konstantine Kyra Kyriake Hypatia Zoe
+		}
+		dynasty_names = {
+			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+			"Kameniatis" "Chameas" "Demetrianos" "Laloudios" "Stamopatas" "Peloponnesites" "Klados" "Avastaktos" 
+			"Lardotyros" "Kyritzios" "Kolovos" "Podopagouros" "Touvakes" "Peteinakes" "Ooryphas" "Myxares" "Toxias" 
+			"Bardouchos" "Boilas" "Skepides" "Mamoulianos" "Katakylas" "Drakokephalos" "Rentakes" "Exarchos" "Skepastos" 
+			"Kyminas" "Krasas" "Konstantinakes" "Mouzelis" "Souanites" "Karteroukas" "Machairas" "Koutzodaktylos" 
+			"Kanakaris" "Vamvaloudes" "Leontares" "Klokas" "Axiotes" "Chrysouchos" "Pyrrogenes" "Kophinas" "Makroleon" 
+			"Kalopragmon" "Karphitzes" "Trichares" "Kokkalos" "Kritharatos" "Kretikos" "Tourkos" "Symvatikes" 
+			"Glykomachaires" "Chrysochoos" "Vonos" "Mystakon" "Pterotos" "Monotes" "Manginos" 
+			"Kalavros" "Sikelos" "Kilikos" "Macrodoukas" "Aineidas" 
+			"Pegonitissos" "Kastriotis" "Kamateros" "Skleros"
+			"Makrembolites" "Botaneiates" "Diogenes" "Stratiotikos" "Monomachos" "Kalaphates" 
+			"Paphlagon" "Argyros" "Kourkouas" "Lekapenos" "Karbonopsis" "Makedon" "Stryphnos" "Euforbenos" 
+			"Gabras" "Aaron" "Lampinos" "Tzimiskes" "Kurtikainos" "Murzuphlos" "Balatios" "Ouranos" "Amorios" "Armenios" 
+			"Rangabes" "Logothetes" "Isauros" "Polites" "Studites" "Skamandrenos" "Synkellos" "Kauleas" "Monocharzanios" 
+			"Kassymatas" "Nesteutes" "Scholastikos" "Chrisostomos" "Nazianzen" "Nikomedianos" "Protokletos" "Garidas" 
+			"Grammatikos" "Zeno" "Gavalas" "Axuchos" "Kamonas" "Asidenos" "Hephaistos" "Karatzas" 
+			"Amiroutzes" "Bessarion" "Callistus" "Chalkokondyles" "Gazis" "Kourtesios" "Kallistos" "Kladas" "de Patras" 
+			"Gemistus" "Allatios" "Chalcocondyles" "Korniaktos" "Damaskenos" "Eparchos" "Flanginis" "Fokás" "Heraclides" 
+			"Kallokratos" "Kottounios" "Leontaritis" "Loukanis" "Margunios" "Musurus" "Nafpliotis" "Hatzidákis" 
+			"Aprenos"  "Chortatzis" "Gabrielopoulos" "Gounaropoulos" "Belissariotis" "Konstantopoulos" "Kavallarios" 
+			"Maniakis" "Notaras" "Sgouromallis" "Epiphanis" "Logaras" "Eudaimon" "Sakellarios" "Maurozoumis" "Stylaios" 
+			"Maleinos" "Basilakios" "Mamonas" "Kekaumenos" "Metaxas" "Kanavos" "Koukouzelis" "Koresis" "Makrinos" 
+			"Lambardas" "Adrianos" "Agallon" "Akropolites" "Aoinos" "Apokaukos" "Aprenos" "Arbantenos" "Argyros" 
+			"Arianites" "Atrapes" "Balsamon" "Batatzes" "Botaneiates" "Boumbalis" "Bourtzes" "Branas" "Bryennios" 
+			"Chandrenos" "Choniates" "Choumnos" "Chrysaphes" "Chrysoloras" "Dalassenos" "Dermokaïtes" "Diasorenos" 
+			"Dokeianos" "Eirenikos" "Exazenos" "Gavras" "Glabas" "Iagaris" "Kabakes" "Kabasilas" "Kalamanos" "Kaloethes" 
+			"Kalothetos" "Kamateros" "Katrares" "Kaukadenos" "Kontostephanos" "Koresses" "Kourkouas" 
+			"Kourtikes" "Limpidares" "Machoneos" "Makrembolites" "Malakes" "Maliasenos" "Mamalis" 
+			"Mandromenos" "Manouelites" "Melachroinos" "Mourtzouphlos" "Mouzakios" "Mouzalon" "Neokaisareites" 
+			"Nestongos" "Pantechnes" "Paraspondylos" "Petraliphas" "Petzikopoulos" "Philanthropenos" "Pleustes" 
+			"Prasomales" "Prinkips" "Psellos" "Radenos" "Rossatas" "Sarantapechos" "Sebastopoulos" "Segouropoulos" 
+			"Sgouros" "Spartenos" "Sphrantzes" "Strabomytes" "Synadenos" "Syraneres" "Syropoulos" "Tagares" 
+			"Tarchaneiotes" "Tornikes" "Trichas" "Tsaphas" "Tzamplakon" "Tzykandeles" "Zaridas" "Akunin" "Abalantes" 
+			"Aboudimos" "Adralestos" "Agallianos" "Agrites" "Akapnes" "Alopos" "Alousianos" "Alyattes" "Amaseianos" 
+			"Amiropoulos" "Anatolikos" "Andreiomenos" "Androsalites" "Anemas" "Angoures" "Anthemiotes" "Antiochites" 
+			"Antiochos" "Antipapas" "Arbintenos" "Areobindenos" "Areobindos" "Argyropoulos" "Aristenos" "Artoukomites" 
+			"Arvantenos" "Attaleiates" "Aulenos" "Aulepates" "Axinites" "Axiomatikos" "Balantes" "Barbaros" "Bardales" 
+			"Barenos" "Barsakes" "Barys" "Belissariotes" "Bempetziotes" "Beriboes" "Beriotes" "Blachernites" "Blangas" 
+			"Boïlas" "Bouches" "Boutzares" "Bouzenos" "Brachamios" "Bringas" "Chaldos" "Chalkites" "Chalkoutzes" 
+			"Chamaretos" "Charsianites" "Chasanes" "Chazanes" "Choinides" "Choirosphaktes" "Chomatenos" "Chordolibas" 
+			"Choriates" "Chrouselios" "Chrousos" "Chrysanthos" "Chryselios" "Chrysobalantites" "Chrysoberges" "Chytes" 
+			"Daimones" "Dalessenos" "Dalassenos Doukas" "Dekanos" "Diabatenos" "Dikaios" "Diogenes" "Domestikopouolos" 
+			"Doxapatres" "Drakontopoulos" "Drosinos" "Drosos" "Droulenos" 
+			"Elegmites" "Enochos" "Epanokomites" "Ergodotes" "Erotikos" "Eugenianos" "Eugenios" "Eulogios" "Exotrochos" 
+			"Gabalas" "Galaton" "Gelotes" "Gidos" "Glykys" "Goudeles" "Gourzoubathenos" "Granatos" "Gribas" "Grispos" 
+			"Gymnos" "Hagiochrisophorites" "Hagioprokopites" "Hagiotheodorites" "Hagiozacharites" "Hamartolos" 
+			"Haplorabdes" "Haploucheir" "Hexakionites" "Hexaklinites" "Hexamilites" "Hierakes" "Hikanatos" "Iasites" 
+			"Iberopoulos" "Isakiotes" "Italikos" "Kaballarios" "Kabasilas" "Kaisar" "Kalameteros" "Kalamaras" 
+			"Kalampakes" "Kalognomos" "Kamytzes Komnenodoukas" "Kappadokes" "Kappadox Kalampakes" "Karabitenos" 
+			"Karabitziotes" "Karaïonatan" "Karamallos" "Karandenos" "Karantes" "Kardamopoulos" "Karenos" "Karianites" 
+			"Karkaronymos" "Karmalikes" "Karouzeiates" "Kaspax" "Kastamonites" "Katakalon" "Katakalos" "Kataphloros" 
+			"Katas" "Katharos" "Katotikos" "Katzamoundes" "Kegenes" "Kekaleimenos" "Keklymmenos" "Kemineianos" "Kenchres" 
+			"Kentenares" "Kephalas" "Keroularios" "Kibyrraiotes" "Kinnamos" "Kokkinos" "Komnenodoukas" "Konops" 
+			"Kopsenos" "Kostomyres" "Kotertzes" "Kouloukes" "Kouneres" "Krateros" "Krinites" 
+			"Kritharas" "Kritopolos" "Kyminianos" "Kynochorites" "Kyriotes" "Kyritzes" "Labouzenos" "Laktentitzes" 
+			"Lalakon" "Lampsiotes" "Lapardas" "Leichoudes" "Lependrenos" "Leukedonites" "Libadares" "Libadas" 
+			"Libellisios" "Limas" "Liparites" "Lithokastrites" "Logariastes" "Loules" "Louloukes" "Lykaon" "Machetarios" 
+			"Madrites" "Madytenos" "Makropoderes" "Maleïnos" "Maleses" "Mamalos" "Manganes" "Marachas" "Marapas" 
+			"Marchapsabos" "Marianites" "Marzapoulos" "Matzaris" "Matzas" "Matzoukes" "Maurex" "Maurokatakalos" "Mauros" 
+			"Maurozomes" "Mechos" "Megalommates" "Megenos" "Meginos" "Melias" "Melissenos" "Mermentoulos" "Mesarites" 
+			"Meschos" "Mesopotamites" "Metochites" "Metropoulos" "Mitylenaios" "Monachites" "Monokarites" "Monomachatos" 
+			"Moroiannes" "Mosaraph" "Moschos" "Mosele" "Moungos" "Mourmoures" "Moustakes" "Mozaes" "Myralides" 
+			"Myredeïtes" "Myrelaetes" "Myron" "Nabatenos" "Narbiotes" "Narsites" "Neophytos" "Neustongios" "Nikerites" 
+			"Nikoulitzes" "Noe" "Oinaiotes" "Olyntenos" "Opos" "Pagomenos" "Pakourianos" "Paktiares" 
+			"Doukas Mourtzouphlos" "Palaiotes" "Palatinos" "Pamphilos" "Panaretos" "Pankalos" 
+			"Panokomites" "Parsakoutenos" "Parthenios" "Paxenos" "Pediasimos" "Peganites" "Pegonites" "Pekoules" 
+			"Pelamedes" "Pentarkles" "Pepagomenos" "Pepanos" "Perenos" "Peribleptenos" "Phalkon" "Phialites" "Philaretos" 
+			"Philinos" "Philokales" "Phrangopolos" "Pistophilos" "Pleures" "Politopolos" "Pothos" "Probatas" 
+			"Promountenos" "Proteuon" "Ptochos" "Rentakenos" "Rizenos" "Rodios" "Rogerios" "Romaios" "Rousopoulos" 
+			"Sagopoulos" "Sarakenopoulos" "Saronites" "Sauloioannes" "Semnos" "Serblias" "Sikoundenos" "Sinopites" 
+			"Skandales" "Skanranos" "Skeblenos" "Skoutariotes" "Skribas" "Smyrnaios" "Solomon" "Sortes" 
+			"Soumenos" "Spanogregores" "Spanopoulos""Stachytzes" "Stemnitziotes"
+			"Strephnes" "Stypeiotes" "Styppes" "Synacheris" "Syros" "Taronites" "Tatikes" "Tetragonites" "Theodorokanos" 
+			"Theodosiopolites" "Thrakesios" "Thylakas" "Tilapos" "Timonites" "Tourmarchopoulos" "Traphines" "Trellos" 
+			"Triakontaphyllos" "Triblattites" "Trichinopodes" "Triphyllios" "Tzanzes" "Tzefres" "Tzetas" "Tzipoureles" 
+			"Tzirithon" "Tzoulas" "Tzoumenes" "Tzouroulles" "Tzympenos" "Vatatzes" "Xanthos" "Xenos" "Xeros" "Xiphias" 
+			"Xiphilinos" "Xylinites" "Zabareiotes" "Zagarommates" "Zerbos" "Zomes" "Zonaras" "Kalomalas" "Kaloudes" 
+			"Kampanarios" "Kamytzes" "Kallierges" "Loukites" "Kometopoulos" "Basiliakos" 
+			"Pateranos" "von Winterthur" "Paleologo" "Gregoras" "Sanudo" "Komytzes" "Lascaris" "Kyrdiniatis" "Agapetos" 
+			"Attikos" "Anastasiotis" "Evergetidiotis" "Chliarinos" "Chysovergis" "Eugeniotis" "Vorradiotis" "Mountanis" 
+			"Theotokitis" "Viticlenou" "Autoreianos" "Akoimitos" "Charitopoulos" "Panemorphiotis" "Hyakinthiotis" 
+			"Galesiotis" "Bekkos" "Kyprios" "Gonitis" "Pammakaristiotis" "Perivleptiotis" "Manganiotis" "Kalekas" 
+			"Herakleidon" "Xylaloes" "Syrikos" "Tatikios" "Aspietes" "Kastenianos" "Leovachos" "Maniatis" "Vaklikas" 
+			"Maurikios" "Skrinarios" "Mesanaktis" "Lachanodrakon" "Kalokyris" "Lykodontis" "Skyllaris" "Ampelas" 
+			"Gerontas" "Apokapis" "Pallikarios" "Orphanotrophos" "Chlorokokis" "Hexavoulis" "Martinakios" "Agelastos" 
+			"Kotzes" "Toxaras" "Aplakes" "Gomostos" "Koupharas" "Tyropoulis" "Kontomytes" "Chenopoulos" "Sellokalas" 
+			"Kentrokoukouros" "Antigonos" "Pastillas" "Katakalitzes" "Manikophagos" "Kolokynthis" "Rachites" "Bua Spatas" 
+			"Apsimaros" "Artemios"
+		}
+	}
+	cappadocian_greek = {
+		primary = TRE
+		male_names = {
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios 
+			Andreas Andronikos Anthemios Anthimos Antiokhos Antonios Apollonios 
+			Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Belisarios Boethios Bosporios 
+			Khristophoros Khrysanthos Khrysogonos Damianos Daniel David Demetrios 
+			Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios 
+			Gerasimos Germanos Gregoras Gregorios Hektorios Helias 
+			Herakleios Hierotheos Himerios
+			Konstantinos Pavlos Nikolaos Aineias Alexeios Ambrosios
+			Dionysos Elpidios Hektor 
+			Kastor Manouel Matthaios Nestor Nikomedes Orestes Palaimon Pelagios Petros Philemon Philippos 
+			Skantarios Stefanos Theodoros Thomas Prokopios Ioannes Iason
+		}
+		female_names = {
+			Alexandra Adriane Agathe Agne Agnes Aikaterine Alexeia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania 
+			Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene 
+			Ioanna Ioulia Iouliana Ioustina Kale Konstantia 
+			Konstantine Kyra Kyriake Hypatia Zoe
+		}
+		dynasty_names = {
+			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+			"Kameniatis" "Chameas" "Demetrianos" "Laloudios" "Stamopatas" "Peloponnesites" "Klados" "Avastaktos" 
+			"Lardotyros" "Kyritzios" "Kolovos" "Podopagouros" "Touvakes" "Peteinakes" "Ooryphas" "Myxares" "Toxias" 
+			"Bardouchos" "Boilas" "Skepides" "Mamoulianos" "Katakylas" "Drakokephalos" "Rentakes" "Exarchos" "Skepastos" 
+			"Kyminas" "Krasas" "Konstantinakes" "Mouzelis" "Souanites" "Karteroukas" "Machairas" "Koutzodaktylos" 
+			"Kanakaris" "Vamvaloudes" "Leontares" "Klokas" "Axiotes" "Chrysouchos" "Pyrrogenes" "Kophinas" "Makroleon" 
+			"Kalopragmon" "Karphitzes" "Trichares" "Kokkalos" "Kritharatos" "Kretikos" "Tourkos" "Symvatikes" 
+			"Glykomachaires" "Chrysochoos" "Vonos" "Mystakon" "Pterotos" "Monotes" "Manginos" 
+			"Kalavros" "Sikelos" "Kilikos" "Macrodoukas" "Aineidas" 
+			"Pegonitissos" "Kastriotis" "Kamateros" "Skleros"
+			"Makrembolites" "Botaneiates" "Diogenes" "Stratiotikos" "Monomachos" "Kalaphates" 
+			"Paphlagon" "Argyros" "Kourkouas" "Lekapenos" "Karbonopsis" "Makedon" "Stryphnos" "Euforbenos" 
+			"Gabras" "Aaron" "Lampinos" "Tzimiskes" "Kurtikainos" "Murzuphlos" "Balatios" "Ouranos" "Amorios" "Armenios" 
+			"Rangabes" "Logothetes" "Isauros" "Polites" "Studites" "Skamandrenos" "Synkellos" "Kauleas" "Monocharzanios" 
+			"Kassymatas" "Nesteutes" "Scholastikos" "Chrisostomos" "Nazianzen" "Nikomedianos" "Protokletos" "Garidas" 
+			"Grammatikos" "Zeno" "Gavalas" "Axuchos" "Kamonas" "Asidenos" "Hephaistos" "Karatzas" 
+			"Amiroutzes" "Bessarion" "Callistus" "Chalkokondyles" "Gazis" "Kourtesios" "Kallistos" "Kladas" "de Patras" 
+			"Gemistus" "Allatios" "Chalcocondyles" "Korniaktos" "Damaskenos" "Eparchos" "Flanginis" "Fokás" "Heraclides" 
+			"Kallokratos" "Kottounios" "Leontaritis" "Loukanis" "Margunios" "Musurus" "Nafpliotis" "Hatzidákis" 
+			"Aprenos"  "Chortatzis" "Gabrielopoulos" "Gounaropoulos" "Belissariotis" "Konstantopoulos" "Kavallarios" 
+			"Maniakis" "Notaras" "Sgouromallis" "Epiphanis" "Logaras" "Eudaimon" "Sakellarios" "Maurozoumis" "Stylaios" 
+			"Maleinos" "Basilakios" "Mamonas" "Kekaumenos" "Metaxas" "Kanavos" "Koukouzelis" "Koresis" "Makrinos" 
+			"Lambardas" "Adrianos" "Agallon" "Akropolites" "Aoinos" "Apokaukos" "Aprenos" "Arbantenos" "Argyros" 
+			"Arianites" "Atrapes" "Balsamon" "Batatzes" "Botaneiates" "Boumbalis" "Bourtzes" "Branas" "Bryennios" 
+			"Chandrenos" "Choniates" "Choumnos" "Chrysaphes" "Chrysoloras" "Dalassenos" "Dermokaïtes" "Diasorenos" 
+			"Dokeianos" "Eirenikos" "Exazenos" "Gavras" "Glabas" "Iagaris" "Kabakes" "Kabasilas" "Kalamanos" "Kaloethes" 
+			"Kalothetos" "Kamateros" "Katrares" "Kaukadenos" "Kontostephanos" "Koresses" "Kourkouas" 
+			"Kourtikes" "Limpidares" "Machoneos" "Makrembolites" "Malakes" "Maliasenos" "Mamalis" 
+			"Mandromenos" "Manouelites" "Melachroinos" "Mourtzouphlos" "Mouzakios" "Mouzalon" "Neokaisareites" 
+			"Nestongos" "Pantechnes" "Paraspondylos" "Petraliphas" "Petzikopoulos" "Philanthropenos" "Pleustes" 
+			"Prasomales" "Prinkips" "Psellos" "Radenos" "Rossatas" "Sarantapechos" "Sebastopoulos" "Segouropoulos" 
+			"Sgouros" "Spartenos" "Sphrantzes" "Strabomytes" "Synadenos" "Syraneres" "Syropoulos" "Tagares" 
+			"Tarchaneiotes" "Tornikes" "Trichas" "Tsaphas" "Tzamplakon" "Tzykandeles" "Zaridas" "Akunin" "Abalantes" 
+			"Aboudimos" "Adralestos" "Agallianos" "Agrites" "Akapnes" "Alopos" "Alousianos" "Alyattes" "Amaseianos" 
+			"Amiropoulos" "Anatolikos" "Andreiomenos" "Androsalites" "Anemas" "Angoures" "Anthemiotes" "Antiochites" 
+			"Antiochos" "Antipapas" "Arbintenos" "Areobindenos" "Areobindos" "Argyropoulos" "Aristenos" "Artoukomites" 
+			"Arvantenos" "Attaleiates" "Aulenos" "Aulepates" "Axinites" "Axiomatikos" "Balantes" "Barbaros" "Bardales" 
+			"Barenos" "Barsakes" "Barys" "Belissariotes" "Bempetziotes" "Beriboes" "Beriotes" "Blachernites" "Blangas" 
+			"Boïlas" "Bouches" "Boutzares" "Bouzenos" "Brachamios" "Bringas" "Chaldos" "Chalkites" "Chalkoutzes" 
+			"Chamaretos" "Charsianites" "Chasanes" "Chazanes" "Choinides" "Choirosphaktes" "Chomatenos" "Chordolibas" 
+			"Choriates" "Chrouselios" "Chrousos" "Chrysanthos" "Chryselios" "Chrysobalantites" "Chrysoberges" "Chytes" 
+			"Daimones" "Dalessenos" "Dalassenos Doukas" "Dekanos" "Diabatenos" "Dikaios" "Diogenes" "Domestikopouolos" 
+			"Doxapatres" "Drakontopoulos" "Drosinos" "Drosos" "Droulenos" 
+			"Elegmites" "Enochos" "Epanokomites" "Ergodotes" "Erotikos" "Eugenianos" "Eugenios" "Eulogios" "Exotrochos" 
+			"Gabalas" "Galaton" "Gelotes" "Gidos" "Glykys" "Goudeles" "Gourzoubathenos" "Granatos" "Gribas" "Grispos" 
+			"Gymnos" "Hagiochrisophorites" "Hagioprokopites" "Hagiotheodorites" "Hagiozacharites" "Hamartolos" 
+			"Haplorabdes" "Haploucheir" "Hexakionites" "Hexaklinites" "Hexamilites" "Hierakes" "Hikanatos" "Iasites" 
+			"Iberopoulos" "Isakiotes" "Italikos" "Kaballarios" "Kabasilas" "Kaisar" "Kalameteros" "Kalamaras" 
+			"Kalampakes" "Kalognomos" "Kamytzes Komnenodoukas" "Kappadokes" "Kappadox Kalampakes" "Karabitenos" 
+			"Karabitziotes" "Karaïonatan" "Karamallos" "Karandenos" "Karantes" "Kardamopoulos" "Karenos" "Karianites" 
+			"Karkaronymos" "Karmalikes" "Karouzeiates" "Kaspax" "Kastamonites" "Katakalon" "Katakalos" "Kataphloros" 
+			"Katas" "Katharos" "Katotikos" "Katzamoundes" "Kegenes" "Kekaleimenos" "Keklymmenos" "Kemineianos" "Kenchres" 
+			"Kentenares" "Kephalas" "Keroularios" "Kibyrraiotes" "Kinnamos" "Kokkinos" "Komnenodoukas" "Konops" 
+			"Kopsenos" "Kostomyres" "Kotertzes" "Kouloukes" "Kouneres" "Krateros" "Krinites" 
+			"Kritharas" "Kritopolos" "Kyminianos" "Kynochorites" "Kyriotes" "Kyritzes" "Labouzenos" "Laktentitzes" 
+			"Lalakon" "Lampsiotes" "Lapardas" "Leichoudes" "Lependrenos" "Leukedonites" "Libadares" "Libadas" 
+			"Libellisios" "Limas" "Liparites" "Lithokastrites" "Logariastes" "Loules" "Louloukes" "Lykaon" "Machetarios" 
+			"Madrites" "Madytenos" "Makropoderes" "Maleïnos" "Maleses" "Mamalos" "Manganes" "Marachas" "Marapas" 
+			"Marchapsabos" "Marianites" "Marzapoulos" "Matzaris" "Matzas" "Matzoukes" "Maurex" "Maurokatakalos" "Mauros" 
+			"Maurozomes" "Mechos" "Megalommates" "Megenos" "Meginos" "Melias" "Melissenos" "Mermentoulos" "Mesarites" 
+			"Meschos" "Mesopotamites" "Metochites" "Metropoulos" "Mitylenaios" "Monachites" "Monokarites" "Monomachatos" 
+			"Moroiannes" "Mosaraph" "Moschos" "Mosele" "Moungos" "Mourmoures" "Moustakes" "Mozaes" "Myralides" 
+			"Myredeïtes" "Myrelaetes" "Myron" "Nabatenos" "Narbiotes" "Narsites" "Neophytos" "Neustongios" "Nikerites" 
+			"Nikoulitzes" "Noe" "Oinaiotes" "Olyntenos" "Opos" "Pagomenos" "Pakourianos" "Paktiares" 
+			"Doukas Mourtzouphlos" "Palaiotes" "Palatinos" "Pamphilos" "Panaretos" "Pankalos" 
+			"Panokomites" "Parsakoutenos" "Parthenios" "Paxenos" "Pediasimos" "Peganites" "Pegonites" "Pekoules" 
+			"Pelamedes" "Pentarkles" "Pepagomenos" "Pepanos" "Perenos" "Peribleptenos" "Phalkon" "Phialites" "Philaretos" 
+			"Philinos" "Philokales" "Phrangopolos" "Pistophilos" "Pleures" "Politopolos" "Pothos" "Probatas" 
+			"Promountenos" "Proteuon" "Ptochos" "Rentakenos" "Rizenos" "Rodios" "Rogerios" "Romaios" "Rousopoulos" 
+			"Sagopoulos" "Sarakenopoulos" "Saronites" "Sauloioannes" "Semnos" "Serblias" "Sikoundenos" "Sinopites" 
+			"Skandales" "Skanranos" "Skeblenos" "Skoutariotes" "Skribas" "Smyrnaios" "Solomon" "Sortes" 
+			"Soumenos" "Spanogregores" "Spanopoulos""Stachytzes" "Stemnitziotes"
+			"Strephnes" "Stypeiotes" "Styppes" "Synacheris" "Syros" "Taronites" "Tatikes" "Tetragonites" "Theodorokanos" 
+			"Theodosiopolites" "Thrakesios" "Thylakas" "Tilapos" "Timonites" "Tourmarchopoulos" "Traphines" "Trellos" 
+			"Triakontaphyllos" "Triblattites" "Trichinopodes" "Triphyllios" "Tzanzes" "Tzefres" "Tzetas" "Tzipoureles" 
+			"Tzirithon" "Tzoulas" "Tzoumenes" "Tzouroulles" "Tzympenos" "Vatatzes" "Xanthos" "Xenos" "Xeros" "Xiphias" 
+			"Xiphilinos" "Xylinites" "Zabareiotes" "Zagarommates" "Zerbos" "Zomes" "Zonaras" "Kalomalas" "Kaloudes" 
+			"Kampanarios" "Kamytzes" "Kallierges" "Loukites" "Kometopoulos" "Basiliakos" 
+			"Pateranos" "von Winterthur" "Paleologo" "Gregoras" "Sanudo" "Komytzes" "Lascaris" "Kyrdiniatis" "Agapetos" 
+			"Attikos" "Anastasiotis" "Evergetidiotis" "Chliarinos" "Chysovergis" "Eugeniotis" "Vorradiotis" "Mountanis" 
+			"Theotokitis" "Viticlenou" "Autoreianos" "Akoimitos" "Charitopoulos" "Panemorphiotis" "Hyakinthiotis" 
+			"Galesiotis" "Bekkos" "Kyprios" "Gonitis" "Pammakaristiotis" "Perivleptiotis" "Manganiotis" "Kalekas" 
+			"Herakleidon" "Xylaloes" "Syrikos" "Tatikios" "Aspietes" "Kastenianos" "Leovachos" "Maniatis" "Vaklikas" 
+			"Maurikios" "Skrinarios" "Mesanaktis" "Lachanodrakon" "Kalokyris" "Lykodontis" "Skyllaris" "Ampelas" 
+			"Gerontas" "Apokapis" "Pallikarios" "Orphanotrophos" "Chlorokokis" "Hexavoulis" "Martinakios" "Agelastos" 
+			"Kotzes" "Toxaras" "Aplakes" "Gomostos" "Koupharas" "Tyropoulis" "Kontomytes" "Chenopoulos" "Sellokalas" 
+			"Kentrokoukouros" "Antigonos" "Pastillas" "Katakalitzes" "Manikophagos" "Kolokynthis" "Rachites" "Bua Spatas" 
+			"Apsimaros" "Artemios"
+		}
+	}
+	goths = {
+		primary = FEO
+		dynasty_names = { 
+			"of Gothia"
+		}
+		male_names = {
+			Alexios Ioannes Manuel David Basileios Skantarios Andronikos Michael Georgios Aineias 
+			Aristoteles Bartholomaios Chrysanthos Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor 
+			Iason Iosephos Kastor Kreon Matthaios Nestor Nikolaos Nikomedes Orestes Palaemon Pavlos 
+			Pelagios Alexandros
+			Philemon Philippos Prokopios Stefanos Theodoros Timotheos Ambrosios Petros Herakles Hermes 
+			Hippolytos Hypatios Iakobos Jacob Ignatios Ignatius Innokentios Ioannes John Ioannikios 
+			Iordanes Ioseph Joseph Isaakios Isaias Isidoros Ioulianos Julian Ioustinianos Justinian 
+			Ioustinos Justin Kaisarios Caesar
+			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Constantius Konstas Constans 
+			Kosmas Cosmas Kyriakos Kyrillos Cyril Kyros Laurentios Laurence Lazaros Leon Leo Leontios 
+			Leontius Loukas Makarios Manuel Markos Marcus
+			Matthaios Matthew Maurikios Maximos Maximus Megistos Magnus Meletios Methodios Michael Michael 
+			Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Nicholas Niphon Orestes Pamphilios 
+			Pankratios Pantoleon Paschalis
+			Pavlos Paul Pelagios Pelagius Petros Peter Philaretos Philippos Philip Philotheos Phokas 
+			Photios Polykarpos Porphyrios Prokopios Procopius Pyrros Raphail Romanos Roman Sabas Samuel 
+			Samuel Serapion Sebastianos Sebastian Sergios Sergius Stephanos Stephen
+			Staurakios Symeon Simon Symmachos Symmachus Theocharistos Theodoros Theodore Theodosios 
+			Theodosios Theodotos Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas 
+			Thomas Tiberios Tiberius Traianos Trajan
+			Timotheos Tryphon Valerios Valerius Zacharias Zenobios Zenon
+		}
+		female_names = {
+			Agape Photine Sotiria Leontia Margarita Margaret Maria Maria Markia Marcia Martha Martha Melissa Melisende Nikarete 
+			Nikoletta Nonna Parthena Pavlina Paulina Pelagia Petronia Petronia Philippa Philippa Phyllis 
+			Pulcheria Pulcheria Rhodanthe Romane Romylia Sergia Sergia Sibylla Sibylla
+			Simonis Sophia Sophia Stephania Stephania Thekla Theochariste Theodora Theodora Theodosia 
+			Theodosia Theognosia Theoktiste Theophano Thomais Valeria Valeria Viviana Viviana Xene Zenobia 
+		}
+	}
+	griko = {
 		male_names = {
 			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
@@ -3097,157 +3489,38 @@ byzantine = {
 			"Apsimaros" "Artemios"
 		}
 	}
-	pontic_greek = {
-		#primary = TRE
-		male_names = {
-			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
-			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
-			Arsenios Artemios Athanasios Athanasius Bardas
-			Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios Bosporios 
-			Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios 
-			Demetrius Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
-			Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel Gennadios Georgios 
-			George Gerasimos Germanos Germanus Gregoras Gregory Gregorios Gregory Hektorios Helias 
-			Herakleios Heracles Hierotheos Himerios
-			Georgios Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias Alexeios Ambrosios
-			Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor Herakles 
-			Kastor Manuel Matthaios Nestor Nikomedes Orestes Palaemon Pelagios Petros Philemon Philippos 
-			Skantarios Stefanos Theodoros Thomas Basileios Prokopios Ioannes Iason Bartholomaios
-		}
-		female_names = {
-			Alexandra Adriane Adriana Agathe Agatha Agne Agnes Aikaterine Alexeia Anastasia Anastasia Anna 
-			Anna Anthe Anthousa Antipatra Antonia Antonia Apollonia Athanasia Barbara Basillike
-			Chrysogone Damiane Demetra Dionysia Dorothea Dorothy Aigidia Eirene Irene Elaiodora Epiphania 
-			Eudokia Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne Euphrosyne
-			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Helen 
-			Ioanna Joan Ioulia Julia Iouliana Juliana Ioustina Justina Kale Konstantia Constantia 
-			Konstantine Constantina Kyra Kyriake Hypatia Zoe
-		}
-		dynasty_names = {
-			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
-			"Kameniatis" "Chameas" "Demetrianos" "Laloudios" "Stamopatas" "Peloponnesites" "Klados" "Avastaktos" 
-			"Lardotyros" "Kyritzios" "Kolovos" "Podopagouros" "Touvakes" "Peteinakes" "Ooryphas" "Myxares" "Toxias" 
-			"Bardouchos" "Boilas" "Skepides" "Mamoulianos" "Katakylas" "Drakokephalos" "Rentakes" "Exarchos" "Skepastos" 
-			"Kyminas" "Krasas" "Konstantinakes" "Mouzelis" "Souanites" "Karteroukas" "Machairas" "Koutzodaktylos" 
-			"Kanakaris" "Vamvaloudes" "Leontares" "Klokas" "Axiotes" "Chrysouchos" "Pyrrogenes" "Kophinas" "Makroleon" 
-			"Kalopragmon" "Karphitzes" "Trichares" "Kokkalos" "Kritharatos" "Kretikos" "Tourkos" "Symvatikes" 
-			"Glykomachaires" "Chrysochoos" "Vonos" "Mystakon" "Pterotos" "Monotes" "Manginos" 
-			"Kalavros" "Sikelos" "Kilikos" "Macrodoukas" "Aineidas" 
-			"Pegonitissos" "Kastriotis" "Kamateros" "Skleros"
-			"Makrembolites" "Botaneiates" "Diogenes" "Stratiotikos" "Monomachos" "Kalaphates" 
-			"Paphlagon" "Argyros" "Kourkouas" "Lekapenos" "Karbonopsis" "Makedon" "Stryphnos" "Euforbenos" 
-			"Gabras" "Aaron" "Lampinos" "Tzimiskes" "Kurtikainos" "Murzuphlos" "Balatios" "Ouranos" "Amorios" "Armenios" 
-			"Rangabes" "Logothetes" "Isauros" "Polites" "Studites" "Skamandrenos" "Synkellos" "Kauleas" "Monocharzanios" 
-			"Kassymatas" "Nesteutes" "Scholastikos" "Chrisostomos" "Nazianzen" "Nikomedianos" "Protokletos" "Garidas" 
-			"Grammatikos" "Zeno" "Gavalas" "Axuchos" "Kamonas" "Asidenos" "Hephaistos" "Karatzas" 
-			"Amiroutzes" "Bessarion" "Callistus" "Chalkokondyles" "Gazis" "Kourtesios" "Kallistos" "Kladas" "de Patras" 
-			"Gemistus" "Allatios" "Chalcocondyles" "Korniaktos" "Damaskenos" "Eparchos" "Flanginis" "Fokás" "Heraclides" 
-			"Kallokratos" "Kottounios" "Leontaritis" "Loukanis" "Margunios" "Musurus" "Nafpliotis" "Hatzidákis" 
-			"Aprenos"  "Chortatzis" "Gabrielopoulos" "Gounaropoulos" "Belissariotis" "Konstantopoulos" "Kavallarios" 
-			"Maniakis" "Notaras" "Sgouromallis" "Epiphanis" "Logaras" "Eudaimon" "Sakellarios" "Maurozoumis" "Stylaios" 
-			"Maleinos" "Basilakios" "Mamonas" "Kekaumenos" "Metaxas" "Kanavos" "Koukouzelis" "Koresis" "Makrinos" 
-			"Lambardas" "Adrianos" "Agallon" "Akropolites" "Aoinos" "Apokaukos" "Aprenos" "Arbantenos" "Argyros" 
-			"Arianites" "Atrapes" "Balsamon" "Batatzes" "Botaneiates" "Boumbalis" "Bourtzes" "Branas" "Bryennios" 
-			"Chandrenos" "Choniates" "Choumnos" "Chrysaphes" "Chrysoloras" "Dalassenos" "Dermokaïtes" "Diasorenos" 
-			"Dokeianos" "Eirenikos" "Exazenos" "Gavras" "Glabas" "Iagaris" "Kabakes" "Kabasilas" "Kalamanos" "Kaloethes" 
-			"Kalothetos" "Kamateros" "Katrares" "Kaukadenos" "Kontostephanos" "Koresses" "Kourkouas" 
-			"Kourtikes" "Limpidares" "Machoneos" "Makrembolites" "Malakes" "Maliasenos" "Mamalis" 
-			"Mandromenos" "Manouelites" "Melachroinos" "Mourtzouphlos" "Mouzakios" "Mouzalon" "Neokaisareites" 
-			"Nestongos" "Pantechnes" "Paraspondylos" "Petraliphas" "Petzikopoulos" "Philanthropenos" "Pleustes" 
-			"Prasomales" "Prinkips" "Psellos" "Radenos" "Rossatas" "Sarantapechos" "Sebastopoulos" "Segouropoulos" 
-			"Sgouros" "Spartenos" "Sphrantzes" "Strabomytes" "Synadenos" "Syraneres" "Syropoulos" "Tagares" 
-			"Tarchaneiotes" "Tornikes" "Trichas" "Tsaphas" "Tzamplakon" "Tzykandeles" "Zaridas" "Akunin" "Abalantes" 
-			"Aboudimos" "Adralestos" "Agallianos" "Agrites" "Akapnes" "Alopos" "Alousianos" "Alyattes" "Amaseianos" 
-			"Amiropoulos" "Anatolikos" "Andreiomenos" "Androsalites" "Anemas" "Angoures" "Anthemiotes" "Antiochites" 
-			"Antiochos" "Antipapas" "Arbintenos" "Areobindenos" "Areobindos" "Argyropoulos" "Aristenos" "Artoukomites" 
-			"Arvantenos" "Attaleiates" "Aulenos" "Aulepates" "Axinites" "Axiomatikos" "Balantes" "Barbaros" "Bardales" 
-			"Barenos" "Barsakes" "Barys" "Belissariotes" "Bempetziotes" "Beriboes" "Beriotes" "Blachernites" "Blangas" 
-			"Boïlas" "Bouches" "Boutzares" "Bouzenos" "Brachamios" "Bringas" "Chaldos" "Chalkites" "Chalkoutzes" 
-			"Chamaretos" "Charsianites" "Chasanes" "Chazanes" "Choinides" "Choirosphaktes" "Chomatenos" "Chordolibas" 
-			"Choriates" "Chrouselios" "Chrousos" "Chrysanthos" "Chryselios" "Chrysobalantites" "Chrysoberges" "Chytes" 
-			"Daimones" "Dalessenos" "Dalassenos Doukas" "Dekanos" "Diabatenos" "Dikaios" "Diogenes" "Domestikopouolos" 
-			"Doxapatres" "Drakontopoulos" "Drosinos" "Drosos" "Droulenos" 
-			"Elegmites" "Enochos" "Epanokomites" "Ergodotes" "Erotikos" "Eugenianos" "Eugenios" "Eulogios" "Exotrochos" 
-			"Gabalas" "Galaton" "Gelotes" "Gidos" "Glykys" "Goudeles" "Gourzoubathenos" "Granatos" "Gribas" "Grispos" 
-			"Gymnos" "Hagiochrisophorites" "Hagioprokopites" "Hagiotheodorites" "Hagiozacharites" "Hamartolos" 
-			"Haplorabdes" "Haploucheir" "Hexakionites" "Hexaklinites" "Hexamilites" "Hierakes" "Hikanatos" "Iasites" 
-			"Iberopoulos" "Isakiotes" "Italikos" "Kaballarios" "Kabasilas" "Kaisar" "Kalameteros" "Kalamaras" 
-			"Kalampakes" "Kalognomos" "Kamytzes Komnenodoukas" "Kappadokes" "Kappadox Kalampakes" "Karabitenos" 
-			"Karabitziotes" "Karaïonatan" "Karamallos" "Karandenos" "Karantes" "Kardamopoulos" "Karenos" "Karianites" 
-			"Karkaronymos" "Karmalikes" "Karouzeiates" "Kaspax" "Kastamonites" "Katakalon" "Katakalos" "Kataphloros" 
-			"Katas" "Katharos" "Katotikos" "Katzamoundes" "Kegenes" "Kekaleimenos" "Keklymmenos" "Kemineianos" "Kenchres" 
-			"Kentenares" "Kephalas" "Keroularios" "Kibyrraiotes" "Kinnamos" "Kokkinos" "Komnenodoukas" "Konops" 
-			"Kopsenos" "Kostomyres" "Kotertzes" "Kouloukes" "Kouneres" "Krateros" "Krinites" 
-			"Kritharas" "Kritopolos" "Kyminianos" "Kynochorites" "Kyriotes" "Kyritzes" "Labouzenos" "Laktentitzes" 
-			"Lalakon" "Lampsiotes" "Lapardas" "Leichoudes" "Lependrenos" "Leukedonites" "Libadares" "Libadas" 
-			"Libellisios" "Limas" "Liparites" "Lithokastrites" "Logariastes" "Loules" "Louloukes" "Lykaon" "Machetarios" 
-			"Madrites" "Madytenos" "Makropoderes" "Maleïnos" "Maleses" "Mamalos" "Manganes" "Marachas" "Marapas" 
-			"Marchapsabos" "Marianites" "Marzapoulos" "Matzaris" "Matzas" "Matzoukes" "Maurex" "Maurokatakalos" "Mauros" 
-			"Maurozomes" "Mechos" "Megalommates" "Megenos" "Meginos" "Melias" "Melissenos" "Mermentoulos" "Mesarites" 
-			"Meschos" "Mesopotamites" "Metochites" "Metropoulos" "Mitylenaios" "Monachites" "Monokarites" "Monomachatos" 
-			"Moroiannes" "Mosaraph" "Moschos" "Mosele" "Moungos" "Mourmoures" "Moustakes" "Mozaes" "Myralides" 
-			"Myredeïtes" "Myrelaetes" "Myron" "Nabatenos" "Narbiotes" "Narsites" "Neophytos" "Neustongios" "Nikerites" 
-			"Nikoulitzes" "Noe" "Oinaiotes" "Olyntenos" "Opos" "Pagomenos" "Pakourianos" "Paktiares" 
-			"Doukas Mourtzouphlos" "Palaiotes" "Palatinos" "Pamphilos" "Panaretos" "Pankalos" 
-			"Panokomites" "Parsakoutenos" "Parthenios" "Paxenos" "Pediasimos" "Peganites" "Pegonites" "Pekoules" 
-			"Pelamedes" "Pentarkles" "Pepagomenos" "Pepanos" "Perenos" "Peribleptenos" "Phalkon" "Phialites" "Philaretos" 
-			"Philinos" "Philokales" "Phrangopolos" "Pistophilos" "Pleures" "Politopolos" "Pothos" "Probatas" 
-			"Promountenos" "Proteuon" "Ptochos" "Rentakenos" "Rizenos" "Rodios" "Rogerios" "Romaios" "Rousopoulos" 
-			"Sagopoulos" "Sarakenopoulos" "Saronites" "Sauloioannes" "Semnos" "Serblias" "Sikoundenos" "Sinopites" 
-			"Skandales" "Skanranos" "Skeblenos" "Skoutariotes" "Skribas" "Smyrnaios" "Solomon" "Sortes" 
-			"Soumenos" "Spanogregores" "Spanopoulos""Stachytzes" "Stemnitziotes"
-			"Strephnes" "Stypeiotes" "Styppes" "Synacheris" "Syros" "Taronites" "Tatikes" "Tetragonites" "Theodorokanos" 
-			"Theodosiopolites" "Thrakesios" "Thylakas" "Tilapos" "Timonites" "Tourmarchopoulos" "Traphines" "Trellos" 
-			"Triakontaphyllos" "Triblattites" "Trichinopodes" "Triphyllios" "Tzanzes" "Tzefres" "Tzetas" "Tzipoureles" 
-			"Tzirithon" "Tzoulas" "Tzoumenes" "Tzouroulles" "Tzympenos" "Vatatzes" "Xanthos" "Xenos" "Xeros" "Xiphias" 
-			"Xiphilinos" "Xylinites" "Zabareiotes" "Zagarommates" "Zerbos" "Zomes" "Zonaras" "Kalomalas" "Kaloudes" 
-			"Kampanarios" "Kamytzes" "Kallierges" "Loukites" "Kometopoulos" "Basiliakos" 
-			"Pateranos" "von Winterthur" "Paleologo" "Gregoras" "Sanudo" "Komytzes" "Lascaris" "Kyrdiniatis" "Agapetos" 
-			"Attikos" "Anastasiotis" "Evergetidiotis" "Chliarinos" "Chysovergis" "Eugeniotis" "Vorradiotis" "Mountanis" 
-			"Theotokitis" "Viticlenou" "Autoreianos" "Akoimitos" "Charitopoulos" "Panemorphiotis" "Hyakinthiotis" 
-			"Galesiotis" "Bekkos" "Kyprios" "Gonitis" "Pammakaristiotis" "Perivleptiotis" "Manganiotis" "Kalekas" 
-			"Herakleidon" "Xylaloes" "Syrikos" "Tatikios" "Aspietes" "Kastenianos" "Leovachos" "Maniatis" "Vaklikas" 
-			"Maurikios" "Skrinarios" "Mesanaktis" "Lachanodrakon" "Kalokyris" "Lykodontis" "Skyllaris" "Ampelas" 
-			"Gerontas" "Apokapis" "Pallikarios" "Orphanotrophos" "Chlorokokis" "Hexavoulis" "Martinakios" "Agelastos" 
-			"Kotzes" "Toxaras" "Aplakes" "Gomostos" "Koupharas" "Tyropoulis" "Kontomytes" "Chenopoulos" "Sellokalas" 
-			"Kentrokoukouros" "Antigonos" "Pastillas" "Katakalitzes" "Manikophagos" "Kolokynthis" "Rachites" "Bua Spatas" 
-			"Apsimaros" "Artemios"
-		}
-	}
-	goths = {
-		#primary = FEO
+	georgian_new = {
+		primary = GEO
 		dynasty_names = { 
-			"of Gothia"
+			Bagrationi Mukhrani
+			# CKII
+			"Javakhishvili" "Jaqeli" "Sologashvili" "Tavdgiridze" "Vakhvakhishvili" 
+			"Andronikashvili" "Gurieli" "Machabeli" "Abazasdze" "Zevdginidze" "Amirejibi" "Abuladze" 
+			"Chkhetidze" "Gelovani" "Panaskerteli" "Agiashvili" "Chavchavadze" 
+			"Cholokashvili" "Diasamidze" "Shildisani" "Iashvili" "Anchabadze"
+			"Orbeliani" "Japaridze" "Jorjadze"
+			"Kakhaberisdze" "Kherkheulidze" "Khimshiashvili" "Shervashidze" "Dadiani" 
+			"Kobulashvili" "Lortkipanidze" "Machutadze" "Mikeladze" "Mkhetsidze" "Palavandishvili"
 		}
 		male_names = {
-			Alexios Ioannes Manuel David Basileios Skantarios Andronikos Michael Georgios Aineias 
-			Aristoteles Bartholomaios Chrysanthos Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor 
-			Iason Iosephos Kastor Kreon Matthaios Nestor Nikolaos Nikomedes Orestes Palaemon Pavlos 
-			Pelagios Alexandros
-			Philemon Philippos Prokopios Stefanos Theodoros Timotheos Ambrosios Petros Herakles Hermes 
-			Hippolytos Hypatios Iakobos Jacob Ignatios Ignatius Innokentios Ioannes John Ioannikios 
-			Iordanes Ioseph Joseph Isaakios Isaias Isidoros Ioulianos Julian Ioustinianos Justinian 
-			Ioustinos Justin Kaisarios Caesar
-			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Constantius Konstas Constans 
-			Kosmas Cosmas Kyriakos Kyrillos Cyril Kyros Laurentios Laurence Lazaros Leon Leo Leontios 
-			Leontius Loukas Makarios Manuel Markos Marcus
-			Matthaios Matthew Maurikios Maximos Maximus Megistos Magnus Meletios Methodios Michael Michael 
-			Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Nicholas Niphon Orestes Pamphilios 
-			Pankratios Pantoleon Paschalis
-			Pavlos Paul Pelagios Pelagius Petros Peter Philaretos Philippos Philip Philotheos Phokas 
-			Photios Polykarpos Porphyrios Prokopios Procopius Pyrros Raphail Romanos Roman Sabas Samuel 
-			Samuel Serapion Sebastianos Sebastian Sergios Sergius Stephanos Stephen
-			Staurakios Symeon Simon Symmachos Symmachus Theocharistos Theodoros Theodore Theodosios 
-			Theodosios Theodotos Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas 
-			Thomas Tiberios Tiberius Traianos Trajan
-			Timotheos Tryphon Valerios Valerius Zacharias Zenobios Zenon
+			Giorgi David Vakhtang Bagrat Alexander Erekle Konstantine Luarsab Simon Teimuraz Archil Bakar Iesse 
+			Kaihosro Rostom-Mirza Levan Demetre Stefanoz Anzori Bebur Birtveli Djurkha Gulikho Kartlos Koki 
+			Lukhum Malkhazi Mushni Okhropir Orbeli Revaz Takha Torgva Tornike Tsotne Xareba Zviadi
+			Adarnase Atrnerseh Aghsartan Aleksandre Alexander Andronik Andronicus Anzori Archili Ashot 
+			Ashot Bagrat Bakur Bagour Davit David Demetre Demetrius Demna Djavakhi Erekle Heracles 
+			Gabriel Gagiki Gagik Giorgi George Grigoli Gregory Guaram Guaram Gubaz Kviria
+			Gurgen Lupo Iese Ioane John Ishkhanik Ishkhan Iveri Jarji Kaikhosro Keykhosrau Kakhi Koba 
+			Konstantine Constantine Kvarkvare Kvirike Levan Leo Luarsab Malkhazi Malkhas Mamia Merab 
+			Mikheil Michael Mukhran Nerse Narses Nikoloz Nicholas Okhropir Orbeli Gabrieli
+			Padla Samoeli Samuel Shanshe Shahanshah Shota Simon Simon Stepanoz Stephen Sumbat Smbat 
+			Teimuraz Teimuraz Tornike Tornik Ushisha Vache Vakhtang Vakhtank Zurab Zviad
 		}
 		female_names = {
-			Agape Photine Sotiria Leontia Margarita Margaret Maria Maria Markia Marcia Martha Martha Melissa Melisende Nikarete 
-			Nikoletta Nonna Parthena Pavlina Paulina Pelagia Petronia Petronia Philippa Philippa Phyllis 
-			Pulcheria Pulcheria Rhodanthe Romane Romylia Sergia Sergia Sibylla Sibylla
-			Simonis Sophia Sophia Stephania Stephania Thekla Theochariste Theodora Theodora Theodosia 
-			Theodosia Theognosia Theoktiste Theophano Thomais Valeria Valeria Viviana Viviana Xene Zenobia 
+			Ana Anna Baia Bedisa Borena Chiora Chito Dali Dedika Duda Dzabuli Elene Helen Eliso Endzela 
+			Gogutsa Gulchara Guliko Gulisa Gulvardi Guranduht Gorandukht Gvantsa Ia Judjuna Thamar
+			Kekela Ketevan Catherine Lamara Lamzira Lela Mariami Mariam Mathiko Mthvarisa Mzekhar Natia 
+			Nino Rusudan Sanatha Shorena Shukhia Suliko
+			Tamari Tamar Taplo Tinatini Tsiala Vardo
 		}
 	}
 	dynasty_names = { 
@@ -3258,7 +3531,7 @@ byzantine = {
 caucasian = {
 	graphical_culture = easterngfx
 	georgian = {
-		#primary = GEO
+		primary = GEO
 		dynasty_names = { 
 			Bagrationi Mukhrani
 			# CKII
@@ -3292,7 +3565,7 @@ caucasian = {
 		}
 	}
 	circassian = {
-		#primary = CIR
+		primary = CIR
 		male_names = {
 			Petrezok Verzacht Belzebuk Parsabok Smbat Stepanos Stephen Tachat Taniel Daniel Tatoul Tigran Tornik 
 			Tornik Tovmas Thomas Thoros Theodore Trdat Vache Vachagan Vagharshak Vahag Vahan Vahram Vakhtank Varazdat 			
@@ -3316,7 +3589,7 @@ caucasian = {
 		}
 	}
 	dagestani = {
-		#primary = GAZ
+		primary = GAZ
 		dynasty_names = {
 			Shamkhal Kumukh
 		}
@@ -3330,7 +3603,7 @@ caucasian = {
 		}
 	}
 	armenian = {
-		#primary = ARM
+		primary = ARM
 		dynasty_names = { 
 			Bagratuni Rubenid Pahlavuni
 			Tumanishvili Abamelik Amatuni "Argutinsky-Dolgorukov" Bebutov "Hasan-Jalalyan" Khojaminasishvili
@@ -3371,7 +3644,8 @@ turko_semitic = { #Levantine
 	graphical_culture = muslimgfx
 	
 	turkish = {
-		#primary = TUR
+		province = { local_has_qizilbash = yes }
+		primary = TUR
 		dynasty_names = {
 			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
 			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
@@ -3406,7 +3680,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	al_misr_arabic = { #Egyptian Arab
-		#primary = MAM
+		primary = MAM
 		dynasty_names = {
 			"Burji" "Alawiyya" "Bahri"
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli Yakubid Hassanid
@@ -3424,7 +3698,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	al_suryah_arabic = { #Syrian Arab
-		#primary = SYR
+		primary = SYR
 		dynasty_names = {
 			"Mirdasid" "Maanid" "al-Shihab"  Yakubid Hassanid
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli 
@@ -3443,7 +3717,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	al_iraqiya_arabic = { #Mashriqi Arab
-		#primary = IRQ
+		primary = IRQ
 		dynasty_names = {
 			"Saadun" "Jalili" "Hasanid" "Sabah" Javid
 			"Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
@@ -3460,7 +3734,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	gulf_arabic = {
-		#primary = ALH
+		primary = ALH
 		dynasty_names = {
 			"Saud" "Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
@@ -3485,7 +3759,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	bedouin_arabic = { #Bedouin Arab
-		#primary = NAJ
+		primary = NAJ
 		dynasty_names = {
 			"Saud" "Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
@@ -3510,7 +3784,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	mahri_culture = { #South Arabs
-		#primary = MHR
+		primary = MHR
 		dynasty_names = {
 			"Banu Afrar" "Al-Mahra" Qahtan Jibbali "Al-Hakli" "Al-Shahri" "Al-Barami" "Al-Mashaiki" "Al-Bat'hari"
 		}
@@ -3534,7 +3808,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	hejazi_culture = {
-		#primary = HED
+		primary = HED
 		dynasty_names = {
 			Khayratid "Al Abu Risha" Hawashim Husaynid Makramid Suleymanid "al-Mughaydi" Hasanid "Banu Mughayd" "Rufayda"
 		}
@@ -3558,7 +3832,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	omani_culture = {
-		#primary = OMA
+		primary = OMA
 		dynasty_names = {
 			"Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "Usfurid" "Jarwanid" "Hashim"
@@ -3583,7 +3857,7 @@ turko_semitic = { #Levantine
 		}
 	}
 	yemeni_culture = {
-		#primary = ADE
+		primary = ADE
 		dynasty_names = {
 			"Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "Usfurid" "Jarwanid"
@@ -3634,7 +3908,7 @@ turko_semitic = { #Levantine
 maghrebi = {
 	graphical_culture = muslimgfx
 	moroccan = {
-		#primary = MOR
+		primary = MOR
 		dynasty_names = {
 			"Marinid" "Saadi" "al-Shabani" "Alaouite" Wattassid "al-Dila'i" "al-Tadsi" "al-Ilighi" 
 		}
@@ -3657,7 +3931,7 @@ maghrebi = {
 		}
 	}
 	tunisian = {
-		#primary = TUN
+		primary = TUN
 		dynasty_names = {
 			"Hafsid" "Karamanli" "Muradid" "Husainid" "Banu Muhammad"
 		}
@@ -3678,7 +3952,7 @@ maghrebi = {
 		}
 	}
 	algerian = {
-		#primary = ALG
+		primary = ALG
 		dynasty_names = {
 			"Beni Djellab" "Ouled Nail" "Ouled Sidi Cheikh" "Banu Rashid" "Banu Kinanah" Shammar "Ait Djennad"
 			"Ait Iraten" "Ait Idjer"
@@ -3700,7 +3974,7 @@ maghrebi = {
 		}
 	}
 	berber = {
-		#primary = TLC
+		primary = TLC
 		dynasty_names = {
 			"al-Ilighi" "al-Tadsi" "Zayyanid" Maatka Wattasid Atfayyish "Beni Isguen" "al-Afdali" "Mzabi"
 			Tabghurin "al-Malshuti"
@@ -3729,7 +4003,7 @@ maghrebi = {
 iranian	= {
 	graphical_culture = muslimgfx
 	persian = {
-		#primary = PER
+		primary = PER
 		male_names = { 
 			Abbas Abolhassan Afshar Afshar Ahmad Ahmad Akbar Akbar Allahyar Amin Anushirvan Anushirvan 
 			Aram Ardahan Ardahan Ardavan Ardavan Ardeshir Ardeshir Assad Aurang Ayeshah Babak Babak Bahman 
@@ -3761,7 +4035,7 @@ iranian	= {
 		}
 	}
 	luri = {
-		#primary = LRI
+		primary = LRI
 		dynasty_names = { 
 			Khorshidi Bakhtiari Jangardi "Banu Hussayn" Charlang Haftlang
 			Dorikan Babadi Baharvand Dinarini Meyvand
@@ -3814,7 +4088,8 @@ iranian	= {
 		}
 	}
 	azerbaijani = {
-		#primary = ARL
+		primary = ARL
+		province = { local_has_qizilbash = yes }
 		dynasty_names = {
 			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
 			Talysh "Haji Chalabi"
@@ -3829,7 +4104,7 @@ iranian	= {
 		}
 	}
 	khorasani = {
-		#primary = KHO
+		primary = KHO
 		male_names = {
 			Abû Sa'îd Bâbur Badî al-Zamân Husayn Bâyqarâ Abu al-Qasim Mahmûd Shâh Rukh Ulugh Beg 'Abbas 'Abd 
 			'Abd al-Rahman 'Alî 'Abdallâh Anwar Bakr Fahd Faruq Fouad Hakim Harun Hisham Husayn Isma'il Jafar 
@@ -3843,7 +4118,7 @@ iranian	= {
 		}
 	}
 	baluchi = {
-		#primary = BAL
+		primary = BAL
 		dynasty_names = {
 			Rind Lashari Kambarani Mirwari Jamot Bugti Zikri Ghilzai Barakzay
 			Bozdar Mirrani Mihrabanid Khokhar Shar Lashari Lund Hooth Korai
@@ -3906,7 +4181,7 @@ iranian	= {
 		}
 	}
 	afghani= {
-		#primary = AFG
+		primary = AFG
 		male_names = {
 			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
 			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
@@ -3962,7 +4237,7 @@ iranian	= {
 		}
 	}
 	kurdish = {
-		#primary = ARD
+		primary = ARD
 		dynasty_names = { 
 			Hazaraspid "Soran" "Justanid" Bozorg Ardalan Bukhti Ferozkohi Feyli Gewirk Rekani
 			Hadhabani  "Ali Sherwan" Herki Jalilavand
@@ -4015,7 +4290,7 @@ iranian	= {
 		}
 	}
 	mazandarani = {
-		#primary = TAB
+		primary = TAB
 		male_names = {
 			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
 		}
@@ -4031,13 +4306,76 @@ iranian	= {
 		Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
 		Zaman Ustajlu Tekkelu Jaberi Khuzani Kujuji Ordubadi Khalifeh Karaki 
 	}
+	turco_iranian = {
+		primary = QAR
+		province = { local_has_qizilbash = yes }
+		dynasty_names = {
+			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
+			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
+			"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
+			"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu"
+			Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
+			Zaman Ustajlu Tekkelu Jaberi Khuzani Kujuji Ordubadi Khalifeh Karaki 
+		}
+		male_names = {
+			Mehmet Mustafa Murat Ahmet Selim Osman Mahmut Süleyman Bayezid Orhan Abdulaziz Abdülhamit Ibrahim 
+			Abdülmecit Abdullah Cem Cihangir Alaattin Isa Musa Ömer Seyfettin Yakup Yusuf Giyasettin Numan 
+			Ali Davut Hasan Hüseyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin 
+			Nizamettin Sinan Ferhat Salih Ismail Cüneyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas 
+			Dursun Ramazan Recep Abdulrahman Hayrettin
+			Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz 
+			Aydin Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars 
+			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David 
+			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi 
+			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun 
+			Kemal Kiliç Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad 
+			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk 
+			Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay 
+			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Uluç Umur Yakut Yaman Yinal 
+			Yunus
+			Abbas Abolhassan Afshar Afshar Ahmad Ahmad Akbar Akbar Allahyar Amin Anushirvan Anushirvan 
+			Aram Ardahan Ardahan Ardavan Ardavan Ardeshir Ardeshir Assad Aurang Ayeshah Babak Babak Bahman 
+			Bahram Bahram Bakhtiar Bakhtiar Behrad Behrouz Bozorg Danush Danush Darab Dariush Darius Davud 
+			David Djamasp Ebrahim Abraham Ehsan Esfandiar Esfandiar Eskander Alexander Esma'il Ismail 
+			Faramarz Faramarz Faraz Faraz Fareed Farid Farhad Farhad Fariborz Fariborz Farroukh Farroukh 
+			Farrukhzad Farrukhzad Farzad Farzad Fath Ferdows Ferdows Fereedun Feridun Ghobad Gholam Godarz 
+			Goshtasb Goshtasb Hafez Hassan Hasan Hazarasp Hazarasp Hedayat Hooshyar Hooshyar Hormazd 
+			Hormazd Hormoz Hossein Hossein Humayun Jahandar Jahandar Jahangir Jahangir Jahanshah Jahanshah 
+			Jamshid Jamshid Javeed Javeed Kambiz Kamran Kavoos Kavoos Keyghobad Keykhosrau Keykhosrau 
+			Kharmandar Kharmandar Khashayar Khashayar Kavadh Khodadad Khodadad Khosrau Khosrau Khudayar 
+			Khudayar Khurshid Khurshid Kurush Cyrus Mahmud Manuchihr Manuchihr Manushihr Manushihr Marzuban 
+			Marzuban Mashad Mashad Maziar Mehrab Mehrzad Mohammed Muhammad Morad Morad Morteza Mozaffar 
+			Nard Naveed Nawid Nezam Parviz Pashang Pashang Peroz Peroz Pujman Reza Rostam Rostam Ruhollah 
+			Sadri Salman Shahab Shahab Shahbaz Shahbaz Shahin Shahin Shahram Shahram Shahrokh Sharokh 
+			Shahruz Shahruz Shahryar Shahryar Shapur Shapur Shayan Shayan Sina Tahmasb Tahmasb Vahhab 
+			Vahhab Vahid Vali Vandad Varshasb Varshasb Vishtasb Vishtasb Yazdegerd Yousef Joseph Zahak 
+			Zakaria Zand Zartosht Zartosht Zia Joneid Haidar Ismâ'îl Tamâshp Mohammad Kodabânda 'Abbâs Safi 
+			Hosayn Nâder Shâh 'Âdel Shâh Ebrâhim Shâh Rukh Nâder Mirza Karim Khân Abu'l Fath 
+			Sâdiq Morâd Ja'far Loft Ali Aga Muhammad Fath Alî Solaymân
+		}
+		female_names = {
+			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu 
+			Bozçin Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gulçiçek Gulay Gulbahar Gulfem 
+			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale 
+			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica 
+			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tekçe Tura 
+			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep Hürrem Mihrimah Nurbanu 
+			Handan Alime Kösem Hüma 
+			Afsaneh Ahu Arghavan Azarmidokht Asa Azadeh Bahar Banafsheh Behnaz Burandokht Darya Delaram 
+			Delbar Dinah Donya Elham Elnaz Farah Fareedeh Farnaz Farrin Farva Furuzan Ghamze Ghazal 
+			Ghoncheh Ghoncheh Golbahar Golbahar Golnaz Golnaz Golpari Golshan Hamdam Hurmat Irandokht 
+			Jamileh Javaneh Leila Mahdokht Mahtab Mariam Mariam Navvaba Nazgol Nazgol Nazilla Noor Parvaneh 
+			Parvaneh Parvin Pertevniyal Pourandokht Pourandokht Roshanora Roxana Salomeh Shahrzad Shahzadeh 
+			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya
+		}
+	}
 }
 
 altaic = {
 	graphical_culture = muslimgfx
 
 	mongol = {
-		#primary = KHA
+		primary = KHA
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
 			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
@@ -4058,7 +4396,7 @@ altaic = {
 		}
 	}
 	chahar = { # now korchin
-		#primary = KRC
+		primary = KRC
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
 			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
@@ -4071,7 +4409,7 @@ altaic = {
 		}
 	}
 	khalkha = {
-		#primary = KLK
+		primary = KLK
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
 			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
@@ -4084,7 +4422,7 @@ altaic = {
 		}
 	}
 	oirats = {
-		#primary = ZUN
+		primary = ZUN
 		male_names = {
 			Batula Toghan Galdan Amursana Erdeni Choghtu Dawa Esen Güshi Lha-bzang Khara Khula Kho Sengge Tseten 
 			Tsewang Kundelung Lobzang Sutai Tsobasa Ubasi Quduqa Toghto Altai Bäki Bayan Dayan Hami Molon Oori 
@@ -4095,7 +4433,7 @@ altaic = {
 		}
 	}
 	uzbehk = {
-		#primary = SHY
+		primary = SHY
 		male_names = {
 			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
 			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
@@ -4110,7 +4448,8 @@ altaic = {
 		}
 	}
 	turkmeni = {
-		#primary = KHI
+		primary = KHI
+		province = { local_has_qizilbash = yes }
 		dynasty_names = {
 			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
 			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
@@ -4130,7 +4469,7 @@ altaic = {
 		}
 	}
 	uyghur = {
-		#primary = KAS
+		primary = KAS
 		male_names = {
 			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Temür Buzan 
 			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Temür Eljigidey Esen Buqa Ilbars Ilyas Ismail 
@@ -4146,7 +4485,7 @@ altaic = {
 		}
 	}
 	khazak = {
-		#primary = KZH
+		primary = KZH
 		male_names = {
 			Abilghazi Abilmambet Abulay Abulkhayr Ahmat Ayshwak Arunghazi Barak Batir Bokey Bulat Burunduq 
 			Erali Esim Ghubaydulla Haqnazar Jangir Janibek Jantore Jarmuhambet Jolbaris Kenesari Kerey Mamash 
@@ -4176,7 +4515,7 @@ altaic = {
 		}
 	}
 	kirgiz = {
-		#primary = CHG
+		primary = CHG
 		male_names = {
 			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Temür Buzan 
 			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Temür Eljigidey Esen Buqa Ilbars Ilyas Ismail 
@@ -4267,7 +4606,7 @@ central_american = {
 	graphical_culture = southamericagfx
 
 	aztek = {
-		#primary = AZT
+		primary = AZT
 		male_names = {
 			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc 
 			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli 
@@ -4280,7 +4619,7 @@ central_american = {
 		}
 	}
 	totonac = {
-		#primary = TOT
+		primary = TOT
 		male_names = {
 			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc 
 			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli 
@@ -4294,7 +4633,7 @@ central_american = {
 		}
 	}
 	purepecha = {
-		#primary = TAR
+		primary = TAR
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
 			Cuinierangari Bibejw Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob 
@@ -4306,7 +4645,7 @@ central_american = {
 		}
 	}
 	matlatzinca = {
-		#primary = MAT
+		primary = MAT
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
 			Cuinierangari Bibejw Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob 
@@ -4329,7 +4668,7 @@ central_american = {
 aridoamerican = {
 	graphical_culture = southamericagfx
 	tecos = {
-		#primary = CLM
+		primary = CLM
 		male_names = {
 			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin 
 			Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli 
@@ -4348,7 +4687,7 @@ aridoamerican = {
 		}
 	}
 	tepic = {
-		#primary = XAL
+		primary = XAL
 		male_names = {
 			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin 
 			Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli 
@@ -4367,7 +4706,7 @@ aridoamerican = {
 		}
 	}
 	chichimecan = {
-		#primary = CCM
+		primary = CCM
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
 			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui 
@@ -4384,7 +4723,7 @@ aridoamerican = {
 		}
 	}
 	guamares = {
-		#primary = GAM
+		primary = GAM
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
 			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui 
@@ -4401,7 +4740,7 @@ aridoamerican = {
 		}
 	}
 	otomi = {
-		#primary = OTO
+		primary = OTO
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
 			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui 
@@ -4418,7 +4757,7 @@ aridoamerican = {
 		}	
 	}
 	yaqui = {
-		#primary = YAQ
+		primary = YAQ
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
 			Cuinierangari Bibejw Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob 
@@ -4442,7 +4781,7 @@ maya = {
 	graphical_culture = southamericagfx
 
 	yucatec = {
-		#primary = XIU
+		primary = XIU
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4455,7 +4794,7 @@ maya = {
 		}
 	}
 	putun = {
-		#primary = ITZ
+		primary = ITZ
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4468,7 +4807,7 @@ maya = {
 		}
 	}
 	mayan = {
-		#primary = MAY
+		primary = MAY
 		dynasty_names = {
 			Ahkinxoc Ahmetakkukul Ahmok Ahnakukpech Ahpop-Achi Arana Bakan Balam Bor Canek Chaob Chiam Hnuyg Kayom Kíin Kukumatz 
 			Mochcouoh Nachancan Nohochacyum Pacal "Quitze Balam" Tecunuman Vataki Yumcaax Zotz
@@ -4485,7 +4824,7 @@ maya = {
 		}
 	} 
 	highland_mayan = {
-		#primary = KIC
+		primary = KIC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4497,7 +4836,7 @@ maya = {
 		}
 	}
 	lacandon = {
-		#primary = LAC
+		primary = LAC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4509,7 +4848,7 @@ maya = {
 		}
 	}
 	wastek = {
-		#primary = HST
+		primary = HST
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4521,7 +4860,7 @@ maya = {
 		}
 	}
 	chontales = {
-		#primary = YOK
+		primary = YOK
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4546,7 +4885,7 @@ maya = {
 otomanguean = {
 	graphical_culture = southamericagfx
 	zapotek = {
-		#primary = ZAP
+		primary = ZAP
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
 			Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji 
@@ -4558,7 +4897,7 @@ otomanguean = {
 		}
 	}
 	mixtec = {
-		#primary = MIX
+		primary = MIX
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
 			Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji 
@@ -4570,7 +4909,7 @@ otomanguean = {
 		}
 	}
 	tlapanec = {
-		#primary = TLA
+		primary = TLA
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
 			Binech Bzojj Chsáaxcejj Cháalaxa Chonna Bicu Coqui Djoraxa Gwèibóoné Gyazob Gyejj Ipalnemoani Ji 
@@ -4591,7 +4930,7 @@ andean_group = {
 	graphical_culture = southamericagfx
 	
 	inca = { # Quechua
-		#primary = CSU
+		primary = CSU
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
 			Curiatao Cusi  Guacra Guaritito Guaritopa Huachuri Huaman Huascar Huaypalcon Illaquita Inquill Llicllic Maila Maras 
@@ -4612,7 +4951,7 @@ andean_group = {
 		}
 	}
 	aimara = {
-		#primary = CRA
+		primary = CRA
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
 			Curiatao Cusi  Guacra Guaritito Guaritopa Huachuri Huaman Huascar Huaypalcon Illaquita Inquill Llicllic Maila Maras 
@@ -4631,7 +4970,7 @@ andean_group = {
 		}
 	}
 	diaguita = {
-		#primary = CCQ
+		primary = CCQ
 		dynasty_names = {
 			Caca Capayan Hualfin Paccioca Pular Quilme Aconquijas Anguinahao Tocpo Omaguaca
 		}
@@ -4644,7 +4983,7 @@ andean_group = {
 		}
 	}
 	chimuan = {
-		#primary = CHM
+		primary = CHM
 		dynasty_names = {
 			Guacricaur Tacaynamo Tiso Nancempinco Chilche Maras Luyes Maila Illa Rimac
 		}
@@ -4666,7 +5005,7 @@ je_tupi = { # Tupi
 	graphical_culture = northamericagfx
 	
 	tupinamba = {
-		#primary = TPQ
+		primary = TPQ
 		dynasty_names = {
 			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
 		}
@@ -4678,7 +5017,7 @@ je_tupi = { # Tupi
 		}
 	}
 	guarani = {
-		#primary = GUA
+		primary = GUA
 		dynasty_names = {
 			Mbigua Caracara Timbu Tucague Calchagui Quiloazaz Cario Itatine Tarci Bomboi Curupaiti Curumai Caaigua Tape Ciriguana
 		}
@@ -4696,7 +5035,7 @@ je_tupi = { # Tupi
 je = {
 	graphical_culture = northamericagfx
 	charruan = {
-		#primary = CUA
+		primary = CUA
 		dynasty_names = {
 			Sénaqué Sira Gununusa Puyucahua Mataojo Igualdad Yaró Guenoa Bohané Minuan
 		}
@@ -4708,7 +5047,7 @@ je = {
 		}
 	}
 	ge = {
-		#primary = TUA
+		primary = TUA
 		dynasty_names = {
 			Aimoré Prajé Takrukrak Krekmún Ituêto Futikrak Gueren Gutucrac Mekmek Minhagiran Nakrehê Naknyanúk
 		}
@@ -4734,7 +5073,7 @@ maranon = {
 		}
 	}
 	chachapoyan = {
-		#primary = CYA
+		primary = CYA
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
 			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
@@ -4753,7 +5092,7 @@ chibchan = {
 	graphical_culture = southamericagfx
 	
 	muisca = {
-		#primary = MCA
+		primary = MCA
 		dynasty_names = {
 			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá 
 			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
@@ -4767,7 +5106,7 @@ chibchan = {
 		}
 	}
 	cara = {
-		#primary = QTO
+		primary = QTO
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
 			Curiatao Cusi  Guacra Guaritito Guaritopa Huachuri Huaman Huascar Huaypalcon Illaquita Inquill Llicllic Maila Maras 
@@ -4784,7 +5123,7 @@ chibchan = {
 		}
 	}
 	miskito = {
-		#primary = MIS
+		primary = MIS
 		dynasty_names = {
 			Miskito Chibchan
 		}
@@ -4819,7 +5158,7 @@ araucanian = {
 	graphical_culture = northamericagfx
 	
 	mapuche = {
-		#primary = MPC
+		primary = MPC
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
 			Aillavilu Catrileo Ñanco Melín Caupolicán Illangulién Pinolevi Purrán Mañil Quilapán 
@@ -4890,7 +5229,7 @@ carribean = {
 		}
 	}
 	carib = {
-		#primary = CAB
+		primary = CAB
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 		}
@@ -4899,7 +5238,7 @@ carribean = {
 		}
 	}
 	guajiro = { #	Lokono / Northern Mainland Arawak
-		#primary = ARW
+		primary = ARW
 		male_names = {
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
 		}
@@ -4948,7 +5287,7 @@ central_algonquian = {
 	graphical_culture = northamericagfx
 	
 	shawnee = {
-		#primary = SHA
+		primary = SHA
 		dynasty_names = {
 			Auglaize Alawaymotakah Akepee Aqueloma Chillicothe Calaka Chalaakaatha Conedogwinit Hathawekela Hisoskok 
 			Hawkawepitathy Kispoko Kiscopocoke Kispokotha Koshachkink Kagoughsage Kickapougowi Kithlipecanuk Mequachake Maykujay 
@@ -4970,7 +5309,7 @@ central_algonquian = {
 		}
 	}
 	illini = {
-		#primary = ILL
+		primary = ILL
 		dynasty_names = {
 			Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa Chinkoa Coiracoentanon Espeminkia 
 			Maroa Matchinkoa Michibousa Negawichi Tapouara
@@ -4987,7 +5326,7 @@ central_algonquian = {
 		}
 	}
 	miami = {
-		#primary = MMI
+		primary = MMI
 		dynasty_names = {
 			Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa Chinkoa Coiracoentanon Espeminkia 
 			Maroa Matchinkoa Michibousa Negawichi Tapouara
@@ -5004,7 +5343,7 @@ central_algonquian = {
 		}
 	}
 	anishinabe = {
-		#primary = OJI
+		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
 			Macomille Malanas Marameg Mackinac Mundua Nikikouek Noquet Mouusagai Ouasouarini Aousanik Outchibou Outchougai 
@@ -5031,7 +5370,7 @@ central_algonquian = {
 		}
 	}
 	algonquin = {
-		#primary = OJI
+		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
 			Macomille Malanas Marameg Mackinac Mundua Nikikouek Noquet Mouusagai Ouasouarini Aousanik Outchibou Outchougai 
@@ -5058,7 +5397,7 @@ central_algonquian = {
 		}
 	}
 	cree = {
-		#primary = WCR
+		primary = WCR
 		dynasty_names = {
 			Iyiyiw Chisasibi Wemindji Whapmagoostui Mistissini Nemaska "Ouje-Bougoumou" Waskaganish Waswanipi Mosoni Maskekowak 
 			Nehinawak Attawapiskat Chemawawin Kashechewan Misipawistik Missanabie Mosakahiken Neskntaga Opaskwayak Sapotaweyak 
@@ -5075,7 +5414,7 @@ central_algonquian = {
 		}
 	}
 	innu = {
-		#primary = INN
+		primary = INN
 		dynasty_names = {
 			Chisedec Oumamiwek Papinachois Bersimis Tadoussac Chicoutimi Piekouagami Chomonchouane Nichicun Outakouamiouek 
 			Oukestigouek Attikiriniouetch Mouchaouaouastiiriniouek Ouneskapi 
@@ -5090,7 +5429,7 @@ central_algonquian = {
 		}
 	}
 	mesquakie = {
-		#primary = FOX
+		primary = FOX
 		dynasty_names = {
 			Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk Saukenuk Thakiwakie
 			Tama Osakis Etnataek Kickapougwoi Kithlipecanuk
@@ -5118,7 +5457,7 @@ plains_algonquian = {
 	graphical_culture = northamericagfx
 
 	cheyenne = {
-		#primary = CHY
+		primary = CHY
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
 		}
@@ -5133,7 +5472,7 @@ plains_algonquian = {
 		}
 	}
 	blackfoot = {
-		#primary = BLA
+		primary = BLA
 		dynasty_names = {			
 			Aisikstukiks Apikaiyikis Emitahpahksaiyiks Motahtosiks Puhksinahmahyiks Saiyiks Siksinokaks Tsiniktsistsoyiks 
 			Ahkaisumiks Ahkaipokaks Ahkotahshiks Anepo Apikaiyiks Aputosikainah Inuhksoyistamiks Isissokasimiks Istsikaihan 
@@ -5154,7 +5493,7 @@ plains_algonquian = {
 		}
 	}
 	arapaho = {
-		#primary = ARP
+		primary = ARP
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw Wishram Wasco 
 			Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla
@@ -5176,7 +5515,7 @@ plains_algonquian = {
 		}
 	}
 	plains_cree = {
-		#primary = NEH
+		primary = NEH
 		dynasty_names = {
 			Iyiyiw Chisasibi Wemindji Whapmagoostui Mistissini Nemaska "Ouje-Bougoumou" Waskaganish Waswanipi Mosoni Maskekowak 
 			Nehinawak Attawapiskat Chemawawin Kashechewan Misipawistik Missanabie Mosakahiken Neskntaga Opaskwayak Sapotaweyak 
@@ -5193,7 +5532,7 @@ plains_algonquian = {
 		}
 	}
 	bungi = {
-		#primary = OJI
+		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
 			Macomille Malanas Marameg Mackinac Mundua Nikikouek Noquet Mouusagai Ouasouarini Aousanik Outchibou Outchougai 
@@ -5225,7 +5564,7 @@ eastern_algonquian = {
 	graphical_culture = northamericagfx
 	
 	delaware = {
-		#primary = LEN
+		primary = LEN
 		dynasty_names = {
 			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
 			Absecon Assupink Communipaw Hakensack Hoboken Hohokus Hopatcong Mahwah Manahawkin
@@ -5245,7 +5584,7 @@ eastern_algonquian = {
 		}
 	}
 	abenaki = {
-		#primary = ABE
+		primary = ABE
 		dynasty_names = {
 			Amoskeay Cocheco Cowasuck Koasek Masipskwoik Nashua Ossipee Pemigewasset Pennacook Pequaket	Piscataqua Souhegan 
 			Winnibisauga Amaseconti Alessikantekw Kinipekw Odanak Ossipee Panawahpskek Apikwahki Rocameca Wawinak Wôlinak
@@ -5263,7 +5602,7 @@ eastern_algonquian = {
 		}
 	}
 	mikmaq = {
-		#primary = MIK
+		primary = MIK
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik 
 			Segepenegatig Taqmkuk Tagamgoog Wunamakik Onamagig Aboushagan Antigonishe Bhicuctouche Chignecto Ekoupahag Jedaick 
@@ -5278,7 +5617,7 @@ eastern_algonquian = {
 		}
 	}
 	maliseet = {
-		#primary = MLS
+		primary = MLS
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik 
 			Segepenegatig Taqmkuk Tagamgoog Wunamakik Onamagig Aboushagan Antigonishe Bhicuctouche Chignecto Ekoupahag Jedaick 
@@ -5293,7 +5632,7 @@ eastern_algonquian = {
 		}
 	}
 	mahican = {
-		#primary = MAH
+		primary = MAH
 		dynasty_names = {
 			Muhhcanneuw Mehckentowoon Wawyachtonoc Westenhuck Wiekagjoc Shecomeco Wechquadnach Pamperaug Bantam Weataug 
 			Scaticook Mahaiwe Wikwajek Chaghnet Horikan Kaunaumeek Kenuckpacook Maringoman Monemius Nepaug Paanpaack Peantam 
@@ -5309,7 +5648,7 @@ eastern_algonquian = {
 		}
 	}
 	powhatan = {
-		#primary = POW
+		primary = POW
 		dynasty_names = {
 			Powhatan Arrohateck Appamattuck Pamunkey Mattaponi Chiskiack Kecoughtan Youghtanund Rappahannock Moraughtacund 
 			Weyanoak Paspahegh Quiyoughcohannock Warraskoyack Nansemond
@@ -5323,7 +5662,7 @@ eastern_algonquian = {
 		}
 	}
 	pequot = {
-		#primary = PEQ
+		primary = PEQ
 		dynasty_names = {		
 			Metoac Manchaug Massomuck Menunkantuck Monashackotoog Pequannock
 			Quinebaug Quinnipiac Siwanoy Niantic Asupsuck Aukumbumsk Aushpook
@@ -5342,7 +5681,7 @@ eastern_algonquian = {
 		}
 	}	
 	massachusset = {
-		#primary = WAM
+		primary = WAM
 		dynasty_names = {		
 			Metoac Manchaug Massomuck Menunkantuck Monashackotoog Pequannock
 			Quinebaug Quinnipiac Siwanoy Niantic Asupsuck Aukumbumsk Aushpook
@@ -5366,7 +5705,7 @@ iroquoian = {
 	graphical_culture = northamericagfx
 	
 	iroquois = {
-		#primary = IRO
+		primary = IRO
 		dynasty_names = {
 			Awegen Ahaouet
 			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
@@ -5400,7 +5739,7 @@ iroquoian = {
 		}
 	}
 	cherokee = {
-		#primary = CHE
+		primary = CHE
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
 		}
@@ -5422,7 +5761,7 @@ iroquoian = {
 		}
 	}
 	huron = {
-		#primary = HUR
+		primary = HUR
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
 			Aondironon Atiaonrek Atirhagenrat Atiraguenrek Attiragenrega Attiuoaisgon
@@ -5445,7 +5784,7 @@ iroquoian = {
 		}
 	}
 	laurentian = {
-		#primary = OSH
+		primary = OSH
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
 			Aondironon Atiaonrek Atirhagenrat Atiraguenrek Attiragenrega Attiuoaisgon
@@ -5465,7 +5804,7 @@ iroquoian = {
 		}
 	}
 	tionontate = {
-		#primary = TIO
+		primary = TIO
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
 			Aondironon Atiaonrek Atirhagenrat Atiraguenrek Attiragenrega Attiuoaisgon
@@ -5488,7 +5827,7 @@ iroquoian = {
 		}
 	}
 	susquehannock = {
-		#primary = SUS
+		primary = SUS
 		dynasty_names = {
 			Akhrakouaeronon Akwinoshioni Atquanachuke Carentouan Cepowig Junita Kaiuariegehaga
 			Ohongeoguena Oscalui Quadroque Sconondihago Seosquacke Takoulguehronon Tehaque
@@ -5509,7 +5848,7 @@ siouan = {
 	graphical_culture = northamericagfx
 	
 	dakota = {
-		#primary = SIO
+		primary = SIO
 		dynasty_names = {
 			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
 			Ihantkhunwan Ihankthunwanna Isanyathi Thithunwan Wichiyena
@@ -5528,7 +5867,7 @@ siouan = {
 		}
 	}
 	nakota = {
-		#primary = ASI
+		primary = ASI
 		dynasty_names = {
 			Aegitina Bizibina Cephubi Canhdada Canhewincasta Canknuhabi Hudesabina Hebina Huhumasmibi Huhuganebabi
 			"Hen Atonwaabina" Inwantonwanbina Innianonbi Insaombi Indogahwincasta "Minisoee Swnkeebi" Minisatonwanbi
@@ -5550,7 +5889,7 @@ siouan = {
 		}
 	}
 	chiwere = {
-		#primary = OEO
+		primary = OEO
 		dynasty_names = {
 			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
 			Ihantkhunwan Ihankthunwanna Isanyathi Thithunwan Wichiyena
@@ -5572,7 +5911,7 @@ siouan = {
 		}
 	}
 	osage = {
-		#primary = OSA
+		primary = OSA
 		dynasty_names = {
 			Wazhaze Tsishu Pasueli Wahakolin Sansueli Wyota Picayune Koholo Neodesha
 			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan 
@@ -5602,7 +5941,7 @@ caddoan = {
 	graphical_culture = northamericagfx
 
 	wichita = {
-		#primary = WIC
+		primary = WIC
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
 			Wishram Wasco Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla
@@ -5620,7 +5959,7 @@ caddoan = {
 		}
 	}
 	caddo = {
-		#primary = CAD
+		primary = CAD
 		dynasty_names = {
 			Adai Cahinnio Doustioni Eyeish Hainai Hasinai Kadohadacho
 			Kichai Nabedache Nabiti Nacogdoche Nacono Nadaco Nanatsoho
@@ -5636,7 +5975,7 @@ caddoan = {
 		}
 	}
 	pawnee = {
-		#primary = PAW
+		primary = PAW
 		dynasty_names = {
 			Marhar Skidi Turikaku Kitkehaxpakuxtu Tuhitspiat Tukistkita Tuhawukasa Arikararikutsu
 			Arikarariki Thutsaku Tuwarakaku Akapaxtsawa Tskisarikus Tsiskaatit Turawiu Pahuksatu
@@ -5661,7 +6000,7 @@ muskogean = {
 	graphical_culture = northamericagfx
 	
 	creek = {
-		#primary = CRE
+		primary = CRE
 		dynasty_names = {
 			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
 		}
@@ -5677,7 +6016,7 @@ muskogean = {
 		}
 	}
 	choctaw = {
-		#primary = CHO
+		primary = CHO
 		dynasty_names = {
 			Usquelagana Saktitamaha Itchechana Shumotakali Tinshinkla Chucafalaya Bissacha Otakchitotamaha Yackniachuchuma 
 			Octuechanacbe Ocatalaya Ouiacha Puscustakali Kunshabolukta Yowani Chiskilikbacha Neshobawenya Tamaha Seniasha 
@@ -5706,7 +6045,7 @@ muskogean = {
 		}
 	}
 	chickasaw = {
-		#primary = CHI
+		primary = CHI
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
 			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
@@ -5729,7 +6068,7 @@ muskogean = {
 		}
 	}
 	yuchi = {
-		#primary = CIA
+		primary = CIA
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
 			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
@@ -5752,7 +6091,7 @@ muskogean = {
 		}
 	}
 	yoron = {
-		#primary = CAQ
+		primary = CAQ
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
 			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
@@ -5775,7 +6114,7 @@ muskogean = {
 		}
 	}
 	catawba = {
-		#primary = COF
+		primary = COF
 		dynasty_names = {
 			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk 
 			Saukenuk Thakiwakie
@@ -5790,7 +6129,7 @@ muskogean = {
 		}
 	}
 	natchez = {
-		#primary = NTZ
+		primary = NTZ
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
 			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
@@ -5813,7 +6152,7 @@ muskogean = {
 		}
 	}
 	yamasee = {
-		#primary = ALT
+		primary = ALT
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
 			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
@@ -5841,7 +6180,7 @@ sonoran = {
 	graphical_culture = northamericagfx
 	
 	pueblo = {
-		#primary = PUE
+		primary = PUE
 		dynasty_names = {
 			Acoma Cochiti Isleta Jemez Laguna Nambe "Ohkay Owingeh" Picuris Pojoaque Sandia 
 			Taos Tesuque Zia Zuni Hopi Piru
@@ -5854,7 +6193,7 @@ sonoran = {
 		}
 	}
 	piman = {
-		#primary = PIM
+		primary = PIM
 		dynasty_names = {
 			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
 			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
@@ -5867,7 +6206,7 @@ sonoran = {
 		}
 	}
 	shoshone = {
-		#primary = SHO
+		primary = SHO
 		dynasty_names = {
 			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
 			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
@@ -5880,7 +6219,7 @@ sonoran = {
 		}
 	}
 	kiowa = {
-		#primary = KIO
+		primary = KIO
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
 			Wishram Wasco Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla
@@ -5902,7 +6241,7 @@ sonoran = {
 apachean = {
 	graphical_culture = northamericagfx
 	apache = {
-		#primary = APA
+		primary = APA
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
@@ -5921,7 +6260,7 @@ apachean = {
 		}
 	}
 	mescalero = {
-		#primary = MSC
+		primary = MSC
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
@@ -5940,7 +6279,7 @@ apachean = {
 		}
 	}
 	lipan = {
-		#primary = LIP
+		primary = LIP
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
 			Toboso Cholome Jocome Sibolo Pelone Manso Kiva
@@ -5959,7 +6298,7 @@ apachean = {
 		}
 	}
 	navajo = {
-		#primary = NAH
+		primary = NAH
 		dynasty_names = {
 			"Bit'anhi" "Naaste'ezheh" "Kiyaa'aanii" "Dzilt'aadi" Honaghaahnii "To'ahani" 
 			"Ta'neeszahnii" "Hashk'aa Hadzohi" Nihoobaanii "Ts'ah Yisk'idnii" "Todich'ii'nii" "To Baazhni'azhi" Tseikeehee
@@ -5996,7 +6335,7 @@ na_dene = {
 		}
 	}
 	haida = {
-		#primary = HDA
+		primary = HDA
 		dynasty_names = {
 			Kiusta Kung Yan Hiellan Skidegate "Cha'atl" Haina Kaisun Cumshewa Skedans Tanu Ninstints
 			Masset Atewaas Jaahguhl Kayung "Hlk'yah GaawGa" Klinkwan Sukkwan Howkan Kasaan
@@ -6029,7 +6368,7 @@ na_dene = {
 penutian = {
 	graphical_culture = northamericagfx
 	salish = {
-		#primary = SAL
+		primary = SAL
 		dynasty_names = {
 			Samish Sawehamish Semiahmoo Shishalh Siletz Skagits Skokomish Snohomish Snoqualmie Songhees Squamish Squaxin 
 			Stillaguamish Stolo Aitchelitz Chawathil Cheam
@@ -6052,7 +6391,7 @@ penutian = {
 		}
 	}
 	chinook = {
-		#primary = CNK
+		primary = CNK
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
 			Wishram Wasco Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla
@@ -6070,7 +6409,7 @@ penutian = {
 		}
 	}
 	yokuts = {
-		#primary = YKT
+		primary = YKT
 		dynasty_names = {
 			Wishram Wasco Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla
 		}
@@ -6086,7 +6425,7 @@ penutian = {
 east_asian = {	# Chinese Group
 	graphical_culture = asiangfx
 	vietnamese_new = {
-		##primary = DAI
+		#primary = DAI
 		dynasty_names = {
 			"Lê" "Tran" "Mac" "Nguyen" "Trinh" "Vu" "Nguyen Phuc" "Nguyen Quang"
 		}
@@ -6102,7 +6441,7 @@ east_asian = {	# Chinese Group
 	}
 	
 	korean_new = {
-		##primary = KOR
+		#primary = KOR
 		dynasty_names = { 
 			Yi Wang Kim Pak Shin Song Chae Gang Jeong Jang Yun Han Hong Yu Ki Choi Ga Gye Go Na Noh Woo Do Du Ban Ma Min Mun
 			Seo Son Sim An Yang O Jeon Cho Jin Ha Hong Heo Kwak Lim Won Kwon Hwang Bae Seok Bang Dae Gyeong Nam Sung Baek
@@ -6132,7 +6471,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	tibetan_new = {
-		##primary = UTS
+		#primary = UTS
 		dynasty_names = {
 			Se Rmu Ldong Stong Dbra Dru Nyang Sbas Gnon Chespong Thonmi Mgar Bri Mong Zhang Mchims Bal Lang Cogro Bro Dbas 
 			Shudpu Gnyags Mgus Mjang Snang Sgro Rma Snyiba Khu Khun Mkar Rlangs Rinspungs Zhingshag Phjongsrgjas Nganlam Sba Lig 
@@ -6152,7 +6491,7 @@ east_asian = {	# Chinese Group
 	altaic_new	= {
 		country = { has_banners = yes}
 		province = { local_has_banners = yes}
-		#primary = YUA
+		primary = YUA
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
 			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
@@ -6191,7 +6530,7 @@ east_asian = {	# Chinese Group
 	manchu_new = {
 		country = { has_banners = yes}
 		province = { local_has_banners = yes}
-		#primary = MCH
+		primary = MCH
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
 			Heseri Guwalgiya Tunggiya Hata Hoifa Yeren Udige
@@ -6209,7 +6548,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	chihan = {	#Zhili
-		#primary = YAN
+		primary = YAN
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6236,7 +6575,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	cantonese = {
-		#primary = YUE
+		primary = YUE
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6263,7 +6602,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	jin = {
-		#primary = JIN
+		primary = JIN
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6290,7 +6629,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	wu = {
-		#primary = WUU
+		primary = WUU
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6317,7 +6656,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	chimin = {
-		#primary = MIN
+		primary = MIN
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6344,7 +6683,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	hakka = {
-		#primary = HUA
+		primary = HUA
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6371,7 +6710,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	gan = {
-		#primary = NNG
+		primary = NNG
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6398,7 +6737,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	xiang = {
-		#primary = CHC
+		primary = CHC
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6425,7 +6764,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	sichuanese = {
-		#primary = SHU
+		primary = SHU
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6452,7 +6791,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	jianghuai = {
-		#primary = MNG
+		primary = MNG
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6479,7 +6818,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	xibei = {
-		#primary = CSH
+		primary = CSH
 		male_names = {
 			Qizhen Qiyu Jianjun Youcheng Houzhao Houcong Zaihou Yijun Changluo Youjian Yousong Yujian Youlang Chenggong 
 			Kehshuan Biao Shuang Gang Su Zhen Fu Zi Qi Tan Chun Bai Gui Zhi Quan Pian Hui Song Mo Ying Jing Dang Nan 
@@ -6500,7 +6839,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	hubei = {
-		#primary = CXI
+		primary = CXI
 		male_names = {
 			Qizhen Qiyu Jianjun Youcheng Houzhao Houcong Zaihou Yijun Changluo Youjian Yousong Yujian Youlang Chenggong 
 			Kehshuan Biao Shuang Gang Su Zhen Fu Zi Qi Tan Chun Bai Gui Zhi Quan Pian Hui Song Mo Ying Jing Dang Nan 
@@ -6521,7 +6860,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	zhongyuan = {
-		#primary = LNG
+		primary = LNG
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6548,7 +6887,7 @@ east_asian = {	# Chinese Group
 		}
 	}
 	shandong_culture = {
-		#primary = QIC
+		primary = QIC
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6587,7 +6926,7 @@ korean_g = {
 	graphical_culture = asiangfx
 	
 	korean = {
-		#primary = KOR
+		primary = KOR
 		dynasty_names = { 
 			Yi Wang Kim Pak Shin Song Chae Gang Jeong Jang Yun Han Hong Yu Ki Choi Ga Gye Go Na Noh Woo Do Du Ban Ma Min Mun
 			Seo Son Sim An Yang O Jeon Cho Jin Ha Hong Heo Kwak Lim Won Kwon Hwang Bae Seok Bang Dae Gyeong Nam Sung Baek
@@ -6624,7 +6963,7 @@ japanese_g = {
 	province = { local_has_samurai = yes }
 	togoku = { #Togoku / Eastern Japanese
 		province = { local_has_samurai = yes }
-		#primary = JAP
+		primary = JAP
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -6651,7 +6990,7 @@ japanese_g = {
 	}
 	japanese = { #Saigoku / Western Japanese
 		province = { local_has_samurai = yes }
-		#primary = MRI
+		primary = MRI
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -6678,7 +7017,7 @@ japanese_g = {
 	}
 	kyushuan = { #Kyushu culture
 		province = { local_has_samurai = yes }
-		#primary = OTM
+		primary = OTM
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -6709,7 +7048,7 @@ japanese_g = {
 tibetan_group = {
 	graphical_culture = asiangfx
 	tibetan = {
-		#primary = UTS
+		primary = UTS
 		dynasty_names = {
 			Se Rmu Ldong Stong Dbra Dru Nyang Sbas Gnon Chespong Thonmi Mgar Bri Mong Zhang Mchims Bal Lang Cogro Bro Dbas 
 			Shudpu Gnyags Mgus Mjang Snang Sgro Rma Snyiba Khu Khun Mkar Rlangs Rinspungs Zhingshag Phjongsrgjas Nganlam Sba Lig 
@@ -6727,7 +7066,7 @@ tibetan_group = {
 		}
 	}
 	yi = {
-		#primary = CYI
+		primary = CYI
 		dynasty_names = {
 			"An" "She" "Liu" "Longzan" "Feng" "Pu"
 		}
@@ -6742,7 +7081,7 @@ tibetan_group = {
 		}
 	}
 	bai = {
-		#primary = CDL
+		primary = CDL
 		dynasty_names = {
 			"Duan" "Gao" "Meng"
 		}
@@ -6757,7 +7096,7 @@ tibetan_group = {
 		}
 	}
 	miao = {
-		#primary = CMI
+		primary = CMI
 		dynasty_names = {
 			"Fang" "Hang" "Hue" "Khang" "Kong" "Soung" "Kue" "Lo" "Lor" "Li" "Moua" "Pha" "Tang" "Thao" "Chang" "Cheng" 
 			"Chu" "Vang" "Vue" "Xiong" "Yang"
@@ -6779,7 +7118,7 @@ malay = {
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx
 	malayan = {
-		#primary = MLC
+		primary = MLC
 		dynasty_names = { 
 			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu
 		}
@@ -6795,7 +7134,7 @@ malay = {
 		}
 	}
 	sumatran = {
-		#primary = PLB
+		primary = PLB
 		dynasty_names = {
 			Siak Aceh Pasai Pagarruyung Palembang Jambi
 		}
@@ -6811,7 +7150,7 @@ malay = {
 		}
 	}
 	acehnese = {
-		#primary = ATJ
+		primary = ATJ
 		dynasty_names = {
 			Siak Aceh Pasai Pagarruyung Palembang Jambi
 		}
@@ -6827,7 +7166,7 @@ malay = {
 		}
 	}
 	javanese = {
-		#primary = MAJ
+		primary = MAJ
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
@@ -6845,7 +7184,7 @@ malay = {
 		}
 	}
 	sundanese = {
-		#primary = MAJ
+		primary = MAJ
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
@@ -6863,7 +7202,7 @@ malay = {
 		}
 	}
 	filipino = {
-		#primary = SUL
+		primary = SUL
 		dynasty_names = {
 			Sulu Maguindanao Tondo Lanao Butuan Palawan Panay
 		}
@@ -6880,7 +7219,7 @@ malay = {
 		}
 	}
 	bornean = {
-		#primary = BEI
+		primary = BEI
 		dynasty_names = {
 			Burnei Kutai Sibu Kuching
 		}
@@ -6912,7 +7251,7 @@ malay = {
 		}
 	}
 	sulawesi = {
-		#primary = MKS
+		primary = MKS
 		dynasty_names = {
 			Palopo Makassar Manado Poso Palu
 		}
@@ -6931,7 +7270,7 @@ malay = {
 		}
 	}
 	moluccan = {
-		#primary = TER
+		primary = TER
 		male_names = {
 			"Komala Pulu" "Marhum" "Zainal Abidin" "Bayanullah" "Hidayatullah" "Abu Hayat" "Tabariji" "Khairun Jamil" 
 			"Babullah Datu Shah" "Said Barakat Shah" "Muzaffar Shah" "Hamzah" "Manilha" "Mandar Shah" "Sibori" "Said Fathullah"
@@ -6943,7 +7282,7 @@ malay = {
 		}
 	}
 	nusa_tenggara = {
-		#primary = BLI
+		primary = BLI
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
@@ -6961,7 +7300,7 @@ malay = {
 		}
 	}
 	cham = {
-		#primary = CHA
+		primary = CHA
 		dynasty_names = { 
 			Vijaya Kauthara Panduranga Indrapura
 		}
@@ -6985,7 +7324,7 @@ thai_group = {
 	second_graphical_culture = asiangfx
 
 	central_thai = {
-		#primary = AYU
+		primary = AYU
 		dynasty_names = { 
 			Ayutthaya Sukhothai Thonburi Phitsanulok "Phra Bang" Ratchaburi Phetchaburi "U Thong" "Nakhon Pathom" 
 			Phimai "Sri Thep" "Nakhon Sawan" Lavapura "Chiang Mai" "Chiang Rai" "Chet Ton" Lampang Lamphun
@@ -7004,7 +7343,7 @@ thai_group = {
 		}
 	}
 	northern_thai = {
-		#primary = LNA
+		primary = LNA
 		dynasty_names = { 
 			"Chiang Mai" "Chiang Rai" "Chet Ton" Lampang Lamphun
 		}
@@ -7018,7 +7357,7 @@ thai_group = {
 		}
 	}
 	lao = {
-		#primary = LUA
+		primary = LUA
 		dynasty_names = { 
 			"Luang Prabang" "Champassak" Vientiane Phuan Nan
 		}
@@ -7036,7 +7375,7 @@ thai_group = {
 		}	
 	}
 	shan = {
-		#primary = SST
+		primary = SST
 		dynasty_names = { 
 			Bamaw Kale Ava Kengtung Yawnghwe "Mong Pawn" "Mong Mit" "Mong Kawng" Hsipaw Hsenwi "Mong Pai"
 		}
@@ -7052,7 +7391,7 @@ thai_group = {
 		}
 	}
 	zhuang = {
-		#primary = CGS
+		primary = CGS
 		dynasty_names = { 
 			Bamaw Kale Ava Kengtung Yawnghwe "Mong Pawn" "Mong Mit" "Mong Kawng" Hsipaw Hsenwi "Mong Pai"
 		}
@@ -7073,7 +7412,7 @@ southeastasian_group = {
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx
 	khmer = {
-		#primary = KHM
+		primary = KHM
 		dynasty_names = {
 			Angkor "Siem Reap" Oudong Battambang "Stung Treng" Kratie "Phnom Penh"
 		}
@@ -7097,7 +7436,7 @@ southeastasian_group = {
 		}
 	}
 	mon = {
-		#primary = PEG
+		primary = PEG
 		dynasty_names = {
 			Pegu Dagon Thaton Martaban
 		}
@@ -7110,7 +7449,7 @@ southeastasian_group = {
 		}	
 	}
 	vietnamese = {
-		#primary = DAI
+		primary = DAI
 		dynasty_names = {
 			"Lê" "Tran" "Mac" "Nguyen" "Trinh" "Vu" "Nguyen Phuc" "Nguyen Quang"
 		}
@@ -7133,7 +7472,7 @@ burman = {
 	graphical_culture = asiangfx
 
 	burmese = {
-		#primary = TAU
+		primary = TAU
 		dynasty_names = {
 			Taungu Ava Pagan Prome "Myede Mong" Sagaing Kyaukse Pinya Myinsaing Konbaung
 		}
@@ -7147,7 +7486,7 @@ burman = {
 		}
 	}
 	chin = {
-		#primary = MLB
+		primary = MLB
 		dynasty_names = {
 			Shubol Chandrakirti Ganavira Marjit Charajit Pitambara Moduchandra Harshachandra Nara Devendra
 		}
@@ -7190,7 +7529,7 @@ burman = {
 		}
 	}
 	arakanese = {
-		#primary = ARK
+		primary = ARK
 		dynasty_names = {
 			Thandwe "Mrauk-U"
 		}
@@ -7286,7 +7625,7 @@ aboriginal_australian = {
 	second_graphical_culture = africangfx
 	
 	aboriginal = { #(Kuric) Eora/East Coast
-		#primary = EOR
+		primary = EOR
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7317,7 +7656,7 @@ aboriginal_australian = {
 		}
 	}
 	yura = { #South Australia
-		#primary = KAU
+		primary = KAU
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7348,7 +7687,7 @@ aboriginal_australian = {
 		}
 	}
 	paman = { #Capricornia
-		#primary = AWN
+		primary = AWN
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7375,7 +7714,7 @@ aboriginal_australian = {
 		}
 	}
 	gunwinyguan = { #Top End
-		#primary = LAR
+		primary = LAR
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7404,7 +7743,7 @@ aboriginal_australian = {
 		}
 	}
 	palawa = { #Tasmania
-		#primary = PLW
+		primary = PLW
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7435,7 +7774,7 @@ aboriginal_australian = {
 		}
 	}
 	kulin = { #Melbourne
-		#primary = WRU
+		primary = WRU
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7462,7 +7801,7 @@ aboriginal_australian = {
 		}
 	}
 	gamilaraay = { #interior
-		#primary = GMI
+		primary = GMI
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7489,7 +7828,7 @@ aboriginal_australian = {
 		}
 	}
 	nyoongah = { #Perth
-		#primary = NOO
+		primary = NOO
 		male_names = {
 			#pre-mandala names
 			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah 
@@ -7529,7 +7868,7 @@ eastern_aryan = {
 	graphical_culture = indiangfx
 
 	assamese = {
-		#primary = ASS
+		primary = ASS
 		dynasty_names = {
 			"Khen" "Ahom" "Nagas" "Chutiya" "Raikat" "Koch"
 			"Sutiya" "Kachari" "Barobhyan"
@@ -7551,7 +7890,7 @@ eastern_aryan = {
 		}
 	}
 	bengali = {
-		#primary = BNG
+		primary = BNG
 		dynasty_names = {
 			"Ilyas Shahi" "Ganesha" "Hussein Shahi" "Najafi" "Afshari" "Nasiri" "Karrani"
 			# CKII
@@ -7600,7 +7939,7 @@ eastern_aryan = {
 		}
 	}
 	kochi = {
-		#primary = KMT
+		primary = KMT
 		dynasty_names = {
 			"Ilyas Shahi" "Ganesha" "Hussein Shahi" "Najafi" "Afshari" "Nasiri" "Karrani"
 			# CKII
@@ -7649,7 +7988,7 @@ eastern_aryan = {
 		}
 	}
 	bihari = {
-		#primary = TRT
+		primary = TRT
 		dynasty_names = {
 			"Sugauna" "Sharqi" "Suri" "Oinwara"
 		}
@@ -7663,13 +8002,13 @@ eastern_aryan = {
 		}
 	}
 	pahari = {
-		#primary = GHR
+		primary = GHR
 		dynasty_names = {
 			Chand Parmar Prakash Katoch
 		}
 	}
 	nepali = {
-		#primary = NPL
+		primary = NPL
 		dynasty_names = {
 			"Malla" "Ghorka" Limbu
 		}
@@ -7689,7 +8028,7 @@ eastern_aryan = {
 		}
 	}
 	oriya = {
-		#primary = ORI
+		primary = ORI
 		dynasty_names = {
 			"Chindaka Naga" "Gajapati" "Ganga" "Bhoi" "Chagi" "Pusapati" "Bhanja"
 			"Chindaka-Naga" "Rathore" "Singha" "Gangavanshi" "Chauhan" "Kadamba" "Keshari"
@@ -7732,7 +8071,7 @@ eastern_aryan = {
 		}
 	}
 	sinhala = {
-		#primary = CEY
+		primary = CEY
 		dynasty_names = {
 			"Kotteid" "Konnapu Bandara" "Gampolan" "Savulu"
 		}
@@ -7778,7 +8117,7 @@ hindusthani = {
 	graphical_culture = indiangfx
 
 	avadhi = {
-		#primary = ODH
+		primary = ODH
 		dynasty_names = {
 			"ud Daula" "Awadhi" "Chand" "Bundela" "Malikzada" "Tomara" "Raghuvansi" "Parmari"
 		}
@@ -7792,7 +8131,7 @@ hindusthani = {
 		}
 	}
 	kanauji = { #Hindvi
-		#primary = DLH
+		primary = DLH
 		dynasty_names = {
 			"Tughluq" "Lodi" "Khilji"
 		}
@@ -7806,13 +8145,13 @@ hindusthani = {
 		}
 	}
 	vindhyan = { #Bundeli & Bagheli
-		#primary = BND
+		primary = BND
 		dynasty_names = {
 			Baghela Malikzada Bundela Tomara Karkare Newalkar 
 		}
 	}
 	panjabi = {
-		#primary = PUN
+		primary = PUN
 		dynasty_names = {
 			"Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
 			"Mirrani" "Abbasi"
@@ -7838,7 +8177,7 @@ hindusthani = {
 		}
 	}
 	kashmiri = {
-		#primary = KSH
+		primary = KSH
 		dynasty_names = {
 			"Shah Miri" "Sayyidi" "Mirrani"
 			#CK2
@@ -7915,7 +8254,7 @@ western_aryan = {
 	graphical_culture = indiangfx
 
 	gujarati = {
-		#primary = GUJ
+		primary = GUJ
 		dynasty_names = {
 			"Muzaffarid" "Ahmad Shahi" "Vadher" "Babi" "Rawal" "Jadeja" "Calukya" "Bhil" "Kathi"
 		}
@@ -7960,7 +8299,7 @@ western_aryan = {
 		}
 	}
 	parsi = {
-		#primary = GUJ
+		primary = GUJ
 		dynasty_names = {
 			"Vakil" "Wadia" "Pithawala" "Subedar" "Sanjana" "Surti" "Bulsara" "Damania" "Gandhi" "Marzban"
 			"Jejeebhoy" "Tata"  
@@ -7979,7 +8318,7 @@ western_aryan = {
 		}
 	}
 	saurashtri = {
-		#primary = JGD
+		primary = JGD
 		dynasty_names = {
 			"Yadava" "Gohil" "Vadher" "Babi" "Rawal" "Jadeja" "Calukya" "Bhil" "Kathi"
 		}
@@ -8024,7 +8363,7 @@ western_aryan = {
 		}
 	}
 	marathi = {
-		#primary = MAR
+		primary = MAR
 		dynasty_names = {
 			"Bhonsle" "Gaikwar" "Bhat" "Sindhia" "Koli" "Sinda" "Kamadeva" "Gaitonde" "Malviya" "Ruddha"
 		}
@@ -8057,7 +8396,7 @@ western_aryan = {
 		}
 	}
 	sindhi = {
-		#primary = SND
+		primary = SND
 		dynasty_names = {
 			"Samma" "Kalhora" "Soomra"
 			# CKII
@@ -8081,7 +8420,7 @@ western_aryan = {
 		}
 	}
 	rajput = {
-		#primary = MER
+		primary = MER
 		dynasty_names = {
 			"Sisodiya" "Faruqi" "Rastraudha" "Solanki" "Khan Zada" "Kachwaha"
 			"Satnami" "Rathore" "Hada" "Chauhan" "Holkar" "Qadirid" "Shaja'atid"
@@ -8185,7 +8524,7 @@ western_aryan = {
 		}
 	}
 	malvi = {
-		#primary = MLW
+		primary = MLW
 		dynasty_names = {
 			"Holkar" "Qadirid" "Shaja'atid" "Khalji"
 		}
@@ -8204,7 +8543,7 @@ dravidian = {
 	graphical_culture = indiangfx
 
 	kannada = {
-		#primary = MYS
+		primary = MYS
 		dynasty_names = {
 			"Wodeyar" "Sangama" "Saluva" "Tuluva" "Alupa" "Keladi" "Ummattur" "Chowta"
 			"Vaidumba" "Chalukya" "Sendraka" "Sangama" "Kalachuri" "Hoysala" "Wodeyar"
@@ -8234,7 +8573,7 @@ dravidian = {
 		}
 	}
 	malayalam = {
-		#primary = VND
+		primary = VND
 		dynasty_names = {
 			"Kolathiri" "Saamoothiri" "Perumal" "Perumpadappu" "Kulasekhara" "Cheraman"
 		}
@@ -8248,7 +8587,7 @@ dravidian = {
 		}
 	}
 	tamil = {
-		#primary = MAD
+		primary = MAD
 		dynasty_names = {
 			"Saadatullahid" "Anwarudid" "Pandya" "Thondaiman" "Thanjavuri" "Sethupathy" "Saluva" 
 			"Thanjavur Mutharaiyar" "Udayagiri Mutharaiyar" "Simhapuri Mutharaiyar" "Ay" "Pallava" "Chola" 
@@ -8322,7 +8661,7 @@ dravidian = {
 		}
 	}
 	telegu = {
-		#primary = GOC
+		primary = GOC
 		dynasty_names = {
 			"Aravidu" "Talpura" "Velama" "Saluva" "Tuluva" "Sangama" "Pemmasani" "Tupakula"
 			# CKII
@@ -8357,7 +8696,7 @@ central_indic = {
 	graphical_culture = indiangfx
 
 	gondi = {
-		#primary = GDW
+		primary = GDW
 		dynasty_names = {
 			"Chanda" "Raj Gondi" "Kherli" "Deogadhi" "Ballar Sahi" "Haihaya" "Gadhi"
 		}
@@ -8370,7 +8709,7 @@ central_indic = {
 		}
 	}
 	garjati = {
-		#primary = GRJ
+		primary = GRJ
 		dynasty_names = {
 			"Nagavamsi" "Sankara" "Bhuyavamsha" "Gangabansi" "Bhanja" "Karan" "Keshari" "Suryavanshi" "Baghal"
 		}
@@ -8386,7 +8725,7 @@ central_indic = {
 		}
 	}
 	jharkhandi = {
-		#primary = NGP
+		primary = NGP
 		dynasty_names = { "Porohat" "Nagavamsi" "Raksel" "Munda" "Ho" "Bhuiyan" }
 		male_names = {
 			"Maharato" "Madhu Singh" "Durjan Sal" "Anant" "Medini" "Pratap" "Narendra Rudra" "Jaswant Singh" 
@@ -8456,7 +8795,7 @@ central_indic = {
 mande = {
 	graphical_culture = africangfx
 	mali = {
-		#primary = MAL
+		primary = MAL
 		dynasty_names = {
 			Keita Sama
 		}
@@ -8472,7 +8811,7 @@ mande = {
 		}
 	}
 	songhai = {
-		#primary = SON
+		primary = SON
 		dynasty_names = {
 			Askia Sonni 
 		}
@@ -8488,7 +8827,7 @@ mande = {
 		}
 	}
 	soninke = {
-		#primary = ZAF
+		primary = ZAF
 		dynasty_names = {
 			Ghana Diarisso Kante
 		}
@@ -8504,13 +8843,13 @@ mande = {
 		}
 	}
 	bambara = {
-		#primary = SOF
+		primary = SOF
 		dynasty_names = {
 			Coulibaly Diarra Massassi
 		}
 	}
 	bozo = {
-		#primary = JNN
+		primary = JNN
 		dynasty_names = {
 			Konboro Seku
 		}
@@ -8527,7 +8866,7 @@ mande = {
 		}
 	}
 	dyola = {
-		#primary = KNG
+		primary = KNG
 		dynasty_names = {
 			Gorogo Wattara
 		}
@@ -8571,7 +8910,7 @@ sahelian = {
 	graphical_culture = africangfx
 	
 	hausa = {
-		#primary = HAU
+		primary = HAU
 		dynasty_names = {
 			Azna "Yan Korau" Dadi Yaji Saibou Bakara Mamami
 			Kountché Diore Balewa Aluko Bandele Kanu Kuti
@@ -8610,7 +8949,7 @@ sahelian = {
 		}
 	}
 	kanuri = {
-		#primary = KBO
+		primary = KBO
 		dynasty_names = {
 			Sayfawa Kanemi Zubayr
 			Oueddai Ardoum Yorassem
@@ -8650,7 +8989,7 @@ sahelian = {
 		}
 	}
 	bilala = {
-		#primary = YAO
+		primary = YAO
 		dynasty_names = {
 			Mahamat Batoa "N'guidjim" Batoa Burwa Dalmawa Tchalmawa Wadawa Djulwa
 			"N'guidjim" Kassawa Gaswa Madawa Fadwa Kiliti Argumba
@@ -8691,7 +9030,7 @@ sahelian = {
 		}
 	}
 	tunjur = {
-		#primary = WAD
+		primary = WAD
 		dynasty_names = {
 			Mahamat Batoa "N'guidjim" Batoa Burwa Dalmawa Tchalmawa Wadawa Djulwa
 			"N'guidjim" Kassawa Gaswa Madawa Fadwa Kiliti Argumba
@@ -8732,7 +9071,7 @@ sahelian = {
 		}
 	}
 	tuareg = {
-		#primary = AIR
+		primary = AIR
 		dynasty_names = {
 			Magsharen Stanbulewa "Ait Loaien" "Dag Rali" Iregenaten
 			"Kel Rela" "Kel Silet" Taituq "Tgéhé Millet" "Kel Afella"
@@ -8750,7 +9089,7 @@ sahelian = {
 		}
 	}		
 	senegambian = {
-		#primary = JOL
+		primary = JOL
 		dynasty_names = {
 			"N'Dyaye" "Penda" "Mba" "Tyukuli" "Sare" Kompass
 			Birayamb Keme Bakar Fak "Kuran Kan" Daagulen
@@ -8766,7 +9105,7 @@ sahelian = {
 		}
 	}			
 	fulani = {
-		#primary = FUL
+		primary = FUL
 		dynasty_names = {
 			Fodio Denyanke Lih Wan Alfa Garm Ule Kumba Lamu
 			Tabakali Bohi Dundu Jeegi Musa Njai
@@ -8787,7 +9126,7 @@ west_african = {
 	graphical_culture = africangfx
 	
 	yorumba = {
-		#primary = OYO
+		primary = OYO
 		dynasty_names = {
 			Alaafin Eweka Ubah Umaru Aliu Solaja Okara
 			Ajuwa Ezinwa Kanu Opara Rufai
@@ -8807,7 +9146,7 @@ west_african = {
 		}
 	}
 	aka = {
-		#primary = ASH
+		primary = ASH
 		dynasty_names = {
 			Denkyirahene "Oyoko Abohyen" Kotokuhene Bonohene
 			Addy Afrifa Sadami Sabah Sribor Moyoyo
@@ -8829,7 +9168,7 @@ west_african = {
 		}
 	}
 	nupe = {
-		#primary = NUP
+		primary = NUP
 		dynasty_names = {
 			Etsu Ubah Solaja Umaru
 			Aliu Solaja Okara Ajuwa
@@ -8850,7 +9189,7 @@ west_african = {
 		}
 	}
 	fon = {
-		#primary = DAH
+		primary = DAH
 		dynasty_names = {
 			Ajahutonon Ahosu Assogba Ahyi
 			Tometin Koukou Sessegnon
@@ -8871,7 +9210,7 @@ west_african = {
 		}
 	}
 	mossi = {
-		#primary = MSI
+		primary = MSI
 		dynasty_names = {
 			"Tenga Niama" "Moogo" "Naaba"
 			Addy Afrifa Sadami Sabah Zakari
@@ -8891,7 +9230,7 @@ west_african = {
 		}
 	}
 	dagomba = {
-		#primary = DGB
+		primary = DGB
 		dynasty_names = {
 			Naa Dagomba Mamprusi
 		}
@@ -8913,7 +9252,7 @@ west_african = {
 southern_african = {
 	graphical_culture = africangfx
 	makua = {
-		#primary = MKU
+		primary = MKU
 		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
 		male_names = {
 			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
@@ -8948,7 +9287,7 @@ southern_african = {
 		female_names = { Behati }
 	}
 	shona = {
-		#primary = ZIM
+		primary = ZIM
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa
 		}
@@ -8963,7 +9302,7 @@ southern_african = {
 		}
 	}
 	nyasa = {
-		#primary = MRA
+		primary = MRA
 		dynasty_names = {
 			Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
 			Mtika Nyanjagha Chiluba
@@ -8998,28 +9337,28 @@ southern_african = {
 kongo_group = {
 	graphical_culture = africangfx
 	lunda = {
-		#primary = LND
+		primary = LND
 	}
 	luba = {
-		#primary = LUB
+		primary = LUB
 	}
 	kongolese = {
-		#primary = KON
+		primary = KON
 	}
 	yaka = {
-		#primary = YAK
+		primary = YAK
 	}
 	kuba = {
-		#primary = KUB
+		primary = KUB
 	}
 	mbundu = {
-		#primary = NDO
+		primary = NDO
 	}
 	chokwe = {
-		#primary = CKW
+		primary = CKW
 	}
 	mbangala = {
-		#primary = KSJ
+		primary = KSJ
 	}
 	jukun = {
 	
@@ -9043,7 +9382,7 @@ kongo_group = {
 great_lakes_group = {
 	graphical_culture = africangfx
 	rwandan = {
-		#primary = RWA
+		primary = RWA
 		dynasty_names = { 
 			Songoro Ha Huma Iru Hima Kama Chwa Mpazi Bairu Waha Hinda Bajiji Bashubi Abacyaba
 			Abasinga Abashambo Abahinda Abazigaba Abungura Abarihira Abahondogo Abongera
@@ -9059,7 +9398,7 @@ great_lakes_group = {
 		}
 	}
 	ganda = {
-		#primary = BUG
+		primary = BUG
 		dynasty_names = { 
 			
 		}
@@ -9093,7 +9432,7 @@ african = {	#Eastern Bantu Groups
 	graphical_culture = africangfx
 	
 	madagasque = {
-		#primary = SKA
+		primary = SKA
 		dynasty_names = {
 			Mwenemutapa Rozwi Mutopa Lukeni Loanga
 		}
@@ -9131,7 +9470,7 @@ african = {	#Eastern Bantu Groups
 		
 	}
 	swahili = {
-		#primary = ZAN
+		primary = ZAN
 		dynasty_names = {
 			Nabahani al-Mawahib Zanzibari Mvita al-Malindi
 		}
@@ -9197,7 +9536,7 @@ cushitic = {
 	graphical_culture = africangfx
 	
 	somali = {
-		#primary = ADA
+		primary = ADA
 		dynasty_names = {
 			Walashma Muzaffar Gareen Gobroon Karanle Jaladi Harti Darod Gerad
 			# CKII
@@ -9218,7 +9557,7 @@ cushitic = {
 		}
 	}
 	harari = {
-		#primary = HAR
+		primary = HAR
 		male_names = {
 			Abadir Abdale Abdirahman Abdulah Abdullah Abram Abu-Bakr Adan Adeer Ahmed Ali Amlale Aul Awe
 			Aydahis Balad Baraka Barakat Ciise Dagale Dhidhin Hamalmal Hamar Hamid Hantale Haqq Harire
@@ -9239,7 +9578,7 @@ cushitic = {
 		}
 	}
 	afar = {
-		#primary = AFA
+		primary = AFA
 		dynasty_names = {
 			Walashma Muzaffar Gareen Gobroon Karanle Jaladi Harti Darod Gerad
 			# CKII
@@ -9260,7 +9599,7 @@ cushitic = {
 		}
 	}
 	oromo = {
-		#primary = JIM
+		primary = JIM
 		male_names = {
 			"Taqla Hâymânôt" "'Amsa Gîyôrgîs" "Tuqla Gîyôrgîs" "Zar'a Yâqob" "Ba'eda Mâryâm" "'Amda Seyôn" "Lebna" 
 			"Saga Krestos" "Malta Krestos" "Dengel" "Welde Giyorgis" "Mika'el Sehul" "Wolda Gabrael" "Wand Bewossen" 
@@ -9275,7 +9614,7 @@ cushitic = {
 		}
 	}
 	tigray = {
-		#primary = MED
+		primary = MED
 		male_names = {
 			"Taqla Hâymânôt" "'Amsa Gîyôrgîs" "Tuqla Gîyôrgîs" "Zar'a Yâqob" "Ba'eda Mâryâm" "'Amda Seyôn" "Lebna" 
 			"Saga Krestos" "Malta Krestos" "Dengel" "Welde Giyorgis" "Mika'el Sehul" "Wolda Gabrael" "Wand Bewossen" 
@@ -9290,7 +9629,7 @@ cushitic = {
 		}
 	}
 	sidamo = {
-		#primary = KAF
+		primary = KAF
 		
 		male_names = {
 			"Minjo" "Iyâsû" "Taqla Hâymânôt" "Salômôn" "Yôhannes" "Hezqeyâs" "Zar'a Yâqob" "Ba'eda Mâryâm" 
@@ -9306,7 +9645,7 @@ cushitic = {
 		}
 	}
 	amhara = {
-		#primary = ETH
+		primary = ETH
 		dynasty_names = {
 			Solomonid
 			#CK2 Ethiopian
@@ -9349,10 +9688,10 @@ sudanese = {
 		
 	}
 	nubian = {
-		#primary = NUB
+		primary = NUB
 	}
 	beja = {
-		#primary = BEJ
+		primary = BEJ
 	}
 	dynasty_names = {
 		Senar
@@ -9401,7 +9740,7 @@ evenks = {
 	second_graphical_culture = asiangfx
 	evenk = {
 		second_graphical_culture = asiangfx
-		#primary = SOL
+		primary = SOL
 		dynasty_names = {
 			Badarhan Tabangut 
 		}
@@ -9428,7 +9767,7 @@ evenks = {
 		}
 	}
 	yukagyr = {
-		#primary = HOD
+		primary = HOD
 		dynasty_names = {
 			Uygulaan Khorints
 		}
@@ -9442,7 +9781,7 @@ evenks = {
 		}
 	}
 	buryat = {
-		#primary = BRT
+		primary = BRT
 		dynasty_names = {
 			Badarhan "Chagatay" "Edigüid" "Giray" "Borjigin" "Shaybanid" "Janid" "Mangit"
 		}
@@ -9474,7 +9813,7 @@ evenks = {
 		graphical_culture = asiangfx
 		country = { has_banners = yes}
 		province = { local_has_banners = yes}
-		#primary = MJZ
+		primary = MJZ
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
 			Heseri Guwalgiya Tunggiya Hata Hoifa Yeren Udige
@@ -9502,7 +9841,7 @@ kamchatkan_g = {
 	second_graphical_culture = asiangfx
 	
 	ainu = {
-		#primary = ANU
+		primary = ANU
 		dynasty_names = {
 			Shibushari Hae Betsu Shiraoi Kurasi Kakizaki Ponyanpe Shirokani Otona Ekashi Saru Usu
 		}
@@ -9514,7 +9853,7 @@ kamchatkan_g = {
 		}
 	}
 	kamchatkan = {
-		#primary = KMC
+		primary = KMC
 		dynasty_names = {
 			Garpancha Songolik Tymancha Tykulcha Gudeikon Adiul Khadiul Dyaluncha Aksik Kepele Gugdaul Burgumi Vavlya Vadyo 
 			Vankho Eldan Ka-cheda Kilim Agna Sebeda Saltyk Alvali Akhtamak
@@ -9529,7 +9868,7 @@ kamchatkan_g = {
 		}
 	}
 	nivkh = {
-		#primary = NVK
+		primary = NVK
 		dynasty_names = {
 			Garpancha Songolik Tymancha Tykulcha Gudeikon Adiul Khadiul Dyaluncha Aksik Kepele Gugdaul Burgumi Vavlya Vadyo 
 			Vankho Eldan Ka-cheda Kilim Agna Sebeda Saltyk Alvali Akhtamak
@@ -9549,7 +9888,7 @@ kamchatkan_g = {
 tartar	= {
 	graphical_culture = muslimgfx
 	astrakhani = {
-		#primary = AST
+		primary = AST
 		dynasty_names = {
 			"Qara Chinua" "Delger Qyugun" "Arigh Gal" "Koke Erdene"	"Suren Unegen" "Tegus Enq" Qadandei Burilgigene Arighteni
 			Yekecher Surenqai Qorchigge
@@ -9569,7 +9908,7 @@ tartar	= {
 		}
 	}
 	bashkir = {
-		#primary = BSH
+		primary = BSH
 		dynasty_names = {
 			Balna Salmiianov Ravna Taiborey Vylka Kanin Maimbava Arinin Aven Tsoy
 		}
@@ -9588,7 +9927,7 @@ tartar	= {
 		}
 	}
 	crimean = {
-		#primary = CRI
+		primary = CRI
 		dynasty_names = {
 			Altan Asanin Bekmambet Ziyaeddin Sarigöl Bektöre Celebicihan  Cobanzade Dägci Gaspirali Giraybay Hablemitoglu Hilmi 
 			Inalcik Ipci Kirimal Seydahmet Ihsan Kubay Qirimoglu Mamut Mansiz Mehdi Neyazi Ortayli Semizade Soysal Zihni Tarhan 
@@ -9605,7 +9944,7 @@ tartar	= {
 		}
 	}
 	kazani = {
-		#primary = KAZ
+		primary = KAZ
 		dynasty_names = {
 			Cälil Göbäydullina Nasiri Näcmetdin Nigmät Nurgäli Isxaqi Märcani Qamay "Qol-Gäli" Qursawi Tuqay Yusupow
 		}
@@ -9621,7 +9960,7 @@ tartar	= {
 		}
 	}
 	mishary = {
-		#primary = GOL
+		primary = GOL
 		dynasty_names = {
 			"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar" "Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene 
 			Toluilun Qutughqan "Koke Burilgi" Surenchar Bayangge
@@ -9642,7 +9981,7 @@ tartar	= {
 		}
 	}
 	nogaybak = {
-		#primary = NOG
+		primary = NOG
 		dynasty_names = {
 			"Ulagan Temur" "Bora Chinua" "Suren Unegen" "Qara Erdene" 
 			"Delger Cheren" Chaganchar Qorchigene Burilgidai Qadantai 
@@ -9661,7 +10000,7 @@ tartar	= {
 		}
 	}
 	siberian = {
-		#primary = SIB
+		primary = SIB
 		dynasty_names = {
 			Balna Salmiianov Ravna Taiborey Vylka Kanin Maimbava Arinin Aven Tsoy
 		}
