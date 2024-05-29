@@ -208,6 +208,8 @@ technology = {
 
 	enable = lotr_zori_INF0
 	enable = lotr_zori_CAV0
+
+	enable = lotr_generic_ART5
 	
 	#Human Buildings
 	#Human Fortifications Buildings
@@ -834,6 +836,8 @@ technology = {
 	enable = lotr_womaw_CAV15
 	enable = lotr_woodmen_of_the_far_east_CAV15
 	enable = lotr_zori_CAV15
+
+	enable = lotr_generic_ART15
 }
 
 technology = {
@@ -1105,8 +1109,9 @@ technology = {
 	
     supply_limit = 0.25
     combat_width = 2
-	
-	enable = lotr_gondorian_dunedain_INF24
+
+	enable = lotr_gondorian_dunedain_ART25
+	enable = lotr_generic_ART25
 }
 
 technology = {
