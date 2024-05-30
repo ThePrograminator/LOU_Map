@@ -51,9 +51,9 @@ technology = {
 	enable = lotr_ent_small_ents
 	enable = lotr_ent_rock_throwers
 	
-	enable = lotr_dale_heath_watchers_1
-	enable = lotr_dale_rivermen_1
-	enable = lotr_dale_yeomen_1
+	enable = lotr_dale_INF0b
+	enable = lotr_dale_INF0a
+	enable = lotr_dale_CAV0
 
 	enable = lotr_dunmen_clansmen_1
 	enable = lotr_dunmen_warhounds_1
@@ -323,7 +323,7 @@ technology = {
 	enable = lotr_haradrim_INF6b
 	enable = lotr_haradrim_ART6
 	
-	enable = lotr_dale_dalesmen_2
+	enable = lotr_dale_INF6
 
 	enable = lotr_arnor_INF6b
 	
@@ -578,8 +578,7 @@ technology = {
 	enable = lotr_haradrim_INF12b
 	enable = lotr_haradrim_ART12
 	
-	enable = lotr_dale_winter_guard_3
-	enable = lotr_dale_aihwothiuda_horses_2
+	enable = lotr_dale_INF12
 
 	enable = lotr_arnor_INF12b
 
@@ -806,6 +805,8 @@ technology = {
 
 	enable = lotr_arnor_CAV15
 
+	enable = lotr_dale_CAV15
+
 	enable = lotr_ahar_CAV15
 	enable = lotr_aivathiuda_CAV15
 	enable = lotr_apysani_CAV15
@@ -864,7 +865,7 @@ technology = {
 	
 	enable = lotr_haradrim_INF18
 	
-	enable = lotr_dale_bardian_hird_4
+	enable = lotr_dale_INF18
 	enable = lotr_dale_bardian_marksman_4
 
 	enable = lotr_arnor_INF18
@@ -1006,11 +1007,12 @@ technology = {
 	
 	enable = lotr_dale_earls_guard_5
 	enable = lotr_dale_athala_rangers_5
-	enable = lotr_dale_earls_guard_knights_3
 
 	enable = lotr_arnor_INF24a
 	enable = lotr_arnor_INF24b
 	enable = lotr_arnor_INF24c
+
+	enable = lotr_dale_INF24
 	
 	enable = lotr_elven_eldarinwe_swords_5
 	enable = lotr_elven_eldarinwe_spear_5
@@ -1162,6 +1164,11 @@ technology = {
 
 	enable = lotr_arnor_INF30
 	enable = lotr_arnor_CAV30
+
+
+	enable = lotr_dale_INF30a
+	enable = lotr_dale_INF30b
+	enable = lotr_dale_CAV30
 
 	enable = lotr_ahar_INF30
 	enable = lotr_ahar_CAV30
