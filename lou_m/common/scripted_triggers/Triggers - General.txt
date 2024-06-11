@@ -543,7 +543,6 @@ has_generic_units = {
 				primary_culture = culture_bardings
 			}
 		}
-		
 	
 		culture_group = culture_group_peoples_of_the_southeast
 		culture_group = culture_group_raliani
@@ -558,4 +557,18 @@ has_generic_units = {
 		culture_group = culture_group_woodmen_of_the_far_east
 		culture_group = culture_group_zori
 	}
+}
+
+has_not_generic_units = {
+	NOT = {
+		OR = {
+			primary_culture = culture_dunedain_of_gondor
+			primary_culture = culture_dunedain_of_ithilien
+			primary_culture = culture_dunedain_of_lebennin
+			primary_culture = culture_dunedain_of_belfalas
+			primary_culture = culture_dunedain_of_tol_falas
+			primary_culture = culture_numenorean
+		}
+	}
+	
 }

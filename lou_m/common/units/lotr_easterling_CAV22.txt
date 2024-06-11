@@ -1,14 +1,14 @@
-# Easterling Swordsmen
-type = infantry
+# Easterling Horse Archers
+type = cavalry
 unit_type = lotr_human_rhun
 
-maneuver = 1
+maneuver = 2
 offensive_morale = 3
 defensive_morale = 2
-offensive_fire = 4
+offensive_fire = 1
 defensive_fire = 2
-offensive_shock = 1
-defensive_shock = 1
+offensive_shock = 3
+defensive_shock = 3
 
 trigger = {
 	culture_group = culture_group_ulgath

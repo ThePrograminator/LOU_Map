@@ -80,8 +80,8 @@ technology = {
 	enable = lotr_elven_silvan_archers_1
 	enable = lotr_elven_silvan_horse_archers_1
 
-	enable = lotr_easterling_tribesmen_1
-	enable = lotr_easterling_horse_riders_1
+	enable = lotr_easterling_INF0
+	enable = lotr_easterling_CAV0
 
 	enable = lotr_khand_variag_skirmishers_1
 	enable = lotr_khand_variag_axemen_1
@@ -348,9 +348,8 @@ technology = {
 	enable = lotr_umbar_corsair_pillager_2
 	enable = lotr_umbar_corsair_archer_2
 
-	enable = lotr_easterling_clansmen_shields_2
-	enable = lotr_easterling_clansmen_slingers_2
-	enable = lotr_easterling_steppe_riders_2
+	enable = lotr_easterling_INF6b
+	enable = lotr_easterling_INF6a
 
 	enable = lotr_khand_khands_men_2
 	enable = lotr_khand_variag_slinger_2
@@ -532,6 +531,8 @@ technology = {
 	
 	enable = lotr_haradrim_CAV7
 	enable = lotr_arnor_CAV7
+
+	enable = lotr_easterling_CAV7
 }
 
 technology = {
@@ -607,9 +608,8 @@ technology = {
 	enable = lotr_umbar_ampadis_hookmen_3
 	enable = lotr_umbar_morardai_barons_2
 
-	enable = lotr_easterling_golden_pikes_3
-	enable = lotr_easterling_golden_arrows_3
-	enable = lotr_easterling_loke_innas_rim_cavalry_3
+	enable = lotr_easterling_INF12b
+	enable = lotr_easterling_INF12a
 
 	enable = lotr_khand_khudriag_ata_guard_3
 	enable = lotr_khand_khurdriag_ata_shortbows_3
@@ -808,6 +808,8 @@ technology = {
 
 	enable = lotr_dunmen_CAV15
 
+	enable = lotr_easterling_CAV15
+
 	enable = lotr_ahar_CAV15
 	enable = lotr_aivathiuda_CAV15
 	enable = lotr_apysani_CAV15
@@ -867,7 +869,6 @@ technology = {
 	enable = lotr_haradrim_INF18
 	
 	enable = lotr_dale_INF18
-	enable = lotr_dale_bardian_marksman_4
 
 	enable = lotr_arnor_INF18
 
@@ -894,10 +895,9 @@ technology = {
 	enable = lotr_umbar_castamiri_kainuheen_4
 	enable = lotr_umbar_black_sail_boltermen_4
 
-	enable = lotr_easterling_clan_guard_4
-	enable = lotr_easterling_clan_warriors_4
-	enable = lotr_easterling_clan_crossbowmen_4
-	enable = lotr_easterling_vainrider_chariot_4
+	enable = lotr_easterling_INF18b
+	enable = lotr_easterling_INF18c
+	enable = lotr_easterling_INF18a
 
 	enable = lotr_khand_khandish_cavalry_4
 	enable = lotr_khand_steppe_shock_cavalry_4
@@ -987,6 +987,8 @@ technology = {
 	enable = lotr_haradrim_CAV22
 
 	enable = lotr_arnor_CAV22
+
+	enable = lotr_easterling_CAV22
 }
 
 technology = {
@@ -1005,9 +1007,6 @@ technology = {
 	
 	enable = lotr_haradrim_INF24
 	enable = lotr_haradrim_ART24
-	
-	enable = lotr_dale_earls_guard_5
-	enable = lotr_dale_athala_rangers_5
 
 	enable = lotr_arnor_INF24a
 	enable = lotr_arnor_INF24b
@@ -1039,9 +1038,7 @@ technology = {
 	enable = lotr_umbar_warguard_of_umbar_archer_5
 	enable = lotr_umbar_heirs_of_ar_pharazon_3
 
-	enable = lotr_easterling_loke_flag_gamp_spearmen_5
-	enable = lotr_easterling_loke_flag_rim_heavy_infantry_5
-	enable = lotr_easterling_loke_flag_nar_archer_5
+	enable = lotr_easterling_INF24
 
 	enable = lotr_khand_khudriag_ata_riders_5
 	enable = lotr_khand_khudriag_ata_chariot_5
@@ -1170,6 +1167,11 @@ technology = {
 	enable = lotr_dunmen_INF30b
 	enable = lotr_dunmen_INF30a
 	enable = lotr_dunmen_CAV30
+
+	enable = lotr_easterling_INF30c
+	enable = lotr_easterling_INF30b
+	enable = lotr_easterling_INF30a
+	enable = lotr_easterling_CAV30
 
 	enable = lotr_ahar_INF30
 	enable = lotr_ahar_CAV30
