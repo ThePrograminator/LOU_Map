@@ -1,0 +1,15 @@
+# Avari Mounted Militia
+type = cavalry
+unit_type = lotr_elven_urd
+
+maneuver = 2
+offensive_morale = 2
+defensive_morale = 2
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 2
+defensive_shock = 0
+
+trigger = {
+	culture_group = culture_group_avari
+}

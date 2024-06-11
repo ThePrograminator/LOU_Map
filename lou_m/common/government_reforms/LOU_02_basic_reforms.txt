@@ -10,6 +10,9 @@ monarchy_mechanic = {
 	custom_attributes = {
 		enables_aristocratic_idea_group = yes
 	}
+	modifiers = {
+		nobles_influence_modifier = 0.05
+	}
 }
 
 #------------------------------
@@ -22,11 +25,14 @@ republic_mechanic = {
 	republic = yes
 	duration = 4
 	has_term_election = yes
-	fixed_rank = 2
-
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+	}
+
+	modifiers = {
+		merchants_influence_modifier = 0.15
+		max_absolutism = -40
 	}
 
 	valid_for_nation_designer = no
@@ -44,8 +50,13 @@ theocracy_mechanic = {
 	different_religion_group_acceptance = -50
 	religion = yes
 	heir = yes
+	can_customise_heir = no
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
+	custom_attributes = {
+		#enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
 }
 
 #------------------------------
@@ -58,6 +69,9 @@ tribe_mechanic = {
 	valid_for_nation_designer = no
 	heir = yes
 	queen = yes
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
 }
 
 #------------------------------
@@ -71,18 +85,22 @@ native_basic_reform = {
 	allow_convert = yes
 	republican_name = yes
 	royal_marriage = no
-	fixed_rank = 2
+	fixed_rank = 1
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = no
+		enables_divine_idea_group = no
+	}
 	modifiers = {
-		stability_cost_modifier = -0.33
-		land_maintenance_modifier = -0.25
-		diplomatic_upkeep = -1
-		global_institution_spread = -0.025
+		reform_progress_growth = -1.0
+		monthly_reform_progress = 0.5
+		diplomatic_upkeep = -2
+		province_warscore_cost = 4
+		land_forcelimit_modifier = -0.3
+		development_cost = 0.2
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	nation_designer_trigger = {
-		
-	}
 }
 
 #------------------------------

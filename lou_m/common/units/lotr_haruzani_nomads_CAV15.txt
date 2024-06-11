@@ -1,0 +1,19 @@
+# Haruzani Nomads Mounted Levy
+type = cavalry
+unit_type = lotr_human_near_harad
+
+maneuver = 2
+offensive_morale = 3
+defensive_morale = 2
+offensive_fire = 0
+defensive_fire = 1
+offensive_shock = 3
+defensive_shock = 1
+
+trigger = {
+	 OR = {
+		primary_culture = culture_jelut_nomads
+		primary_culture = culture_narakshi_nomads
+		primary_culture = culture_urdwan_nomads
+	}
+}

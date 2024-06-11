@@ -501,3 +501,74 @@ country_ally_or_non_sovereign_subject_holds = {
 		}
 	}
 }
+
+has_generic_units = {
+	OR = {
+		culture_group = culture_group_ahar
+		culture_group = culture_group_aivathiuda
+		culture_group = culture_group_apysani
+		culture_group = culture_group_avari
+	
+		AND = {
+			culture_group = culture_group_black_numenorean
+			NOT = {
+				primary_culture = culture_umbareans
+			}
+		}
+	
+		culture_group = culture_group_chailuza
+		culture_group = culture_group_chegra
+		culture_group = culture_group_chyans
+		culture_group = culture_group_daen_of_gondor
+	
+		OR = {
+			primary_culture = culture_jelut_nomads
+			primary_culture = culture_narakshi_nomads
+			primary_culture = culture_urdwan_nomads
+		}
+	
+		culture_group = culture_group_lakhab
+		culture_group = culture_group_linerim
+		culture_group = culture_group_lynerians
+		culture_group = culture_group_maiar
+		culture_group = culture_group_monhunrim
+		culture_group = culture_group_mornedain
+		culture_group = culture_group_mornerim
+	
+		AND = {
+			culture_group = culture_group_nenedain
+			NOT = {
+				primary_culture = culture_men_of_dale
+				primary_culture = culture_lake-men
+				primary_culture = culture_bardings
+			}
+		}
+	
+		culture_group = culture_group_peoples_of_the_southeast
+		culture_group = culture_group_raliani
+		culture_group = culture_group_rivermen
+		culture_group = culture_group_sea_people
+		culture_group = culture_group_sirani
+		culture_group = culture_group_surk
+		culture_group = culture_group_talatherim
+		culture_group = culture_group_tyr
+		culture_group = culture_group_ulthiuda
+		culture_group = culture_group_womaw
+		culture_group = culture_group_woodmen_of_the_far_east
+		culture_group = culture_group_zori
+	}
+}
+
+has_not_generic_units = {
+	NOT = {
+		OR = {
+			primary_culture = culture_dunedain_of_gondor
+			primary_culture = culture_dunedain_of_ithilien
+			primary_culture = culture_dunedain_of_lebennin
+			primary_culture = culture_dunedain_of_belfalas
+			primary_culture = culture_dunedain_of_tol_falas
+			primary_culture = culture_numenorean
+		}
+	}
+	
+}

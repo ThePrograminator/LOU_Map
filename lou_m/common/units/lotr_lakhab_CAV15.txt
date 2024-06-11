@@ -1,0 +1,15 @@
+# Lakhab Mounted Levy
+type = cavalry
+unit_type = lotr_human_lochan_daer
+
+maneuver = 2
+offensive_morale = 3
+defensive_morale = 2
+offensive_fire = 0
+defensive_fire = 1
+offensive_shock = 3
+defensive_shock = 1
+
+trigger = {
+	culture_group = culture_group_lakhab
+}

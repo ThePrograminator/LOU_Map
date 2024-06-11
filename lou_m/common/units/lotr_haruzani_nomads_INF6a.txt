@@ -1,0 +1,19 @@
+# Levy Bow Men
+type = infantry
+unit_type = lotr_human_near_harad
+
+maneuver = 1
+offensive_morale = 1
+defensive_morale = 1
+offensive_fire = 1
+defensive_fire = 2
+offensive_shock = 1
+defensive_shock = 0
+
+trigger = {
+	 OR = {
+		primary_culture = culture_jelut_nomads
+		primary_culture = culture_narakshi_nomads
+		primary_culture = culture_urdwan_nomads
+	}
+}

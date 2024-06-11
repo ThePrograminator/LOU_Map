@@ -295,7 +295,6 @@ waging_war_for_china = {
 	potential = {
 		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
-		always = no
 	}
 
 	trigger = {
@@ -515,4 +514,37 @@ ahmudan_system_defender = {
 	land_morale = 0.075
 	defensiveness = 0.15
 	manpower_recovery_speed = 0.1
+}
+
+TIM_diwan_adm = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		national_focus = adm
+	}
+	yearly_corruption = -0.15
+}
+
+TIM_diwan_dip = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		national_focus = dip
+	}
+	global_unrest = -1
+}
+
+TIM_diwan_mil = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		national_focus = mil
+	}
+	land_maintenance_modifier = -0.1
 }

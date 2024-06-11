@@ -432,35 +432,6 @@ religion_group_worshippers_of_ulmo = {
 }
 
 #-------------------------------------------
-# Worshippers of Manwe
-#-------------------------------------------
-religion_group_worshippers_of_manwe = {
-	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
-    
-    religion_messengers_of_manwe = {
-		icon = 1
-		color = { 0.79 0.52 0.73 }
-		
-		country = {
-			production_efficiency = 0.1
-			core_creation = -0.5
-			movement_speed = 0.75
-		}
-		country_as_secondary = {
-			global_colonial_growth = 10
-			tolerance_own = 1
-		}
-
-		heretic = { GREAT_EAGLES_HERETIC }
-		
-		fervor = yes
-	}
-    
-	crusade_name = HOLY_WAR
-}
-
-#-------------------------------------------
 # Worshippers of Yavanna
 #-------------------------------------------
 religion_group_worshippers_of_yavanna = {

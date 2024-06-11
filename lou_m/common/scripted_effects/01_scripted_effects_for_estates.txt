@@ -2283,3 +2283,1044 @@ reduce_estate_rajput_loyalty_effect = {
 		# 1 = { custom_tooltip = estate_seize_land_interaction_tooltip_1 seize_land_effect = { scale = 1 } }
 	# }
 # }
+
+
+estate_action_monarch_power = {
+	if = {
+		limit = {
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 50
+				}	
+			}
+		}
+		add_$type$_power = 50
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 75
+				}	
+			}
+		}
+		add_$type$_power = 100
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 75
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 100
+				}	
+			}
+		}
+		add_$type$_power = 150
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 100
+			}
+		}
+		add_$type$_power = 200
+	}
+}
+
+estate_action_years_of_income = {
+	if = {
+		limit = {
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 50
+				}	
+			}
+		}
+		add_years_of_income = 0.25
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 75
+				}	
+			}
+		}
+		add_years_of_income = 0.5
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 75
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 100
+				}	
+			}
+		}
+		add_years_of_income = 0.75
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 100
+			}
+		}
+		add_years_of_income = 1
+	}
+}
+
+estate_action_yearly_manpower = {
+	if = {
+		limit = {
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 50
+				}	
+			}
+		}
+		add_yearly_manpower = 1
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 75
+				}	
+			}
+		}
+		add_yearly_manpower = 1.5
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 75
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 100
+				}	
+			}
+		}
+		add_yearly_manpower = 2
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 100
+			}
+		}
+		add_yearly_manpower = 2.5
+	}
+}
+
+estate_action_scaling_modifier = {
+	if = {
+		limit = {
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 50
+				}	
+			}
+		}
+		add_country_modifier = {
+			name = $name$_level_1
+			duration = $duration$
+		}
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 75
+				}	
+			}
+		}
+		add_country_modifier = {
+			name = $name$_level_2
+			duration = $duration$
+		}
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 75
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 100
+				}	
+			}
+		}
+		add_country_modifier = {
+			name = $name$_level_3
+			duration = $duration$
+		}
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 100
+			}
+		}
+		add_country_modifier = {
+			name = $name$_level_4
+			duration = $duration$
+		}
+	}
+}
+
+estate_action_scaling_province_modifier = {
+	if = {
+		limit = {
+			$country$ = {
+				NOT = {
+					estate_influence = {
+						estate = $estate$
+						influence = 50
+					}	
+				}
+			}
+		}
+		add_province_modifier = {
+			name = $name$_level_1
+			duration = $duration$
+		}
+	}
+	if = {
+		limit = {
+			$country$ = {
+				estate_influence = {
+					estate = $estate$
+					influence = 50
+				}
+				NOT = {
+					estate_influence = {
+						estate = $estate$
+						influence = 75
+					}	
+				}
+			}
+		}
+		add_province_modifier = {
+			name = $name$_level_2
+			duration = $duration$
+		}
+	}
+	if = {
+		limit = {
+			$country$ = {
+				estate_influence = {
+					estate = $estate$
+					influence = 75
+				}
+				NOT = {
+					estate_influence = {
+						estate = $estate$
+						influence = 100
+					}	
+				}
+			}
+		}
+		add_province_modifier = {
+			name = $name$_level_3
+			duration = $duration$
+		}
+	}
+	if = {
+		limit = {
+			$country$ = {
+				estate_influence = {
+					estate = $estate$
+					influence = 100
+				}
+			}
+		}
+		add_province_modifier = {
+			name = $name$_level_4
+			duration = $duration$
+		}
+	}
+}
+
+estate_action_tradition = {
+	if = {
+		limit = {
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 50
+				}	
+			}
+		}
+		add_$type$_tradition = 10
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 75
+				}	
+			}
+		}
+		add_$type$_tradition = 15
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 75
+			}
+			NOT = {
+				estate_influence = {
+					estate = $estate$
+					influence = 100
+				}	
+			}
+		}
+		add_$type$_tradition = 20
+	}
+	if = {
+		limit = {
+			estate_influence = {
+				estate = $estate$
+				influence = 100
+			}
+		}
+		add_$type$_tradition = 25
+	}
+}
+
+# Supports the following parameters
+###########################################
+# estate_nobles
+# estate_brahmins
+# estate_burghers
+# estate_church
+# estate_cossacks
+# estate_dhimmi
+# estate_jains
+# estate_maratha
+# estate_nomadic_tribes
+# estate_rajput
+# estate_vaisyas
+# estate_janissaries
+# estate_eunuchs
+# estate_qizilbash
+# estate_ghulams
+# all	- disables ALL rebels from seized land
+disable_rebels_from_seize_land_for_estate = {
+	custom_tooltip = disable_rebels_from_seize_land_for_$estate$
+	hidden_effect = {
+		set_country_flag = disabled_rebels_from_seized_land_for_$estate$
+	}
+}
+
+# Supports the following parameters
+###########################################
+# estate_nobles
+# estate_brahmins
+# estate_burghers
+# estate_church
+# estate_cossacks
+# estate_dhimmi
+# estate_jains
+# estate_maratha
+# estate_nomadic_tribes
+# estate_rajput
+# estate_vaisyas
+# estate_janissaries
+# estate_eunuchs
+# estate_qizilbash
+# estate_ghulams
+# all	- auto completes for every estate agenda
+auto_complete_estate_agenda = {
+	custom_tooltip = auto_complete_estate_agenda_$estate$_tt
+	hidden_effect = {
+		set_country_flag = auto_complete_estate_agenda_$estate$
+	}
+}
+
+clr_auto_complete_flag = {
+	hidden_effect = {
+		clr_country_flag = auto_complete_estate_agenda_estate_nobles
+		clr_country_flag = auto_complete_estate_agenda_estate_brahmins
+		clr_country_flag = auto_complete_estate_agenda_estate_burghers
+		clr_country_flag = auto_complete_estate_agenda_estate_church
+		clr_country_flag = auto_complete_estate_agenda_estate_cossacks
+		clr_country_flag = auto_complete_estate_agenda_estate_dhimmi
+		clr_country_flag = auto_complete_estate_agenda_estate_jains
+		clr_country_flag = auto_complete_estate_agenda_estate_maratha
+		clr_country_flag = auto_complete_estate_agenda_estate_nomadic_tribes
+		clr_country_flag = auto_complete_estate_agenda_estate_rajput
+		clr_country_flag = auto_complete_estate_agenda_estate_vaisyas
+		clr_country_flag = auto_complete_estate_agenda_estate_janissaries
+		clr_country_flag = auto_complete_estate_agenda_estate_eunuchs
+		clr_country_flag = auto_complete_estate_agenda_estate_qizilbash
+		clr_country_flag = auto_complete_estate_agenda_estate_ghulams
+		clr_country_flag = auto_complete_estate_agenda_all
+	}
+}
+
+on_completed_agenda_effect_estate_nobles = {
+
+}
+on_completed_agenda_effect_estate_brahmins = {
+	if = {
+		limit = { has_government_attribute = clergy_estate_agendas_gives_karma }
+		add_karma = 10
+	}
+}
+on_completed_agenda_effect_estate_burghers = {
+	
+}
+on_completed_agenda_effect_estate_church = {
+	if = {
+		limit = { has_government_attribute = clergy_estate_agendas_gives_karma }
+		add_karma = 10
+	}
+}
+on_completed_agenda_effect_estate_cossacks = {
+
+}
+on_completed_agenda_effect_estate_dhimmi = {}
+on_completed_agenda_effect_estate_jains = {}
+on_completed_agenda_effect_estate_maratha = {
+
+}
+on_completed_agenda_effect_estate_nomadic_tribes = {
+
+}
+on_completed_agenda_effect_estate_rajput = {
+
+}
+on_completed_agenda_effect_estate_vaisyas = {}
+on_completed_agenda_effect_estate_janissaries = {
+
+}
+on_completed_agenda_effect_estate_eunuchs = {}
+on_completed_agenda_effect_estate_qizilbash = {
+
+}
+on_completed_agenda_effect_estate_ghulams = {
+
+}
+
+on_completed_agenda_effect = {
+	on_completed_agenda_effect_$estate$ = yes
+	clr_auto_complete_flag = yes
+}
+
+on_failed_agenda_effect = {
+	
+}
+
+#Estates are here ordered in "mana classes" - ADM for Clergy, DIP for Burghers, etc
+add_estate_loyalty_by_class_adm = {
+	if = {
+		limit = { has_estate = estate_stewards }
+		add_estate_loyalty = {
+			estate = estate_stewards
+			loyalty = $loyalty$
+		}
+	}
+}
+add_estate_loyalty_by_class_dip = {
+	if = {
+		limit = { has_estate = estate_merchants }
+		add_estate_loyalty = {
+			estate = estate_merchants
+			loyalty = $loyalty$
+		}
+	}
+}
+add_estate_loyalty_by_class_mil = {
+	if = {
+		limit = { has_estate = estate_nobles }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = $loyalty$
+		}
+	}
+}
+
+
+estate_action_MAKE_GENEROUS_DONATION_BRAHMINS = {
+
+}
+estate_action_SEEK_SUPPORT_OF_BRAHMINS = {
+
+}
+estate_action_RECRUIT_MINISTER_BRAHMINS = {
+
+}
+estate_action_RECRUIT_INQUISITOR_BRAHMINS = {
+
+}
+estate_action_DEMAND_SUPPORT_BRAHMINS = {
+
+}
+estate_action_SEEK_BRAHMIN_LEGITIMACY_BRAHMINS = {
+
+}
+estate_action_ASK_FOR_CONTRIBUTION_BURGHERS = {
+	#estate_action_years_of_income = {
+	#	estate = estate_burghers
+	#}
+	estate_action_scaling_modifier = {
+		estate = estate_burghers
+		name = ASK_FOR_CONTRIBUTION_BURGHERS
+		duration = 3650
+	}
+	add_estate_loyalty = {
+		estate = estate_burghers
+		loyalty = -10
+	}
+}
+estate_action_DEMAND_SUPPORT_BURGHERS = {
+	estate_action_monarch_power = {
+		estate = estate_burghers
+		type = dip
+	}
+	add_estate_loyalty = {
+		estate = estate_burghers
+		loyalty = -20
+	}
+
+}
+estate_action_GRANT_MONOPOLY_CHARTER_BURGHERS = {
+	add_prestige = -5
+	add_estate_influence_modifier = {
+		estate = estate_burghers
+		desc = EST_VAL_GRANTED_MONOPOLIES
+		influence = 10
+		duration = 7300
+	}
+	add_estate_loyalty = {
+		estate = estate_burghers
+		loyalty = 15
+	}
+	auto_complete_estate_agenda = {
+		estate = estate_burghers
+	}
+}
+estate_action_RECRUIT_MINISTER_BURGHERS = {
+	generate_estate_advisor = {
+		estate = estate_burghers
+		type = master_of_mint
+	}
+	#add_estate_influence_modifier = {
+	#	estate = estate_burghers
+	#	desc = EST_VAL_BURGHER_MINISTER
+	#	influence = 15
+	#	duration = 10950
+	#}
+	add_estate_loyalty = {
+		estate = estate_burghers
+		loyalty = -10
+	}
+}
+estate_action_GRANT_ADMIRALSHIP_BURGHERS = {
+	create_leader_scaling_with_tradition = {
+		leader = admiral
+		type = navy
+	}
+	#add_estate_influence_modifier = {
+	#	estate = estate_burghers
+	#	desc = EST_VAL_GRANTED_ADMIRALSHIP
+	#	influence = 20
+	#	duration = 3650
+	#}
+	add_estate_loyalty = {
+		estate = estate_burghers
+		loyalty = -10
+	}
+}
+estate_action_GRANT_NEW_WORLD_CHARTER_BURGHERS = {
+	add_country_modifier = {
+		name = "new_world_company"
+		duration = 3650
+	}
+}
+estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS = {
+	#add_estate_loyalty = {
+	#	estate = estate_burghers
+	#	loyalty = -15
+	#}
+	if = {
+		limit = {
+			has_country_flag = SUN_draft_ships_for_war_flag
+		}
+		add_ship_construction_scaled_to_ports_MAY = yes
+	}
+	else = {
+		add_ship_construction_scaled_to_ports = {
+			type = heavy_ship
+		}
+	}
+}
+estate_action_MAKE_GENEROUS_DONATION_CHURCH = {
+	
+}
+estate_action_RECRUIT_MINISTER_CHURCH = {
+	
+}
+estate_action_RECRUIT_INQUISITOR_CHURCH = {
+	
+}
+estate_action_RELIGIOUS_DELEGATION_CHURCH = {
+	
+}
+estate_action_DEMAND_SUPPORT_CHURCH = {
+	
+}
+estate_action_SEEK_SUPPORT_OF_CLERGY_CHURCH = {
+	
+}
+estate_action_NEW_WORLD_MISSION_CHURCH = {
+	
+}
+estate_action_EXPAND_COSSACK_REGISTRY_COSSACKS = {
+	
+}
+estate_action_RAISE_COSSACK_HOST_COSSACKS = {
+	
+}
+estate_action_COSSACK_CONQUISTADOR_COSSACKS = {
+	
+}
+estate_action_RECRUIT_MINISTER_COSSACKS = {
+	
+}
+estate_action_CONSCRIPT_COSSACK_ELITE_COSSACKS = {
+	
+}
+estate_action_SUPPLY_ARMS_COSSACKS = {
+	
+}
+estate_action_PERMIT_SELF_GOVERNANCE_COSSACKS = {
+	
+}
+estate_action_RECRUIT_MINISTER_DHIMMI = {
+	
+}
+estate_action_LIGHTEN_DHIMMI_TAX_BURDEN_DHIMMI = {
+	
+}
+estate_action_PROMOTE_DHIMMI_NOBLES_DHIMMI = {
+	
+}
+estate_action_RECRUIT_FROM_THE_DHIMMI_DHIMMI = {
+	
+}
+estate_action_DEMAND_CONTRIBUTION_DHIMMI = {
+	
+}
+estate_action_PROCURE_LOANS_JAINS = {
+	
+}
+estate_action_INVESTIGATE_CORRUPTION_JAINS = {
+	
+}
+estate_action_PATRONIZE_JAIN_FAMILIES_JAINS = {
+	
+}
+estate_action_COMMISSION_JAIN_SCRIPTURES_JAINS = {
+	
+}
+estate_action_DEMAND_SUPPORT_JAINS = {
+	
+}
+estate_action_PROMOTE_MARATHA_NOBILITY_MARATHA = {
+	
+}
+estate_action_RECRUIT_MINISTER_MARATHA = {
+	
+}
+estate_action_RECRUIT_MARATHI_TROOPS_MARATHA = {
+	
+}
+estate_action_DEMAND_SUPPORT_MARATHA = {
+	
+}
+estate_action_CALL_DIET_NOBLES = {
+	
+}
+estate_action_GRANT_GENERALSHIP_NOBLES = {
+	
+}
+estate_action_RECRUIT_CONQUISTADOR_ESTATES_NOBLES = {
+	
+}
+estate_action_DEMAND_SUPPORT_NOBLES = {
+	
+}
+estate_action_RECRUIT_MINISTER_NOBLES = {
+	
+}
+estate_action_DEMAND_MORE_TROOPS_NOBLES = {
+	
+}
+estate_action_SUPPORT_TRIBES_NOMADIC_TRIBES = {
+	
+}
+estate_action_CONTRIBUTE_WARRIORS_NOMADIC_TRIBES = {
+	
+}
+estate_action_RAISE_HOST_NOMADIC_TRIBES = {
+	
+}
+estate_action_REDISTRIBUTE_HORDE_AUTHORITY_TRIBES = {
+	
+}
+estate_action_STRENGTHEN_TRIBAL_AUTONOMY = {
+	
+}
+estate_action_RECRUIT_MINISTER_NOMADIC_TRIBES = {
+	
+}
+estate_action_RECRUIT_RAJPUT_GENERAL_RAJPUT = {
+	
+}
+estate_action_LOOK_UP_PURBIAS_RAJPUT = {
+	
+}
+estate_action_DEMAND_SUPPORT_RAJPUT = {
+	
+}
+estate_action_EXEMPT_FROM_JIZYA_RAJPUT = {
+	
+}
+estate_action_PROMOTE_RAJPUT_NOBILITY_RAJPUT = {
+	
+}
+estate_action_RECRUIT_RAJPUT_TROOPS_RAJPUT = {
+	
+}
+estate_action_ASK_FOR_CONTRIBUTION_VAISYAS = {
+	
+}
+estate_action_DEMAND_SUPPORT_VAISYAS = {
+	
+}
+estate_action_SEEK_GUILD_SUPPORT_VAISYAS = {
+	
+}
+estate_action_RECRUIT_MINISTER_VAISYAS = {
+	
+}
+estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_VAISYAS = {
+	#add_estate_loyalty = {
+	#	estate = estate_vaisyas
+	#	loyalty = -15
+	#}
+	add_ship_construction_scaled_to_ports = {
+		type = heavy_ship
+	}
+}
+estate_action_GRANT_QIZILBASH_HORSES = {
+	
+}
+estate_action_PROMOTE_CAUCASIAN_TROOPS = {
+	
+}
+
+# Supports the following paramters
+###########################################
+# MAKE_GENEROUS_DONATION_BRAHMINS
+# SEEK_SUPPORT_OF_BRAHMINS
+# RECRUIT_MINISTER_BRAHMINS
+# RECRUIT_INQUISITOR_BRAHMINS
+# DEMAND_SUPPORT_BRAHMINS
+# SEEK_BRAHMIN_LEGITIMACY_BRAHMINS
+# ASK_FOR_CONTRIBUTION_BURGHERS
+# DEMAND_SUPPORT_BURGHERS
+# GRANT_MONOPOLY_CHARTER_BURGHERS
+# RECRUIT_MINISTER_BURGHERS
+# GRANT_ADMIRALSHIP_BURGHERS
+# GRANT_NEW_WORLD_CHARTER_BURGHERS
+# COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS
+# MAKE_GENEROUS_DONATION_CHURCH
+# RECRUIT_MINISTER_CHURCH
+# RECRUIT_INQUISITOR_CHURCH
+# RELIGIOUS_DELEGATION_CHURCH
+# DEMAND_SUPPORT_CHURCH
+# SEEK_SUPPORT_OF_CLERGY_CHURCH
+# NEW_WORLD_MISSION_CHURCH
+# EXPAND_COSSACK_REGISTRY_COSSACKS
+# RAISE_COSSACK_HOST_COSSACKS
+# COSSACK_CONQUISTADOR_COSSACKS
+# RECRUIT_MINISTER_COSSACKS
+# CONSCRIPT_COSSACK_ELITE_COSSACKS
+# SUPPLY_ARMS_COSSACKS
+# PERMIT_SELF_GOVERNANCE_COSSACKS
+# RECRUIT_MINISTER_DHIMMI
+# LIGHTEN_DHIMMI_TAX_BURDEN_DHIMMI
+# PROMOTE_DHIMMI_NOBLES_DHIMMI
+# RECRUIT_FROM_THE_DHIMMI_DHIMMI
+# DEMAND_CONTRIBUTION_DHIMMI
+# PROCURE_LOANS_JAINS
+# INVESTIGATE_CORRUPTION_JAINS
+# PATRONIZE_JAIN_FAMILIES_JAINS
+# COMMISSION_JAIN_SCRIPTURES_JAINS
+# DEMAND_SUPPORT_JAINS
+# PROMOTE_MARATHA_NOBILITY_MARATHA
+# RECRUIT_MINISTER_MARATHA
+# RECRUIT_MARATHI_TROOPS_MARATHA
+# DEMAND_SUPPORT_MARATHA
+# CALL_DIET_NOBLES
+# GRANT_GENERALSHIP_NOBLES
+# RECRUIT_CONQUISTADOR_ESTATES_NOBLES
+# DEMAND_SUPPORT_NOBLES
+# RECRUIT_MINISTER_NOBLES
+# DEMAND_MORE_TROOPS_NOBLES
+# SUPPORT_TRIBES_NOMADIC_TRIBES
+# CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
+# RAISE_HOST_NOMADIC_TRIBES
+# RECRUIT_MINISTER_NOMADIC_TRIBES
+# RECRUIT_RAJPUT_GENERAL_RAJPUT
+# LOOK_UP_PURBIAS_RAJPUT
+# DEMAND_SUPPORT_RAJPUT
+# EXEMPT_FROM_JIZYA_RAJPUT
+# PROMOTE_RAJPUT_NOBILITY_RAJPUT
+# ASK_FOR_CONTRIBUTION_VAISYAS
+# DEMAND_SUPPORT_VAISYAS
+# SEEK_GUILD_SUPPORT_VAISYAS
+# RECRUIT_MINISTER_VAISYAS
+# COMISSION_MERCHANT_SHIPS_FOR_WAR_VAISYAS
+# GRANT_QIZILBASH_HORSES
+# PROMOTE_CAUCASIAN_TROOPS
+estate_action = {
+	estate_action_$estate_action$ = yes
+}
+
+enable_estate_action = {
+	custom_tooltip = enable_estate_action_$estate_action$_tt
+	custom_tooltip = estate_action_potential_effect
+	tooltip = {
+		estate_action_$estate_action$ = yes
+	}
+	hidden_effect = {
+		set_country_flag = enable_estate_action_$estate_action$
+	}
+}
+
+disable_estate_action = {
+	custom_tooltip = disable_estate_action_$estate_action$_tt
+	hidden_effect = {
+		clr_country_flag = enable_estate_action_$estate_action$
+	}
+}
+
+set_estate_action_cooldown = {
+	hidden_effect = {
+		clr_country_flag = $estate_action$_flag
+		set_country_flag = $estate_action$_flag
+	}
+}
+
+increase_estate_action_counter = {
+	hidden_effect = {
+		change_variable = {
+			which = general_estate_action_counter
+			value = 1
+		}
+		change_variable = {
+			which = $estate$_action_counter
+			value = 1
+		}
+	}
+}
+
+scaling_with_influence_privilege_tooltip = {
+	custom_tooltip = scaling_with_estate_influence_tt
+	custom_tooltip = when_loyal_tt
+	tooltip = {
+		add_country_modifier = {
+			name = $estate_privilege$_loyal
+			duration = -1
+			desc = UNTIL_REVOKED
+		}
+	}
+	custom_tooltip = when_neutral_tt
+	tooltip = {
+		add_country_modifier = {
+			name = $estate_privilege$_neutral
+			duration = -1
+			desc = UNTIL_REVOKED
+		}
+	}
+	custom_tooltip = when_disloyal_tt
+	tooltip = {
+		add_country_modifier = {
+			name = $estate_privilege$_disloyal
+			duration = -1
+			desc = UNTIL_REVOKED
+		}
+	}
+}
+
+scaling_with_loyalty_privilege_tooltip = {
+	custom_tooltip = scaling_with_estate_loyalty_tt
+	tooltip = {
+		add_country_modifier = {
+			name = $estate_privilege$_scaling
+			duration = -1
+			desc = UNTIL_REVOKED
+		}
+	}
+}
+
+block_estate_removing_reforms = {
+	custom_tooltip = block_estate_removing_reforms_tt
+	hidden_effect = {
+		set_country_flag = block_$estate$_removing_reform
+	}
+}
+
+unblock_estate_removing_reforms = {
+	custom_tooltip = unblock_estate_removing_reforms_tt
+	hidden_effect = {
+		clr_country_flag = block_$estate$_removing_reform
+	}
+}
+
+#Just write here a custom tooltip
+transfer_crownland_share = {
+	if = {
+		limit = {
+			has_estate = $from_estate$
+			has_estate = $target_estate$
+		}
+		[[custom_tooltip]custom_tooltip = $custom_tooltip$]
+		hidden_effect = {
+			set_variable = {
+				which = amount_to_transfer
+				value = $amount$
+			}
+			while = {
+				limit = { check_variable = { which = amount_to_transfer value = 1 } }
+				change_estate_land_share = { estate = $from_estate$ share = -1 }
+				change_estate_land_share = { estate = $target_estate$ share = 1 }
+				change_variable = { which = amount_to_transfer value = -1 }
+			}
+		}
+	}
+}
+
+transfer_percentage_crownland_share = {
+	if = {
+		limit = {
+			has_estate = $from_estate$
+			has_estate = $target_estate$
+		}
+		[[custom_tooltip]custom_tooltip = $custom_tooltip$]
+		hidden_effect = {
+			set_variable = {
+				which = crownland_to_transfer
+				value = 0
+			}
+			set_variable = {
+				which = transferable_crownland
+				value = 0
+			}
+			set_variable = {
+				which = percentage_multiplier
+				value = $amount$
+			}
+			#Calc how much in total Crownland there is to transfer
+			while = {
+				limit = { estate_territory = { estate = $from_estate$ territory = 1 } }
+				change_estate_land_share = { estate = $from_estate$ share = -1 }
+				change_variable = { which = transferable_crownland value = 1 }
+				change_variable = { which = crownland_to_transfer value = 1 }
+			}
+			#Restore the stolen crownland
+			while = {
+				limit = { check_variable = { which = transferable_crownland value = 1 } }
+				change_estate_land_share = { estate = $from_estate$ share = 1 }
+				change_variable = { which = transferable_crownland value = -1 }
+			}
+			#Use the multiplier and then transfer the actual percentage of crownland
+			multiply_variable = {
+				which = crownland_to_transfer
+				which = percentage_multiplier
+			}
+			while = {
+				limit = { check_variable = { which = crownland_to_transfer value = 1 } }
+				change_estate_land_share = { estate = $target_estate$ share = 1 }
+				change_estate_land_share = { estate = $from_estate$ share = -1 }
+				change_variable = { which = crownland_to_transfer value = -1 }
+			}
+		}
+	}
+}
+
+# Supports the following parameters
+###########################################
+# estate_nobles
+# estate_brahmins
+# estate_burghers
+# estate_church
+# estate_cossacks
+# estate_dhimmi
+# estate_jains
+# estate_maratha
+# estate_nomadic_tribes
+# estate_rajput
+# estate_vaisyas
+# estate_janissaries
+# estate_eunuchs
+# estate_qizilbash
+# estate_ghulams
+# all	- have ALL of them available
+select_grand_vizier_from_estate = {
+	
+}
+clr_grand_vizier_flags = {
+
+}
