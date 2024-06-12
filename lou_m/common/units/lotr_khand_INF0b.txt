@@ -1,0 +1,15 @@
+# Easterling Swordsmen
+type = infantry
+unit_type = lotr_human_rhun
+
+maneuver = 1
+offensive_morale = 2
+defensive_morale = 0
+offensive_fire = 2
+defensive_fire = 0
+offensive_shock = 0
+defensive_shock = 0
+
+trigger = {
+	culture_group = culture_group_ioriags
+}
