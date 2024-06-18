@@ -11,7 +11,10 @@ offensive_shock = 2
 defensive_shock = 3
 
 trigger = {
-	culture_group = culture_group_nenedain
+	OR = {
+		culture_group = culture_group_nenedain
+		culture_group = culture_group_beijabar
+	}
 	NOT = {
 		primary_culture = culture_men_of_dale
 		primary_culture = culture_lake-men
