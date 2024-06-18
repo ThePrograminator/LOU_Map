@@ -1990,9 +1990,14 @@ tercio_regiment = {
 	fire_damage_received = -0.3
 	morale_damage_received = -0.15
 }
-
+#Modified
 musketeer_regiment = {
-	fire_damage = 0.15
+	infantry_shock = 2
+	discipline = 0.05
+	shock_damage_received = -0.2
+	fire_damage_received = -0.2
+	morale_damage_received = -0.2
+	reinforce_speed = -0.30
 }
 
 #Modified

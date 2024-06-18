@@ -4,8 +4,15 @@
 #Names Done dynasty names not done
 culture_group_beijabar = {
 	graphical_culture = easterngfx
-	
+	country = {
+		has_musketeer = yes 
+		allowed_musketeer_fraction = 0.20
+	}
+	province = { 
+		local_has_musketeers = yes
+	}
 	culture_beornings = {
+		
 		male_names = {
 			Beorn Beran Beranald Beranbold Berangrim Berangar Beranhame Beranhelm Beranhere Beranmund 
 			Beranmad Beranor Beranwine Grim Grimald Grimbeorn Grimbold Grimfara Grimfast Grimgar 
