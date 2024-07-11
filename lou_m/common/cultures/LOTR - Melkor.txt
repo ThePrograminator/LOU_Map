@@ -63,6 +63,10 @@ culture_group_melkor = {
 	}
 	
 	culture_troll = {
+		country = { 
+			allowed_samurai_fraction = 0.25
+		}
+		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
 			Buhrdur Bulrakur Burazog Burzash Buthrakur Gorthog Gothmog Hargrog Huntan Hunatoth Kadak Kur-Tuk
@@ -76,6 +80,9 @@ culture_group_melkor = {
 	}
 	
 	culture_olog_hai = {
+		country = { 
+			allowed_samurai_fraction = 0.25
+		}
 		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
@@ -90,6 +97,9 @@ culture_group_melkor = {
 	}
 	
 	culture_cave_troll = {
+		country = { 
+			allowed_samurai_fraction = 0.25
+		}
 		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
@@ -104,6 +114,9 @@ culture_group_melkor = {
 	}	
 
 	culture_snow_troll = {
+		country = { 
+			allowed_samurai_fraction = 0.25
+		}
 		province = { local_has_samurai = yes }
 		male_names = {
 			Bûrat Bert Tûma Thomas Wûluag William Dhît Huggin Hugh Agin Ardagor Baltab Brök Drek Freg Trek Krog Krek
