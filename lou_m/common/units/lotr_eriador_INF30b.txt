@@ -11,5 +11,8 @@ offensive_shock = 3
 defensive_shock = 4
 
 trigger = {
-	culture_group = culture_group_eriadorians
+	OR = {
+		culture_group = culture_group_eriadorians
+		has_country_flag = shire_has_eriadorian_standing_army_flag
+	}
 }

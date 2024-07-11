@@ -1,0 +1,98 @@
+########################################
+# Events for Sagath
+########################################
+
+namespace = LOU_shire
+normal_or_historical_nations = yes
+
+# Get Eriadorian Standing Army
+country_event = {
+	id = LOU_shire.1
+	title = LOU_shire.1.t
+	desc = LOU_shire.1.d
+	picture = NORTHRON_event
+	
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	immediate = {
+		set_country_flag = shire_has_eriadorian_standing_army_flag
+	}
+
+	
+	option = {
+		name = "LOU_shire.1.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_shire.1 - Option : LOU_shire.1.a" }
+	}
+}
+
+# Get Dunedain Standing Army
+country_event = {
+	id = LOU_shire.2
+	title = LOU_shire.2.t
+	desc = LOU_shire.2.d
+	picture = DUNEDAIN_event
+	
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	immediate = {
+		set_country_flag = shire_has_dunedain_standing_army_flag
+	}
+	
+	option = {
+		name = "LOU_shire.2.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_shire.2 - Option : LOU_shire.2.a" }
+	}
+}
+
+#Reciever
+country_event = {
+	id = LOU_shire.3
+	title = LOU_shire.3.t
+	desc = LOU_shire.3.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "LOU_shire.3.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_shire.3 - Option : LOU_shire.3.a" }
+
+		add_country_modifier = {
+			name = shire_human_standing_army_for_other
+			duration = -1
+		}
+	}
+}
+
+#Reciever - Anullment
+country_event = {
+	id = LOU_shire.4
+	title = LOU_shire.4.t
+	desc = LOU_shire.4.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "LOU_shire.4.a"
+
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_shire.4 - Option : LOU_shire.4.a" }
+
+		remove_country_modifier = shire_human_standing_army_for_other
+	}
+}

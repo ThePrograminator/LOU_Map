@@ -1,0 +1,218 @@
+country_decisions = {
+	
+	shire_standing_eriadorian_army = {
+		major = yes
+		potential = {
+			tag = Y26
+			exists = Z16
+			NOT = {
+				has_country_flag = shire_has_eriadorian_standing_army_flag
+			}
+			NOT = {
+				has_country_flag = shire_has_dunedain_standing_army_flag
+			}
+		}
+		
+		allow = {
+			mil_tech = 18
+
+			custom_trigger_tooltip = {
+				tooltip = shire_has_eriadorian_standing_army_tt
+				NOT = {
+					has_country_flag = shire_has_eriadorian_standing_army_flag
+				}
+			}
+			
+			Z16 = {
+				OR = {
+					alliance_with = ROOT
+					vassal_of = ROOT
+				}
+			}
+		}
+		
+		effect = {	
+			change_unit_type = lotr_human_eriador
+
+			add_country_modifier = {
+				name = shire_human_standing_army_for_shire
+				duration = -1
+			}
+
+			country_event = {
+				id = LOU_shire.1
+			}
+
+			hidden_effect = {
+				Z16 = {
+					country_event = {
+						id = LOU_shire.3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 50
+
+			modifier = {
+				factor = 0
+				OR = {
+					Z06 = {
+						OR = {
+							alliance_with = ROOT
+							vassal_of = ROOT
+						}
+					}
+					vassal_of = Z06
+				}
+			}
+		}
+	}
+
+	shire_annul_standing_eriadorian_army = {
+		potential = {
+			tag = Y26
+			has_country_flag = shire_has_eriadorian_standing_army_flag
+			NOT = {
+				has_country_flag = shire_has_dunedain_standing_army_flag
+			}
+		}
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = shire_has_eriadorian_standing_army_period_tt
+				had_country_flag = {
+					flag = shire_has_eriadorian_standing_army_flag
+					days = 3650
+				}
+			}
+		}
+		
+		effect = {	
+			change_unit_type = lotr_hobbit
+
+			remove_country_modifier = shire_human_standing_army_for_shire
+
+			hidden_effect = {
+				Z16 = {
+					country_event = {
+						id = LOU_shire.4
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 100
+				monthly_income = -10
+			}
+		}
+	}
+
+	shire_standing_dunedain_army = {
+		major = yes
+		potential = {
+			tag = Y26
+			exists = Z06
+			NOT = {
+				has_country_flag = shire_has_dunedain_standing_army_flag
+			}
+			NOT = {
+				has_country_flag = shire_has_eridorian_standing_army_flag
+			}
+		}
+		
+		allow = {
+			mil_tech = 18
+
+			custom_trigger_tooltip = {
+				tooltip = shire_has_dunedain_standing_army_tt
+				NOT = {
+					has_country_flag = shire_has_dunedain_standing_army_flag
+				}
+			}
+			
+			OR = {
+				Z06 = {
+					OR = {
+						alliance_with = ROOT
+						vassal_of = ROOT
+					}
+				}
+				vassal_of = Z06
+			}
+		}
+		
+		effect = {	
+			change_unit_type = lotr_human_eriador
+
+			add_country_modifier = {
+				name = shire_human_standing_army_for_shire
+				duration = -1
+			}
+
+			country_event = {
+				id = LOU_shire.2
+			}
+
+			hidden_effect = {
+				Z06 = {
+					country_event = {
+						id = LOU_shire.3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	shire_annul_standing_dunedain_army = {
+		potential = {
+			tag = Y26
+			has_country_flag = shire_has_dunedain_standing_army_flag
+			NOT = {
+				has_country_flag = shire_has_eridorian_standing_army_flag
+			}
+		}
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = shire_has_dunedain_standing_army_period_tt
+				had_country_flag = {
+					flag = shire_has_dunedain_standing_army_flag
+					days = 3650
+				}
+			}
+		}
+		
+		effect = {	
+			change_unit_type = lotr_hobbit
+
+			remove_country_modifier = shire_human_standing_army_for_shire
+
+			hidden_effect = {
+				Z06 = {
+					country_event = {
+						id = LOU_shire.4
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 100
+				monthly_income = -10
+			}
+		}
+	}
+}
