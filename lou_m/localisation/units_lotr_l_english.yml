@@ -21,7 +21,7 @@
  lotr_gondorian_dunedain_INF18DESCR: "The Title of Warden is both a position few used to reach but with the turmoil brought in recent times we have plenty of who have proven themselves worthy of the title." 
  # Gondorian infantry Lvl 24
  lotr_gondorian_dunedain_INF24: "Citadel Guards"
- lotr_gondorian_dunedain_INF24: "The citadel guards are those who dedicate their lives to the defense of the many citadels of Gondor, being equally skilled with Pike as Sword, capable of aiming precise with both bow and trebuchet. these are the best soldiers gondor has to offer."
+ lotr_gondorian_dunedain_INF24DESCR: "The citadel guards are those who dedicate their lives to the defense of the many citadels of Gondor, being equally skilled with Pike as Sword, capable of aiming precise with both bow and trebuchet. these are the best soldiers gondor has to offer."
  # Gondorian infantry Lvl 30
  lotr_gondorian_dunedain_INF30: "Guards of the Fountain Court"
  lotr_gondorian_dunedain_INF30DESCR: "The Guards of the Fountain Court are normally a stationary order, never leaving their post. That they are seen on the battlefield is a sign of how dire these times are."
@@ -41,8 +41,8 @@
  lotr_gondorian_dunedain_CAV30: "Swan-Knights of Dol Amroth"
  lotr_gondorian_dunedain_CAV30DESCR: "No knightly order is has highly regarded as the Swan-Knights of Dol-Amroth, even now the blood of Numenor flows pure through their veins, and no man can deny the Superiority of their noble steeds."
 # Gondorian Artillery Lvl 5
- lotr_gondorian_dunedain_ART5: "Field Trebuchet"
- lotr_gondorian_dunedain_ART5DESCR: "Although Gondor has for many decades relied on Trebuchets for defending their forts and citadels, the recent conflicts have proven that there is a need for a more mobile solution. The Field trebuchet might be weaker and smaller but it's easy to transport."
+ lotr_gondorian_dunedain_ART0: "Field Trebuchet"
+ lotr_gondorian_dunedain_ART0DESCR: "Although Gondor has for many decades relied on Trebuchets for defending their forts and citadels, the recent conflicts have proven that there is a need for a more mobile solution. The Field trebuchet might be weaker and smaller but it's easy to transport."
 # Gondorian Artillery Lvl 15
  lotr_gondorian_dunedain_ART15: "Reinforced Trebuchet"
  lotr_gondorian_dunedain_ART15DESCR: "Advancedments in our blacksmithing techniques have allowed us to make an assortment of improvements to the field trebuchets allowing them to throw larger payloads without an increase in cost or size."
@@ -514,7 +514,7 @@
  lotr_haradrim_INF24: "Wachters of Kârna"
  lotr_haradrim_INF24DESCR: "The origin of the Watchers of Kârna is subject to much debate, first appearing in the service of Mardât, the first Serpent-Lord. during their service to both Mardat and any later Serpent-Lords they have fullfilled the roles of both secret police and elite skirmishers regiments."
  # Haradrim infantry lvl30
- lotr_haradrim_INF30: "the Serpent's Guard"
+ lotr_haradrim_INF30: "The Serpent's Guard"
  lotr_haradrim_INF30DESCR: "The Serpents Guard are the elite of the elite, personally chosen to serve as the bodyguards of the Serpent-Lords themselves."
  # Haradrim cavalry lv0
  lotr_haradrim_CAV0: "Caravan scouts"
@@ -526,23 +526,24 @@
  lotr_haradrim_CAV15: "Yanan Scouts"
  lotr_haradrim_CAV15DESCR: "As turmoil becomes more common in harad the need for more organized scouts for the Yanan caravans became appearent. Equipped with a bow and saber these cavalry men were capable of harrassing any would be robber way before reaching the slow and near defendless caravans they were ordered to guard."
  # Haradrim cavalry Lvl22
- lotr_haradrim_CAV15: "Southron Raiders"
- lotr_haradrim_CAV15DESCR: "Not wanting to be left out, many Haradrim cities started training their own organized raiding forces, bringing more riches into the cities treasury."
+ lotr_haradrim_CAV22: "Southron Raiders"
+ lotr_haradrim_CAV22DESCR: "Not wanting to be left out, many Haradrim cities started training their own organized raiding forces, bringing more riches into the cities treasury."
  # Haradrim cavalry Lvl30
- lotr_haradrim_CAV15: "Black Serpent Nobles"
- lotr_haradrim_CAV15DESCR: "Only the best is expected of the Black Serpents, and thus only nobles have the wealth to afford the steeds that are needed for the harsh standards." 
+ lotr_haradrim_CAV30: "Black Serpent Nobles"
+ lotr_haradrim_CAV30DESCR: "Only the best is expected of the Black Serpents, and thus only nobles have the wealth to afford the steeds that are needed for the harsh standards." 
+
  # Haradrim artillery Lvl6
- lotr_haradrim_ART6: "Scorpion boltthrowers"
- lotr_haradrim_ART6DESCR: "the people of Harad never had a big siege tradition being mostly nomadic. eventually they started aquiring light scorpions from Umbar to bring on their campaigns."
+ lotr_haradrim_ART0: "Scorpion boltthrowers"
+ lotr_haradrim_ART0DESCR: "the people of Harad never had a big siege tradition being mostly nomadic. eventually they started aquiring light scorpions from Umbar to bring on their campaigns."
  # Haradrim artillery Lvl12
- lotr_haradrim_ART6: "Heavy Ballista"
- lotr_haradrim_ART6DESCR: "the cities of Harad spend a fair amount of time experimenting with heavier and stronger boltthrowers, like Ballista's."
+ lotr_haradrim_ART5: "Heavy Ballista"
+ lotr_haradrim_ART5DESCR: "the cities of Harad spend a fair amount of time experimenting with heavier and stronger boltthrowers, like Ballista's."
  # Haradrim artillery Lvl18
- lotr_haradrim_ART6: "Mounted Scorpion"
- lotr_haradrim_ART6DESCR: "Eventually the Haradrim found a solution to their lacking siege tradition, just mount a weapon platform onto a Mumakil."
+ lotr_haradrim_ART15: "Mounted Scorpion"
+ lotr_haradrim_ART15DESCR: "Eventually the Haradrim found a solution to their lacking siege tradition, just mount a weapon platform onto a Mumakil."
  # Haradrim artillery Lvl24
- lotr_haradrim_ART6: "Scorpion Howdah"
- lotr_haradrim_ART6DESCR: "The first weapon platforms were simple things, but now we have found the optimal balance between firepower and defense with a reinforce Howdah, protecting both the siege weapons as the operators."
+ lotr_haradrim_ART25: "Scorpion Howdah"
+ lotr_haradrim_ART25DESCR: "The first weapon platforms were simple things, but now we have found the optimal balance between firepower and defense with a reinforce Howdah, protecting both the siege weapons as the operators."
   
  # lotr_umbar
  lotr_umbar_INF0: "Jackals of the Wharf"

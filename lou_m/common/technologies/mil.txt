@@ -30,9 +30,11 @@ technology = {
 	
 	enable = lotr_gondorian_dunedain_INF0
 	enable = lotr_gondorian_dunedain_CAV0
+	enable = lotr_gondorian_dunedain_ART0
 	
 	enable = lotr_haradrim_INF0
 	enable = lotr_haradrim_CAV0
+	enable = lotr_haradrim_ART0
 
 	enable = lotr_arnor_INF0
 	enable = lotr_arnor_INF6a
@@ -306,8 +308,8 @@ technology = {
 
     artillery_fire = 0.5
     artillery_shock = 0.1
-	
-	enable = lotr_gondorian_dunedain_ART5
+
+	enable = lotr_haradrim_ART5
 }
 
 technology = {
@@ -319,7 +321,6 @@ technology = {
 	
 	enable = lotr_haradrim_INF6a
 	enable = lotr_haradrim_INF6b
-	enable = lotr_haradrim_ART6
 	
 	enable = lotr_dale_INF6
 
@@ -574,7 +575,6 @@ technology = {
 	
 	enable = lotr_haradrim_INF12a
 	enable = lotr_haradrim_INF12b
-	enable = lotr_haradrim_ART12
 	
 	enable = lotr_dale_INF12
 
@@ -792,6 +792,7 @@ technology = {
 	enable = lotr_gondorian_dunedain_CAV15
 	
 	enable = lotr_haradrim_CAV15
+	enable = lotr_haradrim_ART15
 
 	enable = lotr_arnor_CAV15
 
@@ -1024,7 +1025,6 @@ technology = {
 	enable = lotr_gondorian_dunedain_INF24
 	
 	enable = lotr_haradrim_INF24
-	enable = lotr_haradrim_ART24
 
 	enable = lotr_arnor_INF24a
 	enable = lotr_arnor_INF24b
@@ -1127,6 +1127,7 @@ technology = {
 	enable = lotr_gondorian_dunedain_ART25
 	enable = lotr_generic_ART25
 	enable = lotr_troll_ART25
+	enable = lotr_haradrim_ART25
 }
 
 technology = {
