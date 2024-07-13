@@ -5,6 +5,13 @@ culture_group_children_of_iluvatar = {
 	graphical_culture = westerngfx
 	#Names Done dynasty names not done
 	culture_ents = {
+		country = {
+			has_carolean = yes
+			amount_of_carolean = 0.10
+		}
+		province = { 
+			local_has_carolean = yes 
+		}
 		male_names = {
 			Bregalad Finglas Fladrif Quickbeam Treebeard
 		}
@@ -15,6 +22,13 @@ culture_group_children_of_iluvatar = {
 	}
 
 	culture_huorn = {
+		country = {
+			has_carolean = yes
+			amount_of_carolean = 0.10
+		}
+		province = { 
+			local_has_carolean = yes 
+		}
 		male_names = {
 			Bregalad Finglas Fladrif Quickbeam Treebeard
 		}

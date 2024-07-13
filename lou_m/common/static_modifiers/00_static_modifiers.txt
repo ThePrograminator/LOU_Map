@@ -2059,9 +2059,15 @@ cossacks_regiment = {
     shock_damage = 0.15
 }
 
+#Modifier - Ents
 carolean_regiment = {
-	morale_damage = 0.05
-	drill_decay_modifier = -0.25
+	infantry_shock = 5
+	shock_damage = 0.30
+	shock_damage_received = -0.30
+	morale_damage = 0.40
+	morale_damage_received = -0.35
+	reinforce_speed = -0.50
+	reinforce_cost_modifier = 0.75
 }
 
 revolutionary_guard_regiment = {
