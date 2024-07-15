@@ -1,0 +1,21 @@
+# Goblin Warg Riders
+type = cavalry
+unit_type = lotr_orc
+
+maneuver = 1
+offensive_morale = 3
+defensive_morale = 3
+offensive_fire = 0
+defensive_fire = 4
+offensive_shock = 4
+defensive_shock = 3
+
+trigger = {
+	NOT = {
+		OR = {
+			tag = V17
+			tag = V18
+			tag = V19
+		}
+	}
+}

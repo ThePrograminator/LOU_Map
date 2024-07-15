@@ -102,10 +102,10 @@ technology = {
 
 	enable = lotr_orc_snaga_stalkers_1
 	enable = lotr_orc_snaga_archers_1
-	enable = lotr_orc_warg_riders_1
+	enable = lotr_orc_CAV0
 	
-	enable = lotr_orc_mordor_orc_bands_1
-	enable = lotr_orc_mordor_orc_scouts_1
+	enable = lotr_mordor_INF0a
+	enable = lotr_mordor_INF0b
 
 	enable = lotr_goblin_snaga_spears_1
 	enable = lotr_goblin_snaga_archers_1
@@ -357,9 +357,9 @@ technology = {
 	enable = lotr_dwarven_polearm_2
 	enable = lotr_dwarven_warriors_2
 	
-	enable = lotr_orc_mordor_orc_maulers_2
-	enable = lotr_orc_mordor_orc_raider_2
-	enable = lotr_orc_mordor_orc_archers_2
+	enable = lotr_mordor_INF6a
+	enable = lotr_mordor_INF6b
+	enable = lotr_mordor_INF6c
 	
 	enable = lotr_orc_marauders_2
 	enable = lotr_orc_halberdiers_2
@@ -614,13 +614,11 @@ technology = {
 	enable = lotr_dwarven_vault_keepers_3
 	enable = lotr_dwarven_boar_riders_2
 	
-	enable = lotr_orc_mordor_gorgoth_spawn_3
-	enable = lotr_orc_mordor_cirith_ungol_uruk_3
-	enable = lotr_orc_mountain_troll_2
+	enable = lotr_mordor_INF12a
+	enable = lotr_mordor_INF12b
 	
 	enable = lotr_orc_grey_mountain_orc_3
 	enable = lotr_orc_grey_mountain_spear_3
-	enable = lotr_orc_cave_troll_2
 
 	enable = lotr_goblin_goblin_raiders_2
 	enable = lotr_goblin_goblin_archers_2
@@ -829,6 +827,8 @@ technology = {
 
 	enable = lotr_elven_silvan_CAV15
 
+	enable = lotr_orc_CAV15
+
 	enable = lotr_ahar_CAV15
 	enable = lotr_aivathiuda_CAV15
 	enable = lotr_apysani_CAV15
@@ -917,9 +917,6 @@ technology = {
 	enable = lotr_dwarven_iron_guard_4
 	enable = lotr_dwarven_iron_crossbows_4
 	
-	enable = lotr_orc_mordor_morannon_guard_4
-	enable = lotr_orc_mordor_morannon_archer_4
-	
 	enable = lotr_orc_fellers_4
 
 	enable = lotr_goblin_armoured_goblin_3
@@ -931,6 +928,8 @@ technology = {
 	enable = lotr_dunmen_INF18a
 
 	enable = lotr_hillmen_rhudaur_INF18
+
+	enable = lotr_mordor_INF18
 
 	enable = lotr_ahar_INF18
 	enable = lotr_aivathiuda_INF18
@@ -1059,15 +1058,15 @@ technology = {
 
 	enable = lotr_easterling_INF24
 	
-	enable = lotr_orc_mordor_uruk_halberds_5
-	enable = lotr_orc_mordor_uruk_archer_5
-	enable = lotr_orc_olog_hai_troll_3
+	enable = lotr_mordor_INF24a
+	enable = lotr_mordor_INF24b
+
+	
 	
 	enable = lotr_orc_gundabaduul_halberds_5
 	enable = lotr_orc_gundabaduul_shortbows_5
 	enable = lotr_orc_carn_dun_guard_5
 	enable = lotr_orc_carn_dun_protecters_5
-	enable = lotr_orc_snow_troll_3
 	
 	enable = lotr_uruk_hai_infantry_3
 	enable = lotr_uruk_hai_berserkers_3
@@ -1126,6 +1125,7 @@ technology = {
 	enable = lotr_generic_ART25
 	enable = lotr_troll_ART25
 	enable = lotr_haradrim_ART25
+	enable = lotr_mordor_ART25
 }
 
 technology = {
@@ -1237,6 +1237,12 @@ technology = {
 	
 	enable = lotr_elven_silvan_CAV30a
 	enable = lotr_elven_silvan_CAV30b
+
+	enable = lotr_mordor_INF30a
+	enable = lotr_mordor_INF30b
+	enable = lotr_mordor_CAV30
+
+	enable = lotr_orc_CAV30
 
 	enable = lotr_ahar_INF30
 	enable = lotr_ahar_CAV30
