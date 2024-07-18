@@ -11,5 +11,16 @@ offensive_shock = 3
 defensive_shock = 3
 
 trigger = {
-	
+	NOT = {
+		OR ={
+			tag = V34
+			tag = V35
+			tag = V86
+			tag = V87
+			tag = V94
+			tag = V96
+			tag = W35
+			tag = WIG
+		}	
+	}
 }
