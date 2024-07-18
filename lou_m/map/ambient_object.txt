@@ -139,206 +139,6 @@ type={
 	}
 }
 type={
-	type="orthanc_monument"
-	use_animation=no
-	scale=6.000000
-	time_duration=300.000000
-	always_visible=yes
-	visible_in_all_map_modes=yes
-	object={
-		name="Orthanc_monument"
-		hidden_on_start=no
-		position={
-			1437.000 1.000 1302.000 
-		}
-		rotation={
-			45.000 180.000 0.000 
-		}
-	}
-}
-type={
-	type="durins_tower_monument"
-	use_animation=no
-	time_duration=300.000000
-	always_visible=yes
-	visible_in_all_map_modes=yes
-	object={
-		name="orthanc_monument"
-		hidden_on_start=no
-		position={
-			1552.000 -3.000 1439.000 
-		}
-		rotation={
-			0.000 150.000 90.000 
-		}
-	}
-}
-type={
-	type="eagle"
-	use_animation=yes
-	scale=0.300000
-	time_duration=300.000000
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1505.000 15.000 1362.000 
-		}
-		rotation={
-			0.000 90.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1560.000 15.000 1433.000 
-		}
-		rotation={
-			0.000 10.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1615.000 15.000 1512.000 
-		}
-		rotation={
-			0.000 200.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1488.000 15.000 1306.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1831.000 0.000 1155.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1627.000 15.000 1583.000 
-		}
-		rotation={
-			0.000 120.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1657.000 15.000 1605.000 
-		}
-		rotation={
-			0.000 300.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1657.000 15.000 1605.000 
-		}
-		rotation={
-			0.000 25.000 0.000 
-		}
-	}
-	object={
-		name="Eagle_Alps"
-		hidden_on_start=no
-		position={
-			1657.000 15.000 1605.000 
-		}
-		rotation={
-			0.000 90.000 0.000 
-		}
-	}
-}
-type={
-	type="minas_tirith_monument"
-	use_animation=no
-	scale=0.900000
-	time_duration=300.000000
-	always_visible=yes
-	visible_in_all_map_modes=yes
-	object={
-		name="minas_tirith_monument"
-		hidden_on_start=no
-		position={
-			1831.000 0.000 1155.000 
-		}
-		rotation={
-			0.000 150.000 0.000 
-		}
-	}
-}
-type={
-	type="barad_dur_monument"
-	use_animation=no
-	scale=0.900000
-	time_duration=300.000000
-	visible_in_all_map_modes=yes
-	object={
-		name="barad_dur_monument"
-		hidden_on_start=yes
-		position={
-			2010.000 3.000 1188.000 
-		}
-		rotation={
-			45.000 180.000 0.000 
-		}
-	}
-}
-type={
-	type="black_gate_monument"
-	use_animation=no
-	scale=0.900000
-	time_duration=300.000000
-	always_visible=yes
-	visible_in_all_map_modes=yes
-	object={
-		name="black_gate_monument"
-		hidden_on_start=no
-		position={
-			1901.000 0.000 1244.000 
-		}
-		rotation={
-			0.000 110.000 90.000 
-		}
-	}
-}
-type={
-	type="giraffe"
-	use_animation=yes
-	scale=0.300000
-	time_duration=300.000000
-	object={
-		name="giraffe_khand"
-		hidden_on_start=no
-		position={
-			2404.000 0.100 865.000 
-		}
-		rotation={
-			0.000 -45.000 0.000 
-		}
-	}
-}
-type={
 	type="frame_bottom_left_entity"
 	use_animation=no
 	always_visible=yes
@@ -444,38 +244,114 @@ type={
 	}
 }
 type={
-	type="windmill"
+	type="eagle"
 	use_animation=yes
 	scale=0.300000
 	time_duration=300.000000
 	object={
-		name="windmill_hobbiton"
+		name="Eagle_Alps"
 		hidden_on_start=no
 		position={
-			1157.000 0.100 1521.000 
+			1505.000 15.000 1362.000 
 		}
 		rotation={
-			0.000 -15.000 0.000 
+			0.000 90.000 0.000 
 		}
 	}
 	object={
-		name="windmill_michel_delving"
+		name="Eagle_Alps"
 		hidden_on_start=no
 		position={
-			1126.000 0.100 1495.000 
+			1560.000 15.000 1433.000 
 		}
 		rotation={
-			0.000 -15.000 0.000 
+			0.000 10.000 0.000 
 		}
 	}
 	object={
-		name="windmill_michel_delving"
+		name="Eagle_Alps"
 		hidden_on_start=no
 		position={
-			1171.000 0.100 1479.000 
+			1615.000 15.000 1512.000 
 		}
 		rotation={
-			0.000 15.000 0.000 
+			0.000 200.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			1488.000 15.000 1306.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			1831.000 0.000 1155.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			1627.000 15.000 1583.000 
+		}
+		rotation={
+			0.000 120.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			1657.000 15.000 1605.000 
+		}
+		rotation={
+			0.000 300.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			1657.000 15.000 1605.000 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			1657.000 15.000 1605.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+}
+type={
+	type="giraffe"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="giraffe_khand"
+		hidden_on_start=no
+		position={
+			2404.000 0.100 865.000 
+		}
+		rotation={
+			0.000 -45.000 0.000 
 		}
 	}
 }
@@ -914,6 +790,74 @@ type={
 	}
 }
 type={
+	type="elephant_AO"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="elephant_khand"
+		hidden_on_start=no
+		position={
+			2398.000 0.100 856.000 
+		}
+		rotation={
+			0.000 -140.000 0.000 
+		}
+	}
+}
+type={
+	type="zebra"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="zebra_khand"
+		hidden_on_start=no
+		position={
+			2385.000 0.100 854.000 
+		}
+		rotation={
+			0.000 125.000 0.000 
+		}
+	}
+}
+type={
+	type="windmill"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="windmill_hobbiton"
+		hidden_on_start=no
+		position={
+			1157.000 0.100 1521.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="windmill_michel_delving"
+		hidden_on_start=no
+		position={
+			1126.000 0.100 1495.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="windmill_michel_delving"
+		hidden_on_start=no
+		position={
+			1171.000 0.100 1479.000 
+		}
+		rotation={
+			0.000 15.000 0.000 
+		}
+	}
+}
+type={
 	type="nammi2_stonehenge_entity"
 	use_animation=no
 	scale=0.180000
@@ -1166,38 +1110,6 @@ type={
 	}
 }
 type={
-	type="elephant_AO"
-	use_animation=yes
-	scale=0.200000
-	time_duration=300.000000
-	object={
-		name="elephant_khand"
-		hidden_on_start=no
-		position={
-			2398.000 0.100 856.000 
-		}
-		rotation={
-			0.000 -140.000 0.000 
-		}
-	}
-}
-type={
-	type="zebra"
-	use_animation=yes
-	scale=0.200000
-	time_duration=300.000000
-	object={
-		name="zebra_khand"
-		hidden_on_start=no
-		position={
-			2385.000 0.100 854.000 
-		}
-		rotation={
-			0.000 125.000 0.000 
-		}
-	}
-}
-type={
 	type="amon_amarth"
 	use_animation=no
 	scale=2.600000
@@ -1227,7 +1139,60 @@ type={
 	}
 }
 type={
-	type="erebor_monument"
+	type="barad_dur"
+	use_animation=no
+	scale=0.900000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="barad_dur"
+		hidden_on_start=yes
+		position={
+			2010.000 3.000 1188.000 
+		}
+		rotation={
+			45.000 180.000 0.000 
+		}
+	}
+}
+type={
+	type="black_gate"
+	use_animation=no
+	scale=0.900000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="black_gate"
+		hidden_on_start=no
+		position={
+			1901.000 0.000 1244.000 
+		}
+		rotation={
+			0.000 110.000 90.000 
+		}
+	}
+}
+type={
+	type="durins_tower"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="orthanc"
+		hidden_on_start=no
+		position={
+			1552.000 -3.000 1439.000 
+		}
+		rotation={
+			0.000 150.000 90.000 
+		}
+	}
+}
+type={
+	type="erebor"
 	use_animation=no
 	scale=0.900000
 	time_duration=300.000000
@@ -1235,13 +1200,103 @@ type={
 	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
-		name="erebor_monument"
+		name="erebor"
 		hidden_on_start=no
 		position={
 			2002.000 0.250 1631.000 
 		}
 		rotation={
 			0.000 115.000 90.000 
+		}
+	}
+}
+type={
+	type="minas_tirith"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="minas_tirith"
+		hidden_on_start=no
+		position={
+			1829.000 -0.300 1156.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="helms_deep"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="helms_deep"
+		hidden_on_start=no
+		position={
+			1525.000 -0.300 1246.000 
+		}
+		rotation={
+			0.000 260.000 0.000 
+		}
+	}
+}
+type={
+	type="minas_tirith"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="minas_tirith"
+		hidden_on_start=no
+		position={
+			1829.000 -0.300 1156.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="minas_morgul"
+	use_animation=no
+	scale=1.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="minas_morgul"
+		hidden_on_start=no
+		position={
+			1902.840 -0.300 1151.400 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="orthanc"
+	use_animation=no
+	scale=6.000000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="Orthanc"
+		hidden_on_start=no
+		position={
+			1437.000 1.000 1302.000 
+		}
+		rotation={
+			45.000 180.000 0.000 
 		}
 	}
 }
