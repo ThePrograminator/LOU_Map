@@ -124,9 +124,26 @@ development_between = {
 
 is_special_hold = {
 	OR = {
+		#Northern Holy Sites
 		province_id = 287  #Erebor
+		province_id = 663  #Dain's Halls
+		province_id = 628  #Gundabad
 		province_id = 740  #Moria
 		province_id = 1051 #Belegost
+
+		#Eastern Holy Sites
+		province_id = 1741 #Khelek-Zaram
+		province_id = 2013 #Tumunamahal
+		province_id = 2016 #Baraztum
+		province_id = 3523 #Naraggund
+		province_id = 2859 #Gabilzahar
+
+		#Southern Holy Sites
+		province_id = 630 #Namagaluz
+		province_id = 837 #Gamil-Nala
+		province_id = 505 #Nalashatur
+		province_id = 1206 #Naragbaruz
+		province_id = 1204 #Nargubraz
 	}
 }
 
