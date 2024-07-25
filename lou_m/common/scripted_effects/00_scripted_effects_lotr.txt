@@ -2016,7 +2016,9 @@ add_latest_dwarf_building = {
 				province_dwarf_has_capital_buildings = no
 				OR = {
 					AND = {
-						province_dwarf_has_mountains_terrain = no
+						NOT = {
+							has_province_flag = dwarf_mountain_buildable_province_flag
+						}
 						culture_group = culture_group_dwarves
 					}
 					NOT = {
@@ -2035,7 +2037,9 @@ add_latest_dwarf_building = {
 				province_dwarf_has_capital_buildings = no
 				OR = {
 					AND = {
-						province_dwarf_has_mountains_terrain = no
+						NOT = {
+							has_province_flag = dwarf_mountain_buildable_province_flag
+						}
 						culture_group = culture_group_dwarves
 					}
 					NOT = {
@@ -2054,7 +2058,9 @@ add_latest_dwarf_building = {
 				province_dwarf_has_capital_buildings = no
 				OR = {
 					AND = {
-						province_dwarf_has_mountains_terrain = no
+						NOT = {
+							has_province_flag = dwarf_mountain_buildable_province_flag
+						}
 						culture_group = culture_group_dwarves
 					}
 					NOT = {
@@ -2073,7 +2079,7 @@ add_latest_dwarf_building = {
 				is_capital = no
 				province_dwarf_has_city_buildings = no
 				province_dwarf_has_capital_buildings = no
-				province_dwarf_has_mountains_terrain = yes
+				has_province_flag = dwarf_mountain_buildable_province_flag
 				culture_group = culture_group_dwarves
 			}
 			add_building = hold_3_dwarf_building
@@ -2085,7 +2091,7 @@ add_latest_dwarf_building = {
 				is_capital = no
 				province_dwarf_has_city_buildings = no
 				province_dwarf_has_capital_buildings = no
-				province_dwarf_has_mountains_terrain = yes
+				has_province_flag = dwarf_mountain_buildable_province_flag
 				culture_group = culture_group_dwarves
 			}
 			add_building = hold_2_dwarf_building
@@ -2096,7 +2102,7 @@ add_latest_dwarf_building = {
 				is_capital = no
 				province_dwarf_has_city_buildings = no
 				province_dwarf_has_capital_buildings = no
-				province_dwarf_has_mountains_terrain = yes
+				has_province_flag = dwarf_mountain_buildable_province_flag
 				culture_group = culture_group_dwarves
 			}
 			add_building = hold_1_dwarf_building

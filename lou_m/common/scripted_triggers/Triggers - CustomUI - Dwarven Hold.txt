@@ -242,3 +242,77 @@ upgrade_dwarven_hold_requirement = {
 		}
 	}
 }
+
+has_assigned_hold_estate = {
+	has_assigned_hold_estate_$VALUE$ = yes
+}
+
+has_assigned_hold_estate_0 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_0_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 0
+		}
+	}
+}
+
+has_assigned_hold_estate_1 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_1_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 1
+		}
+	}
+}
+
+has_assigned_hold_estate_2 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_2_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 2
+		}
+	}
+}
+
+has_assigned_hold_estate_3 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_3_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 3
+		}
+	}
+}
+
+has_assigned_hold_estate_4 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_4_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 4
+		}
+	}
+}
+
+has_assigned_hold_estate_5 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_5_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 5
+		}
+	}
+}
+
+has_assigned_hold_estate_6 = {
+	custom_trigger_tooltip = {
+		tooltip = dwarven_hold_assigned_estate_6_tt
+		is_variable_equal = {
+			which = customui_assigned_estate_dwarven_hold
+			value = 6
+		}
+	}
+}
