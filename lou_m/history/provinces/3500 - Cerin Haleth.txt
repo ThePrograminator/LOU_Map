@@ -9,24 +9,15 @@
 # Province Climate : Mild_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
-add_core = Y82
-owner = Y82
-controller = Y82
-
-culture = culture_falathrim
-religion = religion_firstborn_of_illuvatar
-
+owner = Y04
+controller = Y04
+culture = culture_broadbeam
 trade_goods = copper
-
-hre = no
-
+add_core = Y04
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -40,7 +31,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -73,4 +63,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

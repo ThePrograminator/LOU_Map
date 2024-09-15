@@ -9,25 +9,15 @@
 # Province Climate : null
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
-add_core = Z26
-owner = Z26
-controller = Z26
-
-culture = culture_rivermen_of_lhun
-religion = religion_northern_followers_of_illuvatar
-
+owner = Z94
+controller = Z94
+culture = culture_huorn
 trade_goods = herbs
-
-hre = no
-
-#Eriador Superregion Discovery
+add_core = Z94
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -41,7 +31,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -74,4 +63,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-

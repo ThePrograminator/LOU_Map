@@ -9,49 +9,43 @@
 # Province Climate : Severe_winter
 # Province is not Sea/Lake Province
 # Province Contents : 
-
 is_city = yes
-
 base_tax = 1
 base_production = 1
 base_manpower = 1
-
-add_core = Y13
-owner = Y13
-controller = Y13
-
-culture = culture_longbeard
-religion = religion_northern_dwarves
-
+owner = Y38
+controller = Y38
+culture = culture_goblin
 trade_goods = stone
-
-hre = no
-
 2758.1.1 = {
 	add_core = Y65
 	owner = Y65
 	controller = Y65
 	culture = culture_noldor
 	religion = religion_firstborn_of_illuvatar
-	customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+	customui_province_status_assign_status_effect = {
+		scope = ROOT
+		wilderness = yes
+	}
 }
-
 2802.3.1 = {
 	add_core = Y22
 	owner = Y22
 	controller = Y22
 	culture = culture_longbeard
 	religion = religion_northern_dwarves
-	customui_province_status_assign_status_effect = { scope = ROOT no_status = yes }
+	customui_province_status_assign_status_effect = {
+		scope = ROOT
+		no_status = yes
+	}
 }
-
 2941.11.23 = {
 	add_core = Y13
 	owner = Y13
 	controller = Y13
 }
-
 #Eriador Superregion Discovery
+add_core = Y38
 discovered_by = lotr_human
 discovered_by = lotr_human_rohan
 discovered_by = lotr_human_mordor
@@ -65,7 +59,6 @@ discovered_by = lotr_dwarven
 discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_dwarven_rhovanion
 discovered_by = lotr_dwarven_misty_mountains
-discovered_by = lotr_dwarven_eriador
 discovered_by = lotr_elven
 discovered_by = lotr_elven_rhun
 discovered_by = lotr_elven_rhovanion
@@ -98,4 +91,3 @@ discovered_by = lotr_wizard
 discovered_by = lotr_wizard_rhovanion
 discovered_by = lotr_wights
 discovered_by = lotr_wights_forodwaith
-
