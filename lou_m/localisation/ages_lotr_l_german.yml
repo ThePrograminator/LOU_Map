@@ -3,80 +3,335 @@
  # The Long Winter
  #----------------------------------------
  long_winter_age: "The Long Winter"
- long_winter_age_desc: "The The Long Winter Period of the Third Age."
+ long_winter_age_short: "Long Winter"
+ long_winter_age_desc: "The Long Winter Period of the Third Age."
  
  # Objectives
+ ##############################################
+ #Generic
+ ##############################################
+ #Generic 1
  obj_long_winter_age_prestigious_capital: "§YPrestigious Capital§!"
  obj_long_winter_age_prestigious_capital_desc: "Have a capital with your race and culture with 30 development and zero devastation."
- 
+ #Generic 2
  obj_long_winter_age_well_connected: "§YWell Connected§!"
- obj_long_winter_age_well_connected_desc: "Have 5 Alliances at once."
- 
- obj_long_winter_age_realm_of_virtues: "§YRealm of Virtues§!"
- obj_long_winter_age_realm_of_virtues_desc: "Have 95 Prestige and Legitimacy (or equivalent) whilst you have zero Corruption."
- 
- obj_long_winter_age_colassal_army: "§YColossal Army§!"
- obj_long_winter_age_colassal_army_desc: "Have 100 Land Forcelimit and have 90% of your forcelimit used."
- 
- obj_long_winter_age_colassal_fleet: "§YColossal Fleet§!"
- obj_long_winter_age_colassal_fleet_desc: "Have 100 Naval Forcelimit and have 90% of your forcelimit used."
- 
- obj_long_winter_age_racial_unity: "§YRacial Unity§!"
- obj_long_winter_age_racial_unity_desc: "Have 100% racial unity in your nation."
- 
+ obj_long_winter_age_well_connected_desc: "Have 4 Alliances at once."
+ #Generic 3
  obj_long_winter_age_wise_ruler: "§YWise Ruler§!"
  obj_long_winter_age_wise_ruler_desc: "Have a ruler with either 6 Administrative Skill, 6 Diplomatic Skill or 6 Military Skill."
+ ##############################################
+ #Allegiance
+ ##############################################
+ #Good 1
+ obj_long_winter_age_good_1: "§YWin The Long winter War§!"
+ obj_long_winter_age_good_1_desc: "The lands of Rohan has been attacked, and during the harshest winters ever seen in Middle Earth. We must repel the invaders!"
+ #Good 2
+ obj_long_winter_age_good_2: "§YWin The Umbar and Haradrim Assault on Gondor War§!"
+ obj_long_winter_age_good_2_desc: "The lands of Gondor has been attacked, and during the harshest winters ever seen in Middle Earth. We must repel the invaders!"
+ #Evil 1
+ obj_long_winter_age_evil_1: "§YWin The Long winter War§!"
+ obj_long_winter_age_evil_1_desc: "The lands of Rohan has been attacked, as the Dark Lord has commanded. We must crush Rohan!"
+ #Evil 2
+ obj_long_winter_age_evil_2: "§YWin The Umbar and Haradrim Assault on Gondor War§!"
+ obj_long_winter_age_evil_2_desc: "The lands of Gondor has been attacked, as the Dark Lord has commanded. We must crush Gondor!"
+ #Neural 1
+ obj_long_winter_age_neutral_1: "§YUnited People§!"
+ obj_long_winter_age_neutral_1_desc: "For our country to grow we must embrace the people that live there."
+ #Neural 2
+ obj_long_winter_age_neutral_2: "§YFortified Capital§!"
+ obj_long_winter_age_neutral_2_desc: "In these troubled times, you can never be too sure. We must reinforce and protect our capital."
+ ##############################################
+ #Race
+ ##############################################
+ #Human
+ obj_long_winter_age_human: "§YRace: Human§!"
+ obj_long_winter_age_human_desc: "During these rough years, it is important to create a sustainable and stabil country for our people."
+ #Dwarf
+ obj_long_winter_age_dwarf: "§YRace: Dwarf§!"
+ obj_long_winter_age_dwarf_desc: "Long have our people been pushed from our homes of old. We must do what we can to get back to the mountains."
+ #Elf
+ obj_long_winter_age_elf: "§YRace: Elf§!"
+ obj_long_winter_age_elf_desc: "Conflict is ever more present. We must employ a court of the smartest kin so we can adapt to the changes ahead."
+ #Orc
+ obj_long_winter_age_orc: "§YRace: Orc§!"
+ obj_long_winter_age_orc_desc: "We should not hide any more. The time to strike is now and expand our realm!"
+ ##############################################
+ #Continent
+ ##############################################
+ #Middle Earth
+ obj_long_winter_age_middle_earth: "§YContinent: Middle Earth§!"
+ obj_long_winter_age_middle_earth_desc: "The Long Winter has set it's toll on the lands of Middle Earth. Now more important than ever is the need for a stable supply of food."
+ #Hither Lands
+ obj_long_winter_age_hither_lands: "§YContinent: Hither Lands§!"
+ obj_long_winter_age_hither_lands_desc: "The climate is more mild than usual, we must use this to our advantage so our country may be prosperous."
+ #Palisor
+ obj_long_winter_age_Palisor: "§YContinent: Palisor§!"
+ obj_long_winter_age_Palisor_desc: "The continent of Palisor streches for thousands of leagues across open steppes. If we want an advantage on the battlefield we should focus on cavalry."
  
  # Abilities
  ab_long_winter_age_lay_of_the_land: "Lay of the Land"
+ ab_long_winter_age_supplies_in_dire_times: "Supplies in Dire Times"
  ab_long_winter_age_local_administators: "Local Administrators" 
  ab_long_winter_age_secret_trails: "Secret Trails"
  ab_long_winter_age_integrated_sappers: "Integrated Sappers"
  ab_long_winter_age_charismatic_presence: "Charismatic Presence"
  ab_long_winter_age_purification_regiments: "Purification Regiments"
  ab_long_winter_age_age_of_civility: "Age of Civility"
- ab_long_winter_age_gondorian_steel: "Gondorian Steel"
- ab_long_winter_age_rohirrim_riders: "Riders of Rohan"
- ab_long_winter_age_saurons_will: "Sauron's Will"
- ab_long_winter_age_rhunic_hegemony: "Rhûnic Hegemony"
- 
+ ab_long_winter_age_umbar: "Umbar Ability"
+ ab_long_winter_age_dunleding: "Dunleding Ability"
+ ab_long_winter_age_sagath: "Sagath Ability"
+ ab_long_winter_age_haradrim: "Haradrim Ability"
+
+ #Flags
+ obj_long_winter_age_good_1_tooltip: "The Free Peoples of Middle Earth won the 'The Long Winter' War."
+ obj_long_winter_age_good_2_tooltip: "The Free Peoples of Middle Earth won the 'Umbar and Haradrim Assault on Gondor' War."
+
+ obj_long_winter_age_evil_1_tooltip: "The Servants of Darkness of Middle Earth won the 'The Long Winter' War."
+ obj_long_winter_age_evil_2_tooltip: "The Servants of Darkness of Middle Earth won the 'Umbar and Haradrim Assault on Gondor' War."
+ #Tooltips
+
  #----------------------------------------
- # Forth Age
+ # The War of Dwarves and Orcs
  #----------------------------------------
- fourth_age: "The Fourth Age"
- fourth_age_desc: "The Fourth Age of Arda."
+ the_war_of_dwarves_and_orcs_age: "War of Dwarves and Orcs"
+ the_war_of_dwarves_and_orcs_age_short: "War of Dwarves and Orcs"
+ the_war_of_dwarves_and_orcs_age_desc: "War of Dwarves and Orc Period of the Third Age."
  
  # Objectives
- obj_forth_age_prestigious_capital: "§YPrestigious Capital§!"
- obj_forth_age_prestigious_capital_desc: "Have a capital with your race and culture with 30 development and zero devastation."
- 
- obj_forth_age_well_connected: "§YWell Connected§!"
- obj_forth_age_well_connected_desc: "Have 5 Alliances at once."
- 
- obj_forth_age_realm_of_virtues: "§YRealm of Virtues§!"
- obj_forth_age_realm_of_virtues_desc: "Have 95 Prestige and Legitimacy (or equivalent) whilst you have zero Corruption."
- 
- obj_forth_age_colassal_army: "§YColossal Army§!"
- obj_forth_age_colassal_army_desc: "Have 100 Land Forcelimit and have 90% of your forcelimit used."
- 
- obj_forth_age_colassal_fleet: "§YColossal Fleet§!"
- obj_forth_age_colassal_fleet_desc: "Have 100 Naval Forcelimit and have 90% of your forcelimit used."
- 
- obj_forth_age_racial_unity: "§YRacial Unity§!"
- obj_forth_age_racial_unity_desc: "Have 100% racial unity in your nation."
- 
- obj_forth_age_wise_ruler: "§YWise Ruler§!"
- obj_forth_age_wise_ruler_desc: "Have a ruler with either 6 Administrative Skill, 6 Diplomatic Skill or 6 Military Skill."
+ ##############################################
+ #Generic
+ ##############################################
+ #Generic 1
+ obj_the_war_of_dwarves_and_orcs_age_generic_1: "§YKing of Kings§!"
+ obj_the_war_of_dwarves_and_orcs_age_generic_1_desc: "Not all countries need to be conquered. But instead benefit from being their overlord."
+ #Generic 2
+ obj_the_war_of_dwarves_and_orcs_age_generic_2: "§YIncrease Our Goods Production§!"
+ obj_the_war_of_dwarves_and_orcs_age_generic_2_desc: "It is time to specialize in what our farmers and workers produce the best."
+ #Generic 3
+ obj_the_war_of_dwarves_and_orcs_age_generic_3: "§YStable Country§!"
+ obj_the_war_of_dwarves_and_orcs_age_generic_3_desc: "Our people would greatly benifit on the focus of stability of our realm."
+ ##############################################
+ #Allegiance
+ ##############################################
+ #Good 1
+ obj_the_war_of_dwarves_and_orcs_age_good_1: "§YTransfer Means to the Capital§!"
+ obj_the_war_of_dwarves_and_orcs_age_good_1_desc: "To reclaim the lands of Middle-Earth back from the Servants of Darkness. We would benefit by transfering the production to our capital."
+ #Good 2
+ obj_the_war_of_dwarves_and_orcs_age_good_2: "§YDiplomacy Focus§!"
+ obj_the_war_of_dwarves_and_orcs_age_good_2_desc: "The forces of the enemy are growing, and inturn should or focus be on improving our diplomacy skills."
+ #Evil 1
+ obj_the_war_of_dwarves_and_orcs_age_evil_1: "§YPillage the Enemy§!"
+ obj_the_war_of_dwarves_and_orcs_age_evil_1_desc: "Once we destroy our enemies we should make sure to pillage their capital from all their precious loot."
+ #Evil 2
+ obj_the_war_of_dwarves_and_orcs_age_evil_2: "§YMilitary focus§!"
+ obj_the_war_of_dwarves_and_orcs_age_evil_2_desc: "The Dark Lord will soon return, we must focus on our military skills and prepare for his arival."
+ #Neural 1
+ obj_the_war_of_dwarves_and_orcs_age_neutral_1: "§YLarge State§!"
+ obj_the_war_of_dwarves_and_orcs_age_neutral_1_desc: "As we have not taken a stance on which side to aid, we should have a grand country to deter attacks and appeal to cooperation."
+ #Neural 2
+ obj_the_war_of_dwarves_and_orcs_age_neutral_2: "§YControlling Our State§!"
+ obj_the_war_of_dwarves_and_orcs_age_neutral_2_desc: "The Estates of our country does not always have our country's best interest in mind. We should focus on controlling the provinces directly under our rule."
+ ##############################################
+ #Race
+ ##############################################
+ #Human
+ obj_the_war_of_dwarves_and_orcs_age_human: "§YRace: Human§!"
+ obj_the_war_of_dwarves_and_orcs_age_human_desc: "For our troops to withstand the hordes of the enemy, then our men must stand firm when they charge our spears."
+ #Dwarf
+ obj_the_war_of_dwarves_and_orcs_age_dwarf: "§YRace: Dwarf§!"
+ obj_the_war_of_dwarves_and_orcs_age_dwarf_desc: "We must do what we can to reclaim the lost realm of Khazad-Dûm."
+ #Elf
+ obj_the_war_of_dwarves_and_orcs_age_elf: "§YRace: Elf§!"
+ obj_the_war_of_dwarves_and_orcs_age_elf_desc: "We must sway the humans and dwarfs to aid us in our interests."
+ #Orc
+ obj_the_war_of_dwarves_and_orcs_age_orc: "§YRace: Orc§!"
+ obj_the_war_of_dwarves_and_orcs_age_orc_desc: "Too long have the dwarves controlled the mountains of Middle-Earth. We must throw them out of their holds and off the cliffs!"
+ ##############################################
+ #Continent
+ ##############################################
+ #Middle Earth
+ obj_the_war_of_dwarves_and_orcs_age_middle_earth: "§YContinent: Middle Earth§!"
+ obj_the_war_of_dwarves_and_orcs_age_middle_earth_desc: "Our production is starting to mend after the disastrous years after the Long Winter. We should focus on increasing our trade in this period."
+ #Hither Lands
+ obj_the_war_of_dwarves_and_orcs_age_hither_lands: "§YContinent: Hither Lands§!"
+ obj_the_war_of_dwarves_and_orcs_age_hither_lands_desc: "The other continents merchants are asking for our exotic goods. We must improve our trading hubs to accomendate this."
+ #Palisor
+ obj_the_war_of_dwarves_and_orcs_age_Palisor: "§YContinent: Palisor§!"
+ obj_the_war_of_dwarves_and_orcs_age_Palisor_desc: "Alot of trade is going west these days. We could benefit of controlling the trade around our capital."
  
  # Abilities
- ab_fourth_age_lay_of_the_land: "Lay of the Land"
- ab_fourth_age_local_administators: "Local Administrators" 
- ab_fourth_age_secret_trails: "Secret Trails"
- ab_fourth_age_integrated_sappers: "Integrated Sappers"
- ab_fourth_age_charismatic_presence: "Charismatic Presence"
- ab_fourth_age_purification_regiments: "Purification Regiments"
- ab_fourth_age_age_of_civility: "Age of Civility"
- ab_fourth_age_gondorian_steel: "Gondorian Steel"
- ab_fourth_age_rohirrim_riders: "Riders of Rohan"
- ab_fourth_age_saurons_will: "Sauron's Will"
- ab_fourth_age_rhunic_hegemony: "Rhûnic Hegemony"
+ ab_the_war_of_dwarves_and_orcs_age_1: "Investment in Foundation"
+ ab_the_war_of_dwarves_and_orcs_age_2: "Tradition of War" 
+ ab_the_war_of_dwarves_and_orcs_age_3: "Expansionist Period"
+ ab_the_war_of_dwarves_and_orcs_age_4: "Time for our People"
+ ab_the_war_of_dwarves_and_orcs_age_5: "Allegiance to Kin"
+ ab_the_war_of_dwarves_and_orcs_age_6: "Discovering our Potential"
+ ab_the_war_of_dwarves_and_orcs_age_7: "Control of the Treasury"
+ ab_the_war_of_dwarves_and_orcs_age_durins_folk: "Durin's Folk Ability"
+ ab_the_war_of_dwarves_and_orcs_age_moria: "Moria Ability"
+ ab_the_war_of_dwarves_and_orcs_goblin_town: "Goblin Town Ability"
+ ab_the_war_of_dwarves_and_orcs_age_lake_town: "Lake Town Ability"
+
+ #----------------------------------------
+ # Corruption of Dol Guldur
+ #----------------------------------------
+ corruption_of_dol_guldur_age: "Corruption of Dol Guldur"
+ corruption_of_dol_guldur_age_short: "Corruption of Dol Guldur"
+ corruption_of_dol_guldur_age_desc: "The Corruption of Dol Guldur Period of the Third Age."
+ 
+ # Objectives
+ ##############################################
+ #Generic
+ ##############################################
+ #Generic 1
+ obj_corruption_of_dol_guldur_age_generic_1: "§YRealm of Virtues§!"
+ obj_long_winter_age_realm_of_virtues_desc: "Have 95 Prestige and Legitimacy (or equivalent) whilst you have zero Corruption."
+ #Generic 2
+ obj_corruption_of_dol_guldur_age_generic_2: "§YBalanced Economy§!"
+ obj_corruption_of_dol_guldur_age_generic_2_desc: "While we should invest in our nation, a balanced economy is just as important."
+ #Generic 3
+ obj_corruption_of_dol_guldur_age_generic_3: "§YSpoils of War§!"
+ obj_corruption_of_dol_guldur_age_generic_3_desc: "We should strive towards making the wars we enter cost the bare minimum for our people."
+ ##############################################
+ #Allegiance
+ ##############################################
+ #Good 1
+ obj_corruption_of_dol_guldur_age_good_1: "§YDestroy the Servants of Darkness§!"
+ obj_corruption_of_dol_guldur_age_good_1_desc: "For our people to feel safe, we should expel the Servants of Darkness from the region of our capital."
+ #Good 2
+ obj_corruption_of_dol_guldur_age_good_2: "§YLight of Eru§!"
+ obj_corruption_of_dol_guldur_age_good_2_desc: "In these troubled times we need to understand the greater forces at play."
+ #Evil 1
+ obj_corruption_of_dol_guldur_age_evil_1: "§YDestroy Free Peoples of Middle-Earth§!"
+ obj_corruption_of_dol_guldur_age_evil_1_desc: "The Free Peoples are close to our capital, we should destroy them!"
+ #Evil 2
+ obj_corruption_of_dol_guldur_age_evil_2: "§YShadow of Melkor§!"
+ obj_corruption_of_dol_guldur_age_evil_2_desc: "We must study the Dark Ways of Melkor in order to bring destruction to this world."
+ #Neural 1
+ obj_corruption_of_dol_guldur_age_neutral_1: "§YAssimilate§!"
+ obj_corruption_of_dol_guldur_age_neutral_1_desc: "Being a country without allegiance to Sauron or The Free Peoples. We should do what we can to appease both sides."
+ #Neural 2
+ obj_corruption_of_dol_guldur_age_neutral_2: "§YExpand our Borders§!"
+ obj_corruption_of_dol_guldur_age_neutral_2_desc: "The borders of our realm must expand in order to stand a chance in this world."
+ ##############################################
+ #Race
+ ##############################################
+ #Human
+ obj_corruption_of_dol_guldur_age_human: "§YRace: Human§!"
+ obj_corruption_of_dol_guldur_age_human_desc: "Our growing populace needs large cities that can accommodate them."
+ #Dwarf
+ obj_corruption_of_dol_guldur_age_dwarf: "§YRace: Dwarf§!"
+ obj_corruption_of_dol_guldur_age_dwarf_desc: "The guilds of our nation require grant Holds for their Guild Houses to be."
+ #Elf
+ obj_corruption_of_dol_guldur_age_elf: "§YRace: Elf§!"
+ obj_corruption_of_dol_guldur_age_elf_desc: "While our people require grand cities to live in we must ensure that they are prosperous in the long run aswell."
+ #Orc
+ obj_corruption_of_dol_guldur_age_orc: "§YRace: Orc§!"
+ obj_corruption_of_dol_guldur_age_orc_desc: "Our forces can be hard to keep in line. So we should make sure to have necessary buildings to induce fear into them."
+ ##############################################
+ #Continent
+ ##############################################
+ #Middle Earth
+ obj_corruption_of_dol_guldur_age_middle_earth: "§YContinent: Middle Earth§!"
+ obj_corruption_of_dol_guldur_age_middle_earth_desc: "The numerous trade hubs in Middle-Earth are of vidal interest for our realm."
+ #Hither Lands
+ obj_corruption_of_dol_guldur_age_hither_lands: "§YContinent: Hither Lands§!"
+ obj_corruption_of_dol_guldur_age_hither_lands_desc: "Treacherous times require a populace that stays in line either through respect our fear."
+ #Palisor
+ obj_corruption_of_dol_guldur_age_Palisor: "§YContinent: Palisor§!"
+ obj_corruption_of_dol_guldur_age_Palisor_desc: "The plains of Palisor can be exploited in the name of trade. We should establish semi-autonomous regions to handle this."
+ 
+ # Abilities
+ ab_corruption_of_dol_guldur_age_1: "Conflict Avoidance"
+ ab_corruption_of_dol_guldur_age_2: "Exploit Potential" 
+ ab_corruption_of_dol_guldur_age_3: "Expanded Court"
+ ab_corruption_of_dol_guldur_age_4: "Far Reach"
+ ab_corruption_of_dol_guldur_age_5: "Time of Treachery"
+ ab_corruption_of_dol_guldur_age_6: "Bring Down Corruption"
+ ab_corruption_of_dol_guldur_age_7: "Ease Relations"
+ ab_corruption_of_dol_guldur_age_dol_guldur: "Dol Guldur Ability"
+ ab_corruption_of_dol_guldur_age_lothlorien: "Lothlorien Ability"
+ ab_corruption_of_dol_guldur_age_woodland_realm: "Woodland Realm Ability"
+ ab_corruption_of_dol_guldur_age_gundabad: "Gundabad Ability"
+ 
+ #----------------------------------------
+ # War of The Ring
+ #----------------------------------------
+ war_of_the_ring_age: "War of the Ring"
+ war_of_the_ring_age_short: "War of the Ring"
+ war_of_the_ring_age_desc: "The War of the Ring period of the Third Age."
+ 
+ # Objectives
+ ##############################################
+ #Generic
+ ##############################################
+ #Generic 1
+ obj_war_of_the_ring_age_generic_1: "§YRacial Unity§!"
+ obj_war_of_the_ring_age_generic_1_desc: "Have 100% racial unity in your nation."
+ #Generic 2
+ obj_war_of_the_ring_age_generic_2: "§YColossal Army§!"
+ obj_war_of_the_ring_age_generic_2_desc: "Have 100 Land Forcelimit and have 90% of your forcelimit used."
+ #Generic 3
+ obj_war_of_the_ring_age_generic_3: "§YPower to Fear§!"
+ obj_war_of_the_ring_age_generic_3_desc: "Become Great Power to be feared."
+ ##############################################
+ #Allegiance
+ ##############################################
+ #Good 1
+ obj_war_of_the_ring_age_good_1: "§YReturn to the Mountain§!"
+ obj_war_of_the_ring_age_good_1_desc: "The Dwarves have long missed their mountain halls. We must do what is necessary to return it to them."
+ #Good 2
+ obj_war_of_the_ring_age_good_2: "§YBring Down Sauron§!"
+ obj_war_of_the_ring_age_good_2_desc: "Mordor must by all means be eliminated our Middle-Earth will always be in danger of chaos."
+ #Evil 1
+ obj_war_of_the_ring_age_evil_1: "§YCapture the Mountain§!"
+ obj_war_of_the_ring_age_evil_1_desc: "The mountain hold of Erebor is too important to be left alone. We must conquer it!"
+ #Evil 2
+ obj_war_of_the_ring_age_evil_2: "§YBurn the White Tree§!"
+ obj_war_of_the_ring_age_evil_2_desc: "We must destroy the remnants of the Númenóreans and declare Sauron the true lord of Middle-Earth."
+ #Neural 1
+ obj_war_of_the_ring_age_neutral_1: "§YKeep Inovating§!"
+ obj_war_of_the_ring_age_neutral_1_desc: "Change is in the wind, and conflict is on the horizon. We must do what we can to be ahead of our neighbors."
+ #Neural 2
+ obj_war_of_the_ring_age_neutral_2: "§YExports over Imports§!"
+ obj_war_of_the_ring_age_neutral_2_desc: "We must become a nation that exports the needs of war in these troubled times."
+ ##############################################
+ #Race
+ ##############################################
+ #Human
+ obj_war_of_the_ring_age_human: "§YRace: Human§!"
+ obj_war_of_the_ring_age_human_desc: "We must perform actions that display our power to the world."
+ #Dwarf
+ obj_war_of_the_ring_age_dwarf: "§YRace: Dwarf§!"
+ obj_war_of_the_ring_age_dwarf_desc: "Our once lost homes should return to dwarven hands"
+ #Elf
+ obj_war_of_the_ring_age_elf: "§YRace: Elf§!"
+ obj_war_of_the_ring_age_elf_desc: "A majestic people like us should establish monuments for our praise."
+ #Orc
+ obj_war_of_the_ring_age_orc: "§YRace: Orc§!"
+ obj_war_of_the_ring_age_orc_desc: "The Dark Lord calls upon us to build an army worth of Mordor."
+ ##############################################
+ #Continent
+ ##############################################
+ #Middle Earth
+ obj_war_of_the_ring_age_middle_earth: "§YContinent: Middle Earth§!"
+ obj_war_of_the_ring_age_middle_earth_desc: "To withstand the wars to come we must grow our borders."
+ #Hither Lands
+ obj_war_of_the_ring_age_hither_lands: "§YContinent: Hither Lands§!"
+ obj_war_of_the_ring_age_hither_lands_desc: "In order to be relevant in these times we need to have influence in all parts of the world."
+ #Palisor
+ obj_war_of_the_ring_age_Palisor: "§YContinent: Palisor§!"
+ obj_war_of_the_ring_age_Palisor_desc: "The time is now to ride the steppes and strample down the enemies of our people."
+ 
+ # Abilities
+ ab_war_of_the_ring_age_1: "Development Focus"
+ ab_war_of_the_ring_age_2: "Bargaining with Mercenaries" 
+ ab_war_of_the_ring_age_3: "Protect our Coasts"
+ ab_war_of_the_ring_age_4: "No One will Rrevent Us"
+ ab_war_of_the_ring_age_5: "Beneficial Policies"
+ ab_war_of_the_ring_age_6: "Loyal Court"
+ ab_war_of_the_ring_age_7: "Prepared for War"
+ ab_war_of_the_ring_age_gondorian_steel: "Gondorian Steel"
+ ab_war_of_the_ring_age_rohirrim_riders: "Riders of Rohan"
+ ab_war_of_the_ring_age_saurons_will: "Sauron's Will"
+ ab_war_of_the_ring_age_rhunic_hegemony: "Rhûnic Hegemony"
