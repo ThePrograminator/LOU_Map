@@ -662,7 +662,8 @@ custom_button = {
     name = customui_dropdown_estate_1_button_dwarven_hold
     potential = {
         owner = {
-            has_estate = estate_dwarven_scholars
+            #has_estate = estate_dwarven_scholars
+            has_estate = estate_stewards
         }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     }
@@ -717,7 +718,8 @@ custom_button = {
     name = customui_dropdown_estate_2_button_dwarven_hold
     potential = {
         owner = {
-            has_estate = estate_dwarven_masons
+            #has_estate = estate_dwarven_masons
+            has_estate = estate_nobles
         }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     }
@@ -772,7 +774,8 @@ custom_button = {
     name = customui_dropdown_estate_3_button_dwarven_hold
     potential = {
         owner = {
-            has_estate = estate_dwarven_warriors
+            #has_estate = estate_dwarven_warriors
+            has_estate = estate_merchants
         }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     }
@@ -827,7 +830,8 @@ custom_button = {
     name = customui_dropdown_estate_4_button_dwarven_hold
     potential = {
         owner = {
-            has_estate = estate_dwarven_warriors
+           # has_estate = estate_dwarven_warriors
+           has_estate = estate_commoners
         }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     }
@@ -867,6 +871,9 @@ custom_text_box = {
 custom_icon = {
     name = customui_dropdown_estate_5_icon_dwarven_hold #Must match a scripted iconType in a .gui file
     potential = { 
+        owner = {
+            has_estate = estate_dwarven_warriors
+        }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     } #Determines when the icon is visible
     tooltip = customui_dropdown_estate_5_modifier_dwarven_hold #Can use customizable localisation
@@ -909,6 +916,9 @@ custom_button = {
 custom_text_box = {
     name = customui_dropdown_estate_5_modifier_text_dwarven_hold #Must match a scripted instantTextBoxType in a .gui file
     potential = { 
+        owner = {
+            has_estate = estate_dwarven_warriors
+        }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     } #Determines when the text is visible
     tooltip = customui_dropdown_estate_5_modifier_dwarven_hold #Can use customizable localisation
@@ -936,9 +946,6 @@ custom_icon = {
 custom_button = {
     name = customui_dropdown_estate_6_button_dwarven_hold
     potential = {
-        owner = {
-            has_estate = estate_dwarven_warriors
-        }
         customui_dropdown_is_open_dwarven_hold_trigger = yes
     }
     trigger = { 

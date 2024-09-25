@@ -4,6 +4,7 @@ estate_dwarven_artisans = {
 	influence_from_dev_modifier = 1.0
 	# If true, country will get estate
 	trigger = {
+		always = no
 		OR = {
 			culture = culture_longbeard
 			culture = culture_firebeard

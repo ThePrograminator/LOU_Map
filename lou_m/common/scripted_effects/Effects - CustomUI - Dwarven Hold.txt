@@ -182,6 +182,8 @@ customui_assign_estate_dwarven_hold_effect_0 = {
 		remove_province_modifier = dwarven_hold_estate_special_erebor
 		remove_province_modifier = dwarven_hold_estate_special_moria
 		remove_province_modifier = dwarven_hold_estate_special_belegost
+		remove_province_modifier = dwarven_hold_estate_special_gundabad
+		remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
 	}
 }
 
@@ -200,6 +202,8 @@ customui_assign_estate_dwarven_hold_effect_1 = {
 		remove_province_modifier = dwarven_hold_estate_special_erebor
 		remove_province_modifier = dwarven_hold_estate_special_moria
 		remove_province_modifier = dwarven_hold_estate_special_belegost
+		remove_province_modifier = dwarven_hold_estate_special_gundabad
+		remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
 	}
 }
 customui_assign_estate_dwarven_hold_effect_2 = {
@@ -217,6 +221,8 @@ customui_assign_estate_dwarven_hold_effect_2 = {
 		remove_province_modifier = dwarven_hold_estate_special_erebor
 		remove_province_modifier = dwarven_hold_estate_special_moria
 		remove_province_modifier = dwarven_hold_estate_special_belegost
+		remove_province_modifier = dwarven_hold_estate_special_gundabad
+		remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
 	}
 }
 customui_assign_estate_dwarven_hold_effect_3 = {
@@ -234,6 +240,8 @@ customui_assign_estate_dwarven_hold_effect_3 = {
 		remove_province_modifier = dwarven_hold_estate_special_erebor
 		remove_province_modifier = dwarven_hold_estate_special_moria
 		remove_province_modifier = dwarven_hold_estate_special_belegost
+		remove_province_modifier = dwarven_hold_estate_special_gundabad
+		remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
 	}
 }
 customui_assign_estate_dwarven_hold_effect_4 = {
@@ -251,6 +259,8 @@ customui_assign_estate_dwarven_hold_effect_4 = {
 		remove_province_modifier = dwarven_hold_estate_special_erebor
 		remove_province_modifier = dwarven_hold_estate_special_moria
 		remove_province_modifier = dwarven_hold_estate_special_belegost
+		remove_province_modifier = dwarven_hold_estate_special_gundabad
+		remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
 	}
 }
 customui_assign_estate_dwarven_hold_effect_5 = {
@@ -268,6 +278,8 @@ customui_assign_estate_dwarven_hold_effect_5 = {
 		remove_province_modifier = dwarven_hold_estate_special_erebor
 		remove_province_modifier = dwarven_hold_estate_special_moria
 		remove_province_modifier = dwarven_hold_estate_special_belegost
+		remove_province_modifier = dwarven_hold_estate_special_gundabad
+		remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
 	}
 }
 customui_assign_estate_dwarven_hold_effect_6 = {
@@ -327,7 +339,44 @@ customui_assign_estate_dwarven_hold_effect_6 = {
 			remove_province_modifier = dwarven_hold_estate_special_moria
 		}
 	}
-	
+	else_if = {
+		limit = { 
+			province_id = 743 #Khazad Zahar
+		}
+		add_province_modifier = {
+			name = dwarven_hold_estate_special_khazad_zahar
+			duration = -1
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_estate_chroniclers
+			remove_province_modifier = dwarven_hold_estate_architects
+			remove_province_modifier = dwarven_hold_estate_highborn
+			remove_province_modifier = dwarven_hold_estate_blacksmiths
+			remove_province_modifier = dwarven_hold_estate_artisans
+			remove_province_modifier = dwarven_hold_estate_special_erebor
+			remove_province_modifier = dwarven_hold_estate_special_moria
+			remove_province_modifier = dwarven_hold_estate_special_gundabad
+		}
+	}
+	else_if = {
+		limit = { 
+			province_id = 628 #Gundabad
+		}
+		add_province_modifier = {
+			name = dwarven_hold_estate_special_gundabad
+			duration = -1
+		}
+		hidden_effect = {
+			remove_province_modifier = dwarven_hold_estate_chroniclers
+			remove_province_modifier = dwarven_hold_estate_architects
+			remove_province_modifier = dwarven_hold_estate_highborn
+			remove_province_modifier = dwarven_hold_estate_blacksmiths
+			remove_province_modifier = dwarven_hold_estate_artisans
+			remove_province_modifier = dwarven_hold_estate_special_erebor
+			remove_province_modifier = dwarven_hold_estate_special_moria
+			remove_province_modifier = dwarven_hold_estate_special_khazad_zahar
+		}
+	}
 }
 
 #"

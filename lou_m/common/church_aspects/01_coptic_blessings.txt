@@ -5,12 +5,9 @@
 dwarven_blessing_send_traders = {
 	is_blessing = yes
 
-	trigger =
-		add_dip_power = 50
-
 	modifier = {
 		center_of_trade_upgrade_cost = -0.1
-		mercantilism_cost = -0.1 = 0.10
+		mercantilism_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 15
@@ -20,9 +17,6 @@ dwarven_blessing_send_traders = {
 # encourage_warriors_of_the_faith
 dwarven_blessing_send_smithies = {
 	is_blessing = yes
-
-	trigger =
-		add_mil_power = 50
 
 	modifier = {
 		build_cost = -0.10
@@ -38,9 +32,6 @@ dwarven_blessing_send_smithies = {
 dwarven_blessing_send_miners = {
 	is_blessing = yes
 
-	trigger =
-		add_dip_power = 50
-
 	modifier = {
 		development_cost_in_primary_culture = -0.1
 	}
@@ -52,9 +43,6 @@ dwarven_blessing_send_miners = {
 # encourage_warriors_of_the_faith
 dwarven_blessing_send_warriors = {
 	is_blessing = yes
-
-	trigger =
-		add_mil_power = 50
 
 	modifier = {
 		leader_cost = -0.10
@@ -68,9 +56,6 @@ dwarven_blessing_send_warriors = {
 # will_of_the_martyrs
 dwarven_blessing_send_advisors = {
 	is_blessing = yes
-
-	trigger =
-		add_adm_power = 50
 
 	modifier = {
 		advisor_cost = -0.25
