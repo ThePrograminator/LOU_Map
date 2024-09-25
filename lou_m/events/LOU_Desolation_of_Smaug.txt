@@ -14,6 +14,7 @@ country_event = {
 	picture = DESOLATION_OF_SMAUG_eventPicture
 	
 	major = yes
+	hidden = yes
 	fire_only_once = yes
 	
 	trigger = {
@@ -40,29 +41,33 @@ country_event = {
 		set_country_flag = desolation_of_smaug_owner
 		set_global_flag = desolation_of_smaug_start
 		hidden_effect = {
+			#country_event = {
+			#	id = LOU_desolation_of_smaug.5
+			#	days = 5
+			#}
 			country_event = {
-				id = LOU_desolation_of_smaug.5
+				id = LOU_desolation_of_smaug.2
 				days = 5
 			}
 		}
 		
 		#Erebor
-		287 = {
-			spawn_rebels = {
-				type = smaug_rebels
-				size = 4
-				leader = "Smaug The Terrible"
-			}
-			spawn_rebels = {
-				type = smaug_rebels
-				size = 2
-				leader = "Smaug The Terrible"
-			}
-			add_province_modifier = {
-				name = smaug_breached_walls
-				duration = 1825
-			}
-		} 
+		#287 = {
+		#	spawn_rebels = {
+		#		type = smaug_rebels
+		#		size = 4
+		#		leader = "Smaug The Terrible"
+		#	}
+		#	spawn_rebels = {
+		#		type = smaug_rebels
+		#		size = 2
+		#		leader = "Smaug The Terrible"
+		#	}
+		#	add_province_modifier = {
+		#		name = smaug_breached_walls
+		#		duration = 1825
+		#	}
+		#} 
 	}
 	
 	option = {		# Event fired
@@ -86,7 +91,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = desolation_of_smaug_owner
-		has_country_flag = desolation_of_smaug_enforced
+		#has_country_flag = desolation_of_smaug_enforced
 		NOT = {
 			has_global_flag = desolation_of_smaug_lost
 		}
@@ -95,77 +100,79 @@ country_event = {
 	immediate = {
 		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_desolation_of_smaug.2 - Option : immediate" }
 
-		set_global_flag = desolation_of_smaug_lost
-		disband_rebels = smaug_rebels
-		#if = {
-		#	limit = {
-		#		exists = Y16
-		#		Y16 = {
-		#			ai = yes
-		#		}
-		#	}
-		#	ROOT = {
-		#		switch_tag = Y16
-		#	}
-		#}
-		#else_if = {
-		#	limit = {
-		#		exists = Y23
-		#		Y23 = {
-		#			ai = yes
-		#		}
-		#	}
-		#	ROOT = {
-		#		switch_tag = Y23
-		#	}
-		#}
-		if = {
-			limit = {
-				tag = Y22
-			}
-			every_owned_province = {
+		hidden_effect = {
+			set_global_flag = desolation_of_smaug_lost
+			#disband_rebels = smaug_rebels
+			#if = {
+			#	limit = {
+			#		exists = Y16
+			#		Y16 = {
+			#			ai = yes
+			#		}
+			#	}
+			#	ROOT = {
+			#		switch_tag = Y16
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		exists = Y23
+			#		Y23 = {
+			#			ai = yes
+			#		}
+			#	}
+			#	ROOT = {
+			#		switch_tag = Y23
+			#	}
+			#}
+			if = {
 				limit = {
-					OR = {
-						superregion = rhovanion_superregion
-						superregion = forodwaith_superregion
-						owned_by = Y22
+					tag = Y22
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							superregion = rhovanion_superregion
+							superregion = forodwaith_superregion
+							owned_by = Y22
+						}
+					}
+					kill_units = {
+						who = owner
 					}
 				}
-				kill_units = {
-					who = owner
+			}
+			if = {
+				limit = {
+					tag = Y22
 				}
+				559 = {
+					add_core = Y22
+					cede_province = Y22
+					#controller = Y22
+					change_culture = root
+					change_religion	= root
+					add_base_tax = 2
+					add_base_production = 5
+					add_base_manpower = 2
+				}
+				3227 = {
+					add_core = Y22
+					cede_province = Y22
+					#controller = Y22
+					change_culture = root
+					change_religion	= root
+					change_trade_goods = marble
+					add_base_tax = 1
+					add_base_production = 4
+					add_base_manpower = 1
+				}
+				Y22 = {
+					set_capital = 3227
+					add_stability = -2
+				}
+				
 			}
-		}
-		if = {
-			limit = {
-				tag = Y22
-			}
-			559 = {
-				add_core = Y22
-				cede_province = Y22
-				#controller = Y22
-				change_culture = root
-				change_religion	= root
-				add_base_tax = 2
-				add_base_production = 5
-				add_base_manpower = 2
-			}
-			3227 = {
-				add_core = Y22
-				cede_province = Y22
-				#controller = Y22
-				change_culture = root
-				change_religion	= root
-				change_trade_goods = marble
-				add_base_tax = 1
-				add_base_production = 4
-				add_base_manpower = 1
-			}
-			Y22 = {
-				set_capital = 3227
-				add_stability = -2
-			}
-			
 		}
 		
 		hidden_effect = {
@@ -178,6 +185,19 @@ country_event = {
 	option = {
 		name = "LOU_desolation_of_smaug.2.a"
 		custom_tooltip = desolation_of_smaug_text_1
+	}
+
+	option = {
+		name = "LOU_desolation_of_smaug.2.b"
+		trigger = {
+			Y23 = {
+				exists = yes
+				ai = yes
+			}
+		}
+		custom_tooltip = desolation_of_smaug_text_2
+	
+		switch_tag = Y23
 	}
 }
 
