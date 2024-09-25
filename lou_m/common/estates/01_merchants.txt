@@ -5,6 +5,15 @@ estate_merchants = {
 	influence_from_dev_modifier = 1.0
     
     # ----- Names -----
+	custom_name = {
+		desc = estate_merchants_dwarf
+		trigger = {
+			OR = {
+                is_dwarf = yes
+                technology_group = lotr_half_dwarf
+            }
+		}
+	}
     custom_name = {
 		desc = estate_merchants_elven
 		trigger = {
@@ -45,7 +54,6 @@ estate_merchants = {
         NOT = { has_reform = lotr_ent_government_reform }
         NOT = { has_reform = lotr_great_eagle_government_reform }
         NOT = { has_reform = lotr_giant_government_reform }
-		NOT = { culture_group = culture_group_dwarves }
 	}
     
 	# ----- Country -----

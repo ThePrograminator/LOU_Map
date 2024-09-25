@@ -5,12 +5,9 @@
 dwarven_blessing_envoy_gold = {
 	is_blessing = yes
 
-    trigger = {
-        adm_power = 100
-    }
 	modifier = {
-		trade_efficiency = 0.10
-		trade_range_modifier = 0.10
+		caravan_power = 0.2
+		mercenary_discipline = 0.10
 	}
 	ai_will_do = {
 		factor = 15
@@ -22,8 +19,8 @@ dwarven_blessing_envoy_stone = {
 	is_blessing = yes
 
 	modifier = {
-		build_cost = -0.10
-		production_efficiency = 0.10
+		defensiveness = 0.10
+		garrison_size = 0.20		
 	}
 	
 	ai_will_do = {
@@ -36,7 +33,8 @@ dwarven_blessing_envoy_fire = {
 	is_blessing = yes
 
 	modifier = {
-		global_trade_goods_size_modifier = 0.20
+		trade_range_modifier = 0.10
+		embargo_efficiency = 0.20		
 	}
 	ai_will_do = {
 		factor = 20
@@ -48,8 +46,8 @@ dwarven_blessing_envoy_iron = {
 	is_blessing = yes
 
 	modifier = {
-		infantry_power = 0.1
-		discipline = 0.025
+		global_trade_power = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 25
@@ -61,8 +59,8 @@ dwarven_blessing_envoy_silver = {
 	is_blessing = yes
 
 	modifier = {
-		advisor_cost = -0.25
-		prestige = 1
+		mercenary_cost = -0.10
+		merc_maintenance_modifier = -0.10
 	}
 	ai_will_do = {
 		factor = 20

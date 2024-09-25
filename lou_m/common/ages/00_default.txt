@@ -346,7 +346,7 @@ the_war_of_dwarves_and_orcs_age = {
 	start = 2780
 	
 	can_start = {
-		always = yes
+        is_year = 2780
 	}
 	
 	religious_conflicts = yes
@@ -673,7 +673,7 @@ corruption_of_dol_guldur_age = {
 	start = 2850
 	
 	can_start = {
-		always = yes
+		is_year = 2850
 	}
 	
 	religious_conflicts = yes
@@ -849,8 +849,8 @@ corruption_of_dol_guldur_age = {
                     has_building = hold_3_dwarf_building
                 }
                 OR = {
-                    has_building = miners_guild_dwarf_building
-                    has_building = warriors_guild_dwarf_building
+                    has_building = architects_guild_dwarf_building
+                    has_building = highborn_guild_dwarf_building
                 }
             }
         }
@@ -1039,7 +1039,7 @@ war_of_the_ring_age = {
 	start = 2940
 	
 	can_start = {
-		always = yes
+		is_year = 2940
 	}
 	
 	papacy = 1.25

@@ -110,3 +110,22 @@ country_event = {
         name = "LOU_test.2.a"
     }  
 }
+
+province_event = {
+	id = LOU_test.4
+  title = dummy.4.t
+	desc = dummy.4.d
+  picture = COMET_SIGHTED_eventPicture
+    
+  is_triggered_only = yes
+
+  trigger = {
+
+  }
+
+  option = {
+    name = "LOU_test.4.a"
+    customui_province_status_assign_status_effect = { scope = ROOT wilderness = yes }
+  }  
+}
+

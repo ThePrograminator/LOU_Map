@@ -10,80 +10,23 @@
  #-------------------------------------
  # Missionary Stuff
  #-------------------------------------
- EXPENSEMIS: "Purification Regiments"
  PATRIARCH_DESCRIPTION: "Hope represents the level hope the inhabitants of your realm exercise. In provinces matching your realm hope, high hope will decrease revolt risk and increase the number of willing soldiers."
  CONFIRMDOF: "Claim the title Racial Leader!"
  CONFIRMDOFDESC: "Are you sure you want to claim the title Racial Leader?"
- MAPMODE_RELIGION_DESC: "Displays the race groups on the map. Stripes indicate provinces with a different race than their realm's race."
- MAPMODE_MISSIONARY_DESC: "Colors the provinces according to whether they can be converted into the realm's race."
- CANCEL_MISSIONARY: "Cancel Purification Regiment."
  CURRENT_PATRIARCH_AUTHORITY: "Current Hope"
- alert_can_convert_province_instant: "§YYou can convert provinces to your race!§W"
- alert_can_convert_province_delayed: "There are provinces in your country that can be converted to your realm's race by sending one of your enforcers."
- IS_NOT_IN_RELIGION_GROUP: "Is NOT in $RELIGION_GROUP$ race group"
- IS_IN_RELIGION_GROUP: "Is in $RELIGION_GROUP$ race group"
- HAVE_MISSIONARY_ON_LOCATION: "Purification Regiment Present"
- WRONG_RELIGION_GROUP: "They belong to a different race group and will not respond to such a demand."
- RELIGION_CHANGE: "§Y$NEW$§W becomes the new race of $WHO$.\n"
- MISSIONARY_IRO: "You have §Y$CURRENT$§W available Purification Regiment(s) out of §Y$TOTAL$§W total"
- ENVOY_MISSIONARY: "Purification Regiment"
  CV_SEND_MISSIONARY: "Send troops to $PROVINCE$"
- MISSIONARY_PROGRESS: "Purification progress: $VAL|Y1%$"
  religious_unity: "Racial Unity"
  inverse_religious_unity: "Racial Unity"
  DEFENDER_DESC: "The Racial Leader gets Casus Belli to enforce religious unity. This will cost §Y$VALUE$§W¤. After §Y$MONTHS$§W months, countries with more prestige than the current Defender can claim the title. \nYou'll also lose the title if your ruler dies, or if you decline a call to war from a country of your faith being attacked by infidels."
- SORT_RELIGION: "Sort by race"
- NO_CONVERT_POSSIBLE: "§Y$RELIGION$§! is not allowed to convert to another race."
- NO_POTENTIAL_RELIGION: "There are no potential races to convert to right now."
- RELIGIUS_UNITY_LABEL_D: "It's always good to unite all your provinces under the same race. Racial unity under 100% increases the local unrest."
  RELIG_PERFECT: "We have achieved racial unity in $COUNTRY$ and live in harmony!"
  RELIG_UNITY_EFFECT: "Having this level of racial unity has the following effects:"
  HAVE_LESS_RELIGIUS_UNITY_THAN: "Less racial unity than "
  HAVE_MORE_RELIGIUS_UNITY_THAN: "Have racial unity of at least "
- FULL_UNITY: "All of your provinces already have the realm's race. Provinces that no longer have the realm's race will be displayed here."
- SENDMISSIONARY: "Sending a Purification Regiment will attempt to convert the province to your realm's race. This will have §Y$CHANCE$%§W chance of success per year. However, the population might not be overjoyed..."
- CLICK_TO_SEND_MISSIONARY: "Click to send a Purification Regiment"
- HAVE_MISSIONARY_IN_LOCATION: "§Y$NATION$§! have a Purification Regiment in this location."
- HERETIC_RELIGION_NOT_AVAILABLE: "No other race available."
- HERETIC_RELIGION_AVAILABLE: "Another race is available."
- MISSIONARIESMAINTENANCE: "Purifier Maintenance"
- YEARLY_MISSIONARIES: "Purification Regiments"
- AGGRESSIVE_EXPANSION_PENALTY_SAMERELIGION: "Target has the same race"
- AGGRESSIVE_EXPANSION_PENALTY_INFIDEL: "Target has a different race group than conqueror"
- AGGRESSIVE_EXPANSION_PENALTY_OWNERSAMERELIGION: "Target has the same race"
- CULTURE_SAME_RELIGION_OVERSEAS: "Same race overseas: $VAL|%-1$"
- MISSIONARY_SLIDER: "Purification slider: $VAL|1-%$"
- MISSIONARY_MONTHLY_PROGRESS: "The purification will have a monthly progress of $PROGRESS|Y1%$ due to the following:"
- GLOBAL_MISSIONARY_STRENGTH: "Purification Strength"
- LOCAL_MISSIONARY_STRENGTH: "Local Purification Strength"
- MODIFIER_GLOBAL_HERETIC_MISSIONARY_STRENGTH: "Purification Strength vs Aligned"
- MISSIONARY_WORKING: "A Purification Regiment is already working in $PROVINCE$."
- NOT_ENOUGH_MISSIONARIES: "Not enough purification regiments."
- CANT_CONVERT_NOW: "Can't send a Purification Regiment: "
- RELIGION_VAR: "Race: $RELIGION|Y$"
- AGGRESSIVE_EXPANSION_PENALTY_SAMERELIGION_GROUP: "Target has same race group"
- GGRESSIVE_EXPANSION_PENALTY_OTHERRELIGION_GROUP: "Target has a different race group"
- MIS_CONST_OTHER_TIP: "A Purification Regiment is tirelessly working to convert this province to §Y$RELIGION$§!"
- DOMINANT_RELIGION_IS_NOT: "Dominant race in $COUNTRY$ is NOT $RELIGION$"
- DOMINANT_RELIGION_IS: "Dominant race in $COUNTRY$ is $RELIGION$"
  LEDGER_DEFENDER_OF_FAITH: "Racial Leader"
- HEADER_RELIGION: "Race"
- MAPMODE_RELIGION: "Race Mapmode"
- CONVREL_SAME: "You are already that race."
- CONVREL_WAR: "You can not convert race when you are at war."
- CONVREL_STAB: "You can only convert race if we have a positive stability in our country."
- CONVREL_NONLEGAL: "It is not possible to convert to §Y$NEW$§W from §Y$OLD$§W."
- CONVREL_DEF: "You can not change race when you are the defender of a faith."
- PROVIRO_REL: "Race in Province"
- PROVIRO_SREL: "Race of Realm"
- OURRELIGION: "People whom are our realm's majority race."
- different_religion: "Different Race"
  same_religion_group: "Same Racial Group"
- PROV_RELIGION: "The people of §Y$PROVINCE$§! are of the §Y$PROVRELIGION$§! race and considered $TYPE$ by the §Y$STATERELIGION$§!."
  PROV_RELIGION_TYPE_HERETICS: "§Raligned§!"
  PROV_RELIGION_TYPE_HEATHENS: "§Ropposed§!"
  PROV_RELIGION_TYPE_BELIEVERS: "§Gpure§!"
- RELIGION_DESC: "Depending on your realm's tolerance to different races a province may have both negative and positive effects in various areas."
  
  HAD: "Haradrim"
  HAD_ADJ: "Haradrim"
@@ -100,7 +43,7 @@
  crusades_after_age_limit:0 "Invasions in the Forth Age"
  
  PAPACY_CONTROLLER: "§YWarlord§!\n$NAME$ is currently in control of the Haradrim."
- CONVREL_PAPACY: "The Warlord of the Haradrim cannot convert to another race."
+ CONVREL_PAPACY: "The Warlord of the Haradrim cannot convert to another religion."
  IS_PAPAL_CONTROLLER: "The ruler of $NAME$ is Warlord of the Haradrim."
  ARE_NOT_PAPAL_CONTROLLER: "Are NOT the Warlord of the Haradrim"
  ARE_PAPAL_CONTROLLER: "Are the Warlord of the Haradrim"
@@ -783,6 +726,8 @@
  PICK_BLESSING: "Create Envoy"
  PATRIARCHAL_BLESSINGS: "Favored Envoys"
  
+
+ #Northern Holy Sites
  # Erebor
  HOLY_SITE_287_DESC: "The Dwarves of Durin's Folk discovered the mineral wealth of the Lonely Mountain sometime after the awakening of the first Durin. A mining colony was soon set up and a road was laid out to connect the Dwarves to their great cities from the Iron Hills and as far west as their realms and possessions in the Blue Mountains."
  
@@ -794,9 +739,41 @@
  
  # Moria
  HOLY_SITE_740_DESC: "Moria was a Dwarven underground city beneath the Misty Mountains. For thousands of years a thriving Dwarvish community had delved deep below the mountains seeking to build their lives there, and to find sources of treasure, gold and Mithril. The city was abandoned during the Third Age after excavations accidentally awoke a Balrog."
+
+ # Belegost
+ HOLY_SITE_1051_DESC: " Belegost was one of the seven great Dwarven kingdoms during the First Age in Middle-earth. It lay deep beneath Mount Dolmed in the Blue Mountains, alongside its sister realm, Nogrod. The Dwarves of Belegost were renowned for their craftsmanship, excelling in smithing and stone-carving.."
+
+ #Eastern Holy Sites
+ # Khelek-Zaram
+ HOLY_SITE_1741_DESC: ""
+
+ # Tumunamahal
+ HOLY_SITE_2013_DESC: ""
  
- # Khazad-Madur
- HOLY_SITE_2004_DESC: "One of the sacred halls built by the Dwarves in the Utter East."
+ # Baraztum
+ HOLY_SITE_2016_DESC: ""
+ 
+ # Naraggund
+ HOLY_SITE_3523_DESC: ""
+ 
+ # Gabilzahar
+ HOLY_SITE_2859_DESC: ""
+
+ #Southern Holy Sites
+ # Namagaluz
+ HOLY_SITE_630_DESC: ""
+
+ # Gamil-Nala
+ HOLY_SITE_837_DESC: ""
+ 
+ # Nalashatur
+ HOLY_SITE_505_DESC: ""
+ 
+ # Naragbaruz
+ HOLY_SITE_1206_DESC: ""
+ 
+ # Nargubraz
+ HOLY_SITE_1204_DESC: ""
  
  #--------------------------------------------------
  # Patriarch Authority (Dunedain)
@@ -829,7 +806,7 @@
  USES_NOT_ORTHODOX_ICONS: "$COUNTRY|Y$ does NOT use Icons."
  
  STAPAT_LOW_DEV: "Temples can only be constructed in states with at least $NEED|Y$ development and there is only $CUR|Y$ in $NAME$."
- STAPAT_DO_IT: "You can construct Temples in states with 30 development if all provinces are the nation's race and of an Accepted Culture.\n\nConstructing a Temple in $NAME|Y$ will give us $VAL$ Hope, and the following permanent effect:\n$EFFECT$"
+ STAPAT_DO_IT: "You can construct Temples in states with 30 development if all provinces are the nation's religion and of an Accepted Culture.\n\nConstructing a Temple in $NAME|Y$ will give us $VAL$ Hope, and the following permanent effect:\n$EFFECT$"
  
  CONFIRCONSECRATEPATRIARCh: "Confirm Consecrate Temple"
  CONFIRCONSECRATEPATRIARCH_TEXT: "$EFFECT$\nAre you sure?"
@@ -889,7 +866,7 @@
  
  converted_to_islam: "Embraced Elven Legacy"
  
- PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YValinor's Call§!) and 100 (§YFirstborn Pride§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other races\n- Purifying provinces"
+ PIETY_DESCRIPTION:1 "Legacy represents how your country will be remembered, however going to far on either end will have permanent consequences. \n\nIt is measured on a scale between -100 (§YValinor's Call§!) and 100 (§YFirstborn Pride§!).\n\nValinor's Call is gained via:\n- Declaring war against other Elves\n\nFirstborn Pride is strenghtend via:\n- Declaring war against other religions\n- Converting provinces"
  PIETY_DESCRIPTION_ESTATES:1 "\n"
  
  PIETY_TOO_LOW_FOR_LEGALISM:1 "If we were to become too pride full we could stop this by '§YReducing Pride§!' we need to be at least $NEED|Y$ towards Firstborn Pride before we should consider this. This would impact our nation by $CORRUPTION$."
@@ -977,10 +954,8 @@
  MAY_ATTACK_GOVERNMENT_ENEMIES: "Permanent Casus Belli against weak neighbours."
  MAY_ATTACK_PRIMITIVES: "Permanent Casus Belli against countries of the same culture group."
  MAY_ATTACK_OVERSEAS: "Can Fabricate Claim Overseas in Trade Company Regions."
- MAY_ATTACK_RELIGIOUS_ENEMIES: "Permanent Casus Belli against neighboring countries of differing race."
  
  RMTITLE: "Local Marriage"
- RMDESCR: "A 'Royal Marriage' represents a marital union between the royal families of two countries that share the same race. It will improve relations greatly. If you declare war against a nation with which you have a Royal Marriage, you will suffer greatly."
  
  #------------------------------------------------------
  # Meritocracy (Clout)
@@ -1078,12 +1053,12 @@
  CONFIRM_NEW_CULT_DESC:0 "By choosing to embrace this Teaching we are accepting its traditions and agree to follow the demands this places upon our ruler."
  RV_NO_CULT:0 "No Teaching Selected"
  RV_NO_CULT_TITLE:0 "No Current Teaching"
- RV_NO_CULT_DESC:0 "Your race allows you to select which teaching to follow. Each teaching will come with its own effects and last until your monarch changes."
- RV_NO_CULT_DESC:0 "Your race allows you to select which teaching to follow. Each teaching will come with its own effects and last until your monarch changes."
+ RV_NO_CULT_DESC:0 "Your religion allows you to select which teaching to follow. Each teaching will come with its own effects and last until your monarch changes."
+ RV_NO_CULT_DESC:0 "Your religion allows you to select which teaching to follow. Each teaching will come with its own effects and last until your monarch changes."
  RV_PICK_CULT:0 "Select Teaching"
  CHANGE_CULT_EFFECT:0 "Change Teaching to $CULTNAME|Y$"
  UNLOCK_CULT_EFFECT:0 "Unlock Teaching $CULTNAME|Y$"
- CULT_HELP_DESC:0 "(Ioriags or Ulgath) - New Teachings can be gained by bordering other nations based on their race and culture.\n\n(Eriadorian) - New Teachings can be gained by accepting Eriadorian cultures."
+ CULT_HELP_DESC:0 "(Ioriags or Ulgath) - New Teachings can be gained by bordering other nations based on their religion and culture.\n\n(Eriadorian) - New Teachings can be gained by accepting Eriadorian cultures."
 
  #------------------------------------------------------
  # Native Buildings
@@ -1560,3 +1535,105 @@
 
  immortal_personality:0 "Long Lifespan / Immortal"
  desc_immortal_personality:0 "§YLong Lifespan§! - Dúnedain and Dwarves have prolonged lifespan, Dúnedain has a life expectancy of 120 while Dwarves is 200.\n\n§YImmortal§! - This ruler if of a race that will not age and potentially will live forever. While immune to disease and old age, they may still die from physical violence.\n(Immortal Races include; Elves, Creatures of Melkor, Maiar, Istari, Ents, Huorns, Great Eagles and Giants)"
+
+ #-------------------------------------
+ # Special Units
+ #-------------------------------------
+ HUSSARS_NAME:0 "$HOME$'s $NUM$$ORDER$ Mûmakil"
+ MODIFIER_HAS_HUSSARS:0 "Allows Mûmakil"
+ HUSSARS_CANT_HAVE:0 "Your nation cannot raise Mûmakil."
+ HUSSARS_DESC:1 "The Mûmakil are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YMûmakil§! is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 100 development."
+ REGCAT_hussars:0 "Mûmakil"
+ hussars_regiment:0 "Mûmakil"
+ ADD_HUSSARS_SUB_UNIT_EFFECT:0 "Get '§GMûmakil§!' $UNIT$ in $WHERE|Y$."
+ HUSSARS_REGIMENT:0 "Mûmakil Regiment\n$EFFECT$"
+ HAVE_LESS_HUSSARS_THAN:0 "Have less Mûmakil than $VALUE|Y$.\n"
+ HAVE_AT_LEAST_HUSSARS_THAN:0 "Have at least $VALUE|Y$ Mûmakil.\n"
+ MODIFIER_AMOUNT_OF_HUSSARS:0 "Possible Mûmakil"
+ MODIFIER_LOCAL_AMOUNT_OF_HUSSARS:0 "Possible Mûmakil from development"
+ MODIFIER_CAN_RECRUIT_HUSSARS:0 "May recruit §YMûmakil§!"
+ HUSSARS_REGIMENT_TYPE:0 "Mûmakil"
+ STATE_HUSSARS_CREATED_REGIMENTS:0 "This will cost $MILAMOUNT|Y$ £mil£, and $NUM|Y$ Mûmakil will spawn in $PROV|Y$.\nDo you want to create a Mûmakil regiment?"
+ HUSSARS_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Mûmakil here."
+
+ RAJPUT_REGIMENT:0 "Ithilien Rangers Regiment\n$EFFECT$"
+ RECRUIT_RAJPUT_REGIMENTS:0 "Recruit Ithilien Rangers Regiments"
+ enables_rajput_regiments:0 "Ithilien Rangers Regiments"
+ rajput_regiment:0 "Ithilien Rangers Regiment"
+ RAJPUT_REGIMENT_TYPE:0 "Ithilien Rangers"
+ 
+ rajput_regiments.tooltip:0 "Up to §Y10§! §YIthilien Rangers Regiments§! will be recruited dependent on the number of provinces under §YRajputs§! control and current §YIthilien Rangers§! influence.\nNumber of §YIthilien Rangers Regiments§! cannot exceed the number of provinces controlled by the §YIthilien Rangers§! estate."
+ EST_VAL_RECRUITED_RAJPUTS:0 "Recruited Ithilien Rangers Regiments: §Y$VAL$%§!"
+ RAJPUT_DESC:2 "Ithilien Rangers were selected from the descendants of the people who had dwelt in Ithilien. They have been trained with a bow for greater fire damage, they have stronger morale than average troops, and because of their training better able to survive when low on supplies."
+ estate_rajput_rajput_regiments:0 "Establish the Ithilien Rangers Regiments"
+ RAJPUT_FORCELIMIT:1 "We can recruit up to $VAL|%Y$ of our force-limit of $FL$ as §GIthilien Rangers§! due to:\n"
+ MODIFIER_ALLOWED_RAJPUT_FRACTION:0 "Ithilien Rangers Force Limit Fraction"
+ ADD_RAJPUT_SUB_UNIT_EFFECT:0 "Get '§GIthilien Rangers§!' $UNIT$ in $WHERE|Y$."
+ REGCAT_rajput:0 "Ithilien Rangers"
+ RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Ithilien Rangers"
+ MODIFIER_ALLOWED_COSSACK_FRACTION:0 "Ithilien Rangers Force Limit Fraction"
+ MODIFIER_CAN_RECRUIT_RAJPUTS:0 "Can recruit Ithilien Rangers"
+
+ MODIFIER_HAS_SAMURAI:0 "Country Allows Trolls"
+ SAMURAI_NAME:0 "$HOME$'s $NUM$$ORDER$ Trolls Pack"
+ MODIFIER_ALLOWED_SAMURAI_FRACTION:0 "Trolls Force Limit"
+ MODIFIER_LOCAL_HAS_SAMURAI:0 "Province Allows Trolls Infantry"
+ SAMURAI_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GTrolls§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ SAMURAI_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Trolls here."
+ ADD_SAMURAI_SUB_UNIT_EFFECT:0 "Get '§GTrolls§!' $UNIT$ in $WHERE|Y$."
+ SAMURAI_DESC:0 "Trolls were a very large and monstrous, and for the most part unintelligent, humanoid race inhabiting Middle-earth.\nTrolls can be recruited in owned provinces that either §YOlog-hai§!, §YCave Trolls§!, §YIce Trolls§!, and the number of Trolls that can be raised is dependent on the development of those provinces."
+ REGCAT_samurai:0 "Trolls"
+ SAMURAI_REGIMENT:0 "Trolls Regiment\n$EFFECT$"
+ HAVE_LESS_SAMURAI_THAN:0 "Have less Trolls than §Y$VALUE$§!.\n"
+ samurai_modifier:0 "Trolls Hired"
+ HAVE_AT_LEAST_SAMURAI_THAN:0 "Have at least §Y$VALUE$§! Trolls.\n"
+ MODIFIER_AMOUNT_OF_SAMURAI:0 "Trolls Force Limit"
+ ONLY_SAMURAI_MODIFIER:0 "§YAffects only Trolls Regiments§!"
+
+ MODIFIER_HAS_TERCIO:0 "Country Allows Dragonslayers Infantry"
+ TERCIO_NAME:0 "$HOME$'s $NUM$$ORDER$ Dragonslayers Regiment"
+ MODIFIER_ALLOWED_TERCIO_FRACTION:1 "Dragonslayers Force Limit Fraction"
+ MODIFIER_LOCAL_HAS_TERCIO:1 "Province Allows Dragonslayers Infantry"
+ TERCIO_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GDragonslayers§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ TERCIO_FORCELIMIT_ADDITIONAL:0 "Plus an additional $AMOUNT|Y$:"
+ TERCIO_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Dragonslayers Infantry here."
+ ADD_TERCIO_SUB_UNIT_EFFECT:1 "Get '§GDragonslayers§!' $UNIT$ in $WHERE|Y$."
+ TERCIO_DESC:0 "In every great hall across the entire dwarven race exists a brotherhood of stout-hearted dwarves like no other. They are the Dragonslayers, a legendary military unit forged in the fires of vengeance and bound by an unbreakable oath; to rid the world of the ancient scourge that once laid waste to their kin—the mighty dragons.\nDragon slayers use a combination of special tactics for dealing with dragons as well specialized armor for great protection.\nDragonslayers can be recruited in owned provinces that belong to the §YDwarven§! cultural group, and the number of Dragonslayers that can be raised is dependent on the development of those provinces."
+ REGCAT_tercio:0 "Dragonslayers"
+ TERCIO_REGIMENT:0 "Dragonslayers Regiment\n$EFFECT$"
+ HAVE_LESS_TERCIO_THAN:1 "Have less Dragonslayers than $VALUE|Y$.\n"
+ HAVE_AT_LEAST_TERCIO_THAN:1 "Have at least $VALUE|Y$ Dragonslayers.\n"
+ MODIFIER_AMOUNT_OF_TERCIO:0 "Dragonslayers Force Limit"
+ tercio_modifier:0 "Dragonslayers Hired"
+ ONLY_TERCIO_MODIFIER:0 "§YAffects only Dragonslayers Regiments§!"
+
+ MUSKETEER_NAME:0 "$HOME$'s $NUM$$ORDER$ Beornings Regiment"
+ MODIFIER_ALLOWED_MUSKETEER_FRACTION:0 "Beornings Force Limit"
+ MODIFIER_LOCAL_HAS_MUSKETEER:0 "Province Allows Beornings Infantry"
+ MUSKETEER_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GBeornings§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ MUSKETEER_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Beornings Infantry here."
+ ADD_MUSKETEER_SUB_UNIT_EFFECT:0 "Get '§GBeornings§!' $UNIT$ in $WHERE|Y$."
+ MUSKETEER_DESC:0 "Beornings also known as Skin-changers were a race of large Men. The origins of Beornings are not known, save that they dwelt in the Vales of Anduin between Mirkwood and the Great River in the late Third Age. Unlike other Men, they had the ability to change into bears. They were named after Beorn, their patriarch."
+ REGCAT_musketeer:0 "Beornings"
+ MUSKETEER_REGIMENT:0 "Beornings Regiment\n$EFFECT$"
+ HAVE_LESS_MUSKETEER_THAN:0 "Have less Beornings than §Y$VALUE$§!.\n"
+ HAVE_AT_LEAST_MUSKETEER_THAN:0 "Have at least §Y$VALUE$§! Beornings.\n"
+ MODIFIER_AMOUNT_OF_MUSKETEER:0 "Beornings Force Limit"
+ musketeers_modifier:0 "Beornings Hired"
+
+ CAROLEAN_NAME:0 "$HOME$'s $NUM$$ORDER$ Ents"
+ MODIFIER_HAS_CAROLEAN:0 "Allows Ent Infantry"
+ MODIFIER_LOCAL_HAS_CAROLEAN:0 "Province Allows Ent Infantry"
+ CAROLEAN_CANT_HAVE:0 "Your nation cannot raise Ent Infantry."
+ CAROLEAN_FORCELIMIT:0 "We can recruit up to $VAL|%Y$ of our total Ent Culture Provinces' development of $DEV$ as §GEnt Infantry§! due to:"
+ CAROLEAN_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Ent Infantry here."
+ CAROLEAN_DESC:2 "Ents, called Onodrim (Tree-host) by the elves, are a very old race that appeared in Middle-earth at the same time that the elves did. Ents were envisioned as Shepherds of the Huorns, to protect the forests from orcs and other perils.\nEnt regiments can only be recruited in owned provinces of §YEnts§! or §YHuorns§! culture, and the amount of possible units depends on the development of these provinces."
+ REGCAT_carolean:0 "Ents"
+ ADD_CAROLEAN_SUB_UNIT_EFFECT:0 "Get '§GEnt Infantry§!' $UNIT$ in $WHERE|Y$."
+ CAROLEAN_REGIMENT:0 "Ent Regiment\n$EFFECT$"
+ HAVE_LESS_CAROLEAN_THAN:0 "Have less Ent Regiments than $VALUE|Y$.\n"
+ HAVE_AT_LEAST_CAROLEAN_THAN:0 "Have at least $VALUE|Y$ Ent Regiments.\n"
+ MODIFIER_AMOUNT_OF_CAROLEAN:0 "Possible Ent Infantry"
+ MODIFIER_LOCAL_AMOUNT_OF_CAROLEAN:0 "Possible Ent Infantry"
+ ONLY_CAROLEAN_MODIFIER:0 "§YAffects only Ent Regiments§!"
+ CAROLEAN_REGIMENT_TYPE:0 "Ent"

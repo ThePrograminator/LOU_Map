@@ -22,29 +22,37 @@ dwarven_hold_level_3 = {
 	local_manpower_modifier = 0.35
 }
 
-dwarven_hold_estate_scholars = {
-	dwarven_scholars_loyalty_modifier = 0.05
-	dwarven_scholars_influence_modifier = 0.05
+dwarven_hold_estate_chroniclers = {
+	#dwarven_scholars_loyalty_modifier = 0.05
+	#dwarven_scholars_influence_modifier = 0.05
+	stewards_loyalty_modifier = 0.05
+	stewards_influence_modifier = 0.05
 }
 
-dwarven_hold_estate_masons = {
-	dwarven_masons_loyalty_modifier = 0.05
-	dwarven_masons_influence_modifier = 0.05
+dwarven_hold_estate_architects = {
+	#dwarven_masons_loyalty_modifier = 0.05
+	#dwarven_masons_influence_modifier = 0.05
+	nobles_loyalty_modifier = 0.05
+	nobles_influence_modifier = 0.05
 }
 
-dwarven_hold_estate_warriors = {
-	dwarven_warriors_loyalty_modifier = 0.05
-	dwarven_warriors_influence_modifier = 0.05
+dwarven_hold_estate_highborn = {
+	#dwarven_warriors_loyalty_modifier = 0.05
+	#dwarven_warriors_influence_modifier = 0.05
+	merchants_loyalty_modifier = 0.05
+	merchants_influence_modifier = 0.05
 }
 
 dwarven_hold_estate_blacksmiths = {
-	dwarven_blacksmiths_loyalty_modifier = 0.05
-	dwarven_blacksmiths_influence_modifier = 0.05
+	#dwarven_blacksmiths_loyalty_modifier = 0.05
+	#dwarven_blacksmiths_influence_modifier = 0.05
+	commoners_loyalty_modifier = 0.05
+	commoners_influence_modifier = 0.05
 }
 
 dwarven_hold_estate_artisans = {
-	dwarven_artisans_loyalty_modifier = 0.05
-	dwarven_artisans_influence_modifier = 0.05
+	#dwarven_artisans_loyalty_modifier = 0.05
+	#dwarven_artisans_influence_modifier = 0.05
 }
 
 dwarven_hold_estate_special_erebor = {
@@ -53,14 +61,34 @@ dwarven_hold_estate_special_erebor = {
 }
 
 dwarven_hold_estate_special_moria = {
-	dwarven_artisans_loyalty_modifier = 0.15
-	dwarven_blacksmiths_loyalty_modifier = 0.15
-	dwarven_artisans_influence_modifier = 0.05
+	#dwarven_artisans_loyalty_modifier = 0.15
+	#dwarven_blacksmiths_loyalty_modifier = 0.15
+	#dwarven_artisans_influence_modifier = 0.05
+	nobles_loyalty_modifier = 0.15
+	commoners_loyalty_modifier = 0.15
+	stewards_loyalty_modifier = 0.05
 }
 
 dwarven_hold_estate_special_belegost = {
-	dwarven_blacksmiths_loyalty_modifier = 0.10
-	dwarven_masons_loyalty_modifier = 0.10
-	dwarven_blacksmiths_influence_modifier = 0.10
-	dwarven_masons_influence_modifier = 0.10
+	commoners_loyalty_modifier = 0.10
+	commoners_influence_modifier = 0.10
+	merchants_loyalty_modifier = 0.10
+	merchants_influence_modifier = 0.10
+	#dwarven_blacksmiths_loyalty_modifier = 0.10
+	#dwarven_masons_loyalty_modifier = 0.10
+	#dwarven_blacksmiths_influence_modifier = 0.10
+	#dwarven_masons_influence_modifier = 0.10
+}
+
+dwarven_hold_estate_special_gundabad = {
+	nobles_loyalty_modifier = 0.10
+	nobles_influence_modifier = 0.10
+	stewards_loyalty_modifier = 0.10
+	legitimacy = 0.05
+}
+
+dwarven_hold_estate_special_khazad_zahar = {
+	nobles_loyalty_modifier = 0.15
+	nobles_influence_modifier = 0.15
+	land_maintenance_modifier = -0.05
 }

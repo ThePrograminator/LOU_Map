@@ -259,6 +259,34 @@ defined_text = {
 	name = GetCustomUIDwarvenHoldEstateModifier1
 
 	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_gundabad
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_khazad_zahar
+		trigger = {
+			province_id = 743
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
 		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_belegost
 		trigger = {
 			province_id = 1051
@@ -442,6 +470,34 @@ defined_text = {
 	name = GetCustomUIDwarvenHoldEstateModifier1tt
 
 	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_gundabad_tt
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_khazad_zahar_tt
+		trigger = {
+			province_id = 743
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
 		localisation_key = string_dwarven_hold_estate_modifier_1_6_special_belegost_tt
 		trigger = {
 			province_id = 1051
@@ -618,6 +674,34 @@ defined_text = {
 defined_text = {
 	name = GetCustomUIDwarvenHoldEstateModifier2
 
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_gundabad
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_khazad_zahar
+		trigger = {
+			province_id = 743
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
 	text = { 
 		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_belegost
 		trigger = {
@@ -802,6 +886,34 @@ defined_text = {
 	name = GetCustomUIDwarvenHoldEstateModifier2tt
 
 	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_gundabad_tt
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_khazad_zahar_tt
+		trigger = {
+			province_id = 743
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
 		localisation_key = string_dwarven_hold_estate_modifier_2_6_special_belegost_tt
 		trigger = {
 			province_id = 1051
@@ -979,6 +1091,34 @@ defined_text = {
 	name = GetCustomUIDwarvenHoldEstateModifier3
 
 	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_gundabad
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_khazad_zahar
+		trigger = {
+			province_id = 743
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
 		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_belegost
 		trigger = {
 			province_id = 1051
@@ -1017,6 +1157,34 @@ defined_text = {
 defined_text = {
 	name = GetCustomUIDwarvenHoldEstateModifier3tt
 
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_gundabad_tt
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_khazad_zahar_tt
+		trigger = {
+			province_id = 743
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
 	text = { 
 		localisation_key = string_dwarven_hold_estate_modifier_3_6_special_belegost_tt
 		trigger = {
@@ -1064,6 +1232,20 @@ defined_text = {
 			}
 		}
 	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_4_6_special_gundabad
+		trigger = {
+			province_id = 628
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
 	text = { #fallback
 		localisation_key = string_dwarven_hold_estate_modifier_4_0
 		trigger = {
@@ -1079,6 +1261,20 @@ defined_text = {
 		localisation_key = string_dwarven_hold_estate_modifier_4_6_special_belegost_tt
 		trigger = {
 			province_id = 1051
+			check_variable = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+			is_variable_equal = {
+				which = customui_assigned_estate_dwarven_hold
+				value = 6
+			}
+		}
+	}
+	text = { 
+		localisation_key = string_dwarven_hold_estate_modifier_4_6_special_gundabad_tt
+		trigger = {
+			province_id = 628
 			check_variable = {
 				which = customui_hold_level_dwarven_hold 
 				value = 2
@@ -1282,6 +1478,46 @@ defined_text = {
 	name = GetCustomUIDwarvenHoldDropdownModifierSpecialText
 
 	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3_special_gundabad
+		trigger = {
+			province_id = 628
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_2_special_gundabad
+		trigger = {
+			province_id = 628
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3_special_khazad_zahar
+		trigger = {
+			province_id = 743
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 3
+			}
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_2_special_khazad_zahar
+		trigger = {
+			province_id = 743
+			is_variable_equal = {
+				which = customui_hold_level_dwarven_hold 
+				value = 2
+			}
+		}
+	}
+	text = {
 		localisation_key = string_dwarven_hold_dropdown_modifier_text_level_3_special_belegost
 		trigger = {
 			province_id = 1051
@@ -1362,6 +1598,18 @@ defined_text = {
 		localisation_key = string_dwarven_hold_dropdown_special_belegost_text
 		trigger = {
 			province_id = 1051 #Belegost 
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_special_khazad_zahar_text
+		trigger = {
+			province_id = 743 #Khazad Zahar 
+		}
+	}
+	text = {
+		localisation_key = string_dwarven_hold_dropdown_special_gundabad_text
+		trigger = {
+			province_id = 628 #Gundabad
 		}
 	}
 }

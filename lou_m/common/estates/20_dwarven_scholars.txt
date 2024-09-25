@@ -4,6 +4,7 @@ estate_dwarven_scholars = {
 	influence_from_dev_modifier = 1.0
 	# If true, country will get estate
 	trigger = {
+		always = no
 		OR = {
 			culture = culture_longbeard
 			culture = culture_firebeard
@@ -74,6 +75,7 @@ estate_dwarven_scholars = {
                 #Estate privileges can be found in the {{path|common/estates_privileges/00_privileges.txt}}
 	}
 	agendas = {
+			estate_chroniclers_develop_x
                 #'agendas' includes the names of the estate privileges this estate uses.
                 #Estate agendas can be found in the {{path|common/estates_agendas/*.txt}}
 	}

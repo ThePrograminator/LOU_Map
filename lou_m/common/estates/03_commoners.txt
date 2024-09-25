@@ -5,6 +5,15 @@ estate_commoners = {
 	influence_from_dev_modifier = 0.5
     
     # ----- Names -----
+	custom_name = {
+		desc = estate_commoners_dwarf
+		trigger = {
+			OR = {
+                is_dwarf = yes
+                technology_group = lotr_half_dwarf
+            }
+		}
+	}
     custom_name = {
 		desc = estate_commoners_elven
 		trigger = {
@@ -48,7 +57,6 @@ estate_commoners = {
         NOT = { has_reform = lotr_ent_government_reform }
         NOT = { has_reform = lotr_great_eagle_government_reform }
         NOT = { has_reform = lotr_giant_government_reform }
-		NOT = { culture_group = culture_group_dwarves }
 	}
 
 	# ----- Country -----

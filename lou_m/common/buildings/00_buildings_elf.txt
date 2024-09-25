@@ -100,8 +100,8 @@ town_1_elf_building = {
 	make_obsolete = noble_residence_elf_building
 	
 	build_trigger = {
-		development = 5
 		is_capital = no
+		development = 5
 		owner = {
 			is_elf = yes
 		}
@@ -111,8 +111,8 @@ town_1_elf_building = {
 	}
 
 	keep_trigger = {
-		development = 5
 		is_capital = no
+		development = 5
 		owner = {
 			is_elf = yes
 		}
@@ -166,8 +166,8 @@ town_2_elf_building = {
 	make_obsolete = town_1_elf_building
 	
 	build_trigger = {
-		development = 10
 		is_capital = no
+		development = 10
 		owner = {
 			is_elf = yes
 		}
@@ -177,8 +177,8 @@ town_2_elf_building = {
 	}
 	
 	keep_trigger = {
-		development = 10
 		is_capital = no
+		development = 10
 		owner = {
 			is_elf = yes
 		}
@@ -232,8 +232,8 @@ town_3_elf_building = {
 	make_obsolete = town_2_elf_building
 	
 	build_trigger = {
-		development = 15
 		is_capital = no
+		development = 15
 		owner = {
 			is_elf = yes
 		}
@@ -302,8 +302,8 @@ fort_1_elf_building = {
 	make_obsolete = noble_residence_elf_building
 	
 	build_trigger = {
-		development = 5
 		is_capital = no
+		development = 5
 		owner = {
 			is_elf = yes
 		}
@@ -369,8 +369,8 @@ fort_2_elf_building = {
 	make_obsolete = fort_1_elf_building
 	
 	build_trigger = {
-		development = 10
 		is_capital = no
+		development = 10
 		owner = {
 			is_elf = yes
 		}
@@ -436,8 +436,8 @@ fort_3_elf_building = {
 	make_obsolete = fort_2_elf_building
 	
 	build_trigger = {
-		development = 15
 		is_capital = no
+		development = 15
 		owner = {
 			is_elf = yes
 		}
@@ -507,8 +507,8 @@ capital_1_elf_building = {
 	make_obsolete = noble_residence_elf_building
 	
 	build_trigger = {
-		development = 5
 		is_capital = yes
+		development = 5
 		owner = {
 			is_elf = yes
 		}
@@ -584,8 +584,8 @@ capital_2_elf_building = {
 	make_obsolete = capital_1_elf_building
 	
 	build_trigger = {
-		development = 10
 		is_capital = yes
+		development = 10
 		owner = {
 			is_elf = yes
 		}
@@ -661,8 +661,8 @@ capital_3_elf_building = {
 	make_obsolete = capital_2_elf_building
 	
 	build_trigger = {
-		development = 15
 		is_capital = yes
+		development = 15
 		owner = {
 			is_elf = yes
 		}
@@ -709,24 +709,24 @@ capital_3_elf_building = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				development = 5
 				is_capital = yes
+				development = 5
 			}
 		}
 		
 		modifier = {
 			factor = 3
 			OR = {
-				development = 10
 				is_capital = yes
+				development = 10
 			}
 		}
 		
 		modifier = {
 			factor = 5
 			OR = {
-				development = 15
 				is_capital = yes
+				development = 15
 			}
 		}
 	}
@@ -741,18 +741,10 @@ elven_fairground_elf_building = {
 	time = 12
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 	
@@ -809,18 +801,10 @@ craftsmen_plaza_elf_building = {
 	make_obsolete = elven_fairground_elf_building
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 	
@@ -877,18 +861,10 @@ exotic_wares_market_elf_building = {
 	make_obsolete = craftsmen_plaza_elf_building
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
 	}
 	
@@ -947,18 +923,10 @@ temple_elf_building = {
 	time = 12
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 	
@@ -1006,18 +974,10 @@ theatre_elf_building = {
 	make_obsolete = temple_elf_building
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 	
@@ -1065,18 +1025,10 @@ amphitheatre_elf_building = {
 	make_obsolete = theatre_elf_building
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
 	}
 	
@@ -1128,18 +1080,10 @@ workshop_elf_building = {
 	allow_in_gold_provinces = no
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 	
@@ -1188,18 +1132,10 @@ elven_forge_elf_building = {
 	allow_in_gold_provinces = no
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 	
@@ -1248,18 +1184,10 @@ grand_forge_elf_building = {
 	allow_in_gold_provinces = no
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_4 = yes
 	}
 	
@@ -1310,18 +1238,10 @@ warriors_gallery_building = {
 	time = 12
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 	
@@ -1369,18 +1289,10 @@ heros_shrine_building = {
 	make_obsolete = warriors_gallery_building
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
 	}
 	
@@ -1427,18 +1339,10 @@ green_pastures_elf_building = {
 	time = 12
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 	
@@ -1486,18 +1390,10 @@ grand_stables_elf_building = {
 	make_obsolete = green_pastures_elf_building
     
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
 	}
 	
@@ -1549,20 +1445,12 @@ port_elf_building = {
 	
 	build_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_buildings = yes
 		province_elf_has_capital_buildings = yes
 	}
 
 	keep_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_buildings = yes
 		province_elf_has_capital_buildings = yes
 	}
@@ -1629,19 +1517,11 @@ seaport_elf_building = {
     
 	build_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_city_building_tier_3 = yes
 	}
 	
@@ -1706,20 +1586,12 @@ harbour_elf_building = {
 	
 	build_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_buildings = yes
 		province_elf_has_capital_buildings = yes
 	}
 
 	keep_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_buildings = yes
 		province_elf_has_capital_buildings = yes
 	}
@@ -1786,19 +1658,11 @@ haven_elf_building = {
     
 	build_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
 	}
 
 	keep_trigger = {
 		has_port = yes
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_fortress_building_tier_3 = yes
 	}
 	
@@ -1869,18 +1733,10 @@ fort_low_walls_elf_building = {
 	influencing_fort = yes
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 	}
 	
@@ -1951,18 +1807,10 @@ fort_high_walls_elf_building = {
 	
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
 	}
 	
@@ -2033,10 +1881,6 @@ moat_elf_building = {
 	time = 12
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 		OR = {
 			has_building = fort_low_walls_elf_building
@@ -2045,10 +1889,6 @@ moat_elf_building = {
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_2 = yes
 		OR = {
 			has_building = fort_low_walls_elf_building
@@ -2094,10 +1934,6 @@ wall_bastions_elf_building = {
 	make_obsolete = moat_elf_building
     
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
 		OR = {
 			has_building = fort_low_walls_elf_building
@@ -2106,10 +1942,6 @@ wall_bastions_elf_building = {
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_3 = yes
 		OR = {
 			has_building = fort_low_walls_elf_building
@@ -2159,18 +1991,10 @@ mallorn_tree_elf_building = {
 	one_per_country = yes
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 	
@@ -2198,24 +2022,24 @@ mallorn_tree_elf_building = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				development = 5
 				is_capital = yes
+				development = 5
 			}
 		}
 		
 		modifier = {
 			factor = 3
 			OR = {
-				development = 10
 				is_capital = yes
+				development = 10
 			}
 		}
 		
 		modifier = {
 			factor = 5
 			OR = {
-				development = 15
 				is_capital = yes
+				development = 15
 			}
 		}
 	}
@@ -2227,18 +2051,10 @@ statue_of_the_elders_elf_building = {
 	one_per_country = yes
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 	
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 
@@ -2266,24 +2082,24 @@ statue_of_the_elders_elf_building = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				development = 5
 				is_capital = yes
+				development = 5
 			}
 		}
 		
 		modifier = {
 			factor = 3
 			OR = {
-				development = 10
 				is_capital = yes
+				development = 10
 			}
 		}
 		
 		modifier = {
 			factor = 5
 			OR = {
-				development = 15
 				is_capital = yes
+				development = 15
 			}
 		}
 	}
@@ -2295,18 +2111,10 @@ mirror_fountain_elf_building = {
 	one_per_country = yes
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 	
@@ -2334,24 +2142,24 @@ mirror_fountain_elf_building = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				development = 5
 				is_capital = yes
+				development = 5
 			}
 		}
 		
 		modifier = {
 			factor = 3
 			OR = {
-				development = 10
 				is_capital = yes
+				development = 10
 			}
 		}
 		
 		modifier = {
 			factor = 5
 			OR = {
-				development = 15
 				is_capital = yes
+				development = 15
 			}
 		}
 	}
@@ -2363,18 +2171,10 @@ star_of_earendil_shrine_elf_building = {
 	one_per_country = yes
 	
 	build_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 
 	keep_trigger = {
-		owner = {
-			is_elf = yes
-		}
-		province_is_buildable = yes
 		province_elf_has_main_building_tier_4 = yes
 	}
 	
@@ -2406,24 +2206,24 @@ star_of_earendil_shrine_elf_building = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				development = 5
 				is_capital = yes
+				development = 5
 			}
 		}
 		
 		modifier = {
 			factor = 3
 			OR = {
-				development = 10
 				is_capital = yes
+				development = 10
 			}
 		}
 		
 		modifier = {
 			factor = 5
 			OR = {
-				development = 15
 				is_capital = yes
+				development = 15
 			}
 		}
 	}
