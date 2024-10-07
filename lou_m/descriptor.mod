@@ -1,4 +1,4 @@
-version="1.36"
+version="1.37"
 replace_path="common/advisortypes"
 replace_path="common/ages"
 replace_path="common/ai_army"
@@ -112,5 +112,5 @@ tags={
 	"Expansion"
 }
 name="Lord of Universalis 2"
-supported_version="1.36.*"
+supported_version="v1.37.4.0"
 remote_file_id="2095475587"
