@@ -1,9 +1,9 @@
 ########################################
-# Events for Nûrn
+# Events for Dwarven Holds
 ########################################
 namespace = LOU_dwarven_hold
 
-# Forms Great Khaganate of Nûrn
+#
 province_event = {
 	id = LOU_dwarven_hold.1
 	title = LOU_dwarven_hold.1.t
@@ -33,7 +33,7 @@ province_event = {
 						}
 						owner = {
 							estate_influence = {
-								estate = estate_dwarven_scholars
+								estate = estate_stewards
 								influence = 75
 							}
 						}
@@ -45,7 +45,7 @@ province_event = {
 						}
 						owner = {
 							estate_influence = {
-								estate = estate_dwarven_masons
+								estate = estate_nobles
 								influence = 75
 							}
 						}
@@ -57,7 +57,7 @@ province_event = {
 						}
 						owner = {
 							estate_influence = {
-								estate = estate_dwarven_warriors
+								estate = estate_merchants
 								influence = 75
 							}
 						}
@@ -69,7 +69,7 @@ province_event = {
 						}
 						owner = {
 							estate_influence = {
-								estate = estate_dwarven_blacksmiths
+								estate = estate_commoners
 								influence = 75
 							}
 						}
@@ -104,7 +104,7 @@ province_event = {
 				NOT = {
 					owner = {
 						estate_influence = {
-							estate = estate_dwarven_scholars
+							estate = estate_stewards
 							influence = 75
 						}
 					}
@@ -126,7 +126,7 @@ province_event = {
 				NOT = {
 					owner = {
 						estate_influence = {
-							estate = estate_dwarven_masons
+							estate = estate_nobles
 							influence = 75
 						}
 					}
@@ -148,7 +148,7 @@ province_event = {
 				NOT = {
 					owner = {
 						estate_influence = {
-							estate = estate_dwarven_warriors
+							estate = estate_merchants
 							influence = 75
 						}
 					}
@@ -170,7 +170,7 @@ province_event = {
 				NOT = {
 					owner = {
 						estate_influence = {
-							estate = estate_dwarven_blacksmiths
+							estate = estate_commoners
 							influence = 75
 						}
 					}
