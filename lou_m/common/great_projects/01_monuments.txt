@@ -4560,7 +4560,7 @@ thalls_monument = {
 		}
 		area_modifier = {
 			local_unrest = -1
-			defensiveness = 0.05
+			local_defensiveness = 0.05
 			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
@@ -4581,7 +4581,7 @@ thalls_monument = {
 		}
 		area_modifier = {
 			local_unrest = -2
-			defensiveness = 0.15
+			local_defensiveness = 0.15
 			local_defender_dice_roll_bonus = 2
 		}
 		country_modifiers = {
@@ -4599,11 +4599,11 @@ thalls_monument = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_unrest = -3
-			defensiveness = 0.25
-			local_defender_dice_roll_bonus = 3
 		}
 		area_modifier = {
+			local_unrest = -3
+			local_defensiveness = 0.25
+			local_defender_dice_roll_bonus = 3
 		}
 		country_modifiers = {
 			war_exhaustion = -0.15
