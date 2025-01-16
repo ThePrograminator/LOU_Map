@@ -563,7 +563,15 @@ slot_02_dunedain_of_the_north_series = {
 				add_center_of_trade_level = 1
 			}
 			677 = {
-				add_center_of_trade_level = 1
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+					}
+					add_center_of_trade_level = 1
+				}
+				else = {
+					center_of_trade = 1
+				}
 			}
 		}
 	}

@@ -165,6 +165,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = { 
+		has_country_modifier = rivendell_paying_high_pass_fort_expenses_modifier
 		1875 = {
 			NOT = {
 				owned_by = Z01

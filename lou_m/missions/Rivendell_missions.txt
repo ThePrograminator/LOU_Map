@@ -854,25 +854,76 @@ slot_05 = {
 		position = 9
 		required_missions = { the_threat_of_goblintown aid_the_dwarves }
 		provinces_to_highlight = {
-			region = misty_mountains_region
+			OR = {
+				area = zudrugund_area
+				area = thrors_coomb_area
+				area = khazad_dum_area
+				area = zagh_kala_area
+				area = goblin_gate_area
+				area = valley_of_giants_area
+				area = eagles_eyrie_area
+			}
 			owner = {
 				culture_group = culture_group_orcs
 			}
-			NOT = {
-				area = methedras_area
-			}
 		}
 		trigger = {
-			misty_mountains_region = {
-				type = all
-				NOT = {
-					owner = {
-						culture_group = culture_group_orcs
+			custom_trigger_tooltip = {
+				tooltip = rivendell_hatred_of_orcs_tt
+				zudrugund_area = {
+					type = all
+					NOT = {
+						owner = {
+							culture_group = culture_group_orcs
+						}
+					}
+				} 
+				thrors_coomb_area = {
+					type = all
+					NOT = {
+						owner = {
+							culture_group = culture_group_orcs
+						}
+					}
+				} 
+				khazad_dum_area = {
+					type = all
+					NOT = {
+						owner = {
+							culture_group = culture_group_orcs
+						}
+					}
+				} 
+				zagh_kala_area = {
+					type = all
+					NOT = {
+						owner = {
+							culture_group = culture_group_orcs
+						}
 					}
 				}
-				hidden_trigger = {
+				goblin_gate_area = {
+					type = all
 					NOT = {
-						area = methedras_area
+						owner = {
+							culture_group = culture_group_orcs
+						}
+					}
+				} 
+				valley_of_giants_area = {
+					type = all
+					NOT = {
+						owner = {
+							culture_group = culture_group_orcs
+						}
+					}
+				} 
+				eagles_eyrie_area = {
+					type = all
+					NOT = {
+						owner = {
+							culture_group = culture_group_orcs
+						}
 					}
 				}
 			}
