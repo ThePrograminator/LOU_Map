@@ -1301,12 +1301,8 @@ country_event = {
 			has_owner_religion = no
 		}
 	}
-	
-    #Convert Province
- 	option = {
-		name = "LOU_orc_race.20.a"
-		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.23 - Option : LOU_orc_race.23.a" }
-		  
+
+	immediate = {
 		random_owned_province = { 
 			limit = {
 				controlled_by = ROOT
@@ -1314,6 +1310,18 @@ country_event = {
 				has_owner_religion = no
 			}
 			
+			save_event_target_as = orc_race_20_target
+		}
+	}
+	
+    #Convert Province
+ 	option = {
+		name = "LOU_orc_race.20.a"
+		if = { limit = { has_global_flag = enable_onaction_logging } log = "Event - LOU_orc_race.23 - Option : LOU_orc_race.23.a" }
+		
+		goto = orc_race_20_target
+
+		event_target:orc_race_20_target = { 
 			change_religion = owner
 			change_culture = owner
 		}

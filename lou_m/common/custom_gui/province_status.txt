@@ -97,12 +97,92 @@ custom_button = {
     }
     effect = { 
         hidden_effect = {
-            owner = {
-                add_mil_power = 15
+            if = {
+                limit = {
+                    check_variable = {
+                        which = customui_province_status_variable
+                        value = 3
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = customui_province_status_variable
+                            value = 9
+                        }
+                    }
+                }
+
+                owner = {
+                    add_mil_power = 15
+                }
+            }
+            else_if = {
+                limit = {
+                    is_variable_equal = {
+                        which = customui_province_status_variable
+                        value = 2
+                    }
+                }
+
+                owner = {
+                    add_dip_power = 15
+                }
+            }
+            else_if = {
+                limit = {
+                    is_variable_equal = {
+                        which = customui_province_status_variable
+                        value = 1
+                    }
+                }
+
+                owner = {
+                    add_adm_power = 15
+                }
             }
         }
         tooltip = {
-            add_mil_power = 15
+            if = {
+                limit = {
+                    check_variable = {
+                        which = customui_province_status_variable
+                        value = 3
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = customui_province_status_variable
+                            value = 9
+                        }
+                    }
+                }
+
+                owner = {
+                    add_mil_power = 15
+                }
+            }
+            else_if = {
+                limit = {
+                    is_variable_equal = {
+                        which = customui_province_status_variable
+                        value = 2
+                    }
+                }
+
+                owner = {
+                    add_dip_power = 15
+                }
+            }
+            else_if = {
+                limit = {
+                    is_variable_equal = {
+                        which = customui_province_status_variable
+                        value = 1
+                    }
+                }
+
+                owner = {
+                    add_adm_power = 15
+                }
+            }
         }
         customui_province_status_stop_removal_effect = yes
     }
